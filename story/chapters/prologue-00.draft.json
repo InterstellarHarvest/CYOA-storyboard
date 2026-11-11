@@ -1,0 +1,1104 @@
+{
+  "title": "The Last Good Day [working title]",
+  "start": "work_complete",
+  "scene": "workplace/applause_station",
+  "nodes": {
+    "work_complete": {
+      "mode": "narrative",
+      "objective": "FIND THE BATHROOM.",
+      "text": "The applause lasts exactly six seconds. Not five and three quarters. Not six and a bit. Six. The green lamp above your console lights up: ACCEPTED.\n\nAnother flawless assignment. You file the timing sheet, leave your desk, and head for the restroom.",
+      "choices": [
+        {
+          "id": "head_to_restroom",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "drone_intercepts"
+        }
+      ]
+    },
+    "drone_intercepts": {
+      "mode": "dialogue",
+      "scene": "workplace/corridor",
+      "speaker": "termination_drone",
+      "pose": "slot_closed",
+      "text": [
+        {
+          "desc": "A bright chime rings out. A small, round drone floats into your path and makes a gentle correction to its height."
+        },
+        "Good morning! Your final assignment has been approved. Congratulations!",
+        "Your position has also been discontinued, along with 499,999 others. I am sorry if the timing is inconvenient. I have selected my most comforting volume."
+      ],
+      "choices": [
+        {
+          "id": "drone_show_form",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "drone_presents_notice"
+        }
+      ]
+    },
+    "drone_presents_notice": {
+      "mode": "dialogue",
+      "scene": "workplace/corridor",
+      "speaker": "termination_drone",
+      "pose": "paper_extended",
+      "text": [
+        {
+          "desc": "A narrow pink document appears from the slot below the speaker grille. Three carbon copies are joined at the top. A tiny pencil hangs from a chain."
+        },
+        "Please acknowledge that you have received notice. Signing does not mean that you agree with it. You are no longer required to agree with anything here."
+      ],
+      "choices": [
+        {
+          "id": "sign_notice",
+          "kind": "action",
+          "text": "SIGN THE NOTICE AND TAKE YOUR COPY.",
+          "effects": [
+            {
+              "set": {
+                "termination_status": "acknowledged"
+              }
+            },
+            {
+              "give": [
+                "termination_notice"
+              ]
+            },
+            {
+              "mark": [
+                [
+                  "termination_notice",
+                  "signed"
+                ]
+              ]
+            }
+          ],
+          "to": "signed_response"
+        },
+        {
+          "id": "challenge_termination",
+          "kind": "spoken",
+          "text": "MY WORK JUST PASSED INSPECTION. I WANT THIS REVIEWED.",
+          "effects": [
+            {
+              "set": {
+                "termination_status": "disputed"
+              }
+            },
+            {
+              "give": [
+                "termination_notice"
+              ]
+            },
+            {
+              "mark": [
+                [
+                  "termination_notice",
+                  "under_review"
+                ]
+              ]
+            }
+          ],
+          "to": "disputed_response"
+        },
+        {
+          "id": "walk_past_drone",
+          "kind": "action",
+          "text": "STEP AROUND THE DRONE AND CONTINUE TO THE RESTROOM.",
+          "effects": {
+            "set": {
+              "termination_status": "delivery_declined"
+            }
+          },
+          "to": "declined_response"
+        }
+      ]
+    },
+    "signed_response": {
+      "mode": "dialogue",
+      "scene": "workplace/corridor",
+      "speaker": "termination_drone",
+      "pose": "paper_extended",
+      "text": [
+        {
+          "desc": "The chained pencil barely reaches the signature box. You lift the paper to meet it. The drone draws back two copies and leaves the smudged bottom sheet for you."
+        },
+        "Thank you. Your cooperation will be credited to your former department. I understand it has also been discontinued."
+      ],
+      "choices": [
+        {
+          "id": "signed_move_on",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "restroom_denied"
+        }
+      ]
+    },
+    "disputed_response": {
+      "mode": "dialogue",
+      "scene": "workplace/corridor",
+      "speaker": "termination_drone",
+      "pose": "paper_extended",
+      "text": [
+        {
+          "desc": "The drone pauses. A small stamp strikes the document inside its casing. It presents a pink copy marked REVIEW REQUESTED."
+        },
+        "Certainly. Your objection is now pending. For your convenience, the termination takes effect while the objection is considered."
+      ],
+      "choices": [
+        {
+          "id": "disputed_move_on",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "restroom_denied"
+        }
+      ]
+    },
+    "declined_response": {
+      "mode": "dialogue",
+      "scene": "workplace/corridor",
+      "speaker": "termination_drone",
+      "pose": "paper_extended",
+      "text": [
+        {
+          "desc": "You step around the drone. It glides aside with impeccable courtesy, keeping the form in its slot."
+        },
+        "Of course! I will record that you declined delivery. This does not affect your dismissal. I hope the rest of your day is rewarding."
+      ],
+      "choices": [
+        {
+          "id": "declined_move_on",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "restroom_denied"
+        }
+      ]
+    },
+    "restroom_denied": {
+      "mode": "narrative",
+      "scene": "workplace/corridor",
+      "objective": "LEAVE THE WORKPLACE AND COLLECT YOUR BELONGINGS.",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "termination_status",
+              "acknowledged"
+            ]
+          },
+          "text": "The restroom is only a few steps farther. You touch your badge to the reader. The light turns red: EMPLOYEE ACCESS REQUIRED.\n\nYou have proof of dismissal in your pocket. It offers no help with the lock."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "termination_status",
+              "disputed"
+            ]
+          },
+          "text": "The restroom is only a few steps farther. You touch your badge to the reader. The light turns red: EMPLOYEE ACCESS REQUIRED.\n\nApparently, PENDING REVIEW is not a kind of employment."
+        },
+        {
+          "text": "The restroom is only a few steps farther. You touch your badge to the reader. The light turns red: EMPLOYEE ACCESS REQUIRED.\n\nThe drone was very accommodating. Your badge is not."
+        }
+      ],
+      "choices": [
+        {
+          "id": "go_to_exit",
+          "kind": "action",
+          "text": "HEAD TO THE EXIT AND COLLECT YOUR BELONGINGS.",
+          "to": "personal_effects_handoff"
+        }
+      ]
+    },
+    "personal_effects_handoff": {
+      "mode": "narrative",
+      "scene": "workplace/exit",
+      "text": "At the exit, a cardboard box waits under a sign reading PERSONAL EFFECTS. Someone has written your name on the side.\n\nThe lid is taped shut, although no one has bothered to tape your job back together.",
+      "choices": [
+        {
+          "id": "take_box_and_leave",
+          "kind": "action",
+          "text": "TAKE THE BOX AND LEAVE THE BUILDING.",
+          "to": "street_expo",
+          "effects": {
+            "give": [
+              "effects_box_full"
+            ]
+          }
+        }
+      ]
+    },
+    "street_expo": {
+      "mode": "narrative",
+      "scene": "street/outside_workplace",
+      "objective": "FIND A PUBLIC BATHROOM.",
+      "text": "Outside, the city proceeds as though nothing has happened.\n\nAcross the street, the Exposition of Everything advertises PUBLIC FACILITIES beside its entrance arch. You shift the cardboard box against your hip. Finally, a practical solution.",
+      "choices": [
+        {
+          "id": "enter_exposition",
+          "kind": "action",
+          "text": "ENTER THE EXPOSITION OF EVERYTHING.",
+          "to": "expo_container_check"
+        }
+      ]
+    },
+    "expo_container_check": {
+      "mode": "narrative",
+      "scene": "exposition/entrance",
+      "objective": "FIND THE PUBLIC FACILITIES.",
+      "effects": [
+        {
+          "if": {
+            "has": "effects_box_full"
+          },
+          "set": {
+            "discarded_box_unopened": true
+          }
+        },
+        {
+          "if": {
+            "has": "effects_box_full"
+          },
+          "take": [
+            "effects_box_full"
+          ]
+        },
+        {
+          "if": {
+            "has": "effects_box_empty"
+          },
+          "take": [
+            "effects_box_empty"
+          ]
+        }
+      ],
+      "text": [
+        {
+          "if": {
+            "flag": "discarded_box_unopened"
+          },
+          "text": "A uniformed entrance attendant points at a chute beneath a sign: NO OUTSIDE CONTAINERS.\n\nYou drop the still-sealed cardboard box into the chute. The attendant watches to ensure that no outside containers enter. Whatever was inside vanishes with it.\n\nBeyond the turnstile, another sign promises PUBLIC FACILITIES."
+        },
+        {
+          "text": "A uniformed entrance attendant points at a chute beneath a sign: NO OUTSIDE CONTAINERS.\n\nYou drop the now-empty cardboard box into the chute. The things you took from it remain in your pockets.\n\nBeyond the turnstile, another sign promises PUBLIC FACILITIES."
+        }
+      ],
+      "choices": [
+        {
+          "id": "pass_turnstile",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "expo_property_counter"
+        }
+      ]
+    },
+    "expo_property_counter": {
+      "mode": "narrative",
+      "scene": "exposition/property_intake",
+      "text": [
+        {
+          "if": {
+            "flag": "box_unpacked"
+          },
+          "text": "On the other side of the turnstile, a counter bears the words PROPERTY FOR YOUR CONVENIENCE. A clerk asks you to place your four loose belongings on a green felt mat. Four shallow numbered trays slide out beneath it.\n\n\"Visitors may retain one personal article,\" the clerk says. \"The others will be kept for the duration of your visit. Official correspondence is exempt.\"\n\nYou look toward the doors leading farther inside. The public facilities must be somewhere beyond them."
+        },
+        {
+          "text": "The next counter is marked PROPERTY FOR YOUR CONVENIENCE. A clerk examines your empty hands, then a blank inventory card.\n\n\"No loose personal effects,\" the clerk says, marking the card. \"Official correspondence is exempt.\"\n\nYou glance at the doors beyond the desk. Somewhere inside, there must be a bathroom."
+        }
+      ],
+      "choices": [
+        {
+          "id": "no_property_to_declare",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "if": {
+            "notFlag": "box_unpacked"
+          },
+          "to": "expo_no_property"
+        },
+        {
+          "id": "deposit_all",
+          "kind": "action",
+          "text": "DEPOSIT EVERYTHING AND GET A CLAIM TICKET.",
+          "if": {
+            "flag": "box_unpacked"
+          },
+          "effects": [
+            {
+              "set": {
+                "property_record": "stored_all"
+              }
+            },
+            {
+              "if": {
+                "has": "timing_clicker"
+              },
+              "take": [
+                "timing_clicker"
+              ]
+            },
+            {
+              "if": {
+                "has": "desk_plant"
+              },
+              "take": [
+                "desk_plant"
+              ]
+            },
+            {
+              "if": {
+                "has": "red_stapler"
+              },
+              "take": [
+                "red_stapler"
+              ]
+            },
+            {
+              "if": {
+                "has": "rubber_band_ball"
+              },
+              "take": [
+                "rubber_band_ball"
+              ]
+            },
+            {
+              "give": [
+                "property_claim_ticket"
+              ]
+            }
+          ],
+          "to": "expo_stored_all"
+        },
+        {
+          "id": "keep_one",
+          "kind": "spoken",
+          "text": "CAN I AT LEAST KEEP ONE OF MY THINGS?",
+          "if": {
+            "flag": "box_unpacked"
+          },
+          "to": "expo_choose_one"
+        },
+        {
+          "id": "hurry_past_intake",
+          "kind": "spoken",
+          "text": "JUST KEEP THE LOT. I NEED THE BATHROOM.",
+          "if": {
+            "flag": "box_unpacked"
+          },
+          "effects": [
+            {
+              "set": {
+                "property_record": "voluntary_donation"
+              }
+            },
+            {
+              "if": {
+                "has": "timing_clicker"
+              },
+              "take": [
+                "timing_clicker"
+              ]
+            },
+            {
+              "if": {
+                "has": "desk_plant"
+              },
+              "take": [
+                "desk_plant"
+              ]
+            },
+            {
+              "if": {
+                "has": "red_stapler"
+              },
+              "take": [
+                "red_stapler"
+              ]
+            },
+            {
+              "if": {
+                "has": "rubber_band_ball"
+              },
+              "take": [
+                "rubber_band_ball"
+              ]
+            }
+          ],
+          "to": "expo_donated"
+        }
+      ]
+    },
+    "expo_no_property": {
+      "mode": "narrative",
+      "scene": "exposition/property_intake",
+      "effects": {
+        "set": {
+          "property_record": "nothing_declared"
+        }
+      },
+      "text": "The clerk stamps a blank inventory card and waves you through. According to the Exposition, you have arrived with nothing worth keeping.\n\nYou can hardly disagree.",
+      "choices": [
+        {
+          "id": "continue_to_reception_empty",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "expo_reception_handoff"
+        }
+      ]
+    },
+    "expo_stored_all": {
+      "mode": "narrative",
+      "scene": "exposition/property_intake",
+      "text": "The clerk deposits your belongings into the four numbered trays. The trays vanish beneath the counter with a series of identical clicks.\n\nA thin claim ticket is placed in your hand. Its heading reads: COLLECTION ON DEPARTURE. No departure time is printed.\n\n\"For your convenience,\" the clerk repeats, already looking past you.",
+      "choices": [
+        {
+          "id": "continue_to_reception_stored",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "expo_reception_handoff"
+        }
+      ]
+    },
+    "expo_choose_one": {
+      "mode": "narrative",
+      "scene": "exposition/property_intake",
+      "text": "The clerk considers this request as though it has never been made before.\n\n\"One article for personal comfort. It must be one you have already brought. The remaining articles will be held for collection when you leave.\"\n\nFour trays wait. You must choose.",
+      "choices": [
+        {
+          "id": "keep_clicker",
+          "kind": "action",
+          "text": "KEEP THE APPLAUSE TIMING CLICKER.",
+          "if": {
+            "has": "timing_clicker"
+          },
+          "effects": [
+            {
+              "set": {
+                "property_record": "stored_three",
+                "retained_item": "timing_clicker"
+              }
+            },
+            {
+              "if": {
+                "has": "desk_plant"
+              },
+              "take": [
+                "desk_plant"
+              ]
+            },
+            {
+              "if": {
+                "has": "red_stapler"
+              },
+              "take": [
+                "red_stapler"
+              ]
+            },
+            {
+              "if": {
+                "has": "rubber_band_ball"
+              },
+              "take": [
+                "rubber_band_ball"
+              ]
+            },
+            {
+              "give": [
+                "property_claim_ticket"
+              ]
+            }
+          ],
+          "to": "expo_kept_one"
+        },
+        {
+          "id": "keep_plant",
+          "kind": "action",
+          "text": "KEEP THE SMALL DESK PLANT.",
+          "if": {
+            "has": "desk_plant"
+          },
+          "effects": [
+            {
+              "set": {
+                "property_record": "stored_three",
+                "retained_item": "desk_plant"
+              }
+            },
+            {
+              "if": {
+                "has": "timing_clicker"
+              },
+              "take": [
+                "timing_clicker"
+              ]
+            },
+            {
+              "if": {
+                "has": "red_stapler"
+              },
+              "take": [
+                "red_stapler"
+              ]
+            },
+            {
+              "if": {
+                "has": "rubber_band_ball"
+              },
+              "take": [
+                "rubber_band_ball"
+              ]
+            },
+            {
+              "give": [
+                "property_claim_ticket"
+              ]
+            }
+          ],
+          "to": "expo_kept_one"
+        },
+        {
+          "id": "keep_stapler",
+          "kind": "action",
+          "text": "KEEP THE RED SWANGLINE STAPLER.",
+          "if": {
+            "has": "red_stapler"
+          },
+          "effects": [
+            {
+              "set": {
+                "property_record": "stored_three",
+                "retained_item": "red_stapler"
+              }
+            },
+            {
+              "if": {
+                "has": "timing_clicker"
+              },
+              "take": [
+                "timing_clicker"
+              ]
+            },
+            {
+              "if": {
+                "has": "desk_plant"
+              },
+              "take": [
+                "desk_plant"
+              ]
+            },
+            {
+              "if": {
+                "has": "rubber_band_ball"
+              },
+              "take": [
+                "rubber_band_ball"
+              ]
+            },
+            {
+              "give": [
+                "property_claim_ticket"
+              ]
+            }
+          ],
+          "to": "expo_kept_one"
+        },
+        {
+          "id": "keep_band_ball",
+          "kind": "action",
+          "text": "KEEP THE RUBBER-BAND BALL.",
+          "if": {
+            "has": "rubber_band_ball"
+          },
+          "effects": [
+            {
+              "set": {
+                "property_record": "stored_three",
+                "retained_item": "rubber_band_ball"
+              }
+            },
+            {
+              "if": {
+                "has": "timing_clicker"
+              },
+              "take": [
+                "timing_clicker"
+              ]
+            },
+            {
+              "if": {
+                "has": "desk_plant"
+              },
+              "take": [
+                "desk_plant"
+              ]
+            },
+            {
+              "if": {
+                "has": "red_stapler"
+              },
+              "take": [
+                "red_stapler"
+              ]
+            },
+            {
+              "give": [
+                "property_claim_ticket"
+              ]
+            }
+          ],
+          "to": "expo_kept_one"
+        }
+      ]
+    },
+    "expo_kept_one": {
+      "mode": "narrative",
+      "scene": "exposition/property_intake",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "retained_item",
+              "timing_clicker"
+            ]
+          },
+          "text": "You keep the timing clicker. The other three articles disappear into numbered trays. The clerk gives you a property claim ticket."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "retained_item",
+              "desk_plant"
+            ]
+          },
+          "text": "You keep the small plant. The clerk seems relieved to place the other three articles into the property trays and gives you a claim ticket."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "retained_item",
+              "red_stapler"
+            ]
+          },
+          "text": "You take back the red Swangline stapler. The clerk gives its weight a dubious look, stores the other three articles, and hands you a claim ticket."
+        },
+        {
+          "text": "You keep the rubber-band ball. The clerk weighs it in one hand, says nothing, and stores your other three articles. You receive a property claim ticket."
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue_to_reception_kept_one",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "expo_reception_handoff"
+        }
+      ]
+    },
+    "expo_donated": {
+      "mode": "narrative",
+      "scene": "exposition/property_intake",
+      "text": "\"Keep the lot,\" you repeat, glancing at the distant facilities sign.\n\n\"How generous,\" the clerk says, writing VOLUNTARY CONTRIBUTION on the inventory card. The four trays slide away. \"Your donation will be displayed or disposed of according to its educational value.\"\n\nThere is no claim ticket. There is, however, a clear route to the reception desk.",
+      "choices": [
+        {
+          "id": "continue_to_reception_donated",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "expo_reception_handoff"
+        }
+      ]
+    },
+    "expo_reception_handoff": {
+      "mode": "narrative",
+      "scene": "exposition/reception",
+      "objective": "ASK AT RECEPTION WHERE THE BATHROOM IS.",
+      "text": "Beyond the property counter, the reception hall is spacious and meticulously arranged. A desk occupies the far wall. Behind it, a receptionist looks up as you approach.\n\nAt last, someone who can give you directions.",
+      "choices": [
+        {
+          "id": "speak_to_receptionist",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_opening"
+        }
+      ]
+    },
+    "reception_opening": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "property_record",
+              "voluntary_donation"
+            ]
+          },
+          "text": [
+            {
+              "desc": "The receptionist looks up from a stack of neatly squared cards."
+            },
+            "Good afternoon. I see you've made a contribution to the Exposition. Thank you. What can I do for you?"
+          ]
+        },
+        {
+          "if": {
+            "has": "property_claim_ticket"
+          },
+          "text": [
+            {
+              "desc": "The receptionist looks up from a stack of neatly squared cards."
+            },
+            "Good afternoon. Property claims are collected at the exit. What can I help you with in the meantime?"
+          ]
+        },
+        {
+          "text": [
+            {
+              "desc": "The receptionist looks up from a stack of neatly squared cards."
+            },
+            "Good afternoon. What can I help you with?"
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "ask_for_restroom",
+          "kind": "spoken",
+          "text": "I NEED A BATHROOM. WHICH WAY?",
+          "effects": {
+            "set": {
+              "reception_origin": "bathroom"
+            }
+          },
+          "to": "reception_restroom_request"
+        },
+        {
+          "id": "mention_public_sign",
+          "kind": "spoken",
+          "text": "THE SIGN OUTSIDE SAYS PUBLIC FACILITIES.",
+          "effects": {
+            "set": {
+              "reception_origin": "signage"
+            }
+          },
+          "to": "reception_sign_report"
+        },
+        {
+          "id": "walk_toward_corridor",
+          "kind": "action",
+          "text": "HEAD TOWARD THE HALLWAY BEHIND THE DESK.",
+          "effects": {
+            "set": {
+              "reception_origin": "corridor"
+            }
+          },
+          "to": "reception_corridor_attempt"
+        }
+      ],
+      "show": {
+        "termination_notice": {
+          "kind": "action",
+          "say": "HOLD OUT THE TERMINATION NOTICE.",
+          "effects": {
+            "set": {
+              "reception_origin": "notice",
+              "former_employment_disclosed": true
+            }
+          },
+          "to": "reception_notice_reply"
+        }
+      }
+    },
+    "reception_restroom_request": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "She opens a ledger to a page marked PUBLIC FACILITIES. Most of the lines are blank."
+        },
+        "That's odd. I can see where the facilities are listed, but not where a member of the public can use them.",
+        "There is another way to find out. One moment."
+      ],
+      "choices": [
+        {
+          "id": "wait_for_assistance",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_badge_issued"
+        }
+      ]
+    },
+    "reception_sign_report": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "The receptionist glances toward the front doors."
+        },
+        "The sign is correct. It has brought you to the facilities office.",
+        "If the facilities themselves aren't where you expected, that does need checking."
+      ],
+      "choices": [
+        {
+          "id": "follow_sign_report",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_badge_issued"
+        }
+      ]
+    },
+    "reception_corridor_attempt": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "A waist-high barrier rises across the hallway. The receptionist doesn't look surprised."
+        },
+        "Sorry. That passage is for credentialed personnel.",
+        "Fortunately, I can issue credentials here."
+      ],
+      "choices": [
+        {
+          "id": "allow_credential_processing",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_badge_issued"
+        }
+      ]
+    },
+    "reception_notice_reply": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "She studies the pink document."
+        },
+        "Oh dear. I'm sorry. We have quite a few people arriving with these today.",
+        "Well, at least I won't need to check whether you're on duty elsewhere. Let me see what I can do for you."
+      ],
+      "choices": [
+        {
+          "id": "continue_after_notice",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_badge_issued"
+        }
+      ]
+    },
+    "reception_badge_issued": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "effects": [
+        {
+          "set": {
+            "appointed": true,
+            "expo_classification": "temporary_examiner"
+          }
+        },
+        {
+          "give": [
+            "expo_examiner_badge"
+          ]
+        }
+      ],
+      "objective": "FIND THE PUBLIC BATHROOM. YOU HAVE ALSO BEEN REGISTERED AS AN EXAMINER.",
+      "text": [
+        {
+          "desc": "She feeds a pale blue badge into a small embossing machine. It returns with your name and a title you have never held."
+        },
+        "There. Temporary Examiner, Office of Unverified Conditions.",
+        "It's an access designation, not a job. There's no pay and very little paperwork. Unless you make any."
+      ],
+      "choices": [
+        {
+          "id": "reject_examiner",
+          "kind": "spoken",
+          "text": "I AM NOT AN EXAMINER. I ONLY NEED A BATHROOM.",
+          "effects": {
+            "set": {
+              "appointment_response": "disputed",
+              "appointment_disputed": true
+            }
+          },
+          "to": "reception_dispute"
+        },
+        {
+          "id": "accept_for_directions",
+          "kind": "action",
+          "text": "TAKE THE BADGE AND ASK FOR DIRECTIONS.",
+          "effects": {
+            "set": {
+              "appointment_response": "practical"
+            }
+          },
+          "to": "reception_practical"
+        },
+        {
+          "id": "ask_examiner_duties",
+          "kind": "spoken",
+          "text": "WHAT EXACTLY AM I SUPPOSED TO EXAMINE?",
+          "effects": {
+            "set": {
+              "appointment_response": "inquired",
+              "examiner_duties_known": true
+            }
+          },
+          "to": "reception_duties"
+        }
+      ]
+    },
+    "reception_dispute": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "Her expression softens. She writes a short note on the corner of your file."
+        },
+        "Of course. I've marked the appointment disputed. Your badge will work while the matter is reviewed.",
+        "I know it's not what you asked for. But it will get you down the hall."
+      ],
+      "choices": [
+        {
+          "id": "move_on_disputed",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_directions"
+        }
+      ]
+    },
+    "reception_practical": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "You take the badge. The receptionist seems quietly relieved."
+        },
+        "Good. We can get you moving.",
+        "It's been one of those afternoons."
+      ],
+      "choices": [
+        {
+          "id": "move_on_practical",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_directions"
+        }
+      ]
+    },
+    "reception_duties": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "She thinks before answering."
+        },
+        "You check the things that have been described as working and say whether they are. It's mostly a question of looking carefully.",
+        "The last Examiner asked that too. I hope you have a better day."
+      ],
+      "choices": [
+        {
+          "id": "move_on_informed",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "reception_directions"
+        }
+      ]
+    },
+    "reception_directions": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "effects": {
+        "give": [
+          "wc_key"
+        ]
+      },
+      "objective": "FOLLOW THE FACILITIES SIGNS DOWN THE HALL.",
+      "text": [
+        {
+          "desc": "She lays a small key on the counter. Its paper tag has already been filled out."
+        },
+        "Down the hall, through the door with the blue symbol. Follow the signs for the facilities.",
+        "Take this as well. Some of the older doors still insist on a key."
+      ],
+      "choices": [
+        {
+          "id": "leave_reception",
+          "kind": "action",
+          "text": "TAKE THE KEY AND FOLLOW THE SIGNS.",
+          "to": "reception_hallway"
+        },
+        {
+          "id": "question_returned_key",
+          "kind": "spoken",
+          "text": "THIS TAG SAYS I ALREADY RETURNED THE KEY.",
+          "if": {
+            "item": [
+              "wc_key",
+              "read"
+            ]
+          },
+          "effects": {
+            "set": {
+              "key_discrepancy_raised": true
+            }
+          },
+          "to": "reception_key_discrepancy"
+        }
+      ],
+      "show": {
+        "wc_key": {
+          "kind": "action",
+          "if": {
+            "item": [
+              "wc_key",
+              "read"
+            ]
+          },
+          "say": "SHOW THE RECEPTIONIST THE KEY TAG.",
+          "effects": {
+            "set": {
+              "key_discrepancy_raised": true
+            }
+          },
+          "to": "reception_key_discrepancy"
+        }
+      }
+    },
+    "reception_key_discrepancy": {
+      "mode": "dialogue",
+      "scene": "exposition/reception",
+      "speaker": "receptionist",
+      "text": [
+        {
+          "desc": "She reads the tag. For the first time, she seems uncertain."
+        },
+        "That's very peculiar.",
+        "I'd keep it with you. I don't think I ought to put it back in the drawer."
+      ],
+      "choices": [
+        {
+          "id": "depart_after_key",
+          "kind": "action",
+          "text": "KEEP THE KEY AND GO DOWN THE HALL.",
+          "to": "reception_hallway"
+        }
+      ]
+    },
+    "reception_hallway": {
+      "mode": "narrative",
+      "scene": "exposition/facilities_corridor",
+      "objective": "FIND THE PUBLIC BATHROOM.",
+      "text": "You pass through the door and into a long, softly humming corridor. Pale blue signs hang above several turns.\n\nOne shows a small human figure beside a square enclosure. From here, it looks enough like the symbol you're looking for. The rest of the lettering is hidden around the corner.\n\nYou follow it.",
+      "choices": []
+    }
+  }
+}

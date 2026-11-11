@@ -1,0 +1,54 @@
+name: Publish CYOA Storyboard
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pages.yml'
+      - 'index.html'
+      - 'tools/storyboard/**'
+      - 'story/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out public storyboard files
+        uses: actions/checkout@v4
+      - name: Build standalone public site
+        run: |
+          set -euo pipefail
+          mkdir -p _site/tools/storyboard _site/story/chapters
+          cp index.html _site/index.html
+          cp tools/storyboard/index.html _site/tools/storyboard/index.html
+          cp story/storyboard-manifest.json _site/story/storyboard-manifest.json
+          cp story/items.draft.json _site/story/items.draft.json
+          cp story/chapters/*.json _site/story/chapters/
+          touch _site/.nojekyll
+          test -s _site/tools/storyboard/index.html
+          test -s _site/story/storyboard-manifest.json
+          test -s _site/story/chapters/prologue-00.draft.json
+          test -s _site/story/items.draft.json
+      - name: Enable and configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

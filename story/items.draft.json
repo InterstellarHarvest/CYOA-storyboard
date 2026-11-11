@@ -1,0 +1,214 @@
+{
+  "termination_notice": {
+    "name": "TERMINATION NOTICE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "item": [
+            "termination_notice",
+            "signed"
+          ]
+        },
+        "text": "YOUR PINK CARBON COPY OF A TERMINATION NOTICE. YOUR SIGNATURE IS LEGIBLE, EVEN THROUGH THE SMUDGE. THE FORM STATES THAT RECEIPT DOES NOT MEAN AGREEMENT."
+      },
+      {
+        "if": {
+          "item": [
+            "termination_notice",
+            "under_review"
+          ]
+        },
+        "text": "A PINK CARBON COPY MARKED REVIEW REQUESTED. IT CONFIRMS THAT AN OBJECTION WAS RECEIVED, NOT THAT YOUR JOB IS RESTORED."
+      },
+      {
+        "text": "A PINK TRIPLICATE TERMINATION FORM. THE PAPER IS THIN AND RATHER PROUD OF ITSELF."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "termination_notice",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "timing_clicker": {
+    "name": "APPLAUSE TIMING CLICKER",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A PALM-SIZED TIMING CLICKER WITH A BAKELITE BUTTON AND A SIX-SECOND DIAL. YOU USED IT TO SET THE LENGTH OF THE COMPANY'S APPLAUSE. IT STILL WORKS.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "timing_clicker",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "desk_plant": {
+    "name": "SMALL DESK PLANT",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A SMALL GREEN DESK PLANT IN A WHITE PLASTIC POT. A PENCIL LINE MARKS THE RECOMMENDED WATER LEVEL. NOBODY APPEARS TO HAVE OBSERVED IT.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "desk_plant",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "effects_box_full": {
+    "name": "PERSONAL EFFECTS BOX",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A SMALL, SEALED CARDBOARD BOX WITH YOUR NAME WRITTEN ON THE SIDE. IT RATTLES SLIGHTLY WHEN MOVED.",
+    "inspect": {
+      "effects": [
+        {
+          "take": [
+            "effects_box_full"
+          ]
+        },
+        {
+          "give": [
+            "effects_box_empty",
+            "timing_clicker",
+            "desk_plant",
+            "red_stapler",
+            "rubber_band_ball"
+          ]
+        },
+        {
+          "set": {
+            "box_unpacked": true
+          }
+        }
+      ],
+      "once": true
+    }
+  },
+  "effects_box_empty": {
+    "name": "EMPTY PERSONAL EFFECTS BOX",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "THE SAME CARDBOARD BOX, NOW EMPTY. A STRIP OF TAPE HANGS FROM ONE FLAP. IT IS STILL TECHNICALLY PERSONAL PROPERTY."
+  },
+  "red_stapler": {
+    "name": "RED SWANGLINE STAPLER",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A HEAVY RED METAL DESK STAPLER. SWANGLINE IS PRINTED IN SILVER LETTERS ON THE SIDE. NO ONE EVER AGREED WHETHER IT BELONGED TO YOU OR THE OFFICE.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "red_stapler",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "rubber_band_ball": {
+    "name": "RUBBER-BAND BALL",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A DENSE BALL OF OFFICE RUBBER BANDS, WOUND OVER MANY YEARS. YOU CAN'T TELL WHAT ALL THOSE BANDS ARE WOUND AROUND.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "rubber_band_ball",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "property_claim_ticket": {
+    "name": "EXPOSITION PROPERTY CLAIM TICKET",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "flagIs": [
+            "property_record",
+            "stored_all"
+          ]
+        },
+        "text": "AN EXPOSITION OF EVERYTHING PROPERTY CLAIM TICKET. FOUR PERSONAL ARTICLES ARE LISTED AS HELD FOR YOUR CONVENIENCE. COLLECTION: ON DEPARTURE. THE DEPARTURE FIELD IS BLANK."
+      },
+      {
+        "text": "AN EXPOSITION OF EVERYTHING PROPERTY CLAIM TICKET. THREE PERSONAL ARTICLES ARE LISTED AS HELD FOR YOUR CONVENIENCE. COLLECTION: ON DEPARTURE. THE DEPARTURE FIELD IS BLANK."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "property_claim_ticket",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "expo_examiner_badge": {
+    "name": "TEMPORARY EXAMINER BADGE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A PALE BLUE EXPOSITION BADGE EMBOSSED WITH YOUR NAME. BELOW IT: TEMPORARY EXAMINER, OFFICE OF UNVERIFIED CONDITIONS. NO EXPIRATION DATE IS PRINTED.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "expo_examiner_badge",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "wc_key": {
+    "name": "FACILITIES KEY",
+    "slotArt": "art/items/bathroom_pass_slot.png",
+    "inspectArt": "art/items/bathroom_pass_inspect.png",
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "wc_key",
+            "read"
+          ]
+        },
+        "text": "A SMALL KEY ON A WORN FOB, WITH A PAPER TAG TIED THROUGH THE RING. THE TAG HAS BEEN FILLED IN."
+      },
+      {
+        "text": "THE TAG READS:\n\nISSUED TO: EXAMINER, OFFICE OF UNVERIFIED CONDITIONS.\nRETURNED: TODAY, 4:52.\nSIGNED: (A SIGNATURE IN WHAT IS PLAINLY YOUR OWN HANDWRITING.)"
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "wc_key",
+            "read"
+          ]
+        ]
+      }
+    }
+  }
+}
