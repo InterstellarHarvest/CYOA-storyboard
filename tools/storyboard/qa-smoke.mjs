@@ -23,7 +23,7 @@ assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.status,'pro
 assert.equal(artwork.scenes['exposition/reception'].portraitBackground.status,'reused','approved reception background reuse');
 for(const portrait of Object.values(artwork.portraits)){
   assert.equal(portrait.foregroundFormat,'transparent-rgba-png','all NPC foregrounds are transparent');
-  assert.ok(artwork.scenes[portrait.portraitBackgroundScene]?.portraitBackground,'portrait's matching scene background exists');
+  assert.ok(artwork.scenes[portrait.portraitBackgroundScene]?.portraitBackground,"portrait scene background exists");
 }
 assert.equal(manifest.layout,'storyboard-layout.json');
 const layoutSource=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.layout),'utf8'));
