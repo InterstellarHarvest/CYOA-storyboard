@@ -24,7 +24,7 @@
 <div id="app">
  <section class="work">
   <div class="work-tools"><strong id="chapterTitle">Chapter tree</strong><span><button id="zoomOut" title="Zoom out">−</button> <button id="fit" title="Fit the board">Fit</button> <button id="zoomIn" title="Zoom in">+</button> <button id="showItems">Items</button> <button id="showArtwork">Artwork</button></span></div>
-  <div id="viewport"><div id="space"><div id="stage"><svg id="edges" aria-hidden="true"></svg><div id="nodes"></div></div></div></div>
+  <div id="viewport" title="Scroll wheel to zoom around the pointer; drag empty space to pan"><div id="space"><div id="stage"><svg id="edges" aria-hidden="true"></svg><div id="nodes"></div></div></div></div>
  </section>
  <aside id="details"><h2>Choose a story node</h2><p class="muted">Select a node from the chapter tree. Hover for a summary. Click for its full text, choices, effects, and referenced artwork.</p><p class="muted">The story is kept in external JSON files; this page contains no chapter content.</p></aside>
 </div>
@@ -46,24 +46,83 @@
    return "";
  }
  function choicesFor(node){return Array.isArray(node.choices)?node.choices:[];}
- function destinations(node){return choicesFor(node).map(c=>({id:c.to,choice:c})).filter(x=>x.id && state.chapter.nodes[x.id]);}
+ // Actual outgoing edges include item SHOW/USE transitions, not only choice cards.
+ // Deduplicate destinations (four ways to keep one item should render one edge).
+ function destinations(node){
+   const edges=new Map();
+   function add(id,text,kind){
+     if(!id||!state.chapter.nodes[id])return;
+     if(!edges.has(id))edges.set(id,{id,labels:[],kind});
+     const edge=edges.get(id);
+     if(!edge.labels.includes(text))edge.labels.push(text);
+     if(edge.kind!==kind)edge.kind="mixed";
+   }
+   choicesFor(node).forEach(c=>add(c.to,c.text||c.id,"choice"));
+   for(const verb of ["show","use"]){
+     Object.entries(node[verb]||{}).forEach(([itemId,entry])=>{
+       add(entry?.to,verb.toUpperCase()+" "+titleOf(itemId),verb);
+     });
+   }
+   return Array.from(edges.values(),e=>({
+     id:e.id,kind:e.kind,
+     choice:{text:e.labels.length===1?e.labels[0]:e.labels.length+" routes",id:e.id}
+   }));
+ }
  function layout(){
-   const nodes=state.chapter.nodes, ids=Object.keys(nodes), indegree=Object.fromEntries(ids.map(id=>[id,0])), depth=Object.fromEntries(ids.map(id=>[id,0]));
-   ids.forEach(id=>destinations(nodes[id]).forEach(x=>indegree[x.id]++));
+   const nodes=state.chapter.nodes,ids=Object.keys(nodes);
+   const index=Object.fromEntries(ids.map((id,i)=>[id,i]));
+   const links=Object.fromEntries(ids.map(id=>[id,destinations(nodes[id])]));
+   const incoming=Object.fromEntries(ids.map(id=>[id,[]]));
+   const indegree=Object.fromEntries(ids.map(id=>[id,0]));
+   const depth=Object.fromEntries(ids.map(id=>[id,0]));
+   ids.forEach(id=>links[id].forEach(link=>{
+     indegree[link.id]++;incoming[link.id].push(id);
+   }));
    const queue=ids.filter(id=>indegree[id]===0);
    let visited=0;
    while(queue.length && visited<ids.length){
      const id=queue.shift();visited++;
-     destinations(nodes[id]).forEach(x=>{depth[x.id]=Math.max(depth[x.id],depth[id]+1);indegree[x.id]--;if(!indegree[x.id])queue.push(x.id);});
+     links[id].forEach(link=>{
+       depth[link.id]=Math.max(depth[link.id],depth[id]+1);
+       indegree[link.id]--;
+       if(!indegree[link.id])queue.push(link.id);
+     });
    }
-   // Cycles are not expected in forward-moving chapter stories. Put any unplaced nodes at the end.
-   if(visited<ids.length)ids.filter(id=>indegree[id]>0).forEach(id=>depth[id]=Math.max(...Object.values(depth))+1);
+   // Unexpected cycles remain inspectable, but prose routes are designed as DAGs.
+   if(visited<ids.length){
+     const tail=Math.max(...Object.values(depth))+1;
+     ids.filter(id=>indegree[id]>0).forEach(id=>{depth[id]=tail;});
+   }
    const columns={};
    ids.forEach(id=>(columns[depth[id]]??=[]).push(id));
-   const maxCount=Math.max(1,...Object.values(columns).map(x=>x.length));
-   const positions={}; const cardWidth=220,cardHeight=86,stepX=340,stepY=130;
+   const ranks=Object.keys(columns).map(Number).sort((a,b)=>a-b);
+   // Reorder each column by its connected neighbors. Stable tie-breaks make
+   // separate incidents stay together instead of grouping by JSON insertion.
+   function centerRank(id){
+     const column=columns[depth[id]],position=column.indexOf(id);
+     return (position+.5)/column.length;
+   }
+   function reorder(col,neighbors){
+     const entries=columns[col];
+     entries.sort((a,b)=>{
+       const aLinks=neighbors(a),bLinks=neighbors(b);
+       const aScore=aLinks.length?aLinks.reduce((s,id)=>s+centerRank(id),0)/aLinks.length:NaN;
+       const bScore=bLinks.length?bLinks.reduce((s,id)=>s+centerRank(id),0)/bLinks.length:NaN;
+       if(Number.isFinite(aScore)&&Number.isFinite(bScore)&&Math.abs(aScore-bScore)>1e-9)return aScore-bScore;
+       if(Number.isFinite(aScore)!==Number.isFinite(bScore))return Number.isFinite(aScore)?-1:1;
+       return index[a]-index[b];
+     });
+   }
+   for(let pass=0;pass<4;pass++){
+     ranks.slice(1).forEach(col=>reorder(col,id=>incoming[id].filter(from=>depth[from]<col)));
+     ranks.slice(0,-1).reverse().forEach(col=>reorder(col,id=>links[id].map(l=>l.id).filter(to=>depth[to]>col)));
+   }
+   const maxCount=Math.max(1,...Object.values(columns).map(a=>a.length));
+   const positions={},cardWidth=220,cardHeight=86,stepX=340,stepY=130;
    for(const [col,entries] of Object.entries(columns)){
-     entries.forEach((id,i)=>{positions[id]={x:50+Number(col)*stepX,y:65+(maxCount-entries.length)*stepY/2+i*stepY};});
+     entries.forEach((id,i)=>{
+       positions[id]={x:50+Number(col)*stepX,y:65+(maxCount-entries.length)*stepY/2+i*stepY};
+     });
    }
    return {positions,width:Math.max(650,120+(Math.max(...Object.values(depth))+1)*stepX),height:Math.max(400,135+maxCount*stepY),cardWidth,cardHeight};
  }
@@ -86,12 +145,13 @@
        const mid=(x1+x2)/2;
        const path=document.createElementNS("http://www.w3.org/2000/svg","path");
        path.setAttribute("d","M"+x1+" "+y1+" C"+mid+" "+y1+" "+mid+" "+y2+" "+x2+" "+y2);
-       path.setAttribute("fill","none");path.setAttribute("stroke","#79909f");path.setAttribute("stroke-width","1.5");
+       path.setAttribute("fill","none");path.setAttribute("stroke",link.kind==="choice"?"#79909f":"#b6a47c");path.setAttribute("stroke-width","1.5");
+       if(link.kind!=="choice")path.setAttribute("stroke-dasharray","5 4");
        svg.append(path);
        const arrow=document.createElementNS("http://www.w3.org/2000/svg","path");
        arrow.setAttribute("d","M"+(x2-7)+" "+(y2-4)+" L"+x2+" "+y2+" L"+(x2-7)+" "+(y2+4));
        arrow.setAttribute("fill","none");arrow.setAttribute("stroke","#a2b5c1");arrow.setAttribute("stroke-width","1.5");svg.append(arrow);
-       if(choicesFor(node).length>1){
+       if(destinations(node).length>1 || link.kind!=="choice"){
          const label=document.createElementNS("http://www.w3.org/2000/svg","text");
          label.setAttribute("x",mid);label.setAttribute("y",(y1+y2)/2-7);label.setAttribute("fill","#c0cbd4");label.setAttribute("font-size","10");label.setAttribute("text-anchor","middle");
          const s=link.choice.text||link.choice.id;
@@ -108,6 +168,18 @@
    $("space").style.width=(state.width*state.scale)+"px";$("space").style.height=(state.height*state.scale)+"px";
  }
  function fit(){if(!state.chapter)return;const r=$("viewport");state.scale=Math.max(.25,Math.min(1.4,(r.clientWidth-24)/state.width,(r.clientHeight-24)/state.height));updateScale();}
+ // Zoom around a viewport pixel, preserving the graph point beneath the cursor.
+ function zoomAt(nextScale,anchorX,anchorY){
+   const viewport=$("viewport"),oldScale=state.scale;
+   const scale=Math.min(2,Math.max(.25,nextScale));
+   if(!state.chapter||!Number.isFinite(scale)||scale===oldScale)return;
+   const graphX=(viewport.scrollLeft+anchorX)/oldScale;
+   const graphY=(viewport.scrollTop+anchorY)/oldScale;
+   state.scale=scale;
+   updateScale();
+   viewport.scrollLeft=graphX*scale-anchorX;
+   viewport.scrollTop=graphY*scale-anchorY;
+ }
  function detailHead(name,meta){const pane=$("details");pane.replaceChildren();pane.append(el("h2","",name),el("div","meta",meta));return pane;}
  function labeled(pane,label,content){pane.append(el("h3","",label),el("p","",content||"—"));}
  function editor(pane,value,commit){
@@ -250,7 +322,19 @@
      if(c.to && state.chapter.nodes[c.to])b.addEventListener("click",()=>selectNode(c.to));else b.disabled=true;
      pane.append(b);
    });
-   if(!choicesFor(node).length)pane.append(el("p","warning","No outgoing choice yet — story draft stops here."));
+   const itemTransitions=[];
+   for(const verb of ["show","use"])for(const [itemId,entry] of Object.entries(node[verb]||{})){
+     if(entry?.to && state.chapter.nodes[entry.to])itemTransitions.push({verb,itemId,entry});
+   }
+   if(itemTransitions.length){
+     pane.append(el("h3","","Item-triggered routes"));
+     itemTransitions.forEach(({verb,itemId,entry})=>{
+       const b=el("button","choice",verb.toUpperCase()+" "+titleOf(itemId));
+       b.append(el("span","minor","→ "+entry.to+(entry.if?" · IF "+JSON.stringify(entry.if):"")));
+       b.onclick=()=>selectNode(entry.to);pane.append(b);
+     });
+   }
+   if(!choicesFor(node).length&&!itemTransitions.length)pane.append(el("p","warning","No outgoing route yet — story draft stops here."));
    if(node.effects)labeled(pane,"On arrival",JSON.stringify(node.effects,null,2));
    const marked=choicesFor(node).filter(c=>c.effects||c.check||c.pass||c.fail);
    if(marked.length){pane.append(el("h3","","Choice effects / checks"));marked.forEach(c=>pane.append(el("pre","",c.id+"\n"+JSON.stringify({effects:c.effects,check:c.check,pass:c.pass,fail:c.fail},(key,val)=>val===undefined?undefined:val,2))));}
@@ -341,8 +425,16 @@
  $("showItems").onclick=showItems;
   $("showArtwork").onclick=showArtwork;
  $("fit").onclick=fit;
- $("zoomIn").onclick=()=>{state.scale=Math.min(2,state.scale*1.2);updateScale();};
- $("zoomOut").onclick=()=>{state.scale=Math.max(.25,state.scale/1.2);updateScale();};
+ $("zoomIn").onclick=()=>zoomAt(state.scale*1.2,$("viewport").clientWidth/2,$("viewport").clientHeight/2);
+ $("zoomOut").onclick=()=>zoomAt(state.scale/1.2,$("viewport").clientWidth/2,$("viewport").clientHeight/2);
+ // Allow wheel zoom anywhere over the diagram (including story nodes).
+ $("viewport").addEventListener("wheel",e=>{
+   if(!state.chapter||!Number.isFinite(e.deltaY)||e.deltaY===0)return;
+   e.preventDefault();
+   const viewport=$("viewport"),rect=viewport.getBoundingClientRect();
+   const delta=e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?viewport.clientHeight:1);
+   zoomAt(state.scale*Math.exp(-delta*.0015),e.clientX-rect.left,e.clientY-rect.top);
+ },{passive:false});
  let drag=null;
  $("viewport").addEventListener("pointerdown",e=>{if(e.target.closest(".node"))return;drag={x:e.clientX,y:e.clientY,left:$("viewport").scrollLeft,top:$("viewport").scrollTop};});
  window.addEventListener("pointermove",e=>{if(!drag)return;$("viewport").scrollLeft=drag.left-(e.clientX-drag.x);$("viewport").scrollTop=drag.top-(e.clientY-drag.y);});

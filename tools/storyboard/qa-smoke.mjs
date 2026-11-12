@@ -41,6 +41,7 @@ class Element {
   addEventListener(name,fn){this.listeners[name]=fn;}
   setAttribute(name,value){this.attributes[name]=value;}
   closest(){return null;}
+  getBoundingClientRect(){return {left:0,top:0,width:this.clientWidth,height:this.clientHeight};}
   remove(){}
   click(){this.onclick?.();this.listeners.click?.();}
 }
@@ -93,9 +94,46 @@ button('APPLAUSE TIMING CLICKER').click();
 assert.ok(button('APPLAUSE TIMING CLICKER — INVENTORY SLOT'),'item slot artwork link');
 assert.ok(button('APPLAUSE TIMING CLICKER — INSPECTION ART'),'item inspection artwork link');
 
+// SHOW links are real story edges: the original layout wrongly left this node orphaned.
+const graphNodes=document.getElementById('nodes').children;
+const findNode=id=>graphNodes.find(n=>n.children[0]?.textContent===id);
+const receptionOpen=findNode('reception_opening');
+const noticeReply=findNode('reception_notice_reply');
+assert.ok(receptionOpen&&noticeReply,'reception and notice nodes on graph');
+const openingX=parseFloat(receptionOpen.style.left);
+const noticeX=parseFloat(noticeReply.style.left);
+assert.equal(noticeX-openingX,340,'notice reply occupies next timeline column');
+const noticeGap=Math.abs(parseFloat(receptionOpen.style.top)-parseFloat(noticeReply.style.top));
+assert.ok(noticeGap<=520,'notice reply stays near its parent branch, vertical gap '+noticeGap);
+const edgeLabels=flatten(document.getElementById('edges')).filter(x=>x.tagName==='text').map(x=>x.textContent);
+assert.ok(edgeLabels.some(s=>String(s).includes('SHOW Termination Notice')),
+          'item-triggered route drawn and labeled on graph');
+receptionOpen.click();
+assert.ok(button('SHOW Termination Notice'),'item-triggered branch visible in node inspector');
+button('SHOW Termination Notice').click();
+assert.ok(flatten(pane()).some(x=>x.textContent==='Reception Notice Reply'),
+          'inspector item action navigates to corresponding node');
+
+// Mouse wheel zoom preserves the graph coordinate under the pointer.
+const viewport=document.getElementById('viewport'),stage=document.getElementById('stage');
+viewport.scrollLeft=500;viewport.scrollTop=210;
+const scale=()=>Number(stage.style.transform.replace("scale(","").replace(")",""));
+const before=scale(),anchor={x:320,y:160};
+const worldBefore={x:(viewport.scrollLeft+anchor.x)/before,y:(viewport.scrollTop+anchor.y)/before};
+let prevented=false;
+viewport.listeners.wheel({deltaY:-120,deltaMode:0,clientX:anchor.x,clientY:anchor.y,
+ preventDefault(){prevented=true;}});
+const after=scale();
+assert.ok(prevented,'wheel event prevents default scrolling');
+assert.ok(after>before,'wheel up zooms in');
+assert.ok(Math.abs((viewport.scrollLeft+anchor.x)/after-worldBefore.x)<1e-7,'wheel cursor x remains anchored');
+assert.ok(Math.abs((viewport.scrollTop+anchor.y)/after-worldBefore.y)<1e-7,'wheel cursor y remains anchored');
+viewport.listeners.wheel({deltaY:120,deltaMode:0,clientX:anchor.x,clientY:anchor.y,preventDefault(){}});
+assert.ok(Math.abs(scale()-before)<1e-10,'equal opposite wheel motion restores scale');
+
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,
  artRecords:Object.keys(artwork.scenes).length+Object.keys(artwork.portraits).length+
   Object.values(artwork.items).reduce((n,v)=>n+Object.keys(v).length,0),
- checked:['manifest','all scene references','portrait references','all item artwork','startup','artwork library','edit prompt','export artwork','item links']
+ checked:['manifest','all scene references','portrait references','all item artwork','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom']
 }));
