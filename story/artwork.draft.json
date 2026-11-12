@@ -1,6 +1,6 @@
 {
   "schema": "cyoa-storyboard-artwork-v1",
-  "direction": "The Acceptable Error: understated 1960s bureaucratic retro-futurism in the spirit of Brazil (film), but original. Industrial gray, slate, blue-gray, cream, muted teal and small restrained signal accents. Smooth flat pixel clusters, deliberate economical colors, clean silhouettes, occasional patched panels, screws and fasteners. NO steampunk brass, gears, leather-bound antiques, fantasy devices, heavy grime, decorative rivet overload, noisy dithering, gradient haze, anti-aliasing or text baked into the interface frame. Main-scene art authored at EXACTLY 314×206 logical pixels, nearest-neighbor presentation; portraits at EXACTLY 564×278, separately layered foreground/background when needed; detailed item inspector art at 565×451 where required. Maintain palette family across scene and portrait, but portrait should show a tight closer POV, never a blurred/upscaled version of the same scene. All artwork is draft-only unless record status is reused or approved.",
+  "direction": "The Acceptable Error: understated 1960s bureaucratic retro-futurism in the spirit of Brazil (film), but original. Industrial gray, slate, blue-gray, cream, muted teal and small restrained signal accents. Smooth flat pixel clusters, deliberate economical colors, clean silhouettes, occasional patched panels, screws and fasteners. NO steampunk brass, gears, leather-bound antiques, fantasy devices, heavy grime, decorative rivet overload, noisy dithering, gradient haze, anti-aliasing or text baked into the interface frame. LOCKED SOURCE DIMENSIONS: main scene backgrounds EXACTLY 314×206 logical pixels, displayed at 4× nearest-neighbor; NPC portraits EXACTLY 564×278 pixels, displayed at 1× with independently composited background and foreground layers when applicable; item inventory icons EXACTLY 96×96 pixels on a transparent canvas, displayed at 1× within the approved slot; item inspection illustrations EXACTLY 565×451 pixels, displayed at 1×. These are production dimensions, not suggestions. Never resize a low-resolution scene into a portrait or inspector illustration. Maintain palette family across scene and portrait, but portrait should show a tight closer POV, never a blurred/upscaled version of the same scene. All artwork is draft-only unless record status is reused or approved.",
   "statusValues": [
     "not-started",
     "prompted",
@@ -139,11 +139,11 @@
         "title": "TERMINATION NOTICE — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Thin pale pink triplicate dismissal paperwork, three layers, black bureaucratic rules, signature box and pencil-scrawled mark. It is office paper, not antique parchment, wax seal or fantasy dossier. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Thin pale pink triplicate dismissal paperwork, three layers, black bureaucratic rules, signature box and pencil-scrawled mark. It is office paper, not antique parchment, wax seal or fantasy dossier. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/termination_notice_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "TERMINATION NOTICE — INSPECTION ART",
@@ -153,7 +153,7 @@
         "prompt": "A crisp plain pink carbon-copy termination sheet with narrow rules and sparse bureaucratic print. Show pencil-signature and review-stamp variants as text-layer/variant planning; do not embed illegible decorative sentences. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/termination_notice_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "timing_clicker": {
@@ -161,11 +161,11 @@
         "title": "APPLAUSE TIMING CLICKER — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Handheld 1960s mechanical applause-timing clicker: practical gray Bakelite housing, short six-second dial and one press button, slightly worn from daily office work, intact, clearly a small timing device. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Handheld 1960s mechanical applause-timing clicker: practical gray Bakelite housing, short six-second dial and one press button, slightly worn from daily office work, intact, clearly a small timing device. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/applause_timing_clicker_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "APPLAUSE TIMING CLICKER — INSPECTION ART",
@@ -175,7 +175,7 @@
         "prompt": "High-detail inspection view of the same compact Bakelite clicker, with a readable six-second scale and modest physical wear. Make clear that it is functional, not a weapon or futuristic scanner. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/applause_timing_clicker_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "desk_plant": {
@@ -183,11 +183,11 @@
         "title": "SMALL DESK PLANT — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Small healthy-but-neglected green foliage in plain off-white plastic office pot, pencil water line, no personality or supernatural quality. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Small healthy-but-neglected green foliage in plain off-white plastic office pot, pencil water line, no personality or supernatural quality. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/small_desk_plant_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "SMALL DESK PLANT — INSPECTION ART",
@@ -197,7 +197,7 @@
         "prompt": "Close inspection of an ordinary small green desk plant in thin white plastic pot, unremarkable soil and tiny pencil mark at suggested water level. Human texture among institutional artifacts; no glow, eyes or magical foreshadowing. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/small_desk_plant_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "effects_box_full": {
@@ -205,11 +205,11 @@
         "title": "SEALED PERSONAL EFFECTS BOX — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Small taped shut corrugated cardboard box with a handwritten name on side, ordinary office packing and folded lid, visually full and unopened. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Small taped shut corrugated cardboard box with a handwritten name on side, ordinary office packing and folded lid, visually full and unopened. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/effects_box_full_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "SEALED PERSONAL EFFECTS BOX — INSPECTION ART",
@@ -219,7 +219,7 @@
         "prompt": "Close-up of the intact small personal-effects box: neat taped flaps, handwritten ownership note and slight cardboard wear. No items visible. Should pair exactly with empty box art in silhouette. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/effects_box_full_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "effects_box_empty": {
@@ -227,11 +227,11 @@
         "title": "OPENED / EMPTY EFFECTS BOX — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Same cardboard box as the sealed version, top flaps spread open, one strip of tape loose, visibly empty. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Same cardboard box as the sealed version, top flaps spread open, one strip of tape loose, visibly empty. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/effects_box_empty_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "OPENED / EMPTY EFFECTS BOX — INSPECTION ART",
@@ -241,7 +241,7 @@
         "prompt": "Close-up same exact cardboard box and angle as the full variant, now open with no belongings inside; loose tape on flap. Distinguishable from closed slot illustration without moving the box's identity. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/effects_box_empty_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "red_stapler": {
@@ -249,11 +249,11 @@
         "title": "RED SWANGLINE STAPLER — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Heavy bright red mid-century metal office stapler, solid elongated hinged body, silver SWANGLINE fictitious maker mark if legible, utilitarian not futuristic. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Heavy bright red mid-century metal office stapler, solid elongated hinged body, silver SWANGLINE fictitious maker mark if legible, utilitarian not futuristic. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/red_swangline_stapler_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "RED SWANGLINE STAPLER — INSPECTION ART",
@@ -263,7 +263,7 @@
         "prompt": "High-detail bright red painted metal desk stapler, chrome working parts, SWANGLINE maker name in small silver lettering on side. It is a grounded retro office stapler, no added gizmos, and its staple supply remains unspecified. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/red_swangline_stapler_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "rubber_band_ball": {
@@ -271,11 +271,11 @@
         "title": "RUBBER-BAND BALL — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Compact irregular sphere wound from many plain office elastic bands of varied faded colors, visibly layered and handmade, no hint of what is inside. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Compact irregular sphere wound from many plain office elastic bands of varied faded colors, visibly layered and handmade, no hint of what is inside. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/rubber_band_ball_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "RUBBER-BAND BALL — INSPECTION ART",
@@ -285,7 +285,7 @@
         "prompt": "High-detail rubber-band ball, hundreds of crosswise wound office bands in subdued colors, slight unevenness. An indistinct solid interior may be implied only by the weight/shape; do NOT reveal or invent its core object. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/rubber_band_ball_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "property_claim_ticket": {
@@ -293,11 +293,11 @@
         "title": "PROPERTY CLAIM TICKET — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Small rectangular perforated cream paper custody ticket with printed storage count and blank departure field, mundane municipal form. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Small rectangular perforated cream paper custody ticket with printed storage count and blank departure field, mundane municipal form. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/property_claim_ticket_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "PROPERTY CLAIM TICKET — INSPECTION ART",
@@ -307,7 +307,7 @@
         "prompt": "Close-up of clean cream claim slip, stark form layout, count either THREE or FOUR articles held and COLLECTION ON DEPARTURE, with departure-time field intentionally blank. Avoid cluttered made-up bureaucracy. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/property_claim_ticket_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "expo_examiner_badge": {
@@ -315,11 +315,11 @@
         "title": "TEMPORARY EXAMINER BADGE — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "prompted",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
-        "prompt": "Plain pale blue late-1960s convention credential with small clip, simple Expo mark, name field and Temporary Examiner classification. No luxury metal jewelry. Clean pixel icon, centered with transparent background, strong flat silhouette at real slot logical resolution, no shadows/glow/fringe or semi-transparent edge pixels.",
+        "dimensions": "96x96",
+        "prompt": "Plain pale blue late-1960s convention credential with small clip, simple Expo mark, name field and Temporary Examiner classification. No luxury metal jewelry. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": null,
         "suggestedFilename": "art/items/expo_examiner_badge_slot.png",
-        "notes": "Coordinate exact logical slot-canvas dimensions with M2 art/engine owner before rasterizing."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "TEMPORARY EXAMINER BADGE — INSPECTION ART",
@@ -329,7 +329,7 @@
         "prompt": "High-detail pale-blue laminated Examiner credential on modest metal clip, clean printed wording TEMPORARY EXAMINER / OFFICE OF UNVERIFIED CONDITIONS, no expiry indicated. Identity error looks official, not sinister. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": null,
         "suggestedFilename": "art/items/expo_examiner_badge_inspect.png",
-        "notes": "Do not render the inventory slot as a low-resolution enlarged version of this inspect illustration."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
     },
     "wc_key": {
@@ -337,7 +337,7 @@
         "title": "FACILITIES KEY — APPROVED M2 ART — INVENTORY SLOT",
         "kind": "item-slot",
         "status": "reused",
-        "dimensions": "inventory slot (final source dimensions per M2 contract)",
+        "dimensions": "96x96",
         "prompt": "REUSE ONLY. The existing facilities key inventory icon is approved. Do not redraw.",
         "assetPath": "art/items/bathroom_pass_slot.png",
         "suggestedFilename": null,
