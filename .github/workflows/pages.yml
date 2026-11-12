@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Check out public storyboard files
         uses: actions/checkout@v4
+      - name: Validate storyboard and artwork catalog
+        run: node tools/storyboard/qa-smoke.mjs
       - name: Build standalone public site
         run: |
           set -euo pipefail
