@@ -300,12 +300,15 @@
  
  function artworkAt(group,id,variant){
    const library=state.artwork?.[group];
-   return group==="items"?library?.[id]?.[variant]||null:library?.[id]||null;
+   return group==="items"?library?.[id]?.[variant]||null:group==="scenes"&&variant==="portraitBackground"?library?.[id]?.portraitBackground||null:library?.[id]||null;
  }
  function artKey(ref){return ref.group+"/"+ref.id+(ref.variant?"/"+ref.variant:"");}
  function artRefsForNode(node){
    const refs=[],scene=node.scene||state.chapter?.scene;
-   if(scene)refs.push({group:"scenes",id:scene});
+   if(scene){
+    refs.push({group:"scenes",id:scene});
+    if(node.speaker&&state.artwork?.scenes?.[scene]?.portraitBackground)refs.push({group:"scenes",id:scene,variant:"portraitBackground"});
+  }
    if(node.speaker)refs.push({group:"portraits",id:node.speaker+":"+(node.pose||"default")});
    if(node.focus)refs.push({group:"focus",id:node.focus});
    return refs;
@@ -352,14 +355,16 @@
      const next={...record,status:status.value};
      Object.entries(fields).forEach(([key,input])=>next[key]=input.value.trim()||(key==="prompt"||key==="notes"?"":null));
      if(ref.group==="items")state.artwork.items[ref.id][ref.variant]=next;
-     else state.artwork[ref.group][ref.id]=next;
+     else if(ref.group==="scenes"&&ref.variant==="portraitBackground")state.artwork.scenes[ref.id].portraitBackground=next;
+      else state.artwork[ref.group][ref.id]=next;
      selectArt(ref);setStatus("Artwork edits are in memory. Export artwork JSON to keep them.");
    });
    section.append(apply);pane.append(section);
    editor(pane,record,obj=>{
      if(!obj||typeof obj!=="object"||Array.isArray(obj))throw Error("Artwork record must be an object");
      if(ref.group==="items")state.artwork.items[ref.id][ref.variant]=obj;
-     else state.artwork[ref.group][ref.id]=obj;
+     else if(ref.group==="scenes"&&ref.variant==="portraitBackground")state.artwork.scenes[ref.id].portraitBackground=obj;
+      else state.artwork[ref.group][ref.id]=obj;
      selectArt(ref);
    });
  }
@@ -373,6 +378,16 @@
    labeled(pane,"Actual asset",record.assetPath||"Not generated / not integrated");
    if(record.suggestedFilename)labeled(pane,"Proposed filename",record.suggestedFilename);
    if(record.layers)labeled(pane,"Separate art layers",JSON.stringify(record.layers,null,2));
+   if(record.portraitBackgroundScene)labeled(pane,"Paired portrait background scene",record.portraitBackgroundScene);
+   if(record.foregroundFormat)labeled(pane,"Foreground format",record.foregroundFormat);
+   if(ref.group==="scenes"&&ref.variant!=="portraitBackground"&&record.portraitBackground){
+     const pair=el("button","art-brief","Open paired portrait background (564×278)");
+     pair.onclick=()=>selectArt({group:"scenes",id:ref.id,variant:"portraitBackground"});pane.append(pair);
+   }
+   if(ref.group==="scenes"&&ref.variant==="portraitBackground"){
+     const pair=el("button","art-brief","Open main scene (314×206)");
+     pair.onclick=()=>selectArt({group:"scenes",id:ref.id});pane.append(pair);
+   }
    if(record.notes)labeled(pane,"Production notes",record.notes);
    const usage=artUsage(ref);
    pane.append(el("h3","","Used by "+usage.length+" record(s)"));
@@ -392,7 +407,10 @@
    if(!a){pane.append(el("p","muted","Import artwork JSON or configure artwork in the manifest."));return;}
    const all=[];
    for(const group of ["scenes","portraits","focus"]){
-     Object.entries(a[group]||{}).forEach(([id,record])=>all.push({group,id,record}));
+     Object.entries(a[group]||{}).forEach(([id,record])=>{
+       all.push({group,id,record});
+       if(group==="scenes"&&record.portraitBackground)all.push({group,id,variant:"portraitBackground",record:record.portraitBackground});
+     });
    }
    Object.entries(a.items||{}).forEach(([id,variants])=>{
      Object.entries(variants).forEach(([variant,record])=>all.push({group:"items",id,variant,record}));
@@ -406,7 +424,7 @@
    apply.onclick=()=>{a.direction=area.value;setStatus("Direction edited in memory. Export artwork JSON to save.");};shared.append(apply);pane.append(shared);
    for(const group of ["scenes","portraits","focus","items"]){
      const records=all.filter(x=>x.group===group);if(!records.length)continue;
-     pane.append(el("h3","",({scenes:"Shared scenes",portraits:"Shared portraits",focus:"Focus close-ups",items:"Item slot & inspection art"})[group]));
+     pane.append(el("h3","",({scenes:"Shared scenes & portrait backgrounds",portraits:"Shared portraits",focus:"Focus close-ups",items:"Item slot & inspection art"})[group]));
      records.forEach(ref=>{
        const b=el("button","art-brief",ref.record.title||artKey(ref));
        b.append(el("span","art-meta",artKey(ref)+" · "+(ref.record.status||"not-started")));

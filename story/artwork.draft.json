@@ -1,6 +1,6 @@
 {
   "schema": "cyoa-storyboard-artwork-v1",
-  "direction": "The Acceptable Error: understated 1960s bureaucratic retro-futurism in the spirit of Brazil (film), but original. Industrial gray, slate, blue-gray, cream, muted teal and small restrained signal accents. Smooth flat pixel clusters, deliberate economical colors, clean silhouettes, occasional patched panels, screws and fasteners. NO steampunk brass, gears, leather-bound antiques, fantasy devices, heavy grime, decorative rivet overload, noisy dithering, gradient haze, anti-aliasing or text baked into the interface frame. LOCKED SOURCE DIMENSIONS: main scene backgrounds EXACTLY 314×206 logical pixels, displayed at 4× nearest-neighbor; NPC portraits EXACTLY 564×278 pixels, displayed at 1× with independently composited background and foreground layers when applicable; item inventory icons EXACTLY 96×96 pixels on a transparent canvas, displayed at 1× within the approved slot; item inspection illustrations EXACTLY 565×451 pixels, displayed at 1×. These are production dimensions, not suggestions. Never resize a low-resolution scene into a portrait or inspector illustration. Maintain palette family across scene and portrait, but portrait should show a tight closer POV, never a blurred/upscaled version of the same scene. All artwork is draft-only unless record status is reused or approved.",
+  "direction": "The Acceptable Error: understated 1960s bureaucratic retro-futurism in the spirit of Brazil (film), but original. Industrial gray, slate, blue-gray, cream, muted teal and small restrained signal accents. Smooth flat pixel clusters, deliberate economical colors, clean silhouettes, occasional patched panels, screws and fasteners. NO steampunk brass, gears, leather-bound antiques, fantasy devices, heavy grime, decorative rivet overload, noisy dithering, gradient haze, anti-aliasing or text baked into the interface frame. LOCKED SOURCE DIMENSIONS: main scene backgrounds EXACTLY 314×206 logical pixels, displayed at 4× nearest-neighbor; NPC portraits EXACTLY 564×278 pixels, displayed at 1× with independently composited background and foreground layers when applicable; item inventory icons EXACTLY 96×96 pixels on a transparent canvas, displayed at 1× within the approved slot; item inspection illustrations EXACTLY 565×451 pixels, displayed at 1×. These are production dimensions, not suggestions. Never resize a low-resolution scene into a portrait or inspector illustration. Scene-to-portrait environment pairing: where an NPC conversation occurs, author a separate OPAQUE portrait background at exactly 564×278 that depicts the same physical location as its 314×206 main scene, but with a tighter, more detailed and perspective-consistent camera view. Do not resize, crop, blur, or upscale the main scene to produce this background. Each NPC pose is a distinct TRANSPARENT RGBA PNG foreground, exactly 564×278, with fully transparent pixels outside the sprite (no painted environment and no baked-in background). Independently layer the foreground over the matching opaque portrait background; share that background across every pose at the location. Main scene and paired portrait background should maintain coherent architecture, furniture, lighting and palette, without reproducing identical framing. All artwork is draft-only unless record status is reused or approved.",
   "statusValues": [
     "not-started",
     "prompted",
@@ -28,7 +28,17 @@
       "prompt": "A quiet fluorescent workplace corridor with muted gray-blue wall panels, straight geometric lines, an employee restroom door and a small badge reader farther along. The corridor is proportioned for a small round floating messenger drone to hover in the foreground during dialogue. Company identifiers remain generic. No fantasy machinery or steam pipes. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": null,
       "suggestedFilename": "art/scenes/workplace/corridor.png",
-      "notes": "Concept draft; target filename is proposed, not an existing asset."
+      "notes": "Concept draft; target filename is proposed, not an existing asset.",
+      "portraitBackground": {
+        "title": "EMPLOYEE CORRIDOR — DRONE PORTRAIT BACKGROUND",
+        "kind": "portrait-background",
+        "status": "prompted",
+        "dimensions": "564x278",
+        "prompt": "Create an entirely separate OPAQUE portrait-background image of the SAME employee corridor depicted in the companion main-scene artwork. The camera is tighter and more detailed, aligned to a conversational close-up of the hovering termination drone in the foreground. Retain recognizable corridor geometry: pale institutional blue-gray wall panels, fluorescent light, restroom/badge-reader context when visible and mid-century municipal-industrial materials. Keep the center/right areas visually quiet enough behind the drone; preserve the same design, lighting and palette as the 314×206 main scene. Render actual background scenery across the full 564×278 canvas; NO drone, NO NPC, NO portrait sprite, NO transparency, NO UI framing. This must be newly authored 564×278 art, not a resized, cropped or softened main-scene image.",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/termination_drone/corridor_background.png",
+        "notes": "Paired deliverable with workplace/corridor main scene. Generate them together to preserve visual continuity. Reused across termination_drone:slot_closed and termination_drone:paper_extended."
+      }
     },
     "workplace/exit": {
       "title": "PERSONAL EFFECTS EXIT",
@@ -78,7 +88,17 @@
       "prompt": "Reuse the owner-approved reception main scene, exactly as integrated at M2. Do not regenerate, restyle, widen perspective or add new scenery. It is the visually authoritative asset for the rewritten reception story.",
       "assetPath": "art/scenes/conference_hall/reception/reception_scene.png",
       "suggestedFilename": null,
-      "notes": "Owner-approved existing reception art. Keep intact."
+      "notes": "Owner-approved existing reception art. Keep intact.",
+      "portraitBackground": {
+        "title": "RECEPTION DESK — APPROVED PORTRAIT BACKGROUND",
+        "kind": "portrait-background",
+        "status": "reused",
+        "dimensions": "564x278",
+        "prompt": "REUSE ONLY. Owner-approved detailed reception desk POV, separate and OPAQUE, paired to the approved 314×206 reception main scene. Do not regenerate, alter perspective, widen framing or modify existing pixels.",
+        "assetPath": "art/portraits/receptionist/reception_background.png",
+        "suggestedFilename": null,
+        "notes": "Locked approved M2 layer. Existing receptionist_idle.png foreground remains a separate 564×278 transparent PNG. Never regenerate this background."
+      }
     },
     "exposition/facilities_corridor": {
       "title": "AMBIGUOUS FACILITIES HALL",
@@ -96,21 +116,25 @@
       "title": "TERMINATION DRONE — CLOSED SLOT",
       "status": "prompted",
       "kind": "portrait",
-      "prompt": "A close, frontal-to-three-quarter portrait of a small floating corporate notification drone: compact round mid-century plastic and powder-coated metal shell, single simple speaker grille/lens, muted gray with restrained blue accent, polite rather than threatening, no arms or limbs. Lower paper slot fully CLOSED. Art is a complete static foreground pose, not a frame of a printing animation. Tight workplace-corridor perspective, avoid elaborate gearwork. Gentle hover can be separate runtime motion. Keep palette matched to main scene but more detailed and clean at 564×278.",
+      "prompt": "A close, frontal-to-three-quarter portrait of a small floating corporate notification drone: compact round mid-century plastic and powder-coated metal shell, single simple speaker grille/lens, muted gray with restrained blue accent, polite rather than threatening, no arms or limbs. Lower paper slot fully CLOSED. Art is a complete static foreground pose, not a frame of a printing animation. Tight workplace-corridor perspective, avoid elaborate gearwork. Gentle hover can be separate runtime motion. Keep palette matched to main scene but more detailed and clean at 564×278. OUTPUT CONTRACT: 564×278 transparent RGBA PNG of the drone FOREGROUND ONLY. Outside the drone and attached paper/pencil, alpha is zero; do not draw or merge the corridor background. The matching 564×278 opaque corridor background is a separate paired scene asset.",
       "assetPath": null,
       "suggestedFilename": "art/portraits/termination_drone/drone_slot_closed.png",
       "dimensions": "564x278",
-      "notes": "Whole pose swaps via quick fade to paper_extended; keep drone body/register exactly aligned between poses. Prefer separate transparent foreground over background."
+      "notes": "Whole pose swaps via quick fade to paper_extended; keep drone body/register exactly aligned between poses. Prefer separate transparent foreground over background. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.",
+      "portraitBackgroundScene": "workplace/corridor",
+      "foregroundFormat": "transparent-rgba-png"
     },
     "termination_drone:paper_extended": {
       "title": "TERMINATION DRONE — PAPER EXTENDED",
       "status": "prompted",
       "kind": "portrait",
-      "prompt": "Same precise camera, shell, scale and pixel alignment as the slot_closed termination drone portrait. A narrow pale pink triplicate termination form protrudes from a simple slot, with a tiny chained pencil hanging beside it. Everything else remains identical: speaker/lens, compact clean 1960s industrial shell, subdued gray-blue palette, no arms and no printer-feed animation frames. Create one complete static pose at 564×278 for a quick crossfade.",
+      "prompt": "Same precise camera, shell, scale and pixel alignment as the slot_closed termination drone portrait. A narrow pale pink triplicate termination form protrudes from a simple slot, with a tiny chained pencil hanging beside it. Everything else remains identical: speaker/lens, compact clean 1960s industrial shell, subdued gray-blue palette, no arms and no printer-feed animation frames. Create one complete static pose at 564×278 for a quick crossfade. OUTPUT CONTRACT: 564×278 transparent RGBA PNG of the drone FOREGROUND ONLY. Outside the drone and attached paper/pencil, alpha is zero; do not draw or merge the corridor background. The matching 564×278 opaque corridor background is a separate paired scene asset.",
       "assetPath": null,
       "suggestedFilename": "art/portraits/termination_drone/drone_paper_extended.png",
       "dimensions": "564x278",
-      "notes": "Must match base sprite alignment and underlying portrait background. Document text need not be readable at portrait scale."
+      "notes": "Must match base sprite alignment and underlying portrait background. Document text need not be readable at portrait scale. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.",
+      "portraitBackgroundScene": "workplace/corridor",
+      "foregroundFormat": "transparent-rgba-png"
     },
     "receptionist:default": {
       "title": "RECEPTIONIST — APPROVED M2 LAYERS",
@@ -120,7 +144,7 @@
       "assetPath": null,
       "suggestedFilename": null,
       "dimensions": "564x278",
-      "notes": "Already integrated and approved in production. Do not widen to an alternate lobby or treat the portrait as an enlarged main scene.",
+      "notes": "Already integrated and approved in production. Do not widen to an alternate lobby or treat the portrait as an enlarged main scene. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"exposition/reception\"].portraitBackground.",
       "layers": [
         {
           "role": "background",
@@ -130,7 +154,9 @@
           "role": "foreground",
           "path": "art/portraits/receptionist/receptionist_idle.png"
         }
-      ]
+      ],
+      "portraitBackgroundScene": "exposition/reception",
+      "foregroundFormat": "transparent-rgba-png"
     }
   },
   "items": {

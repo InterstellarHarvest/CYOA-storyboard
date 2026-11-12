@@ -18,6 +18,13 @@ const artwork=JSON.parse(fs.readFileSync(path.join(root,'story/artwork.draft.jso
 const chapter=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.chapters[0].file),'utf8'));
 const items=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.items),'utf8'));
 assert.equal(manifest.artwork,'artwork.draft.json');
+assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.dimensions,'564x278','corridor paired portrait background dimensions');
+assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.status,'prompted','corridor paired portrait background pending');
+assert.equal(artwork.scenes['exposition/reception'].portraitBackground.status,'reused','approved reception background reuse');
+for(const portrait of Object.values(artwork.portraits)){
+  assert.equal(portrait.foregroundFormat,'transparent-rgba-png','all NPC foregrounds are transparent');
+  assert.ok(artwork.scenes[portrait.portraitBackgroundScene]?.portraitBackground,'portrait's matching scene background exists');
+}
 assert.equal(manifest.layout,'storyboard-layout.json');
 const layoutSource=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.layout),'utf8'));
 assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
@@ -96,6 +103,20 @@ assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('QA EDITED PROM
           'edit was applied and rendered in inspector');
 assert.match(document.getElementById('status').textContent,/in memory/);
 document.getElementById('exportArtwork').onclick();
+// Scene and paired 564×278 background are distinct editable records.
+document.getElementById('showArtwork').onclick();
+assert.ok(button('EMPLOYEE CORRIDOR — DRONE PORTRAIT BACKGROUND'),'paired background is listed in the scene catalog');
+button('EMPLOYEE CORRIDOR — DRONE PORTRAIT BACKGROUND').click();
+assert.ok(button('Open main scene'),'paired background links to its 314×206 scene');
+const pairedEdit=flatten(pane()).find(x=>x.tagName==='textarea'&&String(x.value).includes('SAME employee corridor'));
+assert.ok(pairedEdit,'nested portrait background has editable text prompt');
+pairedEdit.value='QA PAIRED BACKGROUND PROMPT';
+button('Apply artwork changes').click();
+assert.ok(flatten(pane()).some(x=>x.textContent==='QA PAIRED BACKGROUND PROMPT'),'nested prompt edit shown');
+assert.ok(button('Open main scene'),'pair still navigable after edit');
+button('Open main scene').click();
+assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('quiet fluorescent workplace corridor')),'main scene prompt preserved when editing paired background');
+assert.ok(button('Open paired portrait background'),'main scene links back to detailed portrait background');
 
 document.getElementById('showItems').onclick();
 assert.ok(button('APPLAUSE TIMING CLICKER'),'items still selectable');
@@ -187,5 +208,5 @@ console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,
  artRecords:Object.keys(artwork.scenes).length+Object.keys(artwork.portraits).length+
   Object.values(artwork.items).reduce((n,v)=>n+Object.keys(v).length,0),
- checked:['manifest','all scene references','portrait references','all item artwork','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout']
+ checked:['manifest','all scene references','portrait references','all item artwork','paired scene backgrounds','editable portrait background','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout']
 }));
