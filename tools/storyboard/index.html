@@ -6,7 +6,7 @@
 <title>The Acceptable Error — Storyboard</title>
 <style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#e2e8ee;background:#151b22;font-size:14px}
-*{box-sizing:border-box}body{margin:0}button,select{background:#27333e;border:1px solid #465563;color:inherit;padding:7px 10px;border-radius:5px;font:inherit;cursor:pointer}button:hover,select:hover{background:#334451}button:disabled{opacity:.5;cursor:default}input{font:inherit}header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 15px;border-bottom:1px solid #37424d}header h1{margin:0 18px 0 0;font-size:16px}#status{color:#a8b8c4;margin-left:auto;font-size:12px}#app{display:grid;grid-template-columns:minmax(350px,1fr) 385px;height:calc(100vh - 70px);min-height:460px}.work{display:flex;flex-direction:column;min-width:0;border-right:1px solid #394551}.work-tools{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid #34404b;color:#a7b5c0}.work-tools strong{color:#e2e8ee}#viewport{flex:1;overflow:auto;background-image:radial-gradient(#2d3a45 1px,transparent 1px);background-size:18px 18px;cursor:grab}#viewport:active{cursor:grabbing}#space{position:relative}#stage{position:relative;transform-origin:top left}#edges{position:absolute;inset:0;overflow:visible;pointer-events:none}.node{position:absolute;min-height:86px;width:220px;padding:11px 12px;border:1px solid #5a6976;border-radius:7px;background:#26323e;cursor:pointer;box-shadow:0 3px 9px #0005}.node:hover{border-color:#b4ccd8;background:#34424e}.node.selected{border:2px solid #80bece;padding:10px 11px}.node .id{font-size:10px;color:#9db0be;margin-bottom:5px}.node .name{font-size:13px;font-weight:650;line-height:1.3}.node .sub{font-size:11px;color:#a3b3c1;margin-top:5px}.node .end{color:#dfb88c}aside{overflow:auto;padding:15px 17px}aside h2{font-size:17px;margin:0 0 5px}aside h3{font-size:13px;color:#b4c7d4;margin:18px 0 6px}aside p{line-height:1.5;white-space:pre-wrap;margin:6px 0 12px}aside .meta{font-size:11px;color:#a1afbb}.choice{display:block;text-align:left;width:100%;margin:7px 0;background:#25313c;padding:10px}.choice .minor{display:block;color:#a9b7c2;font-size:11px;margin-top:4px}aside pre{font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#202a34;padding:11px;overflow:auto;white-space:pre-wrap;word-break:break-word;border-radius:5px}details{margin-top:16px}summary{cursor:pointer;font-weight:600;color:#bbced9}textarea{background:#101820;color:#e5eef6;border:1px solid #526470;border-radius:5px;width:100%;min-height:290px;resize:vertical;padding:10px;font:12px/1.5 ui-monospace,monospace;margin-top:10px}.muted{color:#a3b1bd}.item-button{display:block;width:100%;text-align:left;margin-top:8px}.warning{color:#e6bd8e}#fileChapter,#fileItems{display:none}@media(max-width:900px){#app{grid-template-columns:1fr;height:auto}.work{height:520px;border-right:0}aside{min-height:400px;border-top:1px solid #465563}}
+*{box-sizing:border-box}body{margin:0}button,select{background:#27333e;border:1px solid #465563;color:inherit;padding:7px 10px;border-radius:5px;font:inherit;cursor:pointer}button:hover,select:hover{background:#334451}button:disabled{opacity:.5;cursor:default}input{font:inherit}header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 15px;border-bottom:1px solid #37424d}header h1{margin:0 18px 0 0;font-size:16px}#status{color:#a8b8c4;margin-left:auto;font-size:12px}#app{display:grid;grid-template-columns:minmax(350px,1fr) 385px;height:calc(100vh - 70px);min-height:460px}.work{display:flex;flex-direction:column;min-width:0;border-right:1px solid #394551}.work-tools{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid #34404b;color:#a7b5c0}.work-tools strong{color:#e2e8ee}#viewport{flex:1;overflow:auto;background-image:radial-gradient(#2d3a45 1px,transparent 1px);background-size:18px 18px;cursor:grab}#viewport:active{cursor:grabbing}#space{position:relative}#stage{position:relative;transform-origin:top left}#edges{position:absolute;inset:0;overflow:visible;pointer-events:none}.node{position:absolute;min-height:86px;width:220px;padding:11px 12px;border:1px solid #5a6976;border-radius:7px;background:#26323e;cursor:pointer;box-shadow:0 3px 9px #0005}.node:hover{border-color:#b4ccd8;background:#34424e}.node.selected{border:2px solid #80bece;padding:10px 11px}.node .id{font-size:10px;color:#9db0be;margin-bottom:5px}.node .name{font-size:13px;font-weight:650;line-height:1.3}.node .sub{font-size:11px;color:#a3b3c1;margin-top:5px}.node .end{color:#dfb88c}aside{overflow:auto;padding:15px 17px}aside h2{font-size:17px;margin:0 0 5px}aside h3{font-size:13px;color:#b4c7d4;margin:18px 0 6px}aside p{line-height:1.5;white-space:pre-wrap;margin:6px 0 12px}aside .meta{font-size:11px;color:#a1afbb}.choice{display:block;text-align:left;width:100%;margin:7px 0;background:#25313c;padding:10px}.choice .minor{display:block;color:#a9b7c2;font-size:11px;margin-top:4px}aside pre{font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#202a34;padding:11px;overflow:auto;white-space:pre-wrap;word-break:break-word;border-radius:5px}details{margin-top:16px}summary{cursor:pointer;font-weight:600;color:#bbced9}textarea{background:#101820;color:#e5eef6;border:1px solid #526470;border-radius:5px;width:100%;min-height:290px;resize:vertical;padding:10px;font:12px/1.5 ui-monospace,monospace;margin-top:10px}.muted{color:#a3b1bd}.item-button{display:block;width:100%;text-align:left;margin-top:8px}.warning{color:#e6bd8e}#fileChapter,#fileItems,#fileArtwork{display:none}.art-brief{width:100%;text-align:left;margin:6px 0;padding:10px 11px;background:#24323b;border-left:3px solid #617e8a}.art-brief:hover{background:#324451}.art-meta{display:block;color:#a8b9c4;font-size:11px;margin-top:4px}.art-edit label{display:block;color:#a9bec9;font-size:11px;margin-top:13px}.art-edit input,.art-edit select{display:block;width:100%;margin-top:4px}.art-edit textarea{min-height:135px;margin-top:4px}.art-edit textarea.prompt{min-height:240px}.art-edit button{margin-top:10px}.preview{max-width:100%;max-height:230px;image-rendering:pixelated;border:1px solid #516271;margin-top:8px}@media(max-width:900px){#app{grid-template-columns:1fr;height:auto}.work{height:520px;border-right:0}aside{min-height:400px;border-top:1px solid #465563}}
 </style>
 </head>
 <body>
@@ -15,13 +15,15 @@
 <select id="chapterSelect" title="Choose a chapter from external manifest"><option value="">Load a chapter</option></select>
 <button id="openChapter">Import chapter JSON</button><input id="fileChapter" type="file" accept=".json,application/json">
 <button id="openItems">Import items JSON</button><input id="fileItems" type="file" accept=".json,application/json">
+  <button id="openArtwork">Import artwork JSON</button><input id="fileArtwork" type="file" accept=".json,application/json">
 <button id="exportChapter" disabled>Export chapter</button>
 <button id="exportItems" disabled>Export items</button>
+  <button id="exportArtwork" disabled>Export artwork</button>
 <span id="status">Starting…</span>
 </header>
 <div id="app">
  <section class="work">
-  <div class="work-tools"><strong id="chapterTitle">Chapter tree</strong><span><button id="zoomOut" title="Zoom out">−</button> <button id="fit" title="Fit the board">Fit</button> <button id="zoomIn" title="Zoom in">+</button> <button id="showItems">Items</button></span></div>
+  <div class="work-tools"><strong id="chapterTitle">Chapter tree</strong><span><button id="zoomOut" title="Zoom out">−</button> <button id="fit" title="Fit the board">Fit</button> <button id="zoomIn" title="Zoom in">+</button> <button id="showItems">Items</button> <button id="showArtwork">Artwork</button></span></div>
   <div id="viewport"><div id="space"><div id="stage"><svg id="edges" aria-hidden="true"></svg><div id="nodes"></div></div></div></div>
  </section>
  <aside id="details"><h2>Choose a story node</h2><p class="muted">Select a node from the chapter tree. Hover for a summary. Click for its full text, choices, effects, and referenced artwork.</p><p class="muted">The story is kept in external JSON files; this page contains no chapter content.</p></aside>
@@ -30,7 +32,7 @@
 (() => {
  "use strict";
  const $ = id => document.getElementById(id);
- const state = { chapter:null, items:{}, manifest:null, manifestURL:null, sourceName:"chapter.json", selected:null, scale:1, width:0, height:0 };
+ const state = { chapter:null, items:{}, artwork:null, manifest:null, manifestURL:null, sourceName:"chapter.json", artworkName:"artwork.draft.json", selected:null, scale:1, width:0, height:0 };
  const setStatus = message => { $("status").textContent = message; };
  const el = (tag, className, text) => { const n=document.createElement(tag); if(className)n.className=className;if(text!==undefined)n.textContent=text;return n; };
  const titleOf = (id) => id.replaceAll("_"," ").replace(/\b\w/g, m=>m.toUpperCase());
@@ -114,6 +116,123 @@
    const save=el("button","","Apply JSON changes");save.addEventListener("click",()=>{try{const obj=JSON.parse(area.value);commit(obj);setStatus("Changes are in memory. Export JSON to save.");}catch(error){setStatus("Invalid JSON: "+error.message);}});section.append(save);
    pane.append(section);
  }
+ 
+ function artworkAt(group,id,variant){
+   const library=state.artwork?.[group];
+   return group==="items"?library?.[id]?.[variant]||null:library?.[id]||null;
+ }
+ function artKey(ref){return ref.group+"/"+ref.id+(ref.variant?"/"+ref.variant:"");}
+ function artRefsForNode(node){
+   const refs=[],scene=node.scene||state.chapter?.scene;
+   if(scene)refs.push({group:"scenes",id:scene});
+   if(node.speaker)refs.push({group:"portraits",id:node.speaker+":"+(node.pose||"default")});
+   if(node.focus)refs.push({group:"focus",id:node.focus});
+   return refs;
+ }
+ function artRefsForItem(id){return [{group:"items",id,variant:"slot"},{group:"items",id,variant:"inspect"}];}
+ function artworkLinks(pane,refs){
+   if(!refs.length)return;
+   pane.append(el("h3","","Artwork references"));
+   refs.forEach(ref=>{
+     const record=artworkAt(ref.group,ref.id,ref.variant);
+     const b=el("button","art-brief",record?.title||artKey(ref));
+     b.append(el("span","art-meta",artKey(ref)+" · "+(record?.status||"NOT DEFINED")+" · "+(record?.assetPath||record?.suggestedFilename||"no filename")));
+     if(record)b.addEventListener("click",()=>selectArt(ref));else b.disabled=true;
+     pane.append(b);
+   });
+   if(!state.artwork)pane.append(el("p","warning","Import artwork JSON to view and edit prompts."));
+ }
+ function artUsage(ref){
+   if(ref.group==="items")return [{id:ref.id,kind:"item"}];
+   const found=[];
+   Object.entries(state.chapter?.nodes||{}).forEach(([id,node])=>{
+     if(artRefsForNode(node).some(r=>artKey(r)===artKey(ref)))found.push({id,kind:"node"});
+   });
+   return found;
+ }
+ function artEditor(pane,ref,record){
+   const section=el("section","art-edit"),fields={};
+   function field(label,key,multiline){
+     const wrap=el("label","",label),input=el(multiline?"textarea":"input",multiline?"prompt":"");
+     input.value=record[key]||"";wrap.append(input);section.append(wrap);fields[key]=input;
+   }
+   const statusLabel=el("label","","Production status"),status=el("select");
+   (state.artwork.statusValues||["not-started","prompted","generated","approved","integrated","reused"]).forEach(value=>{
+     const option=el("option","",value);option.value=value;status.append(option);
+   });
+   status.value=record.status||"not-started";statusLabel.append(status);section.append(statusLabel);
+   field("Generation prompt","prompt",true);
+   field("Actual asset filename (blank until created)","assetPath",false);
+   field("Proposed filename","suggestedFilename",false);
+   field("Production notes","notes",true);
+   const apply=el("button","","Apply artwork changes");
+   apply.addEventListener("click",()=>{
+     const next={...record,status:status.value};
+     Object.entries(fields).forEach(([key,input])=>next[key]=input.value.trim()||(key==="prompt"||key==="notes"?"":null));
+     if(ref.group==="items")state.artwork.items[ref.id][ref.variant]=next;
+     else state.artwork[ref.group][ref.id]=next;
+     selectArt(ref);setStatus("Artwork edits are in memory. Export artwork JSON to keep them.");
+   });
+   section.append(apply);pane.append(section);
+   editor(pane,record,obj=>{
+     if(!obj||typeof obj!=="object"||Array.isArray(obj))throw Error("Artwork record must be an object");
+     if(ref.group==="items")state.artwork.items[ref.id][ref.variant]=obj;
+     else state.artwork[ref.group][ref.id]=obj;
+     selectArt(ref);
+   });
+ }
+ function selectArt(ref){
+   const record=artworkAt(ref.group,ref.id,ref.variant);if(!record)return;
+   state.selected={type:"art",...ref};renderGraph();
+   const pane=detailHead(record.title||artKey(ref),artKey(ref)+" · "+(record.kind||ref.group)+" · "+(record.dimensions||"dimensions TBD"));
+   labeled(pane,"Production status",record.status||"not-started");
+   labeled(pane,"Generation prompt",record.prompt||"Not written.");
+   if(state.artwork?.direction)labeled(pane,"Shared art direction (applies to new prompts)",state.artwork.direction);
+   labeled(pane,"Actual asset",record.assetPath||"Not generated / not integrated");
+   if(record.suggestedFilename)labeled(pane,"Proposed filename",record.suggestedFilename);
+   if(record.layers)labeled(pane,"Separate art layers",JSON.stringify(record.layers,null,2));
+   if(record.notes)labeled(pane,"Production notes",record.notes);
+   const usage=artUsage(ref);
+   pane.append(el("h3","","Used by "+usage.length+" record(s)"));
+   usage.forEach(used=>{
+     const b=el("button","item-button",used.id);
+     b.onclick=()=>used.kind==="item"?selectItem(used.id):selectNode(used.id);pane.append(b);
+   });
+   if(record.previewUrl){
+     const img=el("img","preview");img.src=record.previewUrl;img.alt=record.title||artKey(ref);pane.append(img);
+   }
+   artEditor(pane,ref,record);
+   const back=el("button","","All artwork");back.onclick=showArtwork;pane.append(back);
+ }
+ function showArtwork(){
+   state.selected={type:"art-list"};renderGraph();
+   const a=state.artwork,pane=detailHead("Artwork & Production Prompts",a?"Shared production definitions · "+a.schema:"No art catalog loaded");
+   if(!a){pane.append(el("p","muted","Import artwork JSON or configure artwork in the manifest."));return;}
+   const all=[];
+   for(const group of ["scenes","portraits","focus"]){
+     Object.entries(a[group]||{}).forEach(([id,record])=>all.push({group,id,record}));
+   }
+   Object.entries(a.items||{}).forEach(([id,variants])=>{
+     Object.entries(variants).forEach(([variant,record])=>all.push({group:"items",id,variant,record}));
+   });
+   const counts={};all.forEach(x=>{const s=x.record.status||"not-started";counts[s]=(counts[s]||0)+1;});
+   labeled(pane,"Production overview",all.length+" shared art records · "+Object.entries(counts).map(([s,n])=>n+" "+s).join(" · "));
+   labeled(pane,"Global art direction",a.direction||"No global direction recorded.");
+   const shared=el("details");shared.append(el("summary","","Edit shared art direction"));
+   const area=el("textarea");area.value=a.direction||"";shared.append(area);
+   const apply=el("button","","Apply shared direction");
+   apply.onclick=()=>{a.direction=area.value;setStatus("Direction edited in memory. Export artwork JSON to save.");};shared.append(apply);pane.append(shared);
+   for(const group of ["scenes","portraits","focus","items"]){
+     const records=all.filter(x=>x.group===group);if(!records.length)continue;
+     pane.append(el("h3","",({scenes:"Shared scenes",portraits:"Shared portraits",focus:"Focus close-ups",items:"Item slot & inspection art"})[group]));
+     records.forEach(ref=>{
+       const b=el("button","art-brief",ref.record.title||artKey(ref));
+       b.append(el("span","art-meta",artKey(ref)+" · "+(ref.record.status||"not-started")));
+       b.onclick=()=>selectArt(ref);pane.append(b);
+     });
+   }
+ }
+
  function selectNode(id){
    const node=state.chapter?.nodes[id];if(!node)return;
    state.selected={type:"node",id};renderGraph();
@@ -121,6 +240,7 @@
    if(node.speaker||node.pose)pane.append(el("p","meta",["Speaker: "+(node.speaker||"—"),"Pose: "+(node.pose||"—")].join(" · ")));
    if(node.objective)labeled(pane,"Objective",textOf(node.objective));
    labeled(pane,"Actual script",textOf(node.text));
+    artworkLinks(pane,artRefsForNode(node));
    pane.append(el("h3","","Choices & destinations"));
    choicesFor(node).forEach(c=>{
      const b=el("button","choice",c.text||c.id);
@@ -152,6 +272,7 @@
    state.selected={type:"item",id};renderGraph();
    const pane=detailHead(item.name||id,"Item ID: "+id);
    labeled(pane,"Inspection text",textOf(item.description));
+    artworkLinks(pane,artRefsForItem(id));
    labeled(pane,"Inventory sprite",item.slotArt||"Artwork pending");
    labeled(pane,"Inspect illustration",item.inspectArt||"Artwork pending");
    if(item.inspect)labeled(pane,"On INSPECT (draft engine dependency)",JSON.stringify(item.inspect,null,2));
@@ -185,7 +306,12 @@
    const blob=new Blob([JSON.stringify(data,null,2)+"\n"],{type:"application/json"});
    const url=URL.createObjectURL(blob);const anchor=el("a");anchor.href=url;anchor.download=name;document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
  }
- async function loadManifest(){
+ function loadArtwork(data,name){
+    if(!data||!data.scenes||!data.portraits||!data.items)throw Error("Expected artwork catalog with scenes, portraits, and items.");
+    state.artwork=data;state.artworkName=name||"artwork.json";$("exportArtwork").disabled=false;
+    setStatus("Loaded shared artwork catalog. Select Artwork to review prompts.");
+  }
+  async function loadManifest(){
    try{
      state.manifestURL=new URL("../../story/storyboard-manifest.json",location.href);
      const r=await fetch(state.manifestURL);if(!r.ok)throw Error("HTTP "+r.status);
@@ -193,6 +319,7 @@
      const select=$("chapterSelect");select.replaceChildren();
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
      if(manifest.items){const itemsRes=await fetch(new URL(manifest.items,state.manifestURL));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
+      if(manifest.artwork){const artRes=await fetch(new URL(manifest.artwork,state.manifestURL));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
      if(manifest.chapters?.length)await loadRemote(manifest.chapters[0]);else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
  }
@@ -203,11 +330,15 @@
  $("chapterSelect").addEventListener("change",e=>{const entry=state.manifest?.chapters?.[Number(e.target.value)];if(entry)loadRemote(entry);});
  $("openChapter").onclick=()=>$("fileChapter").click();
  $("openItems").onclick=()=>$("fileItems").click();
+  $("openArtwork").onclick=()=>$("fileArtwork").click();
  $("fileChapter").onchange=e=>importFile(e.target,loadChapter);
  $("fileItems").onchange=e=>importFile(e.target,items=>{state.items=items;$("exportItems").disabled=false;showItems();setStatus("Item library loaded.");});
+  $("fileArtwork").onchange=e=>importFile(e.target,(art,name)=>{loadArtwork(art,name);showArtwork();});
  $("exportChapter").onclick=()=>{if(state.chapter)download(state.chapter,state.sourceName);};
  $("exportItems").onclick=()=>download(state.items,"items.json");
+  $("exportArtwork").onclick=()=>{if(state.artwork)download(state.artwork,state.artworkName);};
  $("showItems").onclick=showItems;
+  $("showArtwork").onclick=showArtwork;
  $("fit").onclick=fit;
  $("zoomIn").onclick=()=>{state.scale=Math.min(2,state.scale*1.2);updateScale();};
  $("zoomOut").onclick=()=>{state.scale=Math.max(.25,state.scale/1.2);updateScale();};
