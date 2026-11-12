@@ -41,6 +41,7 @@ class Element {
   addEventListener(name,fn){this.listeners[name]=fn;}
   setAttribute(name,value){this.attributes[name]=value;}
   closest(){return null;}
+  remove(){}
   click(){this.onclick?.();this.listeners.click?.();}
 }
 const elements=new Map();
