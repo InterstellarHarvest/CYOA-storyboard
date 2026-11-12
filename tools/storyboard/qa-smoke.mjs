@@ -18,6 +18,9 @@ const artwork=JSON.parse(fs.readFileSync(path.join(root,'story/artwork.draft.jso
 const chapter=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.chapters[0].file),'utf8'));
 const items=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.items),'utf8'));
 assert.equal(manifest.artwork,'artwork.draft.json');
+assert.equal(manifest.layout,'storyboard-layout.json');
+const layoutSource=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.layout),'utf8'));
+assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
 
 for(const scene of new Set([chapter.scene,...Object.values(chapter.nodes).map(x=>x.scene).filter(Boolean)]))
   assert.ok(artwork.scenes[scene],'scene reference '+scene);
@@ -35,6 +38,7 @@ class Element {
     this.tagName=tag;this.id=id;this.children=[];this.style={};this.attributes={};
     this.listeners={};this.textContent='';this.value='';this.disabled=false;
     this.scrollLeft=0;this.scrollTop=0;this.clientWidth=1200;this.clientHeight=720;
+    this.classList={add(){},remove(){}};this.captured=null;
   }
   append(...children){this.children.push(...children);}
   replaceChildren(...children){this.children=[...children];}
@@ -42,6 +46,9 @@ class Element {
   setAttribute(name,value){this.attributes[name]=value;}
   closest(){return null;}
   getBoundingClientRect(){return {left:0,top:0,width:this.clientWidth,height:this.clientHeight};}
+  setPointerCapture(id){this.captured=id;}
+  hasPointerCapture(id){return this.captured===id;}
+  releasePointerCapture(id){if(this.captured===id)this.captured=null;}
   remove(){}
   click(){this.onclick?.();this.listeners.click?.();}
 }
@@ -62,9 +69,11 @@ const load=async(url)=>{
   assert.ok(full.startsWith(root+path.sep),'file stays under root '+rel);
   return {ok:true,json:async()=>JSON.parse(fs.readFileSync(full,'utf8'))};
 };
-const errors=[];
+const windowListeners={};
+const storage=new Map();
+const localStorage={getItem:key=>storage.has(key)?storage.get(key):null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
 const context={
-  document,window:{addEventListener(){}},location:{href:'https://example.org/CYOA-storyboard/tools/storyboard/'},
+  document,window:{addEventListener(name,fn){windowListeners[name]=fn;},localStorage},location:{href:'https://example.org/CYOA-storyboard/tools/storyboard/'},
   fetch:load,URL,Blob,JSON,Object,Math,Number,String,console,
   setTimeout(fn){fn();return 0;},
 };
@@ -131,9 +140,52 @@ assert.ok(Math.abs((viewport.scrollTop+anchor.y)/after-worldBefore.y)<1e-7,'whee
 viewport.listeners.wheel({deltaY:120,deltaMode:0,clientX:anchor.x,clientY:anchor.y,preventDefault(){}});
 assert.ok(Math.abs(scale()-before)<1e-10,'equal opposite wheel motion restores scale');
 
+// Manual layout: drag one node, check connector redraw, persistence, reload, import, and reset.
+const xFromNode=id=>parseFloat(findNode(id).style.left);
+const yFromNode=id=>parseFloat(findNode(id).style.top);
+const movedId='drone_intercepts',nodeToDrag=findNode(movedId);
+assert.ok(nodeToDrag,'node available for drag');
+const initialX=xFromNode(movedId),initialY=yFromNode(movedId);
+const edgePathsBefore=document.getElementById('edges').children.filter(n=>n.tagName==='path').map(n=>n.attributes.d).join('|');
+let stopped=false;
+nodeToDrag.listeners.pointerdown({pointerId:22,button:0,clientX:200,clientY:150,stopPropagation(){stopped=true;}});
+assert.ok(stopped,'drag does not start viewport panning');
+const zoomBefore=scale(),dxPixels=100,dyPixels=40;
+windowListeners.pointermove({pointerId:22,clientX:200+dxPixels,clientY:150+dyPixels,preventDefault(){}});
+assert.ok(Math.abs(xFromNode(movedId)-(initialX+Math.round(dxPixels/zoomBefore)))<=1,'drag converts screen displacement by zoom');
+assert.ok(Math.abs(yFromNode(movedId)-(initialY+Math.round(dyPixels/zoomBefore)))<=1,'drag moves node vertically');
+const edgePathsAfter=document.getElementById('edges').children.filter(n=>n.tagName==='path').map(n=>n.attributes.d).join('|');
+assert.notEqual(edgePathsAfter,edgePathsBefore,'connectors move with the dragged node');
+windowListeners.pointerup({pointerId:22});
+const storageKey='cyoa-storyboard-layout-v1:prologue-00';
+assert.ok(storage.has(storageKey),'browser storage saved node layout');
+assert.equal(JSON.parse(storage.get(storageKey)).positions[movedId].x,xFromNode(movedId),'saved coordinate matches node');
+assert.equal(document.getElementById('exportLayout').disabled,false,'layout export available');
+
+// Reloading the same chapter through the chapter selector restores the browser's saved layout.
+document.getElementById('chapterSelect').listeners.change({target:{value:'0'}});
+await new Promise(resolve=>setTimeout(resolve,20));
+assert.equal(xFromNode(movedId),Math.round(initialX+dxPixels/zoomBefore),'manual position survives chapter reload');
+
+// Importing a shared layout takes precedence over the prior browser coordinates.
+const customX=initialX+260,customY=initialY+210;
+const input=document.getElementById('fileLayout');
+input.files=[{name:'custom-layout.json',text:async()=>JSON.stringify({schema:'cyoa-storyboard-layout-v1',chapters:{'prologue-00':{positions:{[movedId]:{x:customX,y:customY}}}}})}];
+await input.onchange({});
+assert.equal(xFromNode(movedId),customX,'imported layout updates visible diagram');
+assert.equal(yFromNode(movedId),customY,'imported layout Y position applied');
+assert.equal(JSON.parse(storage.get(storageKey)).positions[movedId].x,customX,'imported layout is cached');
+
+// Reset restores automatic layout and saves an empty override (even if a shared layout exists).
+document.getElementById('resetLayout').onclick();
+assert.equal(xFromNode(movedId),initialX,'reset returns node to calculated position');
+assert.equal(yFromNode(movedId),initialY,'reset returns node to automatic Y');
+assert.deepEqual(JSON.parse(storage.get(storageKey)).positions,{},'reset stored empty positions');
+document.getElementById('exportLayout').onclick();
+
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,
  artRecords:Object.keys(artwork.scenes).length+Object.keys(artwork.portraits).length+
   Object.values(artwork.items).reduce((n,v)=>n+Object.keys(v).length,0),
- checked:['manifest','all scene references','portrait references','all item artwork','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom']
+ checked:['manifest','all scene references','portrait references','all item artwork','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout']
 }));

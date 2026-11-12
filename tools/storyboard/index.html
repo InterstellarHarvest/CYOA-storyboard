@@ -6,7 +6,7 @@
 <title>The Acceptable Error — Storyboard</title>
 <style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#e2e8ee;background:#151b22;font-size:14px}
-*{box-sizing:border-box}body{margin:0}button,select{background:#27333e;border:1px solid #465563;color:inherit;padding:7px 10px;border-radius:5px;font:inherit;cursor:pointer}button:hover,select:hover{background:#334451}button:disabled{opacity:.5;cursor:default}input{font:inherit}header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 15px;border-bottom:1px solid #37424d}header h1{margin:0 18px 0 0;font-size:16px}#status{color:#a8b8c4;margin-left:auto;font-size:12px}#app{display:grid;grid-template-columns:minmax(350px,1fr) 385px;height:calc(100vh - 70px);min-height:460px}.work{display:flex;flex-direction:column;min-width:0;border-right:1px solid #394551}.work-tools{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid #34404b;color:#a7b5c0}.work-tools strong{color:#e2e8ee}#viewport{flex:1;overflow:auto;background-image:radial-gradient(#2d3a45 1px,transparent 1px);background-size:18px 18px;cursor:grab}#viewport:active{cursor:grabbing}#space{position:relative}#stage{position:relative;transform-origin:top left}#edges{position:absolute;inset:0;overflow:visible;pointer-events:none}.node{position:absolute;min-height:86px;width:220px;padding:11px 12px;border:1px solid #5a6976;border-radius:7px;background:#26323e;cursor:pointer;box-shadow:0 3px 9px #0005}.node:hover{border-color:#b4ccd8;background:#34424e}.node.selected{border:2px solid #80bece;padding:10px 11px}.node .id{font-size:10px;color:#9db0be;margin-bottom:5px}.node .name{font-size:13px;font-weight:650;line-height:1.3}.node .sub{font-size:11px;color:#a3b3c1;margin-top:5px}.node .end{color:#dfb88c}aside{overflow:auto;padding:15px 17px}aside h2{font-size:17px;margin:0 0 5px}aside h3{font-size:13px;color:#b4c7d4;margin:18px 0 6px}aside p{line-height:1.5;white-space:pre-wrap;margin:6px 0 12px}aside .meta{font-size:11px;color:#a1afbb}.choice{display:block;text-align:left;width:100%;margin:7px 0;background:#25313c;padding:10px}.choice .minor{display:block;color:#a9b7c2;font-size:11px;margin-top:4px}aside pre{font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#202a34;padding:11px;overflow:auto;white-space:pre-wrap;word-break:break-word;border-radius:5px}details{margin-top:16px}summary{cursor:pointer;font-weight:600;color:#bbced9}textarea{background:#101820;color:#e5eef6;border:1px solid #526470;border-radius:5px;width:100%;min-height:290px;resize:vertical;padding:10px;font:12px/1.5 ui-monospace,monospace;margin-top:10px}.muted{color:#a3b1bd}.item-button{display:block;width:100%;text-align:left;margin-top:8px}.warning{color:#e6bd8e}#fileChapter,#fileItems,#fileArtwork{display:none}.art-brief{width:100%;text-align:left;margin:6px 0;padding:10px 11px;background:#24323b;border-left:3px solid #617e8a}.art-brief:hover{background:#324451}.art-meta{display:block;color:#a8b9c4;font-size:11px;margin-top:4px}.art-edit label{display:block;color:#a9bec9;font-size:11px;margin-top:13px}.art-edit input,.art-edit select{display:block;width:100%;margin-top:4px}.art-edit textarea{min-height:135px;margin-top:4px}.art-edit textarea.prompt{min-height:240px}.art-edit button{margin-top:10px}.preview{max-width:100%;max-height:230px;image-rendering:pixelated;border:1px solid #516271;margin-top:8px}@media(max-width:900px){#app{grid-template-columns:1fr;height:auto}.work{height:520px;border-right:0}aside{min-height:400px;border-top:1px solid #465563}}
+*{box-sizing:border-box}body{margin:0}button,select{background:#27333e;border:1px solid #465563;color:inherit;padding:7px 10px;border-radius:5px;font:inherit;cursor:pointer}button:hover,select:hover{background:#334451}button:disabled{opacity:.5;cursor:default}input{font:inherit}header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 15px;border-bottom:1px solid #37424d}header h1{margin:0 18px 0 0;font-size:16px}#status{color:#a8b8c4;margin-left:auto;font-size:12px}#app{display:grid;grid-template-columns:minmax(350px,1fr) 385px;height:calc(100vh - 70px);min-height:460px}.work{display:flex;flex-direction:column;min-width:0;border-right:1px solid #394551}.work-tools{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid #34404b;color:#a7b5c0}.work-tools strong{color:#e2e8ee}#viewport{flex:1;overflow:auto;background-image:radial-gradient(#2d3a45 1px,transparent 1px);background-size:18px 18px;cursor:grab}#viewport:active{cursor:grabbing}#space{position:relative}#stage{position:relative;transform-origin:top left}#edges{position:absolute;inset:0;overflow:visible;pointer-events:none}.node{position:absolute;min-height:86px;width:220px;padding:11px 12px;border:1px solid #5a6976;border-radius:7px;background:#26323e;cursor:pointer;box-shadow:0 3px 9px #0005}.node:hover{border-color:#b4ccd8;background:#34424e}.node{cursor:move;touch-action:none;user-select:none}.node.dragging{border-color:#9cd6e2;box-shadow:0 6px 20px #0009;z-index:2;opacity:.92}.node.selected{border:2px solid #80bece;padding:10px 11px}.node .id{font-size:10px;color:#9db0be;margin-bottom:5px}.node .name{font-size:13px;font-weight:650;line-height:1.3}.node .sub{font-size:11px;color:#a3b3c1;margin-top:5px}.node .end{color:#dfb88c}aside{overflow:auto;padding:15px 17px}aside h2{font-size:17px;margin:0 0 5px}aside h3{font-size:13px;color:#b4c7d4;margin:18px 0 6px}aside p{line-height:1.5;white-space:pre-wrap;margin:6px 0 12px}aside .meta{font-size:11px;color:#a1afbb}.choice{display:block;text-align:left;width:100%;margin:7px 0;background:#25313c;padding:10px}.choice .minor{display:block;color:#a9b7c2;font-size:11px;margin-top:4px}aside pre{font:11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#202a34;padding:11px;overflow:auto;white-space:pre-wrap;word-break:break-word;border-radius:5px}details{margin-top:16px}summary{cursor:pointer;font-weight:600;color:#bbced9}textarea{background:#101820;color:#e5eef6;border:1px solid #526470;border-radius:5px;width:100%;min-height:290px;resize:vertical;padding:10px;font:12px/1.5 ui-monospace,monospace;margin-top:10px}.muted{color:#a3b1bd}.item-button{display:block;width:100%;text-align:left;margin-top:8px}.warning{color:#e6bd8e}#fileChapter,#fileItems,#fileArtwork,#fileLayout{display:none}.art-brief{width:100%;text-align:left;margin:6px 0;padding:10px 11px;background:#24323b;border-left:3px solid #617e8a}.art-brief:hover{background:#324451}.art-meta{display:block;color:#a8b9c4;font-size:11px;margin-top:4px}.art-edit label{display:block;color:#a9bec9;font-size:11px;margin-top:13px}.art-edit input,.art-edit select{display:block;width:100%;margin-top:4px}.art-edit textarea{min-height:135px;margin-top:4px}.art-edit textarea.prompt{min-height:240px}.art-edit button{margin-top:10px}.preview{max-width:100%;max-height:230px;image-rendering:pixelated;border:1px solid #516271;margin-top:8px}@media(max-width:900px){#app{grid-template-columns:1fr;height:auto}.work{height:520px;border-right:0}aside{min-height:400px;border-top:1px solid #465563}}
 </style>
 </head>
 <body>
@@ -19,20 +19,22 @@
 <button id="exportChapter" disabled>Export chapter</button>
 <button id="exportItems" disabled>Export items</button>
   <button id="exportArtwork" disabled>Export artwork</button>
+ <button id="importLayout">Import Layout</button><input id="fileLayout" type="file" accept=".json,application/json">
+ <button id="exportLayout" disabled>Export Layout</button>
 <span id="status">Starting…</span>
 </header>
 <div id="app">
  <section class="work">
-  <div class="work-tools"><strong id="chapterTitle">Chapter tree</strong><span><button id="zoomOut" title="Zoom out">−</button> <button id="fit" title="Fit the board">Fit</button> <button id="zoomIn" title="Zoom in">+</button> <button id="showItems">Items</button> <button id="showArtwork">Artwork</button></span></div>
+  <div class="work-tools"><strong id="chapterTitle">Chapter tree</strong><span><button id="zoomOut" title="Zoom out">−</button> <button id="fit" title="Fit the board">Fit</button> <button id="resetLayout" title="Discard manual positions and return to automatic arrangement" disabled>Reset Layout</button> <button id="zoomIn" title="Zoom in">+</button> <button id="showItems">Items</button> <button id="showArtwork">Artwork</button></span></div>
   <div id="viewport" title="Scroll wheel to zoom around the pointer; drag empty space to pan"><div id="space"><div id="stage"><svg id="edges" aria-hidden="true"></svg><div id="nodes"></div></div></div></div>
  </section>
- <aside id="details"><h2>Choose a story node</h2><p class="muted">Select a node from the chapter tree. Hover for a summary. Click for its full text, choices, effects, and referenced artwork.</p><p class="muted">The story is kept in external JSON files; this page contains no chapter content.</p></aside>
+ <aside id="details"><h2>Choose a story node</h2><p class="muted">Select a node for its story and artwork. Drag a box to rearrange the timeline; drag empty space to pan. Positions autosave in this browser, and Export Layout saves a shareable JSON file.</p><p class="muted">The story is kept in external JSON files; this page contains no chapter content.</p></aside>
 </div>
 <script>
 (() => {
  "use strict";
  const $ = id => document.getElementById(id);
- const state = { chapter:null, items:{}, artwork:null, manifest:null, manifestURL:null, sourceName:"chapter.json", artworkName:"artwork.draft.json", selected:null, scale:1, width:0, height:0 };
+ const state = { chapter:null, items:{}, artwork:null, layouts:{schema:"cyoa-storyboard-layout-v1",chapters:{}}, layoutName:"storyboard-layout.json", chapterKey:null, manifest:null, manifestURL:null, sourceName:"chapter.json", artworkName:"artwork.draft.json", selected:null, scale:1, width:0, height:0 };
  const setStatus = message => { $("status").textContent = message; };
  const el = (tag, className, text) => { const n=document.createElement(tag); if(className)n.className=className;if(text!==undefined)n.textContent=text;return n; };
  const titleOf = (id) => id.replaceAll("_"," ").replace(/\b\w/g, m=>m.toUpperCase());
@@ -67,6 +69,60 @@
      id:e.id,kind:e.kind,
      choice:{text:e.labels.length===1?e.labels[0]:e.labels.length+" routes",id:e.id}
    }));
+ }
+ const LAYOUT_KEY="cyoa-storyboard-layout-v1:";
+ // Keep authored coordinates separate from the chapter and item engine JSON.
+ function normalizedPositions(positions){
+   const valid={};
+   if(!positions||typeof positions!=="object"||Array.isArray(positions))return valid;
+   for(const [id,p] of Object.entries(positions)){
+     if(!p||!Number.isFinite(p.x)||!Number.isFinite(p.y))continue;
+     if(p.x<20||p.y<20||p.x>100000||p.y>100000)continue;
+     valid[id]={x:Math.round(p.x),y:Math.round(p.y)};
+   }
+   return valid;
+ }
+ function layoutEntry(){
+   if(!state.chapterKey)return null;
+   if(!state.layouts.chapters[state.chapterKey])state.layouts.chapters[state.chapterKey]={positions:{}};
+   return state.layouts.chapters[state.chapterKey];
+ }
+ function cachedLayoutKey(){return LAYOUT_KEY+encodeURIComponent(state.chapterKey||"");}
+ function restoreCachedLayout(){
+   const entry=layoutEntry();if(!entry)return;
+   try{
+     const stored=window.localStorage?.getItem(cachedLayoutKey());
+     if(stored!==null&&stored!==undefined){
+       const parsed=JSON.parse(stored);
+       entry.positions=normalizedPositions(parsed.positions);
+     }
+   }catch(error){ /* Private browsing / blocked storage: manual Export Layout still works. */ }
+ }
+ function persistLayout(){
+   const entry=layoutEntry();if(!entry)return false;
+   try{
+     if(!window.localStorage)return false;
+     window.localStorage.setItem(cachedLayoutKey(),JSON.stringify({positions:entry.positions}));
+     return true;
+   }catch(error){return false;}
+ }
+ function loadLayouts(data,name,applyNow=false){
+   if(data?.schema!=="cyoa-storyboard-layout-v1"||!data.chapters||typeof data.chapters!=="object"||Array.isArray(data.chapters))throw Error("Expected cyoa-storyboard-layout-v1 with chapters.");
+   const clean={schema:"cyoa-storyboard-layout-v1",chapters:{}};
+   for(const [key,val] of Object.entries(data.chapters))clean.chapters[key]={positions:normalizedPositions(val?.positions)};
+   state.layouts=clean;state.layoutName=name||"storyboard-layout.json";
+   $("exportLayout").disabled=false;
+   if(applyNow&&state.chapter){
+     layoutEntry();persistLayout();
+     renderGraph();setStatus("Imported layout is active. Drag nodes or Export Layout to save.");
+   }
+ }
+ function resetLayout(){
+   if(!state.chapter)return;
+   layoutEntry().positions={};
+   const saved=persistLayout();
+   renderGraph();fit();$("viewport").scrollLeft=0;$("viewport").scrollTop=0;
+   setStatus(saved?"Automatic layout restored and saved in this browser. Export Layout to share.":"Automatic layout restored. Export Layout to save.");
  }
  function layout(){
    const nodes=state.chapter.nodes,ids=Object.keys(nodes);
@@ -124,21 +180,21 @@
        positions[id]={x:50+Number(col)*stepX,y:65+(maxCount-entries.length)*stepY/2+i*stepY};
      });
    }
-   return {positions,width:Math.max(650,120+(Math.max(...Object.values(depth))+1)*stepX),height:Math.max(400,135+maxCount*stepY),cardWidth,cardHeight};
+   // Overlay sparse, author-adjusted positions without modifying story content.
+   for(const [id,p] of Object.entries(layoutEntry()?.positions||{})){
+     if(Object.hasOwn(positions,id))positions[id]={x:p.x,y:p.y};
+   }
+   const right=Math.max(0,...Object.values(positions).map(p=>p.x+cardWidth+60));
+   const bottom=Math.max(0,...Object.values(positions).map(p=>p.y+cardHeight+65));
+   return {positions,width:Math.max(650,right,120+(Math.max(...Object.values(depth))+1)*stepX),height:Math.max(400,bottom,135+maxCount*stepY),cardWidth,cardHeight};
  }
- function renderGraph(){
-   if(!state.chapter)return;
-   const {positions,width,height,cardWidth,cardHeight}=layout();
-   state.width=width;state.height=height;
-   const svg=$("edges");svg.replaceChildren();svg.setAttribute("width",width);svg.setAttribute("height",height);svg.setAttribute("viewBox","0 0 "+width+" "+height);
-   const holder=$("nodes");holder.replaceChildren();
+ let nodeDrag=null;
+ let suppressNodeClick=null;
+ function redrawEdges(positions,cardWidth=220,cardHeight=86){
+   const svg=$("edges");svg.replaceChildren();
+   svg.setAttribute("width",state.width);svg.setAttribute("height",state.height);svg.setAttribute("viewBox","0 0 "+state.width+" "+state.height);
    for(const [id,node] of Object.entries(state.chapter.nodes)){
-     const pos=positions[id], card=el("div","node"+(state.selected?.type==="node"&&state.selected.id===id?" selected":"" ));
-     card.style.left=pos.x+"px";card.style.top=pos.y+"px";
-     card.title=id+" · "+node.mode+"\n"+textOf(node.text).slice(0,240)+"\n"+choicesFor(node).length+" choices";
-     card.append(el("div","id",id),el("div","name",titleOf(id)),el("div","sub"+(choicesFor(node).length===0?" end":""),node.mode+" · "+(choicesFor(node).length||"NO NEXT")+" choice"+(choicesFor(node).length===1?"":"s")));
-     card.addEventListener("click",()=>selectNode(id));
-     holder.append(card);
+     const pos=positions[id];
      for(const link of destinations(node)){
        const dest=positions[link.id];if(!dest)continue;
        const x1=pos.x+cardWidth,y1=pos.y+cardHeight/2,x2=dest.x,y2=dest.y+cardHeight/2;
@@ -159,7 +215,60 @@
          svg.append(label);
        }
      }
+
    }
+ }
+ function startNodeDrag(e,id,card,pos){
+   if(e.button!==0||nodeDrag)return;
+   e.stopPropagation?.();
+   nodeDrag={id,card,pointerId:e.pointerId,startX:e.clientX,startY:e.clientY,x:pos.x,y:pos.y,moved:false};
+   card.setPointerCapture?.(e.pointerId);
+ }
+ function moveNodeDrag(e){
+   if(!nodeDrag||e.pointerId!==nodeDrag.pointerId)return false;
+   const d=nodeDrag,dx=e.clientX-d.startX,dy=e.clientY-d.startY;
+   if(!d.moved&&Math.hypot(dx,dy)<5)return true;
+   d.moved=true;d.card.classList.add("dragging");
+   const x=Math.max(20,Math.min(100000,Math.round(d.x+dx/state.scale)));
+   const y=Math.max(20,Math.min(100000,Math.round(d.y+dy/state.scale)));
+   layoutEntry().positions[d.id]={x,y};
+   d.card.style.left=x+"px";d.card.style.top=y+"px";
+   const graph=layout();state.width=graph.width;state.height=graph.height;
+   redrawEdges(graph.positions,graph.cardWidth,graph.cardHeight);updateScale();
+   e.preventDefault?.();
+   return true;
+ }
+ function endNodeDrag(e){
+   if(!nodeDrag||e.pointerId!==nodeDrag.pointerId)return false;
+   const d=nodeDrag;nodeDrag=null;
+   if(d.card.hasPointerCapture?.(e.pointerId))d.card.releasePointerCapture(e.pointerId);
+   if(d.moved){
+     d.card.classList.remove("dragging");
+     suppressNodeClick=d.id;
+     setTimeout(()=>{if(suppressNodeClick===d.id)suppressNodeClick=null;},120);
+     const saved=persistLayout();
+     setStatus(saved?"Node position saved in this browser. Export Layout to share it.":"Node moved. Export Layout to save (browser storage unavailable).");
+   }
+   return true;
+ }
+ function renderGraph(){
+   if(!state.chapter)return;
+   const {positions,width,height,cardWidth,cardHeight}=layout();
+   state.width=width;state.height=height;
+   const holder=$("nodes");holder.replaceChildren();
+   for(const [id,node] of Object.entries(state.chapter.nodes)){
+     const pos=positions[id], card=el("div","node"+(state.selected?.type==="node"&&state.selected.id===id?" selected":"" ));
+     card.style.left=pos.x+"px";card.style.top=pos.y+"px";
+     card.title=id+" · "+node.mode+"\n"+textOf(node.text).slice(0,240)+"\n"+choicesFor(node).length+" choices";
+     card.append(el("div","id",id),el("div","name",titleOf(id)),el("div","sub"+(choicesFor(node).length===0?" end":""),node.mode+" · "+(choicesFor(node).length||"NO NEXT")+" choice"+(choicesFor(node).length===1?"":"s")));
+     card.addEventListener("pointerdown",e=>startNodeDrag(e,id,card,pos));
+     card.addEventListener("click",e=>{
+       if(suppressNodeClick===id){suppressNodeClick=null;e.preventDefault?.();e.stopPropagation?.();return;}
+       selectNode(id);
+     });
+     holder.append(card);
+   }
+   redrawEdges(positions,cardWidth,cardHeight);
    updateScale();
  }
  function updateScale(){
@@ -373,9 +482,11 @@
    if(!ids.length)pane.append(el("p","muted","Load a shared items JSON file to inspect items."));
    ids.forEach(id=>{const b=el("button","item-button",(state.items[id].name||id)+" · "+id);b.addEventListener("click",()=>selectItem(id));pane.append(b);});
  }
- function loadChapter(data,name){
+ function loadChapter(data,name,chapterId){
    if(!data?.nodes||!data?.start||!data.nodes[data.start])throw Error("Expected chapter with a valid start and nodes object.");
-   state.chapter=data;state.sourceName=name||"chapter.json";state.selected=null;
+   state.chapter=data;state.sourceName=name||"chapter.json";state.chapterKey=chapterId||data.id||name||"imported-chapter";state.selected=null;
+   restoreCachedLayout();
+   $("resetLayout").disabled=false;$("exportLayout").disabled=false;
    $("chapterTitle").textContent=data.title||name||"Chapter tree";
    $("exportChapter").disabled=false;renderGraph();fit();setStatus("Loaded "+Object.keys(data.nodes).length+" nodes · draft story JSON");
    selectNode(data.start);
@@ -384,7 +495,7 @@
    try{
      const url=new URL(entry.file,state.manifestURL);
      const res=await fetch(url);if(!res.ok)throw Error("HTTP "+res.status);
-     loadChapter(await res.json(),entry.file.split("/").pop());
+     loadChapter(await res.json(),entry.file.split("/").pop(),entry.id);
    }catch(err){setStatus("Could not load chapter: "+err.message);}
  }
  function download(data,name){
@@ -405,6 +516,7 @@
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
      if(manifest.items){const itemsRes=await fetch(new URL(manifest.items,state.manifestURL));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
       if(manifest.artwork){const artRes=await fetch(new URL(manifest.artwork,state.manifestURL));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
+      if(manifest.layout){const layoutRes=await fetch(new URL(manifest.layout,state.manifestURL));if(!layoutRes.ok)throw Error("Layout HTTP "+layoutRes.status);loadLayouts(await layoutRes.json(),manifest.layout);}
      if(manifest.chapters?.length)await loadRemote(manifest.chapters[0]);else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
  }
@@ -416,12 +528,16 @@
  $("openChapter").onclick=()=>$("fileChapter").click();
  $("openItems").onclick=()=>$("fileItems").click();
   $("openArtwork").onclick=()=>$("fileArtwork").click();
+ $("importLayout").onclick=()=>$("fileLayout").click();
  $("fileChapter").onchange=e=>importFile(e.target,loadChapter);
  $("fileItems").onchange=e=>importFile(e.target,items=>{state.items=items;$("exportItems").disabled=false;showItems();setStatus("Item library loaded.");});
   $("fileArtwork").onchange=e=>importFile(e.target,(art,name)=>{loadArtwork(art,name);showArtwork();});
+ $("fileLayout").onchange=e=>importFile(e.target,(data,name)=>loadLayouts(data,name,true));
  $("exportChapter").onclick=()=>{if(state.chapter)download(state.chapter,state.sourceName);};
  $("exportItems").onclick=()=>download(state.items,"items.json");
   $("exportArtwork").onclick=()=>{if(state.artwork)download(state.artwork,state.artworkName);};
+ $("exportLayout").onclick=()=>download(state.layouts,state.layoutName);
+ $("resetLayout").onclick=resetLayout;
  $("showItems").onclick=showItems;
   $("showArtwork").onclick=showArtwork;
  $("fit").onclick=fit;
@@ -437,8 +553,14 @@
  },{passive:false});
  let drag=null;
  $("viewport").addEventListener("pointerdown",e=>{if(e.target.closest(".node"))return;drag={x:e.clientX,y:e.clientY,left:$("viewport").scrollLeft,top:$("viewport").scrollTop};});
- window.addEventListener("pointermove",e=>{if(!drag)return;$("viewport").scrollLeft=drag.left-(e.clientX-drag.x);$("viewport").scrollTop=drag.top-(e.clientY-drag.y);});
- window.addEventListener("pointerup",()=>{drag=null;});
+ window.addEventListener("pointermove",e=>{
+   if(moveNodeDrag(e))return;
+   if(!drag)return;
+   $("viewport").scrollLeft=drag.left-(e.clientX-drag.x);
+   $("viewport").scrollTop=drag.top-(e.clientY-drag.y);
+ });
+ window.addEventListener("pointerup",e=>{endNodeDrag(e);drag=null;});
+ window.addEventListener("pointercancel",e=>{endNodeDrag(e);drag=null;});
  loadManifest();
 })();
 </script>

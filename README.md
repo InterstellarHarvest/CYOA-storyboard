@@ -16,3 +16,7 @@ Everything here is **public**. Do not commit secret data or unpublished private 
 The authoritative drafts are maintained on the private CYOA story branch. After review, copy **only approved-to-publish** `tools/storyboard/index.html` and `story/**` into this public mirror. The two repositories are **not automatically synchronized** (no cross-repository credentials or secret token setup).
 
 On a change to these public files, GitHub Actions publishes the site with the [Pages workflow](.github/workflows/pages.yml). The viewer supports importing and exporting JSON locally, but edits made in your browser do not directly write back to either GitHub repository.
+
+## Arrange your own timeline
+
+Drag a story-node box to move it while its connections follow. Click without dragging to inspect. Positions auto-save in your browser per chapter. Use **Export Layout** to download shareable `storyboard-layout.json`, **Import Layout** to restore it, or **Reset Layout** to return to the automatic arrangement. Layout data is separate from all story and artwork definitions. Changes are not automatically committed to GitHub.
