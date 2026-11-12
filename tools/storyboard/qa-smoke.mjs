@@ -105,7 +105,7 @@ assert.ok(button('APPLAUSE TIMING CLICKER — INSPECTION ART'),'item inspection 
 
 // SHOW links are real story edges: the original layout wrongly left this node orphaned.
 const graphNodes=document.getElementById('nodes').children;
-const findNode=id=>graphNodes.find(n=>n.children[0]?.textContent===id);
+const findNode=id=>document.getElementById('nodes').children.find(n=>n.children[0]?.textContent===id);
 const receptionOpen=findNode('reception_opening');
 const noticeReply=findNode('reception_notice_reply');
 assert.ok(receptionOpen&&noticeReply,'reception and notice nodes on graph');
@@ -171,7 +171,7 @@ assert.equal(xFromNode(movedId),Math.round(initialX+dxPixels/zoomBefore),'manual
 const customX=initialX+260,customY=initialY+210;
 const input=document.getElementById('fileLayout');
 input.files=[{name:'custom-layout.json',text:async()=>JSON.stringify({schema:'cyoa-storyboard-layout-v1',chapters:{'prologue-00':{positions:{[movedId]:{x:customX,y:customY}}}}})}];
-await input.onchange({});
+await input.onchange({target:input});
 assert.equal(xFromNode(movedId),customX,'imported layout updates visible diagram');
 assert.equal(yFromNode(movedId),customY,'imported layout Y position applied');
 assert.equal(JSON.parse(storage.get(storageKey)).positions[movedId].x,customX,'imported layout is cached');
