@@ -19,8 +19,22 @@ const chapter=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.chapter
 const items=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.items),'utf8'));
 assert.equal(manifest.artwork,'artwork.draft.json');
 assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.dimensions,'564x278','corridor paired portrait background dimensions');
-assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.status,'prompted','corridor paired portrait background pending');
+assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.status,'generated','corridor paired portrait background generated');
 assert.equal(artwork.scenes['exposition/reception'].portraitBackground.status,'reused','approved reception background reuse');
+const productionRecords=[
+  ...Object.values(artwork.scenes).flatMap(scene=>[scene,...(scene.portraitBackground?[scene.portraitBackground]:[])]),
+  ...Object.values(artwork.portraits),
+  ...Object.values(artwork.items).flatMap(variants=>Object.values(variants)),
+  ...Object.values(artwork.focus||{})
+];
+assert.equal(productionRecords.length,33,'prologue artwork record count');
+assert.equal(productionRecords.filter(r=>r.status==='generated').length,28,'published metadata matches private generated count');
+assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
+for(const record of productionRecords){
+  if(record.status==='generated')assert.ok(record.assetPath?.endsWith('.png'),'generated art has logical PNG path: '+record.title);
+}
+// Public storyboard intentionally mirrors metadata, not private generated images.
+
 for(const portrait of Object.values(artwork.portraits)){
   assert.equal(portrait.foregroundFormat,'transparent-rgba-png','all NPC foregrounds are transparent');
   assert.ok(artwork.scenes[portrait.portraitBackgroundScene]?.portraitBackground,"portrait scene background exists");
