@@ -13,29 +13,29 @@
     "workplace/applause_station": {
       "title": "APPLAUSE TIMING STATION",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "A modest, narrow corporate timing desk. The tiny six-second applause control and a single green ACCEPTED indicator dominate a practical console; numbered papers neatly aligned, utilitarian wall conduits, a plain office exit at one side. The environment suggests paid routine work, not a laboratory or science-fiction command bridge. Slightly off-kilter bureaucracy but successful completion, no workplace catastrophe. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/workplace/applause_station.png",
       "suggestedFilename": "art/scenes/workplace/applause_station.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset."
     },
     "workplace/corridor": {
       "title": "EMPLOYEE CORRIDOR",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "A quiet fluorescent workplace corridor with muted gray-blue wall panels, straight geometric lines, an employee restroom door and a small badge reader farther along. The corridor is proportioned for a small round floating messenger drone to hover in the foreground during dialogue. Company identifiers remain generic. No fantasy machinery or steam pipes. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/workplace/corridor.png",
       "suggestedFilename": "art/scenes/workplace/corridor.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset.",
       "portraitBackground": {
         "title": "EMPLOYEE CORRIDOR — DRONE PORTRAIT BACKGROUND",
         "kind": "portrait-background",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "564x278",
         "prompt": "Create an entirely separate OPAQUE portrait-background image of the SAME employee corridor depicted in the companion main-scene artwork. The camera is tighter and more detailed, aligned to a conversational close-up of the hovering termination drone in the foreground. Retain recognizable corridor geometry: pale institutional blue-gray wall panels, fluorescent light, restroom/badge-reader context when visible and mid-century municipal-industrial materials. Keep the center/right areas visually quiet enough behind the drone; preserve the same design, lighting and palette as the 314×206 main scene. Render actual background scenery across the full 564×278 canvas; NO drone, NO NPC, NO portrait sprite, NO transparency, NO UI framing. This must be newly authored 564×278 art, not a resized, cropped or softened main-scene image.",
-        "assetPath": null,
+        "assetPath": "art/portraits/termination_drone/corridor_background.png",
         "suggestedFilename": "art/portraits/termination_drone/corridor_background.png",
         "notes": "Paired deliverable with workplace/corridor main scene. Generate them together to preserve visual continuity. Reused across termination_drone:slot_closed and termination_drone:paper_extended."
       }
@@ -43,40 +43,40 @@
     "workplace/exit": {
       "title": "PERSONAL EFFECTS EXIT",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "A staffed-looking but oddly deserted workplace exit. A single sealed brown cardboard box bearing a handwritten name rests under a restrained PERSONAL EFFECTS label. Practical coat hooks and institutional exit hardware, no grand stairway. Room enough for a low-res character and box; environmental perspective plausible for a literal departure. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/workplace/personal_effects_exit.png",
       "suggestedFilename": "art/scenes/workplace/personal_effects_exit.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset."
     },
     "street/outside_workplace": {
       "title": "STREET / EXPOSITION APPROACH",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "Mid-century modern city sidewalk just outside the employment building. Across a believable short street stands a large fairground/convention complex entrance, THE EXPOSITION OF EVERYTHING, with a welcoming PUBLIC FACILITIES sign. Concrete, enamel signage, modest transit hints, vertical banners, slightly inappropriate civic optimism. Usable continuous walking direction; not post-apocalyptic. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/exposition/street_approach.png",
       "suggestedFilename": "art/scenes/exposition/street_approach.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset."
     },
     "exposition/entrance": {
       "title": "EXPOSITION TURNSTILE / CONTAINER CHUTE",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "The Exposition admission threshold: cheerful civic entrance arch, public-facilities direction beyond, and a plainly labeled NO OUTSIDE CONTAINERS chute beside a mechanical turnstile. One uniformed attendant can be suggested at a distance, without requiring a separate dialogue portrait. The chute is practical and unremarkable: the absurdity is that the visitor must surrender a sealed personal effects box. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/exposition/entrance_turnstile.png",
       "suggestedFilename": "art/scenes/exposition/entrance_turnstile.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset."
     },
     "exposition/property_intake": {
       "title": "PROPERTY FOR YOUR CONVENIENCE",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "Compact mid-century exposition property counter, green felt inspection mat, four numbered shallow metal drawers/trays, simple clerk station. Beyond it, an inviting hall/reception direction is visible. The counter should feel streamlined and efficient, with gentle impersonal geometry; keep trays readable at low resolution, not cluttered with props. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/exposition/property_counter.png",
       "suggestedFilename": "art/scenes/exposition/property_counter.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset."
     },
@@ -103,10 +103,10 @@
     "exposition/facilities_corridor": {
       "title": "AMBIGUOUS FACILITIES HALL",
       "kind": "scene",
-      "status": "prompted",
+      "status": "generated",
       "dimensions": "314x206",
       "prompt": "Bright, slightly sterile convention-center hallway with pale enamel walls and calm blue wayfinding. A small human pictogram beside a box-shaped enclosure reads as a bathroom sign from the current view, though it actually directs visitors toward a model residence/public comfort exhibit around the corner. The visual ambiguity must be fair, not magical; keep the fuller explanatory sign partially occluded until approached. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
-      "assetPath": null,
+      "assetPath": "art/scenes/exposition/facilities_corridor.png",
       "suggestedFilename": "art/scenes/exposition/facilities_corridor.png",
       "notes": "Concept draft; target filename is proposed, not an existing asset."
     }
@@ -114,10 +114,10 @@
   "portraits": {
     "termination_drone:slot_closed": {
       "title": "TERMINATION DRONE — CLOSED SLOT",
-      "status": "prompted",
+      "status": "generated",
       "kind": "portrait",
       "prompt": "A close, frontal-to-three-quarter portrait of a small floating corporate notification drone: compact round mid-century plastic and powder-coated metal shell, single simple speaker grille/lens, muted gray with restrained blue accent, polite rather than threatening, no arms or limbs. Lower paper slot fully CLOSED. Art is a complete static foreground pose, not a frame of a printing animation. Tight workplace-corridor perspective, avoid elaborate gearwork. Gentle hover can be separate runtime motion. Keep palette matched to main scene but more detailed and clean at 564×278. OUTPUT CONTRACT: 564×278 transparent RGBA PNG of the drone FOREGROUND ONLY. Outside the drone and attached paper/pencil, alpha is zero; do not draw or merge the corridor background. The matching 564×278 opaque corridor background is a separate paired scene asset.",
-      "assetPath": null,
+      "assetPath": "art/portraits/termination_drone/drone_slot_closed.png",
       "suggestedFilename": "art/portraits/termination_drone/drone_slot_closed.png",
       "dimensions": "564x278",
       "notes": "Whole pose swaps via quick fade to paper_extended; keep drone body/register exactly aligned between poses. Prefer separate transparent foreground over background. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.",
@@ -126,10 +126,10 @@
     },
     "termination_drone:paper_extended": {
       "title": "TERMINATION DRONE — PAPER EXTENDED",
-      "status": "prompted",
+      "status": "generated",
       "kind": "portrait",
       "prompt": "Same precise camera, shell, scale and pixel alignment as the slot_closed termination drone portrait. A narrow pale pink triplicate termination form protrudes from a simple slot, with a tiny chained pencil hanging beside it. Everything else remains identical: speaker/lens, compact clean 1960s industrial shell, subdued gray-blue palette, no arms and no printer-feed animation frames. Create one complete static pose at 564×278 for a quick crossfade. OUTPUT CONTRACT: 564×278 transparent RGBA PNG of the drone FOREGROUND ONLY. Outside the drone and attached paper/pencil, alpha is zero; do not draw or merge the corridor background. The matching 564×278 opaque corridor background is a separate paired scene asset.",
-      "assetPath": null,
+      "assetPath": "art/portraits/termination_drone/drone_paper_extended.png",
       "suggestedFilename": "art/portraits/termination_drone/drone_paper_extended.png",
       "dimensions": "564x278",
       "notes": "Must match base sprite alignment and underlying portrait background. Document text need not be readable at portrait scale. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.",
@@ -164,20 +164,20 @@
       "slot": {
         "title": "TERMINATION NOTICE — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Thin pale pink triplicate dismissal paperwork, three layers, black bureaucratic rules, signature box and pencil-scrawled mark. It is office paper, not antique parchment, wax seal or fantasy dossier. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/termination_notice_slot.png",
         "suggestedFilename": "art/items/termination_notice_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "TERMINATION NOTICE — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "A crisp plain pink carbon-copy termination sheet with narrow rules and sparse bureaucratic print. Show pencil-signature and review-stamp variants as text-layer/variant planning; do not embed illegible decorative sentences. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/termination_notice_inspect.png",
         "suggestedFilename": "art/items/termination_notice_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -186,20 +186,20 @@
       "slot": {
         "title": "APPLAUSE TIMING CLICKER — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Handheld 1960s mechanical applause-timing clicker: practical gray Bakelite housing, short six-second dial and one press button, slightly worn from daily office work, intact, clearly a small timing device. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/applause_timing_clicker_slot.png",
         "suggestedFilename": "art/items/applause_timing_clicker_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "APPLAUSE TIMING CLICKER — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "High-detail inspection view of the same compact Bakelite clicker, with a readable six-second scale and modest physical wear. Make clear that it is functional, not a weapon or futuristic scanner. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/applause_timing_clicker_inspect.png",
         "suggestedFilename": "art/items/applause_timing_clicker_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -208,20 +208,20 @@
       "slot": {
         "title": "SMALL DESK PLANT — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Small healthy-but-neglected green foliage in plain off-white plastic office pot, pencil water line, no personality or supernatural quality. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/small_desk_plant_slot.png",
         "suggestedFilename": "art/items/small_desk_plant_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "SMALL DESK PLANT — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "Close inspection of an ordinary small green desk plant in thin white plastic pot, unremarkable soil and tiny pencil mark at suggested water level. Human texture among institutional artifacts; no glow, eyes or magical foreshadowing. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/small_desk_plant_inspect.png",
         "suggestedFilename": "art/items/small_desk_plant_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -230,20 +230,20 @@
       "slot": {
         "title": "SEALED PERSONAL EFFECTS BOX — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Small taped shut corrugated cardboard box with a handwritten name on side, ordinary office packing and folded lid, visually full and unopened. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/effects_box_full_slot.png",
         "suggestedFilename": "art/items/effects_box_full_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "SEALED PERSONAL EFFECTS BOX — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "Close-up of the intact small personal-effects box: neat taped flaps, handwritten ownership note and slight cardboard wear. No items visible. Should pair exactly with empty box art in silhouette. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/effects_box_full_inspect.png",
         "suggestedFilename": "art/items/effects_box_full_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -252,20 +252,20 @@
       "slot": {
         "title": "OPENED / EMPTY EFFECTS BOX — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Same cardboard box as the sealed version, top flaps spread open, one strip of tape loose, visibly empty. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/effects_box_empty_slot.png",
         "suggestedFilename": "art/items/effects_box_empty_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "OPENED / EMPTY EFFECTS BOX — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "Close-up same exact cardboard box and angle as the full variant, now open with no belongings inside; loose tape on flap. Distinguishable from closed slot illustration without moving the box's identity. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/effects_box_empty_inspect.png",
         "suggestedFilename": "art/items/effects_box_empty_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -274,20 +274,20 @@
       "slot": {
         "title": "RED SWANGLINE STAPLER — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Heavy bright red mid-century metal office stapler, solid elongated hinged body, silver SWANGLINE fictitious maker mark if legible, utilitarian not futuristic. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/red_swangline_stapler_slot.png",
         "suggestedFilename": "art/items/red_swangline_stapler_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "RED SWANGLINE STAPLER — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "High-detail bright red painted metal desk stapler, chrome working parts, SWANGLINE maker name in small silver lettering on side. It is a grounded retro office stapler, no added gizmos, and its staple supply remains unspecified. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/red_swangline_stapler_inspect.png",
         "suggestedFilename": "art/items/red_swangline_stapler_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -296,20 +296,20 @@
       "slot": {
         "title": "RUBBER-BAND BALL — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Compact irregular sphere wound from many plain office elastic bands of varied faded colors, visibly layered and handmade, no hint of what is inside. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/rubber_band_ball_slot.png",
         "suggestedFilename": "art/items/rubber_band_ball_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "RUBBER-BAND BALL — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "High-detail rubber-band ball, hundreds of crosswise wound office bands in subdued colors, slight unevenness. An indistinct solid interior may be implied only by the weight/shape; do NOT reveal or invent its core object. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/rubber_band_ball_inspect.png",
         "suggestedFilename": "art/items/rubber_band_ball_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -318,20 +318,20 @@
       "slot": {
         "title": "PROPERTY CLAIM TICKET — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Small rectangular perforated cream paper custody ticket with printed storage count and blank departure field, mundane municipal form. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/property_claim_ticket_slot.png",
         "suggestedFilename": "art/items/property_claim_ticket_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "PROPERTY CLAIM TICKET — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "Close-up of clean cream claim slip, stark form layout, count either THREE or FOUR articles held and COLLECTION ON DEPARTURE, with departure-time field intentionally blank. Avoid cluttered made-up bureaucracy. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/property_claim_ticket_inspect.png",
         "suggestedFilename": "art/items/property_claim_ticket_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
@@ -340,20 +340,20 @@
       "slot": {
         "title": "TEMPORARY EXAMINER BADGE — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "96x96",
         "prompt": "Plain pale blue late-1960s convention credential with small clip, simple Expo mark, name field and Temporary Examiner classification. No luxury metal jewelry. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
-        "assetPath": null,
+        "assetPath": "art/items/expo_examiner_badge_slot.png",
         "suggestedFilename": "art/items/expo_examiner_badge_slot.png",
         "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
       },
       "inspect": {
         "title": "TEMPORARY EXAMINER BADGE — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "prompted",
+        "status": "generated",
         "dimensions": "565x451",
         "prompt": "High-detail pale-blue laminated Examiner credential on modest metal clip, clean printed wording TEMPORARY EXAMINER / OFFICE OF UNVERIFIED CONDITIONS, no expiry indicated. Identity error looks official, not sinister. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
-        "assetPath": null,
+        "assetPath": "art/items/expo_examiner_badge_inspect.png",
         "suggestedFilename": "art/items/expo_examiner_badge_inspect.png",
         "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
       }
