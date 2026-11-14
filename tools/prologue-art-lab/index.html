@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Acceptable Error — Prologue Artwork Review</title>
+<link rel="stylesheet" href="lab.css">
+</head>
+<body>
+<header class="masthead">
+ <div><div class="eyebrow">THE ACCEPTABLE ERROR · PUBLIC ARTWORK STUDY</div><h1>Prologue Artwork Lab</h1>
+ <p>Draft artwork presented against the approved M2 Round 2 shell. Visual review only; no gameplay or story state.</p></div>
+ <nav><a href="../storyboard/">Storyboard</a><a href="../../">Project home</a></nav>
+</header>
+<main>
+<aside class="controls" aria-label="Artwork review controls">
+ <section><h2>Scene</h2><label for="scene">Main background · 314×206</label><select id="scene"></select>
+  <button id="reception" type="button">Compare approved reception</button></section>
+ <section><h2>Layered portrait</h2><label for="portrait">564×278 portrait foreground</label><select id="portrait"></select>
+ <div class="checks"><label><input id="show-bg" type="checkbox" checked> Background</label><label><input id="show-pose" type="checkbox" checked> Foreground</label></div>
+ <div class="two"><label>Pose X <input id="dx" type="number" value="0" min="-40" max="40"></label><label>Pose Y <input id="dy" type="number" value="0" min="-40" max="40"></label></div>
+ <button id="reset-offset" type="button">Reset alignment</button>
+ <p class="hint" id="pairing"></p></section>
+ <section><h2>Inventory</h2><label for="slot-count">Approved asset/layout comparison</label>
+ <select id="slot-count"><option value="7">7 visible slots — owner target</option><option value="6">6 visible slots — M2 checked-in default</option></select>
+ <div class="two"><button id="inventory-prev" type="button">Previous item</button><button id="inventory-next" type="button">Next item</button></div>
+ <p class="hint" id="inventory-status">Nine new icons plus the approved Facilities Key.</p></section>
+ <section><h2>Item inspector</h2><label for="item">565×451 detailed artwork</label><select id="item"></select>
+ <div class="two"><button id="inspect" type="button">Open inspector</button><button id="close-inspector" type="button">Close inspector</button></div>
+ <div class="two"><button id="item-prev" type="button">Previous art</button><button id="item-next" type="button">Next art</button></div>
+ <p class="hint">Uses the original M2 inspector frame and original inspection images at 1:1.</p></section>
+ <section><h2>View</h2><div class="two"><button id="fit" type="button" aria-pressed="true">Fit to pane</button><button id="native" type="button" aria-pressed="false">1:1 pixels</button></div>
+ <p class="hint">Scene art is displayed at exactly 4× nearest-neighbor. Other artwork stays native-size within the 1920×1080 shell.</p></section>
+ <section class="warnings"><h2>Owner review concerns</h2><ol>
+ <li>Termination notice has conflicting signed / pending / reviewed marks.</li>
+ <li>Property claim ticket permanently says FOUR, even though three items are possible.</li>
+ <li>Personal effects box says H. Carter; protagonist name is unconfirmed.</li>
+ <li>Drone pose alignment with the separate corridor background.</li>
+ <li>Inspector backgrounds, shadow treatment and object placement.</li>
+ <li>Workplace, street, Exposition and approved reception continuity.</li>
+ <li>Seven-slot layout versus the checked-in six-slot M2 default; inspect arrow overlap.</li>
+ </ol><p class="hint">Keep these issues visible. Artwork is still draft and has not been corrected or approved.</p></section>
+</aside>
+<div class="preview">
+ <div class="toolbar"><strong id="current-scene">Loading scene…</strong><span id="status">Loading published art files…</span></div>
+ <div id="viewport"><div id="stage-holder"><div id="stage" aria-label="1920 by 1080 M2 shell artwork review">
+   <div id="scene-aperture" class="aperture"><img id="scene-image" alt=""></div>
+   <div id="portrait-aperture" class="aperture"><img id="portrait-bg" alt=""><img id="portrait-pose" alt=""></div>
+   <img class="shell-image" src="assets/art/ui/shell/layout-final.png" alt="" draggable="false">
+   <div id="choice-decor" aria-hidden="true"></div>
+   <div id="inventory-strip"></div>
+   <button class="stage-arrow" id="stage-prev" aria-label="Previous inventory item"><img src="assets/art/ui/sprites/controls/inv_left_up.png" alt=""></button>
+   <button class="stage-arrow" id="stage-next" aria-label="Next inventory item"><img src="assets/art/ui/sprites/controls/inv_right_up.png" alt=""></button>
+   <div id="utility-decor" aria-hidden="true"></div>
+   <div id="inspector-overlay" hidden><img id="inspector-frame" src="assets/art/ui/shell/item-overlay.png" alt="">
+     <img id="inspector-image" alt=""><button id="stage-close" aria-label="Close inspector"><img src="assets/art/ui/sprites/inspect_close.png" alt=""></button>
+     <div id="inspector-label"></div>
+   </div>
+  </div></div></div>
+  <div class="footer"><span>Public visual-review package · original approved M2 shell images · 28 draft prologue PNGs</span><span id="view-mode">Fit preview</span></div>
+</div>
+</main>
+<script src="lab.js"></script>
+</body></html>
