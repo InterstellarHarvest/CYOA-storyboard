@@ -1,0 +1,209 @@
+{
+  "schema": "cyoa-public-artwork-lab-layout-v1",
+  "source": "Owner's six-slot 2026-11-13 M1 placement export; geometry verified against CYOA main",
+  "stage": [
+    1920,
+    1080
+  ],
+  "typeface": {
+    "dialogue": "jersey15-1x",
+    "choices": "locked",
+    "labels": "pressstart2p-2x",
+    "objective": "tiny5-3x"
+  },
+  "inventory": {
+    "slotCount": 6,
+    "slotSize": [
+      96,
+      96
+    ],
+    "gap": 20,
+    "pitch": 116,
+    "slotLayouts": {
+      "6": {
+        "x": 92,
+        "y": 935
+      }
+    },
+    "stepPerPress": 1,
+    "motion": {
+      "slide": true,
+      "durationMs": 275,
+      "overshoot": 5,
+      "settle": 1,
+      "lagMs": 2
+    },
+    "leftArrow": {
+      "id": "inv-left",
+      "spriteFamily": "inv_left",
+      "x": 33,
+      "y": 948,
+      "scale": 0.5422,
+      "displayWidth": 45,
+      "displayHeight": 69,
+      "visible": true,
+      "heldState": "up"
+    },
+    "rightArrow": {
+      "id": "inv-right",
+      "spriteFamily": "inv_right",
+      "x": 782,
+      "y": 948,
+      "scale": 0.5422,
+      "displayWidth": 45,
+      "displayHeight": 69,
+      "visible": true,
+      "heldState": "up"
+    }
+  },
+  "utility": {
+    "show": "label",
+    "labelFont": "light",
+    "pressedLabelOffset": {
+      "dx": 2,
+      "dy": 2
+    },
+    "buttons": [
+      {
+        "id": "inspect",
+        "label": "INSPECT",
+        "glyph": "inspect",
+        "spriteFamily": "utility_a",
+        "x": 1482,
+        "y": 930,
+        "scale": 0.5556,
+        "displayWidth": 135,
+        "displayHeight": 114,
+        "labelOffset": {
+          "dx": 0,
+          "dy": 0
+        },
+        "visible": true,
+        "heldState": "up"
+      },
+      {
+        "id": "notes",
+        "label": "NOTES",
+        "glyph": "notes",
+        "spriteFamily": "utility_b",
+        "x": 1619,
+        "y": 930,
+        "scale": 0.5556,
+        "displayWidth": 135,
+        "displayHeight": 114,
+        "labelOffset": {
+          "dx": 0,
+          "dy": 0
+        },
+        "visible": true,
+        "heldState": "up"
+      },
+      {
+        "id": "journal",
+        "label": "FILES",
+        "glyph": "files",
+        "spriteFamily": "utility_c",
+        "x": 1756,
+        "y": 930,
+        "scale": 0.5556,
+        "displayWidth": 135,
+        "displayHeight": 114,
+        "labelOffset": {
+          "dx": 0,
+          "dy": 0
+        },
+        "visible": true,
+        "heldState": "up"
+      }
+    ]
+  },
+  "choices": {
+    "viewport": {
+      "x": 1324,
+      "y": 527,
+      "width": 535,
+      "height": 331
+    },
+    "cardWidth": 535,
+    "cardHeights": {
+      "1": 79,
+      "2": 107,
+      "3": 135,
+      "4": 162
+    },
+    "gap": 5,
+    "text": {
+      "font": "dark",
+      "offsetX": 29,
+      "offsetY": 0,
+      "maxWidth": 487,
+      "lineHeight": 24
+    }
+  },
+  "speech": {
+    "text": {
+      "id": "speech-text",
+      "x": 1342,
+      "y": 360,
+      "width": 540,
+      "height": 144,
+      "lineHeight": 24,
+      "font": "dark",
+      "visible": true,
+      "charsPerSecond": 40,
+      "speakerGap": 8
+    },
+    "indicator": {
+      "id": "speech-indicator",
+      "x": 1899,
+      "y": 366,
+      "width": 8,
+      "height": 126
+    }
+  },
+  "scrollbar": {
+    "track": {
+      "x": 1880,
+      "y": 539,
+      "width": 20,
+      "height": 312
+    },
+    "thumb": {
+      "id": "scroll-thumb",
+      "x": 1880,
+      "scale": 0.5,
+      "displayWidth": 20,
+      "capHeight": 10,
+      "minHeight": 20,
+      "visible": true
+    }
+  },
+  "objective": {
+    "title": {
+      "id": "obj-title",
+      "text": "CURRENT OBJECTIVE",
+      "font": "light",
+      "plaque": {
+        "x": 884,
+        "y": 897,
+        "width": 273,
+        "height": 38
+      },
+      "centered": true,
+      "alignOffsetX": 0,
+      "x": 905,
+      "y": 907,
+      "visible": true
+    },
+    "body": {
+      "id": "obj-body",
+      "text": "REVIEW THE PROLOGUE ARTWORK.",
+      "font": "light",
+      "x": 889,
+      "y": 958,
+      "width": 522,
+      "lineHeight": 25,
+      "visible": true
+    }
+  }
+}
