@@ -36,7 +36,7 @@ async function suite(name,driver){
     await page.goto(base+"index.html",{waitUntil:"domcontentloaded",timeout:45000});
     await page.waitForFunction(()=>document.body.dataset.ready==="true"||document.body.dataset.ready==="error",null,{timeout:45000});
     check((await page.locator("body").getAttribute("data-ready"))==="true",
-      "45 images loaded: "+await page.locator("#loadStatus").textContent());
+      "49 primary source images loaded: "+await page.locator("#loadStatus").textContent());
     await page.locator("#actualPreview").click();
     const initial=await state();
     check(initial.slots===6&&initial.slotPitch===116&&initial.slotGap===20&&initial.sceneScale===4&&initial.inspection===null,"six-slot owner preview, 116px pitch, 20px spacing, 4x native scene");
@@ -116,6 +116,55 @@ async function suite(name,driver){
       if(["workplace/applause_station","workplace/corridor","street/outside_workplace",
         "exposition/entrance","exposition/reception"].includes(id))await shot("scene_"+id.replaceAll("/","_"));
     }
+    // Current Exposition V02 must resolve exactly the four candidate files
+    // from the pinned private art catalog, without displaying archival staffed scenes.
+    const currentExposition=[
+      ["street/outside_workplace","art/scenes/exposition/continuity-v01/street-approach.png"],
+      ["exposition/entrance","art/scenes/exposition/continuity-v02/entrance.png"],
+      ["exposition/property_intake","art/scenes/exposition/continuity-v02/property-intake.png"],
+      ["exposition/facilities_corridor","art/scenes/exposition/continuity-v01/facilities-corridor.png"]
+    ];
+    for(const [id,assetPath] of currentExposition){
+      await call("setScene",id);
+      const live=await state();
+      const src=await page.locator("#sceneImage").getAttribute("src");
+      const natural=await page.locator("#sceneImage").evaluate(async img=>{
+        await img.decode();return [img.naturalWidth,img.naturalHeight];
+      });
+      check(live.sceneVersion==="current"&&live.activeSceneAssetPath===assetPath&&
+        live.currentCatalogAssetPath===assetPath&&live.sceneStatus==="generated"&&
+        src==="assets/draft/"+assetPath&&JSON.stringify(natural)==="[314,206]",
+        "V02 scene maps to native generated asset "+id);
+      await shot("exposition_v02_"+id.replaceAll("/","_"));
+    }
+    for(const [id,previous] of [
+      ["street/outside_workplace","art/scenes/exposition/street_approach.png"],
+      ["exposition/facilities_corridor","art/scenes/exposition/facilities_corridor.png"]
+    ]){
+      await call("setScene",id);
+      check(!(await page.locator("#sceneVersion").isDisabled()),"safe prior candidate is selectable "+id);
+      await call("setSceneVersion","previous");
+      check((await state()).activeSceneAssetPath===previous&&
+        (await page.locator("#sceneImage").getAttribute("src"))==="assets/draft/"+previous,
+        "archived unoccupied comparison displays "+id);
+      await shot("exposition_previous_"+id.replaceAll("/","_"));
+      await call("setSceneVersion","current");
+    }
+    for(const id of ["exposition/entrance","exposition/property_intake"]){
+      await call("setScene",id);
+      check(await page.locator("#sceneVersion").isDisabled(),"staffed previous candidate not selectable "+id);
+      const rejected=await page.evaluate(async()=>{
+        try{window.PROLOGUE_LAB.setSceneVersion("previous");return false;}
+        catch(e){return /not safe for preview/.test(String(e));}
+      });
+      check(rejected&&(await state()).sceneVersion==="current","old staff cannot appear in preview "+id);
+    }
+    await call("setScene","exposition/reception");
+    check((await state()).sceneStatus==="reused"&&
+      (await state()).activeSceneAssetPath==="art/scenes/conference_hall/reception/reception_scene.png"&&
+      (await state()).activePortrait==="receptionist" &&
+      await page.locator("#sceneVersion").isDisabled(),
+      "approved M2 reception and layers unchanged, comparison disabled");
     await call("setScene","workplace/corridor");
     check((await state()).activePortrait==="drone-closed","corridor auto-pairs drone");
     const bg=await page.locator("#portraitBackground").getAttribute("src");
