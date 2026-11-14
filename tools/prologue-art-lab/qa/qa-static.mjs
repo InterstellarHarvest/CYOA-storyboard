@@ -36,7 +36,7 @@ for(const row of controls.files){
   assert.ok(fp.startsWith(base+path.sep)&&fs.existsSync(fp),"missing control artwork "+row.path);
   const bytes=fs.readFileSync(fp);
   assert.equal(bytes.length,row.size,"size of "+row.path);
-  const gitHash=createHash("sha1").update("blob "+bytes.length+"\\0").update(bytes).digest("hex");
+  const gitHash=createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
   assert.equal(gitHash,row.gitBlob,"source Git blob "+row.path);
   assert.equal(bytes.toString("hex",0,8),"89504e470d0a1a0a","PNG "+row.path);
   if(iconFiles.has(path.basename(row.path)))assert.deepEqual([bytes.readUInt32BE(16),bytes.readUInt32BE(20)],[96,96],"glyph size "+row.path);
