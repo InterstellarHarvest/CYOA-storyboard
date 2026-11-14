@@ -8,6 +8,8 @@
   const stage = $("stage");
   const viewport = $("previewViewport");
   const wrap = $("previewWrap");
+  const SPARE_SLOTS = 3; // Game and M1 lab expose adjacent items during the slide.
+  let inventoryFrame = null;
   const data = { catalog: null, index: null, controls: null, layout: null, fonts: null, scenes: [], items: [], urls: new Map() };
   const state = {
     scene: "workplace/applause_station",
@@ -21,6 +23,7 @@
     buttonSkin: "up",
     pressedUtility: null,
     inventoryStart: 0,
+    inventorySlide: null,
     selectedItem: "termination_notice",
     inspection: null,
     fit: true
@@ -116,10 +119,79 @@
     renderInventory();
     renderControls();
   }
+  // Preserve the original M1/game easing, overshoot, recoil and per-slot lag.
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+  }
+  function slideCurve(elapsed, from, motion) {
+    const u = elapsed / Math.max(1, motion.durationMs);
+    if (u <= 0) return from;
+    if (u >= 1) return 0;
+    const sign = from < 0 ? -1 : 1;
+    const past = -sign * motion.overshoot;
+    const back = sign * motion.settle;
+    if (u < 0.6) {
+      const q = 1 - u / 0.6;
+      return past + (from - past) * q * q * q;
+    }
+    if (u < 0.85) return past + ((back - past) * (u - 0.6)) / 0.25;
+    return (back * (1 - u)) / 0.15;
+  }
+  function slideShift(now) {
+    const slide = state.inventorySlide;
+    return slide ? Math.round(slideCurve(now - slide.start, slide.from, data.layout.inventory.motion)) : 0;
+  }
+  function slotShift(now, row, last) {
+    const slide = state.inventorySlide;
+    const motion = data.layout.inventory.motion;
+    const order = slide.from > 0 ? row : last - row;
+    return Math.round(slideCurve(
+      now - slide.start - clamp(order, 0, last) * motion.lagMs, slide.from, motion
+    ));
+  }
+  function inventoryWindow(inventory, at) {
+    const pad = inventory.motion.overshoot + inventory.motion.settle;
+    const width = (state.slots - 1) * inventory.pitch + inventory.slotSize[0];
+    const left = Math.max(pad, at.x - (inventory.leftArrow.x + inventory.leftArrow.displayWidth));
+    const right = Math.max(pad, inventory.rightArrow.x - (at.x + width));
+    return {x: at.x - left, left, width: left + width + right};
+  }
+  function inventoryTick(now) {
+    inventoryFrame = null;
+    const slide = state.inventorySlide;
+    if (!slide) return;
+    const motion = data.layout.inventory.motion;
+    if (now - slide.start >= motion.durationMs + motion.lagMs * (state.slots - 1)) {
+      state.inventorySlide = null;
+    }
+    renderInventory(now);
+    if (state.inventorySlide) inventoryFrame = requestAnimationFrame(inventoryTick);
+  }
+  function wakeInventory() {
+    if (inventoryFrame === null) inventoryFrame = requestAnimationFrame(inventoryTick);
+  }
   function setInventoryStart(n) {
-    state.inventoryStart = Math.min(Math.max(0, Math.round(n)), Math.max(0, data.items.length - state.slots));
-    renderInventory();
+    const next = clamp(Math.round(Number(n) || 0), 0, Math.max(0, data.items.length - state.slots));
+    const moved = next - state.inventoryStart;
+    if (!moved) return;
+    const now = performance.now();
+    const inv = data.layout.inventory;
+    const prefersReducedMotion = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (inv.motion.slide && !prefersReducedMotion) {
+      // Rebase the running slide before starting another: rapid reverse clicks
+      // retain momentum rather than snapping the items to new slots.
+      const from = clamp(slideShift(now) + moved * inv.pitch, -2 * inv.pitch, 2 * inv.pitch);
+      state.inventorySlide = {from, start: now};
+    } else {
+      state.inventorySlide = null;
+      if (inventoryFrame !== null) cancelAnimationFrame(inventoryFrame);
+      inventoryFrame = null;
+    }
+    state.inventoryStart = next;
+    renderInventory(now);
     renderControls();
+    if (state.inventorySlide) wakeInventory();
   }
   function openItem(id) {
     if (!data.catalog.items[id]) throw new Error("Unknown item " + id);
@@ -256,40 +328,67 @@
       {width:L.objective.body.width,height:75,lineHeight:L.objective.body.lineHeight,maxWidth:L.objective.body.width,align:"center"});
   }
 
-  function renderInventory() {
+  function buildInventory() {
     const strip = $("inventoryStrip");
-    strip.replaceChildren();
-    const config = data.layout.inventory;
-    const at = config.slotLayouts[String(config.slotCount)];
-    const baseX = at.x;
+    if (strip.children.length) return;
+    const inv = data.layout.inventory;
     const slotArt = "assets/approved/art/ui/sprites/inventory/inventory_slot.png";
-    for (let i = 0; i < state.slots; ++i) {
-      const itemId = data.items[state.inventoryStart + i];
+    // Persistent nodes: no image reloading or focus loss on every animation frame.
+    // Keep document order equal to the original item order for keyboard navigation.
+    for (let index = 0; index < data.items.length; ++index) {
+      const itemId = data.items[index];
       const button = document.createElement("button");
       button.type = "button";
       button.className = "inventory-slot";
-      button.style.left = (baseX + config.pitch * i) + "px";
-      button.style.top = at.y + "px";
-      button.style.width = config.slotSize[0] + "px";
-      button.style.height = config.slotSize[1] + "px";
-      button.dataset.item = itemId || "";
-      button.setAttribute("aria-label", itemId ? "Inspect " + itemTitle(itemId) : "Empty inventory slot");
-      if (!itemId) button.disabled = true;
+      button.dataset.item = itemId;
+      button.dataset.index = String(index);
+      button.setAttribute("aria-label", "Inspect " + itemTitle(itemId));
+      button.style.width = inv.slotSize[0] + "px";
+      button.style.height = inv.slotSize[1] + "px";
+      button.hidden = true;
       const background = document.createElement("img");
       background.src = slotArt;
       background.alt = "";
       button.appendChild(background);
-      if (itemId) {
-        const image = document.createElement("img");
-        image.className = "item-image";
-        image.src = asset(data.catalog.items[itemId].slot);
-        image.alt = "";
-        button.appendChild(image);
-        button.addEventListener("click", () => openItem(itemId));
-      }
+      const image = document.createElement("img");
+      image.className = "item-image";
+      image.src = asset(data.catalog.items[itemId].slot);
+      image.alt = "";
+      button.appendChild(image);
+      button.addEventListener("click", () => openItem(itemId));
       strip.appendChild(button);
     }
-    strip.setAttribute("aria-label", state.slots + "-slot owner layout displaying art for " + state.slots + " items");
+  }
+  function renderInventory(now = performance.now()) {
+    const strip = $("inventoryStrip");
+    const inv = data.layout.inventory;
+    const at = inv.slotLayouts[String(inv.slotCount)];
+    const box = inventoryWindow(inv, at);
+    const sliding = !!state.inventorySlide && inv.motion.slide;
+    buildInventory();
+    Object.assign(strip.style, {
+      left: box.x + "px",
+      top: at.y + "px",
+      width: box.width + "px",
+      height: inv.slotSize[1] + "px"
+    });
+    const visible = new Set();
+    const first = sliding ? -SPARE_SLOTS : 0;
+    const last = sliding ? state.slots + SPARE_SLOTS - 1 : state.slots - 1;
+    for (let row = first; row <= last; ++row) {
+      const index = state.inventoryStart + row;
+      if (index < 0 || index >= data.items.length) continue;
+      const x = box.left + row * inv.pitch + (sliding ? slotShift(now, row, state.slots - 1) : 0);
+      if (x + inv.slotSize[0] <= 0 || x >= box.width) continue;
+      const button = strip.children[index];
+      button.style.left = x + "px";
+      button.style.top = "0px";
+      button.dataset.row = String(row);
+      visible.add(button);
+    }
+    for (const button of strip.children) button.hidden = !visible.has(button);
+    strip.dataset.moving = sliding ? "true" : "false";
+    strip.setAttribute("aria-label", state.slots + "-slot owner inventory with spring-slide art");
     $("inventoryStatus").textContent = "Showing items " + (state.inventoryStart + 1) + "–" +
       Math.min(data.items.length, state.inventoryStart + state.slots) +
       " of " + data.items.length + ". Use arrows to move one item at a time.";
@@ -424,6 +523,9 @@
       buttonSkin: state.buttonSkin,
       buttonLabels: data.layout.utility.buttons.map(b=>b.label),
       inventoryStart: state.inventoryStart,
+      inventoryMoving: !!state.inventorySlide,
+      inventoryShift: slideShift(performance.now()),
+      inventoryMotion: data.layout.inventory.motion,
       items: data.items.slice(state.inventoryStart,state.inventoryStart+state.slots),
       inspection: state.inspection,
       sceneSize: [314,206],
