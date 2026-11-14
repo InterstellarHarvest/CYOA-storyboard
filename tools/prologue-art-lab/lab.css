@@ -41,7 +41,7 @@
 #choiceThumb{position:absolute;width:20px;height:40px;z-index:6;pointer-events:none;display:flex;flex-direction:column}
 #choiceThumb img{width:20px;height:10px;flex:none}
 #choiceThumb .thumb-middle{flex:1;min-height:1px;background-repeat:repeat-y;background-size:20px auto}
-#inventoryStrip{position:absolute;inset:0;z-index:6;pointer-events:none}
+#inventoryStrip{position:absolute;z-index:6;overflow:hidden;pointer-events:none}
 .inventory-slot{position:absolute;width:96px;height:96px;border:0;background:transparent;padding:0;cursor:pointer;pointer-events:auto}
 .inventory-slot img{position:absolute;left:0;top:0;width:96px;height:96px}
 .inventory-slot img.item-image{width:96px;height:96px}
