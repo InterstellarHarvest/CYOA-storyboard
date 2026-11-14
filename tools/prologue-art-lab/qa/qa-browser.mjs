@@ -39,7 +39,13 @@ async function suite(name,driver){
       "45 images loaded: "+await page.locator("#loadStatus").textContent());
     await page.locator("#actualPreview").click();
     const initial=await state();
-    check(initial.slots===7&&initial.sceneScale===4&&initial.inspection===null,"owner seven-slot preview and 4x native scene");
+    check(initial.slots===6&&initial.slotPitch===116&&initial.slotGap===20&&initial.sceneScale===4&&initial.inspection===null,"six-slot owner preview, 116px pitch, 20px spacing, 4x native scene");
+    check(JSON.stringify(initial.buttonLabels)===JSON.stringify(["INSPECT","NOTES","FILES"]),"original action labels restored");
+    const positions=await page.locator(".inventory-slot").evaluateAll(nodes=>nodes.map(n=>parseInt(n.style.left,10)));
+    check(JSON.stringify(positions)===JSON.stringify([92,208,324,440,556,672]),"inventory source positions 92px plus five 116px steps");
+    check(await page.locator("#stageNext").evaluate(n=>parseInt(n.style.left,10))===782&&positions[5]+96<782,"right arrow clears the sixth slot");
+    check(await page.locator("#objectiveLabel").evaluate(n=>n.width)===273,"objective typography follows owner's plaque width");
+    check(await page.locator("#speechCanvas").evaluate(n=>n.width)===540,"dialogue uses the owner's font canvas geometry");
     check(JSON.stringify(initial.portraitSize)==="[564,278]"&&JSON.stringify(initial.inspectSize)==="[565,451]","approved portrait and inspector dimensions");
     for(const id of ["workplace/applause_station","workplace/corridor","workplace/exit",
       "street/outside_workplace","exposition/entrance","exposition/property_intake",
@@ -64,14 +70,22 @@ async function suite(name,driver){
     await call("setLayers",{background:false,foreground:true,x:8,y:-4});
     check(await page.locator("#portraitBackground").evaluate(x=>x.hidden),"independent layer toggle");
     await call("setLayers",{background:true,foreground:true,x:0,y:0});
-    await call("setSlots",7);await call("setInventoryStart",0);
-    check((await state()).items.length===7&&await page.locator(".inventory-slot").count()===7,"seven native inventory slots");
-    await shot("inventory_first_seven");
-    await call("setInventoryStart",3);
-    check((await state()).items[6]==="wc_key","one-at-a-time scroll reaches approved key");
-    await shot("inventory_last_seven");
-    await call("setSlots",6);
-    check(await page.locator(".inventory-slot").count()===6,"six-slot M2 baseline comparison available");
+    await call("setSlots",6);await call("setInventoryStart",0);
+    check((await state()).items.length===6&&await page.locator(".inventory-slot").count()===6,"six native inventory slots");
+    await shot("inventory_first_six");
+    await call("setInventoryStart",4);
+    check((await state()).items[5]==="wc_key","one-at-a-time scroll reaches approved key with six slots");
+    await shot("inventory_last_six");
+    await call("setInventoryStart",0);
+    await call("setButtonMode","glyph");
+    check((await state()).buttonMode==="glyph"&&await page.locator(".utility-glyph:visible").count()===3,"all three approved action glyphs visible");
+    await shot("action_glyphs_up");
+    await call("setButtonSkin","down");
+    check((await state()).buttonSkin==="down"&&(await page.locator("#utilPrev .utility-skin").getAttribute("src")).includes("utility_a_down.png"),"approved physical DOWN sprite loaded");
+    await shot("action_glyphs_down");
+    await call("setButtonMode","label");await call("setButtonSkin","up");
+    check(await page.locator(".utility-label:visible").count()===3,"original bitmap labels restored");
+    await shot("action_labels_up");
     for(const id of ["termination_notice","property_claim_ticket","effects_box_full","rubber_band_ball","wc_key"]){
       await call("openItem",id);
       await page.waitForFunction(()=>{const i=document.querySelector("#inspectionImage");return i.complete&&i.naturalWidth===565;});
