@@ -41,9 +41,68 @@ async function suite(name,driver){
     const initial=await state();
     check(initial.slots===6&&initial.slotPitch===116&&initial.slotGap===20&&initial.sceneScale===4&&initial.inspection===null,"six-slot owner preview, 116px pitch, 20px spacing, 4x native scene");
     check(JSON.stringify(initial.buttonLabels)===JSON.stringify(["INSPECT","NOTES","FILES"]),"original action labels restored");
-    const positions=await page.locator(".inventory-slot").evaluateAll(nodes=>nodes.map(n=>parseInt(n.style.left,10)));
+    const positions=await page.locator(".inventory-slot:visible").evaluateAll(nodes=>nodes.map(n=>parseInt(n.style.left,10)+parseInt(n.parentElement.style.left,10)));
     check(JSON.stringify(positions)===JSON.stringify([92,208,324,440,556,672]),"inventory source positions 92px plus five 116px steps");
     check(await page.locator("#stageNext").evaluate(n=>parseInt(n.style.left,10))===782&&positions[5]+96<782,"right arrow clears the sixth slot");
+    const windowBox=await page.locator("#inventoryStrip").evaluate(n=>({
+      x:parseInt(n.style.left,10), width:parseInt(n.style.width,10),overflow:getComputedStyle(n).overflow
+    }));
+    check(windowBox.x===78&&windowBox.width===704&&windowBox.overflow==="hidden",
+      "inventory window clips extra slots between arrow bays");
+    check(JSON.stringify(initial.inventoryMotion)==='{"slide":true,"durationMs":275,"overshoot":5,"settle":1,"lagMs":2}',
+      "original spring, recoil and 2ms per-slot lag values");
+
+    // Click the actual artwork arrow, not just the programmatic setter.
+    const forward=await page.evaluate(()=>{
+      document.querySelector("#stageNext").click();
+      const now=window.PROLOGUE_LAB.getState();
+      const outgoing=document.querySelector('.inventory-slot[data-index="0"]');
+      return {now,outgoingVisible:!outgoing.hidden,outgoingX:parseInt(outgoing.style.left,10)};
+    });
+    check(forward.now.inventoryStart===1&&forward.now.inventoryMoving&&
+      forward.now.inventoryShift>0&&forward.now.inventoryShift<=116,
+      "right arrow starts one-item spring slide, without swapping item art");
+    check(forward.outgoingVisible&&forward.outgoingX>=0&&forward.outgoingX<60,
+      "previous item stays visible briefly while sliding out");
+    await page.waitForFunction(()=>!window.PROLOGUE_LAB.getState().inventoryMoving,null,{timeout:3000});
+    check((await state()).inventoryShift===0&&
+      await page.locator('.inventory-slot[data-index="0"]').isHidden()&&
+      await page.locator(".inventory-slot:visible").count()===6,
+      "slide settles with exactly six visible item slots");
+
+    const backward=await page.evaluate(()=>{
+      document.querySelector("#stagePrev").click();
+      return window.PROLOGUE_LAB.getState();
+    });
+    check(backward.inventoryStart===0&&backward.inventoryMoving&&backward.inventoryShift<0,
+      "left arrow starts reverse-direction spring slide");
+    await page.waitForFunction(()=>!window.PROLOGUE_LAB.getState().inventoryMoving,null,{timeout:3000});
+    const boundary=await page.evaluate(()=>{
+      document.querySelector("#stagePrev").click();
+      return window.PROLOGUE_LAB.getState();
+    });
+    check(boundary.inventoryStart===0&&!boundary.inventoryMoving,"boundary arrow does not start a phantom slide");
+
+    await page.locator("#inventoryNext").click();
+    await page.waitForTimeout(60);
+    const reversed=await page.evaluate(()=>{
+      document.querySelector("#inventoryPrev").click();
+      return window.PROLOGUE_LAB.getState();
+    });
+    check(reversed.inventoryStart===0&&reversed.inventoryMoving&&reversed.inventoryShift<0,
+      "rapid reversal carries the residual slide rather than snapping");
+    await page.waitForFunction(()=>!window.PROLOGUE_LAB.getState().inventoryMoving,null,{timeout:3000});
+
+    await page.emulateMedia({reducedMotion:"reduce"});
+    const reduced=await page.evaluate(()=>{
+      window.PROLOGUE_LAB.setInventoryStart(1);
+      return window.PROLOGUE_LAB.getState();
+    });
+    check(reduced.inventoryStart===1&&!reduced.inventoryMoving&&reduced.inventoryShift===0,
+      "reduced motion preference disables the slide");
+    await page.emulateMedia({reducedMotion:"no-preference"});
+    await call("setInventoryStart",0);
+    await page.waitForFunction(()=>!window.PROLOGUE_LAB.getState().inventoryMoving,null,{timeout:3000});
     check(await page.locator("#objectiveLabel").evaluate(n=>n.width)===273,"objective typography follows owner's plaque width");
     check(await page.locator("#speechCanvas").evaluate(n=>n.width)===540,"dialogue uses the owner's font canvas geometry");
     check(JSON.stringify(initial.portraitSize)==="[564,278]"&&JSON.stringify(initial.inspectSize)==="[565,451]","approved portrait and inspector dimensions");
@@ -71,12 +130,14 @@ async function suite(name,driver){
     check(await page.locator("#portraitBackground").evaluate(x=>x.hidden),"independent layer toggle");
     await call("setLayers",{background:true,foreground:true,x:0,y:0});
     await call("setSlots",6);await call("setInventoryStart",0);
-    check((await state()).items.length===6&&await page.locator(".inventory-slot").count()===6,"six native inventory slots");
+    check((await state()).items.length===6&&await page.locator(".inventory-slot:visible").count()===6,"six native inventory slots");
     await shot("inventory_first_six");
     await call("setInventoryStart",4);
+    await page.waitForFunction(()=>!window.PROLOGUE_LAB.getState().inventoryMoving,null,{timeout:3000});
     check((await state()).items[5]==="wc_key","one-at-a-time scroll reaches approved key with six slots");
     await shot("inventory_last_six");
     await call("setInventoryStart",0);
+    await page.waitForFunction(()=>!window.PROLOGUE_LAB.getState().inventoryMoving,null,{timeout:3000});
     await call("setButtonMode","glyph");
     check((await state()).buttonMode==="glyph"&&await page.locator(".utility-glyph:visible").count()===3,"all three approved action glyphs visible");
     await shot("action_glyphs_up");
