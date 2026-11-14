@@ -1,7 +1,7 @@
 name: Review public Prologue Artwork Lab
 on:
   push:
-    branches: [feature/prologue-art-lab-public, 'agent/prologue-six-slot-parity']
+    branches: [feature/prologue-art-lab-public, 'agent/prologue-six-slot-parity', 'agent/prologue-art-lab-inventory-motion']
   workflow_dispatch:
 permissions:
   contents: read
