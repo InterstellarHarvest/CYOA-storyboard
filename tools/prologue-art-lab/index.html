@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>The Acceptable Error — Prologue Artwork Lab</title>
+<link rel="stylesheet" href="./lab.css">
+<script defer src="./app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="overline">THE ACCEPTABLE ERROR · PROLOGUE</span>
+    <h1>Artwork Review Lab <span class="state-pill">DRAFT</span></h1>
+    <p>Review generated prologue art in the approved M2 visual frame. This is a non-playable visual study.</p>
+  </div>
+  <nav aria-label="Site navigation" class="nav">
+    <a href="../storyboard/">Storyboard</a>
+    <a href="./" aria-current="page">Artwork Lab</a>
+  </nav>
+</header>
+<div class="workspace">
+  <aside class="sidebar" aria-label="Artwork lab controls">
+    <div class="sidebar-intro">
+      <span class="small-cap">REVIEW CONTROLS</span>
+      <p>Everything below changes this preview only. No game state, art files, or story choices are saved.</p>
+    </div>
+    <section class="control-section">
+      <h2><span class="section-index">01</span> Main scene</h2>
+      <label for="sceneSelect">Backdrop in the approved scene aperture</label>
+      <select id="sceneSelect"></select>
+      <div class="btn-pair">
+        <button id="prevScene" type="button">Previous</button>
+        <button id="nextScene" type="button">Next</button>
+      </div>
+      <button id="compareReception" class="subtle-btn" type="button">Switch to approved reception</button>
+      <p class="note">Seven newly generated locations plus the approved M2 reception. Native <b>314 × 206</b>, 4× nearest-neighbor.</p>
+    </section>
+    <section class="control-section">
+      <h2><span class="section-index">02</span> Portrait layers</h2>
+      <label for="portraitSelect">Independent foreground/background pair</label>
+      <select id="portraitSelect"></select>
+      <div class="btn-pair checks">
+        <label><input id="showBackground" type="checkbox" checked> Background</label>
+        <label><input id="showForeground" type="checkbox" checked> Foreground</label>
+      </div>
+      <div class="btn-pair">
+        <label>Pose X offset<input id="poseX" type="number" min="-40" max="40" step="1" value="0"></label>
+        <label>Pose Y offset<input id="poseY" type="number" min="-40" max="40" step="1" value="0"></label>
+      </div>
+      <button id="resetOffsets" class="subtle-btn" type="button">Reset alignment to 0, 0</button>
+      <p id="portraitPairing" class="pair-note" aria-live="polite"></p>
+      <p class="note">Two termination-drone foreground poses share a separate corridor background. Portrait layers are <b>564 × 278</b> at 1×.</p>
+    </section>
+    <section class="control-section">
+      <h2><span class="section-index">03</span> Inventory</h2>
+      <label for="slotCount">Visible slots</label>
+      <select id="slotCount">
+        <option value="7">7 — owner target</option>
+        <option value="6">6 — checked-in M2 baseline</option>
+      </select>
+      <div class="btn-pair">
+        <button id="inventoryPrev" type="button">Previous item</button>
+        <button id="inventoryNext" type="button">Next item</button>
+      </div>
+      <label for="inventoryPosition">Start position</label>
+      <input id="inventoryPosition" type="range" min="0" max="3" value="0">
+      <p id="inventoryStatus" class="note"></p>
+      <p class="note caution">The seven-slot placement conflicts with the existing right-arrow position. This is a known visual review issue, not a proposed production fix.</p>
+    </section>
+    <section class="control-section">
+      <h2><span class="section-index">04</span> Item inspection</h2>
+      <label for="itemSelect">Item illustration</label>
+      <select id="itemSelect"></select>
+      <div class="btn-pair">
+        <button id="openInspector" type="button">Inspect item</button>
+        <button id="closeInspector" type="button">Close inspector</button>
+      </div>
+      <p class="note">All nine new detailed illustrations and the approved Facilities Key are displayed at native <b>565 × 451</b> within the approved item-inspector artwork.</p>
+    </section>
+    <section class="control-section">
+      <h2><span class="section-index">05</span> Owner review issues</h2>
+      <div class="issue"><strong>Termination notice</strong><p>Signature, REVIEWED and REVIEW PENDING markings conflict with possible item states.</p><button type="button" data-inspect="termination_notice">Examine notice</button></div>
+      <div class="issue"><strong>Property claim ticket</strong><p>Printed FOUR may contradict a three-item outcome.</p><button type="button" data-inspect="property_claim_ticket">Examine ticket</button></div>
+      <div class="issue"><strong>Personal effects box</strong><p>Printed name “H. Carter” is not confirmed as protagonist canon.</p><button type="button" data-inspect="effects_box_full">Examine box</button></div>
+      <div class="issue"><strong>Portrait alignment</strong><p>Check drone silhouette, hover placement and matching corridor perspective.</p><button type="button" data-scene="workplace/corridor">Examine corridor</button></div>
+      <div class="issue"><strong>Inspector presentation</strong><p>Assess full backgrounds, object size, shadows and alignment in the original frame.</p></div>
+      <div class="issue"><strong>Visual continuity</strong><p>Compare workplace, exterior street, Exposition, facilities hall and approved reception. The exterior is brighter.</p></div>
+    </section>
+  </aside>
+  <main class="review-view">
+    <div class="preview-bar">
+      <div>
+        <span id="sceneLabel" class="preview-title">Loading artwork…</span>
+        <span id="sourceLabel" class="preview-caption">M2 Round 2 frame · review-only controls</span>
+      </div>
+      <div class="preview-actions">
+        <button id="fitPreview" aria-pressed="true" type="button">Fit view</button>
+        <button id="actualPreview" aria-pressed="false" type="button">1:1 pixels</button>
+      </div>
+    </div>
+    <div id="previewViewport" class="preview-viewport" aria-label="Interactive review image of the approved game shell">
+      <div id="previewWrap">
+        <div id="stage" role="group" aria-label="1920 by 1080 approved M2 visual layout">
+          <div id="sceneAperture" role="img" aria-label="Main scene"><img id="sceneImage" alt="" decoding="async"></div>
+          <div id="portraitAperture" role="img" aria-label="Character portrait">
+            <img id="portraitBackground" alt="" decoding="async">
+            <img id="portraitForeground" alt="" decoding="async">
+          </div>
+          <img id="approvedShell" src="./assets/approved/art/ui/shell/layout-final.png" alt="" draggable="false">
+          <div id="speechExample" aria-hidden="true">
+            <span>ARTWORK REVIEW</span>
+            <span id="speechScene">ILLUSTRATIONS UNDER EVALUATION.</span>
+          </div>
+          <div class="choice-card" id="cardPrev" style="top:531px" role="button" tabindex="0" aria-label="Previous review scene">
+            <img src="./assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png" alt="">
+            <span>VIEW PREVIOUS SCENE</span>
+          </div>
+          <div class="choice-card" id="cardNext" style="top:644px" role="button" tabindex="0" aria-label="Next review scene">
+            <img src="./assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png" alt="">
+            <span>VIEW NEXT SCENE</span>
+          </div>
+          <div class="choice-card" id="cardInspect" style="top:757px" role="button" tabindex="0" aria-label="Inspect selected item">
+            <img src="./assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png" alt="">
+            <span>INSPECT SELECTED ITEM</span>
+          </div>
+          <div id="inventoryStrip" aria-label="Seven-slot inventory review"></div>
+          <button class="stage-arrow" id="stagePrev" type="button" aria-label="Previous inventory item"><img id="stagePrevImg" src="./assets/approved/art/ui/sprites/controls/inv_left_up.png" alt=""></button>
+          <button class="stage-arrow" id="stageNext" type="button" aria-label="Next inventory item"><img id="stageNextImg" src="./assets/approved/art/ui/sprites/controls/inv_right_up.png" alt=""></button>
+          <div id="objectiveLabel" aria-hidden="true">CURRENT OBJECTIVE</div>
+          <div id="objectiveText" aria-hidden="true">REVIEW THE PROLOGUE ARTWORK.</div>
+          <button class="stage-utility" id="utilPrev" type="button" style="left:1482px" aria-label="Previous scene">
+            <img src="./assets/approved/art/ui/sprites/controls/utility_a_up.png" alt=""><span>BACK</span></button>
+          <button class="stage-utility" id="utilInspect" type="button" style="left:1619px" aria-label="Open selected item">
+            <img src="./assets/approved/art/ui/sprites/controls/utility_b_up.png" alt=""><span>ITEM</span></button>
+          <button class="stage-utility" id="utilNext" type="button" style="left:1756px" aria-label="Next scene">
+            <img src="./assets/approved/art/ui/sprites/controls/utility_c_up.png" alt=""><span>NEXT</span></button>
+          <div id="inspectionLayer" hidden>
+            <img id="inspectionImage" alt="" draggable="false" decoding="async">
+            <img id="inspectionOverlay" src="./assets/approved/art/ui/shell/item-overlay.png" alt="" draggable="false">
+            <div id="inspectionCaption"><strong id="inspectionName">ITEM</strong><span>ARTWORK REVIEW ONLY. STATE-DEPENDENT GRAPHICS ARE NOT YET APPROVED.</span></div>
+            <button id="inspectionCloseX" type="button" aria-label="Close item inspector">
+              <img src="./assets/approved/art/ui/sprites/inspect_close.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="preview-footer">
+      <span><strong>Visual-only study:</strong> not the private gameplay engine; no game logic or art-status changes.</span>
+      <span id="loadStatus" role="status" aria-live="polite">Loading public artwork records…</span>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
