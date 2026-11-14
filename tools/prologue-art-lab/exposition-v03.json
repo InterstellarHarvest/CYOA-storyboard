@@ -1,0 +1,93 @@
+{
+  "schema": "cyoa-exposition-v03-public-review-v1",
+  "source": {
+    "repository": "InterstellarHarvest/CYOA",
+    "ref": "6393d43dc0704168ab4047a6c1eb13ed1aa33360",
+    "review": "review/exposition-detail-corrections-2026-11-14/"
+  },
+  "ownerVisualApproval": "pending",
+  "narrativePatchApplied": false,
+  "productionPromotion": false,
+  "approvedReception": {
+    "scene": "exposition/reception",
+    "assetPath": "art/scenes/conference_hall/reception/reception_scene.png",
+    "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+  },
+  "scenes": [
+    {
+      "id": "street/outside_workplace",
+      "assetPath": "art/scenes/exposition/continuity-v01/street-approach.png",
+      "sha256": "378860bc141c6d8fc14578d3f84e4c8eb18624f23923eaa122ee87f1c75acf07",
+      "bytes": 86712,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/street_approach.png",
+      "comparisonInPublicLab": true,
+      "humanFigureInCurrentArtwork": false,
+      "comparisonNote": "Unchanged from V02 publication"
+    },
+    {
+      "id": "exposition/entrance",
+      "assetPath": "art/scenes/exposition/continuity-v03/entrance.png",
+      "sha256": "2b9930eee02e44ba954f53551f0330bf5e27b318dd7491e5be16c702358d7bd6",
+      "bytes": 48694,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/continuity-v02/entrance.png",
+      "comparisonInPublicLab": true,
+      "humanFigureInCurrentArtwork": false,
+      "comparisonNote": "Previous candidate is unoccupied and safe for visual comparison; older versions remain archived"
+    },
+    {
+      "id": "exposition/property_intake",
+      "assetPath": "art/scenes/exposition/continuity-v02/property-intake.png",
+      "sha256": "2162f0abea7c3c2bc75871941b6663e9c7501cdd5b98612adfc966ffdecb7137",
+      "bytes": 56883,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/property_counter.png",
+      "comparisonInPublicLab": false,
+      "humanFigureInCurrentArtwork": false,
+      "comparisonNote": "Unchanged from V02 publication"
+    },
+    {
+      "id": "exposition/facilities_corridor",
+      "assetPath": "art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "sha256": "c0b8663dbbb1146539c7713c7c8725c47675e3576a774054bb741b5509a49833",
+      "bytes": 66620,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/continuity-v01/facilities-corridor.png",
+      "comparisonInPublicLab": true,
+      "humanFigureInCurrentArtwork": false,
+      "comparisonNote": "Previous candidate is unoccupied and safe for visual comparison; older versions remain archived"
+    }
+  ],
+  "update": {
+    "sourceBase": "48eac78b07746e185cac6726220cd0b023ce6dab",
+    "changedSceneCount": 2,
+    "method": "native-grid local edits; no imagegen or resampling",
+    "unchangedScenes": [
+      "street/outside_workplace",
+      "exposition/property_intake",
+      "exposition/reception"
+    ],
+    "protectedUi": true
+  }
+}
