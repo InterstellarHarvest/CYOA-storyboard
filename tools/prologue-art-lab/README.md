@@ -5,6 +5,35 @@ https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/
 
 This is a public-safe, non-playable visual review tool. It displays the exact approved M2 shell, inventory, arrow, choice-card, utility-button and inspector images at the approved whole-pixel stage coordinates. It does not publish or execute the private CYOA gameplay engine, story scripts, save files, test fixtures, review notes or internal rulings.
 
+## Exposition V03 detail refresh — 2026-11-14
+
+Private source `InterstellarHarvest/CYOA` commit
+`6393d43dc0704168ab4047a6c1eb13ed1aa33360`
+updates two current native 314×206 RGB assets, with no resampling or scene
+regeneration:
+
+- Entrance `art/scenes/exposition/continuity-v03/entrance.png`: remove
+  incorrect facilities sign above the turnstile, restore panel joints,
+  replace grille with five clear slots, and simplify connected turnstile shaft
+  and arms
+- Facilities corridor
+  `art/scenes/exposition/continuity-v03/facilities-corridor.png`:
+  inset/shrink both wayfinding plaques and render the right-face arrow in
+  correct receding perspective
+
+Both new assets are published as `generated`, pending owner visual approval.
+The previous V02 entrance (unoccupied) and V01 corridor are available from the
+lab's previous-artwork selector; their older versions also remain archived.
+Street approach and automated property intake remain unchanged, along with the
+only scene containing a person, the approved M2 receptionist.
+
+The metadata in `exposition-v03.json` stores only safe paths, native dimensions,
+SHA-256 checksums, generated status, source revision and comparison allowances.
+The earlier `exposition-v02.json` is retained as prior-review provenance. No
+private narrative proposal, modified gameplay script, or generation evidence
+is imported into this public site. The six-slot UI shell and animated inventory
+are unchanged.
+
 ## Exposition V02 refresh — 2026-11-14
 
 Current Exposition artwork is pinned to private `InterstellarHarvest/CYOA` commit
@@ -45,7 +74,7 @@ and bitmap text are unchanged.
 
 The November 13 artwork-quality audit from <code>CYOA/docs/story-gameplay-study-v01</code> contributes 16 corrected source PNGs (5 scenes and 11 item images); the remaining 12 generated PNGs are unchanged. All 28 pass the source audit's technical checks, but visual owner approval is pending. The audit records and original-versus-final SHA-256 values are retained in <code>artwork-audit.json</code>. Nothing is merged into the private game or promoted to approved production artwork. The 4× evidence sheets and static shell composites are not runtime assets.
 
-All 49 primary images retain SHA-256 and dimension verification. The fourteen added approved images are pinned against their original Git blob hashes. No draft artwork is marked approved by publication.
+All 51 primary images retain SHA-256 and dimension verification. The fourteen added approved images are pinned against their original Git blob hashes. No draft artwork is marked approved by publication.
 
 ## Visual review controls
 
