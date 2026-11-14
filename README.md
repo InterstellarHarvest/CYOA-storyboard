@@ -2,12 +2,13 @@
 
 This is the **public, JSON-backed Storyboard + Artwork Production viewer** for The Acceptable Error. The site displays authored scenes, branching choices, inventory items, shared art prompts, asset references and production statuses. You can edit prompts and export updated JSON locally, but the live site never commits changes to GitHub.
 
-- **[Open the storyboard](https://interstellarharvest.github.io/CYOA-storyboard/)** *(available once GitHub Pages is enabled and the deployment succeeds)*
+- **[Open the storyboard](https://interstellarharvest.github.io/CYOA-storyboard/)**
+- **[Open the Prologue Artwork Lab](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/)** — public-safe visual review with approved M2 shell assets and 28 draft PNGs; no private game engine
 - [Viewer](tools/storyboard/index.html) · [Chapter manifest](story/storyboard-manifest.json) · [Prologue draft](story/chapters/prologue-00.draft.json) · [Item records](story/items.draft.json) · [Shared art prompts](story/artwork.draft.json)
 
 ## Boundaries
 
-The main game project **InterstellarHarvest/CYOA remains private**. The **only** content exported here is the standalone storyboard page and selected story/items/artwork JSON needed to display it. This public repository deliberately excludes game source, image assets, internal rulings/docs, and commit history from the private project.
+The main game project **InterstellarHarvest/CYOA remains private**. The public export is limited to the standalone storyboard, its selected draft JSON, and the separately approved **Prologue Artwork Lab** package (28 draft PNGs plus 17 needed approved M2 visual PNGs and public-safe viewing code). The private gameplay engine, internal rulings, review notes, and private commit history are not published.
 
 Everything here is **public**. Do not commit secret data or unpublished private project material.
 

@@ -32,7 +32,9 @@
   ];
 
   function safe(id) {
-    return String(id).replace(/[^a-zA-Z0-9/_:-]/g, "");
+    const name = String(id);
+    if (!/^art\/[a-zA-Z0-9._/-]+$/.test(name) || name.includes("..")) throw new Error("Unsafe art asset path");
+    return name;
   }
   function asset(record, fallback) {
     if (fallback) return "assets/approved/" + fallback;

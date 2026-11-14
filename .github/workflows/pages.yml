@@ -6,6 +6,7 @@ on:
       - '.github/workflows/pages.yml'
       - 'index.html'
       - 'tools/storyboard/**'
+      - 'tools/prologue-art-lab/**'
       - 'story/**'
   workflow_dispatch:
 
@@ -29,12 +30,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate storyboard and artwork catalog
         run: node tools/storyboard/qa-smoke.mjs
+      - name: Validate public prologue art source hashes and PNG dimensions
+        run: node tools/prologue-art-lab/qa/qa-static.mjs
       - name: Build standalone public site
         run: |
           set -euo pipefail
           mkdir -p _site/tools/storyboard _site/story/chapters
           cp index.html _site/index.html
           cp tools/storyboard/index.html _site/tools/storyboard/index.html
+          mkdir -p _site/tools/prologue-art-lab/assets
+          cp tools/prologue-art-lab/index.html tools/prologue-art-lab/lab.css tools/prologue-art-lab/app.js tools/prologue-art-lab/asset-index.json _site/tools/prologue-art-lab/
+          cp -a tools/prologue-art-lab/assets/. _site/tools/prologue-art-lab/assets/
           cp story/storyboard-manifest.json _site/story/storyboard-manifest.json
           cp story/items.draft.json _site/story/items.draft.json
           cp story/artwork.draft.json _site/story/artwork.draft.json
@@ -42,6 +48,9 @@ jobs:
           cp story/chapters/*.json _site/story/chapters/
           touch _site/.nojekyll
           test -s _site/tools/storyboard/index.html
+          test -s _site/tools/prologue-art-lab/index.html
+          test -s _site/tools/prologue-art-lab/asset-index.json
+          test -s _site/tools/prologue-art-lab/assets/approved/art/ui/shell/layout-final.png
           test -s _site/story/storyboard-manifest.json
           test -s _site/story/chapters/prologue-00.draft.json
           test -s _site/story/items.draft.json

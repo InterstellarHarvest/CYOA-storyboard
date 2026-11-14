@@ -29,6 +29,7 @@
 #portraitAperture{left:1333px;top:44px;width:564px;height:278px}
 #portraitAperture img{position:absolute;left:0;top:0;width:564px;height:278px}
 #portraitForeground{z-index:1}
+#portraitAperture img[hidden]{display:none}
 #approvedShell{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:3;pointer-events:none}
 #speechExample{position:absolute;left:1342px;top:361px;width:540px;height:140px;z-index:4;padding:12px 2px;display:flex;flex-direction:column;gap:9px;color:#223a40;font-family:monospace;font-weight:700;font-size:18px;line-height:1.4;pointer-events:none}
 #speechExample span:nth-child(2){font-size:14px;color:#405459}
