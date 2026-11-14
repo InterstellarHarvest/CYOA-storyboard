@@ -14,6 +14,7 @@ assert.equal(layout.inventory.slotCount,6);
 assert.deepEqual(layout.inventory.slotSize,[96,96]);
 assert.equal(layout.inventory.gap,20);
 assert.equal(layout.inventory.pitch,116);
+assert.deepEqual(layout.inventory.motion,{slide:true,durationMs:275,overshoot:5,settle:1,lagMs:2});
 assert.deepEqual(layout.inventory.slotLayouts["6"],{x:92,y:935});
 assert.deepEqual([layout.inventory.leftArrow.x,layout.inventory.rightArrow.x],[33,782]);
 assert.ok(92+5*116+96<782,"six inventory slots do not overlap the right arrow");
