@@ -39,7 +39,7 @@ jobs:
           cp index.html _site/index.html
           cp tools/storyboard/index.html _site/tools/storyboard/index.html
           mkdir -p _site/tools/prologue-art-lab/assets
-          cp tools/prologue-art-lab/index.html tools/prologue-art-lab/lab.css tools/prologue-art-lab/app.js tools/prologue-art-lab/pixel-type.js tools/prologue-art-lab/asset-index.json tools/prologue-art-lab/control-asset-manifest.json tools/prologue-art-lab/layout-reference.json tools/prologue-art-lab/bitmap-fonts.json _site/tools/prologue-art-lab/
+          cp tools/prologue-art-lab/index.html tools/prologue-art-lab/lab.css tools/prologue-art-lab/app.js tools/prologue-art-lab/pixel-type.js tools/prologue-art-lab/asset-index.json tools/prologue-art-lab/control-asset-manifest.json tools/prologue-art-lab/layout-reference.json tools/prologue-art-lab/bitmap-fonts.json tools/prologue-art-lab/artwork-audit.json _site/tools/prologue-art-lab/
           cp -a tools/prologue-art-lab/assets/. _site/tools/prologue-art-lab/assets/
           cp story/storyboard-manifest.json _site/story/storyboard-manifest.json
           cp story/items.draft.json _site/story/items.draft.json
@@ -52,6 +52,7 @@ jobs:
           test -s _site/tools/prologue-art-lab/asset-index.json
           test -s _site/tools/prologue-art-lab/layout-reference.json
           test -s _site/tools/prologue-art-lab/bitmap-fonts.json
+          test -s _site/tools/prologue-art-lab/artwork-audit.json
           test -s _site/tools/prologue-art-lab/control-asset-manifest.json
           test -s _site/tools/prologue-art-lab/assets/approved/art/actions/inspect.png
           test -s _site/tools/prologue-art-lab/assets/approved/art/ui/shell/layout-final.png
