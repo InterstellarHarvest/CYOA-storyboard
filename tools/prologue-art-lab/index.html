@@ -6,6 +6,7 @@
 <meta name="color-scheme" content="dark">
 <title>The Acceptable Error — Prologue Artwork Lab</title>
 <link rel="stylesheet" href="./lab.css">
+<script defer src="./pixel-type.js"></script>
 <script defer src="./app.js"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
   <div class="brand">
     <span class="overline">THE ACCEPTABLE ERROR · PROLOGUE</span>
     <h1>Artwork Review Lab <span class="state-pill">DRAFT</span></h1>
-    <p>Review generated prologue art in the approved M2 visual frame. This is a non-playable visual study.</p>
+    <p>Review generated prologue art in the current six-slot M1/M2 visual frame. This is a non-playable visual study.</p>
   </div>
   <nav aria-label="Site navigation" class="nav">
     <a href="../storyboard/">Storyboard</a>
@@ -55,11 +56,7 @@
     </section>
     <section class="control-section">
       <h2><span class="section-index">03</span> Inventory</h2>
-      <label for="slotCount">Visible slots</label>
-      <select id="slotCount">
-        <option value="7">7 — owner target</option>
-        <option value="6">6 — checked-in M2 baseline</option>
-      </select>
+      <p id="slotStatus" class="note">6 slots · 20 px spacing · current baseline</p>
       <div class="btn-pair">
         <button id="inventoryPrev" type="button">Previous item</button>
         <button id="inventoryNext" type="button">Next item</button>
@@ -67,10 +64,24 @@
       <label for="inventoryPosition">Start position</label>
       <input id="inventoryPosition" type="range" min="0" max="3" value="0">
       <p id="inventoryStatus" class="note"></p>
-      <p class="note caution">The seven-slot placement conflicts with the existing right-arrow position. This is a known visual review issue, not a proposed production fix.</p>
+      <p class="note">Six 96 × 96 slots, pitched 116 px, with both arrows outside the row. The obsolete seven-slot comparison is removed.</p>
     </section>
     <section class="control-section">
-      <h2><span class="section-index">04</span> Item inspection</h2>
+      <h2><span class="section-index">04</span> Action button artwork</h2>
+      <label for="buttonMode">Button contents</label>
+      <select id="buttonMode">
+        <option value="label">Bitmap labels — layout export</option>
+        <option value="glyph">Approved INSPECT / NOTES / FILES glyphs</option>
+      </select>
+      <label for="buttonSkin">Physical button state</label>
+      <select id="buttonSkin">
+        <option value="up">UP — resting button</option>
+        <option value="down">DOWN — pressed artwork</option>
+      </select>
+      <p class="note">Approved sprite artwork is separate from the text or glyph. Pressed labels and glyphs move 2 px right and down; the DOWN sprite remains fixed. These controls are visual studies, not gameplay.</p>
+    </section>
+    <section class="control-section">
+      <h2><span class="section-index">05</span> Item inspection</h2>
       <label for="itemSelect">Item illustration</label>
       <select id="itemSelect"></select>
       <div class="btn-pair">
@@ -80,7 +91,7 @@
       <p class="note">All nine new detailed illustrations and the approved Facilities Key are displayed at native <b>565 × 451</b> within the approved item-inspector artwork.</p>
     </section>
     <section class="control-section">
-      <h2><span class="section-index">05</span> Owner review issues</h2>
+      <h2><span class="section-index">06</span> Owner review issues</h2>
       <div class="issue"><strong>Termination notice</strong><p>Signature, REVIEWED and REVIEW PENDING markings conflict with possible item states.</p><button type="button" data-inspect="termination_notice">Examine notice</button></div>
       <div class="issue"><strong>Property claim ticket</strong><p>Printed FOUR may contradict a three-item outcome.</p><button type="button" data-inspect="property_claim_ticket">Examine ticket</button></div>
       <div class="issue"><strong>Personal effects box</strong><p>Printed name “H. Carter” is not confirmed as protagonist canon.</p><button type="button" data-inspect="effects_box_full">Examine box</button></div>
@@ -109,33 +120,39 @@
             <img id="portraitForeground" alt="" decoding="async">
           </div>
           <img id="approvedShell" src="./assets/approved/art/ui/shell/layout-final.png" alt="" draggable="false">
-          <div id="speechExample" aria-hidden="true">
-            <span>ARTWORK REVIEW</span>
-            <span id="speechScene">ILLUSTRATIONS UNDER EVALUATION.</span>
+          <div id="speechExample" aria-label="Artwork review dialogue preview">
+            <canvas id="speechCanvas" role="img" aria-label="ARTWORK REVIEW"></canvas>
           </div>
           <div class="choice-card" id="cardPrev" style="top:531px" role="button" tabindex="0" aria-label="Previous review scene">
             <img src="./assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png" alt="">
-            <span>VIEW PREVIOUS SCENE</span>
+            <canvas class="choice-label" id="choiceLabel0" role="img" aria-label="VIEW PREVIOUS SCENE"></canvas>
           </div>
           <div class="choice-card" id="cardNext" style="top:644px" role="button" tabindex="0" aria-label="Next review scene">
             <img src="./assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png" alt="">
-            <span>VIEW NEXT SCENE</span>
+            <canvas class="choice-label" id="choiceLabel1" role="img" aria-label="VIEW NEXT SCENE"></canvas>
           </div>
           <div class="choice-card" id="cardInspect" style="top:757px" role="button" tabindex="0" aria-label="Inspect selected item">
             <img src="./assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png" alt="">
-            <span>INSPECT SELECTED ITEM</span>
+            <canvas class="choice-label" id="choiceLabel2" role="img" aria-label="INSPECT SELECTED ITEM"></canvas>
           </div>
-          <div id="inventoryStrip" aria-label="Seven-slot inventory review"></div>
+          <div id="choiceThumb" aria-hidden="true"><img class="thumb-top" alt=""><div class="thumb-middle"></div><img class="thumb-bottom" alt=""></div>
+          <div id="inventoryStrip" aria-label="Six-slot inventory review"></div>
           <button class="stage-arrow" id="stagePrev" type="button" aria-label="Previous inventory item"><img id="stagePrevImg" src="./assets/approved/art/ui/sprites/controls/inv_left_up.png" alt=""></button>
           <button class="stage-arrow" id="stageNext" type="button" aria-label="Next inventory item"><img id="stageNextImg" src="./assets/approved/art/ui/sprites/controls/inv_right_up.png" alt=""></button>
-          <div id="objectiveLabel" aria-hidden="true">CURRENT OBJECTIVE</div>
-          <div id="objectiveText" aria-hidden="true">REVIEW THE PROLOGUE ARTWORK.</div>
-          <button class="stage-utility" id="utilPrev" type="button" style="left:1482px" aria-label="Previous scene">
-            <img src="./assets/approved/art/ui/sprites/controls/utility_a_up.png" alt=""><span>BACK</span></button>
-          <button class="stage-utility" id="utilInspect" type="button" style="left:1619px" aria-label="Open selected item">
-            <img src="./assets/approved/art/ui/sprites/controls/utility_b_up.png" alt=""><span>ITEM</span></button>
-          <button class="stage-utility" id="utilNext" type="button" style="left:1756px" aria-label="Next scene">
-            <img src="./assets/approved/art/ui/sprites/controls/utility_c_up.png" alt=""><span>NEXT</span></button>
+          <canvas id="objectiveLabel" role="img" aria-label="CURRENT OBJECTIVE"></canvas>
+          <canvas id="objectiveText" role="img" aria-label="REVIEW THE PROLOGUE ARTWORK."></canvas>
+          <button class="stage-utility" id="utilPrev" type="button" aria-label="Inspect selected item">
+            <img class="utility-skin" src="./assets/approved/art/ui/sprites/controls/utility_a_up.png" alt="">
+            <canvas class="utility-label" id="utilityLabel0" role="img" aria-label="INSPECT"></canvas>
+            <img class="utility-glyph" src="./assets/approved/art/actions/inspect.png" alt="" hidden></button>
+          <button class="stage-utility" id="utilInspect" type="button" aria-label="Notes button artwork">
+            <img class="utility-skin" src="./assets/approved/art/ui/sprites/controls/utility_b_up.png" alt="">
+            <canvas class="utility-label" id="utilityLabel1" role="img" aria-label="NOTES"></canvas>
+            <img class="utility-glyph" src="./assets/approved/art/actions/notes.png" alt="" hidden></button>
+          <button class="stage-utility" id="utilNext" type="button" aria-label="Files button artwork">
+            <img class="utility-skin" src="./assets/approved/art/ui/sprites/controls/utility_c_up.png" alt="">
+            <canvas class="utility-label" id="utilityLabel2" role="img" aria-label="FILES"></canvas>
+            <img class="utility-glyph" src="./assets/approved/art/actions/files.png" alt="" hidden></button>
           <div id="inspectionLayer" hidden>
             <img id="inspectionImage" alt="" draggable="false" decoding="async">
             <img id="inspectionOverlay" src="./assets/approved/art/ui/shell/item-overlay.png" alt="" draggable="false">
