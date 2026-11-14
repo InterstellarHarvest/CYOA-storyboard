@@ -33,8 +33,8 @@ async function suite(name,driver){
   const state=()=>page.evaluate(()=>window.PROLOGUE_LAB.getState());
   const shot=key=>page.locator("#stage").screenshot({path:path.join(shots,name+"_"+key+".png"),animations:"disabled",timeout:30000});
   try{
-    await page.goto(base);
-    await page.waitForFunction(()=>document.body.dataset.ready==="true"||document.body.dataset.ready==="error",{timeout:45000});
+    await page.goto(base+"index.html",{waitUntil:"domcontentloaded",timeout:45000});
+    await page.waitForFunction(()=>document.body.dataset.ready==="true"||document.body.dataset.ready==="error",null,{timeout:45000});
     check((await page.locator("body").getAttribute("data-ready"))==="true",
       "45 images loaded: "+await page.locator("#loadStatus").textContent());
     await page.locator("#actualPreview").click();
