@@ -1,0 +1,78 @@
+{
+  "schema": "cyoa-exposition-v02-public-review-v1",
+  "source": {
+    "repository": "InterstellarHarvest/CYOA",
+    "ref": "48eac78b07746e185cac6726220cd0b023ce6dab",
+    "review": "review/exposition-automation-revision-2026-11-14/"
+  },
+  "ownerVisualApproval": "pending",
+  "narrativePatchApplied": false,
+  "productionPromotion": false,
+  "approvedReception": {
+    "scene": "exposition/reception",
+    "assetPath": "art/scenes/conference_hall/reception/reception_scene.png",
+    "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+  },
+  "scenes": [
+    {
+      "id": "street/outside_workplace",
+      "assetPath": "art/scenes/exposition/continuity-v01/street-approach.png",
+      "sha256": "378860bc141c6d8fc14578d3f84e4c8eb18624f23923eaa122ee87f1c75acf07",
+      "bytes": 86712,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/street_approach.png",
+      "comparisonInPublicLab": true,
+      "humanFigureInCurrentArtwork": false
+    },
+    {
+      "id": "exposition/entrance",
+      "assetPath": "art/scenes/exposition/continuity-v02/entrance.png",
+      "sha256": "8652f534344ebfab7bf7b364900884cf17b1e50500509ce74cb7664b86261e8f",
+      "bytes": 49128,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/entrance_turnstile.png",
+      "comparisonInPublicLab": false,
+      "humanFigureInCurrentArtwork": false
+    },
+    {
+      "id": "exposition/property_intake",
+      "assetPath": "art/scenes/exposition/continuity-v02/property-intake.png",
+      "sha256": "2162f0abea7c3c2bc75871941b6663e9c7501cdd5b98612adfc966ffdecb7137",
+      "bytes": 56883,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/property_counter.png",
+      "comparisonInPublicLab": false,
+      "humanFigureInCurrentArtwork": false
+    },
+    {
+      "id": "exposition/facilities_corridor",
+      "assetPath": "art/scenes/exposition/continuity-v01/facilities-corridor.png",
+      "sha256": "a4fca947d971a9d83a7d61559cf1737084b79edfb31821a7c47ad205908e2875",
+      "bytes": 66834,
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "presentation": "4x nearest-neighbor",
+      "retainedPreviousAssetPath": "art/scenes/exposition/facilities_corridor.png",
+      "comparisonInPublicLab": true,
+      "humanFigureInCurrentArtwork": false
+    }
+  ]
+}
