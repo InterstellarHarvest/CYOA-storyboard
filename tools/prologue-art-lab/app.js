@@ -8,7 +8,7 @@
   const stage = $("stage");
   const viewport = $("previewViewport");
   const wrap = $("previewWrap");
-  const data = { catalog: null, index: null, scenes: [], items: [], urls: new Map() };
+  const data = { catalog: null, index: null, controls: null, layout: null, fonts: null, scenes: [], items: [], urls: new Map() };
   const state = {
     scene: "workplace/applause_station",
     portrait: "auto",
@@ -16,7 +16,10 @@
     visibleForeground: true,
     poseX: 0,
     poseY: 0,
-    slots: 7,
+    slots: 6,
+    buttonMode: "label",
+    buttonSkin: "up",
+    pressedUtility: null,
     inventoryStart: 0,
     selectedItem: "termination_notice",
     inspection: null,
@@ -107,7 +110,7 @@
     renderControls();
   }
   function setSlots(n) {
-    if (n !== 6 && n !== 7) throw new Error("Only the M2 six- and seven-slot layouts are supported");
+    if (n !== data.layout.inventory.slotCount) throw new Error("The owner baseline is six slots; comparison with seven is retired");
     state.slots = n;
     state.inventoryStart = Math.min(state.inventoryStart, Math.max(0, data.items.length - n));
     renderInventory();
@@ -147,7 +150,7 @@
     $("sourceLabel").textContent = scene.status === "reused"
       ? "Approved M2 reception comparison · original art"
       : "Generated prologue art · awaiting owner approval";
-    $("speechScene").textContent = "ART: " + scene.title.replace(/[^\w \/\-]/g, " ").slice(0, 50);
+    renderText();
   }
   function renderPortrait() {
     const id = matchedPose();
@@ -171,18 +174,104 @@
       pairing.classList.toggle("mismatch", !match);
     }
   }
+
+  // The 2026-11-13 six-slot placement is data, not another hand-tuned CSS preset.
+  function locate(element, x,y,w,h) {
+    const el = typeof element === "string" ? $(element) : element;
+    Object.assign(el.style,{left:x+"px",top:y+"px",width:w+"px",height:h+"px"});
+  }
+  function applyLayout() {
+    const L=data.layout, inv=L.inventory;
+    for (const [id,spec] of [["stagePrev",inv.leftArrow],["stageNext",inv.rightArrow]]) {
+      locate(id,spec.x,spec.y,spec.displayWidth,spec.displayHeight);
+      locate($(id).querySelector("img"),0,0,spec.displayWidth,spec.displayHeight);
+    }
+    const c=L.choices, height=c.cardHeights["2"];
+    for (const [i,id] of ["cardPrev","cardNext","cardInspect"].entries()) {
+      const card=$(id);
+      locate(card,c.viewport.x,c.viewport.y+i*(height+c.gap),c.cardWidth,height);
+      const label=card.querySelector("canvas");
+      locate(label,c.text.offsetX,Math.floor((height-2*c.text.lineHeight)/2)+c.text.offsetY,c.text.maxWidth,2*c.text.lineHeight);
+    }
+    const t=L.speech.text;
+    locate("speechExample",t.x,t.y,t.width,t.height);
+    locate("speechCanvas",0,0,t.width,t.height);
+    const o=L.objective;
+    locate("objectiveLabel",o.title.plaque.x,o.title.y,o.title.plaque.width,30);
+    locate("objectiveText",o.body.x,o.body.y,o.body.width,75);
+    const track=L.scrollbar.track;
+    locate("choiceThumb",track.x,track.y+Math.floor((track.height-40)/2),track.width,40);
+    const thumb=$("choiceThumb");
+    thumb.querySelector(".thumb-top").src="assets/approved/art/ui/sprites/controls/choice_scroll_thumb_top.png";
+    thumb.querySelector(".thumb-bottom").src="assets/approved/art/ui/sprites/controls/choice_scroll_thumb_bottom.png";
+    thumb.querySelector(".thumb-middle").style.backgroundImage='url("assets/approved/art/ui/sprites/controls/choice_scroll_thumb_middle.png")';
+  }
+  function setButtonMode(mode) {
+    if (mode!=="label" && mode!=="glyph") throw new Error("Unknown button artwork mode");
+    state.buttonMode=mode;renderButtons();renderControls();
+  }
+  function setButtonSkin(skin) {
+    if (skin!=="up" && skin!=="down") throw new Error("Unknown button state");
+    state.buttonSkin=skin;renderButtons();renderControls();
+  }
+  function renderButtons() {
+    if (!data.layout) return;
+    const labels=["utilPrev","utilInspect","utilNext"];
+    data.layout.utility.buttons.forEach((spec,i)=>{
+      const el=$(labels[i]),img=el.querySelector(".utility-skin"),canvas=el.querySelector(".utility-label"),glyph=el.querySelector(".utility-glyph");
+      locate(el,spec.x,spec.y,spec.displayWidth,spec.displayHeight);
+      const down=state.buttonSkin==="down" || state.pressedUtility===labels[i];
+      img.src="assets/approved/art/ui/sprites/controls/"+spec.spriteFamily+"_"+(down?"down":"up")+".png";
+      locate(img,0,0,spec.displayWidth,spec.displayHeight);
+      canvas.hidden=state.buttonMode!=="label";
+      glyph.hidden=state.buttonMode!=="glyph";
+      const off=down?data.layout.utility.pressedLabelOffset:{dx:0,dy:0};
+      locate(canvas,off.dx+spec.labelOffset.dx,off.dy+spec.labelOffset.dy,spec.displayWidth,spec.displayHeight);
+      locate(glyph,Math.floor((spec.displayWidth-96)/2)+off.dx+spec.labelOffset.dx,Math.floor((spec.displayHeight-96)/2)+off.dy+spec.labelOffset.dy,96,96);
+      glyph.src="assets/approved/art/actions/"+spec.glyph+".png";
+    });
+    renderButtonLabels();
+  }
+  function renderButtonLabels() {
+    if (!data.layout) return;
+    const T=window.PUBLIC_PIXEL_TEXT,L=data.layout;
+    L.utility.buttons.forEach((spec,i)=>{
+      T.draw($("utilityLabel"+i),spec.label,L.typeface.labels,"light",
+        {width:spec.displayWidth,height:spec.displayHeight,align:"center",valign:"center",lineHeight:24});
+    });
+  }
+  function renderText() {
+    if (!data.layout) return;
+    const L=data.layout,T=window.PUBLIC_PIXEL_TEXT;
+    const sceneName=sceneTitle(state.scene).replace(/[^A-Za-z0-9 \/-]/g," ");
+    T.draw($("speechCanvas"),"ARTWORK REVIEW\\nART: "+sceneName,L.typeface.dialogue,"dark",
+      {width:L.speech.text.width,height:L.speech.text.height,lineHeight:L.speech.text.lineHeight,maxWidth:L.speech.text.width});
+    ["VIEW PREVIOUS SCENE","VIEW NEXT SCENE","INSPECT SELECTED ITEM"].forEach((value,i)=>{
+      T.draw($("choiceLabel"+i),value,L.typeface.choices,"dark",
+        {width:L.choices.text.maxWidth,height:2*L.choices.text.lineHeight,lineHeight:L.choices.text.lineHeight});
+    });
+    T.draw($("objectiveLabel"),L.objective.title.text,L.typeface.objective,"light",
+      {width:L.objective.title.plaque.width,height:30,align:"center"});
+    T.draw($("objectiveText"),L.objective.body.text,L.typeface.objective,"light",
+      {width:L.objective.body.width,height:75,lineHeight:L.objective.body.lineHeight,maxWidth:L.objective.body.width,align:"center"});
+  }
+
   function renderInventory() {
     const strip = $("inventoryStrip");
     strip.replaceChildren();
-    const baseX = state.slots === 7 ? 76 : 92;
+    const config = data.layout.inventory;
+    const at = config.slotLayouts[String(config.slotCount)];
+    const baseX = at.x;
     const slotArt = "assets/approved/art/ui/sprites/inventory/inventory_slot.png";
     for (let i = 0; i < state.slots; ++i) {
       const itemId = data.items[state.inventoryStart + i];
       const button = document.createElement("button");
       button.type = "button";
       button.className = "inventory-slot";
-      button.style.left = (baseX + 116 * i) + "px";
-      button.style.top = "935px";
+      button.style.left = (baseX + config.pitch * i) + "px";
+      button.style.top = at.y + "px";
+      button.style.width = config.slotSize[0] + "px";
+      button.style.height = config.slotSize[1] + "px";
       button.dataset.item = itemId || "";
       button.setAttribute("aria-label", itemId ? "Inspect " + itemTitle(itemId) : "Empty inventory slot");
       if (!itemId) button.disabled = true;
@@ -200,7 +289,7 @@
       }
       strip.appendChild(button);
     }
-    strip.setAttribute("aria-label", state.slots + "-slot M2 layout displaying art for " + state.slots + " items");
+    strip.setAttribute("aria-label", state.slots + "-slot owner layout displaying art for " + state.slots + " items");
     $("inventoryStatus").textContent = "Showing items " + (state.inventoryStart + 1) + "–" +
       Math.min(data.items.length, state.inventoryStart + state.slots) +
       " of " + data.items.length + ". Use arrows to move one item at a time.";
@@ -221,7 +310,9 @@
     $("showForeground").checked = state.visibleForeground;
     $("poseX").value = String(state.poseX);
     $("poseY").value = String(state.poseY);
-    $("slotCount").value = String(state.slots);
+    $("slotStatus").textContent = state.slots + " slots · " + data.layout.inventory.gap + " px spacing · current baseline";
+    $("buttonMode").value = state.buttonMode;
+    $("buttonSkin").value = state.buttonSkin;
     $("inventoryPosition").max = String(Math.max(0, data.items.length - state.slots));
     $("inventoryPosition").value = String(state.inventoryStart);
     $("itemSelect").value = state.selectedItem;
@@ -232,6 +323,8 @@
     renderInventory();
     renderInspector();
     renderControls();
+    renderButtons();
+    renderText();
   }
   function fitStage() {
     const scale = state.fit
@@ -273,7 +366,8 @@
     ["showBackground", "showForeground", "poseX", "poseY"].forEach(id =>
       $(id).addEventListener("change", layers));
     $("resetOffsets").addEventListener("click", () => setLayers({x:0,y:0}));
-    $("slotCount").addEventListener("change", e => setSlots(Number(e.target.value)));
+    $("buttonMode").addEventListener("change", e => setButtonMode(e.target.value));
+    $("buttonSkin").addEventListener("change", e => setButtonSkin(e.target.value));
     $("inventoryPosition").addEventListener("input", e => setInventoryStart(Number(e.target.value)));
     $("inventoryPrev").addEventListener("click", () => setInventoryStart(state.inventoryStart - 1));
     $("inventoryNext").addEventListener("click", () => setInventoryStart(state.inventoryStart + 1));
@@ -298,9 +392,14 @@
     bindCard("cardPrev", () => changeScene(-1));
     bindCard("cardNext", () => changeScene(1));
     bindCard("cardInspect", () => openItem(state.selectedItem));
-    $("utilPrev").addEventListener("click", () => changeScene(-1));
-    $("utilNext").addEventListener("click", () => changeScene(1));
-    $("utilInspect").addEventListener("click", () => openItem(state.selectedItem));
+    $("utilPrev").addEventListener("click", () => openItem(state.selectedItem));
+    $("utilInspect").addEventListener("click", () => { $("loadStatus").textContent = "NOTES button artwork · visual study only"; });
+    $("utilNext").addEventListener("click", () => { $("loadStatus").textContent = "FILES button artwork · visual study only"; });
+    for (const id of ["utilPrev", "utilInspect", "utilNext"]) {
+      const button=$(id);
+      button.addEventListener("pointerdown", () => {state.pressedUtility=id;renderButtons();});
+      for (const evt of ["pointerup","pointercancel","pointerleave","blur"]) button.addEventListener(evt,()=>{state.pressedUtility=null;renderButtons();});
+    }
     document.querySelectorAll("[data-inspect]").forEach(button =>
       button.addEventListener("click", () => openItem(button.dataset.inspect)));
     document.querySelectorAll("[data-scene]").forEach(button =>
@@ -319,6 +418,11 @@
       portrait: state.portrait,
       activePortrait: matchedPose(),
       slots: state.slots,
+      slotPitch: data.layout.inventory.pitch,
+      slotGap: data.layout.inventory.gap,
+      buttonMode: state.buttonMode,
+      buttonSkin: state.buttonSkin,
+      buttonLabels: data.layout.utility.buttons.map(b=>b.label),
       inventoryStart: state.inventoryStart,
       items: data.items.slice(state.inventoryStart,state.inventoryStart+state.slots),
       inspection: state.inspection,
@@ -331,9 +435,9 @@
     };
   }
 
-  async function preload(index) {
+  async function preload(index,controls) {
     const errors = [];
-    const batch = index.files.map(entry => new Promise(done => {
+    const batch = [...index.files,...controls.files].map(entry => new Promise(done => {
       const img = new Image();
       img.onload = () => done();
       img.onerror = () => {errors.push(entry.path);done();};
@@ -349,6 +453,8 @@
     setScene,
     setPortrait,
     setSlots,
+    setButtonMode,
+    setButtonSkin,
     setInventoryStart,
     openItem,
     closeInspector,
@@ -359,13 +465,18 @@
 
   (async function boot() {
     try {
-      const [catalogResponse,indexResponse] = await Promise.all([
-        fetch("../../story/artwork.draft.json", {cache:"no-cache"}),
-        fetch("./asset-index.json", {cache:"no-cache"})
-      ]);
-      if (!catalogResponse.ok || !indexResponse.ok) throw new Error("Cannot read public storyboard artwork catalog or asset index");
-      data.catalog = await catalogResponse.json();
-      data.index = await indexResponse.json();
+      const responses = await Promise.all([
+        "../../story/artwork.draft.json","./asset-index.json","./control-asset-manifest.json",
+        "./layout-reference.json","./bitmap-fonts.json"
+      ].map(url=>fetch(url,{cache:"no-cache"})));
+      if (responses.some(r=>!r.ok)) throw new Error("Cannot read public artwork, layout or font metadata");
+      [data.catalog,data.index,data.controls,data.layout,data.fonts] = await Promise.all(responses.map(r=>r.json()));
+      if (data.layout.schema !== "cyoa-public-artwork-lab-layout-v1" || data.layout.inventory.slotCount!==6 || data.layout.inventory.pitch!==116 || data.layout.inventory.gap!==20) throw new Error("Incorrect six-slot layout baseline");
+      if (data.controls.schema !== "cyoa-public-control-art-v1") throw new Error("Unknown approved control-art manifest");
+      state.slots=data.layout.inventory.slotCount;
+      state.buttonMode=data.layout.utility.show;
+      await window.PUBLIC_PIXEL_TEXT.configure(data.fonts);
+      applyLayout();
       if (data.index.schema !== "cyoa-public-prologue-review-assets-v1") throw new Error("Unrecognized public asset index");
       data.scenes = Object.keys(data.catalog.scenes);
       data.items = Object.keys(data.catalog.items);
@@ -382,10 +493,10 @@
       bind();
       render();
       fitStage();
-      $("loadStatus").textContent = "Loading " + data.index.files.length + " visual assets…";
-      await preload(data.index);
+      $("loadStatus").textContent = "Loading " + (data.index.files.length + data.controls.files.length) + " visual assets…";
+      await preload(data.index,data.controls);
       document.body.dataset.ready = "true";
-      $("loadStatus").textContent = "Ready · " + data.index.files.length + " verified-source images loaded";
+      $("loadStatus").textContent = "Ready · " + (data.index.files.length + data.controls.files.length) + " verified-source images loaded · six-slot layout";
     } catch (error) {
       document.body.dataset.ready = "error";
       $("loadStatus").textContent = String(error.message || error);
