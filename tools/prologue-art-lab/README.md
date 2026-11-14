@@ -1,44 +1,19 @@
-# The Acceptable Error — Public Prologue Artwork Lab
+# Public Prologue Artwork Lab
 
-Live address (after acceptance and Pages deployment):
-https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/
+This is a **standalone public-safe visual review** of the approved M2 Round 2 shell with **28 generated prologue PNG candidates**. It does **not** include the private game engine, private story prose, private internal rulings or any source repository credentials.
 
-This is a public-safe, non-playable visual review tool. It displays the exact approved M2 shell, inventory, arrow, choice-card, utility-button and inspector images at the approved whole-pixel stage coordinates. It does not publish or execute the private CYOA gameplay engine, story scripts, save files, test fixtures, review notes or internal rulings.
+Visit `/CYOA-storyboard/tools/prologue-art-lab/` after Pages deployment. The storyboard remains at `/CYOA-storyboard/tools/storyboard/`.
 
-## Public contents
+## Visual contract
 
-- Seven draft prologue main scenes (314 by 206 at 4x nearest), plus the approved M2 reception scene.
-- Two transparent termination drone poses on their separate 564 by 278 corridor background, plus approved receptionist layers.
-- Nine draft 96 by 96 inventory icons and nine separate 565 by 451 item inspection illustrations, plus the approved Facilities Key pair.
-- Seventeen approved M2 visual files required to show the original shell, inspector, cards and controls.
-- Metadata from the same public artwork catalogue used by the storyboard.
+The shipped bitmaps are exact-byte copies of approved M2 shell/UI assets and the 28 draft PNGs. 314×206 scenes are displayed at 4× pixelated in the approved 1255×822 aperture; 564×278 portrait backgrounds and transparent foreground poses are separate 1× layers; all 96×96 draft inventory icons are displayed inside the approved slot sprite; the inspector displays 565×451 art within the item-overlay frame. Scene/portrait and inventoried art switch without playing story routes. The lab uses a separate **public-safe display implementation** with the approved imagery and coordinates, not private gameplay scripts.
 
-All 45 images were copied byte-for-byte from the accepted source and are verified by SHA-256 and PNG dimensions. No draft artwork is marked approved by publication.
+The original M2 layout data still has a six-slot default even though the owner asked to review seven slots. The lab defaults to seven with the existing seven-slot position and shows the resulting right-arrow overlap without correcting the geometry. A six-slot comparison is available.
 
-## Visual review controls
+## Owner review unresolved
 
-The sidebar changes scenes, portrait pair/pose/offset, foreground and background visibility, 6-vs-7 inventory slots, one-item-at-a-time scrolling and the item inspector. The stage's neutral lab actions also switch scenes and show an item. Navigation text is only a review UI; the original game's dialogue, mechanics and exact bitmap-font rendering are not part of this public export.
+The notice's conditional signature/review state, claim ticket's baked FOUR versus three-article option, unconfirmed H. Carter name, portrait/scene alignment, full inspector backgrounds, and workplace/street/Exposition/reception visual continuity remain unresolved. No draft status is changed to approved and no art is regenerated.
 
-The seven-slot owner-target layout overlaps the M2 baseline right inventory arrow. The current M2 checked-in layout defaults to six slots; both are shown for comparison without altering the original game.
+## Public release gate
 
-Still pending owner approval: termination notice signature and review markings, ticket reading FOUR in a possible three-item outcome, the effects box's H. Carter name, drone alignment, inspector object backgrounds/placement, and workplace-to-Exposition-to-reception continuity.
-
-## Testing
-
-Run the public storyboard smoke test and byte-level artwork verifier:
-
-    node tools/storyboard/qa-smoke.mjs
-    node tools/prologue-art-lab/qa/qa-static.mjs
-
-For full browser screenshots, install Playwright and browsers, then run:
-
-    node tools/prologue-art-lab/qa/qa-browser.mjs
-
-The branch-scoped GitHub Actions workflow does both and uploads screenshots as a run artifact. The main Pages workflow copies only the public UI files and images into the deployed site.
-
-## Provenance and boundary
-
-- Approved M2 visual baseline: 312928afbac4aace37c6602e9033574f90849d2b
-- Draft art source: story/artwork.draft.json, already mirrored on the public storyboard.
-- Public exported image hashes and byte counts: asset-index.json.
-- No private rules engine, no unpublished narrative content beyond the public draft catalogue, and no automatic promotion of draft artwork.
+Public branch first, run Chromium/Firefox smoke + screenshot verification, then advance public `main` only; never merge or modify private CYOA production. The storyboard JSON and original storyboard viewer are unchanged except a navigation link.
