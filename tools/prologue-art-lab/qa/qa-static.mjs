@@ -59,7 +59,7 @@ for(const row of controls.files){
 
 const art=JSON.parse(fs.readFileSync(path.join(root,"story/artwork.draft.json"),"utf8"));
 assert.equal(idx.schema,"cyoa-public-prologue-review-assets-v1");
-assert.equal(idx.files.length,45);
+assert.equal(idx.files.length,49);
 assert.equal(Object.keys(art.scenes).length,8);
 assert.equal(Object.keys(art.items).length,10);
 assert.equal(Object.keys(art.portraits).length,3);
@@ -96,8 +96,45 @@ for(const row of idx.files){
   bytes+=b.length;count++;
 }
 for(const name of expected.keys())assert.ok(seen.has(name),"catalog asset not exported "+name);
-assert.equal(idx.files.filter(x=>x.path.startsWith("assets/draft/")).length,28);
+assert.equal(idx.files.filter(x=>x.path.startsWith("assets/draft/")).length,32);
 assert.equal(idx.files.filter(x=>x.path.startsWith("assets/approved/")).length,17);
+const exposition=JSON.parse(fs.readFileSync(path.join(base,"exposition-v02.json"),"utf8"));
+assert.equal(exposition.schema,"cyoa-exposition-v02-public-review-v1");
+assert.equal(exposition.source.ref,"48eac78b07746e185cac6726220cd0b023ce6dab");
+assert.equal(exposition.ownerVisualApproval,"pending");
+assert.equal(exposition.productionPromotion,false);
+assert.equal(exposition.narrativePatchApplied,false);
+assert.equal(exposition.scenes.length,4);
+const sourcePaths=[
+  "art/scenes/exposition/continuity-v01/street-approach.png",
+  "art/scenes/exposition/continuity-v02/entrance.png",
+  "art/scenes/exposition/continuity-v02/property-intake.png",
+  "art/scenes/exposition/continuity-v01/facilities-corridor.png"
+];
+assert.deepEqual(exposition.scenes.map(x=>x.assetPath),sourcePaths);
+for(const scene of exposition.scenes){
+  const record=art.scenes[scene.id];
+  assert.ok(record,"missing published scene "+scene.id);
+  assert.equal(record.status,"generated","do not approve V02 candidates");
+  assert.equal(record.assetPath,scene.assetPath,"catalog must use current Exposition candidate");
+  assert.equal(scene.status,"generated");
+  assert.deepEqual(scene.dimensions,[314,206]);
+  assert.equal(scene.presentation,"4x nearest-neighbor");
+  assert.equal(scene.humanFigureInCurrentArtwork,false);
+  const image=idx.files.find(x=>x.path==="assets/draft/"+scene.assetPath);
+  assert.ok(image,"missing image index record "+scene.assetPath);
+  assert.equal(image.sha256,scene.sha256);
+  assert.equal(image.bytes,scene.bytes);
+  const previous=idx.files.find(x=>x.path==="assets/draft/"+scene.retainedPreviousAssetPath);
+  assert.ok(previous,"archived previous source removed: "+scene.retainedPreviousAssetPath);
+  const expectedComparison=["street/outside_workplace","exposition/facilities_corridor"].includes(scene.id);
+  assert.equal(scene.comparisonInPublicLab,expectedComparison,"do not render older staffed art in comparison mode");
+}
+assert.equal(art.scenes["exposition/reception"].status,"reused");
+assert.equal(art.scenes["exposition/reception"].assetPath,exposition.approvedReception.assetPath);
+assert.equal(idx.files.find(x=>x.path==="assets/approved/"+exposition.approvedReception.assetPath).sha256,
+             exposition.approvedReception.sha256,"approved reception must not change");
+
 const html=fs.readFileSync(path.join(base,"index.html"),"utf8");
 const app=fs.readFileSync(path.join(base,"app.js"),"utf8");
 const pages=fs.readFileSync(path.join(root,".github/workflows/pages.yml"),"utf8");
@@ -105,6 +142,8 @@ const board=fs.readFileSync(path.join(root,"tools/storyboard/index.html"),"utf8"
 assert.ok(html.includes("approvedShell")&&html.includes("inspectionLayer"));
 assert.ok(app.includes("asset-index.json")&&app.includes("../../story/artwork.draft.json"));
 assert.ok(app.includes("layout-reference.json")&&app.includes("bitmap-fonts.json")&&app.includes("control-asset-manifest.json"));
+assert.ok(app.includes("exposition-v02.json")&&app.includes("setSceneVersion"));
+assert.ok(html.includes('id="sceneVersion"')&&html.includes('id="sceneVersionInfo"'));
 assert.ok(!app.includes("slots: 7") && !html.includes("owner target"));
 assert.ok(html.includes('id="buttonMode"')&&html.includes('id="buttonSkin"'));
 assert.ok(html.includes('id="slotStatus"')&&html.includes('id="utilityLabel2"'));
@@ -112,5 +151,6 @@ assert.ok(fs.existsSync(path.join(base,"pixel-type.js")));
 assert.ok(board.includes("../prologue-art-lab/"));
 assert.ok(pages.includes("cp -a tools/prologue-art-lab/assets/."));
 assert.ok(pages.includes("tools/prologue-art-lab/layout-reference.json")&&pages.includes("tools/prologue-art-lab/pixel-type.js"));
+assert.ok(pages.includes("tools/prologue-art-lab/exposition-v02.json"));
 assert.ok(!fs.existsSync(path.join(root,"game")));
-console.log("PASS public review package: "+count+" SHA-256 pinned images plus "+controls.files.length+" Git-blob-pinned approved control/font images; six-slot geometry, button labels and font assets verified.");
+console.log("PASS public V02 review package: "+count+" SHA-256 pinned PNGs and "+controls.files.length+" approved control/font images; four Exposition candidates, prior sources retained, approved reception intact, six-slot motion and protected rendering verified.");
