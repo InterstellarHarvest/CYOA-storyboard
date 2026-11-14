@@ -13,6 +13,8 @@ This is a public-safe, non-playable visual review tool. It displays the exact ap
 - Seventeen original M2 images plus fourteen additional byte-exact approved control/font images (pressed utility sprites, action glyphs, scrollbar thumb and bitmap font atlases).
 - Metadata from the same public artwork catalogue used by the storyboard.
 
+The November 13 artwork-quality audit from <code>CYOA/docs/story-gameplay-study-v01</code> contributes 16 corrected source PNGs (5 scenes and 11 item images); the remaining 12 generated PNGs are unchanged. All 28 pass the source audit's technical checks, but visual owner approval is pending. The audit records and original-versus-final SHA-256 values are retained in <code>artwork-audit.json</code>. Nothing is merged into the private game or promoted to approved production artwork. The 4× evidence sheets and static shell composites are not runtime assets.
+
 All 45 original images retain SHA-256 and dimension verification. The fourteen added approved images are pinned against their original Git blob hashes. No draft artwork is marked approved by publication.
 
 ## Visual review controls
