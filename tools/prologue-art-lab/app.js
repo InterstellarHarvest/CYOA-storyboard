@@ -244,7 +244,7 @@
     if (!data.layout) return;
     const L=data.layout,T=window.PUBLIC_PIXEL_TEXT;
     const sceneName=sceneTitle(state.scene).replace(/[^A-Za-z0-9 \/-]/g," ");
-    T.draw($("speechCanvas"),"ARTWORK REVIEW\\nART: "+sceneName,L.typeface.dialogue,"dark",
+    T.draw($("speechCanvas"),"ARTWORK REVIEW\nART: "+sceneName,L.typeface.dialogue,"dark",
       {width:L.speech.text.width,height:L.speech.text.height,lineHeight:L.speech.text.lineHeight,maxWidth:L.speech.text.width});
     ["VIEW PREVIOUS SCENE","VIEW NEXT SCENE","INSPECT SELECTED ITEM"].forEach((value,i)=>{
       T.draw($("choiceLabel"+i),value,L.typeface.choices,"dark",
