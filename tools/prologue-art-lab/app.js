@@ -10,9 +10,10 @@
   const wrap = $("previewWrap");
   const SPARE_SLOTS = 3; // Game and M1 lab expose adjacent items during the slide.
   let inventoryFrame = null;
-  const data = { catalog: null, index: null, controls: null, layout: null, fonts: null, scenes: [], items: [], urls: new Map() };
+  const data = { catalog: null, index: null, controls: null, layout: null, fonts: null, exposition: null, scenes: [], items: [], urls: new Map() };
   const state = {
     scene: "workplace/applause_station",
+    sceneVersion: "current",
     portrait: "auto",
     visibleBackground: true,
     visibleForeground: true,
@@ -96,9 +97,27 @@
     }
     throw new Error("Unknown portrait: " + id);
   }
+  function previousSceneRecord(id) {
+    const row = data.exposition && data.exposition.scenes.find(s => s.id === id);
+    if (!row || !row.comparisonInPublicLab) return null;
+    return { status: "generated", assetPath: row.retainedPreviousAssetPath };
+  }
+  function currentSceneRecord() {
+    return state.sceneVersion === "previous" && previousSceneRecord(state.scene)
+      ? previousSceneRecord(state.scene)
+      : data.catalog.scenes[state.scene];
+  }
+  function setSceneVersion(version) {
+    if (version !== "current" && version !== "previous") throw new Error("Unsupported scene artwork version");
+    if (version === "previous" && !previousSceneRecord(state.scene)) throw new Error("Archived version not safe for preview");
+    state.sceneVersion = version;
+    renderScene();
+    renderControls();
+  }
   function setScene(id) {
     if (!data.catalog.scenes[id]) throw new Error("Unknown scene " + id);
     state.scene = id;
+    state.sceneVersion = "current";
     state.inspection = null;
     render();
   }
@@ -216,12 +235,16 @@
 
   function renderScene() {
     const scene = data.catalog.scenes[state.scene];
-    setImg($("sceneImage"), asset(scene));
+    setImg($("sceneImage"), asset(currentSceneRecord()));
     $("sceneAperture").setAttribute("aria-label", scene.title + " — 314 by 206 scene at 4 times native scale");
     $("sceneLabel").textContent = scene.title;
     $("sourceLabel").textContent = scene.status === "reused"
       ? "Approved M2 reception comparison · original art"
-      : "Generated prologue art · awaiting owner approval";
+      : state.sceneVersion === "previous"
+        ? "Archived earlier candidate · comparison only"
+        : data.exposition.scenes.some(r => r.id === state.scene)
+          ? "Current Exposition V02 study · generated · owner approval pending"
+          : "Generated prologue art · awaiting owner approval";
     renderText();
   }
   function renderPortrait() {
@@ -404,6 +427,13 @@
   }
   function renderControls() {
     $("sceneSelect").value = state.scene;
+    $("sceneVersion").value = state.sceneVersion;
+    $("sceneVersion").disabled = !previousSceneRecord(state.scene);
+    $("sceneVersionInfo").textContent = previousSceneRecord(state.scene)
+      ? "Original November 13 artwork available for comparison."
+      : data.exposition.scenes.some(r => r.id === state.scene)
+        ? "Earlier entrance/intake art contains staff and stays archived, not displayed."
+        : "Only current art is displayed for this scene.";
     $("portraitSelect").value = state.portrait;
     $("showBackground").checked = state.visibleBackground;
     $("showForeground").checked = state.visibleForeground;
@@ -447,6 +477,7 @@
   }
   function bind() {
     $("sceneSelect").addEventListener("change", e => setScene(e.target.value));
+    $("sceneVersion").addEventListener("change", e => setSceneVersion(e.target.value));
     $("prevScene").addEventListener("click", () => changeScene(-1));
     $("nextScene").addEventListener("click", () => changeScene(1));
     $("compareReception").addEventListener("click", () => {
@@ -513,6 +544,10 @@
     return {
       ready: true,
       scene: state.scene,
+      sceneVersion: state.sceneVersion,
+      activeSceneAssetPath: currentSceneRecord().assetPath,
+      currentCatalogAssetPath: data.catalog.scenes[state.scene].assetPath,
+      sceneStatus: currentSceneRecord().status,
       sceneTitle: sceneTitle(state.scene),
       portrait: state.portrait,
       activePortrait: matchedPose(),
@@ -553,6 +588,7 @@
     ready: () => !!data.catalog,
     getState: publicState,
     setScene,
+    setSceneVersion,
     setPortrait,
     setSlots,
     setButtonMode,
@@ -569,10 +605,20 @@
     try {
       const responses = await Promise.all([
         "../../story/artwork.draft.json","./asset-index.json","./control-asset-manifest.json",
-        "./layout-reference.json","./bitmap-fonts.json"
+        "./layout-reference.json","./bitmap-fonts.json","./exposition-v02.json"
       ].map(url=>fetch(url,{cache:"no-cache"})));
       if (responses.some(r=>!r.ok)) throw new Error("Cannot read public artwork, layout or font metadata");
-      [data.catalog,data.index,data.controls,data.layout,data.fonts] = await Promise.all(responses.map(r=>r.json()));
+      [data.catalog,data.index,data.controls,data.layout,data.fonts,data.exposition] = await Promise.all(responses.map(r=>r.json()));
+      if (data.exposition.schema !== "cyoa-exposition-v02-public-review-v1" ||
+          data.exposition.scenes.length !== 4 ||
+          data.exposition.ownerVisualApproval !== "pending" ||
+          data.exposition.narrativePatchApplied !== false) throw new Error("Invalid Exposition V02 public-only manifest");
+      for (const row of data.exposition.scenes) {
+        const current = data.catalog.scenes[row.id];
+        if (!current || current.status !== "generated" || current.assetPath !== row.assetPath ||
+            row.status !== "generated" || row.humanFigureInCurrentArtwork !== false)
+          throw new Error("Exposition artwork catalog mismatch: " + row.id);
+      }
       if (data.layout.schema !== "cyoa-public-artwork-lab-layout-v1" || data.layout.inventory.slotCount!==6 || data.layout.inventory.pitch!==116 || data.layout.inventory.gap!==20) throw new Error("Incorrect six-slot layout baseline");
       if (data.controls.schema !== "cyoa-public-control-art-v1") throw new Error("Unknown approved control-art manifest");
       state.slots=data.layout.inventory.slotCount;
@@ -598,7 +644,7 @@
       $("loadStatus").textContent = "Loading " + (data.index.files.length + data.controls.files.length) + " visual assets…";
       await preload(data.index,data.controls);
       document.body.dataset.ready = "true";
-      $("loadStatus").textContent = "Ready · " + (data.index.files.length + data.controls.files.length) + " verified-source images loaded · six-slot layout";
+      $("loadStatus").textContent = "Ready · Exposition V02 candidates + M2 reception · " + (data.index.files.length + data.controls.files.length) + " verified-source images · six-slot layout";
     } catch (error) {
       document.body.dataset.ready = "error";
       $("loadStatus").textContent = String(error.message || error);
