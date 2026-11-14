@@ -1,0 +1,25 @@
+name: Public prologue artwork export preflight
+on:
+  push:
+    branches: [agent/public-prologue-art-lab]
+    paths:
+      - '.github/workflows/public-prologue-preflight.yml'
+permissions:
+  contents: read
+jobs:
+  export-preflight:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JS syntax
+        run: node --check tools/prologue-art-lab/lab.js
+      - name: Check public PNG export and viewer boundaries
+        id: qa
+        continue-on-error: true
+        run: node tools/prologue-art-lab/qa-smoke.mjs
+      - name: Report true preflight outcome
+        if: always()
+        run: echo "Asset checker outcome = ${{ steps.qa.outcome }} (nonblocking review only; do not promote on failure)"
