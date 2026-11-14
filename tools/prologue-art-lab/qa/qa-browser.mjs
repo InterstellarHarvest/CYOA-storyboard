@@ -36,7 +36,7 @@ async function suite(name,driver){
     await page.goto(base+"index.html",{waitUntil:"domcontentloaded",timeout:45000});
     await page.waitForFunction(()=>document.body.dataset.ready==="true"||document.body.dataset.ready==="error",null,{timeout:45000});
     check((await page.locator("body").getAttribute("data-ready"))==="true",
-      "49 primary source images loaded: "+await page.locator("#loadStatus").textContent());
+      "51 primary source images loaded: "+await page.locator("#loadStatus").textContent());
     await page.locator("#actualPreview").click();
     const initial=await state();
     check(initial.slots===6&&initial.slotPitch===116&&initial.slotGap===20&&initial.sceneScale===4&&initial.inspection===null,"six-slot owner preview, 116px pitch, 20px spacing, 4x native scene");
@@ -116,13 +116,13 @@ async function suite(name,driver){
       if(["workplace/applause_station","workplace/corridor","street/outside_workplace",
         "exposition/entrance","exposition/reception"].includes(id))await shot("scene_"+id.replaceAll("/","_"));
     }
-    // Current Exposition V02 must resolve exactly the four candidate files
+    // Current Exposition V03 must resolve exactly the four candidate files
     // from the pinned private art catalog, without displaying archival staffed scenes.
     const currentExposition=[
       ["street/outside_workplace","art/scenes/exposition/continuity-v01/street-approach.png"],
-      ["exposition/entrance","art/scenes/exposition/continuity-v02/entrance.png"],
+      ["exposition/entrance","art/scenes/exposition/continuity-v03/entrance.png"],
       ["exposition/property_intake","art/scenes/exposition/continuity-v02/property-intake.png"],
-      ["exposition/facilities_corridor","art/scenes/exposition/continuity-v01/facilities-corridor.png"]
+      ["exposition/facilities_corridor","art/scenes/exposition/continuity-v03/facilities-corridor.png"]
     ];
     for(const [id,assetPath] of currentExposition){
       await call("setScene",id);
@@ -134,12 +134,13 @@ async function suite(name,driver){
       check(live.sceneVersion==="current"&&live.activeSceneAssetPath===assetPath&&
         live.currentCatalogAssetPath===assetPath&&live.sceneStatus==="generated"&&
         src==="assets/draft/"+assetPath&&JSON.stringify(natural)==="[314,206]",
-        "V02 scene maps to native generated asset "+id);
-      await shot("exposition_v02_"+id.replaceAll("/","_"));
+        "V03 scene maps to native generated asset "+id);
+      await shot("exposition_v03_"+id.replaceAll("/","_"));
     }
     for(const [id,previous] of [
       ["street/outside_workplace","art/scenes/exposition/street_approach.png"],
-      ["exposition/facilities_corridor","art/scenes/exposition/facilities_corridor.png"]
+      ["exposition/entrance","art/scenes/exposition/continuity-v02/entrance.png"],
+      ["exposition/facilities_corridor","art/scenes/exposition/continuity-v01/facilities-corridor.png"]
     ]){
       await call("setScene",id);
       check(!(await page.locator("#sceneVersion").isDisabled()),"safe prior candidate is selectable "+id);
@@ -150,9 +151,9 @@ async function suite(name,driver){
       await shot("exposition_previous_"+id.replaceAll("/","_"));
       await call("setSceneVersion","current");
     }
-    for(const id of ["exposition/entrance","exposition/property_intake"]){
+    for(const id of ["exposition/property_intake"]){
       await call("setScene",id);
-      check(await page.locator("#sceneVersion").isDisabled(),"staffed previous candidate not selectable "+id);
+      check(await page.locator("#sceneVersion").isDisabled(),"staffed property candidate not selectable "+id);
       const rejected=await page.evaluate(async()=>{
         try{window.PROLOGUE_LAB.setSceneVersion("previous");return false;}
         catch(e){return /not safe for preview/.test(String(e));}
