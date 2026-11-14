@@ -24,3 +24,13 @@ Drag a story-node box to move it while its connections follow. Click without dra
 ## Paired scene art for Codex
 
 `story/artwork.draft.json` is the authority. The `scenes` records contain main 314×206 images; a scene may also contain a nested `portraitBackground` for a distinct opaque 564×278 closer environment view. NPC foreground portraits live separately in `portraits` as transparent 564×278 PNGs. Both scene records and portrait-background records are browsable/editable from the public storyboard. Reception scene/background are reused approved art and must not be regenerated.
+
+## Public prologue artwork review lab
+
+The [Prologue Artwork Lab](tools/prologue-art-lab/index.html) is a **public visual review of draft art** using the approved M2 shell **image assets and geometry**, not the private playable game engine. It includes the 28 generated prologue PNGs and a tightly limited set of approved M2 presentation/reference images. No private gameplay, reception dialogue, internal rulings, or state-changing engine code is published.
+
+The lab supports switching seven draft main scenes plus approved reception, both termination drone poses on their separate corridor portrait background, 9 draft inventory items plus approved facilities key, 565×451 inspection artwork, portrait alignment, and 6-vs-7 slot comparison. Unapproved text painted into draft item illustrations (ticket FOUR, name H. Carter, termination notice markings) remains visible for owner review. Nothing is marked approved by the site.
+
+Public URL after Pages deployment: https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/
+
+Run `node tools/prologue-art-lab/qa-smoke.mjs` before changes. All art files are explicitly published here and will be publicly viewable or downloadable. The private `CYOA` repo is unchanged.
