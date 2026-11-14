@@ -1,0 +1,35 @@
+name: Review public Prologue Artwork Lab
+on:
+  push:
+    branches: [feature/prologue-art-lab-public]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify storyboard and exact public artwork files
+        run: |
+          node tools/storyboard/qa-smoke.mjs
+          node tools/prologue-art-lab/qa/qa-static.mjs
+      - name: Install Chromium and Firefox for visual QA
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium firefox
+      - name: Test scene, portrait, inventory, inspector and screenshot states
+        run: node tools/prologue-art-lab/qa/qa-browser.mjs
+      - name: Preserve browser screenshots and QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-prologue-art-review-screenshots
+          path: |
+            tools/prologue-art-lab/qa/qa-results.json
+            tools/prologue-art-lab/qa/screenshots/
+          if-no-files-found: warn
