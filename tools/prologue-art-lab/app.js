@@ -243,7 +243,7 @@
       : state.sceneVersion === "previous"
         ? "Archived earlier candidate · comparison only"
         : data.exposition.scenes.some(r => r.id === state.scene)
-          ? "Current Exposition V02 study · generated · owner approval pending"
+          ? "Current Exposition V03 study · generated · owner approval pending"
           : "Generated prologue art · awaiting owner approval";
     renderText();
   }
@@ -430,7 +430,7 @@
     $("sceneVersion").value = state.sceneVersion;
     $("sceneVersion").disabled = !previousSceneRecord(state.scene);
     $("sceneVersionInfo").textContent = previousSceneRecord(state.scene)
-      ? "Original November 13 artwork available for comparison."
+      ? "Previous unoccupied artwork available for comparison."
       : data.exposition.scenes.some(r => r.id === state.scene)
         ? "Earlier entrance/intake art contains staff and stays archived, not displayed."
         : "Only current art is displayed for this scene.";
@@ -605,14 +605,14 @@
     try {
       const responses = await Promise.all([
         "../../story/artwork.draft.json","./asset-index.json","./control-asset-manifest.json",
-        "./layout-reference.json","./bitmap-fonts.json","./exposition-v02.json"
+        "./layout-reference.json","./bitmap-fonts.json","./exposition-v03.json"
       ].map(url=>fetch(url,{cache:"no-cache"})));
       if (responses.some(r=>!r.ok)) throw new Error("Cannot read public artwork, layout or font metadata");
       [data.catalog,data.index,data.controls,data.layout,data.fonts,data.exposition] = await Promise.all(responses.map(r=>r.json()));
-      if (data.exposition.schema !== "cyoa-exposition-v02-public-review-v1" ||
+      if (data.exposition.schema !== "cyoa-exposition-v03-public-review-v1" ||
           data.exposition.scenes.length !== 4 ||
           data.exposition.ownerVisualApproval !== "pending" ||
-          data.exposition.narrativePatchApplied !== false) throw new Error("Invalid Exposition V02 public-only manifest");
+          data.exposition.narrativePatchApplied !== false) throw new Error("Invalid Exposition V03 public-only manifest");
       for (const row of data.exposition.scenes) {
         const current = data.catalog.scenes[row.id];
         if (!current || current.status !== "generated" || current.assetPath !== row.assetPath ||
@@ -644,7 +644,7 @@
       $("loadStatus").textContent = "Loading " + (data.index.files.length + data.controls.files.length) + " visual assets…";
       await preload(data.index,data.controls);
       document.body.dataset.ready = "true";
-      $("loadStatus").textContent = "Ready · Exposition V02 candidates + M2 reception · " + (data.index.files.length + data.controls.files.length) + " verified-source images · six-slot layout";
+      $("loadStatus").textContent = "Ready · Exposition V03 candidates + M2 reception · " + (data.index.files.length + data.controls.files.length) + " verified-source images · six-slot layout";
     } catch (error) {
       document.body.dataset.ready = "error";
       $("loadStatus").textContent = String(error.message || error);
