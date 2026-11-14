@@ -28,6 +28,20 @@ assert.equal(fonts.schema,"cyoa-public-artwork-lab-bitmap-fonts-v1");
 assert.deepEqual(Object.keys(fonts.faces).sort(),["jersey15-1x","locked","pressstart2p-2x","tiny5-3x"].sort());
 assert.equal(controls.schema,"cyoa-public-control-art-v1");
 assert.equal(controls.files.length,14);
+const audit=JSON.parse(fs.readFileSync(path.join(base,"artwork-audit.json"),"utf8"));
+assert.equal(audit.schema,"cyoa-public-prologue-artwork-audit-v1");
+assert.equal(audit.correctedCount,16);
+assert.equal(audit.unchangedCount,12);
+assert.equal(audit.technicalPass,28);
+assert.equal(audit.ownerVisualApproval,"pending");
+assert.equal(audit.productionPromotion,false);
+for(const correction of audit.corrections){
+  const image=idx.files.find(x=>x.path==="assets/draft/"+correction.assetPath);
+  assert.ok(image,"missing corrected artwork manifest entry "+correction.assetPath);
+  assert.equal(image.sha256,correction.currentSha256,"corrected artwork SHA "+correction.assetPath);
+  assert.ok(correction.currentSha256!==correction.sourceSha256,"artwork expected to be revised "+correction.assetPath);
+}
+
 const iconFiles=new Set(["inspect.png","notes.png","files.png"]);
 const controlPaths=new Set();
 for(const row of controls.files){
