@@ -626,7 +626,8 @@
       await window.PUBLIC_PIXEL_TEXT.configure(data.fonts);
       applyLayout();
       if (data.index.schema !== "cyoa-public-prologue-review-assets-v1") throw new Error("Unrecognized public asset index");
-      data.scenes = Object.keys(data.catalog.scenes);
+      // Not-started records (e.g. Chapter 1's placeholder scene) have no image to review.
+      data.scenes = Object.keys(data.catalog.scenes).filter(id => data.catalog.scenes[id].status !== "not-started");
       data.items = Object.keys(data.catalog.items);
       if (data.scenes.length !== 8 || data.items.length !== 10) throw new Error("Expected eight scene entries and ten inventory items");
       for (const scene of data.scenes) {

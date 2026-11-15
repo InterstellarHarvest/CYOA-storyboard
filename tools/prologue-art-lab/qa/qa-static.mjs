@@ -60,12 +60,15 @@ for(const row of controls.files){
 const art=JSON.parse(fs.readFileSync(path.join(root,"story/artwork.draft.json"),"utf8"));
 assert.equal(idx.schema,"cyoa-public-prologue-review-assets-v1");
 assert.equal(idx.files.length,51);
-assert.equal(Object.keys(art.scenes).length,8);
+// Not-started records (Chapter 1's placeholder scene) carry no image and are not reviewed here.
+const reviewedScenes=Object.fromEntries(Object.entries(art.scenes).filter(([,s])=>s.status!=="not-started"));
+assert.ok(Object.values(art.scenes).filter(s=>s.status==="not-started").every(s=>s.assetPath===null),"not-started scene records have no file");
+assert.equal(Object.keys(reviewedScenes).length,8);
 assert.equal(Object.keys(art.items).length,10);
 assert.equal(Object.keys(art.portraits).length,3);
 const expected=new Map();
 function add(status,p,dims){assert.ok(p&&p.endsWith(".png"));expected.set("assets/"+(status==="generated"?"draft/":"approved/")+p,dims);}
-for(const s of Object.values(art.scenes)){
+for(const s of Object.values(reviewedScenes)){
   add(s.status,s.assetPath,[314,206]);
   if(s.portraitBackground)add(s.portraitBackground.status,s.portraitBackground.assetPath,[564,278]);
 }
