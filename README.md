@@ -4,7 +4,9 @@ This is the **public, JSON-backed Storyboard + Artwork Production viewer** for T
 
 - **[Open the storyboard](https://interstellarharvest.github.io/CYOA-storyboard/)**
 - **[Open the Prologue Artwork Lab](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/)** — public-safe visual review with approved M2 shell assets and 28 draft PNGs; no private game engine
-- [Viewer](tools/storyboard/index.html) · [Chapter manifest](story/storyboard-manifest.json) · [Prologue draft](story/chapters/prologue-00.draft.json) · [Item records](story/items.draft.json) · [Shared art prompts](story/artwork.draft.json)
+- [Viewer](tools/storyboard/index.html) · [Chapter manifest](story/storyboard-manifest.json) · [Prologue draft](story/chapters/prologue-00.draft.json) · [Chapter 1 draft (development placeholder only)](story/chapters/chapter-01.draft.json) · [Item records](story/items.draft.json) · [Shared art prompts](story/artwork.draft.json)
+
+Use the header dropdown to switch between the **Prologue — The Last Good Day** and **Chapter 1 — House of Tomorrow**. Both are drafts. Chapter 1 has no authored scenes yet: its one node is a labelled development placeholder that tests the Prologue's hand-off, and the Story Director will replace it. Each chapter keeps its own node positions in the shared `storyboard-layout.json` (`chapters.<id>.positions`), and every chapter's artwork resolves through the one shared catalog.
 
 ## Boundaries
 

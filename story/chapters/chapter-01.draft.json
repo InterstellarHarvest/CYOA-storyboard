@@ -1,0 +1,13 @@
+{
+  "title": "House of Tomorrow",
+  "start": "dev_placeholder",
+  "scene": "house_of_tomorrow/opening",
+  "nodes": {
+    "dev_placeholder": {
+      "mode": "narrative",
+      "notes": "DEVELOPMENT PLACEHOLDER, not narrative. It exists only to test chapter loading and the Prologue -> Chapter 1 hand-off with the player's state intact. The Story Director owns every Chapter 1 scene, line, branch and approval; replace this node (and the start/scene ids) through the normal storyboard JSON import. No choices on purpose: a preview build ends here with the importer's labelled DRAFT STOP card.",
+      "text": "[DEVELOPMENT PLACEHOLDER] Chapter 1: House of Tomorrow has no authored scenes yet. This card only tests the hand-off from the Prologue.",
+      "choices": []
+    }
+  }
+}

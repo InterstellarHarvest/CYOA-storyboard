@@ -35,7 +35,7 @@
 (() => {
  "use strict";
  const $ = id => document.getElementById(id);
- const state = { chapter:null, items:{}, artwork:null, layouts:{schema:"cyoa-storyboard-layout-v1",chapters:{}}, layoutName:"storyboard-layout.json", chapterKey:null, manifest:null, manifestURL:null, sourceName:"chapter.json", artworkName:"artwork.draft.json", selected:null, scale:1, width:0, height:0 };
+ const state = { chapter:null, items:{}, artwork:null, layouts:{schema:"cyoa-storyboard-layout-v1",chapters:{}}, layoutName:"storyboard-layout.json", chapterKey:null, manifest:null, manifestURL:null, sourceName:"chapter.json", artworkName:"artwork.draft.json", selected:null, selections:{}, loadToken:0, scale:1, width:0, height:0 };
  const setStatus = message => { $("status").textContent = message; };
  const el = (tag, className, text) => { const n=document.createElement(tag); if(className)n.className=className;if(text!==undefined)n.textContent=text;return n; };
  const titleOf = (id) => id.replaceAll("_"," ").replace(/\b\w/g, m=>m.toUpperCase());
@@ -88,33 +88,52 @@
    if(!state.layouts.chapters[state.chapterKey])state.layouts.chapters[state.chapterKey]={positions:{}};
    return state.layouts.chapters[state.chapterKey];
  }
- function cachedLayoutKey(){return LAYOUT_KEY+encodeURIComponent(state.chapterKey||"");}
- function restoreCachedLayout(){
-   const entry=layoutEntry();if(!entry)return;
+ // Each chapter has its own browser cache entry; no chapter ever writes another chapter's key.
+ function cachedLayoutKey(key=state.chapterKey){return LAYOUT_KEY+encodeURIComponent(key||"");}
+ function readCachedPositions(key){
    try{
-     const stored=window.localStorage?.getItem(cachedLayoutKey());
-     if(stored!==null&&stored!==undefined){
-       const parsed=JSON.parse(stored);
-       entry.positions=normalizedPositions(parsed.positions);
-     }
+     const stored=window.localStorage?.getItem(cachedLayoutKey(key));
+     if(stored!==null&&stored!==undefined)return normalizedPositions(JSON.parse(stored).positions);
    }catch(error){ /* Private browsing / blocked storage: manual Export Layout still works. */ }
+   return null;
  }
- function persistLayout(){
-   const entry=layoutEntry();if(!entry)return false;
+ function writeCachedPositions(key,positions){
    try{
      if(!window.localStorage)return false;
-     window.localStorage.setItem(cachedLayoutKey(),JSON.stringify({positions:entry.positions}));
+     window.localStorage.setItem(cachedLayoutKey(key),JSON.stringify({positions}));
      return true;
    }catch(error){return false;}
  }
+ function restoreCachedLayout(){
+   const entry=layoutEntry();if(!entry)return;
+   const cached=readCachedPositions(state.chapterKey);
+   if(cached)entry.positions=cached;
+ }
+ function persistLayout(){
+   const entry=layoutEntry();if(!entry)return false;
+   return writeCachedPositions(state.chapterKey,entry.positions);
+ }
+ function manifestChapterIds(){return (state.manifest?.chapters||[]).map(entry=>entry.id).filter(Boolean);}
  function loadLayouts(data,name,applyNow=false){
    if(data?.schema!=="cyoa-storyboard-layout-v1"||!data.chapters||typeof data.chapters!=="object"||Array.isArray(data.chapters))throw Error("Expected cyoa-storyboard-layout-v1 with chapters.");
-   const clean={schema:"cyoa-storyboard-layout-v1",chapters:{}};
-   for(const [key,val] of Object.entries(data.chapters))clean.chapters[key]={positions:normalizedPositions(val?.positions)};
-   state.layouts=clean;state.layoutName=name||"storyboard-layout.json";
+   const incoming={};
+   for(const [key,val] of Object.entries(data.chapters))incoming[key]={positions:normalizedPositions(val?.positions)};
+   if(applyNow){
+     // An imported file replaces only the chapters it names; every other chapter keeps its layout.
+     for(const [key,val] of Object.entries(incoming)){state.layouts.chapters[key]=val;writeCachedPositions(key,val.positions);}
+   }else{
+     const clean={schema:"cyoa-storyboard-layout-v1",chapters:incoming};
+     for(const key of new Set([...Object.keys(incoming),...manifestChapterIds()])){
+       const cached=readCachedPositions(key);
+       if(cached)clean.chapters[key]={positions:cached};
+       else if(!clean.chapters[key])clean.chapters[key]={positions:{}};
+     }
+     state.layouts=clean;
+   }
+   state.layoutName=name||"storyboard-layout.json";
    $("exportLayout").disabled=false;
    if(applyNow&&state.chapter){
-     layoutEntry();persistLayout();
+     layoutEntry();
      renderGraph();setStatus("Imported layout is active. Drag nodes or Export Layout to save.");
    }
  }
@@ -261,7 +280,8 @@
      const pos=positions[id], card=el("div","node"+(state.selected?.type==="node"&&state.selected.id===id?" selected":"" ));
      card.style.left=pos.x+"px";card.style.top=pos.y+"px";
      card.title=id+" · "+node.mode+"\n"+textOf(node.text).slice(0,240)+"\n"+choicesFor(node).length+" choices";
-     card.append(el("div","id",id),el("div","name",titleOf(id)),el("div","sub"+(choicesFor(node).length===0?" end":""),node.mode+" · "+(choicesFor(node).length||"NO NEXT")+" choice"+(choicesFor(node).length===1?"":"s")));
+     const exits=[...new Set(choicesFor(node).map(c=>c.chapter).filter(Boolean))];
+     card.append(el("div","id",id),el("div","name",titleOf(id)),el("div","sub"+(choicesFor(node).length===0?" end":""),node.mode+" · "+(choicesFor(node).length||"NO NEXT")+" choice"+(choicesFor(node).length===1?"":"s")+(exits.length?" · → "+exits.join(", "):"")));
      card.addEventListener("pointerdown",e=>startNodeDrag(e,id,card,pos));
      card.addEventListener("click",e=>{
        if(suppressNodeClick===id){suppressNodeClick=null;e.preventDefault?.();e.stopPropagation?.();return;}
@@ -441,13 +461,17 @@
    if(node.speaker||node.pose)pane.append(el("p","meta",["Speaker: "+(node.speaker||"—"),"Pose: "+(node.pose||"—")].join(" · ")));
    if(node.objective)labeled(pane,"Objective",textOf(node.objective));
    labeled(pane,"Actual script",textOf(node.text));
+   if(node.notes)labeled(pane,"Authoring notes (not imported into the game)",textOf(node.notes));
     artworkLinks(pane,artRefsForNode(node));
    pane.append(el("h3","","Choices & destinations"));
    choicesFor(node).forEach(c=>{
      const b=el("button","choice",c.text||c.id);
-     const dest=c.to?"→ "+c.to:c.chapter?"→ Chapter "+c.chapter:c.back?"Return":"Stay / outcome";
+     const target=c.chapter?manifestEntry(c.chapter):null;
+     const dest=c.to?"→ "+c.to:c.chapter?"→ "+(target?.title?target.title+" ("+c.chapter+")":"Chapter "+c.chapter)+" · opens at its start node":c.back?"Return":"Stay / outcome";
      b.append(el("span","minor",(c.kind||"choice")+" · "+dest+(c.if?" · IF "+JSON.stringify(c.if):"")));
-     if(c.to && state.chapter.nodes[c.to])b.addEventListener("click",()=>selectNode(c.to));else b.disabled=true;
+     if(c.to && state.chapter.nodes[c.to])b.addEventListener("click",()=>selectNode(c.to));
+     else if(target)b.addEventListener("click",()=>loadRemote(target));
+     else b.disabled=true;
      pane.append(b);
    });
    const itemTransitions=[];
@@ -501,21 +525,40 @@
    if(!ids.length)pane.append(el("p","muted","Load a shared items JSON file to inspect items."));
    ids.forEach(id=>{const b=el("button","item-button",(state.items[id].name||id)+" · "+id);b.addEventListener("click",()=>selectItem(id));pane.append(b);});
  }
+ function manifestEntry(id){return (state.manifest?.chapters||[]).find(entry=>entry.id===id)||null;}
+ function reselect(sel,start){
+   if(sel?.type==="node"&&state.chapter.nodes[sel.id])return selectNode(sel.id);
+   if(sel?.type==="art"&&artworkAt(sel.group,sel.id,sel.variant))return selectArt({group:sel.group,id:sel.id,variant:sel.variant});
+   if(sel?.type==="item"&&state.items[sel.id])return selectItem(sel.id);
+   if(sel?.type==="list")return showItems();
+   if(sel?.type==="art-list")return showArtwork();
+   selectNode(start);
+ }
  function loadChapter(data,name,chapterId){
    if(!data?.nodes||!data?.start||!data.nodes[data.start])throw Error("Expected chapter with a valid start and nodes object.");
-   state.chapter=data;state.sourceName=name||"chapter.json";state.chapterKey=chapterId||data.id||name||"imported-chapter";state.selected=null;
+   // A chapter file imported by hand is keyed like its manifest entry, so its layout stays its own.
+   const listed=!chapterId&&name?(state.manifest?.chapters||[]).find(entry=>entry.file?.split("/").pop()===name):null;
+   const key=chapterId||listed?.id||data.id||name||"imported-chapter";
+   if(state.chapterKey&&state.chapter)state.selections[state.chapterKey]=state.selected;
+   state.chapter=data;state.sourceName=name||"chapter.json";state.chapterKey=key;state.selected=null;
    restoreCachedLayout();
    $("resetLayout").disabled=false;$("exportLayout").disabled=false;
-   $("chapterTitle").textContent=data.title||name||"Chapter tree";
-   $("exportChapter").disabled=false;renderGraph();fit();setStatus("Loaded "+Object.keys(data.nodes).length+" nodes · draft story JSON");
-   selectNode(data.start);
+   const entry=manifestEntry(key);
+   $("chapterTitle").textContent=entry?(entry.title||entry.id)+" · "+(entry.status||"unlisted"):(data.title||name||"Chapter tree");
+   const index=(state.manifest?.chapters||[]).indexOf(entry);
+   if(index>=0)$("chapterSelect").value=String(index);
+   $("exportChapter").disabled=false;renderGraph();fit();setStatus("Loaded "+Object.keys(data.nodes).length+" nodes · "+(entry?entry.id+" · "+(entry.status||"unlisted"):"draft")+" story JSON");
+   reselect(state.selections[key],data.start);
  }
  async function loadRemote(entry){
+   const token=++state.loadToken;
    try{
      const url=new URL(entry.file,state.manifestURL);
      const res=await fetch(url);if(!res.ok)throw Error("HTTP "+res.status);
-     loadChapter(await res.json(),entry.file.split("/").pop(),entry.id);
-   }catch(err){setStatus("Could not load chapter: "+err.message);}
+     const data=await res.json();
+     if(token!==state.loadToken)return; // a later chapter choice superseded this one
+     loadChapter(data,entry.file.split("/").pop(),entry.id);
+   }catch(err){if(token===state.loadToken)setStatus("Could not load chapter: "+err.message);}
  }
  function download(data,name){
    const blob=new Blob([JSON.stringify(data,null,2)+"\n"],{type:"application/json"});
