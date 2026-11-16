@@ -58,22 +58,39 @@ for(const row of controls.files){
 }
 
 const art=JSON.parse(fs.readFileSync(path.join(root,"story/artwork.draft.json"),"utf8"));
+// This lab audits the PINNED Prologue assets, not the entire shared chapter catalog.
+// Later chapters may add hundreds of prompts, scenes, and items without changing this audit.
+const prologue=JSON.parse(fs.readFileSync(path.join(root,"story/chapters/prologue-00.draft.json"),"utf8"));
+const prologueSceneIds=[...new Set([prologue.scene,...Object.values(prologue.nodes).map(n=>n.scene).filter(Boolean)])];
+const prologuePortraitIds=[...new Set(Object.values(prologue.nodes).filter(n=>n.speaker).map(n=>n.speaker+":"+(n.pose||"default")))];
+const prologueItemIds=[
+  "termination_notice","timing_clicker","desk_plant","effects_box_full","effects_box_empty",
+  "red_stapler","rubber_band_ball","property_claim_ticket","expo_examiner_badge","wc_key"
+];
+const prologueArt={
+  scenes:Object.fromEntries(prologueSceneIds.map(id=>[id,art.scenes[id]])),
+  portraits:Object.fromEntries(prologuePortraitIds.map(id=>[id,art.portraits[id]])),
+  items:Object.fromEntries(prologueItemIds.map(id=>[id,art.items[id]]))
+};
+for(const [group,records] of Object.entries(prologueArt))
+  for(const [id,record] of Object.entries(records))
+    assert.ok(record,"missing pinned Prologue "+group+" "+id);
 assert.equal(idx.schema,"cyoa-public-prologue-review-assets-v1");
 assert.equal(idx.files.length,51);
-assert.equal(Object.keys(art.scenes).length,8);
-assert.equal(Object.keys(art.items).length,10);
-assert.equal(Object.keys(art.portraits).length,3);
+assert.equal(Object.keys(prologueArt.scenes).length,8);
+assert.equal(Object.keys(prologueArt.items).length,10);
+assert.equal(Object.keys(prologueArt.portraits).length,3);
 const expected=new Map();
 function add(status,p,dims){assert.ok(p&&p.endsWith(".png"));expected.set("assets/"+(status==="generated"?"draft/":"approved/")+p,dims);}
-for(const s of Object.values(art.scenes)){
+for(const s of Object.values(prologueArt.scenes)){
   add(s.status,s.assetPath,[314,206]);
   if(s.portraitBackground)add(s.portraitBackground.status,s.portraitBackground.assetPath,[564,278]);
 }
-for(const p of Object.values(art.portraits)){
+for(const p of Object.values(prologueArt.portraits)){
   if(p.status==="generated")add(p.status,p.assetPath,[564,278]);
   else for(const l of p.layers||[])add("reused",l.path,[564,278]);
 }
-for(const item of Object.values(art.items)){
+for(const item of Object.values(prologueArt.items)){
   add(item.slot.status,item.slot.assetPath,[96,96]);
   add(item.inspect.status,item.inspect.assetPath,[565,451]);
 }
