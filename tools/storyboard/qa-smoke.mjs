@@ -35,9 +35,9 @@ assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46,'Pro
 assert.equal(productionRecords.filter(r=>r.status==='approved').length,7,'accepted Biology Park Batch 1 art awaits verified integration, not art approval');
 assert.equal(productionRecords.filter(r=>r.status==='not-started').length,105,'only unselected images remain not-started');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'approved','Chapter 2 Bureau artwork already selected');
-assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'Chapter 2 Bureau scene has no image yet');
+assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'selected Chapter 2 Bureau review image has no confirmed game production path yet');
 assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.status,'integrated','Chapter 1 arrival artwork is already used in review game');
-assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.assetPath,null,'Chapter 1 arrival scene has no image yet');
+assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.assetPath,'art/scenes/house_of_tomorrow/arrival.png','selected Chapter 1 arrival production path');
 for(const record of productionRecords){
   if(record.status==='integrated')assert.ok(record.assetPath?.endsWith('.png')
       || Object.values(record.views||{}).some(v=>v.assetPath?.endsWith('.png'))
@@ -57,8 +57,13 @@ assert.equal(artwork.scenes['pavilion/human_behavior_workshop']?.assetPath,null,
 // Public storyboard intentionally mirrors metadata, not private generated images.
 
 for(const portrait of Object.values(artwork.portraits)){
-  assert.equal(portrait.foregroundFormat,'transparent-rgba-png','all NPC foregrounds are transparent');
-  assert.ok(artwork.scenes[portrait.portraitBackgroundScene]?.portraitBackground,"portrait scene background exists");
+  if(portrait.format==='opaque-complete'){
+    assert.ok(Object.values(portrait.views||{}).length>=1,'House intercom uses complete scene-specific opaque views');
+    assert.ok(Object.values(portrait.views).every(view=>view.status==='integrated'&&view.assetPath),'all selected House portrait views integrated');
+    continue;
+  }
+  assert.equal(portrait.foregroundFormat,'transparent-rgba-png','layered NPC foreground remains transparent');
+  assert.ok(artwork.scenes[portrait.portraitBackgroundScene]?.portraitBackground,"layered NPC scene background exists");
 }
 assert.equal(manifest.layout,'storyboard-layout.json');
 const layoutSource=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.layout),'utf8'));
@@ -80,7 +85,7 @@ for(const ch of chapters){
 }
 assert.deepEqual(Object.keys(layoutSource.chapters),['prologue-00','chapter-01','chapter-02','chapter-03'],'layout has four chapters');
 assert.deepEqual(layoutSource.chapters['prologue-00'].positions,{},'prologue positions retained exactly (none committed)');
-assert.equal(Object.keys(chapters[3].nodes).length,62,'Chapter 3 has 63 storyboard nodes');
+assert.equal(Object.keys(chapters[3].nodes).length,62,'Chapter 3 has 62 storyboard nodes');
 assert.equal(chapters[3].nodes.end_model_citizen.deathPopup.title,'A MODEL CITIZEN','owner-approved fatal metadata');
 assert.equal(chapters[3].nodes.b_gate.choices.find(c=>c.id==='ch3_b03_c').check.need,4,'departure counter check');
 for(const id of ['end_concourse_robot','end_underground_station','end_public','end_maintenance','end_customs'])
