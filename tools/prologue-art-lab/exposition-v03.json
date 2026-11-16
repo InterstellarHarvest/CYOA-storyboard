@@ -5,7 +5,7 @@
     "ref": "6393d43dc0704168ab4047a6c1eb13ed1aa33360",
     "review": "review/exposition-detail-corrections-2026-11-14/"
   },
-  "ownerVisualApproval": "pending",
+  "ownerVisualApproval": "approved",
   "narrativePatchApplied": false,
   "productionPromotion": false,
   "approvedReception": {
@@ -23,7 +23,7 @@
         314,
         206
       ],
-      "status": "generated",
+      "status": "integrated",
       "presentation": "4x nearest-neighbor",
       "retainedPreviousAssetPath": "art/scenes/exposition/street_approach.png",
       "comparisonInPublicLab": true,
@@ -39,7 +39,7 @@
         314,
         206
       ],
-      "status": "generated",
+      "status": "integrated",
       "presentation": "4x nearest-neighbor",
       "retainedPreviousAssetPath": "art/scenes/exposition/continuity-v02/entrance.png",
       "comparisonInPublicLab": true,
@@ -55,7 +55,7 @@
         314,
         206
       ],
-      "status": "generated",
+      "status": "integrated",
       "presentation": "4x nearest-neighbor",
       "retainedPreviousAssetPath": "art/scenes/exposition/property_counter.png",
       "comparisonInPublicLab": false,
@@ -71,7 +71,7 @@
         314,
         206
       ],
-      "status": "generated",
+      "status": "integrated",
       "presentation": "4x nearest-neighbor",
       "retainedPreviousAssetPath": "art/scenes/exposition/continuity-v01/facilities-corridor.png",
       "comparisonInPublicLab": true,
@@ -89,5 +89,10 @@
       "exposition/reception"
     ],
     "protectedUi": true
+  },
+  "retroactiveOwnerApproval": {
+    "date": "2026-11-16",
+    "basis": "All selected and used artwork is approved by owner's retroactive workflow ruling. Original review-era pending status superseded.",
+    "currentSourceOfTruth": "story/artwork.draft.json"
   }
 }

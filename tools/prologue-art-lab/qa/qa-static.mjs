@@ -33,7 +33,7 @@ assert.equal(audit.schema,"cyoa-public-prologue-artwork-audit-v1");
 assert.equal(audit.correctedCount,16);
 assert.equal(audit.unchangedCount,12);
 assert.equal(audit.technicalPass,28);
-assert.equal(audit.ownerVisualApproval,"pending");
+assert.equal(audit.ownerVisualApproval,"approved","owner retroactive approval of selected Prologue artwork");
 assert.equal(audit.productionPromotion,false);
 for(const correction of audit.corrections){
   const image=idx.files.find(x=>x.path==="assets/draft/"+correction.assetPath);
@@ -81,13 +81,20 @@ assert.equal(Object.keys(prologueArt.scenes).length,8);
 assert.equal(Object.keys(prologueArt.items).length,10);
 assert.equal(Object.keys(prologueArt.portraits).length,3);
 const expected=new Map();
-function add(status,p,dims){assert.ok(p&&p.endsWith(".png"));expected.set("assets/"+(status==="generated"?"draft/":"approved/")+p,dims);}
+function add(status,p,dims){
+  assert.ok(p&&p.endsWith(".png"));
+  // Original draft/approved SOURCE folders are historically pinned.
+  // Approval status now tracks actual selected usage, not the old storage directory.
+  const matches=["assets/draft/"+p,"assets/approved/"+p].filter(candidate=>idx.files.some(row=>row.path===candidate));
+  assert.equal(matches.length,1,"exactly one pinned legacy asset "+p);
+  expected.set(matches[0],dims);
+}
 for(const s of Object.values(prologueArt.scenes)){
   add(s.status,s.assetPath,[314,206]);
   if(s.portraitBackground)add(s.portraitBackground.status,s.portraitBackground.assetPath,[564,278]);
 }
 for(const p of Object.values(prologueArt.portraits)){
-  if(p.status==="generated")add(p.status,p.assetPath,[564,278]);
+  if(p.assetPath)add(p.status,p.assetPath,[564,278]);
   else for(const l of p.layers||[])add("reused",l.path,[564,278]);
 }
 for(const item of Object.values(prologueArt.items)){
@@ -123,7 +130,7 @@ assert.equal(exposition.update.changedSceneCount,2);
 assert.deepEqual(exposition.update.unchangedScenes,[
   "street/outside_workplace","exposition/property_intake","exposition/reception"
 ]);
-assert.equal(exposition.ownerVisualApproval,"pending");
+assert.equal(exposition.ownerVisualApproval,"approved","owner retroactive approval of the selected V03 art");
 assert.equal(exposition.productionPromotion,false);
 assert.equal(exposition.narrativePatchApplied,false);
 assert.equal(exposition.scenes.length,4);
@@ -155,9 +162,9 @@ assert.deepEqual(exposition.scenes.map(x=>x.assetPath),sourcePaths);
 for(const scene of exposition.scenes){
   const record=art.scenes[scene.id];
   assert.ok(record,"missing published scene "+scene.id);
-  assert.equal(record.status,"generated","do not approve V03 candidates");
+  assert.equal(record.status,"integrated","selected V03 artwork already used in the game");
   assert.equal(record.assetPath,scene.assetPath,"catalog must use current Exposition candidate");
-  assert.equal(scene.status,"generated");
+  assert.equal(scene.status,"integrated");
   assert.deepEqual(scene.dimensions,[314,206]);
   assert.equal(scene.presentation,"4x nearest-neighbor");
   assert.equal(scene.humanFigureInCurrentArtwork,false);

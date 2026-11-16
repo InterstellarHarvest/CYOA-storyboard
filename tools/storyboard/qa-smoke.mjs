@@ -19,7 +19,7 @@ const chapter=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.chapter
 const items=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.items),'utf8'));
 assert.equal(manifest.artwork,'artwork.draft.json');
 assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.dimensions,'564x278','corridor paired portrait background dimensions');
-assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.status,'generated','corridor paired portrait background generated');
+assert.equal(artwork.scenes['workplace/corridor'].portraitBackground.status,'integrated','corridor paired portrait background integrated');
 assert.equal(artwork.scenes['exposition/reception'].portraitBackground.status,'reused','approved reception background reuse');
 const productionRecords=[
   ...Object.values(artwork.scenes).flatMap(scene=>[scene,...(scene.portraitBackground?[scene.portraitBackground]:[])]),
@@ -28,18 +28,31 @@ const productionRecords=[
   ...Object.values(artwork.focus||{}),
   ...Object.values(artwork.deathScreens||{})
 ];
-assert.equal(productionRecords.length,165,'shared artwork includes Chapter 3 and death screens');
-assert.equal(productionRecords.filter(r=>r.status==='generated').length,28,'published metadata matches private generated count');
+assert.equal(productionRecords.length,163,'shared artwork includes selected Chapter 1 views (paired backgrounds retired)');
+assert.equal(productionRecords.filter(r=>r.status==='generated').length,0,'no previously selected source is incorrectly awaiting approval');
 assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
-assert.equal(productionRecords.filter(r=>r.status==='not-started').length,132,'67 additional prompt-only Chapter 3 art records');
-assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'not-started','Chapter 2 Bureau scene is not-started');
+assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46,'Prologue and selected Chapter 1 artwork already used in game');
+assert.equal(productionRecords.filter(r=>r.status==='approved').length,7,'accepted Biology Park Batch 1 art awaits verified integration, not art approval');
+assert.equal(productionRecords.filter(r=>r.status==='not-started').length,105,'only unselected images remain not-started');
+assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'approved','Chapter 2 Bureau artwork already selected');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'Chapter 2 Bureau scene has no image yet');
-assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.status,'not-started','Chapter 1 arrival scene is not-started');
+assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.status,'integrated','Chapter 1 arrival artwork is already used in review game');
 assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.assetPath,null,'Chapter 1 arrival scene has no image yet');
 for(const record of productionRecords){
-  if(record.status==='generated')assert.ok(record.assetPath?.endsWith('.png'),'generated art has logical PNG path: '+record.title);
+  if(record.status==='integrated')assert.ok(record.assetPath?.endsWith('.png')
+      || Object.values(record.views||{}).some(v=>v.assetPath?.endsWith('.png'))
+      || (record.pages||[]).some(v=>v.assetPath?.endsWith('.png')),'integrated artwork has selected PNG source: '+record.title);
 }
 assert.ok(artwork.deathScreens['pavilion/a_model_citizen']?.prompt,'death screen art registered');
+assert.equal(artwork.portraits['house:idle'].status,'integrated','opaque House intercom views selected');
+assert.ok(Object.values(artwork.portraits['house:idle'].views).every(v=>v.status==='integrated'&&v.assetPath),'House conversation views selected');
+assert.equal(artwork.focus['house_of_tomorrow/portrait_gallery/album'].status,'integrated','family album selected');
+assert.ok(artwork.focus['house_of_tomorrow/portrait_gallery/album'].pages.every(p=>p.status==='integrated'&&p.assetPath),'three selected album pages');
+assert.ok(artwork.scenes['house_of_tomorrow/storage'].states.every(v=>v.status==='integrated'&&v.assetPath),'all used House storage variants');
+assert.equal(artwork.scenes['house_of_tomorrow/chair'].states.find(v=>v.id==='default_unrestrained').status,'approved','unbound selected alternative is approved, not falsely marked displayed');
+assert.equal(artwork.scenes['biology_park/groundskeeper'].portraitBackground.status,'approved','groundskeeper background selected');
+assert.equal(artwork.portraits['groundskeeper:idle'].status,'approved','groundskeeper foreground selected');
+assert.ok(artwork.scenes['biology_park/conveniences_bureau'].notes.includes('SHA-256'),'chosen Biology Park candidate version pinned');
 assert.equal(artwork.scenes['pavilion/human_behavior_workshop']?.assetPath,null,'workshop art pending');
 // Public storyboard intentionally mirrors metadata, not private generated images.
 
@@ -270,7 +283,7 @@ assert.match(document.getElementById('chapterTitle').textContent,/^Chapter 1 —
 assert.ok(flatten(pane()).some(x=>x.textContent==='House Arrival'),'Chapter 1 inspector opens on its authored start node');
 assert.ok(flatten(pane()).some(x=>/HOUSE OF TOMORROW/.test(String(x.textContent))),'House arrival narration appears in the inspector');
 const ch1Art=flatten(pane()).find(x=>x.tagName==='button'&&String(x.textContent).includes('HOUSE OF TOMORROW'));
-assert.ok(ch1Art&&flatten(ch1Art).some(x=>/scenes\/house_of_tomorrow\/arrival · not-started/.test(String(x.textContent))),'House arrival art resolves through shared catalog as not-started');
+assert.ok(ch1Art&&flatten(ch1Art).some(x=>/scenes\/house_of_tomorrow\/arrival · integrated/.test(String(x.textContent))),'House arrival art resolves as already integrated');
 assert.ok(!flatten(pane()).some(x=>/facilities_corridor/.test(String(x.textContent))),'Chapter 1 does not borrow the facilities corridor art');
 assert.ok(flatten(pane()).some(x=>/PUSH OPEN THE DISPLAY ENTRANCE/.test(String(x.textContent))),'authored arrival choice appears in the Chapter 1 inspector');
 // 3. Move the Chapter 1 node.
@@ -303,7 +316,7 @@ assert.equal(select.value,'2','exit card opens Chapter 2 and the selector follow
 assert.equal(nodeIds().length,99,'Chapter 2 graph shows all 99 authored nodes');
 assert.match(document.getElementById('chapterTitle').textContent,/^Chapter 2 — Biology Park · draft$/,'board heading names Chapter 2 and its draft status');
 assert.ok(flatten(pane()).some(x=>x.textContent==='Bureau Arrival'),'Chapter 2 inspector opens on its authored start node');
-assert.ok(flatten(pane()).some(x=>/scenes\/biology_park\/conveniences_bureau · not-started/.test(String(x.textContent))),'Bureau art resolves through the shared catalog as not-started');
+assert.ok(flatten(pane()).some(x=>/scenes\/biology_park\/conveniences_bureau · approved/.test(String(x.textContent))),'Bureau artwork appears as selected and approved');
 findNode('public_kit_focus').click();
 assert.ok(flatten(pane()).some(x=>/USE THE ANTIDOTE DIRECTLY FROM THE OPEN KIT/.test(String(x.textContent))),'Chapter 2 focus node choices appear in the inspector');
 const ch2=dragNode('park_junction',170,-80,34);

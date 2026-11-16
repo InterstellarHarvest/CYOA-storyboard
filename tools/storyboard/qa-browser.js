@@ -79,7 +79,7 @@ async function run(name, base) {
   const ch1Inspector = await page.evaluate(() => document.getElementById('details').innerText);
   check(b, 'Chapter 1: 36 authored nodes, arrival inspector, item choice, and independent unstarted scene reference',
     /HOUSE OF TOMORROW/.test(ch1Inspector)
-    && /scenes\/house_of_tomorrow\/arrival · not-started/.test(ch1Inspector)
+    && /scenes\/house_of_tomorrow\/arrival · integrated/.test(ch1Inspector)
     && /PUSH OPEN THE DISPLAY ENTRANCE/.test(ch1Inspector)
     && !/facilities_corridor/.test(ch1Inspector), ch1Inspector.slice(0, 500));
   const c = await drag(page, 'house_arrival', 160, 110);
@@ -88,7 +88,7 @@ async function run(name, base) {
   await choose(page, 2, 99);
   const ch2Inspector = await page.evaluate(() => document.getElementById('details').innerText);
   check(b, 'Chapter 2: 99 authored nodes, Bureau inspector, choice, and unstarted shared-catalog scene reference',
-    /Bureau Arrival/.test(ch2Inspector) && /scenes\/biology_park\/conveniences_bureau · not-started/.test(ch2Inspector) && /CONTINUE/.test(ch2Inspector), ch2Inspector.slice(0, 500));
+    /Bureau Arrival/.test(ch2Inspector) && /scenes\/biology_park\/conveniences_bureau · approved/.test(ch2Inspector) && /CONTINUE/.test(ch2Inspector), ch2Inspector.slice(0, 500));
   const d = await drag(page, 'park_junction', 140, -70);
   await page.screenshot({ path: path.join(OUT, name + '_2b_chapter02.png') });
   await choose(page, 1, 36);
@@ -146,8 +146,8 @@ async function run(name, base) {
   const items = await p2.evaluate(() => document.querySelectorAll('#details .item-button').length);
   await p2.click('#showArtwork');
   const art = await p2.evaluate(() => document.getElementById('details').innerText);
-  check(b, 'zoom, Items and Artwork panels still work (165 shared art records, 132 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
-    && items === 32 && /165 shared art records/.test(art) && /132 not-started/.test(art), [items, art.slice(0, 200)]);
+  check(b, 'zoom, Items and Artwork panels still work (163 shared art records, 105 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
+    && items === 32 && /163 shared art records/.test(art) && /105 not-started/.test(art), [items, art.slice(0, 200)]);
   await p2.screenshot({ path: path.join(OUT, name + '_3_imported.png') });
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);

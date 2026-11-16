@@ -44,9 +44,15 @@
     return name;
   }
   function asset(record, fallback) {
-    if (fallback) return "assets/approved/" + fallback;
+    if (fallback) return "assets/approved/" + safe(fallback);
     if (!record || !record.assetPath) return null;
-    return "assets/" + (record.status === "generated" ? "draft/" : "approved/") + safe(record.assetPath);
+    // Asset storage stays SHA-pinned to its original draft/approved review directory.
+    // The new integrated/approved statuses describe selection, NOT directory location.
+    const filename=safe(record.assetPath);
+    const candidates=["assets/draft/"+filename,"assets/approved/"+filename];
+    const rows=(data.index?.files||[]).filter(row=>candidates.includes(row.path));
+    if(rows.length!==1)throw new Error("Pinned Prologue source is missing or ambiguous: "+filename);
+    return rows[0].path;
   }
   function setImg(el, url, visible = true) {
     const show = !!url && visible;
@@ -611,12 +617,12 @@
       [data.catalog,data.index,data.controls,data.layout,data.fonts,data.exposition] = await Promise.all(responses.map(r=>r.json()));
       if (data.exposition.schema !== "cyoa-exposition-v03-public-review-v1" ||
           data.exposition.scenes.length !== 4 ||
-          data.exposition.ownerVisualApproval !== "pending" ||
+          data.exposition.ownerVisualApproval !== "approved" ||
           data.exposition.narrativePatchApplied !== false) throw new Error("Invalid Exposition V03 public-only manifest");
       for (const row of data.exposition.scenes) {
         const current = data.catalog.scenes[row.id];
-        if (!current || current.status !== "generated" || current.assetPath !== row.assetPath ||
-            row.status !== "generated" || row.humanFigureInCurrentArtwork !== false)
+        if (!current || current.status !== "integrated" || current.assetPath !== row.assetPath ||
+            row.status !== "integrated" || row.humanFigureInCurrentArtwork !== false)
           throw new Error("Exposition artwork catalog mismatch: " + row.id);
       }
       if (data.layout.schema !== "cyoa-public-artwork-lab-layout-v1" || data.layout.inventory.slotCount!==6 || data.layout.inventory.pitch!==116 || data.layout.inventory.gap!==20) throw new Error("Incorrect six-slot layout baseline");
@@ -631,12 +637,12 @@
       if (data.scenes.length !== 8 || data.items.length !== 10) throw new Error("Expected eight scene entries and ten inventory items");
       for (const scene of data.scenes) {
         const item = data.catalog.scenes[scene];
-        option($("sceneSelect"), scene, item.title + (item.status==="generated" ? " [DRAFT]" : " [M2]"));
+        option($("sceneSelect"), scene, item.title + (item.status==="integrated" ? " [INTEGRATED]" : item.status==="reused" ? " [REUSED]" : " [REVIEW]"));
       }
       for (const p of PAIRINGS) option($("portraitSelect"),p.id,p.title);
       for (const item of data.items) {
         const rec = data.catalog.items[item];
-        option($("itemSelect"),item,itemTitle(item)+(rec.slot.status==="generated"?" [DRAFT]":" [M2]"));
+        option($("itemSelect"),item,itemTitle(item)+(rec.slot.status==="integrated"?" [INTEGRATED]":rec.slot.status==="reused"?" [REUSED]":" [REVIEW]"));
       }
       bind();
       render();

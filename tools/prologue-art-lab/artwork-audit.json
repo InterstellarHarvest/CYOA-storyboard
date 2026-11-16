@@ -8,7 +8,7 @@
   "technicalPass": 28,
   "correctedCount": 16,
   "unchangedCount": 12,
-  "ownerVisualApproval": "pending",
+  "ownerVisualApproval": "approved",
   "productionPromotion": false,
   "corrections": [
     {
@@ -187,5 +187,10 @@
       ],
       "observation": "Readable EXPO / TEMP / EXAMINER; no invented year or malformed name microtype."
     }
-  ]
+  ],
+  "retroactiveOwnerApproval": {
+    "date": "2026-11-16",
+    "basis": "All selected and used artwork is approved by owner's retroactive workflow ruling. Original review-era pending status superseded.",
+    "currentSourceOfTruth": "story/artwork.draft.json"
+  }
 }

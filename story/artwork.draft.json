@@ -13,72 +13,72 @@
     "workplace/applause_station": {
       "title": "APPLAUSE TIMING STATION",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "A modest, narrow corporate timing desk. The tiny six-second applause control and a single green ACCEPTED indicator dominate a practical console; numbered papers neatly aligned, utilitarian wall conduits, a plain office exit at one side. The environment suggests paid routine work, not a laboratory or science-fiction command bridge. Slightly off-kilter bureaucracy but successful completion, no workplace catastrophe. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/workplace/applause_station.png",
       "suggestedFilename": "art/scenes/workplace/applause_station.png",
-      "notes": "Concept draft; target filename is proposed, not an existing asset."
+      "notes": "Concept draft; target filename is proposed, not an existing asset.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "workplace/corridor": {
       "title": "EMPLOYEE CORRIDOR",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "A quiet fluorescent workplace corridor with muted gray-blue wall panels, straight geometric lines, an employee restroom door and a small badge reader farther along. The corridor is proportioned for a small round floating messenger drone to hover in the foreground during dialogue. Company identifiers remain generic. No fantasy machinery or steam pipes. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/workplace/corridor.png",
       "suggestedFilename": "art/scenes/workplace/corridor.png",
-      "notes": "Concept draft; target filename is proposed, not an existing asset.",
+      "notes": "Concept draft; target filename is proposed, not an existing asset.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
       "portraitBackground": {
         "title": "EMPLOYEE CORRIDOR — DRONE PORTRAIT BACKGROUND",
         "kind": "portrait-background",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "564x278",
         "prompt": "Create an entirely separate OPAQUE portrait-background image of the SAME employee corridor depicted in the companion main-scene artwork. The camera is tighter and more detailed, aligned to a conversational close-up of the hovering termination drone in the foreground. Retain recognizable corridor geometry: pale institutional blue-gray wall panels, fluorescent light, restroom/badge-reader context when visible and mid-century municipal-industrial materials. Keep the center/right areas visually quiet enough behind the drone; preserve the same design, lighting and palette as the 314×206 main scene. Render actual background scenery across the full 564×278 canvas; NO drone, NO NPC, NO portrait sprite, NO transparency, NO UI framing. This must be newly authored 564×278 art, not a resized, cropped or softened main-scene image.",
         "assetPath": "art/portraits/termination_drone/corridor_background.png",
         "suggestedFilename": "art/portraits/termination_drone/corridor_background.png",
-        "notes": "Paired deliverable with workplace/corridor main scene. Generate them together to preserve visual continuity. Reused across termination_drone:slot_closed and termination_drone:paper_extended."
+        "notes": "Paired deliverable with workplace/corridor main scene. Generate them together to preserve visual continuity. Reused across termination_drone:slot_closed and termination_drone:paper_extended.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "workplace/exit": {
       "title": "PERSONAL EFFECTS EXIT",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "A staffed-looking but oddly deserted workplace exit. A single sealed brown cardboard box bearing a handwritten name rests under a restrained PERSONAL EFFECTS label. Practical coat hooks and institutional exit hardware, no grand stairway. Room enough for a low-res character and box; environmental perspective plausible for a literal departure. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/workplace/personal_effects_exit.png",
       "suggestedFilename": "art/scenes/workplace/personal_effects_exit.png",
-      "notes": "Concept draft; target filename is proposed, not an existing asset."
+      "notes": "Concept draft; target filename is proposed, not an existing asset.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "street/outside_workplace": {
       "title": "STREET / EXPOSITION APPROACH",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Mid-century modern city sidewalk just outside the employment building. Across a believable short street stands a large fairground/convention complex entrance, THE EXPOSITION OF EVERYTHING, with a welcoming PUBLIC FACILITIES sign. Concrete, enamel signage, modest transit hints, vertical banners, slightly inappropriate civic optimism. Usable continuous walking direction; not post-apocalyptic. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/exposition/continuity-v01/street-approach.png",
       "suggestedFilename": "art/scenes/exposition/street_approach.png",
-      "notes": "Exposition continuity V01; unoccupied environment candidate for owner visual review. Narration/signage/automation patch not applied. Status generated; not production artwork."
+      "notes": "Exposition continuity V01; unoccupied environment candidate for owner visual review. Narration/signage/automation patch not applied. Status generated; not production artwork.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "exposition/entrance": {
       "title": "EXPOSITION TURNSTILE / CONTAINER CHUTE",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "The Exposition admission threshold: cheerful civic entrance arch, public-facilities direction beyond, and a plainly labeled NO OUTSIDE CONTAINERS chute beside a mechanical turnstile. One uniformed attendant can be suggested at a distance, without requiring a separate dialogue portrait. The chute is practical and unremarkable: the absurdity is that the visitor must surrender a sealed personal effects box. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/exposition/continuity-v03/entrance.png",
       "suggestedFilename": "art/scenes/exposition/entrance_turnstile.png",
-      "notes": "Exposition V03 detailed entrance correction; native 314×206 local pixel correction. Generated candidate pending owner visual approval. No narrative/gameplay changes. Source: detail-corrections 2026-11-14."
+      "notes": "Exposition V03 detailed entrance correction; native 314×206 local pixel correction. Generated candidate pending owner visual approval. No narrative/gameplay changes. Source: detail-corrections 2026-11-14.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "exposition/property_intake": {
       "title": "PROPERTY FOR YOUR CONVENIENCE",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Compact mid-century exposition property counter, green felt inspection mat, four numbered shallow metal drawers/trays, simple clerk station. Beyond it, an inviting hall/reception direction is visible. The counter should feel streamlined and efficient, with gentle impersonal geometry; keep trays readable at low resolution, not cluttered with props. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/exposition/continuity-v02/property-intake.png",
       "suggestedFilename": "art/scenes/exposition/property_counter.png",
-      "notes": "Exposition automation V02; unoccupied environment candidate for owner visual review. Narration/signage/automation patch not applied. Status generated; not production artwork."
+      "notes": "Exposition automation V02; unoccupied environment candidate for owner visual review. Narration/signage/automation patch not applied. Status generated; not production artwork.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "exposition/reception": {
       "title": "RECEPTION HALL — APPROVED M2 ART",
@@ -103,172 +103,308 @@
     "exposition/facilities_corridor": {
       "title": "AMBIGUOUS FACILITIES HALL",
       "kind": "scene",
-      "status": "generated",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Bright, slightly sterile convention-center hallway with pale enamel walls and calm blue wayfinding. A small human pictogram beside a box-shaped enclosure reads as a bathroom sign from the current view, though it actually directs visitors toward a model residence/public comfort exhibit around the corner. The visual ambiguity must be fair, not magical; keep the fuller explanatory sign partially occluded until approached. True logical-grid pixel art at 314×206; purposeful clusters and readable major silhouettes; no letterboxing, no interface chrome, avoid over-detailing.",
       "assetPath": "art/scenes/exposition/continuity-v03/facilities-corridor.png",
       "suggestedFilename": "art/scenes/exposition/facilities_corridor.png",
-      "notes": "Exposition V03 perspective-corrected signage; native 314×206 local pixel correction. Generated candidate pending owner visual approval. No narrative/gameplay changes. Source: detail-corrections 2026-11-14."
+      "notes": "Exposition V03 perspective-corrected signage; native 314×206 local pixel correction. Generated candidate pending owner visual approval. No narrative/gameplay changes. Source: detail-corrections 2026-11-14.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/arrival": {
       "title": "HOUSE OF TOMORROW — ARRIVAL",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/arrival.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/arrival.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/arrival-correction-v03/arrival-v03.png (sha256 7029c0e66b06a784, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/bathroom": {
       "title": "HOUSE OF TOMORROW — BATHROOM",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/bathroom.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/bathroom.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-first-pass-2026-11-15/candidates/bathroom.png (sha256 418061f623770ec4, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/bedroom": {
       "title": "HOUSE OF TOMORROW — BEDROOM",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/bedroom.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/bedroom.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch02-2026-11-15/candidates/bedroom-candidate-v01.png (sha256 792f7930e572ee91, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/chair": {
       "title": "HOUSE OF TOMORROW — CHAIR",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/chair.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/chair.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch02-2026-11-15/rest-assured-pair-v04/candidates/chair-in-use-v04.png (sha256 5cef601a39f2aa3e, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "states": [
+        {
+          "id": "default_unrestrained",
+          "title": "REST ASSURED — DEFAULT, UNRESTRAINED",
+          "kind": "scene-state",
+          "status": "approved",
+          "dimensions": "314x206",
+          "layer": "replace",
+          "selection": null,
+          "assetPath": "art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch02-2026-11-15/rest-assured-pair-v04/candidates/chair-default-v04.png (sha256 2cad345326a222fa, 314x206 RGB). Copied byte-exact; Historical pending note (superseded). Installed and verified but intentionally UNBOUND: no authored view shows the upright, unrestrained chair (the lounge image presents the initial choice; chair_locked and exit_chair_fatal are the in-use state). docs/92 section 4 forbids inventing a node for it.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      ]
     },
     "house_of_tomorrow/dining": {
       "title": "HOUSE OF TOMORROW — DINING",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/dining.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/dining.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-speaker-revision-2026-11-15/candidates/dining-v04.png (sha256 2bd4f7b2127e7af4, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/foyer": {
       "title": "HOUSE OF TOMORROW — FOYER",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER.",
-      "portraitBackground": {
-        "title": "HOUSE WALL SPEAKER BACKGROUND — FOYER",
-        "kind": "portrait-background",
-        "status": "not-started",
-        "dimensions": "564x278",
-        "prompt": "Closer, tighter POV of the 314x206 scene around wall speaker; separate opaque background, not a blurred upscale or wider pan.",
-        "assetPath": null,
-        "suggestedFilename": null,
-        "notes": "Background separate from 564x278 transparent house speaker foreground; motion independent."
-      }
+      "assetPath": "art/scenes/house_of_tomorrow/foyer.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/foyer.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/door-continuity-v01/candidates/foyer-single-door-v03.png (sha256 9e4ea0bc781dbb7c, 314x206 RGB). Copied byte-exact; Historical pending note (superseded). House conversation here uses the complete opaque view at portraits[\"house:idle\"].views (docs/92 section 1), not a layered portrait background.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "states": [
+        {
+          "id": "named_plant_pedestal",
+          "title": "FOYER — NAMED PLANT ON RUG-HATCH PEDESTAL (v02)",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "overlay",
+          "selection": {
+            "at": [
+              "chapter-01:plant_adoption"
+            ],
+            "if": {
+              "has": "desk_plant",
+              "notFlag": "plant_registered_as_resident"
+            }
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/foyer_named_plant_pedestal.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/foyer_named_plant_pedestal.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/pedestal-foreground-v02/B-plant-adoption-v02.png (sha256 e1c42ce00d5fe2ad, 314x206 RGBA). Copied byte-exact; Historical pending note (superseded). Transparent overlay on the closed-door foyer while the real desk_plant is held at plant_adoption and the handover has not happened. The authored choice consumes the plant; the overlay never duplicates that effect.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      ]
     },
     "house_of_tomorrow/lounge": {
       "title": "HOUSE OF TOMORROW — LOUNGE",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/lounge.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/lounge.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch02-2026-11-15/candidates/lounge-candidate-v01.png (sha256 9dc600a286bc585a, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/maintenance": {
       "title": "HOUSE OF TOMORROW — MAINTENANCE",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/maintenance.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/maintenance.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/candidates/maintenance-v01.png (sha256 cd575f82b52796a7, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/passage": {
       "title": "HOUSE OF TOMORROW — PASSAGE",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/passage.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/passage.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch02-2026-11-15/candidates/passage-candidate-v01.png (sha256 acdacefbaeac9649, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/portrait_gallery": {
       "title": "HOUSE OF TOMORROW — PORTRAIT GALLERY",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER.",
-      "portraitBackground": {
-        "title": "HOUSE WALL SPEAKER BACKGROUND — PORTRAIT_GALLERY",
-        "kind": "portrait-background",
-        "status": "not-started",
-        "dimensions": "564x278",
-        "prompt": "Closer, tighter POV of the 314x206 scene around wall speaker; separate opaque background, not a blurred upscale or wider pan.",
-        "assetPath": null,
-        "suggestedFilename": null,
-        "notes": "Background separate from 564x278 transparent house speaker foreground; motion independent."
-      }
+      "assetPath": "art/scenes/house_of_tomorrow/portrait_gallery.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/portrait_gallery.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/wide-speaker-position-v05/gallery-v05.png (sha256 7fd52ebec4008005, 314x206 RGB). Copied byte-exact; Historical pending note (superseded). House conversation here uses the complete opaque view at portraits[\"house:idle\"].views (docs/92 section 1), not a layered portrait background.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "states": [
+        {
+          "id": "album_removed",
+          "title": "PORTRAIT GALLERY — ALBUM TEMPORARILY REMOVED",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "replace",
+          "selection": {
+            "focus": "house_of_tomorrow/portrait_gallery/album"
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/portrait_gallery_album_removed.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/portrait_gallery_album_removed.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/assets/A-album-removed.png (sha256 96c1b1ced5a3897b, 314x206 RGB). Copied byte-exact; Historical pending note (superseded). Opaque alternate of the gallery scene, shown only while the album Focus A view is presented (every page); the base gallery returns on CLOSE THE ALBUM. Never chosen from family_album_inspected (docs/92 section 3).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      ]
     },
     "house_of_tomorrow/public_exit": {
       "title": "HOUSE OF TOMORROW — PUBLIC EXIT",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/public_exit.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/public_exit.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/door-continuity-v01/candidates/public-exit-single-door-v01.png (sha256 0ad83a23a5ee0a52, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/service_hatch": {
       "title": "HOUSE OF TOMORROW — SERVICE HATCH",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/service_hatch.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/service_hatch.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/candidates/service-hatch-v01.png (sha256 1f978f6fe2334ce4, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
     },
     "house_of_tomorrow/storage": {
       "title": "HOUSE OF TOMORROW — STORAGE",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/storage.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/storage.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/candidates/storage-v02.png (sha256 635307df628fcdaa, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "states": [
+        {
+          "id": "stored_desk_plant",
+          "title": "STORAGE — DESK PLANT IN DRAWER",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "overlay",
+          "selection": {
+            "if": {
+              "flagIs": [
+                "house_stored_item",
+                "desk_plant"
+              ],
+              "notFlag": "house_storage_recovered",
+              "lacks": "desk_plant"
+            }
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/storage_stored_desk_plant.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/storage_stored_desk_plant.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/assets/C-stored-plant.png (sha256 867019e15581bed7, 314x206 RGBA). Copied byte-exact; Historical pending note (superseded). Shown only while the House actually holds this item (house_stored_item, recorded when the item was taken from inventory) and it has not been retrieved; never inferred from Prologue flags. Mutually exclusive with the other three.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        {
+          "id": "stored_red_stapler",
+          "title": "STORAGE — RED STAPLER IN DRAWER",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "overlay",
+          "selection": {
+            "if": {
+              "flagIs": [
+                "house_stored_item",
+                "red_stapler"
+              ],
+              "notFlag": "house_storage_recovered",
+              "lacks": "red_stapler"
+            }
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/storage_stored_red_stapler.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/storage_stored_red_stapler.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/assets/D-stored-stapler.png (sha256 d524b3eee63fd3c5, 314x206 RGBA). Copied byte-exact; Historical pending note (superseded). Shown only while the House actually holds this item (house_stored_item, recorded when the item was taken from inventory) and it has not been retrieved; never inferred from Prologue flags. Mutually exclusive with the other three.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        {
+          "id": "stored_rubber_band_ball",
+          "title": "STORAGE — RUBBER-BAND BALL IN DRAWER",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "overlay",
+          "selection": {
+            "if": {
+              "flagIs": [
+                "house_stored_item",
+                "rubber_band_ball"
+              ],
+              "notFlag": "house_storage_recovered",
+              "lacks": "rubber_band_ball"
+            }
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/storage_stored_rubber_band_ball.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/storage_stored_rubber_band_ball.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/assets/E-stored-band-ball.png (sha256 00f4926835332c59, 314x206 RGBA). Copied byte-exact; Historical pending note (superseded). Shown only while the House actually holds this item (house_stored_item, recorded when the item was taken from inventory) and it has not been retrieved; never inferred from Prologue flags. Mutually exclusive with the other three.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        {
+          "id": "stored_timing_clicker",
+          "title": "STORAGE — TIMING CLICKER IN DRAWER",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "overlay",
+          "selection": {
+            "if": {
+              "flagIs": [
+                "house_stored_item",
+                "timing_clicker"
+              ],
+              "notFlag": "house_storage_recovered",
+              "lacks": "timing_clicker"
+            }
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/storage_stored_timing_clicker.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/storage_stored_timing_clicker.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/assets/F-stored-clicker.png (sha256 22660a4ea50b2f8b, 314x206 RGBA). Copied byte-exact; Historical pending note (superseded). Shown only while the House actually holds this item (house_stored_item, recorded when the item was taken from inventory) and it has not been retrieved; never inferred from Prologue flags. Mutually exclusive with the other three.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      ]
     },
     "house_of_tomorrow/utility_exit": {
       "title": "HOUSE OF TOMORROW — UTILITY EXIT",
       "kind": "scene",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "314x206",
       "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
-      "assetPath": null,
-      "suggestedFilename": null,
-      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+      "assetPath": "art/scenes/house_of_tomorrow/utility_exit.png",
+      "suggestedFilename": "art/scenes/house_of_tomorrow/utility_exit.png",
+      "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch04-2026-11-15/candidates/utility-exit-v01.png (sha256 907b962a20485b4c, 314x206 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "states": [
+        {
+          "id": "returns_display",
+          "title": "EQUIPMENT CORRIDOR — RETURNS DISPLAY",
+          "kind": "scene-state",
+          "status": "integrated",
+          "dimensions": "314x206",
+          "layer": "overlay",
+          "selection": {
+            "if": {
+              "flag": "equipment_registered"
+            }
+          },
+          "assetPath": "art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png",
+          "suggestedFilename": "art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch05-2026-11-15/assets/G-returns-display.png (sha256 a6df04106deb0da8, 314x206 RGBA). Copied byte-exact; Historical pending note (superseded). Only on the registered outcome (equipment_registered, exit_service_registered). The clean mechanical exit keeps the neutral display; the wristband stays narration, not an item.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      ]
     },
     "biology_park/abandoned_station": {
       "title": "ABANDONED STATION",
@@ -342,12 +478,12 @@
     "biology_park/conveniences_bureau": {
       "title": "CONVENIENCES BUREAU",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": null,
       "prompt": "Public Conveniences Bureau with many sealed restroom doors, indoor vines, filing cabinets and midcentury modular architecture. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
-      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.\nOWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/A-conveniences-bureau.png SHA-256 90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676. Production integration still unverified, so source status APPROVED, not INTEGRATED."
     },
     "biology_park/damaged_walkway": {
       "title": "DAMAGED WALKWAY",
@@ -372,41 +508,42 @@
     "biology_park/formal_entrance": {
       "title": "FORMAL ENTRANCE",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": null,
       "prompt": "Biology Park retro-futurist exposition scene: formal entrance. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
-      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.\nOWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/C-formal-entrance.png SHA-256 d1a55f75863a7e2a3b854566638128064b998c5d6a83659399e4ad53ce66f2e9. Production integration still unverified, so source status APPROVED, not INTEGRATED."
     },
     "biology_park/groundskeeper": {
       "title": "GROUNDSKEEPER",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": null,
       "prompt": "Nonhumanoid heavy industrial landscape machine politely invading government office with hoses, seed feeder, soil bin, no eyes. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
-      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.\nOWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/candidates/B-groundskeeper.png SHA-256 5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95. Production integration still unverified, so source status APPROVED, not INTEGRATED.",
       "portraitBackground": {
         "title": "GROUNDSKEEPER PORTRAIT BACKDROP",
         "kind": "portrait-background",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "564x278",
         "assetPath": null,
         "suggestedFilename": null,
-        "prompt": "Opaque tight POV background matching the groundskeeper invasion of the Public Conveniences Bureau, 564x278, independent of foreground sprite."
+        "prompt": "Opaque tight POV background matching the groundskeeper invasion of the Public Conveniences Bureau, 564x278, independent of foreground sprite.",
+        "notes": "OWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/candidates/F-groundskeeper-background.png SHA-256 c96f40c20412bff3ea42238d190c85558959b37a9120eec9858182c980f11f68. Production integration still unverified, so source status APPROVED, not INTEGRATED."
       }
     },
     "biology_park/jungle_junction": {
       "title": "JUNGLE JUNCTION",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": null,
       "prompt": "Biology Park retro-futurist exposition scene: jungle junction. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
-      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.\nOWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/E-jungle-junction.png SHA-256 0161d0a7132bf1656a5037e6ec2812e62220c9853e4ed251176c161086fed003. Production integration still unverified, so source status APPROVED, not INTEGRATED."
     },
     "biology_park/lower_irrigation": {
       "title": "LOWER IRRIGATION",
@@ -511,12 +648,12 @@
     "biology_park/service_entry": {
       "title": "SERVICE ENTRY",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": null,
       "prompt": "Biology Park retro-futurist exposition scene: service entry. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
-      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.\nOWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/candidates/D-service-entry.png SHA-256 c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c. Production integration still unverified, so source status APPROVED, not INTEGRATED."
     },
     "biology_park/sorting_conveyor": {
       "title": "SORTING CONVEYOR",
@@ -802,25 +939,25 @@
   "portraits": {
     "termination_drone:slot_closed": {
       "title": "TERMINATION DRONE — CLOSED SLOT",
-      "status": "generated",
+      "status": "integrated",
       "kind": "portrait",
       "prompt": "A close, frontal-to-three-quarter portrait of a small floating corporate notification drone: compact round mid-century plastic and powder-coated metal shell, single simple speaker grille/lens, muted gray with restrained blue accent, polite rather than threatening, no arms or limbs. Lower paper slot fully CLOSED. Art is a complete static foreground pose, not a frame of a printing animation. Tight workplace-corridor perspective, avoid elaborate gearwork. Gentle hover can be separate runtime motion. Keep palette matched to main scene but more detailed and clean at 564×278. OUTPUT CONTRACT: 564×278 transparent RGBA PNG of the drone FOREGROUND ONLY. Outside the drone and attached paper/pencil, alpha is zero; do not draw or merge the corridor background. The matching 564×278 opaque corridor background is a separate paired scene asset.",
       "assetPath": "art/portraits/termination_drone/drone_slot_closed.png",
       "suggestedFilename": "art/portraits/termination_drone/drone_slot_closed.png",
       "dimensions": "564x278",
-      "notes": "Whole pose swaps via quick fade to paper_extended; keep drone body/register exactly aligned between poses. Prefer separate transparent foreground over background. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.",
+      "notes": "Whole pose swaps via quick fade to paper_extended; keep drone body/register exactly aligned between poses. Prefer separate transparent foreground over background. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
       "portraitBackgroundScene": "workplace/corridor",
       "foregroundFormat": "transparent-rgba-png"
     },
     "termination_drone:paper_extended": {
       "title": "TERMINATION DRONE — PAPER EXTENDED",
-      "status": "generated",
+      "status": "integrated",
       "kind": "portrait",
       "prompt": "Same precise camera, shell, scale and pixel alignment as the slot_closed termination drone portrait. A narrow pale pink triplicate termination form protrudes from a simple slot, with a tiny chained pencil hanging beside it. Everything else remains identical: speaker/lens, compact clean 1960s industrial shell, subdued gray-blue palette, no arms and no printer-feed animation frames. Create one complete static pose at 564×278 for a quick crossfade. OUTPUT CONTRACT: 564×278 transparent RGBA PNG of the drone FOREGROUND ONLY. Outside the drone and attached paper/pencil, alpha is zero; do not draw or merge the corridor background. The matching 564×278 opaque corridor background is a separate paired scene asset.",
       "assetPath": "art/portraits/termination_drone/drone_paper_extended.png",
       "suggestedFilename": "art/portraits/termination_drone/drone_paper_extended.png",
       "dimensions": "564x278",
-      "notes": "Must match base sprite alignment and underlying portrait background. Document text need not be readable at portrait scale. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.",
+      "notes": "Must match base sprite alignment and underlying portrait background. Document text need not be readable at portrait scale. Foreground MUST be a 564×278 transparent RGBA PNG with zero painted background; background is scenes[\"workplace/corridor\"].portraitBackground.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
       "portraitBackgroundScene": "workplace/corridor",
       "foregroundFormat": "transparent-rgba-png"
     },
@@ -847,27 +984,47 @@
       "foregroundFormat": "transparent-rgba-png"
     },
     "house:idle": {
-      "title": "HOUSE SPEAKER — IDLE",
+      "title": "HOUSE INTERCOM — COMPLETE OPAQUE CONVERSATION VIEWS",
       "kind": "portrait",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "564x278",
+      "format": "opaque-complete",
       "prompt": "Wall-mounted home intelligence speaker / camera assembly, 1960s Brazil-like plastic and powder-coated metal, simple speaker grille and indicator lamp, nonhumanoid. Detailed 564x278 transparent RGBA foreground only, independently animated, tight POV matching scene.",
       "assetPath": null,
       "suggestedFilename": null,
-      "notes": "No visible humanoid NPC. Layer over scene-specific opaque portrait background.",
-      "portraitBackgroundScene": "house_of_tomorrow/foyer",
-      "foregroundFormat": "transparent-rgba-png"
+      "notes": "docs/92 section 1: the narrow opaque-complete exception. The House is a wall-mounted flush ivory intercom, not a character sprite: each talking location has ONE complete opaque 564x278 image (no separate transparent foreground, no widened scene crop), chosen by the scene the conversation happens in. Layered NPC portraits (receptionist, drone) are unchanged. The prompt above is the original layered brief, kept for the record; the approved direction is the complete view.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "views": {
+        "house_of_tomorrow/foyer": {
+          "title": "HOUSE INTERCOM — FOYER CONVERSATION VIEW",
+          "kind": "portrait-view",
+          "status": "integrated",
+          "dimensions": "564x278",
+          "assetPath": "art/portraits/house/foyer_conversation.png",
+          "suggestedFilename": "art/portraits/house/foyer_conversation.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-speaker-revision-2026-11-15/candidates/foyer-conversation-v05.png (sha256 a77eb0a6ca2479cf, 564x278 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        "house_of_tomorrow/portrait_gallery": {
+          "title": "HOUSE INTERCOM — PORTRAIT GALLERY CONVERSATION VIEW",
+          "kind": "portrait-view",
+          "status": "integrated",
+          "dimensions": "564x278",
+          "assetPath": "art/portraits/house/portrait_gallery_conversation.png",
+          "suggestedFilename": "art/portraits/house/portrait_gallery_conversation.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/printer-album-restoration-v04/candidates/gallery-conversation-v03.png (sha256 a365560b66e6d4bb, 564x278 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      }
     },
     "groundskeeper:idle": {
       "title": "GROUNDSKEEPER MACHINE - IDLE",
       "kind": "portrait",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "564x278",
       "assetPath": null,
       "suggestedFilename": null,
       "prompt": "Transparent 564x278 mechanical groundskeeper machine portrait, zoomed tight on speaker/inspection module and seed feeder, separate from opaque corridor/background. Nonhumanoid, austere midcentury industrial, no brass, no cartoon eyes.",
       "foregroundFormat": "transparent-rgba-png",
-      "portraitBackgroundScene": "biology_park/groundskeeper"
+      "portraitBackgroundScene": "biology_park/groundskeeper",
+      "notes": "OWNER RULING 2026-11-16: Already-accepted Biology Park Batch 1 composition; no repeat art approval or generation needed. Selected source InterstellarHarvest/CYOA@agent/ch02-art-batch01-biopark-foundation:review/chapter-02-batch01-2026-11-15/candidates/G-groundskeeper-foreground.png SHA-256 afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402. Production integration still unverified, so source status APPROVED, not INTEGRATED."
     },
     "courtesy_conductor:talking": {
       "title": "COURTESY CONDUCTOR - TALKING",
@@ -910,198 +1067,198 @@
       "slot": {
         "title": "TERMINATION NOTICE — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Thin pale pink triplicate dismissal paperwork, three layers, black bureaucratic rules, signature box and pencil-scrawled mark. It is office paper, not antique parchment, wax seal or fantasy dossier. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/termination_notice_slot.png",
         "suggestedFilename": "art/items/termination_notice_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "TERMINATION NOTICE — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "A crisp plain pink carbon-copy termination sheet with narrow rules and sparse bureaucratic print. Show pencil-signature and review-stamp variants as text-layer/variant planning; do not embed illegible decorative sentences. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/termination_notice_inspect.png",
         "suggestedFilename": "art/items/termination_notice_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "timing_clicker": {
       "slot": {
         "title": "APPLAUSE TIMING CLICKER — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Handheld 1960s mechanical applause-timing clicker: practical gray Bakelite housing, short six-second dial and one press button, slightly worn from daily office work, intact, clearly a small timing device. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/applause_timing_clicker_slot.png",
         "suggestedFilename": "art/items/applause_timing_clicker_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "APPLAUSE TIMING CLICKER — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "High-detail inspection view of the same compact Bakelite clicker, with a readable six-second scale and modest physical wear. Make clear that it is functional, not a weapon or futuristic scanner. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/applause_timing_clicker_inspect.png",
         "suggestedFilename": "art/items/applause_timing_clicker_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "desk_plant": {
       "slot": {
         "title": "SMALL DESK PLANT — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Small healthy-but-neglected green foliage in plain off-white plastic office pot, pencil water line, no personality or supernatural quality. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/small_desk_plant_slot.png",
         "suggestedFilename": "art/items/small_desk_plant_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "SMALL DESK PLANT — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "Close inspection of an ordinary small green desk plant in thin white plastic pot, unremarkable soil and tiny pencil mark at suggested water level. Human texture among institutional artifacts; no glow, eyes or magical foreshadowing. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/small_desk_plant_inspect.png",
         "suggestedFilename": "art/items/small_desk_plant_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "effects_box_full": {
       "slot": {
         "title": "SEALED PERSONAL EFFECTS BOX — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Small taped shut corrugated cardboard box with a handwritten name on side, ordinary office packing and folded lid, visually full and unopened. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/effects_box_full_slot.png",
         "suggestedFilename": "art/items/effects_box_full_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "SEALED PERSONAL EFFECTS BOX — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "Close-up of the intact small personal-effects box: neat taped flaps, handwritten ownership note and slight cardboard wear. No items visible. Should pair exactly with empty box art in silhouette. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/effects_box_full_inspect.png",
         "suggestedFilename": "art/items/effects_box_full_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "effects_box_empty": {
       "slot": {
         "title": "OPENED / EMPTY EFFECTS BOX — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Same cardboard box as the sealed version, top flaps spread open, one strip of tape loose, visibly empty. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/effects_box_empty_slot.png",
         "suggestedFilename": "art/items/effects_box_empty_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "OPENED / EMPTY EFFECTS BOX — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "Close-up same exact cardboard box and angle as the full variant, now open with no belongings inside; loose tape on flap. Distinguishable from closed slot illustration without moving the box's identity. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/effects_box_empty_inspect.png",
         "suggestedFilename": "art/items/effects_box_empty_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "red_stapler": {
       "slot": {
         "title": "RED SWANGLINE STAPLER — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Heavy bright red mid-century metal office stapler, solid elongated hinged body, silver SWANGLINE fictitious maker mark if legible, utilitarian not futuristic. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/red_swangline_stapler_slot.png",
         "suggestedFilename": "art/items/red_swangline_stapler_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "RED SWANGLINE STAPLER — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "High-detail bright red painted metal desk stapler, chrome working parts, SWANGLINE maker name in small silver lettering on side. It is a grounded retro office stapler, no added gizmos, and its staple supply remains unspecified. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/red_swangline_stapler_inspect.png",
         "suggestedFilename": "art/items/red_swangline_stapler_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "rubber_band_ball": {
       "slot": {
         "title": "RUBBER-BAND BALL — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Compact irregular sphere wound from many plain office elastic bands of varied faded colors, visibly layered and handmade, no hint of what is inside. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/rubber_band_ball_slot.png",
         "suggestedFilename": "art/items/rubber_band_ball_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "RUBBER-BAND BALL — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "High-detail rubber-band ball, hundreds of crosswise wound office bands in subdued colors, slight unevenness. An indistinct solid interior may be implied only by the weight/shape; do NOT reveal or invent its core object. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/rubber_band_ball_inspect.png",
         "suggestedFilename": "art/items/rubber_band_ball_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "property_claim_ticket": {
       "slot": {
         "title": "PROPERTY CLAIM TICKET — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Small rectangular perforated cream paper custody ticket with printed storage count and blank departure field, mundane municipal form. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/property_claim_ticket_slot.png",
         "suggestedFilename": "art/items/property_claim_ticket_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "PROPERTY CLAIM TICKET — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "Close-up of clean cream claim slip, stark form layout, count either THREE or FOUR articles held and COLLECTION ON DEPARTURE, with departure-time field intentionally blank. Avoid cluttered made-up bureaucracy. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/property_claim_ticket_inspect.png",
         "suggestedFilename": "art/items/property_claim_ticket_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "expo_examiner_badge": {
       "slot": {
         "title": "TEMPORARY EXAMINER BADGE — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "96x96",
         "prompt": "Plain pale blue late-1960s convention credential with small clip, simple Expo mark, name field and Temporary Examiner classification. No luxury metal jewelry. Author directly on an EXACT 96×96 transparent canvas (do not draw the surrounding slot frame). Keep the object centered with a deliberate small margin, clean pixel clusters and hard 0/255 alpha; no shadows, glow, fringe or semitransparent pixels.",
         "assetPath": "art/items/expo_examiner_badge_slot.png",
         "suggestedFilename": "art/items/expo_examiner_badge_slot.png",
-        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size."
+        "notes": "Final authored and displayed canvas is exactly 96×96 pixels, one-to-one with the fixed inventory-slot geometry. The M2 UI already defines this size; do not resize or invent a different slot source size.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "TEMPORARY EXAMINER BADGE — INSPECTION ART",
         "kind": "item-inspect",
-        "status": "generated",
+        "status": "integrated",
         "dimensions": "565x451",
         "prompt": "High-detail pale-blue laminated Examiner credential on modest metal clip, clean printed wording TEMPORARY EXAMINER / OFFICE OF UNVERIFIED CONDITIONS, no expiry indicated. Identity error looks official, not sinister. Produce clean larger-detail mid-century industrial illustration with restrained palette. Place object fully inside 565×451 inspection aperture and keep background deliberately quiet, with no frame text.",
         "assetPath": "art/items/expo_examiner_badge_inspect.png",
         "suggestedFilename": "art/items/expo_examiner_badge_inspect.png",
-        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene."
+        "notes": "Exact 565×451 pixel source image at 1×; do not upscale the 96×96 slot icon or produce a scaled copy of the scene.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "wc_key": {
@@ -1130,22 +1287,22 @@
       "slot": {
         "title": "FAMILY PORTRAIT — SLOT",
         "kind": "item-slot",
-        "status": "not-started",
+        "status": "integrated",
         "dimensions": "96x96",
-        "prompt": "Small framed or stiff photograph, 3 empty chairs and ONLY protagonists shoes/lower legs at the bottom; actual full player identity never shown. Exact 96x96 transparent logical-grid slot art.",
-        "assetPath": null,
-        "suggestedFilename": null,
-        "notes": "Keep silhouette of unseen protagonist limited to legs/feet."
+        "prompt": "Small stiff showroom photograph with three complete empty chairs, a cropped fourth chair at the right edge and a seated protagonist partly visible there (shirt, lap, legs and forward-facing shoes; no head or face). Exact 96x96 transparent logical-grid slot art matching the approved inspector composition.",
+        "assetPath": "art/items/family_portrait_photo_slot.png",
+        "suggestedFilename": "art/items/family_portrait_photo_slot.png",
+        "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/framing-revision-v03/candidates/photo-slot-v03.png (sha256 7e1e0b42f5def951, 96x96 RGBA). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       },
       "inspect": {
         "title": "FAMILY PORTRAIT — INSPECT",
         "kind": "item-inspect",
-        "status": "not-started",
+        "status": "integrated",
         "dimensions": "565x451",
-        "prompt": "Crooked off-center group photograph: three completely empty chairs, and ONLY shoes and lower legs cropped at bottom, portrait framing intentionally wrong, clean 565x451 inspect art. Do not render player face, torso or full body.",
-        "assetPath": null,
-        "suggestedFilename": null,
-        "notes": "Stamped official household record on reverse can be narrative inspection text rather than baked-in tiny lettering."
+        "prompt": "Crooked off-center group photograph: three completely empty chairs dominate; a fourth chair is partially cropped at the right edge with a normally proportioned seated protagonist showing part of their shirt, lap, legs and forward-facing shoes. Head and face remain outside the frame. Clean 565x451 inspect art matching the approved photograph.",
+        "assetPath": "art/items/family_portrait_photo_inspect.png",
+        "suggestedFilename": "art/items/family_portrait_photo_inspect.png",
+        "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/framing-revision-v03/candidates/photo-inspector-v04.png (sha256 cf9cebc88a5e320d, 565x451 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
       }
     },
     "acting_director_badge": {
@@ -1605,12 +1762,44 @@
     "house_of_tomorrow/portrait_gallery/album": {
       "title": "FAMILY ALBUM — MULTIPAGE INSPECTION",
       "kind": "focus",
-      "status": "not-started",
+      "status": "integrated",
       "dimensions": "564x278",
       "prompt": "Separate Focus A album close-up. Show 2-4 photos/page: family aging and increasingly afraid, skeletons, then empty chairs. The family never appears in main scene.",
       "assetPath": null,
       "suggestedFilename": null,
-      "notes": "Art may require several pages/frames coordinated with Narrative B pagination; do not fake complete art in a single busy sprite."
+      "notes": "Three semantic pages (docs/92 section 2): each picture is paired with the album_closeup paragraph that starts with its startsWith text, and stays up while that page's text continues; the closing paragraph stays with page 3. Focus A pagination never switches the picture mid-page.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval.",
+      "pages": [
+        {
+          "title": "FAMILY ALBUM — PAGE 1: THE FAMILY GROWS OLDER",
+          "kind": "focus-page",
+          "status": "integrated",
+          "dimensions": "564x278",
+          "startsWith": "Page one",
+          "assetPath": "art/focus/house_of_tomorrow/album_page_1.png",
+          "suggestedFilename": "art/focus/house_of_tomorrow/album_page_1.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/candidates/album-page-01-v02.png (sha256 c789a17a2e2ee45a, 564x278 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        {
+          "title": "FAMILY ALBUM — PAGE 2: FRIGHTENED, EXHAUSTED FAMILY",
+          "kind": "focus-page",
+          "status": "integrated",
+          "dimensions": "564x278",
+          "startsWith": "Page two",
+          "assetPath": "art/focus/house_of_tomorrow/album_page_2.png",
+          "suggestedFilename": "art/focus/house_of_tomorrow/album_page_2.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/candidates/album-page-02-v01.png (sha256 fcf0dcc0e10dfaa7, 564x278 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        {
+          "title": "FAMILY ALBUM — PAGE 3: REMAINS, THEN EMPTY CHAIRS",
+          "kind": "focus-page",
+          "status": "integrated",
+          "dimensions": "564x278",
+          "startsWith": "Page three",
+          "assetPath": "art/focus/house_of_tomorrow/album_page_3.png",
+          "suggestedFilename": "art/focus/house_of_tomorrow/album_page_3.png",
+          "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/framing-revision-v03/candidates/album-page-03-v04.png (sha256 579c0b2e14589e7c, 564x278 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        }
+      ]
     },
     "biology_park/agricultural_customs/exposure_dispenser_open": {
       "title": "EXPOSURE DISPENSER OPEN",
