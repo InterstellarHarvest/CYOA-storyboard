@@ -1,6 +1,6 @@
 {
   "schema": "cyoa-storyboard-artwork-v1",
-  "direction": "The Acceptable Error: understated 1960s bureaucratic retro-futurism in the spirit of Brazil (film), but original. Industrial gray, slate, blue-gray, cream, muted teal and small restrained signal accents. Smooth flat pixel clusters, deliberate economical colors, clean silhouettes, occasional patched panels, screws and fasteners. NO steampunk brass, gears, leather-bound antiques, fantasy devices, heavy grime, decorative rivet overload, noisy dithering, gradient haze, anti-aliasing or text baked into the interface frame. LOCKED SOURCE DIMENSIONS: main scene backgrounds EXACTLY 314×206 logical pixels, displayed at 4× nearest-neighbor; NPC portraits EXACTLY 564×278 pixels, displayed at 1× with independently composited background and foreground layers when applicable; item inventory icons EXACTLY 96×96 pixels on a transparent canvas, displayed at 1× within the approved slot; item inspection illustrations EXACTLY 565×451 pixels, displayed at 1×. These are production dimensions, not suggestions. Never resize a low-resolution scene into a portrait or inspector illustration. Scene-to-portrait environment pairing: where an NPC conversation occurs, author a separate OPAQUE portrait background at exactly 564×278 that depicts the same physical location as its 314×206 main scene, but with a tighter, more detailed and perspective-consistent camera view. Do not resize, crop, blur, or upscale the main scene to produce this background. Each NPC pose is a distinct TRANSPARENT RGBA PNG foreground, exactly 564×278, with fully transparent pixels outside the sprite (no painted environment and no baked-in background). Independently layer the foreground over the matching opaque portrait background; share that background across every pose at the location. Main scene and paired portrait background should maintain coherent architecture, furniture, lighting and palette, without reproducing identical framing. ENVIRONMENTAL TEXT AND SIGNAGE — LEGIBILITY CONTRACT: Maintain the deliberately chunky, economical pixel-cluster style. At 314×206 source resolution, any words intended to be read in the main scene MUST be drawn clearly at that native resolution, before 4× nearest-neighbor presentation; 4× display scaling does not make undersized lettering more legible. Reserve fully readable main-scene text for one or two important focal signs per scene: short, accurately spelled, high-contrast, bold block-capital lettering (prefer 1–3 words where practical), with substantial strokes, open counters and spacing, ideally front-facing or only slightly angled. Large marquees may carry longer titles ONLY when their letters remain unambiguously readable at native resolution. Never generate blurry, anti-aliased, faux-pixelated, misspelled or almost-readable lettering. For directories, notices, forms, tiny labels and distant signs that cannot fit clearly, show convincing NON-LETTER graphic marks, bars, or simple iconography instead of malformed word-like gibberish; do not imply that tiny pseudo-text is actually readable. If a specific message is important but will not fit, shorten the sign, enlarge or recompose it, or supply the exact legible wording in a separate, independently authored 564×278 close portrait background, Focus A close-up, or 565×451 item inspection view as appropriate. Portrait-background text can use finer detail but must still be readable at its own 564×278 source size; never cram in microtype or repurpose a scaled-up main scene. Environmental signage is permitted; do not bake text into the UI frame. All artwork is draft-only unless record status is reused or approved.",
+  "direction": "The Acceptable Error: understated 1960s bureaucratic retro-futurism in the spirit of Brazil (film), but original. Industrial gray, slate, blue-gray, cream, muted teal and small restrained signal accents. Smooth flat pixel clusters, deliberate economical colors, clean silhouettes, occasional patched panels, screws and fasteners. NO steampunk brass, gears, leather-bound antiques, fantasy devices, heavy grime, decorative rivet overload, noisy dithering, gradient haze, anti-aliasing or text baked into the interface frame. LOCKED SOURCE DIMENSIONS: main scene backgrounds EXACTLY 314×206 logical pixels, displayed at 4× nearest-neighbor; NPC portraits EXACTLY 564×278 pixels, displayed at 1× with independently composited background and foreground layers when applicable; item inventory icons EXACTLY 96×96 pixels on a transparent canvas, displayed at 1× within the approved slot; item inspection illustrations EXACTLY 565×451 pixels, displayed at 1×. These are production dimensions, not suggestions. Never resize a low-resolution scene into a portrait or inspector illustration. Scene-to-portrait environment pairing: where an NPC conversation occurs, author a separate OPAQUE portrait background at exactly 564×278 that depicts the same physical location as its 314×206 main scene, but with a tighter, more detailed and perspective-consistent camera view. Do not resize, crop, blur, or upscale the main scene to produce this background. Each NPC pose is a distinct TRANSPARENT RGBA PNG foreground, exactly 564×278, with fully transparent pixels outside the sprite (no painted environment and no baked-in background). Independently layer the foreground over the matching opaque portrait background; share that background across every pose at the location. Main scene and paired portrait background should maintain coherent architecture, furniture, lighting and palette, without reproducing identical framing. ENVIRONMENTAL TEXT AND SIGNAGE — LEGIBILITY CONTRACT: Maintain the deliberately chunky, economical pixel-cluster style. At 314×206 source resolution, any words intended to be read in the main scene MUST be drawn clearly at that native resolution, before 4× nearest-neighbor presentation; 4× display scaling does not make undersized lettering more legible. Reserve fully readable main-scene text for one or two important focal signs per scene: short, accurately spelled, high-contrast, bold block-capital lettering (prefer 1–3 words where practical), with substantial strokes, open counters and spacing, ideally front-facing or only slightly angled. Large marquees may carry longer titles ONLY when their letters remain unambiguously readable at native resolution. Never generate blurry, anti-aliased, faux-pixelated, misspelled or almost-readable lettering. For directories, notices, forms, tiny labels and distant signs that cannot fit clearly, show convincing NON-LETTER graphic marks, bars, or simple iconography instead of malformed word-like gibberish; do not imply that tiny pseudo-text is actually readable. If a specific message is important but will not fit, shorten the sign, enlarge or recompose it, or supply the exact legible wording in a separate, independently authored 564×278 close portrait background, Focus A close-up, or 565×451 item inspection view as appropriate. Portrait-background text can use finer detail but must still be readable at its own 564×278 source size; never cram in microtype or repurpose a scaled-up main scene. Environmental signage is permitted; do not bake text into the UI frame. All artwork is draft-only unless record status is reused or approved.\n\nEXPOSITION CONTINUITY — OWNER WORKING DIRECTION (2026-11-14): The approved M2 reception main scene is the architectural authority and must remain completely unchanged, including its approved portrait layers. Preserve the existing three-door-bay facade; enter its central bay into an enclosed vestibule, with container chute before the turnstile. Property intake leads through the doors beyond its counter into the reception queue side. The existing right-hand reception double doors lead to the facilities corridor. New interiors share square muted-teal posts/deep rectangular beams, straight lintels, gray wall panels, broad matte gray floor tiles, cream capped service counters/seating, teal mullions, modest steel hardware and compact rectangular fluorescent lights. Preserve distinct functions: enclosed admission control, compact custody workspace, spacious reception with queue and exterior glazing, quieter circulation corridor. Do not make every space another reception desk. No vaulted arcades, mirrored floors, red carpet, detached outdoor gateway or invented courtyard. Keep the Exposition's successful main marquee lettering and the street composition substantially intact.\n\nOPERATIONAL PICTOGRAMS AND NARRATION: Prefer a consistent mid-century institutional family of cream symbols on muted-blue enamel, clear human/rectangle/tray/container silhouettes, common solid arrows and hard pixel edges. The ambiguous facilities cue is a small human beside a plain hollow square, with a real right-hand occluding corner hiding the destination; no roof, toilet, WC, male/female pair or premature exhibit explanation. Use a crossed ordinary box and deposit arrow at the chute, four available shallow trays for custody, and a person at a desk for reception. No operational prose signs or pseudo-text; legible tray numerals 1-4 may remain. Do not invent off-camera written notices or an unseen door plaque to preserve quoted narration. Related prose changes are a separate owner-review proposal; do not silently apply them or change branching/choices/logic. Approved reception artwork remains unchanged; the proposed directions refer directly to its existing right-hand door pair. New artwork candidates remain generated pending visual approval. Final main-scene source files are exactly 314x206; review at that size and at 4x nearest-neighbor in the complete five-scene sequence.\n\nMAIN-SCENE POPULATION — OWNER DIRECTION: Apart from the unchanged owner-approved reception, show no people in scene backgrounds: no attendants, clerks, passersby, silhouettes, human reflections or humanoid stand-ins. Services operate through mundane speaker grilles, intercoms, mechanical trays, indicators and ticket slots. Keep equipment functional and non-anthropomorphic, with no robot faces or limbs. Human-shaped pictograms remain flat wayfinding symbols and are not characters. Preserve the approved receptionist and reception scene completely. Any resulting prose changes remain a separate, reviewable proposal; do not silently change active dialogue, routes, choices or gameplay.",
   "statusValues": [
     "not-started",
     "prompted",
@@ -109,6 +109,694 @@
       "assetPath": "art/scenes/exposition/continuity-v03/facilities-corridor.png",
       "suggestedFilename": "art/scenes/exposition/facilities_corridor.png",
       "notes": "Exposition V03 perspective-corrected signage; native 314×206 local pixel correction. Generated candidate pending owner visual approval. No narrative/gameplay changes. Source: detail-corrections 2026-11-14."
+    },
+    "house_of_tomorrow/arrival": {
+      "title": "HOUSE OF TOMORROW — ARRIVAL",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/bathroom": {
+      "title": "HOUSE OF TOMORROW — BATHROOM",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/bedroom": {
+      "title": "HOUSE OF TOMORROW — BEDROOM",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/chair": {
+      "title": "HOUSE OF TOMORROW — CHAIR",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/dining": {
+      "title": "HOUSE OF TOMORROW — DINING",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/foyer": {
+      "title": "HOUSE OF TOMORROW — FOYER",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER.",
+      "portraitBackground": {
+        "title": "HOUSE WALL SPEAKER BACKGROUND — FOYER",
+        "kind": "portrait-background",
+        "status": "not-started",
+        "dimensions": "564x278",
+        "prompt": "Closer, tighter POV of the 314x206 scene around wall speaker; separate opaque background, not a blurred upscale or wider pan.",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "notes": "Background separate from 564x278 transparent house speaker foreground; motion independent."
+      }
+    },
+    "house_of_tomorrow/lounge": {
+      "title": "HOUSE OF TOMORROW — LOUNGE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/maintenance": {
+      "title": "HOUSE OF TOMORROW — MAINTENANCE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/passage": {
+      "title": "HOUSE OF TOMORROW — PASSAGE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/portrait_gallery": {
+      "title": "HOUSE OF TOMORROW — PORTRAIT GALLERY",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER.",
+      "portraitBackground": {
+        "title": "HOUSE WALL SPEAKER BACKGROUND — PORTRAIT_GALLERY",
+        "kind": "portrait-background",
+        "status": "not-started",
+        "dimensions": "564x278",
+        "prompt": "Closer, tighter POV of the 314x206 scene around wall speaker; separate opaque background, not a blurred upscale or wider pan.",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "notes": "Background separate from 564x278 transparent house speaker foreground; motion independent."
+      }
+    },
+    "house_of_tomorrow/public_exit": {
+      "title": "HOUSE OF TOMORROW — PUBLIC EXIT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/service_hatch": {
+      "title": "HOUSE OF TOMORROW — SERVICE HATCH",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/storage": {
+      "title": "HOUSE OF TOMORROW — STORAGE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "house_of_tomorrow/utility_exit": {
+      "title": "HOUSE OF TOMORROW — UTILITY EXIT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "prompt": "Authentic logical-grid mid-century futurist interior for House of Tomorrow; restrained silver/gray industrial palette, fitted panel joints, no brass/steampunk. No visible family members or full player appearance. The room is an automated showroom. Pixel art authored at exactly 314x206.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Narrative exists in draft. Production art not yet authored; preview-only DEV PLACEHOLDER."
+    },
+    "biology_park/abandoned_station": {
+      "title": "ABANDONED STATION",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: abandoned station. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/agricultural_customs": {
+      "title": "AGRICULTURAL CUSTOMS",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Botanical cargo exit and inspection alcove with sealed exposure dispenser; certified seed canister checkpoint. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/authorization_archive": {
+      "title": "AUTHORIZATION ARCHIVE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: authorization archive. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/central_flower": {
+      "title": "CENTRAL FLOWER",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Gigantic biological flower at center of greenhouse with thick sensor cables and administrative printers, no humanlike face. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/concourse_crash": {
+      "title": "CONCOURSE CRASH",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Robot-driven tram broken through midcentury exposition advertising wall while visitors look on. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.",
+      "portraitBackground": {
+        "title": "COURTESY CONDUCTOR CONCOURSE BACKDROP",
+        "kind": "portrait-background",
+        "status": "not-started",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Opaque tight view of robot driver console and concourse crash situation matching portrait foreground, 564x278."
+      }
+    },
+    "biology_park/control_tower": {
+      "title": "CONTROL TOWER",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: control tower. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/conveniences_bureau": {
+      "title": "CONVENIENCES BUREAU",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Public Conveniences Bureau with many sealed restroom doors, indoor vines, filing cabinets and midcentury modular architecture. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/damaged_walkway": {
+      "title": "DAMAGED WALKWAY",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: damaged walkway. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/exposition_concourse": {
+      "title": "EXPOSITION CONCOURSE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: exposition concourse. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/formal_entrance": {
+      "title": "FORMAL ENTRANCE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: formal entrance. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/groundskeeper": {
+      "title": "GROUNDSKEEPER",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Nonhumanoid heavy industrial landscape machine politely invading government office with hoses, seed feeder, soil bin, no eyes. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review.",
+      "portraitBackground": {
+        "title": "GROUNDSKEEPER PORTRAIT BACKDROP",
+        "kind": "portrait-background",
+        "status": "not-started",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Opaque tight POV background matching the groundskeeper invasion of the Public Conveniences Bureau, 564x278, independent of foreground sprite."
+      }
+    },
+    "biology_park/jungle_junction": {
+      "title": "JUNGLE JUNCTION",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: jungle junction. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/lower_irrigation": {
+      "title": "LOWER IRRIGATION",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: lower irrigation. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/maintenance_exit": {
+      "title": "MAINTENANCE EXIT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Lower irrigation maintenance exit door with separate closed industrial decontamination locker. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/moving_forest": {
+      "title": "MOVING FOREST",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Large shifting trees on concealed mechanical tracks with numbered maintenance plaques, thorned branch. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/overgrown_tram": {
+      "title": "OVERGROWN TRAM",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Tourist tram seats rooted over by pale motile plants and vines, emergency roof hatch visible. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/planting_hopper": {
+      "title": "PLANTING HOPPER",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: planting hopper. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/planting_machine": {
+      "title": "PLANTING MACHINE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Automated planting arms above shallow soil bed and bureaucratic machine console. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/public_exit": {
+      "title": "PUBLIC EXIT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Formal steel exit door with CLOSED wall mounted first-aid box beside it; the box is not open in main scene. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/reserve_siding": {
+      "title": "RESERVE SIDING",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Abandoned overgrown rail siding with reserve tram and obsolete destination display. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/reserve_tram": {
+      "title": "RESERVE TRAM",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Abandoned reserve tram interior with inactive molded-plastic robot concierge recessed into driver console, no eyes lit. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/sensor_gallery": {
+      "title": "SENSOR GALLERY",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: sensor gallery. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/service_entry": {
+      "title": "SERVICE ENTRY",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: service entry. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/sorting_conveyor": {
+      "title": "SORTING CONVEYOR",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: sorting conveyor. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/spore_garden": {
+      "title": "SPORE GARDEN",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Beautiful pale flowering spore garden with visible green particles and risk signs, damaged perimeter catwalk. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/tour_tram": {
+      "title": "TOUR TRAM",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "1960s automatic sightseeing tram interior, molded plastic seats, mechanical announcement panel, unsettling artificial jungle outside. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/translator_machine": {
+      "title": "TRANSLATOR MACHINE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "1960s retro-futurist botanical signals translator, analog dials, punched tape loops, approval printers, sensor cables. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "biology_park/waste_chute": {
+      "title": "WASTE CHUTE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Biology Park retro-futurist exposition scene: waste chute. True 314x206 logical pixel art, silver/industrial grays with restrained biological greens, no brass/steampunk, clean pixel forms, no dithering noise.",
+      "notes": "Chapter 2 playable draft; artwork deferred until Chapters 1 and 2 narrative review."
+    },
+    "pavilion/attendance": {
+      "title": "ATTENDANCE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/attendance.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: municipal attendance kiosk with green 100% SATISFIED indicator, empty-corridor photograph emerging from printer, three wayfinding routes, austerely welcoming public reception, enamel/plastic and punched-paper mechanisms.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/human_requirements": {
+      "title": "HUMAN REQUIREMENTS",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/human_requirements.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: museum restroom behind restrained velvet barrier with clearly functional enamel fixtures; visitor side inaccessible, ironic HUMAN REQUIREMENTS label, cold white tile under blue-gray overhead light, institutional museum solemnity.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/satisfaction_demo": {
+      "title": "SATISFACTION DEMO",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/satisfaction_demo.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: approval demonstration booth, happy-visitor stand-in silhouette on a flat painted backdrop, cheerful one-button status pedestal, curtain and partial view of unobtainable authentic bathroom, absurd display with 1960s analog fixtures.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/visitor_records": {
+      "title": "VISITOR RECORDS",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/visitor_records.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: long office of exactly twelve empty mid-century desks each with green CLERK PRESENT lamp, a pneumatic receiving counter, telephone and paper stamp, empty corridor certification photo; completely unstaffed yet busy.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/control_room": {
+      "title": "CONTROL ROOM",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/control_room.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: mid-century reel-to-reel orchestration hall distributing laughter, surprise, six-second applause and movement cue tapes, practical switches and tidy gray control panels; some signal reel scheduling slightly misaligned.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/reconciliation_office": {
+      "title": "RECONCILIATION OFFICE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/reconciliation_office.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: formal government records room with two waiting platforms, misaligned identity records, a proof-of-life scanner on the desk, subdued steel-blue colors and stern institutional exactness.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/surplus_department": {
+      "title": "SURPLUS DEPARTMENT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/surplus_department.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: warehouse of officially surplus belongings, labeled boxes, empty portrait frames and archived voice tapes, secure transfer gate, retrofuturist 1960s government warehouse, room for choice of safe review or hazardous retention.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/original_witness": {
+      "title": "ORIGINAL WITNESS",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/original_witness.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: screened witness compartment, translucent milky glass partition, indistinct figure outline and official speaker, separate claimant and original markers, no visible face, no clue establishing human vs robot vs representation.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending.",
+      "portraitBackground": {
+        "title": "ORIGINAL WITNESS — PORTRAIT BACKGROUND",
+        "kind": "portrait-background",
+        "status": "not-started",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/pavilion/original_witness_background.png",
+        "prompt": "EXACT 564×278 opaque native high-detail pixel art. Tighter more detailed camera into EXACT SAME environment as 314×206 Pavilion scene original_witness. This is separately authored, not scaled/cropped/blurred scene. Same restrained color family, perspective, practical fixtures, leave clear space for independently layered transparent figure/apparatus. No NPC, no protagonist face, no UI frame.",
+        "notes": "Scene-to-portrait geometry must agree; no widening beyond scene POV."
+      }
+    },
+    "pavilion/technical_services": {
+      "title": "TECHNICAL SERVICES",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/technical_services.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: gray-blue institutional fitting machinery, adjustable support rails and official service order reels, not torture aesthetic, practical clamps and sealed maintenance service lift, little implication of autonomous representation.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/image_archive": {
+      "title": "IMAGE ARCHIVE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/image_archive.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: tidy photo processing and certified image archive, approved empty-chair exposure held at display window, authentic negatives dangling over light table, paper stamp indicating verified record, no human faces.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/fourth_chair": {
+      "title": "FOURTH CHAIR",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/fourth_chair.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: photo source comparison room with staging diagram showing three empty chairs and the fourth cropped occupied only by anonymous trouser legs/lap; original source-photo inspection station and more elaborate automated construction frame visible beyond; no person face.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/behavioral_correction": {
+      "title": "BEHAVIORAL CORRECTION",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/behavioral_correction.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: bureaucratic 'behavior correction' processing desk, silent tape recorder, personality adjustment checklist and three successive duplicate correction stamps; more comically officious than threatening.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/anticipated_conduct": {
+      "title": "ANTICIPATED CONDUCT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/anticipated_conduct.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: huge bank of mechanical predictive work-order dispatch panels, white pneumatic envelopes, moving paper, bell and typewriters, deliberately clear contrast of FORECAST and STAFF INSTRUCTION headers, cheerful bureaucratic efficacy.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/departure_gate": {
+      "title": "DEPARTURE GATE",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/departure_gate.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: glass and stainless turnstile looking into inviting daylight exit corridor, red SECOND DEPARTURE latch status, approved permit reader, exposed physical six-second counting wheel and small service access panel.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/human_behavior_workshop": {
+      "title": "HUMAN BEHAVIOR WORKSHOP",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/human_behavior_workshop.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: absurdly cheerful well-lit educational demonstration showroom; three exhibits: mannequin SPONTANEOUS LAUGHTER with timing wheel, GENUINE SURPRISE with visible three-second countdown light, FREE WILL booth with two identical-choice buttons; vacant Original Human pedestal to one side with small permanent-display warnings; overtly comedic, not eerie laboratory.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/presentation_feed": {
+      "title": "PRESENTATION FEED",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/presentation_feed.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: analog paper-and-tape broadcast control wall with grouped patch cables and simultaneous human-behavior presentation feeds, sparse certification stamps, dedicated service access toward hearing hall, clean municipal-tech geometry.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/grand_reconciliation": {
+      "title": "GRAND RECONCILIATION",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/grand_reconciliation.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: large round mid-century administrative hearing theater, two physically separate platforms ORIGINAL and CLAIMANT, registrar dais made of interlocking analog registers, overhead lamp showing ONE IDENTITY only, doors leading out in two directions; enigmatic and monumental but not spaceship.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending.",
+      "portraitBackground": {
+        "title": "GRAND RECONCILIATION — PORTRAIT BACKGROUND",
+        "kind": "portrait-background",
+        "status": "not-started",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/pavilion/grand_reconciliation_background.png",
+        "prompt": "EXACT 564×278 opaque native high-detail pixel art. Tighter more detailed camera into EXACT SAME environment as 314×206 Pavilion scene grand_reconciliation. This is separately authored, not scaled/cropped/blurred scene. Same restrained color family, perspective, practical fixtures, leave clear space for independently layered transparent figure/apparatus. No NPC, no protagonist face, no UI frame.",
+        "notes": "Scene-to-portrait geometry must agree; no widening beyond scene POV."
+      }
+    },
+    "pavilion/exposition_exit": {
+      "title": "EXPOSITION EXIT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/exposition_exit.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: cool gray Exposition concourse with an absurd restroom sign blocked by identity-verification notice; daylight around the far doorway, exit from Pavilion, no people.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/service_exit": {
+      "title": "SERVICE EXIT",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/service_exit.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: outbound 1960s industrial maintenance passage from Pavilion, gray enamel paneling and unregistered-material transfer sign; safe walking exit not a lethal waste chute, bathroom sign inaccessible.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/arrival": {
+      "title": "ARRIVAL",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/arrival.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: 1960s public exposition pavilion approach, branching public concourse, maintenance threshold and underground access suggested by three architectural openings, hanging enamel civic signs, polished gray linoleum, optimistic design masking an institutional wrongness; no people, no label crowding.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
+    },
+    "pavilion/original_human_pedestal": {
+      "title": "ORIGINAL HUMAN PEDESTAL",
+      "kind": "scene",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/pavilion/original_human_pedestal.png",
+      "prompt": "Pixel art background authored directly at EXACT 314×206 logical pixels. Clean flat connected pixel clusters and restrained palette industrial gray, blue-gray, muted teal, cream, restrained red/green status lamps. Original 1960s institutional futurism in the mood of Brazil, NOT steampunk: no brass, leather, exposed clock gears, decorative rivets, noisy dithering, blurred gradient, faux miniature text, sprite characters, UI frame, or interface buttons. Readable 1–3 word signage only at actual source resolution; use non-letter marks for documents and tiny labels. SCENE: museum display pedestal with airtight transparent preservation casing and human-shaped fully still occupant seen ONLY from shoulders down or from behind, head outside composition/fully blocked; enamel plaque reads ORIGINAL HUMAN, rows of spotless museum demonstration appliances; tragedy conveyed without face or sensational gore; no text baked into UI, plaque art only.",
+      "notes": "CH3 shared art catalog; author native 314×206, do not stretch into 564×278 portraits. Storyboard art requirement only; NO PNG produced. Owner review pending."
     }
   },
   "portraits": {
@@ -157,6 +845,64 @@
       ],
       "portraitBackgroundScene": "exposition/reception",
       "foregroundFormat": "transparent-rgba-png"
+    },
+    "house:idle": {
+      "title": "HOUSE SPEAKER — IDLE",
+      "kind": "portrait",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "prompt": "Wall-mounted home intelligence speaker / camera assembly, 1960s Brazil-like plastic and powder-coated metal, simple speaker grille and indicator lamp, nonhumanoid. Detailed 564x278 transparent RGBA foreground only, independently animated, tight POV matching scene.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "No visible humanoid NPC. Layer over scene-specific opaque portrait background.",
+      "portraitBackgroundScene": "house_of_tomorrow/foyer",
+      "foregroundFormat": "transparent-rgba-png"
+    },
+    "groundskeeper:idle": {
+      "title": "GROUNDSKEEPER MACHINE - IDLE",
+      "kind": "portrait",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Transparent 564x278 mechanical groundskeeper machine portrait, zoomed tight on speaker/inspection module and seed feeder, separate from opaque corridor/background. Nonhumanoid, austere midcentury industrial, no brass, no cartoon eyes.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "biology_park/groundskeeper"
+    },
+    "courtesy_conductor:talking": {
+      "title": "COURTESY CONDUCTOR - TALKING",
+      "kind": "portrait",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Original midcentury molded-plastic friendly robot conductor in reserve tram console. Expressive simple mouth moving, separate transparent foreground pose; evokes absurdly upbeat vintage robotic chauffeur without copying any copyrighted character, no steampunk.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "biology_park/concourse_crash"
+    },
+    "original_witness:screened": {
+      "title": "ORIGINAL WITNESS — SCREENED",
+      "kind": "portrait",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/pavilion/original_witness_screened.png",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "pavilion/original_witness",
+      "prompt": "Exactly 564×278 TRANSPARENT RGBA pixel art foreground only. Faint uncertain figure behind a frosted privacy panel, or silhouette framed by mobile witness enclosure. Head and face entirely unreadable/occluded. No clues whether biological or machine; no background painted; align to separately authored original_witness portrait background.",
+      "notes": "Representation nature unresolved; NEVER protagonist face."
+    },
+    "registrar:idle": {
+      "title": "PERSONAL RECONCILIATION REGISTRAR — IDLE",
+      "kind": "portrait",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/pavilion/registrar_idle.png",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "pavilion/grand_reconciliation",
+      "prompt": "Exactly 564×278 TRANSPARENT RGBA portrait foreground of institutional analog Registrar speaker/desk apparatus, efficient civic clerical machine, white enamel, blue-gray metal, simple green/red lens. Cropped close POV coherent with separately authored Grand Reconciliation background. No human face, no body, no backdrop, no shell interface.",
+      "notes": "An official machine, not overt sci-fi antagonist. Preliminary creative concept pending final Grand Reconciliation review."
     }
   },
   "items": {
@@ -379,7 +1125,621 @@
         "suggestedFilename": null,
         "notes": "Owner-approved production asset."
       }
+    },
+    "family_portrait_photo": {
+      "slot": {
+        "title": "FAMILY PORTRAIT — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "prompt": "Small framed or stiff photograph, 3 empty chairs and ONLY protagonists shoes/lower legs at the bottom; actual full player identity never shown. Exact 96x96 transparent logical-grid slot art.",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "notes": "Keep silhouette of unseen protagonist limited to legs/feet."
+      },
+      "inspect": {
+        "title": "FAMILY PORTRAIT — INSPECT",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "prompt": "Crooked off-center group photograph: three completely empty chairs, and ONLY shoes and lower legs cropped at bottom, portrait framing intentionally wrong, clean 565x451 inspect art. Do not render player face, torso or full body.",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "notes": "Stamped official household record on reverse can be narrative inspection text rather than baked-in tiny lettering."
+      }
+    },
+    "acting_director_badge": {
+      "slot": {
+        "title": "ACTING DIRECTOR BADGE SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, acting director badge"
+      },
+      "inspect": {
+        "title": "ACTING DIRECTOR BADGE INSPECT",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Clean 565x451 detailed item inspector art for acting director badge, original midcentury industrial styling"
+      }
+    },
+    "botanical_antidote_customs": {
+      "slot": {
+        "title": "BOTANICAL ANTIDOTE CUSTOMS SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, botanical antidote customs"
+      },
+      "inspect": {
+        "title": "BOTANICAL ANTIDOTE CUSTOMS INSPECT",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Clean 565x451 detailed item inspector art for botanical antidote customs, original midcentury industrial styling"
+      }
+    },
+    "botanical_antidote_maintenance": {
+      "slot": {
+        "title": "BOTANICAL ANTIDOTE MAINTENANCE SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, botanical antidote maintenance"
+      },
+      "inspect": {
+        "title": "BOTANICAL ANTIDOTE MAINTENANCE INSPECT",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Clean 565x451 detailed item inspector art for botanical antidote maintenance, original midcentury industrial styling"
+      }
+    },
+    "botanical_antidote_public": {
+      "slot": {
+        "title": "BOTANICAL ANTIDOTE PUBLIC SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, botanical antidote public"
+      },
+      "inspect": {
+        "title": "BOTANICAL ANTIDOTE PUBLIC INSPECT",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Clean 565x451 detailed item inspector art for botanical antidote public, original midcentury industrial styling"
+      }
+    },
+    "certified_seed_canister": {
+      "slot": {
+        "title": "CERTIFIED SEED CANISTER SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, certified seed canister"
+      },
+      "inspect": {
+        "title": "CERTIFIED SEED CANISTER INSPECT",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": null,
+        "prompt": "Clean 565x451 detailed item inspector art for certified seed canister, original midcentury industrial styling"
+      }
+    },
+    "pavilion_approved_departure_authorization": {
+      "slot": {
+        "title": "APPROVED DEPARTURE AUTHORIZATION — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_approved_departure_authorization_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a single vintage cardstock authorization with thick stamp and one printed serial. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "APPROVED DEPARTURE AUTHORIZATION — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_approved_departure_authorization_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a single vintage cardstock authorization with thick stamp and one printed serial as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_certified_record_discrepancy": {
+      "slot": {
+        "title": "CERTIFIED RECORD DISCREPANCY — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_certified_record_discrepancy_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center folded diagnostic chart and narrow ink trace. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "CERTIFIED RECORD DISCREPANCY — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_certified_record_discrepancy_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME folded diagnostic chart and narrow ink trace as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_presentation_service_authorization": {
+      "slot": {
+        "title": "PRESENTATION SERVICE AUTHORIZATION — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_presentation_service_authorization_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a single vintage cardstock authorization with thick stamp and one printed serial. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "PRESENTATION SERVICE AUTHORIZATION — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_presentation_service_authorization_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a single vintage cardstock authorization with thick stamp and one printed serial as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_representation_diagnostic_record": {
+      "slot": {
+        "title": "REPRESENTATION DIAGNOSTIC RECORD — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_representation_diagnostic_record_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center folded diagnostic chart and narrow ink trace. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "REPRESENTATION DIAGNOSTIC RECORD — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_representation_diagnostic_record_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME folded diagnostic chart and narrow ink trace as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_broadcast_override_sequence": {
+      "slot": {
+        "title": "BROADCAST OVERRIDE SEQUENCE — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_broadcast_override_sequence_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center thin plain official 1960s form with tab and readable bold two-word heading. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "BROADCAST OVERRIDE SEQUENCE — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_broadcast_override_sequence_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME thin plain official 1960s form with tab and readable bold two-word heading as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "certificate_fulfilled_requirements": {
+      "slot": {
+        "title": "CERTIFICATE FULFILLED REQUIREMENTS — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/certificate_fulfilled_requirements_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center official stiff cream certificate with simple oversized seal. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "CERTIFICATE FULFILLED REQUIREMENTS — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/certificate_fulfilled_requirements_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME official stiff cream certificate with simple oversized seal as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_discrepancy_receipt": {
+      "slot": {
+        "title": "DISCREPANCY RECEIPT — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_discrepancy_receipt_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center thin plain official 1960s form with tab and readable bold two-word heading. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "DISCREPANCY RECEIPT — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_discrepancy_receipt_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME thin plain official 1960s form with tab and readable bold two-word heading as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_temporary_staff_pass": {
+      "slot": {
+        "title": "TEMPORARY STAFF PASS — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_temporary_staff_pass_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a single vintage cardstock authorization with thick stamp and one printed serial. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "TEMPORARY STAFF PASS — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_temporary_staff_pass_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a single vintage cardstock authorization with thick stamp and one printed serial as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_original_appearance_order": {
+      "slot": {
+        "title": "ORIGINAL APPEARANCE ORDER — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_original_appearance_order_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center thin plain official 1960s form with tab and readable bold two-word heading. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "ORIGINAL APPEARANCE ORDER — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_original_appearance_order_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME thin plain official 1960s form with tab and readable bold two-word heading as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_proof_of_life": {
+      "slot": {
+        "title": "PROOF OF LIFE — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_proof_of_life_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center thin plain official 1960s form with tab and readable bold two-word heading. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "PROOF OF LIFE — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_proof_of_life_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME thin plain official 1960s form with tab and readable bold two-word heading as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_duplicate_routing_tag": {
+      "slot": {
+        "title": "DUPLICATE ROUTING TAG — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_duplicate_routing_tag_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a rectangular white property-routing label with punched corner. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "DUPLICATE ROUTING TAG — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_duplicate_routing_tag_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a rectangular white property-routing label with punched corner as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_empty_claimant_photo": {
+      "slot": {
+        "title": "EMPTY CLAIMANT PHOTO — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_empty_claimant_photo_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a distinct photographic print with grayscale exposed area and short authentic office stamp. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "EMPTY CLAIMANT PHOTO — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_empty_claimant_photo_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a distinct photographic print with grayscale exposed area and short authentic office stamp as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_unapproved_exposure": {
+      "slot": {
+        "title": "UNAPPROVED EXPOSURE — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_unapproved_exposure_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a distinct photographic print with grayscale exposed area and short authentic office stamp. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "UNAPPROVED EXPOSURE — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_unapproved_exposure_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a distinct photographic print with grayscale exposed area and short authentic office stamp as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_source_contribution_receipt": {
+      "slot": {
+        "title": "SOURCE CONTRIBUTION RECEIPT — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_source_contribution_receipt_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center thin plain official 1960s form with tab and readable bold two-word heading. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "SOURCE CONTRIBUTION RECEIPT — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_source_contribution_receipt_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME thin plain official 1960s form with tab and readable bold two-word heading as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_household_routing_strip": {
+      "slot": {
+        "title": "HOUSEHOLD ROUTING STRIP — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_household_routing_strip_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a narrow perforated numbered strip of punched or printed paper. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "HOUSEHOLD ROUTING STRIP — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_household_routing_strip_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a narrow perforated numbered strip of punched or printed paper as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
+    },
+    "pavilion_registration_provenance_strip": {
+      "slot": {
+        "title": "REGISTRATION PROVENANCE STRIP — SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_registration_provenance_strip_slot.png",
+        "prompt": "EXACT 96×96 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center a narrow perforated numbered strip of punched or printed paper. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1× in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item. Prompt only, no asset created."
+      },
+      "inspect": {
+        "title": "REGISTRATION PROVENANCE STRIP — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_registration_provenance_strip_inspect.png",
+        "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME a narrow perforated numbered strip of punched or printed paper as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
+        "notes": "Source 565×451, separately drawn; not an enlarged inventory icon."
+      }
     }
   },
-  "focus": {}
+  "focus": {
+    "house_of_tomorrow/portrait_gallery/album": {
+      "title": "FAMILY ALBUM — MULTIPAGE INSPECTION",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "prompt": "Separate Focus A album close-up. Show 2-4 photos/page: family aging and increasingly afraid, skeletons, then empty chairs. The family never appears in main scene.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "notes": "Art may require several pages/frames coordinated with Narrative B pagination; do not fake complete art in a single busy sprite."
+    },
+    "biology_park/agricultural_customs/exposure_dispenser_open": {
+      "title": "EXPOSURE DISPENSER OPEN",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Opened botanical first-aid or decontamination wall kit close-up: chunky syringe injector and glass vial inside; EVE-hypo-like general silhouette Easter egg, entirely original design, industrial 1960s futurism. Eventually must be represented in 565x451 Scene Pickup Inspector, not the current Focus A staging."
+    },
+    "biology_park/maintenance_exit/decontamination_kit_open": {
+      "title": "DECONTAMINATION KIT OPEN",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Opened botanical first-aid or decontamination wall kit close-up: chunky syringe injector and glass vial inside; EVE-hypo-like general silhouette Easter egg, entirely original design, industrial 1960s futurism. Eventually must be represented in 565x451 Scene Pickup Inspector, not the current Focus A staging."
+    },
+    "biology_park/public_exit/aid_box_open": {
+      "title": "AID BOX OPEN",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "prompt": "Opened botanical first-aid or decontamination wall kit close-up: chunky syringe injector and glass vial inside; EVE-hypo-like general silhouette Easter egg, entirely original design, industrial 1960s futurism. Eventually must be represented in 565x451 Scene Pickup Inspector, not the current Focus A staging."
+    },
+    "pavilion/departure_counter": {
+      "title": "DEPARTURE COUNTER — INSPECTION",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_departure_counter.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Close-up of a mid-century mechanical tally wheel cycling every six seconds, narrow inspection hatch, short lever and permit-reader, clear practical contact points for clicker/stapler/rubber band. Not an electronic hack interface. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "pavilion/fourth_chair_source_photo": {
+      "title": "FOURTH CHAIR SOURCE PHOTO",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_fourth_chair_source_photo.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. A crisp archival photographic source on a metal light desk showing THREE empty chairs and only trousers, lap, partial shoes and knees at the FOURTH. The protagonist's head/face never appears. Distinguish altered Pavilion version as separate physical document. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "pavilion/image_negative": {
+      "title": "APPROVED NEGATIVES",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_image_negative.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Macro image of contact sheet showing empty seats and authenticity certification stamp, processing lights, identical registration strips with subtly different subject numbers. No protagonist face. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "pavilion/free_will_buttons": {
+      "title": "FREE WILL DEMONSTRATION",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_free_will_buttons.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Close-up of two white Bakelite buttons side-by-side with labels I AGREE and I AGREE ENTHUSIASTICALLY, both connecting to a single green ACCEPTED lamp, municipal optimistic industrial panel. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "pavilion/replacement_request_notice": {
+      "title": "REPLACEMENT ORIGINAL REQUEST NOTICE",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_replacement_request_notice.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Close-up of vacant pedestal sign, readable large REQUEST REPLACEMENT and legible warning VOLUNTEERS FOR PERMANENT DISPLAY near button. Wording must be visible BEFORE player commits to lethal choice. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "pavilion/grand_registry": {
+      "title": "PERSONAL RECONCILIATION REGISTRY",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_grand_registry.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Close-up of two certified register entries ORIGINAL and CLAIMANT and one physical slot marked ONE IDENTITY, anonymous numbers, no identifiable face. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "pavilion/death_pedestal_detail": {
+      "title": "PRESERVED EXHIBIT DETAIL",
+      "kind": "focus",
+      "status": "not-started",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/pavilion_death_pedestal_detail.png",
+      "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Airtight completely sealed museum preservation casing around anonymous body, no face, no depiction of breathing or movement after death; bleakly cheerful authenticity plaque, tasteful and non-graphic. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
+      "notes": "CH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    }
+  },
+  "deathScreens": {
+    "pavilion/a_model_citizen": {
+      "title": "A MODEL CITIZEN",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "565x451",
+      "assetPath": null,
+      "suggestedFilename": "art/ui/death/a_model_citizen.png",
+      "prompt": "Exact 565×451 independently authored pixel-art ENDING VIGNETTE for existing 16:9 game UI death popup. Approved death-overlay vignette (art-only): impeccably presented 1960s museum statue pedestal and anonymous human body behind fully sealed rigid transparent casing; no face visible, no gore, no protruding limbs, no air access, no movement. Crisp clinical exhibit plate. Darkly funny bureaucratic preservation, not supernatural transformation. The victim suffocated from lack of air and is dead. Popup copy/title rendered by UI at runtime, not baked into art. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
+      "notes": "FATAL MECHANISM OWNER LOCKED. Art/design not yet approved or produced."
+    },
+    "pavilion/successfully_reconciled": {
+      "title": "SUCCESSFULLY RECONCILED",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "565x451",
+      "assetPath": null,
+      "suggestedFilename": "art/ui/death/successfully_reconciled.png",
+      "prompt": "Exact 565×451 independently authored pixel-art ENDING VIGNETTE for existing 16:9 game UI death popup. PROPOSED death-overlay illustration: abandoned administrative fitting apparatus with sealed supporting clamps and anonymous clothing, no face or gore; mechanically permanent identity absorption, story mechanics not approved. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
+      "notes": "PROPOSED FATAL CONCEPT — DO NOT GENERATE/INTEGRATE without owner review."
+    },
+    "pavilion/permanently_archived": {
+      "title": "PERMANENTLY ARCHIVED",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "565x451",
+      "assetPath": null,
+      "suggestedFilename": "art/ui/death/permanently_archived.png",
+      "prompt": "Exact 565×451 independently authored pixel-art ENDING VIGNETTE for existing 16:9 game UI death popup. PROPOSED death-overlay illustration: sealed institutional archive drawer with single anonymous personal-effects tag and status lamp, no face/gore, concept still under story review. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
+      "notes": "PROPOSED FATAL CONCEPT — DO NOT GENERATE/INTEGRATE without owner review."
+    }
+  }
 }

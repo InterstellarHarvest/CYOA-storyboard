@@ -1,0 +1,2955 @@
+{
+  "title": "Biology Park - Your Nature Is Required",
+  "start": "bureau_arrival",
+  "scene": "biology_park/conveniences_bureau",
+  "nodes": {
+    "bureau_arrival": {
+      "mode": "narrative",
+      "scene": "biology_park/conveniences_bureau",
+      "objective": "FIND AN OPERATING BATHROOM.",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "house_exit_route",
+              "plant"
+            ]
+          },
+          "text": "You escape the House of Tomorrow while it teaches your little plant to use a table napkin. Signs for PUBLIC CONVENIENCES lead you to a government building. All the restroom doors are sealed."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "house_exit_route",
+              "martin"
+            ]
+          },
+          "text": "Martin's dusty service corridor deposits you at the rear of the Public Conveniences Bureau. An emergency notice has been nailed across its restroom sign."
+        },
+        {
+          "if": {
+            "flag": "equipment_registered"
+          },
+          "text": "You reach the Public Conveniences Bureau by an equipment passage. The bright wristband from the House still identifies you as household property. All the restroom doors are sealed."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "house_exit_route",
+              "showroom_reset"
+            ]
+          },
+          "text": "The House has declared your bathroom needs fulfilled. The Public Conveniences Bureau seems a good place to appeal that decision. Its restroom doors are sealed."
+        },
+        {
+          "text": "You leave the House of Tomorrow through a service passage. The next building is the Public Conveniences Bureau. Every restroom door has been sealed by emergency order."
+        }
+      ],
+      "choices": [
+        {
+          "id": "inspect_closed_conveniences",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "bureau_emergency"
+        }
+      ]
+    },
+    "bureau_emergency": {
+      "mode": "narrative",
+      "scene": "biology_park/conveniences_bureau",
+      "text": "A notice reads: FACILITIES SUSPENDED PENDING HABITAT EXPANSION REVIEW. Fine green roots have split the wall around the sink pictogram. Beyond the windows, a miniature jungle rises against the glass.\n\nThe floor shudders. Filing cabinets move sideways.",
+      "choices": [
+        {
+          "id": "see_groundskeeper",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "gardener_arrival"
+        }
+      ]
+    },
+    "gardener_arrival": {
+      "mode": "dialogue",
+      "scene": "biology_park/groundskeeper",
+      "speaker": "groundskeeper",
+      "pose": "idle",
+      "text": [
+        {
+          "desc": "An enormous nonhumanoid landscape-maintenance machine pushes through the wall, trailing irrigation hoses and a blizzard of stamped forms."
+        },
+        "Excellent news! Additional growing area located.",
+        "PLEASE KEEP YOUR DESKS CLEAR OF NEW FOREST."
+      ],
+      "choices": [
+        {
+          "id": "react_to_gardener",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "gardener_choices"
+        }
+      ]
+    },
+    "gardener_choices": {
+      "mode": "narrative",
+      "scene": "biology_park/groundskeeper",
+      "text": "The machine presents a soil bin, a feeder full of seedlings, and a small inspection window. Its planting arms already measure the room.",
+      "choices": [
+        {
+          "id": "examine_landscape_performance",
+          "kind": "action",
+          "text": "ASSERT EXAMINER AUTHORITY AND INSPECT ITS WORK.",
+          "to": "gardener_review"
+        },
+        {
+          "id": "sacrifice_stapler_to_feeder",
+          "kind": "action",
+          "text": "JAM YOUR RED SWANGLINE STAPLER INTO THE SEED FEEDER.",
+          "check": {
+            "id": "ch2_gardener_feeder",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "gardener_jam_success"
+          },
+          "fail": {
+            "to": "gardener_jam_failure"
+          },
+          "effects": {
+            "take": [
+              "red_stapler"
+            ]
+          },
+          "if": {
+            "has": "red_stapler"
+          }
+        },
+        {
+          "id": "hide_in_supply_hopper",
+          "kind": "action",
+          "text": "CLIMB INTO THE SUPPLY HOPPER TO RIDE INTO THE PARK.",
+          "check": {
+            "id": "ch2_hopper_burial",
+            "sides": 6,
+            "need": 3
+          },
+          "pass": {
+            "to": "hopper_escape"
+          },
+          "fail": {
+            "to": "fatal_hopper"
+          }
+        }
+      ]
+    },
+    "gardener_review": {
+      "mode": "narrative",
+      "scene": "biology_park/groundskeeper",
+      "text": "A display proudly reports 178 percent habitat compliance. Under the figures is a warning: HUMAN OFFICE BOUNDARIES EXCEEDED. The machine seems delighted by both numbers.",
+      "choices": [
+        {
+          "id": "request_zero_compliance_review",
+          "kind": "action",
+          "text": "REQUEST A PERFORMANCE REVIEW OF THE BOUNDARY VIOLATION.",
+          "to": "gardener_review_result"
+        },
+        {
+          "id": "accept_instant_vegetation_promotion",
+          "kind": "action",
+          "text": "ACCEPT APPOINTMENT AS ACTING DIRECTOR OF VEGETATION.",
+          "to": "gardener_promotion"
+        }
+      ]
+    },
+    "gardener_review_result": {
+      "mode": "narrative",
+      "scene": "biology_park/groundskeeper",
+      "text": "At your request the machine begins a full compliance audit. It has exceeded every boundary because every boundary was classified as available room. Its self-inspection is scheduled to occupy it for several years.\n\nYou pass through the maintenance aperture while it computes whether a wall is part of the garden.",
+      "choices": [
+        {
+          "id": "enter_from_performance_review",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "park_junction"
+        }
+      ]
+    },
+    "gardener_promotion": {
+      "mode": "narrative",
+      "scene": "biology_park/groundskeeper",
+      "effects": {
+        "give": [
+          "acting_director_badge"
+        ]
+      },
+      "text": "A pale green credential card emerges from a slot marked EMERGENCY MANAGEMENT.\n\nCongratulations! You are now Acting Director of Vegetation. Nobody has established what happened to the previous one.",
+      "choices": [
+        {
+          "id": "open_formal_park_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "formal_park_entry"
+        }
+      ]
+    },
+    "formal_park_entry": {
+      "mode": "narrative",
+      "scene": "biology_park/formal_entrance",
+      "text": "The Park's locked administrative entrance recognizes the new credential. The turnstile offers a salute with one of its arms.\n\nWELCOME, ACTING DIRECTOR. YOUR FOREST REQUIRES IMMEDIATE ATTENTION.",
+      "choices": [
+        {
+          "id": "enter_authorized_jungle",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "park_junction"
+        }
+      ]
+    },
+    "gardener_jam_success": {
+      "mode": "narrative",
+      "scene": "biology_park/service_entry",
+      "text": "The red stapler wedges between the feeder teeth. An inspection hatch unfolds from the machine while the groundskeeper politely schedules itself for repair. You escape through the machinery into a service access beside the Park.",
+      "choices": [
+        {
+          "id": "leave_gardener_service_access",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "park_junction"
+        }
+      ]
+    },
+    "gardener_jam_failure": {
+      "mode": "narrative",
+      "scene": "biology_park/sorting_conveyor",
+      "text": "The stapler is crushed into a red metallic wafer. A runaway roller catches your clothing and launches you onto a conveyor marked ORGANIC MATERIAL SORTING. A compactor waits at its far end.",
+      "choices": [
+        {
+          "id": "grab_sorting_inspection_hatch",
+          "kind": "action",
+          "text": "JUMP FOR THE HIGH INSPECTION HATCH.",
+          "check": {
+            "id": "ch2_sorter_inspection_hatch",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "sorter_escape"
+          },
+          "fail": {
+            "to": "fatal_sorter"
+          }
+        }
+      ]
+    },
+    "sorter_escape": {
+      "mode": "narrative",
+      "scene": "biology_park/service_entry",
+      "text": "You catch the hatch handle and pull yourself into an inspection crawlspace. The machine below accepts your departure as successful sorting.",
+      "choices": [
+        {
+          "id": "climb_out_of_sorter",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "park_junction"
+        }
+      ]
+    },
+    "fatal_sorter": {
+      "mode": "narrative",
+      "scene": "biology_park/sorting_conveyor",
+      "end": true,
+      "text": "The conveyor reaches the compactor. An indicator changes to MATERIAL PROCESSED. The groundskeeper records one efficient disposal and resumes creating forest.\n\nENDING - CLASSIFIED AS COMPOST.",
+      "choices": [
+        {
+          "id": "restart_sorter",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ]
+    },
+    "hopper_escape": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_hopper",
+      "text": "The groundskeeper tips the hopper into a prepared planting pit. Soil begins packing around your shoulders. You fight your way into an irrigation trench before the next layer falls.\n\nBehind you, the machine records a fully planted specimen.",
+      "choices": [
+        {
+          "id": "climb_from_irrigation_trench",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "park_junction"
+        }
+      ]
+    },
+    "fatal_hopper": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_hopper",
+      "end": true,
+      "text": "The packing arms finish their work. A small commemorative marker rises beside the mound.\n\nPLANTED SUCCESSFULLY, the groundskeeper reports.\n\nENDING - NEW ARRIVAL.",
+      "choices": [
+        {
+          "id": "restart_hopper",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ]
+    },
+    "park_junction": {
+      "mode": "narrative",
+      "scene": "biology_park/jungle_junction",
+      "text": [
+        {
+          "if": {
+            "has": "acting_director_badge"
+          },
+          "text": "A vast artificial sun hangs above the overgrown Park. The greenery has taken the boardwalks and the public-address system addresses you as Director. Three approaches remain: the control tower, the exhibits on foot, or the nature tram."
+        },
+        {
+          "text": "The Park is now a jungle under a humming artificial sun. Elevated offices rise beyond the canopy, strange flowering exhibits clog the footpaths, and an automated nature tram still runs through the growth."
+        }
+      ],
+      "choices": [
+        {
+          "id": "head_to_tower",
+          "kind": "action",
+          "text": "HEAD TOWARD THE ENVIRONMENTAL CONTROL TOWER.",
+          "to": "tower_arrival"
+        },
+        {
+          "id": "cross_spore_exhibits",
+          "kind": "action",
+          "text": "TAKE THE WALKING ROUTE THROUGH THE EXHIBITS.",
+          "to": "spore_garden"
+        },
+        {
+          "id": "board_nature_tram",
+          "kind": "action",
+          "text": "BOARD THE AUTOMATED NATURE TOUR.",
+          "to": "tour_start"
+        }
+      ]
+    },
+    "tower_arrival": {
+      "mode": "narrative",
+      "scene": "biology_park/control_tower",
+      "effects": {
+        "set": {
+          "tower_visited": true
+        }
+      },
+      "text": "The Environmental Control Tower is remarkably tidy compared with the Park below. Each desk has three sign-off stamps and no occupied chair. A console reports APPROVAL CAPACITY: EXCELLENT.",
+      "choices": [
+        {
+          "id": "inspect_tower_approvals",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "tower_archive"
+        }
+      ]
+    },
+    "tower_archive": {
+      "mode": "narrative",
+      "scene": "biology_park/authorization_archive",
+      "text": "Early expansion requests carry human signatures; later ones were approved automatically by delegated Environmental Management. The requests have a single originating entity: BOTANICAL SPECIMEN 001. The file begins with a polite petition for more light. It ends with territory.",
+      "choices": [
+        {
+          "id": "issue_director_countermand",
+          "kind": "action",
+          "text": "ISSUE A FORMAL COUNTERMAND WITH THE ACTING DIRECTOR CREDENTIAL.",
+          "if": {
+            "has": "acting_director_badge"
+          },
+          "to": "director_order"
+        },
+        {
+          "id": "trace_original_requests",
+          "kind": "action",
+          "text": "TRACE THE BIOLOGICAL REQUEST LINES TO THE CENTRAL FLOWER.",
+          "to": "tower_trace"
+        }
+      ]
+    },
+    "director_order": {
+      "mode": "narrative",
+      "scene": "biology_park/authorization_archive",
+      "text": "The credential authorizes an immediate countermand. The console confirms that the Park has been granted self-governing status, then asks how you wish to handle the dispute between equals.",
+      "choices": [
+        {
+          "id": "order_cease_and_desist",
+          "kind": "action",
+          "text": "SUSPEND NEW PERMITS AND AUTHORIZE AN EMERGENCY EVACUATION.",
+          "to": "cease_stairs"
+        },
+        {
+          "id": "refer_appeal_to_plant",
+          "kind": "action",
+          "text": "REFER THE DISPUTE TO BOTANICAL SPECIMEN 001 IN PERSON.",
+          "to": "director_passage"
+        }
+      ]
+    },
+    "cease_stairs": {
+      "mode": "narrative",
+      "scene": "biology_park/control_tower",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "director_cease"
+        }
+      },
+      "text": "The new expansion permits are suspended pending review. Existing vegetation stays exactly where it has no right to be. A personnel evacuation stairwell unlocks beneath the tower.",
+      "choices": [
+        {
+          "id": "descend_cease_stairwell",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "irrigation_hub"
+        }
+      ]
+    },
+    "director_passage": {
+      "mode": "narrative",
+      "scene": "biology_park/control_tower",
+      "effects": {
+        "set": {
+          "director_pending_dispute": true
+        }
+      },
+      "text": "A pneumatic message confirms your hearing with the newly independent botanical district. The tower opens an inspection passage directly to its biological translator.",
+      "choices": [
+        {
+          "id": "arrive_at_flower_with_appeal",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "tower_trace": {
+      "mode": "narrative",
+      "scene": "biology_park/authorization_archive",
+      "effects": {
+        "set": {
+          "expansion_orders_seen": true
+        }
+      },
+      "text": "You trace the requests through pneumatic ducts, biofeedback cables and an increasingly demanding paper tape. The plant is not receiving orders. It learned which signals would produce orders favorable to itself.",
+      "choices": [
+        {
+          "id": "follow_trace_to_flower",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "spore_garden": {
+      "mode": "narrative",
+      "scene": "biology_park/spore_garden",
+      "text": "A clearing opens in the jungle. Beautiful pale blooms release clouds of fine green spores. A dead ventilation fan wears a sign: RESPIRATORY EXPOSURE ADVISORY. A more distant maintenance walkway has lost several sections.",
+      "choices": [
+        {
+          "id": "cross_spore_cloud_direct",
+          "kind": "action",
+          "text": "TAKE THE SHORT ROUTE THROUGH THE SPORE CLOUD.",
+          "check": {
+            "id": "ch2_spore_direct",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "garden_crossed"
+          },
+          "fail": {
+            "to": "garden_infected",
+            "effects": {
+              "set": {
+                "spore_infected": true
+              }
+            }
+          }
+        },
+        {
+          "id": "take_broken_perimeter",
+          "kind": "action",
+          "text": "CIRCLE THE CLEARING ON THE DAMAGED MAINTENANCE WALKWAY.",
+          "to": "walkway_crossing"
+        },
+        {
+          "id": "vent_spores_into_offices",
+          "kind": "action",
+          "text": "USE THE GARDEN VENTILATION TO CLEAR THE WALKING ROUTE.",
+          "effects": {
+            "set": {
+              "office_spore_inundation": true
+            }
+          },
+          "to": "garden_vented"
+        }
+      ]
+    },
+    "garden_crossed": {
+      "mode": "narrative",
+      "scene": "biology_park/spore_garden",
+      "text": "You cross while the clouds drift away from you. The huge bloom at the center of the Park is visible through the thinning foliage.",
+      "choices": [
+        {
+          "id": "follow_garden_edge",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "garden_after"
+        }
+      ]
+    },
+    "garden_infected": {
+      "mode": "narrative",
+      "scene": "biology_park/spore_garden",
+      "text": "A thread of green dust catches in your throat. By the far side, there is an unfamiliar sweet taste and a thin line of green beneath one fingernail. Your breathing returns to normal. The line does not go away.",
+      "choices": [
+        {
+          "id": "follow_garden_infected",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "garden_after"
+        }
+      ]
+    },
+    "walkway_crossing": {
+      "mode": "narrative",
+      "scene": "biology_park/damaged_walkway",
+      "text": "A metal catwalk circles the clearing above the spores. Several grates are missing and a support has been twisted into a vine.",
+      "choices": [
+        {
+          "id": "cross_broken_grates",
+          "kind": "action",
+          "text": "STEP ACROSS THE MISSING GRATES.",
+          "check": {
+            "id": "ch2_walkway_crossing",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "walkway_success"
+          },
+          "fail": {
+            "to": "walkway_failure"
+          }
+        }
+      ]
+    },
+    "walkway_success": {
+      "mode": "narrative",
+      "scene": "biology_park/damaged_walkway",
+      "text": "The catwalk shudders but holds. You reach the far side with the spore cloud still below you.",
+      "choices": [
+        {
+          "id": "leave_walkway",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "garden_after"
+        }
+      ]
+    },
+    "walkway_failure": {
+      "mode": "narrative",
+      "scene": "biology_park/damaged_walkway",
+      "text": "The railing breaks and you land on an old maintenance platform below the walkway. A slow elevator, clearly awaiting an inspection it will never receive, carries you past the damaged span.",
+      "choices": [
+        {
+          "id": "ride_platform_to_path",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "garden_after"
+        }
+      ]
+    },
+    "garden_vented": {
+      "mode": "narrative",
+      "scene": "biology_park/spore_garden",
+      "text": "You engage the extraction fan. The spore cloud clears from the path, but a green plume rushes along a visible glass duct into the Environmental Control Tower. Distant alarms sound. Leaves start pushing through the tower windows.",
+      "choices": [
+        {
+          "id": "cross_vented_garden",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "garden_after"
+        }
+      ]
+    },
+    "garden_after": {
+      "mode": "narrative",
+      "scene": "biology_park/jungle_junction",
+      "text": "Beyond the garden you find two ways toward the immense flower: a track through the mobile-tree exhibition and a narrow grading route beside the old irrigation main.",
+      "choices": [
+        {
+          "id": "enter_moving_forest",
+          "kind": "action",
+          "text": "ENTER THE MOVING FOREST.",
+          "to": "forest_arrival"
+        },
+        {
+          "id": "skirt_forest_on_irrigation_grade",
+          "kind": "action",
+          "text": "FOLLOW THE GRADING ROUTE AROUND THE FOREST.",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "forest_arrival": {
+      "mode": "narrative",
+      "scene": "biology_park/moving_forest",
+      "text": "The forest begins moving as if the paths are pieces of furniture. Heavy trunks slide along concealed tracks, leaving new gaps and sealing old ones. Numbered plates on the bark flash past.\n\nDESIGNATED PATH SUBJECT TO CHANGE.",
+      "choices": [
+        {
+          "id": "push_through_thorns",
+          "kind": "action",
+          "text": "PUSH BETWEEN THE TREES UNDER THE THORNED BRANCH.",
+          "check": {
+            "id": "ch2_thorn_gap",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "forest_clear"
+          },
+          "fail": {
+            "to": "forest_thorn",
+            "effects": {
+              "set": {
+                "thorn_infected": true
+              }
+            }
+          }
+        },
+        {
+          "id": "climb_forest_observation",
+          "kind": "action",
+          "text": "CLIMB TO THE OVERHEAD OBSERVATION WALKWAY.",
+          "check": {
+            "id": "ch2_forest_walkway",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "forest_overhead"
+          },
+          "fail": {
+            "to": "forest_fall"
+          }
+        },
+        {
+          "id": "follow_movement_markers",
+          "kind": "action",
+          "text": "FOLLOW THE NUMBERED MAINTENANCE MARKERS.",
+          "to": "sensor_gallery"
+        }
+      ]
+    },
+    "forest_clear": {
+      "mode": "narrative",
+      "scene": "biology_park/moving_forest",
+      "text": "You reach the flower approach just before two moving trunks close the path behind you.",
+      "choices": [
+        {
+          "id": "enter_flower_from_ground",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "forest_thorn": {
+      "mode": "narrative",
+      "scene": "biology_park/moving_forest",
+      "text": "A long thorn punches through your sleeve. Its tip leaves a sharply outlined green puncture beneath the skin. Nearby roots seem to turn in your direction.",
+      "choices": [
+        {
+          "id": "enter_flower_with_thorn",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "forest_overhead": {
+      "mode": "narrative",
+      "scene": "biology_park/damaged_walkway",
+      "text": "From the high observation platform you can see a flower wider than the concourse, connected by thick cables to a humming administrative machine.",
+      "choices": [
+        {
+          "id": "descend_to_flower",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "forest_fall": {
+      "mode": "narrative",
+      "scene": "biology_park/damaged_walkway",
+      "text": "The walkway lurches sideways. You drop onto a maintenance gantry and crawl through a narrow service gap. The flower's cable bundles lead you the rest of the way.",
+      "choices": [
+        {
+          "id": "climb_from_gantry",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "sensor_gallery": {
+      "mode": "narrative",
+      "scene": "biology_park/sensor_gallery",
+      "text": "The numbered markers lead to a service gallery above the central chamber. Needles on a physiological instrument twitch whenever the flower flexes. Each twitch produces another punched-paper request.",
+      "choices": [
+        {
+          "id": "leave_gallery_for_flower",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "tour_start": {
+      "mode": "narrative",
+      "scene": "biology_park/tour_tram",
+      "text": "The automated Nature Tram welcomes you aboard. Its taped guide explains that all botanical life is carefully contained. The doors open at an unscheduled stop. Pale, quietly moving plants board and take the empty passenger seats.",
+      "choices": [
+        {
+          "id": "watch_tram_become_greenhouse",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "tour_rooted"
+        }
+      ]
+    },
+    "tour_rooted": {
+      "mode": "narrative",
+      "scene": "biology_park/overgrown_tram",
+      "text": "The passengers root themselves through the upholstery. Vines knot the handrails and seal the ordinary doors. The recorded guide assures everyone that vegetation has never interfered with passenger comfort.",
+      "choices": [
+        {
+          "id": "climb_rooted_tram_roof",
+          "kind": "action",
+          "text": "CLIMB THROUGH THE ROOF HATCH ONTO THE MOVING TRAM.",
+          "check": {
+            "id": "ch2_tour_roof",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "tour_roof_escape"
+          },
+          "fail": {
+            "to": "tour_roof_fall"
+          }
+        },
+        {
+          "id": "pull_rooted_tram_brake",
+          "kind": "action",
+          "text": "PULL THE EMERGENCY BRAKE.",
+          "to": "tour_brake_slide"
+        },
+        {
+          "id": "call_rooted_tram_rescue",
+          "kind": "action",
+          "text": "SUMMON THE GROUNDSKEEPER FOR EMERGENCY EXTRACTION.",
+          "to": "tour_rescue"
+        }
+      ]
+    },
+    "tour_roof_escape": {
+      "mode": "narrative",
+      "scene": "biology_park/tour_tram",
+      "text": "You pull yourself onto a raised botanic walkway as the rooted tram grinds away beneath it. A branch line connects to an abandoned reserve siding.",
+      "choices": [
+        {
+          "id": "follow_tram_siding_roof",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "tram_siding"
+        }
+      ]
+    },
+    "tour_roof_fall": {
+      "mode": "narrative",
+      "scene": "biology_park/moving_forest",
+      "text": "You fall into dense lower vegetation. The vines cushion the impact only because they have already occupied the area. You emerge among trees that are moving along tracks.",
+      "choices": [
+        {
+          "id": "find_route_from_roof_fall",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "forest_arrival"
+        }
+      ]
+    },
+    "tour_brake_slide": {
+      "mode": "narrative",
+      "scene": "biology_park/tour_tram",
+      "text": "The emergency brake seizes. Roots caught in the chassis pull the entire tram off the guideway. It slides down an embankment and deposits you beside the Moving Forest.",
+      "choices": [
+        {
+          "id": "enter_forest_after_slide",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "forest_arrival"
+        }
+      ]
+    },
+    "tour_rescue": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_siding",
+      "text": "A massive gardener arrives, thoughtfully removes the vegetation, and lifts the tram with it. You are deposited beside a reserve maintenance tram while the gardener transports its rescued greenery elsewhere.",
+      "choices": [
+        {
+          "id": "approach_reserve_tram",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "tram_siding"
+        }
+      ]
+    },
+    "tram_siding": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_siding",
+      "text": "An abandoned reserve tram rests beneath a canopy of roots. Its destination display cycles through stations that no longer exist. The driver console remains dark. A faded placard promises EMERGENCY EVACUATION SERVICE.",
+      "choices": [
+        {
+          "id": "inspect_abandoned_reserve",
+          "kind": "action",
+          "text": "BOARD THE ABANDONED RESERVE TRAM.",
+          "to": "reserve_tram"
+        },
+        {
+          "id": "follow_track_to_center",
+          "kind": "action",
+          "text": "LEAVE THE SIDING AND FOLLOW THE RAIL TRACK TOWARD THE CENTRAL FLOWER.",
+          "to": "tram_walk"
+        }
+      ]
+    },
+    "tram_walk": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_siding",
+      "text": "You follow the rusted guide rail on foot. Roots have been quietly shifting the rail switches to route visitors toward the giant bloom. At the final switch, the tracks simply disappear beneath its petals.",
+      "choices": [
+        {
+          "id": "reach_flower_on_foot",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "reserve_tram": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_tram",
+      "text": "The reserve tram smells of old floor polish. Its route display flickers between VISITOR LOOP, MAIN CONCOURSE and OUT OF SERVICE. A molded plastic face is recessed behind an unlit driver panel. It does not move.",
+      "choices": [
+        {
+          "id": "restore_tram_power",
+          "kind": "action",
+          "text": "RESTORE THE RESERVE TRAM POWER.",
+          "check": {
+            "id": "ch2_reserve_power",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "tram_power_success"
+          },
+          "fail": {
+            "to": "tram_power_failure"
+          }
+        },
+        {
+          "id": "walk_reserve_tram_tracks",
+          "kind": "action",
+          "text": "LEAVE THE TRAM AND FOLLOW ITS TRACKS ON FOOT.",
+          "to": "tram_walk"
+        },
+        {
+          "id": "activate_emergency_spur",
+          "kind": "action",
+          "text": "ACTIVATE THE EMERGENCY EVACUATION SPUR.",
+          "check": {
+            "id": "ch2_courtesy_driver",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "robot_concourse_crash"
+          },
+          "fail": {
+            "to": "silent_tram_descent"
+          }
+        }
+      ]
+    },
+    "tram_power_success": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_tram",
+      "text": "The traction motor catches. The old car trundles to a high platform overlooking the central flower. It stops precisely where the route map says it should, though the map is several decades out of date.",
+      "choices": [
+        {
+          "id": "step_from_powered_tram",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_arrival"
+        }
+      ]
+    },
+    "tram_power_failure": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_tram",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "reserve_power_failure"
+        }
+      },
+      "text": "The power cable sparks. A support rail folds beneath the tram and the car drops onto an industrial service track. You tumble into Lower Irrigation Services, injured only in dignity.",
+      "choices": [
+        {
+          "id": "climb_from_power_failure",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "irrigation_hub"
+        }
+      ]
+    },
+    "robot_concourse_crash": {
+      "mode": "dialogue",
+      "scene": "biology_park/concourse_crash",
+      "speaker": "courtesy_conductor",
+      "pose": "talking",
+      "effects": {
+        "set": {
+          "courtesy_driver_activated": true,
+          "tram_crash_liability": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The Courtesy Conductor springs upright from its previously lifeless dashboard housing. The tram bursts through an advertising wall into the main Exposition concourse. Visitors applaud."
+        },
+        "Here we go! What a wonderful day for an emergency!",
+        "Thank you for choosing a safe and enjoyable evacuation. Your damage form is printing now."
+      ],
+      "choices": [
+        {
+          "id": "leave_crashed_tram",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "end_concourse_robot"
+        }
+      ]
+    },
+    "silent_tram_descent": {
+      "mode": "narrative",
+      "scene": "biology_park/reserve_tram",
+      "text": "The driver panel blinks twice and dies. No voice answers. You pull the mechanical brake release and the unmanned tram coasts down a forgotten gravity spur toward an underground station.",
+      "choices": [
+        {
+          "id": "arrive_underground_station",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "station_ticket"
+        }
+      ]
+    },
+    "station_ticket": {
+      "mode": "narrative",
+      "scene": "biology_park/abandoned_station",
+      "text": "A ticket machine glows beside the abandoned turnstile.\n\nCURRENT FARE: COMPLIMENTARY. CURRENT SERVICE: DISCONTINUED.\n\nIt prints a free ticket and refuses to open the gate until you certify that you thoroughly enjoyed your journey.",
+      "choices": [
+        {
+          "id": "certify_enjoyable_journey",
+          "kind": "action",
+          "text": "CERTIFY THAT YOU ENJOYED THE JOURNEY.",
+          "to": "end_underground_station"
+        }
+      ]
+    },
+    "end_concourse_robot": {
+      "mode": "narrative",
+      "scene": "biology_park/concourse_crash",
+      "end": true,
+      "effects": {
+        "set": {
+          "ch2_exit_route": "tram_robot_crash",
+          "chapter3_entry_group": "public_concourse"
+        }
+      },
+      "text": "The driver thanks everyone for taking part in a safe emergency evacuation. Its steering column is embedded in a wall. Your name is on the damage claim.\n\nYou have escaped Biology Park. The public still believes this was an exhibit. Somewhere nearby, there must be a real bathroom.",
+      "choices": [
+        {
+          "id": "restart_concourse_crash",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "storyboardNextChapter": "chapter-03",
+      "notes": "\nSTORYBOARD-ONLY handoff to Chapter 3. Existing end:true and restart behavior remain for gameplay until future integration."
+    },
+    "end_underground_station": {
+      "mode": "narrative",
+      "scene": "biology_park/abandoned_station",
+      "end": true,
+      "effects": {
+        "set": {
+          "ch2_exit_route": "tram_silent_station",
+          "chapter3_entry_group": "underground_transit",
+          "tram_satisfaction_certified": true
+        }
+      },
+      "text": "The turnstile finally opens. The free ticket disappears into its mechanism, but the satisfaction certification is permanently filed. You climb into a forgotten part of the Exposition.\n\nAt least the underground station had a sign for bathrooms. It was crossed out.",
+      "choices": [
+        {
+          "id": "restart_underground",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "storyboardNextChapter": "chapter-03",
+      "notes": "\nSTORYBOARD-ONLY handoff to Chapter 3. Existing end:true and restart behavior remain for gameplay until future integration."
+    },
+    "flower_arrival": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "text": [
+        {
+          "if": {
+            "flag": "thorn_infected"
+          },
+          "text": "The central bloom turns toward you. Its cable-draped petals stretch as widely as the greenhouse roof. A scanner pauses at the green puncture beneath your skin. A punched-tape printer starts rattling more quickly."
+        },
+        {
+          "if": {
+            "flag": "spore_infected"
+          },
+          "text": "The immense flower slowly faces you. Its measuring arms detect the faint green trace beneath your fingernail. Paper tape moves through a translator rack, and your name enters the system as a potential growing location."
+        },
+        {
+          "if": {
+            "flag": "director_pending_dispute"
+          },
+          "text": "A formal hearing summons you to the central flower. Thick cables run from its stalk to a rack of biomedical sensors and punched-tape printers. The hearing docket has your Acting Director credential at the top."
+        },
+        {
+          "text": "A colossal flower occupies the central greenhouse. Heavy cables run from its stem to a physiological sensing rack. A paper-tape reader turns the plant's movements into government requests. A seal above it certifies the flower as an independent district."
+        }
+      ],
+      "choices": [
+        {
+          "id": "read_flower_district_decree",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "flower_requests"
+        }
+      ]
+    },
+    "flower_requests": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "text": [
+        {
+          "if": {
+            "flag": "thorn_infected"
+          },
+          "text": "REQUEST: REGISTER HUMAN VISITOR AS BOTANICAL COURIER.\nREQUEST: CLAIM HUMAN VISITOR AS ADDITIONAL CULTIVATION HABITAT.\n\nThe scanner identifies concentrated growth already underway. A root moves across the door."
+        },
+        {
+          "if": {
+            "flag": "spore_infected"
+          },
+          "text": "REQUEST: REGISTER HUMAN VISITOR AS BOTANICAL COURIER.\nREQUEST: CLAIM HUMAN VISITOR AS ADDITIONAL CULTIVATION HABITAT.\n\nPRELIMINARY CULTIVATION DETECTED, the scanner announces. YOUR APPLICATION IS ALREADY UNDERWAY."
+        },
+        {
+          "text": "A printer issues two approved requests: AUTHORIZE VISITOR AS SEED COURIER, and REGISTER VISITOR AS AVAILABLE GROWING HABITAT.\n\nThe flower neither speaks nor smiles. It has learned which biological signals earn permission to grow."
+        }
+      ],
+      "choices": [
+        {
+          "id": "accept_seed_courier",
+          "kind": "action",
+          "text": "ACCEPT APPOINTMENT AS AUTHORIZED BOTANICAL COURIER.",
+          "to": "courier_assignment"
+        },
+        {
+          "id": "contest_habitat_order",
+          "kind": "action",
+          "text": "CONTEST THE ORDER TO CULTIVATE YOUR BODY.",
+          "to": "appeal_docket"
+        },
+        {
+          "id": "interfere_with_translator",
+          "kind": "action",
+          "text": "INTERFERE WITH THE PLANT-TO-PAPER TRANSLATOR.",
+          "to": "translator_controls"
+        }
+      ]
+    },
+    "courier_assignment": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "effects": {
+        "give": [
+          "certified_seed_canister"
+        ]
+      },
+      "text": "A pneumatic tube deposits a sealed metal canister in a padded tray. An official stamp reads CERTIFIED PROPAGATION MATERIAL. KEEP SEALED.\n\nThe agricultural shipment gate grants you access. The plant has legally arranged to leave the Park without moving.",
+      "choices": [
+        {
+          "id": "carry_seeds_to_customs",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "customs_checkpoint"
+        }
+      ]
+    },
+    "customs_checkpoint": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "text": "The agricultural scanner examines your certified canister. THANK YOU FOR HELPING NATURE REACH NEW PLACES. It offers three approved methods of handling your cargo.",
+      "choices": [
+        {
+          "id": "carry_sealed_seeds_out",
+          "kind": "action",
+          "text": "CARRY THE SEALED CANISTER OUT OF THE PARK.",
+          "effects": {
+            "set": {
+              "ch2_exit_route": "courier_carried"
+            }
+          },
+          "to": "customs_exit"
+        },
+        {
+          "id": "transfer_seeds_to_network",
+          "kind": "action",
+          "text": "SURRENDER THE CANISTER TO OFFICIAL AGRICULTURAL DISTRIBUTION.",
+          "effects": [
+            {
+              "take": [
+                "certified_seed_canister"
+              ]
+            },
+            {
+              "set": {
+                "ch2_exit_route": "courier_surrendered",
+                "seeds_entered_distribution": true
+              }
+            }
+          ],
+          "to": "customs_exit"
+        },
+        {
+          "id": "break_seed_canister",
+          "kind": "action",
+          "text": "TRY TO DESTROY THE SEEDS BEFORE THEY LEAVE.",
+          "check": {
+            "id": "ch2_seed_destruction",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "customs_seeds_destroyed"
+          },
+          "fail": {
+            "to": "customs_seed_rupture"
+          },
+          "effects": {
+            "take": [
+              "certified_seed_canister"
+            ]
+          }
+        }
+      ]
+    },
+    "customs_seeds_destroyed": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "courier_destroyed",
+          "seeds_destroyed": true
+        }
+      },
+      "text": "The container crumples under the crushing mechanism and its sealed germination packet splits against a heated inspection plate. A green indicator confirms DESTROYED BEFORE EXPORT.",
+      "choices": [
+        {
+          "id": "leave_without_viable_seeds",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "customs_exit"
+        }
+      ]
+    },
+    "customs_seed_rupture": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "text": "The seal bursts. A little cloud of pale seed dust spreads around your face. Customs sounds a cheerful warning: EXPOSURE ASSESSMENT RECOMMENDED.",
+      "choices": [
+        {
+          "id": "shield_against_seed_dust",
+          "kind": "action",
+          "text": "COVER YOUR FACE AND CLEAR THE LEAKING SEED DUST.",
+          "check": {
+            "id": "ch2_customs_seed_dust",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "customs_dust_avoided"
+          },
+          "fail": {
+            "to": "customs_dust_infected"
+          }
+        }
+      ]
+    },
+    "customs_dust_avoided": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "courier_ruptured"
+        }
+      },
+      "text": "You push the open container under the extraction hood before the dust reaches your lungs. A technician-free cleanup system accepts the ruptured cargo.",
+      "choices": [
+        {
+          "id": "leave_ruptured_cargo",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "customs_exit"
+        }
+      ]
+    },
+    "customs_dust_infected": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "courier_ruptured",
+          "spore_infected": true
+        }
+      },
+      "text": "Some of the dust gets into your throat before the extractor starts. A thin green trace appears at the edge of your thumbnail. The checkpoint labels the spill RESOLVED.",
+      "choices": [
+        {
+          "id": "leave_after_dust_exposure",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "customs_exit"
+        }
+      ]
+    },
+    "appeal_docket": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "text": "APPLICATION FOR HUMAN HABITAT CONVERSION. STATUS: CONTESTED.\n\nThe flower pauses while a desk-sized printer offers grounds for appeal. Even an independent plant must respect an active appeals process.",
+      "choices": [
+        {
+          "id": "appeal_prior_house_equipment",
+          "kind": "action",
+          "text": "CLAIM YOU ARE ALREADY REGISTERED AS HOUSEHOLD EQUIPMENT.",
+          "if": {
+            "flag": "equipment_registered"
+          },
+          "to": "appeal_house_success"
+        },
+        {
+          "id": "appeal_director_authority",
+          "kind": "action",
+          "text": "INVOKE YOUR PHYSICAL ACTING DIRECTOR CREDENTIAL.",
+          "if": {
+            "has": "acting_director_badge"
+          },
+          "to": "appeal_director_success"
+        },
+        {
+          "id": "appeal_examiner_inspection",
+          "kind": "action",
+          "text": "DEMAND AN EXAMINER INSPECTION OF THE PLANTING ORDER.",
+          "check": {
+            "id": "ch2_examiner_appeal",
+            "sides": 6,
+            "need": 4,
+            "mods": [
+              {
+                "if": {
+                  "flag": "director_pending_dispute"
+                },
+                "add": 1
+              }
+            ]
+          },
+          "pass": {
+            "to": "appeal_examiner_success"
+          },
+          "fail": {
+            "to": "planting_active"
+          },
+          "if": {
+            "has": "expo_examiner_badge",
+            "lacks": "acting_director_badge"
+          }
+        },
+        {
+          "id": "appeal_biological_evidence",
+          "kind": "action",
+          "text": "CHALLENGE THE BIOLOGICAL EVIDENCE FOR CULTIVATION.",
+          "check": {
+            "id": "ch2_biological_appeal",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              },
+              {
+                "if": {
+                  "flag": "director_pending_dispute"
+                },
+                "add": 1
+              }
+            ]
+          },
+          "pass": {
+            "to": "appeal_biology_success"
+          },
+          "fail": {
+            "to": "planting_active"
+          }
+        }
+      ]
+    },
+    "appeal_house_success": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "appeal_house_equipment"
+        }
+      },
+      "text": "The translator discovers that the House of Tomorrow still claims you as equipment. It cannot plant another exhibit's property without an interdepartmental transfer. Both departments claim exclusive rights to misplace you. A transfer corridor opens.",
+      "choices": [
+        {
+          "id": "take_disputed_transfer_corridor",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "appeal_director_success": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "appeal_director"
+        }
+      },
+      "text": "Your Acting Director credential registers an authorized suspension. The plant's objection is referred to a committee scheduled to meet after the next growing season. A personnel exit unlocks.",
+      "choices": [
+        {
+          "id": "take_director_personnel_exit",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "appeal_examiner_success": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "appeal_examiner"
+        }
+      },
+      "text": "After several indignant stamps, the system agrees that an Examiner must not be cultivated before an inspection concludes. The inspection period is indefinite, which suits you.",
+      "choices": [
+        {
+          "id": "leave_under_examiner_protection",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "appeal_biology_success": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "appeal_biological"
+        }
+      },
+      "text": [
+        {
+          "if": {
+            "flag": "thorn_infected"
+          },
+          "text": "Your appeal identifies unresolved biological growth but no permission to cultivate it. The administration cancels the planting order. The thorn infection remains very much your problem."
+        },
+        {
+          "if": {
+            "flag": "spore_infected"
+          },
+          "text": "A confusing but valid distinction is established between having plant matter inside you and belonging to the plant. The planting order is cancelled. The green trace beneath your nail remains."
+        },
+        {
+          "text": "The tribunal finally acknowledges that a person without botanical tissue, consent or a planting permit cannot be automatically registered as soil."
+        }
+      ],
+      "choices": [
+        {
+          "id": "leave_after_biological_appeal",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "planting_active": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "text": "YOUR OBJECTION IS RECEIVED AND REJECTED. THANK YOU FOR YOUR CONTINUED PARTICIPATION.\n\nTwo mechanical arms pin your shoulders as a shallow planting bed rises beneath you. On a plaque: PERSONAL GROWTH AREA - ONE OCCUPANT.",
+      "choices": [
+        {
+          "id": "break_planting_restraints",
+          "kind": "action",
+          "text": "BREAK FREE BEFORE THE PLANTING CYCLE BEGINS.",
+          "check": {
+            "id": "ch2_planting_breakout",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "breakout_success"
+          },
+          "fail": {
+            "to": "breakout_failed"
+          }
+        },
+        {
+          "id": "invoke_existing_equipment_interlock",
+          "kind": "action",
+          "text": "DEMAND THE PROTECTIVE EQUIPMENT-HANDLING INTERLOCK.",
+          "if": {
+            "flag": "equipment_registered"
+          },
+          "to": "reclassification_success"
+        },
+        {
+          "id": "present_examiner_interlock",
+          "kind": "action",
+          "text": "PRESENT THE EXAMINER BADGE AS PROTECTED EXPOSITION EQUIPMENT.",
+          "if": {
+            "has": "expo_examiner_badge",
+            "notFlag": "equipment_registered"
+          },
+          "to": "reclassification_success"
+        },
+        {
+          "id": "file_stapled_equipment_form",
+          "kind": "action",
+          "text": "STAPLE THE REGISTRATION FORM INTO THE MACHINE AND SURRENDER THE STAPLER.",
+          "if": {
+            "has": "red_stapler"
+          },
+          "to": "reclassification_stapler"
+        },
+        {
+          "id": "invoke_director_emergency_override",
+          "kind": "action",
+          "text": "ACTIVATE THE ACTING DIRECTOR EMERGENCY MACHINE OVERRIDE.",
+          "if": {
+            "has": "acting_director_badge"
+          },
+          "to": "reclassification_success"
+        }
+      ]
+    },
+    "reclassification_success": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "emergency_reclassified"
+        }
+      },
+      "text": "The machinery stops. PROTECTED EQUIPMENT MUST NOT BE PLANTED. The restraints release while a new form requests instructions for storing the unplantable object.",
+      "choices": [
+        {
+          "id": "leave_when_planting_stops",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "reclassification_stapler": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "effects": [
+        {
+          "take": [
+            "red_stapler"
+          ]
+        },
+        {
+          "set": {
+            "ch2_exit_route": "emergency_stapler_form"
+          }
+        }
+      ],
+      "text": "You staple the emergency equipment form into the intake. The machine registers the red Swangline as mandatory service hardware and seizes it. The paperwork is accepted. You are rejected for planting.",
+      "choices": [
+        {
+          "id": "leave_without_stapler",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "breakout_success": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "planting_breakout"
+        }
+      },
+      "text": "You wrench a restraint loose and fall through a service grille as the planting bed rises to meet empty air. The machinery issues a warning about missing agricultural material.",
+      "choices": [
+        {
+          "id": "reach_irrigation_after_breakout",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "irrigation_hub"
+        }
+      ]
+    },
+    "breakout_failed": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "text": [
+        {
+          "if": {
+            "flag": "thorn_infected"
+          },
+          "text": "The thorns beneath your skin have already begun to root. The machine detects suitable growth and lowers you into the soil. It has found a perfect fit."
+        },
+        {
+          "if": {
+            "flag": "spore_infected"
+          },
+          "text": "The harmless-looking green trace under your nail unfolds into roots as the machine lowers you. It congratulates itself on accelerating a cultivation already in progress."
+        },
+        {
+          "text": "The restraints hold, but a compatibility alarm rings. SUBJECT DOES NOT MEET MINIMUM GERMINATION REQUIREMENTS. The machinery opens a disposal hatch before it corrects its mistake."
+        }
+      ],
+      "choices": [
+        {
+          "id": "complete_infected_transformation",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "fatal_transformation",
+          "if": {
+            "flag": "thorn_infected"
+          }
+        },
+        {
+          "id": "complete_spore_transformation",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "fatal_transformation",
+          "if": {
+            "flag": "spore_infected",
+            "notFlag": "thorn_infected"
+          }
+        },
+        {
+          "id": "dive_into_incompatible_waste_chute",
+          "kind": "action",
+          "text": "DIVE THROUGH THE WASTE HATCH BEFORE THE MACHINE RECLASSIFIES YOU.",
+          "check": {
+            "id": "ch2_flower_waste_chute",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "waste_chute_escape"
+          },
+          "fail": {
+            "to": "fatal_planting"
+          },
+          "if": {
+            "flagIs": [
+              "botanical_infection_state",
+              "none"
+            ]
+          }
+        }
+      ],
+      "effects": [
+        {
+          "set": {
+            "botanical_infection_state": "none"
+          }
+        },
+        {
+          "if": {
+            "flag": "spore_infected"
+          },
+          "set": {
+            "botanical_infection_state": "infected"
+          }
+        },
+        {
+          "if": {
+            "flag": "thorn_infected"
+          },
+          "set": {
+            "botanical_infection_state": "infected"
+          }
+        }
+      ]
+    },
+    "waste_chute_escape": {
+      "mode": "narrative",
+      "scene": "biology_park/waste_chute",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "flower_waste_chute"
+        }
+      },
+      "text": "You dive into the disposal hatch before the planter realizes you are human again. The chute empties into a forgotten irrigation service passage beneath the greenhouse.",
+      "choices": [
+        {
+          "id": "emerge_from_flower_waste",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "irrigation_hub"
+        }
+      ]
+    },
+    "fatal_transformation": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "end": true,
+      "text": "The automated planter finishes its work. Green growth stretches through your outline until there is no recognizable person left.\n\nCULTIVATION SUCCESSFUL.\n\nENDING - PERSONAL GROWTH.",
+      "choices": [
+        {
+          "id": "restart_flower_transformation",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ]
+    },
+    "fatal_planting": {
+      "mode": "narrative",
+      "scene": "biology_park/planting_machine",
+      "end": true,
+      "text": "The waste hatch snaps shut and the planting arms return. A label is printed and affixed neatly to the growing bed.\n\nENDING - RECLASSIFIED.",
+      "choices": [
+        {
+          "id": "restart_failed_waste",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ]
+    },
+    "translator_controls": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "text": "Sensors threaded through the flower drive a mechanical translator rack. Perforated paper tape feeds orders into an automatic approval reader. A printer reports: REQUEST RECEIVED. REQUEST APPROVED. PREPARING NEXT REQUEST.",
+      "choices": [
+        {
+          "id": "disconnect_biofeedback_cables",
+          "kind": "action",
+          "text": "DISCONNECT THE BIOLOGICAL SENSOR CABLES.",
+          "check": {
+            "id": "ch2_translator_cables",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "sabotage_cable_recoil"
+          },
+          "fail": {
+            "to": "sabotage_cable_alarm"
+          }
+        },
+        {
+          "id": "reroute_approval_punch_tape",
+          "kind": "action",
+          "text": "ALTER THE NORMAL PUNCH-TAPE FEED PATH.",
+          "to": "sabotage_tape_stalled"
+        },
+        {
+          "id": "staple_punch_tape_loop",
+          "kind": "action",
+          "text": "BEND THE MOVING PUNCH TAPE INTO A LOOP AND STAPLE IT SHUT.",
+          "check": {
+            "id": "ch2_stapled_punch_tape",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "sabotage_staple_stalled"
+          },
+          "fail": {
+            "to": "sabotage_staple_alarm"
+          },
+          "if": {
+            "has": "red_stapler"
+          }
+        },
+        {
+          "id": "jam_feed_with_clicker",
+          "kind": "action",
+          "text": "WEDGE THE TIMING CLICKER INTO THE TRANSLATOR FEED.",
+          "if": {
+            "has": "timing_clicker"
+          },
+          "to": "sabotage_clicker_stalled"
+        },
+        {
+          "id": "jam_feed_with_rubber_ball",
+          "kind": "action",
+          "text": "JAM THE FEED WITH THE RUBBER-BAND BALL.",
+          "if": {
+            "has": "rubber_band_ball"
+          },
+          "to": "sabotage_rubber_stalled"
+        }
+      ]
+    },
+    "sabotage_cable_recoil": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "effects": {
+        "set": {
+          "roots_recoiled": true
+        }
+      },
+      "text": "The exposed cables tear free with a loud report. The flower recoils from the feedback. Roots withdraw from a greenhouse wall and expose a heavy service door. Meanwhile the new approval queue stops moving.",
+      "choices": [
+        {
+          "id": "choose_recoil_escape",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "sabotage_window"
+        }
+      ]
+    },
+    "sabotage_cable_alarm": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "text": "The cable breaks at the wrong point. A warning bell summons the roots instead of making them recoil. One twists around the floor beneath you and tips you toward an unfinished service duct.",
+      "choices": [
+        {
+          "id": "crawl_clear_of_cable_alarm",
+          "kind": "action",
+          "text": "SLIDE INTO THE SERVICE DUCT BEFORE THE ROOTS CLOSE IT.",
+          "check": {
+            "id": "ch2_cable_alarm_escape",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "cable_alarm_survived"
+          },
+          "fail": {
+            "to": "fatal_roots"
+          }
+        }
+      ]
+    },
+    "cable_alarm_survived": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "cable_alarm_duct"
+        }
+      },
+      "text": "You clear the duct as the roots knot themselves across the doorway. The tunnel leads directly into Lower Irrigation Services.",
+      "choices": [
+        {
+          "id": "escape_cables_into_irrigation",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "irrigation_hub"
+        }
+      ]
+    },
+    "fatal_roots": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "end": true,
+      "text": "The roots draw together and the overhead machine returns to its orderly processing. A new request is filed for one additional buried fixture.\n\nENDING - SITE IMPROVEMENT.",
+      "choices": [
+        {
+          "id": "restart_roots",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ]
+    },
+    "sabotage_tape_stalled": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "text": "You reroute the paper tape through its own feed guide. The reader begins accepting the same unfinished application repeatedly. New orders stop processing, though the roots already in the building continue growing.",
+      "choices": [
+        {
+          "id": "use_paper_delay",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "sabotage_window"
+        }
+      ]
+    },
+    "sabotage_staple_stalled": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "text": "The stapled tape runs in a perfect loop.\n\nREQUEST RECEIVED. REQUEST RECEIVED. REQUEST ALREADY RECEIVED. REQUEST RECEIVED.\n\nThe reader becomes too busy acknowledging its own paperwork to process another order.",
+      "choices": [
+        {
+          "id": "use_stapled_delay",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "sabotage_window"
+        }
+      ]
+    },
+    "sabotage_staple_alarm": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "text": "The metal join catches. The tape tears with a snap and a fault alarm erupts from the reader. A temporary halt leaves you seconds before the machinery clears itself.",
+      "choices": [
+        {
+          "id": "flee_staple_failure",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "sabotage_window"
+        }
+      ]
+    },
+    "sabotage_clicker_stalled": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "effects": {
+        "take": [
+          "timing_clicker"
+        ]
+      },
+      "text": "The timing clicker jams the feed rollers. The machine prints an apology and waits to be recalibrated. There is enough time to run.",
+      "choices": [
+        {
+          "id": "flee_clicker_jam",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "sabotage_window"
+        }
+      ]
+    },
+    "sabotage_rubber_stalled": {
+      "mode": "narrative",
+      "scene": "biology_park/translator_machine",
+      "effects": {
+        "take": [
+          "rubber_band_ball"
+        ]
+      },
+      "text": "The rubber-band ball is swallowed by the guide rollers. The reader tries three times to classify it as a document, then stops. The floor trembles as the plant continues growing.",
+      "choices": [
+        {
+          "id": "flee_rubber_jam",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "sabotage_window"
+        }
+      ]
+    },
+    "sabotage_window": {
+      "mode": "narrative",
+      "scene": "biology_park/central_flower",
+      "text": "New requests are delayed. The old approvals remain perfectly valid, and the plant is still enlarging. A perimeter walkway leads toward the Environmental Control Tower.",
+      "choices": [
+        {
+          "id": "run_to_tower_first_visit",
+          "kind": "action",
+          "text": "RUN THROUGH THE TOWER WHILE THE APPROVAL SYSTEM IS STALLED.",
+          "if": {
+            "notFlag": "tower_visited"
+          },
+          "to": "tower_late_entry"
+        },
+        {
+          "id": "run_past_visited_tower",
+          "kind": "action",
+          "text": "RUN PAST THE ALREADY INSPECTED CONTROL TOWER.",
+          "if": {
+            "flag": "tower_visited"
+          },
+          "to": "tower_bypass_exit"
+        },
+        {
+          "id": "take_root_exposed_service_door",
+          "kind": "action",
+          "text": "ENTER THE SERVICE DOOR EXPOSED BY RETRACTING ROOTS.",
+          "if": {
+            "flag": "roots_recoiled"
+          },
+          "effects": {
+            "set": {
+              "ch2_exit_route": "translator_root_door"
+            }
+          },
+          "to": "irrigation_hub"
+        }
+      ]
+    },
+    "tower_late_entry": {
+      "mode": "narrative",
+      "scene": "biology_park/control_tower",
+      "effects": {
+        "set": {
+          "tower_visited": true
+        }
+      },
+      "text": [
+        {
+          "if": {
+            "flag": "office_spore_inundation"
+          },
+          "text": "You reach the tower through a rear walkway. Spores you diverted into its ducts have transformed the offices into a green choking thicket. The authorization console still works, barely. The way to the public building is beyond it."
+        },
+        {
+          "text": "You enter the tower by a rear walkway. The authorization archive is unlocked. The other exit leads toward the Exposition's ordinary public halls."
+        }
+      ],
+      "choices": [
+        {
+          "id": "read_late_tower_archive",
+          "kind": "action",
+          "text": "INSPECT THE AUTHORITIES BEHIND THE FLOWER'S REQUESTS.",
+          "to": "tower_late_records"
+        },
+        {
+          "id": "leave_late_tower",
+          "kind": "action",
+          "text": "TAKE THE TOWER-SIDE EXIT TO THE MAIN BUILDING.",
+          "effects": {
+            "set": {
+              "ch2_exit_route": "sabotage_tower_escape"
+            }
+          },
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "tower_late_records": {
+      "mode": "narrative",
+      "scene": "biology_park/authorization_archive",
+      "effects": {
+        "set": {
+          "expansion_orders_seen": true
+        }
+      },
+      "text": "The requests originated with Botanical Specimen 001 and were approved by Environmental Management, first by people and later by the office machinery itself. The plant learned the approval pattern without ever learning the meaning of a bathroom.",
+      "choices": [
+        {
+          "id": "leave_after_late_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging",
+          "effects": {
+            "set": {
+              "ch2_exit_route": "sabotage_tower_archives"
+            }
+          }
+        }
+      ]
+    },
+    "tower_bypass_exit": {
+      "mode": "narrative",
+      "scene": "biology_park/control_tower",
+      "effects": {
+        "set": {
+          "ch2_exit_route": "sabotage_tower_bypass"
+        }
+      },
+      "text": "You pass the Environmental Control Tower by the same walkway used earlier. The file cabinets have not moved, except for the ones pulled into the walls by roots. A tower-side emergency egress opens toward the main building.",
+      "choices": [
+        {
+          "id": "leave_tower_bypass",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "public_exit_staging"
+        }
+      ]
+    },
+    "irrigation_hub": {
+      "mode": "narrative",
+      "scene": "biology_park/lower_irrigation",
+      "text": "Lower Irrigation Services is an old concrete passage beneath the Park. Water pipes throb behind the walls. A maintenance emergency door leads out of the botanical district, beside a neglected decontamination locker.",
+      "choices": [
+        {
+          "id": "find_maintenance_service_exit",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "maintenance_exit_staging"
+        }
+      ]
+    },
+    "public_exit_staging": {
+      "mode": "narrative",
+      "scene": "biology_park/public_exit",
+      "text": "A personnel exit leads back toward the main Exposition. Beside the steel door hangs a closed first-aid box with a botanical exposure pictogram. The seal on its hinged lid looks old.",
+      "choices": [
+        {
+          "id": "open_public_wall_aid",
+          "kind": "action",
+          "text": "INSPECT THE CLOSED FIRST-AID BOX BESIDE THE EXIT.",
+          "if": {
+            "notFlag": "public_kit_handled"
+          },
+          "to": "public_kit_focus"
+        },
+        {
+          "id": "leave_through_public_door",
+          "kind": "action",
+          "text": "LEAVE BIOLOGY PARK THROUGH THE PUBLIC DOOR.",
+          "to": "end_public"
+        }
+      ],
+      "use": {
+        "botanical_antidote_public": {
+          "check": {
+            "id": "ch2_public_inventory_use",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "effects": {
+            "take": [
+              "botanical_antidote_public"
+            ]
+          },
+          "pass": {
+            "result": "The injector clicks and empties. The unsettling biological sensations fade. An indicator confirms complete reversal of botanical contamination.",
+            "effects": {
+              "set": {
+                "spore_infected": false,
+                "thorn_infected": false
+              }
+            }
+          },
+          "fail": {
+            "result": "The expired medicine has no effect. The troubling biological signs remain exactly as they were."
+          }
+        }
+      }
+    },
+    "maintenance_exit_staging": {
+      "mode": "narrative",
+      "scene": "biology_park/maintenance_exit",
+      "text": "The maintenance exit is an unadorned steel door. Next to it sits an industrial decontamination locker, long neglected but still sealed. It is not the public first-aid box.",
+      "choices": [
+        {
+          "id": "open_maintenance_aid",
+          "kind": "action",
+          "text": "INSPECT THE MAINTENANCE DECONTAMINATION LOCKER.",
+          "if": {
+            "notFlag": "maintenance_kit_handled"
+          },
+          "to": "maintenance_kit_focus"
+        },
+        {
+          "id": "leave_through_maintenance_door",
+          "kind": "action",
+          "text": "TAKE THE MAINTENANCE EXIT OUT OF BIOLOGY PARK.",
+          "to": "end_maintenance"
+        }
+      ],
+      "use": {
+        "botanical_antidote_maintenance": {
+          "check": {
+            "id": "ch2_maintenance_inventory_use",
+            "sides": 6,
+            "need": 4,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "effects": {
+            "take": [
+              "botanical_antidote_maintenance"
+            ]
+          },
+          "pass": {
+            "result": "The injector clicks and empties. The unsettling biological sensations fade. An indicator confirms complete reversal of botanical contamination.",
+            "effects": {
+              "set": {
+                "spore_infected": false,
+                "thorn_infected": false
+              }
+            }
+          },
+          "fail": {
+            "result": "The expired medicine has no effect. The troubling biological signs remain exactly as they were."
+          }
+        }
+      }
+    },
+    "customs_exit": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "text": "Agricultural Customs has cleared your departure. Beside the shipment gate stands an inspection alcove with a small botanical-exposure treatment dispenser. You are free to pass, but the dispenser is optional.",
+      "choices": [
+        {
+          "id": "open_customs_aid",
+          "kind": "action",
+          "text": "INSPECT THE CUSTOMS EXPOSURE DISPENSER.",
+          "if": {
+            "notFlag": "customs_kit_handled"
+          },
+          "to": "customs_kit_focus"
+        },
+        {
+          "id": "leave_cargo_checkpoint",
+          "kind": "action",
+          "text": "PASS THROUGH THE AGRICULTURAL SHIPMENT GATE.",
+          "to": "end_customs"
+        }
+      ],
+      "use": {
+        "botanical_antidote_customs": {
+          "check": {
+            "id": "ch2_customs_inventory_use",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "effects": {
+            "take": [
+              "botanical_antidote_customs"
+            ]
+          },
+          "pass": {
+            "result": "The injector clicks and empties. The unsettling biological sensations fade. An indicator confirms complete reversal of botanical contamination.",
+            "effects": {
+              "set": {
+                "spore_infected": false,
+                "thorn_infected": false
+              }
+            }
+          },
+          "fail": {
+            "result": "The expired medicine has no effect. The troubling biological signs remain exactly as they were."
+          }
+        }
+      }
+    },
+    "public_kit_focus": {
+      "mode": "focus",
+      "scene": "biology_park/public_exit",
+      "focus": "biology_park/public_exit/aid_box_open",
+      "text": "The first-aid box swings open, revealing a chunky medical injector secured beside a glass vial. It is an old botanical-exposure antidote. The label is folded beneath a metal clip.",
+      "choices": [
+        {
+          "id": "read_public_expiry",
+          "kind": "action",
+          "text": "READ THE SMALL EXPIRATION AND HANDLING LABEL.",
+          "to": "public_kit_read_focus"
+        },
+        {
+          "id": "use_public_from_open_kit",
+          "kind": "action",
+          "text": "USE THE ANTIDOTE DIRECTLY FROM THE OPEN KIT.",
+          "check": {
+            "id": "ch2_public_kit_direct",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "pass": {
+            "to": "public_exit_staging",
+            "effects": [
+              {
+                "set": {
+                  "public_kit_handled": true,
+                  "public_kit_spent": true
+                }
+              },
+              {
+                "set": {
+                  "spore_infected": false,
+                  "thorn_infected": false
+                }
+              }
+            ]
+          },
+          "fail": {
+            "to": "public_exit_staging",
+            "effects": {
+              "set": {
+                "public_kit_handled": true,
+                "public_kit_spent": true
+              }
+            }
+          }
+        },
+        {
+          "id": "close_public_kit_and_take",
+          "kind": "action",
+          "text": "CLOSE THE KIT AND POCKET THE ANTIDOTE INJECTOR.",
+          "back": true,
+          "effects": {
+            "give": [
+              "botanical_antidote_public"
+            ],
+            "set": {
+              "public_kit_handled": true,
+              "public_kit_taken": true
+            }
+          }
+        }
+      ],
+      "scenePickup": {
+        "id": "public_antidote_box",
+        "title": "PUBLIC FIRST-AID BOX",
+        "item": "botanical_antidote_public",
+        "readChoice": "read_public_expiry",
+        "useChoice": "use_public_from_open_kit",
+        "closeChoice": "close_public_kit_and_take"
+      }
+    },
+    "public_kit_read_focus": {
+      "mode": "focus",
+      "scene": "biology_park/public_exit",
+      "focus": "biology_park/public_exit/aid_box_open",
+      "text": "You lift the folded label.\n\nANTIDOTE FOR EXPERIMENTAL BOTANICAL EXPOSURE. EXPIRATION: 1977.\n\nThe medicine is decades out of date. The quality of this supply is uncertain; the infection may be too well established for it to work.",
+      "choices": [
+        {
+          "id": "use_public_after_read",
+          "kind": "action",
+          "text": "USE THE EXPIRED ANTIDOTE ANYWAY.",
+          "check": {
+            "id": "ch2_public_kit_read_use",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "pass": {
+            "to": "public_exit_staging",
+            "effects": [
+              {
+                "set": {
+                  "public_kit_handled": true,
+                  "public_kit_spent": true
+                }
+              },
+              {
+                "set": {
+                  "spore_infected": false,
+                  "thorn_infected": false
+                }
+              }
+            ]
+          },
+          "fail": {
+            "to": "public_exit_staging",
+            "effects": {
+              "set": {
+                "public_kit_handled": true,
+                "public_kit_spent": true
+              }
+            }
+          }
+        },
+        {
+          "id": "close_public_read_kit_and_take",
+          "kind": "action",
+          "text": "CLOSE THE KIT AND TAKE THE INJECTOR.",
+          "back": true,
+          "effects": {
+            "give": [
+              "botanical_antidote_public"
+            ],
+            "set": {
+              "public_kit_handled": true,
+              "public_kit_taken": true
+            }
+          }
+        }
+      ],
+      "scenePickup": {
+        "id": "public_antidote_box",
+        "title": "PUBLIC FIRST-AID BOX",
+        "item": "botanical_antidote_public",
+        "readChoice": null,
+        "useChoice": "use_public_after_read",
+        "closeChoice": "close_public_read_kit_and_take"
+      }
+    },
+    "maintenance_kit_focus": {
+      "mode": "focus",
+      "scene": "biology_park/maintenance_exit",
+      "focus": "biology_park/maintenance_exit/decontamination_kit_open",
+      "text": "The industrial decontamination locker swings open, revealing a chunky medical injector secured beside a glass vial. It is an old botanical-exposure antidote. The label is folded beneath a metal clip.",
+      "choices": [
+        {
+          "id": "read_maintenance_expiry",
+          "kind": "action",
+          "text": "READ THE SMALL EXPIRATION AND HANDLING LABEL.",
+          "to": "maintenance_kit_read_focus"
+        },
+        {
+          "id": "use_maintenance_from_open_kit",
+          "kind": "action",
+          "text": "USE THE ANTIDOTE DIRECTLY FROM THE OPEN KIT.",
+          "check": {
+            "id": "ch2_maintenance_kit_direct",
+            "sides": 6,
+            "need": 4,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "pass": {
+            "to": "maintenance_exit_staging",
+            "effects": [
+              {
+                "set": {
+                  "maintenance_kit_handled": true,
+                  "maintenance_kit_spent": true
+                }
+              },
+              {
+                "set": {
+                  "spore_infected": false,
+                  "thorn_infected": false
+                }
+              }
+            ]
+          },
+          "fail": {
+            "to": "maintenance_exit_staging",
+            "effects": {
+              "set": {
+                "maintenance_kit_handled": true,
+                "maintenance_kit_spent": true
+              }
+            }
+          }
+        },
+        {
+          "id": "close_maintenance_kit_and_take",
+          "kind": "action",
+          "text": "CLOSE THE KIT AND POCKET THE ANTIDOTE INJECTOR.",
+          "back": true,
+          "effects": {
+            "give": [
+              "botanical_antidote_maintenance"
+            ],
+            "set": {
+              "maintenance_kit_handled": true,
+              "maintenance_kit_taken": true
+            }
+          }
+        }
+      ],
+      "scenePickup": {
+        "id": "maintenance_antidote_box",
+        "title": "MAINTENANCE DECONTAMINATION LOCKER",
+        "item": "botanical_antidote_maintenance",
+        "readChoice": "read_maintenance_expiry",
+        "useChoice": "use_maintenance_from_open_kit",
+        "closeChoice": "close_maintenance_kit_and_take"
+      }
+    },
+    "maintenance_kit_read_focus": {
+      "mode": "focus",
+      "scene": "biology_park/maintenance_exit",
+      "focus": "biology_park/maintenance_exit/decontamination_kit_open",
+      "text": "You lift the folded label.\n\nANTIDOTE FOR EXPERIMENTAL BOTANICAL EXPOSURE. EXPIRATION: 1969.\n\nThe medicine is decades out of date. The quality of this supply is uncertain; the infection may be too well established for it to work.",
+      "choices": [
+        {
+          "id": "use_maintenance_after_read",
+          "kind": "action",
+          "text": "USE THE EXPIRED ANTIDOTE ANYWAY.",
+          "check": {
+            "id": "ch2_maintenance_kit_read_use",
+            "sides": 6,
+            "need": 4,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "pass": {
+            "to": "maintenance_exit_staging",
+            "effects": [
+              {
+                "set": {
+                  "maintenance_kit_handled": true,
+                  "maintenance_kit_spent": true
+                }
+              },
+              {
+                "set": {
+                  "spore_infected": false,
+                  "thorn_infected": false
+                }
+              }
+            ]
+          },
+          "fail": {
+            "to": "maintenance_exit_staging",
+            "effects": {
+              "set": {
+                "maintenance_kit_handled": true,
+                "maintenance_kit_spent": true
+              }
+            }
+          }
+        },
+        {
+          "id": "close_maintenance_read_kit_and_take",
+          "kind": "action",
+          "text": "CLOSE THE KIT AND TAKE THE INJECTOR.",
+          "back": true,
+          "effects": {
+            "give": [
+              "botanical_antidote_maintenance"
+            ],
+            "set": {
+              "maintenance_kit_handled": true,
+              "maintenance_kit_taken": true
+            }
+          }
+        }
+      ],
+      "scenePickup": {
+        "id": "maintenance_antidote_box",
+        "title": "MAINTENANCE DECONTAMINATION LOCKER",
+        "item": "botanical_antidote_maintenance",
+        "readChoice": null,
+        "useChoice": "use_maintenance_after_read",
+        "closeChoice": "close_maintenance_read_kit_and_take"
+      }
+    },
+    "customs_kit_focus": {
+      "mode": "focus",
+      "scene": "biology_park/agricultural_customs",
+      "focus": "biology_park/agricultural_customs/exposure_dispenser_open",
+      "text": "The agricultural exposure dispenser swings open, revealing a chunky medical injector secured beside a glass vial. It is an old botanical-exposure antidote. The label is folded beneath a metal clip.",
+      "choices": [
+        {
+          "id": "read_customs_expiry",
+          "kind": "action",
+          "text": "READ THE SMALL EXPIRATION AND HANDLING LABEL.",
+          "to": "customs_kit_read_focus"
+        },
+        {
+          "id": "use_customs_from_open_kit",
+          "kind": "action",
+          "text": "USE THE ANTIDOTE DIRECTLY FROM THE OPEN KIT.",
+          "check": {
+            "id": "ch2_customs_kit_direct",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "pass": {
+            "to": "customs_exit",
+            "effects": [
+              {
+                "set": {
+                  "customs_kit_handled": true,
+                  "customs_kit_spent": true
+                }
+              },
+              {
+                "set": {
+                  "spore_infected": false,
+                  "thorn_infected": false
+                }
+              }
+            ]
+          },
+          "fail": {
+            "to": "customs_exit",
+            "effects": {
+              "set": {
+                "customs_kit_handled": true,
+                "customs_kit_spent": true
+              }
+            }
+          }
+        },
+        {
+          "id": "close_customs_kit_and_take",
+          "kind": "action",
+          "text": "CLOSE THE KIT AND POCKET THE ANTIDOTE INJECTOR.",
+          "back": true,
+          "effects": {
+            "give": [
+              "botanical_antidote_customs"
+            ],
+            "set": {
+              "customs_kit_handled": true,
+              "customs_kit_taken": true
+            }
+          }
+        }
+      ],
+      "scenePickup": {
+        "id": "customs_antidote_box",
+        "title": "AGRICULTURAL EXPOSURE DISPENSER",
+        "item": "botanical_antidote_customs",
+        "readChoice": "read_customs_expiry",
+        "useChoice": "use_customs_from_open_kit",
+        "closeChoice": "close_customs_kit_and_take"
+      }
+    },
+    "customs_kit_read_focus": {
+      "mode": "focus",
+      "scene": "biology_park/agricultural_customs",
+      "focus": "biology_park/agricultural_customs/exposure_dispenser_open",
+      "text": "You lift the folded label.\n\nANTIDOTE FOR EXPERIMENTAL BOTANICAL EXPOSURE. EXPIRATION: 1981.\n\nThe medicine is decades out of date. The quality of this supply is uncertain; the infection may be too well established for it to work.",
+      "choices": [
+        {
+          "id": "use_customs_after_read",
+          "kind": "action",
+          "text": "USE THE EXPIRED ANTIDOTE ANYWAY.",
+          "check": {
+            "id": "ch2_customs_kit_read_use",
+            "sides": 6,
+            "need": 3,
+            "mods": [
+              {
+                "if": {
+                  "flag": "spore_infected",
+                  "notFlag": "thorn_infected"
+                },
+                "add": -1
+              },
+              {
+                "if": {
+                  "flag": "thorn_infected"
+                },
+                "add": -2
+              }
+            ]
+          },
+          "pass": {
+            "to": "customs_exit",
+            "effects": [
+              {
+                "set": {
+                  "customs_kit_handled": true,
+                  "customs_kit_spent": true
+                }
+              },
+              {
+                "set": {
+                  "spore_infected": false,
+                  "thorn_infected": false
+                }
+              }
+            ]
+          },
+          "fail": {
+            "to": "customs_exit",
+            "effects": {
+              "set": {
+                "customs_kit_handled": true,
+                "customs_kit_spent": true
+              }
+            }
+          }
+        },
+        {
+          "id": "close_customs_read_kit_and_take",
+          "kind": "action",
+          "text": "CLOSE THE KIT AND TAKE THE INJECTOR.",
+          "back": true,
+          "effects": {
+            "give": [
+              "botanical_antidote_customs"
+            ],
+            "set": {
+              "customs_kit_handled": true,
+              "customs_kit_taken": true
+            }
+          }
+        }
+      ],
+      "scenePickup": {
+        "id": "customs_antidote_box",
+        "title": "AGRICULTURAL EXPOSURE DISPENSER",
+        "item": "botanical_antidote_customs",
+        "readChoice": null,
+        "useChoice": "use_customs_after_read",
+        "closeChoice": "close_customs_read_kit_and_take"
+      }
+    },
+    "end_public": {
+      "mode": "narrative",
+      "scene": "biology_park/exposition_concourse",
+      "end": true,
+      "effects": {
+        "set": {
+          "chapter3_entry_group": "public_concourse"
+        }
+      },
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "appeal_house_equipment"
+            ]
+          },
+          "text": "The transfer corridor delivers you into the main Exposition under a still-pending ownership dispute. The House continues to claim you as equipment. Biology Park has not withdrawn its interest. You remain in urgent need of a working bathroom."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "appeal_director"
+            ]
+          },
+          "text": "You leave through the personnel corridor with a Director's authority that apparently extends to deciding not to be planted. A notice promises your suspension order will receive prompt consideration."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "appeal_examiner"
+            ]
+          },
+          "text": "You escape as an Examiner whose inspection has not yet officially concluded. The flower can wait for its determination. Your own bathroom request remains pending."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "appeal_biological"
+            ]
+          },
+          "text": "The legal cultivation order is cancelled. Whether the growth inside you has agreed to the same arrangement is less certain. You reach the Exposition concourse."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "emergency_stapler_form"
+            ]
+          },
+          "text": "You reach the public concourse while the Park catalogues your confiscated red stapler as protected equipment. It has finally succeeded at registering one thing correctly."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "emergency_reclassified"
+            ]
+          },
+          "text": "The planting apparatus has acknowledged your protected status. You pass into the Exposition as somebody no longer considered a suitable flowerpot."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "sabotage_tower_archives"
+            ]
+          },
+          "text": "You bring knowledge of the plant's self-approved expansion through the tower's public-side exit. The original authorizations remain in force, and the system is already trying to repair its tape."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "sabotage_tower_bypass"
+            ]
+          },
+          "text": "You take the tower-side emergency corridor without repeating your earlier inspection. The administrative interruption may last minutes. The green wall of Biology Park still advances."
+        },
+        {
+          "text": "You escape through the Environmental Control Tower's public-side exit while its authorization machinery remains temporarily occupied with the same request."
+        }
+      ],
+      "choices": [
+        {
+          "id": "restart_ch2_public",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "storyboardNextChapter": "chapter-03",
+      "notes": "\nSTORYBOARD-ONLY handoff to Chapter 3. Existing end:true and restart behavior remain for gameplay until future integration."
+    },
+    "end_maintenance": {
+      "mode": "narrative",
+      "scene": "biology_park/maintenance_exit",
+      "end": true,
+      "effects": {
+        "set": {
+          "chapter3_entry_group": "service_infrastructure"
+        }
+      },
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "director_cease"
+            ]
+          },
+          "text": "An official suspension sends you through a personnel stairwell into Lower Irrigation Services and out into the Exposition's service infrastructure. The forest remains technically authorized to grow behind you."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "translator_root_door"
+            ]
+          },
+          "text": "The flower's recoiling roots exposed a hidden service door. You pass through the old irrigation corridors and into the machinery beneath the Exposition. The plant will recover; the door may not remain exposed."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "reserve_power_failure"
+            ]
+          },
+          "text": "The failed reserve tram dumped you under Biology Park. You climb out via the maintenance passages with no robot to congratulate you and no public audience to applaud."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "planting_breakout"
+            ]
+          },
+          "text": "You escaped the compulsory planter by tearing free of its hardware. You emerge into the Exposition's service passages while the machine requests a replacement planting subject."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "flower_waste_chute"
+            ]
+          },
+          "text": "The flower's own waste chute deposited you in the abandoned irrigation system. You escape as unsuitable growing material, which is the best official classification you have had all day."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "cable_alarm_duct"
+            ]
+          },
+          "text": "You outrun the collapsing sensor cables through a low service duct and reach the maintenance wing. The approval system has already begun reporting the incident as normal plant growth."
+        },
+        {
+          "text": "You emerge through an old maintenance door beneath the Park. The giant greenhouse is behind you. The Exposition's service infrastructure stretches ahead, with no evidence of a working bathroom."
+        }
+      ],
+      "choices": [
+        {
+          "id": "restart_ch2_maintenance",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "storyboardNextChapter": "chapter-03",
+      "notes": "\nSTORYBOARD-ONLY handoff to Chapter 3. Existing end:true and restart behavior remain for gameplay until future integration."
+    },
+    "end_customs": {
+      "mode": "narrative",
+      "scene": "biology_park/agricultural_customs",
+      "end": true,
+      "effects": {
+        "set": {
+          "chapter3_entry_group": "public_concourse"
+        }
+      },
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "courier_carried"
+            ]
+          },
+          "text": "The agricultural gate admits you to the main Exposition with a certified canister of viable seeds still in your possession. They have not spread, but you are now personally responsible for where they go."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "courier_surrendered"
+            ]
+          },
+          "text": "You pass into the public concourse without the canister. The seeds have entered the Exposition's distribution network. The plant has found a new department to carry its ambitions."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch2_exit_route",
+              "courier_destroyed"
+            ]
+          },
+          "text": "You leave through Customs after destroying this shipment of viable seeds. The flower is still growing elsewhere. At least one approved expansion has been denied a ride."
+        },
+        {
+          "text": "Customs has classified the ruptured shipment as safely concluded. You reach the public concourse with whatever the leaking seed dust may have left inside you."
+        }
+      ],
+      "choices": [
+        {
+          "id": "restart_ch2_customs",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "storyboardNextChapter": "chapter-03",
+      "notes": "\nSTORYBOARD-ONLY handoff to Chapter 3. Existing end:true and restart behavior remain for gameplay until future integration."
+    }
+  }
+}

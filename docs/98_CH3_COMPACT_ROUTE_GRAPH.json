@@ -1,0 +1,835 @@
+{
+  "schema": "ch3-structure-only-v1",
+  "status": "planning; not playable; identity-surrender and fatal edges provisional",
+  "generated": "2026-11-16",
+  "metrics": {
+    "totalNodes": 49,
+    "choiceHubs": 28,
+    "actionCards": 71,
+    "checks": 11,
+    "entry": {
+      "E_PUBLIC": {
+        "routes": 3873,
+        "minHubs": 5,
+        "maxHubs": 12,
+        "maxVisited": 16,
+        "successes": [
+          "END_ADMIN",
+          "END_UNREG_WIDE",
+          "END_UNREG",
+          "END_BROADCAST",
+          "END_TWO"
+        ],
+        "fatal": [
+          "END_ARCHIVED",
+          "END_RECONCILED"
+        ]
+      },
+      "E_SERVICE": {
+        "routes": 3873,
+        "minHubs": 5,
+        "maxHubs": 12,
+        "maxVisited": 16,
+        "successes": [
+          "END_ADMIN",
+          "END_UNREG_WIDE",
+          "END_UNREG",
+          "END_BROADCAST",
+          "END_TWO"
+        ],
+        "fatal": [
+          "END_ARCHIVED",
+          "END_RECONCILED"
+        ]
+      },
+      "E_TRAM": {
+        "routes": 3873,
+        "minHubs": 5,
+        "maxHubs": 12,
+        "maxVisited": 16,
+        "successes": [
+          "END_ADMIN",
+          "END_UNREG_WIDE",
+          "END_UNREG",
+          "END_BROADCAST",
+          "END_TWO"
+        ],
+        "fatal": [
+          "END_ARCHIVED",
+          "END_RECONCILED"
+        ]
+      }
+    },
+    "unresolvedTargets": [],
+    "allTerminals": [
+      {
+        "id": "END_ADMIN",
+        "type": "success"
+      },
+      {
+        "id": "END_UNREG",
+        "type": "success"
+      },
+      {
+        "id": "END_UNREG_WIDE",
+        "type": "success"
+      },
+      {
+        "id": "END_TWO",
+        "type": "success"
+      },
+      {
+        "id": "END_BROADCAST",
+        "type": "success"
+      },
+      {
+        "id": "END_RECONCILED",
+        "type": "fatal"
+      },
+      {
+        "id": "END_ARCHIVED",
+        "type": "fatal"
+      }
+    ]
+  },
+  "nodes": {
+    "E_PUBLIC": {
+      "type": "entry",
+      "desc": "Public concourse",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "ATTEND",
+          "kind": "continue"
+        }
+      ]
+    },
+    "E_SERVICE": {
+      "type": "entry",
+      "desc": "Service infrastructure",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "ATTEND",
+          "kind": "continue"
+        }
+      ]
+    },
+    "E_TRAM": {
+      "type": "entry",
+      "desc": "Underground tram",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "ATTEND",
+          "kind": "continue"
+        }
+      ]
+    },
+    "ATTEND": {
+      "type": "scene",
+      "desc": "Attendance demonstration — initial route commitment",
+      "choices": [
+        {
+          "label": "Follow Human Requirements",
+          "to": "HUMAN"
+        },
+        {
+          "label": "Dispute completed visit",
+          "to": "B_VISIT"
+        },
+        {
+          "label": "Inspect exhibit operations",
+          "to": "C_CONTROL"
+        }
+      ]
+    },
+    "HUMAN": {
+      "type": "scene",
+      "desc": "Human Requirements exhibit",
+      "choices": [
+        {
+          "label": "Cross the restroom exhibit barrier",
+          "to": "SATISFY"
+        },
+        {
+          "label": "Follow working-water service pipe",
+          "to": "A_PLUMB"
+        },
+        {
+          "label": "Register as live demonstrator",
+          "to": "A_DEMO"
+        }
+      ]
+    },
+    "A_PLUMB": {
+      "type": "scene",
+      "desc": "Pipe reveals maintenance path; one-way tech transfer",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "C_CONTROL",
+          "kind": "continue"
+        }
+      ]
+    },
+    "A_DEMO": {
+      "type": "scene",
+      "desc": "Demonstrator record is sent for anticipated-conduct review; no immediate short-circuit to finale",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "B_CONDUCT",
+          "kind": "continue"
+        }
+      ]
+    },
+    "SATISFY": {
+      "type": "scene",
+      "desc": "Satisfaction Demonstration",
+      "choices": [
+        {
+          "label": "Certify satisfaction and accept record",
+          "to": "RECORDS"
+        },
+        {
+          "label": "Refuse the prewritten transcript",
+          "to": "A_REVIEW"
+        },
+        {
+          "label": "Pull the projection curtain's release",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "rubber_band_ball +1",
+            "pass": "A_BACKSTAGE",
+            "fail": "CORRECTION"
+          }
+        }
+      ]
+    },
+    "A_REVIEW": {
+      "type": "scene",
+      "desc": "Refusal recorded; one-way transfer to anticipated-conduct records",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "B_CONDUCT",
+          "kind": "continue"
+        }
+      ]
+    },
+    "A_BACKSTAGE": {
+      "type": "scene",
+      "desc": "Toilet rolls backstage; maintenance opening",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "C_CONTROL",
+          "kind": "continue"
+        }
+      ]
+    },
+    "RECORDS": {
+      "type": "scene",
+      "desc": "Satisfaction Records: certificate / dispute receipt exchange",
+      "choices": [
+        {
+          "label": "Submit certificate for correction",
+          "to": "RECONCILE"
+        },
+        {
+          "label": "Trace a preprinted future account",
+          "to": "A_ORIGREC"
+        },
+        {
+          "label": "Use certificate for provisional staff access",
+          "to": "A_STAFF"
+        }
+      ]
+    },
+    "A_ORIGREC": {
+      "type": "scene",
+      "desc": "Replacement notice and forecast work order, one-way records route",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "B_CONDUCT",
+          "kind": "continue"
+        }
+      ]
+    },
+    "A_STAFF": {
+      "type": "scene",
+      "desc": "Temporary staff status, bathroom still unavailable",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "C_CONTROL",
+          "kind": "continue"
+        }
+      ]
+    },
+    "RECONCILE": {
+      "type": "scene",
+      "desc": "Reconciliation Office",
+      "choices": [
+        {
+          "label": "Request Original Witness's presence",
+          "to": "WITNESS"
+        },
+        {
+          "label": "Demand proof of living body",
+          "to": "A_LIFE"
+        },
+        {
+          "label": "Accept duplicate processing status",
+          "to": "A_SURPLUS"
+        }
+      ]
+    },
+    "A_LIFE": {
+      "type": "scene",
+      "desc": "Proof of Life; infection variants, two choices",
+      "choices": [
+        {
+          "label": "Compare living body to registered Original",
+          "to": "STAGE_ADMIN",
+          "flag": "ch3_separate_identity_evidence"
+        },
+        {
+          "label": "Challenge the unresolved biological classification",
+          "to": "STAGE_RECORDS"
+        }
+      ]
+    },
+    "A_SURPLUS": {
+      "type": "scene",
+      "desc": "Surplus Department; no lethal chute",
+      "choices": [
+        {
+          "label": "Challenge the duplicate routing tag",
+          "to": "STAGE_ADMIN"
+        },
+        {
+          "label": "Follow safe surplus property transfer",
+          "to": "STAGE_TECH"
+        }
+      ]
+    },
+    "WITNESS": {
+      "type": "scene",
+      "desc": "Original Witness",
+      "choices": [
+        {
+          "label": "Ask an unscripted question",
+          "to": "A_WITSTD"
+        },
+        {
+          "label": "Release translucent witness partition",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "timing_clicker +1",
+            "pass": "A_TECHADJ",
+            "fail": "CORRECTION"
+          }
+        },
+        {
+          "label": "Demand photographic evidence",
+          "to": "IMAGE"
+        }
+      ]
+    },
+    "A_WITSTD": {
+      "type": "scene",
+      "desc": "Witness Standards; verified original-specific answer",
+      "choices": [
+        {
+          "label": "Record the Original's unauthorized answer",
+          "to": "STAGE_ADMIN",
+          "flag": "ch3_original_independent_response_seen"
+        },
+        {
+          "label": "Trace the witness speech feed to the hearing control interface",
+          "to": "STAGE_TECH",
+          "flag": "ch3_original_independent_response_seen"
+        }
+      ]
+    },
+    "A_TECHADJ": {
+      "type": "scene",
+      "desc": "Technical Adjustments; original physical nature concealed",
+      "choices": [
+        {
+          "label": "Preserve the fitting order number",
+          "to": "STAGE_RECORDS"
+        },
+        {
+          "label": "Follow moving preparation platform",
+          "to": "C_WORKSHOP"
+        }
+      ]
+    },
+    "IMAGE": {
+      "type": "scene",
+      "desc": "Image Standards Archive; with-photo/no-photo alternative",
+      "choices": [
+        {
+          "label": "Inspect raw photographic negatives",
+          "to": "A_NEGATIVE"
+        },
+        {
+          "label": "Use available proof of physical presence",
+          "to": "A_FOURTH",
+          "when": "family_portrait_photo held",
+          "else": "A_EMPTY"
+        },
+        {
+          "label": "Interrupt image approval processor",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "one suitable tool +1, nonstacking",
+            "pass": "A_EXPOSURE",
+            "fail": "CORRECTION"
+          }
+        }
+      ]
+    },
+    "A_NEGATIVE": {
+      "type": "scene",
+      "desc": "Real negatives depict vacant chairs; subject added later",
+      "choices": [
+        {
+          "label": "Authenticate source registration discrepancy",
+          "to": "STAGE_RECORDS",
+          "flag": "ch3_separate_identity_evidence"
+        },
+        {
+          "label": "Follow the image approval transmission",
+          "to": "C_FEED"
+        }
+      ]
+    },
+    "A_EMPTY": {
+      "type": "scene",
+      "desc": "No-photo route; empty claimant photo with claimant number",
+      "choices": [
+        {
+          "label": "Preserve the empty claimant photograph",
+          "to": "STAGE_ADMIN",
+          "flag": "ch3_separate_identity_evidence"
+        },
+        {
+          "label": "Trace the process that erased the claimant",
+          "to": "C_FEED"
+        }
+      ]
+    },
+    "A_EXPOSURE": {
+      "type": "scene",
+      "desc": "Image Production; partial figure image without face",
+      "choices": [
+        {
+          "label": "Authenticate the unapproved exposure",
+          "to": "STAGE_RECORDS"
+        },
+        {
+          "label": "Follow photographic service cable",
+          "to": "C_FEED"
+        }
+      ]
+    },
+    "A_FOURTH": {
+      "type": "scene",
+      "desc": "The Fourth Chair; optional House photograph payoff",
+      "choices": [
+        {
+          "label": "Submit source conflict and demand a hold",
+          "to": "A_CUSTODY"
+        },
+        {
+          "label": "Trace the three empty household chairs",
+          "to": "A_HOUSEHOLD"
+        },
+        {
+          "label": "Interrupt Original fitting machinery",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "one relevant tool +1, nonstacking",
+            "pass": "A_REPAIR",
+            "fail": "A_CALIBRATION"
+          }
+        }
+      ]
+    },
+    "A_CUSTODY": {
+      "type": "scene",
+      "desc": "Custody; fitting remains suspended",
+      "choices": [
+        {
+          "label": "Request separate source/representation status",
+          "to": "STAGE_ADMIN",
+          "flag": "ch3_separate_identity_evidence"
+        },
+        {
+          "label": "Request direct hearing on Original's custody",
+          "to": "STAGE_RECORDS"
+        }
+      ]
+    },
+    "A_HOUSEHOLD": {
+      "type": "scene",
+      "desc": "Three empty household places; routing strip",
+      "choices": [
+        {
+          "label": "Preserve household routing evidence",
+          "to": "STAGE_RECORDS"
+        },
+        {
+          "label": "Follow retained property transfer",
+          "to": "STAGE_TECH"
+        }
+      ]
+    },
+    "A_REPAIR": {
+      "type": "scene",
+      "desc": "Witness fitting interrupted; sealed mobile witness staging",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "STAGE_TECH",
+          "kind": "continue"
+        }
+      ]
+    },
+    "A_CALIBRATION": {
+      "type": "scene",
+      "desc": "Live Source Calibration; safe refusal or explicitly risky intervention",
+      "choices": [
+        {
+          "label": "Refuse live fitting; request safe hearing",
+          "to": "STAGE_ADMIN"
+        },
+        {
+          "label": "Pull occupied frame emergency release despite fatal risk",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "one appropriate tool +1",
+            "pass": "STAGE_TECH",
+            "fail": "END_RECONCILED"
+          }
+        }
+      ]
+    },
+    "CORRECTION": {
+      "type": "scene",
+      "desc": "Shared nonfatal correction for check failures, no rerolls",
+      "choices": [
+        {
+          "label": "Request supervised review of the corrective order",
+          "to": "STAGE_ADMIN"
+        },
+        {
+          "label": "Follow correction control cables to the hearing's service interface",
+          "to": "STAGE_TECH"
+        }
+      ]
+    },
+    "B_VISIT": {
+      "type": "scene",
+      "desc": "Completed Visit, predicted departure record",
+      "choices": [
+        {
+          "label": "Object to timestamp",
+          "to": "B_CONDUCT",
+          "flag": "pavilion_timestamp_disputed"
+        },
+        {
+          "label": "Queue authorized departure",
+          "to": "B_CONDUCT",
+          "flag": "pavilion_departure_authority_queued"
+        },
+        {
+          "label": "Trace the provenance of the record",
+          "to": "B_CONDUCT",
+          "flag": "pavilion_visit_provenance_seen"
+        }
+      ]
+    },
+    "B_CONDUCT": {
+      "type": "scene",
+      "desc": "Office of Anticipated Conduct: forecasts are work orders",
+      "choices": [
+        {
+          "label": "Preserve order that manufactured satisfaction",
+          "to": "B_GATE",
+          "flag": "pavilion_conduct_order_preserved"
+        },
+        {
+          "label": "Redirect file to departure approval",
+          "to": "B_GATE",
+          "flag": "pavilion_departure_queue_redirected"
+        },
+        {
+          "label": "Create fresh complaint after approved satisfaction",
+          "to": "B_GATE",
+          "flag": "pavilion_live_record_contradiction"
+        }
+      ]
+    },
+    "B_GATE": {
+      "type": "scene",
+      "desc": "Predicted Departure; exactly one main Route B reward",
+      "choices": [
+        {
+          "label": "Acquire Certified Record Discrepancy",
+          "to": "STAGE_RECORDS",
+          "item": "pavilion_certified_record_discrepancy",
+          "flag": "ch3_separate_identity_evidence"
+        },
+        {
+          "label": "Acquire Approved Departure Authorization",
+          "to": "STAGE_RECORDS",
+          "item": "pavilion_approved_departure_authorization"
+        },
+        {
+          "label": "Acquire linked serial provenance strip",
+          "to": "STAGE_RECORDS",
+          "item": "pavilion_registration_provenance_strip",
+          "flag": "ch3_separate_identity_evidence"
+        }
+      ]
+    },
+    "C_CONTROL": {
+      "type": "scene",
+      "desc": "Control Room: analog relay scheduling, bathroom arrow remains inaccessible",
+      "choices": [
+        {
+          "label": "Register a provisional service visit",
+          "to": "C_WORKSHOP",
+          "flag": "pavilion_control_service_session"
+        },
+        {
+          "label": "Trace an unauthorized movement cue",
+          "to": "C_WORKSHOP",
+          "flag": "pavilion_unscripted_cue_traced"
+        },
+        {
+          "label": "Follow the control output cables",
+          "to": "C_WORKSHOP",
+          "flag": "pavilion_cable_access"
+        }
+      ]
+    },
+    "C_WORKSHOP": {
+      "type": "scene",
+      "desc": "Representation Workshop; physical nature unresolved",
+      "choices": [
+        {
+          "label": "Preserve a diagnostic of original-ID movement",
+          "to": "C_FEED",
+          "flag": "ch3_original_independent_response_seen"
+        },
+        {
+          "label": "Disconnect command cable during movement",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "timing_clicker or red_stapler +1, nonstacking",
+            "pass": "C_FEED",
+            "fail": "C_FAIL"
+          },
+          "passFlag": "ch3_original_independent_response_seen"
+        },
+        {
+          "label": "Trace scripted command signal",
+          "to": "C_FEED",
+          "flag": "pavilion_control_source_seen"
+        }
+      ]
+    },
+    "C_FAIL": {
+      "type": "scene",
+      "desc": "Cable locked; unauthorized interference recorded, nonfatal",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "C_FEED",
+          "kind": "continue"
+        }
+      ]
+    },
+    "C_FEED": {
+      "type": "scene",
+      "desc": "Central Presentation Feed; exactly one main Route C reward",
+      "choices": [
+        {
+          "label": "Get Presentation Service Authorization",
+          "to": "STAGE_TECH",
+          "item": "pavilion_presentation_service_authorization"
+        },
+        {
+          "label": "Keep Original's Diagnostic Record",
+          "to": "STAGE_TECH",
+          "item": "pavilion_representation_diagnostic_record",
+          "flag": "ch3_original_independent_response_seen"
+        },
+        {
+          "label": "Copy Broadcast Override Sequence",
+          "to": "STAGE_TECH",
+          "item": "pavilion_broadcast_override_sequence"
+        }
+      ]
+    },
+    "STAGE_ADMIN": {
+      "type": "staging",
+      "desc": "Document/identity hearing prep",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "GRAND",
+          "kind": "continue"
+        }
+      ]
+    },
+    "STAGE_RECORDS": {
+      "type": "staging",
+      "desc": "Docket of two registrations",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "GRAND",
+          "kind": "continue"
+        }
+      ]
+    },
+    "STAGE_TECH": {
+      "type": "staging",
+      "desc": "Authorized service access to hearing",
+      "choices": [
+        {
+          "label": "CONTINUE",
+          "to": "GRAND",
+          "kind": "continue"
+        }
+      ]
+    },
+    "GRAND": {
+      "type": "scene",
+      "desc": "Grand Reconciliation; Original must independently opt for personal exit",
+      "choices": [
+        {
+          "label": "Contest Original's exclusive certification",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "valid documentary evidence +1",
+            "pass": "END_ADMIN",
+            "fail": "DISPOSITION"
+          }
+        },
+        {
+          "label": "Manipulate person registry",
+          "to": "REGISTRY"
+        },
+        {
+          "label": "Ask Original to claim separate identity",
+          "check": {
+            "sides": 6,
+            "need": 5,
+            "bonus": "+1 independent Original response; +1 separate-source evidence; max +2",
+            "pass": "END_TWO",
+            "fail": "DISPOSITION"
+          }
+        }
+      ]
+    },
+    "REGISTRY": {
+      "type": "scene",
+      "desc": "Committed registry methods, no return to GRAND",
+      "choices": [
+        {
+          "label": "Quietly unregister Pavilion claimant only",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "one technical item/access +1",
+            "pass": "END_UNREG",
+            "fail": "DISPOSITION"
+          }
+        },
+        {
+          "label": "Broadcast contradictory certifications Pavilion-wide",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "feed authorization/override +1",
+            "pass": "END_BROADCAST",
+            "fail": "DISPOSITION"
+          }
+        }
+      ]
+    },
+    "DISPOSITION": {
+      "type": "scene",
+      "desc": "After denial; guaranteed safe surrender PROVISIONAL and fatal risky escape PROVISIONAL",
+      "choices": [
+        {
+          "label": "Relinquish all Exposition identity claims and accept safe transfer",
+          "to": "END_UNREG_WIDE",
+          "provisional": true
+        },
+        {
+          "label": "Force hazardous retention shutter against lock",
+          "check": {
+            "sides": 6,
+            "need": 4,
+            "bonus": "one physical tool +1",
+            "pass": "END_UNREG",
+            "fail": "END_ARCHIVED"
+          },
+          "provisional": true
+        }
+      ]
+    },
+    "END_ADMIN": {
+      "type": "success",
+      "desc": "Personally Released",
+      "choices": []
+    },
+    "END_UNREG": {
+      "type": "success",
+      "desc": "No Person Present — Pavilion-only",
+      "choices": []
+    },
+    "END_UNREG_WIDE": {
+      "type": "success",
+      "desc": "No Person Present — Exposition-wide",
+      "choices": []
+    },
+    "END_TWO": {
+      "type": "success",
+      "desc": "Two Persons Depart",
+      "choices": []
+    },
+    "END_BROADCAST": {
+      "type": "success",
+      "desc": "Unapproved Broadcast",
+      "choices": []
+    },
+    "END_RECONCILED": {
+      "type": "fatal",
+      "desc": "Successfully Reconciled",
+      "choices": []
+    },
+    "END_ARCHIVED": {
+      "type": "fatal",
+      "desc": "Permanently Archived",
+      "choices": []
+    }
+  }
+}

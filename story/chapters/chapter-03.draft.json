@@ -1,0 +1,1566 @@
+{
+  "title": "The People's Pavilion — All Persons Accounted For",
+  "start": "pavilion_arrival",
+  "scene": "pavilion/arrival",
+  "nodes": {
+    "attend": {
+      "mode": "narrative",
+      "scene": "pavilion/attendance",
+      "text": "Attendance informs you that your Pavilion visit is already complete and 100 percent satisfactory. A departure photograph shows an empty corridor. You are still here, still needing a bathroom.",
+      "choices": [
+        {
+          "id": "ch3_route_a",
+          "kind": "action",
+          "text": "FOLLOW THE HUMAN REQUIREMENTS SIGN.",
+          "to": "human",
+          "effects": {
+            "set": {
+              "ch3_primary_route": "A"
+            }
+          }
+        },
+        {
+          "id": "ch3_route_b",
+          "kind": "action",
+          "text": "DISPUTE THE COMPLETED VISIT.",
+          "to": "b_visit",
+          "effects": {
+            "set": {
+              "ch3_primary_route": "B"
+            }
+          }
+        },
+        {
+          "id": "ch3_route_c",
+          "kind": "action",
+          "text": "FOLLOW THE EXHIBIT PRINTER INTO OPERATIONS.",
+          "to": "c_control",
+          "effects": {
+            "set": {
+              "ch3_primary_route": "C"
+            }
+          }
+        }
+      ],
+      "notes": "Three narrative routes; Route A and finale remain proposed, not finalized collaboratively."
+    },
+    "human": {
+      "mode": "narrative",
+      "scene": "pavilion/human_requirements",
+      "text": "Human Requirements exhibit.",
+      "choices": [
+        {
+          "id": "human_0",
+          "kind": "action",
+          "text": "CROSS THE RESTROOM EXHIBIT BARRIER",
+          "to": "satisfy"
+        },
+        {
+          "id": "human_1",
+          "kind": "action",
+          "text": "FOLLOW WORKING-WATER SERVICE PIPE",
+          "to": "a_plumb"
+        },
+        {
+          "id": "human_2",
+          "kind": "action",
+          "text": "REGISTER AS LIVE DEMONSTRATOR",
+          "to": "a_demo"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_plumb": {
+      "mode": "narrative",
+      "scene": "pavilion/human_requirements",
+      "text": "Pipe reveals maintenance path; one-way tech transfer.",
+      "choices": [
+        {
+          "id": "a_plumb_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_control"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_demo": {
+      "mode": "narrative",
+      "scene": "pavilion/human_requirements",
+      "text": "Demonstrator record is sent for anticipated-conduct review; no immediate short-circuit to finale.",
+      "choices": [
+        {
+          "id": "a_demo_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "satisfy": {
+      "mode": "narrative",
+      "scene": "pavilion/satisfaction_demo",
+      "text": "Satisfaction Demonstration.",
+      "choices": [
+        {
+          "id": "satisfy_0",
+          "kind": "action",
+          "text": "CERTIFY SATISFACTION AND ACCEPT RECORD",
+          "to": "records"
+        },
+        {
+          "id": "satisfy_1",
+          "kind": "action",
+          "text": "REFUSE THE PREWRITTEN TRANSCRIPT",
+          "to": "a_review"
+        },
+        {
+          "id": "satisfy_2",
+          "kind": "action",
+          "text": "PULL THE PROJECTION CURTAIN'S RELEASE",
+          "check": {
+            "id": "ch3_satisfy_2",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_backstage"
+          },
+          "fail": {
+            "to": "correction"
+          },
+          "notes": "Authoring check; proposed bonus: rubber_band_ball +1"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_review": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Refusal recorded; one-way transfer to anticipated-conduct records.",
+      "choices": [
+        {
+          "id": "a_review_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_backstage": {
+      "mode": "narrative",
+      "scene": "pavilion/satisfaction_demo",
+      "text": "Toilet rolls backstage; maintenance opening.",
+      "choices": [
+        {
+          "id": "a_backstage_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_control"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "records": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Satisfaction Records: certificate / dispute receipt exchange.",
+      "choices": [
+        {
+          "id": "records_0",
+          "kind": "action",
+          "text": "SUBMIT CERTIFICATE FOR CORRECTION",
+          "to": "reconcile"
+        },
+        {
+          "id": "records_1",
+          "kind": "action",
+          "text": "TRACE A PREPRINTED FUTURE ACCOUNT",
+          "to": "a_origrec"
+        },
+        {
+          "id": "records_2",
+          "kind": "action",
+          "text": "USE CERTIFICATE FOR PROVISIONAL STAFF ACCESS",
+          "to": "a_staff"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_origrec": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Replacement notice and forecast work order, one-way records route.",
+      "choices": [
+        {
+          "id": "a_origrec_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_staff": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "Temporary staff status, bathroom still unavailable.",
+      "choices": [
+        {
+          "id": "a_staff_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_control"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "reconcile": {
+      "mode": "narrative",
+      "scene": "pavilion/reconciliation_office",
+      "text": "Reconciliation Office.",
+      "choices": [
+        {
+          "id": "reconcile_0",
+          "kind": "action",
+          "text": "REQUEST ORIGINAL WITNESS'S PRESENCE",
+          "to": "witness"
+        },
+        {
+          "id": "reconcile_1",
+          "kind": "action",
+          "text": "DEMAND PROOF OF LIVING BODY",
+          "to": "a_life"
+        },
+        {
+          "id": "reconcile_2",
+          "kind": "action",
+          "text": "ACCEPT DUPLICATE PROCESSING STATUS",
+          "to": "a_surplus"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_life": {
+      "mode": "narrative",
+      "scene": "pavilion/reconciliation_office",
+      "text": "Proof of Life; infection variants, two choices.",
+      "choices": [
+        {
+          "id": "a_life_0",
+          "kind": "action",
+          "text": "COMPARE LIVING BODY TO REGISTERED ORIGINAL",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_life_1",
+          "kind": "action",
+          "text": "CHALLENGE THE UNRESOLVED BIOLOGICAL CLASSIFICATION",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_surplus": {
+      "mode": "narrative",
+      "scene": "pavilion/surplus_department",
+      "text": "Surplus Department; no lethal chute.",
+      "choices": [
+        {
+          "id": "a_surplus_0",
+          "kind": "action",
+          "text": "CHALLENGE THE DUPLICATE ROUTING TAG",
+          "to": "stage_admin"
+        },
+        {
+          "id": "a_surplus_1",
+          "kind": "action",
+          "text": "FOLLOW SAFE SURPLUS PROPERTY TRANSFER",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "witness": {
+      "mode": "narrative",
+      "scene": "pavilion/original_witness",
+      "text": "Original Witness.",
+      "choices": [
+        {
+          "id": "witness_0",
+          "kind": "action",
+          "text": "ASK AN UNSCRIPTED QUESTION",
+          "to": "a_witstd"
+        },
+        {
+          "id": "witness_1",
+          "kind": "action",
+          "text": "RELEASE TRANSLUCENT WITNESS PARTITION",
+          "check": {
+            "id": "ch3_witness_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_techadj"
+          },
+          "fail": {
+            "to": "correction"
+          },
+          "notes": "Authoring check; proposed bonus: timing_clicker +1"
+        },
+        {
+          "id": "witness_2",
+          "kind": "action",
+          "text": "DEMAND PHOTOGRAPHIC EVIDENCE",
+          "to": "image"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "speaker": "original_witness",
+      "pose": "screened"
+    },
+    "a_witstd": {
+      "mode": "narrative",
+      "scene": "pavilion/original_witness",
+      "text": "Witness Standards; verified original-specific answer.",
+      "choices": [
+        {
+          "id": "a_witstd_0",
+          "kind": "action",
+          "text": "RECORD THE ORIGINAL'S UNAUTHORIZED ANSWER",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_original_independent_response_seen": true
+            }
+          }
+        },
+        {
+          "id": "a_witstd_1",
+          "kind": "action",
+          "text": "TRACE THE WITNESS SPEECH FEED TO THE HEARING CONTROL INTERFACE",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "ch3_original_independent_response_seen": true
+            }
+          }
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_techadj": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "Technical Adjustments; original physical nature concealed.",
+      "choices": [
+        {
+          "id": "a_techadj_0",
+          "kind": "action",
+          "text": "PRESERVE THE FITTING ORDER NUMBER",
+          "to": "stage_records"
+        },
+        {
+          "id": "a_techadj_1",
+          "kind": "action",
+          "text": "FOLLOW MOVING PREPARATION PLATFORM",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "image": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "Image Standards Archive; with-photo/no-photo alternative.",
+      "choices": [
+        {
+          "id": "image_0",
+          "kind": "action",
+          "text": "INSPECT RAW PHOTOGRAPHIC NEGATIVES",
+          "to": "a_negative"
+        },
+        {
+          "id": "image_1",
+          "kind": "action",
+          "text": "SUBMIT THE HOUSE PHOTOGRAPH AS SOURCE EVIDENCE.",
+          "to": "a_fourth",
+          "notes": " Alternative outcome if family_portrait_photo held: a_empty",
+          "if": {
+            "has": "family_portrait_photo"
+          },
+          "displayGroup": "image_source_proof"
+        },
+        {
+          "id": "ch3_image_no_source_photo",
+          "kind": "action",
+          "text": "REQUEST A PHOTOGRAPHIC CLAIMANT CORRECTION — NO HOUSE PHOTO.",
+          "to": "a_empty",
+          "notes": " Alternative outcome if family_portrait_photo held: a_empty",
+          "if": {
+            "lacks": "family_portrait_photo"
+          },
+          "displayGroup": "image_source_proof"
+        },
+        {
+          "id": "image_2",
+          "kind": "action",
+          "text": "INTERRUPT IMAGE APPROVAL PROCESSOR",
+          "check": {
+            "id": "ch3_image_2",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_exposure"
+          },
+          "fail": {
+            "to": "correction"
+          },
+          "notes": "Authoring check; proposed bonus: one suitable tool +1, nonstacking"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_negative": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "Real negatives depict vacant chairs; subject added later.",
+      "choices": [
+        {
+          "id": "a_negative_0",
+          "kind": "action",
+          "text": "AUTHENTICATE SOURCE REGISTRATION DISCREPANCY",
+          "to": "stage_records",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_negative_1",
+          "kind": "action",
+          "text": "FOLLOW THE IMAGE APPROVAL TRANSMISSION",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "focus": "pavilion/image_negative"
+    },
+    "a_empty": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "No-photo route; empty claimant photo with claimant number.",
+      "choices": [
+        {
+          "id": "a_empty_0",
+          "kind": "action",
+          "text": "PRESERVE THE EMPTY CLAIMANT PHOTOGRAPH",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_empty_1",
+          "kind": "action",
+          "text": "TRACE THE PROCESS THAT ERASED THE CLAIMANT",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. Owner-owned alternate evidence must survive without House photograph. A factual empty claimant photograph is produced at this scene.",
+      "effects": {
+        "give": [
+          "pavilion_empty_claimant_photo"
+        ],
+        "set": {
+          "pavilion_empty_photo_captured": true
+        }
+      }
+    },
+    "a_exposure": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "Image Production; partial figure image without face.",
+      "choices": [
+        {
+          "id": "a_exposure_0",
+          "kind": "action",
+          "text": "AUTHENTICATE THE UNAPPROVED EXPOSURE",
+          "to": "stage_records"
+        },
+        {
+          "id": "a_exposure_1",
+          "kind": "action",
+          "text": "FOLLOW PHOTOGRAPHIC SERVICE CABLE",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_fourth": {
+      "mode": "narrative",
+      "scene": "pavilion/fourth_chair",
+      "text": "The Fourth Chair; optional House photograph payoff.",
+      "choices": [
+        {
+          "id": "a_fourth_0",
+          "kind": "action",
+          "text": "SUBMIT SOURCE CONFLICT AND DEMAND A HOLD",
+          "to": "a_custody"
+        },
+        {
+          "id": "a_fourth_1",
+          "kind": "action",
+          "text": "TRACE THE THREE EMPTY HOUSEHOLD CHAIRS",
+          "to": "a_household"
+        },
+        {
+          "id": "a_fourth_2",
+          "kind": "action",
+          "text": "INTERRUPT ORIGINAL FITTING MACHINERY",
+          "check": {
+            "id": "ch3_a_fourth_2",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_repair"
+          },
+          "fail": {
+            "to": "a_calibration"
+          },
+          "notes": "Authoring check; proposed bonus: one relevant tool +1, nonstacking"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. Only reached if family_portrait_photo actually held; the source photograph is scanned and returned, not consumed.",
+      "focus": "pavilion/fourth_chair_source_photo",
+      "effects": {
+        "give": [
+          "pavilion_source_contribution_receipt"
+        ],
+        "set": {
+          "pavilion_house_photo_matched": true
+        }
+      }
+    },
+    "a_custody": {
+      "mode": "narrative",
+      "scene": "pavilion/fourth_chair",
+      "text": "Custody; fitting remains suspended.",
+      "choices": [
+        {
+          "id": "a_custody_0",
+          "kind": "action",
+          "text": "REQUEST SEPARATE SOURCE/REPRESENTATION STATUS",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_custody_1",
+          "kind": "action",
+          "text": "REQUEST DIRECT HEARING ON ORIGINAL'S CUSTODY",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_household": {
+      "mode": "narrative",
+      "scene": "pavilion/fourth_chair",
+      "text": "Three empty household places; routing strip.",
+      "choices": [
+        {
+          "id": "a_household_0",
+          "kind": "action",
+          "text": "PRESERVE HOUSEHOLD ROUTING EVIDENCE",
+          "to": "stage_records"
+        },
+        {
+          "id": "a_household_1",
+          "kind": "action",
+          "text": "FOLLOW RETAINED PROPERTY TRANSFER",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_repair": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "Witness fitting interrupted; sealed mobile witness staging.",
+      "choices": [
+        {
+          "id": "a_repair_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_calibration": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "Live Source Calibration; safe refusal or explicitly risky intervention.",
+      "choices": [
+        {
+          "id": "a_calibration_0",
+          "kind": "action",
+          "text": "REFUSE LIVE FITTING; REQUEST SAFE HEARING",
+          "to": "stage_admin"
+        },
+        {
+          "id": "a_calibration_1",
+          "kind": "action",
+          "text": "PULL OCCUPIED FRAME EMERGENCY RELEASE DESPITE FATAL RISK",
+          "check": {
+            "id": "ch3_a_calibration_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "stage_tech"
+          },
+          "fail": {
+            "to": "end_reconciled"
+          },
+          "notes": "Authoring check; proposed bonus: one appropriate tool +1"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "correction": {
+      "mode": "narrative",
+      "scene": "pavilion/behavioral_correction",
+      "text": "Shared nonfatal correction for check failures, no rerolls.",
+      "choices": [
+        {
+          "id": "correction_0",
+          "kind": "action",
+          "text": "REQUEST SUPERVISED REVIEW OF THE CORRECTIVE ORDER",
+          "to": "stage_admin"
+        },
+        {
+          "id": "correction_1",
+          "kind": "action",
+          "text": "FOLLOW CORRECTION CONTROL CABLES TO THE HEARING'S SERVICE INTERFACE",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "b_visit": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Twelve empty desks display green CLERK PRESENT lamps. Your certified visit record says you departed three hours ago. The attached proof is a photograph of an empty corridor. A telephone rings; no one answers. Your bathroom complaint is stamped COMPLAINT RECEIVED AFTER DEPARTURE.",
+      "choices": [
+        {
+          "id": "ch3_b01_a",
+          "kind": "action",
+          "text": "DISPUTE THE DEPARTURE RECORD.",
+          "to": "b01_a"
+        },
+        {
+          "id": "ch3_b01_b",
+          "kind": "action",
+          "text": "REQUEST THE EXIT YOU ARE ALREADY AUTHORIZED TO USE.",
+          "to": "b01_b"
+        },
+        {
+          "id": "ch3_b01_c",
+          "kind": "action",
+          "text": "DEMAND TO KNOW WHO RECORDED YOUR DEPARTURE.",
+          "to": "b01_c"
+        }
+      ],
+      "notes": "Collaborative B01: A/B selected for development; C remains available."
+    },
+    "b_conduct": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "Predictions are followed by work orders: VISITOR WILL COMPLAIN; STAFF INSTRUCTION: EXTEND WAIT. Your own forecast says VISITOR WILL EXPRESS FRUSTRATION; STAFF INSTRUCTION: DENY DEPARTURE. ANTICIPATED CONDUCT: All successful predictions are supported by appropriate preparation.",
+      "choices": [
+        {
+          "id": "ch3_b02_a",
+          "kind": "action",
+          "text": "CHANGE THE PREDICTION TO REQUIRE IMMEDIATE ASSISTANCE.",
+          "to": "b02_a"
+        },
+        {
+          "id": "ch3_b02_b",
+          "kind": "action",
+          "text": "DELIBERATELY BEHAVE UNPREDICTABLY.",
+          "to": "b02_b"
+        },
+        {
+          "id": "ch3_b02_c",
+          "kind": "action",
+          "text": "TRACE THE PREDICTION TO ITS SOURCE.",
+          "to": "b02_c"
+        }
+      ],
+      "notes": "Collaboratively accepted all three distinct approaches."
+    },
+    "b_gate": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "The turnstile is locked. DEPARTURE CONTROL: Your departure has already been completed; physical participation is not required. It displays two registrations with your name and exposes a small departure counter that resets every six seconds.",
+      "choices": [
+        {
+          "id": "ch3_b03_a",
+          "kind": "action",
+          "text": "DEMAND THAT THE GATE HONOR ITS DEPARTURE AUTHORIZATION.",
+          "to": "b03_a"
+        },
+        {
+          "id": "ch3_b03_b",
+          "kind": "action",
+          "text": "MAKE THE GATE ACCOUNT FOR BOTH REGISTERED PARTICIPANTS.",
+          "to": "b03_b"
+        },
+        {
+          "id": "ch3_b03_c",
+          "kind": "action",
+          "text": "INTERFERE WITH THE DEPARTURE COUNTER.",
+          "check": {
+            "id": "ch3_departure_counter",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "b03_c_pass"
+          },
+          "fail": {
+            "to": "b03_c_fail"
+          },
+          "notes": "OWNER-LOCKED: timing_clicker OR red_stapler OR rubber_band_ball grants one +1; no stacking; no consumption. Runtime OR-condition needs implementation; do not misrepresent odds."
+        }
+      ],
+      "notes": "Collaboratively selected A, B, C. The counter outcome and +1 item rule are owner-approved.",
+      "focus": "pavilion/departure_counter"
+    },
+    "c_control": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "Reel-to-reel decks play HUMAN LAUGHTER and SPONTANEOUS APPLAUSE — SIX SECONDS. On a monitor, a figure raises a hand before the bell. MOVEMENT OCCURRED BEFORE INSTRUCTION. A disposal arm reaches for the incident report.",
+      "choices": [
+        {
+          "id": "ch3_c01_a_examiner",
+          "kind": "action",
+          "text": "ASSERT EXAMINER OR ACTING DIRECTOR INSPECTION AUTHORITY.",
+          "to": "c01_a",
+          "if": {
+            "has": "expo_examiner_badge"
+          },
+          "displayGroup": "credential_a",
+          "missingReason": "REQUIRES EXAMINER OR ACTING DIRECTOR BADGE"
+        },
+        {
+          "id": "ch3_c01_a_director",
+          "kind": "action",
+          "text": "ASSERT EXAMINER OR ACTING DIRECTOR INSPECTION AUTHORITY.",
+          "to": "c01_a",
+          "if": {
+            "has": "acting_director_badge",
+            "lacks": "expo_examiner_badge"
+          },
+          "displayGroup": "credential_a",
+          "missingReason": "REQUIRES EXAMINER OR ACTING DIRECTOR BADGE"
+        },
+        {
+          "id": "ch3_c01_b",
+          "kind": "action",
+          "text": "SAVE THE UNAUTHORIZED MOVEMENT RECORD.",
+          "to": "c01_b"
+        },
+        {
+          "id": "ch3_c01_c",
+          "kind": "action",
+          "text": "FOLLOW THE CONTROL CABLES.",
+          "to": "c01_c"
+        }
+      ],
+      "notes": "Owner ruling: A is one logical card requiring either badge; MUST appear disabled with reason if none; the two conditional source choices implement OR within current legacy gate schema, but disabled-card runtime UI awaits integration. B and C unconditional."
+    },
+    "c_workshop": {
+      "mode": "narrative",
+      "scene": "pavilion/human_behavior_workshop",
+      "text": "The cheerful Human Behavior Workshop demonstrates SPONTANEOUS LAUGHTER every six seconds and GENUINE SURPRISE after a countdown. FREE WILL offers I AGREE and I AGREE ENTHUSIASTICALLY. An empty pedestal says THE ORIGINAL HUMAN — CURRENTLY ON LOAN. Under it: REPLACEMENT ORIGINAL AVAILABLE UPON REQUEST. A smaller sign warns that volunteers must be suitable for PERMANENT DISPLAY.",
+      "choices": [
+        {
+          "id": "ch3_c02_a",
+          "kind": "action",
+          "text": "PARTICIPATE IN THE FREE WILL DEMONSTRATION.",
+          "to": "c02_a"
+        },
+        {
+          "id": "ch3_c02_b",
+          "kind": "action",
+          "text": "REQUEST A REPLACEMENT ORIGINAL — PERMANENT DISPLAY.",
+          "to": "end_model_citizen",
+          "notes": "Owner approved unavoidable fatal after commitment. Warning must appear BEFORE choice. No check, item rescue or last-minute escape."
+        },
+        {
+          "id": "ch3_c02_c",
+          "kind": "action",
+          "text": "SABOTAGE THE HUMAN BEHAVIOR DEMONSTRATIONS.",
+          "to": "c02_c"
+        }
+      ],
+      "notes": "Owner approved all three choices. B airtight coating suffocation death is locked. A/C consequences remain awaiting collaborative review.",
+      "focus": "pavilion/replacement_request_notice"
+    },
+    "c_feed": {
+      "mode": "narrative",
+      "scene": "pavilion/presentation_feed",
+      "text": "Presentation reels feed approved responses to the Pavilion. A diagnostic line collects anything that occurred without instruction. A dispatch card announces GRAND RECONCILIATION: CERTIFIED ORIGINAL AND PRESENT CLAIMANT REQUIRED.",
+      "choices": [
+        {
+          "id": "ch3_c03_a",
+          "kind": "action",
+          "text": "TAKE PRESENTATION SERVICE AUTHORIZATION.",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "pavilion_finale_service_access": true
+            },
+            "give": [
+              "pavilion_presentation_service_authorization"
+            ]
+          }
+        },
+        {
+          "id": "ch3_c03_b",
+          "kind": "action",
+          "text": "KEEP A REPRESENTATION DIAGNOSTIC RECORD.",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "pavilion_original_diagnostic_obtained": true
+            },
+            "give": [
+              "pavilion_representation_diagnostic_record"
+            ]
+          }
+        },
+        {
+          "id": "ch3_c03_c",
+          "kind": "action",
+          "text": "COPY THE BROADCAST OVERRIDE SEQUENCE.",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "pavilion_broadcast_route_prepared": true
+            },
+            "give": [
+              "pavilion_broadcast_override_sequence"
+            ]
+          }
+        }
+      ],
+      "notes": "UNREVIEWED C03 outcome choices; included as cohesive draft only. Do not automatically grant Original-independent response flag from an unverified generic movement."
+    },
+    "stage_admin": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The hearing admits disputed applicants, even without a certified document.",
+      "choices": [
+        {
+          "id": "continue_grand",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "grand"
+        }
+      ],
+      "notes": "PROPOSED brief staging, no extra player choice."
+    },
+    "stage_records": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "A docket lists a certified Original and a present Claimant under separate serials.",
+      "choices": [
+        {
+          "id": "continue_grand",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "grand"
+        }
+      ],
+      "notes": "PROPOSED brief staging, no extra player choice."
+    },
+    "stage_tech": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The service platform overlooks the Registrar's circular chamber.",
+      "choices": [
+        {
+          "id": "continue_grand",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "grand"
+        }
+      ],
+      "notes": "PROPOSED brief staging, no extra player choice."
+    },
+    "grand": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The Registrar presents a certified Original and a physically present claimant. One identity must be retained. A restroom sign requires proof of identity before access.",
+      "choices": [
+        {
+          "id": "grand_0",
+          "kind": "action",
+          "text": "CONTEST ORIGINAL'S EXCLUSIVE CERTIFICATION",
+          "check": {
+            "id": "ch3_grand_0",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_admin"
+          },
+          "fail": {
+            "to": "disposition"
+          },
+          "notes": "Authoring check; proposed bonus: valid documentary evidence +1"
+        },
+        {
+          "id": "grand_1",
+          "kind": "action",
+          "text": "MANIPULATE PERSON REGISTRY",
+          "to": "registry"
+        },
+        {
+          "id": "grand_2",
+          "kind": "action",
+          "text": "ASK ORIGINAL TO CLAIM SEPARATE IDENTITY",
+          "check": {
+            "id": "ch3_grand_2",
+            "sides": 6,
+            "need": 5
+          },
+          "pass": {
+            "to": "end_two"
+          },
+          "fail": {
+            "to": "disposition"
+          },
+          "notes": "Authoring check; proposed bonus: +1 independent Original response; +1 separate-source evidence; max +2"
+        }
+      ],
+      "notes": "UNREVIEWED FINALE CHOICES from structural audit; user already ruled Original may escape independently. Do not finalize identity-erasure fallback without owner approval.",
+      "speaker": "registrar",
+      "pose": "idle"
+    },
+    "registry": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "Committed registry methods, no return to GRAND.",
+      "choices": [
+        {
+          "id": "registry_0",
+          "kind": "action",
+          "text": "QUIETLY UNREGISTER PAVILION CLAIMANT ONLY",
+          "check": {
+            "id": "ch3_registry_0",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_unreg"
+          },
+          "fail": {
+            "to": "disposition"
+          },
+          "notes": "Authoring check; proposed bonus: one technical item/access +1"
+        },
+        {
+          "id": "registry_1",
+          "kind": "action",
+          "text": "BROADCAST CONTRADICTORY CERTIFICATIONS PAVILION-WIDE",
+          "check": {
+            "id": "ch3_registry_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_broadcast"
+          },
+          "fail": {
+            "to": "disposition"
+          },
+          "notes": "Authoring check; proposed bonus: feed authorization/override +1"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "focus": "pavilion/grand_registry"
+    },
+    "disposition": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "After denial; guaranteed safe surrender PROVISIONAL and fatal risky escape PROVISIONAL.",
+      "choices": [
+        {
+          "id": "disposition_0",
+          "kind": "action",
+          "text": "RELINQUISH ALL EXPOSITION IDENTITY CLAIMS AND ACCEPT SAFE TRANSFER",
+          "to": "end_unreg_wide"
+        },
+        {
+          "id": "disposition_1",
+          "kind": "action",
+          "text": "FORCE HAZARDOUS RETENTION SHUTTER AGAINST LOCK",
+          "check": {
+            "id": "ch3_disposition_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_unreg"
+          },
+          "fail": {
+            "to": "end_archived"
+          },
+          "notes": "Authoring check; proposed bonus: one physical tool +1"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "end_admin": {
+      "mode": "narrative",
+      "scene": "pavilion/exposition_exit",
+      "text": "Personally Released.",
+      "choices": [
+        {
+          "id": "restart_end_admin",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "administrative_exception",
+          "ch3_original_status": "retained"
+        }
+      }
+    },
+    "end_unreg": {
+      "mode": "narrative",
+      "scene": "pavilion/service_exit",
+      "text": "No Person Present — Pavilion-only.",
+      "choices": [
+        {
+          "id": "restart_end_unreg",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "unregistered",
+          "ch3_original_status": "retained",
+          "ch3_identity_unregistered": true,
+          "ch3_identity_scope": "pavilion_only"
+        }
+      }
+    },
+    "end_unreg_wide": {
+      "mode": "narrative",
+      "scene": "pavilion/service_exit",
+      "text": "No Person Present — Exposition-wide.",
+      "choices": [
+        {
+          "id": "restart_end_unreg_wide",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "unregistered",
+          "ch3_original_status": "retained",
+          "ch3_identity_unregistered": true,
+          "ch3_identity_scope": "exposition_wide"
+        }
+      }
+    },
+    "end_two": {
+      "mode": "narrative",
+      "scene": "pavilion/exposition_exit",
+      "text": "The Original independently chooses its own name and separate exit. You leave by another door, still requiring a bathroom.",
+      "choices": [
+        {
+          "id": "restart_end_two",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "two_persons_depart",
+          "ch3_original_status": "escaped_independently",
+          "ch3_original_independent_identity": true
+        }
+      }
+    },
+    "end_broadcast": {
+      "mode": "narrative",
+      "scene": "pavilion/presentation_feed",
+      "text": "Unapproved Broadcast.",
+      "choices": [
+        {
+          "id": "restart_end_broadcast",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "broadcast_disruption",
+          "ch3_original_status": "unknown",
+          "ch3_pavilion_disrupted": true
+        }
+      }
+    },
+    "end_reconciled": {
+      "mode": "narrative",
+      "scene": "pavilion/reconciliation_office",
+      "text": "Successfully Reconciled.",
+      "choices": [
+        {
+          "id": "restart_end_reconciled",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "end": true,
+      "deathPopup": {
+        "id": "end_reconciled",
+        "title": "SUCCESSFULLY RECONCILED",
+        "subtitle": "PROPOSED FATAL ENDING — NEEDS OWNER REVIEW",
+        "button": "BEGIN AGAIN",
+        "status": "proposed",
+        "artRef": "pavilion/successfully_reconciled"
+      },
+      "endingArt": "pavilion/successfully_reconciled"
+    },
+    "end_archived": {
+      "mode": "narrative",
+      "scene": "pavilion/surplus_department",
+      "text": "Permanently Archived.",
+      "choices": [
+        {
+          "id": "restart_end_archived",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "end": true,
+      "deathPopup": {
+        "id": "end_archived",
+        "title": "PERMANENTLY ARCHIVED",
+        "subtitle": "PROPOSED FATAL ENDING — NEEDS OWNER REVIEW",
+        "button": "BEGIN AGAIN",
+        "status": "proposed",
+        "artRef": "pavilion/permanently_archived"
+      },
+      "endingArt": "pavilion/permanently_archived"
+    },
+    "pavilion_arrival": {
+      "mode": "narrative",
+      "scene": "pavilion/arrival",
+      "objective": "FIND AN OPERATING BATHROOM.",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "chapter3_entry_group",
+              "public_concourse"
+            ]
+          },
+          "text": "You leave Biology Park through the public concourse. The People's Pavilion promises every human requirement has already been fulfilled."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "chapter3_entry_group",
+              "service_infrastructure"
+            ]
+          },
+          "text": "A service corridor releases you behind the People's Pavilion. An employee reader claims your public visit has already been completed."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "chapter3_entry_group",
+              "underground_transit"
+            ]
+          },
+          "text": "The underground station opens beneath the Pavilion, at a door marked ORIGINAL PARTICIPANT ENTRANCE."
+        },
+        {
+          "text": "You reach the People's Pavilion. Its welcome sign assures you that you are already satisfied."
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue_attend",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "attend"
+        }
+      ],
+      "notes": "Chapter 2 carryover uses exactly chapter3_entry_group; does not erase flags/items."
+    },
+    "b01_a": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "VISITOR RECORDS: An approved document cannot contain an error. You point to your body. A camera verifies your presence and prints UNAUTHORIZED PRESENCE — SUBJECT REQUIRES CORRECTION. VISITOR RECORDS: The departure record is correct. The person is not.",
+      "choices": [
+        {
+          "id": "continue_b_conduct",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_timestamp_disputed": true
+        }
+      }
+    },
+    "b01_b": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "A real departure authorization prints with APPROVED and ALREADY USED stamps. The bright corridor's turnstile immediately refuses SECOND DEPARTURE. VISITOR RECORDS: Your paperwork is in perfect order.",
+      "choices": [
+        {
+          "id": "continue_b_conduct",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_departure_authority_queued": true
+        },
+        "give": [
+          "pavilion_approved_departure_authorization"
+        ]
+      }
+    },
+    "b01_c": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "The source registration on your completed-visit photograph predates your arrival. A second serial number appears beneath your own. The clerk lamps extinguish before you can ask who filed it.",
+      "choices": [
+        {
+          "id": "continue_b_conduct",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "C is a retained draft choice; final outcome not separately owner-reviewed.",
+      "effects": {
+        "set": {
+          "pavilion_visit_provenance_seen": true
+        }
+      }
+    },
+    "b02_a": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "You amend the forecast to VISITOR WILL RECEIVE IMMEDIATE ASSISTANCE. The machine issues a matching staff instruction and congratulates you on improving its predictive accuracy. It has not defined what assistance means.",
+      "choices": [
+        {
+          "id": "continue_b_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_gate"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_assistance_order_issued": true
+        }
+      }
+    },
+    "b02_b": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "You enthusiastically thank the office for denying departure. One printer says SATISFIED; another says FRUSTRATED THROUGH GRATITUDE. A form appears: APPLICATION FOR UNPREDICTABLE CONDUCT — DESCRIBE YOUR INTENDED UNPREDICTABLE BEHAVIOR.",
+      "choices": [
+        {
+          "id": "continue_b_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_gate"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_prediction_contradicted": true
+        }
+      }
+    },
+    "b02_c": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "A source drawer contains a Certified Original already departed and a Present Claimant still being observed. Their serial numbers differ. Someone has written STILL PRESENT beneath the Original's entry, without approval.",
+      "choices": [
+        {
+          "id": "continue_b_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_gate"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_original_registration_discovered": true
+        }
+      }
+    },
+    "b03_a": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "AUTHORIZATION VALID. DEPARTURE ALREADY COMPLETED. The machine prints PERMISSION TO EXERCISE PREVIOUSLY EXERCISED PERMISSION, then sends you to Personal Reconciliation, because a second departure requires a second person.",
+      "choices": [
+        {
+          "id": "continue_stage_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "If existing departure authorization held, mention it and retain it; do not create duplicate.",
+      "effects": {
+        "set": {
+          "pavilion_departure_permission_conflict": true
+        }
+      }
+    },
+    "b03_b": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "You compare the identities. IDENTITY MATCH: 100%. REGISTRATION MATCH: 0%. The gate produces a Certified Identity Discrepancy and refers the second person for verification.",
+      "choices": [
+        {
+          "id": "continue_stage_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "ch3_separate_identity_evidence": true
+        },
+        "give": [
+          "pavilion_certified_record_discrepancy"
+        ]
+      }
+    },
+    "b03_c_pass": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "The counting wheel clicks backward. The turnstile opens not to the public exit but to MANUAL RECONCILIATION ACCESS, a technical passage behind the Registrar's machinery.",
+      "choices": [
+        {
+          "id": "continue_stage_tech",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_departure_counter_desynced": true,
+          "pavilion_registration_service_access": true
+        }
+      }
+    },
+    "b03_c_fail": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "The wheel spins forward. ADDITIONAL DEPARTURE RECORDED. DEPARTURE CONTROL: Two completed departures by one person constitute a serious accounting irregularity. Personal Reconciliation is mandatory.",
+      "choices": [
+        {
+          "id": "continue_stage_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "Nonfatal; no item lost; no reroll.",
+      "effects": {
+        "set": {
+          "pavilion_counter_interference_recorded": true,
+          "pavilion_duplicate_departure_recorded": true
+        }
+      }
+    },
+    "c01_a": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "The credential reader recognizes your Exposition authority. CONTROL ROOM: Your department does not govern human representations. You ask whether the representations are alive. JURISDICTIONAL OVERLAP DETECTED. INSPECTION AUTHORIZED — PLEASE DO NOT DISCOVER ANYTHING.",
+      "choices": [
+        {
+          "id": "continue_c_workshop",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "Conditional badge-specific approval text; no badge consumed.",
+      "effects": {
+        "set": {
+          "pavilion_inspection_authorized": true
+        }
+      }
+    },
+    "c01_b": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "You rescue the movement record from the shredder. CONTROL ROOM: Please return the discrepancy for correction. You ask which cue caused the movement. CONTROL ROOM: Nothing. The record does not yet identify the actor.",
+      "choices": [
+        {
+          "id": "continue_c_workshop",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_anomalous_movement_record_saved": true
+        }
+      }
+    },
+    "c01_c": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "You trace cables labeled SPEECH, MOVEMENT, and SPONTANEITY. The last isn't attached to anything. CONNECTION RESERVED FOR FUTURE IMPROVEMENTS. A service hatch reaches the Workshop.",
+      "choices": [
+        {
+          "id": "continue_c_workshop",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_workshop_service_access": true
+        }
+      }
+    },
+    "c02_a": {
+      "mode": "narrative",
+      "scene": "pavilion/human_behavior_workshop",
+      "text": "Both buttons in FREE WILL feed the same AGREE lamp. A recording congratulates you on a fully independent decision. Your objection becomes an official agreement and moves toward the central presentation feed.",
+      "choices": [
+        {
+          "id": "continue_c_feed",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "UNREVIEWED TEMPORARY OUTCOME for jointly developing A next.",
+      "effects": {
+        "set": {
+          "pavilion_free_will_contradiction_seen": true
+        }
+      },
+      "focus": "pavilion/free_will_buttons"
+    },
+    "c02_c": {
+      "mode": "narrative",
+      "scene": "pavilion/human_behavior_workshop",
+      "text": "You make the spontaneous laughter mannequin answer the surprise announcement, while the surprise mannequin calmly waits for its countdown. A red administrative error slip leaves for the presentation feed.",
+      "choices": [
+        {
+          "id": "continue_c_feed",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "UNREVIEWED TEMPORARY OUTCOME for jointly developing C next.",
+      "effects": {
+        "set": {
+          "pavilion_behavior_demo_disrupted": true
+        }
+      }
+    },
+    "end_model_citizen": {
+      "mode": "narrative",
+      "scene": "pavilion/original_human_pedestal",
+      "end": true,
+      "text": "You press REQUEST REPLACEMENT. WORKSHOP ANNOUNCER: Wonderful! Thank you for volunteering! You explain that you meant to request a replacement, not to become one. A platform raises you onto the pedestal. A transparent protective coating descends, hardens, and seals airtight around your body. You cannot draw a breath. WORKSHOP ANNOUNCER: Our new Original Human is protected against dust, moisture and unauthorized interaction. You struggle until the air is gone. Your movement stops. A plaque appears: THE ORIGINAL HUMAN — 100% AUTHENTIC — MAINTENANCE-FREE — ALL HUMAN REQUIREMENTS PERMANENTLY SATISFIED. Six seconds of recorded applause. ENDING — A MODEL CITIZEN.",
+      "choices": [
+        {
+          "id": "restart_a_model_citizen",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-LOCKED: death from loss of air inside sealed coating. Real corpse remains on pedestal. No face in scene/death popup. No roll or rescue; the choice must warn permanent display.",
+      "deathPopup": {
+        "id": "a_model_citizen",
+        "title": "A MODEL CITIZEN",
+        "subtitle": "ALL HUMAN REQUIREMENTS PERMANENTLY SATISFIED",
+        "description": "The Pavilion has preserved an authentic human. It neglected to preserve the air.",
+        "button": "BEGIN AGAIN",
+        "status": "owner-approved",
+        "artRef": "pavilion/a_model_citizen"
+      },
+      "endingArt": "pavilion/a_model_citizen",
+      "focus": "pavilion/death_pedestal_detail"
+    }
+  }
+}

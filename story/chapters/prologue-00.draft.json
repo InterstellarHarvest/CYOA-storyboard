@@ -1098,7 +1098,14 @@
       "scene": "exposition/facilities_corridor",
       "objective": "FIND THE PUBLIC BATHROOM.",
       "text": "You pass through the door and into a long, softly humming corridor. Pale blue signs hang above several turns.\n\nOne shows a small human figure beside a square enclosure. From here, it looks enough like the symbol you're looking for. The rest of the lettering is hidden around the corner.\n\nYou follow it.",
-      "choices": []
+      "choices": [
+        {
+          "id": "continue_to_chapter_01",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "chapter": "chapter-01"
+        }
+      ]
     }
   }
 }
