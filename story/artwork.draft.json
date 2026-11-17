@@ -1900,50 +1900,98 @@
     }
   },
   "deathScreens": {
-    "house_of_tomorrow/rest_assured_voluntary": {
-      "title": "PERMANENTLY SATISFIED. — REST ASSURED VOLUNTARY DEATH",
-      "kind": "death-screen",
-      "status": "integrated",
-      "dimensions": "314x206",
-      "assetPath": "art/deaths/rest_assured_voluntary.png",
-      "suggestedFilename": "art/deaths/rest_assured_voluntary.png",
-      "prompt": "Owner-approved Rest Assured voluntary-death vignette (toes-up default). Already selected and in the game review build: do not regenerate. Native 314x206 logical pixel art, drawn at exactly 2x inside the death popup; popup title, body and RETRY / CHECKPOINT / EXIT controls are game UI, not baked into the art.",
-      "trigger": {
-        "end": "chapter-01:exit_chair_fatal",
-        "from": "chapter-01:chair_locked",
-        "choice": "accept_permanent_rest"
-      },
-      "notes": "Selected by owner approval 2026-11-15 (InterstellarHarvest/CYOA@agent/rest-assured-death-study-20261115 000f096: review/death-screen-layout-study-2026-11-15/approved-default/approval.json, \"is now the approved image\"; native export approved-default/native-314x206.png, sha256 7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c, nearest-neighbour from the preserved 1548x1016 source). Copied byte-exact to art/deaths/rest_assured_voluntary.png in draft PR #11 and shown by the review-gated ?deathproof end presentation (PR #11 / #13). Applies ONLY to the voluntary choice accept_permanent_rest from chair_locked; the two other routes into exit_chair_fatal have no approved death art.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved; do not request repeat approval."
-    },
     "pavilion/a_model_citizen": {
       "title": "A MODEL CITIZEN",
       "kind": "death-screen",
       "status": "not-started",
-      "dimensions": "565x451",
+      "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/ui/death/a_model_citizen.png",
-      "prompt": "Exact 565×451 independently authored pixel-art ENDING VIGNETTE for existing 16:9 game UI death popup. Approved death-overlay vignette (art-only): impeccably presented 1960s museum statue pedestal and anonymous human body behind fully sealed rigid transparent casing; no face visible, no gore, no protruding limbs, no air access, no movement. Crisp clinical exhibit plate. Darkly funny bureaucratic preservation, not supernatural transformation. The victim suffocated from lack of air and is dead. Popup copy/title rendered by UI at runtime, not baked into art. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
-      "notes": "FATAL MECHANISM OWNER LOCKED. Art/design not yet approved or produced."
+      "prompt": "EXACT 314×206 native pixel-art AFTERMATH illustration for the owner-approved A1 game death popup, displayed at exact 2× nearest-neighbor (628×412); keep frame/title/body/controls as separate UI. Approved death-overlay vignette (art-only): impeccably presented 1960s museum statue pedestal and anonymous human body behind fully sealed rigid transparent casing; no face visible, no gore, no protruding limbs, no air access, no movement. Crisp clinical exhibit plate. Darkly funny bureaucratic preservation, not supernatural transformation. The victim suffocated from lack of air and is dead. Popup copy/title rendered by UI at runtime, not baked into art. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
+      "notes": "FATAL MECHANISM OWNER LOCKED. Art/design not yet approved or produced.\nUnproduced art brief aligned to approved 314×206 native death-popup standard; old 565×451 was mistakenly item inspector dimension. No actual artwork changed."
     },
     "pavilion/successfully_reconciled": {
       "title": "SUCCESSFULLY RECONCILED",
       "kind": "death-screen",
       "status": "not-started",
-      "dimensions": "565x451",
+      "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/ui/death/successfully_reconciled.png",
-      "prompt": "Exact 565×451 independently authored pixel-art ENDING VIGNETTE for existing 16:9 game UI death popup. PROPOSED death-overlay illustration: abandoned administrative fitting apparatus with sealed supporting clamps and anonymous clothing, no face or gore; mechanically permanent identity absorption, story mechanics not approved. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
-      "notes": "PROPOSED FATAL CONCEPT — DO NOT GENERATE/INTEGRATE without owner review."
+      "prompt": "EXACT 314×206 native pixel-art AFTERMATH illustration for the owner-approved A1 game death popup, displayed at exact 2× nearest-neighbor (628×412); keep frame/title/body/controls as separate UI. PROPOSED death-overlay illustration: abandoned administrative fitting apparatus with sealed supporting clamps and anonymous clothing, no face or gore; mechanically permanent identity absorption, story mechanics not approved. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
+      "notes": "PROPOSED FATAL CONCEPT — DO NOT GENERATE/INTEGRATE without owner review.\nUnproduced art brief aligned to approved 314×206 native death-popup standard; old 565×451 was mistakenly item inspector dimension. No actual artwork changed."
     },
     "pavilion/permanently_archived": {
       "title": "PERMANENTLY ARCHIVED",
       "kind": "death-screen",
       "status": "not-started",
-      "dimensions": "565x451",
+      "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/ui/death/permanently_archived.png",
-      "prompt": "Exact 565×451 independently authored pixel-art ENDING VIGNETTE for existing 16:9 game UI death popup. PROPOSED death-overlay illustration: sealed institutional archive drawer with single anonymous personal-effects tag and status lamp, no face/gore, concept still under story review. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
-      "notes": "PROPOSED FATAL CONCEPT — DO NOT GENERATE/INTEGRATE without owner review."
+      "prompt": "EXACT 314×206 native pixel-art AFTERMATH illustration for the owner-approved A1 game death popup, displayed at exact 2× nearest-neighbor (628×412); keep frame/title/body/controls as separate UI. PROPOSED death-overlay illustration: sealed institutional archive drawer with single anonymous personal-effects tag and status lamp, no face/gore, concept still under story review. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
+      "notes": "PROPOSED FATAL CONCEPT — DO NOT GENERATE/INTEGRATE without owner review.\nUnproduced art brief aligned to approved 314×206 native death-popup standard; old 565×451 was mistakenly item inspector dimension. No actual artwork changed."
+    },
+    "house_of_tomorrow/rest_assured": {
+      "title": "PERMANENTLY SATISFIED. — REST ASSURED",
+      "kind": "death-screen",
+      "status": "integrated",
+      "dimensions": "314x206",
+      "assetPath": "art/deaths/rest_assured_voluntary.png",
+      "suggestedFilename": "art/deaths/rest_assured_voluntary.png",
+      "prompt": "DO NOT GENERATE OR REVISE. REUSE approved native 314×206 Rest Assured death image for EVERY cause arriving at exit_chair_fatal: the sheet-covered reclined customer in chair, enlarged brown shoes toes upward with soles facing viewer, intact tuft, green light and pedestal, no face or arms. Image selected by owner. Render at exact 2× in existing A1 death popup. Preserve title/body as independent text.",
+      "selectedSource": {
+        "repository": "InterstellarHarvest/CYOA",
+        "branch": "agent/rest-assured-death-visual-proof",
+        "path": "art/deaths/rest_assured_voluntary.png",
+        "gitBlob": "fe223d11d2b579777507762a2ddf885d6851d6c9",
+        "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
+        "dimensions": "314x206"
+      },
+      "notes": "OWNER OVERRIDE 2026-11-16: All THREE Rest Assured causes share ONE identical fatal result and ONE artwork; the selected voluntary illustration is explicitly APPROVED for all three. This overrides older cause-specific art recommendations in docs/90 and 93. Don't create separate death images or story nodes. PNG exists on game review branch, but public art package has not yet mirrored the verified binary, so assetPath is null intentionally. Not an art-generation task.\nGAMEPLAY PMO 2026-11-16 (docs/105): verified byte-identical (sha256 7f469efa…) at the game production path art/deaths/rest_assured_voluntary.png, used by the review-gated ?deathproof end presentation (CYOA PR #11/#13/#14), so status integrated and assetPath set; the public preview now mirrors the exact binary. NOTE: the game presentation still matches only the voluntary cause (accept_permanent_rest from chair_locked); extending it to all three causes per this owner override is a pending gameplay change."
+    },
+    "biology_park/classified_as_compost": {
+      "title": "CLASSIFIED AS COMPOST.",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/classified_as_compost.png",
+      "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Automated Biology Park sorting bay after compactor finishes: neat sealed green organic waste bale or collection bin, green MATERIAL PROCESSED status lamp, little paper disposal receipt from printer, silent conveyor. No person or remains shown; bureaucratic success."
+    },
+    "biology_park/new_arrival": {
+      "title": "NEW ARRIVAL.",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/new_arrival.png",
+      "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Nursery packing hopper and planting arms at rest behind a fresh orderly mound of soil; small upbeat welcoming botanical marker beside it, harsh artificial sunlight and greenhouse ribs. No body; machine planted human visitor thinking it was transport."
+    },
+    "biology_park/personal_growth": {
+      "title": "PERSONAL GROWTH.",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/personal_growth.png",
+      "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Curated greenhouse, overgrown former visitor now ONLY a mass of foliage, roots and flowers in anonymous human-size shape, no recognizable person or face. Simple cheerful CULTIVATION SUCCESSFUL lamp; it is a completed botanical transformation, not a living conscious person. Applicable to shared thorn-or-spore ending."
+    },
+    "biology_park/reclassified": {
+      "title": "RECLASSIFIED.",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/reclassified.png",
+      "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Waste hatch and industrial planting-machine hopper returned to standby, a newly filled shallow growing tray with formal plant processing label and big checkmark. Neat automated handling arms and quiet stainless gray/green machinery. Distinct from nursery welcome marker in NEW ARRIVAL; no body shown."
+    },
+    "biology_park/site_improvement": {
+      "title": "SITE IMPROVEMENT.",
+      "kind": "death-screen",
+      "status": "not-started",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/site_improvement.png",
+      "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Low-angle aftermath under botanical translator: dense thick roots seal entire narrow service duct, overhead translator prints a requisition for another buried fixture. Maybe one anonymous shoe sole behind roots, no face or injury; the absurdity is a civic request while the buried person is no longer visible."
     }
   }
 }

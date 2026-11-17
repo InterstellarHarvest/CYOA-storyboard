@@ -139,7 +139,7 @@ async function run(name, base) {
   // 8. Death screen.
   await openArt('PERMANENTLY SATISFIED.', 'All');
   f = await figures();
-  check(b, 'Rest Assured death vignette shown (314x206)', f.length === 1 && f[0].imgs[0].nw === 314 && /Shown when/.test(await page.textContent('#details')), f);
+  check(b, 'Rest Assured death vignette shown (314x206), one shared record for all three causes', f.length === 1 && f[0].imgs[0].nw === 314 && /deathScreens\/house_of_tomorrow\/rest_assured /.test(await page.textContent('#details')), f);
 
   // 9. Approved-only (not integrated) Chapter 2 art reads as selected, not unfinished.
   await openArt('FORMAL ENTRANCE', 'Approved');
@@ -163,6 +163,11 @@ async function run(name, base) {
   await page.evaluate(() => { const n = Array.from(document.querySelectorAll('#nodes .node')).find((c) => c.firstChild.textContent === 'exit_chair_fatal'); n.click(); });
   const death = await page.$$eval('#details button.art-brief', (bs) => bs.map((x) => x.textContent));
   check(b, 'fatal chair ending links its approved death screen', death.some((t) => /PERMANENTLY SATISFIED/.test(t)), death);
+  await page.waitForFunction(() => Array.from(document.querySelectorAll('#details .death-preview img')).every((i) => i.complete));
+  const popup = await page.$$eval('#details .death-preview img', (xs) => xs.map((i) => [i.naturalWidth, i.naturalHeight]));
+  check(b, 'the fatal node\'s death-popup box shows the actual selected 314x206 art (not "preview pending")', popup.length === 1 && popup[0][0] === 314 && popup[0][1] === 206
+    && !/PREVIEW PENDING/.test(await page.textContent('#details .death-preview')), popup);
+  await page.screenshot({ path: path.join(OUT, b + '_6_death_popup.png') });
 
   // 12. Zoom dialog: integer scales of native pixels.
   await openArt('HOUSE OF TOMORROW — ARRIVAL');

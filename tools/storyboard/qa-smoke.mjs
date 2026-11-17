@@ -28,13 +28,15 @@ const productionRecords=[
   ...Object.values(artwork.focus||{}),
   ...Object.values(artwork.deathScreens||{})
 ];
-assert.equal(productionRecords.length,164,'shared artwork includes selected Chapter 1 views (paired backgrounds retired) and the Rest Assured death screen');
+assert.equal(productionRecords.length,169,'shared art catalog includes death-popup illustrations for all fatal endpoints');
 assert.equal(productionRecords.filter(r=>r.status==='generated').length,0,'no previously selected source is incorrectly awaiting approval');
 assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
-assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46+(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary']?.status==='integrated'?1:0),'Prologue and selected Chapter 1 artwork already used in game (+ Rest Assured death screen once the game reports it)');
-assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary']?.status),'owner-approved Rest Assured death screen is selected, never pending');
-assert.equal(productionRecords.filter(r=>r.status==='approved').length,7+(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary']?.status==='approved'?1:0),'accepted Biology Park Batch 1 art awaits verified integration, not art approval');
-assert.equal(productionRecords.filter(r=>r.status==='not-started').length,105,'only unselected images remain not-started');
+assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary'],undefined,'one shared Rest Assured death record (owner ruling docs/104), no per-cause duplicate');
+assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured']?.status),'owner-approved Rest Assured death screen is selected, never pending');
+const restAssuredUsed=artwork.deathScreens['house_of_tomorrow/rest_assured']?.status==='integrated'?1:0;
+assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46+restAssuredUsed,'Prologue and selected Chapter 1 artwork already used in game (+ Rest Assured death art once the game reports it)');
+assert.equal(productionRecords.filter(r=>r.status==='approved').length,8-restAssuredUsed,'seven Biology Park art approvals (+ Rest Assured until integrated)');
+assert.equal(productionRecords.filter(r=>r.status==='not-started').length,110,'new unproduced death art requirements remain pending');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'approved','Chapter 2 Bureau artwork already selected');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'selected Chapter 2 Bureau review image has no confirmed game production path yet');
 assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.status,'integrated','Chapter 1 arrival artwork is already used in review game');
@@ -45,6 +47,12 @@ for(const record of productionRecords){
       || (record.pages||[]).some(v=>v.assetPath?.endsWith('.png')),'integrated artwork has selected PNG source: '+record.title);
 }
 assert.ok(artwork.deathScreens['pavilion/a_model_citizen']?.prompt,'death screen art registered');
+assert.equal(Object.keys(artwork.deathScreens).length,9,'nine fatal terminals and nine death-art source records');
+assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured'].status),'selected Rest Assured picture is already approved (integrated once the game reports it)');
+assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured'].selectedSource.sha256,
+  '7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c','exact original owner-selected Rest Assured art SHA');
+for(const rec of Object.values(artwork.deathScreens))assert.equal(rec.dimensions,'314x206','all death-popup artworks share the approved A1 illustration format');
+
 assert.equal(artwork.portraits['house:idle'].status,'integrated','opaque House intercom views selected');
 assert.ok(Object.values(artwork.portraits['house:idle'].views).every(v=>v.status==='integrated'&&v.assetPath),'House conversation views selected');
 assert.equal(artwork.focus['house_of_tomorrow/portrait_gallery/album'].status,'integrated','family album selected');
@@ -75,6 +83,24 @@ assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
 assert.deepEqual(manifest.chapters.map(c=>[c.id,c.title,c.status]),[
   ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'draft']],'manifest chapters, order, titles, draft status');
 const chapters=manifest.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(root,'story',c.file),'utf8')));
+const fatalIds={
+  'chapter-01':['exit_chair_fatal'],
+  'chapter-02':['fatal_sorter','fatal_hopper','fatal_transformation','fatal_planting','fatal_roots'],
+  'chapter-03':['end_model_citizen','end_reconciled','end_archived']
+};
+for(const [i,entry] of manifest.chapters.entries()){
+  for(const id of fatalIds[entry.id]||[]){
+    const n=chapters[i].nodes[id];
+    assert.ok(n?.end,'fatal node is an ending: '+id);
+    assert.ok(n.deathPopup?.title && n.deathPopup?.description,'fatal popup title and punchline exist: '+id);
+    assert.ok(n.endingArt && n.endingArt===n.deathPopup.artRef,'single ending art and popup art refer to same record: '+id);
+    assert.ok(artwork.deathScreens[n.endingArt],'death art brief registered: '+id);
+  }
+}
+const chair=chapters[1].nodes;
+assert.equal(chair.exit_chair_fatal.deathPopup.artRef,'house_of_tomorrow/rest_assured','all three Rest Assured deaths use one approved illustration');
+assert.equal(Object.values(chair).flatMap(n=>(n.choices||[]).flatMap(c=>[c.to,c.pass?.to,c.fail?.to].filter(Boolean))).filter(to=>to==='exit_chair_fatal').length,3,'three Rest Assured arrival routes share one fatal node');
+
 for(const ch of chapters){
   for(const scene of new Set([ch.scene,...Object.values(ch.nodes).map(x=>x.scene).filter(Boolean)]))
     assert.ok(artwork.scenes[scene],'scene reference '+scene);
@@ -82,6 +108,7 @@ for(const ch of chapters){
     if(n.speaker)assert.ok(artwork.portraits[n.speaker+':'+(n.pose||'default')],'portrait '+n.speaker);
     if(n.focus)assert.ok(artwork.focus[n.focus],'focus '+n.focus);
     if(n.endingArt)assert.ok(artwork.deathScreens[n.endingArt],'death screen '+n.endingArt);
+    if(n.deathPopup?.artRef)assert.ok(artwork.deathScreens[n.deathPopup.artRef],'fatal popup art '+n.deathPopup.artRef);
   }
 }
 assert.deepEqual(Object.keys(layoutSource.chapters),['prologue-00','chapter-01','chapter-02','chapter-03'],'layout has four chapters');
@@ -313,6 +340,13 @@ assert.deepEqual({x:xFromNode('house_arrival'),y:yFromNode('house_arrival')},ch1
 for(const exitId of ['exit_named_plant','exit_martin','exit_service_clean','exit_service_registered','exit_showroom_reset'])
   assert.ok(String(findNode(exitId).children[2].textContent).includes('→ chapter-02'),'Chapter 1 exit '+exitId+' links to Chapter 2');
 assert.ok(!String(findNode('exit_chair_fatal').children[2].textContent).includes('→ chapter-02'),'fatal chair ending does not link to Chapter 2');
+findNode('exit_chair_fatal').click();
+assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('Death popup · engine handoff')),'fatal inspector displays engine-facing popup details');
+assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('PERMANENTLY SATISFIED.')),'fatal card supplies specific popup title');
+assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('house_of_tomorrow/rest_assured')),'fatal inspector supplies death artwork identifier');
+assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('You have achieved permanent relaxation.')),'fatal inspector supplies popup narrative beat');
+assert.ok(!flatten(pane()).some(x=>x.textContent==='Choices & destinations'),'fatal inspector hides legacy restart choice section');
+assert.ok(flatten(findNode('exit_chair_fatal')).some(x=>String(x.textContent).includes('ART: house_of_tomorrow/rest_assured')),'fatal graph box itself shows exact artwork ID');
 findNode('exit_martin').click();
 const ch2Card=flatten(pane()).find(x=>x.tagName==='button'&&/Chapter 2 — Biology Park \(chapter-02\)/.test(flatten(x).map(y=>y.textContent).join(' ')));
 assert.ok(ch2Card&&!ch2Card.disabled,'Chapter 1 exit card names its Chapter 2 destination and is clickable');
@@ -472,7 +506,7 @@ const c1out=c1.ports.filter(p=>p['data-dir']==='out');
 assert.deepEqual(c1out.map(p=>p['data-port']).sort(),houseExits.map(id=>'out:'+id+'>chapter-02').sort(),'Chapter 1: five outgoing Chapter 2 transitions, one per surviving exit');
 assert.ok(c1out.every(p=>p['data-mode']==='gameplay'&&p['data-chapter']==='chapter-02'&&/TO CHAPTER 2 · GAMEPLAY/.test(p.text)&&/Bureau Arrival/.test(p.text)),'Chapter 1: exits are labelled as gameplay transitions into Bureau Arrival');
 assert.ok(c1.ports.filter(p=>p['data-dir']==='in').every(p=>p['data-chapter']==='prologue-00'&&p['data-source']==='reception_hallway'),'Chapter 1: its only incoming route is the Prologue hand-off');
-assert.ok(/fatal/.test(c1at.exit_chair_fatal.cls)&&/FATAL ENDING/.test(c1at.exit_chair_fatal.tag),'Chapter 1: fatal chair styled as a fatal ending');
+assert.ok(/\bfatal\b/.test(c1at.exit_chair_fatal.cls)&&/death-node/.test(c1at.exit_chair_fatal.cls)&&/ART: house_of_tomorrow\/rest_assured/.test(c1at.exit_chair_fatal.tag),'Chapter 1: fatal chair displays its canonical death popup and image rather than legacy choice count');
 assert.ok(!c1.edges.some(e=>e.from==='exit_chair_fatal')&&!c1.ports.some(p=>/exit_chair_fatal/.test(p['data-port'])),'Chapter 1: fatal chair is terminal (no route out, no chapter port)');
 assert.ok(c1at.exit_chair_fatal.x===c1at.service_breach.x&&c1at.exit_chair_fatal.x>c1at.chair_locked.x&&c1at.exit_chair_fatal.x<c1max,'Chapter 1: fatal chair sits in the column right after the chair, not in the exit column');
 // Chapter 2: incoming Chapter 1 routes, storyboard-only handoffs, antidote loops attached to their exits.
@@ -584,11 +618,27 @@ assert.deepEqual(layoutSource.chapters['prologue-00'],{positions:{}},'committed 
 assert.deepEqual(layoutSource.chapters['chapter-03'],{positions:{}},'committed Chapter 3 layout entry unchanged');
 for(const key of ['chapter-01','chapter-02'])for(const inc of layoutSource.chapters[key].timeline.incidents)for(const id of inc.nodes)assert.ok(chapters[key==='chapter-01'?1:2].nodes[id],key+' incident '+inc.id+' names a real node '+id);
 
-// ==== Prologue and Chapter 3 render exactly as the published viewer did (main 0ebcf48) =============
+// ==== Preserve Prologue geometry and all Chapter 3 nonfatal cards/edges/layout exactly ====
 const {renderLegacy}=await import('./qa-legacy-render.mjs');
 const legacyNow=await renderLegacy(path.join(root,'tools/storyboard/index.html'));
 const legacyBase=JSON.parse(fs.readFileSync(path.join(root,'tools/storyboard/qa-fixtures/legacy-render-snapshot.json'),'utf8'));
-for(const key of ['prologue-00','chapter-03'])assert.deepEqual(JSON.parse(JSON.stringify(legacyNow[key])),legacyBase[key],key+': cards, connectors, labels and default zoom identical to the published viewer');
+assert.deepEqual(JSON.parse(JSON.stringify(legacyNow['prologue-00'])),legacyBase['prologue-00'],'Prologue remains pixel/layout equivalent');
+const fatalDetails=new Set(['end_model_citizen','end_reconciled','end_archived']);
+function normalizeFatalPresentation(frame){
+ const copy=JSON.parse(JSON.stringify(frame));
+ copy.cards=copy.cards.map(card=>fatalDetails.has(card.id)
+   ? {...card,className:'node',text:[card.id,'FATAL POPUP CONTENT','ART REFERENCE']} : card);
+ return copy;
+}
+assert.deepEqual(normalizeFatalPresentation(legacyNow['chapter-03']),normalizeFatalPresentation(legacyBase['chapter-03']),
+ 'Chapter 3 geometry, edges, and all nonfatal card details remain identical; only fatal card contents and colors changed');
+for(const card of legacyNow['chapter-03'].cards.filter(c=>fatalDetails.has(c.id))){
+ const d=chapters[3].nodes[card.id].deathPopup;
+ assert.match(card.className,/death-node/,'fatality box visually distinct: '+card.id);
+ assert.equal(card.text[1],d.title,'fatality box displays actual engine popup title: '+card.id);
+ assert.ok(card.text.some(t=>String(t).includes('ART: '+d.artRef)),'fatality box displays image reference: '+card.id);
+ assert.ok(card.text.some(t=>String(t).includes(d.description)),'fatality box displays narrative beat: '+card.id);
+}
 
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,chapters:manifest.chapters.map(c=>c.id),
