@@ -922,9 +922,9 @@
             "to": "end_admin"
           },
           "fail": {
-            "to": "disposition"
+            "to": "contest_inadmissible"
           },
-          "notes": "OWNER-APPROVED 2026-11-17 CERTIFICATION CHALLENGE: ONE player card 'CONTEST ORIGINAL’S EXCLUSIVE CERTIFICATION,' with three CONDITIONAL EVIDENCE CALLBACKS, never three new choice cards. Universal contradiction requires nothing: official documents certify the claimant departed though claimant is physically present. Optional if HOLDING family_portrait_photo: Fourth Chair photo shows only protagonist lower body and three empty chairs, casts doubt on Pavilion's attendance-image interpretation, NOT proof of Original fraud. Optional if pavilion_free_will_refusal_witnessed: human witness Mrs. Pruitt confirms Pavilion certified enthusiastic consent despite refusal of both forced Agree choices; she speaks truthfully and retains agency. Each available callback receives its own narrative payoff, neither required. Hidden d6 >=4; +1 if EITHER optional support is available, NONSTACKING even if both available. Success -> PERSONALLY RELEASED end_admin by special personal exemption, without correcting Pavilion's underlying records, Original remains retained; failure -> FINAL DISPOSITION node (safe Exposition-wide identity surrender or warned potentially fatal shutter) after administrative inadmissibility, NOT automatic death. Check odds, evidence modifier and outcome logic OWNER APPROVED (reply 'Ok'); exact success/fail prose and runtime conditional bonus wiring still need review. No protagonist face, no claiming the photo proves impersonation."
+          "notes": "OWNER-APPROVED 2026-11-17 complete certification-challenge prose/branch design (reply 'Ok'): This is ONE challenge card, NOT three additional cards. Universal argument (no evidence needed): You indicate the certified departure record. You: 'According to this, I've already left. Yet here I am.' Registrar: 'Yes. Your departure was processed very efficiently.' You: 'Then the record is wrong.' Registrar: 'Or your presence is.' OPTIONAL distinct evidence callback A, only if HOLDING family_portrait_photo: Registrar examines Fourth Chair photograph, counts three empty chairs and finds Pavilion attendance interpretation incompatible with image; protagonist only visible as partial lower body, never face; evidence does NOT prove Original fraud. OPTIONAL callback B, only if pavilion_free_will_refusal_witnessed: Mrs. Pruitt human witness confirms protagonist refused both choices at Free Will Demonstration, compares against certified consent; she is truthful and retains agency. Each present callback gets its OWN prose payoff, conditional on state; neither is required. Hidden d6>=4, +1 if EITHER optional evidence support available; NONSTACKING (both still +1). Success -> end_admin PERSONALLY RELEASED without correcting underlying certification; Original remains retained. Failure -> contest_inadmissible for exact failure prose, then Final Disposition. No automatic death. Exact universal opening dialogue and success/failure lines owner-approved; runtime must append appropriate callbacks before resolving check, without re-presenting additional choices. Bonus/conditional text implementation requires Gameplay PMO QA."
         },
         {
           "id": "grand_1",
@@ -1032,7 +1032,7 @@
     "end_admin": {
       "mode": "narrative",
       "scene": "pavilion/exposition_exit",
-      "text": "Personally Released.",
+      "text": "You indicate the certified departure record.\n\nYou: According to this, I've already left. Yet here I am.\nRegistrar: Yes. Your departure was processed very efficiently.\nYou: Then the record is wrong.\nRegistrar: Or your presence is.\n\nThe Registrar reviews your contest and any supporting evidence you have provided. At last he stamps a new document.\n\nPERSONAL EXCEPTION GRANTED\nEXISTING CERTIFICATIONS: UNCHANGED\n\nRegistrar: We cannot amend an approved departure. We can, however, excuse you from having completed it.\n\nYour exit is authorized. The Original remains behind. You leave the Pavilion alive, your own identity intact and the Pavilion's contradictory certifications uncorrected. You still need a bathroom.\n\nENDING — PERSONALLY RELEASED.",
       "choices": [
         {
           "id": "restart_end_admin",
@@ -1041,7 +1041,7 @@
           "restart": true
         }
       ],
-      "notes": "OWNER-APPROVED 2026-11-17 OUTCOME: successful challenge to exclusive certification grants PERSONAL EXCEPTION / PERSONALLY RELEASED, physically alive, identity retained, Pavilion's underlying contradictory certifications unchanged and Original remains retained. Follow-on bureaucratic inconvenience and restroom need remain. Current short text 'Personally Released.' is a placeholder; full scene dialogue and success narration NOT YET owner-approved. No art approval implied.",
+      "notes": "OWNER-APPROVED 2026-11-17: Exact PERSONALLY RELEASED key dialogue, notice and outcome (reply 'Ok'). Successful grand_0 d6>=4 (+1 nonstacking for optional photo or Pruitt testimony) grants personal exception, physical release with Exposition identity retained and original certifications unchanged; Original remains separately retained. Intro argument and optional evidence callbacks are specified in grand_0.notes and must be appended BEFORE this result in gameplay; the introductory lines included here are for storyboard standalone readability and must not duplicate in runtime. No artwork approval implied; keep restroom need.",
       "effects": {
         "set": {
           "ch3_exit_route": "administrative_exception",
@@ -1634,6 +1634,20 @@
         }
       ],
       "notes": "OWNER-APPROVED 2026-11-17: precise failed-refusal narrative; Original never signs and is never coerced. No immediate death; CONTINUE leads to existing two-choice Final Disposition (certain-safe identity surrender or warned potentially fatal shutter). Uses existing grand-reconciliation scene; no new art approval."
+    },
+    "contest_inadmissible": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The Registrar studies the certified departure record and the physical contradiction in front of him. He stamps the evidence.\n\nFACTUALLY COMPELLING\nADMINISTRATIVELY INADMISSIBLE\n\nRegistrar: Your argument appears correct. Unfortunately, correctness was not among the criteria.\n\nHe opens your Final Disposition file.",
+      "choices": [
+        {
+          "id": "continue_contest_inadmissible",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "disposition"
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 failed challenge prose and routing: Evidence acknowledged as factual but inadmissible; CONTINUE to previously approved two-choice Final Disposition. No sudden death; no face reveal. Optional photo/Pruitt callbacks must occur before this result where available, still within one challenge card."
     }
   }
 }
