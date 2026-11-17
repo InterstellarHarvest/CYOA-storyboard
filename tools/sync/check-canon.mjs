@@ -133,7 +133,7 @@ export function checkCanon() {
   return { ok: !errors.length, errors, notes, stats: { chapters: Object.keys(chapters).length, nodes, routes, artRecords: records.filter((e) => !e.layer).length, statuses: counts, previewed } };
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (process.argv[1] && fs.realpathSync(path.resolve(process.argv[1])) === fs.realpathSync(fileURLToPath(import.meta.url))) {
   const r = checkCanon();
   if (process.argv.includes('--json')) console.log(JSON.stringify(r, null, 2));
   else {

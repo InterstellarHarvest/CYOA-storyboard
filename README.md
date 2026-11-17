@@ -6,17 +6,28 @@ This is the **public, JSON-backed Storyboard + Artwork Production viewer** for T
 - **[Open the Prologue Artwork Lab](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/)** — public-safe visual review with approved M2 shell assets and 28 draft PNGs; no private game engine
 - [Viewer](tools/storyboard/index.html) · [Chapter manifest](story/storyboard-manifest.json) · [Prologue draft](story/chapters/prologue-00.draft.json) · [Item records](story/items.draft.json) · [Shared art prompts](story/artwork.draft.json)
 
-## Boundaries
+## Canon and the production pipeline
 
-The main game project **InterstellarHarvest/CYOA remains private**. The public export is limited to the standalone storyboard, its selected draft JSON, and the separately approved **Prologue Artwork Lab** package (28 draft PNGs plus 17 needed approved M2 visual PNGs and public-safe viewing code). The private gameplay engine, internal rulings, review notes, and private commit history are not published.
+**This repository is the canonical creative source** for The Acceptable Error. Read [docs/105](docs/105_CANONICAL_SYNC_PIPELINE.md) first; the owner rulings are in [docs/102](docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md) and [docs/103](docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md).
 
-Everything here is **public**. Do not commit secret data or unpublished private project material.
+- **Narrative, items, checks and art briefs** are edited here. Publish them after `node tools/sync/check-canon.mjs` passes. You do not need to wait for game integration.
+- **Art selection is approval.** Register the selected PNG with `node tools/sync/register-art.mjs`: it records the exact bytes, hash and source, sets `approved`, and makes the image visible on the site. **Never regenerate or re-approve selected art** unless the owner asks for a revision.
+- **The private game** (`InterstellarHarvest/CYOA`) consumes a *pinned revision* of this repository as a generated, read-only projection (`tools/story-sync/sync.js` there). It publishes back only `story/game-integration.json`, the images a real build uses, which marks them `integrated`.
+- **Drift is a CI failure.** Pages deploys only when `check-canon` passes. It fails on missing chapters, broken routes, undeclared fields, missing or altered selected-art previews, a selected image falling back to `generated` / `not-started`, and `integrated` claims a game build does not back.
 
-## Updating the viewer
+Everything here is **public**. The private engine, review worktrees and generation masters are never published. Only the curated `assets/selected/` package of selected images is, with provenance.
 
-The authoritative drafts are maintained on the private CYOA story branch. After review, copy **only approved-to-publish** `tools/storyboard/index.html` and `story/**` into this public mirror. The two repositories are **not automatically synchronized** (no cross-repository credentials or secret token setup).
+## Viewing selected artwork
 
-On a change to these public files, GitHub Actions publishes the site with the [Pages workflow](.github/workflows/pages.yml). The viewer supports importing and exporting JSON locally, but edits made in your browser do not directly write back to either GitHub repository.
+Open **Artwork** and choose **Selected**. Each record shows:
+
+- **Actual pixels** at native resolution; click to zoom 1–4×.
+- **Scene states** drawn over (overlay) or instead of (replace) their scene.
+- **Portraits:** NPC foregrounds composited on their portrait background; the House intercom's complete opaque views.
+- **Album:** the Focus A pages.
+- **Items:** inventory slot beside the inspection art.
+- **Death screens.**
+- **Provenance:** the source commit and path, and the game build that uses the image.
 
 ## Arrange your own timeline
 
@@ -44,5 +55,8 @@ NODE_PATH="$(npm root -g)" node tools/storyboard/qa-timeline.js      # timeline 
 ```
 
 ## Paired scene art for Codex
+
+Codex reads requirements from `story/artwork.draft.json`; records whose status is `approved`, `integrated` or `reused` are finished — do not regenerate them.
+
 
 `story/artwork.draft.json` is the authority. The `scenes` records contain main 314×206 images; a scene may also contain a nested `portraitBackground` for a distinct opaque 564×278 closer environment view. NPC foreground portraits live separately in `portraits` as transparent 564×278 PNGs. Both scene records and portrait-background records are browsable/editable from the public storyboard. Reception scene/background are reused approved art and must not be regenerated.

@@ -1218,7 +1218,7 @@
      Object.entries(variants).forEach(([variant,record])=>all.push({group:"items",id,variant,record}));
    });
    const counts={};all.filter(x=>!x.nested).forEach(x=>{const s=x.record.status||"not-started";counts[s]=(counts[s]||0)+1;});
-   const nested=all.filter(x=>x.nested).length,withPreview=all.filter(x=>previewOf(x)).length;
+   const nested=all.filter(x=>x.nested).length,withPreview=Object.keys(state.preview?.images||{}).length;
    labeled(pane,"Production overview",(all.length-nested)+" shared art records (+"+nested+" scene states / views / pages) · "+Object.entries(counts).map(([s,n])=>n+" "+s).join(" · ")+"\n"+withPreview+" selected images viewable here"+(state.integration?" · game build "+state.integration.game.commit.slice(0,10)+" uses "+state.integration.images.length:""));
    pane.append(el("p","meta","Status meanings: approved = selected for use (creative approval complete) · integrated = approved and used in a working game build · reused = approved art reused elsewhere · generated = candidates exist, none selected · not-started = no selected image. Never regenerate or re-approve selected art."));
    const filterBar=el("div","art-filter");
