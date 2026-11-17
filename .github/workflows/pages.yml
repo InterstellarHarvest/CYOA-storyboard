@@ -8,6 +8,8 @@ on:
       - 'tools/storyboard/**'
       - 'tools/prologue-art-lab/**'
       - 'story/**'
+      - 'assets/**'
+      - 'tools/sync/**'
   workflow_dispatch:
 
 permissions:
@@ -28,6 +30,8 @@ jobs:
     steps:
       - name: Check out public storyboard files
         uses: actions/checkout@v4
+      - name: Canonical drift check (chapters, routes, field contract, selected-art previews, status regression, game integration)
+        run: node tools/sync/check-canon.mjs
       - name: Validate storyboard and artwork catalog
         run: node tools/storyboard/qa-smoke.mjs
       - name: Verify death-popup game export matches authored fatal boxes
@@ -49,6 +53,12 @@ jobs:
           cp story/artwork.draft.json _site/story/artwork.draft.json
           cp story/storyboard-layout.json _site/story/storyboard-layout.json
           cp story/chapters/*.json _site/story/chapters/
+          cp story/artwork-preview.json story/sync-contract.json _site/story/
+          if [ -f story/game-integration.json ]; then cp story/game-integration.json _site/story/; fi
+          mkdir -p _site/assets
+          cp -a assets/selected _site/assets/selected
+          test -s _site/story/artwork-preview.json
+          node -e 'const p=require("./story/artwork-preview.json");const fs=require("fs");for(const [k,v] of Object.entries(p.images)){if(!fs.statSync("_site/"+v.file).size)throw Error(k)}console.log(Object.keys(p.images).length+" selected-art previews staged")'
           touch _site/.nojekyll
           test -s _site/tools/storyboard/index.html
           test -s _site/tools/prologue-art-lab/index.html

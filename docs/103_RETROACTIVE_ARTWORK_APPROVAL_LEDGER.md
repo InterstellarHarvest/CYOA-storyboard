@@ -34,3 +34,20 @@ The shared `story/artwork.draft.json` file was updated directly. Current top-lev
 **Important:** `approved` is a creative signoff; `integrated` is that signoff **plus verified gameplay use**. These are not competing states and do not require a second approval review. Unselected images and alternate candidates must not be auto-approved because a PNG exists in a branch. Do not force the older game repository's stale art catalog over this corrected public source.
 
 The public storyboard records approval/status and selected provenance, but not all Chapter 1–2 image bytes have been mirrored to the public site for actual image preview. Adding approved preview packages and verifying all local Gameplay PMO worktrees is a separate technical integration task. Never confuse unavailable public preview pixels with missing/unfinished creative artwork.
+
+## Addendum: Gameplay PMO verification, 2026-11-16 (docs/105)
+
+- **Audit result.** The most advanced playable build is InterstellarHarvest/CYOA draft PR #13, `0f42e50`. It sits on PR #11, which sits on PR #10, which sits on PR #6. It references exactly **61** catalog images:
+  - 28 Prologue images;
+  - 28 Chapter 1 images;
+  - 5 reused M2 images.
+  - Every one matches this catalog's `integrated` / `reused` records.
+- **The unbound chair state** stays `approved`.
+- **The Rest Assured death vignette** (one shared record for all three causes per docs/104, `deathScreens["house_of_tomorrow/rest_assured"]`) is now `integrated` with its verified game path:
+  - owner-approved at `000f096`;
+  - byte-identical in the game's review-gated `?deathproof` presentation, sha256 `7f469efa…`;
+  - the game's gated presentation still matches only the voluntary cause; widening it is a pending gameplay change.
+- **Chapter 2:** no Biology Park image is integrated in any game branch, worktree or stash. The seven Batch 1 images stay `approved`, and their exact selected bytes are now previewable (SHA-256s verified against this ledger).
+- **Verification is now mechanical.** `story/game-integration.json` (written by the game) lists each used image and its hash. `tools/sync/check-canon.mjs` fails the deploy in either case:
+  - an `integrated` record is not in that report;
+  - a selected record loses its preview, or regresses in status.

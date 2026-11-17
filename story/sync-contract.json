@@ -1,0 +1,30 @@
+{
+  "schema": "cyoa-storyboard-sync-contract-v1",
+  "about": "Storyboard-only. The boundary between canonical runtime content and storyboard-only annotations (docs/105). The game's tools/story-sync/sync.js strips storyboardOnlyFields when it projects a pinned revision into the game, and refuses any field listed in neither runtimeFields nor storyboardOnlyFields. runtimeFields mirrors the game importer (tools/story-import/convert.js); the game sync tool fails if the two drift.",
+  "requiredChapters": [
+    "prologue-00",
+    "chapter-01",
+    "chapter-02",
+    "chapter-03"
+  ],
+  "runtimeFields": {
+    "manifest": ["chapters", "items", "artwork", "layout", "start"],
+    "manifestChapter": ["id", "title", "file", "status"],
+    "chapter": ["title", "start", "scene", "nodes"],
+    "node": ["mode", "scene", "speaker", "pose", "focus", "scenePickup", "objective", "effects", "text", "choices", "show", "use", "contextAction", "end"],
+    "choice": ["id", "kind", "text", "say", "if", "effects", "once", "result", "check", "pass", "fail", "to", "back", "chapter", "restart"],
+    "entry": ["kind", "say", "if", "effects", "once", "result", "check", "pass", "fail", "to", "back", "chapter"],
+    "item": ["name", "description", "read", "inspect", "slotArt", "inspectArt"]
+  },
+  "storyboardOnlyFields": {
+    "node": ["notes", "comment", "position", "layout", "storyboardNextChapter", "deathPopup", "endingArt"],
+    "choice": ["notes", "displayGroup", "missingReason"],
+    "entry": ["notes"]
+  },
+  "storyboardOnlyFiles": [
+    "story/storyboard-layout.json",
+    "story/sync-contract.json",
+    "story/artwork-preview.json",
+    "story/game-integration.json"
+  ]
+}

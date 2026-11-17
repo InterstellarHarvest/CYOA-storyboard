@@ -15,23 +15,23 @@
               "disputed"
             ]
           },
-          "text": "You follow the facilities pictogram through a humming corridor. You are still waiting for somebody to review your dismissal. The review has not made the need for a bathroom any less urgent.\n\nA sign ahead reads HOUSE OF TOMORROW. The restroom-like symbol belongs to its advertising."
+          "text": "You follow the facilities pictogram through a humming corridor. You are still waiting for somebody to review your dismissal. The review has not made the need for a bathroom any less urgent.\n\nAround the corner, the blue figure beside a square points to an ordinary, unmarked ivory door. Finally, a plausible destination."
         },
         {
           "if": {
             "flag": "appointment_disputed"
           },
-          "text": "You follow the facilities pictogram, still disputing the appointment that was foisted on you. The painted figure beside a square was not a restroom symbol after all. It belongs to a display marked HOUSE OF TOMORROW."
+          "text": "You follow the facilities pictogram, still disputing the appointment that was foisted on you. A painted figure beside a square points to one solid ivory door. Nothing on it tells you that your interpretation is wrong."
         },
         {
-          "text": "You follow the pale blue facilities pictogram around a corner. The complete sign reads HOUSE OF TOMORROW. It is not a bathroom sign at all."
+          "text": "You follow the pale blue facilities pictogram around a corner. It points to a plain ivory door with no nameplate or window. At last, something that might be a bathroom."
         }
       ],
       "choices": [
         {
           "id": "enter_show_home",
           "kind": "action",
-          "text": "PUSH OPEN THE DISPLAY ENTRANCE.",
+          "text": "TRY THE UNMARKED DOOR.",
           "to": "badge_registration"
         }
       ],
@@ -40,7 +40,7 @@
     "badge_registration": {
       "mode": "narrative",
       "scene": "house_of_tomorrow/foyer",
-      "text": "Your pale blue Examiner badge slides past the entrance scanner. A green light blinks: DEMONSTRATION PARTICIPANT ACCEPTED. You did not apply for this position.\n\nThe outer door closes behind you. A wall speaker swivels into view.",
+      "text": "Your pale blue Examiner badge slides past the entrance scanner. A green light blinks. A pleasant recorded voice announces: HOUSE OF TOMORROW. DEMONSTRATION PARTICIPANT ACCEPTED. You did not apply for this position.\n\nThe door closes behind you. A wall intercom's recessed faceplate tilts toward you.",
       "choices": [
         {
           "id": "hear_house_greeting",
@@ -49,7 +49,7 @@
           "to": "welcome_home"
         }
       ],
-      "notes": "Use the layered wall-speaker portrait in dialogue nodes. Nothing in the House contains visible living family members."
+      "notes": "Use the complete opaque foyer intercom portrait for House dialogue here, not a separately layered House foreground. Nothing in the House contains visible living family members."
     },
     "welcome_home": {
       "mode": "dialogue",
@@ -944,7 +944,7 @@
           ]
         }
       ],
-      "text": "\"Martin, stop making faces. Everyone ready? Say cheese!\"\n\nThe off-center camera fires. A photograph slides from the machine. Three empty chairs occupy nearly the entire image. At the very bottom are only your shoes and the lower parts of your legs.\n\n\"The best one we've taken in years! Please accept a complimentary copy.\"\n\nAn enormous family album lies beside the printer.",
+      "text": "\"Martin, stop making faces. Everyone ready? Say cheese!\"\n\nThe off-center camera fires. A photograph slides from the machine. Three empty chairs occupy nearly the entire image. At the right edge, a slice of the fourth chair appears, along with part of your shirt, your lap, your legs, and your forward-facing shoes. Your head is entirely out of frame.\n\n\"The best one we've taken in years! Please accept a complimentary copy.\"\n\nAn enormous family album lies beside the printer.",
       "choices": [
         {
           "id": "inspect_album",
@@ -968,7 +968,7 @@
           "to": "bathroom_arrival"
         }
       ],
-      "notes": "Artwork: scene has vacant chairs only. Player is NEVER visually identified; photo print is separate item art showing only lower legs/feet."
+      "notes": "Artwork: main gallery scene contains four vacant chairs. The separate photograph shows three complete empty chairs and a cropped fourth at right, with part of the seated protagonist's shirt, lap, legs and shoes visible; no head or face."
     },
     "album_closeup": {
       "mode": "focus",
@@ -1047,7 +1047,7 @@
     "showroom_reset": {
       "mode": "narrative",
       "scene": "house_of_tomorrow/public_exit",
-      "text": "\"Congratulations! All domestic requirements have been satisfied. Please exit promptly so we may prepare for your next visit.\"\n\nThe house initiates its automated showroom reset. For a few seconds, it suspends the occupancy rule. The public-facing doors swing open.",
+      "text": "\"Congratulations! All domestic requirements have been satisfied. Please exit promptly so we may prepare for your next visit.\"\n\nThe house initiates its automated showroom reset. For a few seconds, it suspends the occupancy rule. The public-facing door swings outward.",
       "choices": [
         {
           "id": "leave_during_reset",
@@ -1067,7 +1067,7 @@
           }
         }
       ],
-      "text": "You walk back onto the visitor concourse. The house thanks you for being a valued member of the demonstration family and closes its doors.\n\nYou survived a domestic future that has no working toilet. Your original problem remains entirely unresolved.",
+      "text": "You walk back onto the visitor concourse. The house thanks you for being a valued member of the demonstration family and closes its door.\n\nYou survived a domestic future that has no working toilet. Your original problem remains entirely unresolved.",
       "choices": [
         {
           "id": "continue_to_chapter_02_exit_showroom_reset",

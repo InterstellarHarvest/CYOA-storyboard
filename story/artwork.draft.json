@@ -1933,9 +1933,9 @@
     "house_of_tomorrow/rest_assured": {
       "title": "PERMANENTLY SATISFIED. — REST ASSURED",
       "kind": "death-screen",
-      "status": "approved",
+      "status": "integrated",
       "dimensions": "314x206",
-      "assetPath": null,
+      "assetPath": "art/deaths/rest_assured_voluntary.png",
       "suggestedFilename": "art/deaths/rest_assured_voluntary.png",
       "prompt": "DO NOT GENERATE OR REVISE. REUSE approved native 314×206 Rest Assured death image for EVERY cause arriving at exit_chair_fatal: the sheet-covered reclined customer in chair, enlarged brown shoes toes upward with soles facing viewer, intact tuft, green light and pedestal, no face or arms. Image selected by owner. Render at exact 2× in existing A1 death popup. Preserve title/body as independent text.",
       "selectedSource": {
@@ -1946,7 +1946,7 @@
         "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
         "dimensions": "314x206"
       },
-      "notes": "OWNER OVERRIDE 2026-11-16: All THREE Rest Assured causes share ONE identical fatal result and ONE artwork; the selected voluntary illustration is explicitly APPROVED for all three. This overrides older cause-specific art recommendations in docs/90 and 93. Don't create separate death images or story nodes. PNG exists on game review branch, but public art package has not yet mirrored the verified binary, so assetPath is null intentionally. Not an art-generation task."
+      "notes": "OWNER OVERRIDE 2026-11-16: All THREE Rest Assured causes share ONE identical fatal result and ONE artwork; the selected voluntary illustration is explicitly APPROVED for all three. This overrides older cause-specific art recommendations in docs/90 and 93. Don't create separate death images or story nodes. PNG exists on game review branch, but public art package has not yet mirrored the verified binary, so assetPath is null intentionally. Not an art-generation task.\nGAMEPLAY PMO 2026-11-16 (docs/105): verified byte-identical (sha256 7f469efa…) at the game production path art/deaths/rest_assured_voluntary.png, used by the review-gated ?deathproof end presentation (CYOA PR #11/#13/#14), so status integrated and assetPath set; the public preview now mirrors the exact binary. NOTE: the game presentation still matches only the voluntary cause (accept_permanent_rest from chair_locked); extending it to all three causes per this owner override is a pending gameplay change."
     },
     "biology_park/classified_as_compost": {
       "title": "CLASSIFIED AS COMPOST.",
