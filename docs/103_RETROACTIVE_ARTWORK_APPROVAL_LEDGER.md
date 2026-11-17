@@ -65,3 +65,18 @@ All seven Batch2 images were visually reviewed and **approved without changes**.
 | `scenes:biology_park/moving_forest` | `review/chapter-02-batch02-2026-11-17/candidates/E-moving-forest.png` | `5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81` |
 | `scenes:biology_park/overgrown_tram` | `review/chapter-02-batch02-2026-11-17/candidates/F-overgrown-tram.png` | `d4c381642d2d54e6341fd82121ddcf5caef11029fa37c16d221edd5173d470c7` |
 | `scenes:biology_park/sensor_gallery` | `review/chapter-02-batch02-2026-11-17/candidates/G-sensor-gallery.png` | `b2f23c8d015c1f45af200733ba28201627c6d10102dcd9e34b92230c32683a7c` |
+
+
+## Addendum — Chapter 2 Batch 3 owner selections, 2026-11-17
+
+Final owner approval without changes. Source `InterstellarHarvest/CYOA@009c5afea133f36a92f2af74887e00b351d9b914`, branch `agent/ch02-art-batch03-biopark-machinery`. Exact bytes registered using `tools/sync/register-art.mjs`; approved, never self-integrated. All game production paths remain null pending Gameplay PMO. Prior approved selections and original generations are preserved.
+
+| Key | Source path | SHA-256 |
+|---|---|---|
+| `scenes:biology_park/authorization_archive` | `review/chapter-02-batch03-2026-11-17/candidates/A-authorization-archive.png` | `cf56a225b9341ac24c654562e002e4d45d5c56be36aa7f4d3f40f045bebc79ec` |
+| `scenes:biology_park/central_flower` | `review/chapter-02-batch03-2026-11-17/candidates/B-central-flower.png` | `68698aea02b19bbc9fedca48b978be1c2329ca136c140084b2396dfafe4f8e58` |
+| `scenes:biology_park/translator_machine` | `review/chapter-02-batch03-2026-11-17/candidates/C-translator-machine.png` | `ff5704d99d027ea8a86e78b228102826bcceec03b5ae1ba583200a99822e95a3` |
+| `scenes:biology_park/planting_machine` | `review/chapter-02-batch03-2026-11-17/candidates/D-planting-machine.png` | `047282bbf1e5189645e5784d9b30278cb5b641a708eeed50f43945017d9b78da` |
+| `scenes:biology_park/sorting_conveyor` | `review/chapter-02-batch03-2026-11-17/candidates/E-sorting-conveyor.png` | `fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b` |
+| `scenes:biology_park/planting_hopper` | `review/chapter-02-batch03-2026-11-17/candidates/F-planting-hopper.png` | `5ab29aef160eb59a0d34465782d165c042b6ad8131ac04ad87215b03c33deb3b` |
+| `scenes:biology_park/waste_chute` | `review/chapter-02-batch03-2026-11-17/candidates/G-waste-chute.png` | `fa2f9021a7c33f6ff188eff438ef4abec35d9ba0d1a77d805cd2ceb98bbaf498` |

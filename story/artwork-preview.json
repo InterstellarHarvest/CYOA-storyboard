@@ -497,6 +497,36 @@
         "path": "art/portraits/termination_drone/drone_slot_closed.png"
       }
     },
+    "scenes:biology_park/authorization_archive": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/authorization_archive.png",
+      "sha256": "cf56a225b9341ac24c654562e002e4d45d5c56be36aa7f4d3f40f045bebc79ec",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/A-authorization-archive.png"
+      }
+    },
+    "scenes:biology_park/central_flower": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/central_flower.png",
+      "sha256": "68698aea02b19bbc9fedca48b978be1c2329ca136c140084b2396dfafe4f8e58",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/B-central-flower.png"
+      }
+    },
     "scenes:biology_park/control_tower": {
       "file": "assets/selected/pending-integration/scenes/biology_park/control_tower.png",
       "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
@@ -632,6 +662,36 @@
         "path": "review/chapter-02-batch02-2026-11-17/candidates/F-overgrown-tram.png"
       }
     },
+    "scenes:biology_park/planting_hopper": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/planting_hopper.png",
+      "sha256": "5ab29aef160eb59a0d34465782d165c042b6ad8131ac04ad87215b03c33deb3b",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/F-planting-hopper.png"
+      }
+    },
+    "scenes:biology_park/planting_machine": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/planting_machine.png",
+      "sha256": "047282bbf1e5189645e5784d9b30278cb5b641a708eeed50f43945017d9b78da",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/D-planting-machine.png"
+      }
+    },
     "scenes:biology_park/sensor_gallery": {
       "file": "assets/selected/pending-integration/scenes/biology_park/sensor_gallery.png",
       "sha256": "b2f23c8d015c1f45af200733ba28201627c6d10102dcd9e34b92230c32683a7c",
@@ -662,6 +722,21 @@
         "path": "review/chapter-02-batch01-2026-11-15/candidates/D-service-entry.png"
       }
     },
+    "scenes:biology_park/sorting_conveyor": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/sorting_conveyor.png",
+      "sha256": "fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/E-sorting-conveyor.png"
+      }
+    },
     "scenes:biology_park/spore_garden": {
       "file": "assets/selected/pending-integration/scenes/biology_park/spore_garden.png",
       "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
@@ -690,6 +765,36 @@
         "ref": "agent/ch02-art-batch02-biopark-routes",
         "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
         "path": "review/chapter-02-batch02-2026-11-17/candidates/C-tour-tram.png"
+      }
+    },
+    "scenes:biology_park/translator_machine": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/translator_machine.png",
+      "sha256": "ff5704d99d027ea8a86e78b228102826bcceec03b5ae1ba583200a99822e95a3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/C-translator-machine.png"
+      }
+    },
+    "scenes:biology_park/waste_chute": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/waste_chute.png",
+      "sha256": "fa2f9021a7c33f6ff188eff438ef4abec35d9ba0d1a77d805cd2ceb98bbaf498",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch03-biopark-machinery",
+        "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
+        "path": "review/chapter-02-batch03-2026-11-17/candidates/G-waste-chute.png"
       }
     },
     "scenes:exposition/entrance": {
