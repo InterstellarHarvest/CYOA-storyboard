@@ -80,7 +80,7 @@ async function run(name, base) {
   check(b, 'Chapter 1: 36 authored nodes, arrival inspector, item choice, and independent unstarted scene reference',
     /HOUSE OF TOMORROW/.test(ch1Inspector)
     && /scenes\/house_of_tomorrow\/arrival · integrated/.test(ch1Inspector)
-    && /PUSH OPEN THE DISPLAY ENTRANCE/.test(ch1Inspector)
+    && /TRY THE UNMARKED DOOR\./.test(ch1Inspector)
     && !/facilities_corridor/.test(ch1Inspector), ch1Inspector.slice(0, 500));
   const c = await drag(page, 'house_arrival', 160, 110);
   await page.screenshot({ path: path.join(OUT, name + '_2_chapter01.png') });

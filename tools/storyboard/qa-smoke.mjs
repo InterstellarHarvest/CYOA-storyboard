@@ -28,11 +28,12 @@ const productionRecords=[
   ...Object.values(artwork.focus||{}),
   ...Object.values(artwork.deathScreens||{})
 ];
-assert.equal(productionRecords.length,163,'shared artwork includes selected Chapter 1 views (paired backgrounds retired)');
+assert.equal(productionRecords.length,164,'shared artwork includes selected Chapter 1 views (paired backgrounds retired) and the Rest Assured death screen');
 assert.equal(productionRecords.filter(r=>r.status==='generated').length,0,'no previously selected source is incorrectly awaiting approval');
 assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
-assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46,'Prologue and selected Chapter 1 artwork already used in game');
-assert.equal(productionRecords.filter(r=>r.status==='approved').length,7,'accepted Biology Park Batch 1 art awaits verified integration, not art approval');
+assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46+(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary']?.status==='integrated'?1:0),'Prologue and selected Chapter 1 artwork already used in game (+ Rest Assured death screen once the game reports it)');
+assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary']?.status),'owner-approved Rest Assured death screen is selected, never pending');
+assert.equal(productionRecords.filter(r=>r.status==='approved').length,7+(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary']?.status==='approved'?1:0),'accepted Biology Park Batch 1 art awaits verified integration, not art approval');
 assert.equal(productionRecords.filter(r=>r.status==='not-started').length,105,'only unselected images remain not-started');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'approved','Chapter 2 Bureau artwork already selected');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'selected Chapter 2 Bureau review image has no confirmed game production path yet');
@@ -286,11 +287,12 @@ assert.equal(select.value,'1','selector shows Chapter 1');
 assert.equal(nodeIds().length,36,'Chapter 1 graph shows all 36 authored nodes');
 assert.match(document.getElementById('chapterTitle').textContent,/^Chapter 1 — House of Tomorrow · draft$/,'board heading names the chapter and its draft status');
 assert.ok(flatten(pane()).some(x=>x.textContent==='House Arrival'),'Chapter 1 inspector opens on its authored start node');
-assert.ok(flatten(pane()).some(x=>/HOUSE OF TOMORROW/.test(String(x.textContent))),'House arrival narration appears in the inspector');
+assert.ok(flatten(pane()).some(x=>/plain ivory door with no nameplate/.test(String(x.textContent))),'House arrival narration (unmarked ivory door) appears in the inspector');
+assert.ok(!flatten(pane()).some(x=>/complete sign reads HOUSE OF TOMORROW/.test(String(x.textContent))),'superseded HOUSE OF TOMORROW signage prose is gone');
 const ch1Art=flatten(pane()).find(x=>x.tagName==='button'&&String(x.textContent).includes('HOUSE OF TOMORROW'));
 assert.ok(ch1Art&&flatten(ch1Art).some(x=>/scenes\/house_of_tomorrow\/arrival · integrated/.test(String(x.textContent))),'House arrival art resolves as already integrated');
 assert.ok(!flatten(pane()).some(x=>/facilities_corridor/.test(String(x.textContent))),'Chapter 1 does not borrow the facilities corridor art');
-assert.ok(flatten(pane()).some(x=>/PUSH OPEN THE DISPLAY ENTRANCE/.test(String(x.textContent))),'authored arrival choice appears in the Chapter 1 inspector');
+assert.ok(flatten(pane()).some(x=>/TRY THE UNMARKED DOOR\./.test(String(x.textContent))),'authored arrival choice appears in the Chapter 1 inspector');
 // 3. Move the Chapter 1 node.
 const ch1=dragNode('house_arrival',210,130,33);
 assert.ok(storage.has('cyoa-storyboard-layout-v1:chapter-01'),'Chapter 1 positions cached under their own key');

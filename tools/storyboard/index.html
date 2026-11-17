@@ -44,6 +44,22 @@
 #edges .tl-label{pointer-events:auto;cursor:pointer}
 #edges .tl-edge.hl .tl-line{stroke-width:3.2}
 #edges .tl-label.hl rect.plate{stroke-width:2}
+/* Selected-artwork previews (docs/105) */
+.px-stack{position:relative;margin:6px 0 2px;border:1px solid #516271;cursor:zoom-in;background:#0d1217;max-width:100%}
+.px-stack img{position:absolute;left:0;top:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges}
+.px-stack.checker,.thumb{background:repeating-conic-gradient(#3a4651 0 25%,#262f38 0 50%) 0 0/12px 12px}
+.art-preview figure{margin:6px 0 12px}.art-preview figcaption{font-size:11px;color:#a8b9c4}
+.art-preview .prov{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10.5px;word-break:break-all}
+.item-art{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}.item-art figure{margin:6px 0}.item-art figcaption{font-size:11px;color:#a8b9c4}
+.art-brief{position:relative}.art-brief.has-thumb{padding-right:112px;min-height:52px}
+.art-brief .thumb{position:absolute;right:7px;top:6px;height:38px;max-width:96px;image-rendering:pixelated;border:1px solid #465563}
+.art-brief.nested{margin-left:14px;width:calc(100% - 14px);border-left-color:#4b6470}
+.art-filter{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}.art-filter button{padding:4px 9px;font-size:12px}.art-filter button.on{background:#3f5f6d;border-color:#7fb0c2}
+#artZoom{max-width:96vw;max-height:94vh;padding:0;border:1px solid #577c86;background:#10161c;color:#e2e8ee}
+#artZoom::backdrop{background:#000b}
+#artZoom .zoom-head{position:sticky;top:0;display:flex;gap:12px;justify-content:space-between;align-items:center;padding:9px 12px;background:#1d2730;border-bottom:1px solid #37424d;font-size:13px}
+#artZoom .zoom-head button.on{background:#3f5f6d}#artZoom a{color:#9fd3e0}
+#zoomBody{padding:14px;overflow:auto;max-height:calc(94vh - 52px)}#zoomBody .px-stack{max-width:none;cursor:default}
 </style>
 </head>
 <body>
@@ -69,6 +85,7 @@
  </section>
  <aside id="details"><h2>Choose a story node</h2><p class="muted">Select a node for its story and artwork. Drag a box to rearrange the timeline; drag empty space to pan. Positions autosave in this browser, and Export Layout saves a shareable JSON file.</p><p class="muted">The story is kept in external JSON files; this page contains no chapter content.</p></aside>
 </div>
+<dialog id="artZoom" aria-label="Artwork at native pixel scale"><div class="zoom-head"><strong id="zoomTitle"></strong><span><button data-scale="1">1×</button><button data-scale="2">2×</button><button data-scale="3">3×</button><button data-scale="4">4×</button> <a id="zoomOpen" target="_blank" rel="noopener">Open PNG</a> <button id="zoomClose">Close</button></span></div><div id="zoomBody"></div></dialog>
 <script>
 (() => {
  "use strict";
@@ -953,21 +970,136 @@
    pane.append(section);
  }
  
- function artworkAt(group,id,variant){
-   const library=state.artwork?.[group];
-   return group==="items"?library?.[id]?.[variant]||null:group==="scenes"&&variant==="portraitBackground"?library?.[id]?.portraitBackground||null:library?.[id]||null;
+ // Nested variants: scenes portraitBackground / states:<id>; portraits views:<scene> / layers:<role>;
+ // focus pages:<n>; items slot / inspect. Same names as the record keys of tools/sync/lib.mjs.
+ function variantSlot(group,id,variant){
+   const library=state.artwork?.[group],parent=library?.[id];
+   if(!variant)return {get:()=>parent||null,set:v=>{library[id]=v;}};
+   if(group==="items"||variant==="portraitBackground")return {get:()=>parent?.[variant]||null,set:v=>{parent[variant]=v;}};
+   const [kind,name]=[variant.slice(0,variant.indexOf(":")),variant.slice(variant.indexOf(":")+1)];
+   if(kind==="states"){const i=(parent?.states||[]).findIndex(s=>s.id===name);return {get:()=>i<0?null:parent.states[i],set:v=>{parent.states[i]=v;}};}
+   if(kind==="views")return {get:()=>parent?.views?.[name]||null,set:v=>{parent.views[name]=v;}};
+   if(kind==="pages"){const i=Number(name)-1;return {get:()=>parent?.pages?.[i]||null,set:v=>{parent.pages[i]=v;}};}
+   if(kind==="layers"){const i=(parent?.layers||[]).findIndex(l=>l.role===name);return {get:()=>i<0?null:parent.layers[i],set:v=>{parent.layers[i]=v;}};}
+   return {get:()=>null,set:()=>{}};
  }
+ function artworkAt(group,id,variant){return variantSlot(group,id,variant).get();}
+ function artworkSet(ref,value){variantSlot(ref.group,ref.id,ref.variant).set(value);}
  function artKey(ref){return ref.group+"/"+ref.id+(ref.variant?"/"+ref.variant:"");}
- function artRefsForNode(node){
-   const refs=[],scene=node.scene||state.chapter?.scene;
+ function stateApplies(s,chapterKey,nodeId){
+   const sel=s.selection;if(!sel)return false;
+   const at=[].concat(sel.at||[]);return at.includes(chapterKey+":"+nodeId)||(!sel.at&&!!sel.if);
+ }
+ function artRefsForNode(node,nodeId){
+   const refs=[],scene=node.scene||state.chapter?.scene,A=state.artwork;
    if(scene){
     refs.push({group:"scenes",id:scene});
-    if(node.speaker&&state.artwork?.scenes?.[scene]?.portraitBackground)refs.push({group:"scenes",id:scene,variant:"portraitBackground"});
+    (A?.scenes?.[scene]?.states||[]).forEach(s=>{
+      const sel=s.selection;
+      if(sel&&(stateApplies(s,state.chapterKey,nodeId)||(sel.focus&&sel.focus===node.focus)))refs.push({group:"scenes",id:scene,variant:"states:"+s.id,conditional:true});
+    });
+    if(node.speaker&&A?.scenes?.[scene]?.portraitBackground)refs.push({group:"scenes",id:scene,variant:"portraitBackground"});
   }
-   if(node.speaker)refs.push({group:"portraits",id:node.speaker+":"+(node.pose||"default")});
+   if(node.speaker){
+     const pid=node.speaker+":"+(node.pose||"default"),p=A?.portraits?.[pid];
+     if(p?.views&&scene&&p.views[scene])refs.push({group:"portraits",id:pid,variant:"views:"+scene});
+     else refs.push({group:"portraits",id:pid});
+   }
    if(node.focus)refs.push({group:"focus",id:node.focus});
    if(node.endingArt)refs.push({group:"deathScreens",id:node.endingArt});
+   Object.entries(A?.deathScreens||{}).forEach(([id,d])=>{if(d.trigger?.end===state.chapterKey+":"+nodeId&&id!==node.endingArt)refs.push({group:"deathScreens",id});});
    return refs;
+ }
+
+ // ---- Selected-artwork previews (docs/105) ------------------------------------------------------
+ // story/artwork-preview.json maps record keys to curated public copies of SELECTED art, with
+ // provenance; story/game-integration.json lists what a real game build uses. Pixels are drawn at an
+ // integer zoom when they fit (otherwise proportionally), never cropped or resampled into another size.
+ const SELECTED_STATUS=["approved","integrated","reused"];
+ function recordKey(ref){return ref.group+":"+ref.id+(ref.variant?"#"+ref.variant:"");}
+ function previewOf(ref){
+   const p=state.preview?.images?.[recordKey(ref)];
+   return p?{...p,key:recordKey(ref),url:new URL("../../"+p.file,location.href).href}:null;
+ }
+ // The first previewable image for a record (itself, or its first view / page / layer).
+ function thumbOf(ref,record){
+   const own=previewOf(ref);if(own||!record)return own;
+   if(record.views)for(const s of Object.keys(record.views)){const p=previewOf({...ref,variant:"views:"+s});if(p)return p;}
+   if(record.pages)for(let i=1;i<=record.pages.length;i++){const p=previewOf({...ref,variant:"pages:"+i});if(p)return p;}
+   if(record.layers){const ls=record.layers.map(l=>previewOf({...ref,variant:"layers:"+l.role}));if(ls[0])return ls[0];}
+   return null;
+ }
+ function integrationOf(key){return (state.integration?.images||[]).find(i=>i.key===key)||null;}
+ function fitScale(w,max){return w<=max?Math.max(1,Math.floor(max/w)):max/w;}
+ // Layers share one origin and one scale: [base, overlay, ...].
+ function pixelStack(layers,max,checker,title){
+   const [w,h]=layers[0].size,s=fitScale(w,max),box=el("div","px-stack"+(checker?" checker":""));
+   box.style.width=Math.round(w*s)+"px";box.style.height=Math.round(h*s)+"px";
+   layers.forEach(p=>{const img=el("img");img.src=p.url;img.alt=layers.length===1?title:"";img.loading="lazy";box.append(img);});
+   box.title=title+" · "+w+"×"+h+(s===Math.floor(s)?" shown at "+s+"×":" scaled to fit")+" · click to zoom";
+   box.onclick=()=>openZoom(layers,title,checker);
+   return box;
+ }
+ function openZoom(layers,title,checker){
+   const d=$("artZoom"),body=$("zoomBody"),[w,h]=layers[0].size;
+   $("zoomTitle").textContent=title+" · native "+w+"×"+h;
+   const draw=s=>{body.replaceChildren();const box=el("div","px-stack"+(checker?" checker":""));box.style.width=w*s+"px";box.style.height=h*s+"px";
+     layers.forEach(p=>{const img=el("img");img.src=p.url;img.alt="";box.append(img);});body.append(box);
+     d.querySelectorAll("[data-scale]").forEach(b=>b.classList.toggle("on",Number(b.dataset.scale)===s));};
+   d.querySelectorAll("[data-scale]").forEach(b=>b.onclick=()=>draw(Number(b.dataset.scale)));
+   $("zoomOpen").href=layers[layers.length-1].url;
+   draw(w<=400?3:w<=600?2:1);
+   if(d.showModal)d.showModal();else d.setAttribute("open","");
+ }
+ function provenanceLine(p){
+   const s=p.source||{},integ=integrationOf(p.key);
+   return p.size.join("×")+" · "+p.alpha+" · sha256 "+p.sha256.slice(0,16)+"…\nSelected source: "+(s.repo||"?")+(s.ref?" ("+s.ref+")":"")+" @ "+(s.commit||"?").slice(0,10)+" : "+(s.path||"?")
+     +(integ?"\nIn game build "+state.integration.game.commit.slice(0,10)+(state.integration.game.branch?" ("+state.integration.game.branch+")":"")+" · storyboard "+state.integration.storyboard.revision.slice(0,10)+(integ.gate?" · review-gated ?"+integ.gate:""):"");
+ }
+ function previewSection(pane,ref,record){
+   const sec=el("section","art-preview");sec.append(el("h3","","Selected artwork"));
+   let shown=0;const own=previewOf(ref);
+   const fig=(label,layers,checker)=>{
+     if(!layers.length||!layers.every(Boolean))return;
+     const f=el("figure");f.append(pixelStack(layers,348,checker,label),el("figcaption","",label));sec.append(f);shown++;
+   };
+   if(ref.group==="portraits"&&record.views){
+     Object.keys(record.views).forEach(scene=>fig("Complete opaque view — "+scene,[previewOf({...ref,variant:"views:"+scene})]));
+     if(shown)sec.append(el("p","meta","Opaque-complete conversation portrait: one finished image per location, no separate background or transparent foreground."));
+   }else if(ref.group==="portraits"&&record.layers){
+     const ls=record.layers.map(l=>previewOf({...ref,variant:"layers:"+l.role}));
+     fig("In conversation (layers composited)",ls);
+     record.layers.forEach((l,i)=>fig("Layer: "+l.role,[ls[i]],l.role!=="background"));
+   }else if(ref.group==="portraits"&&own){
+     const bg=record.portraitBackgroundScene?previewOf({group:"scenes",id:record.portraitBackgroundScene,variant:"portraitBackground"}):null;
+     if(bg)fig("In conversation (portrait background + this foreground)",[bg,own]);
+     fig("Transparent foreground alone",[own],true);
+   }else if(ref.group==="focus"&&record.pages){
+     record.pages.forEach((pg,i)=>fig("Page "+(i+1)+(pg.startsWith?" — text from “"+pg.startsWith+"…”":""),[previewOf({...ref,variant:"pages:"+(i+1)})]));
+   }else if(ref.group==="scenes"&&ref.variant?.startsWith("states:")&&own){
+     const base=previewOf({group:"scenes",id:ref.id});
+     if(record.layer==="overlay"){if(base)fig("Overlay shown over its scene",[base,own]);fig("Transparent overlay alone",[own],true);}
+     else fig("Replacement scene (shown instead of the base scene)",[own]);
+   }else if(ref.group==="items"&&own){
+     fig(ref.variant==="slot"?"Inventory slot":"Inspection view",[own],ref.variant==="slot");
+     const other=previewOf({...ref,variant:ref.variant==="slot"?"inspect":"slot"});
+     if(other)fig(ref.variant==="slot"?"Matching inspection view":"Matching inventory slot",[other],ref.variant!=="slot");
+   }else if(own)fig(record.kind==="portrait-background"?"Portrait background (opaque, behind the NPC foreground)":record.kind==="death-screen"?"Death vignette":"Scene",[own]);
+   if(ref.group==="scenes"&&!ref.variant&&record.states?.length){
+     sec.append(el("h3","","Conditional scene states ("+record.states.length+")"));
+     record.states.forEach(s=>{
+       const sref={group:"scenes",id:ref.id,variant:"states:"+s.id},b=el("button","art-brief",s.title||s.id),t=previewOf(sref);
+       if(t){const img=el("img","thumb");img.src=t.url;img.alt="";b.append(img);b.classList.add("has-thumb");}
+       b.append(el("span","art-meta",(s.layer||"?")+" · "+(s.status||"not-started")+" · "+(s.selection?"shows when "+JSON.stringify(s.selection):"UNBOUND: selected but not shown by any authored state")));
+       b.onclick=()=>selectArt(sref);sec.append(b);
+     });
+   }
+   if(!shown){
+     const st=record.status||"not-started";
+     sec.append(el("p","muted",SELECTED_STATUS.includes(st)&&!record.views&&!record.pages&&!record.layers?"Selected ("+st+"), but no public preview is registered yet (tools/sync/register-art.mjs).":st==="generated"?"Candidates exist; none selected yet.":SELECTED_STATUS.includes(st)?"Open a view / page / layer above.":"No selected artwork yet."));
+   }
+   if(own)sec.append(el("p","meta prov",provenanceLine(own)));
+   pane.append(sec);
  }
  function artRefsForItem(id){return [{group:"items",id,variant:"slot"},{group:"items",id,variant:"inspect"}];}
  function artworkLinks(pane,refs){
@@ -975,7 +1107,8 @@
    pane.append(el("h3","","Artwork references"));
    refs.forEach(ref=>{
      const record=artworkAt(ref.group,ref.id,ref.variant);
-     const b=el("button","art-brief",record?.title||artKey(ref));
+     const b=el("button","art-brief",(ref.conditional?"STATE · ":"")+(record?.title||artKey(ref))),t=thumbOf(ref,record);
+     if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}
      b.append(el("span","art-meta",artKey(ref)+" · "+(record?.status||"NOT DEFINED")+" · "+(record?.assetPath||record?.suggestedFilename||"no filename")));
      if(record)b.addEventListener("click",()=>selectArt(ref));else b.disabled=true;
      pane.append(b);
@@ -986,7 +1119,7 @@
    if(ref.group==="items")return [{id:ref.id,kind:"item"}];
    const found=[];
    Object.entries(state.chapter?.nodes||{}).forEach(([id,node])=>{
-     if(artRefsForNode(node).some(r=>artKey(r)===artKey(ref)))found.push({id,kind:"node"});
+     if(artRefsForNode(node,id).some(r=>artKey(r)===artKey(ref)||(r.group===ref.group&&r.id===ref.id&&!ref.variant)))found.push({id,kind:"node"});
    });
    return found;
  }
@@ -1010,17 +1143,14 @@
    apply.addEventListener("click",()=>{
      const next={...record,status:status.value};
      Object.entries(fields).forEach(([key,input])=>next[key]=input.value.trim()||(key==="prompt"||key==="notes"?"":null));
-     if(ref.group==="items")state.artwork.items[ref.id][ref.variant]=next;
-     else if(ref.group==="scenes"&&ref.variant==="portraitBackground")state.artwork.scenes[ref.id].portraitBackground=next;
-      else state.artwork[ref.group][ref.id]=next;
+     if(!record.previewUrl&&next.previewUrl===null)delete next.previewUrl;
+     artworkSet(ref,next);
      selectArt(ref);setStatus("Artwork edits are in memory. Export artwork JSON to keep them.");
    });
    section.append(apply);pane.append(section);
    editor(pane,record,obj=>{
      if(!obj||typeof obj!=="object"||Array.isArray(obj))throw Error("Artwork record must be an object");
-     if(ref.group==="items")state.artwork.items[ref.id][ref.variant]=obj;
-     else if(ref.group==="scenes"&&ref.variant==="portraitBackground")state.artwork.scenes[ref.id].portraitBackground=obj;
-      else state.artwork[ref.group][ref.id]=obj;
+     artworkSet(ref,obj);
      selectArt(ref);
    });
  }
@@ -1028,10 +1158,22 @@
    const record=artworkAt(ref.group,ref.id,ref.variant);if(!record)return;
    state.selected={type:"art",...ref};renderGraph();
    const pane=detailHead(record.title||artKey(ref),artKey(ref)+" · "+(record.kind||ref.group)+" · "+(record.dimensions||"dimensions TBD"));
+   if(ref.variant&&ref.variant!=="portraitBackground"&&ref.group!=="items"){
+     const parent=artworkAt(ref.group,ref.id),up=el("button","art-brief","↑ "+(parent?.title||ref.id));
+     up.onclick=()=>selectArt({group:ref.group,id:ref.id});pane.append(up);
+   }
    labeled(pane,"Production status",record.status||"not-started");
+   previewSection(pane,ref,record);
+   if(record.views||record.pages){
+     pane.append(el("h3","",record.views?"Conversation views":"Pages"));
+     (record.views?Object.keys(record.views).map(s=>"views:"+s):record.pages.map((_,i)=>"pages:"+(i+1))).forEach(variant=>{
+       const sub={group:ref.group,id:ref.id,variant},r=artworkAt(sub.group,sub.id,variant),b=el("button","art-brief",r?.title||variant);
+       b.append(el("span","art-meta",variant+" · "+(r?.status||"not-started")+" · "+(r?.assetPath||"no file")));b.onclick=()=>selectArt(sub);pane.append(b);
+     });
+   }
    labeled(pane,"Generation prompt",record.prompt||"Not written.");
    if(state.artwork?.direction)labeled(pane,"Shared art direction (applies to new prompts)",state.artwork.direction);
-   labeled(pane,"Actual asset",record.assetPath||"Not generated / not integrated");
+   labeled(pane,"Actual asset",record.assetPath||(SELECTED_STATUS.includes(record.status)?(record.views||record.pages||record.layers?"See the selected views / pages / layers.":"Selected and approved. Its production game path is assigned when Gameplay PMO integrates it; nothing to generate or re-approve."):"Not generated / not integrated"));
    if(record.suggestedFilename)labeled(pane,"Proposed filename",record.suggestedFilename);
    if(record.layers)labeled(pane,"Separate art layers",JSON.stringify(record.layers,null,2));
    if(record.portraitBackgroundScene)labeled(pane,"Paired portrait background scene",record.portraitBackgroundScene);
@@ -1051,9 +1193,10 @@
      const b=el("button","item-button",used.id);
      b.onclick=()=>used.kind==="item"?selectItem(used.id):selectNode(used.id);pane.append(b);
    });
-   if(record.previewUrl){
+   if(record.previewUrl&&!previewOf(ref)){
      const img=el("img","preview");img.src=record.previewUrl;img.alt=record.title||artKey(ref);pane.append(img);
    }
+   if(record.trigger)labeled(pane,"Shown when",JSON.stringify(record.trigger,null,2));
    artEditor(pane,ref,record);
    const back=el("button","","All artwork");back.onclick=showArtwork;pane.append(back);
  }
@@ -1066,23 +1209,36 @@
      Object.entries(a[group]||{}).forEach(([id,record])=>{
        all.push({group,id,record});
        if(group==="scenes"&&record.portraitBackground)all.push({group,id,variant:"portraitBackground",record:record.portraitBackground});
+       if(group==="scenes")(record.states||[]).forEach(s=>all.push({group,id,variant:"states:"+s.id,record:s,nested:true}));
+       if(group==="portraits")Object.entries(record.views||{}).forEach(([s,v])=>all.push({group,id,variant:"views:"+s,record:v,nested:true}));
+       if(group==="focus")(record.pages||[]).forEach((p,i)=>all.push({group,id,variant:"pages:"+(i+1),record:p,nested:true}));
      });
    }
    Object.entries(a.items||{}).forEach(([id,variants])=>{
      Object.entries(variants).forEach(([variant,record])=>all.push({group:"items",id,variant,record}));
    });
-   const counts={};all.forEach(x=>{const s=x.record.status||"not-started";counts[s]=(counts[s]||0)+1;});
-   labeled(pane,"Production overview",all.length+" shared art records · "+Object.entries(counts).map(([s,n])=>n+" "+s).join(" · "));
+   const counts={};all.filter(x=>!x.nested).forEach(x=>{const s=x.record.status||"not-started";counts[s]=(counts[s]||0)+1;});
+   const nested=all.filter(x=>x.nested).length,withPreview=all.filter(x=>previewOf(x)).length;
+   labeled(pane,"Production overview",(all.length-nested)+" shared art records (+"+nested+" scene states / views / pages) · "+Object.entries(counts).map(([s,n])=>n+" "+s).join(" · ")+"\n"+withPreview+" selected images viewable here"+(state.integration?" · game build "+state.integration.game.commit.slice(0,10)+" uses "+state.integration.images.length:""));
+   pane.append(el("p","meta","Status meanings: approved = selected for use (creative approval complete) · integrated = approved and used in a working game build · reused = approved art reused elsewhere · generated = candidates exist, none selected · not-started = no selected image. Never regenerate or re-approve selected art."));
+   const filterBar=el("div","art-filter");
+   const FILTERS=[["all","All"],["selected","Selected"],["integrated","Integrated"],["approved","Approved"],["pending","Not selected yet"]];
+   state.artFilter=state.artFilter||"all";
+   FILTERS.forEach(([v,label])=>{const b=el("button",state.artFilter===v?"on":"",label);b.onclick=()=>{state.artFilter=v;showArtwork();};filterBar.append(b);});
+   pane.append(filterBar);
+   const keep=x=>{const s=x.record.status||"not-started",f=state.artFilter;
+     return f==="all"||(f==="selected"&&SELECTED_STATUS.includes(s))||(f==="integrated"&&(s==="integrated"||s==="reused"))||(f==="approved"&&s==="approved")||(f==="pending"&&!SELECTED_STATUS.includes(s));};
    labeled(pane,"Global art direction",a.direction||"No global direction recorded.");
    const shared=el("details");shared.append(el("summary","","Edit shared art direction"));
    const area=el("textarea");area.value=a.direction||"";shared.append(area);
    const apply=el("button","","Apply shared direction");
    apply.onclick=()=>{a.direction=area.value;setStatus("Direction edited in memory. Export artwork JSON to save.");};shared.append(apply);pane.append(shared);
-   for(const group of ["scenes","portraits","focus","items"]){
-     const records=all.filter(x=>x.group===group);if(!records.length)continue;
-     pane.append(el("h3","",({scenes:"Shared scenes & portrait backgrounds",portraits:"Shared portraits",focus:"Focus close-ups",items:"Item slot & inspection art"})[group]));
+   for(const group of ["scenes","portraits","focus","items","deathScreens"]){
+     const records=all.filter(x=>x.group===group&&keep(x));if(!records.length)continue;
+     pane.append(el("h3","",({scenes:"Shared scenes, scene states & portrait backgrounds",portraits:"Shared portraits & conversation views",focus:"Focus close-ups & pages",items:"Item slot & inspection art",deathScreens:"Death screens"})[group]+" ("+records.length+")"));
      records.forEach(ref=>{
-       const b=el("button","art-brief",ref.record.title||artKey(ref));
+       const b=el("button","art-brief"+(ref.nested?" nested":""),ref.record.title||artKey(ref)),t=thumbOf(ref,ref.record);
+       if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}
        b.append(el("span","art-meta",artKey(ref)+" · "+(ref.record.status||"not-started")));
        b.onclick=()=>selectArt(ref);pane.append(b);
      });
@@ -1110,7 +1266,7 @@
      preview.append(el("div","death-draft",d.status==="owner-approved"?"STORY FATE APPROVED · IMAGE & POPUP ART PENDING":"DRAFT FATAL CONCEPT · PENDING OWNER REVIEW"));
      pane.append(preview);
    }
-   artworkLinks(pane,artRefsForNode(node));
+   artworkLinks(pane,artRefsForNode(node,id));
    if(timelineActive()){
      const tl=layout().tl,inc=tl.incidents.find(i=>i.id===tl.incidentOf[id]);
      if(inc)labeled(pane,"Timeline incident",inc.title);
@@ -1193,6 +1349,13 @@
    const pane=detailHead(item.name||id,"Item ID: "+id);
    labeled(pane,"Inspection text",textOf(item.description));
     artworkLinks(pane,artRefsForItem(id));
+   const slot=previewOf({group:"items",id,variant:"slot"}),insp=previewOf({group:"items",id,variant:"inspect"});
+   if(slot||insp){
+     const row=el("div","item-art");
+     if(slot){const f=el("figure");f.append(pixelStack([slot],96*2,true,"Inventory slot"),el("figcaption","","Slot 96×96"));row.append(f);}
+     if(insp){const f=el("figure");f.append(pixelStack([insp],230,false,"Inspection view"),el("figcaption","","Inspect 565×451"));row.append(f);}
+     pane.append(row);
+   }
    labeled(pane,"Inventory sprite",item.slotArt||"Artwork pending");
    labeled(pane,"Inspect illustration",item.inspectArt||"Artwork pending");
    if(item.inspect)labeled(pane,"On INSPECT (draft engine dependency)",JSON.stringify(item.inspect,null,2));
@@ -1276,9 +1439,16 @@
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
      if(manifest.items){const itemsRes=await fetch(new URL(manifest.items,state.manifestURL));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
       if(manifest.artwork){const artRes=await fetch(new URL(manifest.artwork,state.manifestURL));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
+      await loadPreviewData();
       if(manifest.layout){const layoutRes=await fetch(new URL(manifest.layout,state.manifestURL));if(!layoutRes.ok)throw Error("Layout HTTP "+layoutRes.status);loadLayouts(await layoutRes.json(),manifest.layout);}
      if(manifest.chapters?.length)await loadRemote(manifest.chapters[0]);else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
+ }
+ // Storyboard-only companions (docs/105). Optional: the page works without them.
+ async function loadPreviewData(){
+   for(const [key,file] of [["preview","artwork-preview.json"],["integration","game-integration.json"]]){
+     try{const r=await fetch(new URL(file,state.manifestURL));if(r.ok)state[key]=await r.json();}catch(error){ /* optional */ }
+   }
  }
  async function importFile(input,action){
    const file=input.files?.[0];if(!file)return;
@@ -1302,6 +1472,8 @@
  $("restoreLayout").onclick=restoreArchivedLayout;
  $("tlJump").addEventListener("change",e=>{jumpToIncident(e.target.value);e.target.value="";});
  $("showItems").onclick=showItems;
+ $("zoomClose").onclick=()=>{const d=$("artZoom");if(d.close)d.close();else d.removeAttribute("open");};
+ $("artZoom").addEventListener("click",e=>{if(e.target===$("artZoom"))$("zoomClose").click();});
   $("showArtwork").onclick=showArtwork;
  $("fit").onclick=fit;
  $("zoomIn").onclick=()=>zoomAt(state.scale*1.2,$("viewport").clientWidth/2,$("viewport").clientHeight/2);

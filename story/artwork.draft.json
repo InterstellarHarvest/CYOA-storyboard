@@ -1900,6 +1900,21 @@
     }
   },
   "deathScreens": {
+    "house_of_tomorrow/rest_assured_voluntary": {
+      "title": "PERMANENTLY SATISFIED. — REST ASSURED VOLUNTARY DEATH",
+      "kind": "death-screen",
+      "status": "integrated",
+      "dimensions": "314x206",
+      "assetPath": "art/deaths/rest_assured_voluntary.png",
+      "suggestedFilename": "art/deaths/rest_assured_voluntary.png",
+      "prompt": "Owner-approved Rest Assured voluntary-death vignette (toes-up default). Already selected and in the game review build: do not regenerate. Native 314x206 logical pixel art, drawn at exactly 2x inside the death popup; popup title, body and RETRY / CHECKPOINT / EXIT controls are game UI, not baked into the art.",
+      "trigger": {
+        "end": "chapter-01:exit_chair_fatal",
+        "from": "chapter-01:chair_locked",
+        "choice": "accept_permanent_rest"
+      },
+      "notes": "Selected by owner approval 2026-11-15 (InterstellarHarvest/CYOA@agent/rest-assured-death-study-20261115 000f096: review/death-screen-layout-study-2026-11-15/approved-default/approval.json, \"is now the approved image\"; native export approved-default/native-314x206.png, sha256 7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c, nearest-neighbour from the preserved 1548x1016 source). Copied byte-exact to art/deaths/rest_assured_voluntary.png in draft PR #11 and shown by the review-gated ?deathproof end presentation (PR #11 / #13). Applies ONLY to the voluntary choice accept_permanent_rest from chair_locked; the two other routes into exit_chair_fatal have no approved death art.\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved; do not request repeat approval."
+    },
     "pavilion/a_model_citizen": {
       "title": "A MODEL CITIZEN",
       "kind": "death-screen",

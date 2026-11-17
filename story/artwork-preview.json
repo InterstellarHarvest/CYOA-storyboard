@@ -1,0 +1,126 @@
+{
+  "schema": "cyoa-storyboard-artwork-preview-v1",
+  "about": "Storyboard-only. Curated public copies of SELECTED artwork (approved, integrated or reused), with exact source provenance. Written by tools/sync/register-art.mjs; checked by tools/sync/check-canon.mjs. The game importer never reads this file.",
+  "images": {
+    "portraits:groundskeeper:idle": {
+      "file": "assets/selected/pending-integration/portraits/groundskeeper/idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/candidates/G-groundskeeper-foreground.png"
+      }
+    },
+    "scenes:biology_park/conveniences_bureau": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/A-conveniences-bureau.png"
+      }
+    },
+    "scenes:biology_park/formal_entrance": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/formal_entrance.png",
+      "sha256": "d1a55f75863a7e2a3b854566638128064b998c5d6a83659399e4ad53ce66f2e9",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/C-formal-entrance.png"
+      }
+    },
+    "scenes:biology_park/groundskeeper": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/groundskeeper.png",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/candidates/B-groundskeeper.png"
+      }
+    },
+    "scenes:biology_park/groundskeeper#portraitBackground": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/groundskeeper/portraitBackground.png",
+      "sha256": "c96f40c20412bff3ea42238d190c85558959b37a9120eec9858182c980f11f68",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/candidates/F-groundskeeper-background.png"
+      }
+    },
+    "scenes:biology_park/jungle_junction": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/jungle_junction.png",
+      "sha256": "0161d0a7132bf1656a5037e6ec2812e62220c9853e4ed251176c161086fed003",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/E-jungle-junction.png"
+      }
+    },
+    "scenes:biology_park/service_entry": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/service_entry.png",
+      "sha256": "c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch01-biopark-foundation",
+        "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
+        "path": "review/chapter-02-batch01-2026-11-15/candidates/D-service-entry.png"
+      }
+    },
+    "scenes:house_of_tomorrow/chair#states:default_unrestrained": {
+      "file": "assets/selected/art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png",
+      "sha256": "2cad345326a222fa2d84c9959ef9eb69dcb9ad00599e1867593f1ffce63e0fc7",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/rest-assured-death-retry-checkpoint",
+        "commit": "0f42e507043d794a17a837cbe75d604a4bc9d57d",
+        "path": "art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png"
+      }
+    }
+  }
+}
