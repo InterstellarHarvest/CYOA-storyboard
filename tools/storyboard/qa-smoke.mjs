@@ -614,11 +614,27 @@ assert.deepEqual(layoutSource.chapters['prologue-00'],{positions:{}},'committed 
 assert.deepEqual(layoutSource.chapters['chapter-03'],{positions:{}},'committed Chapter 3 layout entry unchanged');
 for(const key of ['chapter-01','chapter-02'])for(const inc of layoutSource.chapters[key].timeline.incidents)for(const id of inc.nodes)assert.ok(chapters[key==='chapter-01'?1:2].nodes[id],key+' incident '+inc.id+' names a real node '+id);
 
-// ==== Prologue and Chapter 3 render exactly as the published viewer did (main 0ebcf48) =============
+// ==== Preserve Prologue geometry and all Chapter 3 nonfatal cards/edges/layout exactly ====
 const {renderLegacy}=await import('./qa-legacy-render.mjs');
 const legacyNow=await renderLegacy(path.join(root,'tools/storyboard/index.html'));
 const legacyBase=JSON.parse(fs.readFileSync(path.join(root,'tools/storyboard/qa-fixtures/legacy-render-snapshot.json'),'utf8'));
-for(const key of ['prologue-00','chapter-03'])assert.deepEqual(JSON.parse(JSON.stringify(legacyNow[key])),legacyBase[key],key+': cards, connectors, labels and default zoom identical to the published viewer');
+assert.deepEqual(JSON.parse(JSON.stringify(legacyNow['prologue-00'])),legacyBase['prologue-00'],'Prologue remains pixel/layout equivalent');
+const fatalDetails=new Set(['end_model_citizen','end_reconciled','end_archived']);
+function normalizeFatalPresentation(frame){
+ const copy=JSON.parse(JSON.stringify(frame));
+ copy.cards=copy.cards.map(card=>fatalDetails.has(card.id)
+   ? {...card,className:'node',text:[card.id,'FATAL POPUP CONTENT','ART REFERENCE']} : card);
+ return copy;
+}
+assert.deepEqual(normalizeFatalPresentation(legacyNow['chapter-03']),normalizeFatalPresentation(legacyBase['chapter-03']),
+ 'Chapter 3 geometry, edges, and all nonfatal card details remain identical; only fatal card contents and colors changed');
+for(const card of legacyNow['chapter-03'].cards.filter(c=>fatalDetails.has(c.id))){
+ const d=chapters[3].nodes[card.id].deathPopup;
+ assert.match(card.className,/death-node/,'fatality box visually distinct: '+card.id);
+ assert.equal(card.text[1],d.title,'fatality box displays actual engine popup title: '+card.id);
+ assert.ok(card.text.some(t=>String(t).includes('ART: '+d.artRef)),'fatality box displays image reference: '+card.id);
+ assert.ok(card.text.some(t=>String(t).includes(d.description)),'fatality box displays narrative beat: '+card.id);
+}
 
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,chapters:manifest.chapters.map(c=>c.id),
