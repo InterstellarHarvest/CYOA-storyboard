@@ -502,7 +502,7 @@ const c1out=c1.ports.filter(p=>p['data-dir']==='out');
 assert.deepEqual(c1out.map(p=>p['data-port']).sort(),houseExits.map(id=>'out:'+id+'>chapter-02').sort(),'Chapter 1: five outgoing Chapter 2 transitions, one per surviving exit');
 assert.ok(c1out.every(p=>p['data-mode']==='gameplay'&&p['data-chapter']==='chapter-02'&&/TO CHAPTER 2 · GAMEPLAY/.test(p.text)&&/Bureau Arrival/.test(p.text)),'Chapter 1: exits are labelled as gameplay transitions into Bureau Arrival');
 assert.ok(c1.ports.filter(p=>p['data-dir']==='in').every(p=>p['data-chapter']==='prologue-00'&&p['data-source']==='reception_hallway'),'Chapter 1: its only incoming route is the Prologue hand-off');
-assert.ok(/fatal/.test(c1at.exit_chair_fatal.cls)&&/FATAL ENDING/.test(c1at.exit_chair_fatal.tag),'Chapter 1: fatal chair styled as a fatal ending');
+assert.ok(/\bfatal\b/.test(c1at.exit_chair_fatal.cls)&&/death-node/.test(c1at.exit_chair_fatal.cls)&&/ART: house_of_tomorrow\/rest_assured/.test(c1at.exit_chair_fatal.tag),'Chapter 1: fatal chair displays its canonical death popup and image rather than legacy choice count');
 assert.ok(!c1.edges.some(e=>e.from==='exit_chair_fatal')&&!c1.ports.some(p=>/exit_chair_fatal/.test(p['data-port'])),'Chapter 1: fatal chair is terminal (no route out, no chapter port)');
 assert.ok(c1at.exit_chair_fatal.x===c1at.service_breach.x&&c1at.exit_chair_fatal.x>c1at.chair_locked.x&&c1at.exit_chair_fatal.x<c1max,'Chapter 1: fatal chair sits in the column right after the chair, not in the exit column');
 // Chapter 2: incoming Chapter 1 routes, storyboard-only handoffs, antidote loops attached to their exits.
