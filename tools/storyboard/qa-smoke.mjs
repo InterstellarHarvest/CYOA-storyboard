@@ -29,14 +29,24 @@ const productionRecords=[
   ...Object.values(artwork.deathScreens||{})
 ];
 assert.equal(productionRecords.length,169,'shared art catalog includes death-popup illustrations for all fatal endpoints');
-assert.equal(productionRecords.filter(r=>r.status==='generated').length,0,'no previously selected source is incorrectly awaiting approval');
+// docs/105 allows genuinely new, unselected candidates to be generated. Keep
+// legacy selection/integration assertions below; never confuse new candidates
+// with a regression of already selected artwork.
+const batch2CandidateIds=['control_tower','spore_garden','tour_tram','damaged_walkway','moving_forest','overgrown_tram','sensor_gallery'].map(id=>'biology_park/'+id);
+assert.equal(productionRecords.filter(r=>r.status==='generated').length,batch2CandidateIds.length,'seven new Batch2 candidates, without regressing any selected source');
+for(const id of batch2CandidateIds){
+  const record=artwork.scenes[id];
+  assert.equal(record.status,'generated','new candidate awaits selection: '+id);
+  assert.equal(record.assetPath,null,'unselected candidate has no invented production path: '+id);
+  assert.match(record.notes,/CANDIDATE GENERATED .*commit [0-9a-f]{40}; path review\/chapter-02-batch02-2026-11-17\/candidates\/[^;]+; SHA-256 [0-9a-f]{64}\./,'candidate provenance pins actual source bytes: '+id);
+}
 assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
 assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary'],undefined,'one shared Rest Assured death record (owner ruling docs/104), no per-cause duplicate');
 assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured']?.status),'owner-approved Rest Assured death screen is selected, never pending');
 const restAssuredUsed=artwork.deathScreens['house_of_tomorrow/rest_assured']?.status==='integrated'?1:0;
 assert.equal(productionRecords.filter(r=>r.status==='integrated').length,46+restAssuredUsed,'Prologue and selected Chapter 1 artwork already used in game (+ Rest Assured death art once the game reports it)');
 assert.equal(productionRecords.filter(r=>r.status==='approved').length,8-restAssuredUsed,'seven Biology Park art approvals (+ Rest Assured until integrated)');
-assert.equal(productionRecords.filter(r=>r.status==='not-started').length,110,'new unproduced death art requirements remain pending');
+assert.equal(productionRecords.filter(r=>r.status==='not-started').length,110-batch2CandidateIds.length,'only seven newly produced candidates leave the pending pool; other briefs stay pending');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'approved','Chapter 2 Bureau artwork already selected');
 assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'selected Chapter 2 Bureau review image has no confirmed game production path yet');
 assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.status,'integrated','Chapter 1 arrival artwork is already used in review game');
