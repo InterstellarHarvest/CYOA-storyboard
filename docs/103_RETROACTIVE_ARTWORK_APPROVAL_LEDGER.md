@@ -80,3 +80,17 @@ Final owner approval without changes. Source `InterstellarHarvest/CYOA@009c5afea
 | `scenes:biology_park/sorting_conveyor` | `review/chapter-02-batch03-2026-11-17/candidates/E-sorting-conveyor.png` | `fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b` |
 | `scenes:biology_park/planting_hopper` | `review/chapter-02-batch03-2026-11-17/candidates/F-planting-hopper.png` | `5ab29aef160eb59a0d34465782d165c042b6ad8131ac04ad87215b03c33deb3b` |
 | `scenes:biology_park/waste_chute` | `review/chapter-02-batch03-2026-11-17/candidates/G-waste-chute.png` | `fa2f9021a7c33f6ff188eff438ef4abec35d9ba0d1a77d805cd2ceb98bbaf498` |
+
+
+## Addendum — Chapter 2 Batch 4 owner selections, 2026-11-17
+
+Nate approved all six without changes; Art Director PASS A-F. Immutable source `InterstellarHarvest/CYOA@9b0d3a325c947e7c27e2b73b949c6ad70a8ee29a`; final review `ec54699bf15455e1003e8aa41cec008abac1983f`, branch `agent/ch02-art-batch04-reserve-transit`. Exact selected PNGs registered with `tools/sync/register-art.mjs --batch`. Approved, never self-integrated; production asset paths remain null pending Gameplay PMO. All85 previous selected images remain byte-exact. Original generations and processing history preserved.
+
+| Record | Candidate source path | SHA-256 |
+|---|---|---|
+| `scenes:biology_park/reserve_siding` | `review/chapter-02-batch04-2026-11-17/candidates/A-reserve-siding.png` | `c54cc60a878faaf91edc7e642fb9c854a963bb455a86d6d724d6f2f483e7ae2e` |
+| `scenes:biology_park/reserve_tram` | `review/chapter-02-batch04-2026-11-17/candidates/B-reserve-tram.png` | `e17c2d8fd7b569404248d86028b7a7ca4164a3856f36f261654bc941a13a7eaf` |
+| `scenes:biology_park/concourse_crash` | `review/chapter-02-batch04-2026-11-17/candidates/C-concourse-crash.png` | `50552704840db6220eff3d588bb4a974d51edcd32a816717803f73b6d97d11f8` |
+| `scenes:biology_park/concourse_crash#portraitBackground` | `review/chapter-02-batch04-2026-11-17/candidates/D-concourse-portrait-background.png` | `9f8f3d19d44a6433ef70391118a616d7dd6c8626f43eccda48d55af8fdd1cd80` |
+| `portraits:courtesy_conductor:talking` | `review/chapter-02-batch04-2026-11-17/candidates/E-courtesy-conductor-talking.png` | `8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d` |
+| `scenes:biology_park/abandoned_station` | `review/chapter-02-batch04-2026-11-17/candidates/F-abandoned-station.png` | `c9f78d96427d5fce0d1bde3651b90f09fd8d3380a65542378273c2fd1aa803f7` |
