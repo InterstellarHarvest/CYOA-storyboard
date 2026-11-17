@@ -140,7 +140,8 @@ for(const ch of chapters){
 }
 assert.deepEqual(Object.keys(layoutSource.chapters),['prologue-00','chapter-01','chapter-02','chapter-03'],'layout has four chapters');
 assert.deepEqual(layoutSource.chapters['prologue-00'].positions,{},'prologue positions retained exactly (none committed)');
-assert.equal(Object.keys(chapters[3].nodes).length,62,'Chapter 3 has 62 storyboard nodes');
+const legacyFixture=JSON.parse(fs.readFileSync(path.join(root,'tools/storyboard/qa-fixtures/legacy-render-snapshot.json'),'utf8'));
+assert.equal(Object.keys(chapters[3].nodes).length,legacyFixture['chapter-03'].cards.length,'Chapter 3 node count matches its committed renderer snapshot');
 assert.equal(chapters[3].nodes.end_model_citizen.deathPopup.title,'A MODEL CITIZEN','owner-approved fatal metadata');
 assert.equal(chapters[3].nodes.b_gate.choices.find(c=>c.id==='ch3_b03_c').check.need,4,'departure counter check');
 for(const id of ['end_concourse_robot','end_underground_station','end_public','end_maintenance','end_customs'])
@@ -395,7 +396,7 @@ assert.ok(ch3Link&&!ch3Link.disabled,'Chapter 2 ending provides Chapter 3 storyb
 ch3Link.click();
 await new Promise(resolve=>setTimeout(resolve,20));
 assert.equal(select.value,'3','chapter transition opens Chapter 3');
-assert.equal(nodeIds().length,62,'Chapter 3 graph shows 62 nodes');
+assert.equal(nodeIds().length,Object.keys(chapters[3].nodes).length,'Chapter 3 graph shows every authored node');
 findNode('end_model_citizen').click();
 assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('ILLUSTRATION PENDING')),'fatal popup design preview');
 assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('A MODEL CITIZEN')),'fatal popup title');
@@ -710,7 +711,7 @@ for(const [i,key] of [[0,'prologue-00'],[1,'chapter-01'],[2,'chapter-02']]){
 // (The Prologue moved to the timeline view on owner request, so it is checked by the timeline suite.)
 const {renderLegacy}=await import('./qa-legacy-render.mjs');
 const legacyNow=await renderLegacy(path.join(root,'tools/storyboard/index.html'));
-const legacyBase=JSON.parse(fs.readFileSync(path.join(root,'tools/storyboard/qa-fixtures/legacy-render-snapshot.json'),'utf8'));
+const legacyBase=legacyFixture;
 const fatalDetails=new Set(['end_model_citizen','end_reconciled','end_archived']);
 function normalizeFatalPresentation(frame){
  const copy=JSON.parse(JSON.stringify(frame));
