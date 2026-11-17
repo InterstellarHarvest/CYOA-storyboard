@@ -28,7 +28,8 @@ const productionRecords=[
   ...Object.values(artwork.focus||{}),
   ...Object.values(artwork.deathScreens||{})
 ];
-assert.equal(productionRecords.length,169,'shared art catalog includes death-popup illustrations for all fatal endpoints');
+// 169 -> 171 (2026-11-17, docs/106): the owner-approved pavilion_satisfaction_certificate adds its pending slot + inspect requirements.
+assert.equal(productionRecords.length,171,'shared art catalog includes death-popup illustrations for all fatal endpoints');
 // docs/105 allows genuinely new, unselected candidates to be generated. Keep
 // legacy selection/integration assertions below; never confuse new candidates
 // with a regression of already selected artwork.

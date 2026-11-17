@@ -601,5 +601,21 @@
         ]
       }
     }
+  },
+  "pavilion_satisfaction_certificate": {
+    "name": "SATISFACTION CERTIFICATE",
+    "description": "An official certificate: VISITOR EXPERIENCE COMPLETE. PERSONAL RELIEF ACHIEVED. SATISFACTION LEVEL 100%. You have not used a toilet.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_satisfaction_certificate",
+            "read"
+          ]
+        ]
+      }
+    }
   }
 }

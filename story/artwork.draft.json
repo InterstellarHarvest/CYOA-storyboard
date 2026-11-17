@@ -1762,6 +1762,28 @@
         "prompt": "EXACT 565\u00d7451 detailed pixel-art inspect view of SAME a narrow perforated numbered strip of punched or printed paper as 96x96 slot source. Clean readable major stamp text where plausible; ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent stamp.",
         "notes": "Source 565\u00d7451, separately drawn; not an enlarged inventory icon."
       }
+    },
+    "pavilion_satisfaction_certificate": {
+      "slot": {
+        "title": "SATISFACTION CERTIFICATE \u2014 SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_satisfaction_certificate_slot.png",
+        "prompt": "EXACT 96\u00d796 transparent RGBA item icon. Clean hard 0/255 alpha, no anti-aliased edge/fringe. Center an official 1960s presentation certificate with a bold ruled border band, a large 100% figure and a round green APPROVED-style seal. True 1960s institutional style gray, cream, simple red/green stamp; recognizable at 1\u00d7 in 7-slot inventory. No frame, no invented tiny text.",
+        "notes": "CH3 item (owner-approved 2026-11-17: awarded by satisfy_0 and retained). Art requirement only: prompt drafted at sync, NOT owner-reviewed; no asset created."
+      },
+      "inspect": {
+        "title": "SATISFACTION CERTIFICATE \u2014 INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/pavilion/pavilion_satisfaction_certificate_inspect.png",
+        "prompt": "EXACT 565\u00d7451 detailed pixel-art inspect view of SAME an official 1960s presentation certificate with a bold ruled border band, a large 100% figure and a round green APPROVED-style seal as 96x96 slot source. Readable major lines only where plausible: VISITOR EXPERIENCE: COMPLETE / PERSONAL RELIEF: ACHIEVED / SATISFACTION LEVEL: 100%. Ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent seal.",
+        "notes": "Source 565\u00d7451, separately drawn; not an enlarged inventory icon. Prompt drafted at sync, NOT owner-reviewed."
+      }
     }
   },
   "focus": {
@@ -1923,8 +1945,8 @@
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/ui/death/successfully_reconciled.png",
-      "prompt": "EXACT 314\u00d7206 native pixel-art AFTERMATH illustration for the owner-approved A1 game death popup, displayed at exact 2\u00d7 nearest-neighbor (628\u00d7412); keep frame/title/body/controls as separate UI. PROPOSED death-overlay illustration: abandoned administrative fitting apparatus with sealed supporting clamps and anonymous clothing, no face or gore; mechanically permanent identity absorption, story mechanics not approved. Keep actual title, subtitle, restart button and border as editable game UI text/sprites, NOT baked into the illustration. No changes to existing game shell.",
-      "notes": "PROPOSED FATAL CONCEPT \u2014 DO NOT GENERATE/INTEGRATE without owner review.\nUnproduced art brief aligned to approved 314\u00d7206 native death-popup standard; old 565\u00d7451 was mistakenly item inspector dimension. No actual artwork changed."
+      "prompt": "EXACT 314\u00d7206 native pixel-art AFTERMATH illustration for the established A1 death popup, shown at exact 2\u00d7 nearest-neighbor (628\u00d7412). Owner-APPROVED fatal mechanism: the Pavilion's source-fitting machinery in Technical Services has completed its alignment; a heavy alignment counterweight has come down inside an occupied fitting frame, calmly suggesting that calibration finished with the claimant inside. A freshly approved official photograph clipped to the frame shows only an empty chair. Show NO face, body detail, blood or gore; at most anonymous clothing or a shoe at the edge, never the protagonist's face. The punchline is perfect administrative agreement between photograph and record. Gray-blue institutional fitting machinery, practical clamps and support rails, muted industrial gray/blue-gray, cream, muted teal, restrained green status lamp; clean readable pixel clusters, no steampunk/brass/gears, no heavy dithering. Do not paint popup title, subtitle, caption, controls or UI frame onto the art; those remain editable runtime UI. If tiny sign text cannot be perfectly readable at 314\u00d7206, use an abstract mark.",
+      "notes": "STORY DEATH APPROVED BY OWNER 2026-11-17: failed warned hidden d6>=4 emergency release in Live Source Calibration; the machinery's alignment/counterweight mechanism kills the protagonist, no face or gore. Popup title SUCCESSFULLY RECONCILED; subtitle NO FURTHER ADJUSTMENTS REQUIRED; caption: For the first time, the official photograph and the person in it agree. Neither contains you. ARTWORK APPROVED AS A BRIEF ONLY: not generated, not selected; art status remains not-started. Prompt wording drafted at sync from the approved brief. Superseded note: PROPOSED FATAL CONCEPT \u2014 DO NOT GENERATE/INTEGRATE without owner review."
     },
     "pavilion/permanently_archived": {
       "title": "PERMANENTLY ARCHIVED",

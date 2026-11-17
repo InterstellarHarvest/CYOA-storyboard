@@ -1,0 +1,409 @@
+{
+  "retiredNodes": {
+    "a_life": {
+      "mode": "narrative",
+      "scene": "pavilion/reconciliation_office",
+      "text": "Proof of Life; infection variants, two choices.",
+      "choices": [
+        {
+          "id": "a_life_0",
+          "kind": "action",
+          "text": "COMPARE LIVING BODY TO REGISTERED ORIGINAL",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_life_1",
+          "kind": "action",
+          "text": "CHALLENGE THE UNRESOLVED BIOLOGICAL CLASSIFICATION",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_witstd": {
+      "mode": "narrative",
+      "scene": "pavilion/original_witness",
+      "text": "Witness Standards; verified original-specific answer.",
+      "choices": [
+        {
+          "id": "a_witstd_0",
+          "kind": "action",
+          "text": "RECORD THE ORIGINAL'S UNAUTHORIZED ANSWER",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_original_independent_response_seen": true
+            }
+          }
+        },
+        {
+          "id": "a_witstd_1",
+          "kind": "action",
+          "text": "TRACE THE WITNESS SPEECH FEED TO THE HEARING CONTROL INTERFACE",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "ch3_original_independent_response_seen": true
+            }
+          }
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_negative": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "Real negatives depict vacant chairs; subject added later.",
+      "choices": [
+        {
+          "id": "a_negative_0",
+          "kind": "action",
+          "text": "AUTHENTICATE SOURCE REGISTRATION DISCREPANCY",
+          "to": "stage_records",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_negative_1",
+          "kind": "action",
+          "text": "FOLLOW THE IMAGE APPROVAL TRANSMISSION",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "focus": "pavilion/image_negative"
+    },
+    "a_household": {
+      "mode": "narrative",
+      "scene": "pavilion/fourth_chair",
+      "text": "Three empty household places; routing strip.",
+      "choices": [
+        {
+          "id": "a_household_0",
+          "kind": "action",
+          "text": "PRESERVE HOUSEHOLD ROUTING EVIDENCE",
+          "to": "stage_records"
+        },
+        {
+          "id": "a_household_1",
+          "kind": "action",
+          "text": "FOLLOW RETAINED PROPERTY TRANSFER",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    }
+  },
+  "retiredChoices": {
+    "reconcile:reconcile_1": {
+      "id": "reconcile_1",
+      "kind": "action",
+      "text": "DEMAND PROOF OF LIVING BODY",
+      "to": "a_life"
+    },
+    "witness:witness_0": {
+      "id": "witness_0",
+      "kind": "action",
+      "text": "ASK AN UNSCRIPTED QUESTION",
+      "to": "a_witstd"
+    },
+    "image:image_0": {
+      "id": "image_0",
+      "kind": "action",
+      "text": "INSPECT RAW PHOTOGRAPHIC NEGATIVES",
+      "to": "a_negative"
+    },
+    "a_empty:a_empty_1": {
+      "id": "a_empty_1",
+      "kind": "action",
+      "text": "TRACE THE PROCESS THAT ERASED THE CLAIMANT",
+      "to": "c_feed"
+    },
+    "a_fourth:a_fourth_1": {
+      "id": "a_fourth_1",
+      "kind": "action",
+      "text": "TRACE THE THREE EMPTY HOUSEHOLD CHAIRS",
+      "to": "a_household"
+    },
+    "a_calibration:a_calibration_0": {
+      "id": "a_calibration_0",
+      "kind": "action",
+      "text": "REFUSE LIVE FITTING; REQUEST SAFE HEARING",
+      "to": "stage_admin"
+    }
+  },
+  "replacedFields": [
+    {
+      "where": "attend",
+      "field": "notes",
+      "old": "Three narrative routes; Route A and finale remain proposed, not finalized collaboratively.",
+      "new": "Three narrative routes. APPROVAL SYNC 2026-11-17 (docs/106): Route A decisions and the Grand Reconciliation finale are owner-approved through 2026-11-17; several Route A scene texts remain pending editorial synchronization (see each node). Superseded note: \"Route A and finale remain proposed, not finalized collaboratively.\""
+    },
+    {
+      "where": "a_plumb",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): WORKING WATER — a short Narrative B passage following the actual water infrastructure behind the exhibit, one-way to Presentation Control (c_control). Not a substantial NPC conversation. No item or flag consequence is established, and none added. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_plumb",
+      "field": "text",
+      "old": "Pipe reveals maintenance path; one-way tech transfer.",
+      "new": "Working Water: you follow the real water service pipe through actual plumbing infrastructure behind the exhibit. It leads one way, into Presentation Control."
+    },
+    {
+      "where": "a_demo",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): HUMAN DEMONSTRATOR — a brief Narrative B event after registering as a live Human Requirements demonstrator, one-way to Anticipated Conduct (b_conduct). Not a substantial NPC conversation; no immediate short-circuit to the finale. No item or flag consequence is established, and none added. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_demo",
+      "field": "text",
+      "old": "Demonstrator record is sent for anticipated-conduct review; no immediate short-circuit to finale.",
+      "new": "Human Demonstrator: you register as a live Human Requirements demonstrator. The brief demonstration ends with your record sent for anticipated-conduct review."
+    },
+    {
+      "where": "a_origrec",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): TOMORROW'S COMPLAINT — Narrative B. The preprinted future record is revealed to be an instruction to staff, NOT a supernatural prediction. One-way to Anticipated Conduct (b_conduct). No item or flag consequence is established, and none added. Superseded scaffold text: \"Replacement notice and forecast work order, one-way records route.\" Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_origrec",
+      "field": "text",
+      "old": "Replacement notice and forecast work order, one-way records route.",
+      "new": "Tomorrow's Complaint: the preprinted record already describes the complaint you have not yet made. It is not a prediction. It is an instruction to staff. The work order routes you to Anticipated Conduct."
+    },
+    {
+      "where": "a_staff",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): PROVISIONAL EMPLOYMENT — Narrative B. Provisional staff authorization is acquired; the satisfaction certificate is RETAINED (not consumed). One-way to Presentation Control (c_control). No inventory effect is wired: whether the authorization is the registered item pavilion_temporary_staff_pass is an open owner decision (docs/106), so nothing was invented. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_staff",
+      "field": "text",
+      "old": "Temporary staff status, bathroom still unavailable.",
+      "new": "Provisional Employment: you obtain provisional staff authorization. You keep the satisfaction certificate. The staff restroom is still unavailable. Your new duties begin in Presentation Control."
+    },
+    {
+      "where": "records",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED ALL THREE CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A submit certificate for correction -> Reconciliation Office; B examine the preprinted future record -> Tomorrow's Complaint (a_origrec) -> Anticipated Conduct; C obtain provisional staff authorization -> Provisional Employment (a_staff) -> Presentation Control. Reached only after accepting the satisfaction certificate. No certificate consumption is established on any choice (C explicitly retains it); A's consumption is an open owner question (docs/106). Card wording aligned to the approved descriptions; final wording provisional. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "records",
+      "field": "text",
+      "old": "Satisfaction Records: certificate / dispute receipt exchange.",
+      "new": "Satisfaction Records: the counter accepts your satisfaction certificate for correction, keeps a preprinted record of your future visit, and offers provisional staff authorization."
+    },
+    {
+      "where": "records:records_1",
+      "field": "text",
+      "old": "TRACE A PREPRINTED FUTURE ACCOUNT",
+      "new": "EXAMINE THE PREPRINTED FUTURE RECORD"
+    },
+    {
+      "where": "records:records_2",
+      "field": "text",
+      "old": "USE CERTIFICATE FOR PROVISIONAL STAFF ACCESS",
+      "new": "OBTAIN PROVISIONAL STAFF AUTHORIZATION"
+    },
+    {
+      "where": "satisfy:satisfy_0",
+      "field": "notes",
+      "old": "OWNER APPROVED 2026-11-17: Accept the false satisfaction transcript and receive its official physical certificate as a retained item, pavilion_satisfaction_certificate; proceeds to Records, where document may assist later interactions. Item-art and production inventory registration are pending. Player still has not used a working restroom.",
+      "new": "OWNER APPROVED 2026-11-17: Accept the false satisfaction transcript and receive its official physical certificate as a retained item, pavilion_satisfaction_certificate; proceeds to Records, where document may assist later interactions. Item-art and production inventory registration are pending. Player still has not used a working restroom. APPROVAL SYNC 2026-11-17 (docs/106): item now registered in items.draft.json with pending (not-started) slot/inspect art requirements; no art exists."
+    },
+    {
+      "where": "reconcile",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED ONLY A AND C (APPROVAL SYNC 2026-11-17 (docs/106)): A request the Original Witness -> witness; C accept duplicate-person classification -> Surplus Department. Retired B \"DEMAND PROOF OF LIVING BODY\" (living-body verification) and its only destination a_life are preserved in docs/106 as retired ideas, NOT active routes. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "reconcile:reconcile_2",
+      "field": "text",
+      "old": "ACCEPT DUPLICATE PROCESSING STATUS",
+      "new": "ACCEPT DUPLICATE-PERSON CLASSIFICATION"
+    },
+    {
+      "where": "witness",
+      "field": "text",
+      "old": "Original Witness.",
+      "new": "Original Witness: behind a translucent partition, the Original answers outside its approved script. The hearing recorder detects the unauthorized response and logs it automatically. Nothing establishes what the Original physically is."
+    },
+    {
+      "where": "witness",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED (APPROVAL SYNC 2026-11-17 (docs/106)): the Original speaks independently, outside its script; the recorder AUTOMATICALLY detects and records this unauthorized response, so this scene itself sets ch3_original_independent_response_seen (no player choice needed). That flag later grants the approved conditional Grand Reconciliation bonus (original_refusal +1). Player branches: B release partition (hidden d6>=4) and C demand photographic records. Retired A \"ASK AN UNSCRIPTED QUESTION\" and its only destination a_witstd (docs/106). NEVER establish what the Original physically is. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "witness:witness_1",
+      "field": "notes",
+      "old": "Authoring check; proposed bonus: timing_clicker +1",
+      "new": "OWNER-APPROVED (2026-11-17): hidden d6>=4; success -> Technical Adjustments, failure -> nonfatal correction. No modifier is approved: the earlier proposed timing_clicker +1 must NOT be wired without separate review."
+    },
+    {
+      "where": "witness:witness_2",
+      "field": "text",
+      "old": "DEMAND PHOTOGRAPHIC EVIDENCE",
+      "new": "DEMAND THE PHOTOGRAPHIC RECORDS"
+    },
+    {
+      "where": "a_techadj",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A preserve the fitting-order number -> hearing records (stage_records); B follow the moving platform -> Human Behavior Workshop (c_workshop). The Original's physical nature stays concealed. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "image",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED ONLY B AND C (APPROVAL SYNC 2026-11-17 (docs/106)): B challenge the approved image using source evidence, one logical card (displayGroup image_source_proof) with two inventory states — House photograph (family_portrait_photo) held -> Fourth Chair; not held -> Empty Claimant Photograph. The Chapter 1 photograph is never required. C interrupt the image processor, hidden d6>=4; success Image Production, failure nonfatal correction. Retired A \"INSPECT RAW PHOTOGRAPHIC NEGATIVES\" and its only destination a_negative (docs/106); its unused Focus A brief pavilion/image_negative is kept as a record only. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "image:image_1",
+      "field": "text",
+      "old": "SUBMIT THE HOUSE PHOTOGRAPH AS SOURCE EVIDENCE.",
+      "new": "CHALLENGE THE APPROVED IMAGE WITH SOURCE EVIDENCE."
+    },
+    {
+      "where": "image:image_1",
+      "field": "notes",
+      "old": " Alternative outcome if family_portrait_photo held: a_empty",
+      "new": "Approved B, House-photograph state: shown only while family_portrait_photo is held; the photograph is the source evidence -> Fourth Chair. Same logical card as ch3_image_no_source_photo."
+    },
+    {
+      "where": "image:ch3_image_no_source_photo",
+      "field": "text",
+      "old": "REQUEST A PHOTOGRAPHIC CLAIMANT CORRECTION — NO HOUSE PHOTO.",
+      "new": "CHALLENGE THE APPROVED IMAGE WITH SOURCE EVIDENCE."
+    },
+    {
+      "where": "image:ch3_image_no_source_photo",
+      "field": "notes",
+      "old": " Alternative outcome if family_portrait_photo held: a_empty",
+      "new": "Approved B, no-photograph state: shown only while family_portrait_photo is NOT held -> Empty Claimant Photograph. Same logical card as image_1."
+    },
+    {
+      "where": "image:image_2",
+      "field": "notes",
+      "old": "Authoring check; proposed bonus: one suitable tool +1, nonstacking",
+      "new": "OWNER-APPROVED (2026-11-17): hidden d6>=4; success -> Image Production (a_exposure), failure -> nonfatal correction. No modifier is approved: the earlier proposed nonstacking tool +1 must NOT be wired without separate review."
+    },
+    {
+      "where": "a_empty",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. Owner-owned alternate evidence must survive without House photograph. A factual empty claimant photograph is produced at this scene.",
+      "new": "OWNER-APPROVED ONLY A (APPROVAL SYNC 2026-11-17 (docs/106)): preserve the empty claimant photograph as evidence; the scene grants pavilion_empty_claimant_photo (existing entry effect) and the choice advances through the administrative evidence route (stage_admin). Retired B \"TRACE THE PROCESS THAT ERASED THE CLAIMANT\" (docs/106). Alternate evidence must survive without the House photograph. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_exposure",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A authenticate the unapproved exposure -> hearing records (stage_records); B follow the service cable -> Presentation Feed (c_feed). Any figure in the exposure remains partial; the protagonist's face is never shown. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_fourth",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. Only reached if family_portrait_photo actually held; the source photograph is scanned and returned, not consumed.",
+      "new": "OWNER-APPROVED ONLY A AND C (APPROVAL SYNC 2026-11-17 (docs/106)): A submit the source conflict and demand a custody hold -> Witness Custody; C interrupt the fitting machinery, hidden d6>=4, success -> a_repair, failure -> Live Source Calibration. C's card visibly warns of potentially fatal machinery consequences BEFORE selection. Retired B \"TRACE THE THREE EMPTY HOUSEHOLD CHAIRS\" and its only destination a_household (docs/106). Only reached while family_portrait_photo is held; the House photograph is scanned and RETURNED, never consumed. The source-contribution receipt stays on the existing scene-entry effect; whether it should instead follow a specific choice is an open owner question (docs/106). Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_fourth:a_fourth_2",
+      "field": "text",
+      "old": "INTERRUPT ORIGINAL FITTING MACHINERY",
+      "new": "INTERRUPT THE ORIGINAL FITTING MACHINERY — FATAL RISK."
+    },
+    {
+      "where": "a_fourth:a_fourth_2",
+      "field": "notes",
+      "old": "Authoring check; proposed bonus: one relevant tool +1, nonstacking",
+      "new": "OWNER-APPROVED (2026-11-17): hidden d6>=4; the card must visibly warn of potentially fatal machinery consequences before selection (FATAL RISK suffix, matching disposition_1). Failure is not itself fatal: it enters Live Source Calibration, whose only choice can kill. No modifier is approved: the earlier proposed tool +1 must NOT be wired without separate review."
+    },
+    {
+      "where": "a_custody",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A establish separate source/representation status, recording the supporting evidence (sets ch3_separate_identity_evidence) -> stage_admin; B request a direct hearing on the Original's custody -> stage_records. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_calibration",
+      "field": "text",
+      "old": "Live Source Calibration; safe refusal or explicitly risky intervention.",
+      "new": "Live Source Calibration: the interrupted fitting has begun calibrating its live source, and the live source is you. Once calibration begins there is no safe refusal. The emergency release is the only way out."
+    },
+    {
+      "where": "a_calibration",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-CORRECTED AND APPROVED (APPROVAL SYNC 2026-11-17 (docs/106)): ONLY B REMAINS. There is no safe refusal once calibration begins. B attempt the emergency release, hidden d6>=4: success escapes through the technical passage (stage_tech); failure is fatal SUCCESSFULLY RECONCILED (end_reconciled). The player was warned on the Fourth Chair card before choosing to interrupt the machinery. Retired A \"REFUSE LIVE FITTING; REQUEST SAFE HEARING\" (docs/106). Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    {
+      "where": "a_calibration:a_calibration_1",
+      "field": "text",
+      "old": "PULL OCCUPIED FRAME EMERGENCY RELEASE DESPITE FATAL RISK",
+      "new": "ATTEMPT THE EMERGENCY RELEASE — FATAL RISK."
+    },
+    {
+      "where": "a_calibration:a_calibration_1",
+      "field": "notes",
+      "old": "Authoring check; proposed bonus: one appropriate tool +1",
+      "new": "OWNER-APPROVED (2026-11-17): hidden d6>=4; success -> escape through the technical passage (stage_tech); failure -> fatal SUCCESSFULLY RECONCILED. No modifier is approved: the earlier proposed tool +1 must NOT be wired without separate review."
+    },
+    {
+      "where": "end_reconciled",
+      "field": "scene",
+      "old": "pavilion/reconciliation_office",
+      "new": "pavilion/technical_services"
+    },
+    {
+      "where": "end_reconciled",
+      "field": "text",
+      "old": "Successfully Reconciled.",
+      "new": "The emergency release fails. The fitting machinery completes its alignment, and its counterweight comes down. ENDING — SUCCESSFULLY RECONCILED."
+    },
+    {
+      "where": "end_reconciled",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED FATAL ENDING (APPROVAL SYNC 2026-11-17 (docs/106)): reached only by failing the hidden d6>=4 emergency release in Live Source Calibration, after the visibly warned Fourth Chair interruption. The machinery's alignment/counterweight mechanism kills the protagonist; no face or gore. Popup title, subtitle and description are owner-approved. Scene corrected from reconciliation_office to technical_services, where calibration happens. Death ARTWORK is approved as a BRIEF only: not generated, not selected (art status not-started). Storyboard preview field button=BEGIN AGAIN is inherited placeholder metadata; the game's RETRY/CHECKPOINT/EXIT behavior is controlled by Gameplay PMO. Exact death narration prose PENDING EDITORIAL SYNCHRONIZATION; the text field is a decision summary."
+    },
+    {
+      "where": "end_reconciled.deathPopup",
+      "field": "subtitle",
+      "old": "PROPOSED FATAL ENDING — NEEDS OWNER REVIEW",
+      "new": "NO FURTHER ADJUSTMENTS REQUIRED"
+    },
+    {
+      "where": "end_reconciled.deathPopup",
+      "field": "status",
+      "old": "proposed",
+      "new": "owner-approved"
+    },
+    {
+      "where": "end_reconciled.deathPopup",
+      "field": "description",
+      "old": "PROPOSED ONLY: The Pavilion's identity correction apparatus closes its file while the original occupant is still inside. The actual death mechanism and final joke are awaiting owner review.",
+      "new": "For the first time, the official photograph and the person in it agree. Neither contains you."
+    },
+    {
+      "where": "a_surplus",
+      "field": "notes",
+      "old": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "new": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A challenge duplicate routing -> administrative hearing (stage_admin); B follow the safe property transfer -> technical hearing (stage_tech). Neither introduces a surprise death. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    }
+  ]
+}

@@ -146,8 +146,10 @@ async function run(name, base) {
   const items = await p2.evaluate(() => document.querySelectorAll('#details .item-button').length);
   await p2.click('#showArtwork');
   const art = await p2.evaluate(() => document.getElementById('details').innerText);
-  check(b, 'zoom, Items and Artwork panels still work (169 shared art records incl. nine death screens, 110 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
-    && items === 32 && /169 shared art records/.test(art) && /110 not-started/.test(art), [items, art.slice(0, 200)]);
+  // 2026-11-17 (docs/106): +1 item (pavilion_satisfaction_certificate) and its 2 pending art records.
+  // The not-started figure was already stale on main 7c7a50a (110 expected, 81 shown after the Ch2 batch approvals): now 81 + 2.
+  check(b, 'zoom, Items and Artwork panels still work (171 shared art records incl. nine death screens, 83 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
+    && items === 33 && /171 shared art records/.test(art) && /83 not-started/.test(art), [items, art.slice(0, 400)]);
   await p2.screenshot({ path: path.join(OUT, name + '_3_imported.png') });
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);
