@@ -829,12 +829,12 @@
     "c_feed": {
       "mode": "narrative",
       "scene": "pavilion/presentation_feed",
-      "text": "Presentation reels feed approved responses to the Pavilion. A diagnostic line collects anything that occurred without instruction. A dispatch card announces GRAND RECONCILIATION: CERTIFIED ORIGINAL AND PRESENT CLAIMANT REQUIRED.",
+      "text": "The Central Presentation Feed fills a vast room with film reels, pneumatic tubes and labeled cabinets. Two film projectors show ACTUAL EVENTS and APPROVED EVENTS. They are playing different films. A mechanical editor cuts footage from the first and replaces it with the second. A speaker announces that minor inconsistencies between reality and records are corrected at no inconvenience to the public. It adds that original events are destroyed after correction to prevent confusion. A dispatch cabinet offers two priority authorizations, but only one may be collected per participant. Additional authorizations may be requested after completion of your visit. Beyond the cabinet, a dispatch card summons CERTIFIED ORIGINAL AND PRESENT CLAIMANT to GRAND RECONCILIATION.",
       "choices": [
         {
           "id": "ch3_c03_a",
           "kind": "action",
-          "text": "TAKE PRESENTATION SERVICE AUTHORIZATION.",
+          "text": "OBTAIN PRESENTATION SERVICE AUTHORIZATION.",
           "to": "stage_tech",
           "effects": {
             "set": {
@@ -846,23 +846,9 @@
           }
         },
         {
-          "id": "ch3_c03_b",
-          "kind": "action",
-          "text": "KEEP A REPRESENTATION DIAGNOSTIC RECORD.",
-          "to": "stage_tech",
-          "effects": {
-            "set": {
-              "pavilion_original_diagnostic_obtained": true
-            },
-            "give": [
-              "pavilion_representation_diagnostic_record"
-            ]
-          }
-        },
-        {
           "id": "ch3_c03_c",
           "kind": "action",
-          "text": "COPY THE BROADCAST OVERRIDE SEQUENCE.",
+          "text": "OBTAIN THE CORRECTIVE BROADCAST OVERRIDE SEQUENCE.",
           "to": "stage_tech",
           "effects": {
             "set": {
@@ -874,7 +860,7 @@
           }
         }
       ],
-      "notes": "UNREVIEWED C03 outcome choices; included as cohesive draft only. Do not automatically grant Original-independent response flag from an unverified generic movement."
+      "notes": "Owner retained A and C as mutually exclusive choices; retired the former B diagnostic-record option from this encounter. A: player identifies HUMANITY as the presentation fault; the machine certifies fault and grants temporary Presentation Service personnel authorization, allowing a service-level position overlooking Grand Reconciliation. Not a hard badge gate or automatic registry rewrite. C: conflicting ACTUAL/APPROVED reels prompt a 'Public Information Opportunity'; a perforated Priority One corrective broadcast sequence is issued, useful in a later confrontation but not an automatic win. Both are deterministic, no check, each gives only its listed item/flag; both converge through stage_tech. Later finale authoring must give distinct consequences to these items. No unapproved Original autonomy inference."
     },
     "stage_admin": {
       "mode": "narrative",
@@ -1502,7 +1488,7 @@
     "c02_a": {
       "mode": "narrative",
       "scene": "pavilion/human_behavior_workshop",
-      "text": "Both buttons in FREE WILL feed the same AGREE lamp. A recording congratulates you on a fully independent decision. Your objection becomes an official agreement and moves toward the central presentation feed.",
+      "text": "You stand before the FREE WILL buttons: I AGREE and I AGREE ENTHUSIASTICALLY. You press neither. A bell sounds. A certificate emerges: CONSENT OBTAINED THROUGH NONPARTICIPATION. The announcer congratulates you for demonstrating complete confidence in the democratic process. From a desk beside the booth, Mrs. Pruitt, a real human employee wearing the badge INDEPENDENT CHOICE SUPERVISOR — CLASS II, looks up from her ledger. She has witnessed 3,812 independent decisions in nineteen years, but never a person who refused both buttons. Her rules say abstention counts as enthusiastic consent; another rule requires her to personally witness the actual decision. After a long pause, she certifies the form, then writes in its margin: NEITHER BUTTON PRESSED. WITNESSED PERSONALLY. — E. PRUITT. A carbon copy enters official records. The Pavilion lights a red warning: UNRECONCILED HUMAN TESTIMONY. Mrs. Pruitt straightens her cardigan. 'At least someone will finally have to read it.' Her testimony travels toward the Central Presentation Feed.",
       "choices": [
         {
           "id": "continue_c_feed",
@@ -1511,10 +1497,11 @@
           "to": "c_feed"
         }
       ],
-      "notes": "UNREVIEWED TEMPORARY OUTCOME for jointly developing A next.",
+      "notes": "Collaboratively selected: human NPC Mrs. Pruitt witnesses refusal; official certificate misclassifies abstention as consent, while her written testimony records what happened. No check or inventory item. This is contradictory human testimony, NOT proof of the Original's nature. Finale payoff remains to be authored. Dialogue-mode portrait art for Pruitt remains a separate future art requirement; do not reuse speaker art.",
       "effects": {
         "set": {
-          "pavilion_free_will_contradiction_seen": true
+          "pavilion_free_will_contradiction_seen": true,
+          "pavilion_free_will_refusal_witnessed": true
         }
       },
       "focus": "pavilion/free_will_buttons"
@@ -1522,7 +1509,7 @@
     "c02_c": {
       "mode": "narrative",
       "scene": "pavilion/human_behavior_workshop",
-      "text": "You make the spontaneous laughter mannequin answer the surprise announcement, while the surprise mannequin calmly waits for its countdown. A red administrative error slip leaves for the presentation feed.",
+      "text": "In the HUMAN BEHAVIOR WORKSHOP, you pull a red lever labeled IN CASE OF EMERGENCY — PULL. A siren sounds. The SPONTANEOUS LAUGHTER mannequin doubles over in delight. The announcer congratulates everyone: PUBLIC MORALE HAS IMPROVED BY 600 PERCENT. An emergency shutter begins closing across the only visible exit. The announcer requests that everyone remain inside until the emergency has been successfully enjoyed. Then the FREE WILL mannequin turns its head. It does not touch either AGREE button. Instead, it reaches over and presses the shutter's STOP control. The shutter halts. Two printers argue. UNAUTHORIZED INDEPENDENT ACTION DETECTED, says one. DISCIPLINARY ACTION REQUIRES REGISTERED PERSONHOOD, says another. A third printer starts an APPLICATION FOR TEMPORARY HUMAN STATUS. The mannequin returns to its old pose. The announcer insists mechanical equipment cannot develop independent judgment without written approval. The incident report disappears into a pneumatic tube, triggering GRAND RECONCILIATION — ADDITIONAL PERSON REPORTED. The laughter finally stops. 'We apologize. The emergency has become administrative.'",
       "choices": [
         {
           "id": "continue_c_feed",
@@ -1531,10 +1518,11 @@
           "to": "c_feed"
         }
       ],
-      "notes": "UNREVIEWED TEMPORARY OUTCOME for jointly developing C next.",
+      "notes": "Collaboratively selected fusion of Laughing Emergency + First Independent Act. No check and no item. A mannequin acts outside its performance script; this does NOT establish consciousness or independent choice (a forgotten emergency routine remains possible). The Pavilion considers temporary personhood for discipline; official incident record goes to the Presentation Feed. Finale payoff remains to be authored.",
       "effects": {
         "set": {
-          "pavilion_behavior_demo_disrupted": true
+          "pavilion_behavior_demo_disrupted": true,
+          "pavilion_unapproved_exhibit_action_recorded": true
         }
       }
     },
