@@ -4,11 +4,11 @@
   "game": {
     "repo": "InterstellarHarvest/CYOA",
     "branch": "agent/canonical-storyboard-sync-20261116",
-    "commit": "ba4a0efbb257fd20f0a303a48181c247d5f70e1e"
+    "commit": "20b52601c5733a633a385bbb1c60995174e530cc"
   },
   "storyboard": {
     "repo": "InterstellarHarvest/CYOA-storyboard",
-    "revision": "dc5ed47a44e0cdebf55ad66374dd131c5ef45fa3"
+    "revision": "d95c01ef5059036fb8718fafe282925fdeb85c1d"
   },
   "build": {
     "channel": "preview",
@@ -21,7 +21,7 @@
   },
   "images": [
     {
-      "key": "deathScreens:house_of_tomorrow/rest_assured_voluntary",
+      "key": "deathScreens:house_of_tomorrow/rest_assured",
       "path": "art/deaths/rest_assured_voluntary.png",
       "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
       "kind": "death-screen",

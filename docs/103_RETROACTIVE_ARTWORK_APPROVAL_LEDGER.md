@@ -43,10 +43,10 @@ The public storyboard records approval/status and selected provenance, but not a
   - 5 reused M2 images.
   - Every one matches this catalog's `integrated` / `reused` records.
 - **The unbound chair state** stays `approved`.
-- **The Rest Assured voluntary death vignette** is added as `deathScreens["house_of_tomorrow/rest_assured_voluntary"]`, status `integrated`:
+- **The Rest Assured death vignette** (one shared record for all three causes per docs/104, `deathScreens["house_of_tomorrow/rest_assured"]`) is now `integrated` with its verified game path:
   - owner-approved at `000f096`;
   - byte-identical in the game's review-gated `?deathproof` presentation, sha256 `7f469efa…`;
-  - it applies only to the voluntary `accept_permanent_rest` choice.
+  - the game's gated presentation still matches only the voluntary cause; widening it is a pending gameplay change.
 - **Chapter 2:** no Biology Park image is integrated in any game branch, worktree or stash. The seven Batch 1 images stay `approved`, and their exact selected bytes are now previewable (SHA-256s verified against this ledger).
 - **Verification is now mechanical.** `story/game-integration.json` (written by the game) lists each used image and its hash. `tools/sync/check-canon.mjs` fails the deploy in either case:
   - an `integrated` record is not in that report;

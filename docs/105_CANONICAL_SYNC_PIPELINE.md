@@ -154,13 +154,13 @@ Each image shows its SHA-256, its source commit and path, and the game build tha
   - Chapter 1: 36 nodes.
   - Chapter 2: 99 nodes.
   - Chapter 3: 62 nodes, draft. Not consumed by the game.
-- **Game:** `InterstellarHarvest/CYOA` `agent/canonical-storyboard-sync-20261116` consumes `dc5ed47` (see `story/game-integration.json`).
+- **Game:** `InterstellarHarvest/CYOA` draft PR #14 (`agent/canonical-storyboard-sync-20261116`) consumes storyboard `d95c01e`. See `story/game-integration.json` for the exact build commit and 63 image records.
 - **Integrated (verified by the game report):**
   - Prologue: 28.
   - Chapter 1: 28.
-  - The Rest Assured death screen, in the review-gated `?deathproof` presentation.
+  - The shared Rest Assured death screen `deathScreens:house_of_tomorrow/rest_assured`, in the review-gated `?deathproof` presentation.
   - Plus 5 `reused` M2 images.
 - **Approved, awaiting integration:**
   - 7 Biology Park Batch 1 images (signage-polish-v02 for the Bureau, the formal entrance and Jungle Junction).
   - The deliberately unbound chair state.
-- **Not started:** every other Chapter 2 and Chapter 3 brief.
+- **Not started:** every other Chapter 2 and Chapter 3 brief, including the eight unproduced death screens (docs/104).

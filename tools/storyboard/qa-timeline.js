@@ -89,7 +89,13 @@ async function run(name, base) {
     const base = LEGACY[key];
     const baseCards = base.cards.map((c) => ({ id: c.id, className: c.className, left: c.left, top: c.top, text: c.text }));
     const baseShapes = base.shapes.map((n) => ({ tag: n.tag, d: n.attributes.d || null, x: n.attributes.x === undefined ? null : String(n.attributes.x), y: n.attributes.y === undefined ? null : String(n.attributes.y), stroke: n.attributes.stroke || null, dash: n.attributes['stroke-dasharray'] || null, text: n.tag === 'text' ? n.text : null }));
-    check(b, key + ': every card identical to the published viewer (position, class, text)', JSON.stringify(now.cards) === JSON.stringify(baseCards), now.cards.find((c, i) => JSON.stringify(c) !== JSON.stringify(baseCards[i])));
+    // docs/104 (4b2b1bb) intentionally changed what the fatal Chapter 3 cards display (death title,
+    // narrative beat, art ID, fatal colours), mirroring qa-smoke's 4b876c0: those cards keep their exact
+    // position; every other card stays fully identical.
+    const FATAL = new Set(['end_model_citizen', 'end_reconciled', 'end_archived']);
+    const norm = (cards) => cards.map((c) => (FATAL.has(c.id) ? { id: c.id, className: 'node', left: c.left, top: c.top, text: ['FATAL POPUP CONTENT'] } : c));
+    check(b, key + ': every card identical to the published viewer (position, class, text; fatal cards: position)', JSON.stringify(norm(now.cards)) === JSON.stringify(norm(baseCards)), norm(now.cards).find((c, i) => JSON.stringify(c) !== JSON.stringify(norm(baseCards)[i])));
+    if (key === 'chapter-03') check(b, 'chapter-03: fatal cards show their death-popup title and art ID', now.cards.filter((c) => FATAL.has(c.id)).every((c) => /death-node/.test(c.className) && c.text.some((t) => /^ART: /.test(t))));
     check(b, key + ': every connector, arrow and label identical to the published viewer', JSON.stringify(now.shapes) === JSON.stringify(baseShapes), now.shapes.find((c, i) => JSON.stringify(c) !== JSON.stringify(baseShapes[i])));
     check(b, key + ': no timeline chrome, ports or legend', !now.ports && !now.timelineClass && now.legend === 'none' && now.jump === 'none', now);
     await shot(page, key + '_default');
