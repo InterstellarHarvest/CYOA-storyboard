@@ -1,0 +1,38 @@
+name: Review storyboard viewer changes
+# Runs on pull requests only. It never deploys: publishing stays with pages.yml on pushes to main.
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/storyboard/**'
+      - 'story/**'
+      - '.github/workflows/storyboard-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Storyboard logic, timeline layout and Prologue/Chapter 3 snapshot checks
+        run: node tools/storyboard/qa-smoke.mjs
+      - name: Install Chromium and Firefox
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium firefox
+      - name: Chapter navigation and layout persistence (Chromium + Firefox)
+        run: node tools/storyboard/qa-browser.js
+      - name: Timeline geometry, interactions and screenshots (Chromium + Firefox)
+        run: node tools/storyboard/qa-timeline.js --out storyboard-timeline-qa
+      - name: Preserve timeline screenshots and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: storyboard-timeline-screenshots
+          path: storyboard-timeline-qa/
+          if-no-files-found: warn

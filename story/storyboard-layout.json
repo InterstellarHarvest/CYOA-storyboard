@@ -5,10 +5,41 @@
       "positions": {}
     },
     "chapter-01": {
-      "positions": {}
+      "positions": {},
+      "layoutRevision": 2,
+      "timeline": {
+        "note": "Viewer-only grouping for the storyboard timeline. Not read by the game or the story importer.",
+        "incidents": [
+          {"id": "arrival", "title": "Arrival · badge · House introduction", "nodes": ["house_arrival", "badge_registration", "welcome_home", "orientation_storage", "orientation_refusal"]},
+          {"id": "housekeeping", "title": "Housekeeping & storage", "nodes": ["storage_cabinet", "storage_reclaimed"]},
+          {"id": "comfort_dinner", "title": "Comfort, refreshments & dinner", "nodes": ["comfort_offer", "refreshments", "refused_both", "dinner_arrival", "dinner_clue", "foyer_attempt", "dinner_redirect", "plant_adoption"]},
+          {"id": "martin", "title": "Martin & the wardrobe passage", "nodes": ["martin_bedtime", "martin_bedroom", "wardrobe_passage"]},
+          {"id": "photographs", "title": "Family photographs & album", "nodes": ["portrait_intro", "portrait_print", "album_closeup", "portrait_before_album", "bathroom_arrival", "bathroom_fake_flush", "showroom_reset"]},
+          {"id": "chair", "title": "Rest Assured chair & service escape", "nodes": ["chair_warning", "chair_locked", "exit_chair_fatal", "service_breach", "service_records", "service_exit"]},
+          {"id": "exits", "title": "Surviving House exits → Chapter 2", "nodes": ["exit_named_plant", "exit_martin", "exit_service_clean", "exit_service_registered", "exit_showroom_reset"]}
+        ]
+      }
     },
     "chapter-02": {
-      "positions": {}
+      "positions": {},
+      "layoutRevision": 2,
+      "timeline": {
+        "note": "Viewer-only grouping for the storyboard timeline. Not read by the game or the story importer.",
+        "incidents": [
+          {"id": "bureau", "title": "Conveniences Bureau & groundskeeper", "nodes": ["bureau_arrival", "bureau_emergency", "gardener_arrival", "gardener_choices", "gardener_review", "gardener_review_result", "gardener_promotion", "formal_park_entry"]},
+          {"id": "sorting", "title": "Sorting & hopper outcomes", "nodes": ["gardener_jam_success", "gardener_jam_failure", "sorter_escape", "fatal_sorter", "hopper_escape", "fatal_hopper"]},
+          {"id": "tower", "title": "Environmental Control Tower", "nodes": ["park_junction", "tower_arrival", "tower_archive", "director_order", "cease_stairs", "director_passage", "tower_trace"]},
+          {"id": "spore", "title": "Spore Garden & damaged walkway", "nodes": ["spore_garden", "garden_crossed", "garden_infected", "walkway_crossing", "walkway_success", "walkway_failure", "garden_vented", "garden_after"]},
+          {"id": "forest", "title": "Moving Forest", "nodes": ["forest_arrival", "forest_clear", "forest_thorn", "forest_overhead", "forest_fall", "sensor_gallery"]},
+          {"id": "tram", "title": "Tour tram & reserve tram", "nodes": ["tour_start", "tour_rooted", "tour_roof_escape", "tour_roof_fall", "tour_brake_slide", "tour_rescue", "tram_siding", "tram_walk", "reserve_tram", "tram_power_success", "tram_power_failure", "robot_concourse_crash", "silent_tram_descent", "station_ticket"]},
+          {"id": "flower", "title": "Central flower, appeals & planting", "nodes": ["flower_arrival", "flower_requests", "appeal_docket", "appeal_house_success", "appeal_director_success", "appeal_examiner_success", "appeal_biology_success", "planting_active", "reclassification_success", "reclassification_stapler", "breakout_success", "breakout_failed", "waste_chute_escape", "fatal_transformation", "fatal_planting"]},
+          {"id": "translator", "title": "Translator sabotage & late tower", "nodes": ["translator_controls", "sabotage_cable_recoil", "sabotage_cable_alarm", "cable_alarm_survived", "fatal_roots", "sabotage_tape_stalled", "sabotage_staple_stalled", "sabotage_staple_alarm", "sabotage_clicker_stalled", "sabotage_rubber_stalled", "sabotage_window", "tower_late_entry", "tower_late_records", "tower_bypass_exit"]},
+          {"id": "courier_customs", "title": "Courier route & customs exit", "nodes": ["courier_assignment", "customs_checkpoint", "customs_seeds_destroyed", "customs_seed_rupture", "customs_dust_avoided", "customs_dust_infected", "customs_exit", "customs_kit_focus", "customs_kit_read_focus"]},
+          {"id": "public_exit", "title": "Public exit & antidote kit", "nodes": ["public_exit_staging", "public_kit_focus", "public_kit_read_focus"]},
+          {"id": "maintenance_exit", "title": "Irrigation & maintenance exit", "nodes": ["irrigation_hub", "maintenance_exit_staging", "maintenance_kit_focus", "maintenance_kit_read_focus"]},
+          {"id": "endings", "title": "Living endings → Chapter 3 (preview)", "nodes": ["end_concourse_robot", "end_underground_station", "end_public", "end_maintenance", "end_customs"]}
+        ]
+      }
     },
     "chapter-03": {
       "positions": {}
