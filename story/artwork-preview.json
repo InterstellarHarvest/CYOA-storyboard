@@ -497,6 +497,21 @@
         "path": "art/portraits/termination_drone/drone_slot_closed.png"
       }
     },
+    "scenes:biology_park/control_tower": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/A-control-tower.png"
+      }
+    },
     "scenes:biology_park/conveniences_bureau": {
       "file": "assets/selected/pending-integration/scenes/biology_park/conveniences_bureau.png",
       "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
@@ -510,6 +525,21 @@
         "ref": "agent/ch02-art-batch01-biopark-foundation",
         "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
         "path": "review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/A-conveniences-bureau.png"
+      }
+    },
+    "scenes:biology_park/damaged_walkway": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/damaged_walkway.png",
+      "sha256": "8ca919bedda4f414a7bfac7bfc1f0003f8531e7fcee36ce8f2873db0985af642",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/D-damaged-walkway.png"
       }
     },
     "scenes:biology_park/formal_entrance": {
@@ -572,6 +602,51 @@
         "path": "review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/E-jungle-junction.png"
       }
     },
+    "scenes:biology_park/moving_forest": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/moving_forest.png",
+      "sha256": "5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/E-moving-forest.png"
+      }
+    },
+    "scenes:biology_park/overgrown_tram": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/overgrown_tram.png",
+      "sha256": "d4c381642d2d54e6341fd82121ddcf5caef11029fa37c16d221edd5173d470c7",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/F-overgrown-tram.png"
+      }
+    },
+    "scenes:biology_park/sensor_gallery": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/sensor_gallery.png",
+      "sha256": "b2f23c8d015c1f45af200733ba28201627c6d10102dcd9e34b92230c32683a7c",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/G-sensor-gallery.png"
+      }
+    },
     "scenes:biology_park/service_entry": {
       "file": "assets/selected/pending-integration/scenes/biology_park/service_entry.png",
       "sha256": "c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c",
@@ -585,6 +660,36 @@
         "ref": "agent/ch02-art-batch01-biopark-foundation",
         "commit": "24434cb96d48fcb2cebe1f9814fcb35dd9ab1271",
         "path": "review/chapter-02-batch01-2026-11-15/candidates/D-service-entry.png"
+      }
+    },
+    "scenes:biology_park/spore_garden": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/spore_garden.png",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/B-spore-garden.png"
+      }
+    },
+    "scenes:biology_park/tour_tram": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/tour_tram.png",
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch02-biopark-routes",
+        "commit": "ed098eee6999b25d44a6b4db2ad7605e430d88c6",
+        "path": "review/chapter-02-batch02-2026-11-17/candidates/C-tour-tram.png"
       }
     },
     "scenes:exposition/entrance": {

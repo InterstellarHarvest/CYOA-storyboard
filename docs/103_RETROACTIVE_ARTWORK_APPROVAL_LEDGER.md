@@ -51,3 +51,17 @@ The public storyboard records approval/status and selected provenance, but not a
 - **Verification is now mechanical.** `story/game-integration.json` (written by the game) lists each used image and its hash. `tools/sync/check-canon.mjs` fails the deploy in either case:
   - an `integrated` record is not in that report;
   - a selected record loses its preview, or regresses in status.
+
+## Owner approval addendum — Chapter2 Batch2, 2026-11-17
+
+All seven Batch2 images were visually reviewed and **approved without changes**. Registered with `tools/sync/register-art.mjs` from `InterstellarHarvest/CYOA@agent/ch02-art-batch02-biopark-routes`, approved commit `ed098eee6999b25d44a6b4db2ad7605e430d88c6`. Exact selected PNG bytes are public previews; production `assetPath` remains null. None is integrated. Earlier approvals, candidates and rejected studies remain preserved.
+
+| Artwork key | Selected source path | SHA-256 |
+|---|---|---|
+| `scenes:biology_park/control_tower` | `review/chapter-02-batch02-2026-11-17/candidates/A-control-tower.png` | `fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca` |
+| `scenes:biology_park/spore_garden` | `review/chapter-02-batch02-2026-11-17/candidates/B-spore-garden.png` | `aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3` |
+| `scenes:biology_park/tour_tram` | `review/chapter-02-batch02-2026-11-17/candidates/C-tour-tram.png` | `fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57` |
+| `scenes:biology_park/damaged_walkway` | `review/chapter-02-batch02-2026-11-17/candidates/D-damaged-walkway.png` | `8ca919bedda4f414a7bfac7bfc1f0003f8531e7fcee36ce8f2873db0985af642` |
+| `scenes:biology_park/moving_forest` | `review/chapter-02-batch02-2026-11-17/candidates/E-moving-forest.png` | `5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81` |
+| `scenes:biology_park/overgrown_tram` | `review/chapter-02-batch02-2026-11-17/candidates/F-overgrown-tram.png` | `d4c381642d2d54e6341fd82121ddcf5caef11029fa37c16d221edd5173d470c7` |
+| `scenes:biology_park/sensor_gallery` | `review/chapter-02-batch02-2026-11-17/candidates/G-sensor-gallery.png` | `b2f23c8d015c1f45af200733ba28201627c6d10102dcd9e34b92230c32683a7c` |
