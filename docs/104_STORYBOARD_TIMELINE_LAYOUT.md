@@ -2,6 +2,8 @@
 
 **Status:** REVIEW BRANCH ONLY (`agent/storyboard-timeline-ch01-ch02`, from `main` 0ebcf48). 2026-11-16. Not merged and not deployed. The public site stays unchanged until the owner approves.
 
+> **Update (owner follow-up, same day):** PR #2 was merged. The Prologue now also uses the timeline, chapter pills select/inspect/drag instead of switching chapters, and the view is remembered per chapter. See the addendum at the end; statements below that the Prologue is unchanged are superseded. Chapter 3 is still unchanged.
+
 ## What changed
 
 Chapter 1 (36 nodes) and Chapter 2 (99 nodes) are now drawn as a left-to-right timeline.
@@ -121,3 +123,25 @@ Chapter 3 is still drawn with the original code and shows no pills.
 Default Prologue and Chapter 3 screenshots, branch against main:
 - Firefox: byte-identical.
 - Chromium: the board is pixel-identical. Only a few header-text pixels differ, by at most 2 levels, and Chromium varies the same way between two runs of unchanged main.
+
+## Addendum: owner follow-up (branch `agent/storyboard-ports-prologue-view`)
+
+Three owner requests after PR #2 was merged:
+
+1. **Chapter pills behave like cards.**
+   - Clicking any pill (incoming, outgoing or preview) no longer switches chapters. It selects the pill and shows the route in the right-hand panel: the route, the authored choice or `storyboardNextChapter`, and what happens in the game.
+   - Pills can be dragged. Their position is saved with the chapter's layout under the port id, and Reset Layout puts them back.
+   - Moving to the other chapter is an explicit **Open …** button in the panel. The start node's "Arrives from other chapters" list now selects the matching pill instead of leaving the chapter.
+2. **The Prologue uses the timeline.**
+   - `prologue-00` gets `layoutRevision: 2` and five incidents: Work complete & the drone's notice; Leaving work; Exposition property intake; Reception & the examiner badge; Directions, key & hallway → Chapter 1.
+   - It has no cycles. `reception_hallway` sits in the right-hand column with its Chapter 1 gameplay pill.
+   - Prologue positions saved before this change are archived like Chapters 1 and 2 (Restore previous arrangement).
+   - SHOW/USE item routes are now labelled with their authored action text, e.g. "SHOW · HOLD OUT THE TERMINATION NOTICE.", instead of repeating the verb.
+3. **View memory.** Leaving a chapter records its zoom and scroll. Returning to it through the dropdown, or the inspector's chapter buttons, restores that view. A chapter not yet visited in the session opens at its default view. A jump to a specific node (Open … from a pill) still centres on that node.
+
+Chapter 3 is unchanged. Its snapshot fixture was regenerated from main 0ebcf48 and now covers Chapter 3 only. It matches byte for byte in Node, and every card and connector matches in both browsers.
+
+QA on this branch:
+- `qa-smoke.mjs` PASS.
+- `qa-browser.js` 24/24.
+- `qa-timeline.js` 110/110 in Chromium and Firefox. It now also covers the Prologue timeline, pill select/inspect/drag with no navigation, the explicit Open buttons, view memory across dropdown switches, and Prologue cache archiving.

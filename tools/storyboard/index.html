@@ -35,7 +35,8 @@
 .node.tl.exit.preview{background:#22343a;border-style:dashed;border-left-style:solid}
 .node.tl.start{box-shadow:0 0 0 3px #e2e8ee33,0 3px 9px #0005}
 #ports{position:absolute;inset:0;pointer-events:none}
-.port{position:absolute;width:232px;height:58px;padding:7px 10px;border-radius:29px;border:2px solid #4fd1c5;background:#173133;cursor:pointer;pointer-events:auto;box-shadow:0 3px 9px #0005;overflow:hidden}
+.port{touch-action:none;user-select:none;cursor:move}.port.dragging{opacity:.92;z-index:2;box-shadow:0 6px 20px #0009}.port.selected{box-shadow:0 0 0 3px #80bece,0 3px 9px #0005}
+.port{position:absolute;width:232px;height:58px;padding:7px 10px;border-radius:29px;border:2px solid #4fd1c5;background:#173133;cursor:move;pointer-events:auto;box-shadow:0 3px 9px #0005;overflow:hidden}
 .port:hover{background:#21454a}.port.preview{border-style:dashed;background:#1a2a33;border-color:#7fc8d8}
 .port .cap{font-size:9.5px;letter-spacing:.07em;color:#8fe0d6;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .port.preview .cap{color:#f0c27b}
@@ -74,7 +75,7 @@
  "use strict";
  const $ = id => document.getElementById(id);
  const state = { chapter:null, items:{}, artwork:null, layouts:{schema:"cyoa-storyboard-layout-v1",chapters:{}}, layoutName:"storyboard-layout.json", chapterKey:null, manifest:null, manifestURL:null, sourceName:"chapter.json", artworkName:"artwork.draft.json", selected:null, selections:{}, loadToken:0, scale:1, width:0, height:0,
-   timelines:{}, peers:{}, peersReady:null, tlCache:null, migrated:{} };
+   timelines:{}, peers:{}, peersReady:null, tlCache:null, migrated:{}, views:{} };
  const setStatus = message => { $("status").textContent = message; };
  const el = (tag, className, text) => { const n=document.createElement(tag); if(className)n.className=className;if(text!==undefined)n.textContent=text;return n; };
  const titleOf = (id) => id.replaceAll("_"," ").replace(/\b\w/g, m=>m.toUpperCase());
@@ -379,7 +380,7 @@
    };
    for(const [id,node] of Object.entries(nodes)){
      choicesFor(node).forEach(c=>{const t=c.text||c.id;add(id,c.to,"choice",t,c.id);add(id,c.pass?.to,"pass",t,c.id);add(id,c.fail?.to,"fail",t,c.id);});
-     for(const verb of ["show","use"])Object.entries(node[verb]||{}).forEach(([itemId,entry])=>add(id,entry?.to,verb,verb.toUpperCase()+" "+titleOf(itemId),itemId));
+     for(const verb of ["show","use"])Object.entries(node[verb]||{}).forEach(([itemId,entry])=>add(id,entry?.to,verb,entry?.say||entry?.text||state.items?.[itemId]?.name||titleOf(itemId),itemId));
    }
    const outs={};list.forEach(e=>{outs[e.from]=(outs[e.from]||0)+1;});
    list.forEach(e=>{
@@ -613,12 +614,17 @@
    const key=state.chapterKey;
    if(!state.tlCache||state.tlCache.key!==key||state.tlCache.chapter!==state.chapter)state.tlCache={key,chapter:state.chapter,tl:computeTimeline(key,state.chapter)};
    const tl=state.tlCache.tl,overrides=layoutEntry()?.positions||{};
-   const positions={},moved={};
+   const positions={},portPos={},moved={};
    for(const [id,p] of Object.entries(tl.positions))positions[id]={x:p.x,y:p.y};
-   for(const [id,p] of Object.entries(overrides))if(Object.hasOwn(positions,id)){positions[id]={x:p.x,y:p.y};moved[id]=true;}
-   const right=Math.max(tl.width,...Object.values(positions).map(p=>p.x+TL.cardW+TL.margin));
-   const bottom=Math.max(tl.height,...Object.values(positions).map(p=>p.y+TL.cardH+TL.margin));
-   return {positions,moved,tl,width:right,height:bottom,cardWidth:TL.cardW,cardHeight:TL.cardH};
+   for(const [id,p] of Object.entries(tl.portPos))portPos[id]={x:p.x,y:p.y};
+   // Chapter pills are arranged like cards: a dragged pill is saved under its port id.
+   for(const [id,p] of Object.entries(overrides)){
+     if(Object.hasOwn(positions,id)){positions[id]={x:p.x,y:p.y};moved[id]=true;}
+     else if(Object.hasOwn(portPos,id)){portPos[id]={x:p.x,y:p.y};moved[id]=true;}
+   }
+   const right=Math.max(tl.width,...Object.values(positions).map(p=>p.x+TL.cardW+TL.margin),...Object.values(portPos).map(p=>p.x+TL.portW+TL.margin));
+   const bottom=Math.max(tl.height,...Object.values(positions).map(p=>p.y+TL.cardH+TL.margin),...Object.values(portPos).map(p=>p.y+TL.portH+TL.margin));
+   return {positions,portPos,moved,tl,width:right,height:bottom,cardWidth:TL.cardW,cardHeight:TL.cardH};
  }
  function tlRound(points,radius=8){
    let d="M"+points[0][0]+" "+points[0][1];
@@ -675,7 +681,8 @@
      }
      flush();
    }
-   const box=id=>P[id]?{x:P[id].x,y:P[id].y,w:W,h:H}:tl.portPos[id]?{x:tl.portPos[id].x,y:tl.portPos[id].y,w:TL.portW,h:TL.portH}:null;
+   const PP=graph.portPos||tl.portPos;
+   const box=id=>P[id]?{x:P[id].x,y:P[id].y,w:W,h:H}:PP[id]?{x:PP[id].x,y:PP[id].y,w:TL.portW,h:TL.portH}:null;
    const via=l=>moved[l.from]||moved[l.to]?[]:l.chain.slice(1,-1).map(d=>tl.slots[d]);
    const forward=[...tl.edges.filter(e=>e.route==="forward"),...tl.portEdges];
    // Source side: order by where each connector heads, stack labels, spread ports.
@@ -762,6 +769,35 @@
      });
    }
  }
+ // A chapter pill is inspected like any card: selecting it never leaves the chapter. Moving to the
+ // other chapter is an explicit button in the inspector.
+ function selectPort(id){
+   if(!timelineActive())return;
+   const port=layout().tl.ports.find(p=>p.id===id);if(!port)return;
+   state.selected={type:"port",id};renderGraph();
+   const entry=manifestEntry(port.chapter),other=entry?.title||port.chapter;
+   const here=manifestEntry(state.chapterKey)?.title||state.chapterKey;
+   let pane;
+   if(port.dir==="in"){
+     pane=detailHead((port.mode==="preview"?"Preview from ":"From ")+other+" — "+titleOf(port.source),"Incoming chapter route · "+(port.mode==="preview"?"storyboard preview only":"gameplay transition")+" · not a story node");
+     labeled(pane,"Route",port.source+" ("+other+") → "+port.node+" ("+here+")");
+     labeled(pane,"Authored choice",port.choice+" · "+port.text);
+     labeled(pane,"What happens",port.mode==="preview"?"A storyboard preview link only: the earlier chapter's ending is unchanged and no gameplay transition is implemented."
+       :"Choosing this in "+other+" opens "+here+" at its single start node, "+port.node+". The narration there varies by route; no separate arrival node exists.");
+     const arrive=el("button","choice","Select the arrival node: "+titleOf(port.node));arrive.append(el("span","minor",port.node+" · in this chapter"));arrive.onclick=()=>selectNode(port.node);pane.append(arrive);
+     const go=el("button","choice","Open "+titleOf(port.source)+" in "+other+" →");go.append(el("span","minor","switches the storyboard to "+other));go.onclick=()=>tlPortNav(port);pane.append(go);
+   }else{
+     const start=state.peers[port.chapter]?.start;
+     pane=detailHead((port.mode==="preview"?"Preview handoff → ":"To ")+other,"Outgoing chapter route · "+(port.mode==="preview"?"storyboard preview only, not gameplay":"gameplay transition")+" · not a story node");
+     labeled(pane,"Route",port.node+" ("+here+") → "+(start||"start")+" ("+other+")");
+     labeled(pane,"Authored source",port.mode==="preview"?port.node+" · storyboardNextChapter: "+port.chapter:port.choice+" · "+port.text);
+     labeled(pane,"What happens",port.mode==="preview"?"Storyboard preview only. The current game ending is unchanged; no gameplay transition into "+other+" is implemented."
+       :"The game continues into "+other+" at its start node"+(start?", "+start:"")+".");
+     const from=el("button","choice","Select the exit node: "+titleOf(port.node));from.append(el("span","minor",port.node+" · in this chapter"));from.onclick=()=>selectNode(port.node);pane.append(from);
+     const go=el("button","choice","Open "+other+(start?" at "+titleOf(start):"")+" →");go.append(el("span","minor",port.mode==="preview"?"storyboard handoff only":"switches the storyboard to "+other));go.onclick=()=>tlPortNav(port);pane.append(go);
+   }
+   pane.append(el("p","muted","Drag the pill to move it; its position is saved with this chapter's layout. Reset Layout puts it back."));
+ }
  function tlPortNav(port){
    const target=port.dir==="in"?manifestEntry(port.chapter):manifestEntry(port.chapter);
    if(!target)return;
@@ -795,24 +831,28 @@
    }
    const portHolder=$("ports");portHolder.replaceChildren();
    tl.ports.forEach(port=>{
-     const p=tl.portPos[port.id];if(!p)return;
+     const p=graph.portPos[port.id];if(!p)return;
      const entry=manifestEntry(port.chapter),[chapterName,chapterSub]=(entry?.title||port.chapter).split(" — ");
-     const div=el("div","port port-"+port.dir+(port.mode==="preview"?" preview":""));
+     const div=el("div","port port-"+port.dir+(port.mode==="preview"?" preview":"")+(state.selected?.type==="port"&&state.selected.id===port.id?" selected":""));
      div.style.left=p.x+"px";div.style.top=p.y+"px";
      div.setAttribute("data-port",port.id);div.setAttribute("data-dir",port.dir);div.setAttribute("data-mode",port.mode);div.setAttribute("data-chapter",port.chapter);
      if(port.dir==="in"){
        div.append(el("div","cap",(port.mode==="preview"?"PREVIEW FROM ":"FROM ")+chapterName.toUpperCase()+" EXIT"),el("div","ttl",titleOf(port.source)),el("div","pid",port.source+" → "+state.chapter.start));
-       div.title="Incoming route from "+(entry?.title||port.chapter)+" exit "+port.source+" ("+port.choice+": "+port.text+"). It opens this chapter at its single start node "+state.chapter.start+", whose narration depends on the route. Click to open that exit.";
+       div.title="Incoming route from "+(entry?.title||port.chapter)+" exit "+port.source+" ("+port.choice+": "+port.text+"). It opens this chapter at its single start node "+state.chapter.start+", whose narration depends on the route. Select it for details; drag to move it.";
        div.setAttribute("data-source",port.source);
      }else if(port.mode==="preview"){
        div.append(el("div","cap","PREVIEW HANDOFF · NOT GAMEPLAY"),el("div","ttl","→ "+chapterName+" (preview)"),el("div","pid",(chapterSub||"")+" · from "+port.node));
-       div.title="Storyboard preview handoff (storyboardNextChapter: "+port.chapter+"). The current game ending is unchanged; no gameplay transition is implemented. Click to open "+(entry?.title||port.chapter)+".";
+       div.title="Storyboard preview handoff (storyboardNextChapter: "+port.chapter+"). The current game ending is unchanged; no gameplay transition is implemented. Select it for details; drag to move it.";
      }else{
        const start=state.peers[port.chapter]?.start;
        div.append(el("div","cap","TO "+chapterName.toUpperCase()+" · GAMEPLAY"),el("div","ttl","→ "+(start?titleOf(start):entry?.title||port.chapter)),el("div","pid",(start||port.chapter)+" · "+port.text));
-       div.title="Authored chapter transition ("+port.choice+": chapter "+port.chapter+"). Opens "+(entry?.title||port.chapter)+" at its start node. Click to open it.";
+       div.title="Authored chapter transition ("+port.choice+": chapter "+port.chapter+"). Opens "+(entry?.title||port.chapter)+" at its start node. Select it for details; drag to move it.";
      }
-     div.addEventListener("click",()=>{if(panConsumedClick())return;tlPortNav(port);});
+     div.addEventListener("pointerdown",e=>startNodeDrag(e,port.id,div,p));
+     div.addEventListener("click",e=>{
+       if(suppressNodeClick===port.id){suppressNodeClick=null;e.preventDefault?.();e.stopPropagation?.();return;}
+       selectPort(port.id);
+     });
      portHolder.append(div);
    });
    drawTimelineEdges(graph);
@@ -1119,12 +1159,12 @@
      const incoming=tl.ports.filter(p=>p.dir==="in"&&p.node===id);
      if(incoming.length){
        pane.append(el("h3","","Arrives from other chapters ("+incoming.length+")"));
-       pane.append(el("p","meta","Each route below opens this chapter at this single start node; the narration varies by route. These are authored transitions, not separate story nodes."));
+       pane.append(el("p","meta","Each route below opens this chapter at this single start node; the narration varies by route. These are authored transitions, not separate story nodes. Select one to see its pill."));
        incoming.forEach(port=>{
          const entry=manifestEntry(port.chapter);
          const b=el("button","choice",(port.mode==="preview"?"PREVIEW FROM ":"FROM ")+(entry?.title||port.chapter)+" — "+titleOf(port.source));
-         b.append(el("span","minor",port.source+" · "+port.choice+" · "+port.text+" · open that exit"));
-         b.onclick=()=>tlPortNav(port);pane.append(b);
+         b.append(el("span","minor",port.source+" · "+port.choice+" · "+port.text+" · show this route"));
+         b.onclick=()=>selectPort(port.id);pane.append(b);
        });
      }
    }
@@ -1211,6 +1251,7 @@
  function manifestEntry(id){return (state.manifest?.chapters||[]).find(entry=>entry.id===id)||null;}
  function reselect(sel,start){
    if(sel?.type==="node"&&state.chapter.nodes[sel.id])return selectNode(sel.id);
+   if(sel?.type==="port"&&timelineActive()&&layout().tl.ports.some(p=>p.id===sel.id))return selectPort(sel.id);
    if(sel?.type==="art"&&artworkAt(sel.group,sel.id,sel.variant))return selectArt({group:sel.group,id:sel.id,variant:sel.variant});
    if(sel?.type==="item"&&state.items[sel.id])return selectItem(sel.id);
    if(sel?.type==="list")return showItems();
@@ -1222,7 +1263,11 @@
    // A chapter file imported by hand is keyed like its manifest entry, so its layout stays its own.
    const listed=!chapterId&&name?(state.manifest?.chapters||[]).find(entry=>entry.file?.split("/").pop()===name):null;
    const key=chapterId||listed?.id||data.id||name||"imported-chapter";
-   if(state.chapterKey&&state.chapter)state.selections[state.chapterKey]=state.selected;
+   if(state.chapterKey&&state.chapter){
+     state.selections[state.chapterKey]=state.selected;
+     // Remember where this chapter was being viewed, so switching back returns to the same spot.
+     const v=$("viewport");state.views[state.chapterKey]={scale:state.scale,left:v.scrollLeft,top:v.scrollTop};
+   }
    state.chapter=data;state.sourceName=name||"chapter.json";state.chapterKey=key;state.selected=null;state.tlCache=null;
    state.peers[key]=data;
    restoreCachedLayout();
@@ -1232,8 +1277,11 @@
    const index=(state.manifest?.chapters||[]).indexOf(entry);
    if(index>=0)$("chapterSelect").value=String(index);
    const timeline=timelineActive();
-   $("exportChapter").disabled=false;renderGraph();if(timeline)startView();else fit();
-   refreshTimelineChrome();
+   $("exportChapter").disabled=false;renderGraph();
+   refreshTimelineChrome(); // before positioning the view: the legend changes the viewport height
+   const view=!opts.select&&state.views[key];
+   if(view){const v=$("viewport");state.scale=view.scale;updateScale();v.scrollLeft=view.left;v.scrollTop=view.top;}
+   else if(timeline)startView();else fit();
    setStatus("Loaded "+Object.keys(data.nodes).length+" nodes · "+(entry?entry.id+" · "+(entry.status||"unlisted"):"draft")+" story JSON"
      +(timeline&&state.migrated[key]?" · timeline layout is new: your earlier arrangement was archived (Restore previous arrangement brings it back)":""));
    const select=opts.select&&data.nodes[opts.select]?{type:"node",id:opts.select}:null;
@@ -1317,7 +1365,7 @@
  let drag=null,panMoved=false;
  // A pan that starts on a timeline label or port must not also "click" it.
  function panConsumedClick(){const moved=panMoved;panMoved=false;return moved;}
- $("viewport").addEventListener("pointerdown",e=>{if(e.target.closest(".node"))return;panMoved=false;drag={x:e.clientX,y:e.clientY,left:$("viewport").scrollLeft,top:$("viewport").scrollTop};});
+ $("viewport").addEventListener("pointerdown",e=>{if(e.target.closest(".node,.port"))return;panMoved=false;drag={x:e.clientX,y:e.clientY,left:$("viewport").scrollLeft,top:$("viewport").scrollTop};});
  window.addEventListener("pointermove",e=>{
    if(moveNodeDrag(e))return;
    if(!drag)return;

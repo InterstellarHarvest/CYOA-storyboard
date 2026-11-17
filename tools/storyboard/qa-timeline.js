@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// Real-browser QA of the Chapter 1 / Chapter 2 timeline layout (Chromium + Firefox), served over HTTP
+// Real-browser QA of the Prologue / Chapter 1 / Chapter 2 timeline layout (Chromium + Firefox), served over HTTP
 // from the repository root. Measures the rendered DOM, not the layout code's own numbers.
 //   NODE_PATH="$(npm root -g)" node tools/storyboard/qa-timeline.js [--out <dir>]
 // Checks: card/port/label overlaps from real bounding boxes; every connector sampled along its path
 // never runs through a card it does not belong to; reading zoom and label size; ports; Fit/Start;
 // wheel zoom; pan; drag; Reset; Export/Import; old-cache migration; reload stability; port
-// navigation; Prologue and Chapter 3 cards and connectors identical to the published viewer.
+// navigation; chapter pills select, inspect and drag; per-chapter view memory; Chapter 3 cards and
+// connectors identical to the published viewer.
 // Screenshots (beginning, middle, end, overview of both chapters) go to --out or the OS temp folder.
 'use strict';
 
@@ -77,9 +78,9 @@ async function run(name, base) {
   await page.goto(url);
   await ready(page, 29);
 
-  // ---- Prologue and Chapter 3 render exactly as the published viewer did -------------------------
-  for (const [index, key, count] of [[0, 'prologue-00', 29], [3, 'chapter-03', 62]]) {
-    if (index) await choose(page, index, count);
+  // ---- Chapter 3 renders exactly as the published viewer did ----------------------------------
+  for (const [index, key, count] of [[3, 'chapter-03', 62]]) {
+    await choose(page, index, count);
     const now = await page.evaluate(() => ({
       cards: Array.from(document.querySelectorAll('#nodes .node')).map((c) => ({ id: c.firstChild.textContent, className: c.className, left: c.style.left, top: c.style.top, text: Array.from(c.children).map((x) => x.textContent) })),
       shapes: Array.from(document.getElementById('edges').children).map((n) => ({ tag: n.tagName, d: n.getAttribute('d'), x: n.getAttribute('x'), y: n.getAttribute('y'), stroke: n.getAttribute('stroke'), dash: n.getAttribute('stroke-dasharray'), text: n.tagName === 'text' ? n.textContent : null })),
@@ -97,13 +98,15 @@ async function run(name, base) {
 
   // ---- Chapter 1 and Chapter 2 timelines ----------------------------------------------------------
   const geometry = {};
-  for (const [index, key, count] of [[1, 'chapter-01', 36], [2, 'chapter-02', 99]]) {
+  const startOf = { 'prologue-00': 'work_complete', 'chapter-01': 'house_arrival', 'chapter-02': 'bureau_arrival' };
+  for (const [index, key, count] of [[0, 'prologue-00', 29], [1, 'chapter-01', 36], [2, 'chapter-02', 99]]) {
     await choose(page, index, count);
+    await page.click('#tlStart');
     const view = await page.evaluate((start) => {
       const v = document.getElementById('viewport').getBoundingClientRect();
       const c = Array.from(document.querySelectorAll('#nodes .node')).find((n) => n.firstChild.textContent === start).getBoundingClientRect();
       return { inside: c.left >= v.left && c.right <= v.right && c.top >= v.top && c.bottom <= v.bottom, transform: document.getElementById('stage').style.transform, vh: v.height };
-    }, key === 'chapter-01' ? 'house_arrival' : 'bureau_arrival');
+    }, startOf[key]);
     check(b, key + ': opens at 100% with the start node fully in view', view.transform === 'scale(1)' && view.inside, view);
     await shot(page, key + '_1_beginning');
     const g = await page.evaluate(measure);
@@ -167,6 +170,47 @@ async function run(name, base) {
   check(b, 'Chapter 2: five preview-only handoffs to Chapter 3, none from a fatal ending', c2.ports.filter((p) => p.dir === 'out').length === 5
     && c2.ports.filter((p) => p.dir === 'out').every((p) => p.mode === 'preview' && p.chapter === 'chapter-03' && /PREVIEW HANDOFF · NOT GAMEPLAY/.test(p.text) && !/fatal/.test(p.id)));
 
+  const c0 = geometry['prologue-00'];
+  check(b, 'Prologue: timeline with its Chapter 1 hand-off pill on the right', c0.cards.find((c) => c.id === 'reception_hallway').x === Math.max(...c0.cards.map((c) => c.x))
+    && c0.ports.length === 1 && c0.ports[0].dir === 'out' && c0.ports[0].chapter === 'chapter-01' && c0.ports[0].mode === 'gameplay');
+
+  // ---- Chapter pills behave like cards ----------------------------------------------------------
+  await choose(page, 2, 99);
+  await page.click('#tlStart');
+  await page.click('#ports .port[data-source="exit_martin"]');
+  await page.waitForTimeout(100);
+  check(b, 'clicking an incoming pill stays in Chapter 2 and inspects it', await page.inputValue('#chapterSelect') === '2'
+    && await page.evaluate(() => document.querySelector('#details h2').textContent) === 'From Chapter 1 — House of Tomorrow — Exit Martin'
+    && await page.evaluate(() => document.querySelector('#ports .port[data-source="exit_martin"]').classList.contains('selected')));
+  const pillBefore = await page.evaluate(() => { const p = document.querySelector('#ports .port[data-source="exit_martin"]'); return { x: parseFloat(p.style.left), y: parseFloat(p.style.top) }; });
+  const pillBox = await page.locator('#ports .port[data-source="exit_martin"]').boundingBox();
+  await page.mouse.move(pillBox.x + 60, pillBox.y + 29); await page.mouse.down();
+  await page.mouse.move(pillBox.x + 80, pillBox.y - 20, { steps: 5 }); await page.mouse.move(pillBox.x + 100, pillBox.y - 70, { steps: 5 }); await page.mouse.up();
+  await page.waitForTimeout(100);
+  const pillAfter = await page.evaluate(() => { const p = document.querySelector('#ports .port[data-source="exit_martin"]'); return { x: parseFloat(p.style.left), y: parseFloat(p.style.top) }; });
+  const pillSaved = await page.evaluate(() => JSON.parse(localStorage.getItem('cyoa-storyboard-layout-v1:chapter-02')).positions['in:chapter-01>exit_martin']);
+  check(b, 'a pill can be dragged like a card, is saved with the chapter, and dropping it does not navigate', pillAfter.x === pillBefore.x + 40 && pillAfter.y === pillBefore.y - 99
+    && JSON.stringify(pillSaved) === JSON.stringify(pillAfter) && await page.inputValue('#chapterSelect') === '2', [pillBefore, pillAfter, pillSaved]);
+  await page.click('#resetLayout');
+  await page.click('#ports .port[data-port="out:end_customs>chapter-03:preview"]');
+  check(b, 'clicking a preview handoff pill inspects it as storyboard-only and stays in Chapter 2', await page.inputValue('#chapterSelect') === '2'
+    && /storyboard preview only, not gameplay/.test(await page.evaluate(() => document.getElementById('details').innerText)));
+
+  // ---- Per-chapter view memory -------------------------------------------------------------------
+  await choose(page, 1, 36);
+  await page.evaluate(() => { const v = document.getElementById('viewport'); v.scrollLeft = 2100; v.scrollTop = 120; });
+  await page.click('#zoomOut');
+  const ch1View = await page.evaluate(() => ({ t: document.getElementById('stage').style.transform, l: document.getElementById('viewport').scrollLeft, top: document.getElementById('viewport').scrollTop }));
+  await choose(page, 2, 99);
+  await page.evaluate(() => { document.getElementById('viewport').scrollLeft = 5000; });
+  const ch2View = await page.evaluate(() => ({ t: document.getElementById('stage').style.transform, l: document.getElementById('viewport').scrollLeft, top: document.getElementById('viewport').scrollTop }));
+  await choose(page, 1, 36);
+  const ch1Back = await page.evaluate(() => ({ t: document.getElementById('stage').style.transform, l: document.getElementById('viewport').scrollLeft, top: document.getElementById('viewport').scrollTop }));
+  await choose(page, 2, 99);
+  const ch2Back = await page.evaluate(() => ({ t: document.getElementById('stage').style.transform, l: document.getElementById('viewport').scrollLeft, top: document.getElementById('viewport').scrollTop }));
+  check(b, 'switching chapters in the dropdown returns each chapter to its last zoom and scroll', JSON.stringify(ch1Back) === JSON.stringify(ch1View) && JSON.stringify(ch2Back) === JSON.stringify(ch2View), [ch1View, ch1Back, ch2View, ch2Back]);
+  await shot(page, 'chapter-02_5_returned_view');
+
   // ---- Interactions on Chapter 1 ---------------------------------------------------------------
   await choose(page, 1, 36);
   const start = await page.evaluate(() => document.getElementById('stage').style.transform);
@@ -195,25 +239,28 @@ async function run(name, base) {
   const file = path.join(OUT, name + '_exported-layout.json');
   await download.saveAs(file);
   const exported = JSON.parse(fs.readFileSync(file, 'utf8'));
-  check(b, 'Export Layout keeps schema v1 and adds the Chapter 1/2 revision and incident metadata', exported.schema === 'cyoa-storyboard-layout-v1' && exported.chapters['chapter-01'].layoutRevision === 2
-    && exported.chapters['chapter-01'].positions.welcome_home.x === dragged.x && exported.chapters['chapter-02'].timeline.incidents.length >= 10 && JSON.stringify(Object.keys(exported.chapters['prologue-00'])) === '["positions"]');
+  check(b, 'Export Layout keeps schema v1, adds the Prologue/Chapter 1/2 revision and incident metadata, leaves Chapter 3 positions-only', exported.schema === 'cyoa-storyboard-layout-v1' && exported.chapters['chapter-01'].layoutRevision === 2
+    && exported.chapters['chapter-01'].positions.welcome_home.x === dragged.x && exported.chapters['chapter-02'].timeline.incidents.length >= 10 && exported.chapters['prologue-00'].layoutRevision === 2 && JSON.stringify(Object.keys(exported.chapters['chapter-03'])) === '["positions"]');
   await page.click('#resetLayout');
   check(b, 'Reset Layout returns Chapter 1 to the timeline default', JSON.stringify(await cardPos(page, 'welcome_home')) === JSON.stringify(defaultPos));
   await page.setInputFiles('#fileLayout', file);
   await page.waitForFunction(() => /Imported layout is active/.test(document.getElementById('status').textContent));
   check(b, 'Import Layout restores the exported Chapter 1 arrangement', JSON.stringify(await cardPos(page, 'welcome_home')) === JSON.stringify(dragged));
   await page.click('#resetLayout');
-  // Port navigation.
+  // Navigation between chapters is an explicit inspector button on a selected pill.
   await choose(page, 2, 99);
   await page.click('#ports .port[data-source="exit_showroom_reset"]');
+  await page.click('#details button.choice >> text=Open Exit Showroom Reset in Chapter 1');
   await ready(page, 36);
-  check(b, 'clicking an incoming Chapter 2 port opens the matching Chapter 1 exit', await page.inputValue('#chapterSelect') === '1' && await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Exit Showroom Reset');
+  check(b, 'an incoming pill\'s inspector button opens the matching Chapter 1 exit', await page.inputValue('#chapterSelect') === '1' && await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Exit Showroom Reset');
   await page.click('#ports .port[data-port="out:exit_named_plant>chapter-02"]');
+  await page.click('#details button.choice >> text=Open Chapter 2 — Biology Park at Bureau Arrival');
   await ready(page, 99);
-  check(b, 'clicking a Chapter 1 exit port opens Chapter 2 at bureau_arrival', await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Bureau Arrival');
+  check(b, 'a Chapter 1 exit pill\'s inspector button opens Chapter 2 at bureau_arrival', await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Bureau Arrival');
   await page.click('#ports .port[data-port="out:end_customs>chapter-03:preview"]');
+  await page.click('#details button.choice >> text=Open Chapter 3');
   await ready(page, 62);
-  check(b, 'clicking a preview handoff opens Chapter 3 unchanged', await page.inputValue('#chapterSelect') === '3' && await page.evaluate(() => document.querySelectorAll('#ports .port').length) === 0);
+  check(b, 'a preview handoff pill\'s inspector button opens Chapter 3 unchanged', await page.inputValue('#chapterSelect') === '3' && await page.evaluate(() => document.querySelectorAll('#ports .port').length) === 0);
   await ctx.close();
 
   // ---- Old cached layouts never hide the new default; reload stability -------------------------
@@ -227,7 +274,9 @@ async function run(name, base) {
   watch(p2);
   await p2.goto(url);
   await ready(p2, 29);
-  check(b, 'old Prologue cache still applies (Prologue is not migrated)', JSON.stringify(await cardPos(p2, 'drone_intercepts')) === JSON.stringify({ x: 777, y: 333 }));
+  const proDefault = c0.cards.find((c) => c.id === 'drone_intercepts');
+  check(b, 'an old cached Prologue layout is archived and the Prologue timeline shows', JSON.stringify(await cardPos(p2, 'drone_intercepts')) === JSON.stringify({ x: Math.round(proDefault.x), y: Math.round(proDefault.y) })
+    && await p2.evaluate(() => JSON.parse(localStorage.getItem('cyoa-storyboard-layout-v1:prologue-00@archive-r1')).positions.drone_intercepts.x) === 777);
   await choose(p2, 1, 36);
   const migrated = await p2.evaluate(() => ({ archive: JSON.parse(localStorage.getItem('cyoa-storyboard-layout-v1:chapter-01@archive-r1') || 'null'), restore: !document.getElementById('restoreLayout').hidden && getComputedStyle(document.getElementById('restoreLayout')).display !== 'none' }));
   check(b, 'an old cached Chapter 1 layout is archived, not applied, and Restore is offered', JSON.stringify(await cardPos(p2, 'house_arrival')) === JSON.stringify(c1.cards.find((c) => c.id === 'house_arrival') && { x: Math.round(c1.cards.find((c) => c.id === 'house_arrival').x), y: Math.round(c1.cards.find((c) => c.id === 'house_arrival').y) })
