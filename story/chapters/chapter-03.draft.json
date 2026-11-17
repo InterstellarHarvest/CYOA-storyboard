@@ -999,19 +999,20 @@
     },
     "disposition": {
       "mode": "narrative",
-      "scene": "pavilion/grand_reconciliation",
-      "text": "After denial; guaranteed safe surrender PROVISIONAL and fatal risky escape PROVISIONAL.",
+      "scene": "pavilion/surplus_department",
+      "text": "The Registrar stamps your appeal DENIED. The Pavilion cannot recognize two persons occupying the same identity. 'One of you must be removed from the records.' You suggest the Certified Original. 'That individual is already certified.' Two corridors open: VOLUNTARY IDENTITY SURRENDER, and PHYSICAL RECORDS RETENTION — AUTHORIZED PERSONNEL ONLY. The Registrar explains that surrendering all Exposition identity claims grants guaranteed safe physical transfer, but makes you officially nonexistent throughout the Exposition. The other corridor leads past an archival loading shutter that opens briefly for carts. Beyond it, a maintenance passage might lead outside. A warning says RETENTION IS INTENDED FOR DOCUMENTS, EQUIPMENT, AND NONLIVING ARCHIVAL MATERIAL. When you ask if a person would fit, the Registrar answers, 'Oh, certainly. Once processed.' You may safely relinquish your identity or deliberately risk a potentially fatal escape.",
       "choices": [
         {
           "id": "disposition_0",
           "kind": "action",
-          "text": "RELINQUISH ALL EXPOSITION IDENTITY CLAIMS AND ACCEPT SAFE TRANSFER",
-          "to": "end_unreg_wide"
+          "text": "SURRENDER ALL EXPOSITION IDENTITY CLAIMS FOR SAFE TRANSFER.",
+          "to": "end_unreg_wide",
+          "notes": "OWNER APPROVED 2026-11-17: deterministic nonfatal choice; no roll; no arbitrary later death during this transfer. The player lives but forfeits official identity Exposition-wide; later chapters must respect scope. Bathroom still unresolved."
         },
         {
           "id": "disposition_1",
           "kind": "action",
-          "text": "FORCE HAZARDOUS RETENTION SHUTTER AGAINST LOCK",
+          "text": "FORCE THE HAZARDOUS RETENTION SHUTTER — FATAL RISK.",
           "check": {
             "id": "ch3_disposition_1",
             "sides": 6,
@@ -1023,10 +1024,10 @@
           "fail": {
             "to": "end_archived"
           },
-          "notes": "Authoring check; proposed bonus: one physical tool +1"
+          "notes": "OWNER APPROVED 2026-11-17: visibly foreshadow potentially fatal crushing by industrial archival machinery before committing. Hidden d6 >=4, with +1 from at most one suitable retained physical tool; bonuses cannot stack. Exact qualifying items/engine OR-modifier to be resolved with Gameplay PMO. Success crosses the shutter into maintenance/service escape, avoids Exposition-wide identity surrender but is still unregistered at Pavilion level (existing end_unreg). Failure enters end_archived: door locks, scanner classifies body as nonliving archival matter, compression machinery fatally crushes claimant, sealed drawer deposits permanent record. No escape or last-minute rescue after the failed check. No protagonist face or gore."
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+      "notes": "OWNER-APPROVED FINAL DISPOSITION (2026-11-17): After failure of any Grand Reconciliation approach, exactly two alternate player choices: (A) certain physical survival through voluntary Exposition-wide identity surrender, retaining this administrative consequence in subsequent chapters; (B) warned, voluntarily attempted hazardous retention shutter escape with fatal failure. No repeat of failed hearing check. B uses hidden d6>=4 with proposed conditional nonstacking +1 from a suitable retained tool, as discussed and accepted. Success is a Pavilion-only unregister escape; failure is PERMANENTLY ARCHIVED. The Original remains separately retained or unresolved according to prior flags; its nature remains ambiguous. Retain bathroom need. Popup uses established shared death UI (RETRY/CHECKPOINT/EXIT per Gameplay PMO, do not hardcode restart behavior from storyboard)."
     },
     "end_admin": {
       "mode": "narrative",
@@ -1060,7 +1061,7 @@
           "restart": true
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "notes": "PROVISIONAL ending prose still awaits registry-route authoring. OWNER-APPROVED Final Disposition shutter-success route may also lead here: physical survival, avoids Exposition-wide identity surrender, but Pavilion claimant registration becomes unregistered (scope pavilion_only). Do not equate with the Exposition-wide surrender ending.",
       "effects": {
         "set": {
           "ch3_exit_route": "unregistered",
@@ -1073,7 +1074,7 @@
     "end_unreg_wide": {
       "mode": "narrative",
       "scene": "pavilion/service_exit",
-      "text": "No Person Present — Exposition-wide.",
+      "text": "You sign away every official claim to your identity across the Exposition. The Registrar certifies that you are no longer a registered person, which is apparently sufficient to release you from human-attendance requirements. A service door opens. You leave alive. Your registration is now officially nonexistent throughout the Exposition, a consequence that will follow you beyond the Pavilion. A sign points toward facilities, but you are no longer eligible to request them as a visitor. NO PERSON PRESENT — EXPOSITION-WIDE.",
       "choices": [
         {
           "id": "restart_end_unreg_wide",
@@ -1082,7 +1083,7 @@
           "restart": true
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "notes": "OWNER-APPROVED 2026-11-17 safe Final Disposition outcome: physically alive, no dice, voluntary identity surrender with Exposition-wide scope. Keep ch3_identity_scope=exposition_wide and no bathroom resolution. No additional hidden fatal trap.",
       "effects": {
         "set": {
           "ch3_exit_route": "unregistered",
@@ -1162,7 +1163,7 @@
     "end_archived": {
       "mode": "narrative",
       "scene": "pavilion/surplus_department",
-      "text": "Permanently Archived.",
+      "text": "The archival loading shutter opens for a document cart. You slip inside, but the timing fails. The shutter slams behind you. An overhead scanner flashes: UNREGISTERED MATERIAL DETECTED. 'Thank you for choosing Permanent Records Retention.' Heavy rollers start. A steel compression plate advances into the too-small storage space. You search for an emergency stop. There is none. 'All records are preserved according to the dimensions of their assigned storage containers.' Your last protest is cut short as the machinery fatally crushes you. The machinery deposits a sealed archival drawer, labeled UNIDENTIFIED CLAIMANT — STATUS: RESOLVED — RETENTION PERIOD: PERMANENT. The Registrar receives a confirmation slip. 'Excellent. No further discrepancies.' ENDING — PERMANENTLY ARCHIVED.",
       "choices": [
         {
           "id": "restart_end_archived",
@@ -1171,16 +1172,15 @@
           "restart": true
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration.",
+      "notes": "OWNER-APPROVED 2026-11-17 FATAL mechanism: voluntarily attempted retention-shutter escape, clearly warned, failed hidden d6 check. Shutter locks; automatic scanner treats claimant as unregistered nonliving material; compression plate kills; remains sealed in permanent archive drawer. No surprise fatal from safe option, no rescues after failed roll, no face or gore in artwork. ONE shared popup for this end state. Art NOT generated or reviewed; metadata remains not-started.",
       "end": true,
       "deathPopup": {
         "id": "end_archived",
         "title": "PERMANENTLY ARCHIVED",
-        "subtitle": "PROPOSED FATAL ENDING — NEEDS OWNER REVIEW",
-        "button": "BEGIN AGAIN",
-        "status": "proposed",
+        "subtitle": "RETENTION PERIOD: PERMANENT",
+        "status": "owner-approved",
         "artRef": "pavilion/permanently_archived",
-        "description": "PROPOSED ONLY: A hazardous retention shutter closes on an unresolved claimant. A cabinet registers a permanent administrative solution. The exact death mechanism awaits owner review."
+        "description": "You've finally found somewhere you belong. Unfortunately, it's a filing cabinet."
       },
       "endingArt": "pavilion/permanently_archived"
     },
