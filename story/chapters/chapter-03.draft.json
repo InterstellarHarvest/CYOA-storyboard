@@ -957,12 +957,12 @@
     "registry": {
       "mode": "narrative",
       "scene": "pavilion/grand_reconciliation",
-      "text": "Committed registry methods, no return to GRAND.",
+      "text": "You approach the Registrar's filing apparatus. 'Those drawers are restricted,' he says. You point out that your name appears under two incompatible classifications. 'That's perfectly normal. The Pavilion recognizes several different kinds of people.' You ask which kind you're supposed to be. 'That depends entirely on which department you ask.' A sign reads PERSONNEL RECORDS — PLEASE DO NOT CONFUSE WITH PERSON RECORDS. Beneath it: Corrections to reality must be submitted in writing. You may either quietly remove your Pavilion claimant registration or broadcast both incompatible certified records; only one approach can be attempted.",
       "choices": [
         {
           "id": "registry_0",
           "kind": "action",
-          "text": "QUIETLY UNREGISTER PAVILION CLAIMANT ONLY",
+          "text": "QUIETLY REMOVE YOUR PAVILION REGISTRATION.",
           "check": {
             "id": "ch3_registry_0",
             "sides": 6,
@@ -974,12 +974,12 @@
           "fail": {
             "to": "disposition"
           },
-          "notes": "Authoring check; proposed bonus: one technical item/access +1"
+          "notes": "OWNER-APPROVED 2026-11-17: You locate your Pavilion registration and request removal. When the machine asks why, you select REGISTERED IN ERROR. It asks if you wish to declare yourself an administrative error; you confirm. Hidden d6 >=4, +1 only if carrying pavilion_presentation_service_authorization (not consumed; no hard gate). Success -> end_unreg; only Pavilion claimant registration is lost, Exposition-wide identity intact. Failure -> disposition, preceded by the Registrar catching your unauthorized deletion and referring you for Final Disposition; no immediate death. Explicit runtime held-item modifier still requires Gameplay PMO wiring and test."
         },
         {
           "id": "registry_1",
           "kind": "action",
-          "text": "BROADCAST CONTRADICTORY CERTIFICATIONS PAVILION-WIDE",
+          "text": "BROADCAST BOTH CONTRADICTORY CERTIFICATIONS.",
           "check": {
             "id": "ch3_registry_1",
             "sides": 6,
@@ -991,10 +991,10 @@
           "fail": {
             "to": "disposition"
           },
-          "notes": "Authoring check; proposed bonus: feed authorization/override +1"
+          "notes": "OWNER-APPROVED 2026-11-17: You connect both incompatible identity records to public announcements. Asked which version is correct, you select both. Machine: 'Excellent. All certified information must be communicated accurately.' Hidden d6 >=4, +1 only if carrying pavilion_broadcast_override_sequence (not consumed; no hard gate). Success -> end_broadcast, permits evacuation; Original status unknown. Failure -> disposition, preceded by a message that the broadcast was intercepted before reaching public systems and the Registrar orders Final Disposition; no immediate death. Explicit runtime held-item modifier still requires Gameplay PMO wiring and test."
         }
       ],
-      "notes": "OWNER-APPROVED 2026-11-17: RETAIN BOTH mutually exclusive registry player actions. A: quietly remove Pavilion claimant registration; successful escape retains wider Exposition identity, only Pavilion claimant registration removed, outcome NO PERSON PRESENT pavilion_only. B: publicly broadcast incompatible certifications; successful disruption of Pavilion record processing permits exit, outcome UNAPPROVED BROADCAST with Original status unknown (do not assume it escapes). Both risk hidden d6 checks and on failure converge to OWNER-APPROVED Final Disposition, with safe Exposition-wide identity surrender or warned potentially fatal archival shutter. Exact scene prose, qualifying +1 modifiers, success and failure dialogue still in collaborative creative review; prior notes on individual choices remain provisional. Do not add further registry choices or make earlier inventory items mandatory.",
+      "notes": "OWNER APPROVED both mutually exclusive registry approaches and the complete success narration (2026-11-17); prose now at terminal nodes. Each uses hidden d6>=4; +1 only for the corresponding carried Chapter 3 service authorization or broadcast override sequence, no item consumption, no hard gate. On failure both route to owner-approved Final Disposition. To retain distinct prose, quiet registry escape and successful retention-shutter escape use different ending nodes with the same Pavilion-only identity scope. Original identity/nature remains ambiguous; no new artwork required. Runtime item-modifier wiring and QA still required.",
       "focus": "pavilion/grand_registry"
     },
     "disposition": {
@@ -1019,15 +1019,15 @@
             "need": 4
           },
           "pass": {
-            "to": "end_unreg"
+            "to": "end_shutter_escape"
           },
           "fail": {
             "to": "end_archived"
           },
-          "notes": "OWNER APPROVED 2026-11-17: visibly foreshadow potentially fatal crushing by industrial archival machinery before committing. Hidden d6 >=4, with +1 from at most one suitable retained physical tool; bonuses cannot stack. Exact qualifying items/engine OR-modifier to be resolved with Gameplay PMO. Success crosses the shutter into maintenance/service escape, avoids Exposition-wide identity surrender but is still unregistered at Pavilion level (existing end_unreg). Failure enters end_archived: door locks, scanner classifies body as nonliving archival matter, compression machinery fatally crushes claimant, sealed drawer deposits permanent record. No escape or last-minute rescue after the failed check. No protagonist face or gore."
+          "notes": "OWNER APPROVED 2026-11-17: visibly foreshadow potentially fatal crushing by industrial archival machinery before committing. Hidden d6 >=4, with +1 from at most one suitable retained physical tool; bonuses cannot stack. Exact qualifying items/engine OR-modifier to be resolved with Gameplay PMO. Success crosses the shutter to end_shutter_escape, retains Exposition-wide identity, but loses Pavilion registration (same flags as end_unreg, distinct scene prose). Failure enters end_archived: door locks, scanner classifies body as nonliving archival matter, compression machinery fatally crushes claimant, sealed drawer deposits permanent record. No escape or last-minute rescue after the failed check. No protagonist face or gore."
         }
       ],
-      "notes": "OWNER-APPROVED FINAL DISPOSITION (2026-11-17): After failure of any Grand Reconciliation approach, exactly two alternate player choices: (A) certain physical survival through voluntary Exposition-wide identity surrender, retaining this administrative consequence in subsequent chapters; (B) warned, voluntarily attempted hazardous retention shutter escape with fatal failure. No repeat of failed hearing check. B uses hidden d6>=4 with proposed conditional nonstacking +1 from a suitable retained tool, as discussed and accepted. Success is a Pavilion-only unregister escape; failure is PERMANENTLY ARCHIVED. The Original remains separately retained or unresolved according to prior flags; its nature remains ambiguous. Retain bathroom need. Popup uses established shared death UI (RETRY/CHECKPOINT/EXIT per Gameplay PMO, do not hardcode restart behavior from storyboard)."
+      "notes": "OWNER-APPROVED FINAL DISPOSITION (2026-11-17): After failure of any Grand Reconciliation approach, exactly two alternate player choices: (A) certain physical survival through voluntary Exposition-wide identity surrender, retaining this administrative consequence in subsequent chapters; (B) warned, voluntarily attempted hazardous retention shutter escape with fatal failure. No repeat of failed hearing check. B uses hidden d6>=4 with proposed conditional nonstacking +1 from a suitable retained tool, as discussed and accepted. Success is a Pavilion-only unregister escape through end_shutter_escape; failure is PERMANENTLY ARCHIVED. The Original remains separately retained or unresolved according to prior flags; its nature remains ambiguous. Retain bathroom need. Popup uses established shared death UI (RETRY/CHECKPOINT/EXIT per Gameplay PMO, do not hardcode restart behavior from storyboard)."
     },
     "end_admin": {
       "mode": "narrative",
@@ -1052,7 +1052,7 @@
     "end_unreg": {
       "mode": "narrative",
       "scene": "pavilion/service_exit",
-      "text": "No Person Present — Pavilion-only.",
+      "text": "You locate your Pavilion registration and request its removal. The machine asks why. You select REGISTERED IN ERROR. It asks whether you are certain you wish to declare yourself an administrative error. You confirm. CLAIMANT REMOVED, the stamp declares. The Registrar looks up. 'Where did you go?' You tell him you are still standing there. 'Impossible. There are no registered claimants remaining in this chamber.' He looks directly at you. 'Please stop speaking. You're confusing the attendance system.' With no claimant officially present to detain, the maintenance exit unlocks. You walk through. Behind you, the Registrar files a report describing an exceptionally orderly hearing with no participants. Your wider Exposition identity survives. Only the Pavilion registration is gone. NO PERSON PRESENT — PAVILION ONLY.",
       "choices": [
         {
           "id": "restart_end_unreg",
@@ -1061,7 +1061,7 @@
           "restart": true
         }
       ],
-      "notes": "PROVISIONAL ending prose still awaits registry-route authoring. OWNER-APPROVED Final Disposition shutter-success route may also lead here: physical survival, avoids Exposition-wide identity surrender, but Pavilion claimant registration becomes unregistered (scope pavilion_only). Do not equate with the Exposition-wide surrender ending.",
+      "notes": "OWNER-APPROVED quiet registry deletion ending (2026-11-17); reached exclusively by registry_0 success. Distinct from successful hazardous-shutter escape, which now goes to end_shutter_escape. Pavilion-only claimant unregistration, full Exposition identity retained, bathroom still unresolved.",
       "effects": {
         "set": {
           "ch3_exit_route": "unregistered",
@@ -1117,7 +1117,7 @@
     "end_broadcast": {
       "mode": "narrative",
       "scene": "pavilion/presentation_feed",
-      "text": "Unapproved Broadcast.",
+      "text": "You connect the two incompatible identity records to the Pavilion's public announcement system. The machine asks which version is correct; you select both. 'Excellent. All certified information must be communicated accurately.' A pleasant chime sounds throughout the Pavilion. 'ATTENTION, PLEASE. THE CERTIFIED ORIGINAL HAS ALREADY DEPARTED. THE CERTIFIED ORIGINAL IS CURRENTLY PRESENT. THE PRESENT CLAIMANT IS NOT AUTHORIZED TO EXIST. THE PRESENT CLAIMANT IS PHYSICALLY PRESENT. ALL STATEMENTS HAVE BEEN VERIFIED AS CORRECT.' A pause. 'WE APOLOGIZE FOR ANY INCONVENIENCE CAUSED BY THE ACCURACY OF THIS INFORMATION.' Every departure gate locks and every arrival gate opens, then the reverse happens. The attendance display changes: PERSONS PRESENT: 1; PERSONS PRESENT: 2; PERSONS PRESENT: 0; PERSONS PRESENT: YES. A printer corrects another printer, and a third apologizes to the first two. The Registrar leaps up. 'Stop that! Those are official contradictions! They're not meant for public consumption!' The emergency system announces UNRESOLVED PERSONHOOD EVENT. PUBLIC EVACUATION AUTHORIZED. Doors open throughout the Pavilion. You leave while the speaker cycles: ALL VISITORS ARE REQUESTED TO REMAIN CALM; ALL VISITORS ARE REQUESTED TO DEPART; ALL VISITORS HAVE ALREADY DEPARTED. You step into the Exposition corridor. 'THANK YOU FOR VISITING THE PEOPLE'S PAVILION. WE HAVE ENJOYED YOUR EXPERIENCE.' The Original's status remains unknown. UNAPPROVED BROADCAST.",
       "choices": [
         {
           "id": "restart_end_broadcast",
@@ -1126,7 +1126,7 @@
           "restart": true
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration. DO NOT INTERPRET AS FINAL ENGINE ENDING OR LOCKED NARRATIVE.",
+      "notes": "OWNER-APPROVED public contradiction broadcast ending (2026-11-17). Player survives and leaves amid Pavilion evacuation, Pavilion's records disrupted, Original whereabouts unknown. Do NOT assume Original fled or is a clone. Bathroom still unresolved.",
       "effects": {
         "set": {
           "ch3_exit_route": "broadcast_disruption",
@@ -1552,6 +1552,28 @@
       },
       "endingArt": "pavilion/a_model_citizen",
       "focus": "pavilion/death_pedestal_detail"
+    },
+    "end_shutter_escape": {
+      "mode": "narrative",
+      "scene": "pavilion/service_exit",
+      "text": "You make it past the dangerous retention shutter before the compression machinery can catch you. Behind you, the shutter closes and the scanner announces NO PERSON PRESENT. A maintenance corridor leads out of the Pavilion. You did not surrender your identity across the Exposition. The Pavilion no longer registers you as a claimant, but you are physically alive and still need a bathroom. NO PERSON PRESENT — PAVILION ONLY.",
+      "choices": [
+        {
+          "id": "restart_end_shutter_escape",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "Owner-approved success from the hazardous retention-shutter choice (2026-11-17), given distinct narration from quiet registry deletion. Shares the same Pavilion-only unregistration effects and existing service-exit artwork as end_unreg; no new art. Success only from disposition_1; its failed roll instead leads to PERMANENTLY ARCHIVED. Do not add rerolls or extra rescue sequence.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "unregistered",
+          "ch3_original_status": "retained",
+          "ch3_identity_unregistered": true,
+          "ch3_identity_scope": "pavilion_only"
+        }
+      }
     }
   }
 }
