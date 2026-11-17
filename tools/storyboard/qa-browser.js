@@ -80,7 +80,7 @@ async function run(name, base) {
   check(b, 'Chapter 1: 36 authored nodes, arrival inspector, item choice, and independent unstarted scene reference',
     /HOUSE OF TOMORROW/.test(ch1Inspector)
     && /scenes\/house_of_tomorrow\/arrival · integrated/.test(ch1Inspector)
-    && /PUSH OPEN THE DISPLAY ENTRANCE/.test(ch1Inspector)
+    && /TRY THE UNMARKED DOOR\./.test(ch1Inspector)
     && !/facilities_corridor/.test(ch1Inspector), ch1Inspector.slice(0, 500));
   const c = await drag(page, 'house_arrival', 160, 110);
   await page.screenshot({ path: path.join(OUT, name + '_2_chapter01.png') });
@@ -146,8 +146,8 @@ async function run(name, base) {
   const items = await p2.evaluate(() => document.querySelectorAll('#details .item-button').length);
   await p2.click('#showArtwork');
   const art = await p2.evaluate(() => document.getElementById('details').innerText);
-  check(b, 'zoom, Items and Artwork panels still work (163 shared art records, 105 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
-    && items === 32 && /163 shared art records/.test(art) && /105 not-started/.test(art), [items, art.slice(0, 200)]);
+  check(b, 'zoom, Items and Artwork panels still work (169 shared art records incl. nine death screens, 110 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
+    && items === 32 && /169 shared art records/.test(art) && /110 not-started/.test(art), [items, art.slice(0, 200)]);
   await p2.screenshot({ path: path.join(OUT, name + '_3_imported.png') });
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);

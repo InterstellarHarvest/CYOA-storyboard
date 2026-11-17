@@ -1,0 +1,403 @@
+{
+  "schema": "cyoa-game-integration-v1",
+  "about": "Storyboard-only. Written by the game repository (tools/story-sync/sync.js publish): the exact images one game build uses. The public check requires every `integrated` art record to appear here with the same SHA-256.",
+  "game": {
+    "repo": "InterstellarHarvest/CYOA",
+    "branch": "agent/canonical-storyboard-sync-20261116",
+    "commit": "20b52601c5733a633a385bbb1c60995174e530cc"
+  },
+  "storyboard": {
+    "repo": "InterstellarHarvest/CYOA-storyboard",
+    "revision": "d95c01ef5059036fb8718fafe282925fdeb85c1d"
+  },
+  "build": {
+    "channel": "preview",
+    "contentHash": "407d8ec78f1ceee950cb4330bc5e6460720bbbede0e04d0218b2a2514de1c00d",
+    "chapters": [
+      "prologue-00",
+      "chapter-01",
+      "chapter-02"
+    ]
+  },
+  "images": [
+    {
+      "key": "deathScreens:house_of_tomorrow/rest_assured",
+      "path": "art/deaths/rest_assured_voluntary.png",
+      "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
+      "kind": "death-screen",
+      "gate": "deathproof"
+    },
+    {
+      "key": "focus:house_of_tomorrow/portrait_gallery/album#pages:1",
+      "path": "art/focus/house_of_tomorrow/album_page_1.png",
+      "sha256": "c789a17a2e2ee45a7db07cd9e2aa0a4457dabe68dd88901aaf254f168a100ba7",
+      "kind": "focus"
+    },
+    {
+      "key": "focus:house_of_tomorrow/portrait_gallery/album#pages:2",
+      "path": "art/focus/house_of_tomorrow/album_page_2.png",
+      "sha256": "fcf0dcc0e10dfaa7cce3bf6a5b58687255681430811c551519edc883fa27c7a5",
+      "kind": "focus"
+    },
+    {
+      "key": "focus:house_of_tomorrow/portrait_gallery/album#pages:3",
+      "path": "art/focus/house_of_tomorrow/album_page_3.png",
+      "sha256": "579c0b2e14589e7c3ada53ddf1c5bc984f209170c48619b18336e883b97616ad",
+      "kind": "focus"
+    },
+    {
+      "key": "items:desk_plant#inspect",
+      "path": "art/items/small_desk_plant_inspect.png",
+      "sha256": "6880670a68a2baa48fe23afc22972a7be9197799ebbf454079d7127731a6eee7",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:desk_plant#slot",
+      "path": "art/items/small_desk_plant_slot.png",
+      "sha256": "76cb99324daa32d21d4928f3f9fdaf30e0790568ffce0fa725d01830b606b664",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:effects_box_empty#inspect",
+      "path": "art/items/effects_box_empty_inspect.png",
+      "sha256": "36e79a570d7881c346cb3856c7dedda1725ec5f9f1c10883dd803df7fe63d8d1",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:effects_box_empty#slot",
+      "path": "art/items/effects_box_empty_slot.png",
+      "sha256": "7220e9ffb8d7f008423fb14b02cf1d34f16be27974372ca7200cb5453ce2eca3",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:effects_box_full#inspect",
+      "path": "art/items/effects_box_full_inspect.png",
+      "sha256": "e769176b79af3a09836c8f9ec4edc901a76a8308d4ca725ad78fa6723b29f1c8",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:effects_box_full#slot",
+      "path": "art/items/effects_box_full_slot.png",
+      "sha256": "305910393abcaa0f2449e68087d95c69b8b6ed4728fced579511e5955417499c",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:expo_examiner_badge#inspect",
+      "path": "art/items/expo_examiner_badge_inspect.png",
+      "sha256": "bcbfbf9415eae2e9e1bcdc85eef0dc67a25524ededeb9bb2f3494c3f80b639ea",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:expo_examiner_badge#slot",
+      "path": "art/items/expo_examiner_badge_slot.png",
+      "sha256": "7347b7afd9b2509fa59270b9ef2db901429c50466a0a617c1ff324843721fa79",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:family_portrait_photo#inspect",
+      "path": "art/items/family_portrait_photo_inspect.png",
+      "sha256": "cf9cebc88a5e320d1f3cba3626477c8919c2e418f9c43923691cee5a05ba86d3",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:family_portrait_photo#slot",
+      "path": "art/items/family_portrait_photo_slot.png",
+      "sha256": "7e1e0b42f5def951dcc17095df0f5951ddfee5b16b916080681442d97d50f50c",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:property_claim_ticket#inspect",
+      "path": "art/items/property_claim_ticket_inspect.png",
+      "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:property_claim_ticket#slot",
+      "path": "art/items/property_claim_ticket_slot.png",
+      "sha256": "eb4271ebc35819234474cab43ee11106648eb1ec3d385efc5814e77fce6b035a",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:red_stapler#inspect",
+      "path": "art/items/red_swangline_stapler_inspect.png",
+      "sha256": "ed7301377c1a6a3f8ae66dbcc3f4c95a5b9666bd4d999aa62fd111bd29e05120",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:red_stapler#slot",
+      "path": "art/items/red_swangline_stapler_slot.png",
+      "sha256": "af9069cab87b4f6b795b1219e76c6b013e9d5b95e2d69bead19318e93e495c8a",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:rubber_band_ball#inspect",
+      "path": "art/items/rubber_band_ball_inspect.png",
+      "sha256": "5c6d633de86e5228c3066e7564a87b438d6366ff4956f57ac03437d67749e1b9",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:rubber_band_ball#slot",
+      "path": "art/items/rubber_band_ball_slot.png",
+      "sha256": "0622df62fee751dc31c910858b58b69d695db582b385ef122bebca8d3eaad85c",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:termination_notice#inspect",
+      "path": "art/items/termination_notice_inspect.png",
+      "sha256": "3c9db0db0b20e65f94303dcf6e1953819ffbd8e2dd44523ce6ddc8303417b8e6",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:termination_notice#slot",
+      "path": "art/items/termination_notice_slot.png",
+      "sha256": "07afd75514d2a6c2ec16239408160e01c129acc9111faa0a961cd85b509a4a91",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:timing_clicker#inspect",
+      "path": "art/items/applause_timing_clicker_inspect.png",
+      "sha256": "d446f2a2ffe7f8730ae071fe74a784bb7c70dbe85e92810224ada4fa2bb3b820",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:timing_clicker#slot",
+      "path": "art/items/applause_timing_clicker_slot.png",
+      "sha256": "ff82fcc93ab37ad4639ad3a7826cbfb2d2f18de9668ac5107238589eb2d52ea8",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:wc_key#inspect",
+      "path": "art/items/bathroom_pass_inspect.png",
+      "sha256": "9c8527a3fd85cfeddc01ce4a85b74b04cb54063ffc30100be19497e73e7fa722",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:wc_key#slot",
+      "path": "art/items/bathroom_pass_slot.png",
+      "sha256": "5ad9b6f94328d645173b4f0476f4bdde0bac07d4415ab2c7afcba36e8494355d",
+      "kind": "item-slot"
+    },
+    {
+      "key": "portraits:house:idle#views:house_of_tomorrow/foyer",
+      "path": "art/portraits/house/foyer_conversation.png",
+      "sha256": "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
+      "kind": "portrait-view"
+    },
+    {
+      "key": "portraits:house:idle#views:house_of_tomorrow/portrait_gallery",
+      "path": "art/portraits/house/portrait_gallery_conversation.png",
+      "sha256": "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d",
+      "kind": "portrait-view"
+    },
+    {
+      "key": "portraits:receptionist:default#layers:background",
+      "path": "art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+      "kind": "portrait-background"
+    },
+    {
+      "key": "portraits:receptionist:default#layers:foreground",
+      "path": "art/portraits/receptionist/receptionist_idle.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "kind": "portrait-pose"
+    },
+    {
+      "key": "portraits:termination_drone:paper_extended",
+      "path": "art/portraits/termination_drone/drone_paper_extended.png",
+      "sha256": "b30aae55a254394cf83437e6bcf7ac3d7701379dac1a5999c4381f3854069ca2",
+      "kind": "portrait-pose"
+    },
+    {
+      "key": "portraits:termination_drone:slot_closed",
+      "path": "art/portraits/termination_drone/drone_slot_closed.png",
+      "sha256": "3f3de8d333a4ab2784f54a9c01da662908601a69227d348b731f28fa6f8b1867",
+      "kind": "portrait-pose"
+    },
+    {
+      "key": "scenes:exposition/entrance",
+      "path": "art/scenes/exposition/continuity-v03/entrance.png",
+      "sha256": "2b9930eee02e44ba954f53551f0330bf5e27b318dd7491e5be16c702358d7bd6",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:exposition/facilities_corridor",
+      "path": "art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "sha256": "c0b8663dbbb1146539c7713c7c8725c47675e3576a774054bb741b5509a49833",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:exposition/property_intake",
+      "path": "art/scenes/exposition/continuity-v02/property-intake.png",
+      "sha256": "2162f0abea7c3c2bc75871941b6663e9c7501cdd5b98612adfc966ffdecb7137",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:exposition/reception",
+      "path": "art/scenes/conference_hall/reception/reception_scene.png",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:exposition/reception#portraitBackground",
+      "path": "art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+      "kind": "portrait-background"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/arrival",
+      "path": "art/scenes/house_of_tomorrow/arrival.png",
+      "sha256": "7029c0e66b06a784447313a0e06e831ad4f5c48260ed809da195d3810b57dcde",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/bathroom",
+      "path": "art/scenes/house_of_tomorrow/bathroom.png",
+      "sha256": "418061f623770ec40a6a708083ad3a797b3cfc43c6e9b461ecb95799cc5267fc",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/bedroom",
+      "path": "art/scenes/house_of_tomorrow/bedroom.png",
+      "sha256": "792f7930e572ee91f49e7015cbcfd9625e8896ce40faca6d0992621a57217df4",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/chair",
+      "path": "art/scenes/house_of_tomorrow/chair.png",
+      "sha256": "5cef601a39f2aa3ec8f37da6a0c6d9dcc99702b26821e68f64385d33a3ebff1b",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/dining",
+      "path": "art/scenes/house_of_tomorrow/dining.png",
+      "sha256": "2bd4f7b2127e7af45894224b8d04a128663357d99cba115a8ac4b80fb1c3761d",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/foyer",
+      "path": "art/scenes/house_of_tomorrow/foyer.png",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/foyer#states:named_plant_pedestal",
+      "path": "art/scenes/house_of_tomorrow/states/foyer_named_plant_pedestal.png",
+      "sha256": "e1c42ce00d5fe2ad95d98f74529abb3796be4e2be8ecd9f023844851afa4b4d2",
+      "kind": "scene-overlay"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/lounge",
+      "path": "art/scenes/house_of_tomorrow/lounge.png",
+      "sha256": "9dc600a286bc585a5fb8fc1a5bf85cca31a06ea4f42f4b83057f3845242b92f8",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/maintenance",
+      "path": "art/scenes/house_of_tomorrow/maintenance.png",
+      "sha256": "cd575f82b52796a7393f144ad3234a637cd4ef6a5742e872dd2be8f047318efd",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/passage",
+      "path": "art/scenes/house_of_tomorrow/passage.png",
+      "sha256": "acdacefbaeac9649737286d909e3ee859e768d7319bfeee6001d8a97aae0fbcd",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/portrait_gallery",
+      "path": "art/scenes/house_of_tomorrow/portrait_gallery.png",
+      "sha256": "7fd52ebec4008005af452880aa0c54df97aad75b97d5e28c9f8d4c6bd8605c8d",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/portrait_gallery#states:album_removed",
+      "path": "art/scenes/house_of_tomorrow/states/portrait_gallery_album_removed.png",
+      "sha256": "96c1b1ced5a3897b6caa51b98ad85b38030bce539ec25f21d38e628ebd362fdd",
+      "kind": "scene-replace"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/public_exit",
+      "path": "art/scenes/house_of_tomorrow/public_exit.png",
+      "sha256": "0ad83a23a5ee0a52ccd2e53e00c19727f8f51153eb666143714646686f97d034",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/service_hatch",
+      "path": "art/scenes/house_of_tomorrow/service_hatch.png",
+      "sha256": "1f978f6fe2334ce4c5af8a48fc2322a79b74899fb504935c0e948b3bc8f50580",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/storage",
+      "path": "art/scenes/house_of_tomorrow/storage.png",
+      "sha256": "635307df628fcdaad921a1901d668eebb75af6875ffbbb4d0ace89c3219eb11d",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/storage#states:stored_desk_plant",
+      "path": "art/scenes/house_of_tomorrow/states/storage_stored_desk_plant.png",
+      "sha256": "867019e15581bed769bf34421ef7259dfa11d651aa36313b73ee69f888d1336c",
+      "kind": "scene-overlay"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/storage#states:stored_red_stapler",
+      "path": "art/scenes/house_of_tomorrow/states/storage_stored_red_stapler.png",
+      "sha256": "d524b3eee63fd3c5f1f2613d834926c53575528c4e3595d9e2e9611c8763bea9",
+      "kind": "scene-overlay"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/storage#states:stored_rubber_band_ball",
+      "path": "art/scenes/house_of_tomorrow/states/storage_stored_rubber_band_ball.png",
+      "sha256": "00f4926835332c59378719306c01a26385567125ef25e4220dcc6ad5a8c2dccc",
+      "kind": "scene-overlay"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/storage#states:stored_timing_clicker",
+      "path": "art/scenes/house_of_tomorrow/states/storage_stored_timing_clicker.png",
+      "sha256": "22660a4ea50b2f8bdbf0a7ed1f30b48110503a2625660c3a7f4209f7aa7ca9a6",
+      "kind": "scene-overlay"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/utility_exit",
+      "path": "art/scenes/house_of_tomorrow/utility_exit.png",
+      "sha256": "907b962a20485b4c96cd4acae253311484c71e6689d625aad04f2d88f45104de",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/utility_exit#states:returns_display",
+      "path": "art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png",
+      "sha256": "a6df04106deb0da8fb62600b05b3ee9d9a24bc1cf39d008b7b60bfaa63fd9c30",
+      "kind": "scene-overlay"
+    },
+    {
+      "key": "scenes:street/outside_workplace",
+      "path": "art/scenes/exposition/continuity-v01/street-approach.png",
+      "sha256": "378860bc141c6d8fc14578d3f84e4c8eb18624f23923eaa122ee87f1c75acf07",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:workplace/applause_station",
+      "path": "art/scenes/workplace/applause_station.png",
+      "sha256": "0197f73ead2257e366f0400541197871d90d16f3e76c88ce95cfcc60e7bca985",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:workplace/corridor",
+      "path": "art/scenes/workplace/corridor.png",
+      "sha256": "1d7f1597cd497b901a7558009eb0a11d358b6ebd3d815d53345eb01b78d50739",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:workplace/corridor#portraitBackground",
+      "path": "art/portraits/termination_drone/corridor_background.png",
+      "sha256": "84f1f05525b38d44903b7fdefd571e3c44e5948cbe8060e2a15435ed1735a1dd",
+      "kind": "portrait-background"
+    },
+    {
+      "key": "scenes:workplace/exit",
+      "path": "art/scenes/workplace/personal_effects_exit.png",
+      "sha256": "ecf8f4af9d76304c2404be1de7e9e5713662675f9b13baab0bc15afd2e3dbc04",
+      "kind": "scene"
+    }
+  ]
+}

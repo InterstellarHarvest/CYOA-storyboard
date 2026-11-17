@@ -6,6 +6,8 @@ on:
     paths:
       - 'tools/storyboard/**'
       - 'story/**'
+      - 'assets/**'
+      - 'tools/sync/**'
       - '.github/workflows/storyboard-review.yml'
   workflow_dispatch:
 permissions:
@@ -19,8 +21,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Canonical drift check (chapters, routes, field contract, selected-art previews, status regression, game integration)
+        run: node tools/sync/check-canon.mjs
+      - name: Sync tool self-test (register-art refusals, status never lowered, regression detection)
+        run: node tools/sync/qa-sync.mjs
       - name: Storyboard logic, timeline layout and Prologue/Chapter 3 snapshot checks
         run: node tools/storyboard/qa-smoke.mjs
+      - name: Verify death-popup game export matches authored fatal boxes
+        run: node tools/storyboard/export-death-presentations.mjs --check
       - name: Install Chromium and Firefox
         run: |
           npm install --no-save playwright@1.56.1
@@ -29,6 +37,8 @@ jobs:
         run: node tools/storyboard/qa-browser.js
       - name: Timeline geometry, interactions and screenshots (Chromium + Firefox)
         run: node tools/storyboard/qa-timeline.js --out storyboard-timeline-qa
+      - name: Selected-artwork previews (pixels, composites, states, items, zoom) (Chromium + Firefox)
+        run: node tools/storyboard/qa-artwork-preview.js --out storyboard-timeline-qa/artwork-preview
       - name: Preserve timeline screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
