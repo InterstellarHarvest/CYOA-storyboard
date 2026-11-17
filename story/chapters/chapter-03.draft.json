@@ -1032,7 +1032,7 @@
     "end_admin": {
       "mode": "narrative",
       "scene": "pavilion/exposition_exit",
-      "text": "You indicate the certified departure record.\n\nYou: According to this, I've already left. Yet here I am.\nRegistrar: Yes. Your departure was processed very efficiently.\nYou: Then the record is wrong.\nRegistrar: Or your presence is.\n\nThe Registrar reviews your contest and any supporting evidence you have provided. At last he stamps a new document.\n\nPERSONAL EXCEPTION GRANTED\nEXISTING CERTIFICATIONS: UNCHANGED\n\nRegistrar: We cannot amend an approved departure. We can, however, excuse you from having completed it.\n\nYour exit is authorized. The Original remains behind. You leave the Pavilion alive, your own identity intact and the Pavilion's contradictory certifications uncorrected. You still need a bathroom.\n\nENDING — PERSONALLY RELEASED.",
+      "text": "The Registrar reviews your contest and any supporting evidence you have provided. At last he stamps a new document.\n\nPERSONAL EXCEPTION GRANTED\nEXISTING CERTIFICATIONS: UNCHANGED\n\nRegistrar: We cannot amend an approved departure. We can, however, excuse you from having completed it.\n\nYour exit is authorized. The Original remains behind. You leave the Pavilion alive, your own identity intact and the Pavilion's contradictory certifications uncorrected. You still need a bathroom.\n\nENDING — PERSONALLY RELEASED.",
       "choices": [
         {
           "id": "restart_end_admin",
@@ -1041,7 +1041,7 @@
           "restart": true
         }
       ],
-      "notes": "OWNER-APPROVED 2026-11-17: Exact PERSONALLY RELEASED key dialogue, notice and outcome (reply 'Ok'). Successful grand_0 d6>=4 (+1 nonstacking for optional photo or Pruitt testimony) grants personal exception, physical release with Exposition identity retained and original certifications unchanged; Original remains separately retained. Intro argument and optional evidence callbacks are specified in grand_0.notes and must be appended BEFORE this result in gameplay; the introductory lines included here are for storyboard standalone readability and must not duplicate in runtime. No artwork approval implied; keep restroom need.",
+      "notes": "OWNER-APPROVED 2026-11-17: Exact PERSONALLY RELEASED key dialogue, notice and outcome (reply 'Ok'). Successful grand_0 d6>=4 (+1 nonstacking for optional photo or Pruitt testimony) grants personal exception, physical release with Exposition identity retained and original certifications unchanged; Original remains separately retained. Universal argument and optional evidence callbacks are specified in grand_0.notes and must be appended BEFORE this result in gameplay; they are not repeated in this terminal ending. No artwork approval implied; keep restroom need.",
       "effects": {
         "set": {
           "ch3_exit_route": "administrative_exception",
