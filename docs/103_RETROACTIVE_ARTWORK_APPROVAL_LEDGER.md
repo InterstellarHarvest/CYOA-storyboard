@@ -119,3 +119,19 @@ Nate approved all four without changes;Art Director PASS A-D. Immutable source `
 | `items:acting_director_badge#inspect` | `review/chapter-02-batch06-2026-11-17/candidates/B-acting-director-badge-inspect.png` | `a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d` |
 | `items:certified_seed_canister#slot` | `review/chapter-02-batch06-2026-11-17/candidates/C-certified-seed-canister-slot.png` | `0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998` |
 | `items:certified_seed_canister#inspect` | `review/chapter-02-batch06-2026-11-17/candidates/D-certified-seed-canister-inspect.png` | `958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7` |
+
+
+## Chapter2 Batch7 partial final owner approval — 2026-11-17
+
+Nate finally approved A–H without changes. Source InterstellarHarvest/CYOA, branch agent/ch02-art-batch07-treatment-kits, immutable candidate7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e, final review306aa694295829b6e0a13b25f78ed6b004826ffd. Exact native PNGs registered through docs/105. All100 earlier selected entries/PNGs preserved; total108. Production paths remain null. Asset I explicitly excluded: generated/unselected pending background-only polish and final review. No gameplay integration.
+
+| ID | Record | SHA-256 |
+|---|---|---|
+| A | `focus:biology_park/public_exit/aid_box_open` | `706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229` |
+| B | `items:botanical_antidote_public#slot` | `d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961` |
+| C | `items:botanical_antidote_public#inspect` | `4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9` |
+| D | `focus:biology_park/maintenance_exit/decontamination_kit_open` | `d14ff669e3fb5f03e8c755a232a80f7064c6d7064a471255174b019a1ff42de8` |
+| E | `items:botanical_antidote_maintenance#slot` | `ca1b9ea48ab96d0e2e98171d551a2af50ca95f345c4c9659a483783fb2e213b1` |
+| F | `items:botanical_antidote_maintenance#inspect` | `f59a324d74a3a7bd772858a858f9bad95809fbdf83fa16f876563f1a20493c88` |
+| G | `focus:biology_park/agricultural_customs/exposure_dispenser_open` | `c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b` |
+| H | `items:botanical_antidote_customs#slot` | `da857214a1bf850dbae043d32afa63db2423e57eafe3462186d0d685b9610e19` |
