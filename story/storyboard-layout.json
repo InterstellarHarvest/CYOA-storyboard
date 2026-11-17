@@ -2,7 +2,18 @@
   "schema": "cyoa-storyboard-layout-v1",
   "chapters": {
     "prologue-00": {
-      "positions": {}
+      "positions": {},
+      "layoutRevision": 2,
+      "timeline": {
+        "note": "Viewer-only grouping for the storyboard timeline. Not read by the game or the story importer.",
+        "incidents": [
+          {"id": "notice", "title": "Work complete & the drone's notice", "nodes": ["work_complete", "drone_intercepts", "drone_presents_notice", "signed_response", "disputed_response", "declined_response", "restroom_denied"]},
+          {"id": "leaving", "title": "Leaving work", "nodes": ["personal_effects_handoff", "street_expo"]},
+          {"id": "intake", "title": "Exposition property intake", "nodes": ["expo_container_check", "expo_property_counter", "expo_no_property", "expo_stored_all", "expo_choose_one", "expo_kept_one", "expo_donated"]},
+          {"id": "reception", "title": "Reception & the examiner badge", "nodes": ["expo_reception_handoff", "reception_opening", "reception_restroom_request", "reception_sign_report", "reception_corridor_attempt", "reception_notice_reply", "reception_badge_issued", "reception_dispute", "reception_practical", "reception_duties"]},
+          {"id": "hallway", "title": "Directions, key & hallway → Chapter 1", "nodes": ["reception_directions", "reception_key_discrepancy", "reception_hallway"]}
+        ]
+      }
     },
     "chapter-01": {
       "positions": {},

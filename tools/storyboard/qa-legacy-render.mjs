@@ -1,4 +1,5 @@
-// Serialises how the storyboard draws the chapters that must NOT change (Prologue and Chapter 3):
+// Serialises how the storyboard draws the chapter that must NOT change (Chapter 3; the Prologue moved
+// to the timeline view on owner request, 2026-11-16):
 // every card's position and text, every SVG connector and label, the stage size and default zoom.
 // The smoke test compares the current viewer against qa-fixtures/legacy-render-snapshot.json, which
 // was produced from the published viewer before the timeline rework (main 0ebcf48):
@@ -10,7 +11,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 
-export const LEGACY_CHAPTERS=['prologue-00','chapter-03'];
+export const LEGACY_CHAPTERS=['chapter-03'];
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 
 class Element{
