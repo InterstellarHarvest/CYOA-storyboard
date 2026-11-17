@@ -70,7 +70,7 @@ async function run(name, base) {
   await page.goto(url);
   await ready(page, 29);
   const options = await page.evaluate(() => Array.from(document.querySelectorAll('#chapterSelect option')).map((o) => [o.value, o.textContent]));
-  check(b, 'header dropdown: exactly Prologue, Chapter 1, Chapter 2, from the manifest', JSON.stringify(options) === JSON.stringify([['0', 'Prologue — The Last Good Day'], ['1', 'Chapter 1 — House of Tomorrow'], ['2', 'Chapter 2 — Biology Park']]), options);
+  check(b, 'header dropdown: exactly the four manifest chapters (Prologue, Chapter 1, Chapter 2, Chapter 3), in order', JSON.stringify(options) === JSON.stringify([['0', 'Prologue — The Last Good Day'], ['1', 'Chapter 1 — House of Tomorrow'], ['2', 'Chapter 2 — Biology Park'], ['3', "Chapter 3 — The People's Pavilion"]]), options);
   const a = await drag(page, 'drone_intercepts', 120, 70);
   const h = await drag(page, 'reception_hallway', -90, 80);
   await page.click('#nodes .node >> text=reception_hallway');
@@ -113,7 +113,7 @@ async function run(name, base) {
   const file = path.join(OUT, name + '_storyboard-layout.json');
   await download.saveAs(file);
   const exported = JSON.parse(fs.readFileSync(file, 'utf8'));
-  check(b, 'Export Layout: one cyoa-storyboard-layout-v1 file with all three chapters\' arrangements', exported.schema === 'cyoa-storyboard-layout-v1'
+  check(b, 'Export Layout: one cyoa-storyboard-layout-v1 file with every opened chapter\'s arrangement', exported.schema === 'cyoa-storyboard-layout-v1'
     && JSON.stringify(exported.chapters['chapter-02'].positions.park_junction) === JSON.stringify(d)
     && JSON.stringify(exported.chapters['prologue-00'].positions.drone_intercepts) === JSON.stringify(a)
     && JSON.stringify(exported.chapters['prologue-00'].positions.reception_hallway) === JSON.stringify(h)

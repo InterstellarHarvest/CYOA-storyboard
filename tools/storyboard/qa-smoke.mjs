@@ -361,7 +361,7 @@ async function freshViewer(seed={}){
   vm.runInNewContext(script,{document:doc,window:{addEventListener(n,f){wl[n]=f;},localStorage:ls},location:{href:'https://example.org/CYOA-storyboard/tools/storyboard/'},
     fetch:load,URL:QAURL,Blob,JSON,Object,Math,Number,String,console,setTimeout(fn){fn();return 0;}});
   await new Promise(resolve=>setTimeout(resolve,20));
-  return {doc,store};
+  return {doc,store,wl};
 }
 const v2=await freshViewer();
 const pos2=id=>{const n=v2.doc.getElementById('nodes').children.find(c=>c.children[0]?.textContent===id);return n&&{x:parseFloat(n.style.left),y:parseFloat(n.style.top)};};
@@ -390,13 +390,210 @@ const exported2=JSON.parse(await downloads.at(-1).text());
 assert.deepEqual(exported2.chapters['chapter-01'].positions.house_arrival,ch1,'Chapter 1 survives a partial import in the export');
 assert.deepEqual(exported2.chapters['prologue-00'].positions,{},'Prologue import applied');
 // A browser that saved Chapter 1 earlier still exports it even if only the Prologue is opened.
-const v3=await freshViewer({'cyoa-storyboard-layout-v1:chapter-01':JSON.stringify({positions:{house_arrival:ch1}})});
+// (Saved against the current timeline revision; a save from before the timeline rework is archived
+// instead — see the migration checks below.)
+const v3=await freshViewer({'cyoa-storyboard-layout-v1:chapter-01':JSON.stringify({positions:{house_arrival:ch1},layoutRevision:2})});
 assert.equal(v3.doc.getElementById('chapterSelect').value,'0','third viewer opened only the Prologue');
 v3.doc.getElementById('exportLayout').onclick();
 assert.deepEqual(JSON.parse(await downloads.at(-1).text()).chapters['chapter-01'].positions.house_arrival,ch1,'export includes this browser\'s saved Chapter 1 layout without opening Chapter 1');
 
+// ==== Chapter 1 / Chapter 2 timeline layout =========================================================
+const ch1Json=chapters[1],ch2Json=chapters[2],ch3Json=chapters[3];
+const settle=()=>new Promise(resolve=>setTimeout(resolve,20));
+const kids=(n,cls)=>flatten(n).filter(x=>String(x.attributes?.class||'').split(' ').includes(cls));
+function authoredPairs(ch){
+  const pairs=new Set();
+  for(const [id,n] of Object.entries(ch.nodes)){
+    for(const c of n.choices||[])for(const to of [c.to,c.pass?.to,c.fail?.to])if(to&&ch.nodes[to])pairs.add(id+'>'+to);
+    for(const verb of ['show','use'])for(const e of Object.values(n[verb]||{}))if(e?.to&&ch.nodes[e.to])pairs.add(id+'>'+e.to);
+  }
+  return pairs;
+}
+function reaches(ch,from,to){
+  const seen=new Set([from]),queue=[from];
+  while(queue.length){const u=queue.shift();for(const p of authoredPairs(ch)){const [a,b]=p.split('>');if(a===u&&!seen.has(b)){if(b===to)return true;seen.add(b);queue.push(b);}}}
+  return false;
+}
+function snapshot(v){
+  const nodes=v.doc.getElementById('nodes').children.map(c=>({id:c.children[0].textContent,x:parseFloat(c.style.left),y:parseFloat(c.style.top),cls:c.className,tag:c.children[3]?.textContent}));
+  const ports=v.doc.getElementById('ports').children.map(p=>({x:parseFloat(p.style.left),y:parseFloat(p.style.top),...Object.fromEntries(Object.entries(p.attributes).filter(([k])=>k.startsWith('data-'))),text:flatten(p).map(x=>x.textContent).join(' | '),title:p.title}));
+  const svg=v.doc.getElementById('edges');
+  const edges=kids(svg,'tl-edge').map(g=>({from:g.attributes['data-from'],to:g.attributes['data-to'],route:g.attributes['data-route'],d:g.children.find(x=>x.attributes.class==='tl-line').attributes.d,title:g.children.find(x=>x.tagName==='title').textContent}));
+  const labels=kids(svg,'tl-label').map(g=>{const [x,y]=g.attributes.transform.match(/-?[\d.]+/g).map(Number);const r=g.children.find(c=>c.attributes.class==='plate');
+    return {from:g.attributes['data-from'],to:g.attributes['data-to'],x,y,w:Number(r.attributes.width),h:Number(r.attributes.height),title:g.children.find(c=>c.tagName==='title').textContent};});
+  return {nodes,ports,edges,labels,stage:v.doc.getElementById('stage').style.transform};
+}
+const overlaps=(a,b,pad=0)=>a.x<b.x+b.w+pad&&b.x<a.x+a.w+pad&&a.y<b.y+b.h+pad&&b.y<a.y+a.h+pad;
+const cardBox=n=>({x:n.x,y:n.y,w:220,h:100,id:n.id});
+const portBox=p=>({x:p.x,y:p.y,w:232,h:58,id:p['data-port']});
+const tv=await freshViewer();
+const tSwitch=async(v,i)=>{v.doc.getElementById('chapterSelect').listeners.change({target:{value:String(i)}});await settle();};
+const shots={};
+for(const [index,ch,count] of [[1,ch1Json,36],[2,ch2Json,99]]){
+  await tSwitch(tv,index);
+  const s=snapshot(tv),key=manifest.chapters[index].id;shots[key]=s;
+  assert.equal(s.nodes.length,count,key+': all '+count+' authored nodes rendered as cards');
+  assert.equal(new Set(s.nodes.map(n=>n.id)).size,count,key+': each node rendered once');
+  assert.ok(s.nodes.every(n=>/\bnode tl\b/.test(n.cls)),key+': timeline cards');
+  assert.equal(s.stage,'scale(1)',key+': opens at reading zoom (100%), not shrunk to fit');
+  // No overlapping cards, ports or labels (labels also never sit on a card or a port).
+  const boxes=[...s.nodes.map(cardBox),...s.ports.map(portBox)];
+  for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++)assert.ok(!overlaps(boxes[i],boxes[j],8),key+': '+boxes[i].id+' and '+boxes[j].id+' do not overlap');
+  for(let i=0;i<s.labels.length;i++){
+    for(let j=i+1;j<s.labels.length;j++)assert.ok(!overlaps(s.labels[i],s.labels[j],1),key+': labels '+s.labels[i].from+'>'+s.labels[i].to+' / '+s.labels[j].from+'>'+s.labels[j].to+' do not collide');
+    for(const b of boxes)assert.ok(!overlaps(s.labels[i],b,2),key+': label '+s.labels[i].from+'>'+s.labels[i].to+' clear of '+b.id);
+  }
+  // Every authored destination is drawn, and nothing that is not authored.
+  const drawn=new Set(s.edges.filter(e=>e.route!=='port').map(e=>e.from+'>'+e.to));
+  assert.deepEqual([...drawn].sort(),[...authoredPairs(ch)].sort(),key+': every authored route drawn exactly once, none invented');
+  // Full authored choice text stays available on hover (connector and label tooltips).
+  const tips=s.edges.map(e=>e.title).join('\n');
+  for(const [id,n] of Object.entries(ch.nodes))for(const c of n.choices||[])if(c.to||c.pass||c.fail)assert.ok(tips.includes(c.text||c.id),key+': hover text for '+id+' / '+c.id);
+  // Left-to-right: every forward route moves right; only genuine cycles use explicit return connectors.
+  const at=Object.fromEntries(s.nodes.map(n=>[n.id,n]));
+  for(const e of s.edges.filter(e=>e.route!=='port')){
+    if(e.route==='return'){assert.ok(at[e.to].x<at[e.from].x&&reaches(ch,e.to,e.from),key+': return '+e.from+'>'+e.to+' closes a real cycle');continue;}
+    assert.equal(e.route,'forward');
+    assert.ok(at[e.to].x>at[e.from].x,key+': forward route '+e.from+'>'+e.to+' runs left to right');
+  }
+  assert.ok(s.labels.length>=s.edges.filter(e=>e.route!=='port').length*0.6,key+': most connectors carry a readable label');
+}
+// Chapter 1: the cycle groups are drawn with return connectors, not pushed to a far column.
+const c1=shots['chapter-01'],c1at=Object.fromEntries(c1.nodes.map(n=>[n.id,n]));
+const c1returns=c1.edges.filter(e=>e.route==='return').map(e=>e.from+'>'+e.to).sort();
+assert.deepEqual(c1returns,['dinner_redirect>dinner_arrival','storage_reclaimed>comfort_offer'],'Chapter 1: one return connector per cycle group');
+const c1max=Math.max(...c1.nodes.map(n=>n.x));
+const houseExits=['exit_named_plant','exit_martin','exit_service_clean','exit_service_registered','exit_showroom_reset'];
+for(const id of houseExits)assert.equal(c1at[id].x,c1max,'Chapter 1: surviving exit '+id+' sits in the right-hand exit column');
+assert.ok(c1.nodes.filter(n=>n.x===c1max).every(n=>houseExits.includes(n.id)),'Chapter 1: the exit column holds only the five surviving exits');
+const c1out=c1.ports.filter(p=>p['data-dir']==='out');
+assert.deepEqual(c1out.map(p=>p['data-port']).sort(),houseExits.map(id=>'out:'+id+'>chapter-02').sort(),'Chapter 1: five outgoing Chapter 2 transitions, one per surviving exit');
+assert.ok(c1out.every(p=>p['data-mode']==='gameplay'&&p['data-chapter']==='chapter-02'&&/TO CHAPTER 2 · GAMEPLAY/.test(p.text)&&/Bureau Arrival/.test(p.text)),'Chapter 1: exits are labelled as gameplay transitions into Bureau Arrival');
+assert.ok(c1.ports.filter(p=>p['data-dir']==='in').every(p=>p['data-chapter']==='prologue-00'&&p['data-source']==='reception_hallway'),'Chapter 1: its only incoming route is the Prologue hand-off');
+assert.ok(/fatal/.test(c1at.exit_chair_fatal.cls)&&/FATAL ENDING/.test(c1at.exit_chair_fatal.tag),'Chapter 1: fatal chair styled as a fatal ending');
+assert.ok(!c1.edges.some(e=>e.from==='exit_chair_fatal')&&!c1.ports.some(p=>/exit_chair_fatal/.test(p['data-port'])),'Chapter 1: fatal chair is terminal (no route out, no chapter port)');
+assert.ok(c1at.exit_chair_fatal.x===c1at.service_breach.x&&c1at.exit_chair_fatal.x>c1at.chair_locked.x&&c1at.exit_chair_fatal.x<c1max,'Chapter 1: fatal chair sits in the column right after the chair, not in the exit column');
+// Chapter 2: incoming Chapter 1 routes, storyboard-only handoffs, antidote loops attached to their exits.
+const c2=shots['chapter-02'],c2at=Object.fromEntries(c2.nodes.map(n=>[n.id,n]));
+const c2in=c2.ports.filter(p=>p['data-dir']==='in');
+assert.deepEqual(c2in.map(p=>p['data-source']).sort(),[...houseExits].sort(),'Chapter 2: five named incoming Chapter 1 routes');
+assert.ok(c2in.every(p=>p['data-chapter']==='chapter-01'&&p['data-mode']==='gameplay'&&/FROM CHAPTER 1 EXIT/.test(p.text)),'Chapter 2: incoming ports name Chapter 1');
+assert.ok(c2.edges.filter(e=>e.route==='port'&&e.from.startsWith('in:')).every(e=>e.to==='bureau_arrival')&&c2.edges.filter(e=>e.route==='port'&&e.from.startsWith('in:')).length===5,'Chapter 2: all five incoming routes feed the single canonical bureau_arrival');
+assert.equal(c2.nodes.length,99,'Chapter 2: no runtime arrival nodes were invented for the incoming routes');
+const livingEnds=['end_concourse_robot','end_underground_station','end_public','end_maintenance','end_customs'];
+const c2out=c2.ports.filter(p=>p['data-dir']==='out');
+assert.deepEqual(c2out.map(p=>p['data-port']).sort(),livingEnds.map(id=>'out:'+id+'>chapter-03:preview').sort(),'Chapter 2: five distinct outgoing Chapter 3 handoffs, one per living ending');
+assert.ok(c2out.every(p=>p['data-mode']==='preview'&&/PREVIEW HANDOFF · NOT GAMEPLAY/.test(p.text)&&/not a gameplay transition|no gameplay transition/i.test(p.title)),'Chapter 2: handoffs are labelled storyboard previews, not gameplay transitions');
+const fatal2=Object.entries(ch2Json.nodes).filter(([,n])=>n.end===true&&!n.storyboardNextChapter).map(([id])=>id);
+assert.equal(fatal2.length,5,'Chapter 2: five fatal endings');
+for(const id of fatal2){
+  assert.ok(!c2.ports.some(p=>p['data-port'].includes(':'+id+'>')||p['data-port'].includes('out:'+id)),'Chapter 2: fatal '+id+' never connects to a later chapter');
+  assert.ok(/fatal/.test(c2at[id].cls),'Chapter 2: '+id+' styled as fatal');
+}
+for(const id of livingEnds)assert.equal(c2at[id].x,Math.max(...c2.nodes.map(n=>n.x)),'Chapter 2: living ending '+id+' in the right-hand handoff column');
+const columnStep=c2at.bureau_emergency.x-c2at.bureau_arrival.x;
+for(const [staging,kit,read,end] of [['public_exit_staging','public_kit_focus','public_kit_read_focus','end_public'],['maintenance_exit_staging','maintenance_kit_focus','maintenance_kit_read_focus','end_maintenance'],['customs_exit','customs_kit_focus','customs_kit_read_focus','end_customs']]){
+  assert.ok(c2at[kit].x>c2at[staging].x&&c2at[read].x>c2at[kit].x&&c2at[read].x-c2at[staging].x<=3*columnStep,'Chapter 2: '+kit+' loop sits immediately right of '+staging);
+  assert.ok(Math.abs(c2at[kit].y-c2at[staging].y)<=320&&Math.abs(c2at[read].y-c2at[staging].y)<=320,'Chapter 2: '+kit+' loop stays level with its exit');
+  const ret=c2.edges.filter(e=>e.route==='return').map(e=>e.from+'>'+e.to);
+  assert.ok(ret.includes(kit+'>'+staging)&&ret.includes(read+'>'+staging),'Chapter 2: '+kit+' antidote returns drawn as return connectors to '+staging);
+  assert.ok(c2.edges.some(e=>e.from===staging&&e.to===end&&e.route==='forward'),'Chapter 2: '+staging+' leads on to '+end);
+}
+assert.equal(c2.edges.filter(e=>e.route==='return').length,6,'Chapter 2: only the three antidote loops use return connectors');
+// PASS and FAIL outcomes stay distinguishable on the diagram.
+assert.ok(c2.labels.some(l=>/^PASS: /m.test(l.title))&&c2.labels.some(l=>/^FAIL: /m.test(l.title)),'Chapter 2: PASS and FAIL labels present');
+const kitLabel=c2.labels.find(l=>l.from==='public_kit_focus'&&l.to==='public_exit_staging');
+assert.ok(kitLabel&&/PASS\|FAIL: USE THE ANTIDOTE DIRECTLY/.test(kitLabel.title),'Chapter 2: a check whose PASS and FAIL share a destination says so explicitly');
+// Stable across reloads: a second fresh viewer draws exactly the same timeline.
+const tv2=await freshViewer();
+for(const [index,key] of [[1,'chapter-01'],[2,'chapter-02']]){await tSwitch(tv2,index);assert.deepEqual(snapshot(tv2),shots[key],key+': identical layout and connectors after a reload');}
+// Chapter 2 incoming port opens the matching Chapter 1 exit; Chapter 1 port opens Chapter 2 at its start.
+tv2.doc.getElementById('ports').children.find(p=>p.attributes['data-source']==='exit_service_registered').listeners.click();
+await settle();
+assert.equal(tv2.doc.getElementById('chapterSelect').value,'1','incoming port opens Chapter 1');
+assert.ok(flatten(tv2.doc.getElementById('details')).some(x=>x.textContent==='Exit Service Registered'),'incoming port selects the matching Chapter 1 exit');
+tv2.doc.getElementById('ports').children.find(p=>p.attributes['data-port']==='out:exit_martin>chapter-02').listeners.click();
+await settle();
+assert.equal(tv2.doc.getElementById('chapterSelect').value,'2','Chapter 1 exit port opens Chapter 2');
+assert.ok(flatten(tv2.doc.getElementById('details')).some(x=>x.textContent==='Bureau Arrival'),'Chapter 1 exit port selects bureau_arrival');
+assert.ok(flatten(tv2.doc.getElementById('details')).some(x=>/^FROM Chapter 1 — House of Tomorrow — Exit Martin$/.test(String(x.textContent))),'bureau_arrival inspector lists the incoming Chapter 1 routes');
+tv2.doc.getElementById('ports').children.find(p=>p.attributes['data-port']==='out:end_public>chapter-03:preview').listeners.click();
+await settle();
+assert.equal(tv2.doc.getElementById('chapterSelect').value,'3','preview handoff opens Chapter 3');
+assert.equal(tv2.doc.getElementById('ports').children.length,0,'Chapter 3 draws no ports');
+// Fit is a whole-graph overview for long timelines (below the old 25% floor); Start returns to reading zoom.
+await tSwitch(tv2,2);
+tv2.doc.getElementById('fit').onclick();
+const fitScale=Number(tv2.doc.getElementById('stage').style.transform.match(/[\d.]+/)[0]);
+assert.ok(fitScale<.25&&fitScale>0,'Chapter 2 Fit shows the whole timeline ('+fitScale+')');
+tv2.doc.getElementById('tlStart').onclick();
+assert.equal(tv2.doc.getElementById('stage').style.transform,'scale(1)','Start returns to reading zoom');
+
+// ==== Layout revision migration: old cached Chapter 1/2 positions never hide the new default =======
+const oldCh1={house_arrival:{x:900,y:900},comfort_offer:{x:40,y:40}},oldPro={drone_intercepts:{x:777,y:333}},oldCh3={pavilion_arrival:{x:555,y:444}};
+const seed={'cyoa-storyboard-layout-v1:chapter-01':JSON.stringify({positions:oldCh1}),'cyoa-storyboard-layout-v1:chapter-02':JSON.stringify({positions:{}}),
+  'cyoa-storyboard-layout-v1:prologue-00':JSON.stringify({positions:oldPro}),'cyoa-storyboard-layout-v1:chapter-03':JSON.stringify({positions:oldCh3})};
+const mv=await freshViewer(seed);
+assert.equal(mv.store.get('cyoa-storyboard-layout-v1:prologue-00'),seed['cyoa-storyboard-layout-v1:prologue-00'],'Prologue cache untouched by the migration');
+assert.equal(mv.store.get('cyoa-storyboard-layout-v1:chapter-03'),seed['cyoa-storyboard-layout-v1:chapter-03'],'Chapter 3 cache untouched by the migration');
+assert.deepEqual(JSON.parse(mv.store.get('cyoa-storyboard-layout-v1:chapter-01@archive-r1')).positions,oldCh1,'old Chapter 1 arrangement archived for recovery');
+assert.ok(!mv.store.has('cyoa-storyboard-layout-v1:chapter-01'),'stale Chapter 1 entry no longer overrides the default');
+assert.ok(!mv.store.has('cyoa-storyboard-layout-v1:chapter-02@archive-r1'),'an empty old Chapter 2 entry needs no archive');
+const mvPos=id=>{const n=mv.doc.getElementById('nodes').children.find(c=>c.children[0]?.textContent===id);return n&&{x:parseFloat(n.style.left),y:parseFloat(n.style.top)};};
+assert.deepEqual(mvPos('drone_intercepts'),oldPro.drone_intercepts,'Prologue still shows its saved position');
+await tSwitch(mv,1);
+assert.deepEqual(snapshot(mv).nodes,shots['chapter-01'].nodes,'Chapter 1 shows the new timeline default despite the old cache');
+assert.equal(mv.doc.getElementById('restoreLayout').hidden,false,'Restore previous arrangement offered');
+assert.match(mv.doc.getElementById('status').textContent,/earlier arrangement was archived/,'status explains the archive');
+mv.doc.getElementById('restoreLayout').onclick();
+assert.deepEqual(mvPos('house_arrival'),oldCh1.house_arrival,'Restore brings the archived arrangement back');
+assert.equal(JSON.parse(mv.store.get('cyoa-storyboard-layout-v1:chapter-01')).layoutRevision,2,'restored arrangement saved against the current revision');
+// Reset Layout resets only the selected chapter.
+const mvDrag=(id,dx,dy,pointerId)=>{const c=mv.doc.getElementById('nodes').children.find(n=>n.children[0]?.textContent===id);c.listeners.pointerdown({pointerId,button:0,clientX:300,clientY:300,stopPropagation(){}});mv.wl.pointermove({pointerId,clientX:300+dx,clientY:300+dy,preventDefault(){}});mv.wl.pointerup({pointerId});return mvPos(id);};
+await tSwitch(mv,2);
+const moved2=mvDrag('park_junction',90,60,41);
+const ch2Saved=mv.store.get('cyoa-storyboard-layout-v1:chapter-02');
+assert.equal(JSON.parse(ch2Saved).layoutRevision,2,'Chapter 2 drag saved with the current revision');
+assert.ok(kids(mv.doc.getElementById('edges'),'tl-edge').some(g=>g.attributes['data-to']==='park_junction'),'connectors follow a dragged timeline card');
+await tSwitch(mv,1);
+mv.doc.getElementById('resetLayout').onclick();
+assert.deepEqual(snapshot(mv).nodes,shots['chapter-01'].nodes,'Reset returns Chapter 1 to the timeline default');
+assert.equal(mv.store.get('cyoa-storyboard-layout-v1:chapter-02'),ch2Saved,'Reset on Chapter 1 leaves Chapter 2 alone');
+assert.equal(mv.store.get('cyoa-storyboard-layout-v1:prologue-00'),seed['cyoa-storyboard-layout-v1:prologue-00'],'Reset on Chapter 1 leaves the Prologue alone');
+assert.ok(mv.store.has('cyoa-storyboard-layout-v1:chapter-01@archive-r1'),'archive survives Reset');
+await tSwitch(mv,2);
+assert.deepEqual(mvPos('park_junction'),moved2,'Chapter 2 keeps its own arrangement');
+// Export carries the revision and timeline metadata; an old v1 file (no revision, no timeline) still imports.
+mv.doc.getElementById('exportLayout').onclick();
+const ex=JSON.parse(await downloads.at(-1).text());
+assert.equal(ex.schema,'cyoa-storyboard-layout-v1','export schema unchanged');
+assert.equal(ex.chapters['chapter-01'].layoutRevision,2);assert.equal(ex.chapters['chapter-02'].layoutRevision,2);
+assert.ok(ex.chapters['chapter-02'].timeline.incidents.length>=10,'export keeps the incident groups');
+assert.deepEqual(Object.keys(ex.chapters['prologue-00']),['positions'],'Prologue export entry shape unchanged');
+assert.deepEqual(Object.keys(ex.chapters['chapter-03']),['positions'],'Chapter 3 export entry shape unchanged');
+const mvIn=mv.doc.getElementById('fileLayout');
+mvIn.files=[{name:'old-v1.json',text:async()=>JSON.stringify({schema:'cyoa-storyboard-layout-v1',chapters:{'chapter-02':{positions:{park_junction:{x:4321,y:765}}}}})}];
+await mvIn.onchange({target:mvIn});
+assert.deepEqual(mvPos('park_junction'),{x:4321,y:765},'an old-format layout file still imports');
+assert.equal(snapshot(mv).nodes[0].cls.includes('tl'),true,'the timeline (incident metadata) survives an import without metadata');
+assert.equal(JSON.parse(mv.store.get('cyoa-storyboard-layout-v1:chapter-02')).layoutRevision,2,'imported positions are saved against the current revision');
+// Committed layout file: Prologue and Chapter 3 entries are exactly as before.
+assert.deepEqual(layoutSource.chapters['prologue-00'],{positions:{}},'committed Prologue layout entry unchanged');
+assert.deepEqual(layoutSource.chapters['chapter-03'],{positions:{}},'committed Chapter 3 layout entry unchanged');
+for(const key of ['chapter-01','chapter-02'])for(const inc of layoutSource.chapters[key].timeline.incidents)for(const id of inc.nodes)assert.ok(chapters[key==='chapter-01'?1:2].nodes[id],key+' incident '+inc.id+' names a real node '+id);
+
+// ==== Prologue and Chapter 3 render exactly as the published viewer did (main 0ebcf48) =============
+const {renderLegacy}=await import('./qa-legacy-render.mjs');
+const legacyNow=await renderLegacy(path.join(root,'tools/storyboard/index.html'));
+const legacyBase=JSON.parse(fs.readFileSync(path.join(root,'tools/storyboard/qa-fixtures/legacy-render-snapshot.json'),'utf8'));
+for(const key of ['prologue-00','chapter-03'])assert.deepEqual(JSON.parse(JSON.stringify(legacyNow[key])),legacyBase[key],key+': cards, connectors, labels and default zoom identical to the published viewer');
+
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,chapters:manifest.chapters.map(c=>c.id),
  artRecords:productionRecords.length,
- checked:['manifest','all scene references','portrait references','all item artwork','paired scene backgrounds','editable portrait background','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout','chapter header','per-chapter graph+inspector+art refs','cross-chapter hand-off link','independent positions+selection across switches','export all four chapters','Chapter 2 graph+inspector+art refs+layout','Chapter 1 exits link Chapter 2','import into fresh browser','partial import keeps other chapter']
+ checked:['manifest','all scene references','portrait references','all item artwork','paired scene backgrounds','editable portrait background','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout','chapter header','per-chapter graph+inspector+art refs','cross-chapter hand-off link','independent positions+selection across switches','export all four chapters','Chapter 2 graph+inspector+art refs+layout','Chapter 1 exits link Chapter 2','import into fresh browser','partial import keeps other chapter',
+   'timeline: 36+99 cards','no card/port/label overlap','all authored routes drawn, none invented','hover text','left-to-right forward routes','returns only on real cycles',
+   'Ch1 five exits in right column + Ch2 ports','fatal chair terminal','Ch2 five incoming Ch1 routes','Ch2 five preview handoffs','fatal endings never cross chapters',
+   'antidote loops attached','PASS/FAIL distinct','stable across reload','port navigation','Fit overview + Start','old cache archived not applied','restore archive',
+   'reset one chapter only','export revision+timeline','old v1 import','Prologue/Ch3 identical to published viewer']
 }));

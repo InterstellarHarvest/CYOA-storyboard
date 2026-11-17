@@ -20,7 +20,28 @@ On a change to these public files, GitHub Actions publishes the site with the [P
 
 ## Arrange your own timeline
 
-Drag a story-node box to move it while its connections follow. Click without dragging to inspect. Positions auto-save in your browser per chapter. Use **Export Layout** to download shareable `storyboard-layout.json`, **Import Layout** to restore it, or **Reset Layout** to return to the automatic arrangement. Layout data is separate from all story and artwork definitions. Changes are not automatically committed to GitHub.
+Drag a story-node box to move it while its connections follow. Click without dragging to inspect. Positions auto-save in your browser per chapter. Use **Export Layout** to download shareable `storyboard-layout.json`, **Import Layout** to restore it, or **Reset Layout** to return the selected chapter to the automatic arrangement. Layout data is separate from all story and artwork definitions. Changes are not automatically committed to GitHub.
+
+### Chapter 1 and Chapter 2 timeline view
+
+Chapter 1 (House of Tomorrow) and Chapter 2 (Biology Park) open as a left-to-right **timeline** at reading zoom, at the start of the chapter. Scroll or drag sideways to follow the story; **Jump to incident…** moves to a named incident, **Start** returns to the beginning, and **Fit** shows the whole chapter as an overview.
+
+- Cards are grouped by authored incident (tinted panels with a title above the first card of each incident). The grouping is viewer-only metadata in `story/storyboard-layout.json`; the game never reads it.
+- Connector labels sit next to the decision they leave. **PASS** / **FAIL** badges mark check outcomes; dotted lines are item SHOW/USE routes. Hover a label for the full choice text, or click it to open the destination.
+- The few genuine loops (Chapter 1's dinner/foyer/Martin and housekeeping cycles; Chapter 2's three antidote-kit inspections) are drawn as dashed **↩ return** connectors running under the cards, instead of sending the loop to a far column.
+- Pills at the edges show routes between chapters: Chapter 1's five surviving exits → Chapter 2, Chapter 2's five incoming Chapter 1 routes (all arriving at the single `bureau_arrival`), and Chapter 2's five **preview-only** handoffs to Chapter 3 (storyboard links, not gameplay transitions). Click a pill to open the other end.
+
+The Prologue and Chapter 3 keep their original arrangement.
+
+**Saved arrangements from before the timeline.** Positions this browser saved for Chapter 1 or 2 before the timeline existed were offsets for the old automatic layout. They are moved aside (never deleted) so the new timeline shows by default. **Restore previous arrangement** brings them back. Older exported layout files still import.
+
+### Storyboard QA
+
+```
+node tools/storyboard/qa-smoke.mjs                                   # dependency-free logic + layout checks
+NODE_PATH="$(npm root -g)" node tools/storyboard/qa-browser.js       # chapter navigation, Chromium + Firefox
+NODE_PATH="$(npm root -g)" node tools/storyboard/qa-timeline.js      # timeline geometry + screenshots, Chromium + Firefox
+```
 
 ## Paired scene art for Codex
 
