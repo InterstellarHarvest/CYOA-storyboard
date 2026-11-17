@@ -66,13 +66,13 @@
       "choices": [
         {
           "id": "permit_housekeeping",
-          "kind": "spoken",
+          "kind": "action",
           "text": "ALLOW THE HOUSE TO PUT YOUR THINGS AWAY.",
           "to": "orientation_storage"
         },
         {
           "id": "decline_housekeeping",
-          "kind": "spoken",
+          "kind": "action",
           "text": "KEEP YOUR BELONGINGS WITH YOU.",
           "to": "orientation_refusal"
         }
@@ -141,7 +141,7 @@
       "choices": [
         {
           "id": "ask_for_bathroom_after_storage",
-          "kind": "spoken",
+          "kind": "action",
           "text": "ASK WHERE THE BATHROOM IS.",
           "to": "comfort_offer"
         }
@@ -149,22 +149,33 @@
       "notes": "The conditional effects remove at most one held item and record its exact ID. Other items remain carried."
     },
     "orientation_refusal": {
-      "mode": "narrative",
+      "mode": "dialogue",
       "scene": "house_of_tomorrow/foyer",
+      "speaker": "house",
       "effects": {
         "set": {
           "housekeeping_refused": true
         }
       },
-      "text": "You insist on keeping your possessions. The speaker pauses.\n\n\"Certainly. We would never put your things away without permission.\"\n\nA quiet motor starts somewhere behind the wall.",
+      "text": [
+        {
+          "desc": "You insist on keeping your possessions. The speaker pauses."
+        },
+        "Certainly. We would never put your things away without permission.",
+        {
+          "desc": "A quiet motor starts somewhere behind the wall."
+        }
+      ],
       "choices": [
         {
           "id": "insist_on_bathroom",
-          "kind": "spoken",
+          "kind": "action",
           "text": "ASK FOR THE BATHROOM AGAIN.",
           "to": "comfort_offer"
         }
-      ]
+      ],
+      "notes": "PRESENTATION AUDIT 2026-11-17 (docs/107): the House's spoken reply to the player's refusal continues the welcome_home conversation, so it is NPC dialogue in the existing integrated House foyer view (portraits house#views:house_of_tomorrow/foyer). Words unchanged: narration became desc runs, the House line lost its narration quotes (dialogue speech is never quoted). No route, flag or item change.",
+      "pose": "idle"
     },
     "comfort_offer": {
       "mode": "narrative",
@@ -570,7 +581,7 @@
       "choices": [
         {
           "id": "reply_for_martin",
-          "kind": "spoken",
+          "kind": "action",
           "text": "ANSWER FOR MARTIN.",
           "to": "martin_bedtime"
         },
