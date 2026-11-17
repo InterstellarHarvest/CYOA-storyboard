@@ -1172,7 +1172,7 @@
           "restart": true
         }
       ],
-      "notes": "OWNER-APPROVED 2026-11-17 FATAL mechanism: voluntarily attempted retention-shutter escape, clearly warned, failed hidden d6 check. Shutter locks; automatic scanner treats claimant as unregistered nonliving material; compression plate kills; remains sealed in permanent archive drawer. No surprise fatal from safe option, no rescues after failed roll, no face or gore in artwork. ONE shared popup for this end state. Art NOT generated or reviewed; metadata remains not-started.",
+      "notes": "OWNER-APPROVED 2026-11-17 FATAL mechanism: voluntarily attempted retention-shutter escape, clearly warned, failed hidden d6 check. Shutter locks; automatic scanner treats claimant as unregistered nonliving material; compression plate kills; remains sealed in permanent archive drawer. No surprise fatal from safe option, no rescues after failed roll, no face or gore in artwork. ONE shared popup for this end state. Art NOT generated or reviewed; metadata remains not-started. Storyboard preview field button=BEGIN AGAIN is inherited placeholder metadata; deployed game's RETRY/CHECKPOINT/EXIT behavior remains controlled by Gameplay PMO.",
       "end": true,
       "deathPopup": {
         "id": "end_archived",
@@ -1180,7 +1180,8 @@
         "subtitle": "RETENTION PERIOD: PERMANENT",
         "status": "owner-approved",
         "artRef": "pavilion/permanently_archived",
-        "description": "You've finally found somewhere you belong. Unfortunately, it's a filing cabinet."
+        "description": "You've finally found somewhere you belong. Unfortunately, it's a filing cabinet.",
+        "button": "BEGIN AGAIN"
       },
       "endingArt": "pavilion/permanently_archived"
     },
