@@ -94,3 +94,16 @@ Nate approved all six without changes; Art Director PASS A-F. Immutable source `
 | `scenes:biology_park/concourse_crash#portraitBackground` | `review/chapter-02-batch04-2026-11-17/candidates/D-concourse-portrait-background.png` | `9f8f3d19d44a6433ef70391118a616d7dd6c8626f43eccda48d55af8fdd1cd80` |
 | `portraits:courtesy_conductor:talking` | `review/chapter-02-batch04-2026-11-17/candidates/E-courtesy-conductor-talking.png` | `8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d` |
 | `scenes:biology_park/abandoned_station` | `review/chapter-02-batch04-2026-11-17/candidates/F-abandoned-station.png` | `c9f78d96427d5fce0d1bde3651b90f09fd8d3380a65542378273c2fd1aa803f7` |
+
+
+## Addendum — Chapter2 Batch5 owner selections,2026-11-17
+
+Nate approved all five without changes;Art Director PASS A-E. Immutable source `InterstellarHarvest/CYOA@a9b3817d0c72d2ed5ba398f1f374b0c3b7befeaf`;final review `3112565df2fd6d2f2f7f72a1ae8d6d9998d14024`,branch `agent/ch02-art-batch05-irrigation-exits`. Registered exact bytes through docs/105 `register-art.mjs --batch`. Approved,not integrated;production paths stay null. All91 prior selected images and original review history preserved.
+
+| Record | Source path | SHA-256 |
+|---|---|---|
+| `scenes:biology_park/lower_irrigation` | `review/chapter-02-batch05-2026-11-17/candidates/A-lower-irrigation.png` | `8f0df4ad7cbdd73182e5266bb253a8f415c2fbb4536fe908eff544b2902182a8` |
+| `scenes:biology_park/public_exit` | `review/chapter-02-batch05-2026-11-17/candidates/B-public-exit.png` | `e47576d21610f3d5f2d85027192e37197cf317ffdabdbe72977bd971ec9a97aa` |
+| `scenes:biology_park/maintenance_exit` | `review/chapter-02-batch05-2026-11-17/candidates/C-maintenance-exit.png` | `1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7` |
+| `scenes:biology_park/agricultural_customs` | `review/chapter-02-batch05-2026-11-17/candidates/D-agricultural-customs.png` | `9bc80696f31efacdbba2babd95abfe460a9fb6158ad8b674299a91744403cdef` |
+| `scenes:biology_park/exposition_concourse` | `review/chapter-02-batch05-2026-11-17/candidates/E-exposition-concourse.png` | `8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3` |

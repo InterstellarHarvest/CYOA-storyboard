@@ -527,6 +527,21 @@
         "path": "review/chapter-02-batch04-2026-11-17/candidates/F-abandoned-station.png"
       }
     },
+    "scenes:biology_park/agricultural_customs": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/agricultural_customs.png",
+      "sha256": "9bc80696f31efacdbba2babd95abfe460a9fb6158ad8b674299a91744403cdef",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch05-irrigation-exits",
+        "commit": "a9b3817d0c72d2ed5ba398f1f374b0c3b7befeaf",
+        "path": "review/chapter-02-batch05-2026-11-17/candidates/D-agricultural-customs.png"
+      }
+    },
     "scenes:biology_park/authorization_archive": {
       "file": "assets/selected/pending-integration/scenes/biology_park/authorization_archive.png",
       "sha256": "cf56a225b9341ac24c654562e002e4d45d5c56be36aa7f4d3f40f045bebc79ec",
@@ -632,6 +647,21 @@
         "path": "review/chapter-02-batch02-2026-11-17/candidates/D-damaged-walkway.png"
       }
     },
+    "scenes:biology_park/exposition_concourse": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/exposition_concourse.png",
+      "sha256": "8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch05-irrigation-exits",
+        "commit": "a9b3817d0c72d2ed5ba398f1f374b0c3b7befeaf",
+        "path": "review/chapter-02-batch05-2026-11-17/candidates/E-exposition-concourse.png"
+      }
+    },
     "scenes:biology_park/formal_entrance": {
       "file": "assets/selected/pending-integration/scenes/biology_park/formal_entrance.png",
       "sha256": "d1a55f75863a7e2a3b854566638128064b998c5d6a83659399e4ad53ce66f2e9",
@@ -692,6 +722,36 @@
         "path": "review/chapter-02-batch01-2026-11-15/signage-polish-v02/candidates/E-jungle-junction.png"
       }
     },
+    "scenes:biology_park/lower_irrigation": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/lower_irrigation.png",
+      "sha256": "8f0df4ad7cbdd73182e5266bb253a8f415c2fbb4536fe908eff544b2902182a8",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch05-irrigation-exits",
+        "commit": "a9b3817d0c72d2ed5ba398f1f374b0c3b7befeaf",
+        "path": "review/chapter-02-batch05-2026-11-17/candidates/A-lower-irrigation.png"
+      }
+    },
+    "scenes:biology_park/maintenance_exit": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/maintenance_exit.png",
+      "sha256": "1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch05-irrigation-exits",
+        "commit": "a9b3817d0c72d2ed5ba398f1f374b0c3b7befeaf",
+        "path": "review/chapter-02-batch05-2026-11-17/candidates/C-maintenance-exit.png"
+      }
+    },
     "scenes:biology_park/moving_forest": {
       "file": "assets/selected/pending-integration/scenes/biology_park/moving_forest.png",
       "sha256": "5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81",
@@ -750,6 +810,21 @@
         "ref": "agent/ch02-art-batch03-biopark-machinery",
         "commit": "009c5afea133f36a92f2af74887e00b351d9b914",
         "path": "review/chapter-02-batch03-2026-11-17/candidates/D-planting-machine.png"
+      }
+    },
+    "scenes:biology_park/public_exit": {
+      "file": "assets/selected/pending-integration/scenes/biology_park/public_exit.png",
+      "sha256": "e47576d21610f3d5f2d85027192e37197cf317ffdabdbe72977bd971ec9a97aa",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch05-irrigation-exits",
+        "commit": "a9b3817d0c72d2ed5ba398f1f374b0c3b7befeaf",
+        "path": "review/chapter-02-batch05-2026-11-17/candidates/B-public-exit.png"
       }
     },
     "scenes:biology_park/reserve_siding": {
