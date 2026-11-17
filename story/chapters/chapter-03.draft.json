@@ -47,28 +47,28 @@
     "human": {
       "mode": "narrative",
       "scene": "pavilion/human_requirements",
-      "text": "Human Requirements exhibit.",
+      "text": "You follow a sign reading HUMAN REQUIREMENTS — ALL NEEDS PROVIDED FOR.\n\nBeyond it, a model bathroom sits behind a velvet barrier. The toilet is immaculate. A speaker produces the sound of flushing every forty-five seconds.\n\nA plaque explains:\n\nPERSONAL HYGIENE EXPERIENCE\nSATISFACTION GUARANTEED\nWATER CONNECTION NOT REQUIRED\n\nYou ask an attendant where the actual restroom is.\n\nAttendant: You're looking at it.\nYou: Can I use it?\nAttendant: Certainly. You're using it right now.\n\nBehind the exhibit, a thick service pipe vibrates with the unmistakable sound of real running water. Nearby, a booth recruits visitors to demonstrate basic human needs.",
       "choices": [
         {
           "id": "human_0",
           "kind": "action",
-          "text": "CROSS THE RESTROOM EXHIBIT BARRIER",
+          "text": "CROSS THE BARRIER AND ATTEMPT TO USE THE DISPLAY RESTROOM.",
           "to": "satisfy"
         },
         {
           "id": "human_1",
           "kind": "action",
-          "text": "FOLLOW WORKING-WATER SERVICE PIPE",
+          "text": "FOLLOW THE WORKING-WATER SERVICE PIPE BEHIND THE EXHIBIT.",
           "to": "a_plumb"
         },
         {
           "id": "human_2",
           "kind": "action",
-          "text": "REGISTER AS LIVE DEMONSTRATOR",
+          "text": "REGISTER AS A LIVE HUMAN REQUIREMENTS DEMONSTRATOR.",
           "to": "a_demo"
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+      "notes": "OWNER-APPROVED 2026-11-17 full Human Requirements introduction and all THREE mutually exclusive choices (user 'All 3'). The mock bathroom is a working exhibit without actual plumbing, with a prerecorded flush every forty-five seconds; attendant insists experiencing the display counts as having used the restroom. A takes player to Satisfaction Demonstration, B follows real-water service pipe, C becomes a live demonstrator. Each is forward-only and their separate downstream incidents remain to be drafted/approved. Approved narrative does not imply art is already generated or approved; scene remains pavilion/human_requirements. Keep second-person present tense, restroom unresolved and no protagonist face."
     },
     "a_plumb": {
       "mode": "narrative",
