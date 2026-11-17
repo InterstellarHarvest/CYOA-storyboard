@@ -342,7 +342,7 @@ assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('PERMANENTLY SA
 assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('house_of_tomorrow/rest_assured')),'fatal inspector supplies death artwork identifier');
 assert.ok(flatten(pane()).some(x=>String(x.textContent).includes('You have achieved permanent relaxation.')),'fatal inspector supplies popup narrative beat');
 assert.ok(!flatten(pane()).some(x=>x.textContent==='Choices & destinations'),'fatal inspector hides legacy restart choice section');
-assert.ok(String(findNode('exit_chair_fatal').textContent).includes('ART: house_of_tomorrow/rest_assured'),'fatal graph box itself shows exact artwork ID');
+assert.ok(flatten(findNode('exit_chair_fatal')).some(x=>String(x.textContent).includes('ART: house_of_tomorrow/rest_assured')),'fatal graph box itself shows exact artwork ID');
 findNode('exit_martin').click();
 const ch2Card=flatten(pane()).find(x=>x.tagName==='button'&&/Chapter 2 — Biology Park \(chapter-02\)/.test(flatten(x).map(y=>y.textContent).join(' ')));
 assert.ok(ch2Card&&!ch2Card.disabled,'Chapter 1 exit card names its Chapter 2 destination and is clickable');
