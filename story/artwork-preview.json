@@ -62,6 +62,66 @@
         "path": "art/focus/house_of_tomorrow/album_page_3.png"
       }
     },
+    "items:acting_director_badge#inspect": {
+      "file": "assets/selected/pending-integration/items/acting_director_badge/inspect.png",
+      "sha256": "a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch06-credentials-cargo",
+        "commit": "db91a0a1e49d308292fa68348bf5d06ee7548417",
+        "path": "review/chapter-02-batch06-2026-11-17/candidates/B-acting-director-badge-inspect.png"
+      }
+    },
+    "items:acting_director_badge#slot": {
+      "file": "assets/selected/pending-integration/items/acting_director_badge/slot.png",
+      "sha256": "a09dae0d8201b6062c51e4f5cc99c1e49b77240b400e7dbf5107bb805bf56c44",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch06-credentials-cargo",
+        "commit": "db91a0a1e49d308292fa68348bf5d06ee7548417",
+        "path": "review/chapter-02-batch06-2026-11-17/candidates/A-acting-director-badge-slot.png"
+      }
+    },
+    "items:certified_seed_canister#inspect": {
+      "file": "assets/selected/pending-integration/items/certified_seed_canister/inspect.png",
+      "sha256": "958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch06-credentials-cargo",
+        "commit": "db91a0a1e49d308292fa68348bf5d06ee7548417",
+        "path": "review/chapter-02-batch06-2026-11-17/candidates/D-certified-seed-canister-inspect.png"
+      }
+    },
+    "items:certified_seed_canister#slot": {
+      "file": "assets/selected/pending-integration/items/certified_seed_canister/slot.png",
+      "sha256": "0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch06-credentials-cargo",
+        "commit": "db91a0a1e49d308292fa68348bf5d06ee7548417",
+        "path": "review/chapter-02-batch06-2026-11-17/candidates/C-certified-seed-canister-slot.png"
+      }
+    },
     "items:desk_plant#inspect": {
       "file": "assets/selected/art/items/small_desk_plant_inspect.png",
       "sha256": "6880670a68a2baa48fe23afc22972a7be9197799ebbf454079d7127731a6eee7",

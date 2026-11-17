@@ -164,3 +164,12 @@ Each image shows its SHA-256, its source commit and path, and the game build tha
   - 7 Biology Park Batch 1 images (signage-polish-v02 for the Bureau, the formal entrance and Jungle Junction).
   - The deliberately unbound chair state.
 - **Not started:** every other Chapter 2 and Chapter 3 brief, including the eight unproduced death screens (docs/104).
+
+
+## Owner/Story Director dimension resolution — 2026-11-17
+
+For Chapter2 Batch7 and the current engine contract:Focus A is opaque564x278 at1x;inventory slots are transparent96x96;item inspection artwork is opaque565x451. Preserve the three existing botanical-treatment Focus records at564x278.
+
+The future565x451 Scene Pickup presentation is a separate contract,not a redefinition of current Focus A. Do not stretch or crop564x278 artwork to fill that future inspector. Any future565x451 composition must be independently authored for that presentation. No runtime behavior or dimension migration is authorized by this art-production decision.
+
+Verified integration evidence:game commit20b52601c5733a633a385bbb1c60995174e530cc declares `ART_CLASS.focus` size564x278,scale1 in game/js/stage.js;the importer enforces the same size. Report a contradictory current runtime before producing affected Focus art;continue unaffected item variants.

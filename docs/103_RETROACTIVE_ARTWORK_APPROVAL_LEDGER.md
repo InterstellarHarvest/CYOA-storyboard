@@ -107,3 +107,15 @@ Nate approved all five without changes;Art Director PASS A-E. Immutable source `
 | `scenes:biology_park/maintenance_exit` | `review/chapter-02-batch05-2026-11-17/candidates/C-maintenance-exit.png` | `1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7` |
 | `scenes:biology_park/agricultural_customs` | `review/chapter-02-batch05-2026-11-17/candidates/D-agricultural-customs.png` | `9bc80696f31efacdbba2babd95abfe460a9fb6158ad8b674299a91744403cdef` |
 | `scenes:biology_park/exposition_concourse` | `review/chapter-02-batch05-2026-11-17/candidates/E-exposition-concourse.png` | `8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3` |
+
+
+## Addendum — Chapter2 Batch6 owner selections,2026-11-17
+
+Nate approved all four without changes;Art Director PASS A-D. Immutable source `InterstellarHarvest/CYOA@db91a0a1e49d308292fa68348bf5d06ee7548417`;final review `4e1ab88a63cf830b829f88d51710eef25e729f95`,branch `agent/ch02-art-batch06-credentials-cargo`. Exact native PNGs registered through docs/105 `register-art.mjs --batch`. All96 prior selected images preserved. All four new production paths stay null;no self-integration. Source generations and processing history retained.
+
+| Record | Source path | SHA-256 |
+|---|---|---|
+| `items:acting_director_badge#slot` | `review/chapter-02-batch06-2026-11-17/candidates/A-acting-director-badge-slot.png` | `a09dae0d8201b6062c51e4f5cc99c1e49b77240b400e7dbf5107bb805bf56c44` |
+| `items:acting_director_badge#inspect` | `review/chapter-02-batch06-2026-11-17/candidates/B-acting-director-badge-inspect.png` | `a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d` |
+| `items:certified_seed_canister#slot` | `review/chapter-02-batch06-2026-11-17/candidates/C-certified-seed-canister-slot.png` | `0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998` |
+| `items:certified_seed_canister#inspect` | `review/chapter-02-batch06-2026-11-17/candidates/D-certified-seed-canister-inspect.png` | `958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7` |
