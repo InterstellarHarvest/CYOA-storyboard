@@ -1,0 +1,257 @@
+{
+  "schema": "cyoa-death-presentations-export-v1",
+  "source": "InterstellarHarvest/CYOA-storyboard",
+  "authority": "story/chapters/*.draft.json nodes[].deathPopup + story/artwork.draft.json deathScreens",
+  "entries": [
+    {
+      "id": "chapter-01:exit_chair_fatal",
+      "when": {
+        "end": "chapter-01:exit_chair_fatal"
+      },
+      "title": "PERMANENTLY SATISFIED.",
+      "subtitle": "REST ASSURED — TREATMENT COMPLETE",
+      "body": [
+        "You have achieved permanent relaxation. The House is delighted to report that its newest customer has stopped complaining."
+      ],
+      "narrativeBeat": "You have achieved permanent relaxation. The House is delighted to report that its newest customer has stopped complaining.",
+      "artwork": {
+        "id": "house_of_tomorrow/rest_assured",
+        "status": "approved",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": "art/deaths/rest_assured_voluntary.png",
+        "generatedPath": null,
+        "proposedPath": "art/deaths/rest_assured_voluntary.png",
+        "selectedSource": {
+          "repository": "InterstellarHarvest/CYOA",
+          "branch": "agent/rest-assured-death-visual-proof",
+          "path": "art/deaths/rest_assured_voluntary.png",
+          "gitBlob": "fe223d11d2b579777507762a2ddf885d6851d6c9",
+          "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
+          "dimensions": "314x206"
+        }
+      },
+      "popupStatus": "approved-art-copy-draft",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-02:fatal_sorter",
+      "when": {
+        "end": "chapter-02:fatal_sorter"
+      },
+      "title": "CLASSIFIED AS COMPOST.",
+      "subtitle": "MATERIAL PROCESSED",
+      "body": [
+        "The groundskeeper has converted your unsuccessful escape into a successful disposal. It records the improvement without requesting a signature."
+      ],
+      "narrativeBeat": "The groundskeeper has converted your unsuccessful escape into a successful disposal. It records the improvement without requesting a signature.",
+      "artwork": {
+        "id": "biology_park/classified_as_compost",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/classified_as_compost.png",
+        "selectedSource": null
+      },
+      "popupStatus": "existing-ending-popup-copy-draft",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-02:fatal_hopper",
+      "when": {
+        "end": "chapter-02:fatal_hopper"
+      },
+      "title": "NEW ARRIVAL.",
+      "subtitle": "PLANTED SUCCESSFULLY",
+      "body": [
+        "The Park welcomes its newest addition. Your commemorative marker is installed before anyone notices the visitor is missing."
+      ],
+      "narrativeBeat": "The Park welcomes its newest addition. Your commemorative marker is installed before anyone notices the visitor is missing.",
+      "artwork": {
+        "id": "biology_park/new_arrival",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/new_arrival.png",
+        "selectedSource": null
+      },
+      "popupStatus": "existing-ending-popup-copy-draft",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-02:fatal_transformation",
+      "when": {
+        "end": "chapter-02:fatal_transformation"
+      },
+      "title": "PERSONAL GROWTH.",
+      "subtitle": "CULTIVATION SUCCESSFUL",
+      "body": [
+        "The Park has improved your relationship with nature considerably. There is no recognizable visitor left to dispute the result."
+      ],
+      "narrativeBeat": "The Park has improved your relationship with nature considerably. There is no recognizable visitor left to dispute the result.",
+      "artwork": {
+        "id": "biology_park/personal_growth",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/personal_growth.png",
+        "selectedSource": null
+      },
+      "popupStatus": "existing-ending-popup-copy-draft",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-02:fatal_planting",
+      "when": {
+        "end": "chapter-02:fatal_planting"
+      },
+      "title": "RECLASSIFIED.",
+      "subtitle": "PLANTING MATERIAL ACCEPTED",
+      "body": [
+        "You attempted to leave through the waste hatch. The planting system has found a more productive destination for you."
+      ],
+      "narrativeBeat": "You attempted to leave through the waste hatch. The planting system has found a more productive destination for you.",
+      "artwork": {
+        "id": "biology_park/reclassified",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/reclassified.png",
+        "selectedSource": null
+      },
+      "popupStatus": "existing-ending-popup-copy-draft",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-02:fatal_roots",
+      "when": {
+        "end": "chapter-02:fatal_roots"
+      },
+      "title": "SITE IMPROVEMENT.",
+      "subtitle": "NEW UNDERGROUND FIXTURE APPROVED",
+      "body": [
+        "The roots finish sealing the service duct. Above you, the translator requests another buried fixture without bothering to ask its name."
+      ],
+      "narrativeBeat": "The roots finish sealing the service duct. Above you, the translator requests another buried fixture without bothering to ask its name.",
+      "artwork": {
+        "id": "biology_park/site_improvement",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/site_improvement.png",
+        "selectedSource": null
+      },
+      "popupStatus": "existing-ending-popup-copy-draft",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-03:end_reconciled",
+      "when": {
+        "end": "chapter-03:end_reconciled"
+      },
+      "title": "SUCCESSFULLY RECONCILED",
+      "subtitle": "PROPOSED FATAL ENDING — NEEDS OWNER REVIEW",
+      "body": [
+        "PROPOSED ONLY: The Pavilion's identity correction apparatus closes its file while the original occupant is still inside. The actual death mechanism and final joke are awaiting owner review."
+      ],
+      "narrativeBeat": "PROPOSED ONLY: The Pavilion's identity correction apparatus closes its file while the original occupant is still inside. The actual death mechanism and final joke are awaiting owner review.",
+      "artwork": {
+        "id": "pavilion/successfully_reconciled",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/ui/death/successfully_reconciled.png",
+        "selectedSource": null
+      },
+      "popupStatus": "proposed",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-03:end_archived",
+      "when": {
+        "end": "chapter-03:end_archived"
+      },
+      "title": "PERMANENTLY ARCHIVED",
+      "subtitle": "PROPOSED FATAL ENDING — NEEDS OWNER REVIEW",
+      "body": [
+        "PROPOSED ONLY: A hazardous retention shutter closes on an unresolved claimant. A cabinet registers a permanent administrative solution. The exact death mechanism awaits owner review."
+      ],
+      "narrativeBeat": "PROPOSED ONLY: A hazardous retention shutter closes on an unresolved claimant. A cabinet registers a permanent administrative solution. The exact death mechanism awaits owner review.",
+      "artwork": {
+        "id": "pavilion/permanently_archived",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/ui/death/permanently_archived.png",
+        "selectedSource": null
+      },
+      "popupStatus": "proposed",
+      "readyForGameplay": false
+    },
+    {
+      "id": "chapter-03:end_model_citizen",
+      "when": {
+        "end": "chapter-03:end_model_citizen"
+      },
+      "title": "A MODEL CITIZEN",
+      "subtitle": "ALL HUMAN REQUIREMENTS PERMANENTLY SATISFIED",
+      "body": [
+        "The Pavilion has preserved an authentic human. It neglected to preserve the air."
+      ],
+      "narrativeBeat": "The Pavilion has preserved an authentic human. It neglected to preserve the air.",
+      "artwork": {
+        "id": "pavilion/a_model_citizen",
+        "status": "not-started",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/ui/death/a_model_citizen.png",
+        "selectedSource": null
+      },
+      "popupStatus": "owner-approved",
+      "readyForGameplay": false
+    }
+  ]
+}

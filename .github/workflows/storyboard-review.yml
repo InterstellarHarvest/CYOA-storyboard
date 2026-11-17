@@ -21,6 +21,8 @@ jobs:
           node-version: "22"
       - name: Storyboard logic, timeline layout and Prologue/Chapter 3 snapshot checks
         run: node tools/storyboard/qa-smoke.mjs
+      - name: Verify death-popup game export matches authored fatal boxes
+        run: node tools/storyboard/export-death-presentations.mjs --check
       - name: Install Chromium and Firefox
         run: |
           npm install --no-save playwright@1.56.1
