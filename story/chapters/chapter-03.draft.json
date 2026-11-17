@@ -101,24 +101,24 @@
     "satisfy": {
       "mode": "narrative",
       "scene": "pavilion/satisfaction_demo",
-      "text": "Satisfaction Demonstration.",
+      "text": "The moment you step over the velvet rope, a bell rings. A recorded audience applauds. Two spotlights illuminate the toilet, and a mechanical voice announces: ANOTHER HUMAN NEED SUCCESSFULLY FULFILLED!\n\nYou haven't even sat down. A printer begins producing a transcript.\n\nVISITOR EXPERIENCE: COMPLETE\nPERSONAL RELIEF: ACHIEVED\nSATISFACTION LEVEL: 100%\n\nAttendant: Congratulations. Would you like a certificate?\nYou: I haven't used the toilet.\nAttendant: That isn't what the transcript says.\n\nBehind the demonstration curtain, something heavy rolls along a track. You notice that the toilet is mounted on wheels.",
       "choices": [
         {
           "id": "satisfy_0",
           "kind": "action",
-          "text": "CERTIFY SATISFACTION AND ACCEPT RECORD",
-          "to": "records"
-        },
-        {
-          "id": "satisfy_1",
-          "kind": "action",
-          "text": "REFUSE THE PREWRITTEN TRANSCRIPT",
-          "to": "a_review"
+          "text": "ACCEPT THE SATISFACTION CERTIFICATE.",
+          "to": "records",
+          "effects": {
+            "give": [
+              "pavilion_satisfaction_certificate"
+            ]
+          },
+          "notes": "OWNER APPROVED 2026-11-17: Accept the false satisfaction transcript and receive its official physical certificate as a retained item, pavilion_satisfaction_certificate; proceeds to Records, where document may assist later interactions. Item-art and production inventory registration are pending. Player still has not used a working restroom."
         },
         {
           "id": "satisfy_2",
           "kind": "action",
-          "text": "PULL THE PROJECTION CURTAIN'S RELEASE",
+          "text": "PULL THE PROJECTION CURTAIN'S RELEASE.",
           "check": {
             "id": "ch3_satisfy_2",
             "sides": 6,
@@ -130,24 +130,10 @@
           "fail": {
             "to": "correction"
           },
-          "notes": "Authoring check; proposed bonus: rubber_band_ball +1"
+          "notes": "OWNER APPROVED 2026-11-17: Risky attempt to expose rolling display-toilet backstage machinery. Hidden d6>=4, success -> a_backstage maintenance opening toward Presentation Control, failure -> nonfatal correction procedure; no surprise fatal outcome. Earlier proposed rubber_band_ball +1 remains UNAPPROVED and MUST NOT be wired until separately reviewed. Check has authored risk marker."
         }
       ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
-    },
-    "a_review": {
-      "mode": "narrative",
-      "scene": "pavilion/visitor_records",
-      "text": "Refusal recorded; one-way transfer to anticipated-conduct records.",
-      "choices": [
-        {
-          "id": "a_review_0",
-          "kind": "continue",
-          "text": "CONTINUE",
-          "to": "b_conduct"
-        }
-      ],
-      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+      "notes": "OWNER-APPROVED 2026-11-17 Satisfaction Demonstration scene and ONLY choices A and C (owner replied 'A and c'). A accepts fraudulent satisfaction certificate and moves to records; C pulls projection-curtain release with hidden d6>=4, success behind exhibit, failure nonfatal correction. Rejected B proposal 'REFUSE THE PREWRITTEN TRANSCRIPT' and its downstream a_review link are preserved here as retired creative ideas, NOT active player choices; since a_review had no other incoming links, its orphan scaffold node was retired to prevent a misleading extra storyboard box. No third active choice. Exact scene dialogue approved; art not yet inferred/generated."
     },
     "a_backstage": {
       "mode": "narrative",
