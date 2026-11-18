@@ -292,6 +292,36 @@ The attendant stops reading the record and looks at the protagonist, who has bee
 ---
 ---
 
+## CH3-DOOR-A/B/C — Door-slip consequences (owner-approved 2026-11-18)
+
+The owner replied **"good yes"** to **all three** proposed door-route consequences, including the **hidden d6 4+** for the dash. The three paths below are exclusive outcomes of CH3-002C's A/B/C choice cards. `CH3-DOOR-*` labels are provisional creative IDs so they cannot collide with the already approved Human Verification `CH3-003A/B/C` labels.
+
+### CH3-DOOR-A — So Close, and Yet So Far (CH3-002C choice A)
+
+**Hidden check:** Roll **d6 ≥ 4** (50% baseline) on choosing **MAKE A RUN FOR IT**. **No item modifier**, no item consumption and no alternate reroll; show standard authored risk/check marker on the choice card. The dash happens while the visitor holds open the working restroom's **exit door**. The main fixture area is visible, but an inner one-way gate separates it from the **exit vestibule**; this small layout detail should be foreshadowed in the finished scene so success does not promise an actual stall.
+
+- **PASS:** The protagonist evades the attendant, enters the tiled **exit vestibule** and comes agonizingly close to actual sinks/stalls, but the inner entry gate won't allow a completed experience to be restarted. A polite **EXIT ASSISTANCE** system delivers them down a short ramp to a maintenance worker who directs them toward the **backstage departure**. No bathroom use.
+- **FAIL:** The protagonist's shoe catches the rubber threshold mat; the attendant grabs their coat, and the helpful visitor grabs their arm. Three adults briefly form an absurd human chain; the attendant lets go and the protagonist and visitor fall safely onto the bench. The door closes. The attendant escorts the protagonist through the **public exterior exit**. **Early nonfatal ending**.
+
+**Locked distinctions:** Success and failure have different reachable destinations: backstage versus outside. No injury, lost item, bathroom use, Original revelation or additional check. The failure does not loop back to the entrance.
+
+### CH3-DOOR-B — An Act of Unscheduled Kindness (CH3-002C choice B)
+
+The visitor continues to hold the door open because his mother taught him to hold doors for people. The attendant pleads that this facilitates unauthorized entry; the visitor answers that he is simply holding a door. An overhead system declares **UNSCHEDULED ACT OF HUMAN COURTESY DETECTED** and initiates a **live courtesy demonstration**. The **entire movable door frame** rides sideways on a concealed rail with the visitor, attendant and protagonist, leaving the real restroom closed off by its inner security shutter. The visitor insists he does not want recognition; the machine awards him humility points. A spotlight and poorly timed canned applause follow: the protagonist recognizes the early applause as a mistake in the very work they once did as an **Applause Timing Technician** (a quiet Prologue callback). After the visitor releases the door, **DEMONSTRATION COMPLETE** appears and a rear service passage opens. The visitor says he tried.
+
+**Approved outcome:** **Backstage departure convergence**, living, no roll, item change, bathroom use or Original revelation. Preserve the real visitor's human kindness as the root of the absurd institutional spectacle.
+
+### CH3-DOOR-C — The World's Fastest Restroom Visit (CH3-002C choice C)
+
+The protagonist approaches the restroom's **EXIT THIS WAY** door backward, hoping the reader counts their movement as departure rather than entry. The system detects an exit and immediately celebrates **RESTROOM EXPERIENCE SUCCESSFULLY COMPLETED — ELAPSED TIME: ZERO SECONDS — NEW FACILITY RECORD**. The attendant reflexively applauds, then catches himself. A mechanical arm pins a **FASTEST SATISFIED VISITOR** ribbon to the protagonist's coat; a moving floor carries them outward through a designated exterior exit as the machine thanks them for their efficient participation. They still need the bathroom; a toilet flushes inside.
+
+**Approved outcome:** **Early nonfatal exterior exit**, no roll, injury, item consumption or revelation. The ribbon is **scene-only visual comedy, not an inventory reward or new mechanical status**. The system's delight and the player's frustration are the punch line.
+
+**Presentation:** Split physical comedy into second-person present-tense Narrative B as appropriate, and use dialogue mode when the attendant and visitor exchange actual remarks with the player. Preserve the already selected player cards (two actions, one spoken); do not auto-script extra protagonist speech or convert these outcomes into an additional menu.
+
+---
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -303,4 +333,4 @@ The attendant stops reading the record and looks at the protagonist, who has bee
 
 ## Next collaborative decision
 
-CH3-REC-A/B/C are owner-approved: receipt scanner → backstage, paper emergency → early outside exit, honest attendant → early service exit. **Next approve the consequences for CH3-002C's door-slip choices A/B/C**, including whether the physical dash has a hidden check and its exact thresholds, then consolidate surviving backstage/early exits. CH3-006A and CH3-006B remain approved; never revive the Original as a person.
+All CH3-REC-A/B/C and CH3-DOOR-A/B/C consequences are owner-approved; the door dash uses d6≥4 with no modifier, pass backstage / fail early outside. **Next consolidate the shared backstage departure** reached from Human Verification (CH3-005A, CH3-006A, CH3-006B pass), Record (CH3-REC-A) and Door (CH3-DOOR-A pass, CH3-DOOR-B); verify distinct early exits and write a short final chapter beat. Preserve the original record as unexplained paper, no bathroom use.
