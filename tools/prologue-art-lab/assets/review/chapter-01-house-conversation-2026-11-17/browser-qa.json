@@ -1,0 +1,117 @@
+{
+  "pass": true,
+  "browserVersion": "148.0.7778.96",
+  "currentCandidateCount": 2,
+  "native": [
+    {
+      "naturalWidth": 564,
+      "naturalHeight": 278,
+      "renderedWidth": 564,
+      "renderedHeight": 278,
+      "imageRendering": "crisp-edges"
+    },
+    {
+      "naturalWidth": 564,
+      "naturalHeight": 278,
+      "renderedWidth": 564,
+      "renderedHeight": 278,
+      "imageRendering": "crisp-edges"
+    }
+  ],
+  "four": [
+    {
+      "width": 2256,
+      "height": 1112,
+      "scrollWidth": 2280,
+      "clientWidth": 1340
+    },
+    {
+      "width": 2256,
+      "height": 1112,
+      "scrollWidth": 2280,
+      "clientWidth": 1340
+    }
+  ],
+  "mobile": {
+    "viewport": 390,
+    "bodyWidth": 390,
+    "candidateWidth": 564,
+    "scrollWidth": 588,
+    "clientWidth": 326
+  },
+  "allImages": [
+    {
+      "src": "candidates/A-lounge-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "references/lounge-scene.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/A-lounge-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/B-dining-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "references/dining-scene.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/B-dining-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "references/foyer-conversation.png",
+      "loaded": true
+    },
+    {
+      "src": "references/gallery-conversation.png",
+      "loaded": true
+    },
+    {
+      "src": "references/../candidates/A-lounge-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "references/../candidates/B-dining-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/A-lounge-conversation-v01.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/B-dining-conversation-v01.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/A-lounge-conversation-v02.png",
+      "loaded": true
+    },
+    {
+      "src": "candidates/B-dining-conversation-v02.png",
+      "loaded": true
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "native dimensions",
+    "integer 4x controls",
+    "pixelated image-rendering CSS",
+    "horizontal image scrolling",
+    "mobile body fits viewport",
+    "all gallery images loaded",
+    "both approved portraits visible in comparison",
+    "no JavaScript errors"
+  ],
+  "screenshots": [
+    "browser-qa/desktop-native.png",
+    "browser-qa/desktop-4x.png",
+    "browser-qa/mobile-native.png",
+    "browser-qa/approved-comparison-native.png"
+  ]
+}
