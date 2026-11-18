@@ -1,0 +1,310 @@
+{
+  "passed": true,
+  "candidateCount": 5,
+  "independentSourceRenderCount": 5,
+  "nativeDimensions": [
+    314,
+    206
+  ],
+  "nativeMode": "opaque RGB",
+  "popupScale": 2,
+  "popupDimensions": [
+    628,
+    412
+  ],
+  "inspectionScale": 4,
+  "inspectionDimensions": [
+    1256,
+    824
+  ],
+  "paletteColors": 64,
+  "dithering": "none",
+  "blurOrSoftInterpolation": "none",
+  "allCandidatesUnselected": true,
+  "allProductionPathsNull": true,
+  "originalTrackedFilesPreserved": 2001,
+  "preservationFailures": [],
+  "approvedReferenceHashesVerified": 18,
+  "uiTextControlsAndBackdropSeparate": true,
+  "environment": {
+    "python": "3.13.15 (v3.13.15:4061bc4c35f, Aug  5 2026, 09:08:51) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pillow": "12.3.0"
+  },
+  "assets": [
+    {
+      "id": "A",
+      "registryKey": "deathScreens:biology_park/classified_as_compost",
+      "title": "CLASSIFIED AS COMPOST.",
+      "candidatePath": "candidates/A-classified-as-compost.png",
+      "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "all255",
+      "visibleColors": 64,
+      "paletteMembershipVerified": true,
+      "dithering": "none",
+      "sourcePath": "generation-source/A-classified-as-compost-v01.png",
+      "sourceSha256": "2e36589fc9187106b17149bb7e4f4a2a05d7d31b0e3f423e4f7b0691b3375df4",
+      "sourceSize": [
+        1547,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "independentlyGenerated": true,
+      "nativeNormalization": "Whole canvas NEAREST to314x206, no crop or pad; inherited64-color palette without dithering",
+      "aspectRatioCorrectionPercent": 0.107202,
+      "rgbQuantizationRmse": 7.388,
+      "popupPreview": "previews/A-classified-as-compost-2x.png",
+      "popupDimensions": [
+        628,
+        412
+      ],
+      "inspectionPreview": "previews/A-classified-as-compost-4x.png",
+      "inspectionDimensions": [
+        1256,
+        824
+      ],
+      "exact2xVerified": true,
+      "exact4xVerified": true,
+      "uiTextBakedIntoArt": false,
+      "references": [
+        {
+          "path": "references/sorting_conveyor-4x.png",
+          "sha256": "62bff744da481e93f134cc3b9e3817d9c9429bada3b581ef00a42d5049712760",
+          "role": "approved primary scene/machinery identity"
+        },
+        {
+          "path": "references/waste_chute-4x.png",
+          "sha256": "2ec57848294e96459ec9b63a947325e554aa477c16fd543148771105d4b06ad8",
+          "role": "approved secondary infrastructure/greenhouse context"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "registryKey": "deathScreens:biology_park/new_arrival",
+      "title": "NEW ARRIVAL.",
+      "candidatePath": "candidates/B-new-arrival.png",
+      "sha256": "eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "all255",
+      "visibleColors": 64,
+      "paletteMembershipVerified": true,
+      "dithering": "none",
+      "sourcePath": "generation-source/B-new-arrival-v01.png",
+      "sourceSha256": "92b4842e9397a18d5c64700d5152c8337bcb5e4f8f5002ab87030ab7024625e4",
+      "sourceSize": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "independentlyGenerated": true,
+      "nativeNormalization": "Whole canvas NEAREST to314x206, no crop or pad; inherited64-color palette without dithering",
+      "aspectRatioCorrectionPercent": 0.04263,
+      "rgbQuantizationRmse": 7.283,
+      "popupPreview": "previews/B-new-arrival-2x.png",
+      "popupDimensions": [
+        628,
+        412
+      ],
+      "inspectionPreview": "previews/B-new-arrival-4x.png",
+      "inspectionDimensions": [
+        1256,
+        824
+      ],
+      "exact2xVerified": true,
+      "exact4xVerified": true,
+      "uiTextBakedIntoArt": false,
+      "references": [
+        {
+          "path": "references/planting_hopper-4x.png",
+          "sha256": "879de02fe05066740653a9fef0663257da1b2985ed9cc671c0d2cbd8def52722",
+          "role": "approved primary scene/machinery identity"
+        },
+        {
+          "path": "references/central_flower-4x.png",
+          "sha256": "dc8895bdef1479bbf05af18ef0eacefa53304b445768cb64bfc45ddfd482fd5c",
+          "role": "approved secondary infrastructure/greenhouse context"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "registryKey": "deathScreens:biology_park/personal_growth",
+      "title": "PERSONAL GROWTH.",
+      "candidatePath": "candidates/C-personal-growth.png",
+      "sha256": "8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "all255",
+      "visibleColors": 64,
+      "paletteMembershipVerified": true,
+      "dithering": "none",
+      "sourcePath": "generation-source/C-personal-growth-v01.png",
+      "sourceSha256": "a9b641c6fbf004e2e4107ee9cdb91edd0b51817edb1b93645685aa15c3ed277f",
+      "sourceSize": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "independentlyGenerated": true,
+      "nativeNormalization": "Whole canvas NEAREST to314x206, no crop or pad; inherited64-color palette without dithering",
+      "aspectRatioCorrectionPercent": 0.04263,
+      "rgbQuantizationRmse": 7.165,
+      "popupPreview": "previews/C-personal-growth-2x.png",
+      "popupDimensions": [
+        628,
+        412
+      ],
+      "inspectionPreview": "previews/C-personal-growth-4x.png",
+      "inspectionDimensions": [
+        1256,
+        824
+      ],
+      "exact2xVerified": true,
+      "exact4xVerified": true,
+      "uiTextBakedIntoArt": false,
+      "references": [
+        {
+          "path": "references/planting_machine-4x.png",
+          "sha256": "83efc906c72c126d0c74c148aee77295de39642ae9fb633a9c1571ae863963d9",
+          "role": "approved primary scene/machinery identity"
+        },
+        {
+          "path": "references/central_flower-4x.png",
+          "sha256": "dc8895bdef1479bbf05af18ef0eacefa53304b445768cb64bfc45ddfd482fd5c",
+          "role": "approved secondary infrastructure/greenhouse context"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "registryKey": "deathScreens:biology_park/reclassified",
+      "title": "RECLASSIFIED.",
+      "candidatePath": "candidates/D-reclassified.png",
+      "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "all255",
+      "visibleColors": 55,
+      "paletteMembershipVerified": true,
+      "dithering": "none",
+      "sourcePath": "generation-source/D-reclassified-v01.png",
+      "sourceSha256": "19d4439c5b09850bb2264ec825e54af5eff8a80e36e63c34b9129ae291fbedd8",
+      "sourceSize": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "independentlyGenerated": true,
+      "nativeNormalization": "Whole canvas NEAREST to314x206, no crop or pad; inherited64-color palette without dithering",
+      "aspectRatioCorrectionPercent": 0.04263,
+      "rgbQuantizationRmse": 5.886,
+      "popupPreview": "previews/D-reclassified-2x.png",
+      "popupDimensions": [
+        628,
+        412
+      ],
+      "inspectionPreview": "previews/D-reclassified-4x.png",
+      "inspectionDimensions": [
+        1256,
+        824
+      ],
+      "exact2xVerified": true,
+      "exact4xVerified": true,
+      "uiTextBakedIntoArt": false,
+      "references": [
+        {
+          "path": "references/planting_machine-4x.png",
+          "sha256": "83efc906c72c126d0c74c148aee77295de39642ae9fb633a9c1571ae863963d9",
+          "role": "approved primary scene/machinery identity"
+        },
+        {
+          "path": "references/waste_chute-4x.png",
+          "sha256": "2ec57848294e96459ec9b63a947325e554aa477c16fd543148771105d4b06ad8",
+          "role": "approved secondary infrastructure/greenhouse context"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "registryKey": "deathScreens:biology_park/site_improvement",
+      "title": "SITE IMPROVEMENT.",
+      "candidatePath": "candidates/E-site-improvement.png",
+      "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "all255",
+      "visibleColors": 56,
+      "paletteMembershipVerified": true,
+      "dithering": "none",
+      "sourcePath": "generation-source/E-site-improvement-v01.png",
+      "sourceSha256": "9d8ef172e1579d6688cfc1c1070025bf3f24967c7a5f76ae9aecc9e709695dbe",
+      "sourceSize": [
+        1547,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "independentlyGenerated": true,
+      "nativeNormalization": "Whole canvas NEAREST to314x206, no crop or pad; inherited64-color palette without dithering",
+      "aspectRatioCorrectionPercent": 0.107202,
+      "rgbQuantizationRmse": 9.238,
+      "popupPreview": "previews/E-site-improvement-2x.png",
+      "popupDimensions": [
+        628,
+        412
+      ],
+      "inspectionPreview": "previews/E-site-improvement-4x.png",
+      "inspectionDimensions": [
+        1256,
+        824
+      ],
+      "exact2xVerified": true,
+      "exact4xVerified": true,
+      "uiTextBakedIntoArt": false,
+      "references": [
+        {
+          "path": "references/translator_machine-4x.png",
+          "sha256": "6ed0370767d718532210d7fe09c98bc178619af7e6bff90a8ee8818732daeb01",
+          "role": "approved primary scene/machinery identity"
+        },
+        {
+          "path": "references/lower_irrigation-4x.png",
+          "sha256": "8eca164c2b2ba7129bb6add098059630cdbeb1b2a3c6710c4c140fc3280017f4",
+          "role": "approved secondary infrastructure/greenhouse context"
+        }
+      ]
+    }
+  ]
+}

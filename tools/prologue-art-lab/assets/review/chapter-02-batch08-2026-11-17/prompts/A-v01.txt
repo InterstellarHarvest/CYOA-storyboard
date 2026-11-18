@@ -1,0 +1,20 @@
+Use case: illustration-story. Generate ONE independent full-frame aftermath illustration for The Acceptable Error, Chapter2. Opaque RGB. Wide canvas aspect314:206 (1.52427:1), composed for native314x206 logical pixels. Intended popup display is exact2x628x412, but output ONLY the artwork with no frame or UI. Match the approved reference Chapter2 scene family: restrained institutional1960s gray metal, muted teal, ivory and subdued botanical greens, silver plumbing, glass greenhouse ribs. Clean purposeful chunky16/32bit pixel clusters, broad connected color regions, economical silhouettes; no grain, stippling, dithering, soft gradients, photorealism, polished3D, brass or steampunk. Strong main shape with only2-3 clear supporting environmental cues. All people are absent. Depict completed aftermath with machinery quiet and stationary, no active harm or transformation. Titles, subtitles, narrative prose, divider/separator, buttons, modal, darkened gameplay backdrop and interface belong to separately rendered UI and MUST NOT appear inside this image. Avoid words entirely; any physical administrative marker uses a leaf pictogram, checkmark or deliberate bars, never pseudo-lettering. Canonical UI wording below is contextual source metadata, not a request to print it.
+
+SUBJECT A / CLASSIFIED AS COMPOST: Automated sorting bay AFTER the compactor has completed processing. Image1 approved sorting conveyor is the architecture/machine identity reference: gray slatted stationary conveyor, muted-teal lower panels, industrial compactor arch and restrained greenhouse context. Image2 approved waste chute supplies secondary infrastructure design. Main silhouette is ONE neat sealed muted-green organic-waste collection bale/bin on the quiet conveyor, intact opaque covering with a simple botanical stamp. Compactor is at rest behind it. One small green completed-processing lamp/check indicator and a short disposal receipt emerging from a compact gray printer clearly register bureaucratic success. Receipt has deliberate bars only. Keep this a practical sorting bay, not a welcoming nursery or coffin. No human outline, clothing, body or recognizable remains. Convey the institution's entirely successful disposal through tidy containment and completed status, without showing the event. Printer/bale/green lamp must remain readable at314x206.
+
+Approved canonical source (verbatim values; all UI copy remains outside image):
+{
+  "record": {
+    "title": "CLASSIFIED AS COMPOST.",
+    "kind": "death-screen",
+    "status": "not-started",
+    "dimensions": "314x206",
+    "assetPath": null,
+    "suggestedFilename": "art/deaths/classified_as_compost.png",
+    "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Automated Biology Park sorting bay after compactor finishes: neat sealed green organic waste bale or collection bin, green MATERIAL PROCESSED status lamp, little paper disposal receipt from printer, silent conveyor. No person or remains shown; bureaucratic success."
+  },
+  "fatalTitle": "CLASSIFIED AS COMPOST.",
+  "fatalSubtitle": "MATERIAL PROCESSED",
+  "fatalNarrative": "The groundskeeper has converted your unsuccessful escape into a successful disposal. It records the improvement without requesting a signature.",
+  "associatedScene": "biology_park/sorting_conveyor"
+}

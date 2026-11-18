@@ -1,0 +1,20 @@
+Use case: illustration-story. Generate ONE independent full-frame aftermath illustration for The Acceptable Error, Chapter2. Opaque RGB. Wide canvas aspect314:206 (1.52427:1), composed for native314x206 logical pixels. Intended popup display is exact2x628x412, but output ONLY the artwork with no frame or UI. Match the approved reference Chapter2 scene family: restrained institutional1960s gray metal, muted teal, ivory and subdued botanical greens, silver plumbing, glass greenhouse ribs. Clean purposeful chunky16/32bit pixel clusters, broad connected color regions, economical silhouettes; no grain, stippling, dithering, soft gradients, photorealism, polished3D, brass or steampunk. Strong main shape with only2-3 clear supporting environmental cues. All people are absent. Depict completed aftermath with machinery quiet and stationary, no active harm or transformation. Titles, subtitles, narrative prose, divider/separator, buttons, modal, darkened gameplay backdrop and interface belong to separately rendered UI and MUST NOT appear inside this image. Avoid words entirely; any physical administrative marker uses a leaf pictogram, checkmark or deliberate bars, never pseudo-lettering. Canonical UI wording below is contextual source metadata, not a request to print it.
+
+SUBJECT E / SITE IMPROVEMENT: Low-angle view inside the narrow underground maintenance service duct BELOW the botanical translator AFTER thick roots have entirely sealed the passage. Image1 approved translator machine is authoritative gray/teal cabinet, paper printer, perforated-tape and gauge design; show only the relevant underside/overhead cabinet and printer above the duct. Image2 approved lower-irrigation scene supplies concrete service passage, gray pipe, brackets and utility context. Main silhouette is dense tangled ROOT BUNDLES spanning wall-to-wall and floor-to-ceiling across the narrow passage, blocking any usable exit. No active root movement or open crawl-through hole. Above them, the familiar translator printer calmly issues another ivory maintenance requisition, with graphic bars only; a small steady green lamp indicates routine operation. Cropped gray translator machinery overhead, one pipe/bracket and the paper feed provide2-3 secondary cues. No visible visitor, shoe, identifiable body or injury; omit the optional shoe to keep the aftermath anonymous. The humor is ordinary paperwork for a permanently obstructed service duct. Preserve institutional equipment continuity, not a generic forest cave. No readable words or interface.
+
+Approved canonical source (verbatim values; all UI copy remains outside image):
+{
+  "record": {
+    "title": "SITE IMPROVEMENT.",
+    "kind": "death-screen",
+    "status": "not-started",
+    "dimensions": "314x206",
+    "assetPath": null,
+    "suggestedFilename": "art/deaths/site_improvement.png",
+    "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Low-angle aftermath under botanical translator: dense thick roots seal entire narrow service duct, overhead translator prints a requisition for another buried fixture. Maybe one anonymous shoe sole behind roots, no face or injury; the absurdity is a civic request while the buried person is no longer visible."
+  },
+  "fatalTitle": "SITE IMPROVEMENT.",
+  "fatalSubtitle": "NEW UNDERGROUND FIXTURE APPROVED",
+  "fatalNarrative": "The roots finish sealing the service duct. Above you, the translator requests another buried fixture without bothering to ask its name.",
+  "associatedScene": "biology_park/translator_machine"
+}

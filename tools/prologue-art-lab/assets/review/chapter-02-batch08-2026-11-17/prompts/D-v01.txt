@@ -1,0 +1,20 @@
+Use case: illustration-story. Generate ONE independent full-frame aftermath illustration for The Acceptable Error, Chapter2. Opaque RGB. Wide canvas aspect314:206 (1.52427:1), composed for native314x206 logical pixels. Intended popup display is exact2x628x412, but output ONLY the artwork with no frame or UI. Match the approved reference Chapter2 scene family: restrained institutional1960s gray metal, muted teal, ivory and subdued botanical greens, silver plumbing, glass greenhouse ribs. Clean purposeful chunky16/32bit pixel clusters, broad connected color regions, economical silhouettes; no grain, stippling, dithering, soft gradients, photorealism, polished3D, brass or steampunk. Strong main shape with only2-3 clear supporting environmental cues. All people are absent. Depict completed aftermath with machinery quiet and stationary, no active harm or transformation. Titles, subtitles, narrative prose, divider/separator, buttons, modal, darkened gameplay backdrop and interface belong to separately rendered UI and MUST NOT appear inside this image. Avoid words entirely; any physical administrative marker uses a leaf pictogram, checkmark or deliberate bars, never pseudo-lettering. Canonical UI wording below is contextual source metadata, not a request to print it.
+
+SUBJECT D / RECLASSIFIED: Industrial planting-machine processing station AFTER the reclassification has finished. Image1 approved planting machine is authoritative machinery identity: steel/teal casing, shallow growing tray on scissor lift, standby soil hopper, two handling arms, formal gauges. Image2 approved waste chute supplies a clearly closed waste hatch with institutional hardware. Main shape is the neatly FILLED, level rectangular growing tray, with a formal ivory botanical-processing tag affixed to its front edge and one large clear teal CHECKMARK. Waste hatch is shut, hopper on standby with no material falling, handling arms neatly retracted. A compact green completed indicator may be present. More enclosed gray factory-service-bay framing than the bright welcoming nursery. Distinguish this from NEW ARRIVAL: level shallow tray, formal checkmark and closed waste hatch as bureaucratic sorting/reassignment, not a soil mound or welcome marker. No person, bodily outline, exposed contents, remains or active operation. Quiet completed administrative success; no words, title or UI.
+
+Approved canonical source (verbatim values; all UI copy remains outside image):
+{
+  "record": {
+    "title": "RECLASSIFIED.",
+    "kind": "death-screen",
+    "status": "not-started",
+    "dimensions": "314x206",
+    "assetPath": null,
+    "suggestedFilename": "art/deaths/reclassified.png",
+    "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Waste hatch and industrial planting-machine hopper returned to standby, a newly filled shallow growing tray with formal plant processing label and big checkmark. Neat automated handling arms and quiet stainless gray/green machinery. Distinct from nursery welcome marker in NEW ARRIVAL; no body shown."
+  },
+  "fatalTitle": "RECLASSIFIED.",
+  "fatalSubtitle": "PLANTING MATERIAL ACCEPTED",
+  "fatalNarrative": "You attempted to leave through the waste hatch. The planting system has found a more productive destination for you.",
+  "associatedScene": "biology_park/planting_machine"
+}
