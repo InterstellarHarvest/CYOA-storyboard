@@ -137,6 +137,23 @@ A second microphone drops before the protagonist. A sign announces **TEMPORARY P
 
 ---
 
+## CH3-004C — Temporary Presenter player choices (owner-selected 2026-11-18)
+
+Continuing from **CH3-003C Unauthorized Presenter**: a camera has misidentified the genuine human presenter; she stands trapped on a raised demonstration platform while the protagonist has been appointed temporary presenter. The protagonist has a microphone, a large green **BEGIN DEMONSTRATION** button, a public-address switch, and a covered manual emergency release. The lone audience member applauds at inappropriate moments. The presenter insists she has worked there for seventeen years, but the machine calls that irrelevant and describes her distress as **AUTHENTIC HUMAN ANXIETY: CONFIRMED**.
+
+The owner chose **A and C**. These are **alternative player actions**, not consecutive steps:
+
+- **A — PRESS BEGIN DEMONSTRATION.** The protagonist allows the equipment to test the unwilling presenter. The precise demonstration and its outcome remain to be developed, with a short funny result rather than another bureaucracy loop.
+- **C — PULL THE EMERGENCY RELEASE AND HELP HER DOWN.** The protagonist attempts to rescue the presenter. This should offer a distinct human interaction and consequences; it must not magically provide access to the restroom.
+
+**Retired from the active scene (preserved as an idea):**
+
+- **B — “ATTENTION! THE PUBLIC RESTROOM IS NOW OPEN!”** The proposed public-address announcement that might trigger institutional chaos was *not selected* at this decision point. Do not display it as a third choice unless separately revived.
+
+**Scope:** Only A/C player-action intents are owner-selected here. No outcome text, new fatal result, d6 target, item reward, or terminal departure has been approved. Preserve the one-use restroom refusal and the fact that every surviving route eventually leaves without relief or a revealed Original identity.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -148,4 +165,4 @@ A second microphone drops before the protagonist. A sign announces **TEMPORARY P
 
 ## Next collaborative decision
 
-CH3-003A/B/C consequences have now been owner-selected as distinct vignettes. **Develop CH3-003C's temporary-presenter incident and its next player actions**. Keep it lively and physical, not a return to another forms office. Later finish the rotating Urgency Exhibit (003A), Locomotion incident/check (003B), and the still-unwritten CH3-001 B/C approaches, before deciding natural reconvergence. Exact game check odds and remaining consequences need owner approval.
+CH3-004C retains the green-button demonstration (A) and helping the presenter down (C); the public-address announcement (B) is retired. **Develop the short, distinct consequences of A and C without adding another generic three-card test menu.** Then finish the earlier Urgency/Locomotion branches and Chapter 3 opening B/C before mapping natural convergence and exits. Exact check odds and other mechanic details remain open.
