@@ -1,0 +1,74 @@
+{
+  "tool": "built-in image_gen",
+  "canonicalSourceCommit": "69abc4d9859dda46f220f0da51b75fdf73be3f95",
+  "artworkBaseline": "2711cb1784aa368e790dcdf6992cd23f93eaf1d8",
+  "independentGenerationCount": 5,
+  "assets": {
+    "A": {
+      "key": "deathScreens:biology_park/classified_as_compost",
+      "source": "generation-source/A-classified-as-compost-v01.png",
+      "prompt": "prompts/A-v01.txt",
+      "references": [
+        "references/sorting_conveyor-4x.png",
+        "references/waste_chute-4x.png"
+      ],
+      "referenceRoles": [
+        "approved primary scene/machinery identity",
+        "approved secondary infrastructure/greenhouse context"
+      ]
+    },
+    "B": {
+      "key": "deathScreens:biology_park/new_arrival",
+      "source": "generation-source/B-new-arrival-v01.png",
+      "prompt": "prompts/B-v01.txt",
+      "references": [
+        "references/planting_hopper-4x.png",
+        "references/central_flower-4x.png"
+      ],
+      "referenceRoles": [
+        "approved primary scene/machinery identity",
+        "approved secondary infrastructure/greenhouse context"
+      ]
+    },
+    "C": {
+      "key": "deathScreens:biology_park/personal_growth",
+      "source": "generation-source/C-personal-growth-v01.png",
+      "prompt": "prompts/C-v01.txt",
+      "references": [
+        "references/planting_machine-4x.png",
+        "references/central_flower-4x.png"
+      ],
+      "referenceRoles": [
+        "approved primary scene/machinery identity",
+        "approved secondary infrastructure/greenhouse context"
+      ]
+    },
+    "D": {
+      "key": "deathScreens:biology_park/reclassified",
+      "source": "generation-source/D-reclassified-v01.png",
+      "prompt": "prompts/D-v01.txt",
+      "references": [
+        "references/planting_machine-4x.png",
+        "references/waste_chute-4x.png"
+      ],
+      "referenceRoles": [
+        "approved primary scene/machinery identity",
+        "approved secondary infrastructure/greenhouse context"
+      ]
+    },
+    "E": {
+      "key": "deathScreens:biology_park/site_improvement",
+      "source": "generation-source/E-site-improvement-v01.png",
+      "prompt": "prompts/E-v01.txt",
+      "references": [
+        "references/translator_machine-4x.png",
+        "references/lower_irrigation-4x.png"
+      ],
+      "referenceRoles": [
+        "approved primary scene/machinery identity",
+        "approved secondary infrastructure/greenhouse context"
+      ]
+    }
+  },
+  "immutableReviewCommit": "29cf835db830b527021040b4960a64ab83e3699d"
+}

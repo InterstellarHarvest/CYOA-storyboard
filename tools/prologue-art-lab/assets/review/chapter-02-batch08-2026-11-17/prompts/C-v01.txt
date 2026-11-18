@@ -1,0 +1,20 @@
+Use case: illustration-story. Generate ONE independent full-frame aftermath illustration for The Acceptable Error, Chapter2. Opaque RGB. Wide canvas aspect314:206 (1.52427:1), composed for native314x206 logical pixels. Intended popup display is exact2x628x412, but output ONLY the artwork with no frame or UI. Match the approved reference Chapter2 scene family: restrained institutional1960s gray metal, muted teal, ivory and subdued botanical greens, silver plumbing, glass greenhouse ribs. Clean purposeful chunky16/32bit pixel clusters, broad connected color regions, economical silhouettes; no grain, stippling, dithering, soft gradients, photorealism, polished3D, brass or steampunk. Strong main shape with only2-3 clear supporting environmental cues. All people are absent. Depict completed aftermath with machinery quiet and stationary, no active harm or transformation. Titles, subtitles, narrative prose, divider/separator, buttons, modal, darkened gameplay backdrop and interface belong to separately rendered UI and MUST NOT appear inside this image. Avoid words entirely; any physical administrative marker uses a leaf pictogram, checkmark or deliberate bars, never pseudo-lettering. Canonical UI wording below is contextual source metadata, not a request to print it.
+
+SUBJECT C / PERSONAL GROWTH: A completed botanical transformation displayed in a curated institutional greenhouse. Image1 approved planting machine supplies the planting-bed pedestal, safety rail and dormant industrial fittings; Image2 approved central flower supplies curated greenhouse architecture, botanical forms and artificial light, not the same giant flower design. Main subject is a dense irregular roughly person-sized mass of ROOTS, LEAVES and small FLOWERS growing together on the completed planting bed. It is wholly vegetation: no recognizable face, eyes, head, limbs, hands, clothing, living visitor or topiary person. Human-sized is a scale cue only, not anatomical form. Roots knot into the soil base, broad leaf clusters rise into an anonymous asymmetric botanical column, a few ivory/subdued red flowers emerge. One small green successful-cultivation lamp/check pictogram on a nearby gray control post is cheerfully affirmative. Machinery is at rest, transformation fully completed. Clean unhurried greenhouse order surrounds this peculiar cultivated mass. Shared aftermath for thorn and spore routes, not separate illustrations, no active effects, no readable treatment/outcome wording.
+
+Approved canonical source (verbatim values; all UI copy remains outside image):
+{
+  "record": {
+    "title": "PERSONAL GROWTH.",
+    "kind": "death-screen",
+    "status": "not-started",
+    "dimensions": "314x206",
+    "assetPath": null,
+    "suggestedFilename": "art/deaths/personal_growth.png",
+    "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Curated greenhouse, overgrown former visitor now ONLY a mass of foliage, roots and flowers in anonymous human-size shape, no recognizable person or face. Simple cheerful CULTIVATION SUCCESSFUL lamp; it is a completed botanical transformation, not a living conscious person. Applicable to shared thorn-or-spore ending."
+  },
+  "fatalTitle": "PERSONAL GROWTH.",
+  "fatalSubtitle": "CULTIVATION SUCCESSFUL",
+  "fatalNarrative": "The Park has improved your relationship with nature considerably. There is no recognizable visitor left to dispute the result.",
+  "associatedScene": "biology_park/planting_machine"
+}

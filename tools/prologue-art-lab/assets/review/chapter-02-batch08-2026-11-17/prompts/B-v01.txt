@@ -1,0 +1,20 @@
+Use case: illustration-story. Generate ONE independent full-frame aftermath illustration for The Acceptable Error, Chapter2. Opaque RGB. Wide canvas aspect314:206 (1.52427:1), composed for native314x206 logical pixels. Intended popup display is exact2x628x412, but output ONLY the artwork with no frame or UI. Match the approved reference Chapter2 scene family: restrained institutional1960s gray metal, muted teal, ivory and subdued botanical greens, silver plumbing, glass greenhouse ribs. Clean purposeful chunky16/32bit pixel clusters, broad connected color regions, economical silhouettes; no grain, stippling, dithering, soft gradients, photorealism, polished3D, brass or steampunk. Strong main shape with only2-3 clear supporting environmental cues. All people are absent. Depict completed aftermath with machinery quiet and stationary, no active harm or transformation. Titles, subtitles, narrative prose, divider/separator, buttons, modal, darkened gameplay backdrop and interface belong to separately rendered UI and MUST NOT appear inside this image. Avoid words entirely; any physical administrative marker uses a leaf pictogram, checkmark or deliberate bars, never pseudo-lettering. Canonical UI wording below is contextual source metadata, not a request to print it.
+
+SUBJECT B / NEW ARRIVAL: Botanical nursery AFTER planting machinery has finished. Image1 approved planting hopper is the specific machine, architecture and palette reference; Image2 approved central flower greenhouse supplies the artificial sun/arched ribs context only, not the giant flower itself. A fresh orderly low mound of rich soil in a rectangular planting bed is the main foreground shape. The familiar gray/teal hopper is returned to standby, outlet closed with NO falling soil. Two planting arms rest quietly away from the mound. A small upbeat welcoming botanical marker beside the mound has a cheerful sprout/sun pictogram, not writing or a funerary headstone. Artificial greenhouse light and a few teal glass ribs give a strangely welcoming nursery mood. No visitor, anatomical shape, burial in progress, body, clothes or moving machinery. Distinguish from industrial reclassification: this is a nursery welcome aftermath with ONE mound and cheerful marker, not a factory growing-tray processing station.
+
+Approved canonical source (verbatim values; all UI copy remains outside image):
+{
+  "record": {
+    "title": "NEW ARRIVAL.",
+    "kind": "death-screen",
+    "status": "not-started",
+    "dimensions": "314x206",
+    "assetPath": null,
+    "suggestedFilename": "art/deaths/new_arrival.png",
+    "prompt": "EXACT 314×206 logical-grid pixel-art AFTERMATH vignette for approved A1 death popup, drawn natively and displayed at exact 2× nearest-neighbor (628×412). Title, body, separator and controls are separate editable UI, NOT part of image. Crisp simplified 1960s institutional retrofuturist design (Brazil-like offness), readable purposeful clusters, restrained gray/teal/ivory colors; no face, gore, steampunk brass, blur or gratuitous dithering. The 1920×1080 screen behind the popup is frozen, block-pixelated 10×10 and darkened 65%. Distinctly depict what the world does after the death; wry bureaucratic humor, not violence in progress. Nursery packing hopper and planting arms at rest behind a fresh orderly mound of soil; small upbeat welcoming botanical marker beside it, harsh artificial sunlight and greenhouse ribs. No body; machine planted human visitor thinking it was transport."
+  },
+  "fatalTitle": "NEW ARRIVAL.",
+  "fatalSubtitle": "PLANTED SUCCESSFULLY",
+  "fatalNarrative": "The Park welcomes its newest addition. Your commemorative marker is installed before anyone notices the visitor is missing.",
+  "associatedScene": "biology_park/planting_hopper"
+}
