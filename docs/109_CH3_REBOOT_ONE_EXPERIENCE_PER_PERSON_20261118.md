@@ -265,6 +265,33 @@ The protagonist waits on a bench opposite the real restroom beneath a sign: **PL
 
 ---
 
+## CH3-REC-A/B/C — Record-route consequences (owner-approved 2026-11-18)
+
+The owner said **"love it all"**, approving all three complete consequence concepts presented after **CH3-002B — A Perfectly Accurate Record**. These outcomes are mutually exclusive; the numbering `CH3-REC-*` avoids a collision with previously selected `CH3-003B` (the Human Locomotion demonstration). Final playable node IDs may be normalized during authoring without losing this mapping.
+
+### CH3-REC-A — The Evidence Speaks for Itself (CH3-002B choice A)
+
+The protagonist presents the supposed Original's restroom record to the scanner. **DOCUMENT RECOGNIZED / ACCESS GRANTED**: the door opens enough for a roller to pull **the paper**, but not its human bearer, into the functioning restroom. The attendant stops the protagonist from following because only the record's identity has been confirmed. Insert one meaningful player-spoken choice beat, **"BUT THAT PIECE OF PAPER IS?"**, echoed before the attendant's absurd affirmative reply. A real toilet flushes; a new paper slip says **RESTROOM EXPERIENCE: SUCCESSFULLY COMPLETED**. The protagonist is designated a **DOCUMENT ESCORT** and led toward the service counter/backstage passage.
+
+**Approved outcome:** A living **backstage convergence**; no protagonist bathroom use, Original revelation, check, injury or item loss. The original paper is a prop, **not** an awarded inventory item. Its temporary/documentary access does not make the protagonist verified or grant unrestricted Pavilion authority. Humanity loses to paperwork, in a brisk physical gag.
+
+### CH3-REC-B — The Paper Problem (CH3-002B choice B)
+
+Pulling the impossibly long receipt causes the printer to accelerate and spill paper across counter and floor, entangling the attendant, an ornamental plant and another visitor. The attendant's desperate emergency action activates **PAPER EMERGENCY — EVACUATE THE EXPERIENCE AREA**; giant safety brushes sweep the protagonist and other bystanders through the exterior emergency doors. A closing gag has the attendant begging nobody to touch the receipt.
+
+**Approved outcome:** **Early nonfatal Chapter 3 exit**, alive and outside, with no dice roll, injury, lost inventory, restroom use or Original revelation. The physical evacuation is earned directly by the player's choice; no additional administrative maze or fake bathroom.
+
+### CH3-REC-C — An Honest Answer (CH3-002B choice C)
+
+The attendant stops reading the record and looks at the protagonist, who has been visibly waiting in discomfort. He admits he does **not** personally believe the protagonist already used the restroom. His job is to follow the document, not decide which of two contradictory observations is true. The player gets a meaningful **single spoken response card**, **"EVEN THOUGH YOU KNOW THE RECORD IS WRONG?"**, before he explains his limited authority. He sincerely regrets the situation and quietly opens a service door to help the protagonist leave before they are treated as a trespasser. He wishes the protagonist somewhere to go, **"in both senses."**
+
+**Approved outcome:** **Early living service-corridor exit**; a short, genuinely humane exchange within a foolish institution. No bathroom, proof of the Original, identity certification, check, item reward or item loss. The attendant's sympathy does not secretly override restroom access. Preserve this quiet emotional contrast against the other slapstick consequences.
+
+**Presentation obligation for all three:** Keep the attendant in dialogue mode with an appropriate portrait/view; use descriptive runs for machines, signs and physical movement. Never substitute a long B-only script of `ATTENDANT:` / `YOU:`. Insert the approved single-choice spoken beats where indicated. The player action and result advance forward, not back into a question bank.
+
+---
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -276,4 +303,4 @@ The protagonist waits on a bench opposite the real restroom beneath a sign: **PL
 
 ## Next collaborative decision
 
-CH3-002B (record) and CH3-002C (door) and **all six next choices** are now owner-selected. **Next author their consequences** in short, physical, humorous beats, preserving the attendant/visitor's human reactions, then consolidate surviving backstage/early exits. CH3-006A is an approved backstage convergence; CH3-006B is approved as hidden d6≥4 (+1 from held, unconsumed clicker), success backstage / failure safe exit. Do not revive the Original-as-person story.
+CH3-REC-A/B/C are owner-approved: receipt scanner → backstage, paper emergency → early outside exit, honest attendant → early service exit. **Next approve the consequences for CH3-002C's door-slip choices A/B/C**, including whether the physical dash has a hidden check and its exact thresholds, then consolidate surviving backstage/early exits. CH3-006A and CH3-006B remain approved; never revive the Original as a person.
