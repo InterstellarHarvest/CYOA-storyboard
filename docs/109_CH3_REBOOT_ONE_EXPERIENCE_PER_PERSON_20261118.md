@@ -154,6 +154,30 @@ The owner chose **A and C**. These are **alternative player actions**, not conse
 
 ---
 
+## CH3-005 — Temporary Presenter consequences (owner-approved 2026-11-18)
+
+The owner replied **“all good”** to both proposed results, including CH3-005C as an early living Chapter 3 exit. These are exclusive consequences of **CH3-004C A or C**. The old public-address B remains retired.
+
+### CH3-005A — Genuine Surprise! (CH3-004C A result)
+
+The temporary presenter presses **BEGIN DEMONSTRATION**. A sign announces **AUTHENTIC HUMAN RESPONSE TEST — GENUINE SURPRISE** with a countdown. The confetti cannon fires at **two**, rather than zero. The genuine presenter jumps and yells. The Pavilion certifies **GENUINE SURPRISE: CONFIRMED / AUTHENTIC HUMAN RESPONSE: 100%**, to recorded applause. She protests that it fired early; the machine insists that the unexpected timing made the surprise exceptional.
+
+The machine prints a **CERTIFIED AUTHENTIC HUMAN** certificate **for the presenter**, not the protagonist. She crumples it. **DEMONSTRATION COMPLETE — ALL PARTICIPANTS MUST EXIT** appears; the stage's backstage door unlocks. She tells the protagonist they are leaving.
+
+**Approved outcome:** The test succeeds on the wrong person. The protagonist remains unverified, has not used the restroom, and is carried toward a **backstage departure**, not automatically through a particular terminal door. Its final path/convergence remains to be decided. No new item is awarded merely because a certificate was printed for someone else.
+
+### CH3-005C — Unscheduled Human Kindness (CH3-004C C result)
+
+The protagonist lifts the emergency-release cover and pulls the red handle. The stage descends, freeing the real presenter. She thanks them; machinery complains **UNAUTHORIZED HUMAN INTERVENTION DETECTED / DEMOS MUST BE COMPLETED WITHOUT ASSISTANCE**. She switches off the announcer, silences the lone audience member's applause, and offers to help the protagonist escape through a maintenance service door.
+
+The protagonist reminds her about the bathroom. She acknowledges the problem but cannot grant access. She leads them to a service passage that opens toward daylight, apologizes for the restroom, and suggests the institution is a terrible way to run a place.
+
+**Owner-approved EARLY LIVING ENDING:** The protagonist exits the People's Pavilion via a service route, alive, with the restroom need unsatisfied and the Original record unexplained. The woman provided a rare moment of human kindness; she is a **candidate** recurring character, not a promised future companion or callback. Exact ending title, final text polish, item/flag state and art are not yet specified. There is **no extra check or surprise danger after the rescue** unless separately requested.
+
+**Continuity:** The two results are distinct; do not force them into an additional multi-office arc. A can converge at backstage departure; C is a valid early chapter exit. Neither verifies the protagonist's identity, consumes a restroom visit, or solves the false Original record.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -165,4 +189,4 @@ The owner chose **A and C**. These are **alternative player actions**, not conse
 
 ## Next collaborative decision
 
-CH3-004C retains the green-button demonstration (A) and helping the presenter down (C); the public-address announcement (B) is retired. **Develop the short, distinct consequences of A and C without adding another generic three-card test menu.** Then finish the earlier Urgency/Locomotion branches and Chapter 3 opening B/C before mapping natural convergence and exits. Exact check odds and other mechanic details remain open.
+CH3-005A Genuine Surprise and CH3-005C Unscheduled Human Kindness are owner-approved. C is an **early living Chapter 3 ending**; A proceeds toward a backstage departure not yet finalized. **Next develop CH3-003A Authentic Urgency and CH3-003B Human Locomotion**, keeping them compact and physically funny. Then tackle the CH3-001 B/C alternatives and resolve remaining exits/convergence. Do not revive the Original-as-person story.
