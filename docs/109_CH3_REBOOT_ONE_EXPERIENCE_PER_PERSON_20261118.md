@@ -90,6 +90,19 @@ The owner replied **“all 3 please and thank you”** to the opening incident's
 
 **Approval boundary:** Only the existence and broad intents of A/B/C are selected. The complete opening prose above is an unapproved illustration; no choice result text, dice thresholds, item interactions, NPC identities or artwork are locked. Do not convert unapproved consequences into playable JSON.
 
+## CH3-002A — Human Verification choices (owner-selected 2026-11-18)
+
+After CH3-001's **A — “I AM ME. I CAN PROVE IT.”**, the Story Director proposed a short live authenticity demonstration: a human presenter asks the protagonist to do something uniquely their own while a large camera, recorded laughter, and a thirty-second countdown turn the request into a public spectacle.
+
+The owner replied **“All 3”** to these three **mutually exclusive player actions**:
+
+- **A — “I'VE BEEN TRYING TO USE THE BATHROOM ALL DAY!”** Publicly explain the day's escalating frustration; this may lead to a ridiculous interpretation of genuine human need.
+- **B — STEP OFF THE PLATFORM AND HEAD BACK TOWARD THE RESTROOM.** Abandon the demonstration and try the real objective again; this may provoke a physical incident, possibly with a hidden check if the risk is genuinely authored.
+- **C — “HOW DO I KNOW YOU'RE REALLY THE PRESENTER?”** Reverse the identity challenge on the employee, creating a human-driven farce.
+
+**Approval boundary:** All three choice intents are approved as alternatives, **not** a required A→B→C sequence. The proposed presenter dialogue, exact card copy, individual outcomes, roll odds, inventory effects, and convergence are still being creatively developed; no playable Chapter 3 JSON, checks or art briefs are authorized by this log entry.
+
+---
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -101,4 +114,4 @@ The owner replied **“all 3 please and thank you”** to the opening incident's
 
 ## Next collaborative decision
 
-The opening has three owner-selected alternative actions. **Develop branch A's first substantive Human Verification incident next** (present a concrete funny situation and two or three player options), then develop B and C separately and determine if/where they reconverge. The exact opening narration and attendant remain editable. Do not independently author a complete new chapter as approved canon.
+CH3-001 and the three CH3-002A actions are now owner-selected. **Develop the immediate A/B/C results of Human Verification**, making each a distinct, short incident with tangible consequences. Avoid adding extra three-card menus without a reason. Then revisit CH3-001 branches B and C, and decide where any paths can reconverge. Scene wording and mechanics remain editable until specifically approved.
