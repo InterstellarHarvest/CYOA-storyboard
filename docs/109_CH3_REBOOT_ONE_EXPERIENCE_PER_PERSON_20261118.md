@@ -322,6 +322,60 @@ The protagonist approaches the restroom's **EXIT THIS WAY** door backward, hopin
 ---
 ---
 
+## CH3-EXIT — An Ordinary Door (owner-approved 2026-11-18)
+
+The owner replied **"sounds good"** to the shared backstage departure vignette. This is the single short concluding node for backstage survivors, distinct from multiple already approved early exterior/service exits.
+
+**Inputs (all previously approved):**
+
+1. CH3-005A Genuine Surprise → backstage.
+2. CH3-006A The Customer Comes First / Authentic Urgency → backstage.
+3. CH3-006B Human Locomotion **d6 pass** → backstage.
+4. CH3-REC-A Evidence Speaks for Itself / authorized document escort → backstage.
+5. CH3-DOOR-A So Close, Yet So Far **d6 pass** → backstage.
+6. CH3-DOOR-B Unscheduled Kindness / courtesy exhibit → backstage.
+
+**Approved Narrative B vignette (second-person present, concise):**
+
+> Behind the exhibits, the People's Pavilion is considerably less impressive.
+>
+> Painted scenery leans against concrete walls. Electrical cables hang from hooks. Someone has left half a sandwich on a crate labeled **SPONTANEOUS HUMAN RESPONSES**.
+>
+> Beside it sits an unopened carton: **GENUINE SURPRISE — REFILLS**.
+>
+> You pass a row of discarded certificates, an overturned podium, and a machine that appears to do nothing except applaud itself.
+>
+> Somewhere beyond the wall, a toilet flushes.
+>
+> You stop walking. The sound fades.
+>
+> You consider turning around. Then you remember what happened the last several times you tried to get into that bathroom.
+>
+> At the end of the corridor stands a plain metal door.
+>
+> **EXIT**
+>
+> No camera. No scanner. No instructions about who you are.
+>
+> You push the handle. The door opens.
+>
+> For a moment, the simplicity is almost suspicious.
+>
+> You step outside.
+>
+> Across the courtyard, another building has a sign displaying the familiar restroom symbol.
+>
+> You stare at it. Then you start walking.
+>
+> After all, that's what you were trying to do when this whole day began.
+
+**Outcome:** **Chapter 3 completed alive**, still urgently needing the bathroom. The system's "Original" remains no more than an unexplained, authoritative entry in its record; the protagonist does not prove identity, gain certification, visit the restroom or learn who/what originated the record. The next building's restroom symbol is a visual tease, **not** an authored Chapter 4 destination or implicit success.
+
+**Authoring:** One **Narrative B** scene, no NPC portrait, no new choice menu, dice roll, item receipt, or additional administrative complication. An automatic chapter-complete transition/presentation is allowed once implemented; if the prose needs pagination at runtime, use the existing presentation-level **CONTINUE** between paragraphs, not a new branching choice. The different arrival routes may use short preceding transitional descriptions but must not repeat or contradict the closing vignette. Preserve the six independent branches' earned outcomes before convergence.
+
+---
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -333,4 +387,4 @@ The protagonist approaches the restroom's **EXIT THIS WAY** door backward, hopin
 
 ## Next collaborative decision
 
-All CH3-REC-A/B/C and CH3-DOOR-A/B/C consequences are owner-approved; the door dash uses d6≥4 with no modifier, pass backstage / fail early outside. **Next consolidate the shared backstage departure** reached from Human Verification (CH3-005A, CH3-006A, CH3-006B pass), Record (CH3-REC-A) and Door (CH3-DOOR-A pass, CH3-DOOR-B); verify distinct early exits and write a short final chapter beat. Preserve the original record as unexplained paper, no bathroom use.
+CH3-EXIT — An Ordinary Door is owner-approved as the shared backstage departure for six routes. **Next: full route/narrative/presentation audit** against three Chapter 2 entrances, inherited inventory/conditions, missing edge connections, distinct early exits, and absent artwork/fatal-popup requirements. Then polish authoring into a new playable Chapter 3 JSON on the draft branch while keeping the original archive untouched. No Chapter 4 event or Original identity reveal is implied.
