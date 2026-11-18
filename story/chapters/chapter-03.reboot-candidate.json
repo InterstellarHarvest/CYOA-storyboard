@@ -114,6 +114,49 @@
           "text": "WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.",
           "to": "door_wait"
         }
+      ],
+      "show": {
+        "wc_key": {
+          "kind": "action",
+          "say": "SHOW THE ATTENDANT THE FACILITIES KEY AND ITS RETURNED TAG.",
+          "to": "attendant_key_callback"
+        }
+      }
+    },
+    "attendant_key_callback": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "speaker": "pavilion_attendant",
+      "pose": "idle",
+      "text": [
+        {
+          "desc": "You hold out the key. Its tag reads RETURNED TODAY, 4:52, with a signature in your own handwriting. The attendant compares the tag with the key still resting in your palm."
+        },
+        "Oh, splendid. You've returned it already.",
+        {
+          "desc": "He makes no attempt to take the key."
+        },
+        "Please don't return it again. Then we'd have to find out how you got it back."
+      ],
+      "choices": [
+        {
+          "id": "demand_human_verification_after_key",
+          "kind": "spoken",
+          "text": "I AM ME. I CAN PROVE IT.",
+          "to": "human_verification_arrival"
+        },
+        {
+          "id": "demand_record_of_original_after_key",
+          "kind": "spoken",
+          "text": "THEN SHOW ME WHO USED MY VISIT.",
+          "to": "record_print"
+        },
+        {
+          "id": "try_unapproved_restroom_entry_after_key",
+          "kind": "action",
+          "text": "WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.",
+          "to": "door_wait"
+        }
       ]
     },
     "human_verification_arrival": {
@@ -159,6 +202,58 @@
           "kind": "spoken",
           "text": "HOW DO I KNOW YOU'RE REALLY THE PRESENTER?",
           "to": "unauthorized_presenter"
+        }
+      ],
+      "show": {
+        "family_portrait_photo": {
+          "kind": "action",
+          "say": "SHOW THE PRESENTER THE HOUSE OF TOMORROW FAMILY PHOTO.",
+          "to": "photo_verification"
+        }
+      }
+    },
+    "photo_verification": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/human_verification_stage",
+      "speaker": "pavilion_presenter",
+      "pose": "excited",
+      "text": [
+        {
+          "desc": "You hold up the House of Tomorrow family photograph. Three empty chairs surround a fourth containing only your lap and torso. Your head is outside the frame. The camera zooms in on the paper."
+        },
+        "A photograph! Marvelous!",
+        {
+          "desc": "PHOTOGRAPH AUTHENTICITY: CONFIRMED, announces the display. Its counter begins flashing."
+        },
+        "We have conclusively established that this photograph is a photograph!"
+      ],
+      "choices": [
+        {
+          "id": "ask_whether_photo_proves_identity",
+          "kind": "spoken",
+          "text": "DOES IT PROVE I'M ME?",
+          "to": "photo_verification_reply"
+        }
+      ]
+    },
+    "photo_verification_reply": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/human_verification_stage",
+      "speaker": "pavilion_presenter",
+      "pose": "idle",
+      "text": [
+        "Goodness, no. We can't even see your face. But there's clearly a person-shaped part of someone in it, and that's more than the camera was asked to check.",
+        {
+          "desc": "The display awards you PARTICIPANT IN A SUCCESSFUL PHOTOGRAPH VERIFICATION. The presenter hands your photograph back and ushers you toward a side curtain."
+        },
+        "Wonderful work! The photograph can leave through the staff passage. You'd better go with it."
+      ],
+      "choices": [
+        {
+          "id": "escort_photo_backstage",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "backstage_exit"
         }
       ]
     },
@@ -461,6 +556,29 @@
           "kind": "spoken",
           "text": "DO YOU ACTUALLY BELIEVE I ALREADY USED THE BATHROOM?",
           "to": "attendant_honest"
+        }
+      ],
+      "use": {
+        "red_stapler": {
+          "kind": "action",
+          "say": "STAPLE THE RUNNING RECEIPT TO THE PRINTER'S OWN OUTPUT GUIDE.",
+          "effects": {
+            "take": ["red_stapler"]
+          },
+          "to": "stapler_printer_snarl"
+        }
+      }
+    },
+    "stapler_printer_snarl": {
+      "mode": "narrative",
+      "scene": "pavilion_reboot/record_printer",
+      "text": "You catch the endless receipt against the printer's output guide and drive the red stapler through both. The machine pulls its own paper back around the guide. The stapler follows with a metallic crunch and vanishes into the mechanism.\n\nThe printer begins feeding itself a loop of official evidence. PAPER SUPPLY: UNLIMITED. PAPER DESTINATION: PAPER SUPPLY. Somewhere inside the counter, a tiny warning bell rings until it gives up.\n\nA maintenance shutter opens. The attendant peers into the growing spiral, apparently deciding this is now a problem for someone downstairs. You're already going down the staff passage before he looks up. The stapler is gone for good.",
+      "choices": [
+        {
+          "id": "leave_printer_via_maintenance",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "backstage_exit"
         }
       ]
     },
