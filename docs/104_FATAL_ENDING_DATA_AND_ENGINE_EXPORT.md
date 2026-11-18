@@ -62,3 +62,25 @@ Each entry has stable `id`, `when.end`, `title`, `subtitle`, `body`, `narrativeB
 An already-approved image remains approved despite no public preview image bytes being mirrored. `not-started` art needs production; `proposed` ending narrative needs owner story approval. A popup text draft is not a finished owner-approved joke. New images follow normal Codex → ChatGPT review → approval → Gameplay PMO integration flow.
 
 The storyboard's death-popup inspector must clearly expose the title, narrative beat, and artwork record even when the approved illustration is not yet publicly previewable; it must never confuse a missing public thumbnail with a requirement to regenerate already-approved art.
+
+## Death-popup copy approval — 2026-11-18
+
+The Story Director approved the exact current title, subtitle and body text of the six death popups the game uses (PMO ruling, final PR #2 corrections):
+
+| Node | Title |
+|---|---|
+| `chapter-01:exit_chair_fatal` | PERMANENTLY SATISFIED. |
+| `chapter-02:fatal_sorter` | CLASSIFIED AS COMPOST. |
+| `chapter-02:fatal_hopper` | NEW ARRIVAL. |
+| `chapter-02:fatal_transformation` | PERSONAL GROWTH. |
+| `chapter-02:fatal_planting` | RECLASSIFIED. |
+| `chapter-02:fatal_roots` | SITE IMPROVEMENT. |
+
+**What changed:**
+- `deathPopup.status` moved to `owner-approved`. Each node's notes record the approval.
+- The derived export carries `popupStatus: owner-approved` and, since their art is integrated, `readyForGameplay: true`.
+
+**Not changed:**
+- No wording.
+- Artwork approval and integration status, which stay in the artwork catalog, separately.
+- Chapter 3 entries.

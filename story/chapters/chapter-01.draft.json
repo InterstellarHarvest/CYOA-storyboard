@@ -839,14 +839,14 @@
         }
       ],
       "end": true,
-      "notes": "Fatal ending, no carried condition.\nOwner ruling (2026-11-16): One shared fatal outcome and one popup/art for all three paths: accept_permanent_rest, failed stapler_breakout, failed physical_chair_breakout. Approved existing Rest Assured illustration reused regardless of cause. Popup prose remains provisional. Do not create separate fatal nodes or art.",
+      "notes": "Fatal ending, no carried condition.\nOwner ruling (2026-11-16): One shared fatal outcome and one popup/art for all three paths: accept_permanent_rest, failed stapler_breakout, failed physical_chair_breakout. Approved existing Rest Assured illustration reused regardless of cause. Popup prose remains provisional. Do not create separate fatal nodes or art.\nSTORY DIRECTOR APPROVAL 2026-11-18 (PMO ruling, final PR #2 corrections): death-popup copy approved exactly as written: title \"PERMANENTLY SATISFIED.\", subtitle \"REST ASSURED — TREATMENT COMPLETE\", body unchanged. deathPopup.status approved-art-copy-draft -> owner-approved. Artwork approval and integration status are separate (artwork catalog).",
       "deathPopup": {
         "id": "rest_assured",
         "title": "PERMANENTLY SATISFIED.",
         "subtitle": "REST ASSURED — TREATMENT COMPLETE",
         "description": "You have achieved permanent relaxation. The House is delighted to report that its newest customer has stopped complaining.",
         "button": "BEGIN AGAIN",
-        "status": "approved-art-copy-draft",
+        "status": "owner-approved",
         "artRef": "house_of_tomorrow/rest_assured"
       },
       "endingArt": "house_of_tomorrow/rest_assured"
