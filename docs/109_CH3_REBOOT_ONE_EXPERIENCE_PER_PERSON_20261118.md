@@ -3,7 +3,7 @@
 ## The People's Pavilion / *One Experience Per Person* (working subtitle)
 
 **Date:** 2026-11-18  
-**Status:** Owner-approved **new premise and story constraints**; exploratory incidents, sample prose, possible choices, and ending concepts below are **NOT YET owner-approved**. This is a story-development brief, not playable Chapter 3 JSON or an art production order.
+**Status:** Owner-approved **new premise and story constraints**. On 2026-11-18 the owner also selected **all three CH3-001 opening player actions (A, B, C) as mutually exclusive alternatives**. Sample narration, exact card wording, branch consequences, tests, items, and ending concepts remain subject to collaborative approval. This is a story-development brief, not playable Chapter 3 JSON or an art production order.
 
 ## Why the previous chapter was retired
 
@@ -80,13 +80,15 @@ He folds the paper towel very carefully. "Wouldn't know. Never happened to me."
 
 The door locks behind him.
 
-### Candidate first-choice directions (not approved)
+### CH3-001 first-choice alternatives — ALL THREE OWNER-SELECTED (2026-11-18)
 
-- **A — Insist on a live identity demonstration.** A genuine human employee takes the complaint seriously, but the Pavilion's idea of demonstrating humanity is spectacularly flawed.
-- **B — Demand to see the record of the supposed prior visit.** The evidence is officially complete but physically unhelpful; the player learns just enough to become more suspicious without solving the mystery.
-- **C — Attempt to enter while the door is open.** A physical, potentially risky incident moves forward immediately; no generic loop back to the attendant. Exact danger/odds and outcome to be designed.
+The owner replied **“all 3 please and thank you”** to the opening incident's three options. Treat them as **three different available player choices**, not as a sequence the player performs in order. The player-facing wording below is a working editorial draft; the action intents are approved.
 
-The Story Director should present these, recommend a creative direction, and let the owner keep, combine, reject, or replace them. **Do not convert the sample into approved playable JSON until reviewed.**
+- **A — “I AM ME. I CAN PROVE IT.”** Demand to prove your own identity. This leads toward an absurd live human-verification incident. Exact NPC, evidence and outcome to be developed collaboratively.
+- **B — “THEN SHOW ME WHO USED MY VISIT.”** Demand to see the record of the supposed prior visit. The response should be funny and unhelpful, with a possible hint but **no explanation of the other identity**. Exact record and consequence to be developed collaboratively.
+- **C — WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.** Attempt physical circumvention. A hidden d6 check may be appropriate if genuine risk is authored; **no odds, injury, item loss or fatal result is approved yet**. Failure must advance to a new incident, not return to the same menu.
+
+**Approval boundary:** Only the existence and broad intents of A/B/C are selected. The complete opening prose above is an unapproved illustration; no choice result text, dice thresholds, item interactions, NPC identities or artwork are locked. Do not convert unapproved consequences into playable JSON.
 
 ## Production and archival rules
 
@@ -99,4 +101,4 @@ The Story Director should present these, recommend a creative direction, and let
 
 ## Next collaborative decision
 
-Work on **Incident 1 — The Restroom Refusal**. Decide the actual scene's human attendant, the most amusing enforcement of the one-use policy, and two or three first player actions. Continue branch by branch, with owner creative choices at each meaningful incident. Do not independently author a complete new chapter as approved canon.
+The opening has three owner-selected alternative actions. **Develop branch A's first substantive Human Verification incident next** (present a concrete funny situation and two or three player options), then develop B and C separately and determine if/where they reconverge. The exact opening narration and attendant remain editable. Do not independently author a complete new chapter as approved canon.
