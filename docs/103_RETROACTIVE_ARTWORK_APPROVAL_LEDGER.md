@@ -135,3 +135,8 @@ Nate finally approved A–H without changes. Source InterstellarHarvest/CYOA, br
 | F | `items:botanical_antidote_maintenance#inspect` | `f59a324d74a3a7bd772858a858f9bad95809fbdf83fa16f876563f1a20493c88` |
 | G | `focus:biology_park/agricultural_customs/exposure_dispenser_open` | `c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b` |
 | H | `items:botanical_antidote_customs#slot` | `da857214a1bf850dbae043d32afa63db2423e57eafe3462186d0d685b9610e19` |
+
+
+## Chapter2 Batch7 final Customs inspector approval — 2026-11-17
+
+Nate approved the revised I without changes; Art Director PASS. Register items:botanical_antidote_customs#inspect from InterstellarHarvest/CYOA, branch agent/ch02-art-batch07-treatment-kits, final review2711cb1784aa368e790dcdf6992cd23f93eaf1d8, path review/chapter-02-batch07-polish-2026-11-17/candidates/I-customs-antidote-inspect-background-polish-v01.png, exact SHA-25635da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc. Original pixel revision5174b3cc5414f18b3971af8bcbb9f7d499eaf90f. Previous108 selected entries/PNGs preserved; total109. A-H approval32971f8743851b1ed6997f629ad1c91076d9962c and narrative correction45b0488af8c0e4539105810b21d0651c1b7f49fa are already final and were not repeated. Batch7 complete; production paths remain null; no gameplay integration.
