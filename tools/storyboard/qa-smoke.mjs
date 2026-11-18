@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -112,7 +113,9 @@ assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
 // The header lists exactly the manifest's chapters, in order; every chapter's art resolves through
 // the ONE shared artwork catalog (no per-chapter art catalogs).
 assert.deepEqual(manifest.chapters.map(c=>[c.id,c.title,c.status]),[
-  ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'draft']],'manifest chapters, order, titles, draft status');
+  ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'archived']],'manifest chapters, order and Chapter 3 reboot archive status');
+const archivedChapter3=fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'));
+assert.equal(createHash('sha256').update(archivedChapter3).digest('hex'),'02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1','legacy Chapter 3 narrative is preserved byte-for-byte in the reboot archive');
 const chapters=manifest.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(root,'story',c.file),'utf8')));
 const fatalIds={
   'chapter-01':['exit_chair_fatal'],

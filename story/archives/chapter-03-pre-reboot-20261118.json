@@ -1,0 +1,1507 @@
+{
+  "title": "The People's Pavilion — All Persons Accounted For",
+  "start": "pavilion_arrival",
+  "scene": "pavilion/arrival",
+  "nodes": {
+    "attend": {
+      "mode": "narrative",
+      "scene": "pavilion/attendance",
+      "text": "Attendance informs you that your Pavilion visit is already complete and 100 percent satisfactory. A departure photograph shows an empty corridor. You are still here, still needing a bathroom.",
+      "choices": [
+        {
+          "id": "ch3_route_a",
+          "kind": "action",
+          "text": "FOLLOW THE HUMAN REQUIREMENTS SIGN.",
+          "to": "human",
+          "effects": {
+            "set": {
+              "ch3_primary_route": "A"
+            }
+          }
+        },
+        {
+          "id": "ch3_route_b",
+          "kind": "action",
+          "text": "DISPUTE THE COMPLETED VISIT.",
+          "to": "b_visit",
+          "effects": {
+            "set": {
+              "ch3_primary_route": "B"
+            }
+          }
+        },
+        {
+          "id": "ch3_route_c",
+          "kind": "action",
+          "text": "FOLLOW THE EXHIBIT PRINTER INTO OPERATIONS.",
+          "to": "c_control",
+          "effects": {
+            "set": {
+              "ch3_primary_route": "C"
+            }
+          }
+        }
+      ],
+      "notes": "Three narrative routes. APPROVAL SYNC 2026-11-17 (docs/106): Route A decisions and the Grand Reconciliation finale are owner-approved through 2026-11-17; several Route A scene texts remain pending editorial synchronization (see each node). Superseded note: \"Route A and finale remain proposed, not finalized collaboratively.\""
+    },
+    "human": {
+      "mode": "narrative",
+      "scene": "pavilion/human_requirements",
+      "text": "You follow a sign reading HUMAN REQUIREMENTS — ALL NEEDS PROVIDED FOR.\n\nBeyond it, a model bathroom sits behind a velvet barrier. The toilet is immaculate. A speaker produces the sound of flushing every forty-five seconds.\n\nA plaque explains:\n\nPERSONAL HYGIENE EXPERIENCE\nSATISFACTION GUARANTEED\nWATER CONNECTION NOT REQUIRED\n\nYou ask an attendant where the actual restroom is.\n\nAttendant: You're looking at it.\nYou: Can I use it?\nAttendant: Certainly. You're using it right now.\n\nBehind the exhibit, a thick service pipe vibrates with the unmistakable sound of real running water. Nearby, a booth recruits visitors to demonstrate basic human needs.",
+      "choices": [
+        {
+          "id": "human_0",
+          "kind": "action",
+          "text": "CROSS THE BARRIER AND ATTEMPT TO USE THE DISPLAY RESTROOM.",
+          "to": "satisfy"
+        },
+        {
+          "id": "human_1",
+          "kind": "action",
+          "text": "FOLLOW THE WORKING-WATER SERVICE PIPE BEHIND THE EXHIBIT.",
+          "to": "a_plumb"
+        },
+        {
+          "id": "human_2",
+          "kind": "action",
+          "text": "REGISTER AS A LIVE HUMAN REQUIREMENTS DEMONSTRATOR.",
+          "to": "a_demo"
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 full Human Requirements introduction and all THREE mutually exclusive choices (user 'All 3'). The mock bathroom is a working exhibit without actual plumbing, with a prerecorded flush every forty-five seconds; attendant insists experiencing the display counts as having used the restroom. A takes player to Satisfaction Demonstration, B follows real-water service pipe, C becomes a live demonstrator. Each is forward-only and their separate downstream incidents remain to be drafted/approved. Approved narrative does not imply art is already generated or approved; scene remains pavilion/human_requirements. Keep second-person present tense, restroom unresolved and no protagonist face."
+    },
+    "a_plumb": {
+      "mode": "narrative",
+      "scene": "pavilion/human_requirements",
+      "text": "Working Water: you follow the real water service pipe through actual plumbing infrastructure behind the exhibit. It leads one way, into Presentation Control.",
+      "choices": [
+        {
+          "id": "a_plumb_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_control"
+        }
+      ],
+      "notes": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): WORKING WATER — a short Narrative B passage following the actual water infrastructure behind the exhibit, one-way to Presentation Control (c_control). Not a substantial NPC conversation. No item or flag consequence is established, and none added. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_demo": {
+      "mode": "narrative",
+      "scene": "pavilion/human_requirements",
+      "text": "Human Demonstrator: you register as a live Human Requirements demonstrator. The brief demonstration ends with your record sent for anticipated-conduct review.",
+      "choices": [
+        {
+          "id": "a_demo_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): HUMAN DEMONSTRATOR — a brief Narrative B event after registering as a live Human Requirements demonstrator, one-way to Anticipated Conduct (b_conduct). Not a substantial NPC conversation; no immediate short-circuit to the finale. No item or flag consequence is established, and none added. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "satisfy": {
+      "mode": "narrative",
+      "scene": "pavilion/satisfaction_demo",
+      "text": "The moment you step over the velvet rope, a bell rings. A recorded audience applauds. Two spotlights illuminate the toilet, and a mechanical voice announces: ANOTHER HUMAN NEED SUCCESSFULLY FULFILLED!\n\nYou haven't even sat down. A printer begins producing a transcript.\n\nVISITOR EXPERIENCE: COMPLETE\nPERSONAL RELIEF: ACHIEVED\nSATISFACTION LEVEL: 100%\n\nAttendant: Congratulations. Would you like a certificate?\nYou: I haven't used the toilet.\nAttendant: That isn't what the transcript says.\n\nBehind the demonstration curtain, something heavy rolls along a track. You notice that the toilet is mounted on wheels.",
+      "choices": [
+        {
+          "id": "satisfy_0",
+          "kind": "action",
+          "text": "ACCEPT THE SATISFACTION CERTIFICATE.",
+          "to": "records",
+          "effects": {
+            "give": [
+              "pavilion_satisfaction_certificate"
+            ]
+          },
+          "notes": "OWNER APPROVED 2026-11-17: Accept the false satisfaction transcript and receive its official physical certificate as a retained item, pavilion_satisfaction_certificate; proceeds to Records, where document may assist later interactions. Item-art and production inventory registration are pending. Player still has not used a working restroom. APPROVAL SYNC 2026-11-17 (docs/106): item now registered in items.draft.json with pending (not-started) slot/inspect art requirements; no art exists."
+        },
+        {
+          "id": "satisfy_2",
+          "kind": "action",
+          "text": "PULL THE PROJECTION CURTAIN'S RELEASE.",
+          "check": {
+            "id": "ch3_satisfy_2",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_backstage"
+          },
+          "fail": {
+            "to": "correction"
+          },
+          "notes": "OWNER APPROVED 2026-11-17: Risky attempt to expose rolling display-toilet backstage machinery. Hidden d6>=4, success -> a_backstage maintenance opening toward Presentation Control, failure -> nonfatal correction procedure; no surprise fatal outcome. Earlier proposed rubber_band_ball +1 remains UNAPPROVED and MUST NOT be wired until separately reviewed. Check has authored risk marker."
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 Satisfaction Demonstration scene and ONLY choices A and C (owner replied 'A and c'). A accepts fraudulent satisfaction certificate and moves to records; C pulls projection-curtain release with hidden d6>=4, success behind exhibit, failure nonfatal correction. Rejected B proposal 'REFUSE THE PREWRITTEN TRANSCRIPT' and its downstream a_review link are preserved here as retired creative ideas, NOT active player choices; since a_review had no other incoming links, its orphan scaffold node was retired to prevent a misleading extra storyboard box. No third active choice. Exact scene dialogue approved; art not yet inferred/generated."
+    },
+    "a_backstage": {
+      "mode": "narrative",
+      "scene": "pavilion/satisfaction_demo",
+      "text": "Toilet rolls backstage; maintenance opening.",
+      "choices": [
+        {
+          "id": "a_backstage_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_control"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "records": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Satisfaction Records: the counter accepts your satisfaction certificate for correction, keeps a preprinted record of your future visit, and offers provisional staff authorization.",
+      "choices": [
+        {
+          "id": "records_0",
+          "kind": "action",
+          "text": "SUBMIT CERTIFICATE FOR CORRECTION",
+          "to": "reconcile"
+        },
+        {
+          "id": "records_1",
+          "kind": "action",
+          "text": "EXAMINE THE PREPRINTED FUTURE RECORD",
+          "to": "a_origrec"
+        },
+        {
+          "id": "records_2",
+          "kind": "action",
+          "text": "OBTAIN PROVISIONAL STAFF AUTHORIZATION",
+          "to": "a_staff"
+        }
+      ],
+      "notes": "OWNER-APPROVED ALL THREE CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A submit certificate for correction -> Reconciliation Office; B examine the preprinted future record -> Tomorrow's Complaint (a_origrec) -> Anticipated Conduct; C obtain provisional staff authorization -> Provisional Employment (a_staff) -> Presentation Control. Reached only after accepting the satisfaction certificate. No certificate consumption is established on any choice (C explicitly retains it); A's consumption is an open owner question (docs/106). Card wording aligned to the approved descriptions; final wording provisional. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_origrec": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Tomorrow's Complaint: the preprinted record already describes the complaint you have not yet made. It is not a prediction. It is an instruction to staff. The work order routes you to Anticipated Conduct.",
+      "choices": [
+        {
+          "id": "a_origrec_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): TOMORROW'S COMPLAINT — Narrative B. The preprinted future record is revealed to be an instruction to staff, NOT a supernatural prediction. One-way to Anticipated Conduct (b_conduct). No item or flag consequence is established, and none added. Superseded scaffold text: \"Replacement notice and forecast work order, one-way records route.\" Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_staff": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "Provisional Employment: you obtain provisional staff authorization. You keep the satisfaction certificate. The staff restroom is still unavailable. Your new duties begin in Presentation Control.",
+      "choices": [
+        {
+          "id": "a_staff_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_control"
+        }
+      ],
+      "notes": "OWNER-APPROVED SCENE DECISION (APPROVAL SYNC 2026-11-17 (docs/106)): PROVISIONAL EMPLOYMENT — Narrative B. Provisional staff authorization is acquired; the satisfaction certificate is RETAINED (not consumed). One-way to Presentation Control (c_control). No inventory effect is wired: whether the authorization is the registered item pavilion_temporary_staff_pass is an open owner decision (docs/106), so nothing was invented. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "reconcile": {
+      "mode": "narrative",
+      "scene": "pavilion/reconciliation_office",
+      "text": "Reconciliation Office.",
+      "choices": [
+        {
+          "id": "reconcile_0",
+          "kind": "action",
+          "text": "REQUEST ORIGINAL WITNESS'S PRESENCE",
+          "to": "witness"
+        },
+        {
+          "id": "reconcile_2",
+          "kind": "action",
+          "text": "ACCEPT DUPLICATE-PERSON CLASSIFICATION",
+          "to": "a_surplus"
+        }
+      ],
+      "notes": "OWNER-APPROVED ONLY A AND C (APPROVAL SYNC 2026-11-17 (docs/106)): A request the Original Witness -> witness; C accept duplicate-person classification -> Surplus Department. Retired B \"DEMAND PROOF OF LIVING BODY\" (living-body verification) and its only destination a_life are preserved in docs/106 as retired ideas, NOT active routes. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_surplus": {
+      "mode": "narrative",
+      "scene": "pavilion/surplus_department",
+      "text": "Surplus Department; no lethal chute.",
+      "choices": [
+        {
+          "id": "a_surplus_0",
+          "kind": "action",
+          "text": "CHALLENGE THE DUPLICATE ROUTING TAG",
+          "to": "stage_admin"
+        },
+        {
+          "id": "a_surplus_1",
+          "kind": "action",
+          "text": "FOLLOW SAFE SURPLUS PROPERTY TRANSFER",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A challenge duplicate routing -> administrative hearing (stage_admin); B follow the safe property transfer -> technical hearing (stage_tech). Neither introduces a surprise death. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "witness": {
+      "mode": "narrative",
+      "scene": "pavilion/original_witness",
+      "text": "Original Witness: behind a translucent partition, the Original answers outside its approved script. The hearing recorder detects the unauthorized response and logs it automatically. Nothing establishes what the Original physically is.",
+      "effects": {
+        "set": {
+          "ch3_original_independent_response_seen": true
+        }
+      },
+      "choices": [
+        {
+          "id": "witness_1",
+          "kind": "action",
+          "text": "RELEASE TRANSLUCENT WITNESS PARTITION",
+          "check": {
+            "id": "ch3_witness_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_techadj"
+          },
+          "fail": {
+            "to": "correction"
+          },
+          "notes": "OWNER-APPROVED (2026-11-17): hidden d6>=4; success -> Technical Adjustments, failure -> nonfatal correction. No modifier is approved: the earlier proposed timing_clicker +1 must NOT be wired without separate review."
+        },
+        {
+          "id": "witness_2",
+          "kind": "action",
+          "text": "DEMAND THE PHOTOGRAPHIC RECORDS",
+          "to": "image"
+        }
+      ],
+      "notes": "OWNER-APPROVED (APPROVAL SYNC 2026-11-17 (docs/106)): the Original speaks independently, outside its script; the recorder AUTOMATICALLY detects and records this unauthorized response, so this scene itself sets ch3_original_independent_response_seen (no player choice needed). That flag later grants the approved conditional Grand Reconciliation bonus (original_refusal +1). Player branches: B release partition (hidden d6>=4) and C demand photographic records. Retired A \"ASK AN UNSCRIPTED QUESTION\" and its only destination a_witstd (docs/106). NEVER establish what the Original physically is. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose.",
+      "speaker": "original_witness",
+      "pose": "screened"
+    },
+    "a_techadj": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "Technical Adjustments; original physical nature concealed.",
+      "choices": [
+        {
+          "id": "a_techadj_0",
+          "kind": "action",
+          "text": "PRESERVE THE FITTING ORDER NUMBER",
+          "to": "stage_records"
+        },
+        {
+          "id": "a_techadj_1",
+          "kind": "action",
+          "text": "FOLLOW MOVING PREPARATION PLATFORM",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A preserve the fitting-order number -> hearing records (stage_records); B follow the moving platform -> Human Behavior Workshop (c_workshop). The Original's physical nature stays concealed. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "image": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "Image Standards Archive; with-photo/no-photo alternative.",
+      "choices": [
+        {
+          "id": "image_1",
+          "kind": "action",
+          "text": "CHALLENGE THE APPROVED IMAGE WITH SOURCE EVIDENCE.",
+          "to": "a_fourth",
+          "notes": "Approved B, House-photograph state: shown only while family_portrait_photo is held; the photograph is the source evidence -> Fourth Chair. Same logical card as ch3_image_no_source_photo.",
+          "if": {
+            "has": "family_portrait_photo"
+          },
+          "displayGroup": "image_source_proof"
+        },
+        {
+          "id": "ch3_image_no_source_photo",
+          "kind": "action",
+          "text": "CHALLENGE THE APPROVED IMAGE WITH SOURCE EVIDENCE.",
+          "to": "a_empty",
+          "notes": "Approved B, no-photograph state: shown only while family_portrait_photo is NOT held -> Empty Claimant Photograph. Same logical card as image_1.",
+          "if": {
+            "lacks": "family_portrait_photo"
+          },
+          "displayGroup": "image_source_proof"
+        },
+        {
+          "id": "image_2",
+          "kind": "action",
+          "text": "INTERRUPT IMAGE APPROVAL PROCESSOR",
+          "check": {
+            "id": "ch3_image_2",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_exposure"
+          },
+          "fail": {
+            "to": "correction"
+          },
+          "notes": "OWNER-APPROVED (2026-11-17): hidden d6>=4; success -> Image Production (a_exposure), failure -> nonfatal correction. No modifier is approved: the earlier proposed nonstacking tool +1 must NOT be wired without separate review."
+        }
+      ],
+      "notes": "OWNER-APPROVED ONLY B AND C (APPROVAL SYNC 2026-11-17 (docs/106)): B challenge the approved image using source evidence, one logical card (displayGroup image_source_proof) with two inventory states — House photograph (family_portrait_photo) held -> Fourth Chair; not held -> Empty Claimant Photograph. The Chapter 1 photograph is never required. C interrupt the image processor, hidden d6>=4; success Image Production, failure nonfatal correction. Retired A \"INSPECT RAW PHOTOGRAPHIC NEGATIVES\" and its only destination a_negative (docs/106); its unused Focus A brief pavilion/image_negative is kept as a record only. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_empty": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "No-photo route; empty claimant photo with claimant number.",
+      "choices": [
+        {
+          "id": "a_empty_0",
+          "kind": "action",
+          "text": "PRESERVE THE EMPTY CLAIMANT PHOTOGRAPH",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        }
+      ],
+      "notes": "OWNER-APPROVED ONLY A (APPROVAL SYNC 2026-11-17 (docs/106)): preserve the empty claimant photograph as evidence; the scene grants pavilion_empty_claimant_photo (existing entry effect) and the choice advances through the administrative evidence route (stage_admin). Retired B \"TRACE THE PROCESS THAT ERASED THE CLAIMANT\" (docs/106). Alternate evidence must survive without the House photograph. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose.",
+      "effects": {
+        "give": [
+          "pavilion_empty_claimant_photo"
+        ],
+        "set": {
+          "pavilion_empty_photo_captured": true
+        }
+      }
+    },
+    "a_exposure": {
+      "mode": "narrative",
+      "scene": "pavilion/image_archive",
+      "text": "Image Production; partial figure image without face.",
+      "choices": [
+        {
+          "id": "a_exposure_0",
+          "kind": "action",
+          "text": "AUTHENTICATE THE UNAPPROVED EXPOSURE",
+          "to": "stage_records"
+        },
+        {
+          "id": "a_exposure_1",
+          "kind": "action",
+          "text": "FOLLOW PHOTOGRAPHIC SERVICE CABLE",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A authenticate the unapproved exposure -> hearing records (stage_records); B follow the service cable -> Presentation Feed (c_feed). Any figure in the exposure remains partial; the protagonist's face is never shown. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_fourth": {
+      "mode": "narrative",
+      "scene": "pavilion/fourth_chair",
+      "text": "The Fourth Chair; optional House photograph payoff.",
+      "choices": [
+        {
+          "id": "a_fourth_0",
+          "kind": "action",
+          "text": "SUBMIT SOURCE CONFLICT AND DEMAND A HOLD",
+          "to": "a_custody"
+        },
+        {
+          "id": "a_fourth_2",
+          "kind": "action",
+          "text": "INTERRUPT THE ORIGINAL FITTING MACHINERY — FATAL RISK.",
+          "check": {
+            "id": "ch3_a_fourth_2",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "a_repair"
+          },
+          "fail": {
+            "to": "a_calibration"
+          },
+          "notes": "OWNER-APPROVED (2026-11-17): hidden d6>=4; the card must visibly warn of potentially fatal machinery consequences before selection (FATAL RISK suffix, matching disposition_1). Failure is not itself fatal: it enters Live Source Calibration, whose only choice can kill. No modifier is approved: the earlier proposed tool +1 must NOT be wired without separate review."
+        }
+      ],
+      "notes": "OWNER-APPROVED ONLY A AND C (APPROVAL SYNC 2026-11-17 (docs/106)): A submit the source conflict and demand a custody hold -> Witness Custody; C interrupt the fitting machinery, hidden d6>=4, success -> a_repair, failure -> Live Source Calibration. C's card visibly warns of potentially fatal machinery consequences BEFORE selection. Retired B \"TRACE THE THREE EMPTY HOUSEHOLD CHAIRS\" and its only destination a_household (docs/106). Only reached while family_portrait_photo is held; the House photograph is scanned and RETURNED, never consumed. The source-contribution receipt stays on the existing scene-entry effect; whether it should instead follow a specific choice is an open owner question (docs/106). Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose.",
+      "focus": "pavilion/fourth_chair_source_photo",
+      "effects": {
+        "give": [
+          "pavilion_source_contribution_receipt"
+        ],
+        "set": {
+          "pavilion_house_photo_matched": true
+        }
+      }
+    },
+    "a_custody": {
+      "mode": "narrative",
+      "scene": "pavilion/fourth_chair",
+      "text": "Custody; fitting remains suspended.",
+      "choices": [
+        {
+          "id": "a_custody_0",
+          "kind": "action",
+          "text": "REQUEST SEPARATE SOURCE/REPRESENTATION STATUS",
+          "to": "stage_admin",
+          "effects": {
+            "set": {
+              "ch3_separate_identity_evidence": true
+            }
+          }
+        },
+        {
+          "id": "a_custody_1",
+          "kind": "action",
+          "text": "REQUEST DIRECT HEARING ON ORIGINAL'S CUSTODY",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "OWNER-APPROVED BOTH CHOICES (APPROVAL SYNC 2026-11-17 (docs/106)): A establish separate source/representation status, recording the supporting evidence (sets ch3_separate_identity_evidence) -> stage_admin; B request a direct hearing on the Original's custody -> stage_records. Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "a_repair": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "Witness fitting interrupted; sealed mobile witness staging.",
+      "choices": [
+        {
+          "id": "a_repair_0",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "a_calibration": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "Live Source Calibration: the interrupted fitting has begun calibrating its live source, and the live source is you. Once calibration begins there is no safe refusal. The emergency release is the only way out.",
+      "choices": [
+        {
+          "id": "a_calibration_1",
+          "kind": "action",
+          "text": "ATTEMPT THE EMERGENCY RELEASE — FATAL RISK.",
+          "check": {
+            "id": "ch3_a_calibration_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "stage_tech"
+          },
+          "fail": {
+            "to": "end_reconciled"
+          },
+          "notes": "OWNER-APPROVED (2026-11-17): hidden d6>=4; success -> escape through the technical passage (stage_tech); failure -> fatal SUCCESSFULLY RECONCILED. No modifier is approved: the earlier proposed tool +1 must NOT be wired without separate review."
+        }
+      ],
+      "notes": "OWNER-CORRECTED AND APPROVED (APPROVAL SYNC 2026-11-17 (docs/106)): ONLY B REMAINS. There is no safe refusal once calibration begins. B attempt the emergency release, hidden d6>=4: success escapes through the technical passage (stage_tech); failure is fatal SUCCESSFULLY RECONCILED (end_reconciled). The player was warned on the Fourth Chair card before choosing to interrupt the machinery. Retired A \"REFUSE LIVE FITTING; REQUEST SAFE HEARING\" (docs/106). Exact scene prose PENDING EDITORIAL SYNCHRONIZATION with the Story & Creative Director; the text field is a decision summary, not approved prose."
+    },
+    "correction": {
+      "mode": "narrative",
+      "scene": "pavilion/behavioral_correction",
+      "text": "Shared nonfatal correction for check failures, no rerolls.",
+      "choices": [
+        {
+          "id": "correction_0",
+          "kind": "action",
+          "text": "REQUEST SUPERVISED REVIEW OF THE CORRECTIVE ORDER",
+          "to": "stage_admin"
+        },
+        {
+          "id": "correction_1",
+          "kind": "action",
+          "text": "FOLLOW CORRECTION CONTROL CABLES TO THE HEARING'S SERVICE INTERFACE",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "UNREVIEWED PROPOSED SCENE/RESULT — retained as linked storyboard scaffold, not owner-approved narration."
+    },
+    "b_visit": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "Twelve empty desks display green CLERK PRESENT lamps. Your certified visit record says you departed three hours ago. The attached proof is a photograph of an empty corridor. A telephone rings; no one answers. Your bathroom complaint is stamped COMPLAINT RECEIVED AFTER DEPARTURE.",
+      "choices": [
+        {
+          "id": "ch3_b01_a",
+          "kind": "action",
+          "text": "DISPUTE THE DEPARTURE RECORD.",
+          "to": "b01_a"
+        },
+        {
+          "id": "ch3_b01_b",
+          "kind": "action",
+          "text": "REQUEST THE EXIT YOU ARE ALREADY AUTHORIZED TO USE.",
+          "to": "b01_b"
+        },
+        {
+          "id": "ch3_b01_c",
+          "kind": "action",
+          "text": "DEMAND TO KNOW WHO RECORDED YOUR DEPARTURE.",
+          "to": "b01_c"
+        }
+      ],
+      "notes": "Collaborative B01: A/B selected for development; C remains available."
+    },
+    "b_conduct": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "Predictions are followed by work orders: VISITOR WILL COMPLAIN; STAFF INSTRUCTION: EXTEND WAIT. Your own forecast says VISITOR WILL EXPRESS FRUSTRATION; STAFF INSTRUCTION: DENY DEPARTURE. ANTICIPATED CONDUCT: All successful predictions are supported by appropriate preparation.",
+      "choices": [
+        {
+          "id": "ch3_b02_a",
+          "kind": "action",
+          "text": "CHANGE THE PREDICTION TO REQUIRE IMMEDIATE ASSISTANCE.",
+          "to": "b02_a"
+        },
+        {
+          "id": "ch3_b02_b",
+          "kind": "action",
+          "text": "DELIBERATELY BEHAVE UNPREDICTABLY.",
+          "to": "b02_b"
+        },
+        {
+          "id": "ch3_b02_c",
+          "kind": "action",
+          "text": "TRACE THE PREDICTION TO ITS SOURCE.",
+          "to": "b02_c"
+        }
+      ],
+      "notes": "Collaboratively accepted all three distinct approaches."
+    },
+    "b_gate": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "The turnstile is locked. DEPARTURE CONTROL: Your departure has already been completed; physical participation is not required. It displays two registrations with your name and exposes a small departure counter that resets every six seconds.",
+      "choices": [
+        {
+          "id": "ch3_b03_a",
+          "kind": "action",
+          "text": "DEMAND THAT THE GATE HONOR ITS DEPARTURE AUTHORIZATION.",
+          "to": "b03_a"
+        },
+        {
+          "id": "ch3_b03_b",
+          "kind": "action",
+          "text": "MAKE THE GATE ACCOUNT FOR BOTH REGISTERED PARTICIPANTS.",
+          "to": "b03_b"
+        },
+        {
+          "id": "ch3_b03_c",
+          "kind": "action",
+          "text": "INTERFERE WITH THE DEPARTURE COUNTER.",
+          "check": {
+            "id": "ch3_departure_counter",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "b03_c_pass"
+          },
+          "fail": {
+            "to": "b03_c_fail"
+          },
+          "notes": "OWNER-LOCKED: timing_clicker OR red_stapler OR rubber_band_ball grants one +1; no stacking; no consumption. Runtime OR-condition needs implementation; do not misrepresent odds."
+        }
+      ],
+      "notes": "Collaboratively selected A, B, C. The counter outcome and +1 item rule are owner-approved.",
+      "focus": "pavilion/departure_counter"
+    },
+    "c_control": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "Reel-to-reel decks play HUMAN LAUGHTER and SPONTANEOUS APPLAUSE — SIX SECONDS. On a monitor, a figure raises a hand before the bell. MOVEMENT OCCURRED BEFORE INSTRUCTION. A disposal arm reaches for the incident report.",
+      "choices": [
+        {
+          "id": "ch3_c01_a_examiner",
+          "kind": "action",
+          "text": "ASSERT EXAMINER OR ACTING DIRECTOR INSPECTION AUTHORITY.",
+          "to": "c01_a",
+          "if": {
+            "has": "expo_examiner_badge"
+          },
+          "displayGroup": "credential_a",
+          "missingReason": "REQUIRES EXAMINER OR ACTING DIRECTOR BADGE"
+        },
+        {
+          "id": "ch3_c01_a_director",
+          "kind": "action",
+          "text": "ASSERT EXAMINER OR ACTING DIRECTOR INSPECTION AUTHORITY.",
+          "to": "c01_a",
+          "if": {
+            "has": "acting_director_badge",
+            "lacks": "expo_examiner_badge"
+          },
+          "displayGroup": "credential_a",
+          "missingReason": "REQUIRES EXAMINER OR ACTING DIRECTOR BADGE"
+        },
+        {
+          "id": "ch3_c01_b",
+          "kind": "action",
+          "text": "SAVE THE UNAUTHORIZED MOVEMENT RECORD.",
+          "to": "c01_b"
+        },
+        {
+          "id": "ch3_c01_c",
+          "kind": "action",
+          "text": "FOLLOW THE CONTROL CABLES.",
+          "to": "c01_c"
+        }
+      ],
+      "notes": "Owner ruling: A is one logical card requiring either badge; MUST appear disabled with reason if none; the two conditional source choices implement OR within current legacy gate schema, but disabled-card runtime UI awaits integration. B and C unconditional."
+    },
+    "c_workshop": {
+      "mode": "narrative",
+      "scene": "pavilion/human_behavior_workshop",
+      "text": "The cheerful Human Behavior Workshop demonstrates SPONTANEOUS LAUGHTER every six seconds and GENUINE SURPRISE after a countdown. FREE WILL offers I AGREE and I AGREE ENTHUSIASTICALLY. An empty pedestal says THE ORIGINAL HUMAN — CURRENTLY ON LOAN. Under it: REPLACEMENT ORIGINAL AVAILABLE UPON REQUEST. A smaller sign warns that volunteers must be suitable for PERMANENT DISPLAY.",
+      "choices": [
+        {
+          "id": "ch3_c02_a",
+          "kind": "action",
+          "text": "PARTICIPATE IN THE FREE WILL DEMONSTRATION.",
+          "to": "c02_a"
+        },
+        {
+          "id": "ch3_c02_b",
+          "kind": "action",
+          "text": "REQUEST A REPLACEMENT ORIGINAL — PERMANENT DISPLAY.",
+          "to": "end_model_citizen",
+          "notes": "Owner approved unavoidable fatal after commitment. Warning must appear BEFORE choice. No check, item rescue or last-minute escape."
+        },
+        {
+          "id": "ch3_c02_c",
+          "kind": "action",
+          "text": "SABOTAGE THE HUMAN BEHAVIOR DEMONSTRATIONS.",
+          "to": "c02_c"
+        }
+      ],
+      "notes": "Owner approved all three choices. B airtight coating suffocation death is locked. A/C consequences remain awaiting collaborative review.",
+      "focus": "pavilion/replacement_request_notice"
+    },
+    "c_feed": {
+      "mode": "narrative",
+      "scene": "pavilion/presentation_feed",
+      "text": "The Central Presentation Feed fills a vast room with film reels, pneumatic tubes and labeled cabinets. Two film projectors show ACTUAL EVENTS and APPROVED EVENTS. They are playing different films. A mechanical editor cuts footage from the first and replaces it with the second. A speaker announces that minor inconsistencies between reality and records are corrected at no inconvenience to the public. It adds that original events are destroyed after correction to prevent confusion. A dispatch cabinet offers two priority authorizations, but only one may be collected per participant. Additional authorizations may be requested after completion of your visit. Beyond the cabinet, a dispatch card summons CERTIFIED ORIGINAL AND PRESENT CLAIMANT to GRAND RECONCILIATION.",
+      "choices": [
+        {
+          "id": "ch3_c03_a",
+          "kind": "action",
+          "text": "OBTAIN PRESENTATION SERVICE AUTHORIZATION.",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "pavilion_finale_service_access": true
+            },
+            "give": [
+              "pavilion_presentation_service_authorization"
+            ]
+          }
+        },
+        {
+          "id": "ch3_c03_c",
+          "kind": "action",
+          "text": "OBTAIN THE CORRECTIVE BROADCAST OVERRIDE SEQUENCE.",
+          "to": "stage_tech",
+          "effects": {
+            "set": {
+              "pavilion_broadcast_route_prepared": true
+            },
+            "give": [
+              "pavilion_broadcast_override_sequence"
+            ]
+          }
+        }
+      ],
+      "notes": "Owner retained A and C as mutually exclusive choices; retired the former B diagnostic-record option from this encounter. A: player identifies HUMANITY as the presentation fault; the machine certifies fault and grants temporary Presentation Service personnel authorization, allowing a service-level position overlooking Grand Reconciliation. Not a hard badge gate or automatic registry rewrite. C: conflicting ACTUAL/APPROVED reels prompt a 'Public Information Opportunity'; a perforated Priority One corrective broadcast sequence is issued, useful in a later confrontation but not an automatic win. Both are deterministic, no check, each gives only its listed item/flag; both converge through stage_tech. Later finale authoring must give distinct consequences to these items. No unapproved Original autonomy inference."
+    },
+    "stage_admin": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The hearing admits disputed applicants, even without a certified document.",
+      "choices": [
+        {
+          "id": "continue_grand",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "grand"
+        }
+      ],
+      "notes": "PROPOSED brief staging, no extra player choice."
+    },
+    "stage_records": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "A docket lists a certified Original and a present Claimant under separate serials.",
+      "choices": [
+        {
+          "id": "continue_grand",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "grand"
+        }
+      ],
+      "notes": "PROPOSED brief staging, no extra player choice."
+    },
+    "stage_tech": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The service platform overlooks the Registrar's circular chamber.",
+      "choices": [
+        {
+          "id": "continue_grand",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "grand"
+        }
+      ],
+      "notes": "PROPOSED brief staging, no extra player choice."
+    },
+    "grand": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The Registrar presents a certified Original and a physically present claimant. One identity must be retained. A restroom sign requires proof of identity before access.",
+      "choices": [
+        {
+          "id": "grand_0",
+          "kind": "action",
+          "text": "CONTEST ORIGINAL'S EXCLUSIVE CERTIFICATION",
+          "check": {
+            "id": "ch3_grand_0",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_admin"
+          },
+          "fail": {
+            "to": "contest_inadmissible"
+          },
+          "notes": "OWNER-APPROVED 2026-11-17 complete certification-challenge prose/branch design (reply 'Ok'): This is ONE challenge card, NOT three additional cards. Universal argument (no evidence needed): You indicate the certified departure record. You: 'According to this, I've already left. Yet here I am.' Registrar: 'Yes. Your departure was processed very efficiently.' You: 'Then the record is wrong.' Registrar: 'Or your presence is.' OPTIONAL distinct evidence callback A, only if HOLDING family_portrait_photo: Registrar examines Fourth Chair photograph, counts three empty chairs and finds Pavilion attendance interpretation incompatible with image; protagonist only visible as partial lower body, never face; evidence does NOT prove Original fraud. OPTIONAL callback B, only if pavilion_free_will_refusal_witnessed: Mrs. Pruitt human witness confirms protagonist refused both choices at Free Will Demonstration, compares against certified consent; she is truthful and retains agency. Each present callback gets its OWN prose payoff, conditional on state; neither is required. Hidden d6>=4, +1 if EITHER optional evidence support available; NONSTACKING (both still +1). Success -> end_admin PERSONALLY RELEASED without correcting underlying certification; Original remains retained. Failure -> contest_inadmissible for exact failure prose, then Final Disposition. No automatic death. Exact universal opening dialogue and success/failure lines owner-approved; runtime must append appropriate callbacks before resolving check, without re-presenting additional choices. Bonus/conditional text implementation requires Gameplay PMO QA."
+        },
+        {
+          "id": "grand_1",
+          "kind": "action",
+          "text": "MANIPULATE PERSON REGISTRY",
+          "to": "registry"
+        },
+        {
+          "id": "grand_2",
+          "kind": "action",
+          "text": "ASK ORIGINAL TO CLAIM SEPARATE IDENTITY",
+          "check": {
+            "id": "ch3_grand_2",
+            "sides": 6,
+            "need": 5
+          },
+          "pass": {
+            "to": "end_two"
+          },
+          "fail": {
+            "to": "original_refusal"
+          },
+          "notes": "OWNER-APPROVED 2026-11-17: After the player invites Original to claim a separate identity, ORIGINAL independently chooses its response; no extra player choice cards select B versus C. Hidden d6 >=5 routes to B, a private self-chosen independent name and TWO PERSONS DEPART (end_two). Hidden check gets +1 if ch3_separate_identity_evidence OR pavilion_original_registration_discovered was recorded, never stacking. A failed first roll routes to C, Original's own refusal to sign the forced two-person classification, via original_refusal — NOT directly to Final Disposition. There, a separate hidden d6 >=4 is used, with +1 only if ch3_original_independent_response_seen was recorded earlier. Success -> provisional identity-under-review living ending, failure -> Final Disposition's safe voluntary identity surrender or warned potentially fatal shutter attempt. B and C are alternatives; Original retains autonomy, never reveals its private name or nature, and the protagonist's face is never shown. A (unscripted declaration as this finale response) is retired. All check odds approved; B's TWO PERSONS DEPART narration and confidentiality are owner-approved, C final wording and production modifier wiring still require review."
+        }
+      ],
+      "notes": "OWNER-APPROVED GRAND RECONCILIATION DESIGN: three mutually exclusive approaches (contest certification; manipulate registry; ask Original to choose independent identity). The certification approach incorporates 3 evidence paths: universal basic contradiction, optional held family_portrait_photo Fourth Chair callback, optional Mrs. Pruitt testimony conditioned on pavilion_free_will_refusal_witnessed. These are NOT three further player options. Each optional evidence path has a separate narrative payoff; neither is required. Preserve Original ambiguity and never show protagonist face. Resolve exact dice modifiers, outcomes, fallback and final prose collaboratively; current grand and disposition graph remains provisional. 2026-11-17 owner-approved Original-led split: grand_2 hidden d6>=5 (+1 if ch3_separate_identity_evidence OR pavilion_original_registration_discovered; nonstacking) selects private-name B on success and independent refusal C on failure. C then checks d6>=4 (+1 if ch3_original_independent_response_seen), success provisional IDENTITY UNDER REVIEW, failure Final Disposition. B/C are not player-selected; no forced assent, no revealed Original identity. Exact ending prose and runtime modifier QA remain pending. 2026-11-17 owner-approved certification check: grand_0 hidden d6>=4, +1 from EITHER held family_portrait_photo or witnessed Mrs. Pruitt contradiction (pavilion_free_will_refusal_witnessed), nonstacking. Universal present-versus-certified-departed contradiction always available; evidence callbacks are conditional inside one card. Success PERSONAL EXCEPTION release without modifying Pavilion records; failure Final Disposition. Exact prose and runtime conditional modifiers pending.",
+      "speaker": "registrar",
+      "pose": "idle"
+    },
+    "registry": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "You approach the Registrar's filing apparatus. 'Those drawers are restricted,' he says. You point out that your name appears under two incompatible classifications. 'That's perfectly normal. The Pavilion recognizes several different kinds of people.' You ask which kind you're supposed to be. 'That depends entirely on which department you ask.' A sign reads PERSONNEL RECORDS — PLEASE DO NOT CONFUSE WITH PERSON RECORDS. Beneath it: Corrections to reality must be submitted in writing. You may either quietly remove your Pavilion claimant registration or broadcast both incompatible certified records; only one approach can be attempted.",
+      "choices": [
+        {
+          "id": "registry_0",
+          "kind": "action",
+          "text": "QUIETLY REMOVE YOUR PAVILION REGISTRATION.",
+          "check": {
+            "id": "ch3_registry_0",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_unreg"
+          },
+          "fail": {
+            "to": "disposition"
+          },
+          "notes": "OWNER-APPROVED 2026-11-17: You locate your Pavilion registration and request removal. When the machine asks why, you select REGISTERED IN ERROR. It asks if you wish to declare yourself an administrative error; you confirm. Hidden d6 >=4, +1 only if carrying pavilion_presentation_service_authorization (not consumed; no hard gate). Success -> end_unreg; only Pavilion claimant registration is lost, Exposition-wide identity intact. Failure -> disposition, preceded by the Registrar catching your unauthorized deletion and referring you for Final Disposition; no immediate death. Explicit runtime held-item modifier still requires Gameplay PMO wiring and test."
+        },
+        {
+          "id": "registry_1",
+          "kind": "action",
+          "text": "BROADCAST BOTH CONTRADICTORY CERTIFICATIONS.",
+          "check": {
+            "id": "ch3_registry_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_broadcast"
+          },
+          "fail": {
+            "to": "disposition"
+          },
+          "notes": "OWNER-APPROVED 2026-11-17: You connect both incompatible identity records to public announcements. Asked which version is correct, you select both. Machine: 'Excellent. All certified information must be communicated accurately.' Hidden d6 >=4, +1 only if carrying pavilion_broadcast_override_sequence (not consumed; no hard gate). Success -> end_broadcast, permits evacuation; Original status unknown. Failure -> disposition, preceded by a message that the broadcast was intercepted before reaching public systems and the Registrar orders Final Disposition; no immediate death. Explicit runtime held-item modifier still requires Gameplay PMO wiring and test."
+        }
+      ],
+      "notes": "OWNER APPROVED both mutually exclusive registry approaches and the complete success narration (2026-11-17); prose now at terminal nodes. Each uses hidden d6>=4; +1 only for the corresponding carried Chapter 3 service authorization or broadcast override sequence, no item consumption, no hard gate. On failure both route to owner-approved Final Disposition. To retain distinct prose, quiet registry escape and successful retention-shutter escape use different ending nodes with the same Pavilion-only identity scope. Original identity/nature remains ambiguous; no new artwork required. Runtime item-modifier wiring and QA still required.",
+      "focus": "pavilion/grand_registry"
+    },
+    "disposition": {
+      "mode": "narrative",
+      "scene": "pavilion/surplus_department",
+      "text": "The Registrar stamps your appeal DENIED. The Pavilion cannot recognize two persons occupying the same identity. 'One of you must be removed from the records.' You suggest the Certified Original. 'That individual is already certified.' Two corridors open: VOLUNTARY IDENTITY SURRENDER, and PHYSICAL RECORDS RETENTION — AUTHORIZED PERSONNEL ONLY. The Registrar explains that surrendering all Exposition identity claims grants guaranteed safe physical transfer, but makes you officially nonexistent throughout the Exposition. The other corridor leads past an archival loading shutter that opens briefly for carts. Beyond it, a maintenance passage might lead outside. A warning says RETENTION IS INTENDED FOR DOCUMENTS, EQUIPMENT, AND NONLIVING ARCHIVAL MATERIAL. When you ask if a person would fit, the Registrar answers, 'Oh, certainly. Once processed.' You may safely relinquish your identity or deliberately risk a potentially fatal escape.",
+      "choices": [
+        {
+          "id": "disposition_0",
+          "kind": "action",
+          "text": "SURRENDER ALL EXPOSITION IDENTITY CLAIMS FOR SAFE TRANSFER.",
+          "to": "end_unreg_wide",
+          "notes": "OWNER APPROVED 2026-11-17: deterministic nonfatal choice; no roll; no arbitrary later death during this transfer. The player lives but forfeits official identity Exposition-wide; later chapters must respect scope. Bathroom still unresolved."
+        },
+        {
+          "id": "disposition_1",
+          "kind": "action",
+          "text": "FORCE THE HAZARDOUS RETENTION SHUTTER — FATAL RISK.",
+          "check": {
+            "id": "ch3_disposition_1",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_shutter_escape"
+          },
+          "fail": {
+            "to": "end_archived"
+          },
+          "notes": "OWNER APPROVED 2026-11-17: visibly foreshadow potentially fatal crushing by industrial archival machinery before committing. Hidden d6 >=4, with +1 from at most one suitable retained physical tool; bonuses cannot stack. Exact qualifying items/engine OR-modifier to be resolved with Gameplay PMO. Success crosses the shutter to end_shutter_escape, retains Exposition-wide identity, but loses Pavilion registration (same flags as end_unreg, distinct scene prose). Failure enters end_archived: door locks, scanner classifies body as nonliving archival matter, compression machinery fatally crushes claimant, sealed drawer deposits permanent record. No escape or last-minute rescue after the failed check. No protagonist face or gore."
+        }
+      ],
+      "notes": "OWNER-APPROVED FINAL DISPOSITION (2026-11-17): After failure of any Grand Reconciliation approach, exactly two alternate player choices: (A) certain physical survival through voluntary Exposition-wide identity surrender, retaining this administrative consequence in subsequent chapters; (B) warned, voluntarily attempted hazardous retention shutter escape with fatal failure. No repeat of failed hearing check. B uses hidden d6>=4 with proposed conditional nonstacking +1 from a suitable retained tool, as discussed and accepted. Success is a Pavilion-only unregister escape through end_shutter_escape; failure is PERMANENTLY ARCHIVED. The Original remains separately retained or unresolved according to prior flags; its nature remains ambiguous. Retain bathroom need. Popup uses established shared death UI (RETRY/CHECKPOINT/EXIT per Gameplay PMO, do not hardcode restart behavior from storyboard)."
+    },
+    "end_admin": {
+      "mode": "narrative",
+      "scene": "pavilion/exposition_exit",
+      "text": "The Registrar reviews your contest and any supporting evidence you have provided. At last he stamps a new document.\n\nPERSONAL EXCEPTION GRANTED\nEXISTING CERTIFICATIONS: UNCHANGED\n\nRegistrar: We cannot amend an approved departure. We can, however, excuse you from having completed it.\n\nYour exit is authorized. The Original remains behind. You leave the Pavilion alive, your own identity intact and the Pavilion's contradictory certifications uncorrected. You still need a bathroom.\n\nENDING — PERSONALLY RELEASED.",
+      "choices": [
+        {
+          "id": "restart_end_admin",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17: Exact PERSONALLY RELEASED key dialogue, notice and outcome (reply 'Ok'). Successful grand_0 d6>=4 (+1 nonstacking for optional photo or Pruitt testimony) grants personal exception, physical release with Exposition identity retained and original certifications unchanged; Original remains separately retained. Universal argument and optional evidence callbacks are specified in grand_0.notes and must be appended BEFORE this result in gameplay; they are not repeated in this terminal ending. No artwork approval implied; keep restroom need.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "administrative_exception",
+          "ch3_original_status": "retained"
+        }
+      }
+    },
+    "end_unreg": {
+      "mode": "narrative",
+      "scene": "pavilion/service_exit",
+      "text": "You locate your Pavilion registration and request its removal. The machine asks why. You select REGISTERED IN ERROR. It asks whether you are certain you wish to declare yourself an administrative error. You confirm. CLAIMANT REMOVED, the stamp declares. The Registrar looks up. 'Where did you go?' You tell him you are still standing there. 'Impossible. There are no registered claimants remaining in this chamber.' He looks directly at you. 'Please stop speaking. You're confusing the attendance system.' With no claimant officially present to detain, the maintenance exit unlocks. You walk through. Behind you, the Registrar files a report describing an exceptionally orderly hearing with no participants. Your wider Exposition identity survives. Only the Pavilion registration is gone. NO PERSON PRESENT — PAVILION ONLY.",
+      "choices": [
+        {
+          "id": "restart_end_unreg",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED quiet registry deletion ending (2026-11-17); reached exclusively by registry_0 success. Distinct from successful hazardous-shutter escape, which now goes to end_shutter_escape. Pavilion-only claimant unregistration, full Exposition identity retained, bathroom still unresolved.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "unregistered",
+          "ch3_original_status": "retained",
+          "ch3_identity_unregistered": true,
+          "ch3_identity_scope": "pavilion_only"
+        }
+      }
+    },
+    "end_unreg_wide": {
+      "mode": "narrative",
+      "scene": "pavilion/service_exit",
+      "text": "You sign away every official claim to your identity across the Exposition. The Registrar certifies that you are no longer a registered person, which is apparently sufficient to release you from human-attendance requirements. A service door opens. You leave alive. Your registration is now officially nonexistent throughout the Exposition, a consequence that will follow you beyond the Pavilion. A sign points toward facilities, but you are no longer eligible to request them as a visitor. NO PERSON PRESENT — EXPOSITION-WIDE.",
+      "choices": [
+        {
+          "id": "restart_end_unreg_wide",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 safe Final Disposition outcome: physically alive, no dice, voluntary identity surrender with Exposition-wide scope. Keep ch3_identity_scope=exposition_wide and no bathroom resolution. No additional hidden fatal trap.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "unregistered",
+          "ch3_original_status": "retained",
+          "ch3_identity_unregistered": true,
+          "ch3_identity_scope": "exposition_wide"
+        }
+      }
+    },
+    "end_two": {
+      "mode": "narrative",
+      "scene": "pavilion/exposition_exit",
+      "text": "The Original speaks from behind the frosted partition.\n\nOriginal: I would like a name of my own.\nRegistrar: Please state it for the record.\nOriginal: No.\n\nThe Registrar pauses long enough for the machinery to finish a complete rotation. Then a drawer opens. Inside is a form marked CONFIDENTIAL IDENTITY DECLARATION — DISCLOSURE OPTIONAL.\n\nA small keyboard slides behind the partition. You hear several keys being pressed. A sealed envelope emerges. No name appears on the outside.\n\nNAME REGISTERED: CONFIDENTIAL\nPERSONS AUTHORIZED TO DEPART: 2\n\nRegistrar: Excellent. Separation achieved without unnecessary knowledge.\n\nTwo different exits open. The Original takes one. You take the other. You never learn its name, and nothing about its departure tells you what it is. You are finally outside the Pavilion, still looking for a bathroom.\n\nENDING — TWO PERSONS DEPART.",
+      "choices": [
+        {
+          "id": "restart_end_two",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17: Original autonomously requests a private self-chosen name and refuses to disclose it to claimant or Registrar. Registrar uses CONFIDENTIAL IDENTITY DECLARATION — DISCLOSURE OPTIONAL; keyboard behind partition; sealed envelope, NAME REGISTERED: CONFIDENTIAL, PERSONS AUTHORIZED TO DEPART: 2; Registrar's line 'Excellent. Separation achieved without unnecessary knowledge.' Original and protagonist exit separately, no Original companion, private name or physical nature revealed, no protagonist face. Exact dialogue and ending direction approved by owner (reply 'ok'). Original may reappear later independently; protagonist still needs bathroom. Outcome reached only on first Grand Reconciliation Original-led hidden d6>=5 success (+1 nonstacking documentary evidence). Art status unchanged; do not infer art selected or generated.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "two_persons_depart",
+          "ch3_original_status": "escaped_independently",
+          "ch3_original_independent_identity": true
+        }
+      }
+    },
+    "end_broadcast": {
+      "mode": "narrative",
+      "scene": "pavilion/presentation_feed",
+      "text": "You connect the two incompatible identity records to the Pavilion's public announcement system. The machine asks which version is correct; you select both. 'Excellent. All certified information must be communicated accurately.' A pleasant chime sounds throughout the Pavilion. 'ATTENTION, PLEASE. THE CERTIFIED ORIGINAL HAS ALREADY DEPARTED. THE CERTIFIED ORIGINAL IS CURRENTLY PRESENT. THE PRESENT CLAIMANT IS NOT AUTHORIZED TO EXIST. THE PRESENT CLAIMANT IS PHYSICALLY PRESENT. ALL STATEMENTS HAVE BEEN VERIFIED AS CORRECT.' A pause. 'WE APOLOGIZE FOR ANY INCONVENIENCE CAUSED BY THE ACCURACY OF THIS INFORMATION.' Every departure gate locks and every arrival gate opens, then the reverse happens. The attendance display changes: PERSONS PRESENT: 1; PERSONS PRESENT: 2; PERSONS PRESENT: 0; PERSONS PRESENT: YES. A printer corrects another printer, and a third apologizes to the first two. The Registrar leaps up. 'Stop that! Those are official contradictions! They're not meant for public consumption!' The emergency system announces UNRESOLVED PERSONHOOD EVENT. PUBLIC EVACUATION AUTHORIZED. Doors open throughout the Pavilion. You leave while the speaker cycles: ALL VISITORS ARE REQUESTED TO REMAIN CALM; ALL VISITORS ARE REQUESTED TO DEPART; ALL VISITORS HAVE ALREADY DEPARTED. You step into the Exposition corridor. 'THANK YOU FOR VISITING THE PEOPLE'S PAVILION. WE HAVE ENJOYED YOUR EXPERIENCE.' The Original's status remains unknown. UNAPPROVED BROADCAST.",
+      "choices": [
+        {
+          "id": "restart_end_broadcast",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED public contradiction broadcast ending (2026-11-17). Player survives and leaves amid Pavilion evacuation, Pavilion's records disrupted, Original whereabouts unknown. Do NOT assume Original fled or is a clone. Bathroom still unresolved.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "broadcast_disruption",
+          "ch3_original_status": "unknown",
+          "ch3_pavilion_disrupted": true
+        }
+      }
+    },
+    "end_reconciled": {
+      "mode": "narrative",
+      "scene": "pavilion/technical_services",
+      "text": "The emergency release fails. The fitting machinery completes its alignment, and its counterweight comes down. ENDING — SUCCESSFULLY RECONCILED.",
+      "choices": [
+        {
+          "id": "restart_end_reconciled",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED FATAL ENDING (APPROVAL SYNC 2026-11-17 (docs/106)): reached only by failing the hidden d6>=4 emergency release in Live Source Calibration, after the visibly warned Fourth Chair interruption. The machinery's alignment/counterweight mechanism kills the protagonist; no face or gore. Popup title, subtitle and description are owner-approved. Scene corrected from reconciliation_office to technical_services, where calibration happens. Death ARTWORK is approved as a BRIEF only: not generated, not selected (art status not-started). Storyboard preview field button=BEGIN AGAIN is inherited placeholder metadata; the game's RETRY/CHECKPOINT/EXIT behavior is controlled by Gameplay PMO. Exact death narration prose PENDING EDITORIAL SYNCHRONIZATION; the text field is a decision summary.",
+      "end": true,
+      "deathPopup": {
+        "id": "end_reconciled",
+        "title": "SUCCESSFULLY RECONCILED",
+        "subtitle": "NO FURTHER ADJUSTMENTS REQUIRED",
+        "button": "BEGIN AGAIN",
+        "status": "owner-approved",
+        "artRef": "pavilion/successfully_reconciled",
+        "description": "For the first time, the official photograph and the person in it agree. Neither contains you."
+      },
+      "endingArt": "pavilion/successfully_reconciled"
+    },
+    "end_archived": {
+      "mode": "narrative",
+      "scene": "pavilion/surplus_department",
+      "text": "The archival loading shutter opens for a document cart. You slip inside, but the timing fails. The shutter slams behind you. An overhead scanner flashes: UNREGISTERED MATERIAL DETECTED. 'Thank you for choosing Permanent Records Retention.' Heavy rollers start. A steel compression plate advances into the too-small storage space. You search for an emergency stop. There is none. 'All records are preserved according to the dimensions of their assigned storage containers.' Your last protest is cut short as the machinery fatally crushes you. The machinery deposits a sealed archival drawer, labeled UNIDENTIFIED CLAIMANT — STATUS: RESOLVED — RETENTION PERIOD: PERMANENT. The Registrar receives a confirmation slip. 'Excellent. No further discrepancies.' ENDING — PERMANENTLY ARCHIVED.",
+      "choices": [
+        {
+          "id": "restart_end_archived",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 FATAL mechanism: voluntarily attempted retention-shutter escape, clearly warned, failed hidden d6 check. Shutter locks; automatic scanner treats claimant as unregistered nonliving material; compression plate kills; remains sealed in permanent archive drawer. No surprise fatal from safe option, no rescues after failed roll, no face or gore in artwork. ONE shared popup for this end state. Art NOT generated or reviewed; metadata remains not-started. Storyboard preview field button=BEGIN AGAIN is inherited placeholder metadata; deployed game's RETRY/CHECKPOINT/EXIT behavior remains controlled by Gameplay PMO.",
+      "end": true,
+      "deathPopup": {
+        "id": "end_archived",
+        "title": "PERMANENTLY ARCHIVED",
+        "subtitle": "RETENTION PERIOD: PERMANENT",
+        "status": "owner-approved",
+        "artRef": "pavilion/permanently_archived",
+        "description": "You've finally found somewhere you belong. Unfortunately, it's a filing cabinet.",
+        "button": "BEGIN AGAIN"
+      },
+      "endingArt": "pavilion/permanently_archived"
+    },
+    "pavilion_arrival": {
+      "mode": "narrative",
+      "scene": "pavilion/arrival",
+      "objective": "FIND AN OPERATING BATHROOM.",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "chapter3_entry_group",
+              "public_concourse"
+            ]
+          },
+          "text": "You leave Biology Park through the public concourse. The People's Pavilion promises every human requirement has already been fulfilled."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "chapter3_entry_group",
+              "service_infrastructure"
+            ]
+          },
+          "text": "A service corridor releases you behind the People's Pavilion. An employee reader claims your public visit has already been completed."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "chapter3_entry_group",
+              "underground_transit"
+            ]
+          },
+          "text": "The underground station opens beneath the Pavilion, at a door marked ORIGINAL PARTICIPANT ENTRANCE."
+        },
+        {
+          "text": "You reach the People's Pavilion. Its welcome sign assures you that you are already satisfied."
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue_attend",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "attend"
+        }
+      ],
+      "notes": "Chapter 2 carryover uses exactly chapter3_entry_group; does not erase flags/items."
+    },
+    "b01_a": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "VISITOR RECORDS: An approved document cannot contain an error. You point to your body. A camera verifies your presence and prints UNAUTHORIZED PRESENCE — SUBJECT REQUIRES CORRECTION. VISITOR RECORDS: The departure record is correct. The person is not.",
+      "choices": [
+        {
+          "id": "continue_b_conduct",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_timestamp_disputed": true
+        }
+      }
+    },
+    "b01_b": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "A real departure authorization prints with APPROVED and ALREADY USED stamps. The bright corridor's turnstile immediately refuses SECOND DEPARTURE. VISITOR RECORDS: Your paperwork is in perfect order.",
+      "choices": [
+        {
+          "id": "continue_b_conduct",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_departure_authority_queued": true
+        },
+        "give": [
+          "pavilion_approved_departure_authorization"
+        ]
+      }
+    },
+    "b01_c": {
+      "mode": "narrative",
+      "scene": "pavilion/visitor_records",
+      "text": "The source registration on your completed-visit photograph predates your arrival. A second serial number appears beneath your own. The clerk lamps extinguish before you can ask who filed it.",
+      "choices": [
+        {
+          "id": "continue_b_conduct",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_conduct"
+        }
+      ],
+      "notes": "C is a retained draft choice; final outcome not separately owner-reviewed.",
+      "effects": {
+        "set": {
+          "pavilion_visit_provenance_seen": true
+        }
+      }
+    },
+    "b02_a": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "You amend the forecast to VISITOR WILL RECEIVE IMMEDIATE ASSISTANCE. The machine issues a matching staff instruction and congratulates you on improving its predictive accuracy. It has not defined what assistance means.",
+      "choices": [
+        {
+          "id": "continue_b_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_gate"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_assistance_order_issued": true
+        }
+      }
+    },
+    "b02_b": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "You enthusiastically thank the office for denying departure. One printer says SATISFIED; another says FRUSTRATED THROUGH GRATITUDE. A form appears: APPLICATION FOR UNPREDICTABLE CONDUCT — DESCRIBE YOUR INTENDED UNPREDICTABLE BEHAVIOR.",
+      "choices": [
+        {
+          "id": "continue_b_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_gate"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_prediction_contradicted": true
+        }
+      }
+    },
+    "b02_c": {
+      "mode": "narrative",
+      "scene": "pavilion/anticipated_conduct",
+      "text": "A source drawer contains a Certified Original already departed and a Present Claimant still being observed. Their serial numbers differ. Someone has written STILL PRESENT beneath the Original's entry, without approval.",
+      "choices": [
+        {
+          "id": "continue_b_gate",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "b_gate"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_original_registration_discovered": true
+        }
+      }
+    },
+    "b03_a": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "AUTHORIZATION VALID. DEPARTURE ALREADY COMPLETED. The machine prints PERMISSION TO EXERCISE PREVIOUSLY EXERCISED PERMISSION, then sends you to Personal Reconciliation, because a second departure requires a second person.",
+      "choices": [
+        {
+          "id": "continue_stage_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "If existing departure authorization held, mention it and retain it; do not create duplicate.",
+      "effects": {
+        "set": {
+          "pavilion_departure_permission_conflict": true
+        }
+      }
+    },
+    "b03_b": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "You compare the identities. IDENTITY MATCH: 100%. REGISTRATION MATCH: 0%. The gate produces a Certified Identity Discrepancy and refers the second person for verification.",
+      "choices": [
+        {
+          "id": "continue_stage_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "ch3_separate_identity_evidence": true
+        },
+        "give": [
+          "pavilion_certified_record_discrepancy"
+        ]
+      }
+    },
+    "b03_c_pass": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "The counting wheel clicks backward. The turnstile opens not to the public exit but to MANUAL RECONCILIATION ACCESS, a technical passage behind the Registrar's machinery.",
+      "choices": [
+        {
+          "id": "continue_stage_tech",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_tech"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_departure_counter_desynced": true,
+          "pavilion_registration_service_access": true
+        }
+      }
+    },
+    "b03_c_fail": {
+      "mode": "narrative",
+      "scene": "pavilion/departure_gate",
+      "text": "The wheel spins forward. ADDITIONAL DEPARTURE RECORDED. DEPARTURE CONTROL: Two completed departures by one person constitute a serious accounting irregularity. Personal Reconciliation is mandatory.",
+      "choices": [
+        {
+          "id": "continue_stage_records",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "stage_records"
+        }
+      ],
+      "notes": "Nonfatal; no item lost; no reroll.",
+      "effects": {
+        "set": {
+          "pavilion_counter_interference_recorded": true,
+          "pavilion_duplicate_departure_recorded": true
+        }
+      }
+    },
+    "c01_a": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "The credential reader recognizes your Exposition authority. CONTROL ROOM: Your department does not govern human representations. You ask whether the representations are alive. JURISDICTIONAL OVERLAP DETECTED. INSPECTION AUTHORIZED — PLEASE DO NOT DISCOVER ANYTHING.",
+      "choices": [
+        {
+          "id": "continue_c_workshop",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "Conditional badge-specific approval text; no badge consumed.",
+      "effects": {
+        "set": {
+          "pavilion_inspection_authorized": true
+        }
+      }
+    },
+    "c01_b": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "You rescue the movement record from the shredder. CONTROL ROOM: Please return the discrepancy for correction. You ask which cue caused the movement. CONTROL ROOM: Nothing. The record does not yet identify the actor.",
+      "choices": [
+        {
+          "id": "continue_c_workshop",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_anomalous_movement_record_saved": true
+        }
+      }
+    },
+    "c01_c": {
+      "mode": "narrative",
+      "scene": "pavilion/control_room",
+      "text": "You trace cables labeled SPEECH, MOVEMENT, and SPONTANEITY. The last isn't attached to anything. CONNECTION RESERVED FOR FUTURE IMPROVEMENTS. A service hatch reaches the Workshop.",
+      "choices": [
+        {
+          "id": "continue_c_workshop",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_workshop"
+        }
+      ],
+      "notes": "Collaboratively reviewed outcome; retains one-way continuity.",
+      "effects": {
+        "set": {
+          "pavilion_workshop_service_access": true
+        }
+      }
+    },
+    "c02_a": {
+      "mode": "narrative",
+      "scene": "pavilion/human_behavior_workshop",
+      "text": "You stand before the FREE WILL buttons: I AGREE and I AGREE ENTHUSIASTICALLY. You press neither. A bell sounds. A certificate emerges: CONSENT OBTAINED THROUGH NONPARTICIPATION. The announcer congratulates you for demonstrating complete confidence in the democratic process. From a desk beside the booth, Mrs. Pruitt, a real human employee wearing the badge INDEPENDENT CHOICE SUPERVISOR — CLASS II, looks up from her ledger. She has witnessed 3,812 independent decisions in nineteen years, but never a person who refused both buttons. Her rules say abstention counts as enthusiastic consent; another rule requires her to personally witness the actual decision. After a long pause, she certifies the form, then writes in its margin: NEITHER BUTTON PRESSED. WITNESSED PERSONALLY. — E. PRUITT. A carbon copy enters official records. The Pavilion lights a red warning: UNRECONCILED HUMAN TESTIMONY. Mrs. Pruitt straightens her cardigan. 'At least someone will finally have to read it.' Her testimony travels toward the Central Presentation Feed.",
+      "choices": [
+        {
+          "id": "continue_c_feed",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "Collaboratively selected: human NPC Mrs. Pruitt witnesses refusal; official certificate misclassifies abstention as consent, while her written testimony records what happened. No check or inventory item. This is contradictory human testimony, NOT proof of the Original's nature. Finale payoff remains to be authored. Dialogue-mode portrait art for Pruitt remains a separate future art requirement; do not reuse speaker art.",
+      "effects": {
+        "set": {
+          "pavilion_free_will_contradiction_seen": true,
+          "pavilion_free_will_refusal_witnessed": true
+        }
+      },
+      "focus": "pavilion/free_will_buttons"
+    },
+    "c02_c": {
+      "mode": "narrative",
+      "scene": "pavilion/human_behavior_workshop",
+      "text": "In the HUMAN BEHAVIOR WORKSHOP, you pull a red lever labeled IN CASE OF EMERGENCY — PULL. A siren sounds. The SPONTANEOUS LAUGHTER mannequin doubles over in delight. The announcer congratulates everyone: PUBLIC MORALE HAS IMPROVED BY 600 PERCENT. An emergency shutter begins closing across the only visible exit. The announcer requests that everyone remain inside until the emergency has been successfully enjoyed. Then the FREE WILL mannequin turns its head. It does not touch either AGREE button. Instead, it reaches over and presses the shutter's STOP control. The shutter halts. Two printers argue. UNAUTHORIZED INDEPENDENT ACTION DETECTED, says one. DISCIPLINARY ACTION REQUIRES REGISTERED PERSONHOOD, says another. A third printer starts an APPLICATION FOR TEMPORARY HUMAN STATUS. The mannequin returns to its old pose. The announcer insists mechanical equipment cannot develop independent judgment without written approval. The incident report disappears into a pneumatic tube, triggering GRAND RECONCILIATION — ADDITIONAL PERSON REPORTED. The laughter finally stops. 'We apologize. The emergency has become administrative.'",
+      "choices": [
+        {
+          "id": "continue_c_feed",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "c_feed"
+        }
+      ],
+      "notes": "Collaboratively selected fusion of Laughing Emergency + First Independent Act. No check and no item. A mannequin acts outside its performance script; this does NOT establish consciousness or independent choice (a forgotten emergency routine remains possible). The Pavilion considers temporary personhood for discipline; official incident record goes to the Presentation Feed. Finale payoff remains to be authored.",
+      "effects": {
+        "set": {
+          "pavilion_behavior_demo_disrupted": true,
+          "pavilion_unapproved_exhibit_action_recorded": true
+        }
+      }
+    },
+    "end_model_citizen": {
+      "mode": "narrative",
+      "scene": "pavilion/original_human_pedestal",
+      "end": true,
+      "text": "You press REQUEST REPLACEMENT. WORKSHOP ANNOUNCER: Wonderful! Thank you for volunteering! You explain that you meant to request a replacement, not to become one. A platform raises you onto the pedestal. A transparent protective coating descends, hardens, and seals airtight around your body. You cannot draw a breath. WORKSHOP ANNOUNCER: Our new Original Human is protected against dust, moisture and unauthorized interaction. You struggle until the air is gone. Your movement stops. A plaque appears: THE ORIGINAL HUMAN — 100% AUTHENTIC — MAINTENANCE-FREE — ALL HUMAN REQUIREMENTS PERMANENTLY SATISFIED. Six seconds of recorded applause. ENDING — A MODEL CITIZEN.",
+      "choices": [
+        {
+          "id": "restart_a_model_citizen",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-LOCKED: death from loss of air inside sealed coating. Real corpse remains on pedestal. No face in scene/death popup. No roll or rescue; the choice must warn permanent display.",
+      "deathPopup": {
+        "id": "a_model_citizen",
+        "title": "A MODEL CITIZEN",
+        "subtitle": "ALL HUMAN REQUIREMENTS PERMANENTLY SATISFIED",
+        "description": "The Pavilion has preserved an authentic human. It neglected to preserve the air.",
+        "button": "BEGIN AGAIN",
+        "status": "owner-approved",
+        "artRef": "pavilion/a_model_citizen"
+      },
+      "endingArt": "pavilion/a_model_citizen",
+      "focus": "pavilion/death_pedestal_detail"
+    },
+    "end_shutter_escape": {
+      "mode": "narrative",
+      "scene": "pavilion/service_exit",
+      "text": "You make it past the dangerous retention shutter before the compression machinery can catch you. Behind you, the shutter closes and the scanner announces NO PERSON PRESENT. A maintenance corridor leads out of the Pavilion. You did not surrender your identity across the Exposition. The Pavilion no longer registers you as a claimant, but you are physically alive and still need a bathroom. NO PERSON PRESENT — PAVILION ONLY.",
+      "choices": [
+        {
+          "id": "restart_end_shutter_escape",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "Owner-approved success from the hazardous retention-shutter choice (2026-11-17), given distinct narration from quiet registry deletion. Shares the same Pavilion-only unregistration effects and existing service-exit artwork as end_unreg; no new art. Success only from disposition_1; its failed roll instead leads to PERMANENTLY ARCHIVED. Do not add rerolls or extra rescue sequence.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "unregistered",
+          "ch3_original_status": "retained",
+          "ch3_identity_unregistered": true,
+          "ch3_identity_scope": "pavilion_only"
+        }
+      }
+    },
+    "original_refusal": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The Registrar presents a compulsory two-person separation form beneath the frosted partition. The Original leaves the signature line blank.\n\nOriginal: If I refuse to sign, whose refusal is that?\nRegistrar: The registered person's.\nOriginal: Which registered person?\n\nThe Registrar's machinery stops. Somewhere inside, a bell rings once. You insist that the refusal itself be entered into the official record.",
+      "choices": [
+        {
+          "id": "original_refusal_0",
+          "kind": "action",
+          "text": "REQUIRE THE REGISTRAR TO RECORD THE REFUSAL.",
+          "check": {
+            "id": "ch3_original_refusal",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "end_identity_review"
+          },
+          "fail": {
+            "to": "original_refusal_denied"
+          },
+          "notes": "OWNER-APPROVED 2026-11-17: Original autonomously refuses. Separate hidden d6 >=4 to have Pavilion acknowledge refusal as valid procedural limbo, +1 if ch3_original_independent_response_seen was recorded earlier; no other bonus approved. Success -> end_identity_review provisional nonfatal; failure -> original_refusal_denied prose, then existing Final Disposition, not instant death. Final player card wording is provisional for editorial review."
+        }
+      ],
+      "notes": "APPROVED OUTCOME MECHANICS AND NARRATIVE DIRECTION 2026-11-17. Opening key exchange owner-approved; success and failure consequence scenes now have owner-approved text. No new scene art required unless later specified. Original's physical nature and selected private name stay unrevealed."
+    },
+    "end_identity_review": {
+      "mode": "narrative",
+      "scene": "pavilion/exposition_exit",
+      "text": "The Registrar studies the unsigned declaration. He turns it over, apparently hoping the signature has moved.\n\nRegistrar: A refusal requires an identifiable refusing party.\nOriginal: Then identify me.\n\nThe Registrar looks at the two conflicting certificates.\n\nRegistrar: That's what we're trying to do.\n\nAfter a lengthy mechanical consultation, a temporary authorization emerges.\n\nIDENTITY UNDER REVIEW\nTEMPORARY DEPARTURE PERMITTED\n\nRegistrar: You may leave while we determine whether you were entitled to arrive.\n\nThe exit unlocks. You approach the restroom.\n\nFACILITIES ACCESS REQUIRES A SETTLED IDENTITY.\n\nYou leave the Pavilion alive. The Original's disposition remains unknown.\n\nENDING — IDENTITY UNDER REVIEW.",
+      "choices": [
+        {
+          "id": "restart_end_identity_review",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 OUTCOME: successful Original refusal check grants nonfatal provisional escape IDENTITY UNDER REVIEW, ongoing unresolved administrative status for Chapter 4; no identity erasure and no guarantee that Original exits. Restroom denial approved as narrative direction. Precise success dialogue and ending text approved by owner 2026-11-17 (reply 'ok'). Flag carryover must be consumed by Chapter 4 after handoff; art not separately approved or generated.",
+      "effects": {
+        "set": {
+          "ch3_exit_route": "identity_under_review",
+          "ch3_identity_under_review": true,
+          "ch3_original_status": "unknown"
+        }
+      }
+    },
+    "original_refusal_denied": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The Registrar stamps the Original's unsigned declaration.\n\nREFUSAL RECEIVED\nREFUSING PARTY NOT RECOGNIZED\nREFUSAL INVALID\n\nRegistrar: Unfortunately, a person who has not been recognized cannot exercise the right to refuse recognition.\n\nThe Original does not sign. The Registrar opens a FINAL DISPOSITION file and turns toward you.\n\nRegistrar: We can, however, process the person who brought the matter to our attention.",
+      "choices": [
+        {
+          "id": "continue_original_refusal_denied",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "disposition"
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17: precise failed-refusal narrative; Original never signs and is never coerced. No immediate death; CONTINUE leads to existing two-choice Final Disposition (certain-safe identity surrender or warned potentially fatal shutter). Uses existing grand-reconciliation scene; no new art approval."
+    },
+    "contest_inadmissible": {
+      "mode": "narrative",
+      "scene": "pavilion/grand_reconciliation",
+      "text": "The Registrar studies the certified departure record and the physical contradiction in front of him. He stamps the evidence.\n\nFACTUALLY COMPELLING\nADMINISTRATIVELY INADMISSIBLE\n\nRegistrar: Your argument appears correct. Unfortunately, correctness was not among the criteria.\n\nHe opens your Final Disposition file.",
+      "choices": [
+        {
+          "id": "continue_contest_inadmissible",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "disposition"
+        }
+      ],
+      "notes": "OWNER-APPROVED 2026-11-17 failed challenge prose and routing: Evidence acknowledged as factual but inadmissible; CONTINUE to previously approved two-choice Final Disposition. No sudden death; no face reveal. Optional photo/Pruitt callbacks must occur before this result where available, still within one challenge card."
+    }
+  }
+}
