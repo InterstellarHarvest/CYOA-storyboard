@@ -178,8 +178,9 @@
       "pose": "idle"
     },
     "comfort_offer": {
-      "mode": "narrative",
+      "mode": "dialogue",
       "scene": "house_of_tomorrow/lounge",
+      "speaker": "house",
       "effects": [
         {
           "if": {
@@ -243,10 +244,18 @@
           "if": {
             "flag": "housekeeping_refused"
           },
-          "text": "The house has apparently decided that your possessions remain a source of domestic disorder. Behind your back, a small drawer closes.\n\n\"Are you feeling uncomfortable? Refreshments and relaxation are both available!\""
+          "text": [
+            {
+              "desc": "The house has apparently decided that your possessions remain a source of domestic disorder. Behind your back, a small drawer closes."
+            },
+            "Are you feeling uncomfortable? Refreshments and relaxation are both available!"
+          ]
         },
         {
-          "text": "\"Are you uncomfortable?\" the speaker asks. \"We offer refreshments and the revolutionary Rest Assured chair. Comfort has never been more convenient!\""
+          "text": [
+            "Are you uncomfortable?",
+            "We offer refreshments and the revolutionary Rest Assured chair. Comfort has never been more convenient!"
+          ]
         }
       ],
       "choices": [
@@ -279,7 +288,8 @@
           "to": "storage_cabinet"
         }
       ],
-      "notes": "A refusal makes the house take one actually held item on this arrival; retrieving it later does not trigger a second theft."
+      "notes": "A refusal makes the house take one actually held item on this arrival; retrieving it later does not trigger a second theft. PRESENTATION BATCH B (Story Director approved, docs/107 section 8): House dialogue in the LOUNGE intercom view portraits:house:idle#views:house_of_tomorrow/lounge. Words unchanged except the speech tag 'the speaker asks', which dialogue mode makes redundant. All effects (the one-time housekeeping theft), four action cards, conditions and routing unchanged. DO NOT MERGE TO MAIN until the lounge view is approved.",
+      "pose": "idle"
     },
     "storage_cabinet": {
       "mode": "narrative",
@@ -592,14 +602,23 @@
       ]
     },
     "dinner_arrival": {
-      "mode": "narrative",
+      "mode": "dialogue",
       "scene": "house_of_tomorrow/dining",
+      "speaker": "house",
       "effects": {
         "set": {
           "dinner_seen": true
         }
       },
-      "text": "Four places have been laid at a long table. Three chairs are empty. You take the remaining place.\n\nThe house cheerfully discusses the day with the absent family. It addresses one chair as Martin and pauses for a reply that never comes.\n\n\"Martin, would you tell us how your day went?\"",
+      "text": [
+        {
+          "desc": "Four places have been laid at a long table. Three chairs are empty. You take the remaining place."
+        },
+        {
+          "desc": "The house cheerfully discusses the day with the absent family. It addresses one chair as Martin and pauses for a reply that never comes."
+        },
+        "Martin, would you tell us how your day went?"
+      ],
       "choices": [
         {
           "id": "reply_for_martin",
@@ -620,7 +639,8 @@
           "to": "foyer_attempt"
         }
       ],
-      "notes": "Dinner always concerns absent family, never spoiled food. Choice A instantly triggers bedtime; not a permanent identity assignment. PRESENTATION 2026-11-17: reply_for_martin is the protagonist SPEAKING ON MARTIN'S BEHALF (Story Director wording); the House mistakes it for Martin answering. The protagonist is never assigned Martin's identity."
+      "notes": "Dinner always concerns absent family, never spoiled food. Choice A instantly triggers bedtime; not a permanent identity assignment. PRESENTATION 2026-11-17: reply_for_martin is the protagonist SPEAKING ON MARTIN'S BEHALF (Story Director wording); the House mistakes it for Martin answering. The protagonist is never assigned Martin's identity. PRESENTATION BATCH B (Story Director approved): House dialogue in the DINING intercom view portraits:house:idle#views:house_of_tomorrow/dining; the four-place table with three empty chairs stays visible in the scene aperture. Words unchanged. reply_for_martin is now echoed as the player's own speech. dinner_seen effect and all three cards unchanged. DO NOT MERGE TO MAIN until the dining view is approved.",
+      "pose": "idle"
     },
     "dinner_clue": {
       "mode": "narrative",
