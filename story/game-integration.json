@@ -3,16 +3,16 @@
   "about": "Storyboard-only. Written by the game repository (tools/story-sync/sync.js publish): the exact images one game build uses. The public check requires every `integrated` art record to appear here with the same SHA-256.",
   "game": {
     "repo": "InterstellarHarvest/CYOA",
-    "branch": "agent/canonical-storyboard-sync-20261116",
-    "commit": "20b52601c5733a633a385bbb1c60995174e530cc"
+    "branch": "agent/presentation-batch-a-20261117",
+    "commit": "4bcb72eccba1060c071ec65313804bbc47c9332b"
   },
   "storyboard": {
     "repo": "InterstellarHarvest/CYOA-storyboard",
-    "revision": "d95c01ef5059036fb8718fafe282925fdeb85c1d"
+    "revision": "ac4b864edc6fb052c8f04737ca03ec67e4226540"
   },
   "build": {
     "channel": "preview",
-    "contentHash": "407d8ec78f1ceee950cb4330bc5e6460720bbbede0e04d0218b2a2514de1c00d",
+    "contentHash": "b95b98f24e844d5aa4eeb377dc599a39a71b9b9bd882d2e5e14b32f09479b053",
     "chapters": [
       "prologue-00",
       "chapter-01",
@@ -24,8 +24,7 @@
       "key": "deathScreens:house_of_tomorrow/rest_assured",
       "path": "art/deaths/rest_assured_voluntary.png",
       "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
-      "kind": "death-screen",
-      "gate": "deathproof"
+      "kind": "death-screen"
     },
     {
       "key": "focus:house_of_tomorrow/portrait_gallery/album#pages:1",
@@ -178,9 +177,21 @@
       "kind": "item-slot"
     },
     {
+      "key": "portraits:house:idle#views:house_of_tomorrow/dining",
+      "path": "art/portraits/house/dining_conversation.png",
+      "sha256": "33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a",
+      "kind": "portrait-view"
+    },
+    {
       "key": "portraits:house:idle#views:house_of_tomorrow/foyer",
       "path": "art/portraits/house/foyer_conversation.png",
       "sha256": "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
+      "kind": "portrait-view"
+    },
+    {
+      "key": "portraits:house:idle#views:house_of_tomorrow/lounge",
+      "path": "art/portraits/house/lounge_conversation.png",
+      "sha256": "a3d55c565d98fa92a8829100e3f0d255b72ff2963b30dd505be687df3a358bbb",
       "kind": "portrait-view"
     },
     {

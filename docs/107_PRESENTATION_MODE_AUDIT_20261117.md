@@ -188,3 +188,28 @@ Chapter 3 is out of scope: no Chapter 3 file changes in Batch A or Batch B.
 **Test fixtures changed on purpose**
 - `qa-smoke.mjs`: the two House-view assertions allow the two registered briefs (not-started, `assetPath: null`) and still require every other view to be integrated.
 - `qa-browser.js`: the Artwork-panel figures are derived from the committed catalogues instead of literals. The literal was stale on main `094d3b6` (83 expected, 74 shown after Batch 7).
+
+## 9. Implementation record — Batch B (owner approval 2026-11-18)
+
+**Artwork, owner-approved v02 selections.** Review package `tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/` (branch `agent/ch01-house-conversation-art-20261117` @ `3866952`). The generation sources, prompts, v01 history and QA evidence are kept unchanged on main.
+
+| Record | Candidate | SHA-256 | Production path | Status |
+|---|---|---|---|---|
+| `portraits:house:idle#views:house_of_tomorrow/lounge` | `A-lounge-conversation-v02.png` | `a3d55c565d98fa92a8829100e3f0d255b72ff2963b30dd505be687df3a358bbb` | `art/portraits/house/lounge_conversation.png` | integrated |
+| `portraits:house:idle#views:house_of_tomorrow/dining` | `B-dining-conversation-v02.png` | `33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a` | `art/portraits/house/dining_conversation.png` | integrated |
+
+Steps:
+1. Both were registered `approved` with `register-art.mjs` (`ac4b864`).
+2. The game build `4bcb72e` (CYOA `agent/presentation-batch-a-20261117`, draft PR #18) uses them, and its `sync.js publish` raised them to `integrated` and wrote `story/game-integration.json` (65 images).
+
+The publish re-pointed preview provenance to that build. Hashes, files and sizes are unchanged; the original review source is kept in the record notes and in the game's `art/house_of_tomorrow.batch_b.provenance.json`.
+
+**Story** (unchanged from the prepared conversion):
+- `comfort_offer`: House dialogue in the lounge view.
+- `dinner_arrival`: House dialogue in the dining view. The four-place table with three empty chairs stays visible in the scene aperture. "MARTIN SAYS HE'S HAD A LONG DAY." is echoed as the player's own speech.
+
+Words, effects, cards, conditions and routing are unchanged; `comfort_offer` drops only the redundant speech tag "the speaker asks".
+
+**Game sync note.** Public main `1ce7e79` approved the five Chapter 2 death images before any Chapter 2 art integration, and the game's `sync.js` refused any selected death art without a production path. That made every newer revision un-pullable. The game now treats an *approved* death picture with no path as pending integration: no art, so the runtime shows the owner-accepted empty frame. Integrated and reused art stay strict. No Chapter 2 art was integrated.
+
+No Chapter 3 change.

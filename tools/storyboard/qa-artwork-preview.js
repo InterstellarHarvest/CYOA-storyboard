@@ -129,7 +129,12 @@ async function run(name, base) {
   // 6. Opaque-complete House views (no foreground layering).
   await openArt('HOUSE INTERCOM — COMPLETE OPAQUE CONVERSATION VIEWS');
   f = await figures();
-  check(b, 'House: two complete opaque views, one image each', f.length === 2 && f.every((x) => x.imgs.length === 1 && x.imgs[0].nw === 564) && /opaque-complete/i.test(await page.textContent('#details')), f);
+  // Every SELECTED House view is shown (foyer + gallery, and since Batch B lounge + dining: public docs/107 section 9).
+  const houseViews = Object.entries(JSON.parse(fs.readFileSync(path.join(ROOT, 'story/artwork.draft.json'), 'utf8')).portraits['house:idle'].views)
+    .filter(([, v]) => ['approved', 'integrated', 'reused'].includes(v.status)).map(([k]) => k).sort();
+  check(b, 'House: ' + houseViews.length + ' complete opaque views (' + houseViews.map((k) => k.split('/')[1]).join(', ') + '), one image each',
+    houseViews.length === 4 && f.length === houseViews.length && houseViews.every((k) => f.some((x) => x.caption === 'Complete opaque view — ' + k))
+    && f.every((x) => x.imgs.length === 1 && x.imgs[0].nw === 564) && /opaque-complete/i.test(await page.textContent('#details')), f.map((x) => x.caption));
 
   // 7. Focus A pages.
   await openArt('FAMILY ALBUM — MULTIPAGE INSPECTION');
