@@ -1012,6 +1012,26 @@
           "assetPath": "art/portraits/house/portrait_gallery_conversation.png",
           "suggestedFilename": "art/portraits/house/portrait_gallery_conversation.png",
           "notes": "Selected by docs/92 from agent/ch01-art-batch05-interactive-states @ cf575552: review/chapter-01-batch03-2026-11-15/printer-album-restoration-v04/candidates/gallery-conversation-v03.png (sha256 a365560b66e6d4bb, 564x278 RGB). Copied byte-exact; Historical pending note (superseded).\nOWNER RULING 2026-11-16: Artwork selected and used in the game is already approved. This supersedes any earlier notes that owner art approval was pending; do not request repeat approval."
+        },
+        "house_of_tomorrow/lounge": {
+          "title": "HOUSE INTERCOM \u2014 LOUNGE CONVERSATION VIEW",
+          "kind": "portrait-view",
+          "status": "not-started",
+          "dimensions": "564x278",
+          "assetPath": null,
+          "suggestedFilename": "art/portraits/house/lounge_conversation.png",
+          "prompt": "EXACT 564x278 native pixel art, ONE complete opaque RGB image (format opaque-complete, docs/92 section 1): no transparent foreground layer, no separate character sprite, no widened or scaled crop of the 314x206 scene. Subject: the SAME House of Tomorrow wall intercom as the integrated foyer and portrait-gallery conversation views (art/portraits/house/foyer_conversation.png, portrait_gallery_conversation.png): a flush wall-mounted 1960s ivory/cream rounded-rectangle panel, dark brown woven speaker grille, small black camera lens dot at the upper right, lower strip with a green indicator lamp at left and a ribbed horizontal thumbwheel at right, soft drop shadow on the wall. Mounted directly on the wall: NO post, stand or pedestal beneath it. Match those views' scale, placement, warm peach/cream wall palette, outlines and clean flat pixel clusters; restrained mid-century industrial retro-futurism; no brass, steampunk, gears, heavy dithering or blur. Camera: a tighter point-of-view into the corresponding main scene (art/scenes/house_of_tomorrow/lounge.png), with recognizable room cues at the frame edges only. No people, no hands, no protagonist, no text or UI baked in. LOUNGE cues from lounge.png: a sliver of the mint/teal Rest Assured recliner's padded headrest or armrest at one lower edge, a hint of the coral rug or warm wood cabinet, daylight tone from the garden window. The intercom remains the clear subject; the chair must not look occupied or threatening here.",
+          "notes": "BRIEF ONLY (2026-11-17, Story Director approved conversion of comfort_offer to House dialogue; docs/107 Batch B). Not generated, not reviewed, not approved. Workflow: storyboard brief -> Codex generation -> Art Director review -> owner approval (register-art.mjs) -> integration. comfort_offer is NOT converted on main until this view is approved."
+        },
+        "house_of_tomorrow/dining": {
+          "title": "HOUSE INTERCOM \u2014 DINING CONVERSATION VIEW",
+          "kind": "portrait-view",
+          "status": "not-started",
+          "dimensions": "564x278",
+          "assetPath": null,
+          "suggestedFilename": "art/portraits/house/dining_conversation.png",
+          "prompt": "EXACT 564x278 native pixel art, ONE complete opaque RGB image (format opaque-complete, docs/92 section 1): no transparent foreground layer, no separate character sprite, no widened or scaled crop of the 314x206 scene. Subject: the SAME House of Tomorrow wall intercom as the integrated foyer and portrait-gallery conversation views (art/portraits/house/foyer_conversation.png, portrait_gallery_conversation.png): a flush wall-mounted 1960s ivory/cream rounded-rectangle panel, dark brown woven speaker grille, small black camera lens dot at the upper right, lower strip with a green indicator lamp at left and a ribbed horizontal thumbwheel at right, soft drop shadow on the wall. Mounted directly on the wall: NO post, stand or pedestal beneath it. Match those views' scale, placement, warm peach/cream wall palette, outlines and clean flat pixel clusters; restrained mid-century industrial retro-futurism; no brass, steampunk, gears, heavy dithering or blur. Camera: a tighter point-of-view into the corresponding main scene (art/scenes/house_of_tomorrow/dining.png), with recognizable room cues at the frame edges only. No people, no hands, no protagonist, no text or UI baked in. DINING cues from dining.png: near the lower edge, the rim of the four-place table with a laid place setting and the tops of empty mint/teal chair backs (all EMPTY; the table and empty chairs are story evidence), warm wood cabinets or the potted plant at a side edge. Nothing on the plates.",
+          "notes": "BRIEF ONLY (2026-11-17, Story Director approved conversion of dinner_arrival to House dialogue; docs/107 Batch B). Not generated, not reviewed, not approved. Workflow: storyboard brief -> Codex generation -> Art Director review -> owner approval (register-art.mjs) -> integration. dinner_arrival is NOT converted on main until this view is approved."
         }
       }
     },

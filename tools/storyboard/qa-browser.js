@@ -146,10 +146,21 @@ async function run(name, base) {
   const items = await p2.evaluate(() => document.querySelectorAll('#details .item-button').length);
   await p2.click('#showArtwork');
   const art = await p2.evaluate(() => document.getElementById('details').innerText);
-  // 2026-11-17 (docs/106): +1 item (pavilion_satisfaction_certificate) and its 2 pending art records.
-  // The not-started figure was already stale on main 7c7a50a (110 expected, 81 shown after the Ch2 batch approvals): now 81 + 2.
-  check(b, 'zoom, Items and Artwork panels still work (171 shared art records incl. nine death screens, 83 not-started)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
-    && items === 33 && /171 shared art records/.test(art) && /83 not-started/.test(art), [items, art.slice(0, 400)]);
+  // The panel's figures are derived from the committed catalogues, not pinned: every art batch moves
+  // the status counts (the old literal 110 -> 83 went stale twice, docs/106 and docs/107). Same top-level
+  // record rule as qa-smoke's productionRecords; scene states / views / pages are counted separately.
+  const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'story/artwork.draft.json'), 'utf8'));
+  const itemCount = Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, 'story/items.draft.json'), 'utf8'))).length;
+  const records = [
+    ...Object.values(catalog.scenes).flatMap((s) => [s, ...(s.portraitBackground ? [s.portraitBackground] : [])]),
+    ...Object.values(catalog.portraits),
+    ...Object.values(catalog.items).flatMap((v) => Object.values(v)),
+    ...Object.values(catalog.focus || {}),
+    ...Object.values(catalog.deathScreens || {})];
+  const notStarted = records.filter((r) => r.status === 'not-started').length;
+  check(b, 'zoom, Items and Artwork panels still work (' + records.length + ' shared art records incl. nine death screens, ' + notStarted + ' not-started, ' + itemCount + ' items)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
+    && items === itemCount && new RegExp('\\b' + records.length + ' shared art records').test(art) && new RegExp('\\b' + notStarted + ' not-started').test(art)
+    && Object.keys(catalog.deathScreens).length === 9, [items, art.slice(0, 400)]);
   await p2.screenshot({ path: path.join(OUT, name + '_3_imported.png') });
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);

@@ -181,7 +181,7 @@
           "acting_director_badge"
         ]
       },
-      "text": "A pale green credential card emerges from a slot marked EMERGENCY MANAGEMENT.\n\nCongratulations! You are now Acting Director of Vegetation. Nobody has established what happened to the previous one.",
+      "text": "A pale green credential card emerges from a slot marked EMERGENCY MANAGEMENT.\n\nCONGRATULATIONS! YOU ARE NOW ACTING DIRECTOR OF VEGETATION. Nobody has established what happened to the previous one.",
       "choices": [
         {
           "id": "open_formal_park_gate",
@@ -189,7 +189,8 @@
           "text": "CONTINUE",
           "to": "formal_park_entry"
         }
-      ]
+      ],
+      "notes": "PRESENTATION 2026-11-17 (docs/107): the congratulation is the machine's printed card message, so it uses the chapter's convention for printed/displayed machine text (capitals, as formal_park_entry's WELCOME, ACTING DIRECTOR). Previously it read as the narrator speaking. Wording and meaning unchanged."
     },
     "formal_park_entry": {
       "mode": "narrative",

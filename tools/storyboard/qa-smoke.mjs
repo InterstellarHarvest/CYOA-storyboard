@@ -82,7 +82,10 @@ assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured'].selectedSour
 for(const rec of Object.values(artwork.deathScreens))assert.equal(rec.dimensions,'314x206','all death-popup artworks share the approved A1 illustration format');
 
 assert.equal(artwork.portraits['house:idle'].status,'integrated','opaque House intercom views selected');
-assert.ok(Object.values(artwork.portraits['house:idle'].views).every(v=>v.status==='integrated'&&v.assetPath),'House conversation views selected');
+// 2026-11-17 (docs/107 Batch B): lounge + dining views are registered BRIEFS (not-started, no image) until generated and approved.
+const houseBriefViews=['house_of_tomorrow/lounge','house_of_tomorrow/dining'];
+assert.ok(Object.entries(artwork.portraits['house:idle'].views).every(([k,v])=>houseBriefViews.includes(k)||(v.status==='integrated'&&v.assetPath)),'House conversation views selected');
+for(const k of houseBriefViews){const v=artwork.portraits['house:idle'].views[k];assert.ok(v&&(v.status==='not-started'?v.assetPath===null:['approved','integrated'].includes(v.status)),'House '+k+' view is a brief until selected, never a fake path');}
 assert.equal(artwork.focus['house_of_tomorrow/portrait_gallery/album'].status,'integrated','family album selected');
 assert.ok(artwork.focus['house_of_tomorrow/portrait_gallery/album'].pages.every(p=>p.status==='integrated'&&p.assetPath),'three selected album pages');
 assert.ok(artwork.scenes['house_of_tomorrow/storage'].states.every(v=>v.status==='integrated'&&v.assetPath),'all used House storage variants');
@@ -96,7 +99,7 @@ assert.equal(artwork.scenes['pavilion/human_behavior_workshop']?.assetPath,null,
 for(const portrait of Object.values(artwork.portraits)){
   if(portrait.format==='opaque-complete'){
     assert.ok(Object.values(portrait.views||{}).length>=1,'House intercom uses complete scene-specific opaque views');
-    assert.ok(Object.values(portrait.views).every(view=>view.status==='integrated'&&view.assetPath),'all selected House portrait views integrated');
+    assert.ok(Object.entries(portrait.views).every(([k,view])=>houseBriefViews.includes(k)||(view.status==='integrated'&&view.assetPath)),'all selected House portrait views integrated');
     continue;
   }
   assert.equal(portrait.foregroundFormat,'transparent-rgba-png','layered NPC foreground remains transparent');

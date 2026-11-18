@@ -31,11 +31,12 @@
       "choices": [
         {
           "id": "drone_show_form",
-          "kind": "continue",
-          "text": "CONTINUE",
+          "kind": "spoken",
+          "text": "I WAS JUST GOING TO THE BATHROOM.",
           "to": "drone_presents_notice"
         }
-      ]
+      ],
+      "notes": "PRESENTATION 2026-11-17 (Story Director approved, docs/107 Batch A): single-choice conversational beat. The generic CONTINUE after the discontinuation line became one spoken player card; same id, destination and timing. No new branch."
     },
     "drone_presents_notice": {
       "mode": "dialogue",

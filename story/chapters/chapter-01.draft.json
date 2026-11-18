@@ -66,14 +66,14 @@
       "choices": [
         {
           "id": "permit_housekeeping",
-          "kind": "action",
-          "text": "ALLOW THE HOUSE TO PUT YOUR THINGS AWAY.",
+          "kind": "spoken",
+          "text": "YES, YOU CAN PUT MY THINGS AWAY.",
           "to": "orientation_storage"
         },
         {
           "id": "decline_housekeeping",
-          "kind": "action",
-          "text": "KEEP YOUR BELONGINGS WITH YOU.",
+          "kind": "spoken",
+          "text": "NO, I'LL KEEP MY THINGS.",
           "to": "orientation_refusal"
         }
       ],
@@ -141,8 +141,8 @@
       "choices": [
         {
           "id": "ask_for_bathroom_after_storage",
-          "kind": "action",
-          "text": "ASK WHERE THE BATHROOM IS.",
+          "kind": "spoken",
+          "text": "WHERE IS THE BATHROOM?",
           "to": "comfort_offer"
         }
       ],
@@ -169,8 +169,8 @@
       "choices": [
         {
           "id": "insist_on_bathroom",
-          "kind": "action",
-          "text": "ASK FOR THE BATHROOM AGAIN.",
+          "kind": "spoken",
+          "text": "I STILL NEED TO USE THE BATHROOM.",
           "to": "comfort_offer"
         }
       ],
@@ -437,8 +437,9 @@
       ]
     },
     "foyer_attempt": {
-      "mode": "narrative",
+      "mode": "dialogue",
       "scene": "house_of_tomorrow/foyer",
+      "speaker": "house",
       "effects": {
         "set": {
           "house_exit_denied": true
@@ -449,10 +450,30 @@
           "if": {
             "flag": "dinner_seen"
           },
-          "text": "The front door opens just far enough to show the public concourse. An alarm sounds.\n\n\"Oh dear. If you go, nobody will be home. We really mustn't allow that again.\" The door closes. Dinner has already been tried."
+          "text": [
+            {
+              "desc": "The front door opens just far enough to show the public concourse. An alarm sounds."
+            },
+            "Oh dear. If you go, nobody will be home. We really mustn't allow that again.",
+            {
+              "desc": "The door closes. Dinner has already been tried."
+            }
+          ]
         },
         {
-          "text": "\"Of course you may leave! A happy household is a free household.\" The front door opens.\n\nA chime sounds. Then another, far less pleasant one.\n\n\"Oh dear. If you leave, nobody will be home. We really mustn't let that happen again.\" The door closes."
+          "text": [
+            "Of course you may leave! A happy household is a free household.",
+            {
+              "desc": "The front door opens."
+            },
+            {
+              "desc": "A chime sounds. Then another, far less pleasant one."
+            },
+            "Oh dear. If you leave, nobody will be home. We really mustn't let that happen again.",
+            {
+              "desc": "The door closes."
+            }
+          ]
         }
       ],
       "choices": [
@@ -511,7 +532,8 @@
           "to": "portrait_intro"
         }
       ],
-      "notes": "The front door has only one immediate success: the actually held, newly named plant. No outing or emergency evacuation option here. Dinner is visited only once; afterward proceed to portrait."
+      "notes": "The front door has only one immediate success: the actually held, newly named plant. No outing or emergency evacuation option here. Dinner is visited only once; afterward proceed to portrait. PRESENTATION 2026-11-17 (Story Director approved): House NPC dialogue in the existing integrated foyer intercom view. Words unchanged: narration became desc runs inside both conditional variants and the House lines lost their narration quotes. All five conditional cards stay physical actions with unchanged conditions, effects and destinations.",
+      "pose": "idle"
     },
     "plant_adoption": {
       "mode": "narrative",
@@ -581,8 +603,8 @@
       "choices": [
         {
           "id": "reply_for_martin",
-          "kind": "action",
-          "text": "ANSWER FOR MARTIN.",
+          "kind": "spoken",
+          "text": "MARTIN SAYS HE'S HAD A LONG DAY.",
           "to": "martin_bedtime"
         },
         {
@@ -598,7 +620,7 @@
           "to": "foyer_attempt"
         }
       ],
-      "notes": "Dinner always concerns absent family, never spoiled food. Choice A instantly triggers bedtime; not a permanent identity assignment."
+      "notes": "Dinner always concerns absent family, never spoiled food. Choice A instantly triggers bedtime; not a permanent identity assignment. PRESENTATION 2026-11-17: reply_for_martin is the protagonist SPEAKING ON MARTIN'S BEHALF (Story Director wording); the House mistakes it for Martin answering. The protagonist is never assigned Martin's identity."
     },
     "dinner_clue": {
       "mode": "narrative",
@@ -1015,12 +1037,12 @@
       "choices": [
         {
           "id": "let_house_change_subject",
-          "kind": "continue",
-          "text": "CONTINUE",
+          "kind": "spoken",
+          "text": "YOU DIDN'T ANSWER MY QUESTION.",
           "to": "bathroom_arrival"
         }
       ],
-      "notes": "No defensive response or diagnostic. The house cannot comprehend death; no redundant confrontation flag.",
+      "notes": "No defensive response or diagnostic. The house cannot comprehend death; no redundant confrontation flag. PRESENTATION 2026-11-17: single-choice beat (Story Director approved). The protest is selectable speech; the House ignores it and bathroom_arrival continues as before. No branch, flag or confrontation mechanic.",
       "pose": "idle"
     },
     "bathroom_arrival": {

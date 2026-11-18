@@ -46,7 +46,7 @@ The Chapter 1 spoken-card count falls to 0 because Batch 1 only fixes typography
 - **Chapter 1:** the House is a conversational NPC in about 20 nodes, but only 2 use dialogue mode. Its lines elsewhere sit as quoted narration. Its five `spoken` cards were stage directions ("ASK WHERE THE BATHROOM IS."), which the renderer wraps in quotes.
 - **Chapter 3:** every node is Narrative B. Conversations with the Attendant, the Original and the Registrar are written as `Name:` transcripts inside narration, including the player's own lines ("You: Can I use it?"). That is exactly the passive pattern the owner described.
 
-A constraint shapes Chapter 1: approved scene-state art relies on some House nodes staying narrative (`plant_adoption` pedestal overlay, `portrait_print` album on the cabinet). Converting them would hide integrated art, so they stay Narrative B.
+~~A constraint shapes Chapter 1: approved scene-state art relies on some House nodes staying narrative.~~ **Correction (Batch A):** dialogue mode keeps the main scene in the scene aperture and puts the House view in the right-hand portrait aperture (`stage.js` `openingArt`), so scene-state art would still show. `plant_adoption` and `portrait_print` stay Narrative B on the Story Director's ruling: they are physical events and reveals.
 
 ## 4. Findings
 
@@ -73,7 +73,7 @@ Confidence: H high, M medium, L low. Art impact: **none** (no new art), **view**
 | `dinner_redirect` | B; House announcement + door lock | Dialogue or keep | Short announcement plus physical lock; borderline | Owner choice; foyer view exists | view | L |
 | `comfort_offer`, `refused_both`, `refreshments` | B; House questions | Dialogue (Batch 3) | The House asks and the player answers; lounge/dining have no House view | Convert only if the owner commissions lounge + dining House views | new (2 views) | M |
 | `storage_reclaimed`, `martin_*`, `wardrobe_passage`, `chair_*`, `bathroom_*`, `showroom_reset`, `portrait_intro` | B with House lines | Keep B | Ambient announcements over physical events or reveals; the art carries the moment | None | none | H |
-| `plant_adoption`, `portrait_print` | B | **Keep B** | Approved scene-state art (pedestal; album on cabinet) needs the scene, not a portrait | None | none | H |
+| `plant_adoption`, `portrait_print` | B | **Keep B** (Story Director ruling) | Physical event / reveal; their scene-state art shows in either mode (corrected) | None | none | H |
 | `portrait_before_album` | Dialogue, CONTINUE | Dialogue + single beat | "Now then! Shall we continue?" is a question answered by a generic CONTINUE | One player card (wording from the Story Director) → `bathroom_arrival` | none | M |
 | `album_closeup` | Focus A | Keep | Correct | None | none | H |
 
@@ -151,3 +151,40 @@ Routes, flags, inventory, d6 checks, nonstacking bonuses, endings and death beha
 | `validate_death_controls` | 44/45 | 44/45 |
 
 The single `validate_death_controls` failure is its pinned content-hash check (`407d8ec78f1c`). It fails on any canon change, the base included, and needs a deliberate fixture update when the game next pulls.
+
+## 8. Implementation record — Batch A (Story Director decisions, 2026-11-17)
+
+Chapter 3 is out of scope: no Chapter 3 file changes in Batch A or Batch B.
+
+**Prologue**
+- `drone_intercepts`: CONTINUE → single spoken card **I WAS JUST GOING TO THE BATHROOM.** (same id `drone_show_form`, same destination `drone_presents_notice`). It is echoed into the drone conversation as the player's line.
+
+**Chapter 1**
+- Spoken wording (cards were actions after Batch 1):
+
+  | Choice | Node | Mode | Spoken text |
+  |---|---|---|---|
+  | `permit_housekeeping` | `welcome_home` | dialogue | YES, YOU CAN PUT MY THINGS AWAY. |
+  | `decline_housekeeping` | `welcome_home` | dialogue | NO, I'LL KEEP MY THINGS. |
+  | `ask_for_bathroom_after_storage` | `orientation_storage` | B | WHERE IS THE BATHROOM? |
+  | `insist_on_bathroom` | `orientation_refusal` | dialogue | I STILL NEED TO USE THE BATHROOM. |
+  | `reply_for_martin` | `dinner_arrival` | B | MARTIN SAYS HE'S HAD A LONG DAY. |
+
+  In dialogue nodes the line is echoed into the transcript, unquoted, in the player style. In B nodes it is shown on its quoted card and, by the B rule, not echoed: the destination narration carries it (`martin_bedtime`: the House "believes Martin has answered"; the protagonist is never assigned Martin's identity).
+- `portrait_before_album`: CONTINUE → single spoken card **YOU DIDN'T ANSWER MY QUESTION.** The House does not answer it; `bathroom_arrival` follows as before.
+- `orientation_refusal` (Batch 1) is kept: House dialogue in the foyer view.
+- `foyer_attempt` → House dialogue in the integrated foyer view. Both conditional variants keep their exact words as desc runs and House speech. All five conditional action cards (conditions, `plant_named` effect, `plant_adoption` / `dinner_redirect` / `portrait_intro` routing) are unchanged; the node effect `house_exit_denied` is unchanged.
+- Kept Narrative B: `dinner_redirect`, `refused_both`, `refreshments`, `plant_adoption`, `portrait_print`.
+
+**Chapter 2** (verification; one minimal correction)
+- `gardener_choices`: reached only from `gardener_arrival` (dialogue) in the same scene; it is Narrative B with the main scene `biology_park/groundskeeper`, and all three cards are physical actions. No change.
+- `gardener_promotion`: the congratulation read as the narrator speaking. It now uses the chapter's capitals convention for printed or displayed machine text (as `formal_park_entry`). Wording and meaning are unchanged.
+- Courtesy Conductor: `robot_concourse_crash` is reachable only from the **pass** of `ch2_courtesy_driver` (d6≥4) on `activate_emergency_spur`; failure goes to `silent_tram_descent`. One CONTINUE to the ending. No change.
+
+**Batch B (art-dependent, not on main)**
+- Briefs registered (`not-started`, no image): `portraits:house:idle#views:house_of_tomorrow/lounge` and `#views:house_of_tomorrow/dining` in `story/artwork.draft.json` (564×278 complete opaque views, matching the integrated foyer and gallery views). Workflow: Codex generation → Art Director review → owner approval (`tools/sync/register-art.mjs`) → integration.
+- `comfort_offer` and `dinner_arrival` dialogue conversions are prepared on branch `agent/presentation-batch-b-house-views-20261117` only. They must not reach main until both views are approved.
+
+**Test fixtures changed on purpose**
+- `qa-smoke.mjs`: the two House-view assertions allow the two registered briefs (not-started, `assetPath: null`) and still require every other view to be integrated.
+- `qa-browser.js`: the Artwork-panel figures are derived from the committed catalogues instead of literals. The literal was stale on main `094d3b6` (83 expected, 74 shown after Batch 7).
