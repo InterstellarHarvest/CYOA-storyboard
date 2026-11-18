@@ -692,6 +692,21 @@
         "path": "review/chapter-02-batch01-2026-11-15/candidates/G-groundskeeper-foreground.png"
       }
     },
+    "portraits:house:idle#views:house_of_tomorrow/dining": {
+      "file": "assets/selected/art/portraits/house/dining_conversation.png",
+      "sha256": "33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "agent/ch01-house-conversation-art-20261117",
+        "commit": "3866952909a87cb4aee8ec6f2342b940e5270e40",
+        "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/B-dining-conversation-v02.png"
+      }
+    },
     "portraits:house:idle#views:house_of_tomorrow/foyer": {
       "file": "assets/selected/art/portraits/house/foyer_conversation.png",
       "sha256": "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
@@ -705,6 +720,21 @@
         "ref": "agent/canonical-storyboard-sync-20261116",
         "commit": "20b52601c5733a633a385bbb1c60995174e530cc",
         "path": "art/portraits/house/foyer_conversation.png"
+      }
+    },
+    "portraits:house:idle#views:house_of_tomorrow/lounge": {
+      "file": "assets/selected/art/portraits/house/lounge_conversation.png",
+      "sha256": "a3d55c565d98fa92a8829100e3f0d255b72ff2963b30dd505be687df3a358bbb",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "agent/ch01-house-conversation-art-20261117",
+        "commit": "3866952909a87cb4aee8ec6f2342b940e5270e40",
+        "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/A-lounge-conversation-v02.png"
       }
     },
     "portraits:house:idle#views:house_of_tomorrow/portrait_gallery": {
