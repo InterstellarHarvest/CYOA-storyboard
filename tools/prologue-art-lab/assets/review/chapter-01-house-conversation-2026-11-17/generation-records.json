@@ -1,0 +1,172 @@
+{
+  "canonicalBaseCommit": "b3e374b9a12c1bd2e60ec437293a734ffe562d33",
+  "toolCalls": 4,
+  "independentFirstRenders": 2,
+  "focusedScaleCorrections": 2,
+  "records": [
+    {
+      "artworkId": "portraits:house:idle#views:house_of_tomorrow/lounge",
+      "usedBy": "comfort_offer",
+      "version": 1,
+      "reviewRole": "superseded scale study; retained for provenance",
+      "approval": "unselected; pending Art Director review",
+      "tool": "built-in image_gen.imagegen",
+      "source": "generation-source/A-lounge-v01.png",
+      "sourceSha256": "71690d141746e7d4c28b66e110b97e0892eec3b414b1797d27c390840e3ecb14",
+      "sourceDimensions": [
+        1784,
+        882
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1ec38-b54e-7282-8f94-36ccf07b29ed/exec-c1234f69-f3d2-4834-9535-73b96895f531.png",
+      "prompt": "prompts/A-lounge-v01.txt",
+      "promptSha256": "9084a40f8fb05bf684e91f93c48246d362d8f8470fbda6732ca4caf0f91ba100",
+      "referencedImagesInOrder": [
+        "references/foyer-conversation.png",
+        "references/gallery-conversation.png",
+        "references/lounge-scene.png"
+      ],
+      "referenceHashes": [
+        "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
+        "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d",
+        "9dc600a286bc585a5fb8fc1a5bf85cca31a06ea4f42f4b83057f3845242b92f8"
+      ],
+      "transparent_background": false,
+      "candidate": "candidates/A-lounge-conversation-v01.png",
+      "candidateSha256": "d1fdf9772d76de9c8e2d5830d5335da5bce8c513b48f3b1b7ab0c387221d1f5b",
+      "candidateDimensions": [
+        564,
+        278
+      ],
+      "candidateMode": "RGB",
+      "preview4x": "previews/A-lounge-conversation-v01-4x.png",
+      "previewSha256": "4639469d6bb9f3969ee29aa1f5ddfcfcee6a2a98fc69a7b46996493f01c35c2c",
+      "processing": "Full-frame RGB export and NEAREST sampling to 564x278; exact 4x NEAREST preview. No crop, compositing, palette quantization, dithering, sharpening or painted pixels.",
+      "aspectRatioChangePercent": 0.30164209439620393,
+      "intendedProductionPath": "art/portraits/house/lounge_conversation.png",
+      "productionPathPopulated": false
+    },
+    {
+      "artworkId": "portraits:house:idle#views:house_of_tomorrow/dining",
+      "usedBy": "dinner_arrival",
+      "version": 1,
+      "reviewRole": "superseded scale study; retained for provenance",
+      "approval": "unselected; pending Art Director review",
+      "tool": "built-in image_gen.imagegen",
+      "source": "generation-source/B-dining-v01.png",
+      "sourceSha256": "f95132cb12f4ae51df844673a44b96982afd5f2b7d8d8f9f852db6b558b0ac34",
+      "sourceDimensions": [
+        1786,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1ec38-b54e-7282-8f94-36ccf07b29ed/exec-9f5295cf-03da-4082-9c2d-80e5d562394a.png",
+      "prompt": "prompts/B-dining-v01.txt",
+      "promptSha256": "6f246b1a9944cbc28a94a7053725e0b04043c4290944097006becc00886ac9b5",
+      "referencedImagesInOrder": [
+        "references/foyer-conversation.png",
+        "references/gallery-conversation.png",
+        "references/dining-scene.png"
+      ],
+      "referenceHashes": [
+        "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
+        "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d",
+        "2bd4f7b2127e7af45894224b8d04a128663357d99cba115a8ac4b80fb1c3761d"
+      ],
+      "transparent_background": false,
+      "candidate": "candidates/B-dining-conversation-v01.png",
+      "candidateSha256": "f704a4d9ef2c91c16627e300badf4ba94d16439748bbe71d307f35c8cc2ab8b8",
+      "candidateDimensions": [
+        564,
+        278
+      ],
+      "candidateMode": "RGB",
+      "preview4x": "previews/B-dining-conversation-v01-4x.png",
+      "previewSha256": "0a4e40fd3ff0c5aa21e0b9de87873a8c60ba1679d7dd3b7dac7a2b415d788901",
+      "processing": "Full-frame RGB export and NEAREST sampling to 564x278; exact 4x NEAREST preview. No crop, compositing, palette quantization, dithering, sharpening or painted pixels.",
+      "aspectRatioChangePercent": 0.0757288905717246,
+      "intendedProductionPath": "art/portraits/house/dining_conversation.png",
+      "productionPathPopulated": false
+    },
+    {
+      "artworkId": "portraits:house:idle#views:house_of_tomorrow/lounge",
+      "usedBy": "comfort_offer",
+      "version": 2,
+      "reviewRole": "current review candidate",
+      "approval": "unselected; pending Art Director review",
+      "tool": "built-in image_gen.imagegen",
+      "source": "generation-source/A-lounge-v02.png",
+      "sourceSha256": "43bb400c27bf98eecd420e3ab598ce861f6ab50cbbcc3d57e8fd91d43733d313",
+      "sourceDimensions": [
+        1788,
+        880
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1ec38-b54e-7282-8f94-36ccf07b29ed/exec-41845ef0-a757-4b1f-9b5f-d0f1db32445f.png",
+      "prompt": "prompts/A-lounge-v02.txt",
+      "promptSha256": "9375a201e9448e02931bf80addb75585042adad9f006e1f03440d7d1a12b48a3",
+      "referencedImagesInOrder": [
+        "candidates/A-lounge-conversation-v01.png",
+        "references/foyer-conversation.png",
+        "references/gallery-conversation.png"
+      ],
+      "referenceHashes": [
+        "d1fdf9772d76de9c8e2d5830d5335da5bce8c513b48f3b1b7ab0c387221d1f5b",
+        "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
+        "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d"
+      ],
+      "transparent_background": false,
+      "candidate": "candidates/A-lounge-conversation-v02.png",
+      "candidateSha256": "a3d55c565d98fa92a8829100e3f0d255b72ff2963b30dd505be687df3a358bbb",
+      "candidateDimensions": [
+        564,
+        278
+      ],
+      "candidateMode": "RGB",
+      "preview4x": "previews/A-lounge-conversation-v02-4x.png",
+      "previewSha256": "1ac6fa07a646f5869549d4ea61a2018dee1cdf6d5abcdfa7152076f1c510afa4",
+      "processing": "Full-frame RGB export and NEAREST sampling to 564x278; exact 4x NEAREST preview. No crop, compositing, palette quantization, dithering, sharpening or painted pixels.",
+      "aspectRatioChangePercent": -0.14967891458645965,
+      "intendedProductionPath": "art/portraits/house/lounge_conversation.png",
+      "productionPathPopulated": false
+    },
+    {
+      "artworkId": "portraits:house:idle#views:house_of_tomorrow/dining",
+      "usedBy": "dinner_arrival",
+      "version": 2,
+      "reviewRole": "current review candidate",
+      "approval": "unselected; pending Art Director review",
+      "tool": "built-in image_gen.imagegen",
+      "source": "generation-source/B-dining-v02.png",
+      "sourceSha256": "e9a3890725a40e0ca8c9e72360f1903a7f35302860973c1f111ef619f667b10e",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1ec38-b54e-7282-8f94-36ccf07b29ed/exec-744b13c8-b818-4503-b775-afa34aa4c50f.png",
+      "prompt": "prompts/B-dining-v02.txt",
+      "promptSha256": "4ecdcc6435d35e5339bed84e5e04c9e7813b932fadd2ff3728290fd6739b230f",
+      "referencedImagesInOrder": [
+        "candidates/B-dining-conversation-v01.png",
+        "references/foyer-conversation.png",
+        "references/gallery-conversation.png"
+      ],
+      "referenceHashes": [
+        "f704a4d9ef2c91c16627e300badf4ba94d16439748bbe71d307f35c8cc2ab8b8",
+        "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0",
+        "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d"
+      ],
+      "transparent_background": false,
+      "candidate": "candidates/B-dining-conversation-v02.png",
+      "candidateSha256": "33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a",
+      "candidateDimensions": [
+        564,
+        278
+      ],
+      "candidateMode": "RGB",
+      "preview4x": "previews/B-dining-conversation-v02-4x.png",
+      "previewSha256": "e2ffd4b138cc13c0b192f58e21e39753788bec95f221529c0f49d59bbd0014f8",
+      "processing": "Full-frame RGB export and NEAREST sampling to 564x278; exact 4x NEAREST preview. No crop, compositing, palette quantization, dithering, sharpening or painted pixels.",
+      "aspectRatioChangePercent": 0.13179372468410389,
+      "intendedProductionPath": "art/portraits/house/dining_conversation.png",
+      "productionPathPopulated": false
+    }
+  ]
+}

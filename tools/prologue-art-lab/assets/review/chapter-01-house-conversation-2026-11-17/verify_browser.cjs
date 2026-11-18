@@ -1,0 +1,44 @@
+// Local read-only gallery QA. Browser/package paths are environment inputs.
+const fs = require('node:fs');
+const path = require('node:path');
+const {pathToFileURL} = require('node:url');
+const {chromium} = require(process.env.HOUSE_PLAYWRIGHT_MODULE);
+const root = __dirname;
+const assert = (value, message) => { if (!value) throw Error(message); };
+
+(async () => {
+  const browser = await chromium.launch({headless: true, executablePath: process.env.HOUSE_CHROMIUM_PATH});
+  const page = await browser.newPage({viewport: {width: 1440, height: 1000}, deviceScaleFactor: 1});
+  const errors = [];
+  page.on('pageerror', error => errors.push(String(error)));
+  await page.goto(pathToFileURL(path.join(root, 'index.html')).href);
+  await page.locator('img').evaluateAll(async images => { await Promise.all(images.map(im => im.decode())); });
+  const current = page.locator('.candidate');
+  assert(await current.count() === 2, 'Expected two current review candidates');
+  const native = await current.locator('img').evaluateAll(images => images.map(im => ({naturalWidth: im.naturalWidth, naturalHeight: im.naturalHeight, renderedWidth: im.width, renderedHeight: im.height, imageRendering: getComputedStyle(im).imageRendering})));
+  assert(native.every(im => im.naturalWidth === 564 && im.naturalHeight === 278 && im.renderedWidth === 564 && im.renderedHeight === 278), 'Native dimensions changed');
+  fs.mkdirSync(path.join(root, 'browser-qa'), {recursive: true});
+  await page.locator('#lounge .candidate').screenshot({path: path.join(root, 'browser-qa/desktop-native.png')});
+  await page.locator('[data-scale="4"]').click();
+  const four = await current.locator('img').evaluateAll(images => images.map(im => ({width: im.width, height: im.height, scrollWidth: im.parentElement.scrollWidth, clientWidth: im.parentElement.clientWidth})));
+  assert(four.every(im => im.width === 2256 && im.height === 1112 && im.scrollWidth > im.clientWidth), '4x inspection must retain exact dimensions and scroll');
+  assert(await page.locator('[data-scale="4"]').getAttribute('aria-pressed') === 'true', '4x button state');
+  await page.locator('#lounge .candidate').screenshot({path: path.join(root, 'browser-qa/desktop-4x.png')});
+  await page.locator('[data-scale="1"]').click();
+  await page.setViewportSize({width: 390, height: 844});
+  await page.locator('#lounge').scrollIntoViewIfNeeded();
+  const mobile = await page.evaluate(() => ({viewport: innerWidth, bodyWidth: document.body.scrollWidth, candidateWidth: document.querySelector('.candidate img').width, scrollWidth: document.querySelector('.candidate .scroll').scrollWidth, clientWidth: document.querySelector('.candidate .scroll').clientWidth}));
+  assert(mobile.bodyWidth <= mobile.viewport, 'Body horizontal overflow on mobile');
+  assert(mobile.candidateWidth === 564 && mobile.scrollWidth > mobile.clientWidth, 'Mobile image must preserve native dimensions within scroll');
+  await page.screenshot({path: path.join(root, 'browser-qa/mobile-native.png')});
+  await page.setViewportSize({width: 1440, height: 1000});
+  await page.locator('#approved').scrollIntoViewIfNeeded();
+  await page.locator('#approved').screenshot({path: path.join(root, 'browser-qa/approved-comparison-native.png')});
+  const allImages = await page.locator('img').evaluateAll(images => images.map(im => ({src: im.getAttribute('src'), loaded: im.complete && im.naturalWidth > 0})));
+  assert(allImages.every(im => im.loaded), 'Unloaded gallery images');
+  assert(errors.length === 0, errors.join('\n'));
+  const report = {pass: true, browserVersion: browser.version(), currentCandidateCount: 2, native, four, mobile, allImages, errors, checks: ['native dimensions', 'integer 4x controls', 'pixelated image-rendering CSS', 'horizontal image scrolling', 'mobile body fits viewport', 'all gallery images loaded', 'both approved portraits visible in comparison', 'no JavaScript errors'], screenshots: ['browser-qa/desktop-native.png', 'browser-qa/desktop-4x.png', 'browser-qa/mobile-native.png', 'browser-qa/approved-comparison-native.png']};
+  fs.writeFileSync(path.join(root, 'browser-qa.json'), JSON.stringify(report, null, 2) + '\n');
+  console.log(JSON.stringify(report, null, 2));
+  await browser.close();
+})().catch(error => { console.error(error); process.exit(1); });
