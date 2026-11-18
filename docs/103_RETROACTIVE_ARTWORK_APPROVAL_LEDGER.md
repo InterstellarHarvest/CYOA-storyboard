@@ -140,3 +140,16 @@ Nate finally approved A–H without changes. Source InterstellarHarvest/CYOA, br
 ## Chapter2 Batch7 final Customs inspector approval — 2026-11-17
 
 Nate approved the revised I without changes; Art Director PASS. Register items:botanical_antidote_customs#inspect from InterstellarHarvest/CYOA, branch agent/ch02-art-batch07-treatment-kits, final review2711cb1784aa368e790dcdf6992cd23f93eaf1d8, path review/chapter-02-batch07-polish-2026-11-17/candidates/I-customs-antidote-inspect-background-polish-v01.png, exact SHA-25635da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc. Original pixel revision5174b3cc5414f18b3971af8bcbb9f7d499eaf90f. Previous108 selected entries/PNGs preserved; total109. A-H approval32971f8743851b1ed6997f629ad1c91076d9962c and narrative correction45b0488af8c0e4539105810b21d0651c1b7f49fa are already final and were not repeated. Batch7 complete; production paths remain null; no gameplay integration.
+
+
+## Chapter2 Batch8 final Art Director approval — 2026-11-17
+
+All five death-screen illustrations APPROVED UNCHANGED by Art Director/owner. Immutable candidate InterstellarHarvest/CYOA@29cf835db830b527021040b4960a64ab83e3699d, branch agent/ch02-art-batch08-death-aftermaths. Registered byte-exact via docs/105. Prior109 selected entries and image bytes preserved; selected total114. Chapter2 artwork generation and visual selection complete. No polish/regeneration, authored narrative or fatal-popup UI changes. Production paths remain null. Claude Gameplay PMO integration is separate.
+
+| ID | Record | Exact selected SHA-256 |
+|---|---|---|
+| A | `deathScreens:biology_park/classified_as_compost` | `45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86` |
+| B | `deathScreens:biology_park/new_arrival` | `eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5` |
+| C | `deathScreens:biology_park/personal_growth` | `8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411` |
+| D | `deathScreens:biology_park/reclassified` | `a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc` |
+| E | `deathScreens:biology_park/site_improvement` | `45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff` |

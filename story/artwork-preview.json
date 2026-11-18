@@ -2,6 +2,81 @@
   "schema": "cyoa-storyboard-artwork-preview-v1",
   "about": "Storyboard-only. Curated public copies of SELECTED artwork (approved, integrated or reused), with exact source provenance. Written by tools/sync/register-art.mjs; checked by tools/sync/check-canon.mjs. The game importer never reads this file.",
   "images": {
+    "deathScreens:biology_park/classified_as_compost": {
+      "file": "assets/selected/pending-integration/deathScreens/biology_park/classified_as_compost.png",
+      "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch08-death-aftermaths",
+        "commit": "29cf835db830b527021040b4960a64ab83e3699d",
+        "path": "review/chapter-02-batch08-2026-11-17/candidates/A-classified-as-compost.png"
+      }
+    },
+    "deathScreens:biology_park/new_arrival": {
+      "file": "assets/selected/pending-integration/deathScreens/biology_park/new_arrival.png",
+      "sha256": "eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch08-death-aftermaths",
+        "commit": "29cf835db830b527021040b4960a64ab83e3699d",
+        "path": "review/chapter-02-batch08-2026-11-17/candidates/B-new-arrival.png"
+      }
+    },
+    "deathScreens:biology_park/personal_growth": {
+      "file": "assets/selected/pending-integration/deathScreens/biology_park/personal_growth.png",
+      "sha256": "8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch08-death-aftermaths",
+        "commit": "29cf835db830b527021040b4960a64ab83e3699d",
+        "path": "review/chapter-02-batch08-2026-11-17/candidates/C-personal-growth.png"
+      }
+    },
+    "deathScreens:biology_park/reclassified": {
+      "file": "assets/selected/pending-integration/deathScreens/biology_park/reclassified.png",
+      "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch08-death-aftermaths",
+        "commit": "29cf835db830b527021040b4960a64ab83e3699d",
+        "path": "review/chapter-02-batch08-2026-11-17/candidates/D-reclassified.png"
+      }
+    },
+    "deathScreens:biology_park/site_improvement": {
+      "file": "assets/selected/pending-integration/deathScreens/biology_park/site_improvement.png",
+      "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch08-death-aftermaths",
+        "commit": "29cf835db830b527021040b4960a64ab83e3699d",
+        "path": "review/chapter-02-batch08-2026-11-17/candidates/E-site-improvement.png"
+      }
+    },
     "deathScreens:house_of_tomorrow/rest_assured": {
       "file": "assets/selected/art/deaths/rest_assured_voluntary.png",
       "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
