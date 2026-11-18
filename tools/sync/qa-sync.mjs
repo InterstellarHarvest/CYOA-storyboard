@@ -46,8 +46,9 @@ function expectError(name, mutate, pattern) {
 }
 const preview = J(ROOT, 'story/artwork-preview.json');
 const integratedKey = 'scenes:house_of_tomorrow/arrival';
+// A selected (approved, or since docs/108 integration, integrated) Biology Park record with a public preview.
 const approvedKey = 'scenes:biology_park/formal_entrance';
-assert.ok(preview.images[approvedKey], 'approved Biology Park entrance is previewed');
+assert.ok(preview.images[approvedKey], 'selected Biology Park entrance is previewed');
 
 expectError('missing chapter', (d) => { const m = J(d, 'story/storyboard-manifest.json'); m.chapters = m.chapters.filter((c) => c.id !== 'chapter-03'); W(d, 'story/storyboard-manifest.json', m); }, /required chapter chapter-03 is missing/);
 expectError('broken route', (d) => { const c = J(d, 'story/chapters/chapter-01.draft.json'); c.nodes.house_arrival.choices[0].to = 'nowhere'; W(d, 'story/chapters/chapter-01.draft.json', c); }, /destination nowhere does not exist/);
@@ -58,10 +59,13 @@ expectError('integrated art regresses to not-started', (d) => { const a = J(d, '
 expectError('preview bytes tampered', (d) => { fs.appendFileSync(path.join(d, preview.images[approvedKey].file), Buffer.from([0])); }, /do not match the recorded SHA-256/);
 expectError('preview file missing', (d) => { fs.rmSync(path.join(d, preview.images[approvedKey].file)); }, /is missing/);
 expectError('stray unregistered package file', (d) => { fs.writeFileSync(path.join(d, 'assets/selected/stray.png'), 'x'); }, /stray\.png is not registered/);
-expectError('selected record without preview', (d) => { const p = J(d, 'story/artwork-preview.json'); delete p.images[approvedKey]; W(d, 'story/artwork-preview.json', p); fs.rmSync(path.join(d, preview.images[approvedKey].file)); }, /approved but has no public preview/);
+expectError('selected record without preview', (d) => { const p = J(d, 'story/artwork-preview.json'); delete p.images[approvedKey]; W(d, 'story/artwork-preview.json', p); fs.rmSync(path.join(d, preview.images[approvedKey].file)); }, /(approved|integrated) but has no public preview/);
 if (fs.existsSync(path.join(ROOT, 'story/game-integration.json'))) {
   expectError('integrated but not in the game report', (d) => { const g = J(d, 'story/game-integration.json'); g.images = g.images.filter((i) => i.key !== integratedKey); W(d, 'story/game-integration.json', g); }, /marked integrated, but game build .* does not report it/);
-  expectError('game uses an approved-only image', (d) => { const g = J(d, 'story/game-integration.json'); g.images.push({ key: approvedKey, path: 'x.png', sha256: preview.images[approvedKey].sha256, kind: 'scene' }); W(d, 'story/game-integration.json', g); }, /the game build uses it, but its status is approved/);
+  // The record is approved-only in this copy (since docs/108 integration it is integrated in canon), and the game
+  // build reports using it: the canon check must refuse a used image that is not marked integrated.
+  expectError('game uses an approved-only image', (d) => { const a = J(d, 'story/artwork.draft.json'); a.scenes['biology_park/formal_entrance'].status = 'approved'; W(d, 'story/artwork.draft.json', a);
+    const g = J(d, 'story/game-integration.json'); if (!g.images.some((i) => i.key === approvedKey)) g.images.push({ key: approvedKey, path: 'x.png', sha256: preview.images[approvedKey].sha256, kind: 'scene' }); W(d, 'story/game-integration.json', g); }, /the game build uses it, but its status is approved/);
   expectError('game pixels differ from preview', (d) => { const g = J(d, 'story/game-integration.json'); g.images.find((i) => i.key === integratedKey).sha256 = '0'.repeat(64); W(d, 'story/game-integration.json', g); }, /uses different pixels/);
 }
 

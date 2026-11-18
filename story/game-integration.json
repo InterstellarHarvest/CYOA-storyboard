@@ -3,16 +3,16 @@
   "about": "Storyboard-only. Written by the game repository (tools/story-sync/sync.js publish): the exact images one game build uses. The public check requires every `integrated` art record to appear here with the same SHA-256.",
   "game": {
     "repo": "InterstellarHarvest/CYOA",
-    "branch": "agent/presentation-batch-a-20261117",
-    "commit": "4bcb72eccba1060c071ec65313804bbc47c9332b"
+    "branch": "agent/ch02-art-integration-20261118",
+    "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94"
   },
   "storyboard": {
     "repo": "InterstellarHarvest/CYOA-storyboard",
-    "revision": "ac4b864edc6fb052c8f04737ca03ec67e4226540"
+    "revision": "0e9dc254d179a97aedee8360c643453987f814cd"
   },
   "build": {
     "channel": "preview",
-    "contentHash": "b95b98f24e844d5aa4eeb377dc599a39a71b9b9bd882d2e5e14b32f09479b053",
+    "contentHash": "0bb7124ab2f624133ec12e798f14c61f749f904e355bc115fb131e4772eef409",
     "chapters": [
       "prologue-00",
       "chapter-01",
@@ -21,10 +21,58 @@
   },
   "images": [
     {
+      "key": "deathScreens:biology_park/classified_as_compost",
+      "path": "art/deaths/classified_as_compost.png",
+      "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86",
+      "kind": "death-screen"
+    },
+    {
+      "key": "deathScreens:biology_park/new_arrival",
+      "path": "art/deaths/new_arrival.png",
+      "sha256": "eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5",
+      "kind": "death-screen"
+    },
+    {
+      "key": "deathScreens:biology_park/personal_growth",
+      "path": "art/deaths/personal_growth.png",
+      "sha256": "8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411",
+      "kind": "death-screen"
+    },
+    {
+      "key": "deathScreens:biology_park/reclassified",
+      "path": "art/deaths/reclassified.png",
+      "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc",
+      "kind": "death-screen"
+    },
+    {
+      "key": "deathScreens:biology_park/site_improvement",
+      "path": "art/deaths/site_improvement.png",
+      "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff",
+      "kind": "death-screen"
+    },
+    {
       "key": "deathScreens:house_of_tomorrow/rest_assured",
       "path": "art/deaths/rest_assured_voluntary.png",
       "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c",
       "kind": "death-screen"
+    },
+    {
+      "key": "focus:biology_park/agricultural_customs/exposure_dispenser_open",
+      "path": "art/focus/biology_park/exposure_dispenser_open.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "kind": "focus"
+    },
+    {
+      "key": "focus:biology_park/maintenance_exit/decontamination_kit_open",
+      "path": "art/focus/biology_park/decontamination_kit_open.png",
+      "sha256": "d14ff669e3fb5f03e8c755a232a80f7064c6d7064a471255174b019a1ff42de8",
+      "kind": "focus"
+    },
+    {
+      "key": "focus:biology_park/public_exit/aid_box_open",
+      "path": "art/focus/biology_park/aid_box_open.png",
+      "sha256": "706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229",
+      "kind": "focus"
     },
     {
       "key": "focus:house_of_tomorrow/portrait_gallery/album#pages:1",
@@ -43,6 +91,66 @@
       "path": "art/focus/house_of_tomorrow/album_page_3.png",
       "sha256": "579c0b2e14589e7c3ada53ddf1c5bc984f209170c48619b18336e883b97616ad",
       "kind": "focus"
+    },
+    {
+      "key": "items:acting_director_badge#inspect",
+      "path": "art/items/acting_director_badge_inspect.png",
+      "sha256": "a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:acting_director_badge#slot",
+      "path": "art/items/acting_director_badge_slot.png",
+      "sha256": "a09dae0d8201b6062c51e4f5cc99c1e49b77240b400e7dbf5107bb805bf56c44",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:botanical_antidote_customs#inspect",
+      "path": "art/items/botanical_antidote_customs_inspect.png",
+      "sha256": "35da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:botanical_antidote_customs#slot",
+      "path": "art/items/botanical_antidote_customs_slot.png",
+      "sha256": "da857214a1bf850dbae043d32afa63db2423e57eafe3462186d0d685b9610e19",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:botanical_antidote_maintenance#inspect",
+      "path": "art/items/botanical_antidote_maintenance_inspect.png",
+      "sha256": "f59a324d74a3a7bd772858a858f9bad95809fbdf83fa16f876563f1a20493c88",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:botanical_antidote_maintenance#slot",
+      "path": "art/items/botanical_antidote_maintenance_slot.png",
+      "sha256": "ca1b9ea48ab96d0e2e98171d551a2af50ca95f345c4c9659a483783fb2e213b1",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:botanical_antidote_public#inspect",
+      "path": "art/items/botanical_antidote_public_inspect.png",
+      "sha256": "4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:botanical_antidote_public#slot",
+      "path": "art/items/botanical_antidote_public_slot.png",
+      "sha256": "d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961",
+      "kind": "item-slot"
+    },
+    {
+      "key": "items:certified_seed_canister#inspect",
+      "path": "art/items/certified_seed_canister_inspect.png",
+      "sha256": "958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7",
+      "kind": "item-inspect"
+    },
+    {
+      "key": "items:certified_seed_canister#slot",
+      "path": "art/items/certified_seed_canister_slot.png",
+      "sha256": "0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998",
+      "kind": "item-slot"
     },
     {
       "key": "items:desk_plant#inspect",
@@ -177,6 +285,18 @@
       "kind": "item-slot"
     },
     {
+      "key": "portraits:courtesy_conductor:talking",
+      "path": "art/portraits/courtesy_conductor/courtesy_conductor_talking.png",
+      "sha256": "8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d",
+      "kind": "portrait-pose"
+    },
+    {
+      "key": "portraits:groundskeeper:idle",
+      "path": "art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "kind": "portrait-pose"
+    },
+    {
       "key": "portraits:house:idle#views:house_of_tomorrow/dining",
       "path": "art/portraits/house/dining_conversation.png",
       "sha256": "33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a",
@@ -223,6 +343,186 @@
       "path": "art/portraits/termination_drone/drone_slot_closed.png",
       "sha256": "3f3de8d333a4ab2784f54a9c01da662908601a69227d348b731f28fa6f8b1867",
       "kind": "portrait-pose"
+    },
+    {
+      "key": "scenes:biology_park/abandoned_station",
+      "path": "art/scenes/biology_park/abandoned_station.png",
+      "sha256": "c9f78d96427d5fce0d1bde3651b90f09fd8d3380a65542378273c2fd1aa803f7",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/agricultural_customs",
+      "path": "art/scenes/biology_park/agricultural_customs.png",
+      "sha256": "9bc80696f31efacdbba2babd95abfe460a9fb6158ad8b674299a91744403cdef",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/authorization_archive",
+      "path": "art/scenes/biology_park/authorization_archive.png",
+      "sha256": "cf56a225b9341ac24c654562e002e4d45d5c56be36aa7f4d3f40f045bebc79ec",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/central_flower",
+      "path": "art/scenes/biology_park/central_flower.png",
+      "sha256": "68698aea02b19bbc9fedca48b978be1c2329ca136c140084b2396dfafe4f8e58",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/concourse_crash",
+      "path": "art/scenes/biology_park/concourse_crash.png",
+      "sha256": "50552704840db6220eff3d588bb4a974d51edcd32a816717803f73b6d97d11f8",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/concourse_crash#portraitBackground",
+      "path": "art/portraits/courtesy_conductor/concourse_crash_background.png",
+      "sha256": "9f8f3d19d44a6433ef70391118a616d7dd6c8626f43eccda48d55af8fdd1cd80",
+      "kind": "portrait-background"
+    },
+    {
+      "key": "scenes:biology_park/control_tower",
+      "path": "art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/conveniences_bureau",
+      "path": "art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/damaged_walkway",
+      "path": "art/scenes/biology_park/damaged_walkway.png",
+      "sha256": "8ca919bedda4f414a7bfac7bfc1f0003f8531e7fcee36ce8f2873db0985af642",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/exposition_concourse",
+      "path": "art/scenes/biology_park/exposition_concourse.png",
+      "sha256": "8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/formal_entrance",
+      "path": "art/scenes/biology_park/formal_entrance.png",
+      "sha256": "d1a55f75863a7e2a3b854566638128064b998c5d6a83659399e4ad53ce66f2e9",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/groundskeeper",
+      "path": "art/scenes/biology_park/groundskeeper.png",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/groundskeeper#portraitBackground",
+      "path": "art/portraits/groundskeeper/groundskeeper_background.png",
+      "sha256": "c96f40c20412bff3ea42238d190c85558959b37a9120eec9858182c980f11f68",
+      "kind": "portrait-background"
+    },
+    {
+      "key": "scenes:biology_park/jungle_junction",
+      "path": "art/scenes/biology_park/jungle_junction.png",
+      "sha256": "0161d0a7132bf1656a5037e6ec2812e62220c9853e4ed251176c161086fed003",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/lower_irrigation",
+      "path": "art/scenes/biology_park/lower_irrigation.png",
+      "sha256": "8f0df4ad7cbdd73182e5266bb253a8f415c2fbb4536fe908eff544b2902182a8",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/maintenance_exit",
+      "path": "art/scenes/biology_park/maintenance_exit.png",
+      "sha256": "1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/moving_forest",
+      "path": "art/scenes/biology_park/moving_forest.png",
+      "sha256": "5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/overgrown_tram",
+      "path": "art/scenes/biology_park/overgrown_tram.png",
+      "sha256": "d4c381642d2d54e6341fd82121ddcf5caef11029fa37c16d221edd5173d470c7",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/planting_hopper",
+      "path": "art/scenes/biology_park/planting_hopper.png",
+      "sha256": "5ab29aef160eb59a0d34465782d165c042b6ad8131ac04ad87215b03c33deb3b",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/planting_machine",
+      "path": "art/scenes/biology_park/planting_machine.png",
+      "sha256": "047282bbf1e5189645e5784d9b30278cb5b641a708eeed50f43945017d9b78da",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/public_exit",
+      "path": "art/scenes/biology_park/public_exit.png",
+      "sha256": "e47576d21610f3d5f2d85027192e37197cf317ffdabdbe72977bd971ec9a97aa",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/reserve_siding",
+      "path": "art/scenes/biology_park/reserve_siding.png",
+      "sha256": "c54cc60a878faaf91edc7e642fb9c854a963bb455a86d6d724d6f2f483e7ae2e",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/reserve_tram",
+      "path": "art/scenes/biology_park/reserve_tram.png",
+      "sha256": "e17c2d8fd7b569404248d86028b7a7ca4164a3856f36f261654bc941a13a7eaf",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/sensor_gallery",
+      "path": "art/scenes/biology_park/sensor_gallery.png",
+      "sha256": "b2f23c8d015c1f45af200733ba28201627c6d10102dcd9e34b92230c32683a7c",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/service_entry",
+      "path": "art/scenes/biology_park/service_entry.png",
+      "sha256": "c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/sorting_conveyor",
+      "path": "art/scenes/biology_park/sorting_conveyor.png",
+      "sha256": "fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/spore_garden",
+      "path": "art/scenes/biology_park/spore_garden.png",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/tour_tram",
+      "path": "art/scenes/biology_park/tour_tram.png",
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/translator_machine",
+      "path": "art/scenes/biology_park/translator_machine.png",
+      "sha256": "ff5704d99d027ea8a86e78b228102826bcceec03b5ae1ba583200a99822e95a3",
+      "kind": "scene"
+    },
+    {
+      "key": "scenes:biology_park/waste_chute",
+      "path": "art/scenes/biology_park/waste_chute.png",
+      "sha256": "fa2f9021a7c33f6ff188eff438ef4abec35d9ba0d1a77d805cd2ceb98bbaf498",
+      "kind": "scene"
     },
     {
       "key": "scenes:exposition/entrance",

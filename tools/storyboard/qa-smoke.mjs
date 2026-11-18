@@ -49,7 +49,11 @@ for(const [name,hash] of Object.entries(batch2SelectedHashes)){
   assert.ok(['approved','integrated'].includes(record.status),'owner-selected Batch2 image never returns to candidate status: '+id);
   const preview=selectedPreviews['scenes:'+id];
   assert.equal(preview.sha256,hash,'exact owner-selected Batch2 bytes: '+id);
-  assert.equal(preview.source.commit,'ed098eee6999b25d44a6b4db2ad7605e430d88c6','exact owner approval commit: '+id);
+  // Selected-only previews cite the owner approval commit; once a tested game build publishes the image as
+  // integrated (docs/105 step 4) its preview cites that build at the production path, and the approval commit
+  // stays recorded in the record's notes. The bytes (sha256 above) never change.
+  if(record.status==='integrated'){assert.equal(preview.source.repo,'InterstellarHarvest/CYOA','integrated preview cites the game build: '+id);assert.equal(preview.source.path,record.assetPath,'integrated preview cites the production path: '+id);assert.ok(record.notes.includes('ed098eee6999b25d44a6b4db2ad7605e430d88c6'),'owner approval commit kept in notes: '+id);}
+  else assert.equal(preview.source.commit,'ed098eee6999b25d44a6b4db2ad7605e430d88c6','exact owner approval commit: '+id);
   if(record.status==='approved'&&record.assetPath!==null)assert.equal(record.assetPath,'art/scenes/'+id+'.png','an approved record carries only the production path assigned at integration (docs/105): '+id);
   if(record.assetPath!==null)assert.equal(preview.file,'assets/selected/'+record.assetPath,'the preview mirrors the production path: '+id);
 }
@@ -93,7 +97,7 @@ assert.ok(artwork.focus['house_of_tomorrow/portrait_gallery/album'].pages.every(
 assert.ok(artwork.scenes['house_of_tomorrow/storage'].states.every(v=>v.status==='integrated'&&v.assetPath),'all used House storage variants');
 assert.equal(artwork.scenes['house_of_tomorrow/chair'].states.find(v=>v.id==='default_unrestrained').status,'approved','unbound selected alternative is approved, not falsely marked displayed');
 assert.ok(['approved','integrated'].includes(artwork.scenes['biology_park/groundskeeper'].portraitBackground.status),'groundskeeper background selected');
-assert.equal(artwork.portraits['groundskeeper:idle'].status,'approved','groundskeeper foreground selected');
+assert.ok(['approved','integrated'].includes(artwork.portraits['groundskeeper:idle'].status),'groundskeeper foreground selected');
 assert.ok(artwork.scenes['biology_park/conveniences_bureau'].notes.includes('SHA-256'),'chosen Biology Park candidate version pinned');
 assert.equal(artwork.scenes['pavilion/human_behavior_workshop']?.assetPath,null,'workshop art pending');
 // Public storyboard intentionally mirrors metadata, not private generated images.
