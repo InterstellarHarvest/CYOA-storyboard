@@ -1,6 +1,6 @@
 # The Acceptable Error — Chapter 3 Reboot Route and Presentation Audit
 **Date:** 2026-11-18  
-**Status:** Creative structure reviewed; playable Chapter 3 JSON **not yet rewritten**. Findings are a handoff for final prose/route authoring, not permission to publish or generate art.  
+**Status:** Creative structure owner-approved; an **isolated 30-node reboot candidate** exists at `story/chapters/chapter-03.reboot-candidate.json`. It is **not** in the storyboard manifest or game, lacks new art registrations, and is awaiting prose/presentation and importer review. No permission to publish or generate art.  
 **Canonical creative source:** `docs/109_CH3_REBOOT_ONE_EXPERIENCE_PER_PERSON_20261118.md` on draft PR #5 (`story/ch3-reboot-20261118`); it supersedes the old Chapter 3 narrative.  
 **Source of Chapter 2 endings:** public `story/chapters/chapter-02.draft.json` (blob SHA `e51c11df9a89a0fdb4ec6d63790f81ec0b6f6173`).  
 **Archived old Chapter 3:** `story/archives/chapter-03-pre-reboot-20261118.json` remains byte-preserved; storyboard manifest marks the old graph `archived`.
@@ -107,7 +107,7 @@ The old Chapter 3's **archived** artwork and items still exist in shared catalog
 | **Blocking creative** | Exact three arrival variants and transition to one real restroom | Story Director proposes; owner reviews/approves |
 | **Blocking creative** | Opening CH3-001 still labeled `UNAPPROVED SAMPLE PROSE` in doc 109 | Polish the attendant's initial exchange in dialogue mode; explicitly player-select the first spoken request, then present approved A/B/C |
 | **Authoring polish** | Detailed presenter/attendant lines and internal transitions are concept-approved but not all final | Tight second-person narration, small NPC exchanges, single-choice beats; do not change locked outcomes |
-| **Implementation** | Old Chapter 3 still archived; no new playable story file/manifest switch | Create new `story/chapters/chapter-03.draft.json` once final prose is approved; retain archive; validate 12 paths, 7 terminals, checks & conditions |
+| **Implementation** | Old Chapter 3 still archived; isolated 30-node **reboot candidate** exists but is not manifested | Review candidate prose and typed dialogue, register new art requirements, then deliberately switch a **preview** manifest after importer/QA; retain historical archive and old draft |
 | **Implementation** | Chapter 2 links are storyboard-only `end:true` | Gameplay PMO to plan actual runtime handoff after chapter authoring, independent of story approval |
 | **Production** | Old art briefs still listed as not-started | Quarantine old calls, register new art only after narrative and visual briefs are approved |
 
@@ -118,3 +118,11 @@ The old Chapter 3's **archived** artwork and items still exist in shared catalog
 3. Have the owner approve that final opening wording. Then author new JSON in an isolated draft and run validator/route QA before any art commissioning or game integration.
 
 **No main-branch merge or live-game integration is authorized by this audit.**
+
+## 7. Candidate JSON implementation record (2026-11-18)
+
+- New isolated file: `story/chapters/chapter-03.reboot-candidate.json` (30 authored nodes, all new `pavilion_reboot/*` scene identifiers, seven living endings, no Chapter 4 link).
+- Reproducible structural guard: `node tools/storyboard/qa-ch3-reboot-candidate.mjs` — **PASS**, 30 reachable nodes, 12 result paths, 7 unique living end nodes, 6 visits to shared backstage ending, 2 checks, no loops or dangling edges.
+- Existing baseline tests, run without activating the candidate: `node tools/storyboard/qa-smoke.mjs` — **PASS**; `node tools/sync/check-canon.mjs` — **OK**; `node tools/sync/qa-sync.mjs` — **PASS, 22/22**. These verify the old manifested storyboard and sync invariants, **not** complete game engine import of the new candidate.
+- Archive `story/archives/chapter-03-pre-reboot-20261118.json` is still byte-for-byte preserved. The public manifest still marks old Chapter 3 as `archived`; no new Pavilion art, popup, published storyboard graph, or gameplay code was changed.
+- Remaining gates: owner prose review of the candidate, final dialogue-mode/portrait planning, new art-brief registration, scene mapping and viewer layout, importer/runtime QA, and a deliberate activation decision. Do not convert the candidate's provisional `BEGIN AGAIN` survivor end actions into an unapproved Chapter 4 transition.
