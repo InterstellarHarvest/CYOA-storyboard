@@ -376,6 +376,47 @@ The owner replied **"sounds good"** to the shared backstage departure vignette. 
 ---
 ---
 
+## CH3 entry trio + opening attendant dialogue — owner-approved 2026-11-18
+
+The owner replied **"good"**, approving all **three arrival variants** and the revised shared opening. This approval closes the opening creative gap flagged in docs/110. They are alternate arrival flavors for existing Chapter 2 living exits, **not** sequential locations the protagonist visits and not new route options.
+
+### Entry A — Public concourse (`chapter3_entry_group=public_concourse`)
+
+The protagonist leaves Biology Park for the Exposition's main concourse. Ads promise improvements to everything one might do, feel or become. A sign reads **THE PEOPLE'S PAVILION — EXPERIENCE YOURSELF**, and beneath it the most beautiful sign yet: **PUBLIC RESTROOMS**. They follow the arrow. Where `ch2_exit_route=tram_robot_crash`, an optional one-line callback can acknowledge a claims official pursuing the protagonist through tram wreckage; **no new encounter**.
+
+### Entry B — Service infrastructure (`chapter3_entry_group=service_infrastructure`)
+
+A narrow maintenance staircase rises from Biology Park's tunnels; real water rushes in pipes overhead. A technician eats lunch near an electrical cabinet, notices the protagonist looking at the plumbing and casually tells them that public restrooms are upstairs. For once, ordinary useful directions with no form to sign; they climb two steps at a time. The incidental technician's one-liner can remain quoted speech in Narrative B; it is not a mandatory portrait/dialogue encounter.
+
+### Entry C — Underground transit (`chapter3_entry_group=underground_transit`)
+
+From the old station, the protagonist follows a tiled passage. The station's restroom sign was crossed out, but above the steps a new one says **PUBLIC RESTROOMS — OPEN**. They read it twice, then hurry upstairs before anyone changes it.
+
+### Shared CH3-001 — One Experience Per Person
+
+**Narrative B** establishes the real restroom: a man comes out drying his hands, a tap runs, a genuine toilet flushes. An immaculate, reassuring human attendant sits at a small desk. Then switch to **dialogue mode** with the attendant's portrait.
+
+- **ATTENDANT:** Good morning! Welcome to the People's Pavilion.
+- **Single player-spoken choice card:** **"CAN I USE THE RESTROOM?"** — the player clicks to advance; echo the line unquoted into the transcript.
+- **ATTENDANT:** Of course! Everyone is entitled to one experience.
+- The attendant checks the entry reader; **ONE EXPERIENCE PER PERSON — ALREADY REDEEMED**.
+- **ATTENDANT:** Oh, dear. I'm afraid your visit has already been completed.
+- The protagonist hears another toilet flush from the authentic restroom.
+- **ATTENDANT:** The Original has already used your allotted experience. And you clearly haven't. Which means you can't be the Original.
+- His courteous satisfaction at having explained the paradox is the joke; no exposition about who the Original really is.
+
+**Then present the three approved alternatives**, one selected by the player:
+
+- A **"I AM ME. I CAN PROVE IT."** → CH3-002A Human Verification.
+- B **"THEN SHOW ME WHO USED MY VISIT."** → CH3-002B A Perfectly Accurate Record.
+- C **WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.** → CH3-002C After You.
+
+**Format requirements:** Dialogue player speech uses renderer-added quotes on the choice card, never literal quote punctuation in stored `text`; echo it properly. Attendant lines are unquoted in the dialogue transcript. Preserve player pacing and no scripted protagonist dialogue in Narration B. The first exit visitor and the later helpful door-holder are **different people** and each uses the restroom only once. Carry inherited item, infection and exit-route state from Chapter 2. Do not require a new identity explanation or a successful restroom visit.
+
+**Approval scope:** These opening events, line contents, arrival variants and three choices are owner-approved for draft story authoring. Technical splitting into node IDs, typed descriptions, art identifiers and nonsemantic line polish are implementation details for a **new draft**; do not alter the original chapter archive or start art generation yet.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -387,4 +428,4 @@ The owner replied **"sounds good"** to the shared backstage departure vignette. 
 
 ## Next collaborative decision
 
-CH3-EXIT — An Ordinary Door is owner-approved as the shared backstage departure for six routes. **Next: full route/narrative/presentation audit** against three Chapter 2 entrances, inherited inventory/conditions, missing edge connections, distinct early exits, and absent artwork/fatal-popup requirements. Then polish authoring into a new playable Chapter 3 JSON on the draft branch while keeping the original archive untouched. No Chapter 4 event or Original identity reveal is implied.
+Chapter 3's three arrival variants, shared attendant opening, major route choices, physical consequences, dice checks and surviving endings are now owner-approved. Audit is published in docs/110. **Next: write and validate a new Chapter 3 playable draft on the isolated review branch**, preserve the archived 62-node JSON byte-for-byte, hold public main/game/art integration, and obtain owner review before declaring the new chapter ready for production. No Chapter 4 event or Original identity reveal is implied.
