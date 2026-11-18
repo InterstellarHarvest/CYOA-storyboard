@@ -193,6 +193,31 @@ The owner replied **“yes”** to both narrated outcomes and the precise hidden
 
 ---
 
+## CH3-006A — The Customer Comes First (owner-approved 2026-11-18)
+
+**Trigger:** CH3-002A A → CH3-003A **Authentic Urgency**. The protagonist has been unwillingly turned into a rotating demonstration of genuine need and public embarrassment; the real restroom is visible, inaccessible.
+
+As the presenter describes the protagonist's increasingly urgent human need to the **single audience member**, he raises his hand and says that **he** needs the bathroom. The presenter is instantly sympathetic and authorizes his visit. A visitor-status display approves his experience, and he walks into the real restroom. The protagonist objects that they need it just as much; the presenter's explanation is the punch line: the visitor needs the restroom, while **the protagonist is demonstrating the need**. The visitor eventually leaves the audience; the show concludes automatically for lack of participants, and the rotating platform carries the protagonist backstage. The player has still not used the bathroom or learned what the Original record means.
+
+**Approved staging and route:** This is a short human-centered farce and a **direct convergence to backstage departure**, together with CH3-005A (Genuine Surprise) and the successful CH3-006B leap. **No new branching decision, hidden check, injury, item change, certification or extra detour.** The actor playing the audience member is an ordinary visitor, not an Original identity reveal. Sample display language: **VISITOR EXPERIENCE AUTHORIZED** and, once he departs, **AUDIENCE PARTICIPATION: 0% / DEMONSTRATION COMPLETE**. The final line polish and exact scene/UI segmentation can be refined in authoring without changing the approved result.
+
+**Interaction pacing:** Although this is an inevitable result rather than a branching decision, do not auto-narrate the protagonist's entire response. The presenter's explanation should be separated by an **authored, single player-spoken choice card**, such as **"I NEED TO USE IT, TOO!"**, echoed into the dialogue transcript before she replies, **"Yes, but you're demonstrating that."** This is a player-paced conversational beat, **not** a new route menu or new check. The quoted sample wording is an authoring proposal pending final line polish.
+
+---
+
+## Chapter 3 dialogue, narration and player-paced conversation — binding authoring rules
+
+The owner reiterated on 2026-11-18 that the reboot **must follow the latest dialogue/narration presentation revision**, including the choice button that lets the player move a conversation forward *at meaningful moments*. For precise engine distinctions see `docs/107_PRESENTATION_MODE_AUDIT_20261117.md`, especially its single-choice beat and Batch A decisions. This applies to every reboot scene, not merely CH3-006A.
+
+- **Dialogue mode:** Human NPC exchanges such as the Pavilion attendant and stage presenter use the dialogue surface with appropriate NPC portrait/view, a typed transcript and player choice cards. Do **not** fake conversations as `Attendant:` / `You:` lines embedded in a long Narrative B passage or script player statements without the player's button press. NPC spoken lines in the dialogue transcript are **not quoted**; stage directions use description runs.
+- **Meaningful single-choice conversational beat:** If a character asks a question, contradicts the protagonist or waits for a reaction, the player may get **exactly one spoken or action choice card** that advances to the reply. The player controls the timing and, for spoken choices, their line is echoed into the transcript unquoted. Prefer an actual reaction with voice or action over generic `CONTINUE` when the protagonist would naturally respond. Do not add artificial one-click beats to every line or exhaust question menus.
+- **Narrative B:** Use second-person present-tense prose for the non-NPC scene, physical incident or environment; it types at dialogue speed. Long narration uses the **presentation-level paginated CONTINUE** and appends choice results rather than replacing them. This pagination is **different** from an authored, player-spoken dialogue beat.
+- **Focus A:** Use a detailed close-up for interactions with records, readers, demonstration controls or other objects when it earns focused inspection, distinct from the inventory inspector. No NPC transcript on this surface.
+- **Cards and ink:** Author cards using their semantic type: `spoken` cards display speech **in quotation marks** (without authored literal quotes); `action` cards display action ink (red); mixed speech/actions carry the correct transcript echo. The action/quoted speech treatment must not be flattened into ordinary prose. Audible sighs and vocalizations are speech.
+- **Scene flow:** Prefer forward-moving selections and brief incidents. A single-choice reaction does not invent a branching outcome or alter an already approved route. Keep real branching choices, risk checks and earlier-chapter item callbacks meaningful and separately approved.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -204,4 +229,4 @@ The owner replied **“yes”** to both narrated outcomes and the precise hidden
 
 ## Next collaborative decision
 
-CH3-006B is locked: hidden d6≥4 (+1 from held, unconsumed timing clicker), success to backstage and failure to an early safe Pavilion exit. **Next finish CH3-003A Authentic Urgency** and decide its natural route to departure or one meaningful further incident. Then develop the still-unwritten CH3-001 B/C options and consolidate appropriate backstage exits. Do not revive the Original-as-person story.
+CH3-006A is now locked as a backstage convergence with a player-paced spoken reply; CH3-006B remains locked as hidden d6≥4 (+1 from held, unconsumed timing clicker), success to backstage and failure to an early safe Pavilion exit. **Next develop the still-unwritten CH3-001 B/C routes** (inspect the false visit record or try the real bathroom door), then consolidate backstage departures. Do not revive the Original-as-person story.
