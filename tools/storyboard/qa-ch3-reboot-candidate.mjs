@@ -12,6 +12,7 @@ const candidate=read('story/chapters/chapter-03.reboot-candidate.json');
 const ch2=read('story/chapters/chapter-02.draft.json');
 const manifest=read('story/storyboard-manifest.json');
 const items=read('story/items.draft.json');
+const reviewLayout=read('story/chapter-03.reboot-review-layout.json');
 const nodes=candidate.nodes;
 
 assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').status,'archived');
@@ -128,6 +129,20 @@ assert.equal(dash.need,4);
 assert.equal(dash.mods,undefined,'door dash has no modifier');
 assert.equal(nodes.backstage_exit.mode,'narrative');
 assert.equal(nodes.backstage_exit.end,true);
+assert.equal(reviewLayout.schema,'cyoa-storyboard-layout-v1');
+const preview=reviewLayout.chapters['chapter-03'];
+assert.ok(preview.layoutRevision>2,'preview layout revision isolates old cached positions');
+const grouped=preview.timeline.incidents.flatMap(group=>group.nodes);
+assert.equal(new Set(grouped).size,grouped.length,'each preview card belongs to exactly one incident');
+assert.deepEqual(grouped.slice().sort(),Object.keys(nodes).sort(),
+  'review-only timeline includes every candidate card and no legacy cards');
+const viewer=fs.readFileSync(path.join(root,'tools/storyboard/index.html'),'utf8');
+assert.ok(viewer.includes('searchParams.get("review")==="ch3-reboot"'),
+  'review URL requires explicit query parameter');
+assert.ok(viewer.includes('entry.file="chapters/chapter-03.reboot-candidate.json"'),
+  'review URL points at isolated draft rather than archived Chapter 3');
+assert.ok(viewer.includes('chapter-03.reboot-review-layout.json'),
+  'review URL reads its own incident layout');
 
 console.log('CH3 REBOOT CANDIDATE QA: PASS — '+seen.size+
   ' reachable nodes, '+ends.length+' paths, '+Object.keys(counts).length+
