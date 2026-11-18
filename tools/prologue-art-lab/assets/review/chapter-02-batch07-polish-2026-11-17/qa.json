@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "method": "Native RGB background color replacement through explicit border-connected two-color field mask, with foreground/shadow protection expanded by one native pixel",
+  "regeneration": false,
+  "interpolation": "none; exact4x NEAREST previews only",
+  "originalPath": "references/I-customs-antidote-inspect.png",
+  "originalSha256": "901ea4bced05cc532e2447892f4722e0c6a90b109a650c9bf8250b5f07303d7f",
+  "candidatePath": "candidates/I-customs-antidote-inspect-background-polish-v01.png",
+  "sha256": "35da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc",
+  "dimensions": [
+    565,
+    451
+  ],
+  "mode": "RGB",
+  "status": "generated",
+  "selected": false,
+  "assetPath": null,
+  "paletteColors": 64,
+  "palettePreserved": true,
+  "introducedColors": [],
+  "replacementRgb": [
+    184,
+    173,
+    166
+  ],
+  "changedPixels": 38809,
+  "unchangedPixels": 216006,
+  "protectedPixelCount": 50796,
+  "permittedBackgroundPixelCount": 204019,
+  "changedOutsidePermittedRegion": 0,
+  "changedProtectedInjectorAndShadowPixels": 0,
+  "changedNonBackgroundColorPixels": 0,
+  "changedColorPairs": [
+    {
+      "from": [
+        171,
+        167,
+        165
+      ],
+      "to": [
+        184,
+        173,
+        166
+      ],
+      "count": 38809
+    }
+  ],
+  "injectorSilhouetteHardwareReservoirLabelAndShadowUnchanged": true,
+  "allAllowedBackgroundPixelsNowOneColor": true,
+  "exact4xVerified": true,
+  "sourcePixelHashes": {
+    "protectedBefore": "f2eb6e52cfd9e2c8aa8b62771445f5cd641e72905680ae04cdac9bf7762ff85d",
+    "protectedAfter": "f2eb6e52cfd9e2c8aa8b62771445f5cd641e72905680ae04cdac9bf7762ff85d"
+  },
+  "originalTrackedArtFilesPreserved": 1931
+}

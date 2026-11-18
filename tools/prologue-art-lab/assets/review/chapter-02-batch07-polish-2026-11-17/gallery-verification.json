@@ -1,0 +1,45 @@
+{
+  "cardCount": 2,
+  "nativeImages": [
+    {
+      "src": "previews/I-original-native.png",
+      "w": 565,
+      "h": 451,
+      "loaded": true,
+      "pixelated": "crisp-edges"
+    },
+    {
+      "src": "previews/I-revised-native.png",
+      "w": 565,
+      "h": 451,
+      "loaded": true,
+      "pixelated": "crisp-edges"
+    }
+  ],
+  "fourXImages": [
+    {
+      "src": "previews/I-original-4x.png",
+      "w": 2260,
+      "h": 1804,
+      "loaded": true
+    },
+    {
+      "src": "previews/I-revised-4x.png",
+      "w": 2260,
+      "h": 1804,
+      "loaded": true
+    }
+  ],
+  "fourXControlWorks": true,
+  "brokenImages": [],
+  "documentOverflow": false,
+  "comparisonCount": 6,
+  "passed": true,
+  "browser": "Google Chrome headless",
+  "realBrowser": true,
+  "localLinksChecked": 19,
+  "missingLinksAtRun": [],
+  "chromeExitedAfterDomCapture": false,
+  "screenshotExists": true,
+  "note": "Chrome may require timeout termination after producing complete successful DOM. Pixel assertions come from actual decoded image dimensions and exercised gallery controls."
+}

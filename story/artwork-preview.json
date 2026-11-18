@@ -17,6 +17,51 @@
         "path": "art/deaths/rest_assured_voluntary.png"
       }
     },
+    "focus:biology_park/agricultural_customs/exposure_dispenser_open": {
+      "file": "assets/selected/pending-integration/focus/biology_park/agricultural_customs/exposure_dispenser_open.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/G-customs-exposure-dispenser-focus.png"
+      }
+    },
+    "focus:biology_park/maintenance_exit/decontamination_kit_open": {
+      "file": "assets/selected/pending-integration/focus/biology_park/maintenance_exit/decontamination_kit_open.png",
+      "sha256": "d14ff669e3fb5f03e8c755a232a80f7064c6d7064a471255174b019a1ff42de8",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/D-maintenance-decontamination-focus.png"
+      }
+    },
+    "focus:biology_park/public_exit/aid_box_open": {
+      "file": "assets/selected/pending-integration/focus/biology_park/public_exit/aid_box_open.png",
+      "sha256": "706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/A-public-aid-box-focus.png"
+      }
+    },
     "focus:house_of_tomorrow/portrait_gallery/album#pages:1": {
       "file": "assets/selected/art/focus/house_of_tomorrow/album_page_1.png",
       "sha256": "c789a17a2e2ee45a7db07cd9e2aa0a4457dabe68dd88901aaf254f168a100ba7",
@@ -90,6 +135,96 @@
         "ref": "agent/ch02-art-batch06-credentials-cargo",
         "commit": "db91a0a1e49d308292fa68348bf5d06ee7548417",
         "path": "review/chapter-02-batch06-2026-11-17/candidates/A-acting-director-badge-slot.png"
+      }
+    },
+    "items:botanical_antidote_customs#inspect": {
+      "file": "assets/selected/pending-integration/items/botanical_antidote_customs/inspect.png",
+      "sha256": "35da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "2711cb1784aa368e790dcdf6992cd23f93eaf1d8",
+        "path": "review/chapter-02-batch07-polish-2026-11-17/candidates/I-customs-antidote-inspect-background-polish-v01.png"
+      }
+    },
+    "items:botanical_antidote_customs#slot": {
+      "file": "assets/selected/pending-integration/items/botanical_antidote_customs/slot.png",
+      "sha256": "da857214a1bf850dbae043d32afa63db2423e57eafe3462186d0d685b9610e19",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/H-customs-antidote-slot.png"
+      }
+    },
+    "items:botanical_antidote_maintenance#inspect": {
+      "file": "assets/selected/pending-integration/items/botanical_antidote_maintenance/inspect.png",
+      "sha256": "f59a324d74a3a7bd772858a858f9bad95809fbdf83fa16f876563f1a20493c88",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/F-maintenance-antidote-inspect.png"
+      }
+    },
+    "items:botanical_antidote_maintenance#slot": {
+      "file": "assets/selected/pending-integration/items/botanical_antidote_maintenance/slot.png",
+      "sha256": "ca1b9ea48ab96d0e2e98171d551a2af50ca95f345c4c9659a483783fb2e213b1",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/E-maintenance-antidote-slot.png"
+      }
+    },
+    "items:botanical_antidote_public#inspect": {
+      "file": "assets/selected/pending-integration/items/botanical_antidote_public/inspect.png",
+      "sha256": "4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/C-public-antidote-inspect.png"
+      }
+    },
+    "items:botanical_antidote_public#slot": {
+      "file": "assets/selected/pending-integration/items/botanical_antidote_public/slot.png",
+      "sha256": "d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-batch07-treatment-kits",
+        "commit": "7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e",
+        "path": "review/chapter-02-batch07-2026-11-17/candidates/B-public-antidote-slot.png"
       }
     },
     "items:certified_seed_canister#inspect": {
