@@ -1,4 +1,7 @@
 name: Publish CYOA Storyboard
+# Review-branch variant: build current public main and overlay only the isolated
+# generated/unselected gallery. Never publish the Chapter 3 preparation branch's
+# story/catalogue/viewer files and never merge this workflow change to main.
 on:
   push:
     branches: [main]
@@ -30,6 +33,15 @@ jobs:
     steps:
       - name: Check out public storyboard files
         uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Check out isolated Chapter 3 gallery only
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: .review-source
+          sparse-checkout: tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18
+          sparse-checkout-cone-mode: false
       - name: Canonical drift check (chapters, routes, field contract, selected-art previews, status regression, game integration)
         run: node tools/sync/check-canon.mjs
       - name: Validate storyboard and artwork catalog
@@ -81,6 +93,21 @@ jobs:
           test -s _site/story/death-presentations.export.json
           test -s _site/story/artwork.draft.json
           test -s _site/story/storyboard-layout.json
+      - name: Validate and overlay the isolated review package
+        env:
+          GENERATION_COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          review_path=tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18
+          (cd ".review-source/$review_path" && sha256sum --check PNG_SHA256SUMS.txt && sha256sum --check SOURCE_SHA256SUMS.txt)
+          mkdir -p "_site/$review_path"
+          cp -a ".review-source/$review_path/." "_site/$review_path/"
+          PUBLIC_MAIN_COMMIT=$(git rev-parse HEAD) python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path('_site/tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/deployment-provenance.json')
+          path.write_text(json.dumps({'publicSiteSource': os.environ['PUBLIC_MAIN_COMMIT'], 'gallerySource': os.environ['GENERATION_COMMIT'], 'scope': 'Current main site plus isolated generated/unselected Chapter 3 gallery only; no Chapter 3 activation or merge.'}, indent=2) + '\n')
+          PY
       - name: Enable and configure Pages
         uses: actions/configure-pages@v5
         with:

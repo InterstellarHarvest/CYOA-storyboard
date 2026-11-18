@@ -1,0 +1,104 @@
+[
+  {
+    "candidateId": "CH3-A01-restroom",
+    "filename": "exec-7e241781-32b1-4ffc-bc8b-a031fae0c187.png",
+    "prompt": "prompts/history/CH3-A01-restroom-superseded.txt",
+    "references": [
+      "references/reception_scene.png",
+      "references/groundskeeper.png"
+    ],
+    "transparent_background": false,
+    "role": "superseded study",
+    "reason": "Rejected by owner: repeated receptionist character and literal reception architecture."
+  },
+  {
+    "candidateId": "CH3-A02-restroom-bg",
+    "filename": "exec-bada92b3-0b76-4197-8d6f-57329556cc70.png",
+    "prompt": "prompts/history/CH3-A02-restroom-bg-superseded.txt",
+    "references": [
+      "generation-history/CH3-A01-restroom-superseded-reference-export.png",
+      "references/reception_background.png"
+    ],
+    "transparent_background": false,
+    "role": "superseded study",
+    "reason": "Superseded following owner request for new Pavilion palette and architecture."
+  },
+  {
+    "candidateId": "CH3-A03-attendant-idle",
+    "filename": "exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+    "prompt": "prompts/CH3-A03-attendant-idle.txt",
+    "references": [],
+    "transparent_background": true,
+    "role": "current candidate source",
+    "reason": null
+  },
+  {
+    "candidateId": "CH3-A01-restroom",
+    "filename": "exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+    "prompt": "prompts/CH3-A01-restroom.txt",
+    "references": [
+      "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "references/foyer.png"
+    ],
+    "transparent_background": false,
+    "role": "current candidate source",
+    "reason": null
+  },
+  {
+    "candidateId": "CH3-A02-restroom-bg",
+    "filename": "exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+    "prompt": "prompts/history/CH3-A02-restroom-bg-desk-height-study.txt",
+    "references": [
+      "generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png"
+    ],
+    "transparent_background": false,
+    "role": "superseded study",
+    "reason": "Superseded by composite QA: counter was behind the foreground torso, inconsistent with seated framing."
+  },
+  {
+    "candidateId": "CH3-A04-verification",
+    "filename": "exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+    "prompt": "prompts/CH3-A04-verification.txt",
+    "references": [
+      "generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png"
+    ],
+    "transparent_background": false,
+    "role": "current candidate source",
+    "reason": null
+  },
+  {
+    "candidateId": "CH3-A02-restroom-bg",
+    "filename": "exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+    "prompt": "prompts/CH3-A02-restroom-bg.txt",
+    "references": [
+      "generation-source/exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+      "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png"
+    ],
+    "transparent_background": false,
+    "role": "current candidate source",
+    "reason": null
+  },
+  {
+    "candidateId": "CH3-A05-verification-bg",
+    "filename": "exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+    "prompt": "prompts/CH3-A05-verification-bg.txt",
+    "references": [
+      "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png"
+    ],
+    "transparent_background": false,
+    "role": "current candidate source",
+    "reason": null
+  },
+  {
+    "candidateId": "CH3-A06-presenter-idle",
+    "filename": "exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+    "prompt": "prompts/CH3-A06-presenter-idle.txt",
+    "references": [
+      "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png"
+    ],
+    "transparent_background": true,
+    "role": "current candidate source",
+    "reason": null
+  }
+]

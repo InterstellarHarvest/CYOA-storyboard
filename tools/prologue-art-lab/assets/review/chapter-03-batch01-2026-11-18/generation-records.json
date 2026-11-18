@@ -1,0 +1,200 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "calls": [
+    {
+      "candidateId": "CH3-A01-restroom",
+      "filename": "exec-7e241781-32b1-4ffc-bc8b-a031fae0c187.png",
+      "prompt": "prompts/history/CH3-A01-restroom-superseded.txt",
+      "references": [
+        "references/reception_scene.png",
+        "references/groundskeeper.png"
+      ],
+      "transparent_background": false,
+      "role": "superseded study",
+      "reason": "Rejected by owner: repeated receptionist character and literal reception architecture.",
+      "sha256": "127a7dc880b2e33cc50ea5b9ce5996cd042c0b5a244b66dc3e41059f8d15d042",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-7e241781-32b1-4ffc-bc8b-a031fae0c187.png",
+      "promptSha256": "729798e04e87e06f93457f9bebc796b54454888bc8928f6f7980cc00b4ce51fe",
+      "referenceHashes": [
+        "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+        "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+      ]
+    },
+    {
+      "candidateId": "CH3-A02-restroom-bg",
+      "filename": "exec-bada92b3-0b76-4197-8d6f-57329556cc70.png",
+      "prompt": "prompts/history/CH3-A02-restroom-bg-superseded.txt",
+      "references": [
+        "generation-history/CH3-A01-restroom-superseded-reference-export.png",
+        "references/reception_background.png"
+      ],
+      "transparent_background": false,
+      "role": "superseded study",
+      "reason": "Superseded following owner request for new Pavilion palette and architecture.",
+      "sha256": "3ed5a0db704b55a60b2121eeeb9e315e45732ef9b64212b4b0038be4ac4456dd",
+      "sourceDimensions": [
+        1786,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-bada92b3-0b76-4197-8d6f-57329556cc70.png",
+      "promptSha256": "8fe793d07be9a9dceddfacf8ddb01c580952bdf5df32fcdc66bba082e9a56036",
+      "referenceHashes": [
+        "46e8b62c4e678f7db873d44afedec5ee97d7df30829b7c0ec7be7e2f2a9e7e78",
+        "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74"
+      ]
+    },
+    {
+      "candidateId": "CH3-A03-attendant-idle",
+      "filename": "exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "prompt": "prompts/CH3-A03-attendant-idle.txt",
+      "references": [],
+      "transparent_background": true,
+      "role": "current candidate source",
+      "reason": null,
+      "sha256": "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e",
+      "sourceDimensions": [
+        1786,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "promptSha256": "1d34cbf131e047c0188aa96f371d64c53065eb3cd9c17450c609871365af86d3",
+      "referenceHashes": []
+    },
+    {
+      "candidateId": "CH3-A01-restroom",
+      "filename": "exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+      "prompt": "prompts/CH3-A01-restroom.txt",
+      "references": [
+        "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+        "references/foyer.png"
+      ],
+      "transparent_background": false,
+      "role": "current candidate source",
+      "reason": null,
+      "sha256": "9713d26a2d763574b6e6c8d2f2aaff14431facbf3f9d80ed91db421bd03ea29e",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+      "promptSha256": "1a3cd71d8ebf7b3360dde4783156b24654f5461bafdfc2ffda38b80742c07358",
+      "referenceHashes": [
+        "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e",
+        "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+      ]
+    },
+    {
+      "candidateId": "CH3-A02-restroom-bg",
+      "filename": "exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+      "prompt": "prompts/history/CH3-A02-restroom-bg-desk-height-study.txt",
+      "references": [
+        "generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png"
+      ],
+      "transparent_background": false,
+      "role": "superseded study",
+      "reason": "Superseded by composite QA: counter was behind the foreground torso, inconsistent with seated framing.",
+      "sha256": "0c3b37541de28b02c611a998838347b92773a53bc550e282c678176b248292b6",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+      "promptSha256": "b6db45d191ece6626cd6daad34dbc6ee939f854d1536c4ce2070381ab12a585a",
+      "referenceHashes": [
+        "9713d26a2d763574b6e6c8d2f2aaff14431facbf3f9d80ed91db421bd03ea29e"
+      ]
+    },
+    {
+      "candidateId": "CH3-A04-verification",
+      "filename": "exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "prompt": "prompts/CH3-A04-verification.txt",
+      "references": [
+        "generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png"
+      ],
+      "transparent_background": false,
+      "role": "current candidate source",
+      "reason": null,
+      "sha256": "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "promptSha256": "892026da33d241017c4fb3162bac16d461624e94e3e11ed7a66aa1ddde8de718",
+      "referenceHashes": [
+        "9713d26a2d763574b6e6c8d2f2aaff14431facbf3f9d80ed91db421bd03ea29e"
+      ]
+    },
+    {
+      "candidateId": "CH3-A02-restroom-bg",
+      "filename": "exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+      "prompt": "prompts/CH3-A02-restroom-bg.txt",
+      "references": [
+        "generation-source/exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+        "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png"
+      ],
+      "transparent_background": false,
+      "role": "current candidate source",
+      "reason": null,
+      "sha256": "6757df9537fb41a115cf7fc0d09a32a3d93049500980fac88548171f71618aa6",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+      "promptSha256": "a240bbbf80926b1ebb91095abf2c17cd3ab284e190a2951fe8ac2b6f629fca3c",
+      "referenceHashes": [
+        "0c3b37541de28b02c611a998838347b92773a53bc550e282c678176b248292b6",
+        "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e"
+      ]
+    },
+    {
+      "candidateId": "CH3-A05-verification-bg",
+      "filename": "exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+      "prompt": "prompts/CH3-A05-verification-bg.txt",
+      "references": [
+        "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png"
+      ],
+      "transparent_background": false,
+      "role": "current candidate source",
+      "reason": null,
+      "sha256": "52beba660129b9df340e26c437c2b76a2421cbd7a02e68158805ad60d0273981",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+      "promptSha256": "065a5c56dd111e4c485ff7e75d28774a97f3da154adb38f8f12baf8e1df45618",
+      "referenceHashes": [
+        "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca"
+      ]
+    },
+    {
+      "candidateId": "CH3-A06-presenter-idle",
+      "filename": "exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+      "prompt": "prompts/CH3-A06-presenter-idle.txt",
+      "references": [
+        "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+        "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png"
+      ],
+      "transparent_background": true,
+      "role": "current candidate source",
+      "reason": null,
+      "sha256": "364049c68e5688491c59e02a215da023f6be023c7bb288a35468fdb06cf05bb2",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+      "promptSha256": "79a0f8a26d47fd48782a9b0258db3740b884bbd0ffe5fcc39e85f7f90e020a20",
+      "referenceHashes": [
+        "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca",
+        "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e"
+      ]
+    }
+  ]
+}

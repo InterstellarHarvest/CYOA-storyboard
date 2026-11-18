@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8769/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Exactly six current candidate cards; superseded studies are links only",
+    "All candidate, composite, edge-proof and approved-reference images load at exact 1x intrinsic dimensions",
+    "Browser uses pixelated/crisp-edge image rendering",
+    "4x control applies exact integer dimensions to every displayed image",
+    "4x views scroll in bounded containers without fractional fit-to-width scaling",
+    "390px mobile page has no horizontal document overflow; artwork scrolls within its image containers",
+    "No page exceptions or failed network requests"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "interpretation": "Gallery behavior only. Does not approve art or override native-grid/alpha failures in qa.json."
+}

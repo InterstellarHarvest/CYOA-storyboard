@@ -1,0 +1,1155 @@
+{
+  "repository": "InterstellarHarvest/CYOA-storyboard",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "generationBaseCommit": "2a1022ba7d96f9cf887402fc59c8266f81be577c",
+  "approvedNarrativeBlob": "857ffdf1bc9432cf4bbbfd7819f5f430a06d9036",
+  "status": "generated",
+  "selected": false,
+  "gate": "Nate visual selection; Batch B not started",
+  "catalogueChanges": "None. Exact catalogue prompts remain unchanged; later owner steering is preserved separately and appended to relevant submissions.",
+  "nativeAuthorshipRequirement": "NOT MET — tool returned larger rasters. These six dimension-correct review exports were NEAREST sampled. Do not represent them as original native-resolution drawings.",
+  "candidates": [
+    {
+      "id": "CH3-A01-restroom",
+      "catalogueKey": "scenes:pavilion_reboot/restroom_entrance",
+      "title": "THE REAL RESTROOM",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "candidate": "candidates/CH3-A01-restroom-v01.png",
+      "sha256": "2675e51df2a9cd87a382f1bc1236e483d284973e671bf893aefe2adaa66f8201",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "preview4x": "previews/CH3-A01-restroom-v01-4x.png",
+      "previewSha256": "c41c107bc5bd7ed10bc67a068cd5aa36fe6786da7f8bc0218021167a6483a426",
+      "source": "generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+      "sourceSha256": "9713d26a2d763574b6e6c8d2f2aaff14431facbf3f9d80ed91db421bd03ea29e",
+      "originalSourceFilename": "exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "prompt": "prompts/CH3-A01-restroom.txt",
+      "promptSha256": "1a3cd71d8ebf7b3360dde4783156b24654f5461bafdfc2ffda38b80742c07358",
+      "referencedImagesInOrder": [
+        "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+        "references/foyer.png"
+      ],
+      "referenceHashes": [
+        "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e",
+        "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+      ],
+      "transparent_background": false,
+      "alpha": {
+        "fullyTransparentPixels": 0,
+        "fullyOpaquePixels": 64684,
+        "partialAlphaPixels": 0,
+        "distinctAlphaValues": 1,
+        "spriteBounds": null,
+        "hardAlphaRequirement": "PASS"
+      },
+      "palette": {
+        "visibleRgbColors": 23010,
+        "dominant16": [
+          {
+            "rgb": [
+              105,
+              124,
+              133
+            ],
+            "pixels": 202
+          },
+          {
+            "rgb": [
+              216,
+              115,
+              90
+            ],
+            "pixels": 187
+          },
+          {
+            "rgb": [
+              224,
+              193,
+              166
+            ],
+            "pixels": 184
+          },
+          {
+            "rgb": [
+              223,
+              193,
+              166
+            ],
+            "pixels": 179
+          },
+          {
+            "rgb": [
+              223,
+              192,
+              165
+            ],
+            "pixels": 170
+          },
+          {
+            "rgb": [
+              232,
+              200,
+              170
+            ],
+            "pixels": 169
+          },
+          {
+            "rgb": [
+              223,
+              193,
+              165
+            ],
+            "pixels": 167
+          },
+          {
+            "rgb": [
+              217,
+              116,
+              90
+            ],
+            "pixels": 160
+          },
+          {
+            "rgb": [
+              217,
+              115,
+              90
+            ],
+            "pixels": 158
+          },
+          {
+            "rgb": [
+              254,
+              251,
+              231
+            ],
+            "pixels": 157
+          },
+          {
+            "rgb": [
+              224,
+              194,
+              166
+            ],
+            "pixels": 147
+          },
+          {
+            "rgb": [
+              216,
+              116,
+              91
+            ],
+            "pixels": 146
+          },
+          {
+            "rgb": [
+              224,
+              194,
+              167
+            ],
+            "pixels": 142
+          },
+          {
+            "rgb": [
+              106,
+              125,
+              134
+            ],
+            "pixels": 138
+          },
+          {
+            "rgb": [
+              224,
+              193,
+              165
+            ],
+            "pixels": 135
+          },
+          {
+            "rgb": [
+              217,
+              115,
+              89
+            ],
+            "pixels": 126
+          }
+        ],
+        "processing": "No palette quantization, recoloring or dithering."
+      },
+      "authoredAtRequestedNativeSize": false,
+      "processing": "Full-frame NEAREST sampling to requested review dimensions; RGB conversion for opaque backgrounds, original generated alpha preserved for foregrounds. No crop, blur, paint, sharpening, palette reduction or alpha threshold. Exact 4x NEAREST preview.",
+      "aspectRatioChangePercent": 0.04264820250370338
+    },
+    {
+      "id": "CH3-A02-restroom-bg",
+      "catalogueKey": "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+      "title": "THE REAL RESTROOM — CLOSE CONVERSATION BACKGROUND",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "candidate": "candidates/CH3-A02-restroom-bg-v01.png",
+      "sha256": "f8d76872bcdccb9bc620d60d9c7df304296dfca18d9ed0838700963aa6343b9f",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "preview4x": "previews/CH3-A02-restroom-bg-v01-4x.png",
+      "previewSha256": "374a9cd5b903e224662ab91efefc833adb3751150bff24e653df01cc5bf1fc88",
+      "source": "generation-source/exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+      "sourceSha256": "6757df9537fb41a115cf7fc0d09a32a3d93049500980fac88548171f71618aa6",
+      "originalSourceFilename": "exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "sourceMode": "RGB",
+      "prompt": "prompts/CH3-A02-restroom-bg.txt",
+      "promptSha256": "a240bbbf80926b1ebb91095abf2c17cd3ab284e190a2951fe8ac2b6f629fca3c",
+      "referencedImagesInOrder": [
+        "generation-source/exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+        "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png"
+      ],
+      "referenceHashes": [
+        "0c3b37541de28b02c611a998838347b92773a53bc550e282c678176b248292b6",
+        "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e"
+      ],
+      "transparent_background": false,
+      "alpha": {
+        "fullyTransparentPixels": 0,
+        "fullyOpaquePixels": 156792,
+        "partialAlphaPixels": 0,
+        "distinctAlphaValues": 1,
+        "spriteBounds": null,
+        "hardAlphaRequirement": "PASS"
+      },
+      "palette": {
+        "visibleRgbColors": 33057,
+        "dominant16": [
+          {
+            "rgb": [
+              189,
+              167,
+              151
+            ],
+            "pixels": 713
+          },
+          {
+            "rgb": [
+              190,
+              168,
+              151
+            ],
+            "pixels": 685
+          },
+          {
+            "rgb": [
+              188,
+              166,
+              150
+            ],
+            "pixels": 627
+          },
+          {
+            "rgb": [
+              189,
+              167,
+              150
+            ],
+            "pixels": 576
+          },
+          {
+            "rgb": [
+              187,
+              166,
+              150
+            ],
+            "pixels": 509
+          },
+          {
+            "rgb": [
+              186,
+              165,
+              149
+            ],
+            "pixels": 505
+          },
+          {
+            "rgb": [
+              188,
+              167,
+              151
+            ],
+            "pixels": 476
+          },
+          {
+            "rgb": [
+              187,
+              165,
+              149
+            ],
+            "pixels": 452
+          },
+          {
+            "rgb": [
+              186,
+              165,
+              150
+            ],
+            "pixels": 421
+          },
+          {
+            "rgb": [
+              254,
+              247,
+              228
+            ],
+            "pixels": 413
+          },
+          {
+            "rgb": [
+              185,
+              164,
+              149
+            ],
+            "pixels": 388
+          },
+          {
+            "rgb": [
+              189,
+              168,
+              152
+            ],
+            "pixels": 364
+          },
+          {
+            "rgb": [
+              190,
+              168,
+              152
+            ],
+            "pixels": 360
+          },
+          {
+            "rgb": [
+              187,
+              165,
+              150
+            ],
+            "pixels": 343
+          },
+          {
+            "rgb": [
+              189,
+              168,
+              151
+            ],
+            "pixels": 335
+          },
+          {
+            "rgb": [
+              190,
+              167,
+              151
+            ],
+            "pixels": 331
+          }
+        ],
+        "processing": "No palette quantization, recoloring or dithering."
+      },
+      "authoredAtRequestedNativeSize": false,
+      "processing": "Full-frame NEAREST sampling to requested review dimensions; RGB conversion for opaque backgrounds, original generated alpha preserved for foregrounds. No crop, blur, paint, sharpening, palette reduction or alpha threshold. Exact 4x NEAREST preview.",
+      "aspectRatioChangePercent": 0.13179372468410389
+    },
+    {
+      "id": "CH3-A03-attendant-idle",
+      "catalogueKey": "portraits:pavilion_attendant:idle",
+      "title": "PAVILION ATTENDANT — REASSURING",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "candidate": "candidates/CH3-A03-attendant-idle-v01.png",
+      "sha256": "eed0af042adff8765084eed0cc1f8d9dde9cdfe7fd55a355024904caa0cbb990",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "preview4x": "previews/CH3-A03-attendant-idle-v01-4x.png",
+      "previewSha256": "42727cd2ba28820a5c3c46f14ff3faaecdbc0153ef78b2270daee36990eaa1f5",
+      "source": "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "sourceSha256": "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e",
+      "originalSourceFilename": "exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "sourceDimensions": [
+        1786,
+        881
+      ],
+      "sourceMode": "RGBA",
+      "prompt": "prompts/CH3-A03-attendant-idle.txt",
+      "promptSha256": "1d34cbf131e047c0188aa96f371d64c53065eb3cd9c17450c609871365af86d3",
+      "referencedImagesInOrder": [],
+      "referenceHashes": [],
+      "transparent_background": true,
+      "alpha": {
+        "fullyTransparentPixels": 113391,
+        "fullyOpaquePixels": 65,
+        "partialAlphaPixels": 43336,
+        "distinctAlphaValues": 224,
+        "spriteBounds": [
+          142,
+          0,
+          396,
+          278
+        ],
+        "hardAlphaRequirement": "FAIL — generated partial alpha preserved"
+      },
+      "palette": {
+        "visibleRgbColors": 10031,
+        "dominant16": [
+          {
+            "rgb": [
+              84,
+              100,
+              103
+            ],
+            "pixels": 1197
+          },
+          {
+            "rgb": [
+              231,
+              218,
+              191
+            ],
+            "pixels": 1003
+          },
+          {
+            "rgb": [
+              83,
+              99,
+              102
+            ],
+            "pixels": 934
+          },
+          {
+            "rgb": [
+              85,
+              101,
+              104
+            ],
+            "pixels": 815
+          },
+          {
+            "rgb": [
+              231,
+              218,
+              190
+            ],
+            "pixels": 629
+          },
+          {
+            "rgb": [
+              232,
+              219,
+              191
+            ],
+            "pixels": 544
+          },
+          {
+            "rgb": [
+              232,
+              219,
+              192
+            ],
+            "pixels": 455
+          },
+          {
+            "rgb": [
+              84,
+              100,
+              104
+            ],
+            "pixels": 430
+          },
+          {
+            "rgb": [
+              231,
+              219,
+              191
+            ],
+            "pixels": 424
+          },
+          {
+            "rgb": [
+              230,
+              217,
+              190
+            ],
+            "pixels": 421
+          },
+          {
+            "rgb": [
+              83,
+              99,
+              103
+            ],
+            "pixels": 399
+          },
+          {
+            "rgb": [
+              82,
+              98,
+              101
+            ],
+            "pixels": 365
+          },
+          {
+            "rgb": [
+              230,
+              217,
+              189
+            ],
+            "pixels": 342
+          },
+          {
+            "rgb": [
+              84,
+              101,
+              104
+            ],
+            "pixels": 333
+          },
+          {
+            "rgb": [
+              83,
+              100,
+              103
+            ],
+            "pixels": 313
+          },
+          {
+            "rgb": [
+              85,
+              100,
+              103
+            ],
+            "pixels": 299
+          }
+        ],
+        "processing": "No palette quantization, recoloring or dithering."
+      },
+      "authoredAtRequestedNativeSize": false,
+      "processing": "Full-frame NEAREST sampling to requested review dimensions; RGB conversion for opaque backgrounds, original generated alpha preserved for foregrounds. No crop, blur, paint, sharpening, palette reduction or alpha threshold. Exact 4x NEAREST preview.",
+      "aspectRatioChangePercent": 0.0757288905717246
+    },
+    {
+      "id": "CH3-A04-verification",
+      "catalogueKey": "scenes:pavilion_reboot/human_verification_stage",
+      "title": "LIVE HUMAN VERIFICATION STAGE",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "candidate": "candidates/CH3-A04-verification-v01.png",
+      "sha256": "bbdda47db831be488672209405a6d94b22875f04c6d1fcc147901a535e122b3f",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "preview4x": "previews/CH3-A04-verification-v01-4x.png",
+      "previewSha256": "f0e0992e0f39bf17221fc91c9dcf7812e695feeac29d1739cf22ad3ca8f90eae",
+      "source": "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "sourceSha256": "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca",
+      "originalSourceFilename": "exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "prompt": "prompts/CH3-A04-verification.txt",
+      "promptSha256": "892026da33d241017c4fb3162bac16d461624e94e3e11ed7a66aa1ddde8de718",
+      "referencedImagesInOrder": [
+        "generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png"
+      ],
+      "referenceHashes": [
+        "9713d26a2d763574b6e6c8d2f2aaff14431facbf3f9d80ed91db421bd03ea29e"
+      ],
+      "transparent_background": false,
+      "alpha": {
+        "fullyTransparentPixels": 0,
+        "fullyOpaquePixels": 64684,
+        "partialAlphaPixels": 0,
+        "distinctAlphaValues": 1,
+        "spriteBounds": null,
+        "hardAlphaRequirement": "PASS"
+      },
+      "palette": {
+        "visibleRgbColors": 23742,
+        "dominant16": [
+          {
+            "rgb": [
+              152,
+              76,
+              61
+            ],
+            "pixels": 186
+          },
+          {
+            "rgb": [
+              151,
+              76,
+              61
+            ],
+            "pixels": 184
+          },
+          {
+            "rgb": [
+              77,
+              94,
+              105
+            ],
+            "pixels": 175
+          },
+          {
+            "rgb": [
+              150,
+              75,
+              60
+            ],
+            "pixels": 165
+          },
+          {
+            "rgb": [
+              150,
+              76,
+              61
+            ],
+            "pixels": 162
+          },
+          {
+            "rgb": [
+              76,
+              93,
+              104
+            ],
+            "pixels": 158
+          },
+          {
+            "rgb": [
+              75,
+              92,
+              103
+            ],
+            "pixels": 155
+          },
+          {
+            "rgb": [
+              254,
+              252,
+              231
+            ],
+            "pixels": 151
+          },
+          {
+            "rgb": [
+              151,
+              75,
+              60
+            ],
+            "pixels": 149
+          },
+          {
+            "rgb": [
+              108,
+              138,
+              133
+            ],
+            "pixels": 125
+          },
+          {
+            "rgb": [
+              254,
+              252,
+              232
+            ],
+            "pixels": 124
+          },
+          {
+            "rgb": [
+              150,
+              75,
+              61
+            ],
+            "pixels": 120
+          },
+          {
+            "rgb": [
+              152,
+              77,
+              62
+            ],
+            "pixels": 102
+          },
+          {
+            "rgb": [
+              77,
+              93,
+              104
+            ],
+            "pixels": 99
+          },
+          {
+            "rgb": [
+              78,
+              95,
+              106
+            ],
+            "pixels": 94
+          },
+          {
+            "rgb": [
+              187,
+              153,
+              128
+            ],
+            "pixels": 93
+          }
+        ],
+        "processing": "No palette quantization, recoloring or dithering."
+      },
+      "authoredAtRequestedNativeSize": false,
+      "processing": "Full-frame NEAREST sampling to requested review dimensions; RGB conversion for opaque backgrounds, original generated alpha preserved for foregrounds. No crop, blur, paint, sharpening, palette reduction or alpha threshold. Exact 4x NEAREST preview.",
+      "aspectRatioChangePercent": 0.04264820250370338
+    },
+    {
+      "id": "CH3-A05-verification-bg",
+      "catalogueKey": "scenes:pavilion_reboot/human_verification_stage#portraitBackground",
+      "title": "LIVE HUMAN VERIFICATION STAGE — CLOSE CONVERSATION BACKGROUND",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "candidate": "candidates/CH3-A05-verification-bg-v01.png",
+      "sha256": "9da86e6802dd2e4c771b7376106c2822c54c6b475fec50c03df2e3f8cfa9f001",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "preview4x": "previews/CH3-A05-verification-bg-v01-4x.png",
+      "previewSha256": "929379fad118e0b15bc553bf77960ab3170b2e35cc22cbb09ea4449683e36844",
+      "source": "generation-source/exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+      "sourceSha256": "52beba660129b9df340e26c437c2b76a2421cbd7a02e68158805ad60d0273981",
+      "originalSourceFilename": "exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "sourceMode": "RGB",
+      "prompt": "prompts/CH3-A05-verification-bg.txt",
+      "promptSha256": "065a5c56dd111e4c485ff7e75d28774a97f3da154adb38f8f12baf8e1df45618",
+      "referencedImagesInOrder": [
+        "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png"
+      ],
+      "referenceHashes": [
+        "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca"
+      ],
+      "transparent_background": false,
+      "alpha": {
+        "fullyTransparentPixels": 0,
+        "fullyOpaquePixels": 156792,
+        "partialAlphaPixels": 0,
+        "distinctAlphaValues": 1,
+        "spriteBounds": null,
+        "hardAlphaRequirement": "PASS"
+      },
+      "palette": {
+        "visibleRgbColors": 32918,
+        "dominant16": [
+          {
+            "rgb": [
+              100,
+              119,
+              130
+            ],
+            "pixels": 721
+          },
+          {
+            "rgb": [
+              99,
+              118,
+              129
+            ],
+            "pixels": 717
+          },
+          {
+            "rgb": [
+              67,
+              87,
+              100
+            ],
+            "pixels": 645
+          },
+          {
+            "rgb": [
+              67,
+              87,
+              101
+            ],
+            "pixels": 624
+          },
+          {
+            "rgb": [
+              111,
+              150,
+              143
+            ],
+            "pixels": 537
+          },
+          {
+            "rgb": [
+              66,
+              86,
+              100
+            ],
+            "pixels": 478
+          },
+          {
+            "rgb": [
+              101,
+              120,
+              131
+            ],
+            "pixels": 427
+          },
+          {
+            "rgb": [
+              99,
+              117,
+              128
+            ],
+            "pixels": 426
+          },
+          {
+            "rgb": [
+              110,
+              149,
+              142
+            ],
+            "pixels": 406
+          },
+          {
+            "rgb": [
+              66,
+              86,
+              99
+            ],
+            "pixels": 396
+          },
+          {
+            "rgb": [
+              109,
+              148,
+              141
+            ],
+            "pixels": 396
+          },
+          {
+            "rgb": [
+              112,
+              151,
+              143
+            ],
+            "pixels": 377
+          },
+          {
+            "rgb": [
+              112,
+              151,
+              144
+            ],
+            "pixels": 372
+          },
+          {
+            "rgb": [
+              66,
+              87,
+              100
+            ],
+            "pixels": 358
+          },
+          {
+            "rgb": [
+              65,
+              85,
+              98
+            ],
+            "pixels": 349
+          },
+          {
+            "rgb": [
+              242,
+              208,
+              175
+            ],
+            "pixels": 343
+          }
+        ],
+        "processing": "No palette quantization, recoloring or dithering."
+      },
+      "authoredAtRequestedNativeSize": false,
+      "processing": "Full-frame NEAREST sampling to requested review dimensions; RGB conversion for opaque backgrounds, original generated alpha preserved for foregrounds. No crop, blur, paint, sharpening, palette reduction or alpha threshold. Exact 4x NEAREST preview.",
+      "aspectRatioChangePercent": 0.13179372468410389
+    },
+    {
+      "id": "CH3-A06-presenter-idle",
+      "catalogueKey": "portraits:pavilion_presenter:idle",
+      "title": "HUMAN PRESENTER — SHOWTIME",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "candidate": "candidates/CH3-A06-presenter-idle-v01.png",
+      "sha256": "79e259ea26e780438cfe4b727d65b90e57e01ca1a005a330b3ea868fdb7e9c0e",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "preview4x": "previews/CH3-A06-presenter-idle-v01-4x.png",
+      "previewSha256": "146a8bed9d1f8323b8e4b775fb49af988e6cfdc00b61d9316657c47793a5fba0",
+      "source": "generation-source/exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+      "sourceSha256": "364049c68e5688491c59e02a215da023f6be023c7bb288a35468fdb06cf05bb2",
+      "originalSourceFilename": "exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "sourceMode": "RGBA",
+      "prompt": "prompts/CH3-A06-presenter-idle.txt",
+      "promptSha256": "79a0f8a26d47fd48782a9b0258db3740b884bbd0ffe5fcc39e85f7f90e020a20",
+      "referencedImagesInOrder": [
+        "generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+        "generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png"
+      ],
+      "referenceHashes": [
+        "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca",
+        "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e"
+      ],
+      "transparent_background": true,
+      "alpha": {
+        "fullyTransparentPixels": 114504,
+        "fullyOpaquePixels": 87,
+        "partialAlphaPixels": 42201,
+        "distinctAlphaValues": 247,
+        "spriteBounds": [
+          132,
+          0,
+          497,
+          278
+        ],
+        "hardAlphaRequirement": "FAIL — generated partial alpha preserved"
+      },
+      "palette": {
+        "visibleRgbColors": 10381,
+        "dominant16": [
+          {
+            "rgb": [
+              79,
+              94,
+              107
+            ],
+            "pixels": 1204
+          },
+          {
+            "rgb": [
+              78,
+              93,
+              106
+            ],
+            "pixels": 1009
+          },
+          {
+            "rgb": [
+              78,
+              93,
+              107
+            ],
+            "pixels": 696
+          },
+          {
+            "rgb": [
+              79,
+              94,
+              108
+            ],
+            "pixels": 674
+          },
+          {
+            "rgb": [
+              80,
+              95,
+              108
+            ],
+            "pixels": 611
+          },
+          {
+            "rgb": [
+              58,
+              70,
+              81
+            ],
+            "pixels": 610
+          },
+          {
+            "rgb": [
+              77,
+              92,
+              105
+            ],
+            "pixels": 528
+          },
+          {
+            "rgb": [
+              77,
+              92,
+              106
+            ],
+            "pixels": 500
+          },
+          {
+            "rgb": [
+              0,
+              0,
+              0
+            ],
+            "pixels": 434
+          },
+          {
+            "rgb": [
+              57,
+              69,
+              80
+            ],
+            "pixels": 391
+          },
+          {
+            "rgb": [
+              59,
+              71,
+              82
+            ],
+            "pixels": 383
+          },
+          {
+            "rgb": [
+              79,
+              93,
+              107
+            ],
+            "pixels": 357
+          },
+          {
+            "rgb": [
+              78,
+              94,
+              107
+            ],
+            "pixels": 350
+          },
+          {
+            "rgb": [
+              58,
+              69,
+              80
+            ],
+            "pixels": 304
+          },
+          {
+            "rgb": [
+              79,
+              95,
+              108
+            ],
+            "pixels": 293
+          },
+          {
+            "rgb": [
+              59,
+              70,
+              81
+            ],
+            "pixels": 269
+          }
+        ],
+        "processing": "No palette quantization, recoloring or dithering."
+      },
+      "authoredAtRequestedNativeSize": false,
+      "processing": "Full-frame NEAREST sampling to requested review dimensions; RGB conversion for opaque backgrounds, original generated alpha preserved for foregrounds. No crop, blur, paint, sharpening, palette reduction or alpha threshold. Exact 4x NEAREST preview.",
+      "aspectRatioChangePercent": 0.13179372468410389
+    }
+  ],
+  "composites": [
+    {
+      "character": "attendant",
+      "backgroundId": "CH3-A02-restroom-bg",
+      "foregroundId": "CH3-A03-attendant-idle",
+      "file": "composites/attendant-background-foreground.png",
+      "sha256": "773cb5ca552ea16a38cc7a3044397029709c4e0ea47fcec566fa3ad678a3c250",
+      "preview4x": "composites/attendant-background-foreground-4x.png",
+      "previewSha256": "7cd3af1fce9d6d4c3d576fa81862134f126ea0df8048ebc584477004fca620fc",
+      "dimensions": [
+        564,
+        278
+      ],
+      "method": "Pillow alpha_composite, same full-canvas anchor; no movement or rescaling between layers.",
+      "edgeProofs": [
+        {
+          "file": "composites/attendant-foreground-on-white.png",
+          "sha256": "095d0240992add09a5d66afe076d085352904c19fc7d2ca8a99d23fb8511a853"
+        },
+        {
+          "file": "composites/attendant-foreground-on-dark.png",
+          "sha256": "09bb0a48b2757d3813913b47b3e8101d052431b3f1fdeba8a20e1eaeeb64ce52"
+        }
+      ]
+    },
+    {
+      "character": "presenter",
+      "backgroundId": "CH3-A05-verification-bg",
+      "foregroundId": "CH3-A06-presenter-idle",
+      "file": "composites/presenter-background-foreground.png",
+      "sha256": "eb5796e549ead9dcae0505402f9baa5fc4b647c042d6c9b5f1d51a8fc6ebd951",
+      "preview4x": "composites/presenter-background-foreground-4x.png",
+      "previewSha256": "653b895174215126a1afdb0902a731042d06770561ef13dbea95367db59611c9",
+      "dimensions": [
+        564,
+        278
+      ],
+      "method": "Pillow alpha_composite, same full-canvas anchor; no movement or rescaling between layers.",
+      "edgeProofs": [
+        {
+          "file": "composites/presenter-foreground-on-white.png",
+          "sha256": "e7502085750c9661acdd71db5f1bb52a2f7fa1f9e1a0d0dd68150647b90b2a2e"
+        },
+        {
+          "file": "composites/presenter-foreground-on-dark.png",
+          "sha256": "da72449f61b6a52ecc1eb456327bb160da699b6094d5d3dff7434655368da967"
+        }
+      ]
+    }
+  ]
+}
