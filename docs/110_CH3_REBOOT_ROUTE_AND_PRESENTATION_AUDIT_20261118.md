@@ -21,6 +21,8 @@ Five **fatal** Chapter 2 endings (`fatal_sorter`, `fatal_hopper`, `fatal_transfo
 
 **Missing connective prose:** Three compact arrival variants are needed for public concourse, service infrastructure and underground transit before they converge at the **same real restroom with the same attendant and one-use identity mismatch**. Do not invent a fourth mandatory entry or reveal the Original. Optional one-line reactions may reflect a tram damage claim, equipment-registration status or lingering botanical contamination without adding a new administrative incident.
 
+**Door-visitor continuity check:** The door-holder in CH3-002C must be a **new visitor who entered once while the protagonist waited**, not the man who had already exited during the CH3-001 opening. Otherwise the one-experience rule would contradict itself before the joke. This is a small staging clarification, not a new character mystery or route.
+
 ## 2. Approved Chapter 3 route topology
 
 ```mermaid
