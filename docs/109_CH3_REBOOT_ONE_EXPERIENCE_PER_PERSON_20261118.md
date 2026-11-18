@@ -218,6 +218,53 @@ The owner reiterated on 2026-11-18 that the reboot **must follow the latest dial
 
 ---
 
+## CH3-002B — A Perfectly Accurate Record (owner-selected 2026-11-18)
+
+**Trigger:** CH3-001 B — **"THEN SHOW ME WHO USED MY VISIT."** The owner replied **"all good"** to this scene and all three of its proposed next-choice alternatives.
+
+The attendant is delighted that the protagonist has asked an administratively answerable question. A receipt printer produces an absurdly long, still-growing ribbon of supposed evidence. The official slip reads, in substance:
+
+> PEOPLE'S PAVILION — VISITOR EXPERIENCE RECORD
+> 
+> EXPERIENCE: RESTROOM
+> PERSON: YOU — ORIGINAL
+> STATUS: COMPLETED
+> TIME SPENT: PRIVATE
+> PHOTOGRAPH: WITHHELD FOR PRIVACY
+> PROOF OF COMPLETION: OFFICIAL RECORD
+
+He insists the record shows who used the restroom, repeatedly indicating **ORIGINAL**. There is no photograph, signature, description, witness, or independently verified entrant. He praises accuracy and transparency while the printer unreels feet of paper across the floor; a genuine visitor steps over it to enter the functioning restroom. The supposed "Original" remains **only an entry on paper**, not an embodied character or a revealed double.
+
+**Presentation:** Begin with brief second-person present-tense Narrative B for the counter/printer. Switch to **dialogue mode with the attendant portrait** for the actual exchange. Insert one player-initiated **spoken single-choice beat** — **"THAT DOESN'T TELL ME WHO USED IT."** — echoed into the transcript before the attendant answers. Use separate description runs for the ongoing printer gag; do not bury player speech inside auto-running prose.
+
+**Three owner-selected alternatives** (not a sequence):
+
+- **A — PRESS THE RECORD AGAINST THE RESTROOM SCANNER.** Attempt to use the paper as proof of identity / entitlement.
+- **B — GRAB THE PAPER AND PULL.** Interfere with the seemingly endless printer output and provoke a physical incident.
+- **C — "DO YOU ACTUALLY BELIEVE I ALREADY USED THE BATHROOM?"** Appeal directly to the human attendant's personal judgment, potentially allowing a candid human response.
+
+**Approval boundary:** The scene's gag, evidence format in concept, and three alternative actions are selected. Their consequences, any dice, items, potential branch convergence, final line polish and art briefs are **not yet approved**. No journey to a new bureaucratic office is implied by these choices.
+
+---
+
+## CH3-002C — After You (owner-selected 2026-11-18)
+
+**Trigger:** CH3-001 C — **WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.** The owner replied **"all good"** to this scene and all three of its proposed next-choice alternatives.
+
+The protagonist waits on a bench opposite the real restroom beneath a sign: **PLEASE DO NOT CONFUSE PATIENCE WITH PERMISSION.** A visitor leaves, drying his hands, and **holds the door open as an ordinary courtesy**. The protagonist can glimpse real sinks, mirrors and stalls. The attendant objects that the protagonist's one visit is officially complete. The visitor counters, essentially, **"Doesn't look like it,"** and continues holding the door. The machine pleasantly asks that experiences be completed in approved order.
+
+**Presentation:** Brief second-person present-tense Narrative B establishes the bench and physical opportunity. For the exchanges involving attendant and visitor, switch to **dialogue mode** rather than displaying a `VISITOR:` / `ATTENDANT:` script in Narration B; the primary portrait is the attendant, with the incidental visitor voiced as another speaker. All player decisions are real authored cards. The restroom remains real and very close; the protagonist has not yet used it.
+
+**Three owner-selected alternatives** (not a sequence):
+
+- **A — MAKE A RUN FOR IT.** A physical gamble while the exit door stands open. A hidden d6 is **proposed but unapproved**; target and consequences still open.
+- **B — "THANK YOU. PLEASE KEEP HOLDING IT!"** Accept the visitor's help and create a confrontation between ordinary courtesy and institutional rules.
+- **C — TURN AROUND AND BACK THROUGH THE EXIT.** Exploit the apparent distinction between entering and leaving by facing the wrong way, if the system interprets it literally.
+
+**Approval boundary:** The helpful visitor, real doorstep opportunity and all three choice intents are selected. Success/failure destinations, odds, environmental responses, further choices, inventory effects, injury, survival and final prose remain **unapproved**. Do not add automatic bathroom access or a revelation about who the Original is.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -229,4 +276,4 @@ The owner reiterated on 2026-11-18 that the reboot **must follow the latest dial
 
 ## Next collaborative decision
 
-CH3-006A is now locked as a backstage convergence with a player-paced spoken reply; CH3-006B remains locked as hidden d6≥4 (+1 from held, unconsumed timing clicker), success to backstage and failure to an early safe Pavilion exit. **Next develop the still-unwritten CH3-001 B/C routes** (inspect the false visit record or try the real bathroom door), then consolidate backstage departures. Do not revive the Original-as-person story.
+CH3-002B (record) and CH3-002C (door) and **all six next choices** are now owner-selected. **Next author their consequences** in short, physical, humorous beats, preserving the attendant/visitor's human reactions, then consolidate surviving backstage/early exits. CH3-006A is an approved backstage convergence; CH3-006B is approved as hidden d6≥4 (+1 from held, unconsumed clicker), success backstage / failure safe exit. Do not revive the Original-as-person story.
