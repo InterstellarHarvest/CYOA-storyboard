@@ -1526,13 +1526,33 @@
      state.manifestURL=new URL("../../story/storyboard-manifest.json",location.href);
      const r=await fetch(state.manifestURL);if(!r.ok)throw Error("HTTP "+r.status);
      const manifest=await r.json();state.manifest=manifest;
+     // An explicit review URL swaps only the in-memory Chapter 3 source. The public manifest,
+     // approved chapters and archived legacy Chapter 3 remain byte-for-byte untouched.
+     const ch3Review=new URL(location.href).searchParams.get("review")==="ch3-reboot";
+     if(ch3Review){
+       const entry=manifest.chapters?.find(ch=>ch.id==="chapter-03");
+       if(!entry)throw Error("Chapter 3 is missing from the manifest");
+       entry.file="chapters/chapter-03.reboot-candidate.json";
+       entry.title="Chapter 3 — Pavilion REBOOT REVIEW";
+       entry.status="review-only · not in game";
+     }
      const select=$("chapterSelect");select.replaceChildren();
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
      if(manifest.items){const itemsRes=await fetch(new URL(manifest.items,state.manifestURL));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
       if(manifest.artwork){const artRes=await fetch(new URL(manifest.artwork,state.manifestURL));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
       await loadPreviewData();
       if(manifest.layout){const layoutRes=await fetch(new URL(manifest.layout,state.manifestURL));if(!layoutRes.ok)throw Error("Layout HTTP "+layoutRes.status);loadLayouts(await layoutRes.json(),manifest.layout);}
-     if(manifest.chapters?.length)await loadRemote(manifest.chapters[0]);else setStatus("No chapters listed in manifest.");
+     if(ch3Review){
+       const reviewLayoutURL=new URL("chapter-03.reboot-review-layout.json",state.manifestURL);
+       const layoutRes=await fetch(reviewLayoutURL);
+       if(!layoutRes.ok)throw Error("Chapter 3 review layout HTTP "+layoutRes.status);
+       const reviewLayout=await layoutRes.json();
+       const chapterLayout=reviewLayout?.chapters?.["chapter-03"];
+       if(reviewLayout.schema!=="cyoa-storyboard-layout-v1"||!chapterLayout?.timeline)throw Error("Invalid Chapter 3 review layout");
+       state.timelines["chapter-03"]=sanitizeTimeline(chapterLayout.timeline,chapterLayout.layoutRevision);
+     }
+     if(manifest.chapters?.length)await loadRemote(ch3Review?manifest.chapters.find(ch=>ch.id==="chapter-03"):manifest.chapters[0]);
+     else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
  }
  // Storyboard-only companions (docs/105). Optional: the page works without them.
