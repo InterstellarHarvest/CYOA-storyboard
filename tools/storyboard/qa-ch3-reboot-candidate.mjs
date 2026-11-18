@@ -143,6 +143,10 @@ assert.ok(viewer.includes('entry.file="chapters/chapter-03.reboot-candidate.json
   'review URL points at isolated draft rather than archived Chapter 3');
 assert.ok(viewer.includes('chapter-03.reboot-review-layout.json'),
   'review URL reads its own incident layout');
+assert.ok(viewer.includes('const fatal=!!node.deathPopup,survivor=node.end===true&&!fatal'),
+  'review timeline distinguishes fatal popup nodes from living chapter ends');
+assert.ok(viewer.includes('SURVIVING ENDING · '),
+  'review timeline names living terminal nodes accurately');
 
 console.log('CH3 REBOOT CANDIDATE QA: PASS — '+seen.size+
   ' reachable nodes, '+ends.length+' paths, '+Object.keys(counts).length+
