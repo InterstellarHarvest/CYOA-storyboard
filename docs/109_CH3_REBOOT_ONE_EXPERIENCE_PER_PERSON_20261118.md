@@ -103,6 +103,40 @@ The owner replied **“All 3”** to these three **mutually exclusive player act
 **Approval boundary:** All three choice intents are approved as alternatives, **not** a required A→B→C sequence. The proposed presenter dialogue, exact card copy, individual outcomes, roll odds, inventory effects, and convergence are still being creatively developed; no playable Chapter 3 JSON, checks or art briefs are authorized by this log entry.
 
 ---
+## CH3-003 — Human Verification consequences (owner-approved 2026-11-18)
+
+The owner replied **“all three”** to the proposed A/B/C consequence scenes below. They are **separate branch outcomes**, not consecutive events. These narrative beats are selected; final destinations, detailed dice odds and inventory callbacks are still open.
+
+### CH3-003A — Authentic Urgency Exhibit
+
+The player shouts that they have needed the bathroom all day. Their voice booms through the auditorium. The presenter mistakes the complaint for a splendid live illustration of an authentic human need, sounds a bell and lowers red curtains around the stage.
+
+**LIVE DEMONSTRATION — THE EXPERIENCE OF URGENCY.**
+
+She asks the lone spectator to observe the unmistakable signs of a desperate human. When the protagonist objects to being watched, the presenter celebrates **PUBLIC EMBARRASSMENT** as a second authentic human experience. She invites them to consider performing professionally. The platform begins rotating away from the restroom; the protagonist can still see the real bathroom through the curtains.
+
+**Continuity:** Embarrassing live-exhibit situation; stage movement creates a new physical possibility. It does not certify the player's identity or grant bathroom access. The immediate next choices, whether a visitor interferes, and the final exit are unapproved.
+
+### CH3-003B — Human Locomotion Demonstration
+
+The player tries to step off the platform. Its floor moves beneath them, matching their pace as a cheerful sign announces **HUMAN LOCOMOTION DEMONSTRATION INITIATED**. The presenter celebrates walking, then running, as the protagonist speeds up. A safety net begins unfolding above a padded demonstration pit.
+
+The presenter suggests the next portion may involve falling, while the platform approaches its edge.
+
+**Continuity:** A meaningful physical hidden-d6 check is proposed here. Success may give access to a service passage; failure may deposit the protagonist in a ridiculous safety demonstration or an escorted exit. No check threshold, item modifier, injury, death or actual destination is yet approved. There is **no** loop back to the original identity-test menu.
+
+### CH3-003C — Unauthorized Presenter
+
+The player challenges the presenter's own identity. She appeals to the camera. It reports **PRESENTER IDENTITY: UNCONFIRMED**, then **AUTHORIZED PRESENTER: CURRENTLY ON SCHEDULED BREAK**. She protests that her break hasn't started. An alarm declares **UNAUTHORIZED PRESENTER DETECTED**. Her platform begins rising while the microphone retracts out of her hand.
+
+A second microphone drops before the protagonist. A sign announces **TEMPORARY PRESENTER APPOINTED**. The genuine presenter, now the unwilling subject of the verification demonstration, begs the protagonist not to press anything. A large green button illuminates: **BEGIN DEMONSTRATION**.
+
+**Continuity:** The protagonist is accidentally placed in the presenter's role; the woman is still a genuine, vulnerable human, not a machine or an Original identity manifestation. Her personality and the player's consequential choices are to be developed. No administrative authority outside the room is granted merely by holding this microphone.
+
+**Owner approval scope:** The three incidents above and their general cause-and-effect are retained. All three are consequences of CH3-002A choices, with no forced A→B→C order. Further decision cards, final route convergence and precise gameplay data are not yet approved.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -114,4 +148,4 @@ The owner replied **“All 3”** to these three **mutually exclusive player act
 
 ## Next collaborative decision
 
-CH3-001 and the three CH3-002A actions are now owner-selected. **Develop the immediate A/B/C results of Human Verification**, making each a distinct, short incident with tangible consequences. Avoid adding extra three-card menus without a reason. Then revisit CH3-001 branches B and C, and decide where any paths can reconverge. Scene wording and mechanics remain editable until specifically approved.
+CH3-003A/B/C consequences have now been owner-selected as distinct vignettes. **Develop CH3-003C's temporary-presenter incident and its next player actions**. Keep it lively and physical, not a return to another forms office. Later finish the rotating Urgency Exhibit (003A), Locomotion incident/check (003B), and the still-unwritten CH3-001 B/C approaches, before deciding natural reconvergence. Exact game check odds and remaining consequences need owner approval.
