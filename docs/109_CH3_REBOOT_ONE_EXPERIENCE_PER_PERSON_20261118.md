@@ -178,6 +178,21 @@ The protagonist reminds her about the bathroom. She acknowledges the problem but
 
 ---
 
+## CH3-006B — Human Locomotion resolution (owner-approved 2026-11-18)
+
+The owner replied **“yes”** to both narrated outcomes and the precise hidden check.
+
+**Trigger:** CH3-002A B → CH3-003B moving-platform incident. The player jumps toward the stationary floor while the presenter enthusiastically describes walking, running and falling.
+
+**Check:** Hidden **d6, success on 4+** (50% base). **+1** if the player currently **holds the applause timing clicker**; use its established six-second rhythm to time the leap. The clicker is **not consumed**. There is no mandatory-item gate, no other approved modifier, and no additional player menu at this check.
+
+- **PASS — An Unauthorized Leap:** The protagonist lands behind the curtain in folding chairs, beside a maintenance door. The stage registers **HUMAN LOCOMOTION: EXCEEDS APPROVED PARAMETERS / PLEASE USE ONLY AUTHORIZED METHODS OF MOVEMENT**. The player opens the maintenance door and enters the **backstage departure route**, which may reconnect with CH3-005A. Identity unverified; no bathroom use.
+- **FAIL — A Perfectly Safe Fall:** A safety net catches the protagonist and drops them safely into a padded wheeled collection cart. A lid closes, and the machine proudly completes a **HUMAN SAFETY DEMONSTRATION** while conveying them through a loading door. The cart deposits them on foam cushions **outside the Pavilion**. The door closes; a toilet flushes inside. **Early nonfatal Chapter 3 ending:** no injury, no lost item, no bathroom visit, no Original revelation. Failure is a funny alternative exit, not a punishment or reroll.
+
+**Scope/QA obligations:** Once authored in the playable schema, the choice must display the standard check/risk marker; roll on selection, apply only the held-clicker modifier, preserve prior chapter state and both distinct destinations. Do not add a surprise death, duplicate check, item consumption or return loop.
+
+---
+
 ## Production and archival rules
 
 1. **No old Chapter 3 node is active by implication.** The viewer labels the pre-reboot graph `archived`. The Chapter 2 → 3 links remain storyboard-only and do not activate a playable transition.
@@ -189,4 +204,4 @@ The protagonist reminds her about the bathroom. She acknowledges the problem but
 
 ## Next collaborative decision
 
-CH3-005A Genuine Surprise and CH3-005C Unscheduled Human Kindness are owner-approved. C is an **early living Chapter 3 ending**; A proceeds toward a backstage departure not yet finalized. **Next develop CH3-003A Authentic Urgency and CH3-003B Human Locomotion**, keeping them compact and physically funny. Then tackle the CH3-001 B/C alternatives and resolve remaining exits/convergence. Do not revive the Original-as-person story.
+CH3-006B is locked: hidden d6≥4 (+1 from held, unconsumed timing clicker), success to backstage and failure to an early safe Pavilion exit. **Next finish CH3-003A Authentic Urgency** and decide its natural route to departure or one meaningful further incident. Then develop the still-unwritten CH3-001 B/C options and consolidate appropriate backstage exits. Do not revive the Original-as-person story.
