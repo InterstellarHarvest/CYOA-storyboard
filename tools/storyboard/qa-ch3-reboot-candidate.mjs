@@ -35,7 +35,7 @@ for(const [id,group] of Object.entries(inputGroups)){
 }
 assert.equal(Object.values(ch2.nodes).filter(n=>n.end&&n.deathPopup).length,5);
 
-const seen=new Set(),ends=[],broken=[],cycles=[],checks=[];
+const seen=new Set(),ends=[],broken=[],cycles=[],checks=new Map(),itemActions=new Map();
 const validKinds=new Set(['action','spoken','continue','system']);
 function walk(id,stack=[]){
   const node=nodes[id];
@@ -61,29 +61,61 @@ function walk(id,stack=[]){
     assert.equal(choice.effects,undefined,id+' does not mutate earlier chapter state');
     if(choice.kind==='spoken')assert.ok(!choice.text.includes('"'),
       id+' spoken cards must not store literal quote marks');
-    if(choice.check)checks.push({node:id,choice});
+    if(choice.check){
+      const before=checks.get(choice.check.id);
+      if(before)assert.deepEqual(choice.check,before,id+' repeat check is identical');
+      checks.set(choice.check.id,choice.check);
+    }
     const next=[choice.to,choice.pass?.to,choice.fail?.to].filter(Boolean);
     assert.ok(next.length,id+' must route to a destination');
     for(const target of next)walk(target,[...stack,id]);
+  }
+  for(const verb of ['show','use']){
+    for(const [itemId,action] of Object.entries(node[verb]||{})){
+      assert.ok(items[itemId],id+' references existing '+itemId);
+      assert.equal(action.kind,'action',id+' item action ink');
+      assert.ok(action.say,id+' item action includes echo text');
+      assert.ok(action.to,id+' item action has a real destination');
+      assert.equal(action.if,undefined,id+' is gated by item being held, not an extra arbitrary flag');
+      itemActions.set([id,verb,itemId].join(':'),{node:id,verb,itemId,action});
+      if(verb==='use'){
+        assert.equal(itemId,'red_stapler','only the approved stapler is used');
+        assert.deepEqual(action.effects,{take:['red_stapler']},'stapler gets consumed');
+      }else{
+        assert.equal(action.effects,undefined,id+' SHOW does not consume the item');
+      }
+      walk(action.to,[...stack,id]);
+    }
   }
 }
 walk(candidate.start);
 assert.deepEqual(broken,[],'no dangling edges');
 assert.deepEqual(cycles,[],'no unintended loops');
 assert.equal(seen.size,Object.keys(nodes).length,'all draft nodes reachable');
-assert.equal(ends.length,12,'all twelve approved outcome paths reachable');
+assert.equal(ends.length,28,'twelve original routes plus optional held-item variants');
 const counts=ends.reduce((acc,id)=>(acc[id]=(acc[id]||0)+1,acc),{});
 assert.deepEqual({...counts},{
-  backstage_exit:6,
-  locomotion_fail:1,
-  presenter_help_end:1,
-  paper_problem_end:1,
-  attendant_honest_end:1,
-  door_dash_fail:1,
-  door_reverse_end:1
-},'six backstage paths and six independently authored early survivor paths');
-assert.equal(checks.length,2,'exactly two approved checks');
-const [leap,dash]=checks.map(({choice})=>choice.check);
+  backstage_exit:16,
+  locomotion_fail:2,
+  presenter_help_end:2,
+  paper_problem_end:2,
+  attendant_honest_end:2,
+  door_dash_fail:2,
+  door_reverse_end:2
+},'six original backstage / six early routes, plus optional key/photo/stapler variants');
+assert.equal(itemActions.size,3,'exactly three approved inherited-item interactions');
+assert.deepEqual([...itemActions.values()].map(({node,verb,itemId})=>[node,verb,itemId]).sort(),[
+  ['attendant_refusal','show','wc_key'],
+  ['presenter_verification','show','family_portrait_photo'],
+  ['record_choices','use','red_stapler']
+].sort());
+assert.deepEqual(nodes.attendant_key_callback.choices.map(c=>[c.kind,c.text,c.to]),
+  nodes.attendant_refusal.choices.map(c=>[c.kind,c.text,c.to]),
+  'key callback preserves the original three chapter-opening options');
+assert.equal(nodes.photo_verification_reply.choices[0].to,'backstage_exit');
+assert.equal(nodes.stapler_printer_snarl.choices[0].to,'backstage_exit');
+assert.equal(checks.size,2,'exactly two approved check definitions');
+const leap=checks.get('ch3_locomotion_leap'),dash=checks.get('ch3_restroom_dash');
 assert.equal(leap.id,'ch3_locomotion_leap');
 assert.equal(leap.sides,6);
 assert.equal(leap.need,4);
@@ -99,5 +131,5 @@ assert.equal(nodes.backstage_exit.end,true);
 
 console.log('CH3 REBOOT CANDIDATE QA: PASS — '+seen.size+
   ' reachable nodes, '+ends.length+' paths, '+Object.keys(counts).length+
-  ' survivor terminals, '+checks.length+
-  ' approved checks; old chapter archive and public manifest untouched.');
+  ' survivor terminals, '+checks.size+' approved checks, '+itemActions.size+
+  ' conditional inherited-item actions; old chapter archive and public manifest untouched.');
