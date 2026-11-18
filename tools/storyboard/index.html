@@ -31,6 +31,7 @@
 .node.tl .name,.node.tl .sub,.node.tl .tag{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .node.tl .tag{font-size:10px;letter-spacing:.05em;margin-top:6px;text-transform:uppercase;font-weight:650}
 .node.tl.fatal{background:#3b262c;border-color:#a4555c}.node.tl.fatal:hover{background:#4a2f36}
+.node.tl.survivor{background:#233b34;border-color:#477d6c}.node.tl.survivor:hover{background:#2d4a41}
 .node.tl.exit{background:#1f3a3c;border-color:#4fb3aa}.node.tl.exit:hover{background:#28494b}
 .node.tl.exit.preview{background:#22343a;border-style:dashed;border-left-style:solid}
 .node.tl.start{box-shadow:0 0 0 3px #e2e8ee33,0 3px 9px #0005}
@@ -838,16 +839,16 @@
    const exitsOut={};tl.ports.filter(p=>p.dir==="out").forEach(p=>{(exitsOut[p.node]??=[]).push(p);});
    for(const [id,node] of Object.entries(state.chapter.nodes)){
      const pos=positions[id],inc=incById[tl.incidentOf[id]],outs=exitsOut[id]||[];
-     const fatal=node.end===true&&!outs.length,preview=outs.length&&outs.every(p=>p.mode==="preview");
-     const card=el("div","node tl"+(node.deathPopup?" death-node":"")+(state.selected?.type==="node"&&state.selected.id===id?" selected":"")+(fatal?" fatal":"")+(outs.length?" exit":"")+(preview?" preview":"")+(id===state.chapter.start?" start":""));
+     const fatal=!!node.deathPopup,survivor=node.end===true&&!fatal&&!outs.length,preview=outs.length&&outs.every(p=>p.mode==="preview");
+     const card=el("div","node tl"+(node.deathPopup?" death-node":"")+(state.selected?.type==="node"&&state.selected.id===id?" selected":"")+(fatal?" fatal":"")+(survivor?" survivor":"")+(outs.length?" exit":"")+(preview?" preview":"")+(id===state.chapter.start?" start":""));
      card.style.left=pos.x+"px";card.style.top=pos.y+"px";
      if(inc)card.style.borderLeftColor=inc.color;
      card.title=id+" · "+node.mode+"\n"+textOf(node.text).slice(0,240)+"\n"+new Set(choicesFor(node).map(c=>c.displayGroup||c.id)).size+" logical choices";
      const exits=[...new Set([...choicesFor(node).map(c=>c.chapter),node.storyboardNextChapter].filter(Boolean))];
      const logicalCount=new Set(choicesFor(node).map(c=>c.displayGroup||c.id)).size;
      const back=choicesFor(node).some(c=>c.back);
-     const tagText=(id===state.chapter.start?"START · ":"")+(fatal?"FATAL ENDING · ":"")+(preview?"PREVIEW HANDOFF · ":outs.length?"CHAPTER EXIT · ":"")+(back?"↩ BACK CHOICE · ":"")+(inc?inc.title:"");
-     const tag=el("div","tag",tagText.replace(/ · $/,""));tag.style.color=fatal?"#f08f8a":outs.length?"#8fe0d6":inc?.color||"#a3b3c1";
+     const tagText=(id===state.chapter.start?"START · ":"")+(fatal?"FATAL ENDING · ":survivor?"SURVIVING ENDING · ":"")+(preview?"PREVIEW HANDOFF · ":outs.length?"CHAPTER EXIT · ":"")+(back?"↩ BACK CHOICE · ":"")+(inc?inc.title:"");
+     const tag=el("div","tag",tagText.replace(/ · $/,""));tag.style.color=fatal?"#f08f8a":survivor?"#8cddbc":outs.length?"#8fe0d6":inc?.color||"#a3b3c1";
      if(node.deathPopup){
        card.append(el("div","id",id),el("div","name",node.deathPopup.title));
        card.append(el("div","fatal-beat",node.deathPopup.description||"POPUP NARRATIVE REQUIRED"));
