@@ -50,7 +50,8 @@ for(const [name,hash] of Object.entries(batch2SelectedHashes)){
   const preview=selectedPreviews['scenes:'+id];
   assert.equal(preview.sha256,hash,'exact owner-selected Batch2 bytes: '+id);
   assert.equal(preview.source.commit,'ed098eee6999b25d44a6b4db2ad7605e430d88c6','exact owner approval commit: '+id);
-  if(record.status==='approved')assert.equal(record.assetPath,null,'pending integration has no invented production path: '+id);
+  if(record.status==='approved'&&record.assetPath!==null)assert.equal(record.assetPath,'art/scenes/'+id+'.png','an approved record carries only the production path assigned at integration (docs/105): '+id);
+  if(record.assetPath!==null)assert.equal(preview.file,'assets/selected/'+record.assetPath,'the preview mirrors the production path: '+id);
 }
 // New batches can be generated without changing a fixed count in this test.
 // Previously selected images remain protected by the pinned checks and check-canon.
@@ -65,8 +66,9 @@ const restAssuredUsed=artwork.deathScreens['house_of_tomorrow/rest_assured']?.st
 assert.ok(productionRecords.filter(r=>r.status==='integrated').length>=46+restAssuredUsed,'previously used game artwork remains integrated');
 assert.ok(productionRecords.filter(r=>['approved','integrated'].includes(r.status)).length>=54+Object.keys(batch2SelectedHashes).length,'legacy selections and seven Batch2 selections remain selected');
 assert.ok(productionRecords.filter(r=>['not-started','generated'].includes(r.status)).every(r=>r.assetPath==null),'unfinished or unselected records never invent production paths');
-assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.status,'approved','Chapter 2 Bureau artwork already selected');
-assert.equal(artwork.scenes['biology_park/conveniences_bureau']?.assetPath,null,'selected Chapter 2 Bureau review image has no confirmed game production path yet');
+assert.ok(['approved','integrated'].includes(artwork.scenes['biology_park/conveniences_bureau']?.status),'Chapter 2 Bureau artwork already selected');
+assert.ok([null,'art/scenes/biology_park/conveniences_bureau.png'].includes(artwork.scenes['biology_park/conveniences_bureau']?.assetPath),'Chapter 2 Bureau has no production path, or exactly the one assigned at integration (docs/105)');
+if(artwork.scenes['biology_park/conveniences_bureau']?.status==='integrated')assert.equal(artwork.scenes['biology_park/conveniences_bureau'].assetPath,'art/scenes/biology_park/conveniences_bureau.png','integrated Bureau art names its production path');
 assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.status,'integrated','Chapter 1 arrival artwork is already used in review game');
 assert.equal(artwork.scenes['house_of_tomorrow/arrival']?.assetPath,'art/scenes/house_of_tomorrow/arrival.png','selected Chapter 1 arrival production path');
 for(const record of productionRecords){
@@ -90,7 +92,7 @@ assert.equal(artwork.focus['house_of_tomorrow/portrait_gallery/album'].status,'i
 assert.ok(artwork.focus['house_of_tomorrow/portrait_gallery/album'].pages.every(p=>p.status==='integrated'&&p.assetPath),'three selected album pages');
 assert.ok(artwork.scenes['house_of_tomorrow/storage'].states.every(v=>v.status==='integrated'&&v.assetPath),'all used House storage variants');
 assert.equal(artwork.scenes['house_of_tomorrow/chair'].states.find(v=>v.id==='default_unrestrained').status,'approved','unbound selected alternative is approved, not falsely marked displayed');
-assert.equal(artwork.scenes['biology_park/groundskeeper'].portraitBackground.status,'approved','groundskeeper background selected');
+assert.ok(['approved','integrated'].includes(artwork.scenes['biology_park/groundskeeper'].portraitBackground.status),'groundskeeper background selected');
 assert.equal(artwork.portraits['groundskeeper:idle'].status,'approved','groundskeeper foreground selected');
 assert.ok(artwork.scenes['biology_park/conveniences_bureau'].notes.includes('SHA-256'),'chosen Biology Park candidate version pinned');
 assert.equal(artwork.scenes['pavilion/human_behavior_workshop']?.assetPath,null,'workshop art pending');
@@ -390,7 +392,7 @@ assert.equal(select.value,'2','exit card opens Chapter 2 and the selector follow
 assert.equal(nodeIds().length,99,'Chapter 2 graph shows all 99 authored nodes');
 assert.match(document.getElementById('chapterTitle').textContent,/^Chapter 2 — Biology Park · draft$/,'board heading names Chapter 2 and its draft status');
 assert.ok(flatten(pane()).some(x=>x.textContent==='Bureau Arrival'),'Chapter 2 inspector opens on its authored start node');
-assert.ok(flatten(pane()).some(x=>/scenes\/biology_park\/conveniences_bureau · approved/.test(String(x.textContent))),'Bureau artwork appears as selected and approved');
+assert.ok(flatten(pane()).some(x=>/scenes\/biology_park\/conveniences_bureau · (approved|integrated)/.test(String(x.textContent))),'Bureau artwork appears as selected (approved or integrated)');
 findNode('public_kit_focus').click();
 assert.ok(flatten(pane()).some(x=>/USE THE ANTIDOTE DIRECTLY FROM THE OPEN KIT/.test(String(x.textContent))),'Chapter 2 focus node choices appear in the inspector');
 const ch2=dragNode('park_junction',170,-80,34);

@@ -95,6 +95,7 @@ if (fs.existsSync(path.join(ROOT, 'story/game-integration.json'))) {
   // A not-started record becomes approved when its selection is registered.
   const a = J(dir, 'story/artwork.draft.json');
   a.scenes['biology_park/public_exit'].status = 'not-started';
+  a.scenes['biology_park/public_exit'].assetPath = null; // a fresh selection: no production path assigned yet
   W(dir, 'story/artwork.draft.json', a);
   r = register(dir, batch([{ key: 'scenes:biology_park/public_exit', file: png, status: 'approved', source: src }]));
   assert.equal(r.code, 0, r.out);

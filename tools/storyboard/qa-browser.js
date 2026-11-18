@@ -88,7 +88,7 @@ async function run(name, base) {
   await choose(page, 2, 99);
   const ch2Inspector = await page.evaluate(() => document.getElementById('details').innerText);
   check(b, 'Chapter 2: 99 authored nodes, Bureau inspector, choice, and unstarted shared-catalog scene reference',
-    /Bureau Arrival/.test(ch2Inspector) && /scenes\/biology_park\/conveniences_bureau · approved/.test(ch2Inspector) && /CONTINUE/.test(ch2Inspector), ch2Inspector.slice(0, 500));
+    /Bureau Arrival/.test(ch2Inspector) && /scenes\/biology_park\/conveniences_bureau · (approved|integrated)/.test(ch2Inspector) && /CONTINUE/.test(ch2Inspector), ch2Inspector.slice(0, 500));
   const d = await drag(page, 'park_junction', 140, -70);
   await page.screenshot({ path: path.join(OUT, name + '_2b_chapter02.png') });
   await choose(page, 1, 36);

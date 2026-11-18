@@ -117,7 +117,7 @@ async function run(name, base) {
   await openArt('GROUNDSKEEPER MACHINE - IDLE');
   f = await figures();
   check(b, 'groundskeeper: portrait background + transparent foreground composite (564x278, same box)',
-    f.length === 2 && f[0].imgs.length === 2 && /groundskeeper\/portraitBackground/.test(f[0].imgs[0].src) && f[0].imgs.every((i) => i.nw === 564 && i.nh === 278) && sameBox(f[0].imgs), f);
+    f.length === 2 && f[0].imgs.length === 2 && /groundskeeper\/portraitBackground|portraits\/groundskeeper\/groundskeeper_background\.png/.test(f[0].imgs[0].src) && f[0].imgs.every((i) => i.nw === 564 && i.nh === 278) && sameBox(f[0].imgs), f);
   await page.screenshot({ path: path.join(OUT, b + '_3_npc_composite.png') });
   await openArt('TERMINATION DRONE — CLOSED SLOT');
   f = await figures();
@@ -146,10 +146,11 @@ async function run(name, base) {
   f = await figures();
   check(b, 'Rest Assured death vignette shown (314x206), one shared record for all three causes', f.length === 1 && f[0].imgs[0].nw === 314 && /deathScreens\/house_of_tomorrow\/rest_assured /.test(await page.textContent('#details')), f);
 
-  // 9. Approved-only (not integrated) Chapter 2 art reads as selected, not unfinished.
-  await openArt('FORMAL ENTRANCE', 'Approved');
+  // 9. Selected Chapter 2 art reads as selected, never unfinished: before integration it says so explicitly, and once
+  // Gameplay PMO assigns its production path (docs/105) the viewer names that path; integrated art stays under Selected.
+  await openArt('FORMAL ENTRANCE', 'Selected');
   const ch2 = await page.textContent('#details');
-  check(b, 'approved Biology Park art is visible and explicitly needs no regeneration', /Selected and approved/.test(ch2) && !/Not generated/.test(ch2) && (await figures()).length === 1, ch2.slice(0, 400));
+  check(b, 'selected Biology Park art is visible and needs no regeneration (approved, or its production path)', /Selected and approved|art\/scenes\/biology_park\/formal_entrance\.png/.test(ch2) && !/Not generated/.test(ch2) && (await figures()).length === 1, ch2.slice(0, 400));
 
   // 10. Items: slot (transparent, checkerboard) + inspect.
   await page.click('#showItems');
