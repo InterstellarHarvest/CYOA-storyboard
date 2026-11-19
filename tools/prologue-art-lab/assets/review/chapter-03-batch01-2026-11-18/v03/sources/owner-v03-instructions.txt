@@ -1,0 +1,184 @@
+
+
+# Chapter 3 Artwork PMO — Batch A v03 Corrections
+
+You are continuing Chapter 3 Batch A artwork production for *The Acceptable Error* (working title: *Out of Order*).
+
+**Your task is to produce a tightly controlled v03 correction pass based on Nate’s latest Art Director feedback.**
+
+## Starting point
+
+- Repository: `InterstellarHarvest/CYOA-storyboard`
+- Branch: `art/ch3-pavilion-batch01-20261118`
+- Pinned v02 commit: `32273a2839e3a941530a153b69fb9a508e92f57b`
+- [Current v02 review gallery](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/)
+- [v02 candidate hashes](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/CANDIDATE_HASHES.md)
+
+All six candidates remain **generated/unselected**. Nothing is approved or integrated.
+
+The v01 and v02 review packages are immutable historical references. Preserve their files and hashes.
+
+## 1. Male attendant — A02/A03
+
+Nate's requested changes:
+
+1. Move the attendant **rightward** in the portrait composition so he no longer obscures the microphone/intercom on the left side of the counter.
+2. Remove the rectangular device/plaque on the **right side of the desk** bearing the sound/contactless-style symbol.
+3. Keep the attendant's clasped hands resting naturally at the desktop.
+4. Preserve the character's face, hairstyle, glasses, clothing, expression, posture, gesture, and scale.
+
+Implementation guidance:
+
+- Start with an approximately 35–50 logical-pixel rightward translation, then adjust according to the actual composite.
+- The microphone must be visibly recognizable, including its base.
+- The attendant must remain appropriately framed and must not appear detached from the counter.
+- Remove the unwanted device completely from A02, reconstructing the exposed desk surface cleanly at native resolution.
+- Do not confuse this desktop device with the separate restroom gate/access-control hardware. Retain the gate hardware.
+- Inspect A01 for continuity; do not alter its otherwise approved composition unless the removed object creates an obvious contradiction.
+
+## 2. Female presenter — A05/A06
+
+Nate's requested changes:
+
+1. Move the presenter **downward** so her torso reaches the bottom of the portrait composition. The existing floating appearance must disappear.
+2. Move her **slightly leftward**, overlapping the microphone stand.
+3. Preserve her identity, auburn hairstyle, facial expression, costume, microphone, and welcoming gesture.
+
+Implementation guidance:
+
+- The v02 sprite has approximately 29 pixels of bottom clearance. Use this as the starting point for lowering her; adjust to produce a natural lower-edge crop.
+- Start with a modest leftward translation, roughly 35–50 logical pixels, and evaluate the composite visually.
+- She should overlap the microphone stand without unnecessarily obscuring the large television camera on the left.
+- Maintain adequate headroom and horizontal clearance for future poses.
+- Update fixed anchors or silhouette metadata to reflect the final actual position.
+- Do not scale, stretch, distort, or regenerate her appearance.
+
+**Additional Art Director requirement:** The stage countdown must remain reasonably readable as **30** in the completed presenter composite. Try to expose both digits through positioning. If the microphone-overlap and countdown-legibility goals cannot both be achieved cleanly, present the competing compositions for Nate's decision rather than silently sacrificing either requirement.
+
+## 3. Artwork preservation — critical
+
+These are targeted revisions, not a new generation round.
+
+**Preserve every pixel that does not need to change.**
+
+- Prefer integer-coordinate, lossless foreground repositioning for both characters.
+- Make the desk-device removal through localized native-resolution pixel editing.
+- Preserve original sprite pixel colors and internal details wherever possible.
+- Do not perform full-image generative rerenders to accomplish translation.
+- Do not introduce unrelated changes to lighting, colors, textures, architecture, faces, clothing, or props.
+- Do not globally quantize, blur, sharpen, dither, or filter the artwork.
+- Keep scene and portrait background layers independent.
+
+A01 and A04 should remain byte-identical to their v02 versions unless a demonstrated continuity issue requires a narrowly scoped correction approved by Nate.
+
+Carry all six candidates into the v03 review set, clearly distinguishing unchanged carry-forwards from modified images.
+
+## 4. Composition and continuity QA
+
+Check the following at native resolution and exact 4× nearest-neighbor:
+
+**Attendant composite**
+
+- Left microphone fully visible.
+- Unwanted right desktop device removed.
+- Hands naturally aligned with the counter.
+- Character not clipped, floating, or crowding the right edge.
+- Character position remains plausible relative to A01.
+
+**Presenter composite**
+
+- Lower body naturally reaches the portrait's bottom edge.
+- Presenter overlaps microphone stand.
+- Large stage camera remains recognizable.
+- Countdown reads **30** as clearly as the composition reasonably allows.
+- Costume and extended hand remain intact.
+- Character placement is consistent with the A04 stage scene.
+
+Both characters must retain clean silhouettes, including hair, fingers, and exposed contours.
+
+## 5. Technical requirements
+
+Maintain the established image contracts:
+
+| Asset | Dimensions | Transparency |
+|---|---|---|
+| A01/A04 main scenes | 314 × 206 | Opaque |
+| A02/A05 portrait backgrounds | 564 × 278 | Opaque |
+| A03/A06 foreground sprites | 564 × 278 | Strict binary alpha, 0/255 |
+
+Verify:
+
+- Exact native dimensions.
+- Binary foreground alpha.
+- Exact integer 4× preview scaling.
+- Correct compositing using the actual candidate PNGs.
+- Consistent sprite anchors.
+- No unintended pixel changes outside the approved edit regions.
+- Unchanged v01 and v02 hashes.
+- No changes to existing selected/approved production artwork.
+
+### Outstanding native-grid authorship failure
+
+The v02 images are documented derived realizations using transferred RGB from larger generated sources. Fully original native-grid authorship remains unproven.
+
+**Do not misrepresent this requirement as passing.**
+
+This v03 pass prioritizes pixel preservation and localized edits. Do not attempt to conceal the unresolved requirement with global filtering.
+
+Document any remaining soft source-derived tonal variation. If complete native-grid redrawing is necessary, propose that as a separate finishing task with its own scope and owner decision.
+
+## 6. Build and publish the v03 review package
+
+Create a new sibling review directory:
+
+`tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/`
+
+Include:
+
+1. Six native candidate PNGs.
+2. Exact 4× previews.
+3. Updated attendant and presenter composites.
+4. White and dark silhouette proofs.
+5. v02/v03 side-by-side comparisons for all six candidates.
+6. Before/after composite comparisons.
+7. `CHANGELOG.md` listing exact changed regions and positioning offsets.
+8. `VISUAL_QA.md` documenting visual passes, remaining concerns, and the native-authorship failure.
+9. `CANDIDATE_HASHES.md` with SHA-256 values for the final six files.
+10. Automated QA and browser verification results.
+
+The review gallery should make it easy for Nate to compare the original v02 composition against v03 without downloading files.
+
+Publish only through the existing isolated review-overlay Pages workflow. Preserve published `main` content and branch protections.
+
+## 7. Explicit exclusions
+
+Do not:
+
+- Modify Chapter 3 narrative, dialogue, choices, checks, endings, or items.
+- Alter Chapter 1 or Chapter 2 artwork.
+- Change the playable game.
+- Register or integrate production assets.
+- Mark any candidate selected or approved.
+- Start Chapter 3 Batch B.
+- Replace approved pixels with newly interpreted generated details.
+- Merge into `main`.
+
+## 8. Completion report
+
+When v03 is ready, report:
+
+- Branch and exact commit SHA.
+- Public v03 review link.
+- Before/after positioning offsets for both characters.
+- Confirmation that the desktop device was removed.
+- Confirmation of countdown and microphone visibility.
+- Pixel-change scope and any exceptions.
+- All six candidate SHA-256 hashes.
+- Technical and browser QA outcomes.
+- Outstanding native-grid authorship status.
+- Confirmation that v01/v02 and all approved production artwork remain untouched.
+
+**Stop after publishing the review gallery.**
+
+All six files must remain **generated/unselected** until Nate explicitly reviews and approves them.
+

@@ -1,0 +1,8 @@
+{
+  "CH3-A01-restroom": "Unchanged v02 PNG, byte-identical. Its otherwise protected composition still includes the tiny desktop device; this continuity concern is explicitly flagged for Nate rather than silently editing A01.",
+  "CH3-A02-restroom-bg": "Removed only the unwanted right desktop device and its base/shadow. Rebuilt the exposed wall seam and desktop from existing adjacent source pixels inside the declared native polygon. The left microphone, gate hardware and plant are unchanged.",
+  "CH3-A03-attendant-idle": "Translated exactly +44 pixels right, 0 vertically. Face, hair, glasses, costume, expression, scale, clasped hands and every visible RGBA pixel are unchanged. The microphone and its base are now clear; hands retain the same desktop baseline.",
+  "CH3-A04-verification": "Unchanged v02 main-stage PNG, byte-identical. Countdown remains 30 and the scene architecture is unchanged.",
+  "CH3-A05-verification-bg": "Unchanged v02 portrait-background PNG, byte-identical. The actual 30 countdown, microphone stand and large camera are retained.",
+  "CH3-A06-presenter-idle": "Translated exactly -44 pixels left and +29 down, with no scaling, distortion or rerender. Torso reaches the bottom edge; every visible source pixel remains intact. She overlaps the microphone stand while both countdown digits and the camera body remain unobscured."
+}

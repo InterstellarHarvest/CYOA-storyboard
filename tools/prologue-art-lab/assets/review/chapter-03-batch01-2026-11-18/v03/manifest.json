@@ -1,0 +1,361 @@
+{
+  "version": "v03",
+  "sourcePin": "32273a2839e3a941530a153b69fb9a508e92f57b",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "status": "generated",
+  "selected": false,
+  "generationCalls": 0,
+  "nativeAuthorship": "UNPROVEN; inherited v02 source transfer/soft tonal variation remains. No original-native pass claimed.",
+  "candidates": [
+    {
+      "id": "CH3-A01-restroom",
+      "version": "v03",
+      "source": "../v02/candidates/CH3-A01-restroom-v02.png",
+      "sourceSha256": "724f62047a7cfb7e7cd5e90b1261ed473f295939dfd9bad1ec14817d228b0095",
+      "candidate": "candidates/CH3-A01-restroom-v03.png",
+      "sha256": "724f62047a7cfb7e7cd5e90b1261ed473f295939dfd9bad1ec14817d228b0095",
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "character": null,
+      "modified": false,
+      "operation": "byte-identical carry-forward",
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "changedPixels": 0,
+      "changedOutsideApprovedScope": 0,
+      "allowedRegion": null,
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 64684,
+      "clippedVisiblePixels": 0,
+      "preservedVisiblePixels": 0,
+      "alphaValues": [
+        255
+      ],
+      "originalNativeAuthorship": "UNPROVEN \u2014 inherited from derived v02; this pass does not repair original-native authorship.",
+      "preview4x": "previews/CH3-A01-restroom-v03-4x.png",
+      "previewSha256": "e99f6c6b2e322de19e35538b6198fe3a4d737f34a2135a07d188d236f192cb73",
+      "comparison": "comparisons/CH3-A01-restroom-v02-v03.png",
+      "comparisonSha256": "b4eff856424ea99a400ceeaa71b2f0740ab9ca7d342350242baffdb1886dd949"
+    },
+    {
+      "id": "CH3-A02-restroom-bg",
+      "version": "v03",
+      "source": "../v02/candidates/CH3-A02-restroom-bg-v02.png",
+      "sourceSha256": "f2a45158551ba1c07b03a051b713021b43eeb2794c7e19c96d339e0fc08a4ed0",
+      "candidate": "candidates/CH3-A02-restroom-bg-v03.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "dimensions": [
+        564,
+        278
+      ],
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "character": null,
+      "modified": true,
+      "operation": "localized native device removal using adjacent original wall/desk pixels",
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "changedPixels": 3761,
+      "changedOutsideApprovedScope": 0,
+      "allowedRegion": [
+        [
+          404,
+          227
+        ],
+        [
+          470,
+          227
+        ],
+        [
+          474,
+          231
+        ],
+        [
+          485,
+          258
+        ],
+        [
+          485,
+          275
+        ],
+        [
+          479,
+          275
+        ],
+        [
+          479,
+          272
+        ],
+        [
+          406,
+          272
+        ],
+        [
+          394,
+          263
+        ],
+        [
+          394,
+          252
+        ],
+        [
+          400,
+          231
+        ]
+      ],
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 156792,
+      "clippedVisiblePixels": 0,
+      "preservedVisiblePixels": 0,
+      "alphaValues": [
+        255
+      ],
+      "originalNativeAuthorship": "UNPROVEN \u2014 inherited from derived v02; this pass does not repair original-native authorship.",
+      "preview4x": "previews/CH3-A02-restroom-bg-v03-4x.png",
+      "previewSha256": "7ee3a560c5e38908768bf2e8f1cd808858e591985942044e41d46b630b36d84f",
+      "comparison": "comparisons/CH3-A02-restroom-bg-v02-v03.png",
+      "comparisonSha256": "e497adf79d0da29d03cb048569ec56b3e919f14cba2f25b93f77ed8c42ea2c51"
+    },
+    {
+      "id": "CH3-A03-attendant-idle",
+      "version": "v03",
+      "source": "../v02/candidates/CH3-A03-attendant-idle-v02.png",
+      "sourceSha256": "b235c5b552ffa2da5c84d6f92ab6385a0bdc94d95a5ff42dfde505aba6c411d6",
+      "candidate": "candidates/CH3-A03-attendant-idle-v03.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "dimensions": [
+        564,
+        278
+      ],
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "character": "attendant",
+      "modified": true,
+      "operation": "lossless integer foreground translation",
+      "translation": [
+        44,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "changedPixels": 35382,
+      "changedOutsideApprovedScope": 0,
+      "allowedRegion": null,
+      "spriteBounds": [
+        223,
+        43,
+        412,
+        263
+      ],
+      "headroom": 43,
+      "bottomClearance": 15,
+      "visiblePixels": 26078,
+      "clippedVisiblePixels": 0,
+      "preservedVisiblePixels": 26078,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "originalNativeAuthorship": "UNPROVEN \u2014 inherited from derived v02; this pass does not repair original-native authorship.",
+      "preview4x": "previews/CH3-A03-attendant-idle-v03-4x.png",
+      "previewSha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee",
+      "comparison": "comparisons/CH3-A03-attendant-idle-v02-v03.png",
+      "comparisonSha256": "087e217a83beeaa0e0edb61b50ab75aad0b14c451a1da8c5b71a31e9558260f0"
+    },
+    {
+      "id": "CH3-A04-verification",
+      "version": "v03",
+      "source": "../v02/candidates/CH3-A04-verification-v02.png",
+      "sourceSha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e",
+      "candidate": "candidates/CH3-A04-verification-v03.png",
+      "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "character": null,
+      "modified": false,
+      "operation": "byte-identical carry-forward",
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "changedPixels": 0,
+      "changedOutsideApprovedScope": 0,
+      "allowedRegion": null,
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 64684,
+      "clippedVisiblePixels": 0,
+      "preservedVisiblePixels": 0,
+      "alphaValues": [
+        255
+      ],
+      "originalNativeAuthorship": "UNPROVEN \u2014 inherited from derived v02; this pass does not repair original-native authorship.",
+      "preview4x": "previews/CH3-A04-verification-v03-4x.png",
+      "previewSha256": "fc3847a9ebe8154f913f9199e5ca54258f4f7039290028910094fc3d80490845",
+      "comparison": "comparisons/CH3-A04-verification-v02-v03.png",
+      "comparisonSha256": "5937ce2e82e8036710bae60d625d2b335d79867652c34f039f73b407d0c0823d"
+    },
+    {
+      "id": "CH3-A05-verification-bg",
+      "version": "v03",
+      "source": "../v02/candidates/CH3-A05-verification-bg-v02.png",
+      "sourceSha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+      "candidate": "candidates/CH3-A05-verification-bg-v03.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+      "dimensions": [
+        564,
+        278
+      ],
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "character": null,
+      "modified": false,
+      "operation": "byte-identical carry-forward",
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "changedPixels": 0,
+      "changedOutsideApprovedScope": 0,
+      "allowedRegion": null,
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 156792,
+      "clippedVisiblePixels": 0,
+      "preservedVisiblePixels": 0,
+      "alphaValues": [
+        255
+      ],
+      "originalNativeAuthorship": "UNPROVEN \u2014 inherited from derived v02; this pass does not repair original-native authorship.",
+      "preview4x": "previews/CH3-A05-verification-bg-v03-4x.png",
+      "previewSha256": "7e00877f60752bdbab3f3c033570b5a6328b42f1c67dde8dd2fcc2594225a01c",
+      "comparison": "comparisons/CH3-A05-verification-bg-v02-v03.png",
+      "comparisonSha256": "4477d3f85751127c192ed06e13a1593f5638b193ae9b909819e9c666979b37df"
+    },
+    {
+      "id": "CH3-A06-presenter-idle",
+      "version": "v03",
+      "source": "../v02/candidates/CH3-A06-presenter-idle-v02.png",
+      "sourceSha256": "f983fd2bd38d86a69b4a57621f979b624fed5f956a6d17e2cf92d29b88fd16b8",
+      "candidate": "candidates/CH3-A06-presenter-idle-v03.png",
+      "sha256": "ff99d4f0a5050c76a469a3f1553eeca164ec14442863e3fdb0d95dc9f12bd83a",
+      "dimensions": [
+        564,
+        278
+      ],
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "character": "presenter",
+      "modified": true,
+      "operation": "lossless integer foreground translation",
+      "translation": [
+        -44,
+        29
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "changedPixels": 31553,
+      "changedOutsideApprovedScope": 0,
+      "allowedRegion": null,
+      "spriteBounds": [
+        139,
+        74,
+        367,
+        278
+      ],
+      "headroom": 74,
+      "bottomClearance": 0,
+      "visiblePixels": 21088,
+      "clippedVisiblePixels": 0,
+      "preservedVisiblePixels": 21088,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "originalNativeAuthorship": "UNPROVEN \u2014 inherited from derived v02; this pass does not repair original-native authorship.",
+      "preview4x": "previews/CH3-A06-presenter-idle-v03-4x.png",
+      "previewSha256": "5e69eb8454e93db57305c130a307e8928c910c810db637d3879fcd1fb57011ca",
+      "comparison": "comparisons/CH3-A06-presenter-idle-v02-v03.png",
+      "comparisonSha256": "153d70fae1b932fa62c9261ff8e4d0b3adb1f977288bd06fd533010194b72211"
+    }
+  ],
+  "composites": [
+    {
+      "character": "attendant",
+      "file": "composites/attendant-v03.png",
+      "sha256": "0b3f4136887cb6d8a2139fbfff6fbb359a2313847e4609ce314dc8a67e7fdc75",
+      "preview4x": "composites/attendant-v03-4x.png",
+      "comparison": "comparisons/attendant-composite-v02-v03.png",
+      "background": "CH3-A02-restroom-bg",
+      "foreground": "CH3-A03-attendant-idle"
+    },
+    {
+      "character": "presenter",
+      "file": "composites/presenter-v03.png",
+      "sha256": "415bf84572f17ab3048b9fa0430f62ce6458a7ee38ab258a324417ec27b2a3bb",
+      "preview4x": "composites/presenter-v03-4x.png",
+      "comparison": "comparisons/presenter-composite-v02-v03.png",
+      "background": "CH3-A05-verification-bg",
+      "foreground": "CH3-A06-presenter-idle"
+    }
+  ],
+  "composition": {
+    "attendantMicrophoneRegion": [
+      95,
+      201,
+      212,
+      270
+    ],
+    "attendantMicrophoneOccludedPixels": 0,
+    "presenterCameraBodyRegion": [
+      17,
+      135,
+      150,
+      201
+    ],
+    "presenterCameraBodyOccludedPixels": 0,
+    "presenterMicrophoneStandRegion": [
+      177,
+      145,
+      187,
+      270
+    ],
+    "presenterMicrophoneStandOverlapPixels": 1062,
+    "countdownGlyphPixels": 775,
+    "countdownOccludedGlyphPixels": 0,
+    "competingCompositionRequired": false
+  },
+  "continuityConcern": "A01 retains the tiny desktop device; carried byte-identically under explicit preservation rule. A separate Nate-approved A01 cleanup would be needed for exact prop continuity."
+}
