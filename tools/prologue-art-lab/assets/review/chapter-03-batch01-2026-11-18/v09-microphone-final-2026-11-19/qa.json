@@ -1,0 +1,75 @@
+{
+  "result": "PASS for localized correction and preservation; no visual approval implied.",
+  "dimensions": [
+    314,
+    206
+  ],
+  "previewDimensions": [
+    1256,
+    824
+  ],
+  "every4x4PreviewBlockMatches": true,
+  "alphaExtrema": [
+    255,
+    255
+  ],
+  "changedPixels": 59,
+  "changedBounds": [
+    196,
+    123,
+    203,
+    143
+  ],
+  "unexpectedChangedPixelsOutsideExplicitMask": 0,
+  "wholeAttendantGuardPixelsUnchanged": true,
+  "all489RestoredNPCPixelsUnchanged": true,
+  "signageGateAndAbsentDeviceRegionsUnchanged": true,
+  "A04AndFourPortraitsHashUnchanged": [
+    {
+      "id": "CH3-A02-restroom-bg",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A02-restroom-bg-v04.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+    },
+    {
+      "id": "CH3-A03-attendant-idle",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "id": "CH3-A05-verification-bg",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A05-verification-bg-v04.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382"
+    },
+    {
+      "id": "CH3-A06-presenter-idle",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    },
+    {
+      "id": "CH3-A04-verification-v07",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/candidates/CH3-A04-verification-v07.png",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5"
+    }
+  ],
+  "historicalFilesHashVerified": 422,
+  "visualInspection": {
+    "order": [
+      "314x206 native scene first",
+      "1256x824 exact 4x preview second",
+      "8x microphone proof last"
+    ],
+    "observations": [
+      "Dark capsule head is separated from the post by a background pixel.",
+      "One-pixel gooseneck curves subtly between the capsule and base.",
+      "Cool dark stem is distinct from the brown chair behind it; compact base is visible on the cream desktop.",
+      "Attendant position and every protected foreground pixel remain unchanged. Readability and final visual selection remain Nate\u2019s decision."
+    ]
+  },
+  "generationCalls": 0,
+  "globalFiltering": false,
+  "candidateResampled": false,
+  "originalFullSceneNativeGridAuthorship": "UNPROVEN; inherited source-derived RGB remains. Only the explicit local pixel correction is directly native-grid authored.",
+  "selected": false,
+  "approved": false,
+  "integrated": false
+}
