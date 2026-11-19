@@ -6,6 +6,8 @@ This is the **public, JSON-backed Storyboard + Artwork Production viewer** for T
 - **[Open the Prologue Artwork Lab](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/)** — public-safe visual review with approved M2 shell assets and 28 draft PNGs; no private game engine
 - [Viewer](tools/storyboard/index.html) · [Chapter manifest](story/storyboard-manifest.json) · [Prologue draft](story/chapters/prologue-00.draft.json) · [Item records](story/items.draft.json) · [Shared art prompts](story/artwork.draft.json)
 
+> **Chapter 3 creative reboot (2026-11-18):** The old People's Pavilion graph is **archived, not active story canon**. The viewer retains it for historical inspection and labels it `archived`. Its old nodes, choices, endings, and Chapter 3-only artwork briefs must not be imported into the game or commissioned as new art. Read the [Chapter 3 reboot brief](docs/109_CH3_REBOOT_ONE_EXPERIENCE_PER_PERSON_20261118.md) and the [immutable legacy archive](story/archives/chapter-03-pre-reboot-20261118.json) before any new Chapter 3 work. Prologue, Chapter 1 and Chapter 2 remain unaffected.
+
 ## Canon and the production pipeline
 
 **This repository is the canonical creative source** for The Acceptable Error. Read [docs/105](docs/105_CANONICAL_SYNC_PIPELINE.md) first; the owner rulings are in [docs/102](docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md) and [docs/103](docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md).

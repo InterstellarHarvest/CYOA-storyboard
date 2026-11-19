@@ -21,6 +21,36 @@ const OUT = outArg !== -1 ? path.resolve(process.argv[outArg + 1]) : fs.mkdtempS
 fs.mkdirSync(OUT, { recursive: true });
 const PREVIEW = JSON.parse(fs.readFileSync(path.join(ROOT, 'story/artwork-preview.json'), 'utf8'));
 
+// The artwork library's rows, derived from the committed catalogue with the viewer's own enumeration
+// (tools/storyboard/index.html showArtwork: records, portrait backgrounds, scene states / views / pages,
+// item variants; key = artKey) and its retirement rule (retiredArt) and filters.
+const CATALOG = JSON.parse(fs.readFileSync(path.join(ROOT, 'story/artwork.draft.json'), 'utf8'));
+const SELECTED = ['approved', 'integrated', 'reused'];
+const isRetired = (r) => /^ARCHIVED \/ RETIRED \/ UNUSED\b/.test((r && r.notes) || '');
+const CATALOG_REFS = [];
+for (const group of ['scenes', 'portraits', 'focus', 'deathScreens']) {
+  for (const [id, record] of Object.entries(CATALOG[group] || {})) {
+    CATALOG_REFS.push({ key: group + '/' + id, record });
+    if (group === 'scenes' && record.portraitBackground) CATALOG_REFS.push({ key: group + '/' + id + '/portraitBackground', record: record.portraitBackground });
+    if (group === 'scenes') (record.states || []).forEach((s) => CATALOG_REFS.push({ key: group + '/' + id + '/states:' + s.id, record: s }));
+    if (group === 'portraits') Object.entries(record.views || {}).forEach(([s, v]) => CATALOG_REFS.push({ key: group + '/' + id + '/views:' + s, record: v }));
+    if (group === 'focus') (record.pages || []).forEach((p, i) => CATALOG_REFS.push({ key: group + '/' + id + '/pages:' + (i + 1), record: p }));
+  }
+}
+for (const [id, variants] of Object.entries(CATALOG.items || {})) for (const [variant, record] of Object.entries(variants)) CATALOG_REFS.push({ key: 'items/' + id + '/' + variant, record });
+const statusOf = (r) => r.status || 'not-started';
+const FILTER_RULES = {
+  Selected: (x) => !isRetired(x.record) && SELECTED.includes(statusOf(x.record)),
+  Integrated: (x) => !isRetired(x.record) && ['integrated', 'reused'].includes(statusOf(x.record)),
+  Approved: (x) => !isRetired(x.record) && statusOf(x.record) === 'approved',
+  'Active pending': (x) => !isRetired(x.record) && !SELECTED.includes(statusOf(x.record)),
+  Archived: (x) => isRetired(x.record),
+};
+// Preview keys (register format "scenes:id#portraitBackground") in the viewer's key format. A selected
+// container (layered portrait, complete views, multipage Focus) is previewed through its children.
+const PREVIEW_KEYS = Object.keys(PREVIEW.images).map((k) => k.replace(':', '/').replace('#', '/'));
+const SELECTED_PREVIEWED = new Set(CATALOG_REFS.map((x) => x.key).filter((k) => PREVIEW_KEYS.includes(k) || PREVIEW_KEYS.some((p) => p.startsWith(k + '/'))));
+
 const results = [];
 function check(browser, name, ok, detail) {
   results.push({ browser, name, ok: !!ok });
@@ -87,9 +117,33 @@ async function run(name, base) {
   await openList('Selected');
   const selectedButtons = await page.$$eval('#details button.art-brief', (bs) => bs.map((x) => ({ thumb: !!x.querySelector('img.thumb'), t: x.textContent })));
   check(b, 'Selected filter: every selected record shows a thumbnail', selectedButtons.length > 0 && selectedButtons.every((x) => x.thumb), selectedButtons.filter((x) => !x.thumb).slice(0, 3));
-  await openList('Not selected yet');
-  const pending = await page.$$eval('#details button.art-brief', (bs) => bs.map((x) => x.textContent));
-  check(b, 'Not-selected filter lists only unselected records', pending.length > 50 && pending.every((t) => !/· (approved|integrated|reused)$/.test(t)), pending.slice(0, 3));
+  // Filter matrix. Since the Chapter 3 reboot (2a1022b) the library separates ACTIVE records from RETIRED
+  // historical ones ("Archived"; the "Not selected yet" filter became "Active pending"). Every filter must list
+  // exactly the records the committed catalogue predicts, and the five sets must partition consistently.
+  const rows = async (filter) => { await openList(filter); return page.$$eval('#details button.art-brief .art-meta', (ms) => ms.map((m) => m.textContent)); };
+  const keyOf = (meta) => meta.split(' · ')[0];
+  const expected = {};
+  for (const [filter, keep] of Object.entries(FILTER_RULES)) expected[filter] = CATALOG_REFS.filter(keep).map((r) => r.key).sort();
+  const seen = {};
+  for (const filter of Object.keys(FILTER_RULES)) {
+    const metas = await rows(filter);
+    seen[filter] = metas.map(keyOf).sort();
+    const exact = JSON.stringify(seen[filter]) === JSON.stringify(expected[filter]);
+    const statusOk = filter === 'Archived' ? metas.every((m) => /· ARCHIVED · DO NOT GENERATE$/.test(m))
+      : filter === 'Active pending' ? metas.every((m) => !/· (approved|integrated|reused|ARCHIVED · DO NOT GENERATE)$/.test(m))
+      : filter === 'Approved' ? metas.every((m) => /· approved$/.test(m))
+      : filter === 'Integrated' ? metas.every((m) => /· (integrated|reused)$/.test(m))
+      : metas.every((m) => /· (approved|integrated|reused)$/.test(m));
+    check(b, filter + ' filter lists exactly the ' + expected[filter].length + ' catalogue records it should, with matching status labels', exact && statusOk && (filter !== 'Archived' || seen[filter].length > 0),
+      { extra: seen[filter].filter((k) => !expected[filter].includes(k)).slice(0, 3), missing: expected[filter].filter((k) => !seen[filter].includes(k)).slice(0, 3), n: seen[filter].length });
+  }
+  const union = (...fs) => [...new Set(fs.flatMap((f) => seen[f]))].sort();
+  const allKeys = (await rows('All')).map(keyOf).sort();
+  check(b, 'Selected + Active pending + Archived partition All; Integrated + Approved = Selected',
+    JSON.stringify(union('Selected', 'Active pending', 'Archived')) === JSON.stringify(allKeys) && seen.Selected.length + seen['Active pending'].length + seen.Archived.length === allKeys.length
+    && JSON.stringify(union('Integrated', 'Approved')) === JSON.stringify(seen.Selected) && seen.Integrated.length + seen.Approved.length === seen.Selected.length,
+    { all: allKeys.length, selected: seen.Selected.length, pending: seen['Active pending'].length, archived: seen.Archived.length });
+  check(b, 'every Selected record has a byte-checked preview', seen.Selected.every((k) => SELECTED_PREVIEWED.has(k)), seen.Selected.filter((k) => !SELECTED_PREVIEWED.has(k)).slice(0, 3));
 
   // 3. Main scene at native 1x (314 fits the pane).
   await openArt('HOUSE OF TOMORROW — ARRIVAL');

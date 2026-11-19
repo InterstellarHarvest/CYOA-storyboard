@@ -153,3 +153,29 @@ All five death-screen illustrations APPROVED UNCHANGED by Art Director/owner. Im
 | C | `deathScreens:biology_park/personal_growth` | `8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411` |
 | D | `deathScreens:biology_park/reclassified` | `a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc` |
 | E | `deathScreens:biology_park/site_improvement` | `45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff` |
+
+
+## Chapter 3 Batch A final Art Director approval — 2026-11-19
+
+Nate issued final Art Director approval of all six Chapter 3 Batch A artworks on 2026-11-19. The exact selected image bytes were registered as **`approved`** with `tools/sync/register-art.mjs --batch` (dry run first; the dry run and the real run touched only these six records). They are approved, **not** integrated. All six production `assetPath` values remain `null` until a separately authorized Gameplay PMO integration. No artwork was regenerated, retouched, upscaled or otherwise changed. Review packages v01–v09 are preserved unchanged. Chapter 3 Batch B has not begun.
+
+Immutable source: `InterstellarHarvest/CYOA-storyboard`, branch `art/ch3-pavilion-batch01-20261118`, commit `a87155bfadad42e0deae3bee2e749963d1459a4b`. Source paths are relative to `tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/`. Each SHA-256 was verified against the blob at that commit before registration. The A03 hash supersedes a mistyped hash in the first approval handoff; the file and selection (A03 v04) were never in question.
+
+| ID | Selected version | Record | Source path | SHA-256 | Size / alpha |
+|---|---|---|---|---|---|
+| A01 | v09 | `scenes:pavilion_reboot/restroom_entrance` | `v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png` | `117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4` | 314×206 opaque |
+| A02 | v04 | `scenes:pavilion_reboot/restroom_entrance#portraitBackground` | `v04/candidates/CH3-A02-restroom-bg-v04.png` | `e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260` | 564×278 opaque |
+| A03 | v04 | `portraits:pavilion_attendant:idle` | `v04/candidates/CH3-A03-attendant-idle-v04.png` | `28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2` | 564×278 binary alpha |
+| A04 | v07 | `scenes:pavilion_reboot/human_verification_stage` | `v07-native-finishing-2026-11-19/candidates/CH3-A04-verification-v07.png` | `9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5` | 314×206 opaque |
+| A05 | v04 | `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | `v04/candidates/CH3-A05-verification-bg-v04.png` | `beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382` | 564×278 opaque |
+| A06 | v04 | `portraits:pavilion_presenter:idle` | `v04/candidates/CH3-A06-presenter-idle-v04.png` | `da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784` | 564×278 binary alpha |
+
+Public preview copies (byte-identical) are under `assets/selected/pending-integration/`: `scenes/pavilion_reboot/restroom_entrance.png`, `scenes/pavilion_reboot/restroom_entrance/portraitBackground.png`, `portraits/pavilion_attendant/idle.png`, `scenes/pavilion_reboot/human_verification_stage.png`, `scenes/pavilion_reboot/human_verification_stage/portraitBackground.png`, `portraits/pavilion_presenter/idle.png`.
+
+**Unresolved technical limitation (recorded at the Art Director's direction):**
+
+> The six selected assets have passed the documented dimensions, opacity/binary-alpha, preview, composite, hash, and public-browser checks. However, complete original native-grid authorship remains unproven. The source generations were returned at higher resolutions and transferred into the target pixel grids, with some subsequent localized native-pixel corrections. Residual source-derived softness and fine RGB tonal variation may remain. Nate knowingly approves the exact selected image bytes with this limitation documented. Creative approval does not establish original native-grid authorship or waive the distinction between derived and genuinely native-authored artwork.
+
+Native-grid authorship is **not** verified or passed by this registration. The limitation is not a request to regenerate anything.
+
+**Publication status:** this approval is registered on branch `art/ch3-batch-a-approval-registration-20261119`, which is stacked on draft PR #6 (`art/ch3-pavilion-reboot-briefs-20261118`), which is itself stacked on draft PR #5 (`story/ch3-reboot-20261118`). The six records exist only in that reboot dependency chain. The approval is **not live on canonical `main` or on the public Pages site** until PR #5, PR #6 and this registration land on `main` and a Pages deployment is verified.

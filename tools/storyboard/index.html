@@ -31,6 +31,7 @@
 .node.tl .name,.node.tl .sub,.node.tl .tag{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .node.tl .tag{font-size:10px;letter-spacing:.05em;margin-top:6px;text-transform:uppercase;font-weight:650}
 .node.tl.fatal{background:#3b262c;border-color:#a4555c}.node.tl.fatal:hover{background:#4a2f36}
+.node.tl.survivor{background:#233b34;border-color:#477d6c}.node.tl.survivor:hover{background:#2d4a41}
 .node.tl.exit{background:#1f3a3c;border-color:#4fb3aa}.node.tl.exit:hover{background:#28494b}
 .node.tl.exit.preview{background:#22343a;border-style:dashed;border-left-style:solid}
 .node.tl.start{box-shadow:0 0 0 3px #e2e8ee33,0 3px 9px #0005}
@@ -838,16 +839,16 @@
    const exitsOut={};tl.ports.filter(p=>p.dir==="out").forEach(p=>{(exitsOut[p.node]??=[]).push(p);});
    for(const [id,node] of Object.entries(state.chapter.nodes)){
      const pos=positions[id],inc=incById[tl.incidentOf[id]],outs=exitsOut[id]||[];
-     const fatal=node.end===true&&!outs.length,preview=outs.length&&outs.every(p=>p.mode==="preview");
-     const card=el("div","node tl"+(node.deathPopup?" death-node":"")+(state.selected?.type==="node"&&state.selected.id===id?" selected":"")+(fatal?" fatal":"")+(outs.length?" exit":"")+(preview?" preview":"")+(id===state.chapter.start?" start":""));
+     const fatal=!!node.deathPopup,survivor=node.end===true&&!fatal&&!outs.length,preview=outs.length&&outs.every(p=>p.mode==="preview");
+     const card=el("div","node tl"+(node.deathPopup?" death-node":"")+(state.selected?.type==="node"&&state.selected.id===id?" selected":"")+(fatal?" fatal":"")+(survivor?" survivor":"")+(outs.length?" exit":"")+(preview?" preview":"")+(id===state.chapter.start?" start":""));
      card.style.left=pos.x+"px";card.style.top=pos.y+"px";
      if(inc)card.style.borderLeftColor=inc.color;
      card.title=id+" · "+node.mode+"\n"+textOf(node.text).slice(0,240)+"\n"+new Set(choicesFor(node).map(c=>c.displayGroup||c.id)).size+" logical choices";
      const exits=[...new Set([...choicesFor(node).map(c=>c.chapter),node.storyboardNextChapter].filter(Boolean))];
      const logicalCount=new Set(choicesFor(node).map(c=>c.displayGroup||c.id)).size;
      const back=choicesFor(node).some(c=>c.back);
-     const tagText=(id===state.chapter.start?"START · ":"")+(fatal?"FATAL ENDING · ":"")+(preview?"PREVIEW HANDOFF · ":outs.length?"CHAPTER EXIT · ":"")+(back?"↩ BACK CHOICE · ":"")+(inc?inc.title:"");
-     const tag=el("div","tag",tagText.replace(/ · $/,""));tag.style.color=fatal?"#f08f8a":outs.length?"#8fe0d6":inc?.color||"#a3b3c1";
+     const tagText=(id===state.chapter.start?"START · ":"")+(fatal?"FATAL ENDING · ":survivor?"SURVIVING ENDING · ":"")+(preview?"PREVIEW HANDOFF · ":outs.length?"CHAPTER EXIT · ":"")+(back?"↩ BACK CHOICE · ":"")+(inc?inc.title:"");
+     const tag=el("div","tag",tagText.replace(/ · $/,""));tag.style.color=fatal?"#f08f8a":survivor?"#8cddbc":outs.length?"#8fe0d6":inc?.color||"#a3b3c1";
      if(node.deathPopup){
        card.append(el("div","id",id),el("div","name",node.deathPopup.title));
        card.append(el("div","fatal-beat",node.deathPopup.description||"POPUP NARRATIVE REQUIRED"));
@@ -1160,6 +1161,8 @@
    pane.append(sec);
  }
  function artRefsForItem(id){return [{group:"items",id,variant:"slot"},{group:"items",id,variant:"inspect"}];}
+ function retiredArt(record){return /^ARCHIVED \/ RETIRED \/ UNUSED\b/.test(record?.notes||"");}
+ function artStatusText(record){return retiredArt(record)?"ARCHIVED · DO NOT GENERATE":(record?.status||"NOT DEFINED");}
  function artworkLinks(pane,refs){
    if(!refs.length)return;
    pane.append(el("h3","","Artwork references"));
@@ -1167,7 +1170,7 @@
      const record=artworkAt(ref.group,ref.id,ref.variant);
      const b=el("button","art-brief",(ref.conditional?"STATE · ":"")+(record?.title||artKey(ref))),t=thumbOf(ref,record);
      if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}
-     b.append(el("span","art-meta",artKey(ref)+" · "+(record?.status||"NOT DEFINED")+" · "+(record?.assetPath||record?.suggestedFilename||"no filename")));
+     b.append(el("span","art-meta",artKey(ref)+" · "+artStatusText(record)+" · "+(record?.assetPath||record?.suggestedFilename||"no filename")));
      if(record)b.addEventListener("click",()=>selectArt(ref));else b.disabled=true;
      pane.append(b);
    });
@@ -1220,7 +1223,8 @@
      const parent=artworkAt(ref.group,ref.id),up=el("button","art-brief","↑ "+(parent?.title||ref.id));
      up.onclick=()=>selectArt({group:ref.group,id:ref.id});pane.append(up);
    }
-   labeled(pane,"Production status",record.status||"not-started");
+   if(retiredArt(record))pane.append(el("p","warning","ARCHIVED / RETIRED / UNUSED — historical artwork only. Do not generate or import this obsolete pre-reboot Pavilion prompt."));
+   labeled(pane,"Production status",artStatusText(record));
    previewSection(pane,ref,record);
    if(record.views||record.pages){
      pane.append(el("h3","",record.views?"Conversation views":"Pages"));
@@ -1275,17 +1279,18 @@
    Object.entries(a.items||{}).forEach(([id,variants])=>{
      Object.entries(variants).forEach(([variant,record])=>all.push({group:"items",id,variant,record}));
    });
-   const counts={};all.filter(x=>!x.nested).forEach(x=>{const s=x.record.status||"not-started";counts[s]=(counts[s]||0)+1;});
+   const counts={};all.filter(x=>!x.nested&&!retiredArt(x.record)).forEach(x=>{const s=x.record.status||"not-started";counts[s]=(counts[s]||0)+1;});
+   const retiredCount=all.filter(x=>!x.nested&&retiredArt(x.record)).length;
    const nested=all.filter(x=>x.nested).length,withPreview=Object.keys(state.preview?.images||{}).length;
-   labeled(pane,"Production overview",(all.length-nested)+" shared art records (+"+nested+" scene states / views / pages) · "+Object.entries(counts).map(([s,n])=>n+" "+s).join(" · ")+"\n"+withPreview+" selected images viewable here"+(state.integration?" · game build "+state.integration.game.commit.slice(0,10)+" uses "+state.integration.images.length:""));
+   labeled(pane,"Production overview",(all.length-nested-retiredCount)+" active shared art records (+"+nested+" scene states / views / pages) · "+Object.entries(counts).map(([s,n])=>n+" "+s).join(" · ")+" · "+retiredCount+" retired historical records\n"+withPreview+" selected images viewable here"+(state.integration?" · game build "+state.integration.game.commit.slice(0,10)+" uses "+state.integration.images.length:""));
    pane.append(el("p","meta","Status meanings: approved = selected for use (creative approval complete) · integrated = approved and used in a working game build · reused = approved art reused elsewhere · generated = candidates exist, none selected · not-started = no selected image. Never regenerate or re-approve selected art."));
    const filterBar=el("div","art-filter");
-   const FILTERS=[["all","All"],["selected","Selected"],["integrated","Integrated"],["approved","Approved"],["pending","Not selected yet"]];
+   const FILTERS=[["all","All"],["selected","Selected"],["integrated","Integrated"],["approved","Approved"],["pending","Active pending"],["retired","Archived"]];
    state.artFilter=state.artFilter||"all";
    FILTERS.forEach(([v,label])=>{const b=el("button",state.artFilter===v?"on":"",label);b.onclick=()=>{state.artFilter=v;showArtwork();};filterBar.append(b);});
    pane.append(filterBar);
-   const keep=x=>{const s=x.record.status||"not-started",f=state.artFilter;
-     return f==="all"||(f==="selected"&&SELECTED_STATUS.includes(s))||(f==="integrated"&&(s==="integrated"||s==="reused"))||(f==="approved"&&s==="approved")||(f==="pending"&&!SELECTED_STATUS.includes(s));};
+   const keep=x=>{const s=x.record.status||"not-started",f=state.artFilter,old=retiredArt(x.record);
+     return f==="all"||(f==="retired"&&old)||(!old&&((f==="selected"&&SELECTED_STATUS.includes(s))||(f==="integrated"&&(s==="integrated"||s==="reused"))||(f==="approved"&&s==="approved")||(f==="pending"&&!SELECTED_STATUS.includes(s))));};
    labeled(pane,"Global art direction",a.direction||"No global direction recorded.");
    const shared=el("details");shared.append(el("summary","","Edit shared art direction"));
    const area=el("textarea");area.value=a.direction||"";shared.append(area);
@@ -1297,7 +1302,7 @@
      records.forEach(ref=>{
        const b=el("button","art-brief"+(ref.nested?" nested":""),ref.record.title||artKey(ref)),t=thumbOf(ref,ref.record);
        if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}
-       b.append(el("span","art-meta",artKey(ref)+" · "+(ref.record.status||"not-started")));
+       b.append(el("span","art-meta",artKey(ref)+" · "+artStatusText(ref.record)));
        b.onclick=()=>selectArt(ref);pane.append(b);
      });
    }
@@ -1526,13 +1531,33 @@
      state.manifestURL=new URL("../../story/storyboard-manifest.json",location.href);
      const r=await fetch(state.manifestURL);if(!r.ok)throw Error("HTTP "+r.status);
      const manifest=await r.json();state.manifest=manifest;
+     // An explicit review URL swaps only the in-memory Chapter 3 source. The public manifest,
+     // approved chapters and archived legacy Chapter 3 remain byte-for-byte untouched.
+     const ch3Review=new URL(location.href).searchParams.get("review")==="ch3-reboot";
+     if(ch3Review){
+       const entry=manifest.chapters?.find(ch=>ch.id==="chapter-03");
+       if(!entry)throw Error("Chapter 3 is missing from the manifest");
+       entry.file="chapters/chapter-03.reboot-candidate.json";
+       entry.title="Chapter 3 — Pavilion REBOOT REVIEW";
+       entry.status="review-only · not in game";
+     }
      const select=$("chapterSelect");select.replaceChildren();
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
      if(manifest.items){const itemsRes=await fetch(new URL(manifest.items,state.manifestURL));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
       if(manifest.artwork){const artRes=await fetch(new URL(manifest.artwork,state.manifestURL));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
       await loadPreviewData();
       if(manifest.layout){const layoutRes=await fetch(new URL(manifest.layout,state.manifestURL));if(!layoutRes.ok)throw Error("Layout HTTP "+layoutRes.status);loadLayouts(await layoutRes.json(),manifest.layout);}
-     if(manifest.chapters?.length)await loadRemote(manifest.chapters[0]);else setStatus("No chapters listed in manifest.");
+     if(ch3Review){
+       const reviewLayoutURL=new URL("chapter-03.reboot-review-layout.json",state.manifestURL);
+       const layoutRes=await fetch(reviewLayoutURL);
+       if(!layoutRes.ok)throw Error("Chapter 3 review layout HTTP "+layoutRes.status);
+       const reviewLayout=await layoutRes.json();
+       const chapterLayout=reviewLayout?.chapters?.["chapter-03"];
+       if(reviewLayout.schema!=="cyoa-storyboard-layout-v1"||!chapterLayout?.timeline)throw Error("Invalid Chapter 3 review layout");
+       state.timelines["chapter-03"]=sanitizeTimeline(chapterLayout.timeline,chapterLayout.layoutRevision);
+     }
+     if(manifest.chapters?.length)await loadRemote(ch3Review?manifest.chapters.find(ch=>ch.id==="chapter-03"):manifest.chapters[0]);
+     else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
  }
  // Storyboard-only companions (docs/105). Optional: the page works without them.

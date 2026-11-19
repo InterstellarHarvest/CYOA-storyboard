@@ -157,10 +157,23 @@ async function run(name, base) {
     ...Object.values(catalog.items).flatMap((v) => Object.values(v)),
     ...Object.values(catalog.focus || {}),
     ...Object.values(catalog.deathScreens || {})];
-  const notStarted = records.filter((r) => r.status === 'not-started').length;
-  check(b, 'zoom, Items and Artwork panels still work (' + records.length + ' shared art records incl. nine death screens, ' + notStarted + ' not-started, ' + itemCount + ' items)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
-    && items === itemCount && new RegExp('\\b' + records.length + ' shared art records').test(art) && new RegExp('\\b' + notStarted + ' not-started').test(art)
-    && Object.keys(catalog.deathScreens).length === 9, [items, art.slice(0, 400)]);
+  // Since the Chapter 3 reboot (2a1022b) the panel splits ACTIVE records from RETIRED historical ones
+  // (notes starting "ARCHIVED / RETIRED / UNUSED", the viewer's retiredArt rule) and counts statuses over
+  // active records only. Nested scene states / views / pages are reported separately.
+  const retired = (r) => /^ARCHIVED \/ RETIRED \/ UNUSED\b/.test((r && r.notes) || '');
+  const active = records.filter((r) => !retired(r)), archived = records.length - active.length;
+  const nested = Object.values(catalog.scenes).reduce((n, s) => n + (s.states || []).length, 0)
+    + Object.values(catalog.portraits).reduce((n, p) => n + Object.keys(p.views || {}).length, 0)
+    + Object.values(catalog.focus || {}).reduce((n, f) => n + (f.pages || []).length, 0);
+  const byStatus = {};
+  active.forEach((r) => { const s = r.status || 'not-started'; byStatus[s] = (byStatus[s] || 0) + 1; });
+  const want = [active.length + ' active shared art records (+' + nested + ' scene states / views / pages)', archived + ' retired historical records',
+    ...Object.entries(byStatus).map(([s, n]) => n + ' ' + s)];
+  const missing = want.filter((t) => !new RegExp('(^|[^0-9])' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).test(art));
+  check(b, 'zoom, Items and Artwork panels still work (' + active.length + ' active + ' + archived + ' retired = ' + records.length + ' shared art records incl. nine death screens; '
+    + Object.entries(byStatus).map(([s, n]) => n + ' ' + s).join(', ') + '; ' + itemCount + ' items)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
+    && items === itemCount && !missing.length && active.length + archived === records.length
+    && Object.keys(catalog.deathScreens).length === 9, [items, missing, art.slice(0, 400)]);
   await p2.screenshot({ path: path.join(OUT, name + '_3_imported.png') });
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);

@@ -1,0 +1,39 @@
+{
+  "schema": "cyoa-storyboard-layout-v1",
+  "chapters": {
+    "chapter-03": {
+      "positions": {},
+      "layoutRevision": 3,
+      "timeline": {
+        "note": "REVIEW-ONLY timeline organization for the Chapter 3 reboot candidate; not used by the public storyboard manifest or the game.",
+        "incidents": [
+          {
+            "id": "arrival",
+            "title": "Arrival · One Experience Per Person",
+            "nodes": ["pavilion_arrival", "real_restroom", "attendant_greeting", "attendant_refusal", "attendant_key_callback"]
+          },
+          {
+            "id": "human",
+            "title": "Human Verification · Live demonstrations",
+            "nodes": ["human_verification_arrival", "presenter_verification", "photo_verification", "photo_verification_reply", "authentic_urgency", "authentic_urgency_visitor", "authentic_urgency_reply", "human_locomotion", "locomotion_pass", "locomotion_fail", "unauthorized_presenter", "genuine_surprise", "presenter_help_end"]
+          },
+          {
+            "id": "record",
+            "title": "The Original's Record · Endless receipt",
+            "nodes": ["record_print", "record_challenge", "record_choices", "stapler_printer_snarl", "record_scanner", "record_scanner_result", "paper_problem_end", "attendant_honest", "attendant_honest_end"]
+          },
+          {
+            "id": "door",
+            "title": "The Real Door · Courtesy and misdirection",
+            "nodes": ["door_wait", "door_choices", "door_dash_pass", "door_dash_fail", "door_courtesy", "door_reverse_end"]
+          },
+          {
+            "id": "departure",
+            "title": "Shared backstage departure",
+            "nodes": ["backstage_exit"]
+          }
+        ]
+      }
+    }
+  }
+}
