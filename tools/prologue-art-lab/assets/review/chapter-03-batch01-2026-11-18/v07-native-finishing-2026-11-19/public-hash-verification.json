@@ -1,12 +1,12 @@
 {
-  "result": "SUPERSEDED",
+  "result": "PASS",
   "gallery": "https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/",
   "deployment": {
     "publicSiteSource": "468f82ebf9a25f9cef8c165465c321cb485cbd95",
-    "gallerySource": "1a4ed84514f4dcd57c84bc7e4d9b4ee1759f6a5c",
+    "gallerySource": "718b788a7fdc718dc0eaa52be2fc628b5a1c88f6",
     "scope": "Current main site plus isolated generated/unselected Chapter 3 gallery only; no Chapter 3 activation or merge."
   },
-  "publicHashesVerified": 62,
+  "publicHashesVerified": 69,
   "files": [
     "v07-native-finishing-2026-11-19/candidates/CH3-A01-restroom-v07.png",
     "v07-native-finishing-2026-11-19/candidates/CH3-A04-verification-v07.png",
@@ -35,6 +35,11 @@
     "v07-native-finishing-2026-11-19/diagnostics/A04-declared-scope.png",
     "v07-native-finishing-2026-11-19/previews/CH3-A01-restroom-v07-4x.png",
     "v07-native-finishing-2026-11-19/previews/CH3-A04-verification-v07-4x.png",
+    "v07-native-finishing-2026-11-19/public-browser-proof/CH3-A01-restroom-v07-desktop-4x.png",
+    "v07-native-finishing-2026-11-19/public-browser-proof/CH3-A04-verification-v07-desktop-4x.png",
+    "v07-native-finishing-2026-11-19/public-browser-proof/approved-density-comparison-1x.png",
+    "v07-native-finishing-2026-11-19/public-browser-proof/gallery-desktop-1x.png",
+    "v07-native-finishing-2026-11-19/public-browser-proof/gallery-mobile-1x.png",
     "v07-native-finishing-2026-11-19/references/A01-v06.png",
     "v07-native-finishing-2026-11-19/references/A03-attendant.png",
     "v07-native-finishing-2026-11-19/references/A04-v06.png",
@@ -54,6 +59,8 @@
     "v07-native-finishing-2026-11-19/edit-native.py",
     "v07-native-finishing-2026-11-19/index.html",
     "v07-native-finishing-2026-11-19/manifest.json",
+    "v07-native-finishing-2026-11-19/public-browser-qa.json",
+    "v07-native-finishing-2026-11-19/public-hash-verification.json",
     "v07-native-finishing-2026-11-19/qa-browser.cjs",
     "v07-native-finishing-2026-11-19/qa.json",
     "v07-native-finishing-2026-11-19/sources/A01-changed-pixels.tsv",
@@ -72,6 +79,5 @@
     "v06-314-regeneration-2026-11-19/candidates/CH3-A04-verification-v06.png"
   ],
   "scope": "v07 finishing package plus six preserved v04 candidates and both v06 source candidates. All 335 historical files separately verified locally.",
-  "verifiedReviewCommit": "1a4ed84514f4dcd57c84bc7e4d9b4ee1759f6a5c",
-  "supersededReason": "A01 right gate-frame correction restored 29 source pixels; current candidate requires refreshed public verification."
+  "verifiedReviewCommit": "718b788a7fdc718dc0eaa52be2fc628b5a1c88f6"
 }

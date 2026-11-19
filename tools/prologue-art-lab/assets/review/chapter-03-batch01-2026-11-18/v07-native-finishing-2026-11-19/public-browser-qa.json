@@ -1,5 +1,5 @@
 {
-  "result": "SUPERSEDED",
+  "result": "PASS",
   "url": "https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/",
   "browser": "150.0.7871.125",
   "checks": [
@@ -14,18 +14,17 @@
   "errors": [],
   "failedRequests": [],
   "scope": "Gallery behavior only. Does not certify original full-scene native-grid authorship or select/approve artwork.",
-  "verifiedReviewCommit": "1a4ed84514f4dcd57c84bc7e4d9b4ee1759f6a5c",
+  "verifiedReviewCommit": "718b788a7fdc718dc0eaa52be2fc628b5a1c88f6",
   "candidateHashes": {
-    "CH3-A01-restroom-v07": "daab126cb9cde1448ec77a3b24c87ffadd382659cc6a66e11e6581f113e0f354",
+    "CH3-A01-restroom-v07": "6b0f56c373cd71b8ed58d67bfbff3d03d2da3d5382cae5552b558f23a8fcd21f",
     "CH3-A04-verification-v07": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5"
   },
-  "publicationFollowupScope": "The follow-up publication adds verification records/screenshots and checksums only. Artwork, edit specification and gallery HTML are unchanged.",
+  "publicationFollowupScope": "The final follow-up adds refreshed verification records/screenshots and checksums only; corrected artwork, edit specification and gallery HTML remain unchanged.",
   "screenshots": [
     "public-browser-proof/CH3-A01-restroom-v07-desktop-4x.png",
     "public-browser-proof/CH3-A04-verification-v07-desktop-4x.png",
     "public-browser-proof/approved-density-comparison-1x.png",
     "public-browser-proof/gallery-desktop-1x.png",
     "public-browser-proof/gallery-mobile-1x.png"
-  ],
-  "supersededReason": "A01 right gate-frame correction restored 29 source pixels; current candidate requires refreshed public verification."
+  ]
 }
