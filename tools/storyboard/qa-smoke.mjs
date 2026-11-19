@@ -29,8 +29,10 @@ const productionRecords=[
   ...Object.values(artwork.focus||{}),
   ...Object.values(artwork.deathScreens||{})
 ];
-// 169 -> 171 (2026-11-17, docs/106): the owner-approved pavilion_satisfaction_certificate adds its pending slot + inspect requirements.
-assert.equal(productionRecords.length,171,'shared art catalog includes death-popup illustrations for all fatal endpoints');
+// Baseline 171 (docs/106), plus the approved CH3 reboot's 14 scenes, 8 closer
+// portrait backgrounds and 7 foreground poses. The 65 retired records remain
+// present for history but must never count as active Chapter 3 production.
+assert.equal(productionRecords.length,171+14+8+7,'shared art catalog includes new Chapter 3 artwork requirements without deleting history');
 // docs/105 allows genuinely new, unselected candidates to be generated. Keep
 // legacy selection/integration assertions below; never confuse new candidates
 // with a regression of already selected artwork.
