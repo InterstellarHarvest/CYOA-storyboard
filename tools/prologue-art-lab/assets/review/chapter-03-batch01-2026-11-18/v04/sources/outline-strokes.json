@@ -1,0 +1,21 @@
+{
+  "method": "Hand-specified native one-pixel contour strokes. No global sharpening, quantization, blur or raster resizing.",
+  "strokes": [
+    {"label":"attendant hair silhouette","rgb":[61,49,43],"points":[[208,104],[208,102],[210,100],[212,99],[213,97],[215,97],[216,95],[217,95],[219,97],[222,98],[224,98],[226,99],[227,100],[228,102],[228,104]]},
+    {"label":"left spectacle upper rim","rgb":[57,43,36],"points":[[215,104],[217,103],[218,104]]},
+    {"label":"left spectacle side","rgb":[57,43,36],"points":[[215,104],[215,106]]},
+    {"label":"right spectacle upper rim","rgb":[57,43,36],"points":[[220,104],[222,103],[223,103]]},
+    {"label":"spectacle bridge","rgb":[57,43,36],"points":[[218,105],[220,104]]},
+    {"label":"cheek and jaw edge","rgb":[109,69,49],"points":[[212,108],[213,111],[215,113],[218,115],[222,116],[224,115],[226,112],[227,109],[227,107]]},
+    {"label":"left shoulder and sleeve","rgb":[66,62,52],"points":[[216,117],[210,118],[207,120],[205,123],[204,126],[201,130],[201,135],[204,138],[211,139]]},
+    {"label":"right shoulder and sleeve","rgb":[66,62,52],"points":[[223,117],[228,117],[232,120],[235,124],[236,130],[237,135],[236,139],[230,139]]},
+    {"label":"left vest side","rgb":[46,61,64],"points":[[210,119],[211,128],[212,132]]},
+    {"label":"right vest side","rgb":[46,61,64],"points":[[230,119],[229,129],[229,132]]},
+    {"label":"clasped hands outer contour","rgb":[111,70,49],"points":[[211,137],[214,133],[216,132],[219,133],[222,132],[225,134],[227,135],[229,135],[230,138],[225,139],[215,139],[211,137]]},
+    {"label":"restroom inner lintel","rgb":[43,55,60],"points":[[69,68],[169,68]]},
+    {"label":"restroom left inner jamb","rgb":[43,55,60],"points":[[68,69],[68,139]]},
+    {"label":"restroom right inner jamb","rgb":[43,55,60],"points":[[170,69],[170,139]]},
+    {"label":"side exit inner frame","rgb":[43,55,60],"points":[[275,75],[309,75],[309,169],[275,169],[275,75]]},
+    {"label":"counter lower edge","rgb":[48,57,59],"points":[[177,180],[185,185],[265,185],[273,180]]}
+  ]
+}

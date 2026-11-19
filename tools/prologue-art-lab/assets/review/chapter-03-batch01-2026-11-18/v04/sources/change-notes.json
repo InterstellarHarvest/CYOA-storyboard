@@ -1,0 +1,8 @@
+{
+  "CH3-A01-restroom": "Main-scene contactless device removed to match A02. Reinforced selected native one-pixel dark contours around the seated attendant, spectacles, hair, sleeves/hands, doorway frames and counter base. Composition and other pixels remain unchanged; no global sharpening.",
+  "CH3-A02-restroom-bg": "Unchanged v03 PNG, byte-identical. The desktop device is already absent; left microphone and gate hardware remain.",
+  "CH3-A03-attendant-idle": "Unchanged v03 PNG, byte-identical. The attendant remains in the +44 px rightward position with hands at the desktop.",
+  "CH3-A04-verification": "Unchanged v03 main-stage PNG, byte-identical. Countdown remains 30.",
+  "CH3-A05-verification-bg": "Unchanged v03 PNG, byte-identical. Camera, countdown and microphone background pixels are retained; microphone is hidden by the foreground, not erased.",
+  "CH3-A06-presenter-idle": "Moved another 28 px left, with no vertical movement or scaling. Entire microphone head, stem and base are covered. Both 30 digits remain clear. The large camera is still recognizable with limited right-edge overlap. All visible sprite RGBA pixels and the lower-edge position are preserved."
+}

@@ -102,6 +102,7 @@ jobs:
           (cd ".review-source/$review_path" && sha256sum --check PNG_SHA256SUMS.txt && sha256sum --check SOURCE_SHA256SUMS.txt)
           (cd ".review-source/$review_path/v02" && sha256sum --check PNG_SHA256SUMS.txt && sha256sum --check SOURCE_SHA256SUMS.txt)
           (cd ".review-source/$review_path/v03" && sha256sum --check PNG_SHA256SUMS.txt && sha256sum --check SOURCE_SHA256SUMS.txt)
+          (cd ".review-source/$review_path/v04" && sha256sum --check PNG_SHA256SUMS.txt && sha256sum --check SOURCE_SHA256SUMS.txt)
           mkdir -p "_site/$review_path"
           cp -a ".review-source/$review_path/." "_site/$review_path/"
           PUBLIC_MAIN_COMMIT=$(git rev-parse HEAD) python3 - <<'PY'
