@@ -1,0 +1,1821 @@
+{
+  "method": "Coordinate-authored native raster primitives, executed by Pillow at 314x206. No resampling of candidates, quantization, sharpening, blur, dithering or automated palette replacement.",
+  "generationCalls": 0,
+  "originalWholeSceneNativeAuthorship": "UNPROVEN: v06 is source-derived. Only the explicitly logged native finishing edits are substantiated.",
+  "candidates": [
+    {
+      "candidateId": "CH3-A01-restroom-v07",
+      "source": "references/A01-v06.png",
+      "sourceSha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245",
+      "candidate": "candidates/CH3-A01-restroom-v07.png",
+      "sha256": "daab126cb9cde1448ec77a3b24c87ffadd382659cc6a66e11e6581f113e0f354",
+      "dimensions": [
+        314,
+        206
+      ],
+      "nativeEditOperations": 53,
+      "changedPixels": 4340,
+      "changedPercent": 6.71,
+      "unmodifiedPixels": 60344,
+      "unexpectedChangedPixels": [],
+      "sourceUniqueRGB": 17795,
+      "finishedUniqueRGB": 17169,
+      "authoredEditColors": 49,
+      "sourcePixelsRemainingDerived": true,
+      "lockedRegions": [
+        {
+          "label": "RESTROOM sign",
+          "box": [
+            69,
+            38,
+            180,
+            62
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "wall access-control reader",
+          "box": [
+            171,
+            102,
+            180,
+            120
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "turnstile and left metal frame",
+          "box": [
+            102,
+            139,
+            155,
+            183
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "right desktop device absence",
+          "box": [
+            244,
+            127,
+            254,
+            142
+          ],
+          "byteIdenticalToV06": true
+        }
+      ],
+      "operations": [
+        {
+          "scene": "A01",
+          "label": "center post light face above intercom",
+          "kind": "rectangle",
+          "box": [
+            183,
+            42,
+            185,
+            128
+          ],
+          "color": "5c7d80",
+          "changedPixelsAtThisStep": 261
+        },
+        {
+          "scene": "A01",
+          "label": "center post broad face above intercom",
+          "kind": "rectangle",
+          "box": [
+            187,
+            42,
+            192,
+            128
+          ],
+          "color": "4a6b71",
+          "changedPixelsAtThisStep": 439
+        },
+        {
+          "scene": "A01",
+          "label": "center post recessed edge above intercom",
+          "kind": "line",
+          "points": [
+            [
+              194,
+              43
+            ],
+            [
+              194,
+              128
+            ]
+          ],
+          "color": "34545d",
+          "width": 1,
+          "changedPixelsAtThisStep": 86
+        },
+        {
+          "scene": "A01",
+          "label": "left restroom jamb highlight",
+          "kind": "line",
+          "points": [
+            [
+              69,
+              72
+            ],
+            [
+              69,
+              138
+            ]
+          ],
+          "color": "5a7a7d",
+          "width": 1,
+          "changedPixelsAtThisStep": 67
+        },
+        {
+          "scene": "A01",
+          "label": "left restroom jamb recessed edge",
+          "kind": "line",
+          "points": [
+            [
+              74,
+              73
+            ],
+            [
+              74,
+              137
+            ]
+          ],
+          "color": "35565f",
+          "width": 1,
+          "changedPixelsAtThisStep": 65
+        },
+        {
+          "scene": "A01",
+          "label": "restroom lintel recessed edge",
+          "kind": "line",
+          "points": [
+            [
+              79,
+              69
+            ],
+            [
+              163,
+              69
+            ]
+          ],
+          "color": "2f4d55",
+          "width": 1,
+          "changedPixelsAtThisStep": 85
+        },
+        {
+          "scene": "A01",
+          "label": "left gate cream face",
+          "kind": "polygon",
+          "points": [
+            [
+              83,
+              147
+            ],
+            [
+              99,
+              147
+            ],
+            [
+              99,
+              176
+            ],
+            [
+              83,
+              176
+            ]
+          ],
+          "color": "f4d3a9",
+          "changedPixelsAtThisStep": 501
+        },
+        {
+          "scene": "A01",
+          "label": "left gate narrow shaded return",
+          "kind": "polygon",
+          "points": [
+            [
+              100,
+              147
+            ],
+            [
+              101,
+              147
+            ],
+            [
+              101,
+              176
+            ],
+            [
+              100,
+              176
+            ]
+          ],
+          "color": "e8c49c",
+          "changedPixelsAtThisStep": 60
+        },
+        {
+          "scene": "A01",
+          "label": "right gate cream face",
+          "kind": "rectangle",
+          "box": [
+            159,
+            147,
+            165,
+            175
+          ],
+          "color": "f0cfa5",
+          "changedPixelsAtThisStep": 203
+        },
+        {
+          "scene": "A01",
+          "label": "left gate top rail controlled highlight",
+          "kind": "line",
+          "points": [
+            [
+              81,
+              141
+            ],
+            [
+              100,
+              141
+            ]
+          ],
+          "color": "8a9a96",
+          "width": 1,
+          "changedPixelsAtThisStep": 20
+        },
+        {
+          "scene": "A01",
+          "label": "counter broad coral plane",
+          "kind": "polygon",
+          "points": [
+            [
+              192,
+              153
+            ],
+            [
+              256,
+              153
+            ],
+            [
+              260,
+              152
+            ],
+            [
+              260,
+              176
+            ],
+            [
+              256,
+              178
+            ],
+            [
+              193,
+              178
+            ]
+          ],
+          "color": "de6d58",
+          "changedPixelsAtThisStep": 1678
+        },
+        {
+          "scene": "A01",
+          "label": "counter left coral shaded return",
+          "kind": "polygon",
+          "points": [
+            [
+              179,
+              152
+            ],
+            [
+              185,
+              154
+            ],
+            [
+              185,
+              175
+            ],
+            [
+              179,
+              173
+            ]
+          ],
+          "color": "c56451",
+          "changedPixelsAtThisStep": 150
+        },
+        {
+          "scene": "A01",
+          "label": "counter right coral shaded return",
+          "kind": "polygon",
+          "points": [
+            [
+              262,
+              153
+            ],
+            [
+              266,
+              151
+            ],
+            [
+              266,
+              174
+            ],
+            [
+              262,
+              176
+            ]
+          ],
+          "color": "ce6552",
+          "changedPixelsAtThisStep": 118
+        },
+        {
+          "scene": "A01",
+          "label": "counter toe kick upper light",
+          "kind": "line",
+          "points": [
+            [
+              198,
+              181
+            ],
+            [
+              254,
+              181
+            ]
+          ],
+          "color": "678385",
+          "width": 1,
+          "changedPixelsAtThisStep": 57
+        },
+        {
+          "scene": "A01",
+          "label": "intercom lowest slot coherent dark run",
+          "kind": "line",
+          "points": [
+            [
+              185,
+              138
+            ],
+            [
+              192,
+              138
+            ]
+          ],
+          "color": "49514d",
+          "width": 1,
+          "changedPixelsAtThisStep": 8
+        },
+        {
+          "scene": "A01",
+          "label": "intercom first slot coherent dark run",
+          "kind": "line",
+          "points": [
+            [
+              186,
+              133
+            ],
+            [
+              193,
+              133
+            ]
+          ],
+          "color": "49514d",
+          "width": 1,
+          "changedPixelsAtThisStep": 8
+        },
+        {
+          "scene": "A01",
+          "label": "intercom middle slot coherent dark run",
+          "kind": "line",
+          "points": [
+            [
+              186,
+              136
+            ],
+            [
+              192,
+              136
+            ]
+          ],
+          "color": "49514d",
+          "width": 1,
+          "changedPixelsAtThisStep": 7
+        },
+        {
+          "scene": "A01",
+          "label": "attendant face base",
+          "kind": "polygon",
+          "points": [
+            [
+              216,
+              102
+            ],
+            [
+              221,
+              102
+            ],
+            [
+              223,
+              105
+            ],
+            [
+              224,
+              110
+            ],
+            [
+              226,
+              113
+            ],
+            [
+              225,
+              117
+            ],
+            [
+              222,
+              119
+            ],
+            [
+              216,
+              119
+            ],
+            [
+              212,
+              117
+            ],
+            [
+              211,
+              113
+            ],
+            [
+              211,
+              108
+            ]
+          ],
+          "color": "efb475",
+          "changedPixelsAtThisStep": 219
+        },
+        {
+          "scene": "A01",
+          "label": "attendant face light plane",
+          "kind": "polygon",
+          "points": [
+            [
+              217,
+              103
+            ],
+            [
+              220,
+              103
+            ],
+            [
+              221,
+              105
+            ],
+            [
+              221,
+              110
+            ],
+            [
+              223,
+              112
+            ],
+            [
+              223,
+              115
+            ],
+            [
+              220,
+              117
+            ],
+            [
+              215,
+              116
+            ],
+            [
+              213,
+              112
+            ],
+            [
+              214,
+              107
+            ]
+          ],
+          "color": "f6c38a",
+          "changedPixelsAtThisStep": 113
+        },
+        {
+          "scene": "A01",
+          "label": "attendant jaw shaded cluster",
+          "kind": "polygon",
+          "points": [
+            [
+              212,
+              114
+            ],
+            [
+              214,
+              117
+            ],
+            [
+              218,
+              119
+            ],
+            [
+              221,
+              119
+            ],
+            [
+              222,
+              118
+            ],
+            [
+              217,
+              117
+            ],
+            [
+              214,
+              114
+            ]
+          ],
+          "color": "cd925e",
+          "changedPixelsAtThisStep": 25
+        },
+        {
+          "scene": "A01",
+          "label": "attendant warm jaw contour",
+          "kind": "line",
+          "points": [
+            [
+              211,
+              114
+            ],
+            [
+              212,
+              117
+            ],
+            [
+              215,
+              119
+            ],
+            [
+              220,
+              120
+            ],
+            [
+              223,
+              119
+            ],
+            [
+              225,
+              117
+            ]
+          ],
+          "color": "996d4e",
+          "width": 1,
+          "changedPixelsAtThisStep": 17
+        },
+        {
+          "scene": "A01",
+          "label": "attendant ear cluster",
+          "kind": "polygon",
+          "points": [
+            [
+              207,
+              112
+            ],
+            [
+              209,
+              112
+            ],
+            [
+              211,
+              114
+            ],
+            [
+              211,
+              116
+            ],
+            [
+              209,
+              116
+            ],
+            [
+              207,
+              114
+            ]
+          ],
+          "color": "e4a169",
+          "changedPixelsAtThisStep": 19
+        },
+        {
+          "scene": "A01",
+          "label": "attendant ear interior",
+          "kind": "points",
+          "points": [
+            [
+              208,
+              113
+            ],
+            [
+              209,
+              114
+            ]
+          ],
+          "color": "b57c56",
+          "changedPixelsAtThisStep": 2
+        },
+        {
+          "scene": "A01",
+          "label": "gray temple deliberate midtone",
+          "kind": "polygon",
+          "points": [
+            [
+              205,
+              106
+            ],
+            [
+              207,
+              105
+            ],
+            [
+              207,
+              108
+            ],
+            [
+              209,
+              108
+            ],
+            [
+              209,
+              111
+            ],
+            [
+              207,
+              112
+            ],
+            [
+              205,
+              111
+            ]
+          ],
+          "color": "969c96",
+          "changedPixelsAtThisStep": 28
+        },
+        {
+          "scene": "A01",
+          "label": "gray temple narrow highlight",
+          "kind": "line",
+          "points": [
+            [
+              205,
+              107
+            ],
+            [
+              205,
+              109
+            ],
+            [
+              206,
+              110
+            ]
+          ],
+          "color": "bbc0b5",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "gray temple lower shade",
+          "kind": "line",
+          "points": [
+            [
+              206,
+              112
+            ],
+            [
+              208,
+              112
+            ],
+            [
+              208,
+              113
+            ]
+          ],
+          "color": "687778",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "hair side part",
+          "kind": "line",
+          "points": [
+            [
+              214,
+              99
+            ],
+            [
+              218,
+              99
+            ],
+            [
+              220,
+              100
+            ]
+          ],
+          "color": "756253",
+          "width": 1,
+          "changedPixelsAtThisStep": 7
+        },
+        {
+          "scene": "A01",
+          "label": "left lens clean warm interior",
+          "kind": "rectangle",
+          "box": [
+            212,
+            108,
+            215,
+            109
+          ],
+          "color": "efbd82",
+          "changedPixelsAtThisStep": 8
+        },
+        {
+          "scene": "A01",
+          "label": "right lens clean warm interior",
+          "kind": "rectangle",
+          "box": [
+            219,
+            107,
+            222,
+            108
+          ],
+          "color": "f2c186",
+          "changedPixelsAtThisStep": 8
+        },
+        {
+          "scene": "A01",
+          "label": "left thin rectangular glasses frame",
+          "kind": "line",
+          "points": [
+            [
+              211,
+              107
+            ],
+            [
+              215,
+              107
+            ],
+            [
+              216,
+              108
+            ],
+            [
+              216,
+              109
+            ],
+            [
+              215,
+              110
+            ],
+            [
+              211,
+              110
+            ],
+            [
+              211,
+              108
+            ]
+          ],
+          "color": "655b4c",
+          "width": 1,
+          "changedPixelsAtThisStep": 14
+        },
+        {
+          "scene": "A01",
+          "label": "right thin rectangular glasses frame",
+          "kind": "line",
+          "points": [
+            [
+              218,
+              106
+            ],
+            [
+              222,
+              106
+            ],
+            [
+              223,
+              107
+            ],
+            [
+              223,
+              108
+            ],
+            [
+              222,
+              109
+            ],
+            [
+              219,
+              109
+            ],
+            [
+              218,
+              108
+            ],
+            [
+              218,
+              106
+            ]
+          ],
+          "color": "655b4c",
+          "width": 1,
+          "changedPixelsAtThisStep": 13
+        },
+        {
+          "scene": "A01",
+          "label": "glasses bridge one pixel",
+          "kind": "line",
+          "points": [
+            [
+              216,
+              108
+            ],
+            [
+              218,
+              108
+            ]
+          ],
+          "color": "625849",
+          "width": 1,
+          "changedPixelsAtThisStep": 3
+        },
+        {
+          "scene": "A01",
+          "label": "glasses left temple arm",
+          "kind": "line",
+          "points": [
+            [
+              207,
+              110
+            ],
+            [
+              210,
+              109
+            ],
+            [
+              211,
+              109
+            ]
+          ],
+          "color": "5b5348",
+          "width": 1,
+          "changedPixelsAtThisStep": 5
+        },
+        {
+          "scene": "A01",
+          "label": "scene-scale eyes",
+          "kind": "points",
+          "points": [
+            [
+              214,
+              109
+            ],
+            [
+              221,
+              108
+            ]
+          ],
+          "color": "403e37",
+          "changedPixelsAtThisStep": 2
+        },
+        {
+          "scene": "A01",
+          "label": "lens restrained highlights",
+          "kind": "points",
+          "points": [
+            [
+              212,
+              108
+            ],
+            [
+              219,
+              107
+            ]
+          ],
+          "color": "f9d7a0",
+          "changedPixelsAtThisStep": 2
+        },
+        {
+          "scene": "A01",
+          "label": "nose light cluster",
+          "kind": "line",
+          "points": [
+            [
+              218,
+              110
+            ],
+            [
+              218,
+              112
+            ],
+            [
+              219,
+              112
+            ]
+          ],
+          "color": "f9cb8d",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "nose lower shade",
+          "kind": "points",
+          "points": [
+            [
+              220,
+              112
+            ]
+          ],
+          "color": "bd895b",
+          "changedPixelsAtThisStep": 1
+        },
+        {
+          "scene": "A01",
+          "label": "warm open smile",
+          "kind": "line",
+          "points": [
+            [
+              216,
+              114
+            ],
+            [
+              217,
+              115
+            ],
+            [
+              221,
+              115
+            ],
+            [
+              223,
+              113
+            ]
+          ],
+          "color": "84543c",
+          "width": 1,
+          "changedPixelsAtThisStep": 8
+        },
+        {
+          "scene": "A01",
+          "label": "smile teeth two-pixel cluster",
+          "kind": "line",
+          "points": [
+            [
+              218,
+              114
+            ],
+            [
+              221,
+              114
+            ]
+          ],
+          "color": "ffe3ad",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "lower lip highlight",
+          "kind": "line",
+          "points": [
+            [
+              218,
+              116
+            ],
+            [
+              221,
+              116
+            ]
+          ],
+          "color": "eaa774",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "attendant left vest flat plane",
+          "kind": "polygon",
+          "points": [
+            [
+              211,
+              124
+            ],
+            [
+              214,
+              130
+            ],
+            [
+              214,
+              133
+            ],
+            [
+              209,
+              134
+            ],
+            [
+              207,
+              127
+            ],
+            [
+              207,
+              124
+            ]
+          ],
+          "color": "44656b",
+          "changedPixelsAtThisStep": 63
+        },
+        {
+          "scene": "A01",
+          "label": "attendant right vest flat plane",
+          "kind": "polygon",
+          "points": [
+            [
+              226,
+              123
+            ],
+            [
+              231,
+              126
+            ],
+            [
+              232,
+              131
+            ],
+            [
+              229,
+              132
+            ],
+            [
+              226,
+              132
+            ]
+          ],
+          "color": "3b5c65",
+          "changedPixelsAtThisStep": 51
+        },
+        {
+          "scene": "A01",
+          "label": "attendant cream left sleeve plane",
+          "kind": "polygon",
+          "points": [
+            [
+              205,
+              129
+            ],
+            [
+              207,
+              131
+            ],
+            [
+              207,
+              138
+            ],
+            [
+              203,
+              138
+            ],
+            [
+              202,
+              136
+            ],
+            [
+              203,
+              132
+            ]
+          ],
+          "color": "f1d7ad",
+          "changedPixelsAtThisStep": 45
+        },
+        {
+          "scene": "A01",
+          "label": "attendant cream right sleeve plane",
+          "kind": "polygon",
+          "points": [
+            [
+              236,
+              129
+            ],
+            [
+              239,
+              134
+            ],
+            [
+              239,
+              138
+            ],
+            [
+              235,
+              138
+            ],
+            [
+              234,
+              134
+            ]
+          ],
+          "color": "e8cda4",
+          "changedPixelsAtThisStep": 42
+        },
+        {
+          "scene": "A01",
+          "label": "attendant dark tie center",
+          "kind": "line",
+          "points": [
+            [
+              220,
+              125
+            ],
+            [
+              220,
+              128
+            ],
+            [
+              221,
+              130
+            ]
+          ],
+          "color": "55554d",
+          "width": 1,
+          "changedPixelsAtThisStep": 6
+        },
+        {
+          "scene": "A01",
+          "label": "microphone base shadow",
+          "kind": "line",
+          "points": [
+            [
+              197,
+              142
+            ],
+            [
+              202,
+              142
+            ]
+          ],
+          "color": "756f60",
+          "width": 1,
+          "changedPixelsAtThisStep": 6
+        },
+        {
+          "scene": "A01",
+          "label": "microphone base dark plane",
+          "kind": "line",
+          "points": [
+            [
+              198,
+              141
+            ],
+            [
+              201,
+              141
+            ]
+          ],
+          "color": "465458",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "microphone base highlight",
+          "kind": "line",
+          "points": [
+            [
+              198,
+              140
+            ],
+            [
+              201,
+              140
+            ]
+          ],
+          "color": "a4aba2",
+          "width": 1,
+          "changedPixelsAtThisStep": 4
+        },
+        {
+          "scene": "A01",
+          "label": "microphone gooseneck dark path",
+          "kind": "line",
+          "points": [
+            [
+              200,
+              139
+            ],
+            [
+              199,
+              136
+            ],
+            [
+              199,
+              133
+            ],
+            [
+              199,
+              130
+            ],
+            [
+              199,
+              128
+            ]
+          ],
+          "color": "465458",
+          "width": 1,
+          "changedPixelsAtThisStep": 12
+        },
+        {
+          "scene": "A01",
+          "label": "microphone upper stem glint",
+          "kind": "line",
+          "points": [
+            [
+              200,
+              133
+            ],
+            [
+              200,
+              131
+            ]
+          ],
+          "color": "bec3b4",
+          "width": 1,
+          "changedPixelsAtThisStep": 3
+        },
+        {
+          "scene": "A01",
+          "label": "microphone head capsule",
+          "kind": "polygon",
+          "points": [
+            [
+              198,
+              126
+            ],
+            [
+              200,
+              126
+            ],
+            [
+              201,
+              127
+            ],
+            [
+              200,
+              128
+            ],
+            [
+              198,
+              128
+            ]
+          ],
+          "color": "4c5858",
+          "changedPixelsAtThisStep": 10
+        },
+        {
+          "scene": "A01",
+          "label": "microphone head light face",
+          "kind": "line",
+          "points": [
+            [
+              199,
+              127
+            ],
+            [
+              200,
+              127
+            ]
+          ],
+          "color": "c6c9b5",
+          "width": 1,
+          "changedPixelsAtThisStep": 2
+        },
+        {
+          "scene": "A01",
+          "label": "microphone lower cap pixel",
+          "kind": "points",
+          "points": [
+            [
+              199,
+              128
+            ]
+          ],
+          "color": "899790",
+          "changedPixelsAtThisStep": 1
+        }
+      ],
+      "status": "generated/unselected",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-A04-verification-v07",
+      "source": "references/A04-v06.png",
+      "sourceSha256": "5434172eed3bd61b3f7a47de254f2a2acd4015baaad3393582242cb472c58b4e",
+      "candidate": "candidates/CH3-A04-verification-v07.png",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5",
+      "dimensions": [
+        314,
+        206
+      ],
+      "nativeEditOperations": 24,
+      "changedPixels": 2434,
+      "changedPercent": 3.76,
+      "unmodifiedPixels": 62250,
+      "unexpectedChangedPixels": [],
+      "sourceUniqueRGB": 16018,
+      "finishedUniqueRGB": 15847,
+      "authoredEditColors": 24,
+      "sourcePixelsRemainingDerived": true,
+      "lockedRegions": [
+        {
+          "label": "PEOPLES PAVILION sign",
+          "box": [
+            67,
+            23,
+            252,
+            44
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "countdown 30 and ring",
+          "box": [
+            132,
+            70,
+            189,
+            121
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "standing microphone",
+          "box": [
+            101,
+            111,
+            113,
+            154
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "presenter face",
+          "box": [
+            83,
+            90,
+            94,
+            103
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "welcoming hand",
+          "box": [
+            108,
+            100,
+            119,
+            109
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "camera body and lens",
+          "box": [
+            8,
+            104,
+            66,
+            134
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "side chair",
+          "box": [
+            251,
+            159,
+            301,
+            197
+          ],
+          "byteIdenticalToV06": true
+        },
+        {
+          "label": "rear exit",
+          "box": [
+            224,
+            77,
+            251,
+            136
+          ],
+          "byteIdenticalToV06": true
+        }
+      ],
+      "operations": [
+        {
+          "scene": "A04",
+          "label": "curtain left fold mid face above camera",
+          "kind": "rectangle",
+          "box": [
+            56,
+            71,
+            60,
+            103
+          ],
+          "color": "65938c",
+          "changedPixelsAtThisStep": 155
+        },
+        {
+          "scene": "A04",
+          "label": "curtain left crease above camera",
+          "kind": "rectangle",
+          "box": [
+            62,
+            71,
+            63,
+            103
+          ],
+          "color": "557f7b",
+          "changedPixelsAtThisStep": 66
+        },
+        {
+          "scene": "A04",
+          "label": "curtain left highlight face",
+          "kind": "rectangle",
+          "box": [
+            67,
+            71,
+            69,
+            135
+          ],
+          "color": "83ada0",
+          "changedPixelsAtThisStep": 195
+        },
+        {
+          "scene": "A04",
+          "label": "curtain before countdown mid face",
+          "kind": "rectangle",
+          "box": [
+            120,
+            73,
+            123,
+            125
+          ],
+          "color": "629089",
+          "changedPixelsAtThisStep": 205
+        },
+        {
+          "scene": "A04",
+          "label": "curtain before countdown crease",
+          "kind": "rectangle",
+          "box": [
+            127,
+            75,
+            128,
+            125
+          ],
+          "color": "4e7876",
+          "changedPixelsAtThisStep": 99
+        },
+        {
+          "scene": "A04",
+          "label": "curtain after countdown mid face",
+          "kind": "rectangle",
+          "box": [
+            194,
+            73,
+            201,
+            126
+          ],
+          "color": "62918a",
+          "changedPixelsAtThisStep": 415
+        },
+        {
+          "scene": "A04",
+          "label": "curtain after countdown crease",
+          "kind": "rectangle",
+          "box": [
+            205,
+            73,
+            206,
+            129
+          ],
+          "color": "4a7471",
+          "changedPixelsAtThisStep": 114
+        },
+        {
+          "scene": "A04",
+          "label": "curtain next fold highlight",
+          "kind": "rectangle",
+          "box": [
+            209,
+            73,
+            210,
+            130
+          ],
+          "color": "78a397",
+          "changedPixelsAtThisStep": 116
+        },
+        {
+          "scene": "A04",
+          "label": "curtain next fold deep crease",
+          "kind": "rectangle",
+          "box": [
+            213,
+            73,
+            214,
+            130
+          ],
+          "color": "466c6d",
+          "changedPixelsAtThisStep": 115
+        },
+        {
+          "scene": "A04",
+          "label": "curtain next fold mid face",
+          "kind": "rectangle",
+          "box": [
+            216,
+            73,
+            218,
+            128
+          ],
+          "color": "64938c",
+          "changedPixelsAtThisStep": 156
+        },
+        {
+          "scene": "A04",
+          "label": "camera stand center metal plane",
+          "kind": "rectangle",
+          "box": [
+            37,
+            140,
+            39,
+            166
+          ],
+          "color": "a2a399",
+          "changedPixelsAtThisStep": 81
+        },
+        {
+          "scene": "A04",
+          "label": "camera stand narrow side shade",
+          "kind": "line",
+          "points": [
+            [
+              42,
+              141
+            ],
+            [
+              42,
+              166
+            ]
+          ],
+          "color": "65716d",
+          "width": 1,
+          "changedPixelsAtThisStep": 26
+        },
+        {
+          "scene": "A04",
+          "label": "platform left center flat facet",
+          "kind": "rectangle",
+          "box": [
+            143,
+            143,
+            151,
+            148
+          ],
+          "color": "958b85",
+          "changedPixelsAtThisStep": 50
+        },
+        {
+          "scene": "A04",
+          "label": "platform right center flat facet",
+          "kind": "rectangle",
+          "box": [
+            169,
+            143,
+            181,
+            148
+          ],
+          "color": "938a84",
+          "changedPixelsAtThisStep": 74
+        },
+        {
+          "scene": "A04",
+          "label": "platform left narrow shaded facet",
+          "kind": "rectangle",
+          "box": [
+            127,
+            142,
+            129,
+            145
+          ],
+          "color": "777a74",
+          "changedPixelsAtThisStep": 12
+        },
+        {
+          "scene": "A04",
+          "label": "platform right narrow shaded facet",
+          "kind": "rectangle",
+          "box": [
+            194,
+            142,
+            196,
+            146
+          ],
+          "color": "7e8079",
+          "changedPixelsAtThisStep": 15
+        },
+        {
+          "scene": "A04",
+          "label": "platform lower central edge",
+          "kind": "line",
+          "points": [
+            [
+              145,
+              150
+            ],
+            [
+              181,
+              150
+            ]
+          ],
+          "color": "5f6b67",
+          "width": 1,
+          "changedPixelsAtThisStep": 37
+        },
+        {
+          "scene": "A04",
+          "label": "presenter left jacket face",
+          "kind": "polygon",
+          "points": [
+            [
+              80,
+              108
+            ],
+            [
+              82,
+              107
+            ],
+            [
+              84,
+              111
+            ],
+            [
+              83,
+              113
+            ],
+            [
+              80,
+              113
+            ]
+          ],
+          "color": "3f5c66",
+          "changedPixelsAtThisStep": 25
+        },
+        {
+          "scene": "A04",
+          "label": "presenter right jacket face",
+          "kind": "polygon",
+          "points": [
+            [
+              91,
+              111
+            ],
+            [
+              94,
+              112
+            ],
+            [
+              95,
+              114
+            ],
+            [
+              94,
+              116
+            ],
+            [
+              91,
+              116
+            ]
+          ],
+          "color": "3c5963",
+          "changedPixelsAtThisStep": 22
+        },
+        {
+          "scene": "A04",
+          "label": "presenter left skirt face",
+          "kind": "polygon",
+          "points": [
+            [
+              81,
+              125
+            ],
+            [
+              88,
+              125
+            ],
+            [
+              88,
+              134
+            ],
+            [
+              81,
+              134
+            ]
+          ],
+          "color": "435e68",
+          "changedPixelsAtThisStep": 80
+        },
+        {
+          "scene": "A04",
+          "label": "presenter right skirt shade",
+          "kind": "polygon",
+          "points": [
+            [
+              89,
+              125
+            ],
+            [
+              95,
+              125
+            ],
+            [
+              95,
+              134
+            ],
+            [
+              89,
+              134
+            ]
+          ],
+          "color": "344f59",
+          "changedPixelsAtThisStep": 70
+        },
+        {
+          "scene": "A04",
+          "label": "presenter skirt restrained lower edge",
+          "kind": "line",
+          "points": [
+            [
+              82,
+              135
+            ],
+            [
+              94,
+              135
+            ]
+          ],
+          "color": "304d57",
+          "width": 1,
+          "changedPixelsAtThisStep": 13
+        },
+        {
+          "scene": "A04",
+          "label": "stage coral lip central run",
+          "kind": "line",
+          "points": [
+            [
+              87,
+              159
+            ],
+            [
+              233,
+              159
+            ]
+          ],
+          "color": "d2694e",
+          "width": 1,
+          "changedPixelsAtThisStep": 147
+        },
+        {
+          "scene": "A04",
+          "label": "stage lower riser central run",
+          "kind": "line",
+          "points": [
+            [
+              87,
+              168
+            ],
+            [
+              232,
+              168
+            ]
+          ],
+          "color": "67716d",
+          "width": 1,
+          "changedPixelsAtThisStep": 146
+        }
+      ],
+      "status": "generated/unselected",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    }
+  ]
+}

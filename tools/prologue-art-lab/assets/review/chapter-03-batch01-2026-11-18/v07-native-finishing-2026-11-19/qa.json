@@ -1,0 +1,160 @@
+{
+  "nativeFinishing": "PASS for documented local edits; original full-scene native authorship remains unproven.",
+  "candidates": [
+    {
+      "candidateId": "CH3-A01-restroom-v07",
+      "dimensions": {
+        "result": "PASS",
+        "nativeWorkingGrid": [
+          314,
+          206
+        ],
+        "candidateResampled": false
+      },
+      "alpha": {
+        "result": "PASS",
+        "extrema": [
+          255,
+          255
+        ],
+        "mode": "RGB"
+      },
+      "preview": {
+        "result": "PASS",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "all4x4BlocksMatchSource": true
+      },
+      "editScope": {
+        "result": "PASS",
+        "operations": 53,
+        "changedPixels": 4340,
+        "percent": 6.71,
+        "unexpectedChangedPixels": 0,
+        "allLockedRegionsPass": true
+      },
+      "palette": {
+        "beforeUniqueRGB": 17795,
+        "afterUniqueRGB": 17169,
+        "changedPixelRegionBeforeUniqueRGB": 1070,
+        "changedPixelRegionAfterUniqueRGB": 49,
+        "authoredColors": 49,
+        "fixedLimit": null,
+        "globalQuantization": false,
+        "sharpening": false,
+        "dithering": false,
+        "filtering": false
+      },
+      "nativeFinishingEvidence": "PASS: all modified coordinates, final before/after RGB values, primitive definitions and scope masks are supplied. Edits were executed directly on the inherited 314x206 canvas.",
+      "originalWholeSceneNativeAuthorship": "UNPROVEN. The unchanged majority remains source-derived. Native finishing is not a claim of original native authorship.",
+      "remainingLimitations": "Face resemblance is a review judgment: the small manually finished face still differs from the A03 portrait. The source-derived shading outside the edit regions remains soft and tonally varied.",
+      "visualApproval": "PENDING NATE; no technical metric selects or approves a candidate."
+    },
+    {
+      "candidateId": "CH3-A04-verification-v07",
+      "dimensions": {
+        "result": "PASS",
+        "nativeWorkingGrid": [
+          314,
+          206
+        ],
+        "candidateResampled": false
+      },
+      "alpha": {
+        "result": "PASS",
+        "extrema": [
+          255,
+          255
+        ],
+        "mode": "RGB"
+      },
+      "preview": {
+        "result": "PASS",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "all4x4BlocksMatchSource": true
+      },
+      "editScope": {
+        "result": "PASS",
+        "operations": 24,
+        "changedPixels": 2434,
+        "percent": 3.76,
+        "unexpectedChangedPixels": 0,
+        "allLockedRegionsPass": true
+      },
+      "palette": {
+        "beforeUniqueRGB": 16018,
+        "afterUniqueRGB": 15847,
+        "changedPixelRegionBeforeUniqueRGB": 804,
+        "changedPixelRegionAfterUniqueRGB": 24,
+        "authoredColors": 24,
+        "fixedLimit": null,
+        "globalQuantization": false,
+        "sharpening": false,
+        "dithering": false,
+        "filtering": false
+      },
+      "nativeFinishingEvidence": "PASS: all modified coordinates, final before/after RGB values, primitive definitions and scope masks are supplied. Edits were executed directly on the inherited 314x206 canvas.",
+      "originalWholeSceneNativeAuthorship": "UNPROVEN. The unchanged majority remains source-derived. Native finishing is not a claim of original native authorship.",
+      "remainingLimitations": "The finish is local. Most of the image, including many antialiased-looking/soft tonal transitions, remains inherited from v06; it is not a full native redraw or full-scene palette normalization.",
+      "visualApproval": "PENDING NATE; no technical metric selects or approves a candidate."
+    }
+  ],
+  "approvedReferenceUniqueRGBColors": {
+    "prologue-reception.png": 868,
+    "chapter-01-foyer.png": 210,
+    "chapter-02-groundskeeper.png": 64
+  },
+  "historyPreservation": {
+    "result": "PASS",
+    "sourcePin": "025a9009d5fd4d50828b6cf09e0d4a9ae17c0b44",
+    "filesChecked": 335
+  },
+  "referencesUnchanged": {
+    "result": "PASS",
+    "count": 7
+  },
+  "unchangedPortraits": [
+    {
+      "id": "CH3-A02-restroom-bg",
+      "file": "../v04/candidates/CH3-A02-restroom-bg-v04.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "id": "CH3-A03-attendant-idle",
+      "file": "../v04/candidates/CH3-A03-attendant-idle-v04.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "id": "CH3-A05-verification-bg",
+      "file": "../v04/candidates/CH3-A05-verification-bg-v04.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "id": "CH3-A06-presenter-idle",
+      "file": "../v04/candidates/CH3-A06-presenter-idle-v04.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "dimensions": [
+        564,
+        278
+      ]
+    }
+  ],
+  "productionScope": "Narrative, dialogue, game, selected/approved assets, items and production registry unchanged. No approval or integration."
+}

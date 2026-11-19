@@ -1,0 +1,54 @@
+{
+  "version": "v07",
+  "date": "2026-11-19",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "sourcePin": "025a9009d5fd4d50828b6cf09e0d4a9ae17c0b44",
+  "method": "Direct native-grid coordinate edits; no image generation or candidate resampling.",
+  "generationCalls": 0,
+  "status": "generated/unselected",
+  "selected": false,
+  "approved": false,
+  "originalNativeAuthorship": "UNPROVEN; source-derived v06 retained except logged native finishing edits.",
+  "candidates": [
+    {
+      "candidateId": "CH3-A01-restroom-v07",
+      "candidate": "candidates/CH3-A01-restroom-v07.png",
+      "sha256": "daab126cb9cde1448ec77a3b24c87ffadd382659cc6a66e11e6581f113e0f354",
+      "source": "references/A01-v06.png",
+      "sourceSha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245",
+      "dimensions": [
+        314,
+        206
+      ],
+      "nativeEditOperations": 53,
+      "changedPixels": 4340,
+      "sourceUniqueRGB": 17795,
+      "finishedUniqueRGB": 17169,
+      "status": "generated/unselected",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-A04-verification-v07",
+      "candidate": "candidates/CH3-A04-verification-v07.png",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5",
+      "source": "references/A04-v06.png",
+      "sourceSha256": "5434172eed3bd61b3f7a47de254f2a2acd4015baaad3393582242cb472c58b4e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "nativeEditOperations": 24,
+      "changedPixels": 2434,
+      "sourceUniqueRGB": 16018,
+      "finishedUniqueRGB": 15847,
+      "status": "generated/unselected",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    }
+  ],
+  "editRecord": "sources/native-edit-record.json",
+  "qa": "qa.json"
+}

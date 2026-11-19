@@ -1,0 +1,31 @@
+{
+  "sourcePin": "025a9009d5fd4d50828b6cf09e0d4a9ae17c0b44",
+  "sourceInputs": [
+    {
+      "file": "references/A01-v06.png",
+      "repositoryPath": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/candidates/CH3-A01-restroom-v06.png",
+      "sha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245",
+      "role": "Native editing source"
+    },
+    {
+      "file": "references/A04-v06.png",
+      "repositoryPath": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/candidates/CH3-A04-verification-v06.png",
+      "sha256": "5434172eed3bd61b3f7a47de254f2a2acd4015baaad3393582242cb472c58b4e",
+      "role": "Native editing source"
+    }
+  ],
+  "inheritedGenerationRecords": "../v06-314-regeneration-2026-11-19/sources/generation-records.json",
+  "candidateResampling": false,
+  "manualMeaning": "Codex specified individual coordinates, polygons, line runs and curated RGB colors. Python/Pillow executed those explicit native raster primitives. This was not a human pixel-editor session and was not automated global color quantization.",
+  "fullEditSpecification": "edit-native.py",
+  "exactPixelDeltas": [
+    "sources/A01-changed-pixels.tsv",
+    "sources/A04-changed-pixels.tsv"
+  ],
+  "generationCalls": 0,
+  "studiesGenerated": false,
+  "productionMainSceneResolution": [
+    314,
+    206
+  ]
+}
