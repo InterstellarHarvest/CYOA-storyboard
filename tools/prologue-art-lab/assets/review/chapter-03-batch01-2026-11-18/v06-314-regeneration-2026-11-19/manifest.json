@@ -1,0 +1,78 @@
+{
+  "version": "v06",
+  "date": "2026-11-19",
+  "sourcePin": "2efd2a5ee22a20598e866aeef42f66cbc05ccdd9",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "tool": "built-in image_gen.imagegen",
+  "generationCalls": 4,
+  "currentCandidates": 2,
+  "initialAttempts": "sources/initial-attempts/generation-records.json",
+  "status": "generated",
+  "selected": false,
+  "approved": false,
+  "canonicalMainSceneSize": [
+    314,
+    206
+  ],
+  "portraitSizeStill": [
+    564,
+    278
+  ],
+  "628Studies": "Archived unchanged; not selected for production. No 628 artwork used as input to these generations.",
+  "candidates": [
+    {
+      "id": "CH3-A01-restroom-v06",
+      "baseId": "CH3-A01-restroom",
+      "candidate": "candidates/CH3-A01-restroom-v06.png",
+      "sha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245",
+      "dimensions": [
+        314,
+        206
+      ],
+      "preview4x": "previews/CH3-A01-restroom-v06-4x.png",
+      "previewSha256": "7117cd65ff73d4de40402c9e55d61db2702273a0124cc22c44cfee2048598741",
+      "source": "generation-source/exec-a1abce2c-9ad0-456d-8b9a-65d0841621f4.png",
+      "sourceSha256": "fe0a031a72723589e9c57de2b6336925af89cc84a4b0f3630a36e28da3592bbd",
+      "actualSourceDimensions": [
+        1547,
+        1016
+      ],
+      "derivedExport": true,
+      "derivation": "RGB conversion; nearest-neighbor reduction of the fresh generated raster to 314x206. No sharpening, inking, palette quantization, blur or automatic pixelation to conceal the source size.",
+      "previousComparison": "comparisons/CH3-A01-restroom-v06-previous-current.png",
+      "approvedDensityComparison": "comparisons/CH3-A01-restroom-v06-approved-density.png",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "prompt": "prompts/CH3-A01-restroom-v06.txt"
+    },
+    {
+      "id": "CH3-A04-verification-v06",
+      "baseId": "CH3-A04-verification",
+      "candidate": "candidates/CH3-A04-verification-v06.png",
+      "sha256": "5434172eed3bd61b3f7a47de254f2a2acd4015baaad3393582242cb472c58b4e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "preview4x": "previews/CH3-A04-verification-v06-4x.png",
+      "previewSha256": "1e83f3e39eb54759ce3393483385e56ff38ab9359f375032e03a3cedf67bc254",
+      "source": "generation-source/exec-b8c506ba-2ca1-48d1-8c2a-66d0841c081b.png",
+      "sourceSha256": "b76557e375cac4e98ca0ff6652394ad677b4824bdbe47474e3e190353cc243bd",
+      "actualSourceDimensions": [
+        1548,
+        1016
+      ],
+      "derivedExport": true,
+      "derivation": "RGB conversion; nearest-neighbor reduction of the fresh generated raster to 314x206. No sharpening, inking, palette quantization, blur or automatic pixelation to conceal the source size.",
+      "previousComparison": "comparisons/CH3-A04-verification-v06-previous-current.png",
+      "approvedDensityComparison": "comparisons/CH3-A04-verification-v06-approved-density.png",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "prompt": "prompts/CH3-A04-verification-v06.txt"
+    }
+  ]
+}

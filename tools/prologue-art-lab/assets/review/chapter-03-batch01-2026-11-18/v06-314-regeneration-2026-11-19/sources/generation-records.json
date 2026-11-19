@@ -1,0 +1,106 @@
+[
+  {
+    "candidateId": "CH3-A01-restroom-v06",
+    "generationAttempt": 2,
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "intent": "Fresh scene with one targeted authoring-level density correction: solid pixel clusters and restrained flat shading. No 628 study input.",
+    "source": "generation-source/exec-a1abce2c-9ad0-456d-8b9a-65d0841621f4.png",
+    "originalSourceFilename": "exec-a1abce2c-9ad0-456d-8b9a-65d0841621f4.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-a1abce2c-9ad0-456d-8b9a-65d0841621f4.png",
+    "sourceSha256": "fe0a031a72723589e9c57de2b6336925af89cc84a4b0f3630a36e28da3592bbd",
+    "requestedSourceDimensions": [
+      314,
+      206
+    ],
+    "actualSourceDimensions": [
+      1547,
+      1016
+    ],
+    "sourceMode": "RGB",
+    "transparent_background": false,
+    "prompt": "prompts/CH3-A01-restroom-v06.txt",
+    "promptSha256": "9818fdb7a4645ce252fcdd60f46ef73ce3a6e69be4f04c7d1163a7327d09431d",
+    "referencesInOrder": [
+      {
+        "file": "references/prologue-reception-4x.png",
+        "sha256": "577bbda805b50ae820ff362f340f66df5a4447d73fb455ed49943742ba43f20a"
+      },
+      {
+        "file": "references/chapter-01-foyer-4x.png",
+        "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper-4x.png",
+        "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+      },
+      {
+        "file": "references/previous-A01-v04.png",
+        "sha256": "f09ff12cda16126bcd2ccc0ac0e845be56c4df7693bc5735c640347f242edf88"
+      },
+      {
+        "file": "references/attendant-identity.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+      }
+    ],
+    "referencesExclude628Study": true,
+    "exactRequestedSourceSizePassed": false,
+    "originalNativeAuthorship": "UNPROVEN. Larger output and a derived export do not demonstrate direct authorship on the requested logical grid.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-A04-verification-v06",
+    "generationAttempt": 2,
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "intent": "Fresh scene with one targeted authoring-level density correction: solid pixel clusters and restrained flat shading. No 628 study input.",
+    "source": "generation-source/exec-b8c506ba-2ca1-48d1-8c2a-66d0841c081b.png",
+    "originalSourceFilename": "exec-b8c506ba-2ca1-48d1-8c2a-66d0841c081b.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-b8c506ba-2ca1-48d1-8c2a-66d0841c081b.png",
+    "sourceSha256": "b76557e375cac4e98ca0ff6652394ad677b4824bdbe47474e3e190353cc243bd",
+    "requestedSourceDimensions": [
+      314,
+      206
+    ],
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "sourceMode": "RGB",
+    "transparent_background": false,
+    "prompt": "prompts/CH3-A04-verification-v06.txt",
+    "promptSha256": "57fb11fc63575312a8d98f2924b8394310e43a2325328251f8860e60ceca30b9",
+    "referencesInOrder": [
+      {
+        "file": "references/prologue-reception-4x.png",
+        "sha256": "577bbda805b50ae820ff362f340f66df5a4447d73fb455ed49943742ba43f20a"
+      },
+      {
+        "file": "references/chapter-01-foyer-4x.png",
+        "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper-4x.png",
+        "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+      },
+      {
+        "file": "references/previous-A04-v04.png",
+        "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e"
+      },
+      {
+        "file": "references/presenter-identity.png",
+        "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+      }
+    ],
+    "referencesExclude628Study": true,
+    "exactRequestedSourceSizePassed": false,
+    "originalNativeAuthorship": "UNPROVEN. Larger output and a derived export do not demonstrate direct authorship on the requested logical grid.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  }
+]

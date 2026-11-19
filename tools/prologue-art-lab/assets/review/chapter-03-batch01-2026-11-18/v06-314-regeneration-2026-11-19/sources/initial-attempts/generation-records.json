@@ -1,0 +1,106 @@
+[
+  {
+    "candidateId": "CH3-A01-restroom-v06",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "intent": "Fresh low-density illustration for the original 314x206 scene contract; not a reduction of a 628 experiment.",
+    "source": "generation-source/exec-bc30e591-292b-4864-9831-f8b0b7e701e0.png",
+    "originalSourceFilename": "exec-bc30e591-292b-4864-9831-f8b0b7e701e0.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-bc30e591-292b-4864-9831-f8b0b7e701e0.png",
+    "sourceSha256": "062585d57d08a515fa98845ce72c7f4f7abac37d369e785764ebd3dd4deb8626",
+    "requestedSourceDimensions": [
+      314,
+      206
+    ],
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "sourceMode": "RGB",
+    "transparent_background": false,
+    "prompt": "sources/initial-attempts/prompts/CH3-A01-restroom-v06.txt",
+    "promptSha256": "ede1f44b4399020eb58d77dfb072f2c9b2bff0bcfe38d2d596371f80d4274419",
+    "referencesInOrder": [
+      {
+        "file": "references/prologue-reception.png",
+        "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+      },
+      {
+        "file": "references/chapter-01-foyer.png",
+        "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper.png",
+        "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+      },
+      {
+        "file": "references/previous-A01-v04.png",
+        "sha256": "f09ff12cda16126bcd2ccc0ac0e845be56c4df7693bc5735c640347f242edf88"
+      },
+      {
+        "file": "references/attendant-identity.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+      }
+    ],
+    "referencesExclude628Study": true,
+    "exactRequestedSourceSizePassed": false,
+    "originalNativeAuthorship": "UNPROVEN. Oversized output does not demonstrate authoring on the requested logical grid.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null,
+    "disposition": "Retained initial attempt; 4x inspection showed excessive smooth tonal transitions. Not the current review candidate."
+  },
+  {
+    "candidateId": "CH3-A04-verification-v06",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "intent": "Fresh low-density illustration for the original 314x206 scene contract; not a reduction of a 628 experiment.",
+    "source": "generation-source/exec-c9ff0670-4b80-4cb5-b647-737c0cbf2f1d.png",
+    "originalSourceFilename": "exec-c9ff0670-4b80-4cb5-b647-737c0cbf2f1d.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-c9ff0670-4b80-4cb5-b647-737c0cbf2f1d.png",
+    "sourceSha256": "466e66ff6fe2658118d36e1d80dde72d245bba9f5fcde7ea2450da8a5ab947aa",
+    "requestedSourceDimensions": [
+      314,
+      206
+    ],
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "sourceMode": "RGB",
+    "transparent_background": false,
+    "prompt": "sources/initial-attempts/prompts/CH3-A04-verification-v06.txt",
+    "promptSha256": "c26e5ae615031a53da6d88ea63bfee4678761721f27ebcd344bffa946b59f893",
+    "referencesInOrder": [
+      {
+        "file": "references/prologue-reception.png",
+        "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+      },
+      {
+        "file": "references/chapter-01-foyer.png",
+        "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper.png",
+        "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+      },
+      {
+        "file": "references/previous-A04-v04.png",
+        "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e"
+      },
+      {
+        "file": "references/presenter-identity.png",
+        "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+      }
+    ],
+    "referencesExclude628Study": true,
+    "exactRequestedSourceSizePassed": false,
+    "originalNativeAuthorship": "UNPROVEN. Oversized output does not demonstrate authoring on the requested logical grid.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null,
+    "disposition": "Retained initial attempt; 4x inspection showed excessive smooth tonal transitions. Not the current review candidate."
+  }
+]

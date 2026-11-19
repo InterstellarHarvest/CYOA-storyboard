@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8775/v06-314-regeneration-2026-11-19/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Exactly two new main-scene candidate cards",
+    "Candidates, side-by-side proofs, density comparisons and unchanged identity references load at exact 1x dimensions",
+    "4x control applies exact integer scale to every displayed image",
+    "Large comparison rows scroll inside bounded containers without fit-to-width scaling",
+    "390px mobile layout has no horizontal document overflow; artwork remains integer scaled",
+    "Records load and browser has no page exceptions or failed requests"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "scope": "Gallery behavior only. Does not certify native-grid authorship or select/approve artwork."
+}

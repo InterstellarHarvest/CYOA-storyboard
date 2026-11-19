@@ -1,0 +1,201 @@
+{
+  "technicalRequirementOverall": "NOT PASSED: native-grid authorship unproven; see per-candidate source sizes.",
+  "candidates": [
+    {
+      "candidateId": "CH3-A01-restroom-v06",
+      "freshGeneration": {
+        "result": "PASS",
+        "evidence": "generation-source/exec-a1abce2c-9ad0-456d-8b9a-65d0841621f4.png",
+        "referencesExclude628Study": true
+      },
+      "requestedSourceSize": {
+        "result": "FAIL",
+        "requested": [
+          314,
+          206
+        ],
+        "actual": [
+          1547,
+          1016
+        ]
+      },
+      "originalNativeGridAuthorship": {
+        "result": "UNPROVEN / NOT PASSED",
+        "reason": "No source-editor/grid authorship evidence. A dimensionally correct derived export cannot certify deliberate 314-grid authorship."
+      },
+      "workingDimensions": {
+        "result": "PASS",
+        "size": [
+          314,
+          206
+        ]
+      },
+      "alpha": {
+        "result": "PASS",
+        "requirement": "opaque main scene",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "preview": {
+        "result": "PASS",
+        "size": [
+          1256,
+          824
+        ],
+        "scale": 4,
+        "all4x4BlocksExactlyEqualWorkingPixels": true
+      },
+      "palette": {
+        "sourceUniqueRGB": 122961,
+        "workingUniqueRGB": 17795,
+        "quantizationApplied": false,
+        "fixedPaletteLimit": null,
+        "assessment": "Measured, not a pass claim. Native cluster quality, shading and remaining antialiasing/tonal softness require visual judgment."
+      },
+      "visualInspection": {
+        "result": "REVIEW REQUIRED",
+        "observations": [
+          "RESTROOM is correctly spelled and readable; sinks, mirrors, pipes, unoccupied stalls, turnstile, wall gate reader, bench and reception counter are visible.",
+          "The unwanted right-hand desktop contactless/sound-symbol device is absent; the separate gate reader remains. The slotted desk intercom remains, but its separate gooseneck microphone is omitted in this simplified drawing.",
+          "The seated man retains gray temples, rectangular glasses, cream shirt, dark tie and slate-teal vest. Fine facial likeness at main-scene scale remains for Nate to judge.",
+          "Cream/coral/slate-teal room composition is retained; broad trim, panels and bench forms use fewer incidental details. Small edge wear remains restrained.",
+          "The second generation uses more explicit, broad pixel-like clusters in the attendant, bench, fixtures and signage. No v04 outline edit, global sharpening or palette filter was added. Source gradients/tonal variation remain; direct native 314-grid authorship is unproven.",
+          "Small counter, fixture and wall proportions differ in this fresh drawing. Review architectural agreement with the unchanged A02 conversation view.",
+          "The simplified attendant has squarer glasses and larger facial clusters than the portrait; Nate should judge identity continuity and whether the contour weight is restrained enough."
+        ]
+      },
+      "productionReady": false
+    },
+    {
+      "candidateId": "CH3-A04-verification-v06",
+      "freshGeneration": {
+        "result": "PASS",
+        "evidence": "generation-source/exec-b8c506ba-2ca1-48d1-8c2a-66d0841c081b.png",
+        "referencesExclude628Study": true
+      },
+      "requestedSourceSize": {
+        "result": "FAIL",
+        "requested": [
+          314,
+          206
+        ],
+        "actual": [
+          1548,
+          1016
+        ]
+      },
+      "originalNativeGridAuthorship": {
+        "result": "UNPROVEN / NOT PASSED",
+        "reason": "No source-editor/grid authorship evidence. A dimensionally correct derived export cannot certify deliberate 314-grid authorship."
+      },
+      "workingDimensions": {
+        "result": "PASS",
+        "size": [
+          314,
+          206
+        ]
+      },
+      "alpha": {
+        "result": "PASS",
+        "requirement": "opaque main scene",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "preview": {
+        "result": "PASS",
+        "size": [
+          1256,
+          824
+        ],
+        "scale": 4,
+        "all4x4BlocksExactlyEqualWorkingPixels": true
+      },
+      "palette": {
+        "sourceUniqueRGB": 95810,
+        "workingUniqueRGB": 16018,
+        "quantizationApplied": false,
+        "fixedPaletteLimit": null,
+        "assessment": "Measured, not a pass claim. Native cluster quality, shading and remaining antialiasing/tonal softness require visual judgment."
+      },
+      "visualInspection": {
+        "result": "REVIEW REQUIRED",
+        "observations": [
+          "PEOPLE'S PAVILION is correctly spelled, including apostrophe; both countdown digits 30 are complete and unobscured.",
+          "Circular platform, curtain/track, overhead supports, large left industrial television camera, standing microphone, lone side chair, empty foreground seating and rear exit remain visible.",
+          "The presenter remains a small full-body wide-scene figure with short waved auburn hair, slate-blue suit, coral blouse, badge and open welcoming gesture; scene-scale facial likeness remains for Nate to judge.",
+          "Cream/coral/slate-teal atmosphere is retained; the camera panels, curtain folds and platform shading are simplified.",
+          "The second generation uses broader, flatter clusters in the presenter, camera and platform, without post-processing outlines, sharpening or palette filters. Tonal transitions remain, and direct native 314-grid authorship cannot be certified.",
+          "The fresh drawing changes some platform/display proportions and microphone details. Review architectural agreement with the unchanged A05 conversation view.",
+          "The presenter retains recognizable hair/outfit colors and welcoming silhouette, but her simplified facial features differ from the portrait. Nate should judge identity continuity at scene scale."
+        ]
+      },
+      "productionReady": false
+    }
+  ],
+  "approvedReferenceUniqueRGBColors": {
+    "prologue-reception.png": 868,
+    "chapter-01-foyer.png": 210,
+    "chapter-02-groundskeeper.png": 64
+  },
+  "paletteInterpretation": "Counts describe tonal variety only, not an approval rule or automatic style test. No output was palette-filtered.",
+  "historyPreservation": {
+    "result": "PASS",
+    "pin": "2efd2a5ee22a20598e866aeef42f66cbc05ccdd9",
+    "filesChecked": 285
+  },
+  "referenceIntegrity": {
+    "result": "PASS",
+    "referencesChecked": 10
+  },
+  "unchangedPortraits": [
+    {
+      "id": "CH3-A02-restroom-bg",
+      "file": "../v04/candidates/CH3-A02-restroom-bg-v04.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "id": "CH3-A03-attendant-idle",
+      "file": "../v04/candidates/CH3-A03-attendant-idle-v04.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "id": "CH3-A05-verification-bg",
+      "file": "../v04/candidates/CH3-A05-verification-bg-v04.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "id": "CH3-A06-presenter-idle",
+      "file": "../v04/candidates/CH3-A06-presenter-idle-v04.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "dimensions": [
+        564,
+        278
+      ]
+    }
+  ],
+  "scope": "Only two main-scene review candidates. No narrative, gameplay, selected assets, production registry, portrait changes or approvals."
+}
