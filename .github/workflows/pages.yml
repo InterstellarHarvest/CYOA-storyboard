@@ -52,6 +52,7 @@ jobs:
           cp story/death-presentations.export.json _site/story/death-presentations.export.json
           cp story/artwork.draft.json _site/story/artwork.draft.json
           cp story/storyboard-layout.json _site/story/storyboard-layout.json
+          cp story/chapter-03.reboot-review-layout.json _site/story/
           cp story/chapters/*.json _site/story/chapters/
           cp story/artwork-preview.json story/sync-contract.json _site/story/
           if [ -f story/game-integration.json ]; then cp story/game-integration.json _site/story/; fi
