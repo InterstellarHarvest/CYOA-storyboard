@@ -21,6 +21,13 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  # Immutable historical review galleries, published at build time from their pinned commits.
+  CH3_BATCH_A_REVIEW_COMMIT: a87155bfadad42e0deae3bee2e749963d1459a4b
+  CH3_BATCH_A_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18
+  CH3_BATCH_B_REVIEW_COMMIT: 7337e5e550e64a64357666a0fab6f118500913cd
+  CH3_BATCH_B_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -82,6 +89,75 @@ jobs:
           test -s _site/story/death-presentations.export.json
           test -s _site/story/artwork.draft.json
           test -s _site/story/storyboard-layout.json
+      # Historical Chapter 3 review galleries. They stay on their generation branches and are never
+      # imported into main: each is sparse-checked-out at its immutable pinned commit, validated
+      # against the checksum manifests it ships, and copied into _site at build time only.
+      - name: Check out pinned Chapter 3 Batch A review gallery (build-time only)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CH3_BATCH_A_REVIEW_COMMIT }}
+          path: .review-ch3-batch-a
+          sparse-checkout: ${{ env.CH3_BATCH_A_REVIEW_DIR }}
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Check out pinned Chapter 3 Batch B review gallery (build-time only)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CH3_BATCH_B_REVIEW_COMMIT }}
+          path: .review-ch3-batch-b
+          sparse-checkout: ${{ env.CH3_BATCH_B_REVIEW_DIR }}
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Validate and stage the Chapter 3 review galleries
+        run: |
+          set -euo pipefail
+          A_SRC=.review-ch3-batch-a; B_SRC=.review-ch3-batch-b
+          A=$CH3_BATCH_A_REVIEW_DIR; B=$CH3_BATCH_B_REVIEW_DIR
+          # Exactly the pinned commits, and only the gallery directory from each.
+          test "$(git -C "$A_SRC" rev-parse HEAD)" = "$CH3_BATCH_A_REVIEW_COMMIT"
+          test "$(git -C "$B_SRC" rev-parse HEAD)" = "$CH3_BATCH_B_REVIEW_COMMIT"
+          test -z "$(cd "$A_SRC" && find . -path ./.git -prune -o -type f -print | grep -v "^\./$A/")"
+          test -z "$(cd "$B_SRC" && find . -path ./.git -prune -o -type f -print | grep -v "^\./$B/")"
+          # Every checksum manifest the packages ship, checked where it was written.
+          n=0
+          for pair in "$A_SRC:$A" "$B_SRC:$B"; do
+            src=${pair%%:*}; dir=${pair#*:}
+            for sums in $(cd "$src" && find "$dir" -name '*SHA256SUMS.txt' ! -name 'BATCH_A_ARCHIVE_SHA256SUMS.txt' | sort); do
+              (cd "$src/$(dirname "$sums")" && sha256sum --check --quiet "$(basename "$sums")"); n=$((n+1))
+            done
+          done
+          # Batch B pins the whole Batch A archive (repo-root relative): every file, nothing extra.
+          for sums in $(cd "$B_SRC" && find "$B" -name 'BATCH_A_ARCHIVE_SHA256SUMS.txt' | sort); do
+            (cd "$A_SRC" && sha256sum --check --quiet "$GITHUB_WORKSPACE/$B_SRC/$sums"); n=$((n+1))
+            test "$(wc -l < "$B_SRC/$sums")" -eq "$(find "$A_SRC/$A" -type f | wc -l)"
+          done
+          echo "$n review checksum manifests verified"
+          # Stage byte-for-byte; never overwrite anything main already publishes.
+          for d in "$A" "$B"; do test ! -e "_site/$d"; mkdir -p "_site/$(dirname "$d")"; done
+          cp -a "$A_SRC/$A" "_site/$A"
+          cp -a "$B_SRC/$B" "_site/$B"
+          diff -r "$A_SRC/$A" "_site/$A"
+          diff -r "$B_SRC/$B" "_site/$B"
+          for f in "$A/index.html" "$A/v09-microphone-final-2026-11-19/index.html" "$B/index.html" "$B/v01/index.html" "$B/v02-additive-continuity/index.html" "$B/v03-localized-corrections/index.html"; do test -s "_site/$f"; done
+          # Deployment metadata is written only into _site, never into the immutable packages. Gallery
+          # labels from review time (generated / unselected) are left as historical provenance.
+          for f in "$A/deployment-provenance.json" "$B/v03-localized-corrections/deployment-provenance.json" "$B/v02-additive-continuity/deployment-provenance.json"; do test ! -e "_site/$f"; done
+          cp "$B_SRC/$B/v03-localized-corrections/sources/historical-v02-deployment-provenance.json" "_site/$B/v02-additive-continuity/deployment-provenance.json"
+          A="$A" B="$B" python3 - <<'PY'
+          import json, os
+          site, main = '_site/', os.environ['GITHUB_SHA']
+          def write(rel, data):
+              with open(site + rel, 'w') as f: f.write(json.dumps(data, indent=2) + '\n')
+          common = {'publicSiteSource': main, 'deployedBy': 'canonical main Pages workflow (.github/workflows/pages.yml)',
+                    'gallery': 'Historical review gallery, byte-preserved from its pinned commit. Labels written at review time (generated / unselected) are kept as provenance and are superseded by the canonical registry.'}
+          write(os.environ['A'] + '/deployment-provenance.json', {**common,
+              'gallerySource': os.environ['CH3_BATCH_A_REVIEW_COMMIT'], 'galleryRef': 'art/ch3-pavilion-batch01-20261118',
+              'approval': 'Chapter 3 Batch A A01-A06 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch A section; story/artwork-preview.json). Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
+          write(os.environ['B'] + '/v03-localized-corrections/deployment-provenance.json', {**common,
+              'gallerySource': os.environ['CH3_BATCH_B_REVIEW_COMMIT'], 'galleryRef': 'art/ch3-pavilion-batch02-20261119',
+              'approval': 'Chapter 3 Batch B B01-B06 v03 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch B section; docs/113; story/artwork-preview.json). Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
+          PY
+          echo "Chapter 3 review galleries staged: $(find "_site/$A" -type f | wc -l) Batch A + $(find "_site/$B" -type f | wc -l) Batch B files"
       - name: Enable and configure Pages
         uses: actions/configure-pages@v5
         with:
