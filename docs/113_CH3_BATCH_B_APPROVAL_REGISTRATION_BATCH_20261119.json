@@ -1,0 +1,77 @@
+{
+  "about": "Owner-approved exact v03 bytes. expectedSha256 must be checked independently; register-art.mjs computes but does not enforce this extra field. Canonical registration is a separate Claude step; production assetPath values remain null.",
+  "entries": [
+    {
+      "key": "scenes:pavilion_reboot/arrival",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B01-arrival-v03.png",
+      "status": "approved",
+      "expectedSha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B01-arrival-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_printer",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png",
+      "status": "approved",
+      "expectedSha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_printer#portraitBackground",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B03-record-printer-bg-v03.png",
+      "status": "approved",
+      "expectedSha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B03-record-printer-bg-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_scanner",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B04-record-scanner-v03.png",
+      "status": "approved",
+      "expectedSha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B04-record-scanner-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B05-record-scanner-bg-v03.png",
+      "status": "approved",
+      "expectedSha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B05-record-scanner-bg-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/paper_emergency",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png",
+      "status": "approved",
+      "expectedSha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+      }
+    }
+  ]
+}

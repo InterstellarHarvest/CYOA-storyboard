@@ -1,0 +1,177 @@
+{
+  "schema": "cyoa-art-director-selection-v1",
+  "date": "2026-11-19",
+  "owner": "Nate",
+  "decision": "All six Chapter 3 Batch B v03 artworks selected and approved",
+  "ownerInstructionVerbatim": "I approve and select all six Chapter 3 Batch B artworks exactly as presented in v03: B01, B02, B03, B04, B05 and B06.\n\nSource commit: `7337e5e550e64a64357666a0fab6f118500913cd`.\n\nRecord the unresolved original native-grid authorship limitation, as with Batch A.\n\nProceed with the separate Claude approval-registration handoff, preserving the exact selected bytes. Do not integrate into gameplay or begin Batch C.",
+  "status": "approved",
+  "selected": true,
+  "approved": true,
+  "registrationState": "pending separate Claude approval-registration handoff; creative approval complete",
+  "gameplayIntegrationAuthorized": false,
+  "beginBatchCAuthorized": false,
+  "sourceCommit": "7337e5e550e64a64357666a0fab6f118500913cd",
+  "galleryUrl": "https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/",
+  "nativeGridAuthorship": "UNPROVEN / NOT PASSED",
+  "acceptedTechnicalLimitation": "Complete original native-grid authorship remains unproven. Source generations were returned above the logical resolution and transferred into target grids; localized native-pixel edits and compositing do not prove original full-scene grid authorship. Residual source-derived RGB softness and tonal variation may remain. The v03 transparent addition donor was 1548x1016. Nate approves the exact selected bytes with this limitation documented. Creative approval does not certify native-grid authorship; no regeneration or polish is requested.",
+  "entries": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "key": "scenes:pavilion_reboot/arrival",
+      "version": "v03",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "integrated": false,
+      "assetPath": null,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B01-arrival-v03.png"
+      },
+      "gitBlobSha1": "56a4ed2952c62e931d68cdd9c89cebd23958817d",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "dimensions": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "mode": "RGB",
+      "nativeGridAuthorship": "UNPROVEN / NOT PASSED; owner accepts these exact bytes with the documented limitation."
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "key": "scenes:pavilion_reboot/record_printer",
+      "version": "v03",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "integrated": false,
+      "assetPath": null,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png"
+      },
+      "gitBlobSha1": "270ec9f2ba197b3d052e0406dfb8857ccd067157",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "dimensions": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "mode": "RGB",
+      "nativeGridAuthorship": "UNPROVEN / NOT PASSED; owner accepts these exact bytes with the documented limitation."
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "key": "scenes:pavilion_reboot/record_printer#portraitBackground",
+      "version": "v03",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "integrated": false,
+      "assetPath": null,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B03-record-printer-bg-v03.png"
+      },
+      "gitBlobSha1": "ff18aca5461458fb8f523127a1ab662ff6022af6",
+      "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "mode": "RGB",
+      "nativeGridAuthorship": "UNPROVEN / NOT PASSED; owner accepts these exact bytes with the documented limitation."
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "key": "scenes:pavilion_reboot/record_scanner",
+      "version": "v03",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "integrated": false,
+      "assetPath": null,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B04-record-scanner-v03.png"
+      },
+      "gitBlobSha1": "f312ce9c2256c67f53efb2e33c11466542644305",
+      "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3",
+      "dimensions": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "mode": "RGB",
+      "nativeGridAuthorship": "UNPROVEN / NOT PASSED; owner accepts these exact bytes with the documented limitation."
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "key": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+      "version": "v03",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "integrated": false,
+      "assetPath": null,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B05-record-scanner-bg-v03.png"
+      },
+      "gitBlobSha1": "a7a5ed83e85ae1e34ba8bcde78a0019daaf5d9dd",
+      "sha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "mode": "RGB",
+      "nativeGridAuthorship": "UNPROVEN / NOT PASSED; owner accepts these exact bytes with the documented limitation."
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "key": "scenes:pavilion_reboot/paper_emergency",
+      "version": "v03",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "integrated": false,
+      "assetPath": null,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+      },
+      "gitBlobSha1": "a3d8673cd38f9231cc2cde3a5bac2d8edc55f762",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "mode": "RGB",
+      "nativeGridAuthorship": "UNPROVEN / NOT PASSED; owner accepts these exact bytes with the documented limitation."
+    }
+  ],
+  "handoffValidation": {
+    "immutableSelectedFileHashes": "PASS \u2014 six git blobs and working files match",
+    "dimensionAndOpacityContracts": "PASS \u2014 four 314x206 and two 564x278 opaque PNGs",
+    "registrationDryRun": "PASS \u2014 precisely six requested approved records; no real run",
+    "canonicalRegistryPreviewAndGameFiles": "UNCHANGED",
+    "historicalReviewFilesAndAllPNGBytes": "UNCHANGED",
+    "priorLedgerContent": "PRESERVED \u2014 append-only owner-decision section"
+  }
+}
