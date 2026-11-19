@@ -1,6 +1,6 @@
-# The Acceptable Error — Public Storyboard
+# Out of Order — Public Storyboard
 
-This is the **public, JSON-backed Storyboard + Artwork Production viewer** for The Acceptable Error. The site displays authored scenes, branching choices, inventory items, shared art prompts, asset references and production statuses. You can edit prompts and export updated JSON locally, but the live site never commits changes to GitHub.
+This is the **public, JSON-backed Storyboard + Artwork Production viewer** for *Out of Order*. The site displays authored scenes, branching choices, inventory items, shared art prompts, asset references and production statuses. You can edit prompts and export updated JSON locally, but the live site never commits changes to GitHub.
 
 - **[Open the storyboard](https://interstellarharvest.github.io/CYOA-storyboard/)**
 - **[Open the Prologue Artwork Lab](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/)** — public-safe visual review with approved M2 shell assets and 28 draft PNGs; no private game engine
@@ -8,9 +8,11 @@ This is the **public, JSON-backed Storyboard + Artwork Production viewer** for T
 
 > **Chapter 3 creative reboot (2026-11-18):** The old People's Pavilion graph is **archived, not active story canon**. The viewer retains it for historical inspection and labels it `archived`. Its old nodes, choices, endings, and Chapter 3-only artwork briefs must not be imported into the game or commissioned as new art. Read the [Chapter 3 reboot brief](docs/109_CH3_REBOOT_ONE_EXPERIENCE_PER_PERSON_20261118.md) and the [immutable legacy archive](story/archives/chapter-03-pre-reboot-20261118.json) before any new Chapter 3 work. Prologue, Chapter 1 and Chapter 2 remain unaffected.
 
+> **Title update (2026-11-19):** *Out of Order* is the official game title. *The Acceptable Error* is its retired working title. The `CYOA-storyboard` repository and Pages URL have **not** been renamed; preserve existing links until the coordinated migration and redirect checks pass. Historical files, art provenance, and `cyoa-*` schema identifiers remain unchanged. See [the migration checkpoint](docs/113_OUT_OF_ORDER_TITLE_MIGRATION_CHECKPOINT_20261119.md).
+
 ## Canon and the production pipeline
 
-**This repository is the canonical creative source** for The Acceptable Error. Read [docs/105](docs/105_CANONICAL_SYNC_PIPELINE.md) first; the owner rulings are in [docs/102](docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md) and [docs/103](docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md).
+**This repository is the canonical creative source** for *Out of Order*. Read [docs/105](docs/105_CANONICAL_SYNC_PIPELINE.md) first; the owner rulings are in [docs/102](docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md) and [docs/103](docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md).
 
 - **Narrative, items, checks and art briefs** are edited here. Publish them after `node tools/sync/check-canon.mjs` passes. You do not need to wait for game integration.
 - **Art selection is approval.** Register the selected PNG with `node tools/sync/register-art.mjs`: it records the exact bytes, hash and source, sets `approved`, and makes the image visible on the site. **Never regenerate or re-approve selected art** unless the owner asks for a revision.
