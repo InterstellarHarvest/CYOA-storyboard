@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8773/v05-628-regeneration/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Exactly one fresh A01 trial; other five candidates linked in preserved gallery",
+    "Fresh preview displays exactly 1256x824 with integer rendering",
+    "Previous 4x reference switches in place at the same 1256x824 display size",
+    "Fresh 1x working export displays exactly 628x412",
+    "390px mobile page has bounded scrolling and no fit-to-width image scaling or document overflow",
+    "All visible images decode; no page exceptions or failed requests"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "scope": "Gallery behavior only; does not override failed exact-source dimensions or unproven native authorship."
+}

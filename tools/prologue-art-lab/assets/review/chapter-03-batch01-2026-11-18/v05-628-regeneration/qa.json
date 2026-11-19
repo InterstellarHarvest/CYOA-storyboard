@@ -1,0 +1,104 @@
+{
+  "candidateId": "CH3-A01-restroom-628-v05",
+  "status": "generated/unselected",
+  "freshGeneration": {
+    "result": "PASS",
+    "generationCalls": 1,
+    "evidence": "Untouched new imagegen output with two design references; previous candidate is used only as a comparison."
+  },
+  "requestedSourceDimensions": {
+    "result": "FAIL",
+    "requested": [
+      628,
+      412
+    ],
+    "returned": [
+      1547,
+      1016
+    ]
+  },
+  "originalNativeGridAuthorship": {
+    "result": "UNPROVEN / REQUIREMENT NOT PASSED",
+    "reason": "Imagegen returned a larger RGB raster. The 628x412 working export is a nearest-neighbor reduction of this new output; it is not evidence of directly authored 628x412 pixel clusters."
+  },
+  "workingExportDimensions": {
+    "result": "PASS",
+    "dimensions": [
+      628,
+      412
+    ],
+    "mode": "RGB"
+  },
+  "previewDimensions": {
+    "result": "PASS",
+    "dimensions": [
+      1256,
+      824
+    ],
+    "scale": 2,
+    "method": "Pillow NEAREST; every output 2x2 block exactly equals its source pixel"
+  },
+  "alpha": {
+    "result": "PASS",
+    "requirement": "Opaque environment",
+    "extrema": [
+      255,
+      255
+    ]
+  },
+  "palette": {
+    "sourceUniqueRGBColors": 212530,
+    "workingUniqueRGBColors": 69455,
+    "quantizationApplied": false,
+    "assessment": "No numeric palette limit in this trial. Numerous tonal values remain; deliberate native clustering and lack of antialiasing cannot be certified."
+  },
+  "historyPreservation": {
+    "result": "PASS",
+    "pin": "97504a36de82220274afdece9b5c32750367a4e8",
+    "filesChecked": 262
+  },
+  "referenceIntegrity": {
+    "result": "PASS",
+    "referencesChecked": 2
+  },
+  "visualInspection": {
+    "result": "REVIEW REQUIRED",
+    "observations": [
+      "Same restroom/bench/counter layout and cream/coral/slate-blue materials; fresh drawing, so small contours and proportions vary.",
+      "Seated male attendant retains dark side-part hair with gray temples, rectangular glasses, cream shirt, dark tie and teal vest; exact face correspondence remains for Nate to judge.",
+      "Desktop contactless gadget absent; slotted intercom/microphone and wall gate reader retained.",
+      "RESTROOM sign readable; visible sinks, mirrors, pipes, bin, stalls and gate retained. No occupied stall, protagonist face or embodied Original.",
+      "Thin contours replace the prior hand-inked outline treatment. Fine tonal variation/softness remains in the generated source; this is not a certified native pixel-art pass."
+    ]
+  },
+  "comparisonCrops": {
+    "fresh": {
+      "source": "candidates/CH3-A01-restroom-628-v05.png",
+      "box": [
+        410,
+        184,
+        488,
+        282
+      ],
+      "scale": 4
+    },
+    "previous": {
+      "source": "../v04/candidates/CH3-A01-restroom-v04.png",
+      "box": [
+        198,
+        75,
+        251,
+        143
+      ],
+      "scale": 4
+    },
+    "note": "Independent face crops, not registered pixel-difference proofs."
+  },
+  "scope": {
+    "otherFiveCandidatesChanged": false,
+    "productionContractChanged": false,
+    "narrativeChanged": false,
+    "approved": false,
+    "integrated": false
+  }
+}

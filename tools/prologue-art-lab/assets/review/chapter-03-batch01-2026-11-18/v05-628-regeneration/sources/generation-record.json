@@ -1,0 +1,36 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "generationCalls": 1,
+  "intent": "fresh regeneration at double logical pixel size, not enlargement of previous scene",
+  "requestedSourceDimensions": [
+    628,
+    412
+  ],
+  "actualSourceDimensions": [
+    1547,
+    1016
+  ],
+  "source": "generation-source/exec-c4c735d2-5d99-4b45-adb4-73b8f388a906.png",
+  "sourceSha256": "b11e8a63f6116912ae6b8a9042e0a90a3748099e33fad0d4fae525b71036ce04",
+  "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-c4c735d2-5d99-4b45-adb4-73b8f388a906.png",
+  "prompt": "prompts/CH3-A01-restroom-628-v05.txt",
+  "promptSha256": "7099c6da84c863dca15bc955d3a3a407fb1fdb825c6a6678fdb55c81e84eb506",
+  "referencesInOrder": [
+    "../v02/generation-source/exec-168e9505-3f51-4dbc-adf4-a30a5df34b7a.png",
+    "../v03/candidates/CH3-A03-attendant-idle-v03.png"
+  ],
+  "referenceHashes": [
+    "545e5d852f747ed20bbb248af81e2e90172fc8614b55dfcd29d13415b18ba121",
+    "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+  ],
+  "referenceRoles": [
+    "Established un-inked room composition/palette only",
+    "Exact attendant identity/outfit, not portrait scale"
+  ],
+  "transparent_background": false,
+  "exactRequestedSourceDimensionsPassed": false,
+  "originalNativeAuthorship": "UNPROVEN; actual tool output differs from requested canvas.",
+  "status": "generated",
+  "selected": false,
+  "assetPath": null
+}
