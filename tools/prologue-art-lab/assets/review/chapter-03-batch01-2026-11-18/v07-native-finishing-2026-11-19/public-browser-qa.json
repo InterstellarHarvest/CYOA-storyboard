@@ -1,5 +1,5 @@
 {
-  "result": "PASS",
+  "result": "SUPERSEDED",
   "url": "https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/",
   "browser": "150.0.7871.125",
   "checks": [
@@ -26,5 +26,6 @@
     "public-browser-proof/approved-density-comparison-1x.png",
     "public-browser-proof/gallery-desktop-1x.png",
     "public-browser-proof/gallery-mobile-1x.png"
-  ]
+  ],
+  "supersededReason": "A01 right gate-frame correction restored 29 source pixels; current candidate requires refreshed public verification."
 }

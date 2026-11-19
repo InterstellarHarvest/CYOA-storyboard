@@ -28,7 +28,7 @@ line(s,'restroom lintel recessed edge',[(79,69),(163,69)],'2f4d55')
 # Gate: native cream panel interiors, avoid the steel frame and turnstile.
 poly(s,'left gate cream face',[(83,147),(99,147),(99,176),(83,176)],'f4d3a9')
 poly(s,'left gate narrow shaded return',[(100,147),(101,147),(101,176),(100,176)],'e8c49c')
-rect(s,'right gate cream face',(159,147,165,175),'f0cfa5')
+rect(s,'right gate cream face',(159,147,164,175),'f0cfa5')
 line(s,'left gate top rail controlled highlight',[(81,141),(100,141)],'8a9a96')
 # Reception front: three deliberately authored planes within the source silhouette.
 poly(s,'counter broad coral plane',[(192,153),(256,153),(260,152),(260,176),(256,178),(193,178)],'de6d58')
@@ -132,7 +132,7 @@ for scene,ident in [('A01','CH3-A01-restroom-v07'),('A04','CH3-A04-verification-
         count=sum(a!=b for a,b in zip(before.getdata(),out.getdata()))
         stages.append({**op,'changedPixelsAtThisStep':count})
     # Hard preservation regions include all mandatory letters/digits and control hardware.
-    locks=[('RESTROOM sign',(69,38,180,62)),('wall access-control reader',(171,102,180,120)),('turnstile and left metal frame',(102,139,155,183)),('right desktop device absence',(244,127,254,142))] if scene=='A01' else [('PEOPLES PAVILION sign',(67,23,252,44)),('countdown 30 and ring',(132,70,189,121)),('standing microphone',(101,111,113,154)),('presenter face',(83,90,94,103)),('welcoming hand',(108,100,119,109)),('camera body and lens',(8,104,66,134)),('side chair',(251,159,301,197)),('rear exit',(224,77,251,136))]
+    locks=[('RESTROOM sign',(69,38,180,62)),('wall access-control reader',(171,102,180,120)),('turnstile and left metal frame',(102,139,155,183)),('right metal gate frame',(165,139,171,182)),('right desktop device absence',(244,127,254,142))] if scene=='A01' else [('PEOPLES PAVILION sign',(67,23,252,44)),('countdown 30 and ring',(132,70,189,121)),('standing microphone',(101,111,113,154)),('presenter face',(83,90,94,103)),('welcoming hand',(108,100,119,109)),('camera body and lens',(8,104,66,134)),('side chair',(251,159,301,197)),('rear exit',(224,77,251,136))]
     lock_results=[]
     for label,box in locks:
         passed=original.crop(box).tobytes()==out.crop(box).tobytes()
