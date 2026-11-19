@@ -939,12 +939,12 @@
     "pavilion_reboot/arrival": {
       "title": "PEOPLE'S PAVILION — APPROACH",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/scenes/pavilion_reboot/arrival.png",
       "prompt": "Native logical-grid 314×206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: The Pavilion entrance seen from the Exposition concourse: cheerful rectangular civic marquee, front-facing sign PEOPLE'S PAVILION if fully legible or simply PAVILION, a prominent restroom pictogram plus directional arrow, three subtly distinct access paths (public concourse, service stairs, tiled underground approach) joining at one public entry. Functional, inviting, bustling-by-design rather than a faceless empty claims office; no invented additional obligatory stop.",
-      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch B. Source nodes: pavilion_arrival. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch B B01): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch02-20261119 7337e5e550e64a64357666a0fab6f118500913cd, path tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B01-arrival-v03.png; SHA-256 37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch B addendum). Approved, not integrated; production assetPath remains null. Batch B. Source nodes: pavilion_arrival. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
     },
     "pavilion_reboot/restroom_entrance": {
       "title": "THE REAL RESTROOM",
@@ -1079,52 +1079,52 @@
     "pavilion_reboot/record_printer": {
       "title": "THE ENDLESS ACCURATE RECORD",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/scenes/pavilion_reboot/record_printer.png",
       "prompt": "Native logical-grid 314×206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: Compact adjunct counter near the same genuine restroom, mechanically simple long-roll receipt printer actively streaming white paper in ridiculous coils onto gray floor tiles; a portion of the ribbon could visibly say ORIGINAL if letters are truly legible. Include attendant position, small ceremonial plant, adjacent passage and enough open floor for paper to entangle visitors. The literal official paper trail is the visual joke, not a vast registry or faceless archive office.",
-      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch B. Source nodes: record_print, record_challenge, record_choices, stapler_printer_snarl, attendant_honest. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration.",
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch B B02): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch02-20261119 7337e5e550e64a64357666a0fab6f118500913cd, path tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png; SHA-256 1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch B addendum). Approved, not integrated; production assetPath remains null. Batch B. Source nodes: record_print, record_challenge, record_choices, stapler_printer_snarl, attendant_honest. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration.",
       "portraitBackground": {
         "title": "THE ENDLESS ACCURATE RECORD — CLOSE CONVERSATION BACKGROUND",
         "kind": "portrait-background",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "564x278",
         "assetPath": null,
         "suggestedFilename": "art/portraits/pavilion_reboot/backgrounds/record_printer.png",
         "prompt": "Exactly 564×278 newly authored OPAQUE pixel-art conversation background, independently composed at native resolution. It is a tighter, closer POV into the companion 314×206 scene, matching its architecture, palette, lights, furniture and action geography without reusing, enlarging, blurring or panning a crop. No NPCs, no portraits, no protagonist, no UI frame; reserve clean center space for a separately composited full-size transparent human foreground. Across the same counter, detailed endless receipt roll spilling under the attendant desk, one readable oversized ORIGINAL on slip if feasible, modest ornamental plant and glimpsed door route. A distinct camera placement from the main scene, but clearly the same actual printer.",
-        "notes": "CH3 REBOOT: paired with pavilion_reboot/record_printer; shared by every attendee/presenter pose used at this scene. Batch B. NO IMAGE GENERATED OR APPROVED."
+        "notes": "CH3 REBOOT: paired with pavilion_reboot/record_printer; shared by every attendee/presenter pose used at this scene. Batch B. IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch B B03): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch02-20261119 7337e5e550e64a64357666a0fab6f118500913cd, path tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B03-record-printer-bg-v03.png; SHA-256 46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch B addendum). Approved, not integrated; production assetPath remains null."
       }
     },
     "pavilion_reboot/record_scanner": {
       "title": "AUTHORIZED PAPER — RESTROOM READER",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/scenes/pavilion_reboot/record_scanner.png",
       "prompt": "Native logical-grid 314×206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: Tight main-scene view of the same restroom door and one-way reader as restroom_entrance, with a motorized document roller at the jamb swallowing a long record slip. Door opens only a narrow slit and reveals a real tiled interior; a green indicator demonstrates that PAPER is authorized, not its human carrier. A small side counter connects believably to record_printer; no living Original person.",
-      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch B. Source nodes: record_scanner, record_scanner_result. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration.",
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch B B04): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch02-20261119 7337e5e550e64a64357666a0fab6f118500913cd, path tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B04-record-scanner-v03.png; SHA-256 4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch B addendum). Approved, not integrated; production assetPath remains null. Batch B. Source nodes: record_scanner, record_scanner_result. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration.",
       "portraitBackground": {
         "title": "AUTHORIZED PAPER — RESTROOM READER — CLOSE CONVERSATION BACKGROUND",
         "kind": "portrait-background",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "564x278",
         "assetPath": null,
         "suggestedFilename": "art/portraits/pavilion_reboot/backgrounds/record_scanner.png",
         "prompt": "Exactly 564×278 newly authored OPAQUE pixel-art conversation background, independently composed at native resolution. It is a tighter, closer POV into the companion 314×206 scene, matching its architecture, palette, lights, furniture and action geography without reusing, enlarging, blurring or panning a crop. No NPCs, no portraits, no protagonist, no UI frame; reserve clean center space for a separately composited full-size transparent human foreground. Tighter close POV from beside the actual restroom jamb, mechanical paper roller, green authorization indicator, narrow open-door crack and tilework; recognizable reader design from restroom_entrance. Attendant foreground faces this reader in alarm.",
-        "notes": "CH3 REBOOT: paired with pavilion_reboot/record_scanner; shared by every attendee/presenter pose used at this scene. Batch B. NO IMAGE GENERATED OR APPROVED."
+        "notes": "CH3 REBOOT: paired with pavilion_reboot/record_scanner; shared by every attendee/presenter pose used at this scene. Batch B. IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch B B05): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch02-20261119 7337e5e550e64a64357666a0fab6f118500913cd, path tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B05-record-scanner-bg-v03.png; SHA-256 9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch B addendum). Approved, not integrated; production assetPath remains null."
       }
     },
     "pavilion_reboot/paper_emergency": {
       "title": "PAPER EMERGENCY — SAFETY BRUSHES",
       "kind": "scene",
-      "status": "not-started",
+      "status": "approved",
       "dimensions": "314x206",
       "assetPath": null,
       "suggestedFilename": "art/scenes/pavilion_reboot/paper_emergency.png",
       "prompt": "Native logical-grid 314×206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: The record_printer counter in full mechanical chaos: impossible loops of white receipts entangle desk legs and a decorative plant while oversized soft motorized safety brushes sweep paper toward big exterior emergency doors. Bright absurd harmless cleanup machinery, not a shredder or violent industrial death. A few tiny bystander figures may convey physical comedy, but no protagonist face.",
-      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch B. Source nodes: paper_problem_end. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch B B06): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch02-20261119 7337e5e550e64a64357666a0fab6f118500913cd, path tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png; SHA-256 ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch B addendum). Approved, not integrated; production assetPath remains null. Batch B. Source nodes: paper_problem_end. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
     },
     "pavilion_reboot/exit_vestibule": {
       "title": "RESTROOM EXIT VESTIBULE — ALMOST",
