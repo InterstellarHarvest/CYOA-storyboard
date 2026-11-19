@@ -1,0 +1,377 @@
+{
+  "result": "PASS for dimensions, opacity, exact integer previews, allowed masks, foreground and history preservation.",
+  "nativeGridAuthorship": "UNPROVEN / NOT PASSED for source rasters; inherited limitation retained.",
+  "crossChapterStyleApproval": "PENDING NATE",
+  "candidates": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opacity": "PASS",
+      "dimensionsCheck": "PASS",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "changedPixelsFromV02": 0,
+      "allowedEditMask": "masks/CH3-B01-arrival-v02-v03-allowed.png",
+      "actualChangeMask": "masks/CH3-B01-arrival-v02-v03-changed.png",
+      "unexpectedChangesOutsideAllowedMask": 0,
+      "noBaseResampling": true,
+      "uniqueRGB": 30211,
+      "globalFilterApplied": false,
+      "nativeGridAuthorship": "UNPROVEN for inherited/generated raster sources; explicit native edits are documented.",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "inspection": [
+        "Byte-identical to v02. No edit."
+      ],
+      "exact4xPreview": {
+        "dimensions": [
+          1256,
+          824
+        ],
+        "allBlocksExact": true
+      }
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opacity": "PASS",
+      "dimensionsCheck": "PASS",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "changedPixelsFromV02": 5532,
+      "allowedEditMask": "masks/CH3-B02-record-printer-v02-v03-allowed.png",
+      "actualChangeMask": "masks/CH3-B02-record-printer-v02-v03-changed.png",
+      "unexpectedChangesOutsideAllowedMask": 0,
+      "noBaseResampling": true,
+      "uniqueRGB": 17361,
+      "globalFilterApplied": false,
+      "nativeGridAuthorship": "UNPROVEN for inherited/generated raster sources; explicit native edits are documented.",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "inspection": [
+        "Removed the added right-hand printer and restored the original plant/counter from approved A01.",
+        "Receipt originates at the existing left cream unit\u2019s lower slot. Approved microphone, attendant and chair pixels are unchanged.",
+        "New paper is authored on the actual grid with restrained native polygons and non-letter marks; no base filtering."
+      ],
+      "exact4xPreview": {
+        "dimensions": [
+          1256,
+          824
+        ],
+        "allBlocksExact": true
+      }
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opacity": "PASS",
+      "dimensionsCheck": "PASS",
+      "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473",
+      "changedPixelsFromV02": 10608,
+      "allowedEditMask": "masks/CH3-B03-record-printer-bg-v02-v03-allowed.png",
+      "actualChangeMask": "masks/CH3-B03-record-printer-bg-v02-v03-changed.png",
+      "unexpectedChangesOutsideAllowedMask": 0,
+      "noBaseResampling": true,
+      "uniqueRGB": 32733,
+      "globalFilterApplied": false,
+      "nativeGridAuthorship": "UNPROVEN for inherited/generated raster sources; explicit native edits are documented.",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "inspection": [
+        "Removed the contradictory right-hand printer; approved A02 plant/counter are restored.",
+        "The same left slotted housing feeds a short receipt tail. Microphone is untouched.",
+        "Approved A03 foreground is byte-identical and composited at(0,0), scale1; paper stays to its left."
+      ],
+      "composite": {
+        "candidateId": "CH3-B03-record-printer-bg",
+        "file": "composites/CH3-B03-record-printer-bg-A03-idle.png",
+        "sha256": "56223bd21d59528190b0369274bab9374d9021a2b467bfb41cdbec2d8c9aa955",
+        "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+        "anchor": [
+          0,
+          0
+        ],
+        "scale": 1,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "allForegroundPixelsExact": true
+      }
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opacity": "PASS",
+      "dimensionsCheck": "PASS",
+      "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3",
+      "changedPixelsFromV02": 3186,
+      "allowedEditMask": "masks/CH3-B04-record-scanner-v02-v03-allowed.png",
+      "actualChangeMask": "masks/CH3-B04-record-scanner-v02-v03-changed.png",
+      "unexpectedChangesOutsideAllowedMask": 0,
+      "noBaseResampling": true,
+      "uniqueRGB": 14578,
+      "globalFilterApplied": false,
+      "nativeGridAuthorship": "UNPROVEN for inherited/generated raster sources; explicit native edits are documented.",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "inspection": [
+        "Only the door leaf/handle and document intake mark change. Frame, reader, light, signs and room remain unchanged.",
+        "Door is nearly closed with a four-pixel clear slit at its leading edge.",
+        "The form is already engaged under the roller; its arrow points into the one-way reader. Green authorizes the document, not a person."
+      ],
+      "exact4xPreview": {
+        "dimensions": [
+          1256,
+          824
+        ],
+        "allBlocksExact": true
+      }
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opacity": "PASS",
+      "dimensionsCheck": "PASS",
+      "sha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea",
+      "changedPixelsFromV02": 8148,
+      "allowedEditMask": "masks/CH3-B05-record-scanner-bg-v02-v03-allowed.png",
+      "actualChangeMask": "masks/CH3-B05-record-scanner-bg-v02-v03-changed.png",
+      "unexpectedChangesOutsideAllowedMask": 0,
+      "noBaseResampling": true,
+      "uniqueRGB": 24807,
+      "globalFilterApplied": false,
+      "nativeGridAuthorship": "UNPROVEN for inherited/generated raster sources; explicit native edits are documented.",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "inspection": [
+        "Matching nearly closed door with a seven-pixel clear slit in this closer view. Only the local door/handle and paper intake mark change.",
+        "The same document/roller arrangement and intake direction agree with B04.",
+        "Approved A03 is unchanged at(0,0), scale1; no foreground regeneration or movement."
+      ],
+      "composite": {
+        "candidateId": "CH3-B05-record-scanner-bg",
+        "file": "composites/CH3-B05-record-scanner-bg-A03-idle.png",
+        "sha256": "631425fbee14836e0f45541e9c376e92e612752d41f6ed1ceb2c4f5b9064e3d5",
+        "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+        "anchor": [
+          0,
+          0
+        ],
+        "scale": 1,
+        "alphaValues": [
+          0,
+          255
+        ],
+        "allForegroundPixelsExact": true
+      }
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "opacity": "PASS",
+      "dimensionsCheck": "PASS",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "changedPixelsFromV02": 16878,
+      "allowedEditMask": "masks/CH3-B06-paper-emergency-v02-v03-allowed.png",
+      "actualChangeMask": "masks/CH3-B06-paper-emergency-v02-v03-changed.png",
+      "unexpectedChangesOutsideAllowedMask": 0,
+      "noBaseResampling": true,
+      "uniqueRGB": 20305,
+      "globalFilterApplied": false,
+      "nativeGridAuthorship": "UNPROVEN for inherited/generated raster sources; explicit native edits are documented.",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "inspection": [
+        "Removed the added printer and all rectangular attendant protection. Uses approved A01 below the new paper/brush layers.",
+        "A manually traced one-pixel attendant silhouette, plus separate microphone/chair silhouettes, preserves those exact pixels. Paper passes behind the body with hard native occlusion.",
+        "The same left unit feeds fewer ribbons. A local fold carries paper up the original plant; jointed brush arms attach to the cornice and bristles contact paper toward the right exit.",
+        "Generated plant fragments were manually excluded; the approved plant remains at its original position. No room architecture was rerendered."
+      ],
+      "exact4xPreview": {
+        "dimensions": [
+          1256,
+          824
+        ],
+        "allBlocksExact": true
+      }
+    }
+  ],
+  "composites": [
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "file": "composites/CH3-B03-record-printer-bg-A03-idle.png",
+      "sha256": "56223bd21d59528190b0369274bab9374d9021a2b467bfb41cdbec2d8c9aa955",
+      "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "allForegroundPixelsExact": true
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "file": "composites/CH3-B05-record-scanner-bg-A03-idle.png",
+      "sha256": "631425fbee14836e0f45541e9c376e92e612752d41f6ed1ceb2c4f5b9064e3d5",
+      "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "allForegroundPixelsExact": true
+    }
+  ],
+  "protectedPixelChecks": [
+    {
+      "candidate": "CH3-B02-record-printer",
+      "mask": "attendant-one-pixel-silhouette.png",
+      "protectedPixels": 1036,
+      "changedProtectedPixels": 0
+    },
+    {
+      "candidate": "CH3-B02-record-printer",
+      "mask": "microphone-silhouette.png",
+      "protectedPixels": 101,
+      "changedProtectedPixels": 0
+    },
+    {
+      "candidate": "CH3-B02-record-printer",
+      "mask": "chair-visible-silhouette.png",
+      "protectedPixels": 87,
+      "changedProtectedPixels": 0
+    },
+    {
+      "candidate": "CH3-B06-paper-emergency",
+      "mask": "attendant-one-pixel-silhouette.png",
+      "protectedPixels": 1036,
+      "changedProtectedPixels": 0
+    },
+    {
+      "candidate": "CH3-B06-paper-emergency",
+      "mask": "microphone-silhouette.png",
+      "protectedPixels": 101,
+      "changedProtectedPixels": 0
+    },
+    {
+      "candidate": "CH3-B06-paper-emergency",
+      "mask": "chair-visible-silhouette.png",
+      "protectedPixels": 87,
+      "changedProtectedPixels": 0
+    }
+  ],
+  "pixelsOfPaperInsideFormerRectanglesOutsideActualBody": 324,
+  "rectangularAttendantProtection": "REMOVED; binary manually traced row-run silhouette only, plus separate actual mic/chair silhouettes; no feathering.",
+  "plantRestoration": "Entire original plant regions are byte-identical in B02 and B03. Original plant remains the B06 base; added paper naturally occludes parts. Generated plant pixels were excluded.",
+  "scannerDoorSlits": {
+    "B04": {
+      "jambInnerX": 147,
+      "doorLeadingEdgeX": 142,
+      "clearWidthPixels": 4
+    },
+    "B05": {
+      "jambInnerX": 81,
+      "doorLeadingEdgeX": 73,
+      "clearWidthPixels": 7
+    }
+  },
+  "preservation": {
+    "priorBatchBFiles": 245,
+    "canonicalHistoricalReviewFiles": 179,
+    "archivedBatchAFiles": 455,
+    "selectedStoryAuthorityFiles": 140,
+    "result": "PASS; all pinned files byte-identical. A01 v09 unchanged; A03 foreground unchanged. No production registry, narrative or gameplay edits."
+  },
+  "v03Generation": {
+    "tool": "built-in image_gen.imagegen",
+    "intent": "Transparent additions only, no full-scene regeneration",
+    "calls": 1,
+    "originalFilename": "exec-559cfcaa-f0ec-4bcb-b958-c44872078fcd.png",
+    "originalPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-559cfcaa-f0ec-4bcb-b958-c44872078fcd.png",
+    "source": "generation-source/exec-559cfcaa-f0ec-4bcb-b958-c44872078fcd.png",
+    "sha256": "0d9b9967847a2eb3a0a79616e72402127af5bb87b1b1e5ae9320c51fa72ed3ed",
+    "actualDimensions": [
+      1548,
+      1016
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "prompt": "prompts/emergency-transparent-additions.txt",
+    "promptSha256": "ac07649cdeae1be248a050834fd2bd563ac83b0329aabc0f32af2d8a65d169d5",
+    "references": [
+      "../v02-additive-continuity/references/A01-restroom.png",
+      "../v02-additive-continuity/candidates/CH3-B06-paper-emergency-v02.png"
+    ],
+    "derivation": "Original retained unchanged. Only addition raster transferred to native grid with nearest neighbor; manually traced object masks exclude generated plant and alpha fringe. No approved scene raster is resized or rerendered. Original native-grid authorship remains unproven."
+  }
+}

@@ -106,19 +106,20 @@ jobs:
         run: |
           set -euo pipefail
           review_root=tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19
-          review_path=$review_root/v02-additive-continuity
+          review_path=$review_root/v03-localized-corrections
           archive_path=tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18
           (cd ".review-source/$review_path" && sha256sum --check PNG_SHA256SUMS.txt && sha256sum --check SOURCE_SHA256SUMS.txt)
           (cd .batch-a-history && sha256sum --check "$GITHUB_WORKSPACE/.review-source/$review_path/BATCH_A_ARCHIVE_SHA256SUMS.txt")
           mkdir -p "_site/$review_root" "_site/$archive_path"
           cp -a ".batch-a-history/$archive_path/." "_site/$archive_path/"
           cp -a ".review-source/$review_root/." "_site/$review_root/"
+          cp ".review-source/$review_path/sources/historical-v02-deployment-provenance.json" "_site/$review_root/v02-additive-continuity/deployment-provenance.json"
           PUBLIC_MAIN_COMMIT=$(git rev-parse HEAD) python3 - <<'PYMETA'
           import json, os
           from pathlib import Path
           root = Path('_site/tools/prologue-art-lab/assets/review')
           data = {'publicSiteSource': os.environ['PUBLIC_MAIN_COMMIT'], 'gallerySource': os.environ['GENERATION_COMMIT'], 'batchAArchiveSource': 'a87155bfadad42e0deae3bee2e749963d1459a4b', 'scope': 'Current main plus isolated generated/unselected Batch B review and byte-preserved historical Batch A galleries only; no production registration or integration.'}
-          (root/'chapter-03-batch02-2026-11-19/v02-additive-continuity/deployment-provenance.json').write_text(json.dumps(data, indent=2)+'\n')
+          (root/'chapter-03-batch02-2026-11-19/v03-localized-corrections/deployment-provenance.json').write_text(json.dumps(data, indent=2)+'\n')
           (root/'chapter-03-batch01-2026-11-18/deployment-provenance.json').write_text(json.dumps({'publicSiteSource': os.environ['PUBLIC_MAIN_COMMIT'], 'gallerySource': data['batchAArchiveSource'], 'scope': 'Immutable historical Batch A review archive; later approval is recorded in the canonical registry.'}, indent=2)+'\n')
           PYMETA
       - name: Enable and configure Pages

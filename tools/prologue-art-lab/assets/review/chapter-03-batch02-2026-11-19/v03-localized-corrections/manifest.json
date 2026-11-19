@@ -1,0 +1,208 @@
+{
+  "version": "Batch B v03 localized corrections",
+  "sourceCommit": "2699abbd651817961b76d87fa0d4c78a57b04bc5",
+  "branch": "art/ch3-pavilion-batch02-20261119",
+  "currentCandidateCount": 6,
+  "status": "generated/unselected",
+  "selected": false,
+  "approved": false,
+  "assetPath": null,
+  "candidates": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "file": "candidates/CH3-B01-arrival-v03.png",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "../v02-additive-continuity/candidates/CH3-B01-arrival-v02.png",
+      "baseSha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "baseResized": false,
+      "changedPixels": 0,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B01-arrival-changed-pixels.png",
+      "coordinateList": "sources/CH3-B01-arrival-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "file": "candidates/CH3-B02-record-printer-v03.png",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "references/A01-restroom.png",
+      "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "baseResized": false,
+      "changedPixels": 1137,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B02-record-printer-changed-pixels.png",
+      "coordinateList": "sources/CH3-B02-record-printer-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "approvedAttendantMicrophoneAndChairPixelsExact": true
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "file": "candidates/CH3-B03-record-printer-bg-v03.png",
+      "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "references/A02-restroom-bg.png",
+      "baseSha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "baseResized": false,
+      "changedPixels": 886,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B03-record-printer-bg-changed-pixels.png",
+      "coordinateList": "sources/CH3-B03-record-printer-bg-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "file": "candidates/CH3-B04-record-scanner-v03.png",
+      "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "../v02-additive-continuity/candidates/CH3-B04-record-scanner-v02.png",
+      "baseSha256": "36bbf4164a6e80317aeae80bcf0b949d71fed87bbaa17a1404b3cfc1b2ea90bc",
+      "baseResized": false,
+      "changedPixels": 3186,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B04-record-scanner-changed-pixels.png",
+      "coordinateList": "sources/CH3-B04-record-scanner-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "file": "candidates/CH3-B05-record-scanner-bg-v03.png",
+      "sha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "../v02-additive-continuity/candidates/CH3-B05-record-scanner-bg-v02.png",
+      "baseSha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+      "baseResized": false,
+      "changedPixels": 8148,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B05-record-scanner-bg-changed-pixels.png",
+      "coordinateList": "sources/CH3-B05-record-scanner-bg-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "file": "candidates/CH3-B06-paper-emergency-v03.png",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "references/A01-restroom.png",
+      "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "baseResized": false,
+      "changedPixels": 8715,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B06-paper-emergency-changed-pixels.png",
+      "coordinateList": "sources/CH3-B06-paper-emergency-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "approvedAttendantMicrophoneAndChairPixelsExact": true
+    }
+  ],
+  "composites": [
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "file": "composites/CH3-B03-record-printer-bg-A03-idle.png",
+      "sha256": "56223bd21d59528190b0369274bab9374d9021a2b467bfb41cdbec2d8c9aa955",
+      "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "allForegroundPixelsExact": true
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "file": "composites/CH3-B05-record-scanner-bg-A03-idle.png",
+      "sha256": "631425fbee14836e0f45541e9c376e92e612752d41f6ed1ceb2c4f5b9064e3d5",
+      "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "allForegroundPixelsExact": true
+    }
+  ],
+  "preservation": {
+    "priorBatchBFiles": 245,
+    "canonicalHistoricalReviewFiles": 179,
+    "archivedBatchAFiles": 455,
+    "selectedStoryAuthorityFiles": 140,
+    "result": "PASS; all pinned files byte-identical. A01 v09 unchanged; A03 foreground unchanged. No production registry, narrative or gameplay edits."
+  },
+  "productionRegistryChanged": false,
+  "gameplayIntegrated": false,
+  "nativeGridAuthorship": "UNPROVEN"
+}

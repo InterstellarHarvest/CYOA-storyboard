@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "intent": "Transparent additions only, no full-scene regeneration",
+  "calls": 1,
+  "originalFilename": "exec-559cfcaa-f0ec-4bcb-b958-c44872078fcd.png",
+  "originalPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-559cfcaa-f0ec-4bcb-b958-c44872078fcd.png",
+  "source": "generation-source/exec-559cfcaa-f0ec-4bcb-b958-c44872078fcd.png",
+  "sha256": "0d9b9967847a2eb3a0a79616e72402127af5bb87b1b1e5ae9320c51fa72ed3ed",
+  "actualDimensions": [
+    1548,
+    1016
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "prompt": "prompts/emergency-transparent-additions.txt",
+  "promptSha256": "ac07649cdeae1be248a050834fd2bd563ac83b0329aabc0f32af2d8a65d169d5",
+  "references": [
+    "../v02-additive-continuity/references/A01-restroom.png",
+    "../v02-additive-continuity/candidates/CH3-B06-paper-emergency-v02.png"
+  ],
+  "derivation": "Original retained unchanged. Only addition raster transferred to native grid with nearest neighbor; manually traced object masks exclude generated plant and alpha fringe. No approved scene raster is resized or rerendered. Original native-grid authorship remains unproven."
+}

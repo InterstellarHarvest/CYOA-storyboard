@@ -1,0 +1,170 @@
+{
+  "sourceCommit": "2699abbd651817961b76d87fa0d4c78a57b04bc5",
+  "candidates": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "file": "candidates/CH3-B01-arrival-v03.png",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "../v02-additive-continuity/candidates/CH3-B01-arrival-v02.png",
+      "baseSha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "baseResized": false,
+      "changedPixels": 0,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B01-arrival-changed-pixels.png",
+      "coordinateList": "sources/CH3-B01-arrival-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "file": "candidates/CH3-B02-record-printer-v03.png",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "references/A01-restroom.png",
+      "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "baseResized": false,
+      "changedPixels": 1137,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B02-record-printer-changed-pixels.png",
+      "coordinateList": "sources/CH3-B02-record-printer-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "approvedAttendantMicrophoneAndChairPixelsExact": true
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "file": "candidates/CH3-B03-record-printer-bg-v03.png",
+      "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "references/A02-restroom-bg.png",
+      "baseSha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "baseResized": false,
+      "changedPixels": 886,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B03-record-printer-bg-changed-pixels.png",
+      "coordinateList": "sources/CH3-B03-record-printer-bg-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "file": "candidates/CH3-B04-record-scanner-v03.png",
+      "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "../v02-additive-continuity/candidates/CH3-B04-record-scanner-v02.png",
+      "baseSha256": "36bbf4164a6e80317aeae80bcf0b949d71fed87bbaa17a1404b3cfc1b2ea90bc",
+      "baseResized": false,
+      "changedPixels": 3186,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B04-record-scanner-changed-pixels.png",
+      "coordinateList": "sources/CH3-B04-record-scanner-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "file": "candidates/CH3-B05-record-scanner-bg-v03.png",
+      "sha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "../v02-additive-continuity/candidates/CH3-B05-record-scanner-bg-v02.png",
+      "baseSha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+      "baseResized": false,
+      "changedPixels": 8148,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B05-record-scanner-bg-changed-pixels.png",
+      "coordinateList": "sources/CH3-B05-record-scanner-bg-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "file": "candidates/CH3-B06-paper-emergency-v03.png",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "base": "references/A01-restroom.png",
+      "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "baseResized": false,
+      "changedPixels": 8715,
+      "unexpectedChangesOutsideMask": 0,
+      "mask": "masks/CH3-B06-paper-emergency-changed-pixels.png",
+      "coordinateList": "sources/CH3-B06-paper-emergency-changed-coordinates.json",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "approvedAttendantMicrophoneAndChairPixelsExact": true
+    }
+  ],
+  "scannerDoorSlits": {
+    "B04": {
+      "jambInnerX": 147,
+      "doorLeadingEdgeX": 142,
+      "clearWidthPixels": 4
+    },
+    "B05": {
+      "jambInnerX": 81,
+      "doorLeadingEdgeX": 73,
+      "clearWidthPixels": 7
+    }
+  },
+  "nativeAuthorship": "UNPROVEN for inherited and generated raster sources. Native edits are limited to explicit paper polygons/marks, door repair sampling, handle transfer, intake arrows, mount caps and traced binary object masks; no whole-scene filtering or generation."
+}
