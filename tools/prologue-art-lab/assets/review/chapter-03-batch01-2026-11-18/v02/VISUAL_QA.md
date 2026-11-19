@@ -1,0 +1,15 @@
+# v02 visual inspection and remaining failures
+
+All six final native images, white/dark silhouette proofs and the direct composites were inspected. Selection and approval remain pending. CHANGELOG.md lists every intended visual change.
+
+Restroom: the framing, real fixtures, gate, counter, bench and side door are preserved. The new close-view restroom plaque now matches the main-view male/female pictogram family. Paired mirrors/sinks and desk hardware correspond more closely. The small cream repair plates match in design; the close camera reinterprets exact wall-panel joints, so this is still not a surveyed architectural registration. The tiny counter-corner scuff is restrained; no grime layer was added. RESTROOM remains correctly spelled and legible at 314x206.
+
+Characters: identities, expressions, costumes and idle gestures remain visually consistent with v01, with smaller framing. The attendant has 43 px headroom and 15 px below the sprite, with clasped hands meeting the desktop in the composite. The presenter has 45 px headroom and 29 px bottom clearance, and generous horizontal gesture clearance. Each future pose must use its declared eye/body/hand anchors; those future poses have not been generated or validated. The tool rerendered fine facial and costume details, so exact pixel identity is not claimed. Nate should compare the paired views before selecting.
+
+Stage: both countdowns read 30 at their own native sizes, with the same explicitly authored bitmap family. Ring/housing, supports, camera, platform, curtain track, controls and back exit remain recognizable. Native painting changes only the display interior relative to each targeted edit source. The edit model itself reinterpreted minor outlines and shading outside the display compared with v01; comparisons expose these differences. Existing empty seat backs remain unchanged in concept.
+
+Alpha: both foregrounds have only 0 and 255 alpha. Their full silhouettes, finger tips, hair and negative space were traced in logical coordinates, with one-pixel contour inks. The presenter edit contained a large bright halo; it is excluded by the manually authored contour. The attendant's left shoulder and elbow contour received explicit inspection corrections to remove yellow source fringe. White and dark proof backings expose edge behavior. No threshold of the generated alpha was used.
+
+Remaining technical failure: ORIGINAL NATIVE-GRID AUTHORSHIP IS NOT DEMONSTRATED. All six began as larger targeted image_gen edits. Explicit pixel-center transfer remains part of the derivation. Native repair plates/countdown painting and manual silhouette reconstruction improve the deliverables but do not make them complete original native drawings. Fine source tonal variation and some source antialiasing persist in RGB; wholly deliberate native cluster shading has not been proven. The gallery and QA do not mark this requirement passed.
+
+No narrative, dialogue, branching, checks, endings, prior approved art, items, gameplay or public main files were changed. Every tracked v01 review file retains its pinned SHA-256. No image is approved or integrated.

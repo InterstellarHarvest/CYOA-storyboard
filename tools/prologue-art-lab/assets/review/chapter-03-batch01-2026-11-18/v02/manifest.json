@@ -1,0 +1,1162 @@
+{
+  "version": "v02",
+  "sourcePin": "99b74b63a3407aafe7a468c2915291c997563700",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "status": "generated",
+  "selected": false,
+  "nativeAuthorship": "NOT DEMONSTRATED \u2014 disclosed source transfer plus local native painting/manual silhouette reconstruction. Not a complete original pixel-by-pixel redraw.",
+  "candidates": [
+    {
+      "id": "CH3-A01-restroom",
+      "filename": "exec-168e9505-3f51-4dbc-adf4-a30a5df34b7a.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "character": null,
+      "prompt": "prompts/CH3-A01-restroom-v02.txt",
+      "promptSha256": "dce05b72097601e40cd956c60658a77e762e32293d37c15bbc2221f664a1e3f7",
+      "references": [
+        "../candidates/CH3-A01-restroom-v01.png",
+        "../candidates/CH3-A02-restroom-bg-v01.png"
+      ],
+      "referenceHashes": [
+        "2675e51df2a9cd87a382f1bc1236e483d284973e671bf893aefe2adaa66f8201",
+        "f8d76872bcdccb9bc620d60d9c7df304296dfca18d9ed0838700963aa6343b9f"
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-168e9505-3f51-4dbc-adf4-a30a5df34b7a.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": false,
+      "candidate": "candidates/CH3-A01-restroom-v02.png",
+      "sha256": "724f62047a7cfb7e7cd5e90b1261ed473f295939dfd9bad1ec14817d228b0095",
+      "sourceSha256": "545e5d852f747ed20bbb248af81e2e90172fc8614b55dfcd29d13415b18ba121",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "sourceAlphaValues": 1,
+      "visibleColors": 22525,
+      "alphaValues": [
+        255
+      ],
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 64684,
+      "changesBeyondSourceTransfer": 88,
+      "nativePaintOperations": 146,
+      "nativeEdits": [
+        {
+          "kind": "clean cream repair plate with four fasteners",
+          "rect": [
+            220,
+            47,
+            11,
+            8
+          ]
+        }
+      ],
+      "silhouette": null,
+      "method": "Explicit pixel-center transfer from targeted edit, then authored native pixel planes/repair plates/bitmap countdowns or manually traced silhouettes and integer anchor placement. No global palette filtering, dithering, smoothing or alpha threshold.",
+      "originalNativeAuthorship": "NOT DEMONSTRATED \u2014 derived from larger image_gen edits. Local native painting and manual masks do not establish original native authorship of the complete image.",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "preview4x": "previews/CH3-A01-restroom-v02-4x.png",
+      "previewSha256": "e99f6c6b2e322de19e35538b6198fe3a4d737f34a2135a07d188d236f192cb73",
+      "comparison": "comparisons/CH3-A01-restroom-v01-v02.png",
+      "comparisonSha256": "294612cb548aca3cb1d0b9b78062635d368951199ab42b06248d92cfb8a1c692",
+      "v01": "../candidates/CH3-A01-restroom-v01.png",
+      "v01Sha256": "2675e51df2a9cd87a382f1bc1236e483d284973e671bf893aefe2adaa66f8201"
+    },
+    {
+      "id": "CH3-A02-restroom-bg",
+      "filename": "exec-9efb0027-1ebe-4be6-a059-5569e1f5a847.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "character": null,
+      "prompt": "prompts/CH3-A02-restroom-bg-v02.txt",
+      "promptSha256": "25d0782ea122ead4ec61482f666956327a4f7b6e0fe768f3c833857f0e8b5803",
+      "references": [
+        "../candidates/CH3-A02-restroom-bg-v01.png",
+        "generation-source/exec-168e9505-3f51-4dbc-adf4-a30a5df34b7a.png"
+      ],
+      "referenceHashes": [
+        "f8d76872bcdccb9bc620d60d9c7df304296dfca18d9ed0838700963aa6343b9f",
+        "545e5d852f747ed20bbb248af81e2e90172fc8614b55dfcd29d13415b18ba121"
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-9efb0027-1ebe-4be6-a059-5569e1f5a847.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": false,
+      "candidate": "candidates/CH3-A02-restroom-bg-v02.png",
+      "sha256": "f2a45158551ba1c07b03a051b713021b43eeb2794c7e19c96d339e0fc08a4ed0",
+      "sourceSha256": "c6f7dd50f9fb9fc26cafce6fa47ff8dceae8c2c2d0659e8b0307cb4e843d58e4",
+      "sourceDimensions": [
+        1788,
+        880
+      ],
+      "sourceAlphaValues": 1,
+      "visibleColors": 34114,
+      "alphaValues": [
+        255
+      ],
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 156792,
+      "changesBeyondSourceTransfer": 198,
+      "nativePaintOperations": 346,
+      "nativeEdits": [
+        {
+          "kind": "clean cream repair plate with four fasteners",
+          "rect": [
+            175,
+            51,
+            18,
+            11
+          ]
+        }
+      ],
+      "silhouette": null,
+      "method": "Explicit pixel-center transfer from targeted edit, then authored native pixel planes/repair plates/bitmap countdowns or manually traced silhouettes and integer anchor placement. No global palette filtering, dithering, smoothing or alpha threshold.",
+      "originalNativeAuthorship": "NOT DEMONSTRATED \u2014 derived from larger image_gen edits. Local native painting and manual masks do not establish original native authorship of the complete image.",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "preview4x": "previews/CH3-A02-restroom-bg-v02-4x.png",
+      "previewSha256": "93f0a98287320915ce5765bc1fb71629edb3ba0ec9b252993a4298ab205d1ab5",
+      "comparison": "comparisons/CH3-A02-restroom-bg-v01-v02.png",
+      "comparisonSha256": "ad6b7fa8468f0726773f1a4473e141419a449ebdede3ed6c5ac04d3e42d21b88",
+      "v01": "../candidates/CH3-A02-restroom-bg-v01.png",
+      "v01Sha256": "f8d76872bcdccb9bc620d60d9c7df304296dfca18d9ed0838700963aa6343b9f"
+    },
+    {
+      "id": "CH3-A03-attendant-idle",
+      "filename": "exec-c3c26ef9-ca47-4f41-a26c-b78d51fd2be7.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "character": "attendant",
+      "prompt": "prompts/CH3-A03-attendant-idle-v02.txt",
+      "promptSha256": "9d6194faaccc460b6e78ddb8c8a0d730d79acf32880ac21fdad0ba3bbc137b3d",
+      "references": [
+        "../candidates/CH3-A03-attendant-idle-v01.png"
+      ],
+      "referenceHashes": [
+        "eed0af042adff8765084eed0cc1f8d9dde9cdfe7fd55a355024904caa0cbb990"
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-c3c26ef9-ca47-4f41-a26c-b78d51fd2be7.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "candidate": "candidates/CH3-A03-attendant-idle-v02.png",
+      "sha256": "b235c5b552ffa2da5c84d6f92ab6385a0bdc94d95a5ff42dfde505aba6c411d6",
+      "sourceSha256": "19e8282d5b982d3452c047a3a80afe04aaaf2dabfedaf7029fe1d5b05c6c7a65",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "sourceAlphaValues": 256,
+      "visibleColors": 7391,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "spriteBounds": [
+        179,
+        43,
+        368,
+        263
+      ],
+      "headroom": 43,
+      "bottomClearance": 15,
+      "visiblePixels": 26078,
+      "changesBeyondSourceTransfer": 27145,
+      "nativePaintOperations": 690,
+      "nativeEdits": [
+        {
+          "kind": "hand-traced binary silhouette with authored one-pixel contour inks",
+          "source": "sources/silhouettes.json"
+        }
+      ],
+      "silhouette": {
+        "offset": [
+          0,
+          16
+        ],
+        "eyeAnchor": [
+          270,
+          86
+        ],
+        "handAnchor": [
+          276,
+          254
+        ],
+        "futurePoseRule": "Use this canvas, head/eye anchor and desk/hand baseline for alarmed and quiet poses. Do not infer new poses from this idle sprite.",
+        "outline": [
+          [
+            253,
+            27
+          ],
+          [
+            267,
+            27
+          ],
+          [
+            275,
+            30
+          ],
+          [
+            280,
+            35
+          ],
+          [
+            285,
+            35
+          ],
+          [
+            292,
+            40
+          ],
+          [
+            295,
+            47
+          ],
+          [
+            297,
+            54
+          ],
+          [
+            296,
+            62
+          ],
+          [
+            298,
+            69
+          ],
+          [
+            300,
+            73
+          ],
+          [
+            300,
+            80
+          ],
+          [
+            297,
+            84
+          ],
+          [
+            297,
+            93
+          ],
+          [
+            295,
+            101
+          ],
+          [
+            292,
+            108
+          ],
+          [
+            296,
+            115
+          ],
+          [
+            304,
+            119
+          ],
+          [
+            319,
+            123
+          ],
+          [
+            332,
+            128
+          ],
+          [
+            340,
+            132
+          ],
+          [
+            345,
+            141
+          ],
+          [
+            350,
+            157
+          ],
+          [
+            356,
+            177
+          ],
+          [
+            361,
+            197
+          ],
+          [
+            368,
+            210
+          ],
+          [
+            368,
+            219
+          ],
+          [
+            364,
+            237
+          ],
+          [
+            360,
+            244
+          ],
+          [
+            351,
+            247
+          ],
+          [
+            191,
+            247
+          ],
+          [
+            186,
+            244
+          ],
+          [
+            181,
+            237
+          ],
+          [
+            179,
+            220
+          ],
+          [
+            179,
+            211
+          ],
+          [
+            185,
+            195
+          ],
+          [
+            190,
+            177
+          ],
+          [
+            194,
+            158
+          ],
+          [
+            202,
+            142
+          ],
+          [
+            207,
+            134
+          ],
+          [
+            216,
+            130
+          ],
+          [
+            225,
+            126
+          ],
+          [
+            237,
+            120
+          ],
+          [
+            248,
+            115
+          ],
+          [
+            252,
+            111
+          ],
+          [
+            252,
+            104
+          ],
+          [
+            246,
+            100
+          ],
+          [
+            241,
+            97
+          ],
+          [
+            235,
+            91
+          ],
+          [
+            233,
+            86
+          ],
+          [
+            233,
+            80
+          ],
+          [
+            230,
+            79
+          ],
+          [
+            226,
+            73
+          ],
+          [
+            225,
+            66
+          ],
+          [
+            225,
+            58
+          ],
+          [
+            228,
+            48
+          ],
+          [
+            234,
+            40
+          ],
+          [
+            239,
+            36
+          ],
+          [
+            245,
+            31
+          ]
+        ],
+        "holes": [],
+        "featureProtection": [
+          [
+            235,
+            54,
+            298,
+            107
+          ],
+          [
+            247,
+            207,
+            311,
+            246
+          ]
+        ],
+        "inspectionCorrection": "Left shoulder contour traced inward after white-backing inspection identified source yellow fringe, without thresholding source alpha.",
+        "pixelTouchups": [
+          {
+            "at": [
+              183,
+              218
+            ],
+            "rgb": [
+              108,
+              103,
+              86
+            ]
+          },
+          {
+            "at": [
+              182,
+              220
+            ],
+            "rgb": [
+              108,
+              103,
+              86
+            ]
+          }
+        ]
+      },
+      "method": "Explicit pixel-center transfer from targeted edit, then authored native pixel planes/repair plates/bitmap countdowns or manually traced silhouettes and integer anchor placement. No global palette filtering, dithering, smoothing or alpha threshold.",
+      "originalNativeAuthorship": "NOT DEMONSTRATED \u2014 derived from larger image_gen edits. Local native painting and manual masks do not establish original native authorship of the complete image.",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "preview4x": "previews/CH3-A03-attendant-idle-v02-4x.png",
+      "previewSha256": "8654be1505e0d8f23d97b4abf873dbd0eac72ab6fb4ddd229e3afe99d6173f39",
+      "comparison": "comparisons/CH3-A03-attendant-idle-v01-v02.png",
+      "comparisonSha256": "6fdfc27cc797b0be1b5eac529b59d83560237b3352ae702390138abda0b7d4b8",
+      "v01": "../candidates/CH3-A03-attendant-idle-v01.png",
+      "v01Sha256": "eed0af042adff8765084eed0cc1f8d9dde9cdfe7fd55a355024904caa0cbb990"
+    },
+    {
+      "id": "CH3-A04-verification",
+      "filename": "exec-fba7bbc1-b2b4-4bf3-90d8-aa3f7d9f58d6.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "character": null,
+      "prompt": "prompts/CH3-A04-verification-v02.txt",
+      "promptSha256": "474b88db3fc389cda780a874cea681f4d972fb04a23fc032deea939416b4fe8f",
+      "references": [
+        "../candidates/CH3-A04-verification-v01.png",
+        "../candidates/CH3-A05-verification-bg-v01.png"
+      ],
+      "referenceHashes": [
+        "bbdda47db831be488672209405a6d94b22875f04c6d1fcc147901a535e122b3f",
+        "9da86e6802dd2e4c771b7376106c2822c54c6b475fec50c03df2e3f8cfa9f001"
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-fba7bbc1-b2b4-4bf3-90d8-aa3f7d9f58d6.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": false,
+      "candidate": "candidates/CH3-A04-verification-v02.png",
+      "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e",
+      "sourceSha256": "e3c62b88d28c0c4ac4d948df8da45e8cc3b175ecc05e932f9c298c237c853431",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "sourceAlphaValues": 1,
+      "visibleColors": 23868,
+      "alphaValues": [
+        255
+      ],
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 64684,
+      "changesBeyondSourceTransfer": 889,
+      "nativePaintOperations": 1013,
+      "nativeEdits": [
+        {
+          "kind": "native bitmap 30",
+          "center": [
+            160,
+            96
+          ],
+          "clearDiscRadius": 17,
+          "scale": 2,
+          "glyphs": {
+            "0": [
+              "01110",
+              "10001",
+              "10001",
+              "10001",
+              "10001",
+              "10001",
+              "01110"
+            ],
+            "3": [
+              "11110",
+              "00001",
+              "00001",
+              "01110",
+              "00001",
+              "00001",
+              "11110"
+            ]
+          }
+        }
+      ],
+      "silhouette": null,
+      "method": "Explicit pixel-center transfer from targeted edit, then authored native pixel planes/repair plates/bitmap countdowns or manually traced silhouettes and integer anchor placement. No global palette filtering, dithering, smoothing or alpha threshold.",
+      "originalNativeAuthorship": "NOT DEMONSTRATED \u2014 derived from larger image_gen edits. Local native painting and manual masks do not establish original native authorship of the complete image.",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "preview4x": "previews/CH3-A04-verification-v02-4x.png",
+      "previewSha256": "fc3847a9ebe8154f913f9199e5ca54258f4f7039290028910094fc3d80490845",
+      "comparison": "comparisons/CH3-A04-verification-v01-v02.png",
+      "comparisonSha256": "e97ab761b181fac93c2f18d164739642bf4dbc7dbf28acefcff69fd9a2cbb00e",
+      "v01": "../candidates/CH3-A04-verification-v01.png",
+      "v01Sha256": "bbdda47db831be488672209405a6d94b22875f04c6d1fcc147901a535e122b3f"
+    },
+    {
+      "id": "CH3-A05-verification-bg",
+      "filename": "exec-130d6c47-5e48-4944-9035-8d403add7348.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "character": null,
+      "prompt": "prompts/CH3-A05-verification-bg-v02.txt",
+      "promptSha256": "6fab5c45482a8f800f1bb5cefbb82b1a996ccf468362182720dccee9c4cb3cd1",
+      "references": [
+        "../candidates/CH3-A05-verification-bg-v01.png",
+        "../candidates/CH3-A04-verification-v01.png"
+      ],
+      "referenceHashes": [
+        "9da86e6802dd2e4c771b7376106c2822c54c6b475fec50c03df2e3f8cfa9f001",
+        "bbdda47db831be488672209405a6d94b22875f04c6d1fcc147901a535e122b3f"
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-130d6c47-5e48-4944-9035-8d403add7348.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": false,
+      "candidate": "candidates/CH3-A05-verification-bg-v02.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+      "sourceSha256": "20abc04859cd4078830ae84227fd21daac34e635ea5df049ec2d985880bc4907",
+      "sourceDimensions": [
+        1787,
+        880
+      ],
+      "sourceAlphaValues": 1,
+      "visibleColors": 37165,
+      "alphaValues": [
+        255
+      ],
+      "spriteBounds": null,
+      "headroom": null,
+      "bottomClearance": null,
+      "visiblePixels": 156792,
+      "changesBeyondSourceTransfer": 3405,
+      "nativePaintOperations": 4180,
+      "nativeEdits": [
+        {
+          "kind": "native bitmap 30",
+          "center": [
+            292,
+            113
+          ],
+          "clearDiscRadius": 33,
+          "scale": 5,
+          "glyphs": {
+            "0": [
+              "01110",
+              "10001",
+              "10001",
+              "10001",
+              "10001",
+              "10001",
+              "01110"
+            ],
+            "3": [
+              "11110",
+              "00001",
+              "00001",
+              "01110",
+              "00001",
+              "00001",
+              "11110"
+            ]
+          }
+        }
+      ],
+      "silhouette": null,
+      "method": "Explicit pixel-center transfer from targeted edit, then authored native pixel planes/repair plates/bitmap countdowns or manually traced silhouettes and integer anchor placement. No global palette filtering, dithering, smoothing or alpha threshold.",
+      "originalNativeAuthorship": "NOT DEMONSTRATED \u2014 derived from larger image_gen edits. Local native painting and manual masks do not establish original native authorship of the complete image.",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "preview4x": "previews/CH3-A05-verification-bg-v02-4x.png",
+      "previewSha256": "7e00877f60752bdbab3f3c033570b5a6328b42f1c67dde8dd2fcc2594225a01c",
+      "comparison": "comparisons/CH3-A05-verification-bg-v01-v02.png",
+      "comparisonSha256": "6a6c0fd429e534dd54fb2ce46dc87b570080249784bda6e4931926a5b4ed7cd5",
+      "v01": "../candidates/CH3-A05-verification-bg-v01.png",
+      "v01Sha256": "9da86e6802dd2e4c771b7376106c2822c54c6b475fec50c03df2e3f8cfa9f001"
+    },
+    {
+      "id": "CH3-A06-presenter-idle",
+      "filename": "exec-212ef041-e389-43c0-94ea-84e177cc0e23.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "character": "presenter",
+      "prompt": "prompts/CH3-A06-presenter-idle-v02.txt",
+      "promptSha256": "736a787ff9248bcfe336bd719ab1c0a6e8206e5a5bba12574a6f943978885f43",
+      "references": [
+        "../candidates/CH3-A06-presenter-idle-v01.png"
+      ],
+      "referenceHashes": [
+        "79e259ea26e780438cfe4b727d65b90e57e01ca1a005a330b3ea868fdb7e9c0e"
+      ],
+      "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-212ef041-e389-43c0-94ea-84e177cc0e23.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "candidate": "candidates/CH3-A06-presenter-idle-v02.png",
+      "sha256": "f983fd2bd38d86a69b4a57621f979b624fed5f956a6d17e2cf92d29b88fd16b8",
+      "sourceSha256": "b76336c4ee62240bd901c7c7051c39271e33351ff9ab60844a9836d17e9a7ac4",
+      "sourceDimensions": [
+        1788,
+        880
+      ],
+      "sourceAlphaValues": 256,
+      "visibleColors": 6950,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "spriteBounds": [
+        183,
+        45,
+        411,
+        249
+      ],
+      "headroom": 45,
+      "bottomClearance": 29,
+      "visiblePixels": 21088,
+      "changesBeyondSourceTransfer": 135399,
+      "nativePaintOperations": 847,
+      "nativeEdits": [
+        {
+          "kind": "hand-traced binary silhouette with authored one-pixel contour inks",
+          "source": "sources/silhouettes.json"
+        }
+      ],
+      "silhouette": {
+        "offset": [
+          0,
+          12
+        ],
+        "eyeAnchor": [
+          264,
+          84
+        ],
+        "handAnchor": [
+          387,
+          145
+        ],
+        "futurePoseRule": "Use this canvas and fixed head/eye/torso anchor for excited, alarmed and relieved poses, with gesture movement inside the present free margins.",
+        "outline": [
+          [
+            253,
+            33
+          ],
+          [
+            263,
+            34
+          ],
+          [
+            269,
+            38
+          ],
+          [
+            272,
+            43
+          ],
+          [
+            281,
+            43
+          ],
+          [
+            287,
+            48
+          ],
+          [
+            290,
+            55
+          ],
+          [
+            290,
+            64
+          ],
+          [
+            293,
+            69
+          ],
+          [
+            298,
+            75
+          ],
+          [
+            299,
+            82
+          ],
+          [
+            297,
+            89
+          ],
+          [
+            294,
+            95
+          ],
+          [
+            287,
+            100
+          ],
+          [
+            281,
+            103
+          ],
+          [
+            277,
+            109
+          ],
+          [
+            276,
+            114
+          ],
+          [
+            282,
+            120
+          ],
+          [
+            295,
+            123
+          ],
+          [
+            301,
+            127
+          ],
+          [
+            306,
+            135
+          ],
+          [
+            312,
+            145
+          ],
+          [
+            322,
+            152
+          ],
+          [
+            329,
+            156
+          ],
+          [
+            338,
+            151
+          ],
+          [
+            348,
+            143
+          ],
+          [
+            358,
+            136
+          ],
+          [
+            364,
+            131
+          ],
+          [
+            368,
+            124
+          ],
+          [
+            377,
+            120
+          ],
+          [
+            383,
+            116
+          ],
+          [
+            387,
+            116
+          ],
+          [
+            389,
+            118
+          ],
+          [
+            389,
+            121
+          ],
+          [
+            385,
+            125
+          ],
+          [
+            400,
+            125
+          ],
+          [
+            405,
+            125
+          ],
+          [
+            407,
+            128
+          ],
+          [
+            410,
+            128
+          ],
+          [
+            411,
+            132
+          ],
+          [
+            408,
+            137
+          ],
+          [
+            402,
+            140
+          ],
+          [
+            396,
+            144
+          ],
+          [
+            384,
+            146
+          ],
+          [
+            373,
+            146
+          ],
+          [
+            372,
+            152
+          ],
+          [
+            369,
+            159
+          ],
+          [
+            363,
+            164
+          ],
+          [
+            352,
+            172
+          ],
+          [
+            342,
+            180
+          ],
+          [
+            333,
+            185
+          ],
+          [
+            326,
+            186
+          ],
+          [
+            319,
+            183
+          ],
+          [
+            308,
+            178
+          ],
+          [
+            304,
+            177
+          ],
+          [
+            302,
+            186
+          ],
+          [
+            299,
+            194
+          ],
+          [
+            303,
+            206
+          ],
+          [
+            307,
+            222
+          ],
+          [
+            312,
+            237
+          ],
+          [
+            213,
+            237
+          ],
+          [
+            215,
+            225
+          ],
+          [
+            217,
+            222
+          ],
+          [
+            200,
+            220
+          ],
+          [
+            190,
+            217
+          ],
+          [
+            185,
+            212
+          ],
+          [
+            183,
+            206
+          ],
+          [
+            184,
+            198
+          ],
+          [
+            188,
+            184
+          ],
+          [
+            192,
+            168
+          ],
+          [
+            196,
+            151
+          ],
+          [
+            199,
+            138
+          ],
+          [
+            204,
+            130
+          ],
+          [
+            212,
+            126
+          ],
+          [
+            224,
+            123
+          ],
+          [
+            236,
+            120
+          ],
+          [
+            242,
+            115
+          ],
+          [
+            244,
+            110
+          ],
+          [
+            234,
+            109
+          ],
+          [
+            223,
+            107
+          ],
+          [
+            216,
+            104
+          ],
+          [
+            211,
+            98
+          ],
+          [
+            209,
+            92
+          ],
+          [
+            209,
+            85
+          ],
+          [
+            211,
+            80
+          ],
+          [
+            216,
+            76
+          ],
+          [
+            218,
+            68
+          ],
+          [
+            219,
+            58
+          ],
+          [
+            223,
+            49
+          ],
+          [
+            231,
+            41
+          ],
+          [
+            242,
+            36
+          ]
+        ],
+        "holes": [
+          [
+            [
+              221,
+              183
+            ],
+            [
+              219,
+              188
+            ],
+            [
+              217,
+              193
+            ],
+            [
+              226,
+              195
+            ],
+            [
+              226,
+              191
+            ]
+          ]
+        ],
+        "featureProtection": [
+          [
+            231,
+            58,
+            286,
+            108
+          ],
+          [
+            369,
+            116,
+            411,
+            146
+          ],
+          [
+            230,
+            186,
+            274,
+            215
+          ]
+        ]
+      },
+      "method": "Explicit pixel-center transfer from targeted edit, then authored native pixel planes/repair plates/bitmap countdowns or manually traced silhouettes and integer anchor placement. No global palette filtering, dithering, smoothing or alpha threshold.",
+      "originalNativeAuthorship": "NOT DEMONSTRATED \u2014 derived from larger image_gen edits. Local native painting and manual masks do not establish original native authorship of the complete image.",
+      "status": "generated",
+      "selected": false,
+      "assetPath": null,
+      "preview4x": "previews/CH3-A06-presenter-idle-v02-4x.png",
+      "previewSha256": "64ab9905375edd8fa12b2738b05fb81ab9dbaf5aa955e6c4e934c5b741affb51",
+      "comparison": "comparisons/CH3-A06-presenter-idle-v01-v02.png",
+      "comparisonSha256": "76fed91dea203271d8c3b7fd8e4a08f765e2328f4e64f12aa9884eb6d12f1088",
+      "v01": "../candidates/CH3-A06-presenter-idle-v01.png",
+      "v01Sha256": "79e259ea26e780438cfe4b727d65b90e57e01ca1a005a330b3ea868fdb7e9c0e"
+    }
+  ],
+  "composites": [
+    {
+      "character": "attendant",
+      "file": "composites/attendant-v02.png",
+      "sha256": "3f955823b796b3b27ec3529303fe716947a1d4a6987ac75e9b10750802bf1758",
+      "preview4x": "composites/attendant-v02-4x.png",
+      "comparison": "comparisons/attendant-composite-v01-v02.png",
+      "background": "CH3-A02-restroom-bg",
+      "foreground": "CH3-A03-attendant-idle"
+    },
+    {
+      "character": "presenter",
+      "file": "composites/presenter-v02.png",
+      "sha256": "f057960dfca3805fd7512bedbe353d3e2c6baddc40d1eae8cd9cf1066c2eb2b5",
+      "preview4x": "composites/presenter-v02-4x.png",
+      "comparison": "comparisons/presenter-composite-v01-v02.png",
+      "background": "CH3-A05-verification-bg",
+      "foreground": "CH3-A06-presenter-idle"
+    }
+  ]
+}
