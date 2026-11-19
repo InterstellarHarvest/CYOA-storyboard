@@ -179,3 +179,37 @@ Public preview copies (byte-identical) are under `assets/selected/pending-integr
 Native-grid authorship is **not** verified or passed by this registration. The limitation is not a request to regenerate anything.
 
 **Publication status:** this approval is registered on branch `art/ch3-batch-a-approval-registration-20261119`, which is stacked on draft PR #6 (`art/ch3-pavilion-reboot-briefs-20261118`), which is itself stacked on draft PR #5 (`story/ch3-reboot-20261118`). The six records exist only in that reboot dependency chain. The approval is **not live on canonical `main` or on the public Pages site** until PR #5, PR #6 and this registration land on `main` and a Pages deployment is verified.
+
+## Chapter 3 Batch B v03 final Art Director approval — 2026-11-19
+
+Nate explicitly selected and approved **all six Batch B artworks B01–B06 exactly as presented in v03**, pinned to `InterstellarHarvest/CYOA-storyboard@7337e5e550e64a64357666a0fab6f118500913cd` on `art/ch3-pavilion-batch02-20261119`. Creative approval is complete. **Administrative registry registration is pending the separate Claude handoff; gameplay integration is not authorized.** The immutable historical generation galleries retain their original pre-selection labels as provenance, superseded by this owner decision.
+
+| ID | Record | Selected native filename | SHA-256 | Size / alpha |
+|---|---|---|---|---|
+| B01 | `scenes:pavilion_reboot/arrival` | `CH3-B01-arrival-v03.png` | `37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478` | 314×206 opaque |
+| B02 | `scenes:pavilion_reboot/record_printer` | `CH3-B02-record-printer-v03.png` | `1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722` | 314×206 opaque |
+| B03 | `scenes:pavilion_reboot/record_printer#portraitBackground` | `CH3-B03-record-printer-bg-v03.png` | `46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473` | 564×278 opaque |
+| B04 | `scenes:pavilion_reboot/record_scanner` | `CH3-B04-record-scanner-v03.png` | `4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3` | 314×206 opaque |
+| B05 | `scenes:pavilion_reboot/record_scanner#portraitBackground` | `CH3-B05-record-scanner-bg-v03.png` | `9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea` | 564×278 opaque |
+| B06 | `scenes:pavilion_reboot/paper_emergency` | `CH3-B06-paper-emergency-v03.png` | `ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e` | 314×206 opaque |
+
+All filenames above are relative to `tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/`. Every file was verified directly against the git blob at the full selected commit and the published v03 manifest. The owner-decision manifest, exact registry batch and separate Claude instructions are in [docs/113](113_CH3_BATCH_B_APPROVAL_REGISTRATION_HANDOFF_20261119.md).
+
+**Accepted unresolved technical limitation:** complete original native-grid authorship remains **unproven / not passed**, as with Batch A. Source generations were returned at larger dimensions and transferred into target grids, with later localized native-pixel work. Residual source-derived RGB softness and fine tonal variation may remain. Nate approves the exact selected bytes while retaining this limitation. Creative approval does not certify original native-grid authorship and does not request regeneration, retouching or further polish.
+
+No artwork bytes, prior review packages, approved Batch A art, narrative or gameplay were changed by this approval record. The registry batch passed a six-record dry run only; the canonical registry and public selected-preview registration remain Claude's administrative step. Production `assetPath` values stay null. **Do not integrate into gameplay or begin Batch C.**
+
+**Registration status — 2026-11-19 (Claude, administrative registration completed):** the six approvals above are registered in the canonical registry on branch `art/ch3-batch-b-approval-registration-20261119`, created from canonical `main` 3ac5422. The six selected blobs were extracted only from `7337e5e550e64a64357666a0fab6f118500913cd` and independently checked against `expectedSha256`, their git blob IDs, their dimensions and opacity (8-bit RGB, no `tRNS`) before registration. `tools/sync/register-art.mjs --batch` ran a dry run first, targeting exactly these six records, and then the real registration, without `--integration`. In the staged batch only the local `file` fields changed; `key`, `status` and the full `source` objects are as recorded in docs/113.
+
+| ID | Record | Status | Production `assetPath` | Public selected preview (byte-identical to the pinned source) |
+|---|---|---|---|---|
+| B01 | `scenes:pavilion_reboot/arrival` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/arrival.png` |
+| B02 | `scenes:pavilion_reboot/record_printer` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/record_printer.png` |
+| B03 | `scenes:pavilion_reboot/record_printer#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/record_printer/portraitBackground.png` |
+| B04 | `scenes:pavilion_reboot/record_scanner` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner.png` |
+| B05 | `scenes:pavilion_reboot/record_scanner#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner/portraitBackground.png` |
+| B06 | `scenes:pavilion_reboot/paper_emergency` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png` |
+
+B03 and B05 are registered as their own `#portraitBackground` records: independent background plates, not foreground composites. The already approved A03 attendant foreground is reused unchanged and was not re-registered. In each record's `notes`, only the stale "NO IMAGE GENERATED OR APPROVED" clause was replaced with the approval and provenance line, as for Batch A. No other artwork record, selected preview, historical review package, narrative, item, route, ending or gameplay field changed.
+
+**The native-grid authorship limitation stated above still stands, unresolved.** Registration does not certify original native-grid authorship. Gameplay integration has not begun, and Chapter 3 Batch C has not begun. The approvals are live on the public storyboard only once this branch merges into `main` and its Pages deployment is verified.
