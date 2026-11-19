@@ -752,6 +752,36 @@
         "path": "art/portraits/house/portrait_gallery_conversation.png"
       }
     },
+    "portraits:pavilion_attendant:idle": {
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "portraits:pavilion_presenter:idle": {
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
     "portraits:receptionist:default#layers:background": {
       "file": "assets/selected/art/portraits/receptionist/reception_background.png",
       "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
@@ -1665,6 +1695,66 @@
         "ref": "agent/presentation-batch-a-20261117",
         "commit": "4bcb72eccba1060c071ec65313804bbc47c9332b",
         "path": "art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png"
+      }
+    },
+    "scenes:pavilion_reboot/human_verification_stage": {
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/candidates/CH3-A04-verification-v07.png"
+      }
+    },
+    "scenes:pavilion_reboot/human_verification_stage#portraitBackground": {
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A05-verification-bg-v04.png"
+      }
+    },
+    "scenes:pavilion_reboot/restroom_entrance": {
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+      "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png"
+      }
+    },
+    "scenes:pavilion_reboot/restroom_entrance#portraitBackground": {
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance/portraitBackground.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A02-restroom-bg-v04.png"
       }
     },
     "scenes:street/outside_workplace": {
