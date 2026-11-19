@@ -1,0 +1,1 @@
+v08 restores the v06 attendant under the exact logged v07 NPC operation masks. The microphone and all other v07 pixels are unchanged. A04 is linked unchanged. All earlier review files preserved. No generation, filtering, approval or integration. Rebuild with `python3 build_review.py`.

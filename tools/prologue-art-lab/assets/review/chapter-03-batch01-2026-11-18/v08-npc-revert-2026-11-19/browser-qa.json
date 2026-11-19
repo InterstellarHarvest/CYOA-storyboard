@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8777/v08-npc-revert-2026-11-19/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "All scene, identity and microphone images load",
+    "Exact native and 4x scene dimensions",
+    "Mobile page has no document overflow",
+    "No page exceptions or failed requests"
+  ],
+  "errors": [],
+  "failed": []
+}

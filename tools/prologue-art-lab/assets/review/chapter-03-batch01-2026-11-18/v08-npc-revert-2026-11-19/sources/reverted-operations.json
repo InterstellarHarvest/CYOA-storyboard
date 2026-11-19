@@ -1,0 +1,756 @@
+{
+  "source": "../v07-native-finishing-2026-11-19/sources/native-edit-record.json",
+  "firstOperationIndex": 17,
+  "endOperationIndexExclusive": 45,
+  "operations": [
+    {
+      "scene": "A01",
+      "label": "attendant face base",
+      "kind": "polygon",
+      "points": [
+        [
+          216,
+          102
+        ],
+        [
+          221,
+          102
+        ],
+        [
+          223,
+          105
+        ],
+        [
+          224,
+          110
+        ],
+        [
+          226,
+          113
+        ],
+        [
+          225,
+          117
+        ],
+        [
+          222,
+          119
+        ],
+        [
+          216,
+          119
+        ],
+        [
+          212,
+          117
+        ],
+        [
+          211,
+          113
+        ],
+        [
+          211,
+          108
+        ]
+      ],
+      "color": "efb475",
+      "changedPixelsAtThisStep": 219
+    },
+    {
+      "scene": "A01",
+      "label": "attendant face light plane",
+      "kind": "polygon",
+      "points": [
+        [
+          217,
+          103
+        ],
+        [
+          220,
+          103
+        ],
+        [
+          221,
+          105
+        ],
+        [
+          221,
+          110
+        ],
+        [
+          223,
+          112
+        ],
+        [
+          223,
+          115
+        ],
+        [
+          220,
+          117
+        ],
+        [
+          215,
+          116
+        ],
+        [
+          213,
+          112
+        ],
+        [
+          214,
+          107
+        ]
+      ],
+      "color": "f6c38a",
+      "changedPixelsAtThisStep": 113
+    },
+    {
+      "scene": "A01",
+      "label": "attendant jaw shaded cluster",
+      "kind": "polygon",
+      "points": [
+        [
+          212,
+          114
+        ],
+        [
+          214,
+          117
+        ],
+        [
+          218,
+          119
+        ],
+        [
+          221,
+          119
+        ],
+        [
+          222,
+          118
+        ],
+        [
+          217,
+          117
+        ],
+        [
+          214,
+          114
+        ]
+      ],
+      "color": "cd925e",
+      "changedPixelsAtThisStep": 25
+    },
+    {
+      "scene": "A01",
+      "label": "attendant warm jaw contour",
+      "kind": "line",
+      "points": [
+        [
+          211,
+          114
+        ],
+        [
+          212,
+          117
+        ],
+        [
+          215,
+          119
+        ],
+        [
+          220,
+          120
+        ],
+        [
+          223,
+          119
+        ],
+        [
+          225,
+          117
+        ]
+      ],
+      "color": "996d4e",
+      "width": 1,
+      "changedPixelsAtThisStep": 17
+    },
+    {
+      "scene": "A01",
+      "label": "attendant ear cluster",
+      "kind": "polygon",
+      "points": [
+        [
+          207,
+          112
+        ],
+        [
+          209,
+          112
+        ],
+        [
+          211,
+          114
+        ],
+        [
+          211,
+          116
+        ],
+        [
+          209,
+          116
+        ],
+        [
+          207,
+          114
+        ]
+      ],
+      "color": "e4a169",
+      "changedPixelsAtThisStep": 19
+    },
+    {
+      "scene": "A01",
+      "label": "attendant ear interior",
+      "kind": "points",
+      "points": [
+        [
+          208,
+          113
+        ],
+        [
+          209,
+          114
+        ]
+      ],
+      "color": "b57c56",
+      "changedPixelsAtThisStep": 2
+    },
+    {
+      "scene": "A01",
+      "label": "gray temple deliberate midtone",
+      "kind": "polygon",
+      "points": [
+        [
+          205,
+          106
+        ],
+        [
+          207,
+          105
+        ],
+        [
+          207,
+          108
+        ],
+        [
+          209,
+          108
+        ],
+        [
+          209,
+          111
+        ],
+        [
+          207,
+          112
+        ],
+        [
+          205,
+          111
+        ]
+      ],
+      "color": "969c96",
+      "changedPixelsAtThisStep": 28
+    },
+    {
+      "scene": "A01",
+      "label": "gray temple narrow highlight",
+      "kind": "line",
+      "points": [
+        [
+          205,
+          107
+        ],
+        [
+          205,
+          109
+        ],
+        [
+          206,
+          110
+        ]
+      ],
+      "color": "bbc0b5",
+      "width": 1,
+      "changedPixelsAtThisStep": 4
+    },
+    {
+      "scene": "A01",
+      "label": "gray temple lower shade",
+      "kind": "line",
+      "points": [
+        [
+          206,
+          112
+        ],
+        [
+          208,
+          112
+        ],
+        [
+          208,
+          113
+        ]
+      ],
+      "color": "687778",
+      "width": 1,
+      "changedPixelsAtThisStep": 4
+    },
+    {
+      "scene": "A01",
+      "label": "hair side part",
+      "kind": "line",
+      "points": [
+        [
+          214,
+          99
+        ],
+        [
+          218,
+          99
+        ],
+        [
+          220,
+          100
+        ]
+      ],
+      "color": "756253",
+      "width": 1,
+      "changedPixelsAtThisStep": 7
+    },
+    {
+      "scene": "A01",
+      "label": "left lens clean warm interior",
+      "kind": "rectangle",
+      "box": [
+        212,
+        108,
+        215,
+        109
+      ],
+      "color": "efbd82",
+      "changedPixelsAtThisStep": 8
+    },
+    {
+      "scene": "A01",
+      "label": "right lens clean warm interior",
+      "kind": "rectangle",
+      "box": [
+        219,
+        107,
+        222,
+        108
+      ],
+      "color": "f2c186",
+      "changedPixelsAtThisStep": 8
+    },
+    {
+      "scene": "A01",
+      "label": "left thin rectangular glasses frame",
+      "kind": "line",
+      "points": [
+        [
+          211,
+          107
+        ],
+        [
+          215,
+          107
+        ],
+        [
+          216,
+          108
+        ],
+        [
+          216,
+          109
+        ],
+        [
+          215,
+          110
+        ],
+        [
+          211,
+          110
+        ],
+        [
+          211,
+          108
+        ]
+      ],
+      "color": "655b4c",
+      "width": 1,
+      "changedPixelsAtThisStep": 14
+    },
+    {
+      "scene": "A01",
+      "label": "right thin rectangular glasses frame",
+      "kind": "line",
+      "points": [
+        [
+          218,
+          106
+        ],
+        [
+          222,
+          106
+        ],
+        [
+          223,
+          107
+        ],
+        [
+          223,
+          108
+        ],
+        [
+          222,
+          109
+        ],
+        [
+          219,
+          109
+        ],
+        [
+          218,
+          108
+        ],
+        [
+          218,
+          106
+        ]
+      ],
+      "color": "655b4c",
+      "width": 1,
+      "changedPixelsAtThisStep": 13
+    },
+    {
+      "scene": "A01",
+      "label": "glasses bridge one pixel",
+      "kind": "line",
+      "points": [
+        [
+          216,
+          108
+        ],
+        [
+          218,
+          108
+        ]
+      ],
+      "color": "625849",
+      "width": 1,
+      "changedPixelsAtThisStep": 3
+    },
+    {
+      "scene": "A01",
+      "label": "glasses left temple arm",
+      "kind": "line",
+      "points": [
+        [
+          207,
+          110
+        ],
+        [
+          210,
+          109
+        ],
+        [
+          211,
+          109
+        ]
+      ],
+      "color": "5b5348",
+      "width": 1,
+      "changedPixelsAtThisStep": 5
+    },
+    {
+      "scene": "A01",
+      "label": "scene-scale eyes",
+      "kind": "points",
+      "points": [
+        [
+          214,
+          109
+        ],
+        [
+          221,
+          108
+        ]
+      ],
+      "color": "403e37",
+      "changedPixelsAtThisStep": 2
+    },
+    {
+      "scene": "A01",
+      "label": "lens restrained highlights",
+      "kind": "points",
+      "points": [
+        [
+          212,
+          108
+        ],
+        [
+          219,
+          107
+        ]
+      ],
+      "color": "f9d7a0",
+      "changedPixelsAtThisStep": 2
+    },
+    {
+      "scene": "A01",
+      "label": "nose light cluster",
+      "kind": "line",
+      "points": [
+        [
+          218,
+          110
+        ],
+        [
+          218,
+          112
+        ],
+        [
+          219,
+          112
+        ]
+      ],
+      "color": "f9cb8d",
+      "width": 1,
+      "changedPixelsAtThisStep": 4
+    },
+    {
+      "scene": "A01",
+      "label": "nose lower shade",
+      "kind": "points",
+      "points": [
+        [
+          220,
+          112
+        ]
+      ],
+      "color": "bd895b",
+      "changedPixelsAtThisStep": 1
+    },
+    {
+      "scene": "A01",
+      "label": "warm open smile",
+      "kind": "line",
+      "points": [
+        [
+          216,
+          114
+        ],
+        [
+          217,
+          115
+        ],
+        [
+          221,
+          115
+        ],
+        [
+          223,
+          113
+        ]
+      ],
+      "color": "84543c",
+      "width": 1,
+      "changedPixelsAtThisStep": 8
+    },
+    {
+      "scene": "A01",
+      "label": "smile teeth two-pixel cluster",
+      "kind": "line",
+      "points": [
+        [
+          218,
+          114
+        ],
+        [
+          221,
+          114
+        ]
+      ],
+      "color": "ffe3ad",
+      "width": 1,
+      "changedPixelsAtThisStep": 4
+    },
+    {
+      "scene": "A01",
+      "label": "lower lip highlight",
+      "kind": "line",
+      "points": [
+        [
+          218,
+          116
+        ],
+        [
+          221,
+          116
+        ]
+      ],
+      "color": "eaa774",
+      "width": 1,
+      "changedPixelsAtThisStep": 4
+    },
+    {
+      "scene": "A01",
+      "label": "attendant left vest flat plane",
+      "kind": "polygon",
+      "points": [
+        [
+          211,
+          124
+        ],
+        [
+          214,
+          130
+        ],
+        [
+          214,
+          133
+        ],
+        [
+          209,
+          134
+        ],
+        [
+          207,
+          127
+        ],
+        [
+          207,
+          124
+        ]
+      ],
+      "color": "44656b",
+      "changedPixelsAtThisStep": 63
+    },
+    {
+      "scene": "A01",
+      "label": "attendant right vest flat plane",
+      "kind": "polygon",
+      "points": [
+        [
+          226,
+          123
+        ],
+        [
+          231,
+          126
+        ],
+        [
+          232,
+          131
+        ],
+        [
+          229,
+          132
+        ],
+        [
+          226,
+          132
+        ]
+      ],
+      "color": "3b5c65",
+      "changedPixelsAtThisStep": 51
+    },
+    {
+      "scene": "A01",
+      "label": "attendant cream left sleeve plane",
+      "kind": "polygon",
+      "points": [
+        [
+          205,
+          129
+        ],
+        [
+          207,
+          131
+        ],
+        [
+          207,
+          138
+        ],
+        [
+          203,
+          138
+        ],
+        [
+          202,
+          136
+        ],
+        [
+          203,
+          132
+        ]
+      ],
+      "color": "f1d7ad",
+      "changedPixelsAtThisStep": 45
+    },
+    {
+      "scene": "A01",
+      "label": "attendant cream right sleeve plane",
+      "kind": "polygon",
+      "points": [
+        [
+          236,
+          129
+        ],
+        [
+          239,
+          134
+        ],
+        [
+          239,
+          138
+        ],
+        [
+          235,
+          138
+        ],
+        [
+          234,
+          134
+        ]
+      ],
+      "color": "e8cda4",
+      "changedPixelsAtThisStep": 42
+    },
+    {
+      "scene": "A01",
+      "label": "attendant dark tie center",
+      "kind": "line",
+      "points": [
+        [
+          220,
+          125
+        ],
+        [
+          220,
+          128
+        ],
+        [
+          221,
+          130
+        ]
+      ],
+      "color": "55554d",
+      "width": 1,
+      "changedPixelsAtThisStep": 6
+    }
+  ]
+}
