@@ -1,0 +1,735 @@
+{
+  "exportOpacityPreviewAndPreservation": "PASS",
+  "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED for all six; actual sources are oversized.",
+  "crossChapterVisualConsistency": "PENDING NATE; mandatory release review, not an automatic QA pass.",
+  "generationCalls": 9,
+  "currentCandidateCount": 6,
+  "supersededUnselectableAttempts": 1,
+  "candidates": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "workingDimensions": [
+        314,
+        206
+      ],
+      "workingMode": "RGB",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "opacity": {
+        "result": "PASS",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "workingDimensionCheck": "PASS",
+      "requestedGeneratorSourceDimensions": "FAIL",
+      "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED; this export does not establish original grid authorship.",
+      "palette": {
+        "sourceUniqueRGB": 223136,
+        "workingUniqueRGB": 30211,
+        "quantizationApplied": false,
+        "numericPaletteLimit": null
+      },
+      "exactCataloguePromptIncluded": true,
+      "exactSharedDirectionIncluded": true,
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "visualInspection": {
+        "observations": [
+          "PEOPLE'S PAVILION is correctly spelled and readable at native size; restroom pictogram/arrow and one central public entrance are clear.",
+          "Public concourse, side service stairs and a tiled lower approach visually converge on the entry landing; the same slate-teal posts, cream materials, restrained coral trim, bench and plant family link to Batch A.",
+          "No protagonist face, duplicate/Original person, inventory image, death imagery or new story outcome is shown."
+        ],
+        "reviewIssues": [
+          "Confirm that the three routes read as approaches to the same public entry, especially the side staircase.",
+          "Residual source-derived tonal softness remains; original native-grid authorship is unproven."
+        ]
+      },
+      "preview4x": {
+        "result": "PASS",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "every4x4BlockMatches": true
+      },
+      "workingPaletteInterpretation": "Diagnostic only; no fixed color-count gate and no automatic palette filtering. Native clustering and residual softness require visual review."
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "workingDimensions": [
+        314,
+        206
+      ],
+      "workingMode": "RGB",
+      "sourceDimensions": [
+        1547,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "opacity": {
+        "result": "PASS",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "workingDimensionCheck": "PASS",
+      "requestedGeneratorSourceDimensions": "FAIL",
+      "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED; this export does not establish original grid authorship.",
+      "palette": {
+        "sourceUniqueRGB": 145351,
+        "workingUniqueRGB": 18979,
+        "quantizationApplied": false,
+        "numericPaletteLimit": null
+      },
+      "exactCataloguePromptIncluded": true,
+      "exactSharedDirectionIncluded": true,
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "visualInspection": {
+        "observations": [
+          "Approved A01 is the exact immutable base. Only the compact printer and a transparent receipt-paper layer are added at the counter/floor.",
+          "The approved attendant, microphone, restroom, bench, reader and both two-person signs retain their exact visible source pixels. Transparent holes in paper preserve the original floor pixels.",
+          "No physical Original or protagonist is shown. Paper uses non-letter form bars; optional ORIGINAL lettering is omitted to avoid tiny type."
+        ],
+        "reviewIssues": [
+          "Review the compact added printer position at the counter\u2019s right edge, in front of part of the plant pot. The plant and counter are not redrawn.",
+          "The generated additions retain source-derived softness; full-scene original native-grid authorship remains unproven."
+        ]
+      },
+      "preview4x": {
+        "result": "PASS",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "every4x4BlockMatches": true
+      },
+      "pixelPreservation": {
+        "result": "PASS",
+        "base": "references/A01-restroom.png",
+        "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+        "overlay": "layers/B02-additions.png",
+        "overlaySha256": "427dccebbb3825d9ae0e05ddd339a03726110c69d3bc739ce7cd76c81af0cc0e",
+        "baseResampled": false,
+        "unexpectedChangesOutsideOverlay": 0
+      },
+      "workingPaletteInterpretation": "Diagnostic only; no fixed color-count gate and no automatic palette filtering. Native clustering and residual softness require visual review."
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "workingDimensions": [
+        564,
+        278
+      ],
+      "workingMode": "RGB",
+      "sourceDimensions": [
+        1786,
+        881
+      ],
+      "sourceMode": "RGB",
+      "opacity": {
+        "result": "PASS",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "workingDimensionCheck": "PASS",
+      "requestedGeneratorSourceDimensions": "FAIL",
+      "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED; this export does not establish original grid authorship.",
+      "palette": {
+        "sourceUniqueRGB": 144158,
+        "workingUniqueRGB": 34823,
+        "quantizationApplied": false,
+        "numericPaletteLimit": null
+      },
+      "exactCataloguePromptIncluded": true,
+      "exactSharedDirectionIncluded": true,
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "visualInspection": {
+        "observations": [
+          "Approved A02\u2019s independently authored close-view background is reused pixel-for-pixel; only a traced printer and short receipt-tail addition are overlaid. It is not an enlargement of a main scene.",
+          "The printer is placed to the right of the fixed approved A03 foreground. A03 remains byte-identical at(0,0), scale1.",
+          "The restroom sign retains its approved two-person symbols. All original background pixels outside the new printer/paper alpha are unchanged."
+        ],
+        "reviewIssues": [
+          "The new printer naturally occludes part of the plant pot at the far right; review the placement and counter contact.",
+          "No optional ORIGINAL label appears in this close view. Full-scene native-grid authorship remains unproven."
+        ]
+      },
+      "composite": {
+        "result": "PASS for exact anchoring, binary-alpha transfer and pixel preservation",
+        "proof": {
+          "backgroundCandidate": "CH3-B03-record-printer-bg",
+          "file": "composites/CH3-B03-record-printer-bg-A03-idle.png",
+          "sha256": "75f4e0064e36c6461e5c2e0d208ce6eeb0c09f835e2845ab98b2d2b5a1ce3fe9",
+          "foreground": "references/A03-attendant.png",
+          "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+          "foregroundAlphaValues": [
+            0,
+            255
+          ],
+          "anchor": [
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0
+          ],
+          "scale": 1,
+          "rotation": 0,
+          "foregroundBounds": [
+            223,
+            43,
+            412,
+            263
+          ],
+          "dimensions": [
+            564,
+            278
+          ],
+          "allForegroundPixelsExact": true,
+          "regionInspection": [
+            {
+              "label": "printerRightFace",
+              "box": [
+                430,
+                211,
+                540,
+                264
+              ],
+              "foregroundOverlapPixels": 0,
+              "area": 5830,
+              "percentOverlap": 0.0
+            },
+            {
+              "label": "receiptTail",
+              "box": [
+                418,
+                266,
+                439,
+                277
+              ],
+              "foregroundOverlapPixels": 0,
+              "area": 231,
+              "percentOverlap": 0.0
+            }
+          ],
+          "purpose": "Approved idle foreground used as fixed-anchor compositing test only; no new pose generation."
+        }
+      },
+      "pixelPreservation": {
+        "result": "PASS",
+        "base": "references/A02-restroom-bg.png",
+        "baseSha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+        "overlay": "layers/B03-additions.png",
+        "overlaySha256": "2780c609e0b552d1ad60c1be062be13898d90a2e85e6ca5eebb4662ffbe83e1e",
+        "baseResampled": false,
+        "unexpectedChangesOutsideOverlay": 0
+      },
+      "workingPaletteInterpretation": "Diagnostic only; no fixed color-count gate and no automatic palette filtering. Native clustering and residual softness require visual review."
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "workingDimensions": [
+        314,
+        206
+      ],
+      "workingMode": "RGB",
+      "sourceDimensions": [
+        1548,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "opacity": {
+        "result": "PASS",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "workingDimensionCheck": "PASS",
+      "requestedGeneratorSourceDimensions": "FAIL",
+      "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED; this export does not establish original grid authorship.",
+      "palette": {
+        "sourceUniqueRGB": 99034,
+        "workingUniqueRGB": 15641,
+        "quantizationApplied": false,
+        "numericPaletteLimit": null
+      },
+      "exactCataloguePromptIncluded": true,
+      "exactSharedDirectionIncluded": true,
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "visualInspection": {
+        "observations": [
+          "RESTROOM is correctly spelled and readable. The actual door is only narrowly open, revealing real tiles, sink and plumbing.",
+          "Green-over-red reader matches the approved access-control family; a separate sloped vented cream housing contains an exposed steel paper roller pulling a long document.",
+          "The side counter, tray, plant and steel/slate fittings belong to the same institutional room family as B02. No embodied Original or protagonist is depicted.",
+          "The side restroom pictogram is now the approved two-person glyph pair, replacing the human/hollow-square cue. Every other pixel of this genuinely new camera view is unchanged."
+        ],
+        "reviewIssues": [
+          "Confirm that the machine reads as a document intake/authorization roller rather than a second output printer.",
+          "Residual source-derived softness remains, especially on narrow contours."
+        ]
+      },
+      "preview4x": {
+        "result": "PASS",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "every4x4BlockMatches": true
+      },
+      "pixelPreservation": {
+        "result": "PASS",
+        "base": "donors/CH3-B04-record-scanner-v01.png",
+        "baseSha256": "db253773d0b58d4c5c6df7b6b5f2a439aaf6444944139a6046ed31d15396cf82",
+        "overlay": "layers/B04-two-person-sign.png",
+        "overlaySha256": "2ef7639ae5ef3bb576cc1c72f3d23f923c7cd63f3748b3ec092c6b91bfbf13ee",
+        "baseResampled": false,
+        "unexpectedChangesOutsideOverlay": 0
+      },
+      "workingPaletteInterpretation": "Diagnostic only; no fixed color-count gate and no automatic palette filtering. Native clustering and residual softness require visual review."
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "workingDimensions": [
+        564,
+        278
+      ],
+      "workingMode": "RGB",
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "sourceMode": "RGB",
+      "opacity": {
+        "result": "PASS",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "workingDimensionCheck": "PASS",
+      "requestedGeneratorSourceDimensions": "FAIL",
+      "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED; this export does not establish original grid authorship.",
+      "palette": {
+        "sourceUniqueRGB": 95946,
+        "workingUniqueRGB": 26559,
+        "quantizationApplied": false,
+        "numericPaletteLimit": null
+      },
+      "exactCataloguePromptIncluded": true,
+      "exactSharedDirectionIncluded": true,
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "visualInspection": {
+        "observations": [
+          "Independent oblique closer camera view replaces the superseded centered-machine attempt. Same narrow door crack, real sink/tilework, green-over-red indicator and cream sloped roller housing.",
+          "The critical roller and green indicator now sit to the left of the unchanged A03 foreground. No NPC is baked into the background.",
+          "A03 anchoring/scale/pixels remain exact. The approved idle foreground is used only as the requested compositing/anchoring test; no new alarmed pose was generated."
+        ],
+        "reviewIssues": [
+          "Review the newly angled camera against B04 and confirm that the paper intake action remains clear beside the foreground.",
+          "Native-grid authorship remains unproven."
+        ]
+      },
+      "composite": {
+        "result": "PASS for exact anchoring, binary-alpha transfer and pixel preservation",
+        "proof": {
+          "backgroundCandidate": "CH3-B05-record-scanner-bg",
+          "file": "composites/CH3-B05-record-scanner-bg-A03-idle.png",
+          "sha256": "bf4a221130d132c323e27f930e5cf825c482b2a41630aa19cde32f0f58bea2b8",
+          "foreground": "references/A03-attendant.png",
+          "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+          "foregroundAlphaValues": [
+            0,
+            255
+          ],
+          "anchor": [
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0
+          ],
+          "scale": 1,
+          "rotation": 0,
+          "foregroundBounds": [
+            223,
+            43,
+            412,
+            263
+          ],
+          "dimensions": [
+            564,
+            278
+          ],
+          "allForegroundPixelsExact": true,
+          "regionInspection": [
+            {
+              "label": "greenAuthorizationLamp",
+              "box": [
+                119,
+                100,
+                144,
+                126
+              ],
+              "foregroundOverlapPixels": 0,
+              "area": 650,
+              "percentOverlap": 0.0
+            },
+            {
+              "label": "exposedRollerCore",
+              "box": [
+                165,
+                149,
+                222,
+                179
+              ],
+              "foregroundOverlapPixels": 0,
+              "area": 1710,
+              "percentOverlap": 0.0
+            }
+          ],
+          "purpose": "Approved idle foreground used as fixed-anchor compositing test only; no new pose generation."
+        }
+      },
+      "workingPaletteInterpretation": "Diagnostic only; no fixed color-count gate and no automatic palette filtering. Native clustering and residual softness require visual review."
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "workingDimensions": [
+        314,
+        206
+      ],
+      "workingMode": "RGB",
+      "sourceDimensions": [
+        1547,
+        1016
+      ],
+      "sourceMode": "RGB",
+      "opacity": {
+        "result": "PASS",
+        "sourceAlphaExtrema": [
+          255,
+          255
+        ],
+        "workingAlphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "workingDimensionCheck": "PASS",
+      "requestedGeneratorSourceDimensions": "FAIL",
+      "originalNativeGridAuthorship": "UNPROVEN / NOT PASSED; this export does not establish original grid authorship.",
+      "palette": {
+        "sourceUniqueRGB": 181329,
+        "workingUniqueRGB": 21145,
+        "quantizationApplied": false,
+        "numericPaletteLimit": null
+      },
+      "exactCataloguePromptIncluded": true,
+      "exactSharedDirectionIncluded": true,
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "visualInspection": {
+        "observations": [
+          "The completed B02 raster is reused exactly as the base, with separate added soft brushes/rail and additional transparent paper loops. The earlier full-scene rerender is not used as a replacement background.",
+          "The approved A01 attendant and both two-person restroom signs remain unchanged. Paper and brushes add harmless cleanup action without a death scene or new character.",
+          "The approved room, floor, restroom, bench, microphone, counter, plant and exit remain pixel-identical wherever the additions do not occlude them."
+        ],
+        "reviewIssues": [
+          "The existing approved exit geometry is intentionally retained; judge whether the added brush/paper motion communicates evacuation toward that exit clearly enough. No new exterior architecture was painted.",
+          "The added paper is source-derived and may retain soft fringe pixels; original full-scene native-grid authorship remains unproven."
+        ]
+      },
+      "preview4x": {
+        "result": "PASS",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "every4x4BlockMatches": true
+      },
+      "pixelPreservation": {
+        "result": "PASS",
+        "base": "candidates/CH3-B02-record-printer-v02.png",
+        "baseSha256": "2ff098504949a26f6ceaf3e497ac2a8a1b49a3a6f6255337ba6fe09a1cdc4672",
+        "overlay": "layers/B06-emergency-additions.png",
+        "overlaySha256": "5f83c36aa2ae927c4ed6dd36961299b17916999c39b5852ae72789703626fd13",
+        "baseResampled": false,
+        "unexpectedChangesOutsideOverlay": 0
+      },
+      "workingPaletteInterpretation": "Diagnostic only; no fixed color-count gate and no automatic palette filtering. Native clustering and residual softness require visual review."
+    }
+  ],
+  "composites": [
+    {
+      "backgroundCandidate": "CH3-B03-record-printer-bg",
+      "file": "composites/CH3-B03-record-printer-bg-A03-idle.png",
+      "sha256": "75f4e0064e36c6461e5c2e0d208ce6eeb0c09f835e2845ab98b2d2b5a1ce3fe9",
+      "foreground": "references/A03-attendant.png",
+      "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "foregroundAlphaValues": [
+        0,
+        255
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "foregroundBounds": [
+        223,
+        43,
+        412,
+        263
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "allForegroundPixelsExact": true,
+      "regionInspection": [
+        {
+          "label": "printerRightFace",
+          "box": [
+            430,
+            211,
+            540,
+            264
+          ],
+          "foregroundOverlapPixels": 0,
+          "area": 5830,
+          "percentOverlap": 0.0
+        },
+        {
+          "label": "receiptTail",
+          "box": [
+            418,
+            266,
+            439,
+            277
+          ],
+          "foregroundOverlapPixels": 0,
+          "area": 231,
+          "percentOverlap": 0.0
+        }
+      ],
+      "purpose": "Approved idle foreground used as fixed-anchor compositing test only; no new pose generation."
+    },
+    {
+      "backgroundCandidate": "CH3-B05-record-scanner-bg",
+      "file": "composites/CH3-B05-record-scanner-bg-A03-idle.png",
+      "sha256": "bf4a221130d132c323e27f930e5cf825c482b2a41630aa19cde32f0f58bea2b8",
+      "foreground": "references/A03-attendant.png",
+      "foregroundSha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "foregroundAlphaValues": [
+        0,
+        255
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "rotation": 0,
+      "foregroundBounds": [
+        223,
+        43,
+        412,
+        263
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "allForegroundPixelsExact": true,
+      "regionInspection": [
+        {
+          "label": "greenAuthorizationLamp",
+          "box": [
+            119,
+            100,
+            144,
+            126
+          ],
+          "foregroundOverlapPixels": 0,
+          "area": 650,
+          "percentOverlap": 0.0
+        },
+        {
+          "label": "exposedRollerCore",
+          "box": [
+            165,
+            149,
+            222,
+            179
+          ],
+          "foregroundOverlapPixels": 0,
+          "area": 1710,
+          "percentOverlap": 0.0
+        }
+      ],
+      "purpose": "Approved idle foreground used as fixed-anchor compositing test only; no new pose generation."
+    }
+  ],
+  "preservation": {
+    "canonicalReviewFiles": 179,
+    "BatchAHistoricalReviewFiles": 455,
+    "selectedStoryAndAuthorityFiles": 140,
+    "result": "PASS; immutable hashes match. No existing file is edited except the review-only workflow."
+  },
+  "noProductionRegistration": true,
+  "additiveConstruction": {
+    "ownerInstruction": "Two people on all restroom signs; preserve pixels of repeated scenes and add only new layers.",
+    "fullSceneRegenerationsAfterOwnerCorrection": 0,
+    "transparentPaperLayerGenerationCalls": 2,
+    "assemblyScriptGenerationCalls": 0,
+    "nativeAuthorshipLimitation": "Original full-scene native-grid authorship remains unproven. Approved bases are unchanged; generated source-derived object pixels and explicitly authored native additions are documented separately.",
+    "candidates": [
+      {
+        "candidateId": "CH3-B01-arrival",
+        "candidate": "candidates/CH3-B01-arrival-v02.png",
+        "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+        "operation": "Unchanged genuinely new camera view; already has two-person restroom pictogram or no restroom pictogram.",
+        "base": "donors/CH3-B01-arrival-v01.png",
+        "baseSha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+        "changedPixels": 0
+      },
+      {
+        "candidateId": "CH3-B02-record-printer",
+        "candidate": "candidates/CH3-B02-record-printer-v02.png",
+        "sha256": "2ff098504949a26f6ceaf3e497ac2a8a1b49a3a6f6255337ba6fe09a1cdc4672",
+        "base": "references/A01-restroom.png",
+        "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+        "overlay": "layers/B02-additions.png",
+        "overlaySha256": "427dccebbb3825d9ae0e05ddd339a03726110c69d3bc739ce7cd76c81af0cc0e",
+        "changedPixels": 4926,
+        "unexpectedChangesOutsideOverlay": 0,
+        "basePixelsCopiedExactlyWhereVisible": true,
+        "baseLayerResampled": false,
+        "dimensions": [
+          314,
+          206
+        ],
+        "approvedAttendantAndBathroomSignsPreserved": true,
+        "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+      },
+      {
+        "candidateId": "CH3-B03-record-printer-bg",
+        "candidate": "candidates/CH3-B03-record-printer-bg-v02.png",
+        "sha256": "b81174a2570596a420692587cb8adffe18c1a9ca8244e2948da2e5ff77e69e84",
+        "base": "references/A02-restroom-bg.png",
+        "baseSha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+        "overlay": "layers/B03-additions.png",
+        "overlaySha256": "2780c609e0b552d1ad60c1be062be13898d90a2e85e6ca5eebb4662ffbe83e1e",
+        "changedPixels": 9722,
+        "unexpectedChangesOutsideOverlay": 0,
+        "basePixelsCopiedExactlyWhereVisible": true,
+        "baseLayerResampled": false,
+        "dimensions": [
+          564,
+          278
+        ],
+        "approvedAttendantAndBathroomSignsPreserved": null,
+        "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+      },
+      {
+        "candidateId": "CH3-B04-record-scanner",
+        "candidate": "candidates/CH3-B04-record-scanner-v02.png",
+        "sha256": "36bbf4164a6e80317aeae80bcf0b949d71fed87bbaa17a1404b3cfc1b2ea90bc",
+        "base": "donors/CH3-B04-record-scanner-v01.png",
+        "baseSha256": "db253773d0b58d4c5c6df7b6b5f2a439aaf6444944139a6046ed31d15396cf82",
+        "overlay": "layers/B04-two-person-sign.png",
+        "overlaySha256": "2ef7639ae5ef3bb576cc1c72f3d23f923c7cd63f3748b3ec092c6b91bfbf13ee",
+        "changedPixels": 864,
+        "unexpectedChangesOutsideOverlay": 0,
+        "basePixelsCopiedExactlyWhereVisible": true,
+        "baseLayerResampled": false,
+        "dimensions": [
+          314,
+          206
+        ],
+        "approvedAttendantAndBathroomSignsPreserved": null,
+        "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+      },
+      {
+        "candidateId": "CH3-B05-record-scanner-bg",
+        "candidate": "candidates/CH3-B05-record-scanner-bg-v02.png",
+        "sha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+        "operation": "Unchanged genuinely new camera view; already has two-person restroom pictogram or no restroom pictogram.",
+        "base": "donors/CH3-B05-record-scanner-bg-v01.png",
+        "baseSha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+        "changedPixels": 0
+      },
+      {
+        "candidateId": "CH3-B06-paper-emergency",
+        "candidate": "candidates/CH3-B06-paper-emergency-v02.png",
+        "sha256": "594c6f22f113eb9832cd3bbf0a2bc22df0b43c214472b9400b4ae04d565a7c34",
+        "base": "candidates/CH3-B02-record-printer-v02.png",
+        "baseSha256": "2ff098504949a26f6ceaf3e497ac2a8a1b49a3a6f6255337ba6fe09a1cdc4672",
+        "overlay": "layers/B06-emergency-additions.png",
+        "overlaySha256": "5f83c36aa2ae927c4ed6dd36961299b17916999c39b5852ae72789703626fd13",
+        "changedPixels": 12908,
+        "unexpectedChangesOutsideOverlay": 0,
+        "basePixelsCopiedExactlyWhereVisible": true,
+        "baseLayerResampled": false,
+        "dimensions": [
+          314,
+          206
+        ],
+        "approvedAttendantAndBathroomSignsPreserved": true,
+        "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+      }
+    ]
+  },
+  "twoPersonRestroomSigns": "PASS by manual inspection; approved A01/A02 symbols are retained, and B04 uses approved two-person glyphs.",
+  "frozenV01StudyFiles": 98
+}

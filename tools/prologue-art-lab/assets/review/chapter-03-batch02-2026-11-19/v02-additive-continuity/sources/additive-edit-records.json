@@ -1,0 +1,103 @@
+{
+  "ownerInstruction": "Two people on all restroom signs; preserve pixels of repeated scenes and add only new layers.",
+  "fullSceneRegenerationsAfterOwnerCorrection": 0,
+  "transparentPaperLayerGenerationCalls": 2,
+  "assemblyScriptGenerationCalls": 0,
+  "nativeAuthorshipLimitation": "Original full-scene native-grid authorship remains unproven. Approved bases are unchanged; generated source-derived object pixels and explicitly authored native additions are documented separately.",
+  "candidates": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "candidate": "candidates/CH3-B01-arrival-v02.png",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "operation": "Unchanged genuinely new camera view; already has two-person restroom pictogram or no restroom pictogram.",
+      "base": "donors/CH3-B01-arrival-v01.png",
+      "baseSha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "changedPixels": 0
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "candidate": "candidates/CH3-B02-record-printer-v02.png",
+      "sha256": "2ff098504949a26f6ceaf3e497ac2a8a1b49a3a6f6255337ba6fe09a1cdc4672",
+      "base": "references/A01-restroom.png",
+      "baseSha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "overlay": "layers/B02-additions.png",
+      "overlaySha256": "427dccebbb3825d9ae0e05ddd339a03726110c69d3bc739ce7cd76c81af0cc0e",
+      "changedPixels": 4926,
+      "unexpectedChangesOutsideOverlay": 0,
+      "basePixelsCopiedExactlyWhereVisible": true,
+      "baseLayerResampled": false,
+      "dimensions": [
+        314,
+        206
+      ],
+      "approvedAttendantAndBathroomSignsPreserved": true,
+      "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "candidate": "candidates/CH3-B03-record-printer-bg-v02.png",
+      "sha256": "b81174a2570596a420692587cb8adffe18c1a9ca8244e2948da2e5ff77e69e84",
+      "base": "references/A02-restroom-bg.png",
+      "baseSha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "overlay": "layers/B03-additions.png",
+      "overlaySha256": "2780c609e0b552d1ad60c1be062be13898d90a2e85e6ca5eebb4662ffbe83e1e",
+      "changedPixels": 9722,
+      "unexpectedChangesOutsideOverlay": 0,
+      "basePixelsCopiedExactlyWhereVisible": true,
+      "baseLayerResampled": false,
+      "dimensions": [
+        564,
+        278
+      ],
+      "approvedAttendantAndBathroomSignsPreserved": null,
+      "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "candidate": "candidates/CH3-B04-record-scanner-v02.png",
+      "sha256": "36bbf4164a6e80317aeae80bcf0b949d71fed87bbaa17a1404b3cfc1b2ea90bc",
+      "base": "donors/CH3-B04-record-scanner-v01.png",
+      "baseSha256": "db253773d0b58d4c5c6df7b6b5f2a439aaf6444944139a6046ed31d15396cf82",
+      "overlay": "layers/B04-two-person-sign.png",
+      "overlaySha256": "2ef7639ae5ef3bb576cc1c72f3d23f923c7cd63f3748b3ec092c6b91bfbf13ee",
+      "changedPixels": 864,
+      "unexpectedChangesOutsideOverlay": 0,
+      "basePixelsCopiedExactlyWhereVisible": true,
+      "baseLayerResampled": false,
+      "dimensions": [
+        314,
+        206
+      ],
+      "approvedAttendantAndBathroomSignsPreserved": null,
+      "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "candidate": "candidates/CH3-B05-record-scanner-bg-v02.png",
+      "sha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+      "operation": "Unchanged genuinely new camera view; already has two-person restroom pictogram or no restroom pictogram.",
+      "base": "donors/CH3-B05-record-scanner-bg-v01.png",
+      "baseSha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+      "changedPixels": 0
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "candidate": "candidates/CH3-B06-paper-emergency-v02.png",
+      "sha256": "594c6f22f113eb9832cd3bbf0a2bc22df0b43c214472b9400b4ae04d565a7c34",
+      "base": "candidates/CH3-B02-record-printer-v02.png",
+      "baseSha256": "2ff098504949a26f6ceaf3e497ac2a8a1b49a3a6f6255337ba6fe09a1cdc4672",
+      "overlay": "layers/B06-emergency-additions.png",
+      "overlaySha256": "5f83c36aa2ae927c4ed6dd36961299b17916999c39b5852ae72789703626fd13",
+      "changedPixels": 12908,
+      "unexpectedChangesOutsideOverlay": 0,
+      "basePixelsCopiedExactlyWhereVisible": true,
+      "baseLayerResampled": false,
+      "dimensions": [
+        314,
+        206
+      ],
+      "approvedAttendantAndBathroomSignsPreserved": true,
+      "derivation": "Generated printer/brush cutouts and transparent generated paper additions over immutable base pixels; only the rail, short close-view paper tail and sign placement use explicit native primitives. Only newly added object layers are transformed; no approved scene or foreground is resized or repainted."
+    }
+  ]
+}

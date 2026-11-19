@@ -1,0 +1,1 @@
+Owner correction, 2026-11-19: bathroom signs need two people, not a person and square. If repeating previous scenes, keep pixels the same and only add on top of the image. This overrides the earlier generic human/hollow-square wayfinding instruction for Chapter 3 restroom signs.

@@ -1,0 +1,356 @@
+[
+  {
+    "candidateId": "CH3-B01-arrival",
+    "record": "scenes:pavilion_reboot/arrival",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-22683862-1add-41aa-b70b-7f20f45a1b20.png",
+    "originalSourceFilename": "exec-22683862-1add-41aa-b70b-7f20f45a1b20.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-22683862-1add-41aa-b70b-7f20f45a1b20.png",
+    "sourceSha256": "4456b13516edcd416ac5abdf9ddca12bbc61b626fac000f4d0d676ce9978ff34",
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      314,
+      206
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "candidates/CH3-B01-arrival-v01.png",
+    "candidateSha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+    "workingDimensions": [
+      314,
+      206
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": "previews/CH3-B01-arrival-v01-4x.png",
+    "submittedPrompt": "prompts/CH3-B01-arrival-submitted.txt",
+    "submittedPromptSha256": "7257cad8122cb65cc7dd645657dfca30951d73d0a2a33f995be276831a2368bd",
+    "cataloguePrompt": "prompts/CH3-B01-arrival-catalogue.txt",
+    "cataloguePromptSha256": "2e567c9284a3de3d61e596ebd95ddd5f535ee70ba4f5c537a30d5e1d45971486",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "references/A01-restroom-4x.png",
+        "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+      },
+      {
+        "file": "references/A04-verification-4x.png",
+        "sha256": "68d9af816b69d0acbae70d1d864f96ef7e1f2389a0b062d578fc4b38207d7ea4"
+      },
+      {
+        "file": "references/chapter-01-foyer-4x.png",
+        "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper-4x.png",
+        "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-B02-record-printer",
+    "record": "scenes:pavilion_reboot/record_printer",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+    "originalSourceFilename": "exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+    "sourceSha256": "8d6180abbe0787e4fafcd3ebf5d17003d2ecfea0174bf9c90a0d4bedd40f0c66",
+    "actualSourceDimensions": [
+      1547,
+      1016
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      314,
+      206
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "candidates/CH3-B02-record-printer-v01.png",
+    "candidateSha256": "5912ef003ecfc1e2fe9fe2f3aad9385fae319667ef7f16075bcc25c7c75df694",
+    "workingDimensions": [
+      314,
+      206
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": "previews/CH3-B02-record-printer-v01-4x.png",
+    "submittedPrompt": "prompts/CH3-B02-record-printer-submitted.txt",
+    "submittedPromptSha256": "965c4c323b005e553aa0f2a2a5791a9c37370a4840c14606063b720c8baf8ea9",
+    "cataloguePrompt": "prompts/CH3-B02-record-printer-catalogue.txt",
+    "cataloguePromptSha256": "a63d1a624e2108f052ba72aacb6e0383e78ca1859c206758737b088e8cbd97ae",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "references/A01-restroom-4x.png",
+        "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+      },
+      {
+        "file": "references/A02-restroom-bg.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      },
+      {
+        "file": "references/A03-attendant.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+      },
+      {
+        "file": "references/chapter-01-foyer-4x.png",
+        "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper-4x.png",
+        "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-B03-record-printer-bg",
+    "record": "scenes:pavilion_reboot/record_printer#portraitBackground",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-56ac2a79-1529-4657-b48d-0f1fd64b31e2.png",
+    "originalSourceFilename": "exec-56ac2a79-1529-4657-b48d-0f1fd64b31e2.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-56ac2a79-1529-4657-b48d-0f1fd64b31e2.png",
+    "sourceSha256": "aeb93d784f45da6403e6e2044274d47a0297822add0dda3abc0c2c14580755f6",
+    "actualSourceDimensions": [
+      1786,
+      881
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      564,
+      278
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "candidates/CH3-B03-record-printer-bg-v01.png",
+    "candidateSha256": "bef0297ea9062ca501fca7c689c2698a04b3a23db6ecf60dff4f970c22c7bd57",
+    "workingDimensions": [
+      564,
+      278
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": null,
+    "submittedPrompt": "prompts/CH3-B03-record-printer-bg-submitted.txt",
+    "submittedPromptSha256": "b5ddf3f4aae8c69329883f9ae705609dbc909bce7b47eb9628a4b727b554ba7c",
+    "cataloguePrompt": "prompts/CH3-B03-record-printer-bg-catalogue.txt",
+    "cataloguePromptSha256": "c28e296fc2422e1b6f634546d14eda881bbebf36ad1f7c60210eea76f6ac79af",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "generation-source/exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+        "sha256": "8d6180abbe0787e4fafcd3ebf5d17003d2ecfea0174bf9c90a0d4bedd40f0c66"
+      },
+      {
+        "file": "references/A02-restroom-bg.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      },
+      {
+        "file": "references/A01-restroom-4x.png",
+        "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-B04-record-scanner",
+    "record": "scenes:pavilion_reboot/record_scanner",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-dccd9722-077e-4592-b0a2-511e99ab76a2.png",
+    "originalSourceFilename": "exec-dccd9722-077e-4592-b0a2-511e99ab76a2.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-dccd9722-077e-4592-b0a2-511e99ab76a2.png",
+    "sourceSha256": "60a2c2f0a56b2baac294dd5a1d3c0473d4faee8ad9f8489eba39ce722397ca32",
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      314,
+      206
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "candidates/CH3-B04-record-scanner-v01.png",
+    "candidateSha256": "db253773d0b58d4c5c6df7b6b5f2a439aaf6444944139a6046ed31d15396cf82",
+    "workingDimensions": [
+      314,
+      206
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": "previews/CH3-B04-record-scanner-v01-4x.png",
+    "submittedPrompt": "prompts/CH3-B04-record-scanner-submitted.txt",
+    "submittedPromptSha256": "20ec87458080bff020a188ac7e532b25b349404378e7887125efb848a8673ea0",
+    "cataloguePrompt": "prompts/CH3-B04-record-scanner-catalogue.txt",
+    "cataloguePromptSha256": "e33125b7da8d796a602e3e14e764969c383aa16674dc0fd2d694a2d5c7997654",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "references/A01-restroom-4x.png",
+        "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+      },
+      {
+        "file": "references/A02-restroom-bg.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      },
+      {
+        "file": "references/chapter-01-foyer-4x.png",
+        "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper-4x.png",
+        "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-B05-record-scanner-bg",
+    "record": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-2b2e5bc1-f57a-4ca7-be0d-e19a8c16c94f.png",
+    "originalSourceFilename": "exec-2b2e5bc1-f57a-4ca7-be0d-e19a8c16c94f.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-2b2e5bc1-f57a-4ca7-be0d-e19a8c16c94f.png",
+    "sourceSha256": "6fb45392d42772c4e03346e9bab7136bca3fc57c438a359f00b279c45071df79",
+    "actualSourceDimensions": [
+      1785,
+      881
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      564,
+      278
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "candidates/CH3-B05-record-scanner-bg-v01.png",
+    "candidateSha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f",
+    "workingDimensions": [
+      564,
+      278
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": null,
+    "submittedPrompt": "prompts/CH3-B05-record-scanner-bg-submitted.txt",
+    "submittedPromptSha256": "e0bfc8ae2b0079338099ebc8c2bf918e37cc25bbcf6004fbf5cd43ce40b0c4c9",
+    "cataloguePrompt": "prompts/CH3-B05-record-scanner-bg-catalogue.txt",
+    "cataloguePromptSha256": "92e0be79137392b1287a7ad2450a00cf0627fa71b1fe74646aa2873764d3c8b3",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "references/A02-restroom-bg.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      },
+      {
+        "file": "generation-source/exec-dccd9722-077e-4592-b0a2-511e99ab76a2.png",
+        "sha256": "60a2c2f0a56b2baac294dd5a1d3c0473d4faee8ad9f8489eba39ce722397ca32"
+      },
+      {
+        "file": "generation-source/exec-f80350e6-a20f-47c0-a812-9b29b76fabe0.png",
+        "sha256": "b6fad9bdc1c796913c5fcfa7c3f2cfccda963c6551c75d40fd400b2d487e0c24"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-B06-paper-emergency",
+    "record": "scenes:pavilion_reboot/paper_emergency",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-ad3a8bf9-29d7-43e6-9c9b-eb2e6967c3e8.png",
+    "originalSourceFilename": "exec-ad3a8bf9-29d7-43e6-9c9b-eb2e6967c3e8.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-ad3a8bf9-29d7-43e6-9c9b-eb2e6967c3e8.png",
+    "sourceSha256": "6e8f2eb66c1eb4554ce841e326d5cf0e56b3289be45426e732b90553e860df63",
+    "actualSourceDimensions": [
+      1547,
+      1016
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      314,
+      206
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "candidates/CH3-B06-paper-emergency-v01.png",
+    "candidateSha256": "2ef5f284c82cbf8bbb0a864f9613b8c7d0807aa5d2513ca6f55883d75f3960c6",
+    "workingDimensions": [
+      314,
+      206
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": "previews/CH3-B06-paper-emergency-v01-4x.png",
+    "submittedPrompt": "prompts/CH3-B06-paper-emergency-submitted.txt",
+    "submittedPromptSha256": "35cf4b28d798fec05d6e00cd4333c3c6a72dcac7178c538c883437a67848a51b",
+    "cataloguePrompt": "prompts/CH3-B06-paper-emergency-catalogue.txt",
+    "cataloguePromptSha256": "9a7114b818a754d976d1e5d327106f9ee972ee77dbbaef40d5e148238e8f4825",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "generation-source/exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+        "sha256": "8d6180abbe0787e4fafcd3ebf5d17003d2ecfea0174bf9c90a0d4bedd40f0c66"
+      },
+      {
+        "file": "references/A01-restroom-4x.png",
+        "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+      },
+      {
+        "file": "references/A03-attendant.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+      },
+      {
+        "file": "references/chapter-01-foyer-4x.png",
+        "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+      },
+      {
+        "file": "references/chapter-02-groundskeeper-4x.png",
+        "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  }
+]

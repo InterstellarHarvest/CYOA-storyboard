@@ -1,0 +1,58 @@
+[
+  {
+    "candidateId": "CH3-B05-record-scanner-bg",
+    "record": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-f80350e6-a20f-47c0-a812-9b29b76fabe0.png",
+    "originalSourceFilename": "exec-f80350e6-a20f-47c0-a812-9b29b76fabe0.png",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-f80350e6-a20f-47c0-a812-9b29b76fabe0.png",
+    "sourceSha256": "b6fad9bdc1c796913c5fcfa7c3f2cfccda963c6551c75d40fd400b2d487e0c24",
+    "actualSourceDimensions": [
+      1786,
+      881
+    ],
+    "actualSourceMode": "RGB",
+    "requestedDimensions": [
+      564,
+      278
+    ],
+    "exactRequestedSourceDimensionsPassed": false,
+    "candidate": "sources/initial-attempts/CH3-B05-record-scanner-bg-initial.png",
+    "candidateSha256": "fa8a2c087976a50bd5c21db5e4fca4cc129d7c03dfcf205d24f1f1730f260ea7",
+    "workingDimensions": [
+      564,
+      278
+    ],
+    "derivedExport": true,
+    "derivation": "RGB export and nearest-neighbor reduction of this new source to requested logical dimensions; no sharpening, palette filtering, dithering, repainting or crop.",
+    "preview4x": null,
+    "submittedPrompt": "sources/initial-attempts/CH3-B05-initial-submitted.txt",
+    "submittedPromptSha256": "4f3de292939e3cfe42e04368d9efb662f1b79381a655919cf8b6cfe04aad2e70",
+    "cataloguePrompt": "prompts/CH3-B05-record-scanner-bg-catalogue.txt",
+    "cataloguePromptSha256": "92e0be79137392b1287a7ad2450a00cf0627fa71b1fe74646aa2873764d3c8b3",
+    "canonicalDirection": "prompts/canonical-direction.txt",
+    "canonicalDirectionSha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f",
+    "referencesInOrder": [
+      {
+        "file": "generation-source/exec-dccd9722-077e-4592-b0a2-511e99ab76a2.png",
+        "sha256": "60a2c2f0a56b2baac294dd5a1d3c0473d4faee8ad9f8489eba39ce722397ca32"
+      },
+      {
+        "file": "references/A02-restroom-bg.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      },
+      {
+        "file": "references/A01-restroom-4x.png",
+        "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+      }
+    ],
+    "transparent_background": false,
+    "originalNativeGridAuthorship": "UNPROVEN: retained source dimensions/derivation do not prove direct grid authorship.",
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null,
+    "disposition": "Superseded / unselectable: fixed approved A03 foreground hides the paper roller. Retained as generation provenance only."
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "CH3-B01-arrival": {
+    "observations": [
+      "PEOPLE'S PAVILION is correctly spelled and readable at native size; restroom pictogram/arrow and one central public entrance are clear.",
+      "Public concourse, side service stairs and a tiled lower approach visually converge on the entry landing; the same slate-teal posts, cream materials, restrained coral trim, bench and plant family link to Batch A.",
+      "No protagonist face, duplicate/Original person, inventory image, death imagery or new story outcome is shown."
+    ],
+    "reviewIssues": [
+      "Confirm that the three routes read as approaches to the same public entry, especially the side staircase.",
+      "Residual source-derived tonal softness remains; original native-grid authorship is unproven."
+    ]
+  },
+  "CH3-B02-record-printer": {
+    "observations": [
+      "Approved A01 is the exact immutable base. Only the compact printer and a transparent receipt-paper layer are added at the counter/floor.",
+      "The approved attendant, microphone, restroom, bench, reader and both two-person signs retain their exact visible source pixels. Transparent holes in paper preserve the original floor pixels.",
+      "No physical Original or protagonist is shown. Paper uses non-letter form bars; optional ORIGINAL lettering is omitted to avoid tiny type."
+    ],
+    "reviewIssues": [
+      "Review the compact added printer position at the counter\u2019s right edge, in front of part of the plant pot. The plant and counter are not redrawn.",
+      "The generated additions retain source-derived softness; full-scene original native-grid authorship remains unproven."
+    ]
+  },
+  "CH3-B03-record-printer-bg": {
+    "observations": [
+      "Approved A02\u2019s independently authored close-view background is reused pixel-for-pixel; only a traced printer and short receipt-tail addition are overlaid. It is not an enlargement of a main scene.",
+      "The printer is placed to the right of the fixed approved A03 foreground. A03 remains byte-identical at(0,0), scale1.",
+      "The restroom sign retains its approved two-person symbols. All original background pixels outside the new printer/paper alpha are unchanged."
+    ],
+    "reviewIssues": [
+      "The new printer naturally occludes part of the plant pot at the far right; review the placement and counter contact.",
+      "No optional ORIGINAL label appears in this close view. Full-scene native-grid authorship remains unproven."
+    ]
+  },
+  "CH3-B04-record-scanner": {
+    "observations": [
+      "RESTROOM is correctly spelled and readable. The actual door is only narrowly open, revealing real tiles, sink and plumbing.",
+      "Green-over-red reader matches the approved access-control family; a separate sloped vented cream housing contains an exposed steel paper roller pulling a long document.",
+      "The side counter, tray, plant and steel/slate fittings belong to the same institutional room family as B02. No embodied Original or protagonist is depicted.",
+      "The side restroom pictogram is now the approved two-person glyph pair, replacing the human/hollow-square cue. Every other pixel of this genuinely new camera view is unchanged."
+    ],
+    "reviewIssues": [
+      "Confirm that the machine reads as a document intake/authorization roller rather than a second output printer.",
+      "Residual source-derived softness remains, especially on narrow contours."
+    ]
+  },
+  "CH3-B05-record-scanner-bg": {
+    "observations": [
+      "Independent oblique closer camera view replaces the superseded centered-machine attempt. Same narrow door crack, real sink/tilework, green-over-red indicator and cream sloped roller housing.",
+      "The critical roller and green indicator now sit to the left of the unchanged A03 foreground. No NPC is baked into the background.",
+      "A03 anchoring/scale/pixels remain exact. The approved idle foreground is used only as the requested compositing/anchoring test; no new alarmed pose was generated."
+    ],
+    "reviewIssues": [
+      "Review the newly angled camera against B04 and confirm that the paper intake action remains clear beside the foreground.",
+      "Native-grid authorship remains unproven."
+    ]
+  },
+  "CH3-B06-paper-emergency": {
+    "observations": [
+      "The completed B02 raster is reused exactly as the base, with separate added soft brushes/rail and additional transparent paper loops. The earlier full-scene rerender is not used as a replacement background.",
+      "The approved A01 attendant and both two-person restroom signs remain unchanged. Paper and brushes add harmless cleanup action without a death scene or new character.",
+      "The approved room, floor, restroom, bench, microphone, counter, plant and exit remain pixel-identical wherever the additions do not occlude them."
+    ],
+    "reviewIssues": [
+      "The existing approved exit geometry is intentionally retained; judge whether the added brush/paper motion communicates evacuation toward that exit clearly enough. No new exterior architecture was painted.",
+      "The added paper is source-derived and may retain soft fringe pixels; original full-scene native-grid authorship remains unproven."
+    ]
+  }
+}

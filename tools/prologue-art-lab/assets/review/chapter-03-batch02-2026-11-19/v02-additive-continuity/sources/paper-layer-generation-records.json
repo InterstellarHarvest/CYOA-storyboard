@@ -1,0 +1,96 @@
+[
+  {
+    "layerId": "B02-paper-layer",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-e50cf7d7-1e4b-4954-a17c-a760000cabe4.png",
+    "sourceSha256": "d81d39d26331c5d84969603119060192ffa8e8903d04007b87fa3d2e8267adf4",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-e50cf7d7-1e4b-4954-a17c-a760000cabe4.png",
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "requestedLogicalDimensions": [
+      314,
+      206
+    ],
+    "actualSourceMode": "RGBA",
+    "sourceAlphaExtrema": [
+      0,
+      255
+    ],
+    "sourceAlphaDistinctValues": 256,
+    "transparent_background": true,
+    "workingLayer": "layers/B02-generated-paper.png",
+    "workingLayerSha256": "ebd3b46d4b484db66c3109a8758690fdc5c217189d7deee887418b1274f383a4",
+    "workingDimensions": [
+      314,
+      206
+    ],
+    "workingAlphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": "Source resized to314x206 with alpha retained; only new paper cropped(50,102,283,206), compressed to233x64 and placed at(63,142) to meet the fixed printer/floor geometry. No base image resampling.",
+    "submittedPrompt": "prompts/B02-paper-layer-submitted.txt",
+    "submittedPromptSha256": "6f354a38591a54d9162b7430d119f7b67c9f892f410bbe7fe1bedb1f468829dc",
+    "referencesInOrder": [
+      {
+        "file": "references/A01-restroom.png",
+        "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+      },
+      {
+        "file": "generation-source/exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+        "sha256": "8d6180abbe0787e4fafcd3ebf5d17003d2ecfea0174bf9c90a0d4bedd40f0c66"
+      }
+    ],
+    "nativeGridAuthorship": "UNPROVEN for the generated source-derived paper; no alpha threshold or global palette filter was applied."
+  },
+  {
+    "layerId": "B06-emergency-paper-layer",
+    "tool": "built-in image_gen.imagegen",
+    "generationCalls": 1,
+    "source": "generation-source/exec-ee2f1505-2950-4c34-a973-508f4bdb5827.png",
+    "sourceSha256": "f7ef0e8efa647c2fdbbedd8fae3333a0fbd28212525662e58acc2493421deaa4",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a1f095-e80e-7773-9e72-40383ff7cd50/exec-ee2f1505-2950-4c34-a973-508f4bdb5827.png",
+    "actualSourceDimensions": [
+      1548,
+      1016
+    ],
+    "requestedLogicalDimensions": [
+      314,
+      206
+    ],
+    "actualSourceMode": "RGBA",
+    "sourceAlphaExtrema": [
+      0,
+      255
+    ],
+    "sourceAlphaDistinctValues": 256,
+    "transparent_background": true,
+    "workingLayer": "layers/B06-generated-paper.png",
+    "workingLayerSha256": "deb4e21100fc734fab7ea253be02076ac6351992a9982ad1a91ffcb50b5f9944",
+    "workingDimensions": [
+      314,
+      206
+    ],
+    "workingAlphaExtrema": [
+      0,
+      255
+    ],
+    "derivation": "Source resized to314x206 with alpha retained. Explicit spatial foreground/sign protection masks clip only added paper; no alpha threshold.",
+    "submittedPrompt": "prompts/B06-emergency-paper-layer-submitted.txt",
+    "submittedPromptSha256": "d8246261c9610130254f2fa9a2a05f42cd30c49a881f3d6ab1b244f419eb1695",
+    "referencesInOrder": [
+      {
+        "file": "references/A01-restroom.png",
+        "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+      },
+      {
+        "file": "generation-source/exec-ad3a8bf9-29d7-43e6-9c9b-eb2e6967c3e8.png",
+        "sha256": "6e8f2eb66c1eb4554ce841e326d5cf0e56b3289be45426e732b90553e860df63"
+      }
+    ],
+    "nativeGridAuthorship": "UNPROVEN for the generated source-derived paper; no alpha threshold or global palette filter was applied."
+  }
+]

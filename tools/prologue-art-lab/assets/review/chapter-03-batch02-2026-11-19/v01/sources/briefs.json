@@ -1,0 +1,119 @@
+{
+  "canonicalCommit": "3ac5422621fd44a138b7975b86af58e0306c6ea4",
+  "narrativeBlob": "857ffdf1bc9432cf4bbbfd7819f5f430a06d9036",
+  "branch": "art/ch3-pavilion-batch02-20261119",
+  "candidates": [
+    {
+      "candidateId": "CH3-B01-arrival",
+      "record": "scenes:pavilion_reboot/arrival",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-B01-arrival-catalogue.txt",
+      "promptSha256": "2e567c9284a3de3d61e596ebd95ddd5f535ee70ba4f5c537a30d5e1d45971486",
+      "sourceNodes": [
+        "pavilion_arrival"
+      ],
+      "kind": "scene",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B02-record-printer",
+      "record": "scenes:pavilion_reboot/record_printer",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-B02-record-printer-catalogue.txt",
+      "promptSha256": "a63d1a624e2108f052ba72aacb6e0383e78ca1859c206758737b088e8cbd97ae",
+      "sourceNodes": [
+        "record_print",
+        "record_challenge",
+        "record_choices",
+        "stapler_printer_snarl",
+        "attendant_honest"
+      ],
+      "kind": "scene",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B03-record-printer-bg",
+      "record": "scenes:pavilion_reboot/record_printer#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-B03-record-printer-bg-catalogue.txt",
+      "promptSha256": "c28e296fc2422e1b6f634546d14eda881bbebf36ad1f7c60210eea76f6ac79af",
+      "sourceNodes": [
+        "record_print",
+        "record_challenge",
+        "record_choices",
+        "stapler_printer_snarl",
+        "attendant_honest"
+      ],
+      "kind": "portrait-background",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B04-record-scanner",
+      "record": "scenes:pavilion_reboot/record_scanner",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-B04-record-scanner-catalogue.txt",
+      "promptSha256": "e33125b7da8d796a602e3e14e764969c383aa16674dc0fd2d694a2d5c7997654",
+      "sourceNodes": [
+        "record_scanner",
+        "record_scanner_result"
+      ],
+      "kind": "scene",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B05-record-scanner-bg",
+      "record": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-B05-record-scanner-bg-catalogue.txt",
+      "promptSha256": "92e0be79137392b1287a7ad2450a00cf0627fa71b1fe74646aa2873764d3c8b3",
+      "sourceNodes": [
+        "record_scanner",
+        "record_scanner_result"
+      ],
+      "kind": "portrait-background",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    },
+    {
+      "candidateId": "CH3-B06-paper-emergency",
+      "record": "scenes:pavilion_reboot/paper_emergency",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-B06-paper-emergency-catalogue.txt",
+      "promptSha256": "9a7114b818a754d976d1e5d327106f9ee972ee77dbbaef40d5e148238e8f4825",
+      "sourceNodes": [
+        "paper_problem_end"
+      ],
+      "kind": "scene",
+      "selected": false,
+      "approved": false,
+      "assetPath": null
+    }
+  ]
+}

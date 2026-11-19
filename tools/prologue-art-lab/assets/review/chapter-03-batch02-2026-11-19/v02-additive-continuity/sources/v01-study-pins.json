@@ -1,0 +1,397 @@
+{
+  "scope": "Frozen first-generation studies, superseded by owner continuity correction; not selectable current candidates.",
+  "files": [
+    {
+      "file": "v01/BATCH_A_ARCHIVE_SHA256SUMS.txt",
+      "sha256": "ae6d9302df2dfd928f78efb9e65802533e0334592967c67c05c270826211def3"
+    },
+    {
+      "file": "v01/CANDIDATE_HASHES.md",
+      "sha256": "628de930cfb8bb3fc89d545e97b8cf32137e610fa266ba540da971038e16eb1b"
+    },
+    {
+      "file": "v01/PNG_SHA256SUMS.txt",
+      "sha256": "a65e22c495303d690d6fa361f20b7a5541ad51a384e52fee15ba6dca272a9b7c"
+    },
+    {
+      "file": "v01/README.md",
+      "sha256": "9bbb3f1a75e1a2d42dad18608b5cb1e8e08d96d9edb8266528c8568071e3aa80"
+    },
+    {
+      "file": "v01/SOURCE_SHA256SUMS.txt",
+      "sha256": "ed03b2ac194e2c8cf18beaa2107fac9fdb3053f379c6b9e924b49cc0033ad9af"
+    },
+    {
+      "file": "v01/build_review.py",
+      "sha256": "b9b6b89150fd0cb47b4be0119cc5993b138edb188d17511268c6e3c08414809c"
+    },
+    {
+      "file": "v01/candidates/CH3-B01-arrival-v01.png",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478"
+    },
+    {
+      "file": "v01/candidates/CH3-B02-record-printer-v01.png",
+      "sha256": "5912ef003ecfc1e2fe9fe2f3aad9385fae319667ef7f16075bcc25c7c75df694"
+    },
+    {
+      "file": "v01/candidates/CH3-B03-record-printer-bg-v01.png",
+      "sha256": "bef0297ea9062ca501fca7c689c2698a04b3a23db6ecf60dff4f970c22c7bd57"
+    },
+    {
+      "file": "v01/candidates/CH3-B04-record-scanner-v01.png",
+      "sha256": "db253773d0b58d4c5c6df7b6b5f2a439aaf6444944139a6046ed31d15396cf82"
+    },
+    {
+      "file": "v01/candidates/CH3-B05-record-scanner-bg-v01.png",
+      "sha256": "bc5c2be22486045e5e461dea89a6904170f7d5f459894fe4b2da1cb7a9918e4f"
+    },
+    {
+      "file": "v01/candidates/CH3-B06-paper-emergency-v01.png",
+      "sha256": "2ef5f284c82cbf8bbb0a864f9613b8c7d0807aa5d2513ca6f55883d75f3960c6"
+    },
+    {
+      "file": "v01/comparisons/CH3-B01-arrival-style-4x.png",
+      "sha256": "e7c99d2efa0960cbbd3bdcf8ef27d5cd56120f31be0281976cc06dbf1b68f7c9"
+    },
+    {
+      "file": "v01/comparisons/CH3-B01-arrival-style.png",
+      "sha256": "f14c8a3c896417f661386dc4aa96cefe38b1eed8888732d03d551fd306d4dec6"
+    },
+    {
+      "file": "v01/comparisons/CH3-B02-record-printer-style-4x.png",
+      "sha256": "765d2be341777cdf25503d64a9d784fa0a62cfe799b5184ecde14a0d8afd5030"
+    },
+    {
+      "file": "v01/comparisons/CH3-B02-record-printer-style.png",
+      "sha256": "4ce011742372c452806672afe2180e9b137e1d3b83e7d490472ce0b55ed5c5f1"
+    },
+    {
+      "file": "v01/comparisons/CH3-B04-record-scanner-style-4x.png",
+      "sha256": "673c06a5f2e0b637ef898ce9e9c095ae7a8d3fadece8ee385f0dd3103f2a201f"
+    },
+    {
+      "file": "v01/comparisons/CH3-B04-record-scanner-style.png",
+      "sha256": "16cb856825857a5445ca9cb0b496ebcbc7ce36c774a31308e0fa02fbdc507a3a"
+    },
+    {
+      "file": "v01/comparisons/CH3-B06-paper-emergency-style-4x.png",
+      "sha256": "fbf8d62f22d527adbd6ca5e03b65e824e42d05996b1771d13cda58f60e2c1352"
+    },
+    {
+      "file": "v01/comparisons/CH3-B06-paper-emergency-style.png",
+      "sha256": "076d99d11430731dbc11e2dde27388dc23b09386f4597d1ff1b27ae628698fc0"
+    },
+    {
+      "file": "v01/comparisons/printer-paper-emergency-4x.png",
+      "sha256": "3ee17c52a555c7b4bdc050e536f1e9fb73d9302cf9d4bd60043755b37701dccf"
+    },
+    {
+      "file": "v01/comparisons/printer-paper-emergency.png",
+      "sha256": "e565b82f0c14ff0a3580e3d0c0606e2ac30360255248f99dac0cab19f691228d"
+    },
+    {
+      "file": "v01/composites/CH3-B03-record-printer-bg-A03-idle.png",
+      "sha256": "84370ea86f2b7ec03b940337caa1bc5496ef0e9c8a20551b715e6c314bf70468"
+    },
+    {
+      "file": "v01/composites/CH3-B03-record-printer-bg-background-composite.png",
+      "sha256": "9812a731099582279e89807f9b75ab8d0a3e53b7a53b269455cca6e30460854a"
+    },
+    {
+      "file": "v01/composites/CH3-B05-record-scanner-bg-A03-idle.png",
+      "sha256": "bf4a221130d132c323e27f930e5cf825c482b2a41630aa19cde32f0f58bea2b8"
+    },
+    {
+      "file": "v01/composites/CH3-B05-record-scanner-bg-background-composite.png",
+      "sha256": "57ec128579d88700025973a61f46fb242d5085d773ff2f11e371055239f1562b"
+    },
+    {
+      "file": "v01/generation-source/exec-21a90722-b88e-4304-9a59-ae93efaac13c.png",
+      "sha256": "8d6180abbe0787e4fafcd3ebf5d17003d2ecfea0174bf9c90a0d4bedd40f0c66"
+    },
+    {
+      "file": "v01/generation-source/exec-22683862-1add-41aa-b70b-7f20f45a1b20.png",
+      "sha256": "4456b13516edcd416ac5abdf9ddca12bbc61b626fac000f4d0d676ce9978ff34"
+    },
+    {
+      "file": "v01/generation-source/exec-2b2e5bc1-f57a-4ca7-be0d-e19a8c16c94f.png",
+      "sha256": "6fb45392d42772c4e03346e9bab7136bca3fc57c438a359f00b279c45071df79"
+    },
+    {
+      "file": "v01/generation-source/exec-56ac2a79-1529-4657-b48d-0f1fd64b31e2.png",
+      "sha256": "aeb93d784f45da6403e6e2044274d47a0297822add0dda3abc0c2c14580755f6"
+    },
+    {
+      "file": "v01/generation-source/exec-ad3a8bf9-29d7-43e6-9c9b-eb2e6967c3e8.png",
+      "sha256": "6e8f2eb66c1eb4554ce841e326d5cf0e56b3289be45426e732b90553e860df63"
+    },
+    {
+      "file": "v01/generation-source/exec-dccd9722-077e-4592-b0a2-511e99ab76a2.png",
+      "sha256": "60a2c2f0a56b2baac294dd5a1d3c0473d4faee8ad9f8489eba39ce722397ca32"
+    },
+    {
+      "file": "v01/generation-source/exec-f80350e6-a20f-47c0-a812-9b29b76fabe0.png",
+      "sha256": "b6fad9bdc1c796913c5fcfa7c3f2cfccda963c6551c75d40fd400b2d487e0c24"
+    },
+    {
+      "file": "v01/index.html",
+      "sha256": "6d9ac9128c40014110ea85d015274a7f734565f2d87189b48c7ea39f8fd16804"
+    },
+    {
+      "file": "v01/manifest.json",
+      "sha256": "2055c6667ecb17b461bca624eb46fdae86e00e8840e5da53f0e9e353a111e130"
+    },
+    {
+      "file": "v01/previews/CH3-B01-arrival-v01-4x.png",
+      "sha256": "64f63efd2593a82891e8b6e028f5860ca9d8ab5f76c7f41b62382fba8b5e86c0"
+    },
+    {
+      "file": "v01/previews/CH3-B02-record-printer-v01-4x.png",
+      "sha256": "9858cf2845393e55f7db89161cfc82947782878556547ffd07df5b728a5af669"
+    },
+    {
+      "file": "v01/previews/CH3-B04-record-scanner-v01-4x.png",
+      "sha256": "19d10270e913b7ce3efa5f6e1ea5c821951b0c95a280e2c050f017ddece01d20"
+    },
+    {
+      "file": "v01/previews/CH3-B06-paper-emergency-v01-4x.png",
+      "sha256": "b235c179d069f5ba39e4e41fded3bcdada4d36010eab490d057b6c69cfbd47c0"
+    },
+    {
+      "file": "v01/prompts/CH3-B01-arrival-catalogue.txt",
+      "sha256": "2e567c9284a3de3d61e596ebd95ddd5f535ee70ba4f5c537a30d5e1d45971486"
+    },
+    {
+      "file": "v01/prompts/CH3-B01-arrival-submitted.txt",
+      "sha256": "7257cad8122cb65cc7dd645657dfca30951d73d0a2a33f995be276831a2368bd"
+    },
+    {
+      "file": "v01/prompts/CH3-B02-record-printer-catalogue.txt",
+      "sha256": "a63d1a624e2108f052ba72aacb6e0383e78ca1859c206758737b088e8cbd97ae"
+    },
+    {
+      "file": "v01/prompts/CH3-B02-record-printer-submitted.txt",
+      "sha256": "965c4c323b005e553aa0f2a2a5791a9c37370a4840c14606063b720c8baf8ea9"
+    },
+    {
+      "file": "v01/prompts/CH3-B03-record-printer-bg-catalogue.txt",
+      "sha256": "c28e296fc2422e1b6f634546d14eda881bbebf36ad1f7c60210eea76f6ac79af"
+    },
+    {
+      "file": "v01/prompts/CH3-B03-record-printer-bg-submitted.txt",
+      "sha256": "b5ddf3f4aae8c69329883f9ae705609dbc909bce7b47eb9628a4b727b554ba7c"
+    },
+    {
+      "file": "v01/prompts/CH3-B04-record-scanner-catalogue.txt",
+      "sha256": "e33125b7da8d796a602e3e14e764969c383aa16674dc0fd2d694a2d5c7997654"
+    },
+    {
+      "file": "v01/prompts/CH3-B04-record-scanner-submitted.txt",
+      "sha256": "20ec87458080bff020a188ac7e532b25b349404378e7887125efb848a8673ea0"
+    },
+    {
+      "file": "v01/prompts/CH3-B05-record-scanner-bg-catalogue.txt",
+      "sha256": "92e0be79137392b1287a7ad2450a00cf0627fa71b1fe74646aa2873764d3c8b3"
+    },
+    {
+      "file": "v01/prompts/CH3-B05-record-scanner-bg-submitted.txt",
+      "sha256": "e0bfc8ae2b0079338099ebc8c2bf918e37cc25bbcf6004fbf5cd43ce40b0c4c9"
+    },
+    {
+      "file": "v01/prompts/CH3-B06-paper-emergency-catalogue.txt",
+      "sha256": "9a7114b818a754d976d1e5d327106f9ee972ee77dbbaef40d5e148238e8f4825"
+    },
+    {
+      "file": "v01/prompts/CH3-B06-paper-emergency-submitted.txt",
+      "sha256": "35cf4b28d798fec05d6e00cd4333c3c6a72dcac7178c538c883437a67848a51b"
+    },
+    {
+      "file": "v01/prompts/canonical-direction.txt",
+      "sha256": "c78e79379d98b55b31c1907722fdb8c4df8f284e3419fd176d9ffe23b16b085f"
+    },
+    {
+      "file": "v01/qa-browser.cjs",
+      "sha256": "1015c850361ccdb7f2bb03bddba611cf91d0b8340ac883aedf106b66a326157f"
+    },
+    {
+      "file": "v01/qa.json",
+      "sha256": "f664f68fb043cb11d794e881aa3d257c9eb26424d85edddffd4cc71516ec1b24"
+    },
+    {
+      "file": "v01/record_generation.py",
+      "sha256": "8f2a54cdb9394a9f96b4182cae5784fbbaf8b2e7a6c97faab15df3945b078daf"
+    },
+    {
+      "file": "v01/references/A01-restroom-4x.png",
+      "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+    },
+    {
+      "file": "v01/references/A01-restroom.png",
+      "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+    },
+    {
+      "file": "v01/references/A02-restroom-bg.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+    },
+    {
+      "file": "v01/references/A03-attendant.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "v01/references/A04-verification-4x.png",
+      "sha256": "68d9af816b69d0acbae70d1d864f96ef7e1f2389a0b062d578fc4b38207d7ea4"
+    },
+    {
+      "file": "v01/references/A04-verification.png",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5"
+    },
+    {
+      "file": "v01/references/A05-verification-bg.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382"
+    },
+    {
+      "file": "v01/references/A06-presenter.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    },
+    {
+      "file": "v01/references/chapter-01-foyer-4x.png",
+      "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+    },
+    {
+      "file": "v01/references/chapter-01-foyer.png",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+    },
+    {
+      "file": "v01/references/chapter-02-groundskeeper-4x.png",
+      "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+    },
+    {
+      "file": "v01/references/chapter-02-groundskeeper.png",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+    },
+    {
+      "file": "v01/references/prologue-reception-4x.png",
+      "sha256": "577bbda805b50ae820ff362f340f66df5a4447d73fb455ed49943742ba43f20a"
+    },
+    {
+      "file": "v01/references/prologue-reception.png",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+    },
+    {
+      "file": "v01/screenshots/CH3-B01-arrival-4x.png",
+      "sha256": "8734ee286e4b242f4b6b8f513e5521a0127dbbc6259e2b6a738fd54646d8bf4b"
+    },
+    {
+      "file": "v01/screenshots/CH3-B02-record-printer-4x.png",
+      "sha256": "3502e391f7f1684ca71d4120df3b70183e2dfd769c8485a44a9db5d525bbe750"
+    },
+    {
+      "file": "v01/screenshots/CH3-B03-record-printer-bg-composite-native.png",
+      "sha256": "4a934f0c30e680e0fb9fe8e8d6f1284aa81f954193ac34723635c436b07a237c"
+    },
+    {
+      "file": "v01/screenshots/CH3-B04-record-scanner-4x.png",
+      "sha256": "3111a4a520c4b5c2df4e8d570c9a54c59e478c49b3c6a4b662402d491d12e3ef"
+    },
+    {
+      "file": "v01/screenshots/CH3-B05-record-scanner-bg-composite-native.png",
+      "sha256": "85ee40b716015fc907d7cd520987d25dd167715923b718fec13a9eac20431777"
+    },
+    {
+      "file": "v01/screenshots/CH3-B06-paper-emergency-4x.png",
+      "sha256": "412f572e441f5625b759fb95476612d159be1a8814265b38d6bdffefc09d49a4"
+    },
+    {
+      "file": "v01/screenshots/gallery-native.png",
+      "sha256": "7735b5f759baf5851ce50add2a3d1f73aa18bc58289672510aa493a6b08354ed"
+    },
+    {
+      "file": "v01/sources/PMO-BATCH-B-HANDOFF.md",
+      "sha256": "bb6500bdf1f14cbd054d880662e6a48adb2560e663a194829b68b8573a851a26"
+    },
+    {
+      "file": "v01/sources/baseline-tests.json",
+      "sha256": "d8fe7c0ab968298e2029ed5cd86f657a85a8071261d73cdb3fe1f44bdf030cac"
+    },
+    {
+      "file": "v01/sources/batch-a-archive-pins.json",
+      "sha256": "2d262c5b91f6656492365e6f5c34d14a2c7b00fb79ed0f6639e6f18a8bac82ff"
+    },
+    {
+      "file": "v01/sources/briefs.json",
+      "sha256": "2a33250eddc235aa3035a57d75dd9084c24438b8dc26b47970c638881b94686f"
+    },
+    {
+      "file": "v01/sources/canonical/docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md",
+      "sha256": "e8548ab9edb8fd2dd79fe5d9d46ad77cd12dd85d038ca59ef92a510122a6e0c0"
+    },
+    {
+      "file": "v01/sources/canonical/docs/111_CH3_ARTWORK_PMO_HANDOFF_AND_NARRATIVE_LOCK_20261118.md",
+      "sha256": "45c1fcba9ad27b0737ac5eaebeac5bb76e6c3542e5d30da76a6ee471284dc612"
+    },
+    {
+      "file": "v01/sources/canonical/docs/112_CH3_ARTWORK_AUDIT_AND_GENERATION_HANDOFF_20261118.md",
+      "sha256": "71aca9bd4fe170bf33f7d6b7f0390da45db00acc4a3dcff36622828dfbb7bbb4"
+    },
+    {
+      "file": "v01/sources/canonical/story/artwork.draft.json",
+      "sha256": "804c08e438cc345c78daebf48b554c9792575eeeb16f4822be7a221efeceb328"
+    },
+    {
+      "file": "v01/sources/canonical/story/chapters/chapter-03.reboot-candidate.json",
+      "sha256": "36ae178d05a9db7dd318c441e4d8681eaa674c28ced81df97dcaba6c1c5c0253"
+    },
+    {
+      "file": "v01/sources/generation-records.json",
+      "sha256": "f46a797b187b3fcabff33bb63ce5ac81bd77656640449eaa261853e279cdc539"
+    },
+    {
+      "file": "v01/sources/history-pins.json",
+      "sha256": "dea4a9bdc7acec489a6e879c13edaa8d8b3ed84fc15042a45357118e26e3b7c5"
+    },
+    {
+      "file": "v01/sources/initial-attempts/CH3-B05-initial-composite.png",
+      "sha256": "acb2d0196a19558c18a0093a13ef3a8c861c8f9e19dbcab1a14084f783ee45a0"
+    },
+    {
+      "file": "v01/sources/initial-attempts/CH3-B05-initial-submitted.txt",
+      "sha256": "4f3de292939e3cfe42e04368d9efb662f1b79381a655919cf8b6cfe04aad2e70"
+    },
+    {
+      "file": "v01/sources/initial-attempts/CH3-B05-record-scanner-bg-initial.png",
+      "sha256": "fa8a2c087976a50bd5c21db5e4fca4cc129d7c03dfcf205d24f1f1730f260ea7"
+    },
+    {
+      "file": "v01/sources/initial-attempts/generation-records.json",
+      "sha256": "626fdd1d0b3146075a78d0e24c74b3bd81e64d1c50440372959a7479a46c24c6"
+    },
+    {
+      "file": "v01/sources/initial-attempts/phase2-scanner-generation-config.json",
+      "sha256": "4814bdbb0d8951c3159ad4be62a068684392e855b42ff0246b1947ca48feec8b"
+    },
+    {
+      "file": "v01/sources/phase1-generation-config.json",
+      "sha256": "1d79db86a1a3625102a025867bdf469decd684f66310a115afd9cd1ef17dbe34"
+    },
+    {
+      "file": "v01/sources/phase2-printer-generation-config.json",
+      "sha256": "f37c797256972c55b4f5d9a84df2e0308f2b5a3c048e623f606fdfbece1d97d3"
+    },
+    {
+      "file": "v01/sources/phase2-scanner-generation-config.json",
+      "sha256": "4910d3991d8fba606f07d65d7bf311d4dffd18f274d69ec7757ba3cf909eeeaa"
+    },
+    {
+      "file": "v01/sources/protected-files.json",
+      "sha256": "8f0c5b0009cc8f5a3326e7ae872292b0ce958af1c995ab0f64c92009f2a42cb7"
+    },
+    {
+      "file": "v01/sources/reference-manifest.json",
+      "sha256": "ac38d4426dea6e8b92825e8b9d312350b343192db9cb68dde31a464951d2278a"
+    },
+    {
+      "file": "v01/sources/visual-inspection.json",
+      "sha256": "bb3e0d0d6d7454e3c1a400ff7e5126feb2c2782bf07961940afdc075d418cc3f"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v02-additive-continuity/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Exactly six current candidate cards; superseded attempt is provenance only",
+    "Native main scenes and all portrait/composite/reference images decode at exact intrinsic dimensions",
+    "4x main-scene control applies exact integer scale; portraits and composites remain native size",
+    "Every main scene has a bounded, same-scale cross-chapter comparison at4x",
+    "All current metadata remains generated/unselected with null production paths; composite anchors and approved foreground hash match",
+    "390px mobile layout has no horizontal document overflow and no fractional artwork scaling",
+    "No browser exceptions or failed network requests"
+  ],
+  "errors": [],
+  "failed": [],
+  "scope": "Browser behavior and metadata only. Original native-grid authorship and creative/cross-chapter approval are not passed by this test."
+}

@@ -1,0 +1,2281 @@
+{
+  "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "files": [
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/CANDIDATE_HASHES.md",
+      "gitBlob": "e31629e127523e7e3e39c81cec6c452b002e8c71",
+      "sha256": "9819a7813164c52ed4a290190925b8dd58d04b4713e2162cde628943c2cb18f6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/PNG_SHA256SUMS.txt",
+      "gitBlob": "37cf9f3f7f68aba9e27cb45b5d63d33313c12a20",
+      "sha256": "e6dbedd4a76548339a00a6448e83000792e0b633d41a1fc2b840482f81979616"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/README.md",
+      "gitBlob": "8d81798345b231b2bba2f3491c71f7faf61c62c2",
+      "sha256": "2ca32c16269d490faec4c2a3c84e2d7056555170be07745e1b13ff1d5c0c89f5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "46687736ae2a66158626d3fa77f4afed1a42ebcd",
+      "sha256": "b811c333a20f52a3b1e68c63ec9bb01654bd52168093c34ba202c150c10892d4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/VISUAL_QA.md",
+      "gitBlob": "95a2ff9599644bcedaa9824f7a268472242dfcbc",
+      "sha256": "61b1d7fe5652d6ef9db995b45d01828b907b22eaf85832492e9516190d5500df"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/browser-qa.json",
+      "gitBlob": "86ba0132b86bed08941224511e9700fc1961395a",
+      "sha256": "ce5437bf74926d5d44c19eaa93a9591799bf4e3c48b2e9efd2baf9cb39cef42d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/build_review.py",
+      "gitBlob": "cae212720e6e78ecd1bfbf8c914056c070151d60",
+      "sha256": "79a615f3f447ba3152ecde8d5893150dbfa40a653b8793ea821a4ace3f8d5005"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/candidates/CH3-A01-restroom-v01.png",
+      "gitBlob": "37e9bab77251527e2c82285d0afd2528b8a9cf24",
+      "sha256": "2675e51df2a9cd87a382f1bc1236e483d284973e671bf893aefe2adaa66f8201"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/candidates/CH3-A02-restroom-bg-v01.png",
+      "gitBlob": "d220a7b963f5e92ba9ead3ac6d7feb9cdfd8273d",
+      "sha256": "f8d76872bcdccb9bc620d60d9c7df304296dfca18d9ed0838700963aa6343b9f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/candidates/CH3-A03-attendant-idle-v01.png",
+      "gitBlob": "cef7df033c00775647f71b7670275df5101b2d50",
+      "sha256": "eed0af042adff8765084eed0cc1f8d9dde9cdfe7fd55a355024904caa0cbb990"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/candidates/CH3-A04-verification-v01.png",
+      "gitBlob": "3e42072750d4229ddc488f31dc901c5ac388ea9a",
+      "sha256": "bbdda47db831be488672209405a6d94b22875f04c6d1fcc147901a535e122b3f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/candidates/CH3-A05-verification-bg-v01.png",
+      "gitBlob": "12eeb3ce06e15240fbaec0f1b1be267afac9b6a4",
+      "sha256": "9da86e6802dd2e4c771b7376106c2822c54c6b475fec50c03df2e3f8cfa9f001"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/candidates/CH3-A06-presenter-idle-v01.png",
+      "gitBlob": "9a6b2ea11793ac5334312dc8051261c02b180071",
+      "sha256": "79e259ea26e780438cfe4b727d65b90e57e01ca1a005a330b3ea868fdb7e9c0e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/attendant-background-foreground-4x.png",
+      "gitBlob": "a4e94fa89db4f2d30903dbf8406435d2ba65f462",
+      "sha256": "7cd3af1fce9d6d4c3d576fa81862134f126ea0df8048ebc584477004fca620fc"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/attendant-background-foreground.png",
+      "gitBlob": "fc51fcd230b7616033c840e83f1b8632fd7b35e0",
+      "sha256": "773cb5ca552ea16a38cc7a3044397029709c4e0ea47fcec566fa3ad678a3c250"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/attendant-foreground-on-dark.png",
+      "gitBlob": "f03f7dbeb960f91fd4372d721ff034d6ec78f35d",
+      "sha256": "09bb0a48b2757d3813913b47b3e8101d052431b3f1fdeba8a20e1eaeeb64ce52"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/attendant-foreground-on-white.png",
+      "gitBlob": "afa0beae8ceb20aa1b9ace42128948916b2322f6",
+      "sha256": "095d0240992add09a5d66afe076d085352904c19fc7d2ca8a99d23fb8511a853"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/presenter-background-foreground-4x.png",
+      "gitBlob": "22447e6fa9c42cb8e7866c5a7d6ea01284ad5c55",
+      "sha256": "653b895174215126a1afdb0902a731042d06770561ef13dbea95367db59611c9"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/presenter-background-foreground.png",
+      "gitBlob": "a8c63b61210427401e2d00a7b0796537456a3bf7",
+      "sha256": "eb5796e549ead9dcae0505402f9baa5fc4b647c042d6c9b5f1d51a8fc6ebd951"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/presenter-foreground-on-dark.png",
+      "gitBlob": "356ab46f8ea210021b35ae69376d5900c034c3bd",
+      "sha256": "da72449f61b6a52ecc1eb456327bb160da699b6094d5d3dff7434655368da967"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/composites/presenter-foreground-on-white.png",
+      "gitBlob": "e3f78fdbe4a9c514f87f1dccba848e6d07c44537",
+      "sha256": "e7502085750c9661acdd71db5f1bb52a2f7fa1f9e1a0d0dd68150647b90b2a2e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/gallery.css",
+      "gitBlob": "a31c1f2675df0d9f4fc7f5462246ba727f46670a",
+      "sha256": "c467fe39a2769b92a501c6886e0471d95ed76e086e2c381a6ab6caa82e26f41f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-history/CH3-A01-restroom-superseded-reference-export.png",
+      "gitBlob": "dc00ff07dce9b920ef2a177594ea6560f77a9c6e",
+      "sha256": "46e8b62c4e678f7db873d44afedec5ee97d7df30829b7c0ec7be7e2f2a9e7e78"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-records.json",
+      "gitBlob": "0cadbac32ebc29d1ff25345bcc1205663f1021b5",
+      "sha256": "1ace77a7e9ac306e75c92926bdbd6a63b1f9aebef304611795e0fa5190c4adae"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-2157f6b5-32ad-46a8-a342-d406e4ef7ede.png",
+      "gitBlob": "d1aa41da36ae5ef576f3a3d86f97eae600431816",
+      "sha256": "364049c68e5688491c59e02a215da023f6be023c7bb288a35468fdb06cf05bb2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-74d173c2-e5be-4084-9460-4b5f352cd281.png",
+      "gitBlob": "fb818226a5a9ac9891ae64d3194529636f2dd59e",
+      "sha256": "2c17f48ca3a13d3a7e371ddb93c7ac9ef68ef78b1ec0ff89ad040e807b46c98e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-775809d2-aa59-499e-83f3-c3a52545d085.png",
+      "gitBlob": "ca28b4838d5b71a19333bc0bc2e4adac5086d7d9",
+      "sha256": "52beba660129b9df340e26c437c2b76a2421cbd7a02e68158805ad60d0273981"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-7e241781-32b1-4ffc-bc8b-a031fae0c187.png",
+      "gitBlob": "d355a8d8012e067e167aa4270ddb1becfd1a67ae",
+      "sha256": "127a7dc880b2e33cc50ea5b9ce5996cd042c0b5a244b66dc3e41059f8d15d042"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-81e8ae52-cd08-4da8-8868-81e77b03e337.png",
+      "gitBlob": "92bb210b7f937022b199113bd31490cddf57dd24",
+      "sha256": "7912ac7aaddc94d21ff6d95d03956dc76ce535a0cac0f6bf2455b8852492d2ca"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-bada92b3-0b76-4197-8d6f-57329556cc70.png",
+      "gitBlob": "a2fad8add0eddc55564c9744fbd0fa088241961a",
+      "sha256": "3ed5a0db704b55a60b2121eeeb9e315e45732ef9b64212b4b0038be4ac4456dd"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-ca47d950-1e5a-4b91-a1d5-796e352ebaf2.png",
+      "gitBlob": "3623e41d0bbbf851fd5f913142f7bacdf45a2402",
+      "sha256": "9713d26a2d763574b6e6c8d2f2aaff14431facbf3f9d80ed91db421bd03ea29e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-cfc1c244-28ff-43a1-b1ce-9db302d47a8a.png",
+      "gitBlob": "fa0d04d27146265838a93f25b0971ddedb62fa1d",
+      "sha256": "6757df9537fb41a115cf7fc0d09a32a3d93049500980fac88548171f71618aa6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/generation-source/exec-d9c7c526-ad11-495d-9a5b-97f0d6601bc8.png",
+      "gitBlob": "3f4dc5e13d168f63645afb157b93c5b37cfd5cee",
+      "sha256": "0c3b37541de28b02c611a998838347b92773a53bc550e282c678176b248292b6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/index.html",
+      "gitBlob": "1fb57af86d016f14cbbaf0f19a1c35fe883e52b6",
+      "sha256": "90605b985c166fa6b29ef110a3affdfbeab7774c010f728c5fddec5affe7885a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/manifest.json",
+      "gitBlob": "d66d93f222f9939b394ea9611154811b20a2a342",
+      "sha256": "25d041aee1f7d81a315492012c8070b1ee24e633fc1748be9c4895decccc98e0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/palette.json",
+      "gitBlob": "400467017cd3035aa2a79b2a713a9eaed5d70ff2",
+      "sha256": "a92ff41de779bd3889feee0aa40d03ce00cc4fc995bcd47d00dba4820fb6ed23"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/previews/CH3-A01-restroom-v01-4x.png",
+      "gitBlob": "011513e7672e49e7935636543820a0eecea70c3c",
+      "sha256": "c41c107bc5bd7ed10bc67a068cd5aa36fe6786da7f8bc0218021167a6483a426"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/previews/CH3-A02-restroom-bg-v01-4x.png",
+      "gitBlob": "991dd77b1f5a6e0aee7d159770686c58a56e6ba2",
+      "sha256": "374a9cd5b903e224662ab91efefc833adb3751150bff24e653df01cc5bf1fc88"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/previews/CH3-A03-attendant-idle-v01-4x.png",
+      "gitBlob": "bfce0893450027f94fd87771bf0376c0e7e640c1",
+      "sha256": "42727cd2ba28820a5c3c46f14ff3faaecdbc0153ef78b2270daee36990eaa1f5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/previews/CH3-A04-verification-v01-4x.png",
+      "gitBlob": "dff30e25550ecec72be2cbf1bd3bc40f19a66c53",
+      "sha256": "f0e0992e0f39bf17221fc91c9dcf7812e695feeac29d1739cf22ad3ca8f90eae"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/previews/CH3-A05-verification-bg-v01-4x.png",
+      "gitBlob": "2085aac37e8ea432f4cc75dfded9a59109cf49c6",
+      "sha256": "929379fad118e0b15bc553bf77960ab3170b2e35cc22cbb09ea4449683e36844"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/previews/CH3-A06-presenter-idle-v01-4x.png",
+      "gitBlob": "7de48f4f8f9fd8a7ab1a89dad991aaa8c32e1115",
+      "sha256": "146a8bed9d1f8323b8e4b775fb49af988e6cfdc00b61d9316657c47793a5fba0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/CH3-A01-restroom.txt",
+      "gitBlob": "9662d9748cde5d9853c5e0c2495fbd829242fc93",
+      "sha256": "1a3cd71d8ebf7b3360dde4783156b24654f5461bafdfc2ffda38b80742c07358"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/CH3-A02-restroom-bg.txt",
+      "gitBlob": "d785b169741e8093a1cbce38dd8a542bfe4d696d",
+      "sha256": "a240bbbf80926b1ebb91095abf2c17cd3ab284e190a2951fe8ac2b6f629fca3c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/CH3-A03-attendant-idle.txt",
+      "gitBlob": "851063f0ed6534d87fd3636a34079bfc94a797d2",
+      "sha256": "1d34cbf131e047c0188aa96f371d64c53065eb3cd9c17450c609871365af86d3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/CH3-A04-verification.txt",
+      "gitBlob": "ad87caee97bb27b13c63e26e3e4b4f446fe05ed7",
+      "sha256": "892026da33d241017c4fb3162bac16d461624e94e3e11ed7a66aa1ddde8de718"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/CH3-A05-verification-bg.txt",
+      "gitBlob": "68591958c4297da9539a914d875855c0c1e7d289",
+      "sha256": "065a5c56dd111e4c485ff7e75d28774a97f3da154adb38f8f12baf8e1df45618"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/CH3-A06-presenter-idle.txt",
+      "gitBlob": "258418e03791dcfec1b4920f40072a8fe49d2b51",
+      "sha256": "79a0f8a26d47fd48782a9b0258db3740b884bbd0ffe5fcc39e85f7f90e020a20"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/history/CH3-A01-restroom-superseded.txt",
+      "gitBlob": "53bcaa37c4790f367be08c933cce4246c9c7c320",
+      "sha256": "729798e04e87e06f93457f9bebc796b54454888bc8928f6f7980cc00b4ce51fe"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/history/CH3-A02-restroom-bg-desk-height-study.txt",
+      "gitBlob": "fa972f9213bf67ec15bfd9302ca74a72aedfdca2",
+      "sha256": "b6db45d191ece6626cd6daad34dbc6ee939f854d1536c4ce2070381ab12a585a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/prompts/history/CH3-A02-restroom-bg-superseded.txt",
+      "gitBlob": "0506823450ef5029ea6597cb4524e8d32c1bcd33",
+      "sha256": "8fe793d07be9a9dceddfacf8ddb01c580952bdf5df32fcdc66bba082e9a56036"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/qa-browser.cjs",
+      "gitBlob": "989eaa48d972abd100910cc54ef54f681ad51ffc",
+      "sha256": "6236bb6a13b14673ba4bed2b9e9e26d0e34fce4dac8eadb8b08d722d37a1fa20"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/qa.json",
+      "gitBlob": "ffd6eebfcaa157083314719ee6432f314ddc5581",
+      "sha256": "6ede95602e58bda5c8d8d816da786c0a9e448c6e3f38b9713f3189acdd1dec45"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/foyer.png",
+      "gitBlob": "47676ed64a3ed05063d30ab8727f99ea0d294544",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/groundskeeper.png",
+      "gitBlob": "175c2c3f6701daeee3750982c311187b670ebdad",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/manifest.json",
+      "gitBlob": "2de8f74ede059399a474c999f2bd3dd700c16738",
+      "sha256": "410043c9f41ecef58d0a1d9e779f2d592f9a51066561cb77a072419036fe99d1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/reception_background.png",
+      "gitBlob": "cc7b7a17b811368b516c9fc99c8ada78a2cae4b0",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/reception_scene.png",
+      "gitBlob": "0ebb25f32f30ce6d54e5c9e966dcdbfd9401d98f",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/receptionist_idle.png",
+      "gitBlob": "35b7d3b82178616d468e47da65bc360e798d839a",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/references/sorting_conveyor.png",
+      "gitBlob": "25860c85abcd499182ce75a1cf293a34990d0515",
+      "sha256": "fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/screenshots/composites-desktop-1x.png",
+      "gitBlob": "14185c8af355ea7a276bf92163ac815c9815ddaa",
+      "sha256": "23ba95ff2aadbda9ae125026226ea60f27d62186500a484016a8c6fe095c3514"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/screenshots/gallery-desktop-1x.png",
+      "gitBlob": "6b37d7253ecd3e9b0f41f8f6606d4bec5fc07ece",
+      "sha256": "779c799a6dd69b3cd168bbb3b222572fd0a2c05381cfc83b7056e1302c8d9550"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/screenshots/gallery-mobile-1x.png",
+      "gitBlob": "aa004c0dffd425053f9948f56574f81dbef37340",
+      "sha256": "0c93b914c0168c5e0c41fbd53478e12cec058ef5e9f1ab8e6b61fe6ac0792d66"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/screenshots/restroom-desktop-4x.png",
+      "gitBlob": "a218125407168c63611cabd4ba5385c1e0fa3539",
+      "sha256": "1c2c266365c26ee5a6e25feef5f231704cf85cfe48c3e1d734964859773d13df"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/sources/docs/111_CH3_ARTWORK_PMO_HANDOFF_AND_NARRATIVE_LOCK_20261118.md",
+      "gitBlob": "553777ef4883ef4afcb724205cf17c70a7ee7cb5",
+      "sha256": "45c1fcba9ad27b0737ac5eaebeac5bb76e6c3542e5d30da76a6ee471284dc612"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/sources/docs/112_CH3_ARTWORK_AUDIT_AND_GENERATION_HANDOFF_20261118.md",
+      "gitBlob": "a27f22bcdc90fc7cfe0ccdce3e858a115f92e897",
+      "sha256": "71aca9bd4fe170bf33f7d6b7f0390da45db00acc4a3dcff36622828dfbb7bbb4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/sources/owner-steering.json",
+      "gitBlob": "54cccbb6d196a5f95f5036c8b601ceb07c514593",
+      "sha256": "1108527618b1df533d9167e6ecec811c8cbbdf8c61b0e8065311ef658f789823"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/sources/registered-briefs.json",
+      "gitBlob": "326cf146fd19fe1803330308c08caa01983bcff8",
+      "sha256": "ffd4921124e65ff13224ecd41386d428b61ebdeef5137ae4b200e4dbc7c43bd7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/sources/story/artwork.draft.json",
+      "gitBlob": "129aab7f5b6ca3b6a7650037fcab79bdf8d2ad9c",
+      "sha256": "bc9d28acf4688fe2b6e260cd1609483fc8ebe0906eca98a1fe38137674e7cefc"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/sources/story/chapters/chapter-03.reboot-candidate.json",
+      "gitBlob": "857ffdf1bc9432cf4bbbfd7819f5f430a06d9036",
+      "sha256": "36ae178d05a9db7dd318c441e4d8681eaa674c28ced81df97dcaba6c1c5c0253"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/tool-calls.json",
+      "gitBlob": "1eea38bea11051cea3457bf1e13f4128b3c21235",
+      "sha256": "038e89c4e65284b5bcf439e963f7bc2b80d2b0bfdf803d7078c5e185554dc838"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/CANDIDATE_HASHES.md",
+      "gitBlob": "a06c468e4d3ef6f009e87fc56763acf70c234b3f",
+      "sha256": "6a1a63e49bb5ff49e374e2457e25efa05effa3c3e1449d41157dee5d69a30896"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/CHANGELOG.md",
+      "gitBlob": "5ee3b7ad2d5ffdfe099633f23054f2f1b2fde8e7",
+      "sha256": "e88b5a1b062dd4e6c9e545839003d6b83ffe4dbb2b8438853b064cef32ecd668"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/PNG_SHA256SUMS.txt",
+      "gitBlob": "e52be7c3272653fcea81c76329b912674cac852a",
+      "sha256": "576dc3f75bdd95e6aae41f40c9123314f7d01bfff8837d92753cfca59575572a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/README.md",
+      "gitBlob": "365579d87222e49e0ae2dd631a512e738a6e5b27",
+      "sha256": "ff02c117cd75e910e02384feceb957ab35e529c9020304d3f7f2277b80fa107e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "c34cf3c60848f444d38c6d0647b2c657d276f412",
+      "sha256": "768ca879fa97b83927c69a27a183db384d15b67c60a6ab2c0188ccea8d5ccbc0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/VISUAL_QA.md",
+      "gitBlob": "b5fa029c2853a7315640c87f6d355ccc779ec54b",
+      "sha256": "c40d3237229aa022648ec53f012e15d3d627b0f92c96a8366690df292c1baa56"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/browser-qa.json",
+      "gitBlob": "846d26d50ee782c9b2aa16ef97cc463394070c8b",
+      "sha256": "8443100e46605eee2d726c094c2231c84f88eb60d59a678c8aaed5dc6554d182"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/build_review.py",
+      "gitBlob": "38741cb51216b4c2f4ef0ad13f74a7fdb556d335",
+      "sha256": "8485de31d64a494e5c08824ebfe2e28c363b4ba8681fae2e99b11f2b95e09a6f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/candidates/CH3-A01-restroom-v02.png",
+      "gitBlob": "defd9de00fd2648013f16eff2019c917b03e2d7a",
+      "sha256": "724f62047a7cfb7e7cd5e90b1261ed473f295939dfd9bad1ec14817d228b0095"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/candidates/CH3-A02-restroom-bg-v02.png",
+      "gitBlob": "ee596adbb4c381cd2a89af104e1e40f6b3f1cdaa",
+      "sha256": "f2a45158551ba1c07b03a051b713021b43eeb2794c7e19c96d339e0fc08a4ed0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/candidates/CH3-A03-attendant-idle-v02.png",
+      "gitBlob": "307d42f79d9d2c2dea6c49111fbe7640c8f4698e",
+      "sha256": "b235c5b552ffa2da5c84d6f92ab6385a0bdc94d95a5ff42dfde505aba6c411d6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/candidates/CH3-A04-verification-v02.png",
+      "gitBlob": "9a651f446104dc310ebb85840068aa61b3e56c18",
+      "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/candidates/CH3-A05-verification-bg-v02.png",
+      "gitBlob": "27a928e2a567d87ac2c7e1cbc6c567d7d2059eb5",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/candidates/CH3-A06-presenter-idle-v02.png",
+      "gitBlob": "5fca7aa22e4f5a230717d622c87f42b893301f70",
+      "sha256": "f983fd2bd38d86a69b4a57621f979b624fed5f956a6d17e2cf92d29b88fd16b8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/CH3-A01-restroom-v01-v02.png",
+      "gitBlob": "f915180158db1e2b8ac1366919fe62c715be751f",
+      "sha256": "294612cb548aca3cb1d0b9b78062635d368951199ab42b06248d92cfb8a1c692"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/CH3-A02-restroom-bg-v01-v02.png",
+      "gitBlob": "01ba8ed567354e75e764ba182d94118ebe941815",
+      "sha256": "ad6b7fa8468f0726773f1a4473e141419a449ebdede3ed6c5ac04d3e42d21b88"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/CH3-A03-attendant-idle-v01-v02.png",
+      "gitBlob": "5057e6b509982048f4fc9f0dbc2b2edf179ed35e",
+      "sha256": "6fdfc27cc797b0be1b5eac529b59d83560237b3352ae702390138abda0b7d4b8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/CH3-A04-verification-v01-v02.png",
+      "gitBlob": "8ebdf167cb557f6a905a5e72c63900ce26838ae7",
+      "sha256": "e97ab761b181fac93c2f18d164739642bf4dbc7dbf28acefcff69fd9a2cbb00e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/CH3-A05-verification-bg-v01-v02.png",
+      "gitBlob": "619d8170a3a0ca83799ab5f3b278f14a686f0166",
+      "sha256": "6a6c0fd429e534dd54fb2ce46dc87b570080249784bda6e4931926a5b4ed7cd5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/CH3-A06-presenter-idle-v01-v02.png",
+      "gitBlob": "27ddb72d06895af7063e0692f41c4cd82474ac83",
+      "sha256": "76fed91dea203271d8c3b7fd8e4a08f765e2328f4e64f12aa9884eb6d12f1088"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/attendant-composite-v01-v02.png",
+      "gitBlob": "e58b6985db017c4e19efca7a35c0bbd7ca1257ef",
+      "sha256": "a0c77a7aa96fcdc98b1e3412e03fd341c6147eca9ac2e8d2ceba98b0c7efa3f2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/comparisons/presenter-composite-v01-v02.png",
+      "gitBlob": "837f19de40383c0271151de0b85c46022502e8f2",
+      "sha256": "4387cb047e83043873ac873c54065c52f773a745dd6f498c65ddbbba8a77223f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/attendant-on-dark.png",
+      "gitBlob": "5cedf57baa1b317416a554e4b57a3b3f39c930c6",
+      "sha256": "0552c239d8f9bffea65494aa06167e9b6b345de917f6f4cff3d67198292bf1a6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/attendant-on-white.png",
+      "gitBlob": "4624df6bb6214457b381bc16ff8303fe265ae79f",
+      "sha256": "36033637d425ff48e5322a963f6f3600efd2830f84f94491838439e482bcea64"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/attendant-v02-4x.png",
+      "gitBlob": "a796a4ba61f8ddbf8887db28fe323a906bef302e",
+      "sha256": "76d46a8f92a31009313531c4c672d917e8462c872d346da82a08abc10b375820"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/attendant-v02.png",
+      "gitBlob": "c05b3b8b9dc65acb3c1d14d5cdd5e1ae18a3bbc5",
+      "sha256": "3f955823b796b3b27ec3529303fe716947a1d4a6987ac75e9b10750802bf1758"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/presenter-on-dark.png",
+      "gitBlob": "3c4e0c659de9e237a29f8042f53e61eee794b8f9",
+      "sha256": "0566d8b9e5a2103d296bf6c3e55fcc2c64e10b8b8704d852e010fd800aa2b1f4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/presenter-on-white.png",
+      "gitBlob": "214104ff224b2152852fa55cdda11a27c657e766",
+      "sha256": "403544987a3a7c927737e9ccdbcc881700b512184cf969d69384f01c4b00653f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/presenter-v02-4x.png",
+      "gitBlob": "a9bef7197a5008e3a82839da4481638a28646133",
+      "sha256": "999e2894ddea72eb2ce54fda302c01d37c71fadf7f25257aec163343c1858211"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/composites/presenter-v02.png",
+      "gitBlob": "e9b5246a17ff51e6e0283e5b300afa532eb873d2",
+      "sha256": "f057960dfca3805fd7512bedbe353d3e2c6baddc40d1eae8cd9cf1066c2eb2b5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A01-restroom-coords.png",
+      "gitBlob": "225a77f224487b003ce7ee51de9d9734be46b3df",
+      "sha256": "5f329df6103e3d07b479ca5a34bfbf32fe8d1956f56e018b2c7de7b8d9b74c68"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A01-restroom-transfer-only.png",
+      "gitBlob": "0c962e02656edfd8e5f9e14c91e6d92e1d5504a2",
+      "sha256": "307257ca7bc934f677e42ba6e4cdac020f214a50c4367f1767e794ccc6dde7b2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A02-restroom-bg-transfer-only.png",
+      "gitBlob": "4b68094f0eab2d99cf4406a8b7d691be493a1db7",
+      "sha256": "94b13598df571abf743f259289525845014f848a34cd7af4c56b34f55ce77acd"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A03-attendant-idle-coords.png",
+      "gitBlob": "b900deee9b0e801a14968e892340266e31030762",
+      "sha256": "ae377028831e8b196a22acb6fdd2e64175d3afb641cbf80d1e4f134354c057de"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A03-attendant-idle-transfer-only.png",
+      "gitBlob": "ef3ae565fabd59e8148ae217f239f68f88e15eaa",
+      "sha256": "c12f23bb64d422054563a77194c3e3e00a5a4f425eb2f672ca4143928de6e0bc"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A04-verification-transfer-only.png",
+      "gitBlob": "1f5db3ef08371db5cbcff0901a71080f3f40d7fe",
+      "sha256": "6e68b701aa3836b606afbb4b2a74c54ac82ae0e02c9ba8a84a2116237d281fb8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A05-verification-bg-transfer-only.png",
+      "gitBlob": "059c196e3e2d6f7492c8e94f0e07e37c6b168809",
+      "sha256": "bb9609904cfdc85ab746dab3ae41e17234c584ee313f823a5efa4c955af9fa37"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/CH3-A06-presenter-idle-transfer-only.png",
+      "gitBlob": "1a592073a516e36843b915cb60a4670d54beaa2d",
+      "sha256": "c69ef2043f8083e96e8812d0eab9fe9ba543c1e4e210dd489fe6e98c637612c4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/attendant-coordinate-study.png",
+      "gitBlob": "48794ad281cccd609dc0701f7e2ee90ba7526eb1",
+      "sha256": "46bc9eac45fe08f8f392343cd7c83ab930b0ed024a0f54274e6c4e9dc3e8df3d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/attendant-transfer-guide.png",
+      "gitBlob": "8d5ca6e931b34fb3f6317506ba9c9bb71ba7b900",
+      "sha256": "3b5597ff10386c67b3de64b7803a2249b4c08da9a7ec7c90f5a98716a3773109"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/presenter-coordinate-study.png",
+      "gitBlob": "7c8d35fe454403a64d1316a284862920d2177b0a",
+      "sha256": "7541f8b6a18515669231aef47bf38bff0327849c3b9c5e49a60d195c99eff9d6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/construction-guides/presenter-transfer-guide.png",
+      "gitBlob": "9ce4233e8a4efa61911342b2a95f81c7bcf78cb7",
+      "sha256": "0d7d85d20001d337f6e9fad009afb63af78bc833894a5477451082e784a2a21f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/gallery.css",
+      "gitBlob": "a31c1f2675df0d9f4fc7f5462246ba727f46670a",
+      "sha256": "c467fe39a2769b92a501c6886e0471d95ed76e086e2c381a6ab6caa82e26f41f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/generation-source/exec-130d6c47-5e48-4944-9035-8d403add7348.png",
+      "gitBlob": "9dee236fd0b02517f7af3e1c5ec00ce887675c06",
+      "sha256": "20abc04859cd4078830ae84227fd21daac34e635ea5df049ec2d985880bc4907"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/generation-source/exec-168e9505-3f51-4dbc-adf4-a30a5df34b7a.png",
+      "gitBlob": "61a22bdd3655eabfa944f8403548f8f3b90fb9e5",
+      "sha256": "545e5d852f747ed20bbb248af81e2e90172fc8614b55dfcd29d13415b18ba121"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/generation-source/exec-212ef041-e389-43c0-94ea-84e177cc0e23.png",
+      "gitBlob": "24dbedfb94002b881b6279c8f7cc75e0ee1dd8e6",
+      "sha256": "b76336c4ee62240bd901c7c7051c39271e33351ff9ab60844a9836d17e9a7ac4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/generation-source/exec-9efb0027-1ebe-4be6-a059-5569e1f5a847.png",
+      "gitBlob": "8eb055774f759099495eba7d74388108c5b91a48",
+      "sha256": "c6f7dd50f9fb9fc26cafce6fa47ff8dceae8c2c2d0659e8b0307cb4e843d58e4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/generation-source/exec-c3c26ef9-ca47-4f41-a26c-b78d51fd2be7.png",
+      "gitBlob": "85df1b072ea070a6992103332b5c980e42ec323d",
+      "sha256": "19e8282d5b982d3452c047a3a80afe04aaaf2dabfedaf7029fe1d5b05c6c7a65"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/generation-source/exec-fba7bbc1-b2b4-4bf3-90d8-aa3f7d9f58d6.png",
+      "gitBlob": "cdf5ea2ec7d8c35da2de248b2e39e60eb02516b7",
+      "sha256": "e3c62b88d28c0c4ac4d948df8da45e8cc3b175ecc05e932f9c298c237c853431"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/index.html",
+      "gitBlob": "62307871693e2cc003e7fe02b28244317cb76932",
+      "sha256": "e2c9aecc0c74d92764c4cd2189ac33808d925c574b4f9899286f8eabb83ef2d0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/manifest.json",
+      "gitBlob": "40ec2d6489c41eef264f77ebb66e73f7d1972b3e",
+      "sha256": "83ff5387601544f28a7ce576df9964a261ebbf53fdf442ed001879b8a26ad91f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/package.json",
+      "gitBlob": "2ab772eaf1387b666e4c96b921848983ad9bdf10",
+      "sha256": "c7d8d71dcebdfd956a997199d4c38c58b40223a01dc195c604ebc77fb564f66c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/palette-qa.json",
+      "gitBlob": "4e467e6f5420c417fc4a350fe6af02e388ee5ffc",
+      "sha256": "5db1019b7e6598e07f05271f5de9789f2f0aab064482e2c9b4ea7846ce39fa28"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/previews/CH3-A01-restroom-v02-4x.png",
+      "gitBlob": "f45bb389ea8f8ce93ad94f28c5cd946923ca5e2d",
+      "sha256": "e99f6c6b2e322de19e35538b6198fe3a4d737f34a2135a07d188d236f192cb73"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/previews/CH3-A02-restroom-bg-v02-4x.png",
+      "gitBlob": "75e2b9b517b1a796d292f37ea02fe98a90af16cd",
+      "sha256": "93f0a98287320915ce5765bc1fb71629edb3ba0ec9b252993a4298ab205d1ab5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/previews/CH3-A03-attendant-idle-v02-4x.png",
+      "gitBlob": "b875f81fdc87844ed007937f5b3ee737fab3379c",
+      "sha256": "8654be1505e0d8f23d97b4abf873dbd0eac72ab6fb4ddd229e3afe99d6173f39"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/previews/CH3-A04-verification-v02-4x.png",
+      "gitBlob": "98de17e2ab685f6526b1afade188c1d170494b0b",
+      "sha256": "fc3847a9ebe8154f913f9199e5ca54258f4f7039290028910094fc3d80490845"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/previews/CH3-A05-verification-bg-v02-4x.png",
+      "gitBlob": "16f4c82c2c7f4d60538ca358126a0baeac1b1405",
+      "sha256": "7e00877f60752bdbab3f3c033570b5a6328b42f1c67dde8dd2fcc2594225a01c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/previews/CH3-A06-presenter-idle-v02-4x.png",
+      "gitBlob": "9a302f03724e6bb019b01498d6c3985d186893af",
+      "sha256": "64ab9905375edd8fa12b2738b05fb81ab9dbaf5aa955e6c4e934c5b741affb51"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/prompts/CH3-A01-restroom-v02.txt",
+      "gitBlob": "11b90b4334edcf3aba3ff73ddb8ab0fe1a28453d",
+      "sha256": "dce05b72097601e40cd956c60658a77e762e32293d37c15bbc2221f664a1e3f7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/prompts/CH3-A02-restroom-bg-v02.txt",
+      "gitBlob": "afc316fce35dc3510379fe76096591b5352f67cd",
+      "sha256": "25d0782ea122ead4ec61482f666956327a4f7b6e0fe768f3c833857f0e8b5803"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/prompts/CH3-A03-attendant-idle-v02.txt",
+      "gitBlob": "4f214055fd663e10456ad64dc7d4f7587ded3fac",
+      "sha256": "9d6194faaccc460b6e78ddb8c8a0d730d79acf32880ac21fdad0ba3bbc137b3d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/prompts/CH3-A04-verification-v02.txt",
+      "gitBlob": "655a0de1935a812c7ebc88a71a53ba3182e41cb0",
+      "sha256": "474b88db3fc389cda780a874cea681f4d972fb04a23fc032deea939416b4fe8f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/prompts/CH3-A05-verification-bg-v02.txt",
+      "gitBlob": "ace0d86d391f0b9a6bd647cdcbb437d249071b13",
+      "sha256": "6fab5c45482a8f800f1bb5cefbb82b1a996ccf468362182720dccee9c4cb3cd1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/prompts/CH3-A06-presenter-idle-v02.txt",
+      "gitBlob": "5c2b834d14bb9f7ae845ad72524afd181c5d1f94",
+      "sha256": "736a787ff9248bcfe336bd719ab1c0a6e8206e5a5bba12574a6f943978885f43"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/qa-browser.cjs",
+      "gitBlob": "b0fbca59afda2586d7de972d23b4b5050e65c460",
+      "sha256": "45a2f55b443ab34b028c57e3fb62d7c1804d6a6d0233eaecf408c1c85175c31c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/qa.json",
+      "gitBlob": "d28a03bbd48015c9a30f5cd3056545673c7809bc",
+      "sha256": "3bc84a201d08c4494a410ccf6cb77f23a41f5bd6d222e3efe5264e0324b404d8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/realization-report.json",
+      "gitBlob": "be39d12255c30579415ce4df7460a7ce8a393e4e",
+      "sha256": "2985d16ee643bdd9d38a122b19bfd420d2c40dce63c51d309e3d8c810b26c822"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/realize.mjs",
+      "gitBlob": "887e184a527e5f1541095aa4b4e886070be8f592",
+      "sha256": "eb6ac24123b6a740f5773490edc21168b265072a1aa093dd478d07cbbffa0df4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/screenshots/composites-desktop-1x.png",
+      "gitBlob": "e0537b979c0359ced79ccf8f5c899f1581a609c6",
+      "sha256": "d61fe99b8b600633a4464352bd9c8ff39c152cf3375084d7d4d65785be97b982"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/screenshots/gallery-desktop-1x.png",
+      "gitBlob": "f39401d857102dfc8b18536ca68d1c2e8e67e45c",
+      "sha256": "cc93e905f469328f639ebf3ed65f980d40e4b0e639e0ffb5282e975a0352d93c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/screenshots/gallery-mobile-1x.png",
+      "gitBlob": "d02ddd8fd560623e6d2def75e57662ddee4d376e",
+      "sha256": "28a6d5da896823e5e02c077e0d21678a1013b574b6823ef42056b05cc33b6d3c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/screenshots/restroom-desktop-4x.png",
+      "gitBlob": "dcb04aa1de146f5666b7509fa465f4d2ddbb370e",
+      "sha256": "a702301b652c79dd222afc64ef41728c1e8065bcd535334e46422b0fb054e9bf"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/sources/change-notes.json",
+      "gitBlob": "1d45b9df688a14cf50733185bb76c7210b1b0615",
+      "sha256": "90f3d265687eec49c867f7dd6eee914baa2d1a3ebd9dc507679a795f8c3321c3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/sources/edits.json",
+      "gitBlob": "ee0c2e0205b5ec25d722653885666ec74aa9a13b",
+      "sha256": "222966a7812aa5ed816384f21b0e1ca5982823135320b1ff6750c9544c286351"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/sources/request.json",
+      "gitBlob": "fb3211b8bdf63cfd81893feeda59062e0f243081",
+      "sha256": "12faeaaf1f3a097f87eec2ee75c3891c17a182c5425b72906fea44d08a35d81d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/sources/silhouettes.json",
+      "gitBlob": "6b90d7a66b70f3de17962b03263bfc08e6d81165",
+      "sha256": "ac31afe12206440d21d6c1323b1e1b4392134037c593a927132ac3682ea7bf64"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v02/sources/v01-pins.json",
+      "gitBlob": "f20abbd436d2b58ac5d4fc7df2ae61863277dd37",
+      "sha256": "180900117502bae8ffcd0284ba0f11c22fd5d60ec5203d035d312da71db37dd0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/CANDIDATE_HASHES.md",
+      "gitBlob": "2fb7b5a5c58fa59cb51c31693c82ba2686685296",
+      "sha256": "57a4d16dbb8896d0edf8f10f554ffa99c959a4dafeed73861a0288dd0ea056a3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/CHANGELOG.md",
+      "gitBlob": "6ac8994a16399e81b752fd6d6036957437901f90",
+      "sha256": "2aa1338be10f33c5f13690b4b1249e0f11c92042cb58a0f50d43a4d89226e92f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/PNG_SHA256SUMS.txt",
+      "gitBlob": "7756eb0be6ee96824650b1b2fc12e8713ba3c0a6",
+      "sha256": "5f91982deb6ed6ebe73cb3209ef374988281a25e3f7f3b72149710ccdefcb845"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/README.md",
+      "gitBlob": "ca0094201f1151cd2352af4ee640e18f5cfc5dd0",
+      "sha256": "be82388fed810dbf0c41aca1dfb931b1cb967d894f653149d758bf489339da80"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "a219eb0d5adc14fbdce8fa975bdfa1646e373832",
+      "sha256": "1531216438640b3a6a4734eb179fde3faaa40eabc0eaa9d3de73d406ab6da62b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/VISUAL_QA.md",
+      "gitBlob": "2bf3838409fe93884e15bfa5c7fe509cafbed565",
+      "sha256": "093ee2f99470d24d250d02959be18c29e8bf2475486c4eba828f3a89ad074a9d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/browser-qa.json",
+      "gitBlob": "c22b72be1b8020a6bcd2b3b9b8030a1f1fc559e3",
+      "sha256": "3dd2f1f40c3a8450354d17db15afa1e4d1a4551abb2c46b5bb8c389cfb67b4f8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/build_review.py",
+      "gitBlob": "9800951cda70ae10a81c4bdeb951dc6e9d9ecc39",
+      "sha256": "1abd765e1ce3fbd678a19554b19fab66f1a0db8461ff5d12e5e71b2e9d389d12"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/candidates/CH3-A01-restroom-v03.png",
+      "gitBlob": "defd9de00fd2648013f16eff2019c917b03e2d7a",
+      "sha256": "724f62047a7cfb7e7cd5e90b1261ed473f295939dfd9bad1ec14817d228b0095"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/candidates/CH3-A02-restroom-bg-v03.png",
+      "gitBlob": "2618535dba840f35b2228e0d1259f8fd45af5538",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/candidates/CH3-A03-attendant-idle-v03.png",
+      "gitBlob": "e7a15b634fac40f9088b774eebb3fd33137891dc",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/candidates/CH3-A04-verification-v03.png",
+      "gitBlob": "9a651f446104dc310ebb85840068aa61b3e56c18",
+      "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/candidates/CH3-A05-verification-bg-v03.png",
+      "gitBlob": "27a928e2a567d87ac2c7e1cbc6c567d7d2059eb5",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/candidates/CH3-A06-presenter-idle-v03.png",
+      "gitBlob": "50e5930c02c52309af88fa1edfd48c545d804ee6",
+      "sha256": "ff99d4f0a5050c76a469a3f1553eeca164ec14442863e3fdb0d95dc9f12bd83a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/CH3-A01-restroom-v02-v03.png",
+      "gitBlob": "e8fcbe8c3e5a50761a0876ab93bd52aa299aeb9b",
+      "sha256": "b4eff856424ea99a400ceeaa71b2f0740ab9ca7d342350242baffdb1886dd949"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/CH3-A02-restroom-bg-v02-v03.png",
+      "gitBlob": "3872945e43df4a632652a94d6ee8eb672cae5f3d",
+      "sha256": "e497adf79d0da29d03cb048569ec56b3e919f14cba2f25b93f77ed8c42ea2c51"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/CH3-A03-attendant-idle-v02-v03.png",
+      "gitBlob": "58e3ef3f6fa1b62080b2ba801409a87655363470",
+      "sha256": "087e217a83beeaa0e0edb61b50ab75aad0b14c451a1da8c5b71a31e9558260f0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/CH3-A04-verification-v02-v03.png",
+      "gitBlob": "11b51f65758eebf316dfa6795c798e0dd09fe975",
+      "sha256": "5937ce2e82e8036710bae60d625d2b335d79867652c34f039f73b407d0c0823d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/CH3-A05-verification-bg-v02-v03.png",
+      "gitBlob": "b1db60a911f8283347c01a83b3cd496e084e8f26",
+      "sha256": "4477d3f85751127c192ed06e13a1593f5638b193ae9b909819e9c666979b37df"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/CH3-A06-presenter-idle-v02-v03.png",
+      "gitBlob": "bd73e5deb826645602bf5795d0c9c971ec089337",
+      "sha256": "153d70fae1b932fa62c9261ff8e4d0b3adb1f977288bd06fd533010194b72211"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/attendant-composite-v02-v03.png",
+      "gitBlob": "0923c09864968dc58cb37d76f717103f9da0bf22",
+      "sha256": "bd6acd20b643f339ca0ffcc2d0e6c2c7b62b86bbea9e6e94aec2031b6f7a0de1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/comparisons/presenter-composite-v02-v03.png",
+      "gitBlob": "7ccd2d0ba07aa362e435410704e0ab84adf7f489",
+      "sha256": "1a9a2d9087290769a8fba52c9c8dd3f154723df22a7aa8c73f1cda428f4370a7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/attendant-on-dark.png",
+      "gitBlob": "acbd6af9940e02176ad47e9c7737eaa4d2c5b23b",
+      "sha256": "b1298f8ea41b6c0265c586d68ef63a8c1c842a1c7150dff77be5cc565a6dc59c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/attendant-on-white.png",
+      "gitBlob": "bbe3e53917c6b6aeeccd94cce5f5101dabbbdbec",
+      "sha256": "315f60bc384c693a4ebd665d2187f8ed5e480d6576142ada10a3a912a11a68c8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/attendant-v03-4x.png",
+      "gitBlob": "20d79535cd072aa717d0c9bc9ff0bcd6cba939cd",
+      "sha256": "6fed700f3fc38e5779a034ae3acb29e3df47cc19b5fa394c7fea66a0e8f3ab72"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/attendant-v03.png",
+      "gitBlob": "d2e14e69750412339a455453e6fa8c586930f544",
+      "sha256": "0b3f4136887cb6d8a2139fbfff6fbb359a2313847e4609ce314dc8a67e7fdc75"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/presenter-on-dark.png",
+      "gitBlob": "eb09f4a5205434cb5566010a73c3b674a57bffbd",
+      "sha256": "ad2ce9912923f5320da5292ba3eab0c9659b062b2077934522905b798ffe51df"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/presenter-on-white.png",
+      "gitBlob": "9e56dd13f6b22f07d8395a4d6a33d79658515a4a",
+      "sha256": "f4aa154b81f219b9b9bf871c223dab929a7065b504111cb7848d699569896fc1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/presenter-v03-4x.png",
+      "gitBlob": "1479ed1b9ab5bc176f282a3f305e28dcd97377b4",
+      "sha256": "e76569fe184557503c77835a3d963dd0c3ea7b3391fe2a1decdc9e43dcd5a81c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/composites/presenter-v03.png",
+      "gitBlob": "0c419a4cf7cab41c58fe9a79a4e93d66062fa8f7",
+      "sha256": "415bf84572f17ab3048b9fa0430f62ce6458a7ee38ab258a324417ec27b2a3bb"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/diagnostics/desk-removal-comparison-4x.png",
+      "gitBlob": "e4324dd78fff20d4e7ff231579719a70eda1f187",
+      "sha256": "d190653a94cafe4158c35fc5136c808f296b5b302c4cb8511b7135f48cc50101"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/diagnostics/desk-removal-native-comparison.png",
+      "gitBlob": "2d10bbaf4ef58e2b68859cb32e537a860b08ed89",
+      "sha256": "b21137013dbeafe54dbd864e1de967b4f832a4bb0a03b4368f90cb02419c8ce3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/edit-native.mjs",
+      "gitBlob": "7410338381a2941db32d05660b0d54e225d9ebd2",
+      "sha256": "17120b4ba1e7c0b23e8e2252f784f29da2e6b0871b798d0088feba0562b9595a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/edit-report.json",
+      "gitBlob": "163166dda8058edc2db6e2c231e8b483b67f5c52",
+      "sha256": "6bbb4e4ec265e3cd26d2c1045641b988da8ff13e5b63518922350484f2a8aeae"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/gallery.css",
+      "gitBlob": "a31c1f2675df0d9f4fc7f5462246ba727f46670a",
+      "sha256": "c467fe39a2769b92a501c6886e0471d95ed76e086e2c381a6ab6caa82e26f41f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/index.html",
+      "gitBlob": "0de297c8cfca48a2a3b121cc2cd32c4ece3d2572",
+      "sha256": "5eff2f31f4bcc3aef424d61b7da4f427f0169cf1818a3436ae2fb460d79940e2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/manifest.json",
+      "gitBlob": "695583c779962606c165d5a0ad23540233509923",
+      "sha256": "fab479e7a0b63b96055e3980f41c2f392535ea5d783ddfe62a399af04855bc48"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/package.json",
+      "gitBlob": "fac080c07e827b046a3f2f75d131c261a9136df2",
+      "sha256": "fe58fe9981f5d7ec800f189438f8d78aa4f884add55f32b210cf0351a3dc7ec7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/previews/CH3-A01-restroom-v03-4x.png",
+      "gitBlob": "f45bb389ea8f8ce93ad94f28c5cd946923ca5e2d",
+      "sha256": "e99f6c6b2e322de19e35538b6198fe3a4d737f34a2135a07d188d236f192cb73"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/previews/CH3-A02-restroom-bg-v03-4x.png",
+      "gitBlob": "8352654391f85270e4b5d9e8464f267840779c8c",
+      "sha256": "7ee3a560c5e38908768bf2e8f1cd808858e591985942044e41d46b630b36d84f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/previews/CH3-A03-attendant-idle-v03-4x.png",
+      "gitBlob": "29e897065888014156cc20369fd591dcd2916d2a",
+      "sha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/previews/CH3-A04-verification-v03-4x.png",
+      "gitBlob": "98de17e2ab685f6526b1afade188c1d170494b0b",
+      "sha256": "fc3847a9ebe8154f913f9199e5ca54258f4f7039290028910094fc3d80490845"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/previews/CH3-A05-verification-bg-v03-4x.png",
+      "gitBlob": "16f4c82c2c7f4d60538ca358126a0baeac1b1405",
+      "sha256": "7e00877f60752bdbab3f3c033570b5a6328b42f1c67dde8dd2fcc2594225a01c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/previews/CH3-A06-presenter-idle-v03-4x.png",
+      "gitBlob": "ba26fd2ee2c2fb3b66d1237f82b720b7938edd87",
+      "sha256": "5e69eb8454e93db57305c130a307e8928c910c810db637d3879fcd1fb57011ca"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/qa-browser.cjs",
+      "gitBlob": "d73c2a6398582c6a61b3459c7b8f297680698030",
+      "sha256": "007a4e72d22279ef0a0b62458bb665af84d691af12a9023e1832a98d29aeb35f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/qa.json",
+      "gitBlob": "a5224c1e0c5c621cb990ecb89667ee16c2f546c7",
+      "sha256": "297f977d7da4e8217b31e6e36431a5e210fa74cd85f19bf3acfe68f97804e798"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/screenshots/composites-desktop-1x.png",
+      "gitBlob": "1398f025754da1c99765981c906ff8b052364c92",
+      "sha256": "176cbf92b0a6e56e9a81bdf8f5f606f46e8f8630dd9b03de39adcf6c022956b5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/screenshots/gallery-desktop-1x.png",
+      "gitBlob": "953b1512a9a431a369f78cf3fef3191a03747dd5",
+      "sha256": "974b6cb609c46d3320b6ef23073d31a7268c9fc037a1c78b2a688add000ca2a7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/screenshots/gallery-mobile-1x.png",
+      "gitBlob": "7d35bfad6bceb4f7c281016d2f6cb7a2a41b7ea8",
+      "sha256": "c4a005ac97c8c1ad8aaea7a9e804537be7ed24bd86a2c748f4b9ba0b56a313e7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/screenshots/restroom-desktop-4x.png",
+      "gitBlob": "154708edda050d8ce8f46aff37714d85244fe840",
+      "sha256": "3989efaec8b37f41e0dbf6aa7d2f17466952812346bf72202dc695f34fb5337c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/sources/change-notes.json",
+      "gitBlob": "cccf8570d16e726ca11940ecc85c2e6d1390948a",
+      "sha256": "5c8a720d07cfddeb2cab3eda4c6d03986ff5ec06262675cdb31a0dcee7375075"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/sources/history-pins.json",
+      "gitBlob": "b31a716a167388632f50941e022f9713114c6a8a",
+      "sha256": "a0e926bddc2b7ae69a0c8771467ee5aaf74e30eefed29faf5d9738f009cb45b6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/sources/owner-v03-instructions.txt",
+      "gitBlob": "3467490b11bea09c63f0d916ae4c4b1b02d3a262",
+      "sha256": "4e6aefc9a64ce31352c1bf44394afd3da7f9f18cdc35322ed4e9498a23299ea7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v03/sources/pose-anchors.json",
+      "gitBlob": "f476f5638c9c41cd393373400f141bf6f19712f6",
+      "sha256": "d2df7e49371abb75a0bbbf8dc9ee297fb9a89b34e245ab17fb744fad4915e60e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/CANDIDATE_HASHES.md",
+      "gitBlob": "89c5aafcdac1e27295d225121e327d051f2d0761",
+      "sha256": "a5ba014f22557c10f936f6c2e3e820a320175ac4ce90659da8226dd383a604d6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/CHANGELOG.md",
+      "gitBlob": "dbc7a1548408576dadf77c9ba83dfb93fdcf368f",
+      "sha256": "7533ea93326fbd08e98a284edae6ac4d340c63576ab6895d927cee2343412bd6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/PNG_SHA256SUMS.txt",
+      "gitBlob": "8eafa34d4b38249ff7e16f18df7db6a3153ab245",
+      "sha256": "003ae02bc7265b02a7fcce475fd2b9adcaeb6af76e3dc8e1f9e8663ceb13368f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/README.md",
+      "gitBlob": "23634823ad55124164d5edb13bed5d6b40bf9efd",
+      "sha256": "af5b1c5e913afea82f847de35e215edf6aab28917dc0e7fb5ac532659db0089b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "83b96ed2164e52d93cd9621c1f54ad47f615b0ed",
+      "sha256": "dbe318214ddea08d7c1fe388c0b4f20e7cd6deb8e9f75267dbd9346ccb981277"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/VISUAL_QA.md",
+      "gitBlob": "cf37b3885f357d8cdde7e151b878e9e9c82a34be",
+      "sha256": "71de235a28a2839ab2e7cfd2819eec63b3880d975c362e34722917a6bed4e9c1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/browser-qa.json",
+      "gitBlob": "fc0976b4c4bc54e91434354cb469b3d05ed83e03",
+      "sha256": "66f21d40ca8d9614aa797263d9d13628383e55d1c67007a7d6552e8881a393bc"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/build_review.py",
+      "gitBlob": "7945ed1279ad82dafc2daf587d50f83d96fcbf27",
+      "sha256": "46fd71253c69dc09888617f63620b8e57b03aa4f130f62b439e9db9525fdd9d0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A01-restroom-v04.png",
+      "gitBlob": "3dd1e35950fdba55d9515b82617c4fb67fb32c7e",
+      "sha256": "f09ff12cda16126bcd2ccc0ac0e845be56c4df7693bc5735c640347f242edf88"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A02-restroom-bg-v04.png",
+      "gitBlob": "2618535dba840f35b2228e0d1259f8fd45af5538",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png",
+      "gitBlob": "e7a15b634fac40f9088b774eebb3fd33137891dc",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A04-verification-v04.png",
+      "gitBlob": "9a651f446104dc310ebb85840068aa61b3e56c18",
+      "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A05-verification-bg-v04.png",
+      "gitBlob": "27a928e2a567d87ac2c7e1cbc6c567d7d2059eb5",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png",
+      "gitBlob": "a1f8cd4a18affbe945b5e1beb2c3d5a844188b04",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/CH3-A01-restroom-v03-v04.png",
+      "gitBlob": "53a43f1811882b8b125d6c3da23606f1ed97be36",
+      "sha256": "4d615dda99c4a969d0d8aeed2d65a4780de5b17fa2e47722e05d3c5fa54ed9a1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/CH3-A02-restroom-bg-v03-v04.png",
+      "gitBlob": "8b9afd4018faf1c9f65b4db14dbe716be73ab735",
+      "sha256": "b3ed7b003ecc652fff7f58247f0dd22c439f8c864fb73c336206499fad8711ae"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/CH3-A03-attendant-idle-v03-v04.png",
+      "gitBlob": "44aa61a393e683b033b021ca7dabb28a2aa6260c",
+      "sha256": "d23083d2f55205307272975c638c3d41231321621a5188309af02b1e9f002444"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/CH3-A04-verification-v03-v04.png",
+      "gitBlob": "11b51f65758eebf316dfa6795c798e0dd09fe975",
+      "sha256": "5937ce2e82e8036710bae60d625d2b335d79867652c34f039f73b407d0c0823d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/CH3-A05-verification-bg-v03-v04.png",
+      "gitBlob": "b1db60a911f8283347c01a83b3cd496e084e8f26",
+      "sha256": "4477d3f85751127c192ed06e13a1593f5638b193ae9b909819e9c666979b37df"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/CH3-A06-presenter-idle-v03-v04.png",
+      "gitBlob": "7bc783bd180b66b36669fdeaabf32ffe31240d75",
+      "sha256": "ba914c89cc505f28f23552040c4aba95c36bd567ff2e6e626b034689911e68e8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/attendant-composite-v03-v04.png",
+      "gitBlob": "a30c794f83d486716b00dbba6a86acf2f78f4972",
+      "sha256": "ef4a6a22fef49ee987326b29dae98a5628aede553426dfcae17287273f6f32ff"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/comparisons/presenter-composite-v03-v04.png",
+      "gitBlob": "c62dcca7bff7a700205730958e3c4347c851461c",
+      "sha256": "6add5bd07f501679bfe81234f2b49168f102eb7f49a3b3ebabf52bde2c80c712"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/attendant-on-dark.png",
+      "gitBlob": "acbd6af9940e02176ad47e9c7737eaa4d2c5b23b",
+      "sha256": "b1298f8ea41b6c0265c586d68ef63a8c1c842a1c7150dff77be5cc565a6dc59c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/attendant-on-white.png",
+      "gitBlob": "bbe3e53917c6b6aeeccd94cce5f5101dabbbdbec",
+      "sha256": "315f60bc384c693a4ebd665d2187f8ed5e480d6576142ada10a3a912a11a68c8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/attendant-v04-4x.png",
+      "gitBlob": "20d79535cd072aa717d0c9bc9ff0bcd6cba939cd",
+      "sha256": "6fed700f3fc38e5779a034ae3acb29e3df47cc19b5fa394c7fea66a0e8f3ab72"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/attendant-v04.png",
+      "gitBlob": "d2e14e69750412339a455453e6fa8c586930f544",
+      "sha256": "0b3f4136887cb6d8a2139fbfff6fbb359a2313847e4609ce314dc8a67e7fdc75"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/presenter-on-dark.png",
+      "gitBlob": "ba2a451c722c9c27355e62f6ed383a2e927cbe73",
+      "sha256": "c037e4c33ee123228b2ddbf603ebc091a5100f23a04ea9649ff663eb4c6e841e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/presenter-on-white.png",
+      "gitBlob": "b66afbd0791f1b1b9948dbd41d463f860df5b848",
+      "sha256": "1b9f2e473eeb6b3ac97a8fe2f599a6fbe58e183e0a9c338bfa781b661d98a6ae"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/presenter-v04-4x.png",
+      "gitBlob": "98201e98f9a4b0a6b3f3950842c64a00e996f63d",
+      "sha256": "0d570da032bb9a9e96e46e6d345b5e905291b6cc0d2091e50d2b5025a84462e9"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/composites/presenter-v04.png",
+      "gitBlob": "b53bcd09904849cecc086e08ed208661cb4c3ff8",
+      "sha256": "04b7a7146551379f0a5ccc75878ff7622e4411985a85f90b0722bdba1f4d6349"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/diagnostics/device-comparison-4x.png",
+      "gitBlob": "91c196d7f386b286c2c48ad3652136668b702a60",
+      "sha256": "bec382d910ab4d0b0a69afd10e26e0d21085975a4d4ed0cef5ca4ce603601b06"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/diagnostics/device-native-comparison.png",
+      "gitBlob": "2242c7da6b7c570d8c1c6b04efd841d80b471a75",
+      "sha256": "7dd456a8442af5671740fa7a9e0bc576a15d733f4aa75ccecdd6bade43ceec1c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/diagnostics/npc-comparison-4x.png",
+      "gitBlob": "f30255bf2510b409f7c7be7ac4cc0a0a8f521a53",
+      "sha256": "b03f928d8318c7c799249a68ad88df57d2bb02b457aa3ee2c91220469420b008"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/diagnostics/npc-native-comparison.png",
+      "gitBlob": "4be2bf9bcadcded3c760846078408a679f0efe60",
+      "sha256": "d1dc54407c7f14ae21239f017adc7386a469ea0763ce811e19160b829bad4d18"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/edit-native.mjs",
+      "gitBlob": "94888e6573d2cd7b36fb6b5ba13413dfd8616fd2",
+      "sha256": "1b445da4d99989d68d5ad9831d34e798b17f9b7503d8077ec6d4f754af4ab368"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/edit-report.json",
+      "gitBlob": "70f497e05ebf4ba477469e9d0e06d664b551bb6d",
+      "sha256": "53b4210ee1204166773314e19357a83fda914e16478ac5d53d73dec2cefdc0f4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/gallery.css",
+      "gitBlob": "a31c1f2675df0d9f4fc7f5462246ba727f46670a",
+      "sha256": "c467fe39a2769b92a501c6886e0471d95ed76e086e2c381a6ab6caa82e26f41f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/index.html",
+      "gitBlob": "f11f6fc9dc207f8032cdc541edd1ac47eb276075",
+      "sha256": "807c8b4c4d787bc3cd94e10026a0a67efd0925ab4a4533b48966cf6a2ed142a3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/manifest.json",
+      "gitBlob": "cdb35d65f7d16c44bd9b13183e67ba1cf6b0ffbc",
+      "sha256": "bd3db24545e605cbcd3be2bca742daeb2dd952bc3d99c6314411f730d2022166"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/package.json",
+      "gitBlob": "f1d240eb40ffff7e8ecfebc0738c889faa2967c0",
+      "sha256": "e6a89401909ba4f9ce1971df3828b0365cbd824fb161a3ce9c4363f5536935c8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/previews/CH3-A01-restroom-v04-4x.png",
+      "gitBlob": "6dcc64ea18a09f0e83769ce12640bd5e457c666e",
+      "sha256": "fbd4029b972a1d2eb0588b629fd9862b714950966209b8dfd6d8f3a229bfbdfb"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/previews/CH3-A02-restroom-bg-v04-4x.png",
+      "gitBlob": "8352654391f85270e4b5d9e8464f267840779c8c",
+      "sha256": "7ee3a560c5e38908768bf2e8f1cd808858e591985942044e41d46b630b36d84f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/previews/CH3-A03-attendant-idle-v04-4x.png",
+      "gitBlob": "29e897065888014156cc20369fd591dcd2916d2a",
+      "sha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/previews/CH3-A04-verification-v04-4x.png",
+      "gitBlob": "98de17e2ab685f6526b1afade188c1d170494b0b",
+      "sha256": "fc3847a9ebe8154f913f9199e5ca54258f4f7039290028910094fc3d80490845"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/previews/CH3-A05-verification-bg-v04-4x.png",
+      "gitBlob": "16f4c82c2c7f4d60538ca358126a0baeac1b1405",
+      "sha256": "7e00877f60752bdbab3f3c033570b5a6328b42f1c67dde8dd2fcc2594225a01c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/previews/CH3-A06-presenter-idle-v04-4x.png",
+      "gitBlob": "498b9fbf359ba214c00470257aae0cbcf6ab05f8",
+      "sha256": "7e011fa7021ff78aed6d2435cea79e51bf4ed9deeb0595fe6cdae27b9713dbe8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/qa-browser.cjs",
+      "gitBlob": "b1c4d74acf1070b64cbb6e03c2354ebf7e320a97",
+      "sha256": "3e5412a123687d25f924079b2ab287b94be9742371e1cb279204ad1a257a8d37"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/qa.json",
+      "gitBlob": "01011ca07d9b31a5cb1ec293d1429a3e203a1d67",
+      "sha256": "7cbd41a77828627151b7d770f5ebb340cbfbfac7f010e137707bc2d6418b615f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/screenshots/composites-desktop-1x.png",
+      "gitBlob": "67b98397eec5914f9805b1f6c3e1175b880643cb",
+      "sha256": "bbecc3f9b59c279cc3cf08afe102a6e45a0df2126c9a04a7dd4def769db0970a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/screenshots/gallery-desktop-1x.png",
+      "gitBlob": "3d48ef19f9c90785bf26cdbfeca5f6ec23036e49",
+      "sha256": "4f6db61f9edb93133c9585d62588f5ff57cacc218f825e3a9a43d44c30325ce3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/screenshots/gallery-mobile-1x.png",
+      "gitBlob": "47b449fd061b9027741922a2282845b8502b461b",
+      "sha256": "a28bfcbf5d560f25623ed61a321f83a49185e01738cde6e329ceefa4a7a64bec"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/screenshots/restroom-desktop-4x.png",
+      "gitBlob": "4e78f24943c1cd1b2748acd3ae98975e58b3b4ba",
+      "sha256": "700918d978b3a9ed7fc40d06bfe122e2a4dddafb4fb8fc51d4a1edfa0614e9dd"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/sources/a01-pixel-ledger.json",
+      "gitBlob": "155d7ee408e65fba8437ab816682815bacf85d53",
+      "sha256": "a17383da8da074cf32738553290b77691b7100701c48020126c42ed13a7f0927"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/sources/change-notes.json",
+      "gitBlob": "1053b5f05f63dc1ac0c8158126e781c77c1cc4a9",
+      "sha256": "174012bd64b758092f24ba735b9934ddd8165f8b01cc988be69e8fadca80a032"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/sources/history-pins.json",
+      "gitBlob": "c8106d6fecfd3a391b13ea178cf83b435b47b019",
+      "sha256": "be30013d2e671a75c130c1e040b445248ca291a7829b13c817686e96185d0d40"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/sources/outline-strokes.json",
+      "gitBlob": "f0262b2a5de4dd0f64a9a1c8e784fa91b8f264f8",
+      "sha256": "7bc5213c043ed731f7a04f36d0e0680c0c958817d7d6792b3cc2b60c7e17228d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/sources/owner-feedback.json",
+      "gitBlob": "574afadc2d2bc86c3c366e89b1c3bbc4b9068a5c",
+      "sha256": "69a8b2a78a76a9d0479e2518c9e5e9b5877140f3af7c2fd5f4965dffa50a5b5b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/sources/pose-anchors.json",
+      "gitBlob": "bf8eddfefa91c0914ff7e6b8b59b5a8502f9de54",
+      "sha256": "b7eb40ca74d8a502683cb4a198b34de4de2eefaed20c25623b6402740afd9823"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/PNG_SHA256SUMS.txt",
+      "gitBlob": "da49b873fff876914a1725d5030c7f85bf356eac",
+      "sha256": "88ba95b8b6d469de12b156199f34af5a65fc34ed620691c7af57a96425c4f5c3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/README.md",
+      "gitBlob": "1792b4422f1b9b22d1d6d156d21f16ef75cbe784",
+      "sha256": "5a3057e1d7f04720b5daf028efdbc57d019d0e735f8a0d4dfddb43535432ffd6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "6a1d50f61e47601053a1f1995a48e68350f83c12",
+      "sha256": "caaeda4c47fded48476a3cb8b0a0ed35fe9c4bb5ddc2ce6ac5dcf72e1e09ac13"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/browser-qa.json",
+      "gitBlob": "461bbedde2aee5df63250049821bf3a4821b0264",
+      "sha256": "32c1eb031cbe90268f31edb5b737b22d47bf5add8282ea9875b905511c1b980c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/build_review.py",
+      "gitBlob": "ec687a40e07babcedffd5fe37deb31e92ca48ebf",
+      "sha256": "b0b650240afc41e550b9fb2a9b826859433b7d9eb654db89e976c7fc8d8e39ea"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/candidates/CH3-A01-restroom-628-v05.png",
+      "gitBlob": "f29568965482572ec35305c97c29f52587f07c07",
+      "sha256": "6decab45c17961eb6475b2be3806aad0af83d5cc6f912964cbbb536a68624f6a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/comparisons/fresh-attendant-detail-4x.png",
+      "gitBlob": "9818d60ab9616705925afaba29556d3e176e533d",
+      "sha256": "a8aa62b2f70c8e7b0c6e334334274d337027a5ba214cb16de541a958f291a979"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/comparisons/previous-attendant-detail-4x.png",
+      "gitBlob": "83d1f918a2e97d8415134717c7ca2009595652aa",
+      "sha256": "2acfe23f723919f3e086305b3b53020a6e37474301ccfead094c05c6a82a9cf6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/comparisons/previous-v04-4x.png",
+      "gitBlob": "98df15e6dabaff5d635100bcc0592d1cd9efc362",
+      "sha256": "2c5b4bdda2100ac0645ae34ef493c3696c2394df7fdcf705d8acc0efde0f6fec"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/generation-source/exec-c4c735d2-5d99-4b45-adb4-73b8f388a906.png",
+      "gitBlob": "fdef82a1d12a1c537f2bcfb44df25b2c1fdeffa9",
+      "sha256": "b11e8a63f6116912ae6b8a9042e0a90a3748099e33fad0d4fae525b71036ce04"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/index.html",
+      "gitBlob": "d013c985c563bffa040532bf68461b903bcd0969",
+      "sha256": "20b05d92c0bbefda6e0513ed9302fedece48dd5ff919968318e552a8721a4c13"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/manifest.json",
+      "gitBlob": "cf286e7acc30fa356c55c4bebf88a3ffe982d84f",
+      "sha256": "157970fedfdc8455056751160dd3e2bedf6d6ec3f8b674e8598e9c380bab0167"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/previews/CH3-A01-restroom-628-v05-2x.png",
+      "gitBlob": "5016dd41bb524219d9dc843c06561e1fcf406646",
+      "sha256": "a6694b48c1cccd619a741f6f55af84aa0b8b6d41f9e5547d00b1760d5fab3260"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/prompts/CH3-A01-restroom-628-v05.txt",
+      "gitBlob": "ad5ad2510c2d6ee7a6d66eec47f75f59a5c1fe9d",
+      "sha256": "7099c6da84c863dca15bc955d3a3a407fb1fdb825c6a6678fdb55c81e84eb506"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/qa-browser.cjs",
+      "gitBlob": "d80fb3aa0db9cb860bbcd01d97bc7f71a1ebd15e",
+      "sha256": "c493cb50aaf9c522d89421a750205b366d96d473b4f3a3fcae5d9b4ddb70fcae"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/qa.json",
+      "gitBlob": "a560e2e7f52d07f2b113642f9995f402b314f975",
+      "sha256": "2b5412e5df1243b5eb5f9d849a651ec80008a5e81091e79d0bb494903e41bc56"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/screenshots/fresh-1x-desktop.png",
+      "gitBlob": "3a2005c99835bd9ba525db348e13f4789b1ac3ae",
+      "sha256": "a876e4b60c02c7602f4b99085699ed2154ac8388f3bff951ffb24f75ee2d0ca9"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/screenshots/fresh-2x-desktop.png",
+      "gitBlob": "3a00a5d68ac07b270a1dd72c9d8ed2a8057bda85",
+      "sha256": "b8536593a493a40b78959caeea3233984b5d6099072e549f6d53095b2ae659e0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/screenshots/mobile.png",
+      "gitBlob": "6da5f81b01c2ea6463b70efbec0a4aad0517f47c",
+      "sha256": "3008cc7e40e29536daacf84eec0d452c61962d1a3f1902a292ed5abb08f0ee80"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/screenshots/previous-4x-desktop.png",
+      "gitBlob": "ccdb91e19c7dec224a7c4fb87f28e1ba7fe57eff",
+      "sha256": "3817f36960432a3c166638e12cb7c324b72112f3f58059ab663d8e9850ac8852"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/sources/brief-provenance.json",
+      "gitBlob": "b8255db43d74f39ffe02989d7743d57e1e209e46",
+      "sha256": "fd5949fb27314b342eeccc2b51959a14d0cd742ea50979953f5cd827f6353dd8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/sources/generation-record.json",
+      "gitBlob": "3505bce0d208c27a56b5c3be5e3c54739d1cfcb3",
+      "sha256": "08a34c74b4d8cf9594607bccf7560e538e998bac39e244f9417c2a084a359af2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v05-628-regeneration/sources/history-pins.json",
+      "gitBlob": "eb992249c60f84358e4ca1bc30796d6508042b0a",
+      "sha256": "2d499db26ce5b80f9cf0223533fbdbcae23869c2ddd3a1ccf9799148e9b7adb3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/PNG_SHA256SUMS.txt",
+      "gitBlob": "3ecaf74e31e0867179bcab28281564cb1e2015a8",
+      "sha256": "820aa120a1ed08ddc46742a74081f5fc8ebce666c79906cb1274489ca364ecfe"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/README.md",
+      "gitBlob": "9a04467fa6eaff35b6f515a8870d09d024496fde",
+      "sha256": "821192b843b3a5c61583342c2e572287aaf5df305427c68cba2da6f5562dbfbb"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "42476789ffadd82b762005ce790e793e08009821",
+      "sha256": "cfd7ab734349114e2ae6c57a0c462cd1b48dd6a9070fe65dc2afdcde2cac3772"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/browser-qa.json",
+      "gitBlob": "08024476d755ed6ed0249d27f4d5aa9335048a07",
+      "sha256": "58042c890a04fbd24265d215c555012c7987ac2980456ba0182e009e2a9f25d7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/build_review.py",
+      "gitBlob": "dfe0e2c6a2139e9b14acafdaa32efb38fa8587e1",
+      "sha256": "8f8a0f79c0355fc27c035a43dff601f0e9b0025e82a3516bc85a66fcf2a1a15a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/candidates/CH3-A01-restroom-v06.png",
+      "gitBlob": "177b633530e0793f498a54bcf50728e35db40aa5",
+      "sha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/candidates/CH3-A04-verification-v06.png",
+      "gitBlob": "fbe3d6042c9875055923edc899eef84479639e2f",
+      "sha256": "5434172eed3bd61b3f7a47de254f2a2acd4015baaad3393582242cb472c58b4e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A01-restroom-v06-approved-density-4x.png",
+      "gitBlob": "e8d6adcd986eda49efe2a400b0ceb13a27a4b49a",
+      "sha256": "c9b1facf57035b3a61cbd3f27b5afb38e4bd32be107388ec8aca61636af6ac51"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A01-restroom-v06-approved-density.png",
+      "gitBlob": "67da7168a0ffbc41594e5f3d411a3e2a9ded96ef",
+      "sha256": "4ed1a39747a4c14aacb27c40382528ca9940079a8ec7947916ea0831dd01a33b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A01-restroom-v06-previous-current-4x.png",
+      "gitBlob": "8bcc56778d761bbccef37656b8d3eabd68e0bcd9",
+      "sha256": "e310af5b0fbf4b8ffcfe62f4faede6f728a10bc4c1a8bb6e5801e928f720296b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A01-restroom-v06-previous-current.png",
+      "gitBlob": "bb6d7927ff10257acc85d926d337115636e83f7e",
+      "sha256": "41a31b150de84f9ce6d5325f2dfbae16cbaf165fdf8da485a9310e86436f4905"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A04-verification-v06-approved-density-4x.png",
+      "gitBlob": "830a53d171b8f2bc80ba4fffd27625ce824bf39f",
+      "sha256": "a1e2e14efa087ff9fbc82621d9606a1dc7468c4eb8ba1bec9adc485ba920ef07"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A04-verification-v06-approved-density.png",
+      "gitBlob": "7a7d78eae799f9ded9a58778d44d2d6708c237a8",
+      "sha256": "e6542e8e5ed9cb1dcbd75a4973fd15c8c47332aa6e15ed40536a41c8114c79a6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A04-verification-v06-previous-current-4x.png",
+      "gitBlob": "73b141d207185bea15097cab42d6f57adea9710a",
+      "sha256": "e2cd1919f9dd8978c8e84dc604897c5acdf1e7e7498148cf86768ba94e027e3e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/comparisons/CH3-A04-verification-v06-previous-current.png",
+      "gitBlob": "5e78f7c967a3dbe2494ba9b40705280871f4e36e",
+      "sha256": "f0d83d166df56232a7bce9c8a5a7a5aff77eca2069e77c1eba4da1c41cdbb732"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/generation-source/exec-a1abce2c-9ad0-456d-8b9a-65d0841621f4.png",
+      "gitBlob": "72e4a67f30d13adc3c92fcf7de70d43fef7e2f1b",
+      "sha256": "fe0a031a72723589e9c57de2b6336925af89cc84a4b0f3630a36e28da3592bbd"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/generation-source/exec-b8c506ba-2ca1-48d1-8c2a-66d0841c081b.png",
+      "gitBlob": "3bab8c8119965b434001d7d99868b33aca24a475",
+      "sha256": "b76557e375cac4e98ca0ff6652394ad677b4824bdbe47474e3e190353cc243bd"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/generation-source/exec-bc30e591-292b-4864-9831-f8b0b7e701e0.png",
+      "gitBlob": "3b7e51d3368a6002ba5297cd3543129756a0715d",
+      "sha256": "062585d57d08a515fa98845ce72c7f4f7abac37d369e785764ebd3dd4deb8626"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/generation-source/exec-c9ff0670-4b80-4cb5-b647-737c0cbf2f1d.png",
+      "gitBlob": "c69c2bf6b07c756f17604df416e8e252fda20eeb",
+      "sha256": "466e66ff6fe2658118d36e1d80dde72d245bba9f5fcde7ea2450da8a5ab947aa"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/index.html",
+      "gitBlob": "5bfca1e663851681631f92c773bb46fe9132a33d",
+      "sha256": "55065c2077dbbc532902e55a2dc89c30ffedbe48c5ff4eedd456296bd8891a7f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/manifest.json",
+      "gitBlob": "19d91066854ea0cef4cb08b8cd0a10b955c5f49f",
+      "sha256": "c2078e5eb9896b22bd5b16f95533ae37d0d3391e040845c72194b77def6ca2b5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/previews/CH3-A01-restroom-v06-4x.png",
+      "gitBlob": "3f2774c0b139b865a43750ebbdc4fdfc907471fe",
+      "sha256": "7117cd65ff73d4de40402c9e55d61db2702273a0124cc22c44cfee2048598741"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/previews/CH3-A04-verification-v06-4x.png",
+      "gitBlob": "e40f5fb64dcb5a03168d029a305795191c3e7ba5",
+      "sha256": "1e83f3e39eb54759ce3393483385e56ff38ab9359f375032e03a3cedf67bc254"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/prompts/CH3-A01-restroom-v06.txt",
+      "gitBlob": "c9f9e1f0a6450e9afcbc51e8ea38492fefd6ba7e",
+      "sha256": "9818fdb7a4645ce252fcdd60f46ef73ce3a6e69be4f04c7d1163a7327d09431d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/prompts/CH3-A04-verification-v06.txt",
+      "gitBlob": "499d8bf91f70f1c041d8e651470d67915147a8ca",
+      "sha256": "57fb11fc63575312a8d98f2924b8394310e43a2325328251f8860e60ceca30b9"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/qa-browser.cjs",
+      "gitBlob": "d736913cd6a871ca4600299b1c8e297f67e381af",
+      "sha256": "bfeca864ba02f4393a0c45b09331169ebe1b43b707e095f8dddd29bc85b38306"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/qa.json",
+      "gitBlob": "e93984bb9c30ca356d77ecc015790061efb6eebe",
+      "sha256": "e47f85acd854d8639363c27cdd8ced57b4b15916eb7fb6ad754b510b213586f2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/attendant-identity.png",
+      "gitBlob": "e7a15b634fac40f9088b774eebb3fd33137891dc",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/chapter-01-foyer-4x.png",
+      "gitBlob": "cc11642333cfc0ef958840333f2fe7cc5e2b178d",
+      "sha256": "a6daf56deb3967ed969b844f51d77cdf2bd8c63112b8cd6668ee451bd8f08368"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/chapter-01-foyer.png",
+      "gitBlob": "47676ed64a3ed05063d30ab8727f99ea0d294544",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/chapter-02-groundskeeper-4x.png",
+      "gitBlob": "6e2603583969d84bbeaedd139a28db379f8ede54",
+      "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/chapter-02-groundskeeper.png",
+      "gitBlob": "175c2c3f6701daeee3750982c311187b670ebdad",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/presenter-identity.png",
+      "gitBlob": "a1f8cd4a18affbe945b5e1beb2c3d5a844188b04",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/previous-A01-v04.png",
+      "gitBlob": "3dd1e35950fdba55d9515b82617c4fb67fb32c7e",
+      "sha256": "f09ff12cda16126bcd2ccc0ac0e845be56c4df7693bc5735c640347f242edf88"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/previous-A04-v04.png",
+      "gitBlob": "9a651f446104dc310ebb85840068aa61b3e56c18",
+      "sha256": "13534584925a697cf899f751b7c176bdf822040f5fa4ad6bff458638f142bb1e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/prologue-reception-4x.png",
+      "gitBlob": "367b9cb8d5e609ca94d795c0f060d84f710684a2",
+      "sha256": "577bbda805b50ae820ff362f340f66df5a4447d73fb455ed49943742ba43f20a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/references/prologue-reception.png",
+      "gitBlob": "0ebb25f32f30ce6d54e5c9e966dcdbfd9401d98f",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/screenshots/CH3-A01-restroom-v06-desktop-4x.png",
+      "gitBlob": "f8a836649f4416cfbe01dff29842f856e9118f0d",
+      "sha256": "6bf1547f8d2ff4f188195810f2754514ab51430dcb725710e06baeddf692a2fe"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/screenshots/CH3-A04-verification-v06-desktop-4x.png",
+      "gitBlob": "fb51e25c4d0c4973e892ba6f84de873772ac0780",
+      "sha256": "9e7ec8090cf58c9ca5b8cf97c77be3f5a652b3a412dd5aa64e60eb4293a93fbc"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/screenshots/approved-density-comparison-1x.png",
+      "gitBlob": "a31e36eb85a99be7580e0e7b2093f6e8819cc5ab",
+      "sha256": "b940f420d8bfc753206bb24c5316bc7b185ac1b3d2167a384eedeffad9ea6d0c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/screenshots/gallery-desktop-1x.png",
+      "gitBlob": "b5515765305029b417b744581983a7c10fad80ba",
+      "sha256": "ef229ed0be863ee7b82855fb12b7a0ef176a150d65d30a8ba6af29eba5fec345"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/screenshots/gallery-mobile-1x.png",
+      "gitBlob": "a4b1713853d8d6a31728fd4c3f83d9368cca72ba",
+      "sha256": "9f9cd307e25516ec4a837716b005437856efffc24a285296b4938a8644bc54b5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/brief-provenance.json",
+      "gitBlob": "1d989348e9d4cf826afcacf013e916b3c40d960d",
+      "sha256": "b7d4242130d9f929f1263320f465cadb3b043816d6dd700218d2a26680bd9ae1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/generation-records.json",
+      "gitBlob": "f0f935d50cf7b952a71eb04ff4d979f8031fc950",
+      "sha256": "3c6fd8165adc47e718a178f465528c36c499114b4bd31c5b2e9fa03e58c4ca68"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/history-pins.json",
+      "gitBlob": "19585b650cf5502aae8561fe5fb7aea9f1c67a68",
+      "sha256": "34354082dad5f085da91c627c440c1f6e8e0ee214c1b893c91e0b29aba2818bb"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/initial-attempts/generation-records.json",
+      "gitBlob": "690f3acdb530646398208baa1ec0f83e034299de",
+      "sha256": "b8277d4c17e25a774bab684ee9c60702d5e117de350fbc334db56ade8d2699e3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/initial-attempts/prompts/CH3-A01-restroom-v06.txt",
+      "gitBlob": "170ff39b14e1ac48a804710ceab8b3356596b64e",
+      "sha256": "ede1f44b4399020eb58d77dfb072f2c9b2bff0bcfe38d2d596371f80d4274419"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/initial-attempts/prompts/CH3-A04-verification-v06.txt",
+      "gitBlob": "96e03fc679ec66e9cd6b4fa94756a7fcc79c0503",
+      "sha256": "c26e5ae615031a53da6d88ea63bfee4678761721f27ebcd344bffa946b59f893"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/reference-manifest.json",
+      "gitBlob": "2fef90cbe48c7da6333f22108dfc36c14d333592",
+      "sha256": "dcbaaccd697c267b97f03aedbb0df52345be76496596447fc97cd6996cde0f71"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v06-314-regeneration-2026-11-19/sources/visual-inspection.json",
+      "gitBlob": "1e4d7fecc5b6f6804c44845f5de3b8c974610a85",
+      "sha256": "66825aa7f998280ec022dd3ddfe44c35a5f57fd1afa793a50b5ef104b0836745"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/PNG_SHA256SUMS.txt",
+      "gitBlob": "a249c5136df82e6139c98faa1dfaaaa237e696b1",
+      "sha256": "95a63ad426e4582a02a0ccad99e42a2367d3c1d1eee00da55035a69c283bc719"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/README.md",
+      "gitBlob": "222dc4a01dc736689b1a9ca56c19c30fdd77d294",
+      "sha256": "feef7b888900f69dd400b49facfc14190f890cd13e9a5e540875f142409182a1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "69b1d738987c6b6073ae428e89f8965aab51c369",
+      "sha256": "54bcd2903454ce66a31cdb4c06f7359a628f2f1a0a401ec5d6438b0622f93010"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/browser-qa.json",
+      "gitBlob": "e75d8688887c327bd65449050b62fe71c6c52e22",
+      "sha256": "d9f316a67807f81d221f3fb4b8634a0750b15367b039d5cf5e63ac14eeb86309"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/build_review.py",
+      "gitBlob": "2aee09b97b5c5c3d2e24a273fb637fc41f07a9c9",
+      "sha256": "ff20f872001477027468981c99878e0287cf058c016067888e6ea7b80d367ac2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/candidates/CH3-A01-restroom-v07.png",
+      "gitBlob": "24571e40adcb1058c9f0d4be4adb587b87810fcc",
+      "sha256": "6b0f56c373cd71b8ed58d67bfbff3d03d2da3d5382cae5552b558f23a8fcd21f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/candidates/CH3-A04-verification-v07.png",
+      "gitBlob": "8cca133e1820886bd12680dab2c3cf0b16ef0e08",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-approved-style-4x.png",
+      "gitBlob": "79e2441b067ee7cdacd4dd04058d196b1eba787e",
+      "sha256": "719619a7081eb992fbf2d34b422615ebcee95422e8468c7130a9800c481ece3a"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-approved-style.png",
+      "gitBlob": "21fb7d1e222d6f9c5bd9eb70df19bdfb07fa2245",
+      "sha256": "90045244e49824d7f8a7ab053e0ab2f3443e10236751a024033abdda295755ba"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-identity-v06-v07-8x.png",
+      "gitBlob": "377f419de4819888acc48d8e340befc2efae4ad1",
+      "sha256": "1fcfb9892b2c9d35ecc0da4687bae805877c32945b58cf243774b18ce395c9d5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-identity-v06-v07.png",
+      "gitBlob": "33fb39831739038fae63f61414f208d895a85007",
+      "sha256": "48f5ac2a9bd88f9d7712edcfa049a91f073a8e964d3170857309ed45394b914d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-portrait-identity-crop.png",
+      "gitBlob": "4a3af1d9df90fe9bbe24e8b2e5f05cecf8347566",
+      "sha256": "b859b25062da56b923850e9da5d2f780ba0e33a90262ab44d66909625a618fef"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-v06-v07-4x.png",
+      "gitBlob": "2ad18d837872cfe90f5730fcb2715ae32082835e",
+      "sha256": "5bbccfa2a483f8c77e4b4d9025191edc2e1f5719ac9ed7ff9ab109fca2764c56"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A01-v06-v07.png",
+      "gitBlob": "8b9a208686caa8336b28accf3554d7f25b40cf82",
+      "sha256": "94524988b3a3b16b693824d8c8b61e27f377e1558103a31e82c7d59b7bdc4956"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-approved-style-4x.png",
+      "gitBlob": "54d4c5445f83ce4132827b1687cf309780f69bbb",
+      "sha256": "4f9dac982d3793be504c1f13836ff9de9413635a9886025d450d64a7017a7067"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-approved-style.png",
+      "gitBlob": "3382883a8723212ed8bfe8b8fc962275828a36d7",
+      "sha256": "ef003da6eaecd20d4cd35f93a89e8025034d9226456e6c64618e4b6c6f734351"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-identity-v06-v07-8x.png",
+      "gitBlob": "d5757d028e97237b34d81d148035e832238d396e",
+      "sha256": "c10ed825bfdf47dbd1a5641a2c5b0b4137e7316f53f2b38166fd71b9c98c80e1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-identity-v06-v07.png",
+      "gitBlob": "6f81e1a5d9b866031bddacd87e4590bf1521d64e",
+      "sha256": "c91f8ae489967862e9b28fe9fc649fada54977817985eff5a16e3a7dc521b587"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-portrait-identity-crop.png",
+      "gitBlob": "179be19b976e89ac83fec4ecb70a43c164fc3349",
+      "sha256": "1e33476e81180db6a540c611472dd743720775f06ad085c42ff5a1b041bd766d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-v06-v07-4x.png",
+      "gitBlob": "ca7ca37a3cbe26ac237bc20cc008657d0962e419",
+      "sha256": "7476894d2e2472c4e9d75e5117f6030b1a70d9e371a818e148cdf038fff61eab"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/comparisons/A04-v06-v07.png",
+      "gitBlob": "bbd1790fb353f8f769d38f4dbbb20a2b38396d44",
+      "sha256": "9e7dbc1ebdcf1a2dba1b2711f32dc42d6361231867da4945725a2cda15a1eda7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A01-changed-pixels-4x.png",
+      "gitBlob": "0bddb5f8530e11756b9860786627cb01eb765b0c",
+      "sha256": "cf111029f86f83e24cb28022e3d1fa6fc2453aef0663b6fa17afb07275ea72ec"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A01-changed-pixels.png",
+      "gitBlob": "861b9591abb8854813bf16cc002b62eadde2c124",
+      "sha256": "a382434951333e671df607085ea9909a938089cee7df7ae99017f658b59cc8c7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A01-declared-scope.png",
+      "gitBlob": "28d3c5bf1e20caea75c1bdf3d0ad078b78a8625b",
+      "sha256": "8756913839b617d8ebf021066abc15e7850b0d4cf6cea7655bb66dd904e8d406"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A01-microphone-before-8x.png",
+      "gitBlob": "da3734d02bfd57a43562c25efce12c77e43c895a",
+      "sha256": "2c4dcbac7c52b2a34e5521ca7061557aa08fdb00ef1a25b32f39b7a1b2c24a18"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A01-microphone-closeup-8x.png",
+      "gitBlob": "3b56689706406d8d4806bbbef1b10b2e669edccf",
+      "sha256": "abc9baaf66895afa3c76cebb4d72d2815ce6feeff133aa60ad28fc846cd160b3"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A01-microphone-closeup.png",
+      "gitBlob": "2f9f626094b05187f8b11ef5bc8704deee450fa9",
+      "sha256": "7611b072f57d98e45a03dbe1fe6bad10f740a3d69493377889659fd63e4fea69"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A04-changed-pixels-4x.png",
+      "gitBlob": "3f82783605a90598aab1ab94909d01a5647da355",
+      "sha256": "dda27bc4b4de106fb5620479971e5f0f44dcdfd9feedf8ce5bd2dd3f53d559ab"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A04-changed-pixels.png",
+      "gitBlob": "0a837a3a22175c39876d92313c821c7bce60de3c",
+      "sha256": "79560f042e134bcbdb72516278327dba90ae73af3e350126f9fb65b2eeba3570"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/diagnostics/A04-declared-scope.png",
+      "gitBlob": "cddd4fe4940b7aedbba5f8f9cff8cccdcbbe3f00",
+      "sha256": "7c62ec07b8140b17f2e620e9058c54cb7d25b31905228cbefd7f9ff95c6daf13"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/edit-native.py",
+      "gitBlob": "5dd23ca4ebabbb054738c6f0b4822f7c1170ca84",
+      "sha256": "e4fa496ac51c4144e2313ab9313504fbdb598b0d51fcdc3ce9887ec1c518f43c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/index.html",
+      "gitBlob": "2050228e6bef85eba6122a993dde005be72e450b",
+      "sha256": "871a061af2a7aad64457a81c972b970e3737af567e8a1359972ac4b2581fa917"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/manifest.json",
+      "gitBlob": "a174405c4653affee30a18953d74145f15d73301",
+      "sha256": "bace755b280aa3a7d9c1c8a9c817d72b8b7ee2e5c908246c2ec41a661e7eb885"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/previews/CH3-A01-restroom-v07-4x.png",
+      "gitBlob": "947db5cc7f5a30937c7fe189056835c3502caa24",
+      "sha256": "e62c327f53763124f6f04c748fb37e567ef4431bc3d3eeda62997d556f4e6616"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/previews/CH3-A04-verification-v07-4x.png",
+      "gitBlob": "283303d24fefcce4090216e20f08ba035b8798a8",
+      "sha256": "68d9af816b69d0acbae70d1d864f96ef7e1f2389a0b062d578fc4b38207d7ea4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-browser-proof/CH3-A01-restroom-v07-desktop-4x.png",
+      "gitBlob": "e7a88aed1b34567b35f3b1daeff7f552b46577b2",
+      "sha256": "d71d473639aea85ee6a6575a0e13677c1b9798233b456532c54e90f1dd4dfb47"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-browser-proof/CH3-A04-verification-v07-desktop-4x.png",
+      "gitBlob": "26a2e2fa63c19029400415189f2672bf23ec9027",
+      "sha256": "b48db3a6c035c05eb32579596b4f296a273832d1809eee8927f36c716f10c55b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-browser-proof/approved-density-comparison-1x.png",
+      "gitBlob": "bcd777643b0a9b0d6aaf6d84576c03c714c30b93",
+      "sha256": "486b99458e923ea05816036468f9eb035222f101ae1b3597c5f8d0ec3985edc1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-browser-proof/gallery-desktop-1x.png",
+      "gitBlob": "ae2bc43a4679c76a3ed1dc0afee20b0cfd20be8a",
+      "sha256": "4ef9540627ec55e43e474e79ca1f0e9da37d8333a4751be94cd2a3c62de07db7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-browser-proof/gallery-mobile-1x.png",
+      "gitBlob": "a032eeef6deebc015bb415572b8bf525c6957319",
+      "sha256": "f039aa4a25c6869c25f2efac6810d97eb72896f7533ac47f6497b0928678742d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-browser-qa.json",
+      "gitBlob": "cd03db6097123064e9f44cf7da602f40d35561d1",
+      "sha256": "a3af767aa2c63e4ec21113e0725e31a6aa12aafe983a5628bbc7301336ab849f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/public-hash-verification.json",
+      "gitBlob": "69b25f6b983b53ff5ad42473e2fd96960c4fdc2b",
+      "sha256": "cd863afe38a74690064815bb632aa99f5c1ee574e177e1a9f9f0fa1a11ea21f5"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/qa-browser.cjs",
+      "gitBlob": "cb5a320e0ee65b0d6611bce0210958f5fd632353",
+      "sha256": "1bdf3ec9214e2c43b57fd0d655147fbde0fe0b3881662df485fc243f48257325"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/qa.json",
+      "gitBlob": "109fed00a78fe479ae097732fd9345d056d48643",
+      "sha256": "5e2eb6e96dddb4e700a9326fd3c35077cae53a79439d1494297089032b1ff0c0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/A01-v06.png",
+      "gitBlob": "177b633530e0793f498a54bcf50728e35db40aa5",
+      "sha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/A03-attendant.png",
+      "gitBlob": "e7a15b634fac40f9088b774eebb3fd33137891dc",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/A04-v06.png",
+      "gitBlob": "fbe3d6042c9875055923edc899eef84479639e2f",
+      "sha256": "5434172eed3bd61b3f7a47de254f2a2acd4015baaad3393582242cb472c58b4e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/A06-presenter.png",
+      "gitBlob": "a1f8cd4a18affbe945b5e1beb2c3d5a844188b04",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/chapter-01-foyer.png",
+      "gitBlob": "47676ed64a3ed05063d30ab8727f99ea0d294544",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/chapter-02-groundskeeper.png",
+      "gitBlob": "175c2c3f6701daeee3750982c311187b670ebdad",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/references/prologue-reception.png",
+      "gitBlob": "0ebb25f32f30ce6d54e5c9e966dcdbfd9401d98f",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/screenshots/CH3-A01-restroom-v07-desktop-4x.png",
+      "gitBlob": "e7a88aed1b34567b35f3b1daeff7f552b46577b2",
+      "sha256": "d71d473639aea85ee6a6575a0e13677c1b9798233b456532c54e90f1dd4dfb47"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/screenshots/CH3-A04-verification-v07-desktop-4x.png",
+      "gitBlob": "26a2e2fa63c19029400415189f2672bf23ec9027",
+      "sha256": "b48db3a6c035c05eb32579596b4f296a273832d1809eee8927f36c716f10c55b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/screenshots/approved-density-comparison-1x.png",
+      "gitBlob": "bcd777643b0a9b0d6aaf6d84576c03c714c30b93",
+      "sha256": "486b99458e923ea05816036468f9eb035222f101ae1b3597c5f8d0ec3985edc1"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/screenshots/gallery-desktop-1x.png",
+      "gitBlob": "ae2bc43a4679c76a3ed1dc0afee20b0cfd20be8a",
+      "sha256": "4ef9540627ec55e43e474e79ca1f0e9da37d8333a4751be94cd2a3c62de07db7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/screenshots/gallery-mobile-1x.png",
+      "gitBlob": "a032eeef6deebc015bb415572b8bf525c6957319",
+      "sha256": "f039aa4a25c6869c25f2efac6810d97eb72896f7533ac47f6497b0928678742d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/sources/A01-changed-pixels.tsv",
+      "gitBlob": "8ad46bf44099a210364323fc31075553d9e545a6",
+      "sha256": "1886e05694c9d29bd6c7afbb04815e4376fccc9230c6372a87d0168eac0c6313"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/sources/A04-changed-pixels.tsv",
+      "gitBlob": "0ac66eea5af58105535c719e76c9376b85ce6773",
+      "sha256": "cfc1fda3a94cd806f3b7158909c34c16386768842a0491ec4dbd3fb20bc51eeb"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/sources/history-pins.json",
+      "gitBlob": "0d2b7b125fd8921ddc19254997d7cd3410ddd284",
+      "sha256": "7f41b582a7bee19e21491eb834aededc98ed0b5c247d9ef57a1429e220b89e5d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/sources/native-edit-record.json",
+      "gitBlob": "ad4af1ee43939508f46aa5287a6b80522c16e8e2",
+      "sha256": "bec61f0cb67f9d18a6611ab48d71f8ded1460559d36e010bc0a08577bea71c3c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/sources/provenance.json",
+      "gitBlob": "6b6ec1b0eabfbee2ba02d1f120173bf68e4f1174",
+      "sha256": "6a713ed8b173841fa7efd9d09440c7c6404be6c175bc870186895ea73a28d6a8"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/sources/reference-manifest.json",
+      "gitBlob": "50dd59ba0137cc6348e3aeb4528458f0571a03cd",
+      "sha256": "bdb932f9d660a24e3a424fb414d7204e70f858c1bbb0c59af2fec3575e81905b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/PNG_SHA256SUMS.txt",
+      "gitBlob": "7d3f1a4c02ad84f875c43afea1909c10661c6f1f",
+      "sha256": "3c7e56b85e910e0c2252c8b2ca10457248f2a8f85eaab1c001df05ae22563b27"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/README.md",
+      "gitBlob": "42614e1589e034e1eaf4a62c488adbddc2dc55b8",
+      "sha256": "4149f1d6c03a5a294841f9e9d3f02f7d5124a16de6a0a51faae45e0e95d4d497"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "3774933a8e32265d014443e24f7f88c97ab79de3",
+      "sha256": "772e4b0b677a3f8bb84b9ca29d553a3ec1d0501dd23ec54640d9268879d56714"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/browser-qa.json",
+      "gitBlob": "9a470dd655b5556d797b69e1cfb33afe9a82977b",
+      "sha256": "cfbafe4281159859a54966b11855ac727a49ffe76a90742aca137c8d3d6d9be6"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/build_review.py",
+      "gitBlob": "902e8ad4641960d2900162579daac5cc3db5d2e3",
+      "sha256": "8ada0798034aafafb72ff5fe303ce21120a74a4284479d2fe862abe2b6db9575"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/candidates/CH3-A01-restroom-v08.png",
+      "gitBlob": "7ca79856e57281ec59a57237e13d94d1552d6a74",
+      "sha256": "63209332d3e5d171db46201e607dd4223ba752e1fd09521539e1312cd5763577"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/comparisons/attendant-v06-v07-v08-8x.png",
+      "gitBlob": "7ada0f6c9a90c7bb3486c54dd11fa12de309b83a",
+      "sha256": "cb8773f884cbaaf11b8eb9c70a893f9f9efdf08150a57ee144b3811f8d43e052"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/comparisons/attendant-v06-v07-v08.png",
+      "gitBlob": "97269acca2e90b701fae4ff2e16e85337c130b65",
+      "sha256": "97d57dee4d6fa60fdf99481c57310c6e47957955a952ddea86e0009c3569c52d"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/comparisons/changed-pixels.png",
+      "gitBlob": "c313ee5df4246b3fbf1c655251a243c4df8a4bae",
+      "sha256": "fa664bd159685eab1b67f8633c7d6ec941ef0051f6383ab0031968c48d5abfbd"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/comparisons/microphone-v08-8x.png",
+      "gitBlob": "3b98ff72ef3dfc81e79eb931a77b72d75bdfd947",
+      "sha256": "0158987977469dbe76c5c498373ab09f5f0131df6faf8c692c1001a99b749ed2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/comparisons/v06-v07-v08-4x.png",
+      "gitBlob": "c2938b9f4e1c70d08024e232e7805b519f945bd8",
+      "sha256": "4fd52f7bad57e076611e62b1af2f6f5b930ae71b4d3047b7ad13af944017bdcc"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/comparisons/v06-v07-v08.png",
+      "gitBlob": "e4d0128da4306b870c05aafbb38313d086be63a1",
+      "sha256": "67f357e71d0dc16e31344b953bae3b03ac71b67e0344254c7ad64a61e0a65c5f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/index.html",
+      "gitBlob": "c9594e219fdbdc23d7a4dd5d980323568fbf46cf",
+      "sha256": "482b6d6d3f4710410ead7a1a983f8338107c47edd988d8c95908ff4a528e7928"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/manifest.json",
+      "gitBlob": "eed5d1776ff88f1350ddfaef142a59efd544e7db",
+      "sha256": "ac39bdf9f32f3af6c0acad738db7acad486b928f631b9ef4e98e5d6e77d1ff0b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/previews/CH3-A01-restroom-v08-4x.png",
+      "gitBlob": "fb7527179c6928ed426f789be030f047e7d3fe48",
+      "sha256": "aa1422a844a8992f1f7244bc35345b656feafd72463adeb9ef2230bfe1756c2e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/qa-browser.cjs",
+      "gitBlob": "5e1d870218275ca62a6d1dff5c86dd0a0d66f736",
+      "sha256": "5247ef9f9f809df6fa83db348ed8c23d4a51228f612cf81f384a37f58899e0da"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/qa.json",
+      "gitBlob": "652469b15031d0c02c4acaddd9f90fe99a9a2d96",
+      "sha256": "1094d4018635a0a0078c58275835a224cc6661dd3770180b07338b4aa22e87a2"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/references/A01-v06.png",
+      "gitBlob": "177b633530e0793f498a54bcf50728e35db40aa5",
+      "sha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/references/A01-v07.png",
+      "gitBlob": "24571e40adcb1058c9f0d4be4adb587b87810fcc",
+      "sha256": "6b0f56c373cd71b8ed58d67bfbff3d03d2da3d5382cae5552b558f23a8fcd21f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/screenshots/native.png",
+      "gitBlob": "2e614fcbacc3568666662935f512b8dcf286f5d0",
+      "sha256": "86e5c3328ef693a59274e098d302f5dbc59b9fb1d86af77b575b04a63a14467b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/screenshots/restroom-4x.png",
+      "gitBlob": "95f26d493c9d74681c7dc843c621676026c11673",
+      "sha256": "fac82fc626e18787c4612758b33fb49029d8fa38e4bd985927eb5b0d2b495054"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/sources/history-pins.json",
+      "gitBlob": "d601444bac0e47f618e08d01500c9e15ed4cfcb2",
+      "sha256": "5e6d91b520b82bbb8327d164c549ddb6bf04566ef2391ae8f462578d0c6e6000"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/sources/references.json",
+      "gitBlob": "2e1b9ce4d847e1be30ab1e4a380658750f5a38e8",
+      "sha256": "45a55625393c586e56bdfe54e3d7bea7d72c8499436abb58684e060678da2180"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/sources/restored-pixels.tsv",
+      "gitBlob": "fce6572df818fa231efef9af32d65ce21279a1da",
+      "sha256": "d7d9e9ab14fff2f7a0ab527db42a08b269c7beeec19d58be62b7c8e6d2a3b58e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v08-npc-revert-2026-11-19/sources/reverted-operations.json",
+      "gitBlob": "dd45ea43de771daf3a98cb7a9f293bc7c6d44e29",
+      "sha256": "d8dd0728da12650722c55ca39d534ac0bf79ee4176ceabce9bebecfc89f3f118"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/PNG_SHA256SUMS.txt",
+      "gitBlob": "50a548ba943f7149cfcb5119148d7a71228cdd41",
+      "sha256": "c21354d076e017d60f7ee7ddfd0a0be41d027e0721dd2ccaed96bc61f98b89d7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/README.md",
+      "gitBlob": "35d52fe8968c58690bab6368d89375bbc77d6aae",
+      "sha256": "d494115348b127e1fa98b951564aed73aa0abfa3d2db5e23069e2a70c2c4f1ec"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/SOURCE_SHA256SUMS.txt",
+      "gitBlob": "e98a69548daff9877ce4aaa7898fc51e1074f945",
+      "sha256": "8ea3b63cfbb67084c0e0fc40434bd61c9de8f49ba828728abb62f36d856f17f0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/browser-qa.json",
+      "gitBlob": "cf4a8d1bce96cfa908a7984e62a320ef95587518",
+      "sha256": "0de27ae10d2b56b61af444df20d083da424103aecbc9538e2a18a61e1b7a194f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/build_review.py",
+      "gitBlob": "5f182b3c1b4055a7e427ae6686292c8ec222d146",
+      "sha256": "4e0837b87236a9c8d732b3523f4a75ab7772dad87daf7a991a878a714f965a92"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png",
+      "gitBlob": "539ec6f2a2881a51955865c1bfc53e5661763ffb",
+      "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/comparisons/A01-v08-v09-4x.png",
+      "gitBlob": "4ad47ad738bfe09ab9c9c2cd08de1495a0e2366b",
+      "sha256": "e40c450b8d870781ec105e792d0ab31f6f5d738b2a335d53f4d615ea6491ca77"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/comparisons/A01-v08-v09.png",
+      "gitBlob": "a59c9015e41d96b526f6cfb25c916a74871f6724",
+      "sha256": "82b716db4a810712c49d0b4b6bbd449d732f320fa700c7d1b1c3621da250d5a7"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/comparisons/microphone-before-after-8x.png",
+      "gitBlob": "ff0eae715d6c2116846d57fcefbc4aa48adfa574",
+      "sha256": "c35b522a48d3e56728e6a56bcad7fb0b251af454d0fbaa45afddd99ffd130c25"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/comparisons/microphone-before-after-native.png",
+      "gitBlob": "46be4dac462f02f9a5a4930fb7dac1854693710d",
+      "sha256": "f5dc62d8cedbad0069a33f6c7309ef8f84ba659524352067088f76ffa886c296"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/diagnostics/actual-changed-pixels.png",
+      "gitBlob": "0866defeef765cd3fdfa51b3d2eecefcfa92b45a",
+      "sha256": "31512125ae781bc6188c6c5f0a4c1fd077dbf452526bb0ca107dc3fd1f44ee16"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/diagnostics/explicit-edit-mask.png",
+      "gitBlob": "e9a94dae31bd9e1f41ef531082e6c53de925d8ee",
+      "sha256": "0d42c2c6b127c0d0606b78b51f94e8c543b3f9a8b91e298660e0f8604f65a96f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/diagnostics/new-microphone-mask.png",
+      "gitBlob": "3b9fb169e8af741823c691d93f672d4ec9f8eb62",
+      "sha256": "7f686eba28e73b237cc13ec9ddfd68fe4ae90a443c6d5150a47a8c66b99a7dad"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/diagnostics/old-microphone-background-repair-mask.png",
+      "gitBlob": "c93cc87b9ed0694af278c79e05b86530614f6a8c",
+      "sha256": "146f34e3e90386dd7da52a209afca81787ed92893d2b02c23a9dc06df7cfb989"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/edit-native.py",
+      "gitBlob": "ed8900801311be057db2aa817e9f7c3f0dc4df23",
+      "sha256": "64df132e52e6377085c4833025b7a6407ac17b583de4559d0e5a546619fb8192"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/index.html",
+      "gitBlob": "0721a1b01dfeaed3a2b0beaf817b5d00ea0a6950",
+      "sha256": "9f82b406e3b8bf923cc90033d10280f0852ba7e8a9013687dc69519bfc2ba73b"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/manifest.json",
+      "gitBlob": "abce20518717ebd5e9c7cddb1609960e541ed85d",
+      "sha256": "46217176eb9168fe20218e92041d273883cb0035cf7f1637332c41a6f3f2dc9f"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/previews/CH3-A01-restroom-v09-4x.png",
+      "gitBlob": "5e63db1c56df50fa73cab362a2d78a7c8939215b",
+      "sha256": "7fe26a9799cd9a9cf520aea6eab128154f439590df4c989da6cd19bd330d4b21"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/qa-browser.cjs",
+      "gitBlob": "a87c8c61077a15b7c36a1ce53afa144e4f156f4d",
+      "sha256": "3aa6d838151e1b3ad7c8acf0bfba017563d9b2889f470c0f0e47139776102971"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/qa.json",
+      "gitBlob": "1653ba188c055fdc0d46100bce55f1279b13caee",
+      "sha256": "8bd5cbceaa4bbb200a10fab2e3147d569062ee9e4aa28340daaca69afba7bb84"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/references/A01-v06-background-donor.png",
+      "gitBlob": "177b633530e0793f498a54bcf50728e35db40aa5",
+      "sha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/references/A01-v08.png",
+      "gitBlob": "7ca79856e57281ec59a57237e13d94d1552d6a74",
+      "sha256": "63209332d3e5d171db46201e607dd4223ba752e1fd09521539e1312cd5763577"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/screenshots/native.png",
+      "gitBlob": "a2f7ec5c3b4055a264c1f3ced7b9054e98d677cf",
+      "sha256": "6764edf0ba98ff7465d69edca794c242eb31c67b5ae3d1d773b1a992f6748301"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/screenshots/restroom-4x.png",
+      "gitBlob": "4c1c8e37abd192e91151bcdd7fc0644fefe5de60",
+      "sha256": "a62038f786782941420e28c81fb2812f91701bd5cd74319b118681c0952dfe60"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/changed-pixels.tsv",
+      "gitBlob": "d76e2301eb7094508d46ceea23d05cda12af570b",
+      "sha256": "14150423a0fbebb98406434fb5e42673f18d6635866b0b016cf27b4de61f6358"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/edit-record.json",
+      "gitBlob": "d5253cfd4a47ec2de74ce93422da91a9dddcc2e1",
+      "sha256": "dbe40e8d5657f34546f2c847caf090f17ebf9c4805ac6e2b4f6380363b4c8bb0"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/history-pins.json",
+      "gitBlob": "634a8349d905a321bfe92e63fdf4cb5df6f0eb17",
+      "sha256": "703a799978449b2cf03efcf6675582c714e3e3adadf12c6ff2a6468e3b613b62"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/new-microphone-operations.json",
+      "gitBlob": "c2ebb1d6b71fab682f02d3257081f14f7ffb7a5a",
+      "sha256": "8cb493b27b9bbebe464dae4e2536a4644cec06562358ecd3e2f0918f31151241"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/npc-protection.json",
+      "gitBlob": "bf5e012c84e6616f0e3d8d19d1f03c33430d7df9",
+      "sha256": "9e34c9082035efab21d45d0f8a2cc0f8c2682703af4c21bd6abce4cff68b092e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/old-microphone-operations.json",
+      "gitBlob": "4ce9dd132cf951bb81d29939b4c5cffe6fc0f3d9",
+      "sha256": "3382750076a15cc17ae472fdf02adbb65da8119d9154ce1d4d92d07c6a37b09c"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/protected-489-npc-pixels.tsv",
+      "gitBlob": "fce6572df818fa231efef9af32d65ce21279a1da",
+      "sha256": "d7d9e9ab14fff2f7a0ab527db42a08b269c7beeec19d58be62b7c8e6d2a3b58e"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/protected-artwork.json",
+      "gitBlob": "6cac94e5e6b3bb147b3c07fe8a4ae4204d766014",
+      "sha256": "5a2dce1b8906f1e773da367a23e605a41260ac3a177639b5e0cb57b38908f6e4"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/sources/references.json",
+      "gitBlob": "1b748a5082608d353f43a4c6ed961ad554e16398",
+      "sha256": "9ddfcf209750440e7fa607ae9c847acc97ea1fff5da7b2cde85811faf0582c58"
+    },
+    {
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/verify_review.py",
+      "gitBlob": "895a251a94102a7a8ec179173de36c0f4cb2515d",
+      "sha256": "d1e314fd1ec5541c0609cac9ea89059b5cdadac5f338a3eb5ec9b58149adc7cb"
+    }
+  ]
+}

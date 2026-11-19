@@ -1,0 +1,33 @@
+[
+  {
+    "candidateId": "CH3-B01-arrival",
+    "submittedPrompt": "prompts/CH3-B01-arrival-submitted.txt",
+    "references": [
+      "references/A01-restroom-4x.png",
+      "references/A04-verification-4x.png",
+      "references/chapter-01-foyer-4x.png",
+      "references/chapter-02-groundskeeper-4x.png"
+    ]
+  },
+  {
+    "candidateId": "CH3-B02-record-printer",
+    "submittedPrompt": "prompts/CH3-B02-record-printer-submitted.txt",
+    "references": [
+      "references/A01-restroom-4x.png",
+      "references/A02-restroom-bg.png",
+      "references/A03-attendant.png",
+      "references/chapter-01-foyer-4x.png",
+      "references/chapter-02-groundskeeper-4x.png"
+    ]
+  },
+  {
+    "candidateId": "CH3-B04-record-scanner",
+    "submittedPrompt": "prompts/CH3-B04-record-scanner-submitted.txt",
+    "references": [
+      "references/A01-restroom-4x.png",
+      "references/A02-restroom-bg.png",
+      "references/chapter-01-foyer-4x.png",
+      "references/chapter-02-groundskeeper-4x.png"
+    ]
+  }
+]
