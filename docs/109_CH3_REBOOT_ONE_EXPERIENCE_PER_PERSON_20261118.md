@@ -1,4 +1,4 @@
-# The Acceptable Error — Chapter 3 Creative Reboot
+# Out of Order — Chapter 3 Creative Reboot
 
 ## The People's Pavilion / *One Experience Per Person* (working subtitle)
 

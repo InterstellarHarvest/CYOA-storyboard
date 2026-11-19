@@ -6,7 +6,7 @@
 
 **This repository is canon.** Narrative, choices, endings, items, conditions, dice checks, artwork briefs, artwork selections and approval states are edited here and nowhere else.
 
-The game (`InterstellarHarvest/CYOA`, private) consumes a **pinned revision** of this repository. Its `story/` folder is a generated, read-only projection. Nothing in the game writes story data back here. The game publishes only one thing here: *evidence of what a real build uses*.
+The game (`InterstellarHarvest/out-of-order`, private) consumes a **pinned revision** of this repository. Its `story/` folder is a generated, read-only projection. Nothing in the game writes story data back here. The game publishes only one thing here: *evidence of what a real build uses*.
 
 ## Files
 
@@ -60,7 +60,7 @@ You do not need to wait for game integration.
 
 ```
 node tools/sync/register-art.mjs --key scenes:biology_park/formal_entrance --file <selected.png> \
-  --source-repo InterstellarHarvest/CYOA --source-ref <branch> --source-commit <40-hex> --source-path <path> --status approved
+  --source-repo InterstellarHarvest/out-of-order --source-ref <branch> --source-commit <40-hex> --source-path <path> --status approved
 node tools/sync/check-canon.mjs
 ```
 
@@ -154,7 +154,7 @@ Each image shows its SHA-256, its source commit and path, and the game build tha
   - Chapter 1: 36 nodes.
   - Chapter 2: 99 nodes.
   - Chapter 3: 62 nodes, draft. Not consumed by the game.
-- **Game:** `InterstellarHarvest/CYOA` draft PR #14 (`agent/canonical-storyboard-sync-20261116`) consumes storyboard `d95c01e`. See `story/game-integration.json` for the exact build commit and 63 image records.
+- **Game:** `InterstellarHarvest/out-of-order` draft PR #14 (`agent/canonical-storyboard-sync-20261116`) consumes storyboard `d95c01e`. See `story/game-integration.json` for the exact build commit and 63 image records.
 - **Integrated (verified by the game report):**
   - Prologue: 28.
   - Chapter 1: 28.

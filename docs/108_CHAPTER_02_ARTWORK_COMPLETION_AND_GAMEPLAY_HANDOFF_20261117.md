@@ -2,7 +2,7 @@
 
 Final Art Director/owner decision: all five Batch8 death illustrations APPROVED UNCHANGED. Chapter2 artwork generation and visual selection are complete. No further polish, regeneration or art production is pending.
 
-Immutable source: InterstellarHarvest/CYOA@29cf835db830b527021040b4960a64ab83e3699d, branch agent/ch02-art-batch08-death-aftermaths, review/chapter-02-batch08-2026-11-17/candidates/. Exact PNGs registered through docs/105; owner approval and source/hash provenance are recorded in the canonical artwork registry, selected-art preview index and docs/103 ledger.
+Immutable source: InterstellarHarvest/out-of-order@29cf835db830b527021040b4960a64ab83e3699d, branch agent/ch02-art-batch08-death-aftermaths, review/chapter-02-batch08-2026-11-17/candidates/. Exact PNGs registered through docs/105; owner approval and source/hash provenance are recorded in the canonical artwork registry, selected-art preview index and docs/103 ledger.
 
 Selected public images:114. Previous109 selected entries and PNGs preserved byte-for-byte. Chapter2-related image records checked:58 (50 approved,8 existing integrated/shared records). No Chapter2 records remain not-started, prompted or generated. This is artwork completion, with gameplay integration explicitly separate.
 
@@ -36,7 +36,7 @@ Active Prologue, Chapter1, Chapter2 and Chapter3 writing/presentation work is pr
 ## Gameplay integration — 2026-11-18 (Claude Gameplay PMO)
 
 All 50 approved Chapter 2 records are integrated in a tested game build:
-- **Game build:** `InterstellarHarvest/CYOA` branch `agent/ch02-art-integration-20261118` @ `2b9883b`, game docs/102.
+- **Game build:** `InterstellarHarvest/out-of-order` branch `agent/ch02-art-integration-20261118` @ `2b9883b`, game docs/102.
 - **Storyboard consumed:** `0e9dc25`.
 
 **Production paths:**
