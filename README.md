@@ -1,6 +1,8 @@
-# The Acceptable Error — Public Storyboard
+# Out of Order — Public Storyboard
 
-This is the **public, JSON-backed Storyboard + Artwork Production viewer** for The Acceptable Error. The site displays authored scenes, branching choices, inventory items, shared art prompts, asset references and production statuses. You can edit prompts and export updated JSON locally, but the live site never commits changes to GitHub.
+This is the **public, JSON-backed Storyboard + Artwork Production viewer** for Out of Order. The site displays authored scenes, branching choices, inventory items, shared art prompts, asset references and production statuses. You can edit prompts and export updated JSON locally, but the live site never commits changes to GitHub.
+
+**Repository identity:** The public GitHub repository and Pages slug intentionally remain `CYOA-storyboard`; that is a URL, not the game title. The game itself is **Out of Order** at [InterstellarHarvest/out-of-order](https://github.com/InterstellarHarvest/out-of-order). Historical approved art prompts and `cyoa-*` schemas stay unchanged for provenance and compatibility.
 
 - **[Open the storyboard](https://interstellarharvest.github.io/CYOA-storyboard/)**
 - **[Open the Prologue Artwork Lab](https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/)** — public-safe visual review with approved M2 shell assets and 28 draft PNGs; no private game engine
@@ -10,11 +12,11 @@ This is the **public, JSON-backed Storyboard + Artwork Production viewer** for T
 
 ## Canon and the production pipeline
 
-**This repository is the canonical creative source** for The Acceptable Error. Read [docs/105](docs/105_CANONICAL_SYNC_PIPELINE.md) first; the owner rulings are in [docs/102](docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md) and [docs/103](docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md).
+**This repository is the canonical creative source** for Out of Order. Read [docs/105](docs/105_CANONICAL_SYNC_PIPELINE.md) first; the owner rulings are in [docs/102](docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md) and [docs/103](docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md).
 
 - **Narrative, items, checks and art briefs** are edited here. Publish them after `node tools/sync/check-canon.mjs` passes. You do not need to wait for game integration.
 - **Art selection is approval.** Register the selected PNG with `node tools/sync/register-art.mjs`: it records the exact bytes, hash and source, sets `approved`, and makes the image visible on the site. **Never regenerate or re-approve selected art** unless the owner asks for a revision.
-- **The private game** (`InterstellarHarvest/CYOA`) consumes a *pinned revision* of this repository as a generated, read-only projection (`tools/story-sync/sync.js` there). It publishes back only `story/game-integration.json`, the images a real build uses, which marks them `integrated`.
+- **The private game** (`InterstellarHarvest/out-of-order`) consumes a *pinned revision* of this repository as a generated, read-only projection (`tools/story-sync/sync.js` there). It publishes back only `story/game-integration.json`, the images a real build uses, which marks them `integrated`.
 - **Drift is a CI failure.** Pages deploys only when `check-canon` passes. It fails on missing chapters, broken routes, undeclared fields, missing or altered selected-art previews, a selected image falling back to `generated` / `not-started`, and `integrated` claims a game build does not back.
 
 Everything here is **public**. The private engine, review worktrees and generation masters are never published. Only the curated `assets/selected/` package of selected images is, with provenance.

@@ -1,4 +1,4 @@
-# The Acceptable Error — Chapter 3 Reboot Route and Presentation Audit
+# Out of Order — Chapter 3 Reboot Route and Presentation Audit
 **Date:** 2026-11-18  
 **Status:** Creative structure owner-approved; an **isolated 30-node reboot candidate** exists at `story/chapters/chapter-03.reboot-candidate.json`. It is **not** in the storyboard manifest or game, lacks new art registrations, and is awaiting prose/presentation and importer review. No permission to publish or generate art.  
 **Canonical creative source:** `docs/109_CH3_REBOOT_ONE_EXPERIENCE_PER_PERSON_20261118.md` on draft PR #5 (`story/ch3-reboot-20261118`); it supersedes the old Chapter 3 narrative.  

@@ -1,9 +1,9 @@
-# The Acceptable Error — Public Prologue Artwork Lab
+# Out of Order — Public Prologue Artwork Lab
 
 Live address (after acceptance and Pages deployment):
 https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/
 
-This is a public-safe, non-playable visual review tool. It displays the exact approved M2 shell, inventory, arrow, choice-card, utility-button and inspector images at the approved whole-pixel stage coordinates. It does not publish or execute the private CYOA gameplay engine, story scripts, save files, test fixtures, review notes or internal rulings.
+This is a public-safe, non-playable visual review tool. It displays the exact approved M2 shell, inventory, arrow, choice-card, utility-button and inspector images at the approved whole-pixel stage coordinates. It does not publish or execute the private Out of Order gameplay engine, story scripts, save files, test fixtures, review notes or internal rulings.
 
 ## Exposition V03 detail refresh — 2026-11-14
 

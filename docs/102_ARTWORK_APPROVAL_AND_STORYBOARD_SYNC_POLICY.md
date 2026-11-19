@@ -1,6 +1,6 @@
 # Artwork approval and storyboard synchronization policy
 
-**Owner ruling — 2026-11-16.** Applies retroactively to The Acceptable Error's Prologue and Chapters 1–2, and prospectively to Chapter 3 and later work.
+**Owner ruling — 2026-11-16.** Applies retroactively to Out of Order's Prologue and Chapters 1–2, and prospectively to Chapter 3 and later work.
 
 ## Source of truth and production flow
 
