@@ -310,3 +310,30 @@ Further state:
 - Main-menu assets are not imported.
 - Chapter 3 Batch D has not begun.
 - The approvals are live on the public storyboard only after this branch merges into `main` and its Pages deployment is verified. Draft PR #13 (gallery publication proposal) remains separate and unmerged.
+
+
+## 2026-11-20 — Chapter 3 Batch D owner selection
+
+Nate explicitly approved and selected all nine Batch D artworks exactly as mapped in the v03 manifest at `e65f42c19e54f566819289d2b133be246ede13f5`. **Creative approval is complete.** D01/D04/D06/D07/D08 retain v01, D02/D03/D09 retain v02, and D05 is v03. No further visual approval is required for these exact bytes.
+
+| Candidate | Selected version | Registry key | SHA-256 |
+|---|---|---|---|
+| CH3-D01-service-exit | v01 | `scenes:pavilion_reboot/service_exit` | `4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392` |
+| CH3-D02-service-exit-bg | v02 | `scenes:pavilion_reboot/service_exit#portraitBackground` | `241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9` |
+| CH3-D03-attendant-quiet | v02 | `portraits:pavilion_attendant:quiet` | `7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90` |
+| CH3-D04-presenter-relieved | v01 | `portraits:pavilion_presenter:relieved` | `29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b` |
+| CH3-D05-backstage | v03 | `scenes:pavilion_reboot/backstage` | `aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889` |
+| CH3-D06-exterior-exit | v01 | `scenes:pavilion_reboot/exterior_exit` | `76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a` |
+| CH3-D07-exit-vestibule | v01 | `scenes:pavilion_reboot/exit_vestibule` | `cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8` |
+| CH3-D08-courtesy-stage | v01 | `scenes:pavilion_reboot/courtesy_stage` | `0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98` |
+| CH3-D09-courtesy-stage-bg | v02 | `scenes:pavilion_reboot/courtesy_stage#portraitBackground` | `b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623` |
+
+**Accepted limitation:** Nate accepts the documented unresolved/unproven original native-grid authorship limitation and residual source-derived softness. This approval acknowledges exact selected bytes; it does not establish original native-grid authorship or request regeneration, resizing, sharpening, filtering, alpha changes or additional polish.
+
+[Owner selection and verbatim instruction](122_OUT_OF_ORDER_CH3_BATCH_D_SELECTED_ARTWORK_20261120.json) · [Prepared nine-entry Claude batch](122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_BATCH_20261120.json) · [Verified Claude handoff](122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_HANDOFF_20261120.md) · [Verification report](122_OUT_OF_ORDER_CH3_BATCH_D_SELECTION_VALIDATION_20261120.json). All nine native files, SHA-256s, Git blobs and dimensions/alpha contracts are verified against the immutable source commit.
+
+**Canonical registration has not been performed.** Per Nate’s explicit instruction, this is a verified approval handoff only: `story/artwork.draft.json`, `story/artwork-preview.json`, curated selected assets and production paths remain unchanged. Any generated/not-started catalogue statuses are an administrative registration backlog, not a pending creative decision. The immutable v01/v02/v03 galleries retain their historical generated/unselected labels; this later owner selection supersedes them without rewriting any historical package. All earlier ledger text and approvals remain intact.
+
+PR #16 remains draft/unmerged at head `0805f4dd6f4c5d6554ef854be1e569e98eee0ee7`, pinned to the same v03 source. CI run `44825495367` completed successfully. CI success does not authorize publication; separate publication authorization is still required. Claude must reconcile the proposal’s pre-registration catalogue/staging assumptions after any future administrative registration and rerun CI before separately authorized publication.
+
+No merge, deployment, gameplay integration, game-repository modification or new art batch is authorized or performed. Stop after the verified handoff.

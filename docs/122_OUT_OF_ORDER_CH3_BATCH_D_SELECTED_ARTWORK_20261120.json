@@ -1,0 +1,299 @@
+{
+  "schema": "cyoa-art-director-selection-v1",
+  "gameTitle": "Out of Order",
+  "date": "2026-11-20",
+  "owner": "Nate",
+  "decision": "All nine Chapter 3 Batch D artworks approved exactly as mapped in the pinned v03 manifest. Creative approval complete; canonical registration deferred to a separate Claude step.",
+  "ownerInstructionVerbatim": "I approve and select all nine Chapter 3 Batch D artworks exactly as mapped in the v03 manifest:\n\n- D01 v01\n- D02 v02\n- D03 v02\n- D04 v01\n- D05 v03\n- D06 v01\n- D07 v01\n- D08 v01\n- D09 v02\n\nSource manifest: `e65f42c19e54f566819289d2b133be246ede13f5`.\n\nI accept the documented unresolved original native-grid authorship limitation.\n\n**Codex:** Verify the nine exact files and SHA-256 hashes, then record Nate's selections, update the approval ledger and prepare the Claude approval-registration handoff.\n\nPreserve all earlier candidates and historical packages. Keep PR #16 draft until its CI passes and publication receives separate authorization.\n\nDo not perform canonical registration, merge, deploy, integrate into gameplay or begin another art batch. Stop after producing the verified handoff.",
+  "status": "approved",
+  "selected": true,
+  "approved": true,
+  "registrationState": "NOT PERFORMED. Verified handoff only; canonical registry, selected preview registry and curated assets remain unchanged.",
+  "codexCanonicalRegistrationAuthorized": false,
+  "publicationAuthorized": false,
+  "mergeAuthorized": false,
+  "deploymentAuthorized": false,
+  "gameplayIntegrationAuthorized": false,
+  "nextArtBatchAuthorized": false,
+  "sourceCommit": "e65f42c19e54f566819289d2b133be246ede13f5",
+  "sourceRef": "art/ch3-pavilion-batch04-20261120",
+  "gallerySourceCommit": "e65f42c19e54f566819289d2b133be246ede13f5",
+  "galleryVersion": "v03-clapper-correction",
+  "sourceManifest": {
+    "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+    "sha256": "d7239e3dddc0cb8ff753e746a74f739e3774b38b5f57a03eadcd75e0ef45b77d",
+    "gitBlob": "331c00594a6386b4fa24fbab4d3258fe0acd01cf"
+  },
+  "canonicalMainAtVerification": "5134edb160afaa019e11f872a3b87d3b01b257b0",
+  "handoffBaseCommit": "e65f42c19e54f566819289d2b133be246ede13f5",
+  "nativeGridAuthorship": "UNRESOLVED / UNPROVEN; explicitly accepted by Nate.",
+  "acceptedTechnicalLimitation": "Original full-scene and full-character native-grid authorship remains unresolved/unproven. Generator originals are larger rasters; documented target-grid exports, local masks and native-pixel corrections do not prove original native-grid authorship. Nate accepts the exact selected bytes and residual source-derived softness. Do not regenerate, resize, sharpen, filter, reprocess alpha or polish these selected files.",
+  "historicalLabels": "The immutable v01/v02/v03 manifests and galleries retain their generation-time generated/unselected labels. This later owner selection supersedes those labels without rewriting historical packages.",
+  "preservationBaseline": {
+    "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+    "approvalLedgerSha256BeforeAppend": "296cc083e7a5fb7aab5c4d5c111160f6c0eacee328dddab7c1f133486e8fc593",
+    "approvalLedgerBytesBeforeAppend": 42606
+  },
+  "counts": {
+    "selected": 9,
+    "mainScenes": 5,
+    "portraitBackgrounds": 2,
+    "foregrounds": 2,
+    "opaqueRGB": 7,
+    "transparentRGBA": 2,
+    "expectedNewPreviewsOnVerifiedMain": 9,
+    "canonicalReplacements": 0
+  },
+  "publicationProposal": {
+    "prNumber": 16,
+    "url": "https://github.com/InterstellarHarvest/CYOA-storyboard/pull/16",
+    "requiredState": "draft / unmerged",
+    "pinnedGalleryCommit": "e65f42c19e54f566819289d2b133be246ede13f5",
+    "publicationRequiresSeparateAuthorization": true
+  },
+  "candidates": [
+    {
+      "candidateId": "CH3-D01-service-exit",
+      "key": "scenes:pavilion_reboot/service_exit",
+      "selectedVersion": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D01-service-exit-v01.png",
+      "sha256": "4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392",
+      "gitBlob": "40c0fc40525eadcf92ea367992e2add898e104ac",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D01-service-exit-v01.png"
+      },
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D02-service-exit-bg",
+      "key": "scenes:pavilion_reboot/service_exit#portraitBackground",
+      "selectedVersion": "v02",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D02-service-exit-bg-v02.png",
+      "sha256": "241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9",
+      "gitBlob": "3b146e67f6288b8f7e268f476b96d81fdf588183",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D02-service-exit-bg-v02.png"
+      },
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D03-attendant-quiet",
+      "key": "portraits:pavilion_attendant:quiet",
+      "selectedVersion": "v02",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D03-attendant-quiet-v02.png",
+      "sha256": "7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90",
+      "gitBlob": "5729cd7b1013c00bc66360b02d90e3f4e76628b2",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D03-attendant-quiet-v02.png"
+      },
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "alpha": "transparent",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D04-presenter-relieved",
+      "key": "portraits:pavilion_presenter:relieved",
+      "selectedVersion": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D04-presenter-relieved-v01.png",
+      "sha256": "29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b",
+      "gitBlob": "e0c3924e8b9a37afabe00c41a8d91e0c45b99700",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D04-presenter-relieved-v01.png"
+      },
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "alpha": "transparent",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D05-backstage",
+      "key": "scenes:pavilion_reboot/backstage",
+      "selectedVersion": "v03",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png",
+      "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+      "gitBlob": "b6b835b7fe7c6d49f37c618a21b76e2cf417d93e",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png"
+      },
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": null,
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D06-exterior-exit",
+      "key": "scenes:pavilion_reboot/exterior_exit",
+      "selectedVersion": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D06-exterior-exit-v01.png",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a",
+      "gitBlob": "5d8467e13a22124845ea4a5a935c62d0bdd7bfa8",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D06-exterior-exit-v01.png"
+      },
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D07-exit-vestibule",
+      "key": "scenes:pavilion_reboot/exit_vestibule",
+      "selectedVersion": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D07-exit-vestibule-v01.png",
+      "sha256": "cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8",
+      "gitBlob": "cd63ab85341310266e173cf29d82dbd9eefce942",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D07-exit-vestibule-v01.png"
+      },
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D08-courtesy-stage",
+      "key": "scenes:pavilion_reboot/courtesy_stage",
+      "selectedVersion": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D08-courtesy-stage-v01.png",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98",
+      "gitBlob": "1ee1e1676e3e0c86efc6e358d59abb1e836405b4",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D08-courtesy-stage-v01.png"
+      },
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "replacesCanonicalSelection": false
+    },
+    {
+      "candidateId": "CH3-D09-courtesy-stage-bg",
+      "key": "scenes:pavilion_reboot/courtesy_stage#portraitBackground",
+      "selectedVersion": "v02",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D09-courtesy-stage-bg-v02.png",
+      "sha256": "b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623",
+      "gitBlob": "9a4a112c85064f5d953f259b026d7c1c2bc7d1d2",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D09-courtesy-stage-bg-v02.png"
+      },
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "status": "approved",
+      "selected": true,
+      "approved": true,
+      "assetPath": null,
+      "priorReviewManifestFile": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json",
+      "firstCandidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+      "replacesCanonicalSelection": false
+    }
+  ]
+}
