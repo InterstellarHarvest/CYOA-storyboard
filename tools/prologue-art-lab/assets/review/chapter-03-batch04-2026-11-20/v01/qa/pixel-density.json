@@ -1,0 +1,248 @@
+{
+  "interpretation": "Compare native clusters visually. Color/neighbor diagnostics are not a pass/fail aesthetic test. New source-derived exports can be softer or more finely shaded than prior selected art.",
+  "images": [
+    {
+      "id": "CH3-D01-service-exit",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 18936,
+      "horizontalEqualNeighborFraction": 0.0833
+    },
+    {
+      "id": "CH3-D02-service-exit-bg",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 33380,
+      "horizontalEqualNeighborFraction": 0.1253
+    },
+    {
+      "id": "CH3-D03-attendant-quiet",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 9282,
+      "horizontalEqualNeighborFraction": 0.8382
+    },
+    {
+      "id": "CH3-D04-presenter-relieved",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 8376,
+      "horizontalEqualNeighborFraction": 0.867
+    },
+    {
+      "id": "CH3-D05-backstage",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 25557,
+      "horizontalEqualNeighborFraction": 0.0228
+    },
+    {
+      "id": "CH3-D06-exterior-exit",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 24809,
+      "horizontalEqualNeighborFraction": 0.0747
+    },
+    {
+      "id": "CH3-D07-exit-vestibule",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 20804,
+      "horizontalEqualNeighborFraction": 0.0747
+    },
+    {
+      "id": "CH3-D08-courtesy-stage",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 21759,
+      "horizontalEqualNeighborFraction": 0.122
+    },
+    {
+      "id": "CH3-D09-courtesy-stage-bg",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 34585,
+      "horizontalEqualNeighborFraction": 0.1375
+    },
+    {
+      "id": "scenes:pavilion_reboot/arrival",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 30211,
+      "horizontalEqualNeighborFraction": 0.0607
+    },
+    {
+      "id": "scenes:pavilion_reboot/human_verification_stage",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 16172,
+      "horizontalEqualNeighborFraction": 0.1302
+    },
+    {
+      "id": "scenes:pavilion_reboot/human_verification_stage#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 36037,
+      "horizontalEqualNeighborFraction": 0.1625
+    },
+    {
+      "id": "scenes:pavilion_reboot/locomotion_stage",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 16885,
+      "horizontalEqualNeighborFraction": 0.133
+    },
+    {
+      "id": "scenes:pavilion_reboot/paper_emergency",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 20305,
+      "horizontalEqualNeighborFraction": 0.1215
+    },
+    {
+      "id": "scenes:pavilion_reboot/record_printer",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 17361,
+      "horizontalEqualNeighborFraction": 0.1462
+    },
+    {
+      "id": "scenes:pavilion_reboot/record_printer#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 32733,
+      "horizontalEqualNeighborFraction": 0.1387
+    },
+    {
+      "id": "scenes:pavilion_reboot/record_scanner",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 14578,
+      "horizontalEqualNeighborFraction": 0.1262
+    },
+    {
+      "id": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 24807,
+      "horizontalEqualNeighborFraction": 0.1614
+    },
+    {
+      "id": "scenes:pavilion_reboot/restroom_entrance",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 17503,
+      "horizontalEqualNeighborFraction": 0.1363
+    },
+    {
+      "id": "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 32851,
+      "horizontalEqualNeighborFraction": 0.1353
+    },
+    {
+      "id": "scenes:pavilion_reboot/surprise_stage",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 15641,
+      "horizontalEqualNeighborFraction": 0.1677
+    },
+    {
+      "id": "scenes:pavilion_reboot/surprise_stage#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 37429,
+      "horizontalEqualNeighborFraction": 0.1898
+    },
+    {
+      "id": "scenes:pavilion_reboot/urgency_stage",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 16801,
+      "horizontalEqualNeighborFraction": 0.1235
+    },
+    {
+      "id": "scenes:pavilion_reboot/urgency_stage#portraitBackground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "uniqueColors": 35768,
+      "horizontalEqualNeighborFraction": 0.1677
+    },
+    {
+      "id": "scenes:house_of_tomorrow/foyer",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 210,
+      "horizontalEqualNeighborFraction": 0.8259
+    },
+    {
+      "id": "scenes:biology_park/conveniences_bureau",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 62,
+      "horizontalEqualNeighborFraction": 0.6608
+    },
+    {
+      "id": "scenes:exposition/reception",
+      "dimensions": [
+        314,
+        206
+      ],
+      "uniqueColors": 868,
+      "horizontalEqualNeighborFraction": 0.662
+    }
+  ]
+}

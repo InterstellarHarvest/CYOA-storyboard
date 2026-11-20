@@ -1,0 +1,122 @@
+{
+  "result": "PASS",
+  "candidates": [
+    {
+      "id": "CH3-D01-service-exit",
+      "result": "PASS",
+      "sha256": "4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D02-service-exit-bg",
+      "result": "PASS",
+      "sha256": "49e008b1ee37a01d49dc8e2c43ecc93b3b7c1914a23a4e80ce7c5a80d1818dee",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D03-attendant-quiet",
+      "result": "PASS",
+      "sha256": "dda560880cecd42fa843fe35b66cb7d2d9222d8301a68934e594f0552d24a5db",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D04-presenter-relieved",
+      "result": "PASS",
+      "sha256": "29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D05-backstage",
+      "result": "PASS",
+      "sha256": "ea18247e0564c459c5573a10e2bf8d7dee9e713c8f27d3e6b095eb5df857d11f",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D06-exterior-exit",
+      "result": "PASS",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D07-exit-vestibule",
+      "result": "PASS",
+      "sha256": "cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D08-courtesy-stage",
+      "result": "PASS",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D09-courtesy-stage-bg",
+      "result": "PASS",
+      "sha256": "9664be30b82cfb963cf9f6f2bf24b659fe0e0136701fea6f57e7035922b9ffba",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alphaPartial": 0,
+      "exact4x": true
+    }
+  ],
+  "approvedReferenceCopies": 23,
+  "allSelectedAssetBytesUnchanged": true,
+  "previewRegistryUnchanged": true,
+  "narrativeAndArchiveUnchanged": true,
+  "registryChangesRestrictedToNineUnstartedStatusAndNotes": true,
+  "courtesyPixelsOutsideStateMasksUnchanged": true,
+  "attendantCanvasEdgeAnchored": true,
+  "attendantUpperPortraitPreserved": true,
+  "nativeGridAuthorship": "UNPROVEN; technical validation is not creative approval."
+}

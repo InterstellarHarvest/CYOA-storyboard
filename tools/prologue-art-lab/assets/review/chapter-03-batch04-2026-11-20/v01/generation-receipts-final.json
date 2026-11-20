@@ -1,0 +1,208 @@
+[
+  {
+    "id": "CH3-D01-service-exit",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-d1775484-db52-4f90-9d0b-e66f0ebca251.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D01-service-exit.txt",
+    "original": "originals/CH3-D01-service-exit-generator.png",
+    "sha256": "3ed8e44051b907addeb7b83ddbfc442a8ffe7add14adfb7f13feb435db858500",
+    "promptSha256": "b7fd49ed31ea6771984f49c20cc3315100927f1cbfbf8df8e471d9d0477267a8",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/restroom_entrance",
+        "file": "references/scenes--pavilion_reboot--restroom_entrance.png",
+        "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D02-service-exit-bg",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-a7eed6d9-62da-439e-b169-e7447c942936.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D02-service-exit-bg.txt",
+    "original": "originals/CH3-D02-service-exit-bg-generator.png",
+    "sha256": "ef0ab1c3eb8a73e1a182bcdc112580f1f3b4822bd21d83a5e7752bfbd8f2a12e",
+    "promptSha256": "dd2be2d89145a3f2455cbdeda19e7c688708b390d1a530bd298b15dc0eb3418c",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+        "file": "references/scenes--pavilion_reboot--restroom_entrance--portraitBackground.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D03-attendant-quiet",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-e183cb8d-1ec2-4275-a159-eaabb9baa058.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D03-attendant-quiet.txt",
+    "original": "originals/CH3-D03-attendant-quiet-generator.png",
+    "sha256": "bcb641fa73f10368a1512b3a96d2f2981295eac1ee59ae3d4ab526a1ed07e8b3",
+    "promptSha256": "f957afa99de853f7e8576b690bb1b30af46a3ba8b75248cd5c9324e61737bcfc",
+    "approvedReferences": [
+      {
+        "record": "portraits:pavilion_attendant:idle",
+        "file": "references/portraits--pavilion_attendant--idle.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+      },
+      {
+        "record": "scenes:pavilion_reboot/record_printer#portraitBackground",
+        "file": "references/scenes--pavilion_reboot--record_printer--portraitBackground.png",
+        "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D04-presenter-relieved",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-88b9d07f-a5da-4f7c-93fa-ca534851824b.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D04-presenter-relieved.txt",
+    "original": "originals/CH3-D04-presenter-relieved-generator.png",
+    "sha256": "46eadf6d3cd407c91b26c5dd355a401861df7afed3e0fd684012b838b0750dbb",
+    "promptSha256": "9639fec1a7db8868ba3c189202841c481c43f2cadb84ea77e416a5711bd0453a",
+    "approvedReferences": [
+      {
+        "record": "portraits:pavilion_presenter:idle",
+        "file": "references/portraits--pavilion_presenter--idle.png",
+        "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D05-backstage",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-dbb15631-cd1f-4991-a6a1-451ecfd32a37.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D05-backstage.txt",
+    "original": "originals/CH3-D05-backstage-generator.png",
+    "sha256": "be5bec10eff371a1147da57cde821d0ff2553752f4ad1a533e69afc5fded8d7f",
+    "promptSha256": "9706649055c4849649e7bd4a00c23d0e2d2822e6de79a670dc5474952c2c92d0",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/restroom_entrance",
+        "file": "references/scenes--pavilion_reboot--restroom_entrance.png",
+        "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+      },
+      {
+        "record": "scenes:pavilion_reboot/locomotion_stage",
+        "file": "references/scenes--pavilion_reboot--locomotion_stage.png",
+        "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D06-exterior-exit",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-a3b3ef56-492d-408c-b932-66f77c1b16e1.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D06-exterior-exit.txt",
+    "original": "originals/CH3-D06-exterior-exit-generator.png",
+    "sha256": "e9c28ff8d9a2e309d99d217b25828e208d9f7065cae6c92ee23a7156a787f37d",
+    "promptSha256": "4b2cde20e78ad42a6f88d9e6329012e440dfecd51aa006579de04dc4592d8c83",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/arrival",
+        "file": "references/scenes--pavilion_reboot--arrival.png",
+        "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D07-exit-vestibule",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-33d5813f-c69b-4519-98d5-6821ba70280e.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D07-exit-vestibule.txt",
+    "original": "originals/CH3-D07-exit-vestibule-generator.png",
+    "sha256": "6004b50ba5367165c6bb977b0f3ba6664f51b81bcf939ef72f74ee25678891c7",
+    "promptSha256": "90efbc5bb7610673b229cc2e7c59d4b5ed91ed2129c569bba909145117563f35",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/restroom_entrance",
+        "file": "references/scenes--pavilion_reboot--restroom_entrance.png",
+        "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+      },
+      {
+        "record": "scenes:pavilion_reboot/record_scanner",
+        "file": "references/scenes--pavilion_reboot--record_scanner.png",
+        "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D08-courtesy-stage",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-dcb70374-9035-4c3e-95ec-633ecf9aad2e.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D08-courtesy-stage.txt",
+    "original": "originals/CH3-D08-courtesy-stage-generator.png",
+    "sha256": "8c50ed869ca36eec1c285ef7ec6acb3c72d41b29a08ffa7ede8fa83f2c2240bf",
+    "promptSha256": "06d8987c275e039ede8dfafef5187080f805c38b7488eecc35dfc7528b3453ee",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/restroom_entrance",
+        "file": "references/scenes--pavilion_reboot--restroom_entrance.png",
+        "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+      },
+      {
+        "record": "portraits:pavilion_attendant:alarmed",
+        "file": "references/portraits--pavilion_attendant--alarmed.png",
+        "sha256": "51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D09-courtesy-stage-bg",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-08a68910-b148-45c8-b665-7e22fcf99aa9.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D09-courtesy-stage-bg.txt",
+    "original": "originals/CH3-D09-courtesy-stage-bg-generator.png",
+    "sha256": "f84aa244cf15f74cee1c5cab88b4d33a8f9a1c56d56c5178393eb1877d414efe",
+    "promptSha256": "fd16390c910e655bc0b5738408eb01410308cd5df4dbf5db19429fa10e90d6de",
+    "approvedReferences": [
+      {
+        "record": "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+        "file": "references/scenes--pavilion_reboot--restroom_entrance--portraitBackground.png",
+        "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+      },
+      {
+        "record": "portraits:pavilion_attendant:alarmed",
+        "file": "references/portraits--pavilion_attendant--alarmed.png",
+        "sha256": "51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f"
+      }
+    ]
+  },
+  {
+    "id": "CH3-D08-window-correction",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-2ebc03ac-9e33-4574-8799-4e39f6b9185b.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D08-window-correction.txt",
+    "editTarget": "originals/CH3-D08-courtesy-stage-generator.png",
+    "original": "originals/CH3-D08-window-correction-generator.png",
+    "sha256": "cbc7e4be9fa1020afd27dfeb6abc530a993ab439bee3eb4e663846fecfad64fc",
+    "promptSha256": "00cf095f29195a32db82441954e22b4f3813369ad452a51d3b480a369a265442"
+  },
+  {
+    "id": "CH3-D03-anchoring-correction",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-6f7c6755-bbca-48ce-bb1c-6d4cdd7d4498.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D03-anchoring-correction.txt",
+    "original": "originals/CH3-D03-anchoring-correction-generator.png",
+    "sha256": "bd1abd547b31a06653cecad6102c03667e6424998517f9c995a662331df42d10",
+    "promptSha256": "efb4568488bf097ea3fce6e0662d0ead7ee3207cf874000d739eb9cd1fa5230e"
+  },
+  {
+    "id": "CH3-D05-correction",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-9b419d52-1f0c-4fac-b1d9-c742b74aee6e.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D05-correction.txt",
+    "original": "originals/CH3-D05-correction-generator.png",
+    "sha256": "b57fb82d3484c1e77614ef22d66269af8a0526e4dc91902c857a868341b3560b",
+    "promptSha256": "2c802166dc6014d323773af12401302901c074b14eac2a0f4b2d37bef8740e9a"
+  },
+  {
+    "id": "CH3-D07-correction",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-a8150a93-2088-4a3a-b2f9-7c92bf5caa43.png",
+    "tool": "image_gen built-in",
+    "promptFile": "prompts/CH3-D07-correction.txt",
+    "original": "originals/CH3-D07-correction-generator.png",
+    "sha256": "8e4cf546bfe37c7f952d1035735fb0dea8849ed7985015308171022a5c8d7a6f",
+    "promptSha256": "e7340f15ad7a7f9c12bfdc8361668ae3df24e3e950198c82205c33aefd7c6ee8"
+  }
+]
