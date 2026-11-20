@@ -64,7 +64,7 @@ for(const [name,hash] of Object.entries(batch2SelectedHashes)){
 // Previously selected images remain protected by the pinned checks and check-canon.
 for(const record of productionRecords.filter(r=>r.status==='generated')){
   assert.equal(record.assetPath,null,'unselected candidate has no production path');
-  assert.match(record.notes,/CANDIDATE GENERATED .*commit [0-9a-f]{40}; path (?:review\/chapter-02-batch\d+-[^;]+|tools\/prologue-art-lab\/assets\/review\/chapter-03-batch04-2026-11-20\/v01\/candidates\/CH3-D\d{2}-[a-z-]+-v01\.png); SHA-256 [0-9a-f]{64}\./,'generated candidate has a pinned source commit, review PNG path and SHA-256');
+  assert.match(record.notes,/CANDIDATE GENERATED .*commit [0-9a-f]{40}; path (?:review\/chapter-02-batch\d+-[^;]+|tools\/prologue-art-lab\/assets\/review\/chapter-03-batch04-2026-11-20\/(?:v01|v02-close-camera-corrections)\/candidates\/CH3-D\d{2}-[a-z-]+-v0[12]\.png); SHA-256 [0-9a-f]{64}\./,'generated candidate has a pinned source commit, review PNG path and SHA-256');
 }
 assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
 assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary'],undefined,'one shared Rest Assured death record (owner ruling docs/104), no per-cause duplicate');

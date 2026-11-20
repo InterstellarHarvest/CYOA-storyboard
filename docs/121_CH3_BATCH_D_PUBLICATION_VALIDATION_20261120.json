@@ -1,15 +1,20 @@
 {
   "result": "PASS",
-  "galleryCommit": "3931c496c13c691c8afa3c5206d4f56196c372fc",
-  "candidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
-  "checksumVerifiedFiles": 111,
+  "galleryCommit": "57ecd94f1f7eb840d186d7b5afae79a60063511d",
+  "reviewVersion": "v02-close-camera-corrections",
+  "revisedCandidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+  "retainedCandidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+  "revisedCandidates": 3,
+  "retainedCandidates": 6,
+  "checksumVerifiedFileCounts": {
+    "v01": 111,
+    "v02-close-camera-corrections": 35
+  },
   "actualMainBuildStepPassed": true,
   "trustedStagingHelperPassed": true,
-  "nineCandidatesRemainGeneratedUnselected": true,
-  "selectedPreviewRegistryUnchanged": true,
-  "directBranchDeploymentAuthorized": false,
+  "entireV01PackagePreserved": true,
+  "allCandidatesGeneratedUnselected": true,
+  "approvedArtworkAndPreviewRegistryUnchanged": true,
   "galleryCodeExecuted": false,
-  "priorWorkflowBytesIdenticalAfterRemovingOnlyTheTwoNewEnvPinsAndDStagingSteps": true,
-  "canonicalCheck": "PASS",
-  "storyboardSmoke": "PASS"
+  "previousWorkflowBytesAndMainOnlyGuardUnchanged": true
 }

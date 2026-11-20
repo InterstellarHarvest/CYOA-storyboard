@@ -14,7 +14,7 @@ Audited latest fetched main `5134edb160afaa019e11f872a3b87d3b01b257b0` on 2026-1
 | 8 | CH3-D08-courtesy-stage | `scenes:pavilion_reboot/courtesy_stage` | scene 314×206 | door_courtesy | `scenes:pavilion_reboot/restroom_entrance`, `portraits:pavilion_attendant:alarmed` | Yes: distinct scene/state/pose | Changed real restroom state, frame moves left BEHIND foreground bench; original opening shuttered; right desk and all fixtures pixel-locked. |
 | 9 | CH3-D09-courtesy-stage-bg | `scenes:pavilion_reboot/courtesy_stage#portraitBackground` | portrait-background 564×278 | door_courtesy | `scenes:pavilion_reboot/restroom_entrance#portraitBackground`, `portraits:pavilion_attendant:alarmed` | Yes: distinct scene/state/pose | Same close camera and counter; shutter/track at left, relocated frame partly outside crop; intercom/mic/plant and right wall pixel-locked. |
 
-Full node coverage, exact prompts, source originals, derivations and hashes: [inventory.json](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/3931c496c13c691c8afa3c5206d4f56196c372fc/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/inventory.json), [manifest.json](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/3931c496c13c691c8afa3c5206d4f56196c372fc/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/manifest.json), [generation receipts](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/3931c496c13c691c8afa3c5206d4f56196c372fc/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/generation-receipts-final.json).
+Full node coverage, exact prompts, source originals, derivations and hashes: [inventory.json](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/57ecd94f1f7eb840d186d7b5afae79a60063511d/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/inventory.json), [manifest.json](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/57ecd94f1f7eb840d186d7b5afae79a60063511d/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/manifest.json), [generation receipts](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/57ecd94f1f7eb840d186d7b5afae79a60063511d/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/generation-receipts-final.json).
 
 No new item, visitor portrait, death or Focus A images. Existing key/photo/stapler/clicker art is reused. Service exit, backstage and exterior each support multiple nodes without redundant generation.
 
@@ -30,7 +30,7 @@ Visual review questions and known limitations are shown per candidate in the gal
 
 Generation branch: `art/ch3-pavilion-batch04-20261120`. Exact native candidates and generator originals first committed at `4fc277651c7d05163817d9ab99d0fc3fcf522d47`; later package-completion commits preserve those candidate bytes. The canonical nine generated records cite that immutable source commit. Approved preview registry and selected artwork are unchanged.
 
-[Open local/repository gallery](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/3931c496c13c691c8afa3c5206d4f56196c372fc/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/index.html). Proposed public gallery after a separately reviewed main-only publication: `https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/`. This URL is not live from the generation branch. A separate draft publication PR pins the completed review package; no direct deployment, merge or workflow dispatch is performed.
+[Open local/repository gallery](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/57ecd94f1f7eb840d186d7b5afae79a60063511d/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/index.html). Proposed public gallery after a separately reviewed main-only publication: `https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/`. This URL is not live from the generation branch. A separate draft publication PR pins the completed review package; no direct deployment, merge or workflow dispatch is performed.
 
 ## Native candidate SHA-256
 
@@ -65,3 +65,19 @@ Generation branch: `art/ch3-pavilion-batch04-20261120`. Exact native candidates 
 5. Is the courtesy door/frame visibly displaced on a plausible rail behind the bench? Are spotlight, shutter, retained desk equipment and close cropped jamb sufficient to show the same event?
 6. Is source-derived pixel softness acceptable beside Chapters 1–3, or should specific candidates get another finishing pass? Native-grid authorship remains unproven, with no claim of true native authorship.
 7. Should the narrated stapler/printer loop and maintenance shutter receive a separately scoped masked state overlay later, or does the approved printer master plus narration suffice?
+
+## Current review update — v02 close cameras and attendant proportions
+
+Nate found the attendant vertically compressed and the portrait backgrounds too wide. Three unselected candidates are revised: D02 service background, D03 quiet attendant, D09 courtesy background. Six other candidates and the entire v01 package remain byte-identical. The two service composites share one background.
+
+[Open v02 gallery](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/57ecd94f1f7eb840d186d7b5afae79a60063511d/tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/index.html). Both backgrounds are independently re-authored close views with large cropped fixtures and no ceiling or interior floor. The attendant is newly drawn with a naturally taller neck/torso, exported with uniform nearest-neighbor scale and transparent padding; no forced silhouette bounding-box fit is applied. Existing presenter and alarmed attendant foregrounds are unchanged.
+
+Exact revised image/original source: `15f17fd3b3ebd348160c61ff3573e8fa8825ee21`. The v01 source commits above remain historical. All candidates remain generated/unselected. Native-grid authorship is still unproven.
+
+| Revised candidate | SHA-256 |
+| --- | --- |
+| CH3-D02-service-exit-bg | `241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9` |
+| CH3-D03-attendant-quiet | `7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90` |
+| CH3-D09-courtesy-stage-bg | `b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623` |
+
+Image dimensions, alpha, exact 4×, uniform scaling, six retained images and all v01/approved/narrative preservation checks pass. Revised gallery Chromium and Firefox checks pass at the built Pages prefix, with native/mobile dimensions and all links verified. Chapter 3 briefs, narrative, smoke, canonical and sync checks pass. Review the new service composites, tighter courtesy shot and the attendant’s natural proportions; no further visual approval is implied.
