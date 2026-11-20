@@ -1,0 +1,171 @@
+[
+  {
+    "candidateId": "CH3-C01-urgency",
+    "record": "scenes:pavilion_reboot/urgency_stage",
+    "kind": "main",
+    "dimensions": [
+      314,
+      206
+    ],
+    "additionalContinuityOption": false,
+    "file": "candidates/CH3-C01-urgency-v04.png",
+    "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-C01-urgency-v03.png",
+    "sourceSha256": "9f9bb94e7108a8c6ad216bd66562ab219e1a2d6f2d9dd6199dac66025480d715",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 1814,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-C02-urgency-bg",
+    "record": "scenes:pavilion_reboot/urgency_stage#portraitBackground",
+    "kind": "background",
+    "dimensions": [
+      564,
+      278
+    ],
+    "additionalContinuityOption": false,
+    "file": "candidates/CH3-C02-urgency-bg-v04.png",
+    "sha256": "7d89b7d7c2ee22e6b324076ce988b3e5520e84be5b4068e79fe8d759ab529714",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-C02-urgency-bg-v03.png",
+    "sourceSha256": "40c1aafa606dc859eb9f58ef59746714b7479d301541a73e28e8b4c184ccbe2a",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 7577,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-C03-locomotion",
+    "record": "scenes:pavilion_reboot/locomotion_stage",
+    "kind": "main",
+    "dimensions": [
+      314,
+      206
+    ],
+    "additionalContinuityOption": false,
+    "file": "candidates/CH3-C03-locomotion-v04.png",
+    "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-C03-locomotion-v03.png",
+    "sourceSha256": "7010639e65995e5dec35f38317ae74fa95143e381b94b8b6ca4adeeb5383d6c3",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 1814,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-C04-surprise",
+    "record": "scenes:pavilion_reboot/surprise_stage",
+    "kind": "main",
+    "dimensions": [
+      314,
+      206
+    ],
+    "additionalContinuityOption": false,
+    "file": "candidates/CH3-C04-surprise-v04.png",
+    "sha256": "8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-C04-surprise-v03.png",
+    "sourceSha256": "65663ee7c993f9cfbdcfd3935af6c9eb00c66833503990671f2042566cf09f4b",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 4656,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit.",
+      "Move the exact small presenter 73 pixels left, onto the firing side of the left-pointing cannon. Preserve sprite pixels, vertical placement and scale."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-C05-surprise-bg",
+    "record": "scenes:pavilion_reboot/surprise_stage#portraitBackground",
+    "kind": "background",
+    "dimensions": [
+      564,
+      278
+    ],
+    "additionalContinuityOption": false,
+    "file": "candidates/CH3-C05-surprise-bg-v04.png",
+    "sha256": "90f29651222b62bca461c0c33f09092290b374fd0cf10094c40267202515e255",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-C05-surprise-bg-v03.png",
+    "sourceSha256": "78a5925fe74f9c0e30fee1e413400d258ba769dab2df2dfb61d698554c0f6c48",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 7577,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-A04-verification-continuity",
+    "record": "scenes:pavilion_reboot/human_verification_stage",
+    "kind": "main",
+    "dimensions": [
+      314,
+      206
+    ],
+    "additionalContinuityOption": true,
+    "file": "candidates/CH3-A04-verification-continuity-v04.png",
+    "sha256": "8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-A04-verification-continuity-v03.png",
+    "sourceSha256": "bb2cf39dcbb3202b03fe94b77bc88b732c60406a0273f63aa083a9ce9ba9c68d",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 1814,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  },
+  {
+    "candidateId": "CH3-A05-verification-bg-continuity",
+    "record": "scenes:pavilion_reboot/human_verification_stage#portraitBackground",
+    "kind": "background",
+    "dimensions": [
+      564,
+      278
+    ],
+    "additionalContinuityOption": true,
+    "file": "candidates/CH3-A05-verification-bg-continuity-v04.png",
+    "sha256": "d09e2a7cf13c6382cd8d726a8852f32cfe359651f4c6c9538f4f7825d41844ef",
+    "sourceFile": "v03-continuity-corrections/candidates/CH3-A05-verification-bg-continuity-v03.png",
+    "sourceSha256": "fd71e1a318f4a044ba78de3e56833f981d3efe81b985ede9306f05d80d6c8f37",
+    "sourceCommit": "2f51cfd909ca443b64e52285af17cb00bdb770b6",
+    "changedPixels": 7577,
+    "operations": [
+      "Replace constant upward tilt with a shared wall vanishing point: plate edges converge together, including downward-right lower panel/grille edges.",
+      "Clarify pedestal controls: larger green BEGIN button, activation glyph, separate red emergency release and raised cover; only surprise is brightly lit."
+    ],
+    "status": "generated",
+    "selected": false,
+    "approved": false,
+    "assetPath": null
+  }
+]

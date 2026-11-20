@@ -1,0 +1,621 @@
+{
+  "result": "PASS",
+  "candidateCount": 7,
+  "additionalA04A05Options": 2,
+  "candidates": [
+    {
+      "candidateId": "CH3-C01-urgency",
+      "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 1814,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 16801
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "sha256": "7d89b7d7c2ee22e6b324076ce988b3e5520e84be5b4068e79fe8d759ab529714",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 7577,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 35768
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 1814,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 16885
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "sha256": "8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 4656,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 15641
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "sha256": "90f29651222b62bca461c0c33f09092290b374fd0cf10094c40267202515e255",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 7577,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 37429
+    },
+    {
+      "candidateId": "CH3-A04-verification-continuity",
+      "sha256": "8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 1814,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 16172
+    },
+    {
+      "candidateId": "CH3-A05-verification-bg-continuity",
+      "sha256": "d09e2a7cf13c6382cd8d726a8852f32cfe359651f4c6c9538f4f7825d41844ef",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 7577,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 36037
+    }
+  ],
+  "wallContinuity": [
+    {
+      "candidateId": "CH3-A04-verification-continuity",
+      "box": [
+        277,
+        50,
+        314,
+        135
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C01-urgency",
+      "box": [
+        277,
+        50,
+        314,
+        135
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "box": [
+        277,
+        50,
+        314,
+        135
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "box": [
+        277,
+        50,
+        314,
+        135
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-A05-verification-bg-continuity",
+      "box": [
+        496,
+        20,
+        564,
+        193
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "box": [
+        496,
+        20,
+        564,
+        193
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "box": [
+        496,
+        20,
+        564,
+        193
+      ],
+      "pixelDifferences": 0
+    }
+  ],
+  "presenterOcclusion": [
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "exactForegroundPixels": 1176,
+      "translation": [
+        0,
+        1
+      ],
+      "scale": 1,
+      "pixelMismatches": 0
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "exactForegroundPixels": 1421,
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "pixelMismatches": 0
+    }
+  ],
+  "cannonFiringSide": {
+    "result": "PASS",
+    "cannonMouthX": 168,
+    "presenterBounds": [
+      109,
+      59,
+      139,
+      126
+    ],
+    "allPresenterPixelsLeftOfCannon": true,
+    "horizontalMove": -73,
+    "verticalMove": 0,
+    "resized": false,
+    "spriteIdentityPixelsExact": true
+  },
+  "wallGeometry": [
+    {
+      "camera": "main",
+      "component": "pictogram",
+      "vanishingPoint": [
+        157,
+        107
+      ],
+      "referenceX": 279,
+      "nativeSpriteSize": [
+        24,
+        27
+      ],
+      "targetLeft": 279,
+      "planeTop": 68,
+      "planeHeight": 26,
+      "projectedCorners": [
+        [
+          279,
+          68.0
+        ],
+        [
+          302,
+          60.64754098360656
+        ],
+        [
+          302,
+          91.54918032786885
+        ],
+        [
+          279,
+          94.0
+        ]
+      ],
+      "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+    },
+    {
+      "camera": "main",
+      "component": "wall-buttons",
+      "vanishingPoint": [
+        157,
+        107
+      ],
+      "referenceX": 279,
+      "nativeSpriteSize": [
+        11,
+        25
+      ],
+      "targetLeft": 282,
+      "planeTop": 98,
+      "planeHeight": 23,
+      "projectedCorners": [
+        [
+          282,
+          97.77868852459017
+        ],
+        [
+          292,
+          97.04098360655738
+        ],
+        [
+          292,
+          122.49180327868852
+        ],
+        [
+          282,
+          121.34426229508196
+        ]
+      ],
+      "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+    },
+    {
+      "camera": "main",
+      "component": "speaker",
+      "vanishingPoint": [
+        157,
+        107
+      ],
+      "referenceX": 279,
+      "nativeSpriteSize": [
+        20,
+        8
+      ],
+      "targetLeft": 280,
+      "planeTop": 124,
+      "planeHeight": 7,
+      "projectedCorners": [
+        [
+          280,
+          124.13934426229508
+        ],
+        [
+          299,
+          126.78688524590164
+        ],
+        [
+          299,
+          134.9344262295082
+        ],
+        [
+          280,
+          131.19672131147541
+        ]
+      ],
+      "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+    },
+    {
+      "camera": "close",
+      "component": "pictogram",
+      "vanishingPoint": [
+        280,
+        148
+      ],
+      "referenceX": 499,
+      "nativeSpriteSize": [
+        48,
+        54
+      ],
+      "targetLeft": 500,
+      "planeTop": 48,
+      "planeHeight": 54,
+      "projectedCorners": [
+        [
+          500,
+          47.543378995433784
+        ],
+        [
+          547,
+          26.082191780821915
+        ],
+        [
+          547,
+          91.91780821917808
+        ],
+        [
+          500,
+          101.78995433789954
+        ]
+      ],
+      "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+    },
+    {
+      "camera": "close",
+      "component": "wall-buttons",
+      "vanishingPoint": [
+        280,
+        148
+      ],
+      "referenceX": 499,
+      "nativeSpriteSize": [
+        25,
+        54
+      ],
+      "targetLeft": 511,
+      "planeTop": 117,
+      "planeHeight": 51,
+      "projectedCorners": [
+        [
+          511,
+          115.30136986301369
+        ],
+        [
+          535,
+          111.9041095890411
+        ],
+        [
+          535,
+          171.2876712328767
+        ],
+        [
+          511,
+          169.0958904109589
+        ]
+      ],
+      "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+    },
+    {
+      "camera": "close",
+      "component": "speaker",
+      "vanishingPoint": [
+        280,
+        148
+      ],
+      "referenceX": 499,
+      "nativeSpriteSize": [
+        33,
+        12
+      ],
+      "targetLeft": 510,
+      "planeTop": 175,
+      "planeHeight": 10,
+      "projectedCorners": [
+        [
+          510,
+          176.35616438356163
+        ],
+        [
+          542,
+          180.3013698630137
+        ],
+        [
+          542,
+          192.2648401826484
+        ],
+        [
+          510,
+          186.8584474885845
+        ]
+      ],
+      "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+    }
+  ],
+  "pedestalClarity": [
+    {
+      "candidateId": "CH3-A04-verification-continuity",
+      "sameHeadGeometry": true,
+      "activeBEGIN": false,
+      "differencesFromInactiveHead": 0,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    },
+    {
+      "candidateId": "CH3-C01-urgency",
+      "sameHeadGeometry": true,
+      "activeBEGIN": false,
+      "differencesFromInactiveHead": 0,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "sameHeadGeometry": true,
+      "activeBEGIN": false,
+      "differencesFromInactiveHead": 0,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "sameHeadGeometry": true,
+      "activeBEGIN": true,
+      "differencesFromInactiveHead": 29,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    },
+    {
+      "candidateId": "CH3-A05-verification-bg-continuity",
+      "sameHeadGeometry": true,
+      "activeBEGIN": false,
+      "differencesFromInactiveHead": 0,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "sameHeadGeometry": true,
+      "activeBEGIN": false,
+      "differencesFromInactiveHead": 0,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "sameHeadGeometry": true,
+      "activeBEGIN": true,
+      "differencesFromInactiveHead": 102,
+      "controlFunctions": [
+        "green BEGIN",
+        "covered red emergency release"
+      ]
+    }
+  ],
+  "bellGrip": {
+    "inheritedV03VerticalShift": 3,
+    "protectedFingerPixelsUnchanged": 15
+  },
+  "composites": [
+    {
+      "foreground": "CH3-C06-presenter-excited",
+      "background": "CH3-C02-urgency-bg",
+      "file": "composites/CH3-C06-presenter-excited--CH3-C02-urgency-bg.png",
+      "sha256": "09c418e8626e897cbd9fca633f209a13eb83a6626727f144e027b7ff0fefb0cf",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    },
+    {
+      "foreground": "CH3-C06-presenter-excited",
+      "background": "CH3-A05-verification-bg-continuity",
+      "file": "composites/CH3-C06-presenter-excited--CH3-A05-verification-bg-continuity.png",
+      "sha256": "dc1d440250ae5f3280f745d738d9816f474088feadcb6801f785de9edad6ffb3",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    },
+    {
+      "foreground": "CH3-C07-presenter-alarmed",
+      "background": "CH3-C05-surprise-bg",
+      "file": "composites/CH3-C07-presenter-alarmed--CH3-C05-surprise-bg.png",
+      "sha256": "7672e7cabc629303cb1549158581a8fbe03a514ceeb45c6226d50cbbf9821ebe",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    },
+    {
+      "foreground": "CH3-C07-presenter-alarmed",
+      "background": "CH3-A05-verification-bg-continuity",
+      "file": "composites/CH3-C07-presenter-alarmed--CH3-A05-verification-bg-continuity.png",
+      "sha256": "914ad9b06118914e962e950d908345ce9c7d5e1151321740c3264e5a752275ef",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    }
+  ],
+  "preservation": {
+    "v01V02V03FilesBytePreserved": 403,
+    "protectedCurrentFilesUnchanged": 324,
+    "pinnedBatchABHistoricalFilesVerified": 834,
+    "approvedA04A05Unchanged": true,
+    "threeApprovedPoseReferencesUnchanged": true,
+    "narrativeRegistryProductionAndWorkflowsUnchanged": true
+  },
+  "canonicalQA": {
+    "result": "PASS",
+    "checks": [
+      {
+        "command": "node tools/sync/check-canon.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node tools/storyboard/qa-ch3-artwork-briefs.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node tools/storyboard/qa-ch3-reboot-candidate.mjs",
+        "exitCode": 0
+      },
+      {
+        "command": "node tools/storyboard/qa-smoke.mjs",
+        "exitCode": 0
+      }
+    ],
+    "lastOutput": "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\"],\"artRecords\":200,\"checked\":[\"manifest\",\"all scene references\",\"portrait references\",\"all item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all four chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five preview handoffs\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}\n"
+  },
+  "browserQA": {
+    "result": "PASS",
+    "url": "http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/",
+    "browser": "150.0.7871.125",
+    "checks": [
+      "Seven environment revisions and native comparisons decode at exact intrinsic dimensions",
+      "All scalable views use exact integer 4x; fixed close-ups retain exact 8x",
+      "Seven unselected revisions; four main/three portrait wall matches; exact sprite identity on firing side; clear pedestal state mapping; four fixed-anchor composites verified",
+      "Every linked local provenance file, mask, coordinate list, historical image and comparison resolves",
+      "390px mobile page has contained proof scrolling and no document overflow",
+      "No browser errors or failed requests"
+    ],
+    "errors": [],
+    "failed": [],
+    "publication": "Local browser verification only. No Pages deployment or merge; PR #13 remains draft and v02-pinned.",
+    "limitation": "Original native-grid authorship remains unresolved; selection is pending Nate."
+  },
+  "nativeGridAuthorship": "UNRESOLVED / UNPROVEN. Local target-grid component edits do not certify original source authorship.",
+  "creativeApproval": "Seven v04 environment revisions unselected. Prior v02 approval retained historically; never auto-promote revisions.",
+  "pagesDeployed": false,
+  "imageGenerationCalls": 0
+}

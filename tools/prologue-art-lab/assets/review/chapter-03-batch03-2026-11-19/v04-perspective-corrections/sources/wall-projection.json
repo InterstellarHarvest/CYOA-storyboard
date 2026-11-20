@@ -1,0 +1,212 @@
+[
+  {
+    "camera": "main",
+    "component": "pictogram",
+    "vanishingPoint": [
+      157,
+      107
+    ],
+    "referenceX": 279,
+    "nativeSpriteSize": [
+      24,
+      27
+    ],
+    "targetLeft": 279,
+    "planeTop": 68,
+    "planeHeight": 26,
+    "projectedCorners": [
+      [
+        279,
+        68.0
+      ],
+      [
+        302,
+        60.64754098360656
+      ],
+      [
+        302,
+        91.54918032786885
+      ],
+      [
+        279,
+        94.0
+      ]
+    ],
+    "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+  },
+  {
+    "camera": "main",
+    "component": "wall-buttons",
+    "vanishingPoint": [
+      157,
+      107
+    ],
+    "referenceX": 279,
+    "nativeSpriteSize": [
+      11,
+      25
+    ],
+    "targetLeft": 282,
+    "planeTop": 98,
+    "planeHeight": 23,
+    "projectedCorners": [
+      [
+        282,
+        97.77868852459017
+      ],
+      [
+        292,
+        97.04098360655738
+      ],
+      [
+        292,
+        122.49180327868852
+      ],
+      [
+        282,
+        121.34426229508196
+      ]
+    ],
+    "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+  },
+  {
+    "camera": "main",
+    "component": "speaker",
+    "vanishingPoint": [
+      157,
+      107
+    ],
+    "referenceX": 279,
+    "nativeSpriteSize": [
+      20,
+      8
+    ],
+    "targetLeft": 280,
+    "planeTop": 124,
+    "planeHeight": 7,
+    "projectedCorners": [
+      [
+        280,
+        124.13934426229508
+      ],
+      [
+        299,
+        126.78688524590164
+      ],
+      [
+        299,
+        134.9344262295082
+      ],
+      [
+        280,
+        131.19672131147541
+      ]
+    ],
+    "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+  },
+  {
+    "camera": "close",
+    "component": "pictogram",
+    "vanishingPoint": [
+      280,
+      148
+    ],
+    "referenceX": 499,
+    "nativeSpriteSize": [
+      48,
+      54
+    ],
+    "targetLeft": 500,
+    "planeTop": 48,
+    "planeHeight": 54,
+    "projectedCorners": [
+      [
+        500,
+        47.543378995433784
+      ],
+      [
+        547,
+        26.082191780821915
+      ],
+      [
+        547,
+        91.91780821917808
+      ],
+      [
+        500,
+        101.78995433789954
+      ]
+    ],
+    "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+  },
+  {
+    "camera": "close",
+    "component": "wall-buttons",
+    "vanishingPoint": [
+      280,
+      148
+    ],
+    "referenceX": 499,
+    "nativeSpriteSize": [
+      25,
+      54
+    ],
+    "targetLeft": 511,
+    "planeTop": 117,
+    "planeHeight": 51,
+    "projectedCorners": [
+      [
+        511,
+        115.30136986301369
+      ],
+      [
+        535,
+        111.9041095890411
+      ],
+      [
+        535,
+        171.2876712328767
+      ],
+      [
+        511,
+        169.0958904109589
+      ]
+    ],
+    "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+  },
+  {
+    "camera": "close",
+    "component": "speaker",
+    "vanishingPoint": [
+      280,
+      148
+    ],
+    "referenceX": 499,
+    "nativeSpriteSize": [
+      33,
+      12
+    ],
+    "targetLeft": 510,
+    "planeTop": 175,
+    "planeHeight": 10,
+    "projectedCorners": [
+      [
+        510,
+        176.35616438356163
+      ],
+      [
+        542,
+        180.3013698630137
+      ],
+      [
+        542,
+        192.2648401826484
+      ],
+      [
+        510,
+        186.8584474885845
+      ]
+    ],
+    "method": "Inverse per-column nearest sampling of native-authored flat component only; no scene resampling."
+  }
+]
