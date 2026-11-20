@@ -97,6 +97,25 @@ For full browser screenshots, install Playwright and browsers, then run:
 
 The branch-scoped GitHub Actions workflow does both and uploads screenshots as a run artifact. The main Pages workflow copies only the public UI files and images into the deployed site.
 
+**Catalogue scope (2026-11-20).** The lab reads the shared, ever-growing `story/artwork.draft.json`, but it displays only the explicit `LAB_SCOPE` declared in `app.js`: the original eight Prologue / early Exposition scenes and ten inventory items, in their original order, plus the three portraits it composites. At startup every scoped record must exist, must not be archived, must be selected artwork, and must resolve to exactly one SHA-pinned source in `asset-index.json`. Otherwise the lab refuses to start and names the record. Records added by later chapters are never read. `qa-static.mjs` checks the scope against its own Prologue audit.
+
+To test the lab as it is actually deployed, run:
+
+    node tools/prologue-art-lab/qa/qa-pages-site.mjs [--out <dir>]
+
+This builds the site with the exact "Build standalone public site" step of `.github/workflows/pages.yml` and serves it under the Pages prefix. It then checks the following in Chromium and Firefox:
+
+- startup;
+- the eight scenes and ten items;
+- image decoding;
+- scene and inventory navigation;
+- inspection;
+- portrait compositing;
+- an injected catalogue grown by unrelated records, which must still start;
+- injected missing or invalid scoped records, which must refuse to start.
+
+`storyboard-review.yml` runs it, together with `qa-static.mjs` and `qa-browser.mjs`, on every pull request into `main`.
+
 ## Provenance and boundary
 
 - Approved M2 visual baseline: 312928afbac4aace37c6602e9033574f90849d2b

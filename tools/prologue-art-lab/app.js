@@ -30,6 +30,23 @@
     fit: true
   };
 
+  // Explicit, stable scope of this historical Prologue / early Exposition study. The shared
+  // story/artwork.draft.json catalogue grows with every chapter; the lab displays ONLY these
+  // original records, in this order, and never enumerates the whole catalogue. Keep this list
+  // JSON-literal: tools/prologue-art-lab/qa/qa-static.mjs parses it and checks it against its audit.
+  const LAB_SCOPE = Object.freeze(/* LAB_SCOPE_BEGIN */{
+    "scenes": [
+      "workplace/applause_station", "workplace/corridor", "workplace/exit", "street/outside_workplace",
+      "exposition/entrance", "exposition/property_intake", "exposition/reception", "exposition/facilities_corridor"
+    ],
+    "items": [
+      "termination_notice", "timing_clicker", "desk_plant", "effects_box_full", "effects_box_empty",
+      "red_stapler", "rubber_band_ball", "property_claim_ticket", "expo_examiner_badge", "wc_key"
+    ],
+    "portraits": ["termination_drone:slot_closed", "termination_drone:paper_extended", "receptionist:default"]
+  }/* LAB_SCOPE_END */);
+  const SELECTED_STATUSES = ["approved", "integrated", "reused"];
+
   const PAIRINGS = [
     {id:"auto",title:"Automatic — matched to scene"},
     {id:"none",title:"No portrait"},
@@ -121,7 +138,7 @@
     renderControls();
   }
   function setScene(id) {
-    if (!data.catalog.scenes[id]) throw new Error("Unknown scene " + id);
+    if (!data.scenes.includes(id)) throw new Error("Unknown scene " + id);
     state.scene = id;
     state.sceneVersion = "current";
     state.inspection = null;
@@ -219,7 +236,7 @@
     if (state.inventorySlide) wakeInventory();
   }
   function openItem(id) {
-    if (!data.catalog.items[id]) throw new Error("Unknown item " + id);
+    if (!data.items.includes(id)) throw new Error("Unknown item " + id);
     state.selectedItem = id;
     state.inspection = id;
     renderInspector();
@@ -578,6 +595,45 @@
     };
   }
 
+  // Every scoped record must exist, be active (not archived), be selected art, and resolve to
+  // exactly one SHA-pinned public source file. Unrelated catalogue records are never read.
+  function scopeRecords() {
+    const problems = [];
+    const usable = (label, record) => {
+      if (!record) { problems.push("missing " + label); return; }
+      if (/^ARCHIVED \/ RETIRED \/ UNUSED\b/.test(record.notes || "")) problems.push(label + " is archived");
+      if (!SELECTED_STATUSES.includes(record.status)) problems.push(label + " is not selected artwork (status " + (record.status || "not-started") + ")");
+      try { if (!asset(record)) problems.push(label + " has no artwork"); }
+      catch (error) { problems.push(label + ": " + error.message); }
+    };
+    const pinned = (label, file) => {
+      try { if (!(data.index.files || []).some(row => row.path === asset(null, file))) problems.push(label + ": pinned source missing " + file); }
+      catch (error) { problems.push(label + ": " + error.message); }
+    };
+    for (const id of LAB_SCOPE.scenes) usable("scene " + id, data.catalog.scenes?.[id]);
+    usable("portrait background workplace/corridor", data.catalog.scenes?.["workplace/corridor"]?.portraitBackground);
+    for (const id of LAB_SCOPE.items) {
+      const row = data.catalog.items?.[id];
+      if (!row) { problems.push("missing item " + id); continue; }
+      usable("item " + id + " slot", row.slot);
+      usable("item " + id + " inspector", row.inspect);
+    }
+    for (const id of LAB_SCOPE.portraits) {
+      const record = data.catalog.portraits?.[id];
+      if (record && record.layers) {
+        for (const role of ["background", "foreground"]) {
+          const layer = record.layers.find(l => l.role === role);
+          if (!layer) problems.push("portrait " + id + " has no " + role + " layer");
+          else pinned("portrait " + id + " " + role, layer.path);
+        }
+        if (!SELECTED_STATUSES.includes(record.status)) problems.push("portrait " + id + " is not selected artwork (status " + (record.status || "not-started") + ")");
+      } else usable("portrait " + id, record);
+    }
+    if (problems.length) throw new Error("Prologue lab scope invalid: " + problems.slice(0, 6).join("; "));
+    data.scenes = LAB_SCOPE.scenes.slice();
+    data.items = LAB_SCOPE.items.slice();
+  }
+
   async function preload(index,controls) {
     const errors = [];
     const batch = [...index.files,...controls.files].map(entry => new Promise(done => {
@@ -592,6 +648,7 @@
 
   window.PROLOGUE_LAB = {
     ready: () => !!data.catalog,
+    scope: LAB_SCOPE,
     getState: publicState,
     setScene,
     setSceneVersion,
@@ -632,8 +689,7 @@
       await window.PUBLIC_PIXEL_TEXT.configure(data.fonts);
       applyLayout();
       if (data.index.schema !== "cyoa-public-prologue-review-assets-v1") throw new Error("Unrecognized public asset index");
-      data.scenes = Object.keys(data.catalog.scenes);
-      data.items = Object.keys(data.catalog.items);
+      scopeRecords();
       if (data.scenes.length !== 8 || data.items.length !== 10) throw new Error("Expected eight scene entries and ten inventory items");
       for (const scene of data.scenes) {
         const item = data.catalog.scenes[scene];
