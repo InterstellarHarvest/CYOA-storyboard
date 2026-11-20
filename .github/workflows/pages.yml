@@ -27,9 +27,12 @@ env:
   CH3_BATCH_A_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18
   CH3_BATCH_B_REVIEW_COMMIT: 7337e5e550e64a64357666a0fab6f118500913cd
   CH3_BATCH_B_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19
+  CH3_BATCH_C_REVIEW_COMMIT: 53358b9df78f72e815cd69ee4128b1c86c08818d
+  CH3_BATCH_C_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19
 
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -158,6 +161,76 @@ jobs:
               'approval': 'Chapter 3 Batch B B01-B06 v03 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch B section; docs/113; story/artwork-preview.json). Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
           PY
           echo "Chapter 3 review galleries staged: $(find "_site/$A" -type f | wc -l) Batch A + $(find "_site/$B" -type f | wc -l) Batch B files"
+      # Batch C is a generated/unselected review package, not an approval or production import.
+      - name: Check out pinned Chapter 3 Batch C review gallery (build-time only)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CH3_BATCH_C_REVIEW_COMMIT }}
+          path: .review-ch3-batch-c
+          sparse-checkout: ${{ env.CH3_BATCH_C_REVIEW_DIR }}
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Validate and stage the unselected Chapter 3 Batch C review gallery
+        run: |
+          set -euo pipefail
+          C_SRC=.review-ch3-batch-c; C=$CH3_BATCH_C_REVIEW_DIR
+          test "$(git -C "$C_SRC" rev-parse HEAD)" = "$CH3_BATCH_C_REVIEW_COMMIT"
+          test -z "$(cd "$C_SRC" && find . -path ./.git -prune -o -type f -print | grep -v "^\./$C/")"
+          test -z "$(find "$C_SRC/$C" -type l -print)"
+          # Validate data using trusted workflow code; never execute gallery-supplied scripts.
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path('.review-ch3-batch-c') / os.environ['CH3_BATCH_C_REVIEW_DIR'] / 'v01'
+          for name in ['PNG_SHA256SUMS.txt', 'SOURCE_SHA256SUMS.txt']:
+              for line in (root / name).read_text().splitlines():
+                  digest, relative = line.split('  ', 1)
+                  f = (root / relative).resolve()
+                  assert f.is_relative_to(root.resolve())
+                  assert hashlib.sha256(f.read_bytes()).hexdigest() == digest, relative
+          m = json.loads((root / 'manifest.json').read_text())
+          expected = {
+              'CH3-C01-urgency', 'CH3-C02-urgency-bg', 'CH3-C03-locomotion',
+              'CH3-C04-surprise', 'CH3-C05-surprise-bg', 'CH3-C06-presenter-excited',
+              'CH3-C07-presenter-alarmed', 'CH3-B07-attendant-alarmed',
+          }
+          assert len(m['candidates']) == 8
+          assert {c['candidateId'] for c in m['candidates']} == expected
+          assert m['status'] == 'generated/unselected'
+          for c in [m, *m['candidates']]:
+              assert c['selected'] is False
+              assert c['approved'] is False and c['assetPath'] is None
+          for c in m['candidates']:
+              assert c['status'] == 'generated'
+              f = (root / c['file']).resolve()
+              assert f.is_relative_to(root.resolve() / 'candidates')
+              assert hashlib.sha256(f.read_bytes()).hexdigest() == c['sha256']
+          assert m['narrativeBlob'] == '857ffdf1bc9432cf4bbbfd7819f5f430a06d9036'
+          assert m['gameRepositoryModified'] is False and m['batchDBegun'] is False
+          print('Eight generated/unselected candidates and exact PNG hashes verified')
+          PY
+          test ! -e "_site/$C"
+          mkdir -p "_site/$(dirname "$C")"
+          cp -a "$C_SRC/$C" "_site/$C"
+          diff -r "$C_SRC/$C" "_site/$C"
+          test -s "_site/$C/index.html"
+          test -s "_site/$C/v01/index.html"
+          test ! -e "_site/$C/deployment-provenance.json"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          data = {
+              'publicSiteSource': os.environ['GITHUB_SHA'],
+              'gallerySource': os.environ['CH3_BATCH_C_REVIEW_COMMIT'],
+              'galleryRef': 'art/ch3-pavilion-batch03-20261119',
+              'deployedBy': 'canonical main Pages workflow (.github/workflows/pages.yml)',
+              'status': 'generated/unselected; no approval, registration or integration',
+              'nativeGridAuthorship': 'Unproven; oversized originals and derived exports retained.',
+              'gallery': 'Byte-preserved review package. Publication metadata is added outside v01 only.',
+          }
+          p = Path('_site') / os.environ['CH3_BATCH_C_REVIEW_DIR'] / 'deployment-provenance.json'
+          p.write_text(json.dumps(data, indent=2) + '\n')
+          PY
       - name: Enable and configure Pages
         uses: actions/configure-pages@v5
         with:
