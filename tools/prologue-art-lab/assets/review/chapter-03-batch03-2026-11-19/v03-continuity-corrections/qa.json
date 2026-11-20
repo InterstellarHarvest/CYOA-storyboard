@@ -1,0 +1,329 @@
+{
+  "result": "PASS",
+  "candidateCount": 7,
+  "additionalA04A05Options": 2,
+  "candidates": [
+    {
+      "candidateId": "CH3-C01-urgency",
+      "sha256": "9f9bb94e7108a8c6ad216bd66562ab219e1a2d6f2d9dd6199dac66025480d715",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 5266,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 17512
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "sha256": "40c1aafa606dc859eb9f58ef59746714b7479d301541a73e28e8b4c184ccbe2a",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 17792,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 37566
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "sha256": "7010639e65995e5dec35f38317ae74fa95143e381b94b8b6ca4adeeb5383d6c3",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 3394,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 17598
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "sha256": "65663ee7c993f9cfbdcfd3935af6c9eb00c66833503990671f2042566cf09f4b",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 1917,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 16300
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "sha256": "78a5925fe74f9c0e30fee1e413400d258ba769dab2df2dfb61d698554c0f6c48",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 8303,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 39163
+    },
+    {
+      "candidateId": "CH3-A04-verification-continuity",
+      "sha256": "bb2cf39dcbb3202b03fe94b77bc88b732c60406a0273f63aa083a9ce9ba9c68d",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 8948,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 16894
+    },
+    {
+      "candidateId": "CH3-A05-verification-bg-continuity",
+      "sha256": "fd71e1a318f4a044ba78de3e56833f981d3efe81b985ede9306f05d80d6c8f37",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "exact4x": "PASS",
+      "changedPixels": 39145,
+      "unexpectedChangesOutsidePredeclaredMasks": 0,
+      "allChangedPixelsAccountedFor": true,
+      "sourcePlusLayerReconstructsFinal": true,
+      "uniqueRGB": 37809
+    }
+  ],
+  "wallContinuity": [
+    {
+      "candidateId": "CH3-A04-verification-continuity",
+      "box": [
+        277,
+        50,
+        314,
+        134
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C01-urgency",
+      "box": [
+        277,
+        50,
+        314,
+        134
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "box": [
+        277,
+        50,
+        314,
+        134
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "box": [
+        277,
+        50,
+        314,
+        134
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-A05-verification-bg-continuity",
+      "box": [
+        496,
+        28,
+        564,
+        193
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "box": [
+        496,
+        28,
+        564,
+        193
+      ],
+      "pixelDifferences": 0
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "box": [
+        496,
+        28,
+        564,
+        193
+      ],
+      "pixelDifferences": 0
+    }
+  ],
+  "presenterOcclusion": [
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "exactForegroundPixels": 1176,
+      "translation": [
+        0,
+        1
+      ],
+      "scale": 1,
+      "pixelMismatches": 0
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "exactForegroundPixels": 1421,
+      "translation": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "pixelMismatches": 0
+    }
+  ],
+  "bellGrip": {
+    "verticalShift": 3,
+    "protectedFingerPixelsUnchanged": 15
+  },
+  "composites": [
+    {
+      "foreground": "CH3-C06-presenter-excited",
+      "background": "CH3-C02-urgency-bg",
+      "file": "composites/CH3-C06-presenter-excited--CH3-C02-urgency-bg.png",
+      "sha256": "05dd966cd40834994546ef87aea624ef73813ce1c79bd8b57c9cf7d3ca8dc7e7",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    },
+    {
+      "foreground": "CH3-C06-presenter-excited",
+      "background": "CH3-A05-verification-bg-continuity",
+      "file": "composites/CH3-C06-presenter-excited--CH3-A05-verification-bg-continuity.png",
+      "sha256": "3e116aab1c986b3a2905135e07023081d6a31aad9f58443252172343ece6289e",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    },
+    {
+      "foreground": "CH3-C07-presenter-alarmed",
+      "background": "CH3-C05-surprise-bg",
+      "file": "composites/CH3-C07-presenter-alarmed--CH3-C05-surprise-bg.png",
+      "sha256": "328f410ef9617177bf7058512236e12e56789c16458dfd02342214c24d52fef5",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    },
+    {
+      "foreground": "CH3-C07-presenter-alarmed",
+      "background": "CH3-A05-verification-bg-continuity",
+      "file": "composites/CH3-C07-presenter-alarmed--CH3-A05-verification-bg-continuity.png",
+      "sha256": "9b03b02b8ce7e9b859721669ec2f443575f70c5c0b53541f42fe0c2d0fb2500f",
+      "anchor": [
+        0,
+        0
+      ],
+      "scale": 1,
+      "exactForegroundPixels": true,
+      "pedestalOverlap": 0
+    }
+  ],
+  "preservation": {
+    "v01V02FilesBytePreserved": 293,
+    "protectedCurrentFilesUnchanged": 324,
+    "pinnedBatchABHistoricalFilesVerified": 834,
+    "approvedA04A05Unchanged": true,
+    "threeApprovedPoseReferencesUnchanged": true,
+    "narrativeRegistryProductionAndWorkflowsUnchanged": true
+  },
+  "canonicalQA": {
+    "result": "PASS",
+    "checks": [
+      {
+        "command": "node tools/sync/check-canon.mjs",
+        "exitCode": 0,
+        "result": "PASS",
+        "output": "Canonical storyboard check\n  4 chapters, 226 nodes, 347 routes; 215 art records (13 approved, 111 integrated, 86 not-started, 5 reused); 128 previewed\n  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)\nRESULT: OK\n"
+      },
+      {
+        "command": "node tools/storyboard/qa-ch3-artwork-briefs.mjs",
+        "exitCode": 0,
+        "result": "PASS",
+        "output": "PASS CH3 artwork briefs: 14 scenes, 8 paired backgrounds, 7 foregrounds, 9 contexts; 65 historical calls archived; 0 death, new item or Focus A calls.\n"
+      },
+      {
+        "command": "node tools/storyboard/qa-ch3-reboot-candidate.mjs",
+        "exitCode": 0,
+        "result": "PASS",
+        "output": "CH3 REBOOT CANDIDATE QA: PASS \u2014 34 reachable nodes, 28 paths, 7 survivor terminals, 2 approved checks, 3 conditional inherited-item actions; old chapter archive and public manifest untouched.\n"
+      },
+      {
+        "command": "node tools/storyboard/qa-smoke.mjs",
+        "exitCode": 0,
+        "result": "PASS",
+        "output": "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\"],\"artRecords\":200,\"checked\":[\"manifest\",\"all scene references\",\"portrait references\",\"all item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all four chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five preview handoffs\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}\n"
+      }
+    ]
+  },
+  "browserQA": {
+    "result": "PASS",
+    "url": "http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v03-continuity-corrections/",
+    "browser": "150.0.7871.125",
+    "checks": [
+      "Seven environment revisions and native comparisons decode at exact intrinsic dimensions",
+      "All scalable views use exact integer 4x; fixed close-ups retain exact 8x",
+      "Seven unselected revisions, all four main/three close wall matches, exact presenter occlusion and four fixed-anchor composites verified",
+      "Every linked local provenance file, mask, coordinate list, historical image and comparison resolves",
+      "390px mobile page has contained proof scrolling and no document overflow",
+      "No browser errors or failed requests"
+    ],
+    "errors": [],
+    "failed": [],
+    "publication": "Local browser verification only. No Pages deployment or merge; PR #13 remains draft and v02-pinned.",
+    "limitation": "Original native-grid authorship remains unresolved; selection is pending Nate."
+  },
+  "nativeGridAuthorship": "UNRESOLVED / UNPROVEN. Local target-grid component edits do not certify original source authorship.",
+  "creativeApproval": "Seven v03 environment revisions unselected. Prior v02 approval retained historically; never auto-promote revisions.",
+  "pagesDeployed": false,
+  "imageGenerationCalls": 0
+}

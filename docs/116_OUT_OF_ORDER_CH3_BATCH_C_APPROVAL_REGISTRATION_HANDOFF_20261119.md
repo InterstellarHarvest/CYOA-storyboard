@@ -75,3 +75,7 @@ Do not merge/cherry-pick the artwork-generation branch wholesale into `main`. Ex
 - Eight-entry registration dry-run passed. **No real registration was performed by the artwork generator.** Canonical registry and selected preview files remain unchanged.
 - Original v02 technical/browser/canonical QA and all pixel masks remain at the selected commit. No PNG or historical review file was changed by this handoff.
 - PR #13 pins the exact selected source commit and preserves both v01/v02, with owner approval metadata outside both historical versions. It remains draft/unmerged; no deployment was run.
+
+## Later owner correction request — registration execution deferred
+
+Nate subsequently requested the v03 continuity corrections documented in [docs/117](117_OUT_OF_ORDER_CH3_V03_CONTINUITY_REVIEW_20261119.md). Preserve the v02 approval record above and its exact selected bytes. Defer pending Batch C registration/publication until the replacement review is resolved; do not substitute unselected v03 images into the approved v02 batch. The unchanged selected foreground poses retain their approval. No gameplay integration or Batch D.

@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v03-continuity-corrections/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Seven environment revisions and native comparisons decode at exact intrinsic dimensions",
+    "All scalable views use exact integer 4x; fixed close-ups retain exact 8x",
+    "Seven unselected revisions, all four main/three close wall matches, exact presenter occlusion and four fixed-anchor composites verified",
+    "Every linked local provenance file, mask, coordinate list, historical image and comparison resolves",
+    "390px mobile page has contained proof scrolling and no document overflow",
+    "No browser errors or failed requests"
+  ],
+  "errors": [],
+  "failed": [],
+  "publication": "Local browser verification only. No Pages deployment or merge; PR #13 remains draft and v02-pinned.",
+  "limitation": "Original native-grid authorship remains unresolved; selection is pending Nate."
+}
