@@ -33,7 +33,7 @@ for c in new['candidates']:
   if ident.startswith('CH3-D09'):c['operations'].append({'operation':'image_gen precise correction removes invented filing cabinet; wall/stripe continue behind it','prompt':'prompts/CH3-D09-wall-correction.txt','input':'originals/CH3-D09-courtesy-stage-bg-v02-generator.png','result':'originals/CH3-D09-wall-correction-generator.png'})
  c['file']=f'candidates/{ident}-v02.png';im.save(P/c['file']);c['sha256']=sha(P/c['file']);c['replacesUnselectedSha256']=prior;c['dimensions']=[564,278];c['mode']=im.mode
  c['preview4x']=f'proofs/{ident}-4x.png';im.resize((2256,1112),Image.Resampling.NEAREST).save(P/c['preview4x'])
- c['prompt']=f'prompts/{ident}-v02.txt';c['source']={'tool':'image_gen built-in','original':str(source.relative_to(P)),'sha256':sha(source),'dimensions':list(original.size),'mode':original.mode};c['reviewVersion']='v02';c['candidateSourceCommit']=None
+ c['prompt']=f'prompts/{ident}-v02.txt';c['source']={'tool':'image_gen built-in','original':str(source.relative_to(P)),'sha256':sha(source),'dimensions':list(original.size),'mode':original.mode};c['reviewVersion']='v02';c['candidateSourceCommit']='15f17fd3b3ebd348160c61ff3573e8fa8825ee21'
  hist=im.convert('RGBA').getchannel('A').histogram();c['alphaValidation']={'transparent':hist[0],'opaque':hist[255],'partial':sum(hist[1:255])};c['comparison']=f'proofs/{ident}-comparison.png'
  if ident.startswith('CH3-D02'):c['constraints']='Tight service conversation shot: no ceiling or interior floor, cropped left cabinet/pipes and right open door; same location serves both humans.'
  if ident.startswith('CH3-D03'):c['constraints']='Natural taller neck/torso; same identity/costume, compassionate expression, low hands; waist reaches canvas bottom; uniform export only.'

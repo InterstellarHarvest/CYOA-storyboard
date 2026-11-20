@@ -65,3 +65,19 @@ Generation branch: `art/ch3-pavilion-batch04-20261120`. Exact native candidates 
 5. Is the courtesy door/frame visibly displaced on a plausible rail behind the bench? Are spotlight, shutter, retained desk equipment and close cropped jamb sufficient to show the same event?
 6. Is source-derived pixel softness acceptable beside Chapters 1–3, or should specific candidates get another finishing pass? Native-grid authorship remains unproven, with no claim of true native authorship.
 7. Should the narrated stapler/printer loop and maintenance shutter receive a separately scoped masked state overlay later, or does the approved printer master plus narration suffice?
+
+## Current review update — v02 close cameras and attendant proportions
+
+Nate found the attendant vertically compressed and the portrait backgrounds too wide. Three unselected candidates are revised: D02 service background, D03 quiet attendant, D09 courtesy background. Six other candidates and the entire v01 package remain byte-identical. The two service composites share one background.
+
+[Open v02 gallery](../tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/index.html). Both backgrounds are independently re-authored close views with large cropped fixtures and no ceiling or interior floor. The attendant is newly drawn with a naturally taller neck/torso, exported with uniform nearest-neighbor scale and transparent padding; no forced silhouette bounding-box fit is applied. Existing presenter and alarmed attendant foregrounds are unchanged.
+
+Exact revised image/original source: `15f17fd3b3ebd348160c61ff3573e8fa8825ee21`. The v01 source commits above remain historical. All candidates remain generated/unselected. Native-grid authorship is still unproven.
+
+| Revised candidate | SHA-256 |
+| --- | --- |
+| CH3-D02-service-exit-bg | `241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9` |
+| CH3-D03-attendant-quiet | `7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90` |
+| CH3-D09-courtesy-stage-bg | `b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623` |
+
+Image dimensions, alpha, exact 4×, uniform scaling, six retained images and all v01/approved/narrative preservation checks pass. Revised gallery Chromium and Firefox checks pass at the built Pages prefix, with native/mobile dimensions and all links verified. Chapter 3 briefs, narrative, smoke, canonical and sync checks pass. Review the new service composites, tighter courtesy shot and the attendant’s natural proportions; no further visual approval is implied.
