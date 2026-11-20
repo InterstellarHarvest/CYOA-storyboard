@@ -1,0 +1,48 @@
+{
+  "result": "PASS",
+  "revised": [
+    {
+      "id": "CH3-D02-service-exit-bg",
+      "result": "PASS",
+      "sha256": "241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "partialAlpha": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D03-attendant-quiet",
+      "result": "PASS",
+      "sha256": "7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "partialAlpha": 0,
+      "exact4x": true
+    },
+    {
+      "id": "CH3-D09-courtesy-stage-bg",
+      "result": "PASS",
+      "sha256": "b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "partialAlpha": 0,
+      "exact4x": true
+    }
+  ],
+  "sixOtherCandidatesByteIdentical": true,
+  "entireV01PackageByteIdentical": true,
+  "approvedAssetBytesAndPreviewRegistryUnchanged": true,
+  "narrativeAndArchivesUnchanged": true,
+  "uniformPortraitExportNoBoundingBoxStretch": true,
+  "portraitWaistAnchoredAtCanvasBottom": true,
+  "nativeGridAuthorship": "unproven; larger immutable originals and derived operations documented"
+}

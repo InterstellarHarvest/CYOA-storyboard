@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "result": "PASS",
+      "builtPagesPrefix": "/CYOA-storyboard/",
+      "revisedCandidates": 3,
+      "retainedCandidates": 6,
+      "allImagesLoad": true,
+      "allReviewLinksResolve": true,
+      "nativePixelsExact": true,
+      "previews4xExact": true,
+      "mobileNativeSizePreserved": true,
+      "consoleErrors": []
+    },
+    {
+      "browser": "firefox",
+      "result": "PASS",
+      "builtPagesPrefix": "/CYOA-storyboard/",
+      "revisedCandidates": 3,
+      "retainedCandidates": 6,
+      "allImagesLoad": true,
+      "allReviewLinksResolve": true,
+      "nativePixelsExact": true,
+      "previews4xExact": true,
+      "mobileNativeSizePreserved": true,
+      "consoleErrors": []
+    }
+  ],
+  "builtSite": "/var/folders/vf/8fb9xpsn4dx4jsw0rcm_g8vm0000gn/T/ch3d-built-site-4dTpAp"
+}

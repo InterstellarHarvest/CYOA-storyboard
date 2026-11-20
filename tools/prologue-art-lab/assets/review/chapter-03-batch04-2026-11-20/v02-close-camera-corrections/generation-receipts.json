@@ -1,0 +1,38 @@
+[
+  {
+    "id": "CH3-D02-service-exit-bg",
+    "tool": "image_gen built-in",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-52a2d142-d3b3-4b2e-87a6-a7d87b56d686.png",
+    "original": "originals/CH3-D02-service-exit-bg-v02-generator.png",
+    "prompt": "prompts/CH3-D02-service-exit-bg-v02.txt",
+    "originalSha256": "f90cf6361ed28b053dc244012d63874226363547f650234a82f2ca71d1c50186",
+    "promptSha256": "fadbc3dce23955030540bb75c9f67970c8ea09328f366803b124e76af51b0afa"
+  },
+  {
+    "id": "CH3-D03-attendant-quiet",
+    "tool": "image_gen built-in",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-7db5de31-db04-4126-a926-df3c23203f7a.png",
+    "original": "originals/CH3-D03-attendant-quiet-v02-generator.png",
+    "prompt": "prompts/CH3-D03-attendant-quiet-v02.txt",
+    "originalSha256": "3279fb501989614c9db302ca2bf6326234944cbb103eddb26d7d1f942f298165",
+    "promptSha256": "457053eb043ec8b0c06e6c954be8c16ce867a7a65f1821c7346fa831d67bbccc"
+  },
+  {
+    "id": "CH3-D09-courtesy-stage-bg",
+    "tool": "image_gen built-in",
+    "source": "/Users/MrDashiki/.codex/generated_images/01a1fabb-03fe-7a40-83e3-9940b24141d7/exec-65d95243-6674-469a-bde2-f49b3336e6ca.png",
+    "original": "originals/CH3-D09-courtesy-stage-bg-v02-generator.png",
+    "prompt": "prompts/CH3-D09-courtesy-stage-bg-v02.txt",
+    "originalSha256": "a9451d476624bf77af036ca2e0e873babe248665d8406cad5ad9c5a55eb7d9cd",
+    "promptSha256": "8d9b8009cec5cba8161252654984e2a08bfc394b6c88a8bd9a19bc13382eefc8"
+  },
+  {
+    "id": "CH3-D09-wall-correction",
+    "tool": "image_gen built-in",
+    "original": "originals/CH3-D09-wall-correction-generator.png",
+    "prompt": "prompts/CH3-D09-wall-correction.txt",
+    "editTarget": "originals/CH3-D09-courtesy-stage-bg-v02-generator.png",
+    "originalSha256": "8ab2e147c22643099bdfde5bdf77feac203852fd7c6db543a25c662b27a4bd77",
+    "promptSha256": "915b2be688f3073abfdefb2b205beb4d1e6a989d4fdb962a31f9f400fdb06083"
+  }
+]
