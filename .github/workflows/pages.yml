@@ -30,6 +30,8 @@ env:
   CH3_BATCH_C_REVIEW_COMMIT: 7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb
   CH3_BATCH_C_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19
   CH3_BATCH_C_REVIEW_VERSION: v04-perspective-corrections
+  CH3_BATCH_D_REVIEW_COMMIT: 3931c496c13c691c8afa3c5206d4f56196c372fc
+  CH3_BATCH_D_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01
 
 jobs:
   deploy:
@@ -299,6 +301,21 @@ jobs:
           (out / 'selection.html').write_text(page)
           PYCODE
           for v in v01 v02-localized-corrections v03-continuity-corrections "$CH3_BATCH_C_REVIEW_VERSION"; do diff -r "$C_SRC/$C/$v" "_site/$C/$v"; done
+      # Batch D remains generated/unselected. The protected main workflow publishes review data
+      # from an immutable generation commit; no generation-branch deployment or gallery code runs.
+      - name: Check out pinned Chapter 3 Batch D review gallery (build-time only)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.CH3_BATCH_D_REVIEW_COMMIT }}
+          path: .review-ch3-batch-d
+          sparse-checkout: ${{ env.CH3_BATCH_D_REVIEW_DIR }}
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Validate and stage unselected Chapter 3 Batch D review gallery
+        run: |
+          set -euo pipefail
+          test "$(git -C .review-ch3-batch-d rev-parse HEAD)" = "$CH3_BATCH_D_REVIEW_COMMIT"
+          node tools/sync/stage-ch3-batch04-review.mjs .review-ch3-batch-d _site
       - name: Enable and configure Pages
         uses: actions/configure-pages@v5
         with:
