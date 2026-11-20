@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "command": "node tools/storyboard/qa-ch3-artwork-briefs.mjs",
+      "exitCode": 0,
+      "output": "PASS CH3 artwork briefs: 14 scenes, 8 paired backgrounds, 7 foregrounds, 9 contexts; 65 historical calls archived; 0 death, new item or Focus A calls.\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-ch3-reboot-candidate.mjs",
+      "exitCode": 0,
+      "output": "CH3 REBOOT CANDIDATE QA: PASS \u2014 34 reachable nodes, 28 paths, 7 survivor terminals, 2 approved checks, 3 conditional inherited-item actions; old chapter archive and public manifest untouched.\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-smoke.mjs",
+      "exitCode": 0,
+      "output": "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\"],\"artRecords\":200,\"checked\":[\"manifest\",\"all scene references\",\"portrait references\",\"all item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all four chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five preview handoffs\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}\n"
+    },
+    {
+      "command": "node tools/sync/check-canon.mjs",
+      "exitCode": 0,
+      "output": "Canonical storyboard check\n  4 chapters, 226 nodes, 347 routes; 215 art records (21 approved, 9 generated, 111 integrated, 69 not-started, 5 reused); 136 previewed\n  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)\nRESULT: OK\n"
+    },
+    {
+      "command": "node tools/sync/qa-sync.mjs",
+      "exitCode": 0,
+      "output": "{\n \"result\": \"PASS\",\n \"checks\": 22,\n \"results\": [\n  \"baseline passes (136 previews)\",\n  \"missing chapter\",\n  \"broken route\",\n  \"undeclared field\",\n  \"manifest key the importer rejects\",\n  \"approved art regresses to generated\",\n  \"integrated art regresses to not-started\",\n  \"preview bytes tampered\",\n  \"preview file missing\",\n  \"stray unregistered package file\",\n  \"selected record without preview\",\n  \"integrated but not in the game report\",\n  \"game uses an approved-only image\",\n  \"game pixels differ from preview\",\n  \"register refuses wrong native size\",\n  \"register refuses a scene as a portrait\",\n  \"register requires a pinned full commit\",\n  \"register refuses source/ masters\",\n  \"register refuses containers\",\n  \"register refuses unknown records\",\n  \"register never lowers integrated -> approved\",\n  \"register: selection = approval, no invented assetPath\"\n ]\n}\n"
+    }
+  ]
+}

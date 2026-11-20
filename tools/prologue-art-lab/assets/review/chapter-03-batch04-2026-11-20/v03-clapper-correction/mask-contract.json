@@ -1,0 +1,65 @@
+{
+  "declaredBeforeGeneration": true,
+  "source": "../v01/candidates/CH3-D05-backstage-v01.png",
+  "sourceSha256": "ea18247e0564c459c5573a10e2bf8d7dee9e713c8f27d3e6b095eb5df857d11f",
+  "canvas": [
+    314,
+    206
+  ],
+  "allowedPolygon": [
+    [
+      254,
+      68
+    ],
+    [
+      275,
+      68
+    ],
+    [
+      279,
+      80
+    ],
+    [
+      285,
+      86
+    ],
+    [
+      289,
+      108
+    ],
+    [
+      282,
+      122
+    ],
+    [
+      244,
+      122
+    ],
+    [
+      242,
+      107
+    ],
+    [
+      246,
+      93
+    ],
+    [
+      247,
+      81
+    ]
+  ],
+  "allowedMask": "inputs/edit-mask.png",
+  "maskSha256": "09ea806000ae75f58eb0935ad932a471247d231759e0b61dd17c4a4fcbbf0ece",
+  "allowedPixels": 2132,
+  "contextCrop": [
+    236,
+    63,
+    294,
+    126
+  ],
+  "cropDimensions": [
+    58,
+    63
+  ],
+  "contract": "Only white-mask pixels may change. Base cabinet/casters, floor, wall outlet, cable, all other props and original exit are preserved. Generator receives a local patch edit target, with full scene read-only context."
+}

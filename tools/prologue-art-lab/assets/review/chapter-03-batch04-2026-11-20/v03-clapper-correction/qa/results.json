@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "correctedSha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+  "changedPixels": 1287,
+  "changedPercent": 1.99,
+  "outsideAllowedMaskChanged": 0,
+  "outsideEffectiveMaskChanged": 0,
+  "protectedRegions": [
+    "exit",
+    "cables",
+    "sandwich_and_carton",
+    "power_cable_and_outlet",
+    "floor",
+    "original_cabinet_and_casters"
+  ],
+  "eightRetainedCandidatesByteIdentical": [
+    "CH3-D01-service-exit",
+    "CH3-D02-service-exit-bg",
+    "CH3-D03-attendant-quiet",
+    "CH3-D04-presenter-relieved",
+    "CH3-D06-exterior-exit",
+    "CH3-D07-exit-vestibule",
+    "CH3-D08-courtesy-stage",
+    "CH3-D09-courtesy-stage-bg"
+  ],
+  "entireV01AndV02PackagesByteIdentical": true,
+  "canonicalRegistryAndPreviewRegistryByteIdentical": true,
+  "allApprovedArtworkByteIdentical": true,
+  "narrativeAndArchivesByteIdentical": true,
+  "nativeDimensions": [
+    314,
+    206
+  ],
+  "mode": "RGB",
+  "partialAlpha": 0,
+  "exact4x": true,
+  "allNineRemainGeneratedUnselected": true,
+  "nativeGridAuthorship": "unresolved / unproven; larger generator originals and masked derived export documented"
+}

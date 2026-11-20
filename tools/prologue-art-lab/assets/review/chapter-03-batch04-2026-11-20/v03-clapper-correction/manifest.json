@@ -1,0 +1,703 @@
+{
+  "schema": "out-of-order-art-review-v1",
+  "title": "Chapter 3 Batch D \u2014 v03 localized clapper correction",
+  "baseMain": "5134edb160afaa019e11f872a3b87d3b01b257b0",
+  "narrativeBlob": "857ffdf1bc9432cf4bbbfd7819f5f430a06d9036",
+  "status": "generated",
+  "selected": false,
+  "approved": false,
+  "assetPath": null,
+  "nativeGridAuthorship": "UNPROVEN. Immutable generator originals are larger raster images. Logical exports are documented nearest-neighbor transfers; no approved low-resolution image is enlarged and represented as new authorship.",
+  "candidates": [
+    {
+      "candidateId": "CH3-D01-service-exit",
+      "record": "scenes:pavilion_reboot/service_exit",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v01/candidates/CH3-D01-service-exit-v01.png",
+      "preview4x": "../v01/proofs/CH3-D01-service-exit-4x.png",
+      "sha256": "4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 64684,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v01/originals/CH3-D01-service-exit-generator.png",
+        "sha256": "3ed8e44051b907addeb7b83ddbfc442a8ffe7add14adfb7f13feb435db858500",
+        "dimensions": [
+          1547,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "registeredPrompt": "Native logical-grid 314\u00d7206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: A narrow utilitarian Pavilion service threshold, low plain maintenance door opening to daylight, understated blue-gray pipes and control cabinet. The quiet alternate departure for either the honest attendant or the relieved presenter; a single architectural setting that plausibly serves both. Warm strip of sunlight stands in deliberate contrast to the machinery. No access back to restroom and no new destination promised.",
+      "prompt": "../v01/prompts/CH3-D01-service-exit.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor source-grid transfer",
+          "from": [
+            1547,
+            1016
+          ],
+          "to": [
+            314,
+            206
+          ],
+          "nativeAuthorship": "unproven; this is a derived export, not fresh higher-resolution authorship"
+        }
+      ],
+      "sourceNodes": [
+        "presenter_help_end",
+        "attendant_honest_end"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/restroom_entrance"
+      ],
+      "constraints": "One threshold shared by presenter_help_end and attendant_honest_end; door right, cabinet/pipes left; no restroom access.",
+      "knownLimitations": [
+        "New view is more front-facing and spacious than the brief\u2019s narrow service threshold; confirm architectural fit.",
+        "Original native-grid authorship unproven; source softness and high color count remain."
+      ],
+      "generationOrder": 1,
+      "newGenerationNecessary": true,
+      "comparison": "../v01/proofs/CH3-D01-service-exit-comparison.png",
+      "candidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "retainedUnchanged": true,
+      "reviewVersion": "v01 retained",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D02-service-exit-bg",
+      "record": "scenes:pavilion_reboot/service_exit#portraitBackground",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v02-close-camera-corrections/candidates/CH3-D02-service-exit-bg-v02.png",
+      "preview4x": "../v02-close-camera-corrections/proofs/CH3-D02-service-exit-bg-4x.png",
+      "sha256": "241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 156792,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v02-close-camera-corrections/originals/CH3-D02-service-exit-bg-v02-generator.png",
+        "sha256": "f90cf6361ed28b053dc244012d63874226363547f650234a82f2ca71d1c50186",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "registeredPrompt": "Exactly 564\u00d7278 newly authored OPAQUE pixel-art conversation background, independently composed at native resolution. It is a tighter, closer POV into the companion 314\u00d7206 scene, matching its architecture, palette, lights, furniture and action geography without reusing, enlarging, blurring or panning a crop. No NPCs, no portraits, no protagonist, no UI frame; reserve clean center space for a separately composited full-size transparent human foreground. At the humble service door, a blue-gray wall cabinet and simple opened door revealing daylight. Neutral enough to plausibly hold the SAME close camera framing with either the relieved presenter or the honest attendant, at separate moments. No person baked in.",
+      "prompt": "../v02-close-camera-corrections/prompts/CH3-D02-service-exit-bg-v02.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor logical export from independently generated close view",
+          "original": [
+            1786,
+            881
+          ],
+          "to": [
+            564,
+            278
+          ],
+          "notDerivedFromMainScenePixels": true
+        }
+      ],
+      "sourceNodes": [
+        "presenter_help_end",
+        "attendant_honest_end"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/restroom_entrance#portraitBackground"
+      ],
+      "constraints": "Tight service conversation shot: no ceiling or interior floor, cropped left cabinet/pipes and right open door; same location serves both humans.",
+      "knownLimitations": [
+        "Independently generated close view changes the camera; confirm object scale/geography against the unchanged main.",
+        "Original native-grid authorship remains unproven; source-derived softness remains."
+      ],
+      "generationOrder": 2,
+      "newGenerationNecessary": true,
+      "comparison": "../v02-close-camera-corrections/proofs/CH3-D02-service-exit-bg-comparison.png",
+      "candidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+      "retainedUnchanged": false,
+      "replacesUnselectedSha256": "49e008b1ee37a01d49dc8e2c43ecc93b3b7c1914a23a4e80ce7c5a80d1818dee",
+      "reviewVersion": "v02",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D03-attendant-quiet",
+      "record": "portraits:pavilion_attendant:quiet",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v02-close-camera-corrections/candidates/CH3-D03-attendant-quiet-v02.png",
+      "preview4x": "../v02-close-camera-corrections/proofs/CH3-D03-attendant-quiet-4x.png",
+      "sha256": "7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "opacity": "binary alpha",
+      "alphaValidation": {
+        "transparent": 127609,
+        "opaque": 29183,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v02-close-camera-corrections/originals/CH3-D03-attendant-quiet-v02-generator.png",
+        "sha256": "3279fb501989614c9db302ca2bf6326234944cbb103eddb26d7d1f942f298165",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "registeredPrompt": "Exactly 564\u00d7278 TRANSPARENT RGBA native pixel-art NPC foreground for separate compositing over the selected matching opaque portrait background. No scenery, no shadow painted on an opaque backdrop, no UI, no protagonist; transparent outside the sprite with pixel-sharp alpha. Match the approved reception portrait density, crisp intentional shading and approachable expressive human anatomy, not a cartoon, photograph or upscale of a scene figure. SAME attendant, exact face/hair/clothes and anchor as idle. Shoulders soften, small resigned half-smile, direct compassionate eye contact, hands lowered. Sincere human sympathy without a grand dramatic revelation.",
+      "prompt": "../v02-close-camera-corrections/prompts/CH3-D03-attendant-quiet-v02.txt",
+      "operations": [
+        {
+          "operation": "uniform nearest-neighbor export and transparent-canvas translation",
+          "original": [
+            1786,
+            881
+          ],
+          "uniformNominalScale": 0.2996594778660613,
+          "roundedRaster": [
+            535,
+            264
+          ],
+          "placement": [
+            18,
+            14
+          ],
+          "alphaThreshold": 128,
+          "forcedBoundingBoxStretch": false,
+          "resampling": "NEAREST"
+        }
+      ],
+      "sourceNodes": [
+        "attendant_honest",
+        "attendant_honest_end"
+      ],
+      "approvedDependencies": [
+        "portraits:pavilion_attendant:idle",
+        "scenes:pavilion_reboot/record_printer#portraitBackground"
+      ],
+      "constraints": "Natural taller neck/torso; same identity/costume, compassionate expression, low hands; waist reaches canvas bottom; uniform export only.",
+      "knownLimitations": [
+        "New drawing preserves costume and identity references, but face/hand anatomy still needs Art Director review. Uniform scale and position differ intentionally from v01; no aspect-ratio warping.",
+        "Original native-grid authorship remains unproven; larger generator original is preserved."
+      ],
+      "generationOrder": 3,
+      "newGenerationNecessary": true,
+      "comparison": "../v02-close-camera-corrections/proofs/CH3-D03-attendant-quiet-comparison.png",
+      "candidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+      "retainedUnchanged": false,
+      "replacesUnselectedSha256": "dda560880cecd42fa843fe35b66cb7d2d9222d8301a68934e594f0552d24a5db",
+      "reviewVersion": "v02",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D04-presenter-relieved",
+      "record": "portraits:pavilion_presenter:relieved",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v01/candidates/CH3-D04-presenter-relieved-v01.png",
+      "preview4x": "../v01/proofs/CH3-D04-presenter-relieved-4x.png",
+      "sha256": "29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "opacity": "binary alpha",
+      "alphaValidation": {
+        "transparent": 135527,
+        "opaque": 21265,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v01/originals/CH3-D04-presenter-relieved-generator.png",
+        "sha256": "46eadf6d3cd407c91b26c5dd355a401861df7afed3e0fd684012b838b0750dbb",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "registeredPrompt": "Exactly 564\u00d7278 TRANSPARENT RGBA native pixel-art NPC foreground for separate compositing over the selected matching opaque portrait background. No scenery, no shadow painted on an opaque backdrop, no UI, no protagonist; transparent outside the sprite with pixel-sharp alpha. Match the approved reception portrait density, crisp intentional shading and approachable expressive human anatomy, not a cartoon, photograph or upscale of a scene figure. SAME presenter and anchor, expression genuinely relieved, warm unguarded thankful smile, one hand gesturing toward the humble service door. A rare quiet human connection, not a new glamorous costume or authority figure.",
+      "prompt": "../v01/prompts/CH3-D04-presenter-relieved.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor source-grid transfer",
+          "from": [
+            1786,
+            881
+          ],
+          "to": [
+            564,
+            278
+          ],
+          "nativeAuthorship": "unproven; this is a derived export, not fresh higher-resolution authorship"
+        },
+        {
+          "operation": "binary-alpha threshold 128 and nearest-neighbor alpha-bounds alignment",
+          "generatedBounds": [
+            111,
+            70,
+            339,
+            278
+          ],
+          "approvedBounds": [
+            111,
+            74,
+            339,
+            278
+          ]
+        },
+        {
+          "operation": "approved jacket pixels inside lapel repair mask",
+          "mask": "proofs/D04-costume-repair-mask.png",
+          "approvedSource": "portraits:pavilion_presenter:idle"
+        }
+      ],
+      "sourceNodes": [
+        "presenter_help_end"
+      ],
+      "approvedDependencies": [
+        "portraits:pavilion_presenter:idle"
+      ],
+      "constraints": "Approved presenter identity, coral blouse, slate jacket, auburn bob; bottom-anchored waist and rightward open hand.",
+      "knownLimitations": [
+        "Generator added a small lapel microphone absent from approved idle; removed from derived foreground using approved jacket pixels. Identity/expression need review.",
+        "Original native-grid authorship unproven; source softness and high color count remain."
+      ],
+      "generationOrder": 4,
+      "newGenerationNecessary": true,
+      "comparison": "../v01/proofs/CH3-D04-presenter-relieved-comparison.png",
+      "candidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "retainedUnchanged": true,
+      "reviewVersion": "v01 retained",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D05-backstage",
+      "record": "scenes:pavilion_reboot/backstage",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "candidates/CH3-D05-backstage-v03.png",
+      "preview4x": "proofs/D05-corrected-4x.png",
+      "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 64684,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "originals/CH3-D05-object-layer-generator.png",
+        "sha256": "989eaff3efd02132bc6b78174844f629ee1b09ec9a967f2c11cb1dae9395bdfd",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "cleanPlate": "originals/CH3-D05-clean-plate-generator.png",
+        "cleanPlateSha256": "5596b1982d8e0de11cc1a471a3fd6a70b9ddd69054525dcf2bbf314c9e716264",
+        "base": "../v01/candidates/CH3-D05-backstage-v01.png",
+        "baseSha256": "ea18247e0564c459c5573a10e2bf8d7dee9e713c8f27d3e6b095eb5df857d11f"
+      },
+      "registeredPrompt": "Native logical-grid 314\u00d7206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: A disarmingly plain gray concrete service corridor behind painted exhibition flats, hanging electrical cables, discarded podium and certificates, half-eaten sandwich resting on an equipment crate, one machine seemingly applauding itself and an unopened refill carton. A simple metal EXIT door at far end, and a small daylight courtyard glimpse with a distant restroom pictogram from another building. Comically threadbare behind the optimism, one honest ordinary door. No definite Chapter 4 location.",
+      "prompt": "prompts/CH3-D05-clapper-object-layer.txt",
+      "operations": [
+        {
+          "operation": "local image_gen clean plate only through old-mechanism erasure mask; original surrounding wall/post retained",
+          "mask": "inputs/old-mechanism-erasure-mask.png",
+          "criterion": "within predeclared mask, difference from generated local clean plate >32 max RGB, or old gesture-ray antialias fringe above y81 (difference >8); existing structural teal preserved",
+          "protectedRows": [
+            122,
+            205
+          ]
+        },
+        {
+          "operation": "uniform nearest-neighbor transparent object-layer export at original equipment position",
+          "alphaBounds": [
+            119,
+            280,
+            1134,
+            1071
+          ],
+          "uniformScale": 0.041379310344827586,
+          "roundedSize": [
+            42,
+            33
+          ],
+          "placement": [
+            244,
+            89
+          ],
+          "alphaThreshold": 128
+        },
+        {
+          "operation": "final effective edit mask is subset of predeclared allowed mask; no global sharpening/resampling of base",
+          "allowedMask": "inputs/edit-mask.png",
+          "effectiveMask": "inputs/effective-edit-mask.png"
+        }
+      ],
+      "sourceNodes": [
+        "locomotion_pass",
+        "backstage_exit"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/restroom_entrance",
+        "scenes:pavilion_reboot/locomotion_stage"
+      ],
+      "constraints": "Ordinary fixed clapper hardware: visibly connected base plate, shaft, fixed support and hinged paddle; existing cart, casters, wall outlet, cable and surrounding scene preserved.",
+      "knownLimitations": [
+        "Original native-grid authorship remains unproven; larger generator originals and exact export operations preserved.",
+        "New compact paddle/support silhouette needs Nate\u2019s final visual approval. Only locally exposed wall behind removed machinery is reconstructed; no broad background pass."
+      ],
+      "generationOrder": 5,
+      "newGenerationNecessary": true,
+      "comparison": "proofs/D05-before-after-native.png",
+      "candidateSourceCommit": null,
+      "retainedUnchanged": false,
+      "reviewVersion": "v03",
+      "retainedFromPreviousReview": false,
+      "sourceCommitPinnedByGalleryWorkflow": true,
+      "replacesUnselectedSha256": "ea18247e0564c459c5573a10e2bf8d7dee9e713c8f27d3e6b095eb5df857d11f"
+    },
+    {
+      "candidateId": "CH3-D06-exterior-exit",
+      "record": "scenes:pavilion_reboot/exterior_exit",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v01/candidates/CH3-D06-exterior-exit-v01.png",
+      "preview4x": "../v01/proofs/CH3-D06-exterior-exit-4x.png",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 64684,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v01/originals/CH3-D06-exterior-exit-generator.png",
+        "sha256": "e9c28ff8d9a2e309d99d217b25828e208d9f7065cae6c92ee23a7156a787f37d",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "registeredPrompt": "Native logical-grid 314\u00d7206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: Exterior service/loading margin of the same Pavilion, a large mundane loading door, foam cushions and a padded wheeled safety cart nearby, with public concourse and bench edge suggested. This one truthful master can support safe-fall and public escort terminal text; the zero-second ribbon is an event prop handled in narration, NOT a permanent inventory object. Clear daylight, nonfatal tone, no bodily harm or face of protagonist.",
+      "prompt": "../v01/prompts/CH3-D06-exterior-exit.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor source-grid transfer",
+          "from": [
+            1548,
+            1016
+          ],
+          "to": [
+            314,
+            206
+          ],
+          "nativeAuthorship": "unproven; this is a derived export, not fresh higher-resolution authorship"
+        }
+      ],
+      "sourceNodes": [
+        "locomotion_fail",
+        "door_dash_fail",
+        "door_reverse_end"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/arrival"
+      ],
+      "constraints": "Same Pavilion exterior materials; empty padded cart, cushions, loading door, concourse/bench; three safe endings, no permanent ribbon.",
+      "knownLimitations": [
+        "One loading-margin master relies on terminal narration for the escorted and zero-second exits; no action figures or ribbon are baked in.",
+        "Original native-grid authorship unproven; source softness and high color count remain."
+      ],
+      "generationOrder": 6,
+      "newGenerationNecessary": true,
+      "comparison": "../v01/proofs/CH3-D06-exterior-exit-comparison.png",
+      "candidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "retainedUnchanged": true,
+      "reviewVersion": "v01 retained",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D07-exit-vestibule",
+      "record": "scenes:pavilion_reboot/exit_vestibule",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v01/candidates/CH3-D07-exit-vestibule-v01.png",
+      "preview4x": "../v01/proofs/CH3-D07-exit-vestibule-4x.png",
+      "sha256": "cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 64684,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v01/originals/CH3-D07-exit-vestibule-generator.png",
+        "sha256": "6004b50ba5367165c6bb977b0f3ba6664f51b81bcf939ef72f74ee25678891c7",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "registeredPrompt": "Native logical-grid 314\u00d7206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: A narrow real tiled exit vestibule inside the restroom threshold. Through a convincing transparent divider and one-way entry gate, a sink and tantalizing closed stall are plainly visible but unreachable; a polished descending EXIT ASSISTANCE ramp leads away to maintenance. Close enough to smell soap, never close enough to use a toilet. Spatially consistent with restroom_entrance and record_scanner.",
+      "prompt": "../v01/prompts/CH3-D07-exit-vestibule.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor source-grid transfer",
+          "from": [
+            1548,
+            1016
+          ],
+          "to": [
+            314,
+            206
+          ],
+          "nativeAuthorship": "unproven; this is a derived export, not fresh higher-resolution authorship"
+        },
+        {
+          "operation": "generated localized correction inside explicit mask; original source pixels retained elsewhere",
+          "mask": "proofs/CH3-D07-exit-vestibule-correction-mask.png",
+          "source": "originals/CH3-D07-correction-generator.png",
+          "prompt": "prompts/CH3-D07-correction.txt",
+          "sha256": "8e4cf546bfe37c7f952d1035735fb0dea8849ed7985015308171022a5c8d7a6f"
+        }
+      ],
+      "sourceNodes": [
+        "door_dash_pass"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/restroom_entrance",
+        "scenes:pavilion_reboot/record_scanner"
+      ],
+      "constraints": "Same sinks, teal stall, reader and one-way gate; glass blocks access; descending exit assistance to maintenance.",
+      "knownLimitations": [
+        "Generated ramp correction removes stair-like treads; actual toilet is not visible below stall, although the sink and blocked stall are clear. Confirm descending slope and implied restroom topology.",
+        "Original native-grid authorship unproven; source softness and high color count remain."
+      ],
+      "generationOrder": 7,
+      "newGenerationNecessary": true,
+      "comparison": "../v01/proofs/CH3-D07-exit-vestibule-comparison.png",
+      "candidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "retainedUnchanged": true,
+      "reviewVersion": "v01 retained",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D08-courtesy-stage",
+      "record": "scenes:pavilion_reboot/courtesy_stage",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v01/candidates/CH3-D08-courtesy-stage-v01.png",
+      "preview4x": "../v01/proofs/CH3-D08-courtesy-stage-4x.png",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 64684,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v01/originals/CH3-D08-window-correction-generator.png",
+        "sha256": "cbc7e4be9fa1020afd27dfeb6abc530a993ab439bee3eb4e663846fecfad64fc",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "registeredPrompt": "Native logical-grid 314\u00d7206 OPAQUE pixel-art background for The Acceptable Error, not rescaled from larger source. Stylistic continuity with the approved Exposition reception: teal structural beams, squared gray panels, cream service counters, steel fittings, fluorescent light and crisp intentional pixel clusters; lively original 1960s civic futurism, enamel/plastic/chrome/paper, no steampunk, gold, brass, grimy dystopian fog, blur, antialiasing, generic spaceship aesthetic or UI frame. Readable signage limited to one or two important short words, actual source-size legibility; all smaller documents and announcements use non-letter marks. Never depict the protagonist or an Original/duplicate. SCENE: The actual restroom exit door AND ITS ENTIRE FRAME have slid SIDEWAYS on a concealed floor/ceiling rail into a ridiculous spotlight alcove; the real restroom remains sealed behind an inner shutter. Show travel tracks, door frame, modest spotlight and one lonely audience area. A tiny attendant and courteous visitor may remain alongside moving door; no duplicate person or manufactured Original. Canned applause starts before the spotlight, as a visual hint of the protagonist's old timing job.",
+      "prompt": "../v01/prompts/CH3-D08-courtesy-stage.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor source-grid transfer",
+          "from": [
+            1548,
+            1016
+          ],
+          "to": [
+            314,
+            206
+          ],
+          "nativeAuthorship": "unproven; this is a derived export, not fresh higher-resolution authorship"
+        },
+        {
+          "operation": "opaque generated state inside explicit mask over exact approved base",
+          "base": "scenes:pavilion_reboot/restroom_entrance",
+          "mask": "proofs/CH3-D08-courtesy-stage-state-mask.png",
+          "changedCoordinates": "proofs/CH3-D08-courtesy-stage-changed-coordinates.json",
+          "changedPixelCount": 18287,
+          "outsideMaskChanged": 0
+        }
+      ],
+      "sourceNodes": [
+        "door_courtesy"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/restroom_entrance",
+        "portraits:pavilion_attendant:alarmed"
+      ],
+      "constraints": "Changed real restroom state, frame moves left BEHIND foreground bench; original opening shuttered; right desk and all fixtures pixel-locked.",
+      "knownLimitations": [
+        "State layer changes left-wall area and gate details; inner doorway trim remains fixed while portable frame moves. Bench occludes frame base; confirm physical travel clearance.",
+        "Original native-grid authorship unproven; source softness and high color count remain."
+      ],
+      "generationOrder": 8,
+      "newGenerationNecessary": true,
+      "comparison": "../v01/proofs/CH3-D08-courtesy-stage-comparison.png",
+      "candidateSourceCommit": "4fc277651c7d05163817d9ab99d0fc3fcf522d47",
+      "retainedUnchanged": true,
+      "reviewVersion": "v01 retained",
+      "retainedFromPreviousReview": true
+    },
+    {
+      "candidateId": "CH3-D09-courtesy-stage-bg",
+      "record": "scenes:pavilion_reboot/courtesy_stage#portraitBackground",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "file": "../v02-close-camera-corrections/candidates/CH3-D09-courtesy-stage-bg-v02.png",
+      "preview4x": "../v02-close-camera-corrections/proofs/CH3-D09-courtesy-stage-bg-4x.png",
+      "sha256": "b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "opacity": "opaque",
+      "alphaValidation": {
+        "transparent": 0,
+        "opaque": 156792,
+        "partial": 0
+      },
+      "source": {
+        "tool": "image_gen built-in",
+        "original": "../v02-close-camera-corrections/originals/CH3-D09-wall-correction-generator.png",
+        "sha256": "8ab2e147c22643099bdfde5bdf77feac203852fd7c6db543a25c662b27a4bd77",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "registeredPrompt": "Exactly 564\u00d7278 newly authored OPAQUE pixel-art conversation background, independently composed at native resolution. It is a tighter, closer POV into the companion 314\u00d7206 scene, matching its architecture, palette, lights, furniture and action geography without reusing, enlarging, blurring or panning a crop. No NPCs, no portraits, no protagonist, no UI frame; reserve clean center space for a separately composited full-size transparent human foreground. Close POV onto the relocated restroom door frame on its overhead rail, sealed former doorway and spotlight at a side. Same restroom entrance tile, reader and door hardware as restroom_entrance; visibly dislocated rather than a magical replacement.",
+      "prompt": "../v02-close-camera-corrections/prompts/CH3-D09-courtesy-stage-bg-v02.txt",
+      "operations": [
+        {
+          "operation": "nearest-neighbor logical export from independently generated close view",
+          "original": [
+            1785,
+            881
+          ],
+          "to": [
+            564,
+            278
+          ],
+          "notDerivedFromMainScenePixels": true
+        },
+        {
+          "operation": "image_gen precise correction removes invented filing cabinet; wall/stripe continue behind it",
+          "prompt": "prompts/CH3-D09-wall-correction.txt",
+          "input": "originals/CH3-D09-courtesy-stage-bg-v02-generator.png",
+          "result": "originals/CH3-D09-wall-correction-generator.png"
+        }
+      ],
+      "sourceNodes": [
+        "door_courtesy"
+      ],
+      "approvedDependencies": [
+        "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+        "portraits:pavilion_attendant:alarmed"
+      ],
+      "constraints": "Tight desk-side courtesy conversation shot: cropped shutter/rail/door sliver left, cropped pictogram/poster above; existing intercom/mic lower left, no ceiling/floor.",
+      "knownLimitations": [
+        "Independently generated close view changes the camera; confirm object scale/geography against the unchanged main.",
+        "Original native-grid authorship remains unproven; source-derived softness remains."
+      ],
+      "generationOrder": 9,
+      "newGenerationNecessary": true,
+      "comparison": "../v02-close-camera-corrections/proofs/CH3-D09-courtesy-stage-bg-comparison.png",
+      "candidateSourceCommit": "15f17fd3b3ebd348160c61ff3573e8fa8825ee21",
+      "retainedUnchanged": false,
+      "replacesUnselectedSha256": "9664be30b82cfb963cf9f6f2bf24b659fe0e0136701fea6f57e7035922b9ffba",
+      "reviewVersion": "v02",
+      "retainedFromPreviousReview": true
+    }
+  ],
+  "version": "v03-clapper-correction",
+  "historicalReview": "../v02-close-camera-corrections/index.html",
+  "correctionScope": [
+    "D05 upper clapper only, clipped to predeclared edit mask; eight prior review candidates unchanged"
+  ],
+  "canonicalRegistrationChanged": false,
+  "stopForNateFinalVisualApproval": true
+}

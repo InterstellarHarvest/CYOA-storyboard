@@ -81,3 +81,15 @@ Exact revised image/original source: `15f17fd3b3ebd348160c61ff3573e8fa8825ee21`.
 | CH3-D09-courtesy-stage-bg | `b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623` |
 
 Image dimensions, alpha, exact 4×, uniform scaling, six retained images and all v01/approved/narrative preservation checks pass. Revised gallery Chromium and Firefox checks pass at the built Pages prefix, with native/mobile dimensions and all links verified. Chapter 3 briefs, narrative, smoke, canonical and sync checks pass. Review the new service composites, tighter courtesy shot and the attendant’s natural proportions; no further visual approval is implied.
+
+## Current review update — v03 localized D05 mechanical clapper
+
+Nate confirmed the v02 D02, D03 and D09 corrections were visually successful and directed their exact bytes to be retained. No approval registration follows from this correction request: all nine remain generated/unselected. Only the upper mechanical clapper in D05 changes. It uses a fixed mounting plate, rigid support, shaft and short paddle linkage on the original cart; no new head, face, hands, legs or walking stance.
+
+[Open v03 gallery](../tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/index.html). The gallery includes original/corrected native side-by-side views, exact 4× previews, 8× mechanism details, the predeclared maximum mask, the tighter effective mask, changed-pixel overlays and every changed coordinate. [Current mapping and all nine hashes](../tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/manifest.json).
+
+D05 v03 SHA-256: `aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889`. D05 v01 remains immutable with SHA-256 `ea18247e0564c459c5573a10e2bf8d7dee9e713c8f27d3e6b095eb5df857d11f`. The eight other images retain their exact v01/v02 review bytes. Both historical packages, all approved artwork, the entire canonical registry/preview registry, narrative and archives remain unchanged from `57ecd94f1f7eb840d186d7b5afae79a60063511d`. No registration or gameplay change is performed.
+
+The predeclared mask contains 2,132 pixels. The effective edit changes 1,287 pixels (1.99% of the 314×206 scene), with zero changes outside either the effective or allowed mask. Cabinet/caster rows 122–205, exit, floor, cables, sandwich, cartons and outlet are byte-verified. Only wall pixels revealed by removing the old machinery are locally reconstructed. No full-scene resampling, sharpening or background generation is applied.
+
+Technical dimensions/opacity/alpha/nearest-neighbor and preservation QA pass. Gallery Chromium/Firefox checks pass on the built Pages prefix, including native/mobile dimensions and links. Chapter 3 brief/narrative, storyboard smoke, canonical and sync checks pass. Originals, rejected local attempts, prompts and deterministic mask/layer operations are preserved. Native-grid authorship remains unresolved/unproven. Stop for Nate’s final visual approval; no other Chapter 3 work is authorized.
