@@ -238,3 +238,7 @@ The artwork generator independently verified all eight source-commit blobs, hash
 ## Chapter 3 later continuity correction review — 2026-11-19
 
 After the v02 selection, Nate requested a further localized v03 environment pass and chose raised control pedestals matching main/portrait cameras. The original v02 approval and hashes above remain preserved. Seven environment revisions, including separate A04/A05 continuity options, are unselected; the three unchanged selected pose foregrounds retain their approval. See [docs/117](117_OUT_OF_ORDER_CH3_V03_CONTINUITY_REVIEW_20261119.md). Defer pending registration and publication until the replacement versions are selected; never mix unselected v03 images into the v02 batch. No approved image bytes, registry, narrative, game integration or Batch D changes.
+
+### Further correction clarification — 2026-11-20
+
+Nate requested v04 wall-plane corrections, clearer pedestal controls and placement of the main presenter to the left/firing side of the cannon. See [docs/118](118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md). This remains an unselected replacement review; prior v02 approval and exact historical bytes are preserved, and the unchanged selected pose foregrounds retain their approval. Pending registration/publication remains deferred; no gameplay integration or Batch D.

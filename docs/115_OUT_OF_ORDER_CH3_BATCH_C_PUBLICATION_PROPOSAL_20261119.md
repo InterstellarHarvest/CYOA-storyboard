@@ -22,3 +22,7 @@ PR #13 remains draft/unmerged. No workflow dispatch, Pages deployment, direct ge
 ## Later continuity correction request — publication deferred
 
 Nate requested v03 environment corrections after the v02 selection. See docs/117. Keep this PR draft and defer merge/deployment and pending registration until the replacement review is resolved. The workflow remains pinned to historical approved v02 at `5e0449b3da84764176f9744f5624a88868f5fdcb`; no unselected v03 bytes are substituted. Approved v02 history remains intact.
+
+## Current replacement review — 2026-11-20
+
+The active correction package is v04: right-wall convergence, clearer pedestal controls and presenter on the left/firing side of the cannon. See docs/118. Keep registration/publication deferred until Nate selects replacement versions. The immutable v02 pin and main-only workflow remain unchanged; v04 is not automatically approved.

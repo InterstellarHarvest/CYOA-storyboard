@@ -13,3 +13,7 @@ Original native-grid authorship remains unresolved/unproven. Existing source-der
 **Claude / PMO: defer execution of the pending Batch C registration and publication until Nate resolves this replacement review.** Preserve the prior v02 approval as history. Do not substitute unselected v03 files into the v02 batch. This notice does not reclassify the three unchanged selected foreground poses as unapproved; it prevents a mixed-version environment import while the owner is requesting corrections.
 
 PR #13 stays draft and pinned to historical selected v02. Its main-only workflow and environment policy remain unchanged. No merge or deployment is performed. After Nate selects the replacement versions, update the registration manifest and publication pin together using exact reviewed bytes.
+
+## Current review update — 2026-11-20
+
+Nate clarified the firing-side placement, wall perspective and pedestal readability. The current pass is v04, documented in [docs/118](118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md). The registration/publication hold continues. Historical v03 and all approved sources remain unchanged.
