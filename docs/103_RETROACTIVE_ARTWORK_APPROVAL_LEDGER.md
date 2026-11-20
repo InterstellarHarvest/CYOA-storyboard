@@ -213,3 +213,100 @@ No artwork bytes, prior review packages, approved Batch A art, narrative or game
 B03 and B05 are registered as their own `#portraitBackground` records: independent background plates, not foreground composites. The already approved A03 attendant foreground is reused unchanged and was not re-registered. In each record's `notes`, only the stale "NO IMAGE GENERATED OR APPROVED" clause was replaced with the approval and provenance line, as for Batch A. No other artwork record, selected preview, historical review package, narrative, item, route, ending or gameplay field changed.
 
 **The native-grid authorship limitation stated above still stands, unresolved.** Registration does not certify original native-grid authorship. Gameplay integration has not begun, and Chapter 3 Batch C has not begun. The approvals are live on the public storyboard only once this branch merges into `main` and its Pages deployment is verified.
+
+## Chapter 3 Batch C v02 final Art Director approval — 2026-11-19
+
+Nate explicitly selected and approved all eight Chapter 3 Batch C review candidates exactly as mapped in v02 at `InterstellarHarvest/CYOA-storyboard@5e0449b3da84764176f9744f5624a88868f5fdcb` on `art/ch3-pavilion-batch03-20261119`: C01–C07 plus the explicit B07 attendant-alarmed carry-forward. Creative approval is complete. **Canonical administrative registration is pending the separate Claude handoff; gameplay integration and Batch D are not authorized.**
+
+| Candidate | Registry key | Selected native PNG | SHA-256 |
+|---|---|---|---|
+| CH3-C01-urgency | `scenes:pavilion_reboot/urgency_stage` | `CH3-C01-urgency-v02.png` | `81fb5242df1e7cfec26c58bf6ecd4863e2a3089ea7b9b38b5038c99cc1492898` |
+| CH3-C02-urgency-bg | `scenes:pavilion_reboot/urgency_stage#portraitBackground` | `CH3-C02-urgency-bg-v02.png` | `de0a1cf44962ee81294926279d9121260814d7bec4ee89db975669e5a471e319` |
+| CH3-C03-locomotion | `scenes:pavilion_reboot/locomotion_stage` | `CH3-C03-locomotion-v02.png` | `1a6927cc2688be5c046efe581ca2ce6a3b2c180237c138cb1e586dc7030a10e6` |
+| CH3-C04-surprise | `scenes:pavilion_reboot/surprise_stage` | `CH3-C04-surprise-v02.png` | `da1387f2af4e3331e2cf2311a98052afdecdd0fe041746f30f786452d68f0f45` |
+| CH3-C05-surprise-bg | `scenes:pavilion_reboot/surprise_stage#portraitBackground` | `CH3-C05-surprise-bg-v02.png` | `90370ad584d1f7ed72f5738f9380f25d03748f16e9486be9ee4c69930a480770` |
+| CH3-C06-presenter-excited | `portraits:pavilion_presenter:excited` | `CH3-C06-presenter-excited-v02.png` | `d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95` |
+| CH3-C07-presenter-alarmed | `portraits:pavilion_presenter:alarmed` | `CH3-C07-presenter-alarmed-v02.png` | `4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887` |
+| CH3-B07-attendant-alarmed | `portraits:pavilion_attendant:alarmed` | `CH3-B07-attendant-alarmed-v02.png` | `51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f` |
+
+The selected native paths and exact provenance are recorded in [docs/116](116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_HANDOFF_20261119.md), with the machine-readable owner decision and ready eight-record batch. The six unchanged candidates retain their v01 bytes, but are explicitly selected from the v02 paths. Historical gallery labels remain as immutable provenance and are superseded by this owner decision.
+
+**Accepted unresolved limitation:** Complete original native-grid authorship remains unresolved / unproven. Original generators returned oversized rasters. Derived target-grid realizations and precisely documented native-pixel finishing do not prove original full-scene or full-character native-grid authorship. Residual source-derived RGB softness remains. Nate accepts the exact selected bytes with this limitation; no regeneration, filtering, sharpening, resizing, alpha reprocessing or further polish is requested.
+
+The artwork generator independently verified all eight source-commit blobs, hashes, dimensions and alpha, then performed only a successful eight-entry registration dry-run. No real registration, selected-art modification or production path assignment occurred. All production `assetPath` values remain null. Draft PR #13 is updated separately to stage the selected v02 gallery through the protected main-only Pages workflow; no merge or deployment is performed as part of this handoff.
+
+## Chapter 3 later continuity correction review — 2026-11-19
+
+After the v02 selection, Nate requested a further localized v03 environment pass and chose raised control pedestals matching main/portrait cameras. The original v02 approval and hashes above remain preserved. Seven environment revisions, including separate A04/A05 continuity options, are unselected; the three unchanged selected pose foregrounds retain their approval. See [docs/117](117_OUT_OF_ORDER_CH3_V03_CONTINUITY_REVIEW_20261119.md). Defer pending registration and publication until the replacement versions are selected; never mix unselected v03 images into the v02 batch. No approved image bytes, registry, narrative, game integration or Batch D changes.
+
+### Further correction clarification — 2026-11-20
+
+Nate requested v04 wall-plane corrections, clearer pedestal controls and placement of the main presenter to the left/firing side of the cannon. See [docs/118](118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md). This remains an unselected replacement review; prior v02 approval and exact historical bytes are preserved, and the unchanged selected pose foregrounds retain their approval. Pending registration/publication remains deferred; no gameplay integration or Batch D.
+
+## Chapter 3 current v04 environments and retained v02 foregrounds — 2026-11-20
+
+Nate approved the seven exact v04 environments at `7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb` and retained the three exact v02 foregrounds at `5e0449b3da84764176f9744f5624a88868f5fdcb`. **A04/A05 v04 explicitly supersede the prior approved versions as current selections. Creative approval is complete.** Earlier approvals, files, hashes and provenance remain in history. This resolves the previous visual-review hold; docs/119 is the current ten-record execution authority. Canonical registration remains the separate Claude administrative step.
+
+| Candidate | Version | Registry key | SHA-256 |
+|---|---|---|---|
+| CH3-C01-urgency | v04 | `scenes:pavilion_reboot/urgency_stage` | `368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c` |
+| CH3-C02-urgency-bg | v04 | `scenes:pavilion_reboot/urgency_stage#portraitBackground` | `7d89b7d7c2ee22e6b324076ce988b3e5520e84be5b4068e79fe8d759ab529714` |
+| CH3-C03-locomotion | v04 | `scenes:pavilion_reboot/locomotion_stage` | `be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5` |
+| CH3-C04-surprise | v04 | `scenes:pavilion_reboot/surprise_stage` | `8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d` |
+| CH3-C05-surprise-bg | v04 | `scenes:pavilion_reboot/surprise_stage#portraitBackground` | `90f29651222b62bca461c0c33f09092290b374fd0cf10094c40267202515e255` |
+| CH3-A04-verification-continuity | v04 | `scenes:pavilion_reboot/human_verification_stage` | `8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca` |
+| CH3-A05-verification-bg-continuity | v04 | `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | `d09e2a7cf13c6382cd8d726a8852f32cfe359651f4c6c9538f4f7825d41844ef` |
+| CH3-C06-presenter-excited | v02 | `portraits:pavilion_presenter:excited` | `d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95` |
+| CH3-C07-presenter-alarmed | v02 | `portraits:pavilion_presenter:alarmed` | `4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887` |
+| CH3-B07-attendant-alarmed | v02 | `portraits:pavilion_attendant:alarmed` | `51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f` |
+
+| Superseded record | Original SHA-256 | Preserved file |
+|---|---|---|
+| `scenes:pavilion_reboot/human_verification_stage` | `9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5` | [CH3-A04-verification-selected-before-v04.png](artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A04-verification-selected-before-v04.png) |
+| `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | `beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382` | [CH3-A05-verification-selected-before-v04.png](artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A05-verification-selected-before-v04.png) |
+
+The older A04/A05 canonical preview bytes are preserved as documentation attachments with their full canonical and original source provenance. The five earlier v02 environment approvals remain historical, superseded by v04; three foreground selections retain v02 bytes and provenance. Original docs/116 JSON/batch, all earlier ledger content and every review package remain unchanged.
+
+**Accepted unresolved limitation:** Complete original native-grid authorship remains unresolved / unproven. Original generators returned oversized rasters. Derived target-grid realizations and precisely documented native-pixel finishing do not prove original full-scene or full-character native-grid authorship. Residual source-derived RGB softness remains. Nate accepts the exact selected bytes with this limitation; no regeneration, filtering, sharpening, resizing, alpha reprocessing or further polish is requested.
+
+[Current manifest, verification evidence and Claude handoff](119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md). PR #13 is updated to the selected v04 package and mixed-version ten-image authority. No merge/deployment is performed, even after verification. No production paths, gameplay integration or Batch D.
+
+**Registration status — 2026-11-20 (Claude, administrative registration completed):** the ten current selections above are registered in the canonical registry on branch `art/ch3-current-approval-registration-20261120`, created from canonical `main` `d4bae261c93c0b7cd8617aaf0a1e054526df0c0d`. The seven v04 blobs were extracted only from `7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb` and the three retained v02 blobs only from `5e0449b3da84764176f9744f5624a88868f5fdcb`. Before registration, each was independently checked against `expectedSha256`, its Git blob ID, its dimensions and its alpha contract: environments are 8-bit RGB with no `tRNS`; foregrounds are 8-bit RGBA with binary 0/255 alpha. `tools/sync/verify-ch3-current-selection.mjs --stage` passed and staged the ten bytes outside the checkout. `tools/sync/register-art.mjs --batch` ran a dry run first, then the real registration, without `--integration`. In the staged batch only the local `file` fields changed; `key`, `status`, `expectedSha256` and the full `source` objects are as recorded in docs/119. The obsolete docs/116 eight-entry batch was not executed; the verifier refuses it.
+
+| ID | Version | Record | Status | Production `assetPath` | Public selected preview (byte-identical to the pinned source) | Change |
+|---|---|---|---|---|---|---|
+| C01 | v04 | `scenes:pavilion_reboot/urgency_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png` | new |
+| C02 | v04 | `scenes:pavilion_reboot/urgency_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage/portraitBackground.png` | new |
+| C03 | v04 | `scenes:pavilion_reboot/locomotion_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png` | new |
+| C04 | v04 | `scenes:pavilion_reboot/surprise_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png` | new |
+| C05 | v04 | `scenes:pavilion_reboot/surprise_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage/portraitBackground.png` | new |
+| A04 | v04 | `scenes:pavilion_reboot/human_verification_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png` | authorized replacement |
+| A05 | v04 | `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png` | authorized replacement |
+| C06 | v02 | `portraits:pavilion_presenter:excited` | approved | null | `assets/selected/pending-integration/portraits/pavilion_presenter/excited.png` | new |
+| C07 | v02 | `portraits:pavilion_presenter:alarmed` | approved | null | `assets/selected/pending-integration/portraits/pavilion_presenter/alarmed.png` | new |
+| B07 | v02 | `portraits:pavilion_attendant:alarmed` | approved | null | `assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png` | new |
+
+**A04/A05 replacement protection.** Before the two curated previews were overwritten, each was confirmed to hold its documented prior bytes:
+- `9207bfdc…e3c5` (Git blob `8cca133e`).
+- `beb64cc6…b382` (Git blob `27a928e2`).
+
+Each was also confirmed byte-identical to three copies:
+- Its preserved attachment under `docs/artwork-history/chapter-03/pre-v04-2026-11-20/`.
+- Its original Batch A source at `a87155bfadad42e0deae3bee2e749963d1459a4b`.
+- The v04 gallery's historical reference.
+
+The registry keeps one active record per key; no duplicates were created. The superseded approval text, hash and provenance are retained in each record's `notes` as history, together with the preserved-file path. The Batch A ledger section above is unchanged. No other approved preview was overwritten: the dry run reported eight additions, two replacements and no path clash.
+
+Counts on this branch:
+- Preview entries: 128 → 136.
+- Statuses: approved 13 → 21, not-started 86 → 78; integrated 111 and reused 5 unchanged.
+
+In each newly approved record's `notes`, only the stale "NO IMAGE GENERATED OR APPROVED" clause was replaced, with the approval, provenance and limitation line. For A04/A05, a current-approval clause was placed before the retained prior-approval text. No narrative, brief, route, choice, check, item, ending, game-integration report or other selected artwork changed. Locked narrative blob `857ffdf1bc9432cf4bbbfd7819f5f430a06d9036` is unchanged.
+
+**The accepted native-grid authorship limitation still stands, unresolved.** Original full-scene and full-character native-grid authorship remains unproven, and source-derived RGB softness remains. Registration acknowledges Nate's approval of the exact bytes; it does not certify native-grid authorship.
+
+Further state:
+- Gameplay integration has not begun.
+- Main-menu assets are not imported.
+- Chapter 3 Batch D has not begun.
+- The approvals are live on the public storyboard only after this branch merges into `main` and its Pages deployment is verified. Draft PR #13 (gallery publication proposal) remains separate and unmerged.
