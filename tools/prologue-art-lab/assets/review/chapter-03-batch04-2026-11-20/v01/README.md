@@ -25,3 +25,5 @@ All candidates remain **generated / unselected**. Generator originals are larger
 The original seated attendant cut floated at the service door. A generated lower-torso correction extends it to the canvas edge, preserving the upper portrait pixels; both corrected service and printer composites are shown for review.
 
 Visual review questions and known limitations are shown per candidate in the gallery; technical passing does not constitute creative approval.
+
+Technical QA: [image validation](qa/results.json), [canonical checks](qa/canonical-results.json), [gallery browser checks](qa/browser-results.json), [selected preview regression](qa/selected-preview-results.json), [repaired Prologue built-site regression](qa/prologue-pages-qa-pages-site-results.json). Storyboard browser regression also passed 24/24.

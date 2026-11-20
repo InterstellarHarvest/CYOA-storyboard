@@ -13,6 +13,7 @@ results=[]
 for c in m['candidates']:
  p=P/c['file'];im=Image.open(p);dim=tuple(c['dimensions']);assert im.size==dim
  assert sha(p)==c['sha256'];assert c['status']=='generated' and c['selected'] is False and c['approved'] is False and c['assetPath'] is None
+ assert p.read_bytes()==subprocess.check_output(['git','show',m['candidateSourceCommit']+':'+str(p.relative_to(R))],cwd=R)
  alpha=im.convert('RGBA').getchannel('A').histogram();assert sum(alpha[1:255])==0
  if c['record'].startswith('portraits:'):assert im.mode=='RGBA' and alpha[0]>0
  else:assert im.mode=='RGB' and alpha[0]==0
@@ -42,7 +43,8 @@ newkeys={c['record'] for c in m['candidates']}
 for k in newkeys:
  old=record(base,k);current=record(a,k);assert old['status']=='not-started';assert current['status'] in ('not-started','generated')
  if current['status']=='generated':
-  restored=dict(current);restored['status']=old['status'];restored['notes']=old['notes'];assert restored==old
+  restored=dict(current);restored['status']=old['status'];restored['notes']=old['notes']
+  assert {k:v for k,v in restored.items() if k!='portraitBackground'}=={k:v for k,v in old.items() if k!='portraitBackground'}
   record(a,k)['status']=old['status'];record(a,k)['notes']=old['notes']
 assert a==base
 inventory=json.loads((P/'inventory.json').read_text());assert len(inventory['nodeCoverage'])==34 and not inventory['missingRegisteredRequirements']

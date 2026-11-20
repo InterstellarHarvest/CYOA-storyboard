@@ -1,5 +1,5 @@
 """Reproducible derived exports. Generator originals are immutable; no native-grid claim.
-Run from repo root. Only writes this review package and nine generated catalogue notes.
+Run from repo root. Only writes this review package. Canonical generated-status provenance is pinned separately.
 """
 from pathlib import Path
 import json, hashlib, subprocess, html, shutil
@@ -147,9 +147,10 @@ for name,v in n['nodes'].items():
  coverage.append({'node':name,'requirements':keys,'missingRegistryRequirements':[k for k in keys if not record(k)]})
 audit={'baseMain':'5134edb160afaa019e11f872a3b87d3b01b257b0','narrativeBlob':'857ffdf1bc9432cf4bbbfd7819f5f430a06d9036','reviewNodeCount':len(coverage),'activeChapter3Records':29,'alreadyApprovedRecordsReused':20,'remainingRecordsAtAudit':9,'excludedHistoricalRecords':65,'missingRegisteredRequirements':[],'reuseFindings':['20 approved active Chapter 3 images retain their exact bytes and preview entries.','service_exit serves two different humans at separate moments; one environment pair is sufficient.','backstage and exterior_exit are shared masters, not one image per ending.','Facilities Key, Family Photo, Red Swangline Stapler and Timing Clicker retain existing approved illustrations.','Visitor and machine voices require no new portrait IDs under docs/111.','Zero new Focus A, inventory or fatal ending art.'],'narrativeStateQuestions':[{'node':'stapler_printer_snarl','existingRecord':'scenes:pavilion_reboot/record_printer','finding':'Paper feeds back into printer and maintenance shutter opens; current approved master does not establish a visibly jammed state. Node permits narration-only event staging. No separate state brief is registered.','recommendation':'Reuse approved master for this batch; Nate to decide whether a separately scoped masked state overlay is needed. Do not regenerate approved printer.'},{'node':'record_scanner_result','existingRecord':'scenes:pavilion_reboot/record_scanner','finding':'Same scene spans door-open feeding and door-closed completion. Dialogue/narration conveys transition; no additional static art requirement.'}],'candidates':candidates,'nodeCoverage':coverage}
 savejson(OUT/'inventory.json',audit)
-manifest={'schema':'out-of-order-art-review-v1','title':'Chapter 3 Batch D — v01','baseMain':audit['baseMain'],'narrativeBlob':audit['narrativeBlob'],'status':'generated','selected':False,'approved':False,'assetPath':None,'nativeGridAuthorship':'UNPROVEN. Immutable generator originals are larger raster images. Logical exports are documented nearest-neighbor transfers; no approved low-resolution image is enlarged and represented as new authorship.','candidates':candidates}
+manifest={'schema':'out-of-order-art-review-v1','title':'Chapter 3 Batch D — v01','candidateSourceCommit':'4fc277651c7d05163817d9ab99d0fc3fcf522d47','baseMain':audit['baseMain'],'narrativeBlob':audit['narrativeBlob'],'status':'generated','selected':False,'approved':False,'assetPath':None,'nativeGridAuthorship':'UNPROVEN. Immutable generator originals are larger raster images. Logical exports are documented nearest-neighbor transfers; no approved low-resolution image is enlarged and represented as new authorship.','candidates':candidates}
 savejson(OUT/'manifest.json',manifest)
-ART.write_text(json.dumps(a,indent=2,ensure_ascii=False)+'\n')
+# Canonical generated-status registration is pinned separately after the artifact commit.
+# This reproduction script never mutates the canonical registry.
 
 # Composite proofs: common shared background and every newly introduced context/pose pairing.
 def candidate(idx):return Image.open(OUT/candidates[idx]['file']).convert('RGBA')
