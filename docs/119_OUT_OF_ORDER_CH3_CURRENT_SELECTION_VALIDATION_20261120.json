@@ -1,0 +1,326 @@
+{
+  "result": "PASS",
+  "date": "2026-11-20",
+  "canonicalMainVerified": "d4bae261c93c0b7cd8617aaf0a1e054526df0c0d",
+  "currentManifest": {
+    "file": "docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTED_ARTWORK_20261120.json",
+    "sha256": "2edd80a4584f84c72f9f6140aff24514b868dada315338d1e79343fed5513a9f"
+  },
+  "registrationBatch": {
+    "file": "docs/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_BATCH_20261120.json",
+    "sha256": "0168f3f8f9ce6618b5b3603853734911a27afa868943d5700e2a64e1604f7444"
+  },
+  "verifier": {
+    "file": "tools/sync/verify-ch3-current-selection.mjs",
+    "sha256": "1532dda6bd1b281d06f0530750d7776856e3b9c71ff25cca6d207402ec1b6e5a"
+  },
+  "immutableInputs": {
+    "result": "PASS",
+    "scope": "Immutable approval inputs only; no canonical registration or gameplay integration.",
+    "selections": [
+      {
+        "candidateId": "CH3-C01-urgency",
+        "key": "scenes:pavilion_reboot/urgency_stage",
+        "version": "v04",
+        "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c",
+        "gitBlob": "6deffd8a470439ec2fdae67b8621aeb22f2a051b",
+        "size": [
+          314,
+          206
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C01-urgency-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-C02-urgency-bg",
+        "key": "scenes:pavilion_reboot/urgency_stage#portraitBackground",
+        "version": "v04",
+        "sha256": "7d89b7d7c2ee22e6b324076ce988b3e5520e84be5b4068e79fe8d759ab529714",
+        "gitBlob": "76cc3388c7fe9485e21a0bd8b5f848ed1312db3a",
+        "size": [
+          564,
+          278
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C02-urgency-bg-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-C03-locomotion",
+        "key": "scenes:pavilion_reboot/locomotion_stage",
+        "version": "v04",
+        "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+        "gitBlob": "3ac00e63d9206c8247661a44552d46f355ee04d7",
+        "size": [
+          314,
+          206
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C03-locomotion-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-C04-surprise",
+        "key": "scenes:pavilion_reboot/surprise_stage",
+        "version": "v04",
+        "sha256": "8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d",
+        "gitBlob": "ff6ddfbc9f983147fc8e601b44752c3ca9e24348",
+        "size": [
+          314,
+          206
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C04-surprise-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-C05-surprise-bg",
+        "key": "scenes:pavilion_reboot/surprise_stage#portraitBackground",
+        "version": "v04",
+        "sha256": "90f29651222b62bca461c0c33f09092290b374fd0cf10094c40267202515e255",
+        "gitBlob": "f0a241eecb184a1fd60b391a9ec1cc59bb28491e",
+        "size": [
+          564,
+          278
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C05-surprise-bg-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-A04-verification-continuity",
+        "key": "scenes:pavilion_reboot/human_verification_stage",
+        "version": "v04",
+        "sha256": "8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca",
+        "gitBlob": "27d4b277ff22320830e7cda13aef686e9a5e49f5",
+        "size": [
+          314,
+          206
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-A04-verification-continuity-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-A05-verification-bg-continuity",
+        "key": "scenes:pavilion_reboot/human_verification_stage#portraitBackground",
+        "version": "v04",
+        "sha256": "d09e2a7cf13c6382cd8d726a8852f32cfe359651f4c6c9538f4f7825d41844ef",
+        "gitBlob": "a182f1976b0c9b50dacfc423621003c332698c8a",
+        "size": [
+          564,
+          278
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-A05-verification-bg-continuity-v04.png"
+        }
+      },
+      {
+        "candidateId": "CH3-C06-presenter-excited",
+        "key": "portraits:pavilion_presenter:excited",
+        "version": "v02",
+        "sha256": "d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95",
+        "gitBlob": "eeee56a3649dac2db1c87a50930ee673cf9f985d",
+        "size": [
+          564,
+          278
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "5e0449b3da84764176f9744f5624a88868f5fdcb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v02-localized-corrections/candidates/CH3-C06-presenter-excited-v02.png"
+        }
+      },
+      {
+        "candidateId": "CH3-C07-presenter-alarmed",
+        "key": "portraits:pavilion_presenter:alarmed",
+        "version": "v02",
+        "sha256": "4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887",
+        "gitBlob": "faced1219cdc9ab510412e836c2c22c3312abcea",
+        "size": [
+          564,
+          278
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "5e0449b3da84764176f9744f5624a88868f5fdcb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v02-localized-corrections/candidates/CH3-C07-presenter-alarmed-v02.png"
+        }
+      },
+      {
+        "candidateId": "CH3-B07-attendant-alarmed",
+        "key": "portraits:pavilion_attendant:alarmed",
+        "version": "v02",
+        "sha256": "51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f",
+        "gitBlob": "3fde952c268e6bd7d3a43347e94f40768b5620e2",
+        "size": [
+          564,
+          278
+        ],
+        "partialAlpha": 0,
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "5e0449b3da84764176f9744f5624a88868f5fdcb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v02-localized-corrections/candidates/CH3-B07-attendant-alarmed-v02.png"
+        }
+      }
+    ],
+    "counts": {
+      "total": 10,
+      "v04Environments": 7,
+      "retainedV02Foregrounds": 3,
+      "archivedPriorSelections": 2,
+      "expectedNewPreviewsOnThisCheckout": 8,
+      "expectedChangedPreviewsOnThisCheckout": 2
+    },
+    "historicalOwnerDecisionUnchanged": true,
+    "oldApprovedFilesAndProvenancePreserved": true,
+    "nativeGridAuthorship": "UNRESOLVED / UNPROVEN; accepted by Nate."
+  },
+  "tenEntryDryRun": {
+    "result": "PASS",
+    "log": "  + scenes:pavilion_reboot/urgency_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png (status not-started -> approved)\n  + scenes:pavilion_reboot/urgency_stage#portraitBackground -> assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage/portraitBackground.png (status not-started -> approved)\n  + scenes:pavilion_reboot/locomotion_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png (status not-started -> approved)\n  + scenes:pavilion_reboot/surprise_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png (status not-started -> approved)\n  + scenes:pavilion_reboot/surprise_stage#portraitBackground -> assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage/portraitBackground.png (status not-started -> approved)\n  ~ scenes:pavilion_reboot/human_verification_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png\n  ~ scenes:pavilion_reboot/human_verification_stage#portraitBackground -> assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png\n  + portraits:pavilion_presenter:excited -> assets/selected/pending-integration/portraits/pavilion_presenter/excited.png (status not-started -> approved)\n  + portraits:pavilion_presenter:alarmed -> assets/selected/pending-integration/portraits/pavilion_presenter/alarmed.png (status not-started -> approved)\n  + portraits:pavilion_attendant:alarmed -> assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png (status not-started -> approved)\nRESULT: DRY RUN, 10 image(s) registered. Next: node tools/sync/check-canon.mjs\n"
+  },
+  "registrationRehearsal": {
+    "result": "PASS",
+    "isolatedDisposableCheckout": true,
+    "canonicalBranchRegistryUntouched": true,
+    "newPreviewRecords": [
+      "portraits:pavilion_attendant:alarmed",
+      "portraits:pavilion_presenter:alarmed",
+      "portraits:pavilion_presenter:excited",
+      "scenes:pavilion_reboot/locomotion_stage",
+      "scenes:pavilion_reboot/surprise_stage",
+      "scenes:pavilion_reboot/surprise_stage#portraitBackground",
+      "scenes:pavilion_reboot/urgency_stage",
+      "scenes:pavilion_reboot/urgency_stage#portraitBackground"
+    ],
+    "replacedPreviewRecords": [
+      "scenes:pavilion_reboot/human_verification_stage",
+      "scenes:pavilion_reboot/human_verification_stage#portraitBackground"
+    ],
+    "otherPreviewRecordsUnchanged": 126,
+    "previewCountBefore": 128,
+    "previewCountAfter": 136,
+    "artworkDelta": "Exactly eight status promotions; two already-approved replacement statuses unchanged. No production paths or other field changes.",
+    "otherSelectedFilesUnchanged": 125,
+    "supersededFilesArchived": 2,
+    "allTenCuratedHashesAndProvenanceExact": true,
+    "trackedChangedFiles": [
+      "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+      "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png",
+      "story/artwork-preview.json",
+      "story/artwork.draft.json"
+    ],
+    "gameplayNarrativeAndIntegrationReportUnchanged": true
+  },
+  "registrationRehearsalLog": "  + scenes:pavilion_reboot/urgency_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png (status not-started -> approved)\n  + scenes:pavilion_reboot/urgency_stage#portraitBackground -> assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage/portraitBackground.png (status not-started -> approved)\n  + scenes:pavilion_reboot/locomotion_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png (status not-started -> approved)\n  + scenes:pavilion_reboot/surprise_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png (status not-started -> approved)\n  + scenes:pavilion_reboot/surprise_stage#portraitBackground -> assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage/portraitBackground.png (status not-started -> approved)\n  ~ scenes:pavilion_reboot/human_verification_stage -> assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png\n  ~ scenes:pavilion_reboot/human_verification_stage#portraitBackground -> assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png\n  + portraits:pavilion_presenter:excited -> assets/selected/pending-integration/portraits/pavilion_presenter/excited.png (status not-started -> approved)\n  + portraits:pavilion_presenter:alarmed -> assets/selected/pending-integration/portraits/pavilion_presenter/alarmed.png (status not-started -> approved)\n  + portraits:pavilion_attendant:alarmed -> assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png (status not-started -> approved)\nRESULT: 10 image(s) registered. Next: node tools/sync/check-canon.mjs\n",
+  "negativeProbes": {
+    "wrongExpectedHash": "REFUSED before staging/registration",
+    "obsoleteEightEntryBatch": "REFUSED before staging/registration",
+    "result": "PASS"
+  },
+  "rehearsalCanonicalQA": [
+    {
+      "command": "node tools/sync/check-canon.mjs",
+      "exitCode": 0,
+      "output": "Canonical storyboard check\n  4 chapters, 226 nodes, 347 routes; 215 art records (21 approved, 111 integrated, 78 not-started, 5 reused); 136 previewed\n  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)\nRESULT: OK\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-smoke.mjs",
+      "exitCode": 0,
+      "output": "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\"],\"artRecords\":200,\"checked\":[\"manifest\",\"all scene references\",\"portrait references\",\"all item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all four chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five preview handoffs\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}\n"
+    },
+    {
+      "command": "node tools/sync/qa-sync.mjs",
+      "exitCode": 0,
+      "output": "{\n \"result\": \"PASS\",\n \"checks\": 22,\n \"results\": [\n  \"baseline passes (136 previews)\",\n  \"missing chapter\",\n  \"broken route\",\n  \"undeclared field\",\n  \"manifest key the importer rejects\",\n  \"approved art regresses to generated\",\n  \"integrated art regresses to not-started\",\n  \"preview bytes tampered\",\n  \"preview file missing\",\n  \"stray unregistered package file\",\n  \"selected record without preview\",\n  \"integrated but not in the game report\",\n  \"game uses an approved-only image\",\n  \"game pixels differ from preview\",\n  \"register refuses wrong native size\",\n  \"register refuses a scene as a portrait\",\n  \"register requires a pinned full commit\",\n  \"register refuses source/ masters\",\n  \"register refuses containers\",\n  \"register refuses unknown records\",\n  \"register never lowers integrated -> approved\",\n  \"register: selection = approval, no invented assetPath\"\n ]\n}\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-ch3-artwork-briefs.mjs",
+      "exitCode": 0,
+      "output": "PASS CH3 artwork briefs: 14 scenes, 8 paired backgrounds, 7 foregrounds, 9 contexts; 65 historical calls archived; 0 death, new item or Focus A calls.\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-ch3-reboot-candidate.mjs",
+      "exitCode": 0,
+      "output": "CH3 REBOOT CANDIDATE QA: PASS \u2014 34 reachable nodes, 28 paths, 7 survivor terminals, 2 approved checks, 3 conditional inherited-item actions; old chapter archive and public manifest untouched.\n"
+    }
+  ],
+  "pagesStaging": {
+    "result": "PASS",
+    "sourceCommit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+    "selectedVersion": "v04-perspective-corrections",
+    "immutableGalleryFilesStaged": 523,
+    "wholeGalleryCopyByteExact": true,
+    "historicalVersionsVerified": 4,
+    "selectedNativeFilesVerified": 10,
+    "nativeDimensionsAndBinaryAlphaVerified": true,
+    "retainedV02SourceProvenanceExact": true,
+    "supersededOriginalsVerified": 2,
+    "currentAndHistoricalOwnerDecisionsByteExact": true,
+    "canonicalCountBeforeRegistration": 0,
+    "canonicalCountAfterRehearsal": 10,
+    "mainOnlyGuard": true,
+    "noDeployment": true
+  },
+  "preExistingMainWorkflowAndBatchABStepsUnchanged": true,
+  "browser": {
+    "result": "PASS",
+    "browser": "150.0.7871.125",
+    "receiptRows": 10,
+    "v04Rows": 7,
+    "v02Rows": 3,
+    "allTenSelectedLinksAndHashes": true,
+    "bothSupersededLinksAndHashes": true,
+    "priorOwnerDecisionLinked": true,
+    "selectedV04GalleryDecodes": true,
+    "mobileNoOverflow": true,
+    "browserErrors": [],
+    "publication": "Local staging only; no Pages deployment."
+  },
+  "historicalApprovalJSONAndBatchUnchanged": true,
+  "historicalReviewPackagesUnchanged": true,
+  "liveRegistriesAndSelectedFilesUnchanged": true,
+  "disposableRehearsalCheckoutRemoved": true,
+  "liveCanonicalRegistrationPerformed": false,
+  "merged": false,
+  "pagesDeployed": false,
+  "gameplayIntegrated": false,
+  "batchDBegun": false,
+  "nativeGridAuthorship": "UNRESOLVED / UNPROVEN; accepted by Nate."
+}

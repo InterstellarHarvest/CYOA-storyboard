@@ -17,3 +17,7 @@ PR #13 stays draft and pinned to historical selected v02. Its main-only workflow
 ## Current review update — 2026-11-20
 
 Nate clarified the firing-side placement, wall perspective and pedestal readability. The current pass is v04, documented in [docs/118](118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md). The registration/publication hold continues. Historical v03 and all approved sources remain unchanged.
+
+## Superseding owner selection — 2026-11-20
+
+Nate selected the seven v04 environments, explicitly superseding A04/A05, and retained the three exact v02 foregrounds. Creative approval is complete; the visual-review hold is resolved. [Docs/119](119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md) is the current ten-record manifest/batch and Claude execution authority. Preserve the historical text and files above; do not execute the old eight-entry batch. PR #13 remains draft and no merge/deployment is performed by this verified handoff. No gameplay integration or Batch D.
