@@ -18,3 +18,7 @@ All eight selections are approved: C01–C07 plus the explicit B07 attendant car
 Validation: eight selected-commit blobs independently hashed and size/mode/alpha checked; six unchanged candidates byte-compared with v01; precisely eight registration records passed dry-run without a real registration. Workflow YAML and the actual revised staging step are validated locally against the full selected commit, including both historical packages and selection metadata. Canonical drift, storyboard smoke and sync QA pass. The approval ledger preserves every prior byte and appends only the Batch C owner decision.
 
 PR #13 remains draft/unmerged. No workflow dispatch, Pages deployment, direct generation-branch deployment, game repository change, gameplay integration or Chapter 3 Batch D is performed by this handoff.
+
+## Later continuity correction request — publication deferred
+
+Nate requested v03 environment corrections after the v02 selection. See docs/117. Keep this PR draft and defer merge/deployment and pending registration until the replacement review is resolved. The workflow remains pinned to historical approved v02 at `5e0449b3da84764176f9744f5624a88868f5fdcb`; no unselected v03 bytes are substituted. Approved v02 history remains intact.
