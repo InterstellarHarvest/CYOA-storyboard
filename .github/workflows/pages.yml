@@ -30,9 +30,9 @@ env:
   CH3_BATCH_C_REVIEW_COMMIT: 7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb
   CH3_BATCH_C_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19
   CH3_BATCH_C_REVIEW_VERSION: v04-perspective-corrections
-  CH3_BATCH_D_REVIEW_COMMIT: 57ecd94f1f7eb840d186d7b5afae79a60063511d
+  CH3_BATCH_D_REVIEW_COMMIT: e65f42c19e54f566819289d2b133be246ede13f5
   CH3_BATCH_D_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20
-  CH3_BATCH_D_REVIEW_VERSION: v02-close-camera-corrections
+  CH3_BATCH_D_REVIEW_VERSION: v03-clapper-correction
 
 jobs:
   deploy:
