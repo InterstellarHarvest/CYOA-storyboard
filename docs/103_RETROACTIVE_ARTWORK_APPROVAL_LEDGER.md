@@ -213,3 +213,24 @@ No artwork bytes, prior review packages, approved Batch A art, narrative or game
 B03 and B05 are registered as their own `#portraitBackground` records: independent background plates, not foreground composites. The already approved A03 attendant foreground is reused unchanged and was not re-registered. In each record's `notes`, only the stale "NO IMAGE GENERATED OR APPROVED" clause was replaced with the approval and provenance line, as for Batch A. No other artwork record, selected preview, historical review package, narrative, item, route, ending or gameplay field changed.
 
 **The native-grid authorship limitation stated above still stands, unresolved.** Registration does not certify original native-grid authorship. Gameplay integration has not begun, and Chapter 3 Batch C has not begun. The approvals are live on the public storyboard only once this branch merges into `main` and its Pages deployment is verified.
+
+## Chapter 3 Batch C v02 final Art Director approval — 2026-11-19
+
+Nate explicitly selected and approved all eight Chapter 3 Batch C review candidates exactly as mapped in v02 at `InterstellarHarvest/CYOA-storyboard@5e0449b3da84764176f9744f5624a88868f5fdcb` on `art/ch3-pavilion-batch03-20261119`: C01–C07 plus the explicit B07 attendant-alarmed carry-forward. Creative approval is complete. **Canonical administrative registration is pending the separate Claude handoff; gameplay integration and Batch D are not authorized.**
+
+| Candidate | Registry key | Selected native PNG | SHA-256 |
+|---|---|---|---|
+| CH3-C01-urgency | `scenes:pavilion_reboot/urgency_stage` | `CH3-C01-urgency-v02.png` | `81fb5242df1e7cfec26c58bf6ecd4863e2a3089ea7b9b38b5038c99cc1492898` |
+| CH3-C02-urgency-bg | `scenes:pavilion_reboot/urgency_stage#portraitBackground` | `CH3-C02-urgency-bg-v02.png` | `de0a1cf44962ee81294926279d9121260814d7bec4ee89db975669e5a471e319` |
+| CH3-C03-locomotion | `scenes:pavilion_reboot/locomotion_stage` | `CH3-C03-locomotion-v02.png` | `1a6927cc2688be5c046efe581ca2ce6a3b2c180237c138cb1e586dc7030a10e6` |
+| CH3-C04-surprise | `scenes:pavilion_reboot/surprise_stage` | `CH3-C04-surprise-v02.png` | `da1387f2af4e3331e2cf2311a98052afdecdd0fe041746f30f786452d68f0f45` |
+| CH3-C05-surprise-bg | `scenes:pavilion_reboot/surprise_stage#portraitBackground` | `CH3-C05-surprise-bg-v02.png` | `90370ad584d1f7ed72f5738f9380f25d03748f16e9486be9ee4c69930a480770` |
+| CH3-C06-presenter-excited | `portraits:pavilion_presenter:excited` | `CH3-C06-presenter-excited-v02.png` | `d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95` |
+| CH3-C07-presenter-alarmed | `portraits:pavilion_presenter:alarmed` | `CH3-C07-presenter-alarmed-v02.png` | `4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887` |
+| CH3-B07-attendant-alarmed | `portraits:pavilion_attendant:alarmed` | `CH3-B07-attendant-alarmed-v02.png` | `51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f` |
+
+The selected native paths and exact provenance are recorded in [docs/116](116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_HANDOFF_20261119.md), with the machine-readable owner decision and ready eight-record batch. The six unchanged candidates retain their v01 bytes, but are explicitly selected from the v02 paths. Historical gallery labels remain as immutable provenance and are superseded by this owner decision.
+
+**Accepted unresolved limitation:** Complete original native-grid authorship remains unresolved / unproven. Original generators returned oversized rasters. Derived target-grid realizations and precisely documented native-pixel finishing do not prove original full-scene or full-character native-grid authorship. Residual source-derived RGB softness remains. Nate accepts the exact selected bytes with this limitation; no regeneration, filtering, sharpening, resizing, alpha reprocessing or further polish is requested.
+
+The artwork generator independently verified all eight source-commit blobs, hashes, dimensions and alpha, then performed only a successful eight-entry registration dry-run. No real registration, selected-art modification or production path assignment occurred. All production `assetPath` values remain null. Draft PR #13 is updated separately to stage the selected v02 gallery through the protected main-only Pages workflow; no merge or deployment is performed as part of this handoff.
