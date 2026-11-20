@@ -270,3 +270,43 @@ The older A04/A05 canonical preview bytes are preserved as documentation attachm
 **Accepted unresolved limitation:** Complete original native-grid authorship remains unresolved / unproven. Original generators returned oversized rasters. Derived target-grid realizations and precisely documented native-pixel finishing do not prove original full-scene or full-character native-grid authorship. Residual source-derived RGB softness remains. Nate accepts the exact selected bytes with this limitation; no regeneration, filtering, sharpening, resizing, alpha reprocessing or further polish is requested.
 
 [Current manifest, verification evidence and Claude handoff](119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md). PR #13 is updated to the selected v04 package and mixed-version ten-image authority. No merge/deployment is performed, even after verification. No production paths, gameplay integration or Batch D.
+
+**Registration status — 2026-11-20 (Claude, administrative registration completed):** the ten current selections above are registered in the canonical registry on branch `art/ch3-current-approval-registration-20261120`, created from canonical `main` `d4bae261c93c0b7cd8617aaf0a1e054526df0c0d`. The seven v04 blobs were extracted only from `7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb` and the three retained v02 blobs only from `5e0449b3da84764176f9744f5624a88868f5fdcb`. Before registration, each was independently checked against `expectedSha256`, its Git blob ID, its dimensions and its alpha contract: environments are 8-bit RGB with no `tRNS`; foregrounds are 8-bit RGBA with binary 0/255 alpha. `tools/sync/verify-ch3-current-selection.mjs --stage` passed and staged the ten bytes outside the checkout. `tools/sync/register-art.mjs --batch` ran a dry run first, then the real registration, without `--integration`. In the staged batch only the local `file` fields changed; `key`, `status`, `expectedSha256` and the full `source` objects are as recorded in docs/119. The obsolete docs/116 eight-entry batch was not executed; the verifier refuses it.
+
+| ID | Version | Record | Status | Production `assetPath` | Public selected preview (byte-identical to the pinned source) | Change |
+|---|---|---|---|---|---|---|
+| C01 | v04 | `scenes:pavilion_reboot/urgency_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png` | new |
+| C02 | v04 | `scenes:pavilion_reboot/urgency_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage/portraitBackground.png` | new |
+| C03 | v04 | `scenes:pavilion_reboot/locomotion_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png` | new |
+| C04 | v04 | `scenes:pavilion_reboot/surprise_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png` | new |
+| C05 | v04 | `scenes:pavilion_reboot/surprise_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage/portraitBackground.png` | new |
+| A04 | v04 | `scenes:pavilion_reboot/human_verification_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png` | authorized replacement |
+| A05 | v04 | `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png` | authorized replacement |
+| C06 | v02 | `portraits:pavilion_presenter:excited` | approved | null | `assets/selected/pending-integration/portraits/pavilion_presenter/excited.png` | new |
+| C07 | v02 | `portraits:pavilion_presenter:alarmed` | approved | null | `assets/selected/pending-integration/portraits/pavilion_presenter/alarmed.png` | new |
+| B07 | v02 | `portraits:pavilion_attendant:alarmed` | approved | null | `assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png` | new |
+
+**A04/A05 replacement protection.** Before the two curated previews were overwritten, each was confirmed to hold its documented prior bytes:
+- `9207bfdc…e3c5` (Git blob `8cca133e`).
+- `beb64cc6…b382` (Git blob `27a928e2`).
+
+Each was also confirmed byte-identical to three copies:
+- Its preserved attachment under `docs/artwork-history/chapter-03/pre-v04-2026-11-20/`.
+- Its original Batch A source at `a87155bfadad42e0deae3bee2e749963d1459a4b`.
+- The v04 gallery's historical reference.
+
+The registry keeps one active record per key; no duplicates were created. The superseded approval text, hash and provenance are retained in each record's `notes` as history, together with the preserved-file path. The Batch A ledger section above is unchanged. No other approved preview was overwritten: the dry run reported eight additions, two replacements and no path clash.
+
+Counts on this branch:
+- Preview entries: 128 → 136.
+- Statuses: approved 13 → 21, not-started 86 → 78; integrated 111 and reused 5 unchanged.
+
+In each newly approved record's `notes`, only the stale "NO IMAGE GENERATED OR APPROVED" clause was replaced, with the approval, provenance and limitation line. For A04/A05, a current-approval clause was placed before the retained prior-approval text. No narrative, brief, route, choice, check, item, ending, game-integration report or other selected artwork changed. Locked narrative blob `857ffdf1bc9432cf4bbbfd7819f5f430a06d9036` is unchanged.
+
+**The accepted native-grid authorship limitation still stands, unresolved.** Original full-scene and full-character native-grid authorship remains unproven, and source-derived RGB softness remains. Registration acknowledges Nate's approval of the exact bytes; it does not certify native-grid authorship.
+
+Further state:
+- Gameplay integration has not begun.
+- Main-menu assets are not imported.
+- Chapter 3 Batch D has not begun.
+- The approvals are live on the public storyboard only after this branch merges into `main` and its Pages deployment is verified. Draft PR #13 (gallery publication proposal) remains separate and unmerged.
