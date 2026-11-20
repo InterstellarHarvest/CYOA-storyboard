@@ -1,17 +1,20 @@
-# Out of Order — Chapter 3 Batch C review publication proposal
+# Out of Order — Chapter 3 Batch C selected v02 publication proposal
 
-This unmerged proposal would publish the isolated eight-candidate gallery through the canonical `main` Pages workflow. It does not publish from an artwork branch, change the environment deployment allowlist, or import artwork into the canonical registry or game.
+Nate selected and approved all eight v02 candidates on 2026-11-19 and accepted the documented unresolved native-grid authorship limitation. Creative approval is complete. The separate Claude registration handoff is [docs/116](116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_HANDOFF_20261119.md); canonical registry administration remains pending. This publication proposal does not register or integrate artwork.
 
-- Immutable gallery source: `53358b9df78f72e815cd69ee4128b1c86c08818d`.
-- Source branch: `art/ch3-pavilion-batch03-20261119`.
+- Immutable selected/gallery source: `5e0449b3da84764176f9744f5624a88868f5fdcb`.
+- Generation branch: `art/ch3-pavilion-batch03-20261119`.
 - Review directory: `tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/`.
-- Current local browser review: http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v01/.
-- Proposed public URL after a separate merge and successful main deployment: https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v01/.
+- Selected version: `v02-localized-corrections/`, including six byte-identical v01 carry-forwards explicitly selected from their v02 paths.
+- Proposed selected v02 gallery after a separate merge and successful main deployment: https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v02-localized-corrections/.
+- Proposed owner-selection receipt: https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/selection.html.
 
-The workflow sparse-checks out only the pinned review directory, checks all supplied PNG/source checksum manifests and the eight candidate hashes, validates generated/unselected metadata, and stages the package byte-for-byte at build time. It does not execute package scripts. It refuses to overwrite an existing site directory. Deployment provenance is written outside the immutable `v01` package. Existing Batch A/B pins and staging remain unchanged. A job guard explicitly restricts deployment to `refs/heads/main`, including manual dispatch.
+The workflow sparse-checks out only the complete pinned review directory, verifies both v01/v02 PNG and source checksum manifests, checks the exact eight native v02 hashes/paths against Nate's owner-decision manifest, and stages the gallery byte-for-byte at build time. It does not execute gallery code or overwrite existing site directories. Existing Batch A/B pins and staging remain unchanged. Deployment remains restricted to `refs/heads/main`, including manual dispatch; no environment-policy or allowlist change is proposed.
 
-All eight candidates remain generated/unselected: C01–C07 plus the B07 attendant carry-forward. Asset paths remain null. Original native-grid authorship remains unproven: oversized generation sources, derivative exports, local masks and provenance are retained. Local browser inspection and export QA passed; Nate's visual selection is outstanding.
+Historical generated/unselected labels inside v01/v02 remain unchanged. The later owner decision is published as `owner-selection.json` and a readable `selection.html` outside both immutable version directories. Deployment provenance also stays outside them and reports how many canonical previews currently match the exact selections. Copying the approval receipt does not administratively register artwork or modify source PNGs. Both historical version directories are byte-compared after staging and after adding the receipt.
 
-The owner selected the red-curtain reveal geometry and the portrait's three-button wall panel as the new layout authority. New stage variants share the doorway, two-person restroom sign, three-button panel and separate narrative loudspeaker grille. Front-console placement and active green-button identity correspond between main and close views. Approved earlier artwork, historical packages, narrative, gameplay and the separate `InterstellarHarvest/out-of-order` repository remain unchanged.
+All eight selections are approved: C01–C07 plus the explicit B07 attendant carry-forward. Production asset paths remain null. Original native-grid authorship remains unresolved/unproven and accepted by Nate; source-derived RGB softness may remain. No further polish, regeneration, filtering or alpha processing is requested.
 
-Validation before opening the draft: workflow YAML parsed; Batch C validation/staging run locally against the pinned commit; staged gallery byte-compared with source; selected-art canonical drift and storyboard smoke QA passed. No workflow dispatch, merge or deployment was performed.
+Validation: eight selected-commit blobs independently hashed and size/mode/alpha checked; six unchanged candidates byte-compared with v01; precisely eight registration records passed dry-run without a real registration. Workflow YAML and the actual revised staging step are validated locally against the full selected commit, including both historical packages and selection metadata. Canonical drift, storyboard smoke and sync QA pass. The approval ledger preserves every prior byte and appends only the Batch C owner decision.
+
+PR #13 remains draft/unmerged. No workflow dispatch, Pages deployment, direct generation-branch deployment, game repository change, gameplay integration or Chapter 3 Batch D is performed by this handoff.
