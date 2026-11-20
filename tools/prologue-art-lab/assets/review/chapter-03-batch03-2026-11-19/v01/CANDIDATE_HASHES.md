@@ -1,0 +1,10 @@
+| Candidate | SHA-256 |
+|---|---|
+| CH3-C01-urgency | `06046327aefdf8b72b4f69cf1a642e8a5343f2fd8646c53d511d6019c66b99ac` |
+| CH3-C02-urgency-bg | `de0a1cf44962ee81294926279d9121260814d7bec4ee89db975669e5a471e319` |
+| CH3-C03-locomotion | `a2655bbe494c09d6d6989d28a86037b7054f13dd69b088edef3a063bb7ccffe5` |
+| CH3-C04-surprise | `da1387f2af4e3331e2cf2311a98052afdecdd0fe041746f30f786452d68f0f45` |
+| CH3-C05-surprise-bg | `90370ad584d1f7ed72f5738f9380f25d03748f16e9486be9ee4c69930a480770` |
+| CH3-C06-presenter-excited | `d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95` |
+| CH3-C07-presenter-alarmed | `4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887` |
+| CH3-B07-attendant-alarmed | `51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f` |

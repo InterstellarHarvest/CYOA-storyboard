@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v01/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Exactly eight current candidates: seven Batch C plus explicit B07 carry-forward",
+    "Native views decode at exact intrinsic dimensions; portraits/composites remain native",
+    "Main scene and continuity/style comparisons use exact integer 4x with pixelated rendering",
+    "Unselected metadata, six fixed-anchor composites, identical right-wall pixels and paired console checks verified",
+    "390px mobile layout has bounded horizontal proof scrolling, no document overflow or fractional artwork scaling",
+    "No browser errors or failed requests"
+  ],
+  "errors": [],
+  "failed": [],
+  "publication": "Local gallery only. No generation-branch deployment; main-only publication proposal stays separate.",
+  "scope": "Display/export and metadata checks only; original native-grid authorship remains unproven and creative selection is pending Nate."
+}

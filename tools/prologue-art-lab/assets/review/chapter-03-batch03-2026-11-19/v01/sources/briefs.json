@@ -1,0 +1,154 @@
+{
+  "gameTitle": "Out of Order",
+  "gameRepository": "InterstellarHarvest/out-of-order",
+  "storyboardRepository": "InterstellarHarvest/CYOA-storyboard",
+  "canonicalCommit": "d4bae261c93c0b7cd8617aaf0a1e054526df0c0d",
+  "narrativeBlob": "857ffdf1bc9432cf4bbbfd7819f5f430a06d9036",
+  "branch": "art/ch3-pavilion-batch03-20261119",
+  "candidates": [
+    {
+      "candidateId": "CH3-C01-urgency",
+      "record": "scenes:pavilion_reboot/urgency_stage",
+      "kind": "main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-C01-urgency-catalogue.txt",
+      "promptSha256": "1a47cfc1a0291ba6f3aa07ca48c47a31680d1d9cc71acba90381860af6cea43a",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch C. Source nodes: authentic_urgency, authentic_urgency_visitor, authentic_urgency_reply. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "record": "scenes:pavilion_reboot/urgency_stage#portraitBackground",
+      "kind": "background",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-C02-urgency-bg-catalogue.txt",
+      "promptSha256": "21d32caee2c2e8fc95e423fa7889ba948719119a0cffd344dd36fc5e9d4c83f9",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT: paired with pavilion_reboot/urgency_stage; shared by every attendee/presenter pose used at this scene. Batch C. NO IMAGE GENERATED OR APPROVED."
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "record": "scenes:pavilion_reboot/locomotion_stage",
+      "kind": "main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-C03-locomotion-catalogue.txt",
+      "promptSha256": "34facb9e328043985ce02d5f1b43dbf985325987c69dbf7b5acfb4455bf98159",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch C. Source nodes: human_locomotion. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "record": "scenes:pavilion_reboot/surprise_stage",
+      "kind": "main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "prompt": "prompts/CH3-C04-surprise-catalogue.txt",
+      "promptSha256": "72cda04fb103320977c8a606299178bdc62e287c3abd7bb4143f9f674103844d",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT APPROVED SCRIPT / ART BRIEF READY; NO IMAGE GENERATED OR APPROVED. Batch C. Source nodes: genuine_surprise. Locked narrative blob 857ffdf1bc9432cf4bbbfd7819f5f430a06d9036. Do not assign an actual assetPath before gameplay integration."
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "record": "scenes:pavilion_reboot/surprise_stage#portraitBackground",
+      "kind": "background",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-C05-surprise-bg-catalogue.txt",
+      "promptSha256": "f529c7f503b369f9ec7f466abe4211d75ffee05193dcd0fda91d160bdbf0256e",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT: paired with pavilion_reboot/surprise_stage; shared by every attendee/presenter pose used at this scene. Batch C. NO IMAGE GENERATED OR APPROVED."
+    },
+    {
+      "candidateId": "CH3-C06-presenter-excited",
+      "record": "portraits:pavilion_presenter:excited",
+      "kind": "foreground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-C06-presenter-excited-catalogue.txt",
+      "promptSha256": "1ab57ce8e515778b7bdc9166d4b264ff1a27e1175522328eef36bf291156d4cb",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT: model sheet and canvas anchor must match every pose of pavilion_presenter. Source instances: photo_verification, authentic_urgency, authentic_urgency_visitor. Suggested default background pavilion_reboot/urgency_stage; other scene-appropriate backgrounds are catalogued on their scene records. Batch C. NO IMAGE GENERATED OR APPROVED."
+    },
+    {
+      "candidateId": "CH3-C07-presenter-alarmed",
+      "record": "portraits:pavilion_presenter:alarmed",
+      "kind": "foreground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-C07-presenter-alarmed-catalogue.txt",
+      "promptSha256": "6c129b5a2110808dd3de2ee8f4d5bbcf6a60eb8f281cd7c38d861995dd44a15c",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": false,
+      "notes": "CH3 REBOOT: model sheet and canvas anchor must match every pose of pavilion_presenter. Source instances: unauthorized_presenter, genuine_surprise. Suggested default background pavilion_reboot/surprise_stage; other scene-appropriate backgrounds are catalogued on their scene records. Batch C. NO IMAGE GENERATED OR APPROVED."
+    },
+    {
+      "candidateId": "CH3-B07-attendant-alarmed",
+      "record": "portraits:pavilion_attendant:alarmed",
+      "kind": "foreground",
+      "dimensions": [
+        564,
+        278
+      ],
+      "prompt": "prompts/CH3-B07-attendant-alarmed-catalogue.txt",
+      "promptSha256": "2234d3f9fee89515c503e18c902c866dcb17b497b51ea49f8c112189a9528a44",
+      "canonicalStatus": "not-started",
+      "status": "generated",
+      "selected": false,
+      "approved": false,
+      "assetPath": null,
+      "carryForward": true,
+      "notes": "CH3 REBOOT: model sheet and canvas anchor must match every pose of pavilion_attendant. Source instances: record_scanner, door_choices, door_courtesy. Suggested default background pavilion_reboot/record_scanner; other scene-appropriate backgrounds are catalogued on their scene records. Batch B. NO IMAGE GENERATED OR APPROVED."
+    }
+  ]
+}

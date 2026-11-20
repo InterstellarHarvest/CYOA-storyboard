@@ -1,0 +1,190 @@
+[
+  {
+    "file": "references/A01-restroom.png",
+    "key": "scenes:pavilion_reboot/restroom_entrance",
+    "repositoryPath": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+    "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+    "dimensions": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png"
+    },
+    "bounds": [
+      0,
+      0,
+      314,
+      206
+    ]
+  },
+  {
+    "file": "references/A02-restroom-bg.png",
+    "key": "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+    "repositoryPath": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance/portraitBackground.png",
+    "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+    "dimensions": [
+      564,
+      278
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A02-restroom-bg-v04.png"
+    },
+    "bounds": [
+      0,
+      0,
+      564,
+      278
+    ]
+  },
+  {
+    "file": "references/A03-attendant.png",
+    "key": "portraits:pavilion_attendant:idle",
+    "repositoryPath": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+    "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+    "dimensions": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+    },
+    "bounds": [
+      223,
+      43,
+      412,
+      263
+    ]
+  },
+  {
+    "file": "references/A04-verification.png",
+    "key": "scenes:pavilion_reboot/human_verification_stage",
+    "repositoryPath": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+    "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5",
+    "dimensions": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v07-native-finishing-2026-11-19/candidates/CH3-A04-verification-v07.png"
+    },
+    "bounds": [
+      0,
+      0,
+      314,
+      206
+    ]
+  },
+  {
+    "file": "references/A05-verification-bg.png",
+    "key": "scenes:pavilion_reboot/human_verification_stage#portraitBackground",
+    "repositoryPath": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png",
+    "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382",
+    "dimensions": [
+      564,
+      278
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A05-verification-bg-v04.png"
+    },
+    "bounds": [
+      0,
+      0,
+      564,
+      278
+    ]
+  },
+  {
+    "file": "references/A06-presenter.png",
+    "key": "portraits:pavilion_presenter:idle",
+    "repositoryPath": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+    "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+    "dimensions": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+    },
+    "bounds": [
+      111,
+      74,
+      339,
+      278
+    ]
+  },
+  {
+    "file": "references/B05-scanner-bg.png",
+    "key": "scenes:pavilion_reboot/record_scanner#portraitBackground",
+    "repositoryPath": "assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner/portraitBackground.png",
+    "sha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea",
+    "dimensions": [
+      564,
+      278
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch02-20261119",
+      "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B05-record-scanner-bg-v03.png"
+    },
+    "bounds": [
+      0,
+      0,
+      564,
+      278
+    ]
+  },
+  {
+    "file": "references/prologue-reception.png",
+    "repositoryPath": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+    "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+    "dimensions": [
+      314,
+      206
+    ]
+  },
+  {
+    "file": "references/chapter-01-foyer.png",
+    "repositoryPath": "assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+    "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607",
+    "dimensions": [
+      314,
+      206
+    ]
+  },
+  {
+    "file": "references/chapter-02-groundskeeper.png",
+    "repositoryPath": "assets/selected/art/scenes/biology_park/groundskeeper.png",
+    "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95",
+    "dimensions": [
+      314,
+      206
+    ]
+  }
+]

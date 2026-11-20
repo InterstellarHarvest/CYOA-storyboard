@@ -5,6 +5,8 @@ https://interstellarharvest.github.io/CYOA-storyboard/tools/prologue-art-lab/
 
 This is a public-safe, non-playable visual review tool. It displays the exact approved M2 shell, inventory, arrow, choice-card, utility-button and inspector images at the approved whole-pixel stage coordinates. It does not publish or execute the private Out of Order gameplay engine, story scripts, save files, test fixtures, review notes or internal rulings.
 
+The current game repository is [InterstellarHarvest/out-of-order](https://github.com/InterstellarHarvest/out-of-order). This separate public storyboard repository and its Pages URL retain `CYOA-storyboard`. Historical source-repository names, pinned artwork provenance and internal compatibility identifiers below remain unchanged.
+
 ## Exposition V03 detail refresh — 2026-11-14
 
 Private source `InterstellarHarvest/CYOA` commit

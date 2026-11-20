@@ -7,7 +7,7 @@
 //
 //   One image (Art Director / owner selection = approval):
 //     node tools/sync/register-art.mjs --key scenes:biology_park/formal_entrance --file <png> \
-//       --source-repo InterstellarHarvest/CYOA --source-ref <branch> --source-commit <sha> --source-path <path> [--status approved]
+//       --source-repo InterstellarHarvest/out-of-order --source-ref <branch> --source-commit <sha> --source-path <path> [--status approved]
 //   A batch (Gameplay PMO, from the game's `tools/story-sync/sync.js publish`):
 //     node tools/sync/register-art.mjs --batch <batch.json> [--integration <game-integration.json>]
 //   Options: --dry-run reports without writing.

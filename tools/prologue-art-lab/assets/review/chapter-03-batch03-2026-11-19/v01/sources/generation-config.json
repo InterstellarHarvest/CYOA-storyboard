@@ -1,0 +1,120 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "project": "Out of Order",
+  "sources": [
+    {
+      "candidateId": "CH3-C01-urgency",
+      "kind": "main",
+      "requestedDimensions": [
+        314,
+        206
+      ],
+      "submittedPrompt": "prompts/CH3-C01-urgency-submitted.txt",
+      "transparent_background": false,
+      "references": [
+        "references/A04-verification.png",
+        "references/A05-verification-bg.png",
+        "references/A01-restroom.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-C03-locomotion",
+      "kind": "main",
+      "requestedDimensions": [
+        314,
+        206
+      ],
+      "submittedPrompt": "prompts/CH3-C03-locomotion-submitted.txt",
+      "transparent_background": false,
+      "references": [
+        "references/A04-verification.png",
+        "references/A05-verification-bg.png",
+        "references/A06-presenter.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-C04-surprise",
+      "kind": "main",
+      "requestedDimensions": [
+        314,
+        206
+      ],
+      "submittedPrompt": "prompts/CH3-C04-surprise-submitted.txt",
+      "transparent_background": false,
+      "references": [
+        "references/A04-verification.png",
+        "references/A05-verification-bg.png",
+        "references/A06-presenter.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-C06-presenter-excited",
+      "kind": "foreground",
+      "requestedDimensions": [
+        564,
+        278
+      ],
+      "submittedPrompt": "prompts/CH3-C06-presenter-excited-submitted.txt",
+      "transparent_background": true,
+      "references": [
+        "references/A06-presenter.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-C07-presenter-alarmed",
+      "kind": "foreground",
+      "requestedDimensions": [
+        564,
+        278
+      ],
+      "submittedPrompt": "prompts/CH3-C07-presenter-alarmed-submitted.txt",
+      "transparent_background": true,
+      "references": [
+        "references/A06-presenter.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-B07-attendant-alarmed",
+      "kind": "foreground",
+      "requestedDimensions": [
+        564,
+        278
+      ],
+      "submittedPrompt": "prompts/CH3-B07-attendant-alarmed-submitted.txt",
+      "transparent_background": true,
+      "references": [
+        "references/A03-attendant.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-C02-urgency-bg",
+      "kind": "background",
+      "requestedDimensions": [
+        564,
+        278
+      ],
+      "submittedPrompt": "prompts/CH3-C02-urgency-bg-submitted.txt",
+      "transparent_background": false,
+      "references": [
+        "references/A05-verification-bg.png",
+        "donors/CH3-C01-urgency-native-donor.png",
+        "references/A02-restroom-bg.png"
+      ]
+    },
+    {
+      "candidateId": "CH3-C05-surprise-bg",
+      "kind": "background",
+      "requestedDimensions": [
+        564,
+        278
+      ],
+      "submittedPrompt": "prompts/CH3-C05-surprise-bg-submitted.txt",
+      "transparent_background": false,
+      "references": [
+        "references/A05-verification-bg.png",
+        "donors/CH3-C04-surprise-native-donor.png",
+        "references/A04-verification.png"
+      ]
+    }
+  ]
+}
