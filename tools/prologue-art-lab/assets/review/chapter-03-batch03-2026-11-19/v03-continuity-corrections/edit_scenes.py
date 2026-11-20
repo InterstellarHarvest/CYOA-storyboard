@@ -6,7 +6,9 @@ R=Path(__file__).resolve().parent;V1=R.parent/'v01';V2=R.parent/'v02-localized-c
 for d in ['candidates','previews','masks','layers','sources','comparisons','composites']:(R/d).mkdir(exist_ok=True)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def im(p):return Image.open(p).convert('RGBA')
-def write(p,d):(R/p).write_text(json.dumps(d,indent=2)+'\n')
+def write(p,d):
+ compact='changed-pixels' in p or 'operation-coordinates' in p
+ (R/p).write_text((json.dumps(d,separators=(',',':')) if compact else json.dumps(d,indent=2))+'\n')
 def blank(size):return Image.new('RGBA',size)
 def mask(size,points):
  m=Image.new('L',size);ImageDraw.Draw(m).polygon(points,fill=255);return m
