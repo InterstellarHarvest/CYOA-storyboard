@@ -79,3 +79,7 @@ Do not merge/cherry-pick the artwork-generation branch wholesale into `main`. Ex
 ## Later owner correction request — registration execution deferred
 
 Nate subsequently requested the v03 continuity corrections documented in [docs/117](117_OUT_OF_ORDER_CH3_V03_CONTINUITY_REVIEW_20261119.md). Preserve the v02 approval record above and its exact selected bytes. Defer pending Batch C registration/publication until the replacement review is resolved; do not substitute unselected v03 images into the approved v02 batch. The unchanged selected foreground poses retain their approval. No gameplay integration or Batch D.
+
+## Superseding owner selection — 2026-11-20
+
+Nate selected the seven v04 environments, explicitly superseding A04/A05, and retained the three exact v02 foregrounds. Creative approval is complete; the visual-review hold is resolved. [Docs/119](119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md) is the current ten-record manifest/batch and Claude execution authority. Preserve the historical text and files above; do not execute the old eight-entry batch. PR #13 remains draft and no merge/deployment is performed by this verified handoff. No gameplay integration or Batch D.

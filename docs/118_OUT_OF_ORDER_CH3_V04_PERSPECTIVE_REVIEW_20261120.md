@@ -19,3 +19,7 @@ Native mains stay 314×206, independent close backgrounds stay 564×278. Exact 4
 **Original native-grid authorship remains unresolved/unproven.** Local native hardware drawing, derived component projection and integer sprite translation do not establish original full-scene grid authorship. Residual source-derived softness remains. No generation, global sharpening or whole-scene resize/filter is used. The vanishing points are an authored camera interpretation for Nate's visual assessment, not recovered physical camera calibration.
 
 **Claude / PMO: keep pending registration/publication deferred until Nate selects the replacement versions.** PR #13 stays draft and pinned to historical selected v02 at `5e0449b3da84764176f9744f5624a88868f5fdcb`. Do not substitute any unselected v04 files into that batch. No merge, Pages deployment, gameplay integration, production paths or Batch D. Stop for Nate's review.
+
+## Superseding owner selection — 2026-11-20
+
+Nate selected the seven v04 environments, explicitly superseding A04/A05, and retained the three exact v02 foregrounds. Creative approval is complete; the visual-review hold is resolved. [Docs/119](119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md) is the current ten-record manifest/batch and Claude execution authority. Preserve the historical text and files above; do not execute the old eight-entry batch. PR #13 remains draft and no merge/deployment is performed by this verified handoff. No gameplay integration or Batch D.

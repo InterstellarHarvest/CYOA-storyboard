@@ -242,3 +242,31 @@ After the v02 selection, Nate requested a further localized v03 environment pass
 ### Further correction clarification — 2026-11-20
 
 Nate requested v04 wall-plane corrections, clearer pedestal controls and placement of the main presenter to the left/firing side of the cannon. See [docs/118](118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md). This remains an unselected replacement review; prior v02 approval and exact historical bytes are preserved, and the unchanged selected pose foregrounds retain their approval. Pending registration/publication remains deferred; no gameplay integration or Batch D.
+
+## Chapter 3 current v04 environments and retained v02 foregrounds — 2026-11-20
+
+Nate approved the seven exact v04 environments at `7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb` and retained the three exact v02 foregrounds at `5e0449b3da84764176f9744f5624a88868f5fdcb`. **A04/A05 v04 explicitly supersede the prior approved versions as current selections. Creative approval is complete.** Earlier approvals, files, hashes and provenance remain in history. This resolves the previous visual-review hold; docs/119 is the current ten-record execution authority. Canonical registration remains the separate Claude administrative step.
+
+| Candidate | Version | Registry key | SHA-256 |
+|---|---|---|---|
+| CH3-C01-urgency | v04 | `scenes:pavilion_reboot/urgency_stage` | `368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c` |
+| CH3-C02-urgency-bg | v04 | `scenes:pavilion_reboot/urgency_stage#portraitBackground` | `7d89b7d7c2ee22e6b324076ce988b3e5520e84be5b4068e79fe8d759ab529714` |
+| CH3-C03-locomotion | v04 | `scenes:pavilion_reboot/locomotion_stage` | `be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5` |
+| CH3-C04-surprise | v04 | `scenes:pavilion_reboot/surprise_stage` | `8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d` |
+| CH3-C05-surprise-bg | v04 | `scenes:pavilion_reboot/surprise_stage#portraitBackground` | `90f29651222b62bca461c0c33f09092290b374fd0cf10094c40267202515e255` |
+| CH3-A04-verification-continuity | v04 | `scenes:pavilion_reboot/human_verification_stage` | `8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca` |
+| CH3-A05-verification-bg-continuity | v04 | `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | `d09e2a7cf13c6382cd8d726a8852f32cfe359651f4c6c9538f4f7825d41844ef` |
+| CH3-C06-presenter-excited | v02 | `portraits:pavilion_presenter:excited` | `d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95` |
+| CH3-C07-presenter-alarmed | v02 | `portraits:pavilion_presenter:alarmed` | `4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887` |
+| CH3-B07-attendant-alarmed | v02 | `portraits:pavilion_attendant:alarmed` | `51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f` |
+
+| Superseded record | Original SHA-256 | Preserved file |
+|---|---|---|
+| `scenes:pavilion_reboot/human_verification_stage` | `9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5` | [CH3-A04-verification-selected-before-v04.png](artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A04-verification-selected-before-v04.png) |
+| `scenes:pavilion_reboot/human_verification_stage#portraitBackground` | `beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382` | [CH3-A05-verification-selected-before-v04.png](artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A05-verification-selected-before-v04.png) |
+
+The older A04/A05 canonical preview bytes are preserved as documentation attachments with their full canonical and original source provenance. The five earlier v02 environment approvals remain historical, superseded by v04; three foreground selections retain v02 bytes and provenance. Original docs/116 JSON/batch, all earlier ledger content and every review package remain unchanged.
+
+**Accepted unresolved limitation:** Complete original native-grid authorship remains unresolved / unproven. Original generators returned oversized rasters. Derived target-grid realizations and precisely documented native-pixel finishing do not prove original full-scene or full-character native-grid authorship. Residual source-derived RGB softness remains. Nate accepts the exact selected bytes with this limitation; no regeneration, filtering, sharpening, resizing, alpha reprocessing or further polish is requested.
+
+[Current manifest, verification evidence and Claude handoff](119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md). PR #13 is updated to the selected v04 package and mixed-version ten-image authority. No merge/deployment is performed, even after verification. No production paths, gameplay integration or Batch D.

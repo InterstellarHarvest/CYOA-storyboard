@@ -27,9 +27,9 @@ env:
   CH3_BATCH_A_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18
   CH3_BATCH_B_REVIEW_COMMIT: 7337e5e550e64a64357666a0fab6f118500913cd
   CH3_BATCH_B_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19
-  CH3_BATCH_C_REVIEW_COMMIT: 5e0449b3da84764176f9744f5624a88868f5fdcb
+  CH3_BATCH_C_REVIEW_COMMIT: 7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb
   CH3_BATCH_C_REVIEW_DIR: tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19
-  CH3_BATCH_C_REVIEW_VERSION: v02-localized-corrections
+  CH3_BATCH_C_REVIEW_VERSION: v04-perspective-corrections
 
 jobs:
   deploy:
@@ -162,7 +162,7 @@ jobs:
               'approval': 'Chapter 3 Batch B B01-B06 v03 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch B section; docs/113; story/artwork-preview.json). Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
           PY
           echo "Chapter 3 review galleries staged: $(find "_site/$A" -type f | wc -l) Batch A + $(find "_site/$B" -type f | wc -l) Batch B files"
-      # Batch C review snapshots stay immutable; Nate's later v02 selection is recorded separately.
+      # All four review snapshots stay immutable; the current mixed-version approval lives outside them.
       - name: Check out pinned Chapter 3 Batch C review gallery (build-time only)
         uses: actions/checkout@v4
         with:
@@ -171,99 +171,134 @@ jobs:
           sparse-checkout: ${{ env.CH3_BATCH_C_REVIEW_DIR }}
           sparse-checkout-cone-mode: false
           persist-credentials: false
-      - name: Validate and stage the owner-selected Chapter 3 Batch C v02 gallery
+      - name: Validate and stage selected v04 environments and retained v02 foregrounds
         run: |
           set -euo pipefail
           C_SRC=.review-ch3-batch-c; C=$CH3_BATCH_C_REVIEW_DIR
           test "$(git -C "$C_SRC" rev-parse HEAD)" = "$CH3_BATCH_C_REVIEW_COMMIT"
           test -z "$(cd "$C_SRC" && find . -path ./.git -prune -o -type f -print | grep -v "^\./$C/")"
           test -z "$(find "$C_SRC/$C" -type l -print)"
-          # Trusted main workflow validates data; no gallery-supplied code is executed.
+          # Only trusted main workflow/helpers execute; gallery files are data.
           python3 - <<'PYCODE'
           import hashlib, json, os
           from pathlib import Path
           gallery = Path('.review-ch3-batch-c') / os.environ['CH3_BATCH_C_REVIEW_DIR']
-          version = os.environ['CH3_BATCH_C_REVIEW_VERSION']
-          expected = {
-              'CH3-C01-urgency', 'CH3-C02-urgency-bg', 'CH3-C03-locomotion',
-              'CH3-C04-surprise', 'CH3-C05-surprise-bg', 'CH3-C06-presenter-excited',
-              'CH3-C07-presenter-alarmed', 'CH3-B07-attendant-alarmed',
-          }
-          for v in ['v01', version]:
-              root = gallery / v
+          versions = ['v01', 'v02-localized-corrections', 'v03-continuity-corrections', os.environ['CH3_BATCH_C_REVIEW_VERSION']]
+          manifests = {}
+          for version, count in zip(versions, [8, 8, 7, 7]):
+              root = gallery / version
               for name in ['PNG_SHA256SUMS.txt', 'SOURCE_SHA256SUMS.txt']:
                   for line in (root / name).read_text().splitlines():
                       digest, relative = line.split('  ', 1)
                       f = (root / relative).resolve()
                       assert f.is_relative_to(root.resolve())
-                      assert hashlib.sha256(f.read_bytes()).hexdigest() == digest, (v, relative)
+                      assert hashlib.sha256(f.read_bytes()).hexdigest() == digest, (version, relative)
               m = json.loads((root / 'manifest.json').read_text())
-              assert len(m['candidates']) == 8
-              assert {c['candidateId'] for c in m['candidates']} == expected
-              # Historical generated/unselected labels are retained, not rewritten.
-              assert m['status'] == 'generated/unselected'
-              for c in [m, *m['candidates']]:
-                  assert c['selected'] is False and c['approved'] is False and c['assetPath'] is None
+              assert len(m['candidates']) == count
+              assert len({c['candidateId'] for c in m['candidates']}) == count
+              # Historical labels are provenance; the later owner decision is separate.
+              assert m['selected'] is False and m['approved'] is False and m['assetPath'] is None
               for c in m['candidates']:
-                  assert c['status'] == 'generated'
+                  assert c['status'] == 'generated' and c['selected'] is False and c['approved'] is False and c['assetPath'] is None
                   f = (root / c['file']).resolve()
                   assert f.is_relative_to(root.resolve() / 'candidates')
                   assert hashlib.sha256(f.read_bytes()).hexdigest() == c['sha256']
               assert m['narrativeBlob'] == '857ffdf1bc9432cf4bbbfd7819f5f430a06d9036'
-              assert m['gameRepositoryModified'] is False and m['batchDBegun'] is False
-          # Compare selected v02 files to Nate's independently recorded approval.
-          decision = json.loads(Path('docs/116_OUT_OF_ORDER_CH3_BATCH_C_SELECTED_ARTWORK_20261119.json').read_text())
-          assert decision['sourceCommit'] == os.environ['CH3_BATCH_C_REVIEW_COMMIT']
-          assert decision['galleryVersion'] == version
+              manifests[version] = {c['candidateId']: c for c in m['candidates']}
+          decision = json.loads(Path('docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTED_ARTWORK_20261120.json').read_text())
+          batch = json.loads(Path('docs/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_BATCH_20261120.json').read_text())
+          expected = {
+              'CH3-C01-urgency', 'CH3-C02-urgency-bg', 'CH3-C03-locomotion',
+              'CH3-C04-surprise', 'CH3-C05-surprise-bg', 'CH3-A04-verification-continuity',
+              'CH3-A05-verification-bg-continuity', 'CH3-C06-presenter-excited',
+              'CH3-C07-presenter-alarmed', 'CH3-B07-attendant-alarmed',
+          }
+          assert len(decision['candidates']) == len(batch['entries']) == 10
+          assert {c['candidateId'] for c in decision['candidates']} == expected
+          assert decision['gallerySourceCommit'] == os.environ['CH3_BATCH_C_REVIEW_COMMIT']
+          assert decision['galleryVersion'] == os.environ['CH3_BATCH_C_REVIEW_VERSION']
+          assert decision['retainedForegroundSourceCommit'] == '5e0449b3da84764176f9744f5624a88868f5fdcb'
           assert decision['status'] == 'approved' and decision['selected'] and decision['approved']
           assert decision['gameplayIntegrationAuthorized'] is False and decision['beginBatchDAuthorized'] is False
-          selected = {c['candidateId']: c for c in decision['candidates']}
-          assert len(decision['candidates']) == 8 and set(selected) == expected
-          for c in m['candidates']:
-              approved = selected[c['candidateId']]
-              assert approved['key'] == c['record'] and approved['sha256'] == c['sha256']
-              assert approved['file'] == os.environ['CH3_BATCH_C_REVIEW_DIR'] + '/' + version + '/' + c['file']
-              assert approved['source']['commit'] == decision['sourceCommit']
-              assert approved['source']['path'] == approved['file']
-              assert approved['status'] == 'approved' and approved['assetPath'] is None
-          assert sum(c['byteIdenticalToV01'] for c in selected.values()) == 6
-          print('Both historical versions verified; eight exact v02 selections match Nate’s approval')
+          entries = {e['key']: e for e in batch['entries']}; assert len(entries) == 10
+          for c in decision['candidates']:
+              retained = c['retainedUnchanged']; version = 'v02-localized-corrections' if retained else decision['galleryVersion']
+              prior = manifests[version][c['candidateId']]
+              assert c['selectedVersion'] == ('v02' if retained else 'v04')
+              assert c['key'] == prior['record'] and c['sha256'] == prior['sha256']
+              assert c['file'] == os.environ['CH3_BATCH_C_REVIEW_DIR'] + '/' + version + '/' + prior['file']
+              assert c['source']['path'] == c['file']
+              assert c['source']['repo'] == 'InterstellarHarvest/CYOA-storyboard' and c['source']['ref'] == 'art/ch3-pavilion-batch03-20261119'
+              assert c['source']['commit'] == (decision['retainedForegroundSourceCommit'] if retained else decision['gallerySourceCommit'])
+              assert c['status'] == 'approved' and c['selected'] and c['approved'] and c['assetPath'] is None
+              e = entries[c['key']]
+              assert e['file'] == c['file'] and e['source'] == c['source'] and e['expectedSha256'] == c['sha256'] and e['status'] == 'approved'
+              data = (Path('.review-ch3-batch-c') / c['file']).read_bytes()
+              assert hashlib.sha256(data).hexdigest() == c['sha256']
+              assert hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest() == c['gitBlob']
+          assert sum(c['retainedUnchanged'] for c in decision['candidates']) == 3
+          assert sum(c['replacesCanonicalSelection'] for c in decision['candidates']) == 2
+          history = decision['historicalOwnerDecision']; data = Path(history['file']).read_bytes()
+          assert hashlib.sha256(data).hexdigest() == history['sha256']
+          assert len(decision['supersededCanonicalSelections']) == 2
+          for old in decision['supersededCanonicalSelections']:
+              data = Path(old['preservedFile']).read_bytes()
+              assert hashlib.sha256(data).hexdigest() == old['sha256'] == old['priorSelectedPreview']['sha256']
+              assert data == (gallery / old['galleryHistoricalReference']).read_bytes()
+              assert hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest() == old['priorPreviewGitBlob']
+          print('Four immutable review versions, seven v04 environments, three v02 foregrounds, and two superseded approved originals verified')
           PYCODE
+          node --input-type=module <<'JSCODE'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import { decodePng } from './tools/sync/lib.mjs';
+          const d=JSON.parse(fs.readFileSync('docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTED_ARTWORK_20261120.json','utf8'));
+          for(const c of d.candidates){
+            const p=decodePng(fs.readFileSync('.review-ch3-batch-c/'+c.file));
+            assert.ok(p.decoded);assert.equal(p.depth,8);assert.equal(p.partial,0);
+            assert.deepEqual([p.width,p.height],c.dimensions);
+            assert.equal(p.colorType,c.retainedUnchanged?6:2);
+            assert.ok(c.retainedUnchanged?p.transparent>0:p.transparent===0);
+          }
+          console.log('All ten native PNG contracts and binary-alpha foregrounds verified');
+          JSCODE
           test ! -e "_site/$C"
           mkdir -p "_site/$(dirname "$C")"
           cp -a "$C_SRC/$C" "_site/$C"
           diff -r "$C_SRC/$C" "_site/$C"
-          for f in index.html v01/index.html "$CH3_BATCH_C_REVIEW_VERSION/index.html"; do test -s "_site/$C/$f"; done
-          for f in deployment-provenance.json owner-selection.json selection.html; do test ! -e "_site/$C/$f"; done
-          # Add the later owner decision outside both immutable review versions.
+          for v in v01 v02-localized-corrections v03-continuity-corrections "$CH3_BATCH_C_REVIEW_VERSION"; do test -s "_site/$C/$v/index.html"; done
+          for f in deployment-provenance.json owner-selection.json owner-selection-v02-history.json selection.html; do test ! -e "_site/$C/$f"; done
+          # Publish current approval and exact old decision outside every immutable version.
           python3 - <<'PYCODE'
           import html, json, os
           from pathlib import Path
           out = Path('_site') / os.environ['CH3_BATCH_C_REVIEW_DIR']
-          decision_path = Path('docs/116_OUT_OF_ORDER_CH3_BATCH_C_SELECTED_ARTWORK_20261119.json')
+          decision_path = Path('docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTED_ARTWORK_20261120.json')
           decision = json.loads(decision_path.read_text())
           preview = json.loads(Path('story/artwork-preview.json').read_text())['images']
           registered = sum(preview.get(c['key'], {}).get('sha256') == c['sha256'] for c in decision['candidates'])
           data = {
               'publicSiteSource': os.environ['GITHUB_SHA'],
               'gallerySource': os.environ['CH3_BATCH_C_REVIEW_COMMIT'],
-              'galleryRef': 'art/ch3-pavilion-batch03-20261119',
               'selectedReviewVersion': os.environ['CH3_BATCH_C_REVIEW_VERSION'],
+              'selectedSourceCommits': {'sevenEnvironments': decision['gallerySourceCommit'], 'threeRetainedForegrounds': decision['retainedForegroundSourceCommit']},
               'deployedBy': 'canonical main Pages workflow (.github/workflows/pages.yml)',
-              'creativeApproval': 'Nate selected all eight v02 candidates on 2026-11-19.',
+              'creativeApproval': 'Nate selected seven v04 environments and retained three v02 foregrounds on 2026-11-20. A04/A05 explicitly supersede their earlier approved selections.',
               'canonicalExactSelectedPreviewCount': registered,
               'gameplayIntegration': 'Not authorized by this approval or publication.',
-              'nativeGridAuthorship': 'Unresolved/unproven; accepted by Nate for these exact bytes.',
-              'gallery': 'v01/v02 remain byte-preserved. Historical generated/unselected labels are superseded by owner-selection.json.',
+              'nativeGridAuthorship': 'Unresolved/unproven; accepted by Nate for the exact selected bytes.',
+              'history': 'All four review versions remain byte-preserved. Historical unselected labels are superseded by owner-selection.json; original v02 decision is preserved separately.',
           }
           (out / 'deployment-provenance.json').write_text(json.dumps(data, indent=2) + '\n')
           (out / 'owner-selection.json').write_bytes(decision_path.read_bytes())
-          rows = ''.join('<tr><td>' + html.escape(c['candidateId']) + '</td><td><code>' + c['sha256'] + '</code></td></tr>' for c in decision['candidates'])
-          page = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Out of Order — Batch C v02 selections</title><style>body{max-width:70rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui}td,code{overflow-wrap:anywhere}td{padding:.5rem}table{table-layout:fixed;width:100%}</style><h1>Chapter 3 Batch C — Nate’s selected v02 artwork</h1><p>All eight candidates are owner-approved as of 2026-11-19. Historical generated/unselected labels inside the review snapshots remain unchanged as provenance and are superseded by this decision.</p><p><a href="' + os.environ['CH3_BATCH_C_REVIEW_VERSION'] + '/">Open the selected v02 review gallery</a> · <a href="v01/">Historical v01</a> · <a href="owner-selection.json">Exact owner decision and provenance</a></p><p>Original native-grid authorship remains unresolved/unproven and is accepted by Nate. No gameplay integration or Batch D is authorized. Canonical previews matching these exact selections: ' + str(registered) + '/8.</p><table><tr><th>Candidate</th><th>SHA-256</th></tr>' + rows + '</table></html>'
+          (out / 'owner-selection-v02-history.json').write_bytes(Path(decision['historicalOwnerDecision']['file']).read_bytes())
+          prefix = os.environ['CH3_BATCH_C_REVIEW_DIR'] + '/'
+          rows = ''.join('<tr><td><a href="' + html.escape(c['file'][len(prefix):]) + '">' + html.escape(c['candidateId']) + '</a></td><td>' + c['selectedVersion'] + '</td><td><code>' + c['sha256'] + '</code></td></tr>' for c in decision['candidates'])
+          history = ''.join('<li><a href="' + html.escape(c['galleryHistoricalReference']) + '">Prior approved ' + c['candidateId'] + '</a>: <code>' + c['sha256'] + '</code></li>' for c in decision['supersededCanonicalSelections'])
+          page = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Out of Order — current Chapter 3 selections</title><style>body{max-width:72rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui}td,code,a{overflow-wrap:anywhere}td{padding:.5rem}table{table-layout:fixed;width:100%}</style><h1>Chapter 3 — Nate’s current selections</h1><p>Owner-approved 2026-11-20: seven v04 environments and three unchanged v02 foregrounds. A04/A05 explicitly replace their previous approved versions; older files and provenance remain historical records.</p><p><a href="' + os.environ['CH3_BATCH_C_REVIEW_VERSION'] + '/">Selected v04 environment gallery</a> · <a href="v02-localized-corrections/">Retained v02 foregrounds and history</a> · <a href="owner-selection.json">Current decision and provenance</a> · <a href="owner-selection-v02-history.json">Unchanged earlier owner decision</a></p><p>Original native-grid authorship remains unresolved/unproven and accepted by Nate. Canonical previews matching these exact selections: ' + str(registered) + '/10. No gameplay integration or Batch D is authorized.</p><table><tr><th>Selection</th><th>Version</th><th>SHA-256</th></tr>' + rows + '</table><h2>Superseded approved originals</h2><ul>' + history + '</ul><p>Historical generated/unselected labels inside review snapshots remain unchanged as provenance; the later owner decision above supersedes them.</p></html>'
           (out / 'selection.html').write_text(page)
           PYCODE
-          diff -r "$C_SRC/$C/v01" "_site/$C/v01"
-          diff -r "$C_SRC/$C/$CH3_BATCH_C_REVIEW_VERSION" "_site/$C/$CH3_BATCH_C_REVIEW_VERSION"
+          for v in v01 v02-localized-corrections v03-continuity-corrections "$CH3_BATCH_C_REVIEW_VERSION"; do diff -r "$C_SRC/$C/$v" "_site/$C/$v"; done
       - name: Enable and configure Pages
         uses: actions/configure-pages@v5
         with:
