@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "url": "http://127.0.0.1:8780/tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v02-localized-corrections/",
+  "browser": "150.0.7871.125",
+  "checks": [
+    "Eight candidates and native comparisons decode at exact intrinsic dimensions",
+    "All scalable views use exact integer 4x; fixed close-ups retain exact 8x",
+    "239 localized changes; six candidates and six composites byte-identical; wall/console continuity and unselected metadata verified",
+    "Every linked local provenance file, mask, coordinate list, historical image and comparison resolves",
+    "390px mobile page has contained proof scrolling and no document overflow",
+    "No browser errors or failed requests"
+  ],
+  "errors": [],
+  "failed": [],
+  "publication": "Local browser verification only. No Pages deployment or PR #13 update/merge.",
+  "limitation": "Original native-grid authorship remains unresolved; selection is pending Nate."
+}
