@@ -132,9 +132,10 @@ async function suite(name,driver){
         await img.decode();return [img.naturalWidth,img.naturalHeight];
       });
       check(live.sceneVersion==="current"&&live.activeSceneAssetPath===assetPath&&
-        live.currentCatalogAssetPath===assetPath&&live.sceneStatus==="generated"&&
+        // Since 497ad7d (2026-11-16) these four records are integrated; boot() requires it.
+        live.currentCatalogAssetPath===assetPath&&live.sceneStatus==="integrated"&&
         src==="assets/draft/"+assetPath&&JSON.stringify(natural)==="[314,206]",
-        "V03 scene maps to native generated asset "+id);
+        "V03 scene maps to native integrated asset "+id);
       await shot("exposition_v03_"+id.replaceAll("/","_"));
     }
     for(const [id,previous] of [

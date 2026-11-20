@@ -75,6 +75,19 @@ const prologueArt={
 for(const [group,records] of Object.entries(prologueArt))
   for(const [id,record] of Object.entries(records))
     assert.ok(record,"missing pinned Prologue "+group+" "+id);
+// The lab UI must display exactly this audited scope, never the whole shared catalogue.
+const appSource=fs.readFileSync(path.join(root,"tools/prologue-art-lab/app.js"),"utf8");
+const scopeLiteral=appSource.match(/\/\* LAB_SCOPE_BEGIN \*\/([\s\S]*?)\/\* LAB_SCOPE_END \*\//);
+assert.ok(scopeLiteral,"app.js declares an explicit LAB_SCOPE");
+const labScope=JSON.parse(scopeLiteral[1]);
+assert.deepEqual(labScope.scenes,[
+  "workplace/applause_station","workplace/corridor","workplace/exit","street/outside_workplace",
+  "exposition/entrance","exposition/property_intake","exposition/reception","exposition/facilities_corridor"
+],"lab scene scope and order");
+assert.deepEqual(labScope.items,prologueItemIds,"lab item scope and order");
+assert.deepEqual([...labScope.scenes].sort(),[...prologueSceneIds].sort(),"lab scenes equal the audited Prologue scenes");
+assert.deepEqual([...labScope.portraits].sort(),[...prologuePortraitIds].sort(),"lab portraits equal the audited Prologue portraits");
+assert.ok(!/Object\.keys\(data\.catalog\.(scenes|items)\)/.test(appSource),"lab never enumerates the whole shared catalogue");
 assert.equal(idx.schema,"cyoa-public-prologue-review-assets-v1");
 assert.equal(idx.files.length,51);
 assert.equal(Object.keys(prologueArt.scenes).length,8);

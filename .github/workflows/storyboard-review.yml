@@ -8,6 +8,8 @@ on:
       - 'story/**'
       - 'assets/**'
       - 'tools/sync/**'
+      - 'tools/prologue-art-lab/**'
+      - '.github/workflows/pages.yml'
       - '.github/workflows/storyboard-review.yml'
   workflow_dispatch:
 permissions:
@@ -29,6 +31,8 @@ jobs:
         run: node tools/storyboard/qa-smoke.mjs
       - name: Verify death-popup game export matches authored fatal boxes
         run: node tools/storyboard/export-death-presentations.mjs --check
+      - name: Prologue Artwork Lab pinned sources and explicit catalogue scope
+        run: node tools/prologue-art-lab/qa/qa-static.mjs
       - name: Install Chromium and Firefox
         run: |
           npm install --no-save playwright@1.56.1
@@ -39,6 +43,10 @@ jobs:
         run: node tools/storyboard/qa-timeline.js --out storyboard-timeline-qa
       - name: Selected-artwork previews (pixels, composites, states, items, zoom) (Chromium + Firefox)
         run: node tools/storyboard/qa-artwork-preview.js --out storyboard-timeline-qa/artwork-preview
+      - name: Prologue Artwork Lab on the built Pages site, catalogue growth and scope fixtures (Chromium + Firefox)
+        run: node tools/prologue-art-lab/qa/qa-pages-site.mjs --out storyboard-timeline-qa/prologue-art-lab
+      - name: Prologue Artwork Lab historical six-slot behaviour (Chromium + Firefox)
+        run: node tools/prologue-art-lab/qa/qa-browser.mjs
       - name: Preserve timeline screenshots and results
         if: always()
         uses: actions/upload-artifact@v4
