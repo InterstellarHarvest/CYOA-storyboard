@@ -1567,6 +1567,15 @@
        if(reviewLayout.schema!=="cyoa-storyboard-layout-v1"||!chapterLayout?.timeline)throw Error("Invalid Chapter 3 review layout");
        state.timelines["chapter-03"]=sanitizeTimeline(chapterLayout.timeline,chapterLayout.layoutRevision);
      }
+     if(ch4Review){
+       const reviewLayoutURL=new URL("chapter-04.wip-review-layout.json",state.manifestURL);
+       const layoutRes=await fetch(reviewLayoutURL);
+       if(!layoutRes.ok)throw Error("Chapter 4 review layout HTTP "+layoutRes.status);
+       const reviewLayout=await layoutRes.json();
+       const chapterLayout=reviewLayout?.chapters?.["chapter-04"];
+       if(reviewLayout.schema!=="cyoa-storyboard-layout-v1"||!chapterLayout?.timeline)throw Error("Invalid Chapter 4 review layout");
+       state.timelines["chapter-04"]=sanitizeTimeline(chapterLayout.timeline,chapterLayout.layoutRevision);
+     }
      if(manifest.chapters?.length)await loadRemote(ch4Review?manifest.chapters.find(ch=>ch.id==="chapter-04"):ch3Review?manifest.chapters.find(ch=>ch.id==="chapter-03"):manifest.chapters[0]);
      else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
