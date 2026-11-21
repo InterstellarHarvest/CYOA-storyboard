@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 7,
+      "layoutRevision": 8,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -90,7 +90,6 @@
               "hotel_bride_ring_handover",
               "hotel_bride_ring_bathroom",
               "hotel_bride_ring_inscription",
-              "wip_bride_search_service_passage",
               "wip_bride_return_to_groom",
               "wip_bride_staff_corridor_route",
               "wip_bride_find_wedding_organizer",
@@ -100,6 +99,24 @@
               "wip_chair_bride_groom",
               "wip_chair_bride_ring",
               "wip_chair_follow_collection"
+            ]
+          },
+          {
+            "id": "collection_stairs",
+            "title": "Lot 31 · Collection Stairs and sold staff lavatory",
+            "nodes": [
+              "hotel_collection_stairs",
+              "hotel_collection_porters_groom_clue",
+              "hotel_collection_slip_unnoticed",
+              "hotel_collection_slip_spotted",
+              "hotel_collection_staff_pass",
+              "hotel_collection_staff_pass_first",
+              "hotel_collection_staff_pass_recognized",
+              "hotel_collection_staff_pass_authorized",
+              "hotel_staff_lavatory_storage",
+              "hotel_staff_lavatory_move_boxes",
+              "hotel_staff_lavatory_temporary_use_permit",
+              "wip_collection_boiler_groom_encounter"
             ]
           },
           {
