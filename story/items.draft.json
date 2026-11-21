@@ -638,7 +638,20 @@
     "name": "WEDDING RING",
     "slotArt": null,
     "inspectArt": null,
-    "description": "A SMALL SILVER WEDDING BAND FREED FROM LOT 31'S UPHOLSTERY. A SHORT PALE BLUE RIBBON STILL CLINGS TO IT. TINY LETTERS ARE ENGRAVED INSIDE, TOO SMALL TO READ AT A GLANCE.",
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "wedding_ring_lot31",
+            "read"
+          ]
+        },
+        "text": "A SMALL SILVER WEDDING BAND FREED FROM LOT 31'S UPHOLSTERY. A SHORT PALE BLUE RIBBON STILL CLINGS TO IT. TINY LETTERS ARE ENGRAVED INSIDE, TOO SMALL TO READ AT A GLANCE."
+      },
+      {
+        "text": "YOU TURN THE SILVER BAND BETWEEN YOUR FINGERS. A SMALL STRAND OF BLUE RIBBON HANGS FROM IT.\n\nINSIDE, BENEATH A TINY MAKER'S MARK, YOU CAN FINALLY MAKE OUT THE ENGRAVING:\n\nAS IS, WHERE IS.\n\nTHE STANDARD TERMS OF AN AUCTION.\n\nAS WEDDING PROMISES GO, YOU'VE HEARD WORSE."
+      }
+    ],
     "read": {
       "effects": {
         "mark": [
@@ -646,7 +659,10 @@
             "wedding_ring_lot31",
             "read"
           ]
-        ]
+        ],
+        "set": {
+          "ch4_ring_inscription_read": true
+        }
       }
     }
   }
