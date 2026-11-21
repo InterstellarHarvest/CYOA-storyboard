@@ -1,0 +1,70 @@
+{
+  "schema": "cyoa-storyboard-layout-v1",
+  "chapters": {
+    "chapter-04": {
+      "positions": {},
+      "layoutRevision": 3,
+      "timeline": {
+        "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
+        "incidents": [
+          {
+            "id": "entry",
+            "title": "Seven Pavilion Exits · Distinct hotel arrivals",
+            "nodes": [
+              "hotel_entry_dispatch",
+              "entry_locomotion_fail",
+              "entry_presenter_help_end",
+              "entry_paper_problem_end",
+              "entry_attendant_honest_end",
+              "entry_door_dash_fail",
+              "entry_door_reverse_end",
+              "entry_backstage_exit"
+            ]
+          },
+          {
+            "id": "lobby",
+            "title": "Public Lobby · The father's auction",
+            "nodes": [
+              "hotel_lobby_view",
+              "hotel_auctioneer_arrival",
+              "wip_auctioneer_question",
+              "wip_help_bride"
+            ]
+          },
+          {
+            "id": "restroom",
+            "title": "A1 · The last working stall",
+            "nodes": [
+              "hotel_restroom_entry",
+              "hotel_restroom_plumber",
+              "wip_close_valve",
+              "wip_plumbing_access",
+              "wip_wheel_buyer",
+              "wip_facilities_key"
+            ]
+          },
+          {
+            "id": "service",
+            "title": "Service Entrance · Freight and salvage",
+            "nodes": [
+              "hotel_service_arrival",
+              "hotel_service_foreman",
+              "wip_staff_restroom",
+              "wip_save_wedding_cake",
+              "wip_freight_lift"
+            ]
+          },
+          {
+            "id": "wedding",
+            "title": "Wedding Entrance · Missing groom",
+            "nodes": [
+              "hotel_wedding_arrival",
+              "wip_find_groom",
+              "wip_wedding_service"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
