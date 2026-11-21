@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 restroom incident approved; its successor branches await writing.",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 restroom incident approved. All A1 successor incidents are unapproved narrative proposals for Nate's review.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -168,15 +168,16 @@
         "It's a valve handle, Eddie!",
         {"say":"Well, he didn't ask.","who":"hotel_plumber_assistant"},
         {"desc":"A second pipe begins rattling. The plumber looks at it."},
-        "Terribly sorry, sir. Little trouble with the plumbing. Possibly a medium-sized trouble."
+        "Terribly sorry, sir. Little trouble with the plumbing. Possibly a medium-sized trouble.",
+        {"desc":"Above the sinks hangs a locked cabinet marked EMERGENCY WATER ISOLATION. Its brass keyhole appears to be one of the few fittings nobody has bought."}
       ],
       "choices":[
-        {"id":"a1a_close_valve","kind":"action","text":"HELP THE PLUMBER CLOSE THE VALVE BEFORE ANOTHER PIPE BURSTS.","to":"wip_close_valve"},
-        {"id":"a1b_maintenance","kind":"action","text":"FOLLOW THE PLUMBING THROUGH THE MAINTENANCE ACCESS.","to":"wip_plumbing_access"},
-        {"id":"a1c_wheel_buyer","kind":"spoken","text":"WHO BOUGHT THE SHUTOFF WHEEL?","to":"wip_wheel_buyer"}
+        {"id":"a1a_close_valve","kind":"action","text":"HELP THE PLUMBER TURN THE BARE VALVE SHAFT BEFORE ANOTHER PIPE BURSTS.","check":{"id":"ch4_restroom_valve_grip","sides":6,"need":4},"pass":{"result":"You catch the bare spindle between the wrench's jaws. It shudders, then turns. The violent spray collapses to a thin, furious dribble.","effects":{"set":{"ch4_restroom_leak":"braced","ch4_plumber_helped":true}},"to":"hotel_valve_braced"},"fail":{"result":"The wrench slips. A dreadful metallic pop comes from inside the wall. The spray doubles and knocks you into a stack of clean towels.","effects":{"set":{"ch4_restroom_leak":"flooding"}},"to":"hotel_valve_flood"}},
+        {"id":"a1b_maintenance","kind":"action","text":"FOLLOW THE PLUMBING THROUGH THE MAINTENANCE ACCESS.","effects":{"set":{"ch4_restroom_leak":"uncontained"}},"to":"hotel_pipe_tunnel"},
+        {"id":"a1c_wheel_buyer","kind":"spoken","text":"WHO BOUGHT THE SHUTOFF WHEEL?","effects":{"set":{"ch4_restroom_leak":"uncontained"}},"to":"hotel_wheel_buyer_lead"}
       ],
       "use":{
-        "wc_key":{"kind":"action","say":"TRY THE FACILITIES KEY IN THE EXPOSED VALVE SHAFT.","to":"wip_facilities_key"}
+        "wc_key":{"kind":"action","say":"TRY THE FACILITIES KEY IN THE EMERGENCY CABINET.","to":"hotel_key_master_cabinet"}
       }
     },
     "wip_auctioneer_question":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A2 auctioneer conversation and auction incidents not yet written. This is not a gameplay ending.","choices":[]},
@@ -186,9 +187,164 @@
     "wip_freight_lift":{"mode":"narrative","scene":"grand_bellevue/freight_lift","text":"DRAFT REVIEW STOP — S3 freight lift route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_find_groom":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — W1 missing groom route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_wedding_service":{"mode":"narrative","scene":"grand_bellevue/service_corridor","text":"DRAFT REVIEW STOP — W2 wedding service route not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_close_valve":{"mode":"narrative","scene":"grand_bellevue/restroom","text":"DRAFT REVIEW STOP — A1-A valve action, checks, and pass/fail outcomes not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_plumbing_access":{"mode":"narrative","scene":"grand_bellevue/maintenance","text":"DRAFT REVIEW STOP — A1-B maintenance route not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_wheel_buyer":{"mode":"narrative","scene":"grand_bellevue/auction_floor","text":"DRAFT REVIEW STOP — A1-C wheel buyer route not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_facilities_key":{"mode":"narrative","scene":"grand_bellevue/restroom","text":"DRAFT REVIEW STOP — Facilities Key item-use effect not yet written. No outcome or consumption approved. This is not a gameplay ending.","choices":[]}
+    "hotel_valve_braced": {
+      "mode":"narrative","scene":"grand_bellevue/restroom",
+      "text":"The plumber throws his weight against the wrench and holds the shaft in place. Water drips from his sleeves. He warns you that the seal is temporary. Nobody should touch a tap, and absolutely nobody should flush.\n\nYou look at the nearest toilet. It is still the most beautiful thing you have seen all day.\n\nFrom the hall comes the scrape of a freight trolley. Two porters stop outside the open restroom entrance. One consults a card.\n\nLOT FIFTY-THREE. THREE COMPLETE STALLS.\n\nThe plumber stares at the ceiling. You have apparently bought everyone a minute, which he strongly recommends spending somewhere else.",
+      "choices":[
+        {"id":"braced_try_stall","kind":"action","text":"TRY TO REACH A STALL BEFORE THE PORTERS TAKE IT.","to":"hotel_stall_lot_claimed"},
+        {"id":"braced_maintenance","kind":"action","text":"LEAVE THE PLUMBER HOLDING THE VALVE AND TAKE THE SERVICE ACCESS.","to":"hotel_pipe_tunnel"}
+      ]
+    },
+    "hotel_valve_flood": {
+      "mode":"narrative","scene":"grand_bellevue/restroom",
+      "text":"For a moment there is nothing but water.\n\nThen Eddie floats past on an overturned basket of clean towels, looking astonished by the speed at which his employment has deteriorated.\n\nThe plumber catches a sink with one hand. The other points toward a small service panel hanging open behind you. He shouts for you to get through it.\n\nWater pours beneath the missing restroom doors and races down the hotel corridor. Somewhere beyond it, a woman screams about her wedding dress. The water seems to be winning.",
+      "choices":[
+        {"id":"flood_service_escape","kind":"action","text":"SCRAMBLE THROUGH THE OPEN MAINTENANCE PANEL.","to":"hotel_pipe_tunnel"},
+        {"id":"flood_follow_downstairs","kind":"action","text":"FOLLOW THE FLOOD INTO THE WEDDING CORRIDOR.","to":"wip_ballroom_flood"}
+      ]
+    },
+    "hotel_pipe_tunnel": {
+      "mode":"narrative","scene":"grand_bellevue/maintenance",
+      "text":"You duck through the access panel behind the sinks. The space beyond is wider than expected: a narrow maintenance walkway with pipes along one wall and hotel rooms on the other.\n\nA brass plate reads CENTRAL WATER ISOLATION — STAFF ONLY. Someone has hung a numbered auction tag from it.\n\nFarther along the walkway, a man in a wedding suit is crouched behind a boiler. His boutonnière is caught on a bolt. He sees you and immediately puts a finger to his lips.\n\nAt the opposite end, an EXIT TO LOADING DOCK sign points down a steep iron stairway.\n\nYou have found three things. None is a toilet.",
+      "choices":[
+        {"id":"pipe_talk_groom","kind":"action","text":"ASK THE MAN IN WEDDING CLOTHES WHAT HE IS HIDING FROM.","to":"hotel_groom_pipe_hideout"},
+        {"id":"pipe_water_controls","kind":"action","text":"INSPECT THE HOTEL'S CENTRAL WATER CONTROLS.","to":"hotel_isolator_panel"},
+        {"id":"pipe_loading_dock","kind":"action","text":"TAKE THE IRON STAIRS TOWARD THE LOADING DOCK.","to":"hotel_maintenance_dock_exit"}
+      ]
+    },
+    "hotel_groom_pipe_hideout": {
+      "mode":"dialogue","scene":"grand_bellevue/maintenance","speaker":"hotel_groom","pose":"nervous",
+      "effects":{"set":{"ch4_groom_located":true}},
+      "text":[
+        {"desc":"The man works his flower free. His formal jacket bears a paper tag marked LOT THIRTY-ONE. He folds the tag under his lapel."},
+        "You're not with her father, are you?",
+        {"desc":"He glances toward the ballroom wall."},
+        "I'm supposed to be getting married. I was moving a chair, just one chair, when two fellows announced they'd sold it. One of them tried to put me in the delivery crate as well.",
+        "I got away. But the ring box was sitting on the arm of that chair.",
+        {"desc":"He holds up an empty velvet box. His face has the troubled concentration of a man who has not yet realized this is the least of his problems."},
+        "Do you think she'd mind if we used a different ring?"
+      ],
+      "choices":[
+        {"id":"groom_recover_ring","kind":"action","text":"HELP HIM FIND THE SOLD CHAIR AND THE MISSING RING.","to":"wip_groom_ring"},
+        {"id":"groom_send_back","kind":"spoken","text":"SHE WOULD PROBABLY RATHER HAVE A GROOM THAN A RING.","to":"wip_groom_return"}
+      ]
+    },
+    "hotel_isolator_panel": {
+      "mode":"focus","scene":"grand_bellevue/maintenance","focus":"grand_bellevue/maintenance/water_isolator",
+      "text":"Two great brass levers stand inside a recessed metal frame.\n\nRESTROOMS, reads the neat engraved label beneath the first.\n\nENTIRE HOTEL, reads the label beneath the second.\n\nSomeone has pasted a fresh auction sticker across the frame: LOT NINETEEN — TWO MATCHING DECORATIVE LEVERS.\n\nFrom the restroom wall comes the unmistakable sound of water hitting something it should not. Both levers appear to be connected.",
+      "choices":[
+        {"id":"isolate_restrooms","kind":"action","text":"SHUT OFF WATER TO THE RESTROOMS ONLY.","effects":{"set":{"ch4_restroom_leak":"contained","ch4_restroom_water_off":true}},"to":"hotel_isolator_restrooms"},
+        {"id":"isolate_hotel","kind":"action","text":"CLOSE THE MAIN WATER SUPPLY FOR THE ENTIRE HOTEL.","effects":{"set":{"ch4_restroom_leak":"contained","ch4_hotel_water_off":true,"ch4_restroom_water_off":true}},"to":"hotel_isolator_entire"}
+      ]
+    },
+    "hotel_isolator_restrooms": {
+      "mode":"narrative","scene":"grand_bellevue/maintenance",
+      "text":"The RESTROOMS lever moves with a satisfying clunk. The hiss in the pipes fades. A moment later, through the wall, you hear the plumber give a grateful cheer.\n\nYou retrace your steps, already imagining a calm, dry stall. The plumber meets you at the access hatch and assures you the leak is under control. Unfortunately, he adds, the lavatories cannot flush without water.\n\nYou tell yourself that this is an inconvenience you can reason with. Then you hear the porters outside counting toilets.",
+      "choices":[{"id":"restrooms_off_continue","kind":"continue","text":"CONTINUE","to":"hotel_stall_lot_claimed"}]
+    },
+    "hotel_isolator_entire": {
+      "mode":"narrative","scene":"grand_bellevue/maintenance",
+      "text":"You heave the MAIN lever downward. Every water pipe in the building gives a long, theatrical sigh. The flood behind you stops.\n\nAn instant later, somewhere in the ballroom, a fountain sputters to a halt. There is a collective gasp, followed by a loud voice announcing that the champagne is not included in the plumbing contract.\n\nYou have rescued the restroom at the expense of every tap in the Grand Bellevue. On the bright side, nobody can accuse you of doing things by halves.\n\nThe groom, if he is still hiding nearby, makes no attempt to congratulate you.",
+      "choices":[
+        {"id":"hotel_water_ballroom","kind":"action","text":"HEAD TOWARD THE WEDDING TO EXPLAIN THE WATER SHUTOFF.","to":"wip_ballroom_water_off"},
+        {"id":"hotel_water_dock","kind":"action","text":"TAKE THE SERVICE STAIRS TO THE LOADING DOCK.","to":"hotel_maintenance_dock_exit"}
+      ]
+    },
+    "hotel_stall_lot_claimed": {
+      "mode":"narrative","scene":"grand_bellevue/restroom",
+      "text":"You step toward the nearest stall. At last.\n\nA porter with a clipboard stands in the doorway. Another is already unfastening the toilet's floor bolts. He lifts the porcelain bowl onto a waiting trolley with the brisk efficiency of someone moving an office chair.\n\nThe porter apologizes. All three stalls belong to Lot Fifty-Three, fixtures included. The buyer wants them removed before the speeches.\n\nYou look at the empty space where the toilet stood. It is extraordinarily clean. It is also extraordinarily useless.\n\nThe plumber quietly offers to show you the staff route through the loading dock. He seems genuinely sorry.",
+      "choices":[
+        {"id":"stall_pursue_buyer","kind":"action","text":"FOLLOW THE PORTERS AND CONFRONT THE BUYER OF LOT FIFTY-THREE.","to":"wip_stall_buyer"},
+        {"id":"stall_staff_shortcut","kind":"action","text":"TAKE THE PLUMBER'S SHORTCUT TOWARD THE STAFF FACILITIES.","to":"hotel_maintenance_dock_exit"}
+      ]
+    },
+    "hotel_maintenance_dock_exit": {
+      "mode":"narrative","scene":"grand_bellevue/service_stairs",
+      "text":"The iron stairway rattles under your feet. A swinging door at the bottom opens onto the hotel's loading dock. Crates, furniture, and a grand piano occupy most of the floor. An elaborate wedding cake is being wheeled dangerously close to the freight elevator.\n\nYou are still looking for the staff restroom sign when a foreman spots you and points sharply at the moving equipment.",
+      "choices":[{"id":"dock_meet_foreman","kind":"continue","text":"CONTINUE","to":"hotel_service_foreman"}]
+    },
+    "hotel_wheel_buyer_lead": {
+      "mode":"dialogue","scene":"grand_bellevue/restroom","speaker":"hotel_plumber_assistant","pose":"pleased",
+      "text":[
+        "Oh, I remember him. Green auction paddle. Little cap with an anchor on it.",
+        {"say":"Where did he go?","who":"hotel_plumber"},
+        "Toward the wedding drinks, I think. Said he was going to turn an ice bucket into a boat.",
+        {"desc":"Eddie retrieves a damp receipt from his pocket. The ink is beginning to spread."},
+        "Twelve for the lot. Seemed a fair price.",
+        {"say":"It's the emergency water shutoff, Eddie.","who":"hotel_plumber"},
+        "Well, he did ask if it worked under pressure."
+      ],
+      "choices":[
+        {"id":"wheel_find_buyer","kind":"action","text":"FIND THE BUYER WITH THE GREEN PADDLE.","to":"hotel_commodore_bixby"},
+        {"id":"wheel_read_receipt","kind":"action","text":"EXAMINE EDDIE'S RECEIPT FOR THE LOT NUMBER.","to":"hotel_lot_receipt_study"},
+        {"id":"wheel_ignore_buyer","kind":"action","text":"LEAVE THE AUCTION ALONE AND TRY THE MAINTENANCE SHUTOFF.","to":"hotel_pipe_tunnel"}
+      ]
+    },
+    "hotel_lot_receipt_study": {
+      "mode":"focus","scene":"grand_bellevue/restroom","focus":"grand_bellevue/restroom/lot_14_receipt",
+      "effects":{"set":{"ch4_knows_wheel_lot_14":true}},
+      "text":"The little receipt is almost illegible. You smooth it against a dry patch of tile.\n\nLOT 14 — BRASS WATER SHUTOFF WHEEL.\nBUYER — COMMODORE E. BIXBY.\nPURCHASE PRICE — 12.00.\nDECLARED PURPOSE — NAVAL DECORATION.\n\nAt the bottom, someone has stamped ALL SALES FINAL, including the emergency fixtures. There is a small handwritten exception: UNLESS THE BRIDE OBJECTS.",
+      "choices":[
+        {"id":"receipt_find_commodore","kind":"action","text":"FIND COMMODORE BIXBY AND ASK FOR THE WHEEL.","to":"hotel_commodore_bixby"},
+        {"id":"receipt_appeal_auctioneer","kind":"action","text":"TAKE THE LOT NUMBER TO THE AUCTIONEER AND CHALLENGE THE SALE.","to":"wip_auctioneer_dispute"}
+      ]
+    },
+    "hotel_commodore_bixby": {
+      "mode":"dialogue","scene":"grand_bellevue/refreshment_table","speaker":"hotel_commodore_bixby","pose":"delighted",
+      "text":[
+        {"desc":"At the edge of the reception, a gentleman in a miniature naval cap has mounted the stolen valve wheel on a silver ice bucket. A green auction paddle sticks out of his coat pocket."},
+        "There she is! Fine little craft, isn't she?",
+        {"desc":"He gives the wheel an experimental turn. The bucket rolls into a chair. He catches it just before it falls."},
+        "Rudder needs work, but we'll have her seaworthy by Thursday.",
+        {"desc":"Water creeps out from beneath the ballroom door and touches the toe of his polished shoe. He looks down with professional interest."},
+        "Tide's coming in."
+      ],
+      "choices":[
+        {"id":"bixby_emergency_truth","kind":"spoken","text":"THAT'S THE HOTEL'S SHUTOFF WHEEL. THE BUILDING IS FLOODING!","to":"hotel_bixby_emergency"},
+        {"id":"bixby_rubber_fender_trade","kind":"action","text":"TRADE YOUR RUBBER BAND BALL AS A FENDER FOR HIS LITTLE BOAT.","if":{"has":"rubber_band_ball"},"effects":{"take":["rubber_band_ball"],"set":{"ch4_bixby_fender_trade":true}},"to":"hotel_bixby_trade"},
+        {"id":"bixby_auction_dispute","kind":"action","text":"GO BACK TO THE AUCTIONEER AND DEMAND THE SALE BE REVERSED.","to":"wip_auctioneer_dispute"}
+      ]
+    },
+    "hotel_bixby_emergency": {
+      "mode":"dialogue","scene":"grand_bellevue/refreshment_table","speaker":"hotel_commodore_bixby","pose":"commanding",
+      "effects":{"set":{"ch4_bixby_expects_bridge":true,"ch4_valve_wheel_recovered":true}},
+      "text":[
+        {"desc":"The Commodore straightens so abruptly that his tiny cap nearly falls off."},
+        "An emergency at sea! Why didn't you say so?",
+        {"desc":"He pulls the wheel free of the ice bucket and presses it into your hands."},
+        "Take the helm, sailor. Save the vessel. I'll be expecting a tour of the bridge when this is all over.",
+        {"desc":"Behind him, a wedding guest slips on the advancing water. The Commodore blows a small whistle and begins organizing a lifeboat drill using dining chairs."}
+      ],
+      "choices":[{"id":"bixby_return_wheel","kind":"continue","text":"CONTINUE","to":"hotel_wheel_return"}]
+    },
+    "hotel_bixby_trade": {
+      "mode":"dialogue","scene":"grand_bellevue/refreshment_table","speaker":"hotel_commodore_bixby","pose":"delighted",
+      "effects":{"set":{"ch4_valve_wheel_recovered":true}},
+      "text":[
+        {"desc":"You offer the rubber band ball. It is almost exactly the right size for the ice bucket. Bixby sets it alongside his little vessel and gasps."},
+        "A perfect fender! Look at the elasticity!",
+        {"desc":"He hands you the brass wheel without another word, then ties the rubber band ball to the bucket with a length of napkin. It remains with him, part of his new ship."},
+        "Splendid trade, sailor. Safe passage!"
+      ],
+      "choices":[{"id":"trade_return_wheel","kind":"continue","text":"CONTINUE","to":"hotel_wheel_return"}]
+    },
+    "hotel_wheel_return": {
+      "mode":"narrative","scene":"grand_bellevue/restroom",
+      "effects":{"set":{"ch4_restroom_leak":"contained","ch4_restroom_water_off":true,"ch4_plumber_helped":true}},
+      "text":"You hurry back through the lobby carrying the brass wheel. A small river has formed across the marble floor. The plumber sees you, seizes the wheel, and fits it onto the bare valve shaft.\n\nOne turn. A second. The roaring water dies away. Eddie gives a relieved little clap.\n\nThe plumber tells you that you have saved the hotel an enormous repair bill. Unfortunately, the water is shut off until the pipes can be repaired. There will be no flushing for a while.\n\nYou glance toward the stalls. You feel a small, unreasonable hope.\n\nThere is a scraping sound from the other end of the room.",
+      "choices":[{"id":"return_wheel_continue","kind":"continue","text":"CONTINUE","to":"hotel_stall_lot_claimed"}]
+    },
+    "hotel_key_master_cabinet": {
+      "mode":"focus","scene":"grand_bellevue/restroom","focus":"grand_bellevue/restroom/master_isolator",
+      "effects":{"set":{"ch4_restroom_leak":"contained","ch4_restroom_water_off":true,"ch4_plumber_helped":true,"ch4_master_key_recognized":true}},
+      "text":"The Facilities Key slides into the emergency cabinet as if it has been waiting there for you. One quarter turn, and the catch opens.\n\nInside is a single large red lever. You pull it. The pipes shudder, the water subsides, and the room becomes suddenly quiet.\n\nThe plumber peers at the key's paper tag. The return date says today, four fifty-two, and the signature belongs to the examiner.\n\nHe looks at you. Then at the signature. Then back at you. In the end he chooses to be grateful rather than curious.\n\nYou keep the key. The line is shut off, but the last stall is still standing. For now.",
+      "choices":[{"id":"master_key_try_stall","kind":"continue","text":"CONTINUE","to":"hotel_stall_lot_claimed"}]
+    },
+    "wip_ballroom_flood":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Flood reaches the wedding corridor; the bride, cake, and guests react differently depending on water flags. This is not a gameplay ending.","choices":[]},
+    "wip_ballroom_water_off":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — The entire hotel loses water during the wedding. This is not a gameplay ending.","choices":[]},
+    "wip_groom_ring":{"mode":"narrative","scene":"grand_bellevue/salvage_storage","text":"DRAFT REVIEW STOP — Recover the groom's ring from the sold chair and determine what the bride knows. This is not a gameplay ending.","choices":[]},
+    "wip_groom_return":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — Persuade the groom to face the bride without his ring. This is not a gameplay ending.","choices":[]},
+    "wip_stall_buyer":{"mode":"narrative","scene":"grand_bellevue/auction_floor","text":"DRAFT REVIEW STOP — Confront the buyer of Lot 53, the last complete restroom stalls. This is not a gameplay ending.","choices":[]},
+    "wip_auctioneer_dispute":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Challenge the safety-equipment auction using the Lot 14 receipt or the buyer's testimony. This is not a gameplay ending.","choices":[]}
   }
 }
