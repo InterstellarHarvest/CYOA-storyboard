@@ -1,0 +1,194 @@
+{
+  "title": "Something Old, Something Sold",
+  "start": "hotel_entry_dispatch",
+  "scene": "grand_bellevue/arrival",
+  "development": {
+    "status": "working-draft",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 restroom incident approved; its successor branches await writing.",
+    "notForGameplay": true,
+    "chapter3ExitFlagRequired": "ch3_exit_route",
+    "chapter3ExitIds": [
+      "locomotion_fail",
+      "presenter_help_end",
+      "paper_problem_end",
+      "attendant_honest_end",
+      "door_dash_fail",
+      "door_reverse_end",
+      "backstage_exit"
+    ],
+    "incompleteRoutePolicy": "DRAFT REVIEW STOPS are editorial placeholders, not story endings, not fatal endings, and not approved gameplay. Do not generate artwork or import into the game until they are replaced with written consequences."
+  },
+  "nodes": {
+    "hotel_entry_dispatch": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/arrival",
+      "objective": "FIND A WORKING BATHROOM.",
+      "text": "You leave the People's Pavilion behind. The next restroom symbol is closer than you expect.",
+      "choices": [
+        {"id":"from_locomotion_fail","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","locomotion_fail"]},"to":"entry_locomotion_fail"},
+        {"id":"from_presenter_help_end","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","presenter_help_end"]},"to":"entry_presenter_help_end"},
+        {"id":"from_paper_problem_end","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","paper_problem_end"]},"to":"entry_paper_problem_end"},
+        {"id":"from_attendant_honest_end","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","attendant_honest_end"]},"to":"entry_attendant_honest_end"},
+        {"id":"from_door_dash_fail","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","door_dash_fail"]},"to":"entry_door_dash_fail"},
+        {"id":"from_door_reverse_end","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","door_reverse_end"]},"to":"entry_door_reverse_end"},
+        {"id":"from_backstage_exit","kind":"continue","text":"CONTINUE","if":{"flagIs":["ch3_exit_route","backstage_exit"]},"to":"entry_backstage_exit"}
+      ]
+    },
+    "entry_locomotion_fail": {
+      "mode":"narrative","scene":"grand_bellevue/loading_lane",
+      "text":"The last foam cushion falls off your shoulder.\n\nYou stand in the loading lane behind the People's Pavilion. The padded collection cart that deposited you outside is already disappearing through a mechanical doorway.\n\nAcross the lane, several workmen are unloading an enormous ornamental staircase from the back of a freight truck.\n\nThe staircase appears to be coming out of the building rather than going in.\n\nGRAND BELLEVUE HOTEL, reads the sign above the loading bay.\n\nBeyond the workers, through an open service entrance, you spot a small rectangular sign. RESTROOMS.\n\nYou look at the staircase. You look at the sign. You decide the workers probably know what they're doing.",
+      "choices":[{"id":"continue_from_locomotion","kind":"continue","text":"CONTINUE","to":"hotel_service_arrival"}]
+    },
+    "entry_presenter_help_end": {
+      "mode":"narrative","scene":"grand_bellevue/service_alley",
+      "text":"You emerge from the Pavilion's maintenance passage into a narrow service alley.\n\nFresh air. Daylight. No announcer telling you how well you're performing.\n\nA magnificent improvement.\n\nTwo men struggle past carrying an enormous upholstered sofa between them. Behind them, a third man pushes a trolley loaded with wedding decorations.\n\nThey disappear into the loading entrance of the Grand Bellevue Hotel.\n\nA sign beside the entrance points toward the hotel's service facilities. Below a small restroom symbol, somebody has written STAFF AND VISITORS.\n\nYou have never been so grateful to be either.\n\nYou follow the workers inside.",
+      "choices":[{"id":"continue_from_presenter","kind":"continue","text":"CONTINUE","to":"hotel_service_arrival"}]
+    },
+    "entry_paper_problem_end": {
+      "mode":"narrative","scene":"grand_bellevue/forecourt",
+      "text":"A strip of receipt paper remains tangled around your shoe.\n\nYou pull it free as you cross the courtyard outside the People's Pavilion.\n\nNearby, a group of wedding guests are entering an extravagant hotel. One woman looks at the ribbon of paper in your hand, smiles, and points approvingly toward the decorations above the entrance.\n\nYou look up. GRAND BELLEVUE HOTEL.\n\nFlowers surround the enormous glass doors. Somewhere inside, an orchestra is playing. Beside the entrance is a sign bearing the familiar restroom symbol.\n\nYou drop the paper.\n\nFor the moment, nobody seems interested in stopping you. You enter the hotel.",
+      "choices":[{"id":"continue_from_paper","kind":"continue","text":"CONTINUE","to":"hotel_lobby_view"}]
+    },
+    "entry_attendant_honest_end": {
+      "mode":"narrative","scene":"grand_bellevue/service_alley",
+      "text":"The Pavilion's service door closes behind you.\n\nThe attendant's parting words stay with you. You hope you find somewhere to go, too.\n\nAcross the service yard, a delivery truck reverses toward the Grand Bellevue Hotel. Its driver is arguing with a man carrying an enormous flower arrangement.\n\nThe hotel's delivery entrance stands open, held in place by a wooden crate. WEDDING CAKE - THIS SIDE UP.\n\nThe crate is lying on its side.\n\nBeyond the entrance, you notice a familiar symbol mounted above a narrow corridor. A restroom.\n\nPerhaps the attendant's good wishes have finally accomplished something. You slip inside.",
+      "choices":[{"id":"continue_from_attendant","kind":"continue","text":"CONTINUE","to":"hotel_service_arrival"}]
+    },
+    "entry_door_dash_fail": {
+      "mode":"narrative","scene":"grand_bellevue/forecourt",
+      "text":"You straighten your coat outside the People's Pavilion.\n\nYour unsuccessful attempt to reach its restroom has apparently provided considerable entertainment for everyone involved.\n\nAcross the courtyard, a formally dressed couple hurry toward the entrance of an enormous hotel. The man is carrying a wedding gift. The woman is carrying an expression suggesting the man has done something wrong.\n\nThey disappear through the glass doors.\n\nYou notice the building's restroom sign. You look back at the Pavilion. You consider the distance between the two buildings.\n\nThe hotel seems considerably more promising.\n\nYou cross the courtyard and enter.",
+      "choices":[{"id":"continue_from_dash","kind":"continue","text":"CONTINUE","to":"hotel_lobby_view"}]
+    },
+    "entry_door_reverse_end": {
+      "mode":"narrative","scene":"grand_bellevue/wedding_entry",
+      "text":"The ridiculous ribbon remains pinned to your coat. FASTEST SATISFIED VISITOR.\n\nYou have never felt less satisfied.\n\nAs you approach the neighboring hotel, a woman carrying several flower arrangements stops directly in front of you. She reads the ribbon. Her eyes brighten.\n\nShe mistakes you for the fast helper she needs and takes your arm. The groom has disappeared, the musicians are arguing, and somebody has taken the chairs.\n\nYou attempt to explain that you are not employed by the hotel. She is already guiding you through a side entrance.\n\nA moment later, you find yourself standing in the middle of an elaborate wedding reception. You glance back toward the lobby. The restroom sign is still visible.\n\nUnfortunately, the woman has noticed you looking away.",
+      "choices":[{"id":"continue_from_reverse","kind":"continue","text":"CONTINUE","to":"hotel_wedding_arrival"}]
+    },
+    "entry_backstage_exit": {
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "text":"You reach the building across the courtyard. GRAND BELLEVUE HOTEL.\n\nIts enormous glass doors open onto a magnificent lobby. Music drifts from an adjoining ballroom. Guests in formal clothing wander between towering flower arrangements and polished furniture.\n\nYou barely notice them.\n\nAt the far end of the lobby are two doors bearing unmistakable restroom symbols. Actual restroom symbols. On actual restroom doors.\n\nYou begin walking.\n\nThen somebody shouts. SOLD! SIX HUNDRED AND FORTY!",
+      "choices":[{"id":"continue_from_backstage","kind":"continue","text":"CONTINUE","to":"hotel_auctioneer_arrival"}]
+    },
+    "hotel_lobby_view": {
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "text":"The hotel's lobby is magnificent. Crystal chandeliers, immense flower arrangements, an orchestra playing somewhere beyond the ballroom doors.\n\nAt the far end of the lobby is a pair of restroom doors. You begin walking toward them.\n\nThen someone shouts. SOLD! SIX HUNDRED AND FORTY!",
+      "choices":[{"id":"approach_auctioneer","kind":"continue","text":"CONTINUE","to":"hotel_auctioneer_arrival"}]
+    },
+    "hotel_auctioneer_arrival": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_auctioneer","pose":"showman",
+      "text":[
+        {"desc":"An elderly gentleman in a crimson dinner jacket stands behind a wooden auction podium. He gestures grandly toward two workmen."},
+        "SOLD! SIX HUNDRED AND FORTY!",
+        "Gentlemen! Kindly assist our fortunate buyer!",
+        {"desc":"The workmen approach the restroom entrance. One produces a screwdriver. The other begins removing the hinges."},
+        {"say":"Papa!","who":"hotel_bride"},
+        "Darling! You look radiant!",
+        {"say":"You're selling the bathrooms!","who":"hotel_bride"},
+        "The doors, sweetheart. Only the doors.",
+        {"say":"You promised the auction wouldn't start until after the wedding!","who":"hotel_bride"},
+        "And it hasn't! Not officially. These are merely preliminary sales.",
+        {"desc":"A workman lifts the first restroom door off its hinges."},
+        {"say":"Papa, you're dismantling the hotel!","who":"hotel_bride"},
+        "Don't be dramatic. The hotel is perfectly sound.",
+        {"desc":"An enormous metallic crash echoes from upstairs. A moment later, a grand piano rolls past the lobby entrance on a freight trolley."},
+        "Mostly sound.",
+        {"desc":"The bride closes her eyes. You look toward the restroom. The workmen are preparing to remove the second door."}
+      ],
+      "choices":[
+        {"id":"public_a1_restroom","kind":"action","text":"WALK STRAIGHT INTO THE RESTROOM WHILE THE WORKMEN REMOVE THE DOORS.","to":"hotel_restroom_entry"},
+        {"id":"public_a2_auctioneer","kind":"spoken","text":"EXCUSE ME. ARE YOU ACTUALLY SELLING THIS HOTEL?","to":"wip_auctioneer_question"},
+        {"id":"public_a3_help_bride","kind":"action","text":"HELP THE BRIDE STOP THE WORKMEN.","to":"wip_help_bride"}
+      ]
+    },
+    "hotel_service_arrival": {
+      "mode":"narrative","scene":"grand_bellevue/loading_dock",
+      "text":"The hotel's loading area is enormous. Freight elevators line one wall. Wooden crates occupy another. A collection of expensive furniture stands between them, waiting to be removed.\n\nA mechanical hoist slowly lowers an ornate chandelier into a padded shipping container.\n\nTwo workmen argue over a piano that appears to be considerably wider than the doorway through which they intend to move it.\n\nA third man, wearing rolled-up sleeves and a battered cap, watches the proceedings with mounting irritation. He notices you.",
+      "choices":[{"id":"meet_salvage_foreman","kind":"continue","text":"CONTINUE","to":"hotel_service_foreman"}]
+    },
+    "hotel_service_foreman": {
+      "mode":"dialogue","scene":"grand_bellevue/loading_dock","speaker":"hotel_salvage_foreman","pose":"annoyed",
+      "text":[
+        "You! Stay clear of that lift!",
+        {"desc":"He points toward the piano."},
+        "If that thing tips over, I'm not putting it back together.",
+        {"desc":"A tremendous crash comes from somewhere upstairs. The foreman closes his eyes."},
+        "That's another one.",
+        "You here to collect something?",
+        {"desc":"Before you can answer, an enormous wedding cake appears on a trolley from the kitchen. A young worker pushes it cautiously toward the freight elevator."},
+        "Oh, absolutely not.",
+        {"desc":"The kitchen worker keeps pushing. The foreman turns back toward you."},
+        "Don't suppose you've got a free hand?"
+      ],
+      "choices":[
+        {"id":"service_s1_restroom","kind":"action","text":"FOLLOW THE RESTROOM SIGN THROUGH THE SERVICE CORRIDOR.","to":"wip_staff_restroom"},
+        {"id":"service_s2_cake","kind":"action","text":"HELP THE FOREMAN STOP THE WEDDING CAKE FROM ENTERING THE FREIGHT ELEVATOR.","to":"wip_save_wedding_cake"},
+        {"id":"service_s3_lift","kind":"action","text":"TAKE THE FREIGHT ELEVATOR UP TO THE BALLROOM.","to":"wip_freight_lift"}
+      ]
+    },
+    "hotel_wedding_arrival": {
+      "mode":"dialogue","scene":"grand_bellevue/ballroom","speaker":"hotel_wedding_organizer","pose":"urgent",
+      "text":[
+        {"desc":"The woman who dragged you inside finally releases your arm. You find yourself standing in a lavishly decorated reception hall. Musicians are arguing beside a piano; two waiters carry away a silver punch bowl. Somebody nearby is crying."},
+        "Now, listen carefully.",
+        {"desc":"She straightens your ribbon."},
+        "The groom was here five minutes ago. Then somebody asked him to help move a chair, and nobody's seen him since.",
+        "The bride's father is making a terrible nuisance of himself downstairs. And we're missing three musicians.",
+        {"desc":"She gives you an encouraging pat on the arm. From the adjoining room comes the sound of breaking glass. The woman winces."},
+        "Four musicians."
+      ],
+      "choices":[
+        {"id":"wedding_w1_groom","kind":"action","text":"HELP FIND THE MISSING GROOM.","to":"wip_find_groom"},
+        {"id":"wedding_w2_service","kind":"action","text":"SLIP THROUGH THE SERVICE DOOR WHILE THE ORGANIZER IS DISTRACTED.","to":"wip_wedding_service"}
+      ]
+    },
+    "hotel_restroom_entry": {
+      "mode":"narrative","scene":"grand_bellevue/restroom",
+      "text":"You walk directly between the workmen carrying away the restroom doors. Neither attempts to stop you. One even steps aside politely.\n\nYou enter. The bathroom is immaculate. Polished tiles. Clean sinks. Fresh towels.\n\nThree private stalls stand against the far wall. And there, visible through the open door of the nearest stall, is an actual porcelain toilet.\n\nYou stare at it. It has a seat. It has a tank. It has plumbing. There isn't even a sign explaining that you've already used it.\n\nYou take a step forward. A workman kneeling beneath one of the sinks looks up.",
+      "choices":[{"id":"meet_plumber","kind":"continue","text":"CONTINUE","to":"hotel_restroom_plumber"}]
+    },
+    "hotel_restroom_plumber": {
+      "mode":"dialogue","scene":"grand_bellevue/restroom","speaker":"hotel_plumber","pose":"worried",
+      "text":[
+        "Oh! Sorry, sir.",
+        {"desc":"He sets down his wrench."},
+        "Didn't know anybody was still using the facilities. Go right ahead. I'll give you a minute.",
+        {"desc":"You are almost overcome by gratitude. The plumber turns toward his assistant, who is disconnecting a copper pipe."},
+        "Hold off on that one, Eddie. Gentleman needs the lavatory.",
+        {"say":"Right you are!","who":"hotel_plumber_assistant"},
+        {"desc":"A metallic snapping sound comes from beneath the sink. The plumber's expression changes."},
+        "Eddie?",
+        {"desc":"A violent jet of water erupts from the wall, strikes the opposite sink, ricochets across the floor, and sends fresh towels flying. You jump backward. The plumber lunges toward a valve and finds only a bare metal shaft."},
+        "Oh, for the love of—",
+        {"say":"What's wrong?","who":"hotel_plumber_assistant"},
+        "Where's the bloody shutoff wheel?",
+        {"say":"Sold it.","who":"hotel_plumber_assistant"},
+        {"desc":"The plumber closes his eyes."},
+        "Of course you did.",
+        {"say":"Fella gave twelve for it. Said it looked nautical.","who":"hotel_plumber_assistant"},
+        "It's a valve handle, Eddie!",
+        {"say":"Well, he didn't ask.","who":"hotel_plumber_assistant"},
+        {"desc":"A second pipe begins rattling. The plumber looks at it."},
+        "Terribly sorry, sir. Little trouble with the plumbing. Possibly a medium-sized trouble."
+      ],
+      "choices":[
+        {"id":"a1a_close_valve","kind":"action","text":"HELP THE PLUMBER CLOSE THE VALVE BEFORE ANOTHER PIPE BURSTS.","to":"wip_close_valve"},
+        {"id":"a1b_maintenance","kind":"action","text":"FOLLOW THE PLUMBING THROUGH THE MAINTENANCE ACCESS.","to":"wip_plumbing_access"},
+        {"id":"a1c_wheel_buyer","kind":"spoken","text":"WHO BOUGHT THE SHUTOFF WHEEL?","to":"wip_wheel_buyer"}
+      ],
+      "use":{
+        "wc_key":{"kind":"action","say":"TRY THE FACILITIES KEY IN THE EXPOSED VALVE SHAFT.","to":"wip_facilities_key"}
+      }
+    },
+    "wip_auctioneer_question":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A2 auctioneer conversation and auction incidents not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_help_bride":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A3 bride and family incidents not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_staff_restroom":{"mode":"narrative","scene":"grand_bellevue/service_corridor","text":"DRAFT REVIEW STOP — S1 service restroom route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_save_wedding_cake":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — S2 cake rescue route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_freight_lift":{"mode":"narrative","scene":"grand_bellevue/freight_lift","text":"DRAFT REVIEW STOP — S3 freight lift route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_find_groom":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — W1 missing groom route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_wedding_service":{"mode":"narrative","scene":"grand_bellevue/service_corridor","text":"DRAFT REVIEW STOP — W2 wedding service route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_close_valve":{"mode":"narrative","scene":"grand_bellevue/restroom","text":"DRAFT REVIEW STOP — A1-A valve action, checks, and pass/fail outcomes not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_plumbing_access":{"mode":"narrative","scene":"grand_bellevue/maintenance","text":"DRAFT REVIEW STOP — A1-B maintenance route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_wheel_buyer":{"mode":"narrative","scene":"grand_bellevue/auction_floor","text":"DRAFT REVIEW STOP — A1-C wheel buyer route not yet written. This is not a gameplay ending.","choices":[]},
+    "wip_facilities_key":{"mode":"narrative","scene":"grand_bellevue/restroom","text":"DRAFT REVIEW STOP — Facilities Key item-use effect not yet written. No outcome or consumption approved. This is not a gameplay ending.","choices":[]}
+  }
+}
