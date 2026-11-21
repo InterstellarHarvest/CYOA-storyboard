@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 8,
+      "layoutRevision": 9,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -46,6 +46,8 @@
               "hotel_valve_braced",
               "hotel_valve_flood",
               "hotel_stall_lot_claimed",
+              "hotel_stall_crane_success",
+              "fatal_stall_final_occupancy",
               "wip_stall_crane_ride",
               "wip_stall_wedding_walk",
               "wip_stall_buyer",
@@ -95,10 +97,19 @@
               "wip_bride_find_wedding_organizer",
               "wip_bride_relay_inscription_to_groom",
               "wip_ring_find_groom",
-              "wip_ring_find_restroom",
               "wip_chair_bride_groom",
               "wip_chair_bride_ring",
               "wip_chair_follow_collection"
+            ]
+          },
+          {
+            "id": "lot61",
+            "title": "Lot 61 · Emergency Convenience Pod and fatal packing",
+            "nodes": [
+              "hotel_lot61_pod_auction",
+              "hotel_lot61_pod_escaped",
+              "fatal_lot61_folded",
+              "hotel_lot61_pod_declined"
             ]
           },
           {
