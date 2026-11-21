@@ -1,0 +1,314 @@
+{
+  "result": "PASS",
+  "scope": "Verified owner selections and future registration inputs only. No canonical registration, registration rehearsal, merge, deployment or gameplay integration.",
+  "sourceCommit": "e65f42c19e54f566819289d2b133be246ede13f5",
+  "sourceManifestSha256": "d7239e3dddc0cb8ff753e746a74f739e3774b38b5f57a03eadcd75e0ef45b77d",
+  "selections": [
+    {
+      "candidateId": "CH3-D01-service-exit",
+      "key": "scenes:pavilion_reboot/service_exit",
+      "version": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D01-service-exit-v01.png",
+      "sha256": "4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392",
+      "gitBlob": "40c0fc40525eadcf92ea367992e2add898e104ac",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D01-service-exit-v01.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D02-service-exit-bg",
+      "key": "scenes:pavilion_reboot/service_exit#portraitBackground",
+      "version": "v02",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D02-service-exit-bg-v02.png",
+      "sha256": "241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9",
+      "gitBlob": "3b146e67f6288b8f7e268f476b96d81fdf588183",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D02-service-exit-bg-v02.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D03-attendant-quiet",
+      "key": "portraits:pavilion_attendant:quiet",
+      "version": "v02",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D03-attendant-quiet-v02.png",
+      "sha256": "7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90",
+      "gitBlob": "5729cd7b1013c00bc66360b02d90e3f4e76628b2",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "alpha": "transparent",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D03-attendant-quiet-v02.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D04-presenter-relieved",
+      "key": "portraits:pavilion_presenter:relieved",
+      "version": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D04-presenter-relieved-v01.png",
+      "sha256": "29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b",
+      "gitBlob": "e0c3924e8b9a37afabe00c41a8d91e0c45b99700",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "alpha": "transparent",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D04-presenter-relieved-v01.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D05-backstage",
+      "key": "scenes:pavilion_reboot/backstage",
+      "version": "v03",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png",
+      "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+      "gitBlob": "b6b835b7fe7c6d49f37c618a21b76e2cf417d93e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D06-exterior-exit",
+      "key": "scenes:pavilion_reboot/exterior_exit",
+      "version": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D06-exterior-exit-v01.png",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a",
+      "gitBlob": "5d8467e13a22124845ea4a5a935c62d0bdd7bfa8",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D06-exterior-exit-v01.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D07-exit-vestibule",
+      "key": "scenes:pavilion_reboot/exit_vestibule",
+      "version": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D07-exit-vestibule-v01.png",
+      "sha256": "cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8",
+      "gitBlob": "cd63ab85341310266e173cf29d82dbd9eefce942",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D07-exit-vestibule-v01.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D08-courtesy-stage",
+      "key": "scenes:pavilion_reboot/courtesy_stage",
+      "version": "v01",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D08-courtesy-stage-v01.png",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98",
+      "gitBlob": "1ee1e1676e3e0c86efc6e358d59abb1e836405b4",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D08-courtesy-stage-v01.png"
+      }
+    },
+    {
+      "candidateId": "CH3-D09-courtesy-stage-bg",
+      "key": "scenes:pavilion_reboot/courtesy_stage#portraitBackground",
+      "version": "v02",
+      "file": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D09-courtesy-stage-bg-v02.png",
+      "sha256": "b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623",
+      "gitBlob": "9a4a112c85064f5d953f259b026d7c1c2bc7d1d2",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "alpha": "opaque",
+      "partialAlpha": 0,
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D09-courtesy-stage-bg-v02.png"
+      }
+    }
+  ],
+  "counts": {
+    "selected": 9,
+    "opaqueRGB": 7,
+    "transparentRGBA": 2,
+    "versions": {
+      "v01": 5,
+      "v02": 3,
+      "v03": 1
+    },
+    "historicalPackageFiles": 189,
+    "newPreviewsOnThisCheckout": 9,
+    "existingExactPreviewsOnThisCheckout": 0
+  },
+  "acceptedNativeGridAuthorshipLimitation": true,
+  "historicalPackagesUnchanged": true,
+  "priorLedgerPrefixUnchanged": true,
+  "canonicalRegistrationPerformed": false,
+  "temporaryStaging": {
+    "directory": "/tmp/ch3-batch-d-approved-handoff-20261120",
+    "batch": "/tmp/ch3-batch-d-approved-handoff-20261120/batch.json",
+    "fileCount": 10
+  },
+  "negativeProbes": [
+    {
+      "case": "wrong-expected-hash",
+      "result": "REFUSED as required",
+      "exitCode": 1,
+      "message": "REFUSED: Expected values to be strictly equal:"
+    },
+    {
+      "case": "missing-ninth-entry",
+      "result": "REFUSED as required",
+      "exitCode": 1,
+      "message": "REFUSED: Expected values to be strictly equal:"
+    },
+    {
+      "case": "wrong-selected-version",
+      "result": "REFUSED as required",
+      "exitCode": 1,
+      "message": "REFUSED: Expected values to be strictly equal:"
+    },
+    {
+      "case": "wrong-source-commit",
+      "result": "REFUSED as required",
+      "exitCode": 1,
+      "message": "REFUSED: Expected values to be strictly deep-equal:"
+    }
+  ],
+  "exactTemporaryStagingVerified": true,
+  "registrationToolInvoked": false,
+  "registrationDryRunPerformed": false,
+  "registrationRehearsalPerformed": false,
+  "publication": {
+    "prNumber": 16,
+    "url": "https://github.com/InterstellarHarvest/CYOA-storyboard/pull/16",
+    "head": "art/ch3-pavilion-batch04-publication-20261120",
+    "headSha": "0805f4dd6f4c5d6554ef854be1e569e98eee0ee7",
+    "draft": true,
+    "merged": false,
+    "ci": {
+      "id": 44825495367,
+      "name": "Review storyboard viewer changes",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/InterstellarHarvest/CYOA-storyboard/actions/runs/44825495367"
+    },
+    "publicationAuthorized": false
+  },
+  "canonicalMainAtVerification": "5134edb160afaa019e11f872a3b87d3b01b257b0",
+  "expectedPreviewCountAfterSeparateRegistrationOnVerifiedMain": {
+    "before": 136,
+    "after": 145,
+    "new": 9,
+    "replacements": 0
+  },
+  "qa": [
+    {
+      "command": "node --check tools/sync/verify-ch3-batch-d-selection.mjs",
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "command": "node tools/sync/check-canon.mjs",
+      "exitCode": 0,
+      "output": "Canonical storyboard check\n  4 chapters, 226 nodes, 347 routes; 215 art records (21 approved, 9 generated, 111 integrated, 69 not-started, 5 reused); 136 previewed\n  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)\nRESULT: OK\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-smoke.mjs",
+      "exitCode": 0,
+      "output": "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\"],\"artRecords\":200,\"checked\":[\"manifest\",\"all scene references\",\"portrait references\",\"all item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all four chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five preview handoffs\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-ch3-artwork-briefs.mjs",
+      "exitCode": 0,
+      "output": "PASS CH3 artwork briefs: 14 scenes, 8 paired backgrounds, 7 foregrounds, 9 contexts; 65 historical calls archived; 0 death, new item or Focus A calls.\n"
+    },
+    {
+      "command": "node tools/storyboard/qa-ch3-reboot-candidate.mjs",
+      "exitCode": 0,
+      "output": "CH3 REBOOT CANDIDATE QA: PASS \u2014 34 reachable nodes, 28 paths, 7 survivor terminals, 2 approved checks, 3 conditional inherited-item actions; old chapter archive and public manifest untouched.\n"
+    }
+  ],
+  "preservationChecks": {
+    "protectedStoryAssetAndHistoryFilesVerified": 153,
+    "allEarlierApprovalAndOtherDocsExceptAppendOnlyLedgerUnchanged": 36,
+    "canonicalRegistryUnchanged": true,
+    "previewRegistryUnchanged": true,
+    "curatedSelectedAssetsUnchanged": true,
+    "narrativeArchivesAndGameIntegrationReportUnchanged": true,
+    "publicationWorkflowAndHelperUnchangedInThisHandoff": true
+  },
+  "canonicalFileHashes": {
+    "story/artwork.draft.json": "6e16ae6516f9173f03805b846bd581ebfb4d99db250cfb781048201f9cee9eba",
+    "story/artwork-preview.json": "62e0b5ddbf0be3cb14b5d84a796d783c98415682b094cc2b8b82df593e20fcad",
+    "story/chapters/chapter-03.reboot-candidate.json": "36ae178d05a9db7dd318c441e4d8681eaa674c28ced81df97dcaba6c1c5c0253",
+    "story/game-integration.json": "ba52de0afc72d4f1bf3711f719eb26437f0778dbad1baceb6524f17b32a7aa89"
+  }
+}

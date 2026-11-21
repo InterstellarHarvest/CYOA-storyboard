@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "galleryCommit": "e65f42c19e54f566819289d2b133be246ede13f5",
+  "reviewVersion": "v03-clapper-correction",
+  "revisedCandidates": 1,
+  "retainedCandidates": 8,
+  "checksumVerifiedFileCounts": {
+    "v01": 111,
+    "v02-close-camera-corrections": 35,
+    "v03-clapper-correction": 43
+  },
+  "actualMainBuildStepPassed": true,
+  "trustedStagingHelperPassed": true,
+  "allV01AndV02FilesByteIdentical": true,
+  "canonicalRegistrationChangedInV03": false,
+  "canonicalRegistryAndPreviewRegistryUnchangedInV03": true,
+  "approvedArtworkUnchanged": true,
+  "allNineRemainGeneratedUnselected": true,
+  "D05ChangedPixels": 1287,
+  "D05OutsideAllowedMaskChanged": 0,
+  "galleryCodeExecuted": false,
+  "previousWorkflowBytesAndMainOnlyGuardUnchanged": true
+}
