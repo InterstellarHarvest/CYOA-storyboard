@@ -1,5 +1,5 @@
 // Isolated story QA for the owner-approved Chapter 3 reboot candidate.
-// The candidate intentionally is NOT in the active storyboard manifest yet.
+// Since Chapter 3 gameplay integration the manifest activates it (draft); see the manifest checks.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -15,8 +15,15 @@ const items=read('story/items.draft.json');
 const reviewLayout=read('story/chapter-03.reboot-review-layout.json');
 const nodes=candidate.nodes;
 
-assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').status,'archived');
-assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').file,'chapters/chapter-03.draft.json');
+// Chapter 3 gameplay integration (2026-11-20): the manifest deliberately activates the approved
+// reboot file (locked blob 857ffdf) as a draft chapter; the legacy graph stays preserved.
+assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').status,'draft');
+assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').file,'chapters/chapter-03.reboot-candidate.json');
+const gitBlob=(buf)=>createHash('sha1').update('blob '+buf.length+'\0').update(buf).digest('hex');
+assert.equal(gitBlob(fs.readFileSync(path.join(root,'story/chapters/chapter-03.reboot-candidate.json'))),
+  '857ffdf1bc9432cf4bbbfd7819f5f430a06d9036','active Chapter 3 is exactly the locked approved narrative');
+assert.ok(fs.readFileSync(path.join(root,'story/chapters/chapter-03.draft.json'))
+  .equals(fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'))),'legacy draft retained unchanged');
 const archive=fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'));
 assert.equal(createHash('sha256').update(archive).digest('hex'),
   '02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1');
@@ -30,9 +37,10 @@ const inputGroups={
 };
 for(const [id,group] of Object.entries(inputGroups)){
   const end=ch2.nodes[id];
-  assert.equal(end.end,true,id);
+  assert.equal(end.end,undefined,id+' hands off instead of ending');
   assert.equal(end.effects?.set?.chapter3_entry_group,group,id);
-  assert.equal(end.storyboardNextChapter,'chapter-03',id);
+  assert.equal(end.storyboardNextChapter,undefined,id+' preview hand-off replaced by the runtime transition');
+  assert.deepEqual(end.choices,[{id:'continue_to_chapter_03_'+id,kind:'continue',text:'CONTINUE',chapter:'chapter-03'}],id+' continues into Chapter 3');
 }
 assert.equal(Object.values(ch2.nodes).filter(n=>n.end&&n.deathPopup).length,5);
 
@@ -151,4 +159,4 @@ assert.ok(viewer.includes('SURVIVING ENDING · '),
 console.log('CH3 REBOOT CANDIDATE QA: PASS — '+seen.size+
   ' reachable nodes, '+ends.length+' paths, '+Object.keys(counts).length+
   ' survivor terminals, '+checks.size+' approved checks, '+itemActions.size+
-  ' conditional inherited-item actions; old chapter archive and public manifest untouched.');
+  ' conditional inherited-item actions; old chapter archive preserved; manifest activates the approved reboot.');
