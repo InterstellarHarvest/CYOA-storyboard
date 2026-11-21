@@ -8,8 +8,8 @@
 - Place: the Grand Bellevue Hotel beside the People's Pavilion.
 - Incident: a wedding is disrupted as the bride's auctioneer father sells hotel furnishings to pay for it; salvage crews collect purchased fixtures during the event.
 - Tone: human personalities, physical comedy, absurd escalation, and occasional dangerous decisions, with the protagonist still needing a bathroom.
-- Approved as working material by Nate: all seven Chapter 3 transitions, three differentiated entrances, the public/service/wedding first choices, and the initial Public A1 restroom/plumber sequence. Approval is revisable as later branches are written.
-- **2026-11-21 expansion, awaiting Nate's review:** the four responses to the Public A1 plumber incident and their early consequences. These are available on the public WIP storyboard but are not yet narrative-approved.
+- Approved as working material by Nate: all seven Chapter 3 transitions, three differentiated entrances, the public/service/wedding opening choices, the Public A1 plumber introduction, the A1-A valve outcomes, the last-stall crane incident, the porter protest, three short Lot 53 dialogue branches, Lot 31 chair auction, four conditional item interactions, Focus A, and both ring-retrieval outcomes. Approval remains revisable as later branches are written.
+- **2026-11-21 checkpoint:** only those reviewed sequences are marked approved. The next beat after the ring enters the player's pocket and the other routes' editorial stops are **not yet approved**.
 
 ## Source of truth
 
@@ -43,30 +43,36 @@ Carry forward established Chapter 1–3 conventions:
 2. Dialogue: an active NPC portrait; spoken NPC pieces are unquoted; stage directions are plain descriptions. Secondary speakers use typed speaker pieces, as in the approved Chapter 3 reboot.
 3. Choice cards: `kind: spoken` contains raw words without quote characters (the renderer adds them); `kind: action` is rendered in action ink; `kind: continue` controls pacing. Avoid repeated question banks and point-and-click exploration.
 4. Focus A: reserve for meaningful object close-ups, not routine movement.
-5. Inventory: SHOW/USE/READ are gated by actual possession. Old items are never silently restored; `wc_key` is an optional USE opportunity in the plumber incident, pending outcome design.
-6. Checks: hidden d6 only when fully authored with pass/fail destinations. The risk marker is never added merely because a choice sounds dangerous. The proposed valve-wrench action uses d6 ≥4, with distinct nonfatal successes and failures.
+5. Inventory: SHOW/USE/READ are gated by actual possession. Old items are never silently restored. **Nate-approved future UI requirement:** on Lot 31, display all four conditional SHOW/USE cards even when the item is absent, locked with a small REQUIRES / NOT IN INVENTORY subtitle. The current game engine hides unavailable item actions, so this is *not* an implemented feature of the WIP JSON. The public review JSON records it as an engine-presentation requirement.
+6. Checks: hidden d6 only when fully authored with pass/fail destinations. The risk marker is never added merely because a choice sounds dangerous. Approved checks: bare valve d6 ≥4; Red Stapler upholstery tampering d6 ≥4 to go **unnoticed** (both outcomes open the seam); careful ring retrieval d6 ≥4, with +1 if vegetation inspection was allowed, +2 if examiner inspection paused the auction, and automatic success when the seam is already open.
 7. Fatal outcomes: require a real ending, complete lead-in, popup title and narrative, art requirement, and RETRY/CHECKPOINT/EXIT. Chapter 4 has **no approved deaths yet**.
 8. Retain prior flags, infections/antidotes, inventory, NOTES, and Chapter 3 exit-specific continuity.
 
-## Public A1 expansion awaiting editorial approval (2026-11-21)
+## Public A1 / auction approval status (2026-11-21)
 
-- **A1-A / valve wrench:** d6 ≥4. On success the player holds the bare shaft long enough for a temporary seal; on failure the flood worsens and washes toward the wedding. The choice has explicit `pass`, `fail`, and respective results; neither route is a fatal ending.
-- **A1-B / maintenance:** a real passage behind the sinks; choices to inspect a two-lever shutoff (Focus A), meet a nervous groom with an empty ring box, or take a service stair to the foreman. Shutting water to the restrooms and shutting it off to the whole hotel have different flags and consequences.
-- **A1-C / Lot 14:** Eddie names the wheel's buyer, Commodore Bixby. A receipt close-up exposes an auction exception favoring the bride. The Commodore can be persuaded to return the wheel at the cost of a future bridge-tour obligation, or traded a `rubber_band_ball` as a boat fender, consuming that item. Taking the dispute to the auctioneer remains unwritten.
-- **A1-D / Facilities Key:** conditional `wc_key` USE opens the emergency isolation cabinet, shuts down the restrooms' water, and preserves the key. The signed-return tag from earlier chapters gets a quiet callback. No dice roll: existing inventory earns a certain advantage.
-- **Shared punch line:** even successful repairs do not deliver a bathroom visit. Salvage workers remove the last toilet as Lot 53. Players can pursue that buyer or take a new service route; unfinished destinations remain marked DRAFT REVIEW STOP.
+- **Approved — A1-A valve wrench:** d6 ≥4. Success braces the bare shaft long enough for a temporary seal; failure makes the flood worse. Two context-specific next choices on each outcome.
+- **Approved — success → last stall:** player enters and reaches for their belt, but a crane raises the stall walls/door/latch before they unzip. The fully dressed player is exposed to wedding guests. They can protest, grab the rising stall (unwritten continuation), or walk calmly past guests (unwritten continuation).
+- **Approved — protest → Lot 53:** the porter claims only the stall was lifted; the auctioneer mistakes the complaint for an offer. Three short spoken branches: (A) self-cleaning product demonstrator comic misunderstanding and flag; (B) bride ally, pointing to the blue delivery ledger and required countersignature; (C) red carbon **Lot 53 Dispute Ticket** with temporary inspection-hold value. They converge at Lot 31.
+- **Approved — Lot 31:** auction of the bridal suite chair last seen carried by the missing groom. A silver wedding ring, bound by pale blue ribbon, glints in the upholstery. Three normal directions: examine, ask bride about groom (editorial stop), or follow the chair to collection (editorial stop).
+- **Approved — four item-dependent chair actions:** SHOW Acting Director of Vegetation credential (botanical inspection); SHOW Temporary Examiner Badge (inspection pause); USE Red Swangline Stapler (unseen d6 roll, failed stealth damages upholstery but still opens seam); SHOW Temporary Staff Pass (one authorized collection escort). All require possession; none is consumed here.
+- **Approved — Focus A ring retrieval:** detailed upholstery/tack/ribbon close-up, with three player choices: carefully extract, involve the bride (editorial stop), or follow to collection (editorial stop). Successful extraction (or already-open seam) grants `wedding_ring_lot31`. Failed extraction drops the ring inside the chair, requiring pursuit to collection; it is not a death or permanent loss. The ring's inscription is intentionally unwritten.
+- **Unapproved proposals retained in WIP — A1-B / maintenance:** a real passage behind sinks, two-lever shutoff, nervous groom and empty ring box, service stair, different water outcomes.
+- **Unapproved proposals retained in WIP — A1-C / Lot 14:** Eddie, Commodore Bixby, receipt, future bridge tour or rubber-band-ball trade.
+- **Unapproved proposal retained in WIP — A1-D / Facilities Key:** optional `wc_key` cabinet shortcut.
 
-Proposed state keys (subject to integration audit): `ch4_restroom_leak` (`braced`, `uncontained`, `flooding`, `contained`), `ch4_restroom_water_off`, `ch4_hotel_water_off`, `ch4_plumber_helped`, `ch4_groom_located`, `ch4_knows_wheel_lot_14`, `ch4_valve_wheel_recovered`, `ch4_bixby_expects_bridge`, `ch4_bixby_fender_trade`, `ch4_master_key_recognized`.
+State keys remain provisional until integration. New approved items for WIP review: `lot_53_dispute_ticket` and `wedding_ring_lot31` (no artwork). Item inscriptions, future SHOW/USE outcomes, and the bride/groom payoffs require separate review. Other A1 state keys from the original proposal remain unchanged.
 
 ## Route-development queue
 
-- Public A1 restroom → plumber: introductory incident approved. The four successor routes are **proposed, not approved**, and need Nate's dialogue/choice review, followed by outcome work for their remaining editorial stops (Lot 53 buyer, ballroom flooding/shutoff, groom and ring, auctioneer dispute).
+- **Next to review:** scene after ring acquisition, node `wip_ring_in_pocket_next`; do not assume its choices are approved.
+- Public A1-A success → crane stall → porter protest → auction → ring is approved through pass/fail; crane-ride, calm wedding walk, bride-groom question, bride-ring involvement, and chair-collection continuations still need review.
+- Other plumber successors A1-B, A1-C, and A1-D remain unapproved narrative proposals; review before calling them locked story.
 - Public A2: auctioneer question → unwritten.
 - Public A3: help bride → unwritten.
 - Service S1/S2/S3: restroom passage, cake rescue, freight lift → unwritten.
 - Wedding W1/W2: missing groom, service slip → unwritten.
 
-Any `wip_*` node in the JSON is an explicit **editorial stop**, not an ending or playable consequence. The current working draft has 44 nodes and 13 editorial stops, with one fully authored d6 check. Replace every editorial stop and audit all checks and routes before narrative lock or artwork generation. No new item definition is needed for this batch: both `wc_key` and `rubber_band_ball` already exist.
+Any `wip_*` node in the JSON is an explicit **editorial stop**, not an ending or playable consequence. The current working draft has **65 nodes, 20 editorial stops, and three authored hidden d6 checks**. Replace every editorial stop and audit all checks, item gating, inventory, and routes before narrative lock or artwork generation.
 
 ## Review cadence
 
