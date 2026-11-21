@@ -2114,6 +2114,50 @@
         "prompt": "EXACT 565×451 detailed pixel-art inspect view of SAME an official 1960s presentation certificate with a bold ruled border band, a large 100% figure and a round green APPROVED-style seal as 96x96 slot source. Readable major lines only where plausible: VISITOR EXPERIENCE: COMPLETE / PERSONAL RELIEF: ACHIEVED / SATISFACTION LEVEL: 100%. Ordinary flat archival backing, no frame/UI, no gold/brass/steampunk, no blown-up slot pixels. Distinguish it from every other Pavilion document through silhouette/form factor and accent seal.",
         "notes": "ARCHIVED / RETIRED / UNUSED — PRE-REBOOT CHAPTER 3. Historical prompt ONLY; do not generate, select, import or treat as production backlog. The 2026-11-18 approved story uses pavilion_reboot/* instead. See docs/112_CH3_ARTWORK_AUDIT_AND_GENERATION_HANDOFF_20261118.md.\nSource 565×451, separately drawn; not an enlarged inventory icon. Prompt drafted at sync, NOT owner-reviewed."
       }
+    },
+    "lot_53_dispute_ticket": {
+      "slot": {
+        "title": "LOT 53 DISPUTE TICKET — INVENTORY SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/grand_bellevue/lot_53_dispute_ticket_slot.png",
+        "prompt": "Review-only placeholder direction, not an approved art brief: a red carbon-copy auction dispute ticket, stamped HOLD FOR INSPECTION, modest 1960s typography, no decorative flourish; transparent 96×96 pixel slot art if later approved.",
+        "notes": "CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Do not produce until Nate approves the visual brief."
+      },
+      "inspect": {
+        "title": "LOT 53 DISPUTE TICKET — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/grand_bellevue/lot_53_dispute_ticket_inspect.png",
+        "prompt": "Review-only placeholder direction, not an approved art brief: red carbon ticket with LOT 53, LACK OF PRIVACY — CUSTOMER PRESENT and HOLD FOR INSPECTION stamp; show it on a plain hotel clerk's desk in 1960s utilitarian style, 565×451 inspect crop.",
+        "notes": "CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Text and composition require later owner review."
+      }
+    },
+    "wedding_ring_lot31": {
+      "slot": {
+        "title": "WEDDING RING — INVENTORY SLOT",
+        "kind": "item-slot",
+        "status": "not-started",
+        "dimensions": "96x96",
+        "assetPath": null,
+        "suggestedFilename": "art/items/grand_bellevue/wedding_ring_lot31_slot.png",
+        "prompt": "Review-only placeholder direction, not an approved art brief: small simple silver wedding band with one strand of pale blue ribbon caught around it; 1960s understated styling on transparent 96×96 slot canvas.",
+        "notes": "CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Do not reveal any inscription wording."
+      },
+      "inspect": {
+        "title": "WEDDING RING — INSPECTION",
+        "kind": "item-inspect",
+        "status": "not-started",
+        "dimensions": "565x451",
+        "assetPath": null,
+        "suggestedFilename": "art/items/grand_bellevue/wedding_ring_lot31_inspect.png",
+        "prompt": "Review-only placeholder direction, not an approved art brief: close-up of simple silver wedding band and loose pale blue ribbon, tiny indistinct engraving inside; 565×451 item-inspect view, restrained 1960s palette, no ornate jewelry or ring box.",
+        "notes": "CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Inscription not authored yet."
+      }
     }
   },
   "focus": {
