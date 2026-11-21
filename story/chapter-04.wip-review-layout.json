@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 4,
+      "layoutRevision": 5,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -46,8 +46,47 @@
               "hotel_valve_braced",
               "hotel_valve_flood",
               "hotel_stall_lot_claimed",
+              "wip_stall_crane_ride",
+              "wip_stall_wedding_walk",
               "wip_stall_buyer",
               "wip_ballroom_flood"
+            ]
+          },
+          {
+            "id": "stall_protest",
+            "title": "A1-A1 · Porter dispute and Lot 53 auction",
+            "nodes": [
+              "hotel_stall_porter_protest",
+              "hotel_auction_reopen_53",
+              "hotel_auction_testimonial",
+              "hotel_auction_bride_ally",
+              "hotel_auction_dispute_ticket"
+            ]
+          },
+          {
+            "id": "lot31",
+            "title": "Lot 31 · Groom's chair and item interactions",
+            "nodes": [
+              "hotel_auction_chair_lot31",
+              "hotel_chair_vegetation_inspection",
+              "hotel_chair_examiner_inspection",
+              "hotel_chair_stapler_stealth",
+              "hotel_chair_stapler_caught",
+              "hotel_chair_staff_escort",
+              "wip_chair_staff_escort_loading"
+            ]
+          },
+          {
+            "id": "ring",
+            "title": "Lot 31 · Focus A ring retrieval",
+            "nodes": [
+              "hotel_chair_ring_focus",
+              "hotel_ring_retrieved",
+              "hotel_ring_slips",
+              "wip_ring_in_pocket_next",
+              "wip_chair_bride_groom",
+              "wip_chair_bride_ring",
+              "wip_chair_follow_collection"
             ]
           },
           {
