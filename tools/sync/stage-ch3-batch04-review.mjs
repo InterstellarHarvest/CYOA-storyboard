@@ -1,4 +1,6 @@
-// Trusted main-only Pages helper: verify immutable v01/v02 history plus the localized v03 correction as data.
+// Trusted main-only Pages helper: verify immutable v01/v02 history plus the localized v03 correction as data,
+// then verify Nate's nine approved Batch D selections (docs/122) against the canonical registry and publish a
+// selection receipt OUTSIDE the immutable snapshots. Review-time generated/unselected labels stay untouched.
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -39,6 +41,13 @@ for(const m of [history.manifest,previous.manifest,manifest]){
 const expected=new Set(['CH3-D01-service-exit','CH3-D02-service-exit-bg','CH3-D03-attendant-quiet','CH3-D04-presenter-relieved','CH3-D05-backstage','CH3-D06-exterior-exit','CH3-D07-exit-vestibule','CH3-D08-courtesy-stage','CH3-D09-courtesy-stage-bg']);
 const revised=new Set(['CH3-D05-backstage']);
 const art=JSON.parse(fs.readFileSync('story/artwork.draft.json','utf8')),previews=JSON.parse(fs.readFileSync('story/artwork-preview.json','utf8')).images;
+const decisionFile='docs/122_OUT_OF_ORDER_CH3_BATCH_D_SELECTED_ARTWORK_20261120.json',decisionBytes=fs.readFileSync(decisionFile),decision=JSON.parse(decisionBytes);
+const batch=JSON.parse(fs.readFileSync('docs/122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_BATCH_20261120.json','utf8'));
+assert.equal(decision.status,'approved');assert.equal(decision.approved,true);assert.equal(decision.selected,true);
+assert.equal(decision.sourceCommit,process.env.CH3_BATCH_D_REVIEW_COMMIT);assert.equal(decision.gallerySourceCommit,process.env.CH3_BATCH_D_REVIEW_COMMIT);assert.equal(decision.galleryVersion,version);
+assert.equal(decision.sourceManifest.sha256,digest(fs.readFileSync(path.join(current,'manifest.json'))),'decision cites this exact v03 manifest');
+const selections=new Map(decision.candidates.map(d=>[d.candidateId,d])),batchEntries=new Map(batch.entries.map(e=>[e.key,e]));
+assert.equal(selections.size,9);assert.equal(decision.candidates.length,9);assert.equal(batchEntries.size,9);assert.equal(batch.entries.length,9);
 for(const c of manifest.candidates){
  assert.ok(expected.delete(c.candidateId),'unique expected candidate');
  assert.equal(c.status,'generated');assert.equal(c.selected,false);assert.equal(c.approved,false);assert.equal(c.assetPath,null);
@@ -55,7 +64,15 @@ for(const c of manifest.candidates){
  const zoom=decodePng(fs.readFileSync(safe(current,c.preview4x)));assert.deepEqual([zoom.width,zoom.height],c.dimensions.map(x=>x*4));
  assert.equal(digest(fs.readFileSync(safe(current,c.source.original))),c.source.sha256);
  const [group,key]=c.record.split(/:(.*)/s),record=key.endsWith('#portraitBackground')?art[group][key.split('#')[0]].portraitBackground:art[group][key];
- assert.equal(record.status,'generated');assert.equal(record.assetPath,null);assert.ok(record.notes.includes(changed?prior.sha256:c.sha256));assert.ok(record.notes.includes(changed?prior.candidateSourceCommit:c.candidateSourceCommit));if(changed)assert.ok(!record.notes.includes(c.sha256),'D05 correction stays review-only; no canonical registration');assert.equal(previews[c.record],undefined,'unselected candidate has no selected preview');
+ // Canonical registry (docs/122, PR #17): the v03 mapping is Nate's approved selection, registered byte-exact.
+ const d=selections.get(c.candidateId);assert.ok(d,'approved selection for '+c.candidateId);assert.equal(d.key,c.record);assert.equal(d.sha256,c.sha256);assert.equal(path.resolve(checkout,d.file),safe(current,c.file),'selection is the exact v03-mapped file');
+ assert.equal(d.selectedVersion,changed?'v03':path.basename(d.file,'.png').slice(-3));assert.deepEqual(d.source,{repo:'InterstellarHarvest/CYOA-storyboard',ref:'art/ch3-pavilion-batch04-20261120',commit:process.env.CH3_BATCH_D_REVIEW_COMMIT,path:d.file});
+ assert.equal(d.status,'approved');assert.equal(d.approved,true);assert.equal(d.selected,true);assert.equal(d.assetPath,null);assert.equal(d.gitBlob,createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex'));
+ const entry=batchEntries.get(c.record);assert.ok(entry);assert.equal(entry.status,'approved');assert.equal(entry.expectedSha256,c.sha256);assert.deepEqual(entry.source,d.source);
+ assert.equal(record.status,'approved','registered approval is never lowered to generated');assert.equal(record.assetPath,null,'no production path before gameplay integration');
+ assert.ok(record.notes.includes(c.sha256));assert.ok(record.notes.includes(process.env.CH3_BATCH_D_REVIEW_COMMIT));assert.ok(record.notes.includes('native-grid authorship NOT proven'),'accepted limitation recorded');
+ if(changed)assert.ok(!record.notes.includes(prior.sha256),'superseded D05 v02 review bytes are not the registered selection');
+ const pv=previews[c.record];assert.ok(pv,'approved selection has a canonical preview');assert.equal(pv.sha256,c.sha256);assert.deepEqual(pv.source,d.source);assert.deepEqual(fs.readFileSync(pv.file),bytes,'canonical preview byte-identical to the pinned gallery file');
 }
 assert.equal(expected.size,0);assert.equal(manifest.candidates.filter(c=>c.retainedFromPreviousReview).length,8);
 const refs=JSON.parse(fs.readFileSync(path.join(historical,'references/approved-sources.json'),'utf8'));
@@ -69,6 +86,13 @@ const contract=JSON.parse(fs.readFileSync(path.join(current,'mask-contract.json'
 for(const root of [historical,previousRoot,current])for(const report of ['qa/results.json','qa/browser-results.json','qa/canonical-results.json'])assert.equal(JSON.parse(fs.readFileSync(path.join(root,report),'utf8')).result,'PASS');
 assert.ok(!fs.existsSync(dest),'refuse to overwrite existing review directory');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.cpSync(gallery,dest,{recursive:true});
 for(const [name,pkg] of [['v01',history],['v02-close-camera-corrections',previous],[version,latest]])for(const [file,hash] of pkg.sums)assert.equal(digest(fs.readFileSync(path.join(dest,name,file))),hash,'staged '+file);
-fs.writeFileSync(path.join(dest,'deployment-provenance.json'),JSON.stringify({publicSiteSource:process.env.GITHUB_SHA||'local-validation',gallerySource:process.env.CH3_BATCH_D_REVIEW_COMMIT,reviewVersion:version,retainedUnchanged:8,revised:1,status:'generated / unselected',approved:false,gameplayIntegrated:false,nativeGridAuthorship:'unproven; documented derived exports',historicalV01AndV02Preserved:true,canonicalRegistrationChanged:false},null,2)+'\n');
-fs.writeFileSync(path.join(dest,'index.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><title>Chapter 3 Batch D review</title><meta http-equiv="refresh" content="0;url='+version+'/"><a href="'+version+'/">Open Batch D v03 — generated / unselected</a> · <a href="v01/">Historical v01</a> · <a href="v02-close-camera-corrections/">Historical v02</a></html>');
-console.log('PASS: staged immutable v01/v02 and current v03; one masked correction, eight retained candidates, all checksums/contracts verified; no gallery code executed.');
+// Deployment metadata and the owner-selection receipt live beside, never inside, the three immutable snapshots.
+for(const f of ['deployment-provenance.json','owner-selection.json','selection.html','index.html'])assert.ok(!fs.existsSync(path.join(dest,f)),'refuse to overwrite '+f);
+const registered=decision.candidates.filter(d=>previews[d.key]&&previews[d.key].sha256===d.sha256).length;assert.equal(registered,9);
+fs.writeFileSync(path.join(dest,'deployment-provenance.json'),JSON.stringify({publicSiteSource:process.env.GITHUB_SHA||'local-validation',deployedBy:'canonical main Pages workflow (.github/workflows/pages.yml)',gallerySource:process.env.CH3_BATCH_D_REVIEW_COMMIT,galleryRef:'art/ch3-pavilion-batch04-20261120',selectedReviewVersion:version,creativeApproval:'Nate selected all nine Chapter 3 Batch D artworks on 2026-11-20 exactly as mapped in v03: D01/D04/D06/D07/D08 v01, D02/D03/D09 v02, D05 v03 (docs/122; docs/103 Chapter 3 Batch D section).',status:'approved',approved:true,canonicalExactSelectedPreviewCount:registered,gameplayIntegration:'Not authorized by this approval or publication; production assetPath null.',nativeGridAuthorship:'Unresolved/unproven; accepted by Nate for the exact selected bytes.',history:'v01, v02-close-camera-corrections and v03-clapper-correction remain byte-preserved. Their review-time generated/unselected labels are historical provenance, superseded by owner-selection.json.'},null,2)+'\n');
+fs.writeFileSync(path.join(dest,'owner-selection.json'),decisionBytes);
+const esc=t=>String(t).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
+const rows=decision.candidates.map(d=>'<tr><td><a href="'+esc(d.file.slice(dir.length+1))+'">'+esc(d.candidateId)+'</a></td><td>'+d.selectedVersion+'</td><td><code>'+esc(d.key)+'</code></td><td><code>'+d.sha256+'</code></td></tr>').join('');
+fs.writeFileSync(path.join(dest,'selection.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Out of Order — Chapter 3 Batch D selections</title><style>body{max-width:72rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui}td,code,a{overflow-wrap:anywhere}td{padding:.5rem;vertical-align:top}table{table-layout:fixed;width:100%}</style><h1>Chapter 3 Batch D — Nate’s approved selections</h1><p>Owner-approved 2026-11-20: all nine Batch D artworks exactly as mapped in the v03 review. D01, D04, D06, D07 and D08 keep v01; D02, D03 and D09 keep v02; D05 is the v03 localized mechanical-clapper correction.</p><p><a href="'+version+'/">v03 gallery (current mapping)</a> · <a href="v02-close-camera-corrections/">Historical v02</a> · <a href="v01/">Historical v01</a> · <a href="owner-selection.json">Owner decision and provenance</a></p><p>Original native-grid authorship remains unresolved/unproven and is accepted by Nate for these exact bytes. Canonical previews matching these exact selections: '+registered+'/9. Approved, not integrated: no gameplay integration or production path is authorized.</p><table><tr><th>Selection</th><th>Version</th><th>Record</th><th>SHA-256</th></tr>'+rows+'</table><p>Historical generated/unselected labels inside the v01, v02 and v03 review snapshots remain unchanged as provenance; the later owner decision above supersedes them.</p></html>');
+fs.writeFileSync(path.join(dest,'index.html'),'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 3 Batch D review</title><p><a href="selection.html">Batch D — Nate’s nine approved selections (receipt)</a></p><p><a href="'+version+'/">v03 gallery (approved mapping)</a> · <a href="v02-close-camera-corrections/">Historical v02</a> · <a href="v01/">Historical v01</a></p><p>Review galleries keep their original review-time labels.</p></html>');
+console.log('PASS: staged immutable v01/v02/v03; nine approved selections registered byte-exact ('+registered+'/9); receipt written outside the snapshots; no gallery code executed.');
