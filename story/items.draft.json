@@ -617,5 +617,37 @@
         ]
       }
     }
+  },
+  "lot_53_dispute_ticket": {
+    "name": "LOT 53 DISPUTE TICKET",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A RED CARBON-COPY TICKET FOR LOT 53. REASON: LACK OF PRIVACY — CUSTOMER PRESENT. THE CLERK HAS STAMPED IT HOLD FOR INSPECTION. IT ENTITLES YOU TO INSPECT THE DISPUTED MERCHANDISE BEFORE IT LEAVES THE HOTEL, BUT IT DOES NOT CANCEL THE SALE.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "lot_53_dispute_ticket",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "wedding_ring_lot31": {
+    "name": "WEDDING RING",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A SMALL SILVER WEDDING BAND FREED FROM LOT 31'S UPHOLSTERY. A SHORT PALE BLUE RIBBON STILL CLINGS TO IT. TINY LETTERS ARE ENGRAVED INSIDE, TOO SMALL TO READ AT A GLANCE.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "wedding_ring_lot31",
+            "read"
+          ]
+        ]
+      }
+    }
   }
 }
