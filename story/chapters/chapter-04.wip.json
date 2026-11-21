@@ -134,7 +134,7 @@
         "Don't suppose you've got a free hand?"
       ],
       "choices":[
-        {"id":"service_s1_restroom","kind":"action","text":"FOLLOW THE RESTROOM SIGN THROUGH THE SERVICE CORRIDOR.","to":"wip_staff_restroom"},
+        {"id":"service_s1_restroom","kind":"action","text":"FOLLOW THE RESTROOM SIGN THROUGH THE SERVICE CORRIDOR.","to":"hotel_staff_lavatory_storage"},
         {"id":"service_s2_cake","kind":"action","text":"HELP THE FOREMAN STOP THE WEDDING CAKE FROM ENTERING THE FREIGHT ELEVATOR.","to":"wip_save_wedding_cake"},
         {"id":"service_s3_lift","kind":"action","text":"TAKE THE FREIGHT ELEVATOR UP TO THE BALLROOM.","to":"wip_freight_lift"}
       ]
@@ -196,7 +196,6 @@
     },
     "wip_auctioneer_question":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A2 auctioneer conversation and auction incidents not yet written. This is not a gameplay ending.","choices":[]},
     "wip_help_bride":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A3 bride and family incidents not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_staff_restroom":{"mode":"narrative","scene":"grand_bellevue/service_corridor","text":"DRAFT REVIEW STOP — S1 service restroom route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_save_wedding_cake":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — S2 cake rescue route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_freight_lift":{"mode":"narrative","scene":"grand_bellevue/freight_lift","text":"DRAFT REVIEW STOP — S3 freight lift route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_find_groom":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — W1 missing groom route not yet written. This is not a gameplay ending.","choices":[]},
