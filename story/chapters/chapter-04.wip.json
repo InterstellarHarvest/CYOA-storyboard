@@ -4,8 +4,8 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: approved two Chapter 4 fatal endings: Final Occupancy (failed d6 crane-stall grip) and Folded for Convenience (Lot 61 Emergency Convenience Pod packing, hidden d6 1–4 fatal / 5–6 escape). Pod has only ENTER and DECLINE choices, the latter returning to the groom search. Nate's specific folded-pod art brief is a normal-sized metallic briefcase / folded-suit case, with subtle corpse-implying bulges and one loose shoe off to the side; there must be no oversized container or visible corpse. Artwork briefs are approved, with no images produced. Boiler steam fatal is a future approved opportunity, not yet a written ending.",
-    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber, valve, last-stall/crane and auction, Lot 31 chair and ring, bride dialogue, Collection Stairs and Lot 58 permit paradox approved. Fatal crane failure and Lot 61 packing failure, both successful alternatives, and their death-popup copy approved. Other groom/organizer continuations and boiler-steam fatal details are unwritten or unapproved proposals.",
+    "reviewCheckpoint": "2026-11-21: approved and authored three Chapter 4 fatal endings: Final Occupancy (crane grip d6 1–3 fatal), Folded for Convenience (Lot 61 packing d6 1–4 fatal), and Pressed and Steamed (boiler pressure relief d6 1–4 fatal). Boiler opening and all four choices A/B/C/D are owner-approved in their tightened versions; two inventory-gated safe bypasses and the safe groom inquiry converge at a still-unwritten groom encounter. Boiler fatal art: only a steaming jacket and trousers on a wire hanger; no images produced. Each fatal popup has one unique heading and one narrative, never a generic PERMANENTLY SATISFIED header.",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber, valve, last-stall/crane and auction, Lot 31 chair and ring, bride dialogue, Collection Stairs and Lot 58 permit paradox approved. Three fatal endings and both surviving boiler/pod alternatives with death-popup copy approved. Boiler pressure test, Lot 53 Dispute Ticket inspection hold, Staff Pass maintenance bypass, and safe groom question all approved. Actual missing-groom and wedding-organizer continuations remain editorial stops.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -25,7 +25,11 @@
       {"verb":"use","item":"red_stapler","requires":"RED SWANGLINE STAPLER"},
       {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS"}
     ],
-    "approvedItemCardAtCollectionStairs": {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS","absentSubtitle":"NOT IN INVENTORY","futurePresentation":"Display locked when absent, even though the current story engine hides unavailable inventory choices."}
+    "approvedItemCardAtCollectionStairs": {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS","absentSubtitle":"NOT IN INVENTORY","futurePresentation":"Display locked when absent, even though the current story engine hides unavailable inventory choices."},
+    "approvedItemCardsAtBoiler": [
+      {"verb":"show","item":"lot_53_dispute_ticket","requires":"LOT 53 DISPUTE TICKET","absentSubtitle":"NOT IN INVENTORY"},
+      {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS","absentSubtitle":"NOT IN INVENTORY"}
+    ]
   },
   "nodes": {
     "hotel_entry_dispatch": {
@@ -757,12 +761,12 @@
         {"desc":"The first porter gives him a warning look."},
         "We agreed not to mention the crate."
       ],
-      "choices":[{"id":"collection_porters_to_boilers","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}]
+      "choices":[{"id":"collection_porters_to_boilers","kind":"continue","text":"CONTINUE","to":"hotel_boiler_pressure_intro"}]
     },
     "hotel_collection_slip_unnoticed":{
       "mode":"narrative","scene":"grand_bellevue/boiler_access",
       "text":"You squeeze between Lot Thirty-One and the wall as both porters heave against the chair.\n\nA loose strip of upholstery catches your sleeve.\n\nThe chair lurches sideways.\n\nYou're still attached.\n\nYou duck with the chair's movement, grab the boiler-room handle, and slip inside.\n\nBehind you, the porters congratulate themselves on finally moving the chair.\n\nThey haven't.\n\nThe door clicks shut.\n\nNeither porter notices your departure.\n\nWarm pipes hiss overhead.\n\nAround the nearest boiler, the hem of a wedding coat disappears from view.\n\nYou straighten your sleeve.\n\nYou appear to be considerably easier to transport than the furniture.",
-      "choices":[{"id":"collection_unnoticed_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}]
+      "choices":[{"id":"collection_unnoticed_to_groom","kind":"continue","text":"CONTINUE","to":"hotel_boiler_pressure_intro"}]
     },
     "hotel_collection_slip_spotted":{
       "mode":"dialogue","scene":"grand_bellevue/boiler_access","speaker":"hotel_porter","pose":"alarmed",
@@ -780,7 +784,7 @@
         {"desc":"The door closes behind you. You look down at your new label. Apparently, you're no longer considered merchandise. A small victory."},
         {"desc":"Beyond the nearest boiler, the hem of a wedding coat disappears behind the pipes."}
       ],
-      "choices":[{"id":"collection_spotted_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}]
+      "choices":[{"id":"collection_spotted_to_groom","kind":"continue","text":"CONTINUE","to":"hotel_boiler_pressure_intro"}]
     },
     "hotel_collection_staff_pass":{
       "mode":"dialogue","scene":"grand_bellevue/service_passage","speaker":"hotel_porter","pose":"curious",
@@ -826,7 +830,7 @@
         {"say":"We've checked twice.","who":"hotel_second_porter"},
         {"desc":"You enter the boiler passage. Apparently, you have been hired again."}
       ],
-      "choices":[{"id":"collection_authorized_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}]
+      "choices":[{"id":"collection_authorized_to_groom","kind":"continue","text":"CONTINUE","to":"hotel_boiler_pressure_intro"}]
     },
     "hotel_staff_lavatory_storage":{
       "mode":"dialogue","scene":"grand_bellevue/staff_lavatory","speaker":"hotel_wedding_assistant","pose":"busy",
@@ -850,7 +854,7 @@
       "choices":[
         {"id":"staff_lavatory_ask_clear_boxes","kind":"spoken","text":"COULD YOU MOVE THESE BOXES? I REALLY NEED TO USE THAT TOILET.","to":"hotel_staff_lavatory_move_boxes"},
         {"id":"staff_lavatory_seek_organizer","kind":"action","text":"FIND THE WEDDING ORGANIZER IN THE BALLROOM.","to":"wip_bride_find_wedding_organizer"},
-        {"id":"staff_lavatory_return_boilers","kind":"action","text":"RETURN TO THE BOILER-ACCESS DOOR AND CONTINUE SEARCHING FOR THE GROOM.","to":"wip_collection_boiler_groom_encounter"}
+        {"id":"staff_lavatory_return_boilers","kind":"action","text":"RETURN TO THE BOILER-ACCESS DOOR AND CONTINUE SEARCHING FOR THE GROOM.","to":"hotel_boiler_pressure_intro"}
       ]
     },
     "hotel_staff_lavatory_move_boxes":{
@@ -875,7 +879,7 @@
       "choices":[
         {"id":"lot58_ignore_sale_tag","kind":"action","text":"IGNORE THE AUCTION TAG AND TRY TO USE THE TOILET ANYWAY.","to":"hotel_staff_lavatory_temporary_use_permit"},
         {"id":"lot58_seek_organizer","kind":"action","text":"FIND THE WEDDING ORGANIZER IN THE BALLROOM.","to":"wip_bride_find_wedding_organizer"},
-        {"id":"lot58_return_boilers","kind":"action","text":"RETURN TO THE BOILER ROOM AND CONTINUE SEARCHING FOR THE GROOM.","to":"wip_collection_boiler_groom_encounter"}
+        {"id":"lot58_return_boilers","kind":"action","text":"RETURN TO THE BOILER ROOM AND CONTINUE SEARCHING FOR THE GROOM.","to":"hotel_boiler_pressure_intro"}
       ]
     },
     "hotel_staff_lavatory_temporary_use_permit":{
@@ -898,10 +902,104 @@
       ],
       "choices":[
         {"id":"lot58_permit_organizer","kind":"spoken","text":"YES. WHERE CAN I FIND THE WEDDING ORGANIZER?","to":"wip_bride_find_wedding_organizer"},
-        {"id":"lot58_permit_return_boilers","kind":"action","text":"LEAVE THE PAPERWORK BEHIND AND RETURN TO THE BOILER ROOM.","to":"wip_collection_boiler_groom_encounter"}
+        {"id":"lot58_permit_return_boilers","kind":"action","text":"LEAVE THE PAPERWORK BEHIND AND RETURN TO THE BOILER ROOM.","to":"hotel_boiler_pressure_intro"}
       ]
     },
-    "wip_collection_boiler_groom_encounter":{"mode":"narrative","scene":"grand_bellevue/maintenance","text":"DRAFT REVIEW STOP — Collection Stairs' porter clue, d6 unnoticed/spotted slip, and authorized Staff Pass routes converge behind the boilers; the staff-lavatory route can also return here. Develop the missing-groom introduction and flags without replaying an already-known encounter. Preserve Lot 58 and NOT INCLUDED tag callbacks. This is not a gameplay ending.","choices":[]},
+    "hotel_boiler_pressure_intro":{
+      "mode":"dialogue","scene":"grand_bellevue/boiler_room","speaker":"hotel_boiler_engineer","pose":"careful",
+      "effects":{"set":{"ch4_boiler_pressure_incident_seen":true}},
+      "text":[
+        {"desc":"The boiler room is sweltering. A pressure gauge trembles in the red. Beside it stands a chained door marked ENGINEERS' LAVATORY."},
+        "Closed until we complete the emergency pressure test.",
+        {"say":"THERE'S A TOILET IN THERE?","who":"visitor"},
+        "Allegedly.",
+        {"desc":"He points toward a large brass wheel."},
+        "Regulations require an independent volunteer to operate that while I certify the results.",
+        {"desc":"The warning plate reads HIGH-PRESSURE STEAM. The engineer is standing remarkably far away."},
+        {"say":"AND THEN I CAN USE THE TOILET?","who":"visitor"},
+        "Then you can apply.",
+        {"desc":"Somebody coughs behind Boiler Three."},
+        "Gentleman in a wedding suit wouldn't volunteer either. Said he was under enough pressure already."
+      ],
+      "choices":[
+        {"id":"boiler_volunteer_relief","kind":"action","text":"VOLUNTEER TO OPERATE THE PRESSURE-RELIEF WHEEL.","check":{"id":"ch4_boiler_steam_relief_survival","sides":6,"need":5},"pass":{"to":"hotel_boiler_pressure_relieved"},"fail":{"to":"fatal_boiler_pressed_and_steamed"}},
+        {"id":"boiler_show_dispute_ticket","kind":"action","text":"SHOW THE LOT 53 DISPUTE TICKET AND DEMAND AN INSPECTION HOLD.","if":{"has":"lot_53_dispute_ticket"},"to":"hotel_boiler_dispute_hold"},
+        {"id":"boiler_show_staff_pass","kind":"action","text":"SHOW YOUR TEMPORARY STAFF PASS AND REQUEST MAINTENANCE ACCESS.","if":{"has":"pavilion_temporary_staff_pass"},"to":"hotel_boiler_staff_access"},
+        {"id":"boiler_ask_about_groom","kind":"action","text":"ASK ABOUT THE GROOM AND KEEP YOUR DISTANCE FROM THE WHEEL.","to":"hotel_boiler_groom_question"}
+      ],
+      "notes":"Owner-approved tightened boiler incident. Hidden d6: 1–4 fatal, 5–6 survive, no modifiers. Four cards remain visible in future engine presentation; B and C must be disabled with REQUIRES / NOT IN INVENTORY subtitles if their items are absent. The current review JSON uses if.has gating because the game engine cannot yet display locked missing-item cards. Do not replay the later groom introduction when ch4_groom_located is already true."
+    },
+    "hotel_boiler_pressure_relieved":{
+      "mode":"dialogue","scene":"grand_bellevue/boiler_room","speaker":"hotel_boiler_engineer","pose":"pleased",
+      "effects":{"set":{"ch4_boiler_pressure_relieved":true,"ch4_boiler_lavatory_passage_open":true}},
+      "text":[
+        {"desc":"You turn the wheel. Steam roars overhead. The gauge drops into the green."},
+        "PASS! Beautifully done!",
+        {"desc":"He unlocks the passage. Beyond it, another door reads SANITATION CLEARANCE PENDING."},
+        {"say":"YOU SAID IT WOULD OPEN!","who":"visitor"},
+        "The passage did. Excellent progress!",
+        {"desc":"A nervous cough comes from behind Boiler Three."}
+      ],
+      "choices":[{"id":"boiler_pressure_pass_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}]
+    },
+    "fatal_boiler_pressed_and_steamed":{
+      "mode":"narrative","scene":"grand_bellevue/boiler_room","end":true,
+      "text":"You turn the wheel.\n\nThe valve shrieks.\n\nAn enormous cloud of steam engulfs you.\n\nWhen it clears, your tuxedo hangs from a wire hanger. Jacket and trousers, perfectly pressed. Still steaming.\n\nThe engineer examines the result.\n\nWell. At least the steam press works.\n\nENDING — PRESSED AND STEAMED.",
+      "choices":[{"id":"restart_pressed_and_steamed","kind":"system","text":"BEGIN AGAIN","restart":true}],
+      "deathPopup":{"id":"ch4_pressed_and_steamed","title":"PRESSED AND STEAMED","description":"The emergency pressure test has passed. Your formalwear has never looked better. Unfortunately, its former occupant is unavailable for comment.","button":"BEGIN AGAIN","status":"owner-approved","artRef":"grand_bellevue/pressed_and_steamed"},
+      "endingArt":"grand_bellevue/pressed_and_steamed",
+      "notes":"Owner-approved fatal outcome with d6 1–4, no modifiers. Illustration ONLY: a steaming tuxedo jacket and matching trousers together on a single wire clothes hanger, as though freshly steam-pressed. Simple, immediately absurd visual. No boiler, gauge, clipboard, shoe, text, person, face, or gore in the artwork. No image generated yet. Popup has exactly one incident-specific heading and its narrative beside art; future engine has RETRY/CHECKPOINT/EXIT controls."
+    },
+    "hotel_boiler_dispute_hold":{
+      "mode":"dialogue","scene":"grand_bellevue/boiler_room","speaker":"hotel_boiler_engineer","pose":"defeated",
+      "effects":{"set":{"ch4_boiler_inspection_hold":true,"ch4_boiler_inspection_access":true}},
+      "text":[
+        {"desc":"You show the red carbon-copy Lot 53 Dispute Ticket."},
+        "That's for a toilet stall.",
+        {"desc":"You point toward the connected pipes."},
+        "Oh, bother. Associated fixtures.",
+        {"desc":"He hangs a DO NOT OPERATE tag on the pressure-relief wheel."},
+        "Can't test disputed equipment. Safety regulations.",
+        {"say":"SO THE TOILET'S OPEN?","who":"visitor"},
+        "No test, no opening. Excellent safety record!",
+        {"desc":"He unchains the inspection walkway. Somebody coughs behind Boiler Three."}
+      ],
+      "choices":[{"id":"boiler_dispute_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}],
+      "notes":"Owner-approved item-bypass payoff. Lot 53 Dispute Ticket stays in inventory; safety test suspended rather than passed, lavatory remains closed."
+    },
+    "hotel_boiler_staff_access":{
+      "mode":"dialogue","scene":"grand_bellevue/boiler_room","speaker":"hotel_boiler_engineer","pose":"practical",
+      "effects":{"set":{"ch4_boiler_staff_access":true}},
+      "text":[
+        {"desc":"You show your Temporary Staff Pass."},
+        {"if":{"flag":"ch4_maintenance_access_authorized"},"say":"Ah, the temporary official the porters sent down. They warned me you were coming.","who":"hotel_boiler_engineer"},
+        {"if":{"notFlag":"ch4_maintenance_access_authorized"},"say":"Temporary staff? Well, I suppose that's most of our staff these days.","who":"hotel_boiler_engineer"},
+        "Then you're ineligible to volunteer.",
+        {"say":"THAT'S GOOD.","who":"visitor"},
+        "For you. Terrible for our staffing plan.",
+        {"desc":"He opens the maintenance gate. From behind Boiler Three comes another cough."}
+      ],
+      "choices":[{"id":"boiler_staff_access_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}],
+      "notes":"Owner-approved Staff Pass bypass. Pass retained, no roll, boiler pressure remains high, lavatory stays closed. Conditional porter recognition is a brief callback and must not add another full conversation."
+    },
+    "hotel_boiler_groom_question":{
+      "mode":"dialogue","scene":"grand_bellevue/boiler_room","speaker":"hotel_boiler_engineer","pose":"wry",
+      "effects":{"set":{"ch4_groom_trail_confirmed":true}},
+      "text":[
+        {"say":"DID YOU SEE A MAN IN A WEDDING SUIT?","who":"visitor"},
+        "Yes. Asked whether shutting off the boilers would silence his future father-in-law's voice coming through the vents.",
+        {"say":"WOULD IT?","who":"visitor"},
+        "No. I tried.",
+        {"desc":"Another cough comes from behind Boiler Three."},
+        "He's behind Boiler Three. Says it's the only room that hasn't been auctioned.",
+        {"desc":"The engineer glances at his clipboard."},
+        "Yet.",
+        {"desc":"You head toward the voice."}
+      ],
+      "choices":[{"id":"boiler_groom_question_to_groom","kind":"continue","text":"CONTINUE","to":"wip_collection_boiler_groom_encounter"}],
+      "notes":"Owner-approved concise safe groom inquiry. No roll or item changes; reused clue flag is idempotent if the porters already confirmed his route. Pressure remains high."
+    },
+    "wip_collection_boiler_groom_encounter":{"mode":"narrative","scene":"grand_bellevue/maintenance","text":"DRAFT REVIEW STOP — All four approved boiler-room pressure-test routes now converge behind Boiler Three after either survival, an inspection hold, Staff Pass access, or a safe groom inquiry. Next author the missing-groom encounter without repeating a prior meeting. Preserve porter clue, quiet/spotted d6 outcomes, NOT INCLUDED tag, maintenance authorization, Lot 58 callbacks, ch4_boiler_pressure_relieved, ch4_boiler_inspection_hold, and the bride/ring/inscription states. This is not a gameplay ending.","choices":[]},
     "wip_bride_return_to_groom":{"mode":"narrative","scene":"grand_bellevue/maintenance","text":"DRAFT REVIEW STOP — The player has already found the groom behind the boilers. Return to him with the bride's request; do not repeat the search. Ring stays in inventory. This is not a gameplay ending.","choices":[]},
     "wip_bride_staff_corridor_route":{"mode":"narrative","scene":"grand_bellevue/service_passage","text":"DRAFT REVIEW STOP — Bride has the wedding ring; her support grants staff-corridor permission. Build the service passage follow-up without automatically locating the groom. This is not a gameplay ending.","choices":[]},
     "wip_bride_find_wedding_organizer":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — Follow the upstairs flower direction to the wedding organizer for the private bridal-dressing-room lavatory key. No automatic bathroom access; account for any prior organizer meeting. Ring remains in inventory. This is not a gameplay ending.","choices":[]},

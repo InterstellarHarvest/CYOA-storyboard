@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 9,
+      "layoutRevision": 10,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -126,7 +126,19 @@
               "hotel_collection_staff_pass_authorized",
               "hotel_staff_lavatory_storage",
               "hotel_staff_lavatory_move_boxes",
-              "hotel_staff_lavatory_temporary_use_permit",
+              "hotel_staff_lavatory_temporary_use_permit"
+            ]
+          },
+          {
+            "id": "boiler_pressure",
+            "title": "Boiler Access · Emergency pressure test and missing groom",
+            "nodes": [
+              "hotel_boiler_pressure_intro",
+              "hotel_boiler_pressure_relieved",
+              "fatal_boiler_pressed_and_steamed",
+              "hotel_boiler_dispute_hold",
+              "hotel_boiler_staff_access",
+              "hotel_boiler_groom_question",
               "wip_collection_boiler_groom_encounter"
             ]
           },
