@@ -1531,15 +1531,26 @@
      state.manifestURL=new URL("../../story/storyboard-manifest.json",location.href);
      const r=await fetch(state.manifestURL);if(!r.ok)throw Error("HTTP "+r.status);
      const manifest=await r.json();state.manifest=manifest;
-     // An explicit review URL swaps only the in-memory Chapter 3 source. The public manifest,
-     // approved chapters and archived legacy Chapter 3 remain byte-for-byte untouched.
-     const ch3Review=new URL(location.href).searchParams.get("review")==="ch3-reboot";
-     if(ch3Review){
+     // Review URLs modify only the in-memory manifest. Normal published chapters
+     // and their fixed-count QA snapshots remain unchanged.
+     const reviewMode=new URL(location.href).searchParams.get("review");
+     const ch3Review=reviewMode==="ch3-reboot";
+     const ch4Review=reviewMode==="ch4-wip";
+     if(ch3Review||ch4Review){
        const entry=manifest.chapters?.find(ch=>ch.id==="chapter-03");
        if(!entry)throw Error("Chapter 3 is missing from the manifest");
        entry.file="chapters/chapter-03.reboot-candidate.json";
-       entry.title="Chapter 3 — Pavilion REBOOT REVIEW";
-       entry.status="review-only · not in game";
+       entry.title=ch3Review?"Chapter 3 — Pavilion REBOOT REVIEW":"Chapter 3 — Approved Pavilion Reboot";
+       entry.status=ch3Review?"review-only · not in game":"approved narrative · not in game";
+     }
+     if(ch4Review){
+       if(manifest.chapters?.some(ch=>ch.id==="chapter-04"))throw Error("Chapter 4 already exists in the published manifest");
+       manifest.chapters.push({
+         id:"chapter-04",
+         title:"Chapter 4 — Something Old, Something Sold [WIP]",
+         file:"chapters/chapter-04.wip.json",
+         status:"review-only · unfinished story · not in game"
+       });
      }
      const select=$("chapterSelect");select.replaceChildren();
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
@@ -1556,7 +1567,7 @@
        if(reviewLayout.schema!=="cyoa-storyboard-layout-v1"||!chapterLayout?.timeline)throw Error("Invalid Chapter 3 review layout");
        state.timelines["chapter-03"]=sanitizeTimeline(chapterLayout.timeline,chapterLayout.layoutRevision);
      }
-     if(manifest.chapters?.length)await loadRemote(ch3Review?manifest.chapters.find(ch=>ch.id==="chapter-03"):manifest.chapters[0]);
+     if(manifest.chapters?.length)await loadRemote(ch4Review?manifest.chapters.find(ch=>ch.id==="chapter-04"):ch3Review?manifest.chapters.find(ch=>ch.id==="chapter-03"):manifest.chapters[0]);
      else setStatus("No chapters listed in manifest.");
    }catch(err){setStatus("Import a chapter JSON file, or serve this repository over HTTP.");}
  }
