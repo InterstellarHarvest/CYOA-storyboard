@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 6,
+      "layoutRevision": 7,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -78,13 +78,23 @@
           },
           {
             "id": "ring",
-            "title": "Lot 31 · Focus A ring retrieval",
+            "title": "Lot 31 · Ring retrieval and bride responses",
             "nodes": [
               "hotel_chair_ring_focus",
               "hotel_ring_retrieved",
               "hotel_ring_slips",
               "hotel_ring_in_pocket",
-              "wip_ring_show_bride",
+              "hotel_ring_show_bride",
+              "hotel_bride_ring_groom_unlocated",
+              "hotel_bride_ring_groom_known",
+              "hotel_bride_ring_handover",
+              "hotel_bride_ring_bathroom",
+              "hotel_bride_ring_inscription",
+              "wip_bride_search_service_passage",
+              "wip_bride_return_to_groom",
+              "wip_bride_staff_corridor_route",
+              "wip_bride_find_wedding_organizer",
+              "wip_bride_relay_inscription_to_groom",
               "wip_ring_find_groom",
               "wip_ring_find_restroom",
               "wip_chair_bride_groom",

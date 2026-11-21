@@ -4,8 +4,8 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: shortened ring-in-pocket scene and three successor cards, bride's ring recognition dialogue, and the item's AS IS, WHERE IS inscription/READ reveal approved; bride's next dialogue choices and further outcomes await owner review.",
-    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, ring-retrieval outcomes, the short ring-in-pocket scene with three successor choices, bride's ring recognition dialogue, and the inventory READ inscription approved. Her next responses and remaining WIP outcomes are proposals or unwritten. Other A1 routes remain unapproved proposals.",
+    "reviewCheckpoint": "2026-11-21: bride's ring-recognition scene and all four response branches approved, including groom-known/unlocated variants, explicit ring handover, private-lavatory lead, and AS IS, WHERE IS reassurance with a future groom payoff. The routes beyond these exchanges remain editorial stops.",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, ring-retrieval outcomes, the short ring-in-pocket scene with three successor choices, bride's ring recognition dialogue, inventory READ inscription, and four bride reply branches (five contextual versions) approved. Their downstream encounters and other A1 routes remain unwritten or unapproved proposals.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -587,12 +587,12 @@
       "mode":"narrative","scene":"grand_bellevue/lobby",
       "text":"You straighten beside Lot Thirty-One. A pale blue thread clings to your cuff. The silver wedding ring is safely in your pocket.\n\nThe bride asks a porter whether he's seen her groom.\n\nHe checks his clipboard and assures her that the chair is accounted for.\n\nShe doesn't look reassured.\n\nThe porters prepare to move the chair.\n\nYou have the ring. The groom is missing.\n\nAnd you still need a toilet.",
       "choices":[
-        {"id":"ring_pocket_show_bride","kind":"action","text":"SHOW THE WEDDING RING TO THE BRIDE.","if":{"has":"wedding_ring_lot31"},"to":"wip_ring_show_bride"},
+        {"id":"ring_pocket_show_bride","kind":"action","text":"SHOW THE WEDDING RING TO THE BRIDE.","if":{"has":"wedding_ring_lot31"},"to":"hotel_ring_show_bride"},
         {"id":"ring_pocket_find_groom","kind":"action","text":"KEEP THE RING AND SEARCH FOR THE MISSING GROOM.","to":"wip_ring_find_groom"},
         {"id":"ring_pocket_find_restroom","kind":"action","text":"KEEP THE RING AND LOOK FOR ANOTHER RESTROOM.","to":"wip_ring_find_restroom"}
       ]
     },
-    "wip_ring_show_bride":{
+    "hotel_ring_show_bride":{
       "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"hopeful",
       "text":[
         {"desc":"You approach the bride and open your hand. The silver ring rests in your palm, with a bit of pale blue ribbon still caught around it."},
@@ -607,8 +607,116 @@
         {"desc":"The bride looks back at you. She doesn't take the ring yet."},
         "Have you seen him? Is he all right?"
       ],
-      "choices":[]
+      "choices":[
+        {"id":"bride_groom_search_offer","kind":"spoken","text":"NO, BUT I'LL HELP YOU FIND HIM.","if":{"notFlag":"ch4_groom_located"},"to":"hotel_bride_ring_groom_unlocated"},
+        {"id":"bride_groom_known_reveal","kind":"spoken","text":"YES. HE'S HIDING BEHIND THE BOILERS.","if":{"flag":"ch4_groom_located"},"to":"hotel_bride_ring_groom_known"},
+        {"id":"bride_ring_handover","kind":"action","text":"PLACE THE RING IN THE BRIDE'S HAND.","if":{"has":"wedding_ring_lot31"},"to":"hotel_bride_ring_handover"},
+        {"id":"bride_ask_lavatory","kind":"spoken","text":"I'M SORRY, BUT I STILL NEED A BATHROOM. CAN YOU HELP ME?","to":"hotel_bride_ring_bathroom"},
+        {"id":"bride_discuss_inscription","kind":"spoken","text":"AS IS, WHERE IS. THAT'S AN ODD THING TO ENGRAVE ON A WEDDING RING.","if":{"flag":"ch4_ring_inscription_read"},"to":"hotel_bride_ring_inscription"}
+      ]
     },
+    "hotel_bride_ring_groom_unlocated":{
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"relieved",
+      "effects":{"set":{"ch4_groom_search_lead":true}},
+      "text":[
+        {"desc":"The bride looks relieved."},
+        "Thank you. He was carrying that chair, and now the chair's back without him.",
+        {"say":"No passenger was listed with Lot Thirty-One, miss.","who":"hotel_porter"},
+        "He's not a passenger. He's my fiancé.",
+        {"desc":"The porter checks his clipboard, hoping that helps."},
+        "Try the service passage near the collection stairs. Someone must have seen where he went.",
+        {"desc":"She glances toward her father."},
+        "And please don't ask Papa. He'll probably try to sell you a description of him."
+      ],
+      "choices":[{"id":"bride_search_service_passage","kind":"continue","text":"CONTINUE","to":"wip_bride_search_service_passage"}]
+    },
+    "hotel_bride_ring_groom_known":{
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"determined",
+      "effects":{"set":{"ch4_bride_knows_groom_location":true}},
+      "text":[
+        "Behind the boilers?",
+        {"desc":"She exhales."},
+        "He hasn't run away. He's hiding from Papa.",
+        {"desc":"She considers this."},
+        "Actually, that's quite sensible.",
+        {"say":"What's sensible, darling?","who":"hotel_auctioneer"},
+        "Nothing, Papa!",
+        {"desc":"She turns back to you."},
+        "Please tell him to come back. I'll deal with my father. I just need him here."
+      ],
+      "choices":[{"id":"bride_relay_groom_known","kind":"continue","text":"CONTINUE","to":"wip_bride_return_to_groom"}]
+    },
+    "hotel_bride_ring_handover":{
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"grateful",
+      "effects":{"take":["wedding_ring_lot31"],"set":{"ch4_ring_returned_to_bride":true,"ch4_bride_ally":true,"ch4_bride_service_permission":true}},
+      "text":[
+        {"desc":"You hold out the ring. The bride cups her hand beneath yours. The ring and its pale blue ribbon fall into her palm."},
+        "Oh.",
+        {"desc":"She turns it over."},
+        "Thank you. Truly.",
+        {"say":"A splendid private transaction! Shall we enter it as Lot Thirty-One A?","who":"hotel_auctioneer"},
+        "Papa, it isn't an auction lot!",
+        {"say":"Then a complimentary return! Excellent service!","who":"hotel_auctioneer"},
+        {"desc":"She closes her fingers around the ring."},
+        "You've brought back the one thing here I actually wanted.",
+        {"desc":"A pause."},
+        "Well. One of two things.",
+        {"desc":"She glances toward the service passage."},
+        "Listen. If you need to get through the staff corridors, tell the porters you're helping me. They should let you pass.",
+        "And if you find him... please tell him I just want him back."
+      ],
+      "choices":[{"id":"bride_handover_next","kind":"continue","text":"CONTINUE","to":"wip_bride_staff_corridor_route"}]
+    },
+    "hotel_bride_ring_bathroom":{
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"helpful",
+      "effects":{"set":{"ch4_knows_bridal_dressing_lavatory":true,"ch4_knows_organizer_has_lavatory_key":true}},
+      "text":[
+        {"desc":"The bride looks closely at you."},
+        "Oh! You're the gentleman they left standing beside the toilet!",
+        {"say":"The stall, miss. We removed the stall.","who":"hotel_porter"},
+        "Yes, thank you.",
+        {"desc":"She considers this."},
+        "There is a private lavatory off the bridal dressing room upstairs. The wedding organizer has the key.",
+        "She's in the ballroom. Probably arguing with the musicians.",
+        {"say":"Magnificent acoustics in that room! Lot—","who":"hotel_auctioneer"},
+        "Papa.",
+        {"say":"I hadn't said a number!","who":"hotel_auctioneer"},
+        "And you won't.",
+        {"desc":"She points toward the public staircase."},
+        "Upstairs, left at the flowers. Find the organizer and tell her what happened.",
+        {"desc":"She lowers her voice."},
+        "And please don't let my father find out there's another bathroom."
+      ],
+      "choices":[{"id":"bride_lavatory_organizer","kind":"continue","text":"CONTINUE","to":"wip_bride_find_wedding_organizer"}]
+    },
+    "hotel_bride_ring_inscription":{
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"reassured",
+      "effects":{"set":{"ch4_bride_reassured_by_inscription":true,"ch4_groom_fears_auctioneer":true}},
+      "text":[
+        {"desc":"The bride looks startled."},
+        "He actually did it?",
+        {"desc":"For the first time, she laughs."},
+        "Oh, that's wonderful.",
+        {"desc":"She looks at the ring."},
+        "Papa says that at every auction. As is, where is. No guarantees, no refunds.",
+        "He said marrying me should work the same way. No appraisal, no reserve price, and absolutely no returns.",
+        {"say":"No returns! A very sound policy!","who":"hotel_auctioneer"},
+        "Papa, must you be involved in every conversation?",
+        {"say":"Only the profitable ones, darling!","who":"hotel_auctioneer"},
+        {"desc":"She shakes her head, still smiling."},
+        "He was so nervous about facing Papa today. I thought perhaps he was having second thoughts about marrying me.",
+        {"desc":"She looks at the ring."},
+        "But he wouldn't have gone through with that ridiculous engraving if he didn't mean it.",
+        {"desc":"She looks determined."},
+        "If you find him, tell him I haven't changed my mind either."
+      ],
+      "choices":[{"id":"bride_inscription_relay","kind":"continue","text":"CONTINUE","to":"wip_bride_relay_inscription_to_groom"}]
+    },
+    "wip_bride_search_service_passage":{"mode":"narrative","scene":"grand_bellevue/service_passage","text":"DRAFT REVIEW STOP — The bride's clue leads toward the collection stairs and service passage, where the missing groom may be tracked. Ring stays in inventory. This is not a gameplay ending.","choices":[]},
+    "wip_bride_return_to_groom":{"mode":"narrative","scene":"grand_bellevue/maintenance","text":"DRAFT REVIEW STOP — The player has already found the groom behind the boilers. Return to him with the bride's request; do not repeat the search. Ring stays in inventory. This is not a gameplay ending.","choices":[]},
+    "wip_bride_staff_corridor_route":{"mode":"narrative","scene":"grand_bellevue/service_passage","text":"DRAFT REVIEW STOP — Bride has the wedding ring; her support grants staff-corridor permission. Build the service passage follow-up without automatically locating the groom. This is not a gameplay ending.","choices":[]},
+    "wip_bride_find_wedding_organizer":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — Follow the upstairs flower direction to the wedding organizer for the private bridal-dressing-room lavatory key. No automatic bathroom access; account for any prior organizer meeting. Ring remains in inventory. This is not a gameplay ending.","choices":[]},
+    "wip_bride_relay_inscription_to_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Ring remains in inventory. On later groom conversation, ch4_bride_reassured_by_inscription enables the no-roll reassurance: SHE SAID SHE HASN'T CHANGED HER MIND. AS IS, WHERE IS. Do not jump to a groom reunion here. This is not a gameplay ending.","choices":[]},
     "wip_ring_find_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Keep the ring and seek the missing groom, connecting naturally to the maintenance route. This is not a gameplay ending.","choices":[]},
     "wip_ring_find_restroom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Keep the ring and continue seeking a usable restroom. The ring remains in inventory and may matter later. This is not a gameplay ending.","choices":[]},
     "wip_ballroom_flood":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Flood reaches the wedding corridor; the bride, cake, and guests react differently depending on water flags. This is not a gameplay ending.","choices":[]},
