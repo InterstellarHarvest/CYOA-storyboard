@@ -1506,11 +1506,16 @@
    }));
    return state.peersReady||Promise.resolve();
  }
+ // Chapter 4's public WIP changes frequently; bypass stale CDN JSON caches only in that review mode.
+ function reviewFresh(url){
+   if(new URL(location.href).searchParams.get("review")==="ch4-wip")url.searchParams.set("wipRefresh",String(Date.now()));
+   return url;
+ }
  async function loadRemote(entry,opts={}){
    const token=++state.loadToken;
    try{
      const url=new URL(entry.file,state.manifestURL);
-     const res=await fetch(url);if(!res.ok)throw Error("HTTP "+res.status);
+     const res=await fetch(reviewFresh(url));if(!res.ok)throw Error("HTTP "+res.status);
      const data=await res.json();
      await fetchPeers();
      if(token!==state.loadToken)return; // a later chapter choice superseded this one
@@ -1554,8 +1559,8 @@
      }
      const select=$("chapterSelect");select.replaceChildren();
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});
-     if(manifest.items){const itemsRes=await fetch(new URL(manifest.items,state.manifestURL));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
-      if(manifest.artwork){const artRes=await fetch(new URL(manifest.artwork,state.manifestURL));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
+     if(manifest.items){const itemsRes=await fetch(reviewFresh(new URL(manifest.items,state.manifestURL)));if(itemsRes.ok){state.items=await itemsRes.json();$("exportItems").disabled=false;}}
+      if(manifest.artwork){const artRes=await fetch(reviewFresh(new URL(manifest.artwork,state.manifestURL)));if(!artRes.ok)throw Error("Artwork HTTP "+artRes.status);loadArtwork(await artRes.json(),manifest.artwork);}
       await loadPreviewData();
       if(manifest.layout){const layoutRes=await fetch(new URL(manifest.layout,state.manifestURL));if(!layoutRes.ok)throw Error("Layout HTTP "+layoutRes.status);loadLayouts(await layoutRes.json(),manifest.layout);}
      if(ch3Review){
@@ -1569,7 +1574,7 @@
      }
      if(ch4Review){
        const reviewLayoutURL=new URL("chapter-04.wip-review-layout.json",state.manifestURL);
-       const layoutRes=await fetch(reviewLayoutURL);
+       const layoutRes=await fetch(reviewFresh(reviewLayoutURL));
        if(!layoutRes.ok)throw Error("Chapter 4 review layout HTTP "+layoutRes.status);
        const reviewLayout=await layoutRes.json();
        const chapterLayout=reviewLayout?.chapters?.["chapter-04"];
