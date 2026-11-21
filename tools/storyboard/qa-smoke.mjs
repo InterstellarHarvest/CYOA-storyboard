@@ -32,7 +32,15 @@ const productionRecords=[
 // Baseline 171 (docs/106), plus the approved CH3 reboot's 14 scenes, 8 closer
 // portrait backgrounds and 7 foreground poses. The 65 retired records remain
 // present for history but must never count as active Chapter 3 production.
-assert.equal(productionRecords.length,171+14+8+7,'shared art catalog includes new Chapter 3 artwork requirements without deleting history');
+// Chapter 4 WIP review has two new inventory objects, each with slot + inspect placeholder records. Neither is approved art.
+assert.equal(productionRecords.length,171+14+8+7+2*2,'shared art catalog retains history and the two Chapter 4 WIP item placeholders');
+for(const id of ['lot_53_dispute_ticket','wedding_ring_lot31']){
+  assert.ok(items[id], 'new Chapter 4 WIP inventory item '+id);
+  for(const variant of ['slot','inspect']){
+    assert.equal(artwork.items[id]?.[variant]?.status,'not-started',id+' art remains unapproved');
+    assert.equal(artwork.items[id]?.[variant]?.assetPath,null,id+' has no generated art');
+  }
+}
 // docs/105 allows genuinely new, unselected candidates to be generated. Keep
 // legacy selection/integration assertions below; never confuse new candidates
 // with a regression of already selected artwork.
