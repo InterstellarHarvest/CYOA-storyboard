@@ -8,8 +8,8 @@
 - Place: the Grand Bellevue Hotel beside the People's Pavilion.
 - Incident: a wedding is disrupted as the bride's auctioneer father sells hotel furnishings to pay for it; salvage crews collect purchased fixtures during the event.
 - Tone: human personalities, physical comedy, absurd escalation, and occasional dangerous decisions, with the protagonist still needing a bathroom.
-- Approved as working material by Nate: all seven Chapter 3 transitions, three differentiated entrances, the public/service/wedding opening choices, the Public A1 plumber introduction, the A1-A valve outcomes, the last-stall crane incident, the porter protest, three short Lot 53 dialogue branches, Lot 31 chair auction, four conditional item interactions, Focus A, and both ring-retrieval outcomes. Approval remains revisable as later branches are written.
-- **2026-11-21 checkpoint:** only those reviewed sequences are marked approved. The next beat after the ring enters the player's pocket and the other routes' editorial stops are **not yet approved**.
+- Approved as working material by Nate: all seven Chapter 3 transitions, three differentiated entrances, the public/service/wedding opening choices, the Public A1 plumber introduction, the A1-A valve outcomes, the last-stall crane incident, the porter protest, three short Lot 53 dialogue branches, Lot 31 chair auction, four conditional item interactions, Focus A, both ring-retrieval outcomes, and the trimmed ring-in-pocket scene with its three successor choices. Approval remains revisable as later branches are written.
+- **2026-11-21 checkpoint:** the groom search, bride ring reveal, bathroom continuation, and optional ring inspection/engraving are still **unapproved or unwritten**.
 
 ## Source of truth
 
@@ -56,6 +56,7 @@ Carry forward established Chapter 1–3 conventions:
 - **Approved — Lot 31:** auction of the bridal suite chair last seen carried by the missing groom. A silver wedding ring, bound by pale blue ribbon, glints in the upholstery. Three normal directions: examine, ask bride about groom (editorial stop), or follow the chair to collection (editorial stop).
 - **Approved — four item-dependent chair actions:** SHOW Acting Director of Vegetation credential (botanical inspection); SHOW Temporary Examiner Badge (inspection pause); USE Red Swangline Stapler (unseen d6 roll, failed stealth damages upholstery but still opens seam); SHOW Temporary Staff Pass (one authorized collection escort). All require possession; none is consumed here.
 - **Approved — Focus A ring retrieval:** detailed upholstery/tack/ribbon close-up, with three player choices: carefully extract, involve the bride (editorial stop), or follow to collection (editorial stop). Successful extraction (or already-open seam) grants `wedding_ring_lot31`. Failed extraction drops the ring inside the chair, requiring pursuit to collection; it is not a death or permanent loss. The ring's inscription is intentionally unwritten.
+- **Approved — ring in pocket:** concise second-person narrative: a thread on cuff, ring securely acquired, bride asks a porter about missing groom, porter reassures her only that the chair is accounted for. Three next cards: SHOW ring to bride (requires possession), keep ring and seek groom, keep ring and look for another restroom. All three destinations remain marked DRAFT REVIEW STOP. Optional inventory READ/inspect of the ring is proposed for the next review; its text and any engraving revelation are not approved.
 - **Unapproved proposals retained in WIP — A1-B / maintenance:** a real passage behind sinks, two-lever shutoff, nervous groom and empty ring box, service stair, different water outcomes.
 - **Unapproved proposals retained in WIP — A1-C / Lot 14:** Eddie, Commodore Bixby, receipt, future bridge tour or rubber-band-ball trade.
 - **Unapproved proposal retained in WIP — A1-D / Facilities Key:** optional `wc_key` cabinet shortcut.
@@ -64,7 +65,7 @@ State keys remain provisional until integration. New approved items for WIP revi
 
 ## Route-development queue
 
-- **Next to review:** scene after ring acquisition, node `wip_ring_in_pocket_next`; do not assume its choices are approved.
+- **Next to review:** `wip_ring_show_bride` dialogue and optional inventory READ/inspect of `wedding_ring_lot31` (inscription remains open). The trimmed `hotel_ring_in_pocket` and its three outgoing cards are approved.
 - Public A1-A success → crane stall → porter protest → auction → ring is approved through pass/fail; crane-ride, calm wedding walk, bride-groom question, bride-ring involvement, and chair-collection continuations still need review.
 - Other plumber successors A1-B, A1-C, and A1-D remain unapproved narrative proposals; review before calling them locked story.
 - Public A2: auctioneer question → unwritten.
@@ -72,7 +73,7 @@ State keys remain provisional until integration. New approved items for WIP revi
 - Service S1/S2/S3: restroom passage, cake rescue, freight lift → unwritten.
 - Wedding W1/W2: missing groom, service slip → unwritten.
 
-Any `wip_*` node in the JSON is an explicit **editorial stop**, not an ending or playable consequence. The current working draft has **65 nodes, 20 editorial stops, and three authored hidden d6 checks**. Replace every editorial stop and audit all checks, item gating, inventory, and routes before narrative lock or artwork generation.
+Any `wip_*` node in the JSON is an explicit **editorial stop**, not an ending or playable consequence. The current working draft has **68 nodes, 22 editorial stops, and three authored hidden d6 checks**. Replace every editorial stop and audit all checks, item gating, inventory, and routes before narrative lock or artwork generation.
 
 ## Review cadence
 
