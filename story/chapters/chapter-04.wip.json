@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, and ring-retrieval outcomes approved in collaborative review. Other A1 routes and all editorial stops remain proposals or unwritten.",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, ring-retrieval outcomes, and the short ring-in-pocket scene with its three successor choices approved in collaborative review. The ring's inscription, READ interaction, and all successor outcomes remain unapproved or unwritten. Other A1 routes and all editorial stops remain proposals or unwritten.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -16,8 +16,8 @@
       "door_reverse_end",
       "backstage_exit"
     ],
-    "incompleteRoutePolicy": "DRAFT REVIEW STOPS are editorial placeholders, not story endings, not fatal endings, and not approved gameplay. Do not generate artwork or import into the game until they are replaced with written consequences."
-    ,"enginePresentationRequirement": "For item-dependent choices, display all four SHOW/USE cards, disabled with a small REQUIRES/NOT IN INVENTORY subtitle when the item is absent. The current game engine hides missing-item choices; the locked-card behavior is a future integration requirement, not implemented by this review JSON. Preserve hidden story-state conditional choices.",
+    "incompleteRoutePolicy": "DRAFT REVIEW STOPS are editorial placeholders, not story endings, not fatal endings, and not approved gameplay. Do not generate artwork or import into the game until they are replaced with written consequences.",
+    "enginePresentationRequirement": "For item-dependent choices, display all four SHOW/USE cards, disabled with a small REQUIRES/NOT IN INVENTORY subtitle when the item is absent. The current game engine hides missing-item choices; the locked-card behavior is a future integration requirement, not implemented by this review JSON. Preserve hidden story-state conditional choices.",
     "approvedItemCardsOnChair": [
       {"verb":"show","item":"acting_director_badge","requires":"ACTING DIRECTOR OF VEGETATION CREDENTIAL"},
       {"verb":"show","item":"expo_examiner_badge","requires":"TEMPORARY EXAMINER BADGE"},
@@ -568,7 +568,7 @@
       "mode":"narrative","scene":"grand_bellevue/lobby",
       "effects":{"give":["wedding_ring_lot31"],"set":{"ch4_wedding_ring_retrieved":true}},
       "text":"You pinch the pale blue ribbon between two fingers. Carefully, you work it backward through the loose stitching.\n\nThe ring shifts. You ease it along the wooden frame, trying not to snag the fabric.\n\nFor one dreadful moment, it hangs over the narrow gap.\n\nThen it drops into your palm.\n\nYou close your fingers around it. A small silver wedding band rests against your skin. Tiny letters circle the inside, but they're too small to read here.\n\nYou slip the ring into your pocket before the chair can be moved.",
-      "choices":[{"id":"ring_pocket_continue","kind":"continue","text":"CONTINUE","to":"wip_ring_in_pocket_next"}]
+      "choices":[{"id":"ring_pocket_continue","kind":"continue","text":"CONTINUE","to":"hotel_ring_in_pocket"}]
     },
     "hotel_ring_slips": {
       "mode":"narrative","scene":"grand_bellevue/lobby",
@@ -582,7 +582,18 @@
     "wip_chair_bride_ring":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Show the caught ring to the bride, allowing recognition without automatically handing over an inventory item. This is not a gameplay ending.","choices":[]},
     "wip_chair_follow_collection":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — Pursue Lot Thirty-One to the loading dock, accounting for whether the ring is still trapped inside. This is not a gameplay ending.","choices":[]},
     "wip_chair_staff_escort_loading":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — Arrive carrying Lot Thirty-One as an authorized staff escort; connects to the service salvage crew. This is not a gameplay ending.","choices":[]},
-    "wip_ring_in_pocket_next":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Next scene after acquiring the wedding ring awaits Nate's review. The ring is owned; its inscription and next choices are not approved yet. This is not a gameplay ending.","choices":[]},
+    "hotel_ring_in_pocket":{
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "text":"You straighten beside Lot Thirty-One. A pale blue thread clings to your cuff. The silver wedding ring is safely in your pocket.\n\nThe bride asks a porter whether he's seen her groom.\n\nHe checks his clipboard and assures her that the chair is accounted for.\n\nShe doesn't look reassured.\n\nThe porters prepare to move the chair.\n\nYou have the ring. The groom is missing.\n\nAnd you still need a toilet.",
+      "choices":[
+        {"id":"ring_pocket_show_bride","kind":"action","text":"SHOW THE WEDDING RING TO THE BRIDE.","if":{"has":"wedding_ring_lot31"},"to":"wip_ring_show_bride"},
+        {"id":"ring_pocket_find_groom","kind":"action","text":"KEEP THE RING AND SEARCH FOR THE MISSING GROOM.","to":"wip_ring_find_groom"},
+        {"id":"ring_pocket_find_restroom","kind":"action","text":"KEEP THE RING AND LOOK FOR ANOTHER RESTROOM.","to":"wip_ring_find_restroom"}
+      ]
+    },
+    "wip_ring_show_bride":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — After the ring has been acquired, SHOW the wedding ring to the bride; recognition, dialogue, and any item transfer await Nate's approval. This is not a gameplay ending.","choices":[]},
+    "wip_ring_find_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Keep the ring and seek the missing groom, connecting naturally to the maintenance route. This is not a gameplay ending.","choices":[]},
+    "wip_ring_find_restroom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Keep the ring and continue seeking a usable restroom. The ring remains in inventory and may matter later. This is not a gameplay ending.","choices":[]},
     "wip_ballroom_flood":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Flood reaches the wedding corridor; the bride, cake, and guests react differently depending on water flags. This is not a gameplay ending.","choices":[]},
     "wip_ballroom_water_off":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — The entire hotel loses water during the wedding. This is not a gameplay ending.","choices":[]},
     "wip_groom_ring":{"mode":"narrative","scene":"grand_bellevue/salvage_storage","text":"DRAFT REVIEW STOP — Recover the groom's ring from the sold chair and determine what the bride knows. This is not a gameplay ending.","choices":[]},
