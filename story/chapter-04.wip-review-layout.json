@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 10,
+      "layoutRevision": 11,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -138,8 +138,25 @@
               "fatal_boiler_pressed_and_steamed",
               "hotel_boiler_dispute_hold",
               "hotel_boiler_staff_access",
-              "hotel_boiler_groom_question",
-              "wip_collection_boiler_groom_encounter"
+              "hotel_boiler_groom_question"
+            ]
+          },
+          {
+            "id": "groom_boiler",
+            "title": "Boiler Three · Missing groom, ring, and wedding escort",
+            "nodes": [
+              "hotel_boiler_groom_encounter",
+              "hotel_groom_show_ring",
+              "hotel_groom_ring_handover",
+              "hotel_groom_ring_safekeep",
+              "hotel_groom_bride_has_ring",
+              "hotel_groom_inscription_reassurance",
+              "hotel_groom_father_fear",
+              "hotel_groom_dialogue_followup",
+              "hotel_groom_escort_prompt",
+              "hotel_groom_escort_willing",
+              "hotel_groom_escort_evicted",
+              "wip_wedding_return_lot74"
             ]
           },
           {
