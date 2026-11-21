@@ -310,3 +310,57 @@ Further state:
 - Main-menu assets are not imported.
 - Chapter 3 Batch D has not begun.
 - The approvals are live on the public storyboard only after this branch merges into `main` and its Pages deployment is verified. Draft PR #13 (gallery publication proposal) remains separate and unmerged.
+
+
+## 2026-11-20 — Chapter 3 Batch D owner selection
+
+Nate explicitly approved and selected all nine Batch D artworks exactly as mapped in the v03 manifest at `e65f42c19e54f566819289d2b133be246ede13f5`. **Creative approval is complete.** D01/D04/D06/D07/D08 retain v01, D02/D03/D09 retain v02, and D05 is v03. No further visual approval is required for these exact bytes.
+
+| Candidate | Selected version | Registry key | SHA-256 |
+|---|---|---|---|
+| CH3-D01-service-exit | v01 | `scenes:pavilion_reboot/service_exit` | `4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392` |
+| CH3-D02-service-exit-bg | v02 | `scenes:pavilion_reboot/service_exit#portraitBackground` | `241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9` |
+| CH3-D03-attendant-quiet | v02 | `portraits:pavilion_attendant:quiet` | `7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90` |
+| CH3-D04-presenter-relieved | v01 | `portraits:pavilion_presenter:relieved` | `29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b` |
+| CH3-D05-backstage | v03 | `scenes:pavilion_reboot/backstage` | `aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889` |
+| CH3-D06-exterior-exit | v01 | `scenes:pavilion_reboot/exterior_exit` | `76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a` |
+| CH3-D07-exit-vestibule | v01 | `scenes:pavilion_reboot/exit_vestibule` | `cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8` |
+| CH3-D08-courtesy-stage | v01 | `scenes:pavilion_reboot/courtesy_stage` | `0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98` |
+| CH3-D09-courtesy-stage-bg | v02 | `scenes:pavilion_reboot/courtesy_stage#portraitBackground` | `b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623` |
+
+**Accepted limitation:** Nate accepts the documented unresolved/unproven original native-grid authorship limitation and residual source-derived softness. This approval acknowledges exact selected bytes; it does not establish original native-grid authorship or request regeneration, resizing, sharpening, filtering, alpha changes or additional polish.
+
+[Owner selection and verbatim instruction](122_OUT_OF_ORDER_CH3_BATCH_D_SELECTED_ARTWORK_20261120.json) · [Prepared nine-entry Claude batch](122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_BATCH_20261120.json) · [Verified Claude handoff](122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_HANDOFF_20261120.md) · [Verification report](122_OUT_OF_ORDER_CH3_BATCH_D_SELECTION_VALIDATION_20261120.json). All nine native files, SHA-256s, Git blobs and dimensions/alpha contracts are verified against the immutable source commit.
+
+**Canonical registration has not been performed.** Per Nate’s explicit instruction, this is a verified approval handoff only: `story/artwork.draft.json`, `story/artwork-preview.json`, curated selected assets and production paths remain unchanged. Any generated/not-started catalogue statuses are an administrative registration backlog, not a pending creative decision. The immutable v01/v02/v03 galleries retain their historical generated/unselected labels; this later owner selection supersedes them without rewriting any historical package. All earlier ledger text and approvals remain intact.
+
+PR #16 remains draft/unmerged at head `0805f4dd6f4c5d6554ef854be1e569e98eee0ee7`, pinned to the same v03 source. CI run `44825495367` completed successfully. CI success does not authorize publication; separate publication authorization is still required. Claude must reconcile the proposal’s pre-registration catalogue/staging assumptions after any future administrative registration and rerun CI before separately authorized publication.
+
+No merge, deployment, gameplay integration, game-repository modification or new art batch is authorized or performed. Stop after the verified handoff.
+
+**Registration status — 2026-11-20 (Claude, administrative registration of Batch D completed):** the nine Batch D selections above are registered in the canonical registry on branch `art/ch3-batch-d-approval-registration-20261120`, created from canonical `main` `5134edb160afaa019e11f872a3b87d3b01b257b0`. All nine blobs were extracted only from `e65f42c19e54f566819289d2b133be246ede13f5` (handoff commit `ba7d6f1a216e1ebce69d94a54a76f604d9d282da`). Before registration, each was checked against `expectedSha256`, its Git blob ID, its dimensions and its alpha contract: the seven environments are opaque 8-bit RGB with no `tRNS`; the two foregrounds are 8-bit RGBA with binary 0/255 alpha and zero partial-alpha pixels. The source manifest hash `d7239e3d…b77d` and all 189 historical v01/v02/v03 package files were verified. `tools/sync/verify-ch3-batch-d-selection.mjs` passed, and its `--stage` mode staged the nine exact bytes outside the checkout. `tools/sync/register-art.mjs --batch` then ran a dry run and the real registration, without `--integration`. Both reported nine additions, no replacements and no path clash. In the staged batch only the local `file` fields differ from the docs/122 batch; `key`, `status`, `expectedSha256` and the full `source` objects are unchanged.
+
+| ID | Version | Record | Status | Production `assetPath` | Public selected preview (byte-identical to the pinned source) | Change |
+|---|---|---|---|---|---|---|
+| D01 | v01 | `scenes:pavilion_reboot/service_exit` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/service_exit.png` | new |
+| D02 | v02 | `scenes:pavilion_reboot/service_exit#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/service_exit/portraitBackground.png` | new |
+| D03 | v02 | `portraits:pavilion_attendant:quiet` | approved | null | `assets/selected/pending-integration/portraits/pavilion_attendant/quiet.png` | new |
+| D04 | v01 | `portraits:pavilion_presenter:relieved` | approved | null | `assets/selected/pending-integration/portraits/pavilion_presenter/relieved.png` | new |
+| D05 | v03 | `scenes:pavilion_reboot/backstage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png` | new |
+| D06 | v01 | `scenes:pavilion_reboot/exterior_exit` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/exterior_exit.png` | new |
+| D07 | v01 | `scenes:pavilion_reboot/exit_vestibule` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/exit_vestibule.png` | new |
+| D08 | v01 | `scenes:pavilion_reboot/courtesy_stage` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage.png` | new |
+| D09 | v02 | `scenes:pavilion_reboot/courtesy_stage#portraitBackground` | approved | null | `assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage/portraitBackground.png` | new |
+
+No earlier selected preview was replaced or changed; none of these nine keys had a prior selection. Counts on this branch:
+- Preview entries: 136 → 145.
+- Statuses: approved 21 → 30, not-started 78 → 69; integrated 111 and reused 5 unchanged.
+
+In each of the nine records' `notes`, only the stale "NO IMAGE GENERATED OR APPROVED" clause was replaced, with the approval, provenance and limitation line. Briefs, prompts, batch labels, source-node lists and every other record are unchanged. No narrative, route, choice, check, item, ending, game-integration report or other selected artwork changed. Locked narrative blob `857ffdf1bc9432cf4bbbfd7819f5f430a06d9036` is unchanged. The immutable v01, v02 and v03 review galleries keep their historical generated/unselected labels; they are not on this branch and were not modified.
+
+**The accepted native-grid authorship limitation still stands, unresolved.** Original full-scene and full-character native-grid authorship remains unproven, and source-derived softness remains. Registration acknowledges Nate's approval of the exact bytes; it does not certify native-grid authorship. No image was resized, sharpened, filtered, alpha-reprocessed, regenerated or otherwise finished.
+
+Further state:
+- Gameplay integration has not begun; production paths stay null.
+- Main-menu assets are not imported.
+- The approvals are live on the public storyboard only after this branch merges into `main` and its Pages deployment is verified. Draft PR #16 (Batch D v03 gallery publication proposal) remains separate and unmerged; it must be reconciled with this registration before any separately authorized publication.
