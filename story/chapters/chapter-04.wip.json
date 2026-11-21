@@ -4,8 +4,8 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: shortened ring-in-pocket scene and three successor cards approved; SHOW-to-bride dialogue and inventory READ engraving are still awaiting owner review.",
-    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, ring-retrieval outcomes, and the short ring-in-pocket scene with its three successor choices approved in collaborative review. The ring's inscription, READ interaction, and all successor outcomes remain unapproved or unwritten. Other A1 routes and all editorial stops remain proposals or unwritten.",
+    "reviewCheckpoint": "2026-11-21: shortened ring-in-pocket scene and three successor cards, bride's ring recognition dialogue, and the item's AS IS, WHERE IS inscription/READ reveal approved; bride's next dialogue choices and further outcomes await owner review.",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, ring-retrieval outcomes, the short ring-in-pocket scene with three successor choices, bride's ring recognition dialogue, and the inventory READ inscription approved. Her next responses and remaining WIP outcomes are proposals or unwritten. Other A1 routes remain unapproved proposals.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -592,7 +592,23 @@
         {"id":"ring_pocket_find_restroom","kind":"action","text":"KEEP THE RING AND LOOK FOR ANOTHER RESTROOM.","to":"wip_ring_find_restroom"}
       ]
     },
-    "wip_ring_show_bride":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — After the ring has been acquired, SHOW the wedding ring to the bride; recognition, dialogue, and any item transfer await Nate's approval. This is not a gameplay ending.","choices":[]},
+    "wip_ring_show_bride":{
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"hopeful",
+      "text":[
+        {"desc":"You approach the bride and open your hand. The silver ring rests in your palm, with a bit of pale blue ribbon still caught around it."},
+        "Oh! That's the ring! That's the one he was supposed to bring!",
+        {"desc":"Her relief lasts about a second."},
+        "Where did you find it?",
+        {"desc":"You point toward Lot Thirty-One."},
+        "Of course. That miserable chair.",
+        {"say":"Ah! A charming matching accessory! Shall we start at—","who":"hotel_auctioneer"},
+        "Papa. No.",
+        {"say":"Withdrawn! Entirely withdrawn!","who":"hotel_auctioneer"},
+        {"desc":"The bride looks back at you. She doesn't take the ring yet."},
+        "Have you seen him? Is he all right?"
+      ],
+      "choices":[]
+    },
     "wip_ring_find_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Keep the ring and seek the missing groom, connecting naturally to the maintenance route. This is not a gameplay ending.","choices":[]},
     "wip_ring_find_restroom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Keep the ring and continue seeking a usable restroom. The ring remains in inventory and may matter later. This is not a gameplay ending.","choices":[]},
     "wip_ballroom_flood":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Flood reaches the wedding corridor; the bride, cake, and guests react differently depending on water flags. This is not a gameplay ending.","choices":[]},
