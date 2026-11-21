@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 restroom incident approved. All A1 successor incidents are unapproved narrative proposals for Nate's review.",
+    "approval": "Seven Chapter 3 entry transitions and opening public/service/wedding choices approved by Nate. Public A1 plumber introduction, valve check and result choices, successful stall/crane route, protest-to-auction dialogue forks, Lot 31 chair auction, four item interactions, Focus A chair detail, and ring-retrieval outcomes approved in collaborative review. Other A1 routes and all editorial stops remain proposals or unwritten.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -17,6 +17,13 @@
       "backstage_exit"
     ],
     "incompleteRoutePolicy": "DRAFT REVIEW STOPS are editorial placeholders, not story endings, not fatal endings, and not approved gameplay. Do not generate artwork or import into the game until they are replaced with written consequences."
+    ,"enginePresentationRequirement": "For item-dependent choices, display all four SHOW/USE cards, disabled with a small REQUIRES/NOT IN INVENTORY subtitle when the item is absent. The current game engine hides missing-item choices; the locked-card behavior is a future integration requirement, not implemented by this review JSON. Preserve hidden story-state conditional choices.",
+    "approvedItemCardsOnChair": [
+      {"verb":"show","item":"acting_director_badge","requires":"ACTING DIRECTOR OF VEGETATION CREDENTIAL"},
+      {"verb":"show","item":"expo_examiner_badge","requires":"TEMPORARY EXAMINER BADGE"},
+      {"verb":"use","item":"red_stapler","requires":"RED SWANGLINE STAPLER"},
+      {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS"}
+    ]
   },
   "nodes": {
     "hotel_entry_dispatch": {
@@ -252,10 +259,11 @@
     },
     "hotel_stall_lot_claimed": {
       "mode":"narrative","scene":"grand_bellevue/restroom",
-      "text":"You step toward the nearest stall. At last.\n\nA porter with a clipboard stands in the doorway. Another is already unfastening the toilet's floor bolts. He lifts the porcelain bowl onto a waiting trolley with the brisk efficiency of someone moving an office chair.\n\nThe porter apologizes. All three stalls belong to Lot Fifty-Three, fixtures included. The buyer wants them removed before the speeches.\n\nYou look at the empty space where the toilet stood. It is extraordinarily clean. It is also extraordinarily useless.\n\nThe plumber quietly offers to show you the staff route through the loading dock. He seems genuinely sorry.",
+      "text":"You slip into the nearest stall and pull the door closed.\n\nIt even latches.\n\nFor one glorious moment, you are alone in a bathroom. An ordinary bathroom. With an actual toilet.\n\nYou reach toward your belt.\n\nCLANK.\n\nSomething shifts overhead. Four steel cables pull taut around the stall's partitions. The walls tremble. Then, with a deep mechanical groan, the entire enclosure begins rising.\n\nYou look up. A crane is lifting the stall—walls, door, latch and all—straight through an open service hatch in the ceiling.\n\nYou remain exactly where you are. Standing beside the toilet. Fully dressed. Your hand is still hovering halfway toward your belt buckle.\n\nThrough the restroom entrance, whose doors were removed only moments earlier, you find yourself facing a small procession of wedding guests. They stop. You stop. The stall continues upward.\n\nA porter checks his clipboard, looks at you, and gives an apologetic little wave.\n\nYou slowly lower your hand. The toilet is still there. Unfortunately, everyone can see it. And you.",
       "choices":[
-        {"id":"stall_pursue_buyer","kind":"action","text":"FOLLOW THE PORTERS AND CONFRONT THE BUYER OF LOT FIFTY-THREE.","to":"wip_stall_buyer"},
-        {"id":"stall_staff_shortcut","kind":"action","text":"TAKE THE PLUMBER'S SHORTCUT TOWARD THE STAFF FACILITIES.","to":"hotel_maintenance_dock_exit"}
+        {"id":"stall_protest","kind":"spoken","text":"EXCUSE ME! I'M USING THAT!","to":"hotel_stall_porter_protest"},
+        {"id":"stall_grab_crane","kind":"action","text":"JUMP AND GRAB THE RISING STALL BEFORE IT DISAPPEARS.","to":"wip_stall_crane_ride"},
+        {"id":"stall_walk_guests","kind":"action","text":"WALK PAST THE WEDDING GUESTS AS THOUGH NOTHING UNUSUAL HAS HAPPENED.","to":"wip_stall_wedding_walk"}
       ]
     },
     "hotel_maintenance_dock_exit": {
@@ -340,6 +348,241 @@
       "text":"The Facilities Key slides into the emergency cabinet as if it has been waiting there for you. One quarter turn, and the catch opens.\n\nInside is a single large red lever. You pull it. The pipes shudder, the water subsides, and the room becomes suddenly quiet.\n\nThe plumber peers at the key's paper tag. The return date says today, four fifty-two, and the signature belongs to the examiner.\n\nHe looks at you. Then at the signature. Then back at you. In the end he chooses to be grateful rather than curious.\n\nYou keep the key. The line is shut off, but the last stall is still standing. For now.",
       "choices":[{"id":"master_key_try_stall","kind":"continue","text":"CONTINUE","to":"hotel_stall_lot_claimed"}]
     },
+    "hotel_stall_porter_protest": {
+      "mode":"dialogue","scene":"grand_bellevue/restroom","speaker":"hotel_porter","pose":"businesslike",
+      "text":[
+        {"desc":"The porter looks down from his clipboard."},
+        "Of course you are, sir. That's why we left you there.",
+        {"desc":"You point toward the stall, now halfway through the ceiling."},
+        "We're strictly prohibited from lifting occupied fixtures. So we've removed the fixture and left the occupant. Perfectly safe.",
+        {"desc":"He makes a checkmark on the clipboard."},
+        "Now, if you're disputing the sale, that's an entirely different matter.",
+        {"desc":"You attempt to explain that you simply want to use the toilet. The porter produces a bright red placard."},
+        "Oh, you must take that up with the auctioneer. Here, I'll signal him.",
+        {"desc":"He waves the placard enthusiastically."},
+        "DISPUTE ON LOT FIFTY-THREE!",
+        {"say":"An objection? Excellent! Competitive interest! Bring the gentleman forward!","who":"hotel_auctioneer"},
+        {"desc":"A wedding guest applauds. The porter ushers you into the lobby toward the podium."}
+      ],
+      "choices":[{"id":"porter_to_auction","kind":"continue","text":"CONTINUE","to":"hotel_auction_reopen_53"}]
+    },
+    "hotel_auction_reopen_53": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_auctioneer","pose":"showman",
+      "text":[
+        {"desc":"The porter ushers you toward the podium. The elderly gentleman in the crimson dinner jacket looks delighted."},
+        "Ah! Our dissatisfied gentleman! Welcome, welcome!",
+        {"desc":"He taps his gavel."},
+        "Ladies and gentlemen! An unexpected development! Lot Fifty-Three has attracted additional interest!",
+        {"say":"Papa, you've already sold Lot Fifty-Three!","who":"hotel_bride"},
+        "Indeed, darling. And now we have an opportunity to sell it again.",
+        {"say":"You can't sell the same toilets twice!","who":"hotel_bride"},
+        "My dear, there are three of them.",
+        "And here we have a gentleman who has personally inspected the merchandise!",
+        {"desc":"You attempt to explain that you have no intention of purchasing a toilet."},
+        "Naturally! A discerning customer! Quite right to examine one's investment before committing!",
+        {"say":"Papa! He's trying to use the bathroom!","who":"hotel_bride"},
+        "Then he understands its value better than anyone in the room!",
+        {"desc":"A wedding guest raises a paddle, followed by another."},
+        "Twenty-five! Thirty! Thirty from the lady by the flowers!",
+        {"desc":"The bride looks horrified. The auctioneer raises his gavel."},
+        "Thirty going once—"
+      ],
+      "choices":[
+        {"id":"auction_not_bidding","kind":"spoken","text":"I'M NOT BIDDING! I JUST WANT TO USE THE TOILET!","to":"hotel_auction_testimonial"},
+        {"id":"auction_ask_bride","kind":"spoken","text":"MISS, CAN'T YOU MAKE YOUR FATHER STOP SELLING EVERYTHING?","to":"hotel_auction_bride_ally"},
+        {"id":"auction_demand_record","kind":"spoken","text":"I WANT A WRITTEN RECORD OF MY OBJECTION!","to":"hotel_auction_dispute_ticket"}
+      ]
+    },
+    "hotel_auction_testimonial": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_auctioneer","pose":"delighted",
+      "effects":{"set":{"ch4_auction_demonstrator":true}},
+      "text":[
+        {"desc":"The auctioneer's eyes light up."},
+        "A testimonial! Ladies and gentlemen, our exceptional water pressure, personally verified by this gentleman!",
+        {"desc":"A wedding guest raises her hand."},
+        {"say":"Excuse me. Is it self-cleaning?","who":"hotel_wedding_guest"},
+        "Madam, it washed this gentleman and half the corridor without anyone touching a single control!",
+        {"say":"Papa, that's a burst pipe!","who":"hotel_bride"},
+        "Precisely! Fully automatic!",
+        {"desc":"The guest nods appreciatively. The auctioneer turns toward his clerk."},
+        "Make a note of our enthusiastic demonstrator!",
+        {"desc":"The clerk writes PRODUCT DEMONSTRATOR — GENTLEMAN, DAMP. You stare at the entry."},
+        "Splendid! Moving along!",
+        {"desc":"He raises his gavel."}
+      ],
+      "choices":[{"id":"demo_to_chair","kind":"continue","text":"CONTINUE","to":"hotel_auction_chair_lot31"}]
+    },
+    "hotel_auction_bride_ally": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_bride","pose":"determined",
+      "effects":{"set":{"ch4_bride_ally":true,"ch4_knows_blue_delivery_ledger":true}},
+      "text":[
+        {"desc":"The bride looks at you with sudden appreciation."},
+        "Believe me, I've been trying.",
+        {"say":"Darling, we're conducting business!","who":"hotel_auctioneer"},
+        "Papa, you've sold the chairs, the bathroom doors, and half the furniture!",
+        {"say":"And at excellent prices, I might add.","who":"hotel_auctioneer"},
+        "Listen. He can shout SOLD all he likes, but nothing is supposed to leave this hotel without my signature in the delivery ledger.",
+        {"say":"A charming little formality.","who":"hotel_auctioneer"},
+        "It's in your own contract!",
+        {"say":"Ah. A less charming formality.","who":"hotel_auctioneer"},
+        {"desc":"The bride looks toward the auction clerk."},
+        "Where's the blue delivery ledger?",
+        {"say":"The loading dock, miss. The collection crew asked for it.","who":"hotel_auction_clerk"},
+        {"desc":"She closes her eyes for a moment, then looks directly at you."},
+        "If you happen to find that ledger, could you bring it to me? Please?",
+        {"desc":"For the first time since entering the hotel, someone appears to be asking you for help rather than assigning you a responsibility. The auctioneer taps his gavel."},
+        {"say":"Wonderful! A little family cooperation. Now, where were we?","who":"hotel_auctioneer"}
+      ],
+      "choices":[{"id":"bride_ally_to_chair","kind":"continue","text":"CONTINUE","to":"hotel_auction_chair_lot31"}]
+    },
+    "hotel_auction_dispute_ticket": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_auction_clerk","pose":"precise",
+      "effects":{"give":["lot_53_dispute_ticket"]},
+      "text":[
+        {"desc":"The auctioneer looks delighted."},
+        {"say":"Certainly! Nothing inspires confidence quite like a dissatisfied customer!","who":"hotel_auctioneer"},
+        {"say":"See that the gentleman receives the appropriate paperwork.","who":"hotel_auctioneer"},
+        {"desc":"The clerk produces a small pad of red carbon-copy tickets."},
+        "Lot Fifty-Three. Formal objection. Reason for dispute?",
+        {"desc":"You point toward the ceiling, where the last corner of your former stall is disappearing. The clerk looks up."},
+        "Lack of privacy. Very good.",
+        {"desc":"He writes something, stamps the ticket, and tears off the top copy."},
+        "This entitles you to inspect the disputed merchandise before it leaves the hotel. Present it to the collection foreman.",
+        {"say":"A complimentary inspection! You see, sir? We take customer satisfaction very seriously!","who":"hotel_auctioneer"},
+        "It doesn't cancel the sale, mind you.",
+        {"say":"Naturally! We take sales even more seriously!","who":"hotel_auctioneer"},
+        {"desc":"The clerk hands you the ticket. The auctioneer returns to his gavel."}
+      ],
+      "choices":[{"id":"dispute_ticket_to_chair","kind":"continue","text":"CONTINUE","to":"hotel_auction_chair_lot31"}]
+    },
+    "hotel_auction_chair_lot31": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_auctioneer","pose":"showman",
+      "text":[
+        {"desc":"The auctioneer brings down his gavel."},
+        "SOLD! Lot Fifty-Three, to the lady in violet! May she enjoy her purchase in excellent health!",
+        {"desc":"The bride opens her mouth to protest, but two porters wheel an enormous high-backed upholstered chair toward the podium. A paper tag hangs from one leg: LOT 31 — BRIDAL SUITE CHAIR."},
+        "Moving along! Lot Thirty-One! A magnificent ceremonial chair, lovingly upholstered and barely used!",
+        {"say":"Wait. That's the chair he was carrying!","who":"hotel_bride"},
+        "Who, darling?",
+        {"say":"The groom! Just before he disappeared!","who":"hotel_bride"},
+        "Well, I'm delighted to report that at least the chair has turned up.",
+        {"desc":"One porter lifts the chair's front legs onto the display platform. The chair tilts. A faint metallic clink comes from the upholstery. You catch a brief flash of silver disappearing between cushion and wooden armrest. Neither the bride nor her father notices."},
+        "An exceptional piece! Fine craftsmanship! A fascinating history! Shall we open at fifteen?",
+        {"desc":"Guests begin examining their auction paddles. The bride keeps staring at the chair. You look toward the narrow gap where something disappeared."}
+      ],
+      "choices":[
+        {"id":"chair_investigate_silver","kind":"action","text":"EXAMINE THE FLASH OF SILVER BETWEEN THE CHAIR CUSHIONS.","to":"hotel_chair_ring_focus"},
+        {"id":"chair_ask_bride_groom","kind":"spoken","text":"THE GROOM WAS CARRYING THIS CHAIR? WHAT HAPPENED TO HIM?","to":"wip_chair_bride_groom"},
+        {"id":"chair_follow_porters","kind":"action","text":"FOLLOW THE PORTERS WHEN THEY TAKE THE CHAIR TO THE COLLECTION AREA.","to":"wip_chair_follow_collection"}
+      ],
+      "show":{
+        "acting_director_badge":{"kind":"action","say":"SHOW YOUR VEGETATION CREDENTIAL AND REQUEST AN INSPECTION OF THE CHAIR'S WOODEN FRAME.","to":"hotel_chair_vegetation_inspection"},
+        "expo_examiner_badge":{"kind":"action","say":"SHOW YOUR EXAMINER BADGE AND DEMAND A PRE-SALE INSPECTION.","to":"hotel_chair_examiner_inspection"},
+        "pavilion_temporary_staff_pass":{"kind":"action","say":"SHOW YOUR STAFF PASS AND OFFER TO INSPECT LOT THIRTY-ONE BEFORE DELIVERY.","to":"hotel_chair_staff_escort"}
+      },
+      "use":{
+        "red_stapler":{"kind":"action","say":"USE THE RED STAPLER TO PRY OPEN THE CHAIR'S UPHOLSTERY SEAM.","check":{"id":"ch4_chair_stapler_stealth","sides":6,"need":4},"pass":{"effects":{"set":{"ch4_chair_seam_open":true,"ch4_chair_stapler_unnoticed":true}},"to":"hotel_chair_stapler_stealth"},"fail":{"effects":{"set":{"ch4_chair_seam_open":true,"ch4_chair_damaged":true,"ch4_chair_stapler_caught":true}},"to":"hotel_chair_stapler_caught"}}
+      }
+    },
+    "hotel_chair_vegetation_inspection": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_porter","pose":"uncertain",
+      "effects":{"set":{"ch4_chair_inspection_authorized":true,"ch4_chair_vegetation_permitted":true}},
+      "text":[
+        {"desc":"You present your Acting Director of Vegetation credential to the porter. He examines it carefully."},
+        "Vegetation?",
+        {"desc":"You gesture toward the chair's carved wooden arms. The porter looks at the chair, then your credential."},
+        "Well, I suppose it was a tree.",
+        {"say":"Quite right! We mustn't interfere with an official botanical inspection!","who":"hotel_auctioneer"},
+        {"desc":"The porter steps aside."},
+        "Very good, sir. Inspect away.",
+        {"say":"Ladies and gentlemen! Lot Thirty-One is now undergoing a government inspection! A valuable endorsement indeed!","who":"hotel_auctioneer"},
+        {"desc":"You approach the chair. The loose upholstery is within reach."}
+      ],
+      "choices":[{"id":"vegetation_open_focus","kind":"continue","text":"CONTINUE","to":"hotel_chair_ring_focus"}]
+    },
+    "hotel_chair_examiner_inspection": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_auction_clerk","pose":"precise",
+      "effects":{"set":{"ch4_chair_inspection_authorized":true,"ch4_chair_sale_paused":true}},
+      "text":[
+        {"desc":"You present your Temporary Examiner Badge. The clerk examines it."},
+        "Office of Unverified Conditions. Is there something unverified about this item?",
+        {"say":"Certainly not! It's an excellent chair! Four legs, splendid upholstery, perfectly chair-shaped!","who":"hotel_auctioneer"},
+        "That's not quite the same as verifying its condition, sir.",
+        {"desc":"The clerk stamps the auction sheet: INSPECTION PENDING."},
+        {"say":"Pending? We're in the middle of bidding!","who":"hotel_auctioneer"},
+        "I'm afraid the sale must be suspended until the examiner has finished.",
+        {"say":"Ladies and gentlemen! A brief intermission while our magnificent chair undergoes an entirely unnecessary official inspection!","who":"hotel_auctioneer"},
+        {"desc":"He sets down his gavel. You approach the chair."}
+      ],
+      "choices":[{"id":"examiner_open_focus","kind":"continue","text":"CONTINUE","to":"hotel_chair_ring_focus"}]
+    },
+    "hotel_chair_stapler_stealth": {
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "text":"The auctioneer launches into an enthusiastic description of the chair's craftsmanship. Everyone turns toward the podium.\n\nYou seize the opportunity. You slip behind the chair, wedge the stapler's metal base beneath the loosened upholstery, and carefully apply pressure.\n\nClick.\n\nThe seam separates just enough. Something silver glints inside.\n\nYou withdraw the stapler, slip it into your pocket, and straighten up. The auctioneer is still talking. The porter is still watching the bidders. Nobody has noticed a thing.",
+      "choices":[{"id":"stapler_stealth_focus","kind":"continue","text":"CONTINUE","to":"hotel_chair_ring_focus"}]
+    },
+    "hotel_chair_stapler_caught": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_porter","pose":"alarmed",
+      "text":[
+        {"desc":"You wedge the stapler beneath the upholstered armrest. RRRIP. The stitching tears."},
+        "Sir! You've damaged the merchandise!",
+        {"say":"Good heavens! Is that your chair?","who":"hotel_auctioneer"},
+        {"desc":"You shake your head."},
+        {"say":"Well, it may very shortly have to be!","who":"hotel_auctioneer"},
+        {"say":"Papa, he hasn't purchased anything!","who":"hotel_bride"},
+        {"say":"Then I suggest we find him a buyer before he damages anything else!","who":"hotel_auctioneer"},
+        {"desc":"You retrieve your stapler. The chair's upholstery is open, but everyone has noticed."}
+      ],
+      "choices":[{"id":"stapler_caught_focus","kind":"continue","text":"CONTINUE","to":"hotel_chair_ring_focus"}]
+    },
+    "hotel_chair_staff_escort": {
+      "mode":"dialogue","scene":"grand_bellevue/lobby","speaker":"hotel_porter","pose":"practical",
+      "effects":{"set":{"ch4_lot31_staff_escort":true}},
+      "text":[
+        {"desc":"You present your Temporary Staff Pass to a porter. He examines it."},
+        "People's Pavilion? Isn't that the building across the courtyard?",
+        {"desc":"You point to the authorization for a service inspection. The porter reads it again."},
+        "One service inspection. Doesn't say what sort.",
+        {"say":"Ah! A visiting professional! Our merchandise attracts experts from across the Exposition!","who":"hotel_auctioneer"},
+        "Well, I suppose you can accompany the chair to collection. We're taking it down to the loading dock. Just stay clear of the freight equipment.",
+        {"desc":"He hands your pass back, considers the enormous chair, and looks at you."},
+        "Actually, since you're staff... mind giving us a hand?",
+        {"desc":"He hands you one end of a carrying strap. You find yourself helping two porters move Lot Thirty-One toward the service entrance."},
+        {"say":"Excellent initiative! That's the kind of service we pride ourselves on!","who":"hotel_auctioneer"},
+        {"desc":"You have become an employee of yet another establishment without applying for a job."}
+      ],
+      "choices":[{"id":"staff_escort_dock","kind":"continue","text":"CONTINUE","to":"wip_chair_staff_escort_loading"}]
+    },
+    "hotel_chair_ring_focus": {
+      "mode":"focus","scene":"grand_bellevue/lobby","focus":"grand_bellevue/auction_floor/chair_armrest",
+      "effects":{"set":{"ch4_ring_spotted_in_chair":true}},
+      "text":"The carved wooden arm of Lot Thirty-One fills your view.\n\nA row of small brass tacks secures the dark red upholstery to the frame. One tack has worked loose.\n\nJust beyond it, something silver catches the light.\n\nYou lean closer.\n\nA ring.\n\nA short length of pale blue ribbon is tangled around the band, trapping it between the wooden frame and a fold of fabric. Tiny letters are engraved along the inside, but you cannot make them out from this angle.\n\nThe ring is caught firmly enough that it won't simply fall out.\n\nThe chair shifts slightly as one of the porters adjusts its position. The ring slips a fraction deeper into the upholstery.\n\nYou need to decide what to do before the chair is taken away.",
+      "choices":[
+        {"id":"focus_free_ring_stapler","kind":"action","text":"WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.","if":{"flag":"ch4_chair_seam_open"},"to":"hotel_ring_retrieved"},
+        {"id":"focus_free_ring_careful","kind":"action","text":"WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.","if":{"notFlag":"ch4_chair_seam_open"},"check":{"id":"ch4_careful_ring_retrieval","sides":6,"need":4,"mods":[{"if":{"flag":"ch4_chair_vegetation_permitted"},"add":1},{"if":{"flag":"ch4_chair_sale_paused"},"add":2}]},"pass":{"to":"hotel_ring_retrieved"},"fail":{"to":"hotel_ring_slips"}},
+        {"id":"focus_show_bride_ring","kind":"action","text":"CALL THE BRIDE OVER AND SHOW HER WHAT IS CAUGHT IN THE UPHOLSTERY.","to":"wip_chair_bride_ring"},
+        {"id":"focus_follow_chair_ring","kind":"action","text":"LET THE PORTERS TAKE THE CHAIR, THEN FOLLOW IT TO COLLECTION.","to":"wip_chair_follow_collection"}
+      ]
+    },
+    "hotel_ring_retrieved": {
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "effects":{"give":["wedding_ring_lot31"],"set":{"ch4_wedding_ring_retrieved":true}},
+      "text":"You pinch the pale blue ribbon between two fingers. Carefully, you work it backward through the loose stitching.\n\nThe ring shifts. You ease it along the wooden frame, trying not to snag the fabric.\n\nFor one dreadful moment, it hangs over the narrow gap.\n\nThen it drops into your palm.\n\nYou close your fingers around it. A small silver wedding band rests against your skin. Tiny letters circle the inside, but they're too small to read here.\n\nYou slip the ring into your pocket before the chair can be moved.",
+      "choices":[{"id":"ring_pocket_continue","kind":"continue","text":"CONTINUE","to":"wip_ring_in_pocket_next"}]
+    },
+    "hotel_ring_slips": {
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "effects":{"set":{"ch4_ring_slipped_inside_chair":true}},
+      "text":"You catch the ribbon between your fingers. It seems loose enough. You give it a careful tug.\n\nPing.\n\nThe brass upholstery tack snaps free. The ring slips from the ribbon, strikes the wooden frame, and disappears into the narrow cavity beneath the armrest.\n\nYou hear it rattle downward. Then silence.\n\nYou try to reach into the gap, but your fingers cannot get past the chair's internal supports. Before you can attempt anything else, the porters begin moving the chair.\n\nOne porter calls to the other to watch the arms. The buyer wants the chair in its original condition.\n\nThe chair is lifted onto its trolley. Somewhere inside the upholstery, the wedding ring is still rattling.\n\nYou watch Lot Thirty-One roll toward the collection entrance. The ring isn't lost forever, but you're going to have to follow the chair to retrieve it.",
+      "choices":[{"id":"ring_follow_after_fail","kind":"continue","text":"CONTINUE","to":"wip_chair_follow_collection"}]
+    },
+    "wip_stall_crane_ride":{"mode":"narrative","scene":"grand_bellevue/upper_salvage","text":"DRAFT REVIEW STOP — Unwritten result of grabbing the rising stall and riding the crane. This is not a gameplay ending.","choices":[]},
+    "wip_stall_wedding_walk":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Unwritten result of walking past the wedding guests with dignity. This is not a gameplay ending.","choices":[]},
+    "wip_chair_bride_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Bride dialogue about the missing groom, with a conditional variant if the player already found him. This is not a gameplay ending.","choices":[]},
+    "wip_chair_bride_ring":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Show the caught ring to the bride, allowing recognition without automatically handing over an inventory item. This is not a gameplay ending.","choices":[]},
+    "wip_chair_follow_collection":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — Pursue Lot Thirty-One to the loading dock, accounting for whether the ring is still trapped inside. This is not a gameplay ending.","choices":[]},
+    "wip_chair_staff_escort_loading":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — Arrive carrying Lot Thirty-One as an authorized staff escort; connects to the service salvage crew. This is not a gameplay ending.","choices":[]},
+    "wip_ring_in_pocket_next":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Next scene after acquiring the wedding ring awaits Nate's review. The ring is owned; its inscription and next choices are not approved yet. This is not a gameplay ending.","choices":[]},
     "wip_ballroom_flood":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Flood reaches the wedding corridor; the bride, cake, and guests react differently depending on water flags. This is not a gameplay ending.","choices":[]},
     "wip_ballroom_water_off":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — The entire hotel loses water during the wedding. This is not a gameplay ending.","choices":[]},
     "wip_groom_ring":{"mode":"narrative","scene":"grand_bellevue/salvage_storage","text":"DRAFT REVIEW STOP — Recover the groom's ring from the sold chair and determine what the bride knows. This is not a gameplay ending.","choices":[]},
