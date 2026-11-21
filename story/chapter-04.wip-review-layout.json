@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 3,
+      "layoutRevision": 4,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -36,11 +36,53 @@
             "title": "A1 · The last working stall",
             "nodes": [
               "hotel_restroom_entry",
-              "hotel_restroom_plumber",
-              "wip_close_valve",
-              "wip_plumbing_access",
-              "wip_wheel_buyer",
-              "wip_facilities_key"
+              "hotel_restroom_plumber"
+            ]
+          },
+          {
+            "id": "valve",
+            "title": "A1-A · Bare valve and last stall",
+            "nodes": [
+              "hotel_valve_braced",
+              "hotel_valve_flood",
+              "hotel_stall_lot_claimed",
+              "wip_stall_buyer",
+              "wip_ballroom_flood"
+            ]
+          },
+          {
+            "id": "maintenance",
+            "title": "A1-B · Maintenance walkway and missing groom",
+            "nodes": [
+              "hotel_pipe_tunnel",
+              "hotel_groom_pipe_hideout",
+              "wip_groom_ring",
+              "wip_groom_return",
+              "hotel_isolator_panel",
+              "hotel_isolator_restrooms",
+              "hotel_isolator_entire",
+              "wip_ballroom_water_off",
+              "hotel_maintenance_dock_exit"
+            ]
+          },
+          {
+            "id": "wheel",
+            "title": "A1-C · Commodore Bixby and Lot 14",
+            "nodes": [
+              "hotel_wheel_buyer_lead",
+              "hotel_lot_receipt_study",
+              "hotel_commodore_bixby",
+              "hotel_bixby_emergency",
+              "hotel_bixby_trade",
+              "hotel_wheel_return",
+              "wip_auctioneer_dispute"
+            ]
+          },
+          {
+            "id": "key",
+            "title": "A1-D · Facilities Key shortcut",
+            "nodes": [
+              "hotel_key_master_cabinet"
             ]
           },
           {
