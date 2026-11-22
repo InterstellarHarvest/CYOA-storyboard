@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 11,
+      "layoutRevision": 12,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -85,16 +85,10 @@
               "hotel_ring_slips",
               "hotel_ring_in_pocket",
               "hotel_ring_show_bride",
-              "hotel_bride_ring_groom_unlocated",
-              "hotel_bride_ring_groom_known",
               "hotel_bride_ring_handover",
               "hotel_bride_ring_bathroom",
-              "hotel_bride_ring_inscription",
-              "wip_bride_return_to_groom",
               "wip_bride_staff_corridor_route",
               "wip_bride_find_wedding_organizer",
-              "wip_bride_relay_inscription_to_groom",
-              "wip_ring_find_groom",
               "hotel_chair_follow_collection"
             ]
           },
@@ -132,32 +126,25 @@
           },
           {
             "id": "boiler_pressure",
-            "title": "Boiler Access · Emergency pressure test and missing groom",
+            "title": "Boiler Access · Pressure test and safe service passage",
             "nodes": [
               "hotel_boiler_pressure_intro",
               "hotel_boiler_pressure_relieved",
               "fatal_boiler_pressed_and_steamed",
               "hotel_boiler_dispute_hold",
               "hotel_boiler_staff_access",
-              "hotel_boiler_groom_question"
+              "hotel_boiler_service_passage"
             ]
           },
           {
             "id": "groom_boiler",
-            "title": "Boiler Three · Missing groom, ring, and wedding escort",
+            "title": "Boiler Three · Brief groom encounter and bathroom directions",
             "nodes": [
               "hotel_boiler_groom_encounter",
               "hotel_groom_show_ring",
-              "hotel_groom_ring_handover",
-              "hotel_groom_ring_safekeep",
-              "hotel_groom_bride_has_ring",
-              "hotel_groom_inscription_reassurance",
-              "hotel_groom_father_fear",
-              "hotel_groom_dialogue_followup",
-              "hotel_groom_escort_prompt",
-              "hotel_groom_escort_willing",
-              "hotel_groom_escort_evicted",
-              "wip_wedding_return_lot74"
+              "hotel_groom_directions_to_lavatory",
+              "hotel_groom_leave_behind",
+              "hotel_service_park_exit"
             ]
           },
           {
@@ -165,9 +152,6 @@
             "title": "A1-B · Maintenance walkway and missing groom",
             "nodes": [
               "hotel_pipe_tunnel",
-              "hotel_groom_pipe_hideout",
-              "wip_groom_ring",
-              "wip_groom_return",
               "hotel_isolator_panel",
               "hotel_isolator_restrooms",
               "hotel_isolator_entire",
