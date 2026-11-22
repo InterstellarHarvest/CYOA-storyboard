@@ -34,13 +34,12 @@ The attached JSON is an **approved narrative draft for review and art prompts**,
 
 ## Remaining editorial stops — Chapter 4 is not yet complete
 
-These three nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
+These two nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
 
-1. `wip_auctioneer_question` — auctioneer conversation.
-2. `wip_freight_lift` — service-side lift continuation.
-3. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
+1. `wip_freight_lift` — service-side lift continuation.
+2. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
 
-**Suggested next review:** the public auctioneer question, then the Lot 14 dispute and freight lift. They should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+**Suggested next review:** the Lot 14 safety-equipment dispute, then the freight lift. They should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
 
 ### Approved subsequent node — Upper Salvage
 
@@ -57,6 +56,10 @@ These three nodes are still explicitly marked `DRAFT REVIEW STOP` and require on
 ### Approved subsequent node — Whole-Hotel Water Shutoff
 
 `wip_hotel_water_off` is retired and replaced by `hotel_water_outage_confirmation`. The engineer distinguishes mechanically operational toilets from hydraulically operable ones and notes that access is a separate issue. The player may **A** try the sold staff lavatory, **B** the engineers' lavatory beyond the boiler, or **C** leave through the loading dock toward the park. All existing water-off flags persist, and `ch4_hotel_water_outage_confirmed` is set. No new dice, item, or wedding involvement.
+
+### Approved subsequent node — Auctioneer's Restroom Inventory
+
+`wip_auctioneer_question` is retired and replaced by `hotel_auctioneer_restroom_inventory`. The auctioneer mistakes an urgent request to use a toilet for a live product demonstration; the player may **A** enter the still-open public restroom, **B** try the staff lavatory, or **C** take the service corridor to the loading dock. The initial bride–father argument has been trimmed to a single bathroom-door sale joke. Set `ch4_auctioneer_restroom_inventory_asked`. No new dice, item, or fee.
 
 ## Subsequent owner directive — wedding is superficial only
 

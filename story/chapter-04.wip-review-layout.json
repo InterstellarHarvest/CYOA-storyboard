@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 19,
+      "layoutRevision": 20,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -23,11 +23,11 @@
           },
           {
             "id": "lobby",
-            "title": "Public Lobby · The father's auction",
+            "title": "Public Lobby · Restroom-fixture auction",
             "nodes": [
               "hotel_lobby_view",
               "hotel_auctioneer_arrival",
-              "wip_auctioneer_question"
+              "hotel_auctioneer_restroom_inventory"
             ]
           },
           {

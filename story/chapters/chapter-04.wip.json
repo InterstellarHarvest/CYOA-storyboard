@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved whole-hotel water-outage consequence with three restroom/park routes. All flooding and shutoff editorial stops now closed. Three remaining WIPs: public auctioneer question, freight lift, and Lot 14 dispute. Four fatal endings preserved.",
+    "reviewCheckpoint": "2026-11-21: owner-approved concise auctioneer question about remaining stalls, with three restroom/service choices. Trimmed opening bride–father exchange to the single bathroom-door sale joke. Two WIPs remain: freight lift and Lot 14 dispute.",
     "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -100,6 +100,10 @@
     "approvedHotelWaterOutage": {
       "status": "owner-approved",
       "note": "Dry hotel has mechanically valid but unflushable toilets; engineer says access is a separate issue. A staff lavatory, B boiler engineers lavatory, C service-yard park exit. Existing shutoff flags persist, plus ch4_hotel_water_outage_confirmed."
+    },
+    "approvedAuctioneerRestroomQuestion": {
+      "status": "owner-approved",
+      "note": "A enter the existing public restroom; B staff lavatory; C loading dock foreman. ch4_auctioneer_restroom_inventory_asked. Short opening, no wedding-family subplot."
     }
   },
   "nodes": {
@@ -306,42 +310,19 @@
       "pose": "showman",
       "text": [
         {
-          "desc": "An elderly gentleman in a crimson dinner jacket stands behind a wooden auction podium. He gestures grandly toward two workmen."
+          "desc": "An elderly gentleman in a crimson dinner jacket stands behind a wooden auction podium. He gestures toward two workmen."
         },
         "SOLD! SIX HUNDRED AND FORTY!",
-        "Gentlemen! Kindly assist our fortunate buyer!",
         {
-          "desc": "The workmen approach the restroom entrance. One produces a screwdriver. The other begins removing the hinges."
+          "desc": "The workmen approach the restroom entrance. One starts unscrewing the hinges."
         },
         {
-          "say": "Papa!",
+          "say": "Papa, you're selling the bathrooms!",
           "who": "hotel_bride"
         },
-        "Darling! You look radiant!",
+        "The doors, darling. Only the doors.",
         {
-          "say": "You're selling the bathrooms!",
-          "who": "hotel_bride"
-        },
-        "The doors, sweetheart. Only the doors.",
-        {
-          "say": "You promised the auction wouldn't start until after the wedding!",
-          "who": "hotel_bride"
-        },
-        "And it hasn't! Not officially. These are merely preliminary sales.",
-        {
-          "desc": "A workman lifts the first restroom door off its hinges."
-        },
-        {
-          "say": "Papa, you're dismantling the hotel!",
-          "who": "hotel_bride"
-        },
-        "Don't be dramatic. The hotel is perfectly sound.",
-        {
-          "desc": "An enormous metallic crash echoes from upstairs. A moment later, a grand piano rolls past the lobby entrance on a freight trolley."
-        },
-        "Mostly sound.",
-        {
-          "desc": "The bride closes her eyes. You look toward the restroom. The workmen are preparing to remove the second door."
+          "desc": "A workman carries away the first restroom door. You glance through the entrance toward the remaining stalls."
         }
       ],
       "choices": [
@@ -355,7 +336,7 @@
           "id": "public_a2_auctioneer",
           "kind": "spoken",
           "text": "HAVE YOU SOLD ALL THE RESTROOMS, OR IS THERE ONE LEFT?",
-          "to": "wip_auctioneer_question"
+          "to": "hotel_auctioneer_restroom_inventory"
         }
       ]
     },
@@ -586,12 +567,6 @@
           "to": "hotel_key_master_cabinet"
         }
       }
-    },
-    "wip_auctioneer_question": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/lobby",
-      "text": "DRAFT REVIEW STOP — Briefly question the auctioneer about the remaining usable restrooms and the latest fixture sale. No wedding-family negotiation or ceremony duties.",
-      "choices": []
     },
     "wip_freight_lift": {
       "mode": "narrative",
@@ -5254,6 +5229,78 @@
         }
       ],
       "notes": "Owner-approved concise consequence for ENTIRE HOTEL shutoff. Existing ch4_hotel_water_off and ch4_restroom_water_off flags persist. No second d6, fee, item, or wedding duties."
+    },
+    "hotel_auctioneer_restroom_inventory": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "showman",
+      "effects": {
+        "set": {
+          "ch4_auctioneer_restroom_inventory_asked": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You approach the auctioneer while workers carry away the restroom doors."
+        },
+        {
+          "say": "HAVE YOU SOLD ALL THE RESTROOMS, OR IS THERE ONE LEFT?",
+          "who": "visitor"
+        },
+        {
+          "say": "Three stalls remain on the premises!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "ARE ANY OF THEM AVAILABLE?",
+          "who": "visitor"
+        },
+        {
+          "say": "To inspect? Certainly!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "TO USE.",
+          "who": "visitor"
+        },
+        {
+          "say": "Ah! A live demonstration. Very persuasive!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "I'M NOT SELLING ANYTHING!",
+          "who": "visitor"
+        },
+        {
+          "say": "Then we'll call it a preview.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "He gestures toward the doorless restroom and returns to his auction."
+        }
+      ],
+      "choices": [
+        {
+          "id": "auctioneer_inventory_public",
+          "kind": "action",
+          "text": "ENTER THE RESTROOM WHILE IT'S STILL THERE.",
+          "to": "hotel_restroom_entry"
+        },
+        {
+          "id": "auctioneer_inventory_staff",
+          "kind": "action",
+          "text": "LOOK FOR A STAFF RESTROOM INSTEAD.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "auctioneer_inventory_service",
+          "kind": "action",
+          "text": "LEAVE THE AUCTION AND TAKE THE SERVICE CORRIDOR TO THE LOADING DOCK.",
+          "to": "hotel_service_foreman"
+        }
+      ],
+      "notes": "Owner-approved short restroom inventory question, three existing choices. The opening bride–father bickering is also shortened to the initial door-sale joke. No new roll, item, fee, or ceremony duty."
     }
   }
 }
