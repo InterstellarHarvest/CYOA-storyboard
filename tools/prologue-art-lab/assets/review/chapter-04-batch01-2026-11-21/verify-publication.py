@@ -6,7 +6,6 @@ Usage: python3 verify-publication.py --commit SHA --out /tmp/ch4-publication.jso
 from pathlib import Path
 from html.parser import HTMLParser
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.request import Request, urlopen
 from urllib.parse import urlparse, unquote
 import argparse,hashlib,json,subprocess,time
 
@@ -17,8 +16,11 @@ PREFIX=ROOT.relative_to(REPO).as_posix()
 def fetch(url):
  for attempt in range(3):
   try:
-   with urlopen(Request(url,headers={'User-Agent':'Out-of-Order-Artwork-Review-QA'}),timeout=45) as r:
-    return r.status,r.headers.get('Content-Type',''),r.read()
+   # Use the platform curl trust store; do not disable TLS certificate validation.
+   result=subprocess.check_output(['curl','--fail','--silent','--show-error','--location','--connect-timeout','15','--max-time','45','--write-out','\n__CH4_HTTP__%{http_code}\t%{content_type}',url])
+   body,metadata=result.rsplit(b'\n__CH4_HTTP__',1)
+   status,mime=metadata.decode().split('\t',1)
+   return int(status),mime,body
   except Exception:
    if attempt==2:raise
    time.sleep(1+attempt)
