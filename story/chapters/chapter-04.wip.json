@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved concise auctioneer question about remaining stalls, with three restroom/service choices. Trimmed opening bride–father exchange to the single bathroom-door sale joke. Two WIPs remain: freight lift and Lot 14 dispute.",
+    "reviewCheckpoint": "2026-11-21: owner-approved Lot 14 cataloguing dispute and receipt-locked wheel recall, connecting to existing plumber repair. Removed bride-objected exception on receipt. Only freight-lift WIP remains; all other editorial stop routes are written.",
     "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -104,6 +104,10 @@
     "approvedAuctioneerRestroomQuestion": {
       "status": "owner-approved",
       "note": "A enter the existing public restroom; B staff lavatory; C loading dock foreman. ch4_auctioneer_restroom_inventory_asked. Short opening, no wedding-family subplot."
+    },
+    "approvedLot14Recall": {
+      "status": "owner-approved",
+      "note": "Original receipt Focus A inspection sets ch4_knows_wheel_lot_14. Cite receipt yields temporary safety-wheel recall with no new dice, item, fee, or wedding duty. B find Commodore; C use maintenance controls. Recovery continues to existing hotel_wheel_return."
     }
   },
   "nodes": {
@@ -802,7 +806,7 @@
           "ch4_knows_wheel_lot_14": true
         }
       },
-      "text": "The little receipt is almost illegible. You smooth it against a dry patch of tile.\n\nLOT 14 — BRASS WATER SHUTOFF WHEEL.\nBUYER — COMMODORE E. BIXBY.\nPURCHASE PRICE — 12.00.\nDECLARED PURPOSE — NAVAL DECORATION.\n\nAt the bottom, someone has stamped ALL SALES FINAL, including the emergency fixtures. There is a small handwritten exception: UNLESS THE BRIDE OBJECTS.",
+      "text": "The little receipt is almost illegible. You smooth it against a dry patch of tile.\n\nLOT 14 — BRASS WATER SHUTOFF WHEEL.\nBUYER — COMMODORE E. BIXBY.\nPURCHASE PRICE — 12.00.\nDECLARED PURPOSE — NAVAL DECORATION.\n\nAt the bottom, someone has stamped ALL SALES FINAL, including the emergency fixtures. There is a small handwritten exception: CATALOGUING ERRORS REQUIRE ORIGINAL RECEIPT.",
       "choices": [
         {
           "id": "receipt_find_commodore",
@@ -814,7 +818,7 @@
           "id": "receipt_appeal_auctioneer",
           "kind": "action",
           "text": "TAKE THE LOT NUMBER TO THE AUCTIONEER AND CHALLENGE THE SALE.",
-          "to": "wip_auctioneer_dispute"
+          "to": "hotel_auctioneer_lot14_dispute"
         }
       ]
     },
@@ -865,7 +869,7 @@
           "id": "bixby_auction_dispute",
           "kind": "action",
           "text": "GO BACK TO THE AUCTIONEER AND DEMAND THE SALE BE REVERSED.",
-          "to": "wip_auctioneer_dispute"
+          "to": "hotel_auctioneer_lot14_dispute"
         }
       ]
     },
@@ -3083,12 +3087,6 @@
         }
       ]
     },
-    "wip_auctioneer_dispute": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/lobby",
-      "text": "DRAFT REVIEW STOP — Challenge the safety-equipment auction using the Lot 14 receipt or the buyer's testimony. This is not a gameplay ending.",
-      "choices": []
-    },
     "hotel_groom_directions_to_lavatory": {
       "mode": "dialogue",
       "scene": "grand_bellevue/maintenance",
@@ -5301,6 +5299,160 @@
         }
       ],
       "notes": "Owner-approved short restroom inventory question, three existing choices. The opening bride–father bickering is also shortened to the initial door-sale joke. No new roll, item, fee, or ceremony duty."
+    },
+    "hotel_auctioneer_lot14_dispute": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "showman",
+      "effects": {
+        "set": {
+          "ch4_lot14_dispute_opened": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You approach the auction podium while water spreads across the lobby floor."
+        },
+        {
+          "say": "YOU SOLD THE HOTEL'S EMERGENCY WATER SHUTOFF!",
+          "who": "visitor"
+        },
+        {
+          "say": "We sold a brass nautical fitting.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "THE HOTEL'S FLOODING!",
+          "who": "visitor"
+        },
+        {
+          "say": "That does explain the damp bidding paddles.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "REVERSE THE SALE!",
+          "who": "visitor"
+        },
+        {
+          "say": "Cataloguing errors may be appealed.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "He produces a correction form."
+        },
+        {
+          "say": "Have you inspected the original receipt?",
+          "who": "hotel_auctioneer"
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot14_dispute_cite_receipt",
+          "kind": "action",
+          "text": "CITE THE LOT 14 RECEIPT.",
+          "if": {
+            "flag": "ch4_knows_wheel_lot_14"
+          },
+          "to": "hotel_auctioneer_lot14_recall"
+        },
+        {
+          "id": "lot14_dispute_find_buyer",
+          "kind": "action",
+          "text": "FIND COMMODORE BIXBY AND ASK HIM DIRECTLY.",
+          "to": "hotel_commodore_bixby"
+        },
+        {
+          "id": "lot14_dispute_maintenance",
+          "kind": "action",
+          "text": "ABANDON THE DISPUTE AND TRY THE MAINTENANCE CONTROLS.",
+          "to": "hotel_pipe_tunnel"
+        }
+      ],
+      "notes": "Owner-approved short dispute. The conditional receipt action is unlocked by Focus A inspection flag, not a six-slot item. Future UI displays disabled action with REQUIRES: LOT 14 RECEIPT INSPECTED if absent."
+    },
+    "hotel_auctioneer_lot14_recall": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "bureaucratic",
+      "effects": {
+        "set": {
+          "ch4_lot14_catalogue_correction": true,
+          "ch4_valve_wheel_recovered": true,
+          "ch4_lot14_recalled_temporary": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You point to the original receipt."
+        },
+        {
+          "say": "LOT FOURTEEN. WATER SHUTOFF WHEEL.",
+          "who": "visitor"
+        },
+        {
+          "say": "Hmm. The catalogue lists it as naval decoration.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "IT WAS ATTACHED TO A WATER PIPE!",
+          "who": "visitor"
+        },
+        {
+          "say": "Oh, dear. Incorrectly described merchandise.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "SO THE SALE IS CANCELLED?",
+          "who": "visitor"
+        },
+        {
+          "say": "Certainly not. All sales are final.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "THEN GIVE ME THE WHEEL!",
+          "who": "visitor"
+        },
+        {
+          "say": "Naturally. We must recall it for inspection.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "He stamps the correction form: RECALL AUTHORIZED."
+        },
+        {
+          "desc": "Two porters retrieve the brass wheel from Commodore Bixby's ice-bucket boat."
+        },
+        {
+          "say": "But I've only just launched her!",
+          "who": "hotel_commodore_bixby"
+        },
+        {
+          "say": "For legal purposes, Commodore, you haven't taken delivery.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "The porters hand you the wheel."
+        },
+        {
+          "say": "Please return it when you've finished inspecting it.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "You leave before he can reconsider."
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot14_recall_return_wheel",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_wheel_return"
+        }
+      ],
+      "notes": "Owner-approved wheel recovery. Temporary inspection recall leaves original sale legally final. Wheel is a story prop, not an inventory slot or added fee. Reuse existing plumber return and shutoff scene."
     }
   }
 }

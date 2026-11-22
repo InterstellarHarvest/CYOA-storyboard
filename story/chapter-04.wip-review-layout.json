@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 20,
+      "layoutRevision": 21,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -163,7 +163,7 @@
           },
           {
             "id": "wheel",
-            "title": "A1-C · Commodore Bixby and Lot 14",
+            "title": "A1-C · Lot 14 safety wheel, buyer, and catalogue recall",
             "nodes": [
               "hotel_wheel_buyer_lead",
               "hotel_lot_receipt_study",
@@ -171,7 +171,8 @@
               "hotel_bixby_emergency",
               "hotel_bixby_trade",
               "hotel_wheel_return",
-              "wip_auctioneer_dispute"
+              "hotel_auctioneer_lot14_dispute",
+              "hotel_auctioneer_lot14_recall"
             ]
           },
           {

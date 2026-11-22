@@ -21,10 +21,10 @@
 
 | Check | Result |
 | --- | --- |
-| Story nodes | 119 |
-| Nodes reachable from Chapter 4 entry (including SHOW/USE and d6 outcomes) | 119/119 |
+| Story nodes | 120 |
+| Nodes reachable from Chapter 4 entry (including SHOW/USE and d6 outcomes) | 120/120 |
 | Broken choice/SHOW/USE/d6 targets | 0 |
-| Layout unique placements | 119/119 |
+| Layout unique placements | 120/120 |
 | Fatal endings | 4: FINAL OCCUPANCY, FOLDED FOR CONVENIENCE, PRESSED AND STEAMED, MADE TO MEASURE |
 | Explicit nonfatal park exits | 3: service yard, bridal corridor, bridal lavatory |
 | Missing-item and exhausted dialogue actions | Gated in WIP JSON; future game UI must display disabled/greyed with explanatory subtitles |
@@ -34,12 +34,11 @@ The attached JSON is an **approved narrative draft for review and art prompts**,
 
 ## Remaining editorial stops — Chapter 4 is not yet complete
 
-These two nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
+This one node is still explicitly marked `DRAFT REVIEW STOP` and requires one-node-at-a-time story review with Nate:
 
 1. `wip_freight_lift` — service-side lift continuation.
-2. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
 
-**Suggested next review:** the Lot 14 safety-equipment dispute, then the freight lift. They should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+**Suggested next review:** the freight lift. It should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
 
 ### Approved subsequent node — Upper Salvage
 
@@ -60,6 +59,10 @@ These two nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-
 ### Approved subsequent node — Auctioneer's Restroom Inventory
 
 `wip_auctioneer_question` is retired and replaced by `hotel_auctioneer_restroom_inventory`. The auctioneer mistakes an urgent request to use a toilet for a live product demonstration; the player may **A** enter the still-open public restroom, **B** try the staff lavatory, or **C** take the service corridor to the loading dock. The initial bride–father argument has been trimmed to a single bathroom-door sale joke. Set `ch4_auctioneer_restroom_inventory_asked`. No new dice, item, or fee.
+
+### Approved subsequent node — Lot 14 Cataloguing Recall
+
+`wip_auctioneer_dispute` is retired and replaced with `hotel_auctioneer_lot14_dispute` and `hotel_auctioneer_lot14_recall`. The receipt's old bride-objection clause is replaced with a cataloguing-error requirement. A conditional **CITE LOT 14 RECEIPT** action requires `ch4_knows_wheel_lot_14` from Focus A inspection and recalls the plumbing wheel; other choices return to Commodore Bixby or use the maintenance controls. The recalled wheel is a temporary story prop and returns through the existing plumber repair node. No new dice, fees, or wedding roles.
 
 ## Subsequent owner directive — wedding is superficial only
 
