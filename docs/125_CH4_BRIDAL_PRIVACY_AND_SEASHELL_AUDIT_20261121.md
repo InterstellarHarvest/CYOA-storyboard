@@ -34,14 +34,13 @@ The attached JSON is an **approved narrative draft for review and art prompts**,
 
 ## Remaining editorial stops — Chapter 4 is not yet complete
 
-These four nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
+These three nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
 
 1. `wip_auctioneer_question` — auctioneer conversation.
 2. `wip_freight_lift` — service-side lift continuation.
-3. `wip_hotel_water_off` — whole-hotel water shutoff, with restroom/exit consequences only.
-4. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
+3. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
 
-**Suggested next review:** the whole-hotel water-shutoff branch, then the auction and freight-lift stops. They should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+**Suggested next review:** the public auctioneer question, then the Lot 14 dispute and freight lift. They should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
 
 ### Approved subsequent node — Upper Salvage
 
@@ -54,6 +53,10 @@ These four nodes are still explicitly marked `DRAFT REVIEW STOP` and require one
 ### Approved subsequent node — Flooded Public Corridor
 
 `wip_flooded_hotel_corridor` is retired and replaced by `hotel_flooded_public_corridor`. An attendant briefly reclassifies the flood as a temporary water feature; the player can **A** reach the staff lavatory, **B** use the maintenance hatch, or **C** leave via the service-yard park exit. Set `ch4_flooded_corridor_reached`. No extra dice, wedding task, or inventory.
+
+### Approved subsequent node — Whole-Hotel Water Shutoff
+
+`wip_hotel_water_off` is retired and replaced by `hotel_water_outage_confirmation`. The engineer distinguishes mechanically operational toilets from hydraulically operable ones and notes that access is a separate issue. The player may **A** try the sold staff lavatory, **B** the engineers' lavatory beyond the boiler, or **C** leave through the loading dock toward the park. All existing water-off flags persist, and `ch4_hotel_water_outage_confirmed` is set. No new dice, item, or wedding involvement.
 
 ## Subsequent owner directive — wedding is superficial only
 

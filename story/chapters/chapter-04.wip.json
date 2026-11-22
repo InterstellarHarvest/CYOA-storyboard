@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved flooded public corridor now connects to staff lavatory, maintenance hatch and service-yard park departure. Short temporary water feature exchange. Four editorial stops remain; four fatal and three park-bound exits unchanged.",
+    "reviewCheckpoint": "2026-11-21: owner-approved whole-hotel water-outage consequence with three restroom/park routes. All flooding and shutoff editorial stops now closed. Three remaining WIPs: public auctioneer question, freight lift, and Lot 14 dispute. Four fatal endings preserved.",
     "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -96,6 +96,10 @@
     "approvedFloodedCorridor": {
       "status": "owner-approved",
       "note": "Three choices: A staff lavatory, B existing pipe tunnel, C park-bound service-yard exit. ch4_flooded_corridor_reached flag, no new d6 or item, no wedding participation."
+    },
+    "approvedHotelWaterOutage": {
+      "status": "owner-approved",
+      "note": "Dry hotel has mechanically valid but unflushable toilets; engineer says access is a separate issue. A staff lavatory, B boiler engineers lavatory, C service-yard park exit. Existing shutoff flags persist, plus ch4_hotel_water_outage_confirmed."
     }
   },
   "nodes": {
@@ -713,7 +717,7 @@
           "id": "hotel_water_ballroom",
           "kind": "action",
           "text": "FOLLOW THE DRY PIPES TO CHECK WHETHER ANY RESTROOM STILL WORKS.",
-          "to": "wip_hotel_water_off"
+          "to": "hotel_water_outage_confirmation"
         },
         {
           "id": "hotel_water_dock",
@@ -4908,12 +4912,6 @@
       ],
       "notes": "Return hub avoids repeating the entire door inspection or previously exhausted dialogue. Future UI should show exhausted and missing-item actions as disabled, with subtitles, not silently hide them."
     },
-    "wip_hotel_water_off": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/service_passage",
-      "text": "DRAFT REVIEW STOP — With the main water valve closed, every toilet in the hotel may be unusable. Develop a short bathroom consequence and a service/park exit, not a wedding-shutoff explanation scene.",
-      "choices": []
-    },
     "hotel_upper_salvage_arrival": {
       "mode": "dialogue",
       "scene": "grand_bellevue/upper_salvage",
@@ -5189,6 +5187,73 @@
         }
       ],
       "notes": "Owner-approved short flooded-corridor scene. Bystanders are incidental; no wedding tasks, items or new dice. Three existing restroom/escape routes only."
+    },
+    "hotel_water_outage_confirmation": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/service_passage",
+      "speaker": "hotel_boiler_engineer",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_hotel_water_outage_confirmed": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You follow the now-silent pipes into the service corridor. You turn on a nearby washbasin tap. Nothing."
+        },
+        {
+          "desc": "An engineer approaches, studying a pressure gauge."
+        },
+        {
+          "say": "DO ANY OF THE TOILETS STILL WORK?",
+          "who": "visitor"
+        },
+        {
+          "say": "Mechanically, yes. Hydraulically, no.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "say": "I ONLY NEED ONE!",
+          "who": "visitor"
+        },
+        {
+          "say": "Then you'd have one toilet that doesn't flush.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "say": "I'D TAKE IT!",
+          "who": "visitor"
+        },
+        {
+          "say": "Access is a separate issue.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "desc": "He returns to his gauge. The corridor branches toward the staff lavatory, the boiler room, and the loading dock."
+        }
+      ],
+      "choices": [
+        {
+          "id": "water_outage_check_staff",
+          "kind": "action",
+          "text": "CHECK THE STAFF LAVATORY ANYWAY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "water_outage_check_engineers",
+          "kind": "action",
+          "text": "TRY THE ENGINEERS' LAVATORY.",
+          "to": "hotel_boiler_pressure_intro"
+        },
+        {
+          "id": "water_outage_exit",
+          "kind": "action",
+          "text": "LEAVE THE HOTEL THROUGH THE LOADING DOCK.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Owner-approved concise consequence for ENTIRE HOTEL shutoff. Existing ch4_hotel_water_off and ch4_restroom_water_off flags persist. No second d6, fee, item, or wedding duties."
     }
   }
 }
