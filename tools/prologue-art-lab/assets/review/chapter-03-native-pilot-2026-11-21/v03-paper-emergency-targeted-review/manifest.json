@@ -1,0 +1,312 @@
+{
+  "schema": "out-of-order-paper-emergency-assessment-v03",
+  "version": "v03-paper-emergency-targeted-review",
+  "date": "2026-11-22",
+  "assessmentStarted": "2026-11-21",
+  "timezone": "America/New_York",
+  "reviewBranch": "art/ch3-native-pilot-20261121",
+  "startingReviewCommit": "674f5702ffa0345608dd617238028034319ceac7",
+  "canonicalMainVerified": "d9b6b91604b72115c5402253f00924665e957727",
+  "canonicalArtKey": "scenes:pavilion_reboot/paper_emergency",
+  "approvedSource": {
+    "file": "assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+    "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch02-20261119",
+      "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+    }
+  },
+  "status": "generated",
+  "selection": "unselected",
+  "approved": false,
+  "assetPath": null,
+  "candidateProduced": false,
+  "artworkPixelsChanged": 0,
+  "activeEditMask": "masks/active-edit-mask.png",
+  "activeEditMaskPixels": 0,
+  "proposals": [
+    {
+      "id": "P1",
+      "name": "Left floor crossing",
+      "polygon": [
+        [
+          152,
+          183
+        ],
+        [
+          158,
+          181
+        ],
+        [
+          166,
+          181
+        ],
+        [
+          169,
+          183
+        ],
+        [
+          165,
+          187
+        ],
+        [
+          157,
+          192
+        ],
+        [
+          151,
+          190
+        ]
+      ],
+      "color": [
+        242,
+        71,
+        71
+      ],
+      "priority": "Manual topology decision before any repair",
+      "finding": "The source-fed strip merges with a returning floor loop in a pale, branching-looking junction. An under/over edge is not consistently readable at 4x. The problem is specific occlusion ambiguity, not overall softness.",
+      "protectedConstraints": "Do not touch the cream feed unit, microphone, gate, counter geometry, paper print marks away from the junction, or general floor shading.",
+      "decisionNeeded": "Which continuation runs over the other? First trace the whole strip(s) and choose a consistent depth order. This may be one folded continuous receipt; do not invent an extra paper source.",
+      "smallestRepair": "If needed after tracing, hand-place a short contact-shadow/edge cluster only at the crossing. Keep the existing paper width, curvature and lighting.",
+      "estimatedChangedPixels": [
+        8,
+        24
+      ],
+      "applyNow": false,
+      "maskFile": "masks/P1-proposed-mask.png",
+      "maskPixels": 145,
+      "maskSha256": "ab0f2122bdd1a1c46bde7e5f5b75cd250f104e2e58b33a585c7bf4cd7eb111ee"
+    },
+    {
+      "id": "P2",
+      "name": "Right floor fold or overlap",
+      "polygon": [
+        [
+          241,
+          185
+        ],
+        [
+          248,
+          185
+        ],
+        [
+          257,
+          188
+        ],
+        [
+          258,
+          193
+        ],
+        [
+          250,
+          196
+        ],
+        [
+          243,
+          192
+        ]
+      ],
+      "color": [
+        232,
+        164,
+        47
+      ],
+      "priority": "Uncertain; may be an intentional continuous fold",
+      "finding": "The front descending strip, small right loop and floor shadow merge near the counter base. It is unclear whether this is a crossing of sections or the folded return of the same strip.",
+      "protectedConstraints": "Keep counter base, exterior door, floor contact/shadow outside the local junction and all existing paper markings.",
+      "decisionNeeded": "Resolve P1 and trace continuity before deciding whether P2 is a defect at all. Do not automatically separate connected paper into new ribbons.",
+      "smallestRepair": "Only if Nate finds it confusing, manually distinguish one fold edge or contact shadow. Otherwise keep.",
+      "estimatedChangedPixels": [
+        6,
+        16
+      ],
+      "applyNow": false,
+      "maskFile": "masks/P2-proposed-mask.png",
+      "maskPixels": 142,
+      "maskSha256": "f825c19f7c1dda395522cb77bf83a1d73c6981353c2d39fa4e4da77c58eaafe9"
+    },
+    {
+      "id": "A1",
+      "name": "Attendant mouth expression",
+      "polygon": [
+        [
+          218,
+          113
+        ],
+        [
+          225,
+          113
+        ],
+        [
+          225,
+          116
+        ],
+        [
+          218,
+          116
+        ]
+      ],
+      "color": [
+        103,
+        115,
+        239
+      ],
+      "priority": "Creative/manual expression decision",
+      "finding": "The attendant is visibly smiling. The narrative has him shout an emergency instruction. This is a genuine narrative-expression mismatch rather than pixel noise.",
+      "protectedConstraints": "Keep hair, spectacles, eyes, nose, face proportions, skin lighting and costume identity. This mask excludes spectacles and upper face.",
+      "decisionNeeded": "Decide the precise alarmed expression together with the hand pose; a cosmetic mouth flip alone will not make the whole body read alarmed.",
+      "smallestRepair": "After approval, hand-author a small mouth expression using the existing skin/shadow family; do not shrink a portrait or erase useful face detail.",
+      "estimatedChangedPixels": [
+        6,
+        14
+      ],
+      "applyNow": false,
+      "maskFile": "masks/A1-proposed-mask.png",
+      "maskPixels": 32,
+      "maskSha256": "c7c9ab46cb29df02cdf8974b4365fc653fd806d1ffbb0051f81d712492d7a03d"
+    },
+    {
+      "id": "A2",
+      "name": "Attendant hands and near forearm",
+      "polygon": [
+        [
+          216,
+          131
+        ],
+        [
+          222,
+          128
+        ],
+        [
+          230,
+          130
+        ],
+        [
+          236,
+          134
+        ],
+        [
+          235,
+          139
+        ],
+        [
+          230,
+          140
+        ],
+        [
+          218,
+          139
+        ]
+      ],
+      "color": [
+        147,
+        92,
+        220
+      ],
+      "priority": "Creative/manual gesture decision",
+      "finding": "Clasped hands resting on the counter reinforce a calm seated pose, conflicting with the alarmed beat. Identity, uniform and scale are otherwise continuous.",
+      "protectedConstraints": "Keep the existing torso envelope, head, badge, vest/shirt colors, counter edge, feed unit, plant and microphone. Do not introduce new controls or a new red button location.",
+      "decisionNeeded": "Choose a restrained stop/urgency gesture within the current proportions. A larger shoulder-grab or standing pose would need separate, wider scope.",
+      "smallestRepair": "A coordinated small hand/forearm sprite change after Nate chooses the gesture; preserve the costume shading outside the mask.",
+      "estimatedChangedPixels": [
+        20,
+        50
+      ],
+      "applyNow": false,
+      "maskFile": "masks/A2-proposed-mask.png",
+      "maskPixels": 188,
+      "maskSha256": "14f1d308469e9cc56bfd854fec11324af199362095876e950af01fd91c85d199"
+    }
+  ],
+  "assessment": "assessment/targeted-assessment.json",
+  "references": [
+    {
+      "key": "portraits:pavilion_attendant:idle",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      },
+      "reviewFile": "references/attendant-idle.png"
+    },
+    {
+      "key": "portraits:pavilion_attendant:alarmed",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png",
+      "sha256": "51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "5e0449b3da84764176f9744f5624a88868f5fdcb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v02-localized-corrections/candidates/CH3-B07-attendant-alarmed-v02.png"
+      },
+      "reviewFile": "references/attendant-alarmed.png"
+    },
+    {
+      "key": "scenes:pavilion_reboot/restroom_entrance",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+      "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png"
+      },
+      "reviewFile": "references/restroom-entrance.png"
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_printer",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/record_printer.png",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png"
+      },
+      "reviewFile": "references/record-printer.png"
+    }
+  ],
+  "originalMetrics": {
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "alpha": "opaque",
+    "uniqueRGB": 20305,
+    "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e"
+  },
+  "scope": "Assessment overlays, proposed masks and manual repair handoff only; the approved artwork and all prior reviews remain unchanged.",
+  "provenanceLimitation": "Original source-derived native-grid authorship remains unresolved. Diagnostic nearest-neighbor enlargements do not change that. No image generation, palette restriction, filtering or artwork resampling occurred.",
+  "stopPoint": "Nate visual review before any repair or expanded scope."
+}

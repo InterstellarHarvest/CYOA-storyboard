@@ -1,0 +1,594 @@
+{
+  "headline": "Paper Emergency targeted assessment; maximum useful detail, minimum unnecessary noise",
+  "artworkStatus": "approved original remains unchanged; assessment generated/unselected; no new candidate",
+  "protected": [
+    {
+      "name": "Restroom signage",
+      "box": [
+        68,
+        35,
+        182,
+        62
+      ]
+    },
+    {
+      "name": "Left jamb",
+      "box": [
+        59,
+        61,
+        73,
+        185
+      ]
+    },
+    {
+      "name": "Right jamb",
+      "box": [
+        177,
+        61,
+        186,
+        177
+      ]
+    },
+    {
+      "name": "Door head and frame",
+      "box": [
+        61,
+        60,
+        186,
+        70
+      ]
+    },
+    {
+      "name": "Restroom fixtures and tiled depth",
+      "box": [
+        73,
+        70,
+        171,
+        139
+      ]
+    },
+    {
+      "name": "Inner gate and hardware",
+      "box": [
+        96,
+        139,
+        170,
+        169
+      ]
+    },
+    {
+      "name": "Left seating",
+      "box": [
+        0,
+        135,
+        59,
+        187
+      ]
+    },
+    {
+      "name": "Left cream paper-feed unit",
+      "box": [
+        184,
+        130,
+        202,
+        148
+      ]
+    },
+    {
+      "name": "Gooseneck microphone",
+      "box": [
+        194,
+        122,
+        202,
+        139
+      ]
+    },
+    {
+      "name": "Right-hand plant and pot",
+      "box": [
+        246,
+        108,
+        271,
+        144
+      ]
+    },
+    {
+      "name": "Countertop and counter architecture",
+      "box": [
+        199,
+        141,
+        269,
+        183
+      ]
+    },
+    {
+      "name": "Exterior doorway and frame",
+      "box": [
+        270,
+        74,
+        314,
+        174
+      ]
+    },
+    {
+      "name": "Brush rail, brackets, shafts and joints",
+      "box": [
+        230,
+        24,
+        314,
+        83
+      ]
+    },
+    {
+      "name": "Brush heads and useful bristle shading",
+      "box": [
+        227,
+        78,
+        313,
+        111
+      ]
+    },
+    {
+      "name": "Ceiling, lights and atmosphere",
+      "box": [
+        0,
+        0,
+        314,
+        27
+      ]
+    },
+    {
+      "name": "Attendant hair, glasses and upper face identity",
+      "box": [
+        207,
+        97,
+        230,
+        113
+      ]
+    },
+    {
+      "name": "Attendant name badge",
+      "box": [
+        226,
+        122,
+        232,
+        127
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "P1",
+      "name": "Left floor crossing",
+      "polygon": [
+        [
+          152,
+          183
+        ],
+        [
+          158,
+          181
+        ],
+        [
+          166,
+          181
+        ],
+        [
+          169,
+          183
+        ],
+        [
+          165,
+          187
+        ],
+        [
+          157,
+          192
+        ],
+        [
+          151,
+          190
+        ]
+      ],
+      "color": [
+        242,
+        71,
+        71
+      ],
+      "priority": "Manual topology decision before any repair",
+      "finding": "The source-fed strip merges with a returning floor loop in a pale, branching-looking junction. An under/over edge is not consistently readable at 4x. The problem is specific occlusion ambiguity, not overall softness.",
+      "protectedConstraints": "Do not touch the cream feed unit, microphone, gate, counter geometry, paper print marks away from the junction, or general floor shading.",
+      "decisionNeeded": "Which continuation runs over the other? First trace the whole strip(s) and choose a consistent depth order. This may be one folded continuous receipt; do not invent an extra paper source.",
+      "smallestRepair": "If needed after tracing, hand-place a short contact-shadow/edge cluster only at the crossing. Keep the existing paper width, curvature and lighting.",
+      "estimatedChangedPixels": [
+        8,
+        24
+      ],
+      "applyNow": false,
+      "maskFile": "masks/P1-proposed-mask.png",
+      "maskPixels": 145,
+      "maskSha256": "ab0f2122bdd1a1c46bde7e5f5b75cd250f104e2e58b33a585c7bf4cd7eb111ee"
+    },
+    {
+      "id": "P2",
+      "name": "Right floor fold or overlap",
+      "polygon": [
+        [
+          241,
+          185
+        ],
+        [
+          248,
+          185
+        ],
+        [
+          257,
+          188
+        ],
+        [
+          258,
+          193
+        ],
+        [
+          250,
+          196
+        ],
+        [
+          243,
+          192
+        ]
+      ],
+      "color": [
+        232,
+        164,
+        47
+      ],
+      "priority": "Uncertain; may be an intentional continuous fold",
+      "finding": "The front descending strip, small right loop and floor shadow merge near the counter base. It is unclear whether this is a crossing of sections or the folded return of the same strip.",
+      "protectedConstraints": "Keep counter base, exterior door, floor contact/shadow outside the local junction and all existing paper markings.",
+      "decisionNeeded": "Resolve P1 and trace continuity before deciding whether P2 is a defect at all. Do not automatically separate connected paper into new ribbons.",
+      "smallestRepair": "Only if Nate finds it confusing, manually distinguish one fold edge or contact shadow. Otherwise keep.",
+      "estimatedChangedPixels": [
+        6,
+        16
+      ],
+      "applyNow": false,
+      "maskFile": "masks/P2-proposed-mask.png",
+      "maskPixels": 142,
+      "maskSha256": "f825c19f7c1dda395522cb77bf83a1d73c6981353c2d39fa4e4da77c58eaafe9"
+    },
+    {
+      "id": "A1",
+      "name": "Attendant mouth expression",
+      "polygon": [
+        [
+          218,
+          113
+        ],
+        [
+          225,
+          113
+        ],
+        [
+          225,
+          116
+        ],
+        [
+          218,
+          116
+        ]
+      ],
+      "color": [
+        103,
+        115,
+        239
+      ],
+      "priority": "Creative/manual expression decision",
+      "finding": "The attendant is visibly smiling. The narrative has him shout an emergency instruction. This is a genuine narrative-expression mismatch rather than pixel noise.",
+      "protectedConstraints": "Keep hair, spectacles, eyes, nose, face proportions, skin lighting and costume identity. This mask excludes spectacles and upper face.",
+      "decisionNeeded": "Decide the precise alarmed expression together with the hand pose; a cosmetic mouth flip alone will not make the whole body read alarmed.",
+      "smallestRepair": "After approval, hand-author a small mouth expression using the existing skin/shadow family; do not shrink a portrait or erase useful face detail.",
+      "estimatedChangedPixels": [
+        6,
+        14
+      ],
+      "applyNow": false,
+      "maskFile": "masks/A1-proposed-mask.png",
+      "maskPixels": 32,
+      "maskSha256": "c7c9ab46cb29df02cdf8974b4365fc653fd806d1ffbb0051f81d712492d7a03d"
+    },
+    {
+      "id": "A2",
+      "name": "Attendant hands and near forearm",
+      "polygon": [
+        [
+          216,
+          131
+        ],
+        [
+          222,
+          128
+        ],
+        [
+          230,
+          130
+        ],
+        [
+          236,
+          134
+        ],
+        [
+          235,
+          139
+        ],
+        [
+          230,
+          140
+        ],
+        [
+          218,
+          139
+        ]
+      ],
+      "color": [
+        147,
+        92,
+        220
+      ],
+      "priority": "Creative/manual gesture decision",
+      "finding": "Clasped hands resting on the counter reinforce a calm seated pose, conflicting with the alarmed beat. Identity, uniform and scale are otherwise continuous.",
+      "protectedConstraints": "Keep the existing torso envelope, head, badge, vest/shirt colors, counter edge, feed unit, plant and microphone. Do not introduce new controls or a new red button location.",
+      "decisionNeeded": "Choose a restrained stop/urgency gesture within the current proportions. A larger shoulder-grab or standing pose would need separate, wider scope.",
+      "smallestRepair": "A coordinated small hand/forearm sprite change after Nate chooses the gesture; preserve the costume shading outside the mask.",
+      "estimatedChangedPixels": [
+        20,
+        50
+      ],
+      "applyNow": false,
+      "maskFile": "masks/A2-proposed-mask.png",
+      "maskPixels": 188,
+      "maskSha256": "14f1d308469e9cc56bfd854fec11324af199362095876e950af01fd91c85d199"
+    }
+  ],
+  "regions": [
+    {
+      "id": "source",
+      "name": "Paper source and microphone",
+      "box": [
+        180,
+        121,
+        205,
+        151
+      ]
+    },
+    {
+      "id": "P1",
+      "name": "Left floor crossing",
+      "box": [
+        140,
+        169,
+        181,
+        197
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Right floor fold or overlap",
+      "box": [
+        224,
+        169,
+        278,
+        199
+      ]
+    },
+    {
+      "id": "brush",
+      "name": "Brush heads, attachments and nearby paper",
+      "box": [
+        223,
+        25,
+        314,
+        132
+      ]
+    },
+    {
+      "id": "attendant",
+      "name": "Attendant expression and gesture",
+      "box": [
+        199,
+        96,
+        244,
+        144
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Brush versus paper and plant overlap",
+      "box": [
+        223,
+        75,
+        310,
+        145
+      ]
+    }
+  ],
+  "paperTraces": [
+    {
+      "name": "Visible feed-to-floor run",
+      "points": [
+        [
+          190,
+          140
+        ],
+        [
+          181,
+          151
+        ],
+        [
+          172,
+          169
+        ],
+        [
+          166,
+          181
+        ],
+        [
+          154,
+          188
+        ]
+      ],
+      "color": [
+        51,
+        210,
+        244
+      ]
+    },
+    {
+      "name": "Left loop / return, direction unresolved",
+      "points": [
+        [
+          154,
+          188
+        ],
+        [
+          125,
+          192
+        ],
+        [
+          100,
+          191
+        ],
+        [
+          90,
+          183
+        ],
+        [
+          93,
+          175
+        ],
+        [
+          111,
+          170
+        ],
+        [
+          131,
+          174
+        ],
+        [
+          150,
+          184
+        ]
+      ],
+      "color": [
+        247,
+        171,
+        49
+      ]
+    },
+    {
+      "name": "Rising central return",
+      "points": [
+        [
+          169,
+          184
+        ],
+        [
+          189,
+          176
+        ],
+        [
+          207,
+          169
+        ],
+        [
+          219,
+          170
+        ],
+        [
+          230,
+          179
+        ]
+      ],
+      "color": [
+        225,
+        88,
+        205
+      ]
+    },
+    {
+      "name": "Visible right hanging run",
+      "points": [
+        [
+          256,
+          132
+        ],
+        [
+          265,
+          141
+        ],
+        [
+          260,
+          151
+        ],
+        [
+          246,
+          164
+        ],
+        [
+          236,
+          177
+        ],
+        [
+          234,
+          187
+        ],
+        [
+          246,
+          194
+        ],
+        [
+          265,
+          193
+        ]
+      ],
+      "color": [
+        116,
+        219,
+        104
+      ]
+    }
+  ],
+  "findings": {
+    "paperSource": "The left cream feed unit has a visible emerging strip. Its position and appearance are useful and should remain. It is not necessary to add a second printer or a new paper source.",
+    "paperDirection": "Several local arcs are readable, but P1 and P2 obscure the continuation/depth order. A still image cannot prove the feeding or sweeping direction. Traces are diagnostic readings only; no arrows are painted into the scene.",
+    "brushSupports": "Both heads are connected by stems/elbows to ceiling shafts and a rail with mounting blocks. No detached component or broken support is demonstrated. Mechanical plausibility does not require simplifying the bristles or replacing the heads.",
+    "brushContactMotion": "The heads are above the floor; paper touches/overlaps their bristle area, but the image does not establish the sweep vector or contact with everyone on the floor. It may depict descent. This is a narrative-staging ambiguity, not proof of impossible mechanics. Changing head position/contact is a manual staging decision, not a small contour cleanup.",
+    "attendant": "The character matches the established hair, glasses, cream shirt and teal vest at believable scene scale. The smile and clasped resting hands conflict with shouting an alarm and evacuating people. Expression and hand pose should be coordinated; a mouth flip alone will not resolve the body language.",
+    "environment": "Restroom architecture, signs, sinks/stalls, gate, counter, cream paper-feed unit, right plant, gooseneck microphone, lighting and depth are successful context. Protect them. No scene change is justified by softness or unique-color count alone.",
+    "perspective": "Door jambs and counter remain coherent. Counter/gate contacts and the floor support the scene. Curving airborne paper need not follow a floor vanishing point. The brush joints allow articulated heads. No specific architectural, equipment-placement or mechanical-perspective error is established. Geometry guides are approximate image traces, not calibrated camera analysis.",
+    "floorContacts": "Bottom paper loops are suggested to rest or skim on the floor by their diffuse shadows. Without a chosen path/occlusion order at P1/P2, changing contact shadows can accidentally alter which strip passes over which. Preserve global floor lighting and existing depth."
+  },
+  "candidateDecision": {
+    "produced": false,
+    "changedPixels": 0,
+    "outsideMaskChanges": 0,
+    "reason": "No small repair is unambiguously preferable before choosing paper continuity and the alarmed gesture. A speculative seam could change ribbon topology; a cosmetic face-only edit would leave the calm hands. This first deliverable therefore supplies bounded proposals for manual pixel work and stops for Nate review."
+  },
+  "manualPixelEditing": [
+    {
+      "issue": "P1/P2 edge and occlusion order",
+      "why": "Requires deliberate connected-strip tracing and a chosen front/back order. Automatic sharpening, posterization or broad re-generation cannot determine topology."
+    },
+    {
+      "issue": "Alarmed expression plus coordinated hand pose",
+      "why": "A scene-scale sprite decision with identity and proportion constraints. Use the alarmed portrait only as design reference, never as a downsampled replacement."
+    },
+    {
+      "issue": "Brush contact/motion, if Nate requests different staging",
+      "why": "Needs a purposeful paper/brush contact and sweep direction before any localized geometry is painted. Preserve brackets, shafts, collars and bristle lighting that already work."
+    }
+  ],
+  "estimatedScope": "P1 8\u201324, optional P2 6\u201316, face 6\u201314, hand/forearm 20\u201350 changed pixels are provisional estimates for later manual work. Mask areas are conservative maximum envelopes, not a direction to repaint them in full. No proposed repair is currently applied; active edit mask has 0 pixels.",
+  "noGeometryEditProposed": true,
+  "noPaletteTarget": true
+}

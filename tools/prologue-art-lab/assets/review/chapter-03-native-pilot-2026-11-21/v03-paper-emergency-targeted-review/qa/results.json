@@ -1,0 +1,35 @@
+{
+  "assessmentAndPreservation": {
+    "status": "PASS",
+    "checks": 132,
+    "report": "preservation-and-masks.json"
+  },
+  "canonical": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "canonical.txt"
+  },
+  "storyboardSmoke": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "smoke.txt"
+  },
+  "galleryBrowser": {
+    "status": "PASS",
+    "checks": 26,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "report": "browser.json"
+  },
+  "artworkChangedPixels": 0,
+  "candidateProduced": false,
+  "notRun": [
+    "Game engine/runtime QA",
+    "Live public Pages deployment",
+    "Selected-artwork browser regression not repeated because approved bytes and viewer code remain unchanged",
+    "Sync tool self-tests not repeated because registry/sync code is unchanged"
+  ],
+  "stopPoint": "Nate visual review before repair"
+}

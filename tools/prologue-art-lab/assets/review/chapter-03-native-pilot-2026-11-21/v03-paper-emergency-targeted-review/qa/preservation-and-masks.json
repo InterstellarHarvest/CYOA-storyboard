@@ -1,0 +1,548 @@
+{
+  "result": "PASS",
+  "checkCount": 132,
+  "checks": [
+    {
+      "name": "Approved native 314x206 opaque RGB",
+      "pass": true
+    },
+    {
+      "name": "Canonical approved PNG copied byte-identically",
+      "pass": true
+    },
+    {
+      "name": "Approved native pixel data unchanged",
+      "pass": true
+    },
+    {
+      "name": "Exact approved 4x pixel blocks",
+      "pass": true
+    },
+    {
+      "name": "No artwork candidate produced",
+      "pass": true
+    },
+    {
+      "name": "Review material remains generated/unselected",
+      "pass": true
+    },
+    {
+      "name": "Zero active edit mask pixels",
+      "pass": true
+    },
+    {
+      "name": "All 64684 original pixels protected",
+      "pass": true
+    },
+    {
+      "name": "Empty changed pixel log",
+      "pass": true
+    },
+    {
+      "name": "P1 mask exact dimensions binary",
+      "pass": true
+    },
+    {
+      "name": "P1 declared count and hash exact",
+      "pass": true
+    },
+    {
+      "name": "P1 mask does not touch protected hardware or identity",
+      "pass": true
+    },
+    {
+      "name": "P1 proposal not applied",
+      "pass": true
+    },
+    {
+      "name": "P1 exact 4x mask export",
+      "pass": true
+    },
+    {
+      "name": "P2 mask exact dimensions binary",
+      "pass": true
+    },
+    {
+      "name": "P2 declared count and hash exact",
+      "pass": true
+    },
+    {
+      "name": "P2 mask does not touch protected hardware or identity",
+      "pass": true
+    },
+    {
+      "name": "P2 proposal not applied",
+      "pass": true
+    },
+    {
+      "name": "P2 exact 4x mask export",
+      "pass": true
+    },
+    {
+      "name": "A1 mask exact dimensions binary",
+      "pass": true
+    },
+    {
+      "name": "A1 declared count and hash exact",
+      "pass": true
+    },
+    {
+      "name": "A1 mask does not touch protected hardware or identity",
+      "pass": true
+    },
+    {
+      "name": "A1 proposal not applied",
+      "pass": true
+    },
+    {
+      "name": "A1 exact 4x mask export",
+      "pass": true
+    },
+    {
+      "name": "A2 mask exact dimensions binary",
+      "pass": true
+    },
+    {
+      "name": "A2 declared count and hash exact",
+      "pass": true
+    },
+    {
+      "name": "A2 mask does not touch protected hardware or identity",
+      "pass": true
+    },
+    {
+      "name": "A2 proposal not applied",
+      "pass": true
+    },
+    {
+      "name": "A2 exact 4x mask export",
+      "pass": true
+    },
+    {
+      "name": "Proposed union equals exact component union",
+      "pass": true
+    },
+    {
+      "name": "Approved crop unchanged source",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x crop source",
+      "pass": true
+    },
+    {
+      "name": "Exact matching-scale diagnostic pair source",
+      "pass": true
+    },
+    {
+      "name": "Approved crop unchanged P1",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x crop P1",
+      "pass": true
+    },
+    {
+      "name": "Exact matching-scale diagnostic pair P1",
+      "pass": true
+    },
+    {
+      "name": "Approved crop unchanged P2",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x crop P2",
+      "pass": true
+    },
+    {
+      "name": "Exact matching-scale diagnostic pair P2",
+      "pass": true
+    },
+    {
+      "name": "Approved crop unchanged brush",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x crop brush",
+      "pass": true
+    },
+    {
+      "name": "Exact matching-scale diagnostic pair brush",
+      "pass": true
+    },
+    {
+      "name": "Approved crop unchanged attendant",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x crop attendant",
+      "pass": true
+    },
+    {
+      "name": "Exact matching-scale diagnostic pair attendant",
+      "pass": true
+    },
+    {
+      "name": "Approved crop unchanged contact",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x crop contact",
+      "pass": true
+    },
+    {
+      "name": "Exact matching-scale diagnostic pair contact",
+      "pass": true
+    },
+    {
+      "name": "Native original versus diagnostic pair at matching scale",
+      "pass": true
+    },
+    {
+      "name": "Exact full-scene 4x diagnostic comparison",
+      "pass": true
+    },
+    {
+      "name": "Approved reference exact portraits:pavilion_attendant:idle",
+      "pass": true
+    },
+    {
+      "name": "Approved reference exact portraits:pavilion_attendant:alarmed",
+      "pass": true
+    },
+    {
+      "name": "Approved reference exact scenes:pavilion_reboot/restroom_entrance",
+      "pass": true
+    },
+    {
+      "name": "Approved reference exact scenes:pavilion_reboot/record_printer",
+      "pass": true
+    },
+    {
+      "name": "All 730 earlier tracked files preserved",
+      "pass": true
+    },
+    {
+      "name": "Explicit no-change guard assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png",
+      "pass": true
+    },
+    {
+      "name": "Explicit no-change guard assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png",
+      "pass": true
+    },
+    {
+      "name": "Explicit no-change guard tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/v02-localized-repair/candidate/CH3-LOCOMOTION-presenter-local-v02.png",
+      "pass": true
+    },
+    {
+      "name": "HTML anchors unique",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions originals/approved-paper-emergency.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/proposed-repairs-markup-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions previews/paper-emergency-approved-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/proposed-repairs-markup-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions originals/approved-paper-emergency.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/protected-details-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/protected-details-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/paper-continuity-traces-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/source-original-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/source-original-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions comparisons/source-original-left-markup-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P1-original-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P1-original-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions comparisons/P1-original-left-markup-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P2-original-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P2-original-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions comparisons/P2-original-left-markup-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/brush-original-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/brush-attachment-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/contact-original-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/attendant-original-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/attendant-original-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions references/attendant-idle.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions references/attendant-alarmed.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/architecture-perspective-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions masks/P1-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P1-proposal-overlay-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P1-proposal-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions masks/P2-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P2-proposal-overlay-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/P2-proposal-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions masks/A1-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/A1-proposal-overlay-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/A1-proposal-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions masks/A2-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/A2-proposal-overlay-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image dimensions assessment/A2-proposal-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #protected",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #paper",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #brush",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #attendant",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #perspective",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #masks",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #qa",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link README.md",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link comparisons/original-left-assessment-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link comparisons/original-left-assessment-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link sources/changed-pixels.csv",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link sources/preservation-baseline.json",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Source or evidence link assessment/targeted-assessment.json",
+      "pass": true
+    },
+    {
+      "name": "Portable gallery embeds every image",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link index.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link standalone-gallery.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link assessment/targeted-assessment.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link comparisons/original-left-assessment-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link comparisons/original-left-assessment-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link comparisons/original-left-assessment-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link originals/approved-paper-emergency.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link previews/paper-emergency-approved-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link assessment/protected-details-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link assessment/paper-continuity-traces-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link assessment/architecture-perspective-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link assessment/brush-attachment-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link masks/P1-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link masks/P2-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link masks/A1-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link masks/A2-proposed-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link comparisons/P1-original-left-markup-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link comparisons/P2-original-left-markup-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link comparisons/attendant-original-left-markup-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review link references/attendant-alarmed.png",
+      "pass": true
+    }
+  ],
+  "priorTrackedFilesPreserved": 730,
+  "priorFilesChanged": [],
+  "artworkPixelsChanged": 0,
+  "candidateProduced": false,
+  "activeEditMaskPixels": 0,
+  "proposedMasksInactive": true,
+  "proposalCounts": {
+    "P1": 145,
+    "P2": 142,
+    "A1": 32,
+    "A2": 188
+  },
+  "sourceNativeGridAuthorshipLimitationRetained": true,
+  "generatedUnselected": true
+}

@@ -1,0 +1,207 @@
+{
+  "scope": "Paper Emergency v03 assessment-only local gallery",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "Gallery explicitly states no repair candidate produced",
+          "pass": true
+        },
+        {
+          "name": "Native original and assessment displayed at 314x206",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x view",
+          "pass": true
+        },
+        {
+          "name": "Full original and markup retain exact 1256x824 CSS size",
+          "pass": true
+        },
+        {
+          "name": "Full 4x pair scrolls instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every image decodes at its declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Original and masks served with exact SHA-256",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes active edit mask with zero white pixels",
+          "pass": true
+        },
+        {
+          "name": "All source evidence QA and comparison links resolve",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes every enlarged view",
+          "pass": true
+        },
+        {
+          "name": "Native original and markup retain 314x206 on mobile",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes all image previews",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/original-left-assessment-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/original-left-assessment-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation-and-masks.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.csv",
+          "status": 200
+        },
+        {
+          "href": "sources/preservation-baseline.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/targeted-assessment.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "Gallery explicitly states no repair candidate produced",
+          "pass": true
+        },
+        {
+          "name": "Native original and assessment displayed at 314x206",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x view",
+          "pass": true
+        },
+        {
+          "name": "Full original and markup retain exact 1256x824 CSS size",
+          "pass": true
+        },
+        {
+          "name": "Full 4x pair scrolls instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every image decodes at its declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Original and masks served with exact SHA-256",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes active edit mask with zero white pixels",
+          "pass": true
+        },
+        {
+          "name": "All source evidence QA and comparison links resolve",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes every enlarged view",
+          "pass": true
+        },
+        {
+          "name": "Native original and markup retain 314x206 on mobile",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes all image previews",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/original-left-assessment-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/original-left-assessment-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation-and-masks.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.csv",
+          "status": 200
+        },
+        {
+          "href": "sources/preservation-baseline.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/targeted-assessment.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
