@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "stagingVerifierExitCode": 0,
+  "stagedInputVerifierExitCode": 0,
+  "registrationDryRunExitCode": 0,
+  "stagedEntries": 1,
+  "stagedNativeSha256": "93a48082124600b1afeb45e5ea54856bf253e858e55111295e9d9c26919bc978",
+  "onlyLocalFilePathChanged": true,
+  "sourceObjectUnchanged": true,
+  "negativeCases": [
+    {
+      "case": "wrong-hash",
+      "refused": true
+    },
+    {
+      "case": "extra-record",
+      "refused": true
+    }
+  ],
+  "registrationPerformed": false,
+  "temporaryStageRemovedAfterTest": true
+}

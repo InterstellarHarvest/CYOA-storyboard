@@ -1,0 +1,207 @@
+{
+  "scope": "Surprise Stage KEEP assessment",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "Correct decision and administrative status visible",
+          "pass": true
+        },
+        {
+          "name": "First native comparison remains two 314x206 images",
+          "pass": true
+        },
+        {
+          "name": "Browser fetched exact original/selected/reference image hashes",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes closed zero-pixel repair mask",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x view",
+          "pass": true
+        },
+        {
+          "name": "First full 4x comparison remains 1256x824 per image",
+          "pass": true
+        },
+        {
+          "name": "4x comparison scrolls instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every preview decodes at its declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Every evidence source batch and QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes all enlarged panels",
+          "pass": true
+        },
+        {
+          "name": "Mobile retains native 314x206 size",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes all images",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/targeted-assessment.json",
+          "status": 200
+        },
+        {
+          "href": "sources/118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md",
+          "status": 200
+        },
+        {
+          "href": "sources/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+          "status": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "Correct decision and administrative status visible",
+          "pass": true
+        },
+        {
+          "name": "First native comparison remains two 314x206 images",
+          "pass": true
+        },
+        {
+          "name": "Browser fetched exact original/selected/reference image hashes",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes closed zero-pixel repair mask",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x view",
+          "pass": true
+        },
+        {
+          "name": "First full 4x comparison remains 1256x824 per image",
+          "pass": true
+        },
+        {
+          "name": "4x comparison scrolls instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every preview decodes at its declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Every evidence source batch and QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes all enlarged panels",
+          "pass": true
+        },
+        {
+          "name": "Mobile retains native 314x206 size",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes all images",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/targeted-assessment.json",
+          "status": 200
+        },
+        {
+          "href": "sources/118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md",
+          "status": 200
+        },
+        {
+          "href": "sources/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+          "status": 200
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

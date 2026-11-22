@@ -1,0 +1,592 @@
+{
+  "result": "PASS",
+  "checkCount": 144,
+  "checks": [
+    {
+      "name": "Exact owner decision recorded",
+      "pass": true
+    },
+    {
+      "name": "Selected exact source commit and hash",
+      "pass": true
+    },
+    {
+      "name": "Older approval and source bytes preserved",
+      "pass": true
+    },
+    {
+      "name": "Remote selected source and Git-extracted source agree",
+      "pass": true
+    },
+    {
+      "name": "Owner excerpt exact hash",
+      "pass": true
+    },
+    {
+      "name": "Native opaque PNG selected/CH3-B06-paper-emergency-local-v04.png",
+      "pass": true
+    },
+    {
+      "name": "Native opaque PNG preserved/CH3-B06-paper-emergency-approved-v03.png",
+      "pass": true
+    },
+    {
+      "name": "Exactly one approved registration entry",
+      "pass": true
+    },
+    {
+      "name": "No real registration authorized/performed by Codex",
+      "pass": true
+    },
+    {
+      "name": "Canonical Paper Emergency still v03",
+      "pass": true
+    },
+    {
+      "name": "Existing approval ledger unchanged",
+      "pass": true
+    },
+    {
+      "name": "Standalone addendum preserves both approvals",
+      "pass": true
+    },
+    {
+      "name": "Accepted native-grid limitation retained",
+      "pass": true
+    },
+    {
+      "name": "Dry run only log",
+      "pass": true
+    },
+    {
+      "name": "Staged one-record dry run passed without registration",
+      "pass": true
+    },
+    {
+      "name": "Wrong-hash and extra-record probes refused",
+      "pass": true
+    },
+    {
+      "name": "Surprise recommendation KEEP, no invented defect",
+      "pass": true
+    },
+    {
+      "name": "Surprise selected v04 source exact",
+      "pass": true
+    },
+    {
+      "name": "Surprise native opaque 314x206",
+      "pass": true
+    },
+    {
+      "name": "Surprise exact 4x pixel blocks",
+      "pass": true
+    },
+    {
+      "name": "Surprise closed mask and unchanged art",
+      "pass": true
+    },
+    {
+      "name": "Earlier firing-side correction protected",
+      "pass": true
+    },
+    {
+      "name": "All region findings KEEP",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x presenter",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x cannon",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x confetti",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x controls",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x right-wall",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x camera",
+      "pass": true
+    },
+    {
+      "name": "Approved region native and exact 4x platform",
+      "pass": true
+    },
+    {
+      "name": "Approved cross-scene/portrait reference unchanged scenes:pavilion_reboot/human_verification_stage",
+      "pass": true
+    },
+    {
+      "name": "Approved cross-scene/portrait reference unchanged scenes:pavilion_reboot/urgency_stage",
+      "pass": true
+    },
+    {
+      "name": "Approved cross-scene/portrait reference unchanged scenes:pavilion_reboot/locomotion_stage",
+      "pass": true
+    },
+    {
+      "name": "Approved cross-scene/portrait reference unchanged scenes:pavilion_reboot/surprise_stage#portraitBackground",
+      "pass": true
+    },
+    {
+      "name": "Approved cross-scene/portrait reference unchanged portraits:pavilion_presenter:alarmed",
+      "pass": true
+    },
+    {
+      "name": "Full cross-scene 4x verification",
+      "pass": true
+    },
+    {
+      "name": "Matching-scale continuity crop controls verification",
+      "pass": true
+    },
+    {
+      "name": "Matching-scale continuity crop right-wall verification",
+      "pass": true
+    },
+    {
+      "name": "Full cross-scene 4x urgency",
+      "pass": true
+    },
+    {
+      "name": "Matching-scale continuity crop controls urgency",
+      "pass": true
+    },
+    {
+      "name": "Matching-scale continuity crop right-wall urgency",
+      "pass": true
+    },
+    {
+      "name": "Full cross-scene 4x locomotion",
+      "pass": true
+    },
+    {
+      "name": "Matching-scale continuity crop controls locomotion",
+      "pass": true
+    },
+    {
+      "name": "Matching-scale continuity crop right-wall locomotion",
+      "pass": true
+    },
+    {
+      "name": "Matching native/4x review pair selection-paper-emergency-v04-2026-11-22",
+      "pass": true
+    },
+    {
+      "name": "Matching native/4x review pair v05-surprise-stage-targeted-review",
+      "pass": true
+    },
+    {
+      "name": "Unique anchors selection-paper-emergency-v04-2026-11-22",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions selection-paper-emergency-v04-2026-11-22 preserved/CH3-B06-paper-emergency-approved-v03.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions selection-paper-emergency-v04-2026-11-22 selected/CH3-B06-paper-emergency-local-v04.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions selection-paper-emergency-v04-2026-11-22 previous-approved-v03-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions selection-paper-emergency-v04-2026-11-22 selected-approved-v04-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 selection-manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 OWNER_SELECTION_VERBATIM.txt",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 APPROVAL_LEDGER_ADDENDUM.md",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 CLAUDE_REGISTRATION_HANDOFF.md",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 registration-batch.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 previous-v03-left-selected-v04-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 previous-v03-left-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 verify-selection.mjs",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 CLAUDE_REGISTRATION_HANDOFF.md",
+      "pass": true
+    },
+    {
+      "name": "Artifact link selection-paper-emergency-v04-2026-11-22 future-record-notes.txt",
+      "pass": true
+    },
+    {
+      "name": "Every portable image embedded selection-paper-emergency-v04-2026-11-22",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 standalone-gallery.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 index.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 selection-manifest.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 OWNER_SELECTION_VERBATIM.txt",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 APPROVAL_LEDGER_ADDENDUM.md",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 CLAUDE_REGISTRATION_HANDOFF.md",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 previous-v03-left-selected-v04-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 previous-v03-left-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 selected/CH3-B06-paper-emergency-local-v04.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 preserved/CH3-B06-paper-emergency-approved-v03.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 registration-batch.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 verify-selection.mjs",
+      "pass": true
+    },
+    {
+      "name": "GitHub link selection-paper-emergency-v04-2026-11-22 future-record-notes.txt",
+      "pass": true
+    },
+    {
+      "name": "Unique anchors v05-surprise-stage-targeted-review",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review originals/approved-surprise-stage.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/protected-detail-guide-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/approved-surprise-stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/presenter-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/presenter-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/cannon-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/cannon-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/confetti-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/confetti-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/controls-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/controls-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/right-wall-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/right-wall-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/camera-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/camera-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/platform-native.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/platform-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/firing-side-and-mount-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review assessment/perspective-construction-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review masks/proposed-repair-mask.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review originals/approved-surprise-stage.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review references/verification.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/approved-surprise-stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/verification-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review comparisons/controls-surprise-left-verification-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review comparisons/right-wall-surprise-left-verification-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review originals/approved-surprise-stage.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review references/urgency.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/approved-surprise-stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/urgency-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review comparisons/controls-surprise-left-urgency-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review comparisons/right-wall-surprise-left-urgency-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review originals/approved-surprise-stage.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review references/locomotion.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/approved-surprise-stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review previews/locomotion-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review comparisons/controls-surprise-left-locomotion-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review comparisons/right-wall-surprise-left-locomotion-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review references/surprise-close-background.png",
+      "pass": true
+    },
+    {
+      "name": "Image dimensions v05-surprise-stage-targeted-review references/presenter-alarmed.png",
+      "pass": true
+    },
+    {
+      "name": "Anchor #regions",
+      "pass": true
+    },
+    {
+      "name": "Anchor #protected",
+      "pass": true
+    },
+    {
+      "name": "Anchor #continuity",
+      "pass": true
+    },
+    {
+      "name": "Anchor #qa",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review README.md",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review comparisons/approved-left-protected-guide-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review comparisons/approved-left-protected-guide-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review assessment/targeted-assessment.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review sources/118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md",
+      "pass": true
+    },
+    {
+      "name": "Artifact link v05-surprise-stage-targeted-review sources/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+      "pass": true
+    },
+    {
+      "name": "Every portable image embedded v05-surprise-stage-targeted-review",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review standalone-gallery.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review index.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review assessment/targeted-assessment.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review manifest.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review comparisons/approved-left-protected-guide-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review comparisons/approved-left-protected-guide-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review comparisons/approved-left-protected-guide-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review previews/approved-surprise-stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review assessment/firing-side-and-mount-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review assessment/perspective-construction-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review masks/proposed-repair-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review sources/118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md",
+      "pass": true
+    },
+    {
+      "name": "GitHub link v05-surprise-stage-targeted-review sources/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+      "pass": true
+    },
+    {
+      "name": "All 923 prior tracked files unchanged",
+      "pass": true
+    }
+  ],
+  "priorTrackedFilesPreserved": 923,
+  "priorFilesChanged": [],
+  "paperCreativeApprovalComplete": true,
+  "paperCanonicalRegistryStillV03": true,
+  "realRegistrationPerformed": false,
+  "selectedNativeSha256": "93a48082124600b1afeb45e5ea54856bf253e858e55111295e9d9c26919bc978",
+  "surpriseRecommendation": "KEEP",
+  "surprisePixelsChanged": 0,
+  "surpriseRepairMaskPixels": 0,
+  "otherApprovalsChanged": false
+}
