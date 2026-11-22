@@ -34,15 +34,14 @@ The attached JSON is an **approved narrative draft for review and art prompts**,
 
 ## Remaining editorial stops — Chapter 4 is not yet complete
 
-These five nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
+These four nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
 
 1. `wip_auctioneer_question` — auctioneer conversation.
 2. `wip_freight_lift` — service-side lift continuation.
-3. `wip_flooded_hotel_corridor` — displaced water entering the public corridor, with restroom/exit consequences only.
-4. `wip_hotel_water_off` — whole-hotel water shutoff, with restroom/exit consequences only.
-5. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
+3. `wip_hotel_water_off` — whole-hotel water shutoff, with restroom/exit consequences only.
+4. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
 
-**Suggested next review:** the two flood/water-shutoff branches; each should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+**Suggested next review:** the whole-hotel water-shutoff branch, then the auction and freight-lift stops. They should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
 
 ### Approved subsequent node — Upper Salvage
 
@@ -51,6 +50,10 @@ These five nodes are still explicitly marked `DRAFT REVIEW STOP` and require one
 ### Approved subsequent node — Dignified Walk
 
 `wip_stall_wedding_walk` is retired and replaced by `hotel_stall_public_corridor_walk`, which keeps the player fully dressed and has exactly three choices: **A** staff lavatory, **B** collection stairs, **C** nonfatal service-yard park exit. A guest has one brief joke. No wedding obligation, dice, item, or additional fee.
+
+### Approved subsequent node — Flooded Public Corridor
+
+`wip_flooded_hotel_corridor` is retired and replaced by `hotel_flooded_public_corridor`. An attendant briefly reclassifies the flood as a temporary water feature; the player can **A** reach the staff lavatory, **B** use the maintenance hatch, or **C** leave via the service-yard park exit. Set `ch4_flooded_corridor_reached`. No extra dice, wedding task, or inventory.
 
 ## Subsequent owner directive — wedding is superficial only
 

@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved dignified public corridor walk after rising toilet stall, with three restroom/exit options. Replaces wedding-walk editorial stop; five unfinished stops remain. No wedding help or ceremony logistics.",
+    "reviewCheckpoint": "2026-11-21: owner-approved flooded public corridor now connects to staff lavatory, maintenance hatch and service-yard park departure. Short temporary water feature exchange. Four editorial stops remain; four fatal and three park-bound exits unchanged.",
     "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -92,6 +92,10 @@
     "approvedStallPublicWalk": {
       "status": "owner-approved",
       "note": "The player is fully dressed, not unzipped. Guest has one dry exchange. A staff lavatory, B collection stairs, C park-bound service exit. No dice roll/item/fee; sets ch4_stall_walked_away_publicly."
+    },
+    "approvedFloodedCorridor": {
+      "status": "owner-approved",
+      "note": "Three choices: A staff lavatory, B existing pipe tunnel, C park-bound service-yard exit. ch4_flooded_corridor_reached flag, no new d6 or item, no wedding participation."
     }
   },
   "nodes": {
@@ -625,7 +629,7 @@
           "id": "flood_follow_downstairs",
           "kind": "action",
           "text": "ESCAPE INTO THE CORRIDOR AHEAD OF THE FLOOD.",
-          "to": "wip_flooded_hotel_corridor"
+          "to": "hotel_flooded_public_corridor"
         }
       ]
     },
@@ -4904,12 +4908,6 @@
       ],
       "notes": "Return hub avoids repeating the entire door inspection or previously exhausted dialogue. Future UI should show exhausted and missing-item actions as disabled, with subtitles, not silently hide them."
     },
-    "wip_flooded_hotel_corridor": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/service_passage",
-      "text": "DRAFT REVIEW STOP — Flood overtakes the adjacent public corridor. Develop bathroom access, safe escape, and park exit; guests and wedding decor are incidental. No rescue, cake, or ceremony job.",
-      "choices": []
-    },
     "wip_hotel_water_off": {
       "mode": "narrative",
       "scene": "grand_bellevue/service_passage",
@@ -5121,6 +5119,76 @@
         }
       ],
       "notes": "Owner approved short, dignified walk with exactly three restroom/exit connections. Spectators are background only. No wedding tasks, new dice, or items; protagonist has not unzipped."
+    },
+    "hotel_flooded_public_corridor": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/public_corridor",
+      "speaker": "hotel_attendant",
+      "pose": "professional",
+      "effects": {
+        "set": {
+          "ch4_flooded_corridor_reached": true
+        }
+      },
+      "text": [
+        {
+          "desc": "Water rushes across the hotel carpet. You splash into the corridor as an attendant struggles to keep a WET FLOOR sign upright."
+        },
+        {
+          "say": "This corridor has been temporarily reclassified as a water feature.",
+          "who": "hotel_attendant"
+        },
+        {
+          "say": "IT'S A FLOOD!",
+          "who": "visitor"
+        },
+        {
+          "say": "Only until Facilities completes the paperwork.",
+          "who": "hotel_attendant"
+        },
+        {
+          "desc": "The sign falls over and floats away."
+        },
+        {
+          "say": "WHERE CAN I FIND A WORKING TOILET?",
+          "who": "visitor"
+        },
+        {
+          "say": "Staff facilities are through that door.",
+          "who": "hotel_attendant"
+        },
+        {
+          "desc": "She points toward a service passage."
+        },
+        {
+          "say": "I can't speak for the plumbing.",
+          "who": "hotel_attendant"
+        },
+        {
+          "desc": "Water spreads beneath the corridor doors. You notice an open maintenance hatch, the staff passage, and a side exit leading toward the loading yard."
+        }
+      ],
+      "choices": [
+        {
+          "id": "flooded_corridor_staff_lavatory",
+          "kind": "action",
+          "text": "ENTER THE STAFF PASSAGE AND CHECK THE LAVATORY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "flooded_corridor_hatch",
+          "kind": "action",
+          "text": "CLIMB INTO THE MAINTENANCE HATCH.",
+          "to": "hotel_pipe_tunnel"
+        },
+        {
+          "id": "flooded_corridor_exit",
+          "kind": "action",
+          "text": "LEAVE THROUGH THE SIDE EXIT.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Owner-approved short flooded-corridor scene. Bystanders are incidental; no wedding tasks, items or new dice. Three existing restroom/escape routes only."
     }
   }
 }
