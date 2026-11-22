@@ -27,8 +27,7 @@
             "nodes": [
               "hotel_lobby_view",
               "hotel_auctioneer_arrival",
-              "wip_auctioneer_question",
-              "wip_help_bride"
+              "wip_auctioneer_question"
             ]
           },
           {
@@ -96,8 +95,6 @@
               "wip_bride_find_wedding_organizer",
               "wip_bride_relay_inscription_to_groom",
               "wip_ring_find_groom",
-              "wip_chair_bride_groom",
-              "wip_chair_bride_ring",
               "hotel_chair_follow_collection"
             ]
           },
@@ -204,7 +201,6 @@
             "nodes": [
               "hotel_service_arrival",
               "hotel_service_foreman",
-              "wip_save_wedding_cake",
               "wip_freight_lift"
             ]
           },
@@ -213,7 +209,6 @@
             "title": "Wedding Entrance · Missing groom",
             "nodes": [
               "hotel_wedding_arrival",
-              "wip_find_groom",
               "wip_wedding_service"
             ]
           }

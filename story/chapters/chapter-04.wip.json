@@ -31,7 +31,8 @@
       {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS","absentSubtitle":"NOT IN INVENTORY"}
     ],
     "approvedItemCardAtGroom": {"verb":"show","item":"wedding_ring_lot31","requires":"WEDDING RING — LOT 31","absentSubtitle":"NOT IN INVENTORY","futurePresentation":"Keep the missing-ring SHOW card visible but locked; other groom choices depend on prior conversations/flags. Previously asked groom dialogue cards should grey out after use in the final engine."},
-    "approvedCollectionChairRecovery": {"status":"owner-approved","note":"Following Lot 31 or accompanying it on a Staff Pass now converges at Collection Stairs. A new Focus A inspection can retrieve the ring by witnessed porter assistance or discreet Red Stapler use. Both methods award the existing ring item without another d6. The missing-item Red Stapler action must remain visible but disabled with a REQUIRES / NOT IN INVENTORY subtitle in the final game. The original failed ring check forces a detour but does not lose the ring permanently."}
+    "approvedCollectionChairRecovery": {"status":"owner-approved","note":"Following Lot 31 or accompanying it on a Staff Pass now converges at Collection Stairs. A new Focus A inspection can retrieve the ring by witnessed porter assistance or discreet Red Stapler use. Both methods award the existing ring item without another d6. The missing-item Red Stapler action must remain visible but disabled with a REQUIRES / NOT IN INVENTORY subtitle in the final game. The original failed ring check forces a detour but does not lose the ring permanently."},
+    "bladderFirstRevision": {"status":"owner-directed","note":"Nate's latest direction supersedes previously approved family- and wedding-help errands: the player wants a bathroom, not a wedding job. Remove disconnected bride-help, cake-rescue, and groom-search detours. Preserve auction, ring, groom, and bride interactions only where they lead to bathrooms, hazards, inventory puzzles, or meaningful exits. Further groom/inscription/ledger trimming requires connection review."}
   },
   "nodes": {
     "hotel_entry_dispatch": {
@@ -111,8 +112,7 @@
       ],
       "choices":[
         {"id":"public_a1_restroom","kind":"action","text":"WALK STRAIGHT INTO THE RESTROOM WHILE THE WORKMEN REMOVE THE DOORS.","to":"hotel_restroom_entry"},
-        {"id":"public_a2_auctioneer","kind":"spoken","text":"EXCUSE ME. ARE YOU ACTUALLY SELLING THIS HOTEL?","to":"wip_auctioneer_question"},
-        {"id":"public_a3_help_bride","kind":"action","text":"HELP THE BRIDE STOP THE WORKMEN.","to":"wip_help_bride"}
+        {"id":"public_a2_auctioneer","kind":"spoken","text":"HAVE YOU SOLD ALL THE RESTROOMS, OR IS THERE ONE LEFT?","to":"wip_auctioneer_question"}
       ]
     },
     "hotel_service_arrival": {
@@ -128,31 +128,29 @@
         "If that thing tips over, I'm not putting it back together.",
         {"desc":"A tremendous crash comes from somewhere upstairs. The foreman closes his eyes."},
         "That's another one.",
-        "You here to collect something?",
-        {"desc":"Before you can answer, an enormous wedding cake appears on a trolley from the kitchen. A young worker pushes it cautiously toward the freight elevator."},
-        "Oh, absolutely not.",
-        {"desc":"The kitchen worker keeps pushing. The foreman turns back toward you."},
-        "Don't suppose you've got a free hand?"
+        "You collecting something?",
+        {"desc":"You point toward the staff facilities corridor."},
+        "Lavatory's down there. Unless they've sold that too.",
+        {"desc":"He turns back to the freight equipment. For once, nobody asks you to help move anything."}
       ],
       "choices":[
         {"id":"service_s1_restroom","kind":"action","text":"FOLLOW THE RESTROOM SIGN THROUGH THE SERVICE CORRIDOR.","to":"hotel_staff_lavatory_storage"},
-        {"id":"service_s2_cake","kind":"action","text":"HELP THE FOREMAN STOP THE WEDDING CAKE FROM ENTERING THE FREIGHT ELEVATOR.","to":"wip_save_wedding_cake"},
         {"id":"service_s3_lift","kind":"action","text":"TAKE THE FREIGHT ELEVATOR UP TO THE BALLROOM.","to":"wip_freight_lift"}
       ]
     },
     "hotel_wedding_arrival": {
       "mode":"dialogue","scene":"grand_bellevue/ballroom","speaker":"hotel_wedding_organizer","pose":"urgent",
+      "effects":{"set":{"ch4_wedding_organizer_met":true}},
       "text":[
-        {"desc":"The woman who dragged you inside finally releases your arm. You find yourself standing in a lavishly decorated reception hall. Musicians are arguing beside a piano; two waiters carry away a silver punch bowl. Somebody nearby is crying."},
+        {"desc":"The organizer releases your arm in the lavishly decorated reception hall. Musicians argue beside a piano while workmen carry furniture through a side door."},
         "Now, listen carefully.",
-        {"desc":"She straightens your ribbon."},
-        "The groom was here five minutes ago. Then somebody asked him to help move a chair, and nobody's seen him since.",
-        "The bride's father is making a terrible nuisance of himself downstairs. And we're missing three musicians.",
-        {"desc":"She gives you an encouraging pat on the arm. From the adjoining room comes the sound of breaking glass. The woman winces."},
-        "Four musicians."
+        {"desc":"You interrupt by pointing toward the nearest restroom symbol. The organizer follows your gesture."},
+        "There's a private lavatory off the bridal dressing room. I have the key, but—",
+        {"desc":"A crash comes from the ballroom. She winces."},
+        "Give me one moment."
       ],
       "choices":[
-        {"id":"wedding_w1_groom","kind":"action","text":"HELP FIND THE MISSING GROOM.","to":"wip_find_groom"},
+        {"id":"wedding_w1_lavatory","kind":"spoken","text":"I NEED THAT PRIVATE LAVATORY. CAN YOU OPEN THE DRESSING ROOM?","to":"wip_bride_find_wedding_organizer"},
         {"id":"wedding_w2_service","kind":"action","text":"SLIP THROUGH THE SERVICE DOOR WHILE THE ORGANIZER IS DISTRACTED.","to":"wip_wedding_service"}
       ]
     },
@@ -196,10 +194,7 @@
       }
     },
     "wip_auctioneer_question":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A2 auctioneer conversation and auction incidents not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_help_bride":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — A3 bride and family incidents not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_save_wedding_cake":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — S2 cake rescue route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_freight_lift":{"mode":"narrative","scene":"grand_bellevue/freight_lift","text":"DRAFT REVIEW STOP — S3 freight lift route not yet written. This is not a gameplay ending.","choices":[]},
-    "wip_find_groom":{"mode":"narrative","scene":"grand_bellevue/ballroom","text":"DRAFT REVIEW STOP — W1 missing groom route not yet written. This is not a gameplay ending.","choices":[]},
     "wip_wedding_service":{"mode":"narrative","scene":"grand_bellevue/service_corridor","text":"DRAFT REVIEW STOP — W2 wedding service route not yet written. This is not a gameplay ending.","choices":[]},
     "hotel_valve_braced": {
       "mode":"narrative","scene":"grand_bellevue/restroom",
@@ -425,20 +420,11 @@
       "text":[
         {"desc":"The bride looks at you with sudden appreciation."},
         "Believe me, I've been trying.",
-        {"say":"Darling, we're conducting business!","who":"hotel_auctioneer"},
-        "Papa, you've sold the chairs, the bathroom doors, and half the furniture!",
-        {"say":"And at excellent prices, I might add.","who":"hotel_auctioneer"},
-        "Listen. He can shout SOLD all he likes, but nothing is supposed to leave this hotel without my signature in the delivery ledger.",
+        "Papa can't remove anything without my signature in the blue delivery ledger. It's in his own contract.",
         {"say":"A charming little formality.","who":"hotel_auctioneer"},
-        "It's in your own contract!",
-        {"say":"Ah. A less charming formality.","who":"hotel_auctioneer"},
-        {"desc":"The bride looks toward the auction clerk."},
-        "Where's the blue delivery ledger?",
-        {"say":"The loading dock, miss. The collection crew asked for it.","who":"hotel_auction_clerk"},
-        {"desc":"She closes her eyes for a moment, then looks directly at you."},
-        "If you happen to find that ledger, could you bring it to me? Please?",
-        {"desc":"For the first time since entering the hotel, someone appears to be asking you for help rather than assigning you a responsibility. The auctioneer taps his gavel."},
-        {"say":"Wonderful! A little family cooperation. Now, where were we?","who":"hotel_auctioneer"}
+        "It's at the loading dock. If you need to stop something being taken away, that's the paperwork.",
+        {"say":"A less charming formality.","who":"hotel_auctioneer"},
+        {"desc":"You now know where to challenge a removal. Nobody has asked you to fix the wedding."}
       ],
       "choices":[{"id":"bride_ally_to_chair","kind":"continue","text":"CONTINUE","to":"hotel_auction_chair_lot31"}]
     },
@@ -479,7 +465,6 @@
       ],
       "choices":[
         {"id":"chair_investigate_silver","kind":"action","text":"EXAMINE THE FLASH OF SILVER BETWEEN THE CHAIR CUSHIONS.","to":"hotel_chair_ring_focus"},
-        {"id":"chair_ask_bride_groom","kind":"spoken","text":"THE GROOM WAS CARRYING THIS CHAIR? WHAT HAPPENED TO HIM?","to":"wip_chair_bride_groom"},
         {"id":"chair_follow_porters","kind":"action","text":"FOLLOW THE PORTERS WHEN THEY TAKE THE CHAIR TO THE COLLECTION AREA.","to":"hotel_chair_follow_collection"}
       ],
       "show":{
@@ -567,7 +552,6 @@
       "choices":[
         {"id":"focus_free_ring_stapler","kind":"action","text":"WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.","if":{"flag":"ch4_chair_seam_open"},"to":"hotel_ring_retrieved"},
         {"id":"focus_free_ring_careful","kind":"action","text":"WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.","if":{"notFlag":"ch4_chair_seam_open"},"check":{"id":"ch4_careful_ring_retrieval","sides":6,"need":4,"mods":[{"if":{"flag":"ch4_chair_vegetation_permitted"},"add":1},{"if":{"flag":"ch4_chair_sale_paused"},"add":2}]},"pass":{"to":"hotel_ring_retrieved"},"fail":{"to":"hotel_ring_slips"}},
-        {"id":"focus_show_bride_ring","kind":"action","text":"CALL THE BRIDE OVER AND SHOW HER WHAT IS CAUGHT IN THE UPHOLSTERY.","to":"wip_chair_bride_ring"},
         {"id":"focus_follow_chair_ring","kind":"action","text":"LET THE PORTERS TAKE THE CHAIR, THEN FOLLOW IT TO COLLECTION.","to":"hotel_chair_follow_collection"}
       ]
     },
@@ -598,8 +582,6 @@
     },
     "wip_stall_crane_ride":{"mode":"narrative","scene":"grand_bellevue/upper_salvage","text":"DRAFT REVIEW STOP — Survive the d6 grip check and ride the still-rising stall into upper salvage; choose the next way out without automatically finding a working toilet. This is not a gameplay ending.","choices":[]},
     "wip_stall_wedding_walk":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Unwritten result of walking past the wedding guests with dignity. This is not a gameplay ending.","choices":[]},
-    "wip_chair_bride_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Bride dialogue about the missing groom, with a conditional variant if the player already found him. This is not a gameplay ending.","choices":[]},
-    "wip_chair_bride_ring":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Show the caught ring to the bride, allowing recognition without automatically handing over an inventory item. This is not a gameplay ending.","choices":[]},
     "hotel_chair_follow_collection":{
       "mode":"narrative","scene":"grand_bellevue/service_passage",
       "text":[
