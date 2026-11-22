@@ -1,0 +1,68 @@
+{
+  "purpose": "Publish the existing Chapter 3 pilot review and add GitHub-rendered access plus direct comparison PNGs",
+  "branch": "art/ch3-native-pilot-20261121",
+  "preservedPilotCommit": "b05653e1c5ce4c995588975eaf3bd41eb8f128ab",
+  "artworkVersion": "v01",
+  "artworkStatus": "generated/unselected",
+  "newArtworkGenerated": false,
+  "existingCandidateBytesChanged": false,
+  "comparisons": [
+    {
+      "scene": "backstage",
+      "kind": "comparison only; not a selected asset",
+      "layout": "approved left, generated/unselected candidate right",
+      "file": "publication/comparisons/backstage-approved-left-candidate-right-native.png",
+      "dimensions": [
+        628,
+        206
+      ],
+      "sha256": "fefddf62b4b9bf13adad4ba734d29637f09cce4fee1440a637ca17a60aea1af4",
+      "candidateSha256": "6af2ccb3ae86b7fc6ae89f25aa521f9db3e58dc7396e41c067079360493a9b59",
+      "approvedSha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889"
+    },
+    {
+      "scene": "backstage",
+      "kind": "comparison only; not a selected asset",
+      "layout": "approved left, generated/unselected candidate right",
+      "file": "publication/comparisons/backstage-approved-left-candidate-right-4x.png",
+      "dimensions": [
+        2512,
+        824
+      ],
+      "sha256": "e40d8530fea90a0407a1f6d3830c7f4ae77ad830bf738f3b92c084b5e3ac0ddb",
+      "candidateSha256": "6af2ccb3ae86b7fc6ae89f25aa521f9db3e58dc7396e41c067079360493a9b59",
+      "approvedSha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889"
+    },
+    {
+      "scene": "locomotion",
+      "kind": "comparison only; not a selected asset",
+      "layout": "approved left, generated/unselected candidate right",
+      "file": "publication/comparisons/locomotion-approved-left-candidate-right-native.png",
+      "dimensions": [
+        628,
+        206
+      ],
+      "sha256": "8e39062ef9b24cf8d09a7092fb5712e9300e43d97a17e68ced2a928a82d79f4f",
+      "candidateSha256": "1c944c9aabc6aa5fd9288dd454fadb49b1d327d0d08a337d59464f65757a36d0",
+      "approvedSha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5"
+    },
+    {
+      "scene": "locomotion",
+      "kind": "comparison only; not a selected asset",
+      "layout": "approved left, generated/unselected candidate right",
+      "file": "publication/comparisons/locomotion-approved-left-candidate-right-4x.png",
+      "dimensions": [
+        2512,
+        824
+      ],
+      "sha256": "e617f4d144249bafa1c6b4d4429384068fc28743f08002b97b19dc540e535f7a",
+      "candidateSha256": "1c944c9aabc6aa5fd9288dd454fadb49b1d327d0d08a337d59464f65757a36d0",
+      "approvedSha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5"
+    }
+  ],
+  "gallery": "publication/README.md",
+  "originalHtmlGallery": "index.html",
+  "standaloneHtmlGallery": "standalone-gallery.html",
+  "standingInstruction": "publication/PUBLICATION_POLICY.txt",
+  "requestedBatch1v02": "No current Chapter 3 pilot v02 identified; no version relabeling performed."
+}
