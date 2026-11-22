@@ -1,0 +1,593 @@
+{
+  "result": "PASS",
+  "checkCount": 144,
+  "checks": [
+    {
+      "name": "Exact approved A01 hash",
+      "pass": true
+    },
+    {
+      "name": "Pinned A01 source commit",
+      "pass": true
+    },
+    {
+      "name": "Approved original matches independently downloaded source",
+      "pass": true
+    },
+    {
+      "name": "Matches latest fetched main bytes",
+      "pass": true
+    },
+    {
+      "name": "Canonical A01 remains unchanged and approved",
+      "pass": true
+    },
+    {
+      "name": "Native contract opaque RGB 314x206",
+      "pass": true
+    },
+    {
+      "name": "Palette count descriptive only and accurate",
+      "pass": true
+    },
+    {
+      "name": "KEEP without new candidate or defect",
+      "pass": true
+    },
+    {
+      "name": "No artwork changes claimed or made",
+      "pass": true
+    },
+    {
+      "name": "Closed native repair mask",
+      "pass": true
+    },
+    {
+      "name": "Every original pixel protected",
+      "pass": true
+    },
+    {
+      "name": "Original native-grid authorship limitation retained",
+      "pass": true
+    },
+    {
+      "name": "Earlier microphone correction source preserved",
+      "pass": true
+    },
+    {
+      "name": "Earlier microphone region unchanged",
+      "pass": true
+    },
+    {
+      "name": "All region decisions KEEP",
+      "pass": true
+    },
+    {
+      "name": "Native source crop face",
+      "pass": true
+    },
+    {
+      "name": "Native source crop hands-costume",
+      "pass": true
+    },
+    {
+      "name": "Native source crop microphone",
+      "pass": true
+    },
+    {
+      "name": "Native source crop desk-equipment",
+      "pass": true
+    },
+    {
+      "name": "Native source crop door-signs",
+      "pass": true
+    },
+    {
+      "name": "Native source crop floor-contacts",
+      "pass": true
+    },
+    {
+      "name": "Reference exact hash references/record-printer.png",
+      "pass": true
+    },
+    {
+      "name": "Reference unchanged from main references/record-printer.png",
+      "pass": true
+    },
+    {
+      "name": "Reference exact hash references/paper-emergency-canonical-v03.png",
+      "pass": true
+    },
+    {
+      "name": "Reference unchanged from main references/paper-emergency-canonical-v03.png",
+      "pass": true
+    },
+    {
+      "name": "Reference exact hash references/restroom-close-background.png",
+      "pass": true
+    },
+    {
+      "name": "Reference unchanged from main references/restroom-close-background.png",
+      "pass": true
+    },
+    {
+      "name": "Reference exact hash references/record-printer-close-background.png",
+      "pass": true
+    },
+    {
+      "name": "Reference unchanged from main references/record-printer-close-background.png",
+      "pass": true
+    },
+    {
+      "name": "Reference exact hash references/attendant-idle.png",
+      "pass": true
+    },
+    {
+      "name": "Reference unchanged from main references/attendant-idle.png",
+      "pass": true
+    },
+    {
+      "name": "Reference exact hash references/paper-emergency-selected-v04.png",
+      "pass": true
+    },
+    {
+      "name": "Selected Paper v04 matches pinned source blob",
+      "pass": true
+    },
+    {
+      "name": "Paper canonical preview remains v03",
+      "pass": true
+    },
+    {
+      "name": "Paper v04 creative approval preserved separately",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview restroom-close-background-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview record-printer-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview record-printer-close-background-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview paper-emergency-canonical-v03-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview attendant-idle-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview approved-restroom-entrance-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview paper-emergency-selected-v04-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/door-signs-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/desk-equipment-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/approved-conversation-composite-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/face-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/hands-costume-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/floor-contacts-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/perspective-construction-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic assessment/microphone-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/restroom-left-record-printer-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/desk-layout-restroom-left-paper-emergency-canonical-v03-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/restroom-left-paper-emergency-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/restroom-left-paper-emergency-canonical-v03-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/attendant-restroom-left-paper-emergency-canonical-v03-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/desk-layout-restroom-left-paper-emergency-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/approved-left-protected-guide-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/attendant-restroom-left-paper-emergency-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/desk-layout-restroom-left-record-printer-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x diagnostic comparisons/attendant-restroom-left-record-printer-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Diagnostic composite uses unchanged aligned layers",
+      "pass": true
+    },
+    {
+      "name": "Native pair left panel is exact original",
+      "pass": true
+    },
+    {
+      "name": "Unique HTML anchors",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract originals/approved-restroom-entrance.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/protected-detail-guide-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/approved-restroom-entrance-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/face-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/face-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/hands-costume-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/hands-costume-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/microphone-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/microphone-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/desk-equipment-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/desk-equipment-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/door-signs-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/door-signs-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/floor-contacts-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/floor-contacts-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/perspective-construction-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract originals/approved-restroom-entrance.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract references/record-printer.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/approved-restroom-entrance-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/record-printer-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract comparisons/attendant-restroom-left-record-printer-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract comparisons/desk-layout-restroom-left-record-printer-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract originals/approved-restroom-entrance.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract references/paper-emergency-selected-v04.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/approved-restroom-entrance-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/paper-emergency-selected-v04-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract comparisons/attendant-restroom-left-paper-emergency-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract comparisons/desk-layout-restroom-left-paper-emergency-selected-v04-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract originals/approved-restroom-entrance.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract references/paper-emergency-canonical-v03.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/approved-restroom-entrance-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/paper-emergency-canonical-v03-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract comparisons/attendant-restroom-left-paper-emergency-canonical-v03-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract comparisons/desk-layout-restroom-left-paper-emergency-canonical-v03-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract references/restroom-close-background.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract references/attendant-idle.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/approved-conversation-composite-native.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract previews/restroom-close-background-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery image contract assessment/approved-conversation-composite-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Gallery anchor #regions",
+      "pass": true
+    },
+    {
+      "name": "Gallery anchor #guides",
+      "pass": true
+    },
+    {
+      "name": "Gallery anchor #continuity",
+      "pass": true
+    },
+    {
+      "name": "Gallery anchor #qa",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link README.md",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link comparisons/approved-left-protected-guide-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link comparisons/approved-left-protected-guide-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link masks/proposed-repair-mask.png",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link masks/protected-pixels.png",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link sources/changed-pixels.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link assessment/perspective-guides.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link assessment/targeted-assessment.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link sources/narrative-excerpts.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link sources/approved-ledger-excerpt.md",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link sources/historical-v09-edit-record.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link sources/historical-v09-qa.json",
+      "pass": true
+    },
+    {
+      "name": "Local evidence link sources/paper-v04-selection-receipt.json",
+      "pass": true
+    },
+    {
+      "name": "Portable gallery same image count",
+      "pass": true
+    },
+    {
+      "name": "Portable image bytes exact",
+      "pass": true
+    },
+    {
+      "name": "README evidence link standalone-gallery.html",
+      "pass": true
+    },
+    {
+      "name": "README evidence link index.html",
+      "pass": true
+    },
+    {
+      "name": "README evidence link assessment/targeted-assessment.json",
+      "pass": true
+    },
+    {
+      "name": "README evidence link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "README evidence link comparisons/approved-left-protected-guide-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link comparisons/approved-left-protected-guide-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link comparisons/approved-left-protected-guide-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link previews/approved-restroom-entrance-4x.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link assessment/perspective-construction-4x.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link assessment/perspective-guides.json",
+      "pass": true
+    },
+    {
+      "name": "README evidence link masks/proposed-repair-mask.png",
+      "pass": true
+    },
+    {
+      "name": "README evidence link sources/changed-pixels.json",
+      "pass": true
+    },
+    {
+      "name": "README evidence link sources/approved-ledger-excerpt.md",
+      "pass": true
+    },
+    {
+      "name": "README evidence link sources/historical-v09-edit-record.json",
+      "pass": true
+    },
+    {
+      "name": "README evidence link sources/narrative-excerpts.json",
+      "pass": true
+    },
+    {
+      "name": "All pre-existing tracked files byte-identical",
+      "pass": true
+    },
+    {
+      "name": "Review starts at prior published head",
+      "pass": true
+    },
+    {
+      "name": "No registration/integration/deployment",
+      "pass": true
+    }
+  ],
+  "priorTrackedFilesPreserved": 1037,
+  "priorFilesChanged": [],
+  "approvedA01Sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+  "recommendation": "KEEP",
+  "candidateProduced": false,
+  "artworkPixelsChanged": 0,
+  "proposedRepairMaskPixels": 0,
+  "protectedPixels": 64684,
+  "registrationPerformed": false,
+  "canonicalA01Unchanged": true,
+  "paperCanonicalStillV03": true
+}

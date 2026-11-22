@@ -1,0 +1,220 @@
+{
+  "sourceFile": "story/chapters/chapter-03.reboot-candidate.json",
+  "sourceSha256": "36ae178d05a9db7dd318c441e4d8681eaa674c28ced81df97dcaba6c1c5c0253",
+  "nodes": {
+    "real_restroom": {
+      "mode": "narrative",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "objective": "USE THE RESTROOM.",
+      "text": "You enter a brightly lit hallway. A man comes out of the restroom, drying his hands on a paper towel. Behind him, water runs. A toilet flushes.\n\nIt's real.\n\nAn attendant sits beside the entrance. His desk is small, his uniform immaculate, and his expression reassuring.",
+      "choices": [
+        {
+          "id": "approach_pavilion_attendant",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "attendant_greeting"
+        }
+      ]
+    },
+    "attendant_greeting": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "speaker": "pavilion_attendant",
+      "pose": "idle",
+      "text": [
+        "Good morning! Welcome to the People's Pavilion."
+      ],
+      "choices": [
+        {
+          "id": "ask_attendant_for_restroom",
+          "kind": "spoken",
+          "text": "CAN I USE THE RESTROOM?",
+          "to": "attendant_refusal"
+        }
+      ]
+    },
+    "attendant_refusal": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "speaker": "pavilion_attendant",
+      "pose": "idle",
+      "text": [
+        "Of course! Everyone is entitled to one experience.",
+        {
+          "desc": "He checks the reader beside the door. Its indicator turns red. ONE EXPERIENCE PER PERSON - ALREADY REDEEMED."
+        },
+        "Oh, dear. I'm afraid your visit has already been completed.",
+        {
+          "desc": "You look toward the restroom. Another real toilet flushes."
+        },
+        "The Original has already used your allotted experience. And you clearly haven't. Which means you can't be the Original.",
+        {
+          "desc": "He smiles, apparently pleased to have settled the matter."
+        }
+      ],
+      "choices": [
+        {
+          "id": "demand_human_verification",
+          "kind": "spoken",
+          "text": "I AM ME. I CAN PROVE IT.",
+          "to": "human_verification_arrival"
+        },
+        {
+          "id": "demand_record_of_original",
+          "kind": "spoken",
+          "text": "THEN SHOW ME WHO USED MY VISIT.",
+          "to": "record_print"
+        },
+        {
+          "id": "try_unapproved_restroom_entry",
+          "kind": "action",
+          "text": "WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.",
+          "to": "door_wait"
+        }
+      ],
+      "show": {
+        "wc_key": {
+          "kind": "action",
+          "say": "SHOW THE ATTENDANT THE FACILITIES KEY AND ITS RETURNED TAG.",
+          "to": "attendant_key_callback"
+        }
+      }
+    },
+    "attendant_key_callback": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "speaker": "pavilion_attendant",
+      "pose": "idle",
+      "text": [
+        {
+          "desc": "You hold out the key. Its tag reads RETURNED TODAY, 4:52, with a signature in your own handwriting. The attendant compares the tag with the key still resting in your palm."
+        },
+        "Oh, splendid. You've returned it already.",
+        {
+          "desc": "He makes no attempt to take the key."
+        },
+        "Please don't return it again. Then we'd have to find out how you got it back."
+      ],
+      "choices": [
+        {
+          "id": "demand_human_verification_after_key",
+          "kind": "spoken",
+          "text": "I AM ME. I CAN PROVE IT.",
+          "to": "human_verification_arrival"
+        },
+        {
+          "id": "demand_record_of_original_after_key",
+          "kind": "spoken",
+          "text": "THEN SHOW ME WHO USED MY VISIT.",
+          "to": "record_print"
+        },
+        {
+          "id": "try_unapproved_restroom_entry_after_key",
+          "kind": "action",
+          "text": "WAIT FOR THE NEXT PERSON TO LEAVE AND SLIP THROUGH THE DOOR.",
+          "to": "door_wait"
+        }
+      ]
+    },
+    "door_wait": {
+      "mode": "narrative",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "text": "You sit on a bench with an excellent view of the restroom, beneath a sign: PLEASE DO NOT CONFUSE PATIENCE WITH PERMISSION.\n\nAnother visitor enters for his one permitted visit. A few minutes later he comes out, drying his hands on a paper towel. This is not the man you saw leave earlier. He notices you approaching and holds the door open.\n\nBeyond him you can see real sinks, mirrors and stalls. An inner gate divides the entrance lane from the one-way exit vestibule.",
+      "choices": [
+        {
+          "id": "respond_to_open_door",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "door_choices"
+        }
+      ]
+    },
+    "door_choices": {
+      "mode": "dialogue",
+      "scene": "pavilion_reboot/restroom_entrance",
+      "speaker": "pavilion_attendant",
+      "pose": "alarmed",
+      "text": [
+        {
+          "say": "After you.",
+          "who": "visitor"
+        },
+        "Sir! That gentleman hasn't been cleared!",
+        {
+          "say": "Cleared for what?",
+          "who": "visitor"
+        },
+        "His experience has already occurred!",
+        {
+          "say": "Doesn't look like it.",
+          "who": "visitor"
+        },
+        {
+          "say": "PLEASE COMPLETE ALL EXPERIENCES IN THE ORDER APPROVED.",
+          "who": "restroom_system"
+        },
+        {
+          "say": "Well? Are you coming?",
+          "who": "visitor"
+        }
+      ],
+      "choices": [
+        {
+          "id": "dash_through_restroom_exit",
+          "kind": "action",
+          "text": "MAKE A RUN FOR IT.",
+          "check": {
+            "id": "ch3_restroom_dash",
+            "sides": 6,
+            "need": 4
+          },
+          "pass": {
+            "to": "door_dash_pass"
+          },
+          "fail": {
+            "to": "door_dash_fail"
+          }
+        },
+        {
+          "id": "ask_visitor_to_hold_door",
+          "kind": "spoken",
+          "text": "THANK YOU. PLEASE KEEP HOLDING IT!",
+          "to": "door_courtesy"
+        },
+        {
+          "id": "back_into_restroom_exit",
+          "kind": "action",
+          "text": "TURN AROUND AND BACK THROUGH THE EXIT.",
+          "to": "door_reverse_end"
+        }
+      ]
+    },
+    "record_print": {
+      "mode": "narrative",
+      "scene": "pavilion_reboot/record_printer",
+      "text": "The attendant looks relieved. Finally you have asked a question with an established procedure. A narrow printer chatters and begins unspooling an astonishing length of paper. He tears off a portion and presents it proudly.\n\nPEOPLE'S PAVILION - VISITOR EXPERIENCE RECORD\nEXPERIENCE: RESTROOM\nPERSON: YOU - ORIGINAL\nSTATUS: COMPLETED\nTIME SPENT: PRIVATE\nPHOTOGRAPH: WITHHELD FOR PRIVACY\nPROOF OF COMPLETION: OFFICIAL RECORD",
+      "choices": [
+        {
+          "id": "review_record_with_attendant",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "record_challenge"
+        }
+      ]
+    },
+    "paper_problem_end": {
+      "mode": "narrative",
+      "scene": "pavilion_reboot/paper_emergency",
+      "end": true,
+      "text": "You tug the receipt. The printer accelerates. You pull harder; more paper shoots out. The ribbon wraps around the attendant's ankles, passes beneath the counter and climbs an ornamental plant. A visitor catches a heel while stepping over it.\n\n\"Stop pulling!\" the attendant shouts. You stop. The printer doesn't. He presses a red button. PAPER EMERGENCY - EVACUATE THE EXPERIENCE AREA.\n\nTwo enormous safety brushes descend and sweep the paper and everyone standing on it toward an exit. The attendant grabs your shoulder. \"I need you to leave immediately! Especially you! Your experience has already happened!\"\n\nThe brushes push you into daylight. Behind the closing doors, he begs everybody not to touch the receipt.\n\nCHAPTER 3 COMPLETE - PAPER EMERGENCY.",
+      "choices": [
+        {
+          "id": "restart_after_paper_emergency",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ]
+    }
+  }
+}

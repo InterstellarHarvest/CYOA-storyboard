@@ -1,0 +1,81 @@
+{
+  "schema": "out-of-order-paper-emergency-v04-owner-selection-v1",
+  "date": "2026-11-22",
+  "timezone": "America/New_York",
+  "owner": "Nate, Story and Creative Director / Art Director",
+  "ownerSelectionVerbatim": "Nate has explicitly approved and selected **Paper Emergency v04**.",
+  "ownerSelectionExcerptFile": "OWNER_SELECTION_VERBATIM.txt",
+  "ownerSelectionExcerptSha256": "71d1f26adca3592b1fe755e461455166a3dc84656652a1f42e82daefe891b4b6",
+  "record": "scenes:pavilion_reboot/paper_emergency",
+  "selectedVersion": "v04 localized repair",
+  "status": "approved",
+  "selected": true,
+  "approved": true,
+  "creativeApprovalComplete": true,
+  "canonicalRegistrationPerformed": false,
+  "gameplayIntegrationAuthorized": false,
+  "mergeAuthorized": false,
+  "pagesDeploymentAuthorized": false,
+  "productionAssetPath": null,
+  "source": {
+    "repo": "InterstellarHarvest/CYOA-storyboard",
+    "ref": "art/ch3-native-pilot-20261121",
+    "commit": "d1600a34a58497b4886518c6aa9feeaa205d8426",
+    "path": "tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/v04-paper-emergency-localized-repair/candidate/CH3-B06-paper-emergency-local-v04.png"
+  },
+  "selectedFile": {
+    "file": "selected/CH3-B06-paper-emergency-local-v04.png",
+    "sha256": "93a48082124600b1afeb45e5ea54856bf253e858e55111295e9d9c26919bc978",
+    "gitBlobAtSourceCommit": "261474c497624374b957a61a9cdda3190e5e4b15",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "alpha": "opaque",
+    "bitDepth": 8
+  },
+  "verifiedCanonicalMain": "d9b6b91604b72115c5402253f00924665e957727",
+  "currentCanonicalPreview": {
+    "file": "assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+    "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch02-20261119",
+      "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+    }
+  },
+  "supersedes": {
+    "version": "B06 v03",
+    "status": "historically approved; superseded as current creative selection by v04",
+    "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch02-20261119",
+      "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+    },
+    "preservedFile": "preserved/CH3-B06-paper-emergency-approved-v03.png",
+    "canonicalGitBlobAtVerifiedMain": "a3d8673cd38f9231cc2cde3a5bac2d8edc55f762",
+    "approvalHistoryDocuments": [
+      "docs/113_CH3_BATCH_B_SELECTED_ARTWORK_20261119.json",
+      "docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md"
+    ]
+  },
+  "supersessionRule": "v04 is the selected approved artwork for this record. The canonical registry/preview intentionally remain v03 until the separate Claude registration step. Never downgrade or relabel the old v03 approval as unapproved.",
+  "nativeGridAuthorship": "Original full-scene native-grid authorship remains unresolved/unproven. Native coordinate repairs do not prove inherited scene authorship. The accepted source-derived limitation is retained for the exact selected bytes.",
+  "historicalPackageRule": "Do not modify any v01\u2013v04 review package or its generated/unselected labels. This later immutable owner-selection record supersedes those labels for the selected v04 file.",
+  "registrationBatch": "registration-batch.json",
+  "approvalLedgerAddendum": "APPROVAL_LEDGER_ADDENDUM.md",
+  "handoff": "CLAUDE_REGISTRATION_HANDOFF.md",
+  "notesUpdateForClaude": "future-record-notes.txt",
+  "existingLedgerSha256": "6a05a20845b2add950f7ce0f202ad92a9a5b98fb2048dba70d2e450ace79dac3",
+  "existingCatalogSha256": "8a7b5d71b5a0c4c2535e07d07f6d3ca583d9133ec46302eedefd0fd917f90d32",
+  "existingPreviewRegistrySha256": "f91e754b3dcbec30e129542ab59c1997abccabb24dc31defe55b6a312613e860"
+}

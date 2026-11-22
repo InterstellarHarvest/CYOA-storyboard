@@ -1,0 +1,279 @@
+{
+  "scope": "Restroom Entrance A01 KEEP assessment",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "checks": [
+        {
+          "name": "KEEP and zero artwork edits clearly displayed",
+          "pass": true
+        },
+        {
+          "name": "Paper v04 selection and pending registration distinguished",
+          "pass": true
+        },
+        {
+          "name": "Native comparison is two 314x206 images",
+          "pass": true
+        },
+        {
+          "name": "Browser independently fetches exact original and reference hashes",
+          "pass": true
+        },
+        {
+          "name": "Canonical A01 hash and Paper v03 remain unchanged",
+          "pass": true
+        },
+        {
+          "name": "Browser decodes closed zero-pixel repair mask",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x panel",
+          "pass": true
+        },
+        {
+          "name": "Full 4x comparison remains 1256x824 per image",
+          "pass": true
+        },
+        {
+          "name": "4x panels scroll instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every image decodes at declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Every local source evidence and QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes all enlarged views",
+          "pass": true
+        },
+        {
+          "name": "Mobile retains native 314x206 display",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes all images",
+          "pass": true
+        },
+        {
+          "name": "No JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/proposed-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "masks/protected-pixels.png",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/perspective-guides.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/targeted-assessment.json",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "sources/narrative-excerpts.json",
+          "status": 200
+        },
+        {
+          "href": "sources/approved-ledger-excerpt.md",
+          "status": 200
+        },
+        {
+          "href": "sources/historical-v09-edit-record.json",
+          "status": 200
+        },
+        {
+          "href": "sources/historical-v09-qa.json",
+          "status": 200
+        },
+        {
+          "href": "sources/paper-v04-selection-receipt.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "checks": [
+        {
+          "name": "KEEP and zero artwork edits clearly displayed",
+          "pass": true
+        },
+        {
+          "name": "Paper v04 selection and pending registration distinguished",
+          "pass": true
+        },
+        {
+          "name": "Native comparison is two 314x206 images",
+          "pass": true
+        },
+        {
+          "name": "Browser independently fetches exact original and reference hashes",
+          "pass": true
+        },
+        {
+          "name": "Canonical A01 hash and Paper v03 remain unchanged",
+          "pass": true
+        },
+        {
+          "name": "Browser decodes closed zero-pixel repair mask",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x panel",
+          "pass": true
+        },
+        {
+          "name": "Full 4x comparison remains 1256x824 per image",
+          "pass": true
+        },
+        {
+          "name": "4x panels scroll instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every image decodes at declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Every local source evidence and QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes all enlarged views",
+          "pass": true
+        },
+        {
+          "name": "Mobile retains native 314x206 display",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes all images",
+          "pass": true
+        },
+        {
+          "name": "No JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-protected-guide-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/proposed-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "masks/protected-pixels.png",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/perspective-guides.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/targeted-assessment.json",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "sources/narrative-excerpts.json",
+          "status": 200
+        },
+        {
+          "href": "sources/approved-ledger-excerpt.md",
+          "status": 200
+        },
+        {
+          "href": "sources/historical-v09-edit-record.json",
+          "status": 200
+        },
+        {
+          "href": "sources/historical-v09-qa.json",
+          "status": 200
+        },
+        {
+          "href": "sources/paper-v04-selection-receipt.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

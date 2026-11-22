@@ -1,0 +1,31 @@
+{
+  "technicalValidation": {
+    "status": "PASS",
+    "checks": 144,
+    "report": "preservation.json"
+  },
+  "canonical": {
+    "status": "PASS",
+    "report": "canonical.txt"
+  },
+  "smoke": {
+    "status": "PASS",
+    "report": "smoke.txt"
+  },
+  "browser": {
+    "status": "PASS",
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "checks": 30,
+    "report": "browser.json"
+  },
+  "registrationPerformed": false,
+  "notRun": [
+    "Game engine/runtime QA",
+    "Real registration or registration dry run (assessment only)",
+    "Public Pages deployment",
+    "Repeated sync self-tests/selected-artwork suite; canonical data and viewer implementation unchanged"
+  ]
+}

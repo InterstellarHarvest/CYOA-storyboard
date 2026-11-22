@@ -1,0 +1,22 @@
+{
+  "candidateId": "CH3-A01-restroom-v09",
+  "version": "v09",
+  "branch": "art/ch3-pavilion-batch01-20261118",
+  "sourcePin": "8f589e1205ed3d5c274d92409fba16314a6ce637",
+  "candidate": "candidates/CH3-A01-restroom-v09.png",
+  "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+  "dimensions": [
+    314,
+    206
+  ],
+  "preview4x": "previews/CH3-A01-restroom-v09-4x.png",
+  "method": "Coordinate-authored microphone only. Restore exact v06 background under the old microphone mask, then draw six explicit native primitives.",
+  "generationCalls": 0,
+  "changedPixels": 59,
+  "status": "generated/unselected",
+  "selected": false,
+  "approved": false,
+  "assetPath": null,
+  "editRecord": "sources/edit-record.json",
+  "nativeAuthorshipLimitation": "UNPROVEN; inherited source-derived RGB remains. Only the explicit local pixel correction is directly native-grid authored."
+}

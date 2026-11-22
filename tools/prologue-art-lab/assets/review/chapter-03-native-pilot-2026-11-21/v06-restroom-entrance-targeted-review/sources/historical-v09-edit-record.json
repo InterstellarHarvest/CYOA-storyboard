@@ -1,0 +1,51 @@
+{
+  "candidateId": "CH3-A01-restroom-v09",
+  "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+  "dimensions": [
+    314,
+    206
+  ],
+  "method": "Coordinate-authored microphone only. Restore exact v06 background under the old microphone mask, then draw six explicit native primitives.",
+  "generationCalls": 0,
+  "source": "references/A01-v08.png",
+  "sourceSha256": "63209332d3e5d171db46201e607dd4223ba752e1fd09521539e1312cd5763577",
+  "backgroundDonor": "references/A01-v06-background-donor.png",
+  "donorSha256": "892acd41d865677666569c005f04cbdd01b2e26d77ae8f69ac662e0379d66245",
+  "oldMicrophoneRepairPixels": 38,
+  "changedPixels": 59,
+  "changedBounds": [
+    196,
+    123,
+    203,
+    143
+  ],
+  "allowedEditBounds": [
+    196,
+    123,
+    203,
+    143
+  ],
+  "unexpectedChangedPixels": 0,
+  "foregroundGuardBoxes": {
+    "headHairAndFaceBox": [
+      201,
+      96,
+      234,
+      122
+    ],
+    "bodyArmsHandsAndClothingBox": [
+      202,
+      122,
+      245,
+      142
+    ],
+    "restoredPixelList": "sources/protected-489-npc-pixels.tsv",
+    "policy": "All guard-region pixels and all 489 separately listed restored pixels must remain bit-identical to v08."
+  },
+  "protected489RestoredNPCPixelsUnchanged": true,
+  "wholeAttendantGuardPixelsUnchanged": true,
+  "nativeGridAuthorshipLimitation": "Original full-scene native-grid authorship remains unproven. Only this logged local edit is directly authored on the native grid; inherited source-derived RGB remains.",
+  "approved": false,
+  "selected": false,
+  "assetPath": null
+}
