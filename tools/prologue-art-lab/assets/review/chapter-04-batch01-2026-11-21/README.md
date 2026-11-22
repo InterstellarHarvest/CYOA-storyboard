@@ -46,3 +46,11 @@ PYTHONDONTWRITEBYTECODE=1 python3 validate.py
 Browser verification requires Playwright and installed Chromium/Firefox. `qa-gallery.cjs` supports `PLAYWRIGHT_CHROMIUM_EXECUTABLE` and `PLAYWRIGHT_FIREFOX_EXECUTABLE` for existing browser installations.
 
 Stop for Nate’s creative selection of the lobby and portrait standard before extending the revision to the remaining rooms or registering any approved candidates.
+
+## Standing publication instruction — owner authorized November 21, 2026
+
+Every completed artwork review version must be committed and pushed to its corresponding remote review branch automatically, including unselected candidates. Continue on `art/ch4-batch01-review-20261121` for this batch and establish its own remote tracking branch. Preserve every previous candidate and version, the native PNGs, exact 4× scene previews, unchanged detailed references, comparison images, prompts, manifests, hashes, QA and complete HTML gallery dependencies.
+
+After pushing, verify the remote branch commit and accessibility of every referenced image. Return the exact commit SHA, clickable GitHub gallery/source and PNG comparison links, and a browser-rendered gallery when available. A local-only package is not a completed publication handoff. `verify-publication.py` in this directory audits raw GitHub files against the committed local image bytes and checks a read-only browser-gallery mirror; its remote verification report is written outside the package to avoid changing the commit being verified.
+
+Review-branch publication does not approve artwork. Do not mark unselected candidates approved/integrated, merge them into main, replace approved selections, change narrative/gameplay files or modify the production Pages workflow to host the review. Creative selection remains Nate’s decision. This standing authorization requires no further publication request for subsequent review versions.
