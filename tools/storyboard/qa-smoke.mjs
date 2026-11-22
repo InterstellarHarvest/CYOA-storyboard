@@ -33,7 +33,7 @@ const productionRecords=[
 // portrait backgrounds and 7 foreground poses. The 65 retired records remain
 // present for history but must never count as active Chapter 3 production.
 // Chapter 4 WIP review has two new inventory objects, each with slot + inspect placeholder records. Neither is approved art.
-assert.equal(productionRecords.length,171+14+8+7+2*2,'shared art catalog retains history and the two Chapter 4 WIP item placeholders');
+assert.equal(productionRecords.length,171+14+8+7+2*2+5,'shared art catalog retains history, Chapter 4 item placeholders and five owner-selected Batch 1 records');
 for(const id of ['lot_53_dispute_ticket','wedding_ring_lot31']){
   assert.ok(items[id], 'new Chapter 4 WIP inventory item '+id);
   for(const variant of ['slot','inspect']){
