@@ -1,0 +1,480 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "Only Backstage and Locomotion scoped",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 314x206 opaque RGB",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 status generated/unselected",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 deterministic native rebuild",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 exact 4x blocks",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 every output pixel belongs to explicitly authored palette",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 approved copy byte-identical",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 approved exact 4x blocks",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 cables approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 cables candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 props approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 props candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 clapper approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 clapper candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 exit approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-backstage-v01 exit candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 314x206 opaque RGB",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 status generated/unselected",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 deterministic native rebuild",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 exact 4x blocks",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 every output pixel belongs to explicitly authored palette",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 approved copy byte-identical",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 approved exact 4x blocks",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 machine-and-net approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 machine-and-net candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 presenter approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 presenter candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 countdown approved exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "CH3-PILOT-locomotion-v01 countdown candidate exact 8x crop",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:exposition/reception",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: portraits:receptionist:default#layers:background",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: portraits:receptionist:default#layers:foreground",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:biology_park/conveniences_bureau",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:biology_park/control_tower",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:biology_park/spore_garden",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:biology_park/tour_tram",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:biology_park/moving_forest",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:biology_park/groundskeeper",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:house_of_tomorrow/foyer",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:pavilion_reboot/human_verification_stage",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: scenes:pavilion_reboot/urgency_stage",
+      "pass": true
+    },
+    {
+      "name": "Reference preserved: portraits:pavilion_presenter:idle",
+      "pass": true
+    },
+    {
+      "name": "All 493 preexisting tracked files retain SHA-256",
+      "pass": true
+    },
+    {
+      "name": "No diff to any preexisting tracked source file",
+      "pass": true
+    },
+    {
+      "name": "HTML anchors unique",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: approved/approved-backstage.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: candidates/CH3-PILOT-backstage-v01.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/approved-backstage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/CH3-PILOT-backstage-v01-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-cables-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-cables-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-props-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-props-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-clapper-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-clapper-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-exit-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/backstage-exit-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: candidates/CH3-PILOT-backstage-v01.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/tour_tram.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/CH3-PILOT-backstage-v01-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/tour_tram-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: concept-references/backstage-large-reference.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: approved/approved-locomotion.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: candidates/CH3-PILOT-locomotion-v01.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/approved-locomotion-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/CH3-PILOT-locomotion-v01-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/locomotion-machine-and-net-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/locomotion-machine-and-net-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/locomotion-presenter-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/locomotion-presenter-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/locomotion-countdown-approved-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: closeups/locomotion-countdown-candidate-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: candidates/CH3-PILOT-locomotion-v01.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/control_tower.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/CH3-PILOT-locomotion-v01-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/control_tower-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: concept-references/locomotion-large-reference.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/reception.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/presenter-idle.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/reception.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/reception-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/conveniences_bureau.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/conveniences_bureau-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/control_tower.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/control_tower-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/spore_garden.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/spore_garden-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/tour_tram.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/tour_tram-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/moving_forest.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/moving_forest-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/groundskeeper.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/groundskeeper-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/chapter1-foyer.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/chapter1-foyer-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/continuity-human_verification_stage.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/continuity-human_verification_stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: references/continuity-urgency_stage.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image valid: previews/continuity-urgency_stage-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #backstage",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #locomotion",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #references",
+      "pass": true
+    },
+    {
+      "name": "HTML anchor #qa",
+      "pass": true
+    },
+    {
+      "name": "Artifact link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link reconstruct.py",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/backstage/scene.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/locomotion/scene.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link generation-prompts.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link preservation-baseline.json",
+      "pass": true
+    },
+    {
+      "name": "Portable gallery embeds all images",
+      "pass": true
+    }
+  ],
+  "checkCount": 110,
+  "baseCommit": "d9b6b91604b72115c5402253f00924665e957727",
+  "preservation": {
+    "existingTrackedFilesVerified": 493,
+    "changedExistingPaths": [],
+    "approvedAssetsChanged": 0,
+    "registryChanges": 0,
+    "narrativeChanges": 0,
+    "earlierReviewPackageChanges": 0,
+    "chapter4Changes": 0,
+    "engineRepositoryAccessOrChanges": false
+  },
+  "candidates": [
+    {
+      "id": "CH3-PILOT-backstage-v01",
+      "size": [
+        314,
+        206
+      ],
+      "sha256": "6af2ccb3ae86b7fc6ae89f25aa521f9db3e58dc7396e41c067079360493a9b59",
+      "uniqueRGB": 45,
+      "status": "generated/unselected"
+    },
+    {
+      "id": "CH3-PILOT-locomotion-v01",
+      "size": [
+        314,
+        206
+      ],
+      "sha256": "1c944c9aabc6aa5fd9288dd454fadb49b1d327d0d08a337d59464f65757a36d0",
+      "uniqueRGB": 36,
+      "status": "generated/unselected"
+    }
+  ],
+  "nativeMethodLimit": "Explicit coordinate-authored procedural native construction is reproducible; artistic success and hand-painted authorship are not inferred. Conceptual imagegen raster authorship remains unresolved."
+}

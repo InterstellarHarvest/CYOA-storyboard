@@ -1,0 +1,239 @@
+{
+  "scope": "Local review gallery only; no Pages publication or gameplay",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "checks": [
+        {
+          "name": "Two generated/unselected candidate sections",
+          "pass": true
+        },
+        {
+          "name": "Native previews display exactly 314x206 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "Expand control opens every exact 4x comparison",
+          "pass": true
+        },
+        {
+          "name": "All expanded 4x images retain 1256x824 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "Exact 4x comparison scrolls without shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every image decodes at its declared native/export dimensions",
+          "pass": true
+        },
+        {
+          "name": "Browser fetches exact candidate/approved/reference PNG hashes",
+          "pass": true
+        },
+        {
+          "name": "All gallery artifact links resolve",
+          "pass": true
+        },
+        {
+          "name": "Collapse control closes every details element",
+          "pass": true
+        },
+        {
+          "name": "Mobile native previews retain logical size",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "linkResponses": [
+        [
+          "manifest.json",
+          200
+        ],
+        [
+          "reconstruct.py",
+          200
+        ],
+        [
+          "sources/backstage/scene.json",
+          200
+        ],
+        [
+          "sources/locomotion/scene.json",
+          200
+        ],
+        [
+          "generation-prompts.json",
+          200
+        ],
+        [
+          "qa/image-and-preservation.json",
+          200
+        ],
+        [
+          "preservation-baseline.json",
+          200
+        ],
+        [
+          "qa/canonical.txt",
+          200
+        ],
+        [
+          "qa/sync.txt",
+          200
+        ],
+        [
+          "qa/smoke.txt",
+          200
+        ],
+        [
+          "qa/chapter3-narrative.txt",
+          200
+        ],
+        [
+          "qa/chapter3-briefs.txt",
+          200
+        ],
+        [
+          "qa/chapter3-prepare.txt",
+          200
+        ],
+        [
+          "qa/results.json",
+          200
+        ],
+        [
+          "qa/gallery-browser.json",
+          200
+        ],
+        [
+          "qa/selected-artwork-browser.txt",
+          200
+        ]
+      ],
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "checks": [
+        {
+          "name": "Two generated/unselected candidate sections",
+          "pass": true
+        },
+        {
+          "name": "Native previews display exactly 314x206 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "Expand control opens every exact 4x comparison",
+          "pass": true
+        },
+        {
+          "name": "All expanded 4x images retain 1256x824 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "Exact 4x comparison scrolls without shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every image decodes at its declared native/export dimensions",
+          "pass": true
+        },
+        {
+          "name": "Browser fetches exact candidate/approved/reference PNG hashes",
+          "pass": true
+        },
+        {
+          "name": "All gallery artifact links resolve",
+          "pass": true
+        },
+        {
+          "name": "Collapse control closes every details element",
+          "pass": true
+        },
+        {
+          "name": "Mobile native previews retain logical size",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "linkResponses": [
+        [
+          "manifest.json",
+          200
+        ],
+        [
+          "reconstruct.py",
+          200
+        ],
+        [
+          "sources/backstage/scene.json",
+          200
+        ],
+        [
+          "sources/locomotion/scene.json",
+          200
+        ],
+        [
+          "generation-prompts.json",
+          200
+        ],
+        [
+          "qa/image-and-preservation.json",
+          200
+        ],
+        [
+          "preservation-baseline.json",
+          200
+        ],
+        [
+          "qa/canonical.txt",
+          200
+        ],
+        [
+          "qa/sync.txt",
+          200
+        ],
+        [
+          "qa/smoke.txt",
+          200
+        ],
+        [
+          "qa/chapter3-narrative.txt",
+          200
+        ],
+        [
+          "qa/chapter3-briefs.txt",
+          200
+        ],
+        [
+          "qa/chapter3-prepare.txt",
+          200
+        ],
+        [
+          "qa/results.json",
+          200
+        ],
+        [
+          "qa/gallery-browser.json",
+          200
+        ],
+        [
+          "qa/selected-artwork-browser.txt",
+          200
+        ]
+      ],
+      "errors": []
+    }
+  ]
+}

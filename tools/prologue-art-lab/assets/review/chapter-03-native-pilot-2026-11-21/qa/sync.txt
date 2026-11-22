@@ -1,0 +1,29 @@
+{
+ "result": "PASS",
+ "checks": 23,
+ "results": [
+  "baseline passes (145 previews)",
+  "missing chapter",
+  "broken route",
+  "undeclared field",
+  "narrative-only chapter metadata cannot be marked gameplay ready",
+  "manifest key the importer rejects",
+  "approved art regresses to generated",
+  "integrated art regresses to not-started",
+  "preview bytes tampered",
+  "preview file missing",
+  "stray unregistered package file",
+  "selected record without preview",
+  "integrated but not in the game report",
+  "game uses an approved-only image",
+  "game pixels differ from preview",
+  "register refuses wrong native size",
+  "register refuses a scene as a portrait",
+  "register requires a pinned full commit",
+  "register refuses source/ masters",
+  "register refuses containers",
+  "register refuses unknown records",
+  "register never lowers integrated -> approved",
+  "register: selection = approval, no invented assetPath"
+ ]
+}

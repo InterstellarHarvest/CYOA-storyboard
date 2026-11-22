@@ -1,0 +1,1977 @@
+{
+  "baseCommit": "d9b6b91604b72115c5402253f00924665e957727",
+  "trackedFiles": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "9c113fe27a8e949b1870576c26144067ee5434c8c2427c57064b458f36d91e41"
+    },
+    {
+      "path": ".github/workflows/prologue-art-lab-review.yml",
+      "sha256": "15345b00979fa58781398009252a16bee3f5f533d5957545eed3a2bc4b3338f9"
+    },
+    {
+      "path": ".github/workflows/storyboard-review.yml",
+      "sha256": "73b8505674a9d6ecac6d83ff754fd2ef485ebffd853cfa5c741493bf7f88188d"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "663456bd223559f1f966a0113013d3d1377262282472216154f7ca9a75357278"
+    },
+    {
+      "path": "assets/selected/art/deaths/classified_as_compost.png",
+      "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86"
+    },
+    {
+      "path": "assets/selected/art/deaths/new_arrival.png",
+      "sha256": "eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5"
+    },
+    {
+      "path": "assets/selected/art/deaths/personal_growth.png",
+      "sha256": "8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411"
+    },
+    {
+      "path": "assets/selected/art/deaths/reclassified.png",
+      "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc"
+    },
+    {
+      "path": "assets/selected/art/deaths/rest_assured_voluntary.png",
+      "sha256": "7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c"
+    },
+    {
+      "path": "assets/selected/art/deaths/site_improvement.png",
+      "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff"
+    },
+    {
+      "path": "assets/selected/art/focus/biology_park/aid_box_open.png",
+      "sha256": "706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229"
+    },
+    {
+      "path": "assets/selected/art/focus/biology_park/decontamination_kit_open.png",
+      "sha256": "d14ff669e3fb5f03e8c755a232a80f7064c6d7064a471255174b019a1ff42de8"
+    },
+    {
+      "path": "assets/selected/art/focus/biology_park/exposure_dispenser_open.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b"
+    },
+    {
+      "path": "assets/selected/art/focus/house_of_tomorrow/album_page_1.png",
+      "sha256": "c789a17a2e2ee45a7db07cd9e2aa0a4457dabe68dd88901aaf254f168a100ba7"
+    },
+    {
+      "path": "assets/selected/art/focus/house_of_tomorrow/album_page_2.png",
+      "sha256": "fcf0dcc0e10dfaa7cce3bf6a5b58687255681430811c551519edc883fa27c7a5"
+    },
+    {
+      "path": "assets/selected/art/focus/house_of_tomorrow/album_page_3.png",
+      "sha256": "579c0b2e14589e7c3ada53ddf1c5bc984f209170c48619b18336e883b97616ad"
+    },
+    {
+      "path": "assets/selected/art/items/acting_director_badge_inspect.png",
+      "sha256": "a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d"
+    },
+    {
+      "path": "assets/selected/art/items/acting_director_badge_slot.png",
+      "sha256": "a09dae0d8201b6062c51e4f5cc99c1e49b77240b400e7dbf5107bb805bf56c44"
+    },
+    {
+      "path": "assets/selected/art/items/applause_timing_clicker_inspect.png",
+      "sha256": "d446f2a2ffe7f8730ae071fe74a784bb7c70dbe85e92810224ada4fa2bb3b820"
+    },
+    {
+      "path": "assets/selected/art/items/applause_timing_clicker_slot.png",
+      "sha256": "ff82fcc93ab37ad4639ad3a7826cbfb2d2f18de9668ac5107238589eb2d52ea8"
+    },
+    {
+      "path": "assets/selected/art/items/bathroom_pass_inspect.png",
+      "sha256": "9c8527a3fd85cfeddc01ce4a85b74b04cb54063ffc30100be19497e73e7fa722"
+    },
+    {
+      "path": "assets/selected/art/items/bathroom_pass_slot.png",
+      "sha256": "5ad9b6f94328d645173b4f0476f4bdde0bac07d4415ab2c7afcba36e8494355d"
+    },
+    {
+      "path": "assets/selected/art/items/botanical_antidote_customs_inspect.png",
+      "sha256": "35da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc"
+    },
+    {
+      "path": "assets/selected/art/items/botanical_antidote_customs_slot.png",
+      "sha256": "da857214a1bf850dbae043d32afa63db2423e57eafe3462186d0d685b9610e19"
+    },
+    {
+      "path": "assets/selected/art/items/botanical_antidote_maintenance_inspect.png",
+      "sha256": "f59a324d74a3a7bd772858a858f9bad95809fbdf83fa16f876563f1a20493c88"
+    },
+    {
+      "path": "assets/selected/art/items/botanical_antidote_maintenance_slot.png",
+      "sha256": "ca1b9ea48ab96d0e2e98171d551a2af50ca95f345c4c9659a483783fb2e213b1"
+    },
+    {
+      "path": "assets/selected/art/items/botanical_antidote_public_inspect.png",
+      "sha256": "4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9"
+    },
+    {
+      "path": "assets/selected/art/items/botanical_antidote_public_slot.png",
+      "sha256": "d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961"
+    },
+    {
+      "path": "assets/selected/art/items/certified_seed_canister_inspect.png",
+      "sha256": "958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7"
+    },
+    {
+      "path": "assets/selected/art/items/certified_seed_canister_slot.png",
+      "sha256": "0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998"
+    },
+    {
+      "path": "assets/selected/art/items/effects_box_empty_inspect.png",
+      "sha256": "36e79a570d7881c346cb3856c7dedda1725ec5f9f1c10883dd803df7fe63d8d1"
+    },
+    {
+      "path": "assets/selected/art/items/effects_box_empty_slot.png",
+      "sha256": "7220e9ffb8d7f008423fb14b02cf1d34f16be27974372ca7200cb5453ce2eca3"
+    },
+    {
+      "path": "assets/selected/art/items/effects_box_full_inspect.png",
+      "sha256": "e769176b79af3a09836c8f9ec4edc901a76a8308d4ca725ad78fa6723b29f1c8"
+    },
+    {
+      "path": "assets/selected/art/items/effects_box_full_slot.png",
+      "sha256": "305910393abcaa0f2449e68087d95c69b8b6ed4728fced579511e5955417499c"
+    },
+    {
+      "path": "assets/selected/art/items/expo_examiner_badge_inspect.png",
+      "sha256": "bcbfbf9415eae2e9e1bcdc85eef0dc67a25524ededeb9bb2f3494c3f80b639ea"
+    },
+    {
+      "path": "assets/selected/art/items/expo_examiner_badge_slot.png",
+      "sha256": "7347b7afd9b2509fa59270b9ef2db901429c50466a0a617c1ff324843721fa79"
+    },
+    {
+      "path": "assets/selected/art/items/family_portrait_photo_inspect.png",
+      "sha256": "cf9cebc88a5e320d1f3cba3626477c8919c2e418f9c43923691cee5a05ba86d3"
+    },
+    {
+      "path": "assets/selected/art/items/family_portrait_photo_slot.png",
+      "sha256": "7e1e0b42f5def951dcc17095df0f5951ddfee5b16b916080681442d97d50f50c"
+    },
+    {
+      "path": "assets/selected/art/items/property_claim_ticket_inspect.png",
+      "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93"
+    },
+    {
+      "path": "assets/selected/art/items/property_claim_ticket_slot.png",
+      "sha256": "eb4271ebc35819234474cab43ee11106648eb1ec3d385efc5814e77fce6b035a"
+    },
+    {
+      "path": "assets/selected/art/items/red_swangline_stapler_inspect.png",
+      "sha256": "ed7301377c1a6a3f8ae66dbcc3f4c95a5b9666bd4d999aa62fd111bd29e05120"
+    },
+    {
+      "path": "assets/selected/art/items/red_swangline_stapler_slot.png",
+      "sha256": "af9069cab87b4f6b795b1219e76c6b013e9d5b95e2d69bead19318e93e495c8a"
+    },
+    {
+      "path": "assets/selected/art/items/rubber_band_ball_inspect.png",
+      "sha256": "5c6d633de86e5228c3066e7564a87b438d6366ff4956f57ac03437d67749e1b9"
+    },
+    {
+      "path": "assets/selected/art/items/rubber_band_ball_slot.png",
+      "sha256": "0622df62fee751dc31c910858b58b69d695db582b385ef122bebca8d3eaad85c"
+    },
+    {
+      "path": "assets/selected/art/items/small_desk_plant_inspect.png",
+      "sha256": "6880670a68a2baa48fe23afc22972a7be9197799ebbf454079d7127731a6eee7"
+    },
+    {
+      "path": "assets/selected/art/items/small_desk_plant_slot.png",
+      "sha256": "76cb99324daa32d21d4928f3f9fdaf30e0790568ffce0fa725d01830b606b664"
+    },
+    {
+      "path": "assets/selected/art/items/termination_notice_inspect.png",
+      "sha256": "3c9db0db0b20e65f94303dcf6e1953819ffbd8e2dd44523ce6ddc8303417b8e6"
+    },
+    {
+      "path": "assets/selected/art/items/termination_notice_slot.png",
+      "sha256": "07afd75514d2a6c2ec16239408160e01c129acc9111faa0a961cd85b509a4a91"
+    },
+    {
+      "path": "assets/selected/art/portraits/courtesy_conductor/concourse_crash_background.png",
+      "sha256": "9f8f3d19d44a6433ef70391118a616d7dd6c8626f43eccda48d55af8fdd1cd80"
+    },
+    {
+      "path": "assets/selected/art/portraits/courtesy_conductor/courtesy_conductor_talking.png",
+      "sha256": "8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d"
+    },
+    {
+      "path": "assets/selected/art/portraits/groundskeeper/groundskeeper_background.png",
+      "sha256": "c96f40c20412bff3ea42238d190c85558959b37a9120eec9858182c980f11f68"
+    },
+    {
+      "path": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402"
+    },
+    {
+      "path": "assets/selected/art/portraits/house/dining_conversation.png",
+      "sha256": "33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a"
+    },
+    {
+      "path": "assets/selected/art/portraits/house/foyer_conversation.png",
+      "sha256": "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0"
+    },
+    {
+      "path": "assets/selected/art/portraits/house/lounge_conversation.png",
+      "sha256": "a3d55c565d98fa92a8829100e3f0d255b72ff2963b30dd505be687df3a358bbb"
+    },
+    {
+      "path": "assets/selected/art/portraits/house/portrait_gallery_conversation.png",
+      "sha256": "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d"
+    },
+    {
+      "path": "assets/selected/art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74"
+    },
+    {
+      "path": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d"
+    },
+    {
+      "path": "assets/selected/art/portraits/termination_drone/corridor_background.png",
+      "sha256": "84f1f05525b38d44903b7fdefd571e3c44e5948cbe8060e2a15435ed1735a1dd"
+    },
+    {
+      "path": "assets/selected/art/portraits/termination_drone/drone_paper_extended.png",
+      "sha256": "b30aae55a254394cf83437e6bcf7ac3d7701379dac1a5999c4381f3854069ca2"
+    },
+    {
+      "path": "assets/selected/art/portraits/termination_drone/drone_slot_closed.png",
+      "sha256": "3f3de8d333a4ab2784f54a9c01da662908601a69227d348b731f28fa6f8b1867"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/abandoned_station.png",
+      "sha256": "c9f78d96427d5fce0d1bde3651b90f09fd8d3380a65542378273c2fd1aa803f7"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/agricultural_customs.png",
+      "sha256": "9bc80696f31efacdbba2babd95abfe460a9fb6158ad8b674299a91744403cdef"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/authorization_archive.png",
+      "sha256": "cf56a225b9341ac24c654562e002e4d45d5c56be36aa7f4d3f40f045bebc79ec"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/central_flower.png",
+      "sha256": "68698aea02b19bbc9fedca48b978be1c2329ca136c140084b2396dfafe4f8e58"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/concourse_crash.png",
+      "sha256": "50552704840db6220eff3d588bb4a974d51edcd32a816717803f73b6d97d11f8"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/damaged_walkway.png",
+      "sha256": "8ca919bedda4f414a7bfac7bfc1f0003f8531e7fcee36ce8f2873db0985af642"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/exposition_concourse.png",
+      "sha256": "8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/formal_entrance.png",
+      "sha256": "d1a55f75863a7e2a3b854566638128064b998c5d6a83659399e4ad53ce66f2e9"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/groundskeeper.png",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/jungle_junction.png",
+      "sha256": "0161d0a7132bf1656a5037e6ec2812e62220c9853e4ed251176c161086fed003"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/lower_irrigation.png",
+      "sha256": "8f0df4ad7cbdd73182e5266bb253a8f415c2fbb4536fe908eff544b2902182a8"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/maintenance_exit.png",
+      "sha256": "1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/moving_forest.png",
+      "sha256": "5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/overgrown_tram.png",
+      "sha256": "d4c381642d2d54e6341fd82121ddcf5caef11029fa37c16d221edd5173d470c7"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/planting_hopper.png",
+      "sha256": "5ab29aef160eb59a0d34465782d165c042b6ad8131ac04ad87215b03c33deb3b"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/planting_machine.png",
+      "sha256": "047282bbf1e5189645e5784d9b30278cb5b641a708eeed50f43945017d9b78da"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/public_exit.png",
+      "sha256": "e47576d21610f3d5f2d85027192e37197cf317ffdabdbe72977bd971ec9a97aa"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/reserve_siding.png",
+      "sha256": "c54cc60a878faaf91edc7e642fb9c854a963bb455a86d6d724d6f2f483e7ae2e"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/reserve_tram.png",
+      "sha256": "e17c2d8fd7b569404248d86028b7a7ca4164a3856f36f261654bc941a13a7eaf"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/sensor_gallery.png",
+      "sha256": "b2f23c8d015c1f45af200733ba28201627c6d10102dcd9e34b92230c32683a7c"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/service_entry.png",
+      "sha256": "c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/sorting_conveyor.png",
+      "sha256": "fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/spore_garden.png",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/tour_tram.png",
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/translator_machine.png",
+      "sha256": "ff5704d99d027ea8a86e78b228102826bcceec03b5ae1ba583200a99822e95a3"
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/waste_chute.png",
+      "sha256": "fa2f9021a7c33f6ff188eff438ef4abec35d9ba0d1a77d805cd2ceb98bbaf498"
+    },
+    {
+      "path": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+    },
+    {
+      "path": "assets/selected/art/scenes/exposition/continuity-v01/street-approach.png",
+      "sha256": "378860bc141c6d8fc14578d3f84e4c8eb18624f23923eaa122ee87f1c75acf07"
+    },
+    {
+      "path": "assets/selected/art/scenes/exposition/continuity-v02/property-intake.png",
+      "sha256": "2162f0abea7c3c2bc75871941b6663e9c7501cdd5b98612adfc966ffdecb7137"
+    },
+    {
+      "path": "assets/selected/art/scenes/exposition/continuity-v03/entrance.png",
+      "sha256": "2b9930eee02e44ba954f53551f0330bf5e27b318dd7491e5be16c702358d7bd6"
+    },
+    {
+      "path": "assets/selected/art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "sha256": "c0b8663dbbb1146539c7713c7c8725c47675e3576a774054bb741b5509a49833"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/arrival.png",
+      "sha256": "7029c0e66b06a784447313a0e06e831ad4f5c48260ed809da195d3810b57dcde"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/bathroom.png",
+      "sha256": "418061f623770ec40a6a708083ad3a797b3cfc43c6e9b461ecb95799cc5267fc"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/bedroom.png",
+      "sha256": "792f7930e572ee91f49e7015cbcfd9625e8896ce40faca6d0992621a57217df4"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/chair.png",
+      "sha256": "5cef601a39f2aa3ec8f37da6a0c6d9dcc99702b26821e68f64385d33a3ebff1b"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/dining.png",
+      "sha256": "2bd4f7b2127e7af45894224b8d04a128663357d99cba115a8ac4b80fb1c3761d"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/lounge.png",
+      "sha256": "9dc600a286bc585a5fb8fc1a5bf85cca31a06ea4f42f4b83057f3845242b92f8"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/maintenance.png",
+      "sha256": "cd575f82b52796a7393f144ad3234a637cd4ef6a5742e872dd2be8f047318efd"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/passage.png",
+      "sha256": "acdacefbaeac9649737286d909e3ee859e768d7319bfeee6001d8a97aae0fbcd"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/portrait_gallery.png",
+      "sha256": "7fd52ebec4008005af452880aa0c54df97aad75b97d5e28c9f8d4c6bd8605c8d"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/public_exit.png",
+      "sha256": "0ad83a23a5ee0a52ccd2e53e00c19727f8f51153eb666143714646686f97d034"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/service_hatch.png",
+      "sha256": "1f978f6fe2334ce4c5af8a48fc2322a79b74899fb504935c0e948b3bc8f50580"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png",
+      "sha256": "2cad345326a222fa2d84c9959ef9eb69dcb9ad00599e1867593f1ffce63e0fc7"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/foyer_named_plant_pedestal.png",
+      "sha256": "e1c42ce00d5fe2ad95d98f74529abb3796be4e2be8ecd9f023844851afa4b4d2"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/portrait_gallery_album_removed.png",
+      "sha256": "96c1b1ced5a3897b6caa51b98ad85b38030bce539ec25f21d38e628ebd362fdd"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_desk_plant.png",
+      "sha256": "867019e15581bed769bf34421ef7259dfa11d651aa36313b73ee69f888d1336c"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_red_stapler.png",
+      "sha256": "d524b3eee63fd3c5f1f2613d834926c53575528c4e3595d9e2e9611c8763bea9"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_rubber_band_ball.png",
+      "sha256": "00f4926835332c59378719306c01a26385567125ef25e4220dcc6ad5a8c2dccc"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_timing_clicker.png",
+      "sha256": "22660a4ea50b2f8bdbf0a7ed1f30b48110503a2625660c3a7f4209f7aa7ca9a6"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png",
+      "sha256": "a6df04106deb0da8fb62600b05b3ee9d9a24bc1cf39d008b7b60bfaa63fd9c30"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/storage.png",
+      "sha256": "635307df628fcdaad921a1901d668eebb75af6875ffbbb4d0ace89c3219eb11d"
+    },
+    {
+      "path": "assets/selected/art/scenes/house_of_tomorrow/utility_exit.png",
+      "sha256": "907b962a20485b4c96cd4acae253311484c71e6689d625aad04f2d88f45104de"
+    },
+    {
+      "path": "assets/selected/art/scenes/workplace/applause_station.png",
+      "sha256": "0197f73ead2257e366f0400541197871d90d16f3e76c88ce95cfcc60e7bca985"
+    },
+    {
+      "path": "assets/selected/art/scenes/workplace/corridor.png",
+      "sha256": "1d7f1597cd497b901a7558009eb0a11d358b6ebd3d815d53345eb01b78d50739"
+    },
+    {
+      "path": "assets/selected/art/scenes/workplace/personal_effects_exit.png",
+      "sha256": "ecf8f4af9d76304c2404be1de7e9e5713662675f9b13baab0bc15afd2e3dbc04"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png",
+      "sha256": "51c2556b865ede1a997977c66e4f79cc1c0b271334a35aba36ef73555d40a43f"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_attendant/quiet.png",
+      "sha256": "7f00208a3a96628f18fd23f079913dcb706e0e220db081d4cb438107f15bdf90"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_presenter/alarmed.png",
+      "sha256": "4bc10c1b0ceb997d0ae51831f4368a60d35b74a59f8c1e24f1772553d638b887"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_presenter/excited.png",
+      "sha256": "d5aafddc9792a9e294b5f8793cef4d3c629354911a732a64a4976e1ed9acdd95"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/pavilion_presenter/relieved.png",
+      "sha256": "29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/arrival.png",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png",
+      "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage.png",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage/portraitBackground.png",
+      "sha256": "b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/exit_vestibule.png",
+      "sha256": "cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/exterior_exit.png",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+      "sha256": "8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png",
+      "sha256": "d09e2a7cf13c6382cd8d726a8852f32cfe359651f4c6c9538f4f7825d41844ef"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png",
+      "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/record_printer.png",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/record_printer/portraitBackground.png",
+      "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner.png",
+      "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner/portraitBackground.png",
+      "sha256": "9099383613c587c3e2e10bcc33d839f75d2aaf685f20de7e47acc21e04c877ea"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+      "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance/portraitBackground.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/service_exit.png",
+      "sha256": "4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/service_exit/portraitBackground.png",
+      "sha256": "241bfb8e817cf7c42508c218c188a1ac2706bad2e5f577484ce10a359b9a88e9"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png",
+      "sha256": "8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage/portraitBackground.png",
+      "sha256": "90f29651222b62bca461c0c33f09092290b374fd0cf10094c40267202515e255"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png",
+      "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c"
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage/portraitBackground.png",
+      "sha256": "7d89b7d7c2ee22e6b324076ce988b3e5520e84be5b4068e79fe8d759ab529714"
+    },
+    {
+      "path": "docs/101_CH3_STORYBOARD_INTEGRATION_AND_ART_HANDOFF.md",
+      "sha256": "4116c3fc70d4d68cf4b81222aefe7bdcccd316cb8ab5c0314b5436972611a84b"
+    },
+    {
+      "path": "docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md",
+      "sha256": "e6bda52bb616a6b2bfb95916cd1d655510f3474d413e3d4b4b10a828bc8aacf7"
+    },
+    {
+      "path": "docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md",
+      "sha256": "6a05a20845b2add950f7ce0f202ad92a9a5b98fb2048dba70d2e450ace79dac3"
+    },
+    {
+      "path": "docs/104_FATAL_ENDING_DATA_AND_ENGINE_EXPORT.md",
+      "sha256": "e7a3eaa42e311d135adabfc7460c11faeb38ea21323a2244cc7a0376a98b6146"
+    },
+    {
+      "path": "docs/104_STORYBOARD_TIMELINE_LAYOUT.md",
+      "sha256": "2e366eced818a6e5f40402262412204e0a38be38cca0dc37e736ad4ff29e81a4"
+    },
+    {
+      "path": "docs/105_CANONICAL_SYNC_PIPELINE.md",
+      "sha256": "67ec51bb8310be37ec6990e50fab357d59cfb66c5b282483cf93849a5699df16"
+    },
+    {
+      "path": "docs/106_CH3_APPROVAL_RECONCILIATION_20261117.md",
+      "sha256": "53cd1c14e9ad4649243067dcaaf52cdb8928ec952ebcd63d76d378ac9b3456b8"
+    },
+    {
+      "path": "docs/106_CH3_RETIRED_ROUTES_ARCHIVE_20261117.json",
+      "sha256": "026b0d584d92a3b521dde374089636f1ed6959802b52de1486eaab4a51926391"
+    },
+    {
+      "path": "docs/107_PRESENTATION_MODE_AUDIT_20261117.md",
+      "sha256": "0c2a34eb9f5244df8368250dffc03b46d2bbbd4309d57e31be02cd4c587bbac0"
+    },
+    {
+      "path": "docs/108_CHAPTER_02_ARTWORK_COMPLETION_AND_GAMEPLAY_HANDOFF_20261117.md",
+      "sha256": "beece589c614d0b152414e2fa976d5282426b5353aa31e7c5efce9ae34ab4901"
+    },
+    {
+      "path": "docs/109_CH3_REBOOT_ONE_EXPERIENCE_PER_PERSON_20261118.md",
+      "sha256": "3bdbd8fa6afe68a945d72a985d0fb3b67774d08ddc86a5fc1c044d6e78c958db"
+    },
+    {
+      "path": "docs/110_CH3_REBOOT_ROUTE_AND_PRESENTATION_AUDIT_20261118.md",
+      "sha256": "504e595475513d431ad5096f0f27a7d56a28cb46185d6c8bbd72fe704d99ed88"
+    },
+    {
+      "path": "docs/111_CH3_ARTWORK_PMO_HANDOFF_AND_NARRATIVE_LOCK_20261118.md",
+      "sha256": "45c1fcba9ad27b0737ac5eaebeac5bb76e6c3542e5d30da76a6ee471284dc612"
+    },
+    {
+      "path": "docs/112_CH3_ARTWORK_AUDIT_AND_GENERATION_HANDOFF_20261118.md",
+      "sha256": "41130aa80223538c1d491a2881c368bbdb0ce074d3b7f0beeb84c468383acc2d"
+    },
+    {
+      "path": "docs/113_CH3_BATCH_B_APPROVAL_REGISTRATION_BATCH_20261119.json",
+      "sha256": "d1b930c38121fa7ba596685cf4741c9577eea726420aeb676a23ace476f99536"
+    },
+    {
+      "path": "docs/113_CH3_BATCH_B_APPROVAL_REGISTRATION_HANDOFF_20261119.md",
+      "sha256": "81e545486326d5ed2c93e09a9b549ffef80e6e70a5690dbe143ec47fba157005"
+    },
+    {
+      "path": "docs/113_CH3_BATCH_B_SELECTED_ARTWORK_20261119.json",
+      "sha256": "6f7bcedcd4aeeb6850e765012f61a4c7ec665a811fbba3140f0bcd452ada51a2"
+    },
+    {
+      "path": "docs/114_OUT_OF_ORDER_CH3_BATCH_C_GENERATION_20261119.md",
+      "sha256": "b2ffcea9b164e2244fe0087ed369fd5048b94a5de8e6228d806bcc877cf0bc01"
+    },
+    {
+      "path": "docs/115_OUT_OF_ORDER_CH3_BATCH_C_PUBLICATION_PROPOSAL_20261119.md",
+      "sha256": "ee862f8900c6a6ab57e909f61ee77a317f09fcf85bacf06eeac43bb055709a43"
+    },
+    {
+      "path": "docs/116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_BATCH_20261119.json",
+      "sha256": "df8e8ec5923279af6624695d87c8159e7108b72ed6d8c30b709fd113743e8660"
+    },
+    {
+      "path": "docs/116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_HANDOFF_20261119.md",
+      "sha256": "9173dbed871d6e4340af7f64e09bb17c62362855f0c54af9aa5765430f650443"
+    },
+    {
+      "path": "docs/116_OUT_OF_ORDER_CH3_BATCH_C_SELECTED_ARTWORK_20261119.json",
+      "sha256": "b0fbede79fd346e0f6cb13ae42f07afa253668e40d81bc35f12f69b72725686e"
+    },
+    {
+      "path": "docs/117_OUT_OF_ORDER_CH3_V03_CONTINUITY_REVIEW_20261119.md",
+      "sha256": "8e57e463e8d261d1cf36e43e9dd568d787d13cee1ca77e3347c430e0e816f118"
+    },
+    {
+      "path": "docs/118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md",
+      "sha256": "7ecb42e79f30720303b4e87c95acf8cae42f03526bfa08d87c7aa257fa329cef"
+    },
+    {
+      "path": "docs/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_BATCH_20261120.json",
+      "sha256": "0168f3f8f9ce6618b5b3603853734911a27afa868943d5700e2a64e1604f7444"
+    },
+    {
+      "path": "docs/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+      "sha256": "b704f0169087a482f9de7a306c1016b1e959f590a1aab68fb4ea5e1aad2b34da"
+    },
+    {
+      "path": "docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTED_ARTWORK_20261120.json",
+      "sha256": "2edd80a4584f84c72f9f6140aff24514b868dada315338d1e79343fed5513a9f"
+    },
+    {
+      "path": "docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTION_VALIDATION_20261120.json",
+      "sha256": "f562017e13d9a10b9b58e88d3c6fe870c892bea227527cf06ea4c22585cb29cc"
+    },
+    {
+      "path": "docs/120_CH3_BATCH_D_GENERATION_AND_REVIEW_20261120.md",
+      "sha256": "d23550d48997400d7344ce0177c96dded26d1ca81488a278e402cda48224f318"
+    },
+    {
+      "path": "docs/121_CH3_BATCH_D_PUBLICATION_PROPOSAL_20261120.md",
+      "sha256": "728d8561e7116fd0985c0603e5ea51a3a750453dc1cd2a12bf781ddf07812b64"
+    },
+    {
+      "path": "docs/121_CH3_BATCH_D_PUBLICATION_VALIDATION_20261120.json",
+      "sha256": "e149ea27c7026f2fd12218a9b30943943a0587b35cb5afd673972f474ef890e5"
+    },
+    {
+      "path": "docs/122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_BATCH_20261120.json",
+      "sha256": "be4818454f4eb8a9a54892b6565f8d0e899390442968134644d5552f7d70eef0"
+    },
+    {
+      "path": "docs/122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+      "sha256": "c6f2c6c2c090c0c9309fbdf9532ab31ed2c852bb1bd26498f87edd69a425fa99"
+    },
+    {
+      "path": "docs/122_OUT_OF_ORDER_CH3_BATCH_D_PUBLICATION_CI_SNAPSHOT_20261120.json",
+      "sha256": "252897fbc63e705c0fb18991410af6263c7f479c7345cba3cf1c70ccdbe21683"
+    },
+    {
+      "path": "docs/122_OUT_OF_ORDER_CH3_BATCH_D_SELECTED_ARTWORK_20261120.json",
+      "sha256": "a0f3522c27c4e01253911f5c74da696d776a8a1062a0d145fc210eabc9c33417"
+    },
+    {
+      "path": "docs/122_OUT_OF_ORDER_CH3_BATCH_D_SELECTION_VALIDATION_20261120.json",
+      "sha256": "95bfd9a90905d06cdb027f1310d9e9be2fb255d7563dd34844272eb0aed09996"
+    },
+    {
+      "path": "docs/123_CH4_WORKING_NARRATIVE_AND_REVIEW_20261120.md",
+      "sha256": "ddca940de8bb76429cd29a1ca5a2ac66b1f026b1c2bfbcca905a3c3968820076"
+    },
+    {
+      "path": "docs/124_CH4_EXIT_TO_PARK_AND_CH5_PARK_SEED_20261121.md",
+      "sha256": "849147efb1dc0dffc4fdd663543ac8a6370a4ac47d9b54ccd017dc5fdbc854ea"
+    },
+    {
+      "path": "docs/125_CH4_BRIDAL_PRIVACY_AND_SEASHELL_AUDIT_20261121.md",
+      "sha256": "865795c16cce74af96eb9a242db0bf304e6d4e0f04d57cb34dc036509cd955bf"
+    },
+    {
+      "path": "docs/126_CH4_NARRATIVE_CLOSEOUT_AUDIT_20261121.md",
+      "sha256": "d1238205900a406cf9278d6569dfc8c1973d73e65ee5fe39dce00dd494c69103"
+    },
+    {
+      "path": "docs/94_CHAPTER_03_ROUTE_AND_ENDING_AUDIT.md",
+      "sha256": "d7fe90cd3e3f63adda310ed281063a7a3b18a1146dcd740f4735250b17cfabc8"
+    },
+    {
+      "path": "docs/95_CHAPTER_03_ROUTES_B_C_STRUCTURAL_AUTHORING.md",
+      "sha256": "d5c6f00c7eb8ad6cfd96583cdc9af8c0ef5e575b5e487d16c99ada07ab38347c"
+    },
+    {
+      "path": "docs/96_CHAPTER_03_ROUTE_A_CLOSURE_AND_FINALE_RULES.md",
+      "sha256": "979c152b1134ce6c50f1b90f7a1c06f4c79b3632885830e86471027eee589835"
+    },
+    {
+      "path": "docs/97_CH3_COMPACT_SCOPE_AND_MAP.md",
+      "sha256": "213306d41bc5efbb0b4beb8f309ca8339748619dd31ca9fa2d632d0eb7b7f553"
+    },
+    {
+      "path": "docs/98_CH3_COMPACT_ROUTE_GRAPH.json",
+      "sha256": "aaeed79f3a9b2f2057d14012b0e50855c93d1a6cc8502a540e36d1fbaa0f6a92"
+    },
+    {
+      "path": "docs/99_CH3_ROUTES_B_C_NARRATIVE_DRAFT.md",
+      "sha256": "e4a4b3d76c681fdb5910d51bd9e52c95a6ea7ebb9c60377e3f935f72fbeec45e"
+    },
+    {
+      "path": "docs/artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A04-verification-selected-before-v04.png",
+      "sha256": "9207bfdc140dd115783adba2f042ce756d51a288c053a3113f9a46f479e6e3c5"
+    },
+    {
+      "path": "docs/artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A05-verification-selected-before-v04.png",
+      "sha256": "beb64cc6e9c3c0dc48f6dbe341e98762556b8e9ef4261fe132c8093c5e63b382"
+    },
+    {
+      "path": "index.html",
+      "sha256": "194f638dc72bb468d97a3ec9d1a4d21fbc6ea31529232c70e2d5fe3825126740"
+    },
+    {
+      "path": "story/archives/README.md",
+      "sha256": "de35b7f3690354f00c21e5a751fa7f5c3beb4dbe8e7a31aeb08e358a3b8b9efb"
+    },
+    {
+      "path": "story/archives/chapter-03-pre-reboot-20261118.json",
+      "sha256": "02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1"
+    },
+    {
+      "path": "story/artwork-preview.json",
+      "sha256": "f91e754b3dcbec30e129542ab59c1997abccabb24dc31defe55b6a312613e860"
+    },
+    {
+      "path": "story/artwork.draft.json",
+      "sha256": "8a7b5d71b5a0c4c2535e07d07f6d3ca583d9133ec46302eedefd0fd917f90d32"
+    },
+    {
+      "path": "story/chapter-03.reboot-review-layout.json",
+      "sha256": "36237f3d237efa8f13600d6cb9777385a12197fd9c6db9ed16131cb4a56a0370"
+    },
+    {
+      "path": "story/chapter-04.wip-review-layout.json",
+      "sha256": "a604f01742d8e8727faa6640c12249dd1c646499d25c6cda75ee99233227deaf"
+    },
+    {
+      "path": "story/chapters/chapter-01.draft.json",
+      "sha256": "e37dbb86cbd527592f24d28294f05906e18ee6236cb6073be0626a27a9d25fc7"
+    },
+    {
+      "path": "story/chapters/chapter-02.draft.json",
+      "sha256": "18ff898257fcef3d58f53b6fbd19ea52fcd98cea16f5e497b83bb7073bc1f9cc"
+    },
+    {
+      "path": "story/chapters/chapter-03.draft.json",
+      "sha256": "02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1"
+    },
+    {
+      "path": "story/chapters/chapter-03.reboot-candidate.json",
+      "sha256": "36ae178d05a9db7dd318c441e4d8681eaa674c28ced81df97dcaba6c1c5c0253"
+    },
+    {
+      "path": "story/chapters/chapter-04.wip.json",
+      "sha256": "40169b40ce8c01e1e0548859afa37215f4df9924cdcb2ee1d5de72884a9f555c"
+    },
+    {
+      "path": "story/chapters/prologue-00.draft.json",
+      "sha256": "6ccd58600a76db06e6d59734f18055500e4ad98f1ffce9f755e00a9cc0f3e4a6"
+    },
+    {
+      "path": "story/death-presentations.export.json",
+      "sha256": "92db15befc8ce79d9e4cd4738f759a8d37116618502dc238fef3ad06b36ba6fa"
+    },
+    {
+      "path": "story/game-integration.json",
+      "sha256": "ba52de0afc72d4f1bf3711f719eb26437f0778dbad1baceb6524f17b32a7aa89"
+    },
+    {
+      "path": "story/items.draft.json",
+      "sha256": "81e444383a9cd9ae4736cc69ac1ab51cd346a35afc7c426706ec85f4c26e1291"
+    },
+    {
+      "path": "story/storyboard-layout.json",
+      "sha256": "0f411b0f9f13296b0efe54fdd4459862777db4b3ecb5ef4e7d4c905b36e6664b"
+    },
+    {
+      "path": "story/storyboard-manifest.json",
+      "sha256": "975466b955234c5ac99a87748ab98e162a6f9d318265ec63957c1f9efb9fb153"
+    },
+    {
+      "path": "story/sync-contract.json",
+      "sha256": "81695b5f773aa306a9f7c959196dc079d16a4696598b09617a14cb5c2acee959"
+    },
+    {
+      "path": "tools/prologue-art-lab/README.md",
+      "sha256": "75eab574d74e568d317734aee6da02889a84c56224a9bffff635a389adc14e9b"
+    },
+    {
+      "path": "tools/prologue-art-lab/app.js",
+      "sha256": "d1efd88170d733d152025aedca8a136f909f239dac72c940ba27d861de27e836"
+    },
+    {
+      "path": "tools/prologue-art-lab/artwork-audit.json",
+      "sha256": "e8a4d6ca4c84a68569a51a2eb3fab985c6d324cb9ca98e57342ce02131882179"
+    },
+    {
+      "path": "tools/prologue-art-lab/asset-index.json",
+      "sha256": "75c893d87f9b2ab2ddea6813851a35416cf463d73fd7ce4320efbad636623883"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/actions/files.png",
+      "sha256": "8c9c0b28edd1a491fa4b93e393dd0d709eb836d108b61e476cc744107b9dd23c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/actions/inspect.png",
+      "sha256": "59277944a8a6febe2c1600a172d8c9b6da89663e5dd93e7224b352cc4616aa2d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/actions/notes.png",
+      "sha256": "177c359f17709f882b3a28132b5e238a1bdf96ff0d4218095dc9ccefce7f0e16"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/items/bathroom_pass_inspect.png",
+      "sha256": "9c8527a3fd85cfeddc01ce4a85b74b04cb54063ffc30100be19497e73e7fa722"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/items/bathroom_pass_slot.png",
+      "sha256": "5ad9b6f94328d645173b4f0476f4bdde0bac07d4415ab2c7afcba36e8494355d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/portraits/receptionist/receptionist_idle.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/scenes/conference_hall/reception/reception_scene.png",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/fonts/jersey15-1x.png",
+      "sha256": "25899e5ce86ccc10657fc89f3663b6ec90803f828ba93c630f366e25972ada75"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/fonts/pressstart2p-2x.png",
+      "sha256": "b7d7c80ea89683e6dea3c2336257acced88f58c08ab0a5f16f72925e9c99845a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/fonts/tiny5-3x.png",
+      "sha256": "f89e8170da0b9fb97146173c43ff36b5ba9f674789bfb753679cb9f4c093afb1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/shell/item-overlay.png",
+      "sha256": "aaac746ad182cf558c7579580a21d73c31f83709963cd287ac14ddb3d1252728"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/shell/layout-final.png",
+      "sha256": "79c891e1875b0a6f6cb2006cc2bffded5dbff1a762fd3d91f5ff0806febb9625"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png",
+      "sha256": "fdde9a0ff0601216988fc42809f3fb9f36254fc5ddaa72c64270bb8782caac58"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/choice_scroll_thumb_bottom.png",
+      "sha256": "15d43ece41012c6542f5eee5bccdbb9aa6f382a095226bc89946b6cce3b157c7"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/choice_scroll_thumb_middle.png",
+      "sha256": "67a59624e1f872869c0b93e8362328cd64ae2fc9528e052fb2b5e9e2c0abb562"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/choice_scroll_thumb_top.png",
+      "sha256": "d01dd5e80b7f7f35dd1ffc1c11d13a0ea697263bb6a5d3d632ffc8c75e37144d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_left_down.png",
+      "sha256": "b0943cf31d14a313eb97e5514cf1480915ca38ccead404f21a89d7acb515f11f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_left_up.png",
+      "sha256": "f60952069d1ecf7e499c9fa07b91a038c36348b022fef3a8669e417e1ce4fcd6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_right_down.png",
+      "sha256": "e76597d87d2abd2a25ad1088e5afbda2d3dc5e4cebf1540b094eb08d32b87a01"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_right_up.png",
+      "sha256": "29f9007a1915cf9e22ae54acd984d2e42369b145f68a07a4287edbeab83e50a7"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_a_down.png",
+      "sha256": "f17a0a1b4bed258fb5d27afd8543df9508e178b57619eda60fb3a96ef59fe99b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_a_up.png",
+      "sha256": "dfb55a005153af1a5b6de5b43f5f58c203c787b126772ef1616745ebd26daee1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_b_down.png",
+      "sha256": "f47f1d4193c3a7ec3ec54b461709da9cd601cc99afb156acb8c7bb27e3525b76"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_b_up.png",
+      "sha256": "321568f5373b2d44fe82eaeb2adf848ef6d9bbfcc2ccb81b5192e996b5d874d9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_c_down.png",
+      "sha256": "588bc7a37caed6e22e00aef9cb04ad2e922c929bcb8f42ae2202622c764ca2b4"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_c_up.png",
+      "sha256": "f01b8693ab1e30f8f9057bcee96e2ff4baea2c4d2e8ef5017e12404cace14cc1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/fonts/locked_pixel_font_atlas_dark.png",
+      "sha256": "25b089ace4cba69daad7904f32081a6e5b69566f260bc48252ea5a07bf224b75"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/fonts/locked_pixel_font_atlas_light.png",
+      "sha256": "93efd300a93a1926a6474fbf7a3175bbd5e2a64df577e815ca914954e0adfe0a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/inspect_close.png",
+      "sha256": "da492070f0fcd1f7acdf92f5822a73618c29f979997001b16718a52a4d2741d6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/approved/art/ui/sprites/inventory/inventory_slot.png",
+      "sha256": "d15e280bd586ef2498eb5b9e6ffc9d239390505bbfe0a3d5033f31e8f25edcc8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/applause_timing_clicker_inspect.png",
+      "sha256": "d446f2a2ffe7f8730ae071fe74a784bb7c70dbe85e92810224ada4fa2bb3b820"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/applause_timing_clicker_slot.png",
+      "sha256": "ff82fcc93ab37ad4639ad3a7826cbfb2d2f18de9668ac5107238589eb2d52ea8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/effects_box_empty_inspect.png",
+      "sha256": "36e79a570d7881c346cb3856c7dedda1725ec5f9f1c10883dd803df7fe63d8d1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/effects_box_empty_slot.png",
+      "sha256": "7220e9ffb8d7f008423fb14b02cf1d34f16be27974372ca7200cb5453ce2eca3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/effects_box_full_inspect.png",
+      "sha256": "e769176b79af3a09836c8f9ec4edc901a76a8308d4ca725ad78fa6723b29f1c8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/effects_box_full_slot.png",
+      "sha256": "305910393abcaa0f2449e68087d95c69b8b6ed4728fced579511e5955417499c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/expo_examiner_badge_inspect.png",
+      "sha256": "bcbfbf9415eae2e9e1bcdc85eef0dc67a25524ededeb9bb2f3494c3f80b639ea"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/expo_examiner_badge_slot.png",
+      "sha256": "7347b7afd9b2509fa59270b9ef2db901429c50466a0a617c1ff324843721fa79"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/property_claim_ticket_inspect.png",
+      "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/property_claim_ticket_slot.png",
+      "sha256": "eb4271ebc35819234474cab43ee11106648eb1ec3d385efc5814e77fce6b035a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/red_swangline_stapler_inspect.png",
+      "sha256": "ed7301377c1a6a3f8ae66dbcc3f4c95a5b9666bd4d999aa62fd111bd29e05120"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/red_swangline_stapler_slot.png",
+      "sha256": "af9069cab87b4f6b795b1219e76c6b013e9d5b95e2d69bead19318e93e495c8a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/rubber_band_ball_inspect.png",
+      "sha256": "5c6d633de86e5228c3066e7564a87b438d6366ff4956f57ac03437d67749e1b9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/rubber_band_ball_slot.png",
+      "sha256": "0622df62fee751dc31c910858b58b69d695db582b385ef122bebca8d3eaad85c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/small_desk_plant_inspect.png",
+      "sha256": "6880670a68a2baa48fe23afc22972a7be9197799ebbf454079d7127731a6eee7"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/small_desk_plant_slot.png",
+      "sha256": "76cb99324daa32d21d4928f3f9fdaf30e0790568ffce0fa725d01830b606b664"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/termination_notice_inspect.png",
+      "sha256": "3c9db0db0b20e65f94303dcf6e1953819ffbd8e2dd44523ce6ddc8303417b8e6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/items/termination_notice_slot.png",
+      "sha256": "07afd75514d2a6c2ec16239408160e01c129acc9111faa0a961cd85b509a4a91"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/portraits/termination_drone/corridor_background.png",
+      "sha256": "84f1f05525b38d44903b7fdefd571e3c44e5948cbe8060e2a15435ed1735a1dd"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/portraits/termination_drone/drone_paper_extended.png",
+      "sha256": "b30aae55a254394cf83437e6bcf7ac3d7701379dac1a5999c4381f3854069ca2"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/portraits/termination_drone/drone_slot_closed.png",
+      "sha256": "3f3de8d333a4ab2784f54a9c01da662908601a69227d348b731f28fa6f8b1867"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v01/facilities-corridor.png",
+      "sha256": "a4fca947d971a9d83a7d61559cf1737084b79edfb31821a7c47ad205908e2875"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v01/street-approach.png",
+      "sha256": "378860bc141c6d8fc14578d3f84e4c8eb18624f23923eaa122ee87f1c75acf07"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v02/entrance.png",
+      "sha256": "8652f534344ebfab7bf7b364900884cf17b1e50500509ce74cb7664b86261e8f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v02/property-intake.png",
+      "sha256": "2162f0abea7c3c2bc75871941b6663e9c7501cdd5b98612adfc966ffdecb7137"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v03/entrance.png",
+      "sha256": "2b9930eee02e44ba954f53551f0330bf5e27b318dd7491e5be16c702358d7bd6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "sha256": "c0b8663dbbb1146539c7713c7c8725c47675e3576a774054bb741b5509a49833"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/entrance_turnstile.png",
+      "sha256": "5f2e5c26d4b473f298c19e6cf3ab134d5eb4e99bc496577a763beb0f1103d000"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/facilities_corridor.png",
+      "sha256": "49b9c6fdb351c7cc9906f0e8a8b2f6461e565e77c2a2335cb2e6e34e4a5927c5"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/property_counter.png",
+      "sha256": "779e2a6c03d56c36df6a92dddd17a8199ab84418811efe9914ab887ee326e7f4"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/exposition/street_approach.png",
+      "sha256": "7b58605a3ca3ede61481ccb4435a3305630f8cdb1d84b1b6fafaeba0041d166a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/workplace/applause_station.png",
+      "sha256": "0197f73ead2257e366f0400541197871d90d16f3e76c88ce95cfcc60e7bca985"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/workplace/corridor.png",
+      "sha256": "1d7f1597cd497b901a7558009eb0a11d358b6ebd3d815d53345eb01b78d50739"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/draft/art/scenes/workplace/personal_effects_exit.png",
+      "sha256": "ecf8f4af9d76304c2404be1de7e9e5713662675f9b13baab0bc15afd2e3dbc04"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/ARTWORK_CONTINUITY_REVIEW.md",
+      "sha256": "979c266d5a000f6b460723c60016e77d28349c5f24e493585ecd05c933cc2ee6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/CANDIDATE_HASHES.md",
+      "sha256": "fd2123998a8019604956d7394714ef8c59008ea77bf09b08bad495986b617398"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/PNG_SHA256SUMS.txt",
+      "sha256": "01784264429b9a097376df5597bdf3aeb9e600865c98c181d14f43f8441710e8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/README.md",
+      "sha256": "8e6bcf2c4fc9e1121a312b2a996ab2a88fcc388fdc1bcb0d1e29d72f43fbc808"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa.json",
+      "sha256": "e074743c3cd6ad6525a3c110f083b70ff5b028cd79512598b4bc02aeff8b5b1d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/approved-comparison-native.png",
+      "sha256": "7227056f28df1f2095037b5ce7924ae4a5f7e23deeb3b8e42d80d9ddb6250751"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/desktop-4x.png",
+      "sha256": "fd57c67242562c103cc953820d4394b28880084570619fbe40ca230c7a7e69c3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/desktop-native.png",
+      "sha256": "7d360ff21cceece36461563128527538819016a0af4372e67a82e6f6c04741cc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/mobile-native.png",
+      "sha256": "e9c7b46f5a2c2f9adc3eaa76e597cb528da38f15ba28f3ba86b8f8cd3169aab6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/build_review.py",
+      "sha256": "e8add8b74bd99668415a9b8e5af194ebd79ea890da62def76efb903fa5de3a38"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/A-lounge-conversation-v01.png",
+      "sha256": "d1fdf9772d76de9c8e2d5830d5335da5bce8c513b48f3b1b7ab0c387221d1f5b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/A-lounge-conversation-v02.png",
+      "sha256": "a3d55c565d98fa92a8829100e3f0d255b72ff2963b30dd505be687df3a358bbb"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/B-dining-conversation-v01.png",
+      "sha256": "f704a4d9ef2c91c16627e300badf4ba94d16439748bbe71d307f35c8cc2ab8b8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/B-dining-conversation-v02.png",
+      "sha256": "33d7ed46c679bfbf9708edf84608cdf256a1eb22a213b55dd57825b9b6ec1f7a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/gallery.css",
+      "sha256": "91c5a94a725493975a40151eee35fdc78dfdc1c7baa85dc03ed23805622663c8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-records.json",
+      "sha256": "82eb1003e1ad0c5f4d8415d3c270436c68beb882ae6653bc64eaac6ef31fdafd"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/A-lounge-v01.png",
+      "sha256": "71690d141746e7d4c28b66e110b97e0892eec3b414b1797d27c390840e3ecb14"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/A-lounge-v02.png",
+      "sha256": "43bb400c27bf98eecd420e3ab598ce861f6ab50cbbcc3d57e8fd91d43733d313"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/B-dining-v01.png",
+      "sha256": "f95132cb12f4ae51df844673a44b96982afd5f2b7d8d8f9f852db6b558b0ac34"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/B-dining-v02.png",
+      "sha256": "e9a3890725a40e0ca8c9e72360f1903a7f35302860973c1f111ef619f667b10e"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/index.html",
+      "sha256": "860758c1a25b7eec691a37b2a26d83c4525a85a27b1a3f20643ba701c78a29a9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/manifest.json",
+      "sha256": "b0d67b6c4ef94b0a5d7229931577411105cc02d058e9b848b560f8c24e9fe2c7"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/A-lounge-conversation-v01-4x.png",
+      "sha256": "4639469d6bb9f3969ee29aa1f5ddfcfcee6a2a98fc69a7b46996493f01c35c2c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/A-lounge-conversation-v02-4x.png",
+      "sha256": "1ac6fa07a646f5869549d4ea61a2018dee1cdf6d5abcdfa7152076f1c510afa4"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/B-dining-conversation-v01-4x.png",
+      "sha256": "0a4e40fd3ff0c5aa21e0b9de87873a8c60ba1679d7dd3b7dac7a2b415d788901"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/B-dining-conversation-v02-4x.png",
+      "sha256": "e2ffd4b138cc13c0b192f58e21e39753788bec95f221529c0f49d59bbd0014f8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/A-lounge-v01.txt",
+      "sha256": "9084a40f8fb05bf684e91f93c48246d362d8f8470fbda6732ca4caf0f91ba100"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/A-lounge-v02.txt",
+      "sha256": "9375a201e9448e02931bf80addb75585042adad9f006e1f03440d7d1a12b48a3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/B-dining-v01.txt",
+      "sha256": "6f246b1a9944cbc28a94a7053725e0b04043c4290944097006becc00886ac9b5"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/B-dining-v02.txt",
+      "sha256": "4ecdcc6435d35e5339bed84e5e04c9e7813b932fadd2ff3728290fd6739b230f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/qa.json",
+      "sha256": "e53b665a111f5d243940224ea4cc972f6376866d391d5f6689c86d6ef8f54f92"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/dining-scene-4x.png",
+      "sha256": "54b51b467c299c02607455e4c648d9cc0ce7dc93cbd239225187d915fce5799c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/dining-scene.png",
+      "sha256": "2bd4f7b2127e7af45894224b8d04a128663357d99cba115a8ac4b80fb1c3761d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/foyer-conversation-4x.png",
+      "sha256": "053e6972c9a7822eace6f41276dc53219419f33e78a42ca47168541a3912cb43"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/foyer-conversation.png",
+      "sha256": "a77eb0a6ca2479cf5e6490a08e14616e73ef57a15e3340b5fe2af7da159781d0"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/gallery-conversation-4x.png",
+      "sha256": "3791afa9947791104207f3dbb4788bc6ecf55cd7178a524280afe30145dca57f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/gallery-conversation.png",
+      "sha256": "a365560b66e6d4bbb1f865214768a20dfb6bed2a870bd62ab31ce2c5b9f66f4d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/lounge-scene-4x.png",
+      "sha256": "a4fce4bb9538249bb7006fe5b73b288513b3abd28f6e2fba9262556fabaa964a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/lounge-scene.png",
+      "sha256": "9dc600a286bc585a5fb8fc1a5bf85cca31a06ea4f42f4b83057f3845242b92f8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/manifest.json",
+      "sha256": "a6e9789f15435f41935a9e255751be47bcb6511caf459772e4a6e07d6370052a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md",
+      "sha256": "a90d988c393152effb3576d92214825ffd5aa20a0f6c11d6b193e9aaabcc73a3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/docs/107_PRESENTATION_MODE_AUDIT_20261117.md",
+      "sha256": "528b0f176d32a99d01111a4781017cff429e601dbf0c41c9243854d0dabdd41a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/provenance.json",
+      "sha256": "7a6afd350611fd22ef1d785131ccb1e2dcc4fe97af829b8393e806f582a995a7"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/registered-briefs.json",
+      "sha256": "04146a4a7ecab6d8053bde10d94193f34920a7cd9f23aa0914cd10cd1d10a919"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/story/artwork.draft.json",
+      "sha256": "ce14db60763d0be2dad41dc15d77576623ecd2e5b982326c6b32870025a37512"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/story/chapters/chapter-01.draft.json",
+      "sha256": "a81146e493fc29d480c08f811ac883070ed08097e0001dab63ce7b8096536c58"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/verify_browser.cjs",
+      "sha256": "7f4998e69597b608f981386a03251cae93130c574d175a43c8b402cdc53e9ee1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/verify_review.py",
+      "sha256": "33d82bd061639767df987e46c259b95eadc8284755db43d215c0e95f6683c312"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/PMO_HANDOFF.md",
+      "sha256": "1ef811909c07aa9b3349348a598975205faafae2f4371f76398b63f3ff5915cc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/README.md",
+      "sha256": "981641ad2ed2f7513db03ba512a50ff1124b1d9be89298ef1bcd78a6098a3d33"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/REMAINING_QUEUE.md",
+      "sha256": "4aaaf0fc563f64dc998762064a701443ed4070e5cd1a09cd0b041eacbf1e09f0"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/SHA256SUMS.txt",
+      "sha256": "59799456a136d3f807faca4712cb67b7087854e2e7d27a18720cccfdb2ad922d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/candidates/I-customs-antidote-inspect-background-polish-v01.png",
+      "sha256": "35da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/gallery-verification.json",
+      "sha256": "39738d007c80d963115f2b08a1d04ecb75908fc71f7135a9caac1e833cebb0fb"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/gallery.css",
+      "sha256": "b3755a9d62599e7aefceafe1403cbe07f189bebc1589cb068b00c1d4bae5fece"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/index.html",
+      "sha256": "0abb6fe832486f621056d975e818848b3019d09ee7b9f04965bcec8933ca9232"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/manifest.json",
+      "sha256": "3c433508125748d0d6f2f683e54963d60b5faeb6514fbbfd6d9533e290916d82"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/changed-pixels.png",
+      "sha256": "da8e6f0c11905b54b77cfa2e5297f588e46f941bbe1eaa70960a341af333f5a1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/exterior-background.png",
+      "sha256": "77b46d59029420c93d30cf54373f27122cc0e00ee874d35e75a2c7e0f264eea3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/permitted-background-edit.png",
+      "sha256": "972a13eebc2bb8c1fb44a602ec90011a20135426cc65473c53de6e1db445ad0d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/protected-injector-and-shadow.png",
+      "sha256": "794a9cd37aead0bf66348fd6f9c5b3cfbd9e6cfb77b71c460177b4ef0e3c4dbe"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/palette.json",
+      "sha256": "a9d7e4eb7d5a65338d19f976ec9bb77355e87e4503574881bf183bd3ad553a47"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-4x.png",
+      "sha256": "f9335e17e537ec43ff728a162a7686a9ddead7b2fd6654c8a9d86c664697366f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-native.png",
+      "sha256": "901ea4bced05cc532e2447892f4722e0c6a90b109a650c9bf8250b5f07303d7f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-vs-revised-4x.png",
+      "sha256": "3b615ce737780e3b0912ee9e176b8989b3da7c2de70c499228f837aec783994a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-vs-revised-native.png",
+      "sha256": "75f2b5b348769b53e23b0bcf7cb9964c25b834bac963e990a4f818d2962c61e8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-revised-4x.png",
+      "sha256": "611fb75426b765bd68da7aa7966903765ae757add1ea52f0202e7eb7677a8e1f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-revised-native.png",
+      "sha256": "35da940d24401a6964243179ec7c5d336ad3677fd31dce0ef368de63cecc42cc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-overlay-4x.png",
+      "sha256": "ad255b90fb6d73350dfda66bac1a3ea120236307baab83130e9f16ef988c0f81"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-overlay-native.png",
+      "sha256": "6fbdd9f238eff9f172279bfd7e6cae39b069fe0e5b85aa16481e6c2e94aeef78"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-pixels-4x.png",
+      "sha256": "064ea1694605c9f092688a0cea69dd0f95e12fb2487256f688ac825637b293a6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-pixels-native.png",
+      "sha256": "638ed5d4d4de4e2a5b930d358933266254fb0474945321d7fb4d02e0cda73485"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/exterior-background-4x.png",
+      "sha256": "2bf113abe1deed9b812794e989b012b6784159867579696478b10f426f037ef3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/exterior-background-native.png",
+      "sha256": "a36941604824fc9d310e6a2a3a3a58d4b294cbe55897bc8971b53e563e614569"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/inspector-background-continuity-4x.png",
+      "sha256": "a00f7c026b3d84eb4751261206c28a2cd7cca09d8764758c85679ab5e45400ef"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/inspector-background-continuity-native.png",
+      "sha256": "f82694cf0408e14570a3bed93aa20446c8705914a0e69da41907d050e66703d9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/permitted-background-edit-4x.png",
+      "sha256": "189a0c22e62787663086c74ede0c276aca9b0716a8e595abe76c5ffbe6ff0600"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/permitted-background-edit-native.png",
+      "sha256": "1c36544abb560410463c2769191aff8595d894535fdc9b3d0bde83aef2e0f3c8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/protected-injector-and-shadow-4x.png",
+      "sha256": "703e1b34642b97f3d36eb79be65eb8a9f69d91f00822c818a3346e6e92e39c6f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/protected-injector-and-shadow-native.png",
+      "sha256": "d22421c8c1b5d2547d62461ef353742e54b76256bd43c1782c6446f3d2f35198"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/qa.json",
+      "sha256": "675440de39ecf3ba267b6eedca9a4a92f656549dd89cb16c7d852cabc3dbf581"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/C-public-antidote-inspect.png",
+      "sha256": "4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/F-maintenance-antidote-inspect.png",
+      "sha256": "f59a324d74a3a7bd772858a858f9bad95809fbdf83fa16f876563f1a20493c88"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/H-customs-antidote-slot.png",
+      "sha256": "da857214a1bf850dbae043d32afa63db2423e57eafe3462186d0d685b9610e19"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/I-customs-antidote-inspect.png",
+      "sha256": "901ea4bced05cc532e2447892f4722e0c6a90b109a650c9bf8250b5f07303d7f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/ARTWORK_CONTINUITY_REVIEW.md",
+      "sha256": "89b7f398a669b8cc4b1dc58ec04bba7f9017cd379418292c7cd03199311c648d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/BATCH7_APPROVAL.md",
+      "sha256": "b4c74dc441c8bc669120f9987a39e88b8a772063f6595c95dc9c520d1fa49649"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/CANDIDATE_HASHES.md",
+      "sha256": "65078f118b800ca75ae88f1eb1e932bf666d99d20b0f42f0ac40d68492e4a806"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/PNG_SHA256SUMS.txt",
+      "sha256": "84d96381646b3f414d17393bdb10db80684fa3ef63cf06a5af282205d3ea226b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/PUBLICATION.md",
+      "sha256": "6dfd278d7e9a96509f3989e6e02aa476a56e1a5dd96e6c8a1bec6d50ed37ad4e"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/README.md",
+      "sha256": "174bed6fffcc8d068d567016c17f31667708a60b2e85afe2b8e5738635baebce"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/REMAINING_QUEUE.md",
+      "sha256": "6564c5e8b18deade22d3a4fe2907d82ffdfb749d9222d8fc778a1d1b0e8ed8e9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/SOURCE_SHA256SUMS.txt",
+      "sha256": "c60bb06ebe9cfd08028baa3e818f345a2bf1b3e2e57b3c6317edd2e804ad4224"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/STORY_CONTINUITY.md",
+      "sha256": "6d4d2ab23e4b9a7a0304f09e053164d81958605ab56b9d91b172c2462d964cec"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/approval.json",
+      "sha256": "2851447eb698707a80369a52e7a2e7f7df7d3ee09622e931a7d6df40050c3375"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/A-classified-as-compost.png",
+      "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/B-new-arrival.png",
+      "sha256": "eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/C-personal-growth.png",
+      "sha256": "8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/D-reclassified.png",
+      "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/E-site-improvement.png",
+      "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/gallery-verification.json",
+      "sha256": "ec071fca4b48cfa10fa4c5dab67e95521c263110451aec555bf8c6ed637a02c0"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/gallery.css",
+      "sha256": "b3755a9d62599e7aefceafe1403cbe07f189bebc1589cb068b00c1d4bae5fece"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-records.json",
+      "sha256": "14e62e55933e94ce4d79b97277152c3c26549f8566578a804eabb90b87841703"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/A-classified-as-compost-v01.png",
+      "sha256": "2e36589fc9187106b17149bb7e4f4a2a05d7d31b0e3f423e4f7b0691b3375df4"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/B-new-arrival-v01.png",
+      "sha256": "92b4842e9397a18d5c64700d5152c8337bcb5e4f8f5002ab87030ab7024625e4"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/C-personal-growth-v01.png",
+      "sha256": "a9b641c6fbf004e2e4107ee9cdb91edd0b51817edb1b93645685aa15c3ed277f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/D-reclassified-v01.png",
+      "sha256": "19d4439c5b09850bb2264ec825e54af5eff8a80e36e63c34b9129ae291fbedd8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/E-site-improvement-v01.png",
+      "sha256": "9d8ef172e1579d6688cfc1c1070025bf3f24967c7a5f76ae9aecc9e709695dbe"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/index.html",
+      "sha256": "bc8418dccd92f5e2f52cc25b7542f2b933bf70a13bdef2a738a41eef40a45fbc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/manifest.json",
+      "sha256": "2fb5503d735bf046e6fb537d3f3a91bbb40f92202e60dc60e3dc7b8fc7063597"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/palette.json",
+      "sha256": "20c30181a44f0e4334d29a6255caa3b23aa73be42363606c0ce45e885111870d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/A-popup-1920x1080.png",
+      "sha256": "cb494fe2c5a245dc4932069057c9c53f7d351ba24d692f16883189f58eac1eed"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/B-popup-1920x1080.png",
+      "sha256": "6e9abe357e75fcc15af12d7f5b632d08770c23f5a778b834df1244355190f0b8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/C-popup-1920x1080.png",
+      "sha256": "fddb68b62aa4668bb165a5758d689b70810ff1fcce2e14239cd7c68492e23fc8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/D-popup-1920x1080.png",
+      "sha256": "6859e08ae45f1fe653641a4301678f7eb87fe1fc84abaf49f53f9877d584a29b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/E-popup-1920x1080.png",
+      "sha256": "1f489087b39d69f5574228471a89af499322d0e1b987c2badecd69f0247fface"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-review-qa.json",
+      "sha256": "c156ede8bb99ce0db43978c932638f4e1bbe13af9c1cff063585a54f0061fd83"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-ui-provenance.json",
+      "sha256": "e1199fc206da61ccf6816b4f9d05898636469424729be9162e1c1ac20b639ba5"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-approved-scene-comparison-2x.png",
+      "sha256": "5107148cf2588d9de04560be110fbd9474afba497348f007945268ce3e44343f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-approved-scene-comparison-4x.png",
+      "sha256": "598a3fac78e6ee97ab018b2078cbe4a1977933911ef09993ab994b66c6dfb95a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-approved-scene-comparison-native.png",
+      "sha256": "791efef4b3f235a2930d70b669e0a812ebde60cf55501a33754376f0efca1091"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-classified-as-compost-2x.png",
+      "sha256": "2b13a18e39ef9dde12faba77b77e440beaae8f28ad7ffd2a7e5813e106e6d047"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-classified-as-compost-4x.png",
+      "sha256": "fead1d3365f9b10a8c0bff41ad90468098d30ca7bcd9db2e6e6b2d6d949feffd"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-classified-as-compost-native.png",
+      "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-D-distinct-aftermaths-2x.png",
+      "sha256": "32ac73c72a69a526debfeaf7f6ac48d85c8694e676394c880b20568492a6ce1b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-D-distinct-aftermaths-4x.png",
+      "sha256": "cf28d425c7a789d13d4d352572400703612f5654ed42b7d542a3e26f9167ce0d"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-D-distinct-aftermaths-native.png",
+      "sha256": "584985c4eb58ff6b78738ede90f624481efb0b807c0bf87b0abb06eb1a3149fb"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-approved-scene-comparison-2x.png",
+      "sha256": "20635a74f7378fec2ca807ea30b9e7421e30ac0581e411edf72d24d1136790a7"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-approved-scene-comparison-4x.png",
+      "sha256": "5372167c2a537a267260ecdce76ce9b6bb24c89700d6a617025442ae97f2c25f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-approved-scene-comparison-native.png",
+      "sha256": "053d9ccaaacebbc686534a2eb7cbdf139970258eab5d4a275fced0778082b8d2"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-new-arrival-2x.png",
+      "sha256": "8c3169baab37fc52cfd3d4e2b53e7872238ea7d127ae3f579e5c09538b786496"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-new-arrival-4x.png",
+      "sha256": "947e12ef517cab21f98205d9199c993d824ed5a2882e270bc4b204617e6ecf33"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-new-arrival-native.png",
+      "sha256": "eeef7d902608343eb4b1c2136cc978d14b3dc27f2d924cc085e9e756900e26b5"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-approved-scene-comparison-2x.png",
+      "sha256": "4020fefe3b0c338ec9f01eef32df760867ed45c014d4adec240b5eb30d504b7f"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-approved-scene-comparison-4x.png",
+      "sha256": "174cf038a6b32ff111a38671cc4240880dbc893354bb4f36758cacb31f6033cb"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-approved-scene-comparison-native.png",
+      "sha256": "673e4abc7b3da4f1da8372bbacb3674e6e693f0f17cb8732963d680a3b55889a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-personal-growth-2x.png",
+      "sha256": "317af8b187449c8cbeab5c4c050db619bf8bd9682421ee65a9328f639c02d4b6"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-personal-growth-4x.png",
+      "sha256": "983b065805732b5ae02d117fe3e5969b4f61e123c25707e27f9d53bfa210c7f5"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-personal-growth-native.png",
+      "sha256": "8952f6cdaaaf5c9f775516c16fb1d32d848a60b43a4ae25f104ba4075b3a7411"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-approved-scene-comparison-2x.png",
+      "sha256": "1653b0477f9c6cb74eb2da22e37a0f955a21603d2deb31c9d6324fee952106c2"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-approved-scene-comparison-4x.png",
+      "sha256": "a4970f02e98111768e65aa569d4713cc01045d9a23d5a636b831a892f7ded53c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-approved-scene-comparison-native.png",
+      "sha256": "f2d0790b5ba211b68528f4ba11aae8b820c20e58d81539ed1b29fa43a6c8b8ef"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-reclassified-2x.png",
+      "sha256": "2851ef1b20593ef98fc70a39531473883550dee270bf5b5be285548c15b8e4e0"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-reclassified-4x.png",
+      "sha256": "d0e19f2f90629dfcec6f8770045c3a22b8b06dec2b7ad5e2c17311782b411218"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-reclassified-native.png",
+      "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-approved-scene-comparison-2x.png",
+      "sha256": "1c64dd7d2a3fda77ea3a2455e7a14c789b6d761e393a830a24758787a35ad5c2"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-approved-scene-comparison-4x.png",
+      "sha256": "d970187cf884d8891a1c63f95ab7e47c49d742ff94f93366247274d7e538aa64"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-approved-scene-comparison-native.png",
+      "sha256": "4a1dfec60cf0864b534ded2ac511b61cfc9108a01029eebdc80e4d844938baeb"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-site-improvement-2x.png",
+      "sha256": "fbf177d0b1d67cdb0e70edf1e7b7da02a80c32e7eb23419ab12d6837e68c7d6b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-site-improvement-4x.png",
+      "sha256": "ee88baa5a16c550e4cd3892b1a0b99b9a849381ee58fa3d106ce145f4656a405"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-site-improvement-native.png",
+      "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/five-aftermaths-2x.png",
+      "sha256": "8f3bb073daf1cf4d4281a62001241d4e97ee5cd6d334ab1f5e47cdcc05aaae9a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/five-aftermaths-4x.png",
+      "sha256": "a5aa163537e895ef1569639b0d6508f552a69135fadbed873be9de246a83651b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/five-aftermaths-native.png",
+      "sha256": "1348cbd4df45a5e5b2196b73d673b9fecba0ad6f46bbe773e10ca4445fc0a182"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/A-v01.txt",
+      "sha256": "1aa6aad399a7d41cc129628da56e4216bfdbb52f0cca836591338f70acfb5176"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/B-v01.txt",
+      "sha256": "59bc775a6b2fa0609a69be200cf3acfd3795eb87caebff559a14ccb320bd4b2b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/C-v01.txt",
+      "sha256": "7f23ffb394d191f4103dbbaea175d39450c4d5255438d2c33839b205cac0bd1a"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/D-v01.txt",
+      "sha256": "b68b2b61671afd7a4a9c651457e6db4120870553348750e6553ec293e56aeb5e"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/E-v01.txt",
+      "sha256": "3e5a8866710b7abe96fe2d27a9df5a47c489397e2a9bb3737d39f1c586cc77bb"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/qa.json",
+      "sha256": "a34ff3ef57b389d76b5986566784cd72c0df592d2e24c19d35a8b11bc0f8994b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/central_flower-4x.png",
+      "sha256": "dc8895bdef1479bbf05af18ef0eacefa53304b445768cb64bfc45ddfd482fd5c"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/central_flower.png",
+      "sha256": "68698aea02b19bbc9fedca48b978be1c2329ca136c140084b2396dfafe4f8e58"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/groundskeeper-4x.png",
+      "sha256": "781cb2fcc46641f992948e92a24a3ba4789259358dbb80a737d32ef39e99acca"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/groundskeeper.png",
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/lower_irrigation-4x.png",
+      "sha256": "8eca164c2b2ba7129bb6add098059630cdbeb1b2a3c6710c4c140fc3280017f4"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/lower_irrigation.png",
+      "sha256": "8f0df4ad7cbdd73182e5266bb253a8f415c2fbb4536fe908eff544b2902182a8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/manifest.json",
+      "sha256": "f7acbb5981b946d1d187230446b355aa0f400663ca114adb855496113f16b9f1"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_hopper-4x.png",
+      "sha256": "879de02fe05066740653a9fef0663257da1b2985ed9cc671c0d2cbd8def52722"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_hopper.png",
+      "sha256": "5ab29aef160eb59a0d34465782d165c042b6ad8131ac04ad87215b03c33deb3b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_machine-4x.png",
+      "sha256": "83efc906c72c126d0c74c148aee77295de39642ae9fb633a9c1571ae863963d9"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_machine.png",
+      "sha256": "047282bbf1e5189645e5784d9b30278cb5b641a708eeed50f43945017d9b78da"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/sorting_conveyor-4x.png",
+      "sha256": "62bff744da481e93f134cc3b9e3817d9c9429bada3b581ef00a42d5049712760"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/sorting_conveyor.png",
+      "sha256": "fe26ce88586bc207a50c8a9ccc9bcb3ddf30dac1bfd1f9e2468abfdae0167e3b"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/spore_garden-4x.png",
+      "sha256": "9d09a85b41a34657395da081c0956658472c753f28de5b60ec365d4c0b882448"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/spore_garden.png",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/translator_machine-4x.png",
+      "sha256": "6ed0370767d718532210d7fe09c98bc178619af7e6bff90a8ee8818732daeb01"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/translator_machine.png",
+      "sha256": "ff5704d99d027ea8a86e78b228102826bcceec03b5ae1ba583200a99822e95a3"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/waste_chute-4x.png",
+      "sha256": "2ec57848294e96459ec9b63a947325e554aa477c16fd543148771105d4b06ad8"
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/waste_chute.png",
+      "sha256": "fa2f9021a7c33f6ff188eff438ef4abec35d9ba0d1a77d805cd2ceb98bbaf498"
+    },
+    {
+      "path": "tools/prologue-art-lab/bitmap-fonts.json",
+      "sha256": "e372e8a797d19bcd373fc5acf54aa6d5cc17027ac05f5c59c0d3927f5b36ec34"
+    },
+    {
+      "path": "tools/prologue-art-lab/control-asset-manifest.json",
+      "sha256": "32436e507e691407e1fa504c513cbf50981a3f07fd5f0d9af7e4854b44fe845d"
+    },
+    {
+      "path": "tools/prologue-art-lab/exposition-v02.json",
+      "sha256": "8e5c75afc6c20036f05e1b3b03b6197057094239bc080e7efd93c20c762ef496"
+    },
+    {
+      "path": "tools/prologue-art-lab/exposition-v03.json",
+      "sha256": "2d658ca0ed1f9f810b38a08503443f86c70c06f19d48b0113741c9027c6f7ee9"
+    },
+    {
+      "path": "tools/prologue-art-lab/index.html",
+      "sha256": "10e25078774813756098c781a2ce178d7a7e57dce31104776c9bc4e2b93c8976"
+    },
+    {
+      "path": "tools/prologue-art-lab/lab.css",
+      "sha256": "3da73b62be7e91a1a880f39dfc69aadb95e77743fa9824a6c1d7ccbe7526dbaf"
+    },
+    {
+      "path": "tools/prologue-art-lab/layout-reference.json",
+      "sha256": "90787e78dc2ad17335021979c8ae538d74252811c9b8593168ebf3f6ca24ba74"
+    },
+    {
+      "path": "tools/prologue-art-lab/pixel-type.js",
+      "sha256": "d339317cd2552002a4f143f31192f7f0bba6cd1eab60a12f3d7336404110a973"
+    },
+    {
+      "path": "tools/prologue-art-lab/qa/qa-browser.mjs",
+      "sha256": "5f2fe9c49dbdc516213324346f8c5569430f12ef9221ccdc81fcfcda11e6a51c"
+    },
+    {
+      "path": "tools/prologue-art-lab/qa/qa-pages-site.mjs",
+      "sha256": "30eff543a7854063f62dd8617e0e46ab9fda9ed165f408ac3d4e3938d0152aab"
+    },
+    {
+      "path": "tools/prologue-art-lab/qa/qa-static.mjs",
+      "sha256": "d6742dd5b8b91da306d544213fe4e4150b7d9b3bf7927ec020d56e4143279376"
+    },
+    {
+      "path": "tools/storyboard/export-death-presentations.mjs",
+      "sha256": "fdad277c7d140a6bccec967955aa313cd6f2f888dd7fc60948c0dba05f6c3a43"
+    },
+    {
+      "path": "tools/storyboard/index.html",
+      "sha256": "618605e0e12394389fc4c4feafa97b015f74c41bc083daa51559de85694f1f4a"
+    },
+    {
+      "path": "tools/storyboard/prepare-ch3-artwork-briefs.mjs",
+      "sha256": "f567b6ffb60592a1f3fdb494f7a20005eb67c32ec398be46dde574c5245ebefb"
+    },
+    {
+      "path": "tools/storyboard/qa-artwork-preview.js",
+      "sha256": "5b0b98c97de2bf87d73d732fd59ca19e94d6ebca729b01b259253803a5f636e7"
+    },
+    {
+      "path": "tools/storyboard/qa-browser.js",
+      "sha256": "c81d8cec19ff8ff742aed8c2d6dae81b98257ca2b3c26e837ddc031c5885d0c4"
+    },
+    {
+      "path": "tools/storyboard/qa-ch3-artwork-briefs.mjs",
+      "sha256": "61434d83937bbd7ba12d609fb5716878df34c046f4cae682ba098bf6379090b4"
+    },
+    {
+      "path": "tools/storyboard/qa-ch3-reboot-candidate.mjs",
+      "sha256": "901d7c22cc8dcd84852374d0115c8f5b7cc89028d40d166358050c1027b157d6"
+    },
+    {
+      "path": "tools/storyboard/qa-fixtures/legacy-render-snapshot.json",
+      "sha256": "51bb780833424a58a67f1a80f0e06bb5b2a6451e4b6193c95956b7661f68be8a"
+    },
+    {
+      "path": "tools/storyboard/qa-legacy-render.mjs",
+      "sha256": "c9ec204ec7064142006ff09d72a10e6674c5db9bd0be5aca86cc125355d94e41"
+    },
+    {
+      "path": "tools/storyboard/qa-smoke.mjs",
+      "sha256": "cd2854ff25370a12345c7e020aaed808329d00bff680b124c5af41ae43a2dd90"
+    },
+    {
+      "path": "tools/storyboard/qa-timeline.js",
+      "sha256": "3215d232ff1386935614df5cc903dc327a3f736534995b6063f464d7bfdff589"
+    },
+    {
+      "path": "tools/sync/check-canon.mjs",
+      "sha256": "5010fb5b556c302ba63475c15b6e79b9027279225e347ea86c4ec76b102d1797"
+    },
+    {
+      "path": "tools/sync/lib.mjs",
+      "sha256": "e255662c3ba8b3bbe099e869bbd700640e2484402dfbfa050e1e86922fd6d58d"
+    },
+    {
+      "path": "tools/sync/qa-sync.mjs",
+      "sha256": "d91033b21acd970189f6d0710bec3ce617beae624a66b6c53e147fe9aeb81afd"
+    },
+    {
+      "path": "tools/sync/register-art.mjs",
+      "sha256": "987fdd734cad28b9ef7319c91923bdeffbc569bd299e80b5ea07117ebabf93aa"
+    },
+    {
+      "path": "tools/sync/stage-ch3-batch04-review.mjs",
+      "sha256": "fd9e3b0de9bab5850635326932c532d3c436bc8004f3d1e25d9c9796b822979a"
+    },
+    {
+      "path": "tools/sync/verify-ch3-batch-d-selection.mjs",
+      "sha256": "0e1ca45c2633d79e10d2e49b7de46a3a822847ae15016df0865643a71c29e1b7"
+    },
+    {
+      "path": "tools/sync/verify-ch3-current-selection.mjs",
+      "sha256": "1532dda6bd1b281d06f0530750d7776856e3b9c71ff25cca6d207402ec1b6e5a"
+    }
+  ]
+}

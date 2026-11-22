@@ -1,0 +1,306 @@
+{
+ "passed": 60,
+ "total": 60,
+ "results": [
+  {
+   "browser": "chromium",
+   "name": "all 145 previews served byte-exact at native size",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "library reports the viewable selected images",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Selected filter: every selected record shows a thumbnail",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Selected filter lists exactly the 146 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Integrated filter lists exactly the 116 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Approved filter lists exactly the 30 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Active pending filter lists exactly the 8 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Archived filter lists exactly the 65 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Selected + Active pending + Archived partition All; Integrated + Approved = Selected",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "every Selected record has a byte-checked preview",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "scene shown at native 314x206, 1 image",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "scene provenance names the source commit",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "storage lists its 4 conditional states with conditions",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "overlay drawn over its scene (base first, same box), then alone on a checkerboard",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "replace state shown alone as a full scene",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "groundskeeper: portrait background + transparent foreground composite (564x278, same box)",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "drone foreground composited on the corridor portrait background",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "reused layered receptionist: composite + each layer",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "House: 4 complete opaque views (dining, foyer, lounge, portrait_gallery), one image each",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "album: three Focus A pages in order",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Rest Assured death vignette shown (314x206), one shared record for all three causes",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "selected Biology Park art is visible and needs no regeneration (approved, or its production path)",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "item: 96x96 slot at 2x on a checkerboard beside the 565x451 inspect view",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "node plant_adoption shows its scene + STATE pedestal overlay with thumbnails",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "fatal chair ending links its approved death screen",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "the fatal node's death-popup box shows the actual selected 314x206 art (not \"preview pending\")",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "zoom draws 2x = 628x412 and 4x = 1256",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "zoom closes",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "Prologue Artwork Lab still served",
+   "ok": true
+  },
+  {
+   "browser": "chromium",
+   "name": "no console errors",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "all 145 previews served byte-exact at native size",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "library reports the viewable selected images",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Selected filter: every selected record shows a thumbnail",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Selected filter lists exactly the 146 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Integrated filter lists exactly the 116 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Approved filter lists exactly the 30 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Active pending filter lists exactly the 8 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Archived filter lists exactly the 65 catalogue records it should, with matching status labels",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Selected + Active pending + Archived partition All; Integrated + Approved = Selected",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "every Selected record has a byte-checked preview",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "scene shown at native 314x206, 1 image",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "scene provenance names the source commit",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "storage lists its 4 conditional states with conditions",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "overlay drawn over its scene (base first, same box), then alone on a checkerboard",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "replace state shown alone as a full scene",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "groundskeeper: portrait background + transparent foreground composite (564x278, same box)",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "drone foreground composited on the corridor portrait background",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "reused layered receptionist: composite + each layer",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "House: 4 complete opaque views (dining, foyer, lounge, portrait_gallery), one image each",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "album: three Focus A pages in order",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Rest Assured death vignette shown (314x206), one shared record for all three causes",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "selected Biology Park art is visible and needs no regeneration (approved, or its production path)",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "item: 96x96 slot at 2x on a checkerboard beside the 565x451 inspect view",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "node plant_adoption shows its scene + STATE pedestal overlay with thumbnails",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "fatal chair ending links its approved death screen",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "the fatal node's death-popup box shows the actual selected 314x206 art (not \"preview pending\")",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "zoom draws 2x = 628x412 and 4x = 1256",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "zoom closes",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "Prologue Artwork Lab still served",
+   "ok": true
+  },
+  {
+   "browser": "firefox",
+   "name": "no console errors",
+   "ok": true
+  }
+ ]
+}

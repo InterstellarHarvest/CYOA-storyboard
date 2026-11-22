@@ -1,0 +1,6110 @@
+{
+  "canvas": [
+    314,
+    206
+  ],
+  "palette": {
+    "ink": "#293c43",
+    "deep": "#1d343d",
+    "edge": "#485259",
+    "edge2": "#667073",
+    "wall0": "#b6b0a2",
+    "wall1": "#a49f95",
+    "wall2": "#96938b",
+    "wall3": "#858780",
+    "wall4": "#707a77",
+    "seam": "#7c817d",
+    "ceil": "#c7c6b8",
+    "ceilshade": "#a3aca5",
+    "ceilhi": "#dbd6c2",
+    "floor": "#a6a197",
+    "floorShade": "#92948b",
+    "floorLight": "#b7b0a1",
+    "tile": "#7f8982",
+    "shadow": "#6f7b75",
+    "cream": "#eee2bd",
+    "creamHi": "#fff0cd",
+    "creamShade": "#c9bfa3",
+    "creamDark": "#a69f87",
+    "teal0": "#284d54",
+    "teal1": "#365e62",
+    "teal2": "#487275",
+    "teal3": "#5c8684",
+    "teal4": "#77988e",
+    "tealhi": "#99b2a2",
+    "coralDark": "#aa4e3e",
+    "coral": "#d86d50",
+    "coralLight": "#ef8b63",
+    "coralHi": "#f7ad79",
+    "metalDark": "#4d5e60",
+    "metal": "#82928c",
+    "metalLight": "#b6c1ad",
+    "metalHi": "#e0dfc4",
+    "woodDark": "#765844",
+    "wood": "#ac8058",
+    "woodLight": "#d7b476",
+    "woodHi": "#e9ca8b",
+    "paper": "#e6d7af",
+    "paperShade": "#c3b38c",
+    "paperMark": "#779887",
+    "sky": "#91cbd2",
+    "skyLight": "#c2dfcf",
+    "greenDark": "#466755",
+    "green": "#6f8c54",
+    "greenLight": "#a3ad5f",
+    "greenHi": "#c1bf74",
+    "slateDark": "#304954",
+    "slate": "#405966",
+    "slateHi": "#59717a",
+    "hairDark": "#6f3d32",
+    "hair": "#a45737",
+    "hairHi": "#c87846",
+    "skinShade": "#b97950",
+    "skin": "#e3ae73",
+    "skinHi": "#f2c38b",
+    "orangeDark": "#b85a3b",
+    "orange": "#dc8453",
+    "orangeLight": "#efab6b",
+    "orangeHi": "#f5c187",
+    "red": "#c15c44",
+    "greenLamp": "#9cb56e",
+    "lampDark": "#687b55",
+    "blue": "#79aeb4"
+  },
+  "font": {
+    "A": [
+      "01110",
+      "10001",
+      "10001",
+      "11111",
+      "10001",
+      "10001",
+      "10001"
+    ],
+    "B": [
+      "11110",
+      "10001",
+      "10001",
+      "11110",
+      "10001",
+      "10001",
+      "11110"
+    ],
+    "C": [
+      "01111",
+      "10000",
+      "10000",
+      "10000",
+      "10000",
+      "10000",
+      "01111"
+    ],
+    "D": [
+      "11110",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "11110"
+    ],
+    "E": [
+      "11111",
+      "10000",
+      "10000",
+      "11110",
+      "10000",
+      "10000",
+      "11111"
+    ],
+    "F": [
+      "11111",
+      "10000",
+      "10000",
+      "11110",
+      "10000",
+      "10000",
+      "10000"
+    ],
+    "G": [
+      "01111",
+      "10000",
+      "10000",
+      "10111",
+      "10001",
+      "10001",
+      "01111"
+    ],
+    "H": [
+      "10001",
+      "10001",
+      "10001",
+      "11111",
+      "10001",
+      "10001",
+      "10001"
+    ],
+    "I": [
+      "111",
+      "010",
+      "010",
+      "010",
+      "010",
+      "010",
+      "111"
+    ],
+    "J": [
+      "00111",
+      "00010",
+      "00010",
+      "00010",
+      "10010",
+      "10010",
+      "01100"
+    ],
+    "K": [
+      "10001",
+      "10010",
+      "10100",
+      "11000",
+      "10100",
+      "10010",
+      "10001"
+    ],
+    "L": [
+      "10000",
+      "10000",
+      "10000",
+      "10000",
+      "10000",
+      "10000",
+      "11111"
+    ],
+    "M": [
+      "10001",
+      "11011",
+      "10101",
+      "10101",
+      "10001",
+      "10001",
+      "10001"
+    ],
+    "N": [
+      "10001",
+      "11001",
+      "11001",
+      "10101",
+      "10011",
+      "10011",
+      "10001"
+    ],
+    "O": [
+      "01110",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "01110"
+    ],
+    "P": [
+      "11110",
+      "10001",
+      "10001",
+      "11110",
+      "10000",
+      "10000",
+      "10000"
+    ],
+    "Q": [
+      "01110",
+      "10001",
+      "10001",
+      "10001",
+      "10101",
+      "10010",
+      "01101"
+    ],
+    "R": [
+      "11110",
+      "10001",
+      "10001",
+      "11110",
+      "10100",
+      "10010",
+      "10001"
+    ],
+    "S": [
+      "01111",
+      "10000",
+      "10000",
+      "01110",
+      "00001",
+      "00001",
+      "11110"
+    ],
+    "T": [
+      "11111",
+      "00100",
+      "00100",
+      "00100",
+      "00100",
+      "00100",
+      "00100"
+    ],
+    "U": [
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "01110"
+    ],
+    "V": [
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "10001",
+      "01010",
+      "00100"
+    ],
+    "W": [
+      "10001",
+      "10001",
+      "10001",
+      "10101",
+      "10101",
+      "11011",
+      "10001"
+    ],
+    "X": [
+      "10001",
+      "10001",
+      "01010",
+      "00100",
+      "01010",
+      "10001",
+      "10001"
+    ],
+    "Y": [
+      "10001",
+      "10001",
+      "01010",
+      "00100",
+      "00100",
+      "00100",
+      "00100"
+    ],
+    "Z": [
+      "11111",
+      "00001",
+      "00010",
+      "00100",
+      "01000",
+      "10000",
+      "11111"
+    ],
+    "0": [
+      "01110",
+      "10001",
+      "10011",
+      "10101",
+      "11001",
+      "10001",
+      "01110"
+    ],
+    "1": [
+      "010",
+      "110",
+      "010",
+      "010",
+      "010",
+      "010",
+      "111"
+    ],
+    "2": [
+      "11110",
+      "00001",
+      "00001",
+      "01110",
+      "10000",
+      "10000",
+      "11111"
+    ],
+    "3": [
+      "11110",
+      "00001",
+      "00001",
+      "01110",
+      "00001",
+      "00001",
+      "11110"
+    ],
+    "'": [
+      "1",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    " ": [
+      "000",
+      "000",
+      "000",
+      "000",
+      "000",
+      "000",
+      "000"
+    ],
+    "-": [
+      "000",
+      "000",
+      "000",
+      "111",
+      "000",
+      "000",
+      "000"
+    ]
+  },
+  "layers": [
+    {
+      "name": "base",
+      "operations": [
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            0,
+            0,
+            313,
+            205
+          ],
+          "color": "wall0"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            49,
+            49,
+            265,
+            151
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              0,
+              21
+            ],
+            [
+              49,
+              51
+            ],
+            [
+              49,
+              154
+            ],
+            [
+              0,
+              186
+            ]
+          ],
+          "color": "wall0"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              265,
+              50
+            ],
+            [
+              313,
+              20
+            ],
+            [
+              313,
+              186
+            ],
+            [
+              265,
+              154
+            ]
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              0,
+              180
+            ],
+            [
+              49,
+              159
+            ],
+            [
+              265,
+              159
+            ],
+            [
+              313,
+              183
+            ],
+            [
+              313,
+              205
+            ],
+            [
+              0,
+              205
+            ]
+          ],
+          "color": "floor"
+        }
+      ]
+    },
+    {
+      "name": "ceiling-and-structural-trim",
+      "operations": [
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              0,
+              0
+            ],
+            [
+              313,
+              0
+            ],
+            [
+              273,
+              33
+            ],
+            [
+              40,
+              33
+            ]
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              8,
+              0
+            ],
+            [
+              304,
+              0
+            ],
+            [
+              275,
+              22
+            ],
+            [
+              38,
+              22
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              18,
+              0
+            ],
+            [
+              293,
+              0
+            ],
+            [
+              272,
+              13
+            ],
+            [
+              41,
+              13
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              28,
+              0
+            ],
+            [
+              284,
+              0
+            ],
+            [
+              269,
+              7
+            ],
+            [
+              45,
+              7
+            ]
+          ],
+          "color": "wall0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              10,
+              1
+            ],
+            [
+              39,
+              23
+            ],
+            [
+              273,
+              23
+            ],
+            [
+              304,
+              1
+            ]
+          ],
+          "color": "coralLight",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              0,
+              16
+            ],
+            [
+              41,
+              41
+            ],
+            [
+              273,
+              41
+            ],
+            [
+              313,
+              16
+            ]
+          ],
+          "color": "creamHi",
+          "width": 3
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              0,
+              23
+            ],
+            [
+              41,
+              47
+            ]
+          ],
+          "color": "creamHi",
+          "width": 3
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              313,
+              23
+            ],
+            [
+              273,
+              47
+            ]
+          ],
+          "color": "creamHi",
+          "width": 3
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              0,
+              25
+            ],
+            [
+              10,
+              29
+            ],
+            [
+              10,
+              174
+            ],
+            [
+              0,
+              181
+            ]
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              10,
+              30
+            ],
+            [
+              10,
+              173
+            ]
+          ],
+          "color": "teal3",
+          "width": 2
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              42,
+              43
+            ],
+            [
+              52,
+              47
+            ],
+            [
+              52,
+              156
+            ],
+            [
+              43,
+              160
+            ]
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              49,
+              48
+            ],
+            [
+              49,
+              156
+            ]
+          ],
+          "color": "teal3",
+          "width": 2
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              264,
+              48
+            ],
+            [
+              274,
+              43
+            ],
+            [
+              274,
+              160
+            ],
+            [
+              264,
+              155
+            ]
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              266,
+              49
+            ],
+            [
+              266,
+              155
+            ]
+          ],
+          "color": "teal3",
+          "width": 2
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              304,
+              28
+            ],
+            [
+              313,
+              23
+            ],
+            [
+              313,
+              182
+            ],
+            [
+              304,
+              176
+            ]
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              304,
+              29
+            ],
+            [
+              304,
+              175
+            ]
+          ],
+          "color": "teal3",
+          "width": 2
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              58,
+              3
+            ],
+            [
+              94,
+              3
+            ],
+            [
+              92,
+              12
+            ],
+            [
+              60,
+              12
+            ]
+          ],
+          "color": "edge"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              60,
+              4
+            ],
+            [
+              92,
+              4
+            ],
+            [
+              91,
+              10
+            ],
+            [
+              61,
+              10
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              221,
+              3
+            ],
+            [
+              258,
+              3
+            ],
+            [
+              256,
+              12
+            ],
+            [
+              223,
+              12
+            ]
+          ],
+          "color": "edge"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              223,
+              4
+            ],
+            [
+              256,
+              4
+            ],
+            [
+              255,
+              10
+            ],
+            [
+              224,
+              10
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              132,
+              44
+            ],
+            [
+              182,
+              44
+            ],
+            [
+              180,
+              50
+            ],
+            [
+              134,
+              50
+            ]
+          ],
+          "color": "edge"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              134,
+              45
+            ],
+            [
+              180,
+              45
+            ],
+            [
+              179,
+              48
+            ],
+            [
+              135,
+              48
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            65,
+            24,
+            250,
+            43
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            66,
+            25,
+            249,
+            42
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              66,
+              25
+            ],
+            [
+              249,
+              25
+            ]
+          ],
+          "color": "creamHi",
+          "width": 1
+        },
+        {
+          "kind": "text",
+          "coordinates": [
+            105,
+            29
+          ],
+          "color": "creamHi",
+          "text": "PEOPLE'S PAVILION",
+          "scale": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              71,
+              36
+            ],
+            [
+              82,
+              36
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              73,
+              32
+            ],
+            [
+              81,
+              35
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              75,
+              28
+            ],
+            [
+              82,
+              33
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              236,
+              36
+            ],
+            [
+              225,
+              36
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              234,
+              32
+            ],
+            [
+              226,
+              35
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              232,
+              28
+            ],
+            [
+              225,
+              33
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "name": "curtain-and-backstage-opening",
+      "operations": [
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            53,
+            66,
+            263,
+            146
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              59,
+              66
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              63,
+              143
+            ],
+            [
+              60,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              66,
+              69
+            ],
+            [
+              66,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              80,
+              66
+            ],
+            [
+              86,
+              66
+            ],
+            [
+              84,
+              143
+            ],
+            [
+              81,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              87,
+              69
+            ],
+            [
+              87,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              102,
+              66
+            ],
+            [
+              108,
+              66
+            ],
+            [
+              106,
+              143
+            ],
+            [
+              103,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              109,
+              69
+            ],
+            [
+              109,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              123,
+              66
+            ],
+            [
+              129,
+              66
+            ],
+            [
+              127,
+              143
+            ],
+            [
+              124,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              130,
+              69
+            ],
+            [
+              130,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              147,
+              66
+            ],
+            [
+              153,
+              66
+            ],
+            [
+              151,
+              143
+            ],
+            [
+              148,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              154,
+              69
+            ],
+            [
+              154,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              173,
+              66
+            ],
+            [
+              179,
+              66
+            ],
+            [
+              177,
+              143
+            ],
+            [
+              174,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              180,
+              69
+            ],
+            [
+              180,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              196,
+              66
+            ],
+            [
+              202,
+              66
+            ],
+            [
+              200,
+              143
+            ],
+            [
+              197,
+              145
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              203,
+              69
+            ],
+            [
+              203,
+              141
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              51,
+              62
+            ],
+            [
+              265,
+              62
+            ]
+          ],
+          "color": "ink",
+          "width": 3
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              52,
+              61
+            ],
+            [
+              264,
+              61
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            57,
+            61,
+            59,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            74,
+            61,
+            76,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            91,
+            61,
+            93,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            108,
+            61,
+            110,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            125,
+            61,
+            127,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            142,
+            61,
+            144,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            159,
+            61,
+            161,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            176,
+            61,
+            178,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            193,
+            61,
+            195,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            210,
+            61,
+            212,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            227,
+            61,
+            229,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            244,
+            61,
+            246,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            261,
+            61,
+            263,
+            65
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              219,
+              91
+            ],
+            [
+              238,
+              68
+            ],
+            [
+              255,
+              94
+            ],
+            [
+              255,
+              141
+            ],
+            [
+              218,
+              141
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              221,
+              94
+            ],
+            [
+              238,
+              73
+            ],
+            [
+              252,
+              95
+            ],
+            [
+              252,
+              139
+            ],
+            [
+              220,
+              139
+            ]
+          ],
+          "color": "wall0"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            223,
+            100,
+            250,
+            139
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            225,
+            100,
+            248,
+            105
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            239,
+            109,
+            249,
+            138
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              239,
+              108
+            ],
+            [
+              249,
+              108
+            ]
+          ],
+          "color": "teal4",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            223,
+            112,
+            232,
+            122
+          ],
+          "color": "metalLight"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            224,
+            113,
+            231,
+            120
+          ],
+          "color": "blue"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              221,
+              127
+            ],
+            [
+              235,
+              127
+            ]
+          ],
+          "color": "creamHi",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              222,
+              129
+            ],
+            [
+              232,
+              129
+            ]
+          ],
+          "color": "edge",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              226,
+              128
+            ],
+            [
+              226,
+              135
+            ],
+            [
+              230,
+              135
+            ]
+          ],
+          "color": "metalDark",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            243,
+            123,
+            244,
+            125
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              216,
+              66
+            ],
+            [
+              228,
+              66
+            ],
+            [
+              219,
+              91
+            ],
+            [
+              220,
+              135
+            ],
+            [
+              214,
+              143
+            ],
+            [
+              208,
+              143
+            ],
+            [
+              213,
+              95
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              222,
+              68
+            ],
+            [
+              216,
+              94
+            ],
+            [
+              216,
+              137
+            ]
+          ],
+          "color": "teal4",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              240,
+              66
+            ],
+            [
+              262,
+              66
+            ],
+            [
+              260,
+              141
+            ],
+            [
+              254,
+              144
+            ],
+            [
+              254,
+              95
+            ]
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              244,
+              69
+            ],
+            [
+              257,
+              95
+            ],
+            [
+              258,
+              137
+            ]
+          ],
+          "color": "teal3",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "name": "side-wall-graphics-and-signs",
+      "operations": [
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              12,
+              53
+            ],
+            [
+              38,
+              64
+            ],
+            [
+              38,
+              95
+            ],
+            [
+              12,
+              85
+            ]
+          ],
+          "color": "edge"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              14,
+              55
+            ],
+            [
+              36,
+              65
+            ],
+            [
+              36,
+              92
+            ],
+            [
+              14,
+              84
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              15,
+              58
+            ],
+            [
+              35,
+              66
+            ],
+            [
+              35,
+              76
+            ],
+            [
+              15,
+              68
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            25,
+            63,
+            31,
+            69
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              15,
+              73
+            ],
+            [
+              35,
+              81
+            ],
+            [
+              35,
+              90
+            ],
+            [
+              15,
+              83
+            ]
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              20,
+              81
+            ],
+            [
+              20,
+              75
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              27,
+              84
+            ],
+            [
+              27,
+              79
+            ]
+          ],
+          "color": "cream",
+          "width": 2
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            281,
+            69,
+            296,
+            93
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            282,
+            70,
+            295,
+            92
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              282,
+              70
+            ],
+            [
+              295,
+              70
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            285,
+            73,
+            287,
+            75
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            285,
+            77,
+            287,
+            84
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              285,
+              84
+            ],
+            [
+              285,
+              89
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              287,
+              84
+            ],
+            [
+              287,
+              89
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            291,
+            73,
+            293,
+            75
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              291,
+              77
+            ],
+            [
+              293,
+              77
+            ],
+            [
+              295,
+              85
+            ],
+            [
+              289,
+              85
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              291,
+              85
+            ],
+            [
+              291,
+              89
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              293,
+              85
+            ],
+            [
+              293,
+              89
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            285,
+            100,
+            297,
+            122
+          ],
+          "color": "edge"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            286,
+            101,
+            296,
+            121
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              286,
+              101
+            ],
+            [
+              296,
+              101
+            ]
+          ],
+          "color": "creamHi",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            288,
+            104,
+            294,
+            109
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            288,
+            112,
+            294,
+            114
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            288,
+            117,
+            294,
+            118
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              280,
+              128
+            ],
+            [
+              298,
+              122
+            ],
+            [
+              298,
+              126
+            ],
+            [
+              280,
+              133
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              281,
+              130
+            ],
+            [
+              296,
+              125
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "name": "countdown-display",
+      "operations": [
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            146,
+            51,
+            149,
+            68
+          ],
+          "color": "metalDark"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            174,
+            51,
+            177,
+            68
+          ],
+          "color": "metalDark"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              147,
+              52
+            ],
+            [
+              147,
+              66
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              175,
+              52
+            ],
+            [
+              175,
+              66
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            128,
+            68,
+            188,
+            122
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            129,
+            69,
+            187,
+            121
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              129,
+              69
+            ],
+            [
+              187,
+              69
+            ]
+          ],
+          "color": "creamHi",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            131,
+            71,
+            185,
+            119
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              139,
+              78
+            ],
+            [
+              144,
+              74
+            ],
+            [
+              147,
+              76
+            ],
+            [
+              142,
+              80
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              149,
+              73
+            ],
+            [
+              155,
+              72
+            ],
+            [
+              155,
+              76
+            ],
+            [
+              150,
+              77
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              160,
+              72
+            ],
+            [
+              165,
+              73
+            ],
+            [
+              164,
+              77
+            ],
+            [
+              159,
+              76
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              169,
+              74
+            ],
+            [
+              174,
+              77
+            ],
+            [
+              171,
+              80
+            ],
+            [
+              167,
+              77
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              178,
+              80
+            ],
+            [
+              181,
+              85
+            ],
+            [
+              177,
+              87
+            ],
+            [
+              175,
+              82
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              181,
+              90
+            ],
+            [
+              182,
+              95
+            ],
+            [
+              178,
+              95
+            ],
+            [
+              178,
+              90
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              180,
+              100
+            ],
+            [
+              179,
+              106
+            ],
+            [
+              175,
+              104
+            ],
+            [
+              176,
+              99
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              175,
+              111
+            ],
+            [
+              170,
+              115
+            ],
+            [
+              167,
+              112
+            ],
+            [
+              172,
+              108
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              163,
+              115
+            ],
+            [
+              157,
+              116
+            ],
+            [
+              157,
+              112
+            ],
+            [
+              162,
+              112
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              151,
+              115
+            ],
+            [
+              145,
+              112
+            ],
+            [
+              147,
+              108
+            ],
+            [
+              152,
+              111
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              140,
+              109
+            ],
+            [
+              136,
+              105
+            ],
+            [
+              139,
+              102
+            ],
+            [
+              143,
+              106
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              134,
+              99
+            ],
+            [
+              134,
+              93
+            ],
+            [
+              138,
+              93
+            ],
+            [
+              138,
+              98
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              135,
+              87
+            ],
+            [
+              137,
+              81
+            ],
+            [
+              141,
+              83
+            ],
+            [
+              139,
+              88
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              145,
+              85
+            ],
+            [
+              155,
+              85
+            ],
+            [
+              155,
+              87
+            ],
+            [
+              145,
+              87
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              154,
+              85
+            ],
+            [
+              156,
+              85
+            ],
+            [
+              156,
+              95
+            ],
+            [
+              154,
+              95
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              146,
+              94
+            ],
+            [
+              156,
+              94
+            ],
+            [
+              156,
+              96
+            ],
+            [
+              146,
+              96
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              154,
+              95
+            ],
+            [
+              156,
+              95
+            ],
+            [
+              156,
+              105
+            ],
+            [
+              154,
+              105
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              145,
+              103
+            ],
+            [
+              155,
+              103
+            ],
+            [
+              155,
+              105
+            ],
+            [
+              145,
+              105
+            ]
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            161,
+            85,
+            172,
+            105
+          ],
+          "color": "creamHi"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            164,
+            88,
+            169,
+            102
+          ],
+          "color": "teal0"
+        }
+      ]
+    },
+    {
+      "name": "raised-stage-architecture",
+      "operations": [
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              43,
+              146
+            ],
+            [
+              260,
+              146
+            ],
+            [
+              281,
+              155
+            ],
+            [
+              264,
+              170
+            ],
+            [
+              43,
+              170
+            ],
+            [
+              27,
+              157
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              43,
+              145
+            ],
+            [
+              261,
+              145
+            ],
+            [
+              278,
+              155
+            ],
+            [
+              263,
+              162
+            ],
+            [
+              43,
+              162
+            ],
+            [
+              31,
+              156
+            ]
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              45,
+              146
+            ],
+            [
+              259,
+              146
+            ],
+            [
+              271,
+              153
+            ],
+            [
+              260,
+              158
+            ],
+            [
+              45,
+              158
+            ],
+            [
+              36,
+              154
+            ]
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              34,
+              157
+            ],
+            [
+              45,
+              161
+            ],
+            [
+              263,
+              161
+            ],
+            [
+              276,
+              156
+            ],
+            [
+              274,
+              166
+            ],
+            [
+              263,
+              173
+            ],
+            [
+              43,
+              173
+            ],
+            [
+              33,
+              166
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              38,
+              158
+            ],
+            [
+              45,
+              162
+            ],
+            [
+              263,
+              162
+            ],
+            [
+              274,
+              157
+            ],
+            [
+              272,
+              164
+            ],
+            [
+              261,
+              169
+            ],
+            [
+              44,
+              169
+            ],
+            [
+              38,
+              165
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              45,
+              162
+            ],
+            [
+              263,
+              162
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              43,
+              174
+            ],
+            [
+              264,
+              174
+            ],
+            [
+              272,
+              171
+            ],
+            [
+              273,
+              175
+            ],
+            [
+              263,
+              179
+            ],
+            [
+              43,
+              179
+            ],
+            [
+              35,
+              174
+            ]
+          ],
+          "color": "metalDark"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              43,
+              174
+            ],
+            [
+              264,
+              174
+            ],
+            [
+              271,
+              171
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "name": "moving-floor-and-stationary-landing",
+      "operations": [
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              63,
+              137
+            ],
+            [
+              121,
+              137
+            ],
+            [
+              131,
+              153
+            ],
+            [
+              59,
+              153
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              66,
+              139
+            ],
+            [
+              119,
+              139
+            ],
+            [
+              127,
+              150
+            ],
+            [
+              63,
+              150
+            ]
+          ],
+          "color": "metalDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              68,
+              140
+            ],
+            [
+              117,
+              140
+            ],
+            [
+              123,
+              148
+            ],
+            [
+              66,
+              148
+            ]
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              70,
+              141
+            ],
+            [
+              69,
+              147
+            ]
+          ],
+          "color": "teal2",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              78,
+              141
+            ],
+            [
+              77,
+              147
+            ]
+          ],
+          "color": "teal2",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              86,
+              141
+            ],
+            [
+              85,
+              147
+            ]
+          ],
+          "color": "teal2",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              94,
+              141
+            ],
+            [
+              93,
+              147
+            ]
+          ],
+          "color": "teal2",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              102,
+              141
+            ],
+            [
+              101,
+              147
+            ]
+          ],
+          "color": "teal2",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              110,
+              141
+            ],
+            [
+              109,
+              147
+            ]
+          ],
+          "color": "teal2",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              93,
+              142
+            ],
+            [
+              104,
+              142
+            ],
+            [
+              104,
+              140
+            ],
+            [
+              113,
+              144
+            ],
+            [
+              104,
+              148
+            ],
+            [
+              104,
+              146
+            ],
+            [
+              91,
+              146
+            ]
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              126,
+              131
+            ],
+            [
+              217,
+              131
+            ],
+            [
+              239,
+              138
+            ],
+            [
+              250,
+              147
+            ],
+            [
+              233,
+              153
+            ],
+            [
+              216,
+              142
+            ],
+            [
+              133,
+              141
+            ]
+          ],
+          "color": "edge"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              131,
+              131
+            ],
+            [
+              216,
+              132
+            ],
+            [
+              236,
+              139
+            ],
+            [
+              246,
+              147
+            ],
+            [
+              235,
+              150
+            ],
+            [
+              216,
+              138
+            ],
+            [
+              135,
+              138
+            ]
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              134,
+              132
+            ],
+            [
+              216,
+              133
+            ],
+            [
+              235,
+              140
+            ]
+          ],
+          "color": "creamHi",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "name": "single-perspective-padded-pit",
+      "operations": [
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              142,
+              134
+            ],
+            [
+              211,
+              134
+            ],
+            [
+              233,
+              160
+            ],
+            [
+              126,
+              160
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              143,
+              135
+            ],
+            [
+              210,
+              135
+            ],
+            [
+              229,
+              158
+            ],
+            [
+              130,
+              158
+            ]
+          ],
+          "color": "orangeDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              149,
+              139
+            ],
+            [
+              205,
+              139
+            ],
+            [
+              219,
+              154
+            ],
+            [
+              138,
+              154
+            ]
+          ],
+          "color": "orangeLight"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              143,
+              135
+            ],
+            [
+              149,
+              139
+            ],
+            [
+              138,
+              154
+            ],
+            [
+              130,
+              158
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              210,
+              135
+            ],
+            [
+              205,
+              139
+            ],
+            [
+              219,
+              154
+            ],
+            [
+              229,
+              158
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              149,
+              139
+            ],
+            [
+              205,
+              139
+            ],
+            [
+              207,
+              142
+            ],
+            [
+              146,
+              142
+            ]
+          ],
+          "color": "orange"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              176,
+              141
+            ],
+            [
+              176,
+              154
+            ]
+          ],
+          "color": "orangeDark",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              145,
+              148
+            ],
+            [
+              213,
+              148
+            ]
+          ],
+          "color": "orangeDark",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              144,
+              149
+            ],
+            [
+              213,
+              149
+            ]
+          ],
+          "color": "orangeHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              177,
+              143
+            ],
+            [
+              177,
+              153
+            ]
+          ],
+          "color": "orangeHi",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              130,
+              158
+            ],
+            [
+              229,
+              158
+            ],
+            [
+              232,
+              161
+            ],
+            [
+              126,
+              161
+            ]
+          ],
+          "color": "coralLight"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              131,
+              158
+            ],
+            [
+              228,
+              158
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "name": "sparse-safety-net",
+      "operations": [
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              134,
+              132
+            ],
+            [
+              134,
+              120
+            ]
+          ],
+          "color": "metalDark",
+          "width": 3
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              216,
+              133
+            ],
+            [
+              216,
+              120
+            ]
+          ],
+          "color": "metalDark",
+          "width": 3
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              133,
+              121
+            ],
+            [
+              133,
+              132
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              215,
+              121
+            ],
+            [
+              215,
+              132
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              134,
+              121
+            ],
+            [
+              151,
+              126
+            ],
+            [
+              193,
+              126
+            ],
+            [
+              216,
+              121
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              135,
+              125
+            ],
+            [
+              152,
+              130
+            ],
+            [
+              193,
+              130
+            ],
+            [
+              215,
+              125
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              136,
+              129
+            ],
+            [
+              153,
+              134
+            ],
+            [
+              193,
+              134
+            ],
+            [
+              214,
+              129
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              147,
+              125
+            ],
+            [
+              149,
+              129
+            ],
+            [
+              151,
+              133
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              164,
+              126
+            ],
+            [
+              164,
+              134
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              183,
+              126
+            ],
+            [
+              183,
+              134
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              202,
+              124
+            ],
+            [
+              200,
+              129
+            ],
+            [
+              198,
+              133
+            ]
+          ],
+          "color": "cream",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "name": "presenter-native-silhouette",
+      "operations": [
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            77,
+            148,
+            100,
+            154
+          ],
+          "color": "shadow"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              80,
+              131
+            ],
+            [
+              87,
+              131
+            ],
+            [
+              86,
+              149
+            ],
+            [
+              81,
+              149
+            ]
+          ],
+          "color": "skin"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              91,
+              132
+            ],
+            [
+              97,
+              131
+            ],
+            [
+              96,
+              149
+            ],
+            [
+              92,
+              149
+            ]
+          ],
+          "color": "skin"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              81,
+              135
+            ],
+            [
+              81,
+              147
+            ]
+          ],
+          "color": "skinShade",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              92,
+              136
+            ],
+            [
+              92,
+              147
+            ]
+          ],
+          "color": "skinShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              80,
+              148
+            ],
+            [
+              86,
+              148
+            ],
+            [
+              88,
+              151
+            ],
+            [
+              79,
+              151
+            ]
+          ],
+          "color": "slateDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              92,
+              148
+            ],
+            [
+              97,
+              148
+            ],
+            [
+              100,
+              151
+            ],
+            [
+              91,
+              151
+            ]
+          ],
+          "color": "slateDark"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              80,
+              151
+            ],
+            [
+              88,
+              151
+            ]
+          ],
+          "color": "metalDark",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              92,
+              151
+            ],
+            [
+              100,
+              151
+            ]
+          ],
+          "color": "metalDark",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              79,
+              117
+            ],
+            [
+              95,
+              117
+            ],
+            [
+              97,
+              134
+            ],
+            [
+              79,
+              134
+            ]
+          ],
+          "color": "slateDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              80,
+              118
+            ],
+            [
+              93,
+              118
+            ],
+            [
+              95,
+              132
+            ],
+            [
+              80,
+              132
+            ]
+          ],
+          "color": "slate"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              79,
+              133
+            ],
+            [
+              95,
+              133
+            ]
+          ],
+          "color": "slateHi",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              77,
+              102
+            ],
+            [
+              83,
+              99
+            ],
+            [
+              92,
+              100
+            ],
+            [
+              98,
+              108
+            ],
+            [
+              96,
+              122
+            ],
+            [
+              82,
+              123
+            ],
+            [
+              76,
+              116
+            ]
+          ],
+          "color": "slateDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              79,
+              103
+            ],
+            [
+              84,
+              101
+            ],
+            [
+              91,
+              101
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              93,
+              121
+            ],
+            [
+              82,
+              121
+            ],
+            [
+              78,
+              115
+            ]
+          ],
+          "color": "slate"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              84,
+              100
+            ],
+            [
+              89,
+              101
+            ],
+            [
+              89,
+              110
+            ],
+            [
+              85,
+              107
+            ]
+          ],
+          "color": "coralLight"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              81,
+              103
+            ],
+            [
+              84,
+              101
+            ],
+            [
+              86,
+              109
+            ],
+            [
+              82,
+              107
+            ]
+          ],
+          "color": "slateHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              93,
+              105
+            ],
+            [
+              96,
+              103
+            ],
+            [
+              101,
+              108
+            ],
+            [
+              108,
+              105
+            ],
+            [
+              110,
+              108
+            ],
+            [
+              100,
+              113
+            ],
+            [
+              95,
+              111
+            ]
+          ],
+          "color": "slateDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              95,
+              105
+            ],
+            [
+              100,
+              109
+            ],
+            [
+              107,
+              106
+            ],
+            [
+              108,
+              108
+            ],
+            [
+              100,
+              111
+            ],
+            [
+              96,
+              109
+            ]
+          ],
+          "color": "slateHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              107,
+              105
+            ],
+            [
+              110,
+              102
+            ],
+            [
+              112,
+              103
+            ],
+            [
+              111,
+              105
+            ],
+            [
+              115,
+              105
+            ],
+            [
+              115,
+              107
+            ],
+            [
+              109,
+              109
+            ],
+            [
+              107,
+              108
+            ]
+          ],
+          "color": "skin"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              78,
+              107
+            ],
+            [
+              80,
+              107
+            ],
+            [
+              82,
+              115
+            ],
+            [
+              88,
+              115
+            ],
+            [
+              88,
+              119
+            ],
+            [
+              80,
+              119
+            ],
+            [
+              76,
+              112
+            ]
+          ],
+          "color": "slateDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              78,
+              108
+            ],
+            [
+              80,
+              115
+            ],
+            [
+              86,
+              116
+            ],
+            [
+              86,
+              118
+            ],
+            [
+              80,
+              117
+            ],
+            [
+              77,
+              112
+            ]
+          ],
+          "color": "slateHi"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            85,
+            115,
+            89,
+            118
+          ],
+          "color": "skin"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            84,
+            96,
+            89,
+            102
+          ],
+          "color": "skinShade"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              80,
+              90
+            ],
+            [
+              83,
+              86
+            ],
+            [
+              91,
+              87
+            ],
+            [
+              94,
+              92
+            ],
+            [
+              92,
+              98
+            ],
+            [
+              85,
+              100
+            ],
+            [
+              80,
+              96
+            ]
+          ],
+          "color": "hairDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              79,
+              88
+            ],
+            [
+              83,
+              85
+            ],
+            [
+              90,
+              85
+            ],
+            [
+              94,
+              89
+            ],
+            [
+              93,
+              96
+            ],
+            [
+              89,
+              98
+            ],
+            [
+              80,
+              97
+            ],
+            [
+              77,
+              94
+            ]
+          ],
+          "color": "hair"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              81,
+              87
+            ],
+            [
+              88,
+              86
+            ],
+            [
+              91,
+              88
+            ],
+            [
+              84,
+              89
+            ],
+            [
+              82,
+              93
+            ],
+            [
+              79,
+              93
+            ]
+          ],
+          "color": "hairHi"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              85,
+              90
+            ],
+            [
+              91,
+              89
+            ],
+            [
+              92,
+              94
+            ],
+            [
+              94,
+              95
+            ],
+            [
+              91,
+              98
+            ],
+            [
+              85,
+              97
+            ],
+            [
+              83,
+              94
+            ]
+          ],
+          "color": "skin"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            90,
+            92,
+            90,
+            93
+          ],
+          "color": "hairDark"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            86,
+            96,
+            88,
+            96
+          ],
+          "color": "skinShade"
+        }
+      ]
+    },
+    {
+      "name": "microphone-and-green-console",
+      "operations": [
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            98,
+            155,
+            113,
+            158
+          ],
+          "color": "metalDark"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              105,
+              154
+            ],
+            [
+              105,
+              115
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              104,
+              153
+            ],
+            [
+              104,
+              115
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            102,
+            111,
+            108,
+            119
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            103,
+            112,
+            107,
+            118
+          ],
+          "color": "metal"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              103,
+              112
+            ],
+            [
+              107,
+              112
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              104,
+              113
+            ],
+            [
+              106,
+              113
+            ]
+          ],
+          "color": "metalDark",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              104,
+              116
+            ],
+            [
+              106,
+              116
+            ]
+          ],
+          "color": "metalDark",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              227,
+              132
+            ],
+            [
+              246,
+              132
+            ],
+            [
+              250,
+              142
+            ],
+            [
+              225,
+              142
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              228,
+              133
+            ],
+            [
+              244,
+              133
+            ],
+            [
+              247,
+              139
+            ],
+            [
+              227,
+              139
+            ]
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            230,
+            135,
+            235,
+            137
+          ],
+          "color": "greenLamp"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            240,
+            135,
+            243,
+            138
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              238,
+              134
+            ],
+            [
+              237,
+              138
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              231,
+              143
+            ],
+            [
+              243,
+              143
+            ],
+            [
+              245,
+              154
+            ],
+            [
+              230,
+              154
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              231,
+              143
+            ],
+            [
+              242,
+              143
+            ]
+          ],
+          "color": "teal3",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "name": "foreground-camera-and-cart",
+      "operations": [
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            12,
+            184,
+            20,
+            189
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            37,
+            181,
+            45,
+            187
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            15,
+            185,
+            17,
+            187
+          ],
+          "color": "metal"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            40,
+            182,
+            42,
+            185
+          ],
+          "color": "metal"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              8,
+              181
+            ],
+            [
+              33,
+              176
+            ],
+            [
+              49,
+              181
+            ],
+            [
+              24,
+              187
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              10,
+              180
+            ],
+            [
+              33,
+              176
+            ],
+            [
+              47,
+              180
+            ],
+            [
+              24,
+              185
+            ]
+          ],
+          "color": "teal2"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              12,
+              180
+            ],
+            [
+              33,
+              177
+            ],
+            [
+              44,
+              180
+            ]
+          ],
+          "color": "teal4",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              22,
+              178
+            ],
+            [
+              22,
+              135
+            ]
+          ],
+          "color": "ink",
+          "width": 5
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              21,
+              177
+            ],
+            [
+              21,
+              136
+            ]
+          ],
+          "color": "metalLight",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              31,
+              177
+            ],
+            [
+              31,
+              139
+            ]
+          ],
+          "color": "metalDark",
+          "width": 3
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              30,
+              176
+            ],
+            [
+              30,
+              140
+            ]
+          ],
+          "color": "metalLight",
+          "width": 1
+        },
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            11,
+            133,
+            40,
+            139
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "ellipse",
+          "coordinates": [
+            13,
+            132,
+            38,
+            137
+          ],
+          "color": "metal"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              28,
+              135
+            ],
+            [
+              28,
+              130
+            ]
+          ],
+          "color": "metalDark",
+          "width": 3
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            9,
+            107,
+            50,
+            132
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            10,
+            108,
+            49,
+            131
+          ],
+          "color": "metal"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              10,
+              108
+            ],
+            [
+              49,
+              108
+            ]
+          ],
+          "color": "metalHi",
+          "width": 1
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            11,
+            109,
+            48,
+            128
+          ],
+          "color": "creamShade"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            12,
+            110,
+            46,
+            112
+          ],
+          "color": "cream"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            14,
+            115,
+            23,
+            124
+          ],
+          "color": "teal0"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              27,
+              115
+            ],
+            [
+              42,
+              115
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              27,
+              120
+            ],
+            [
+              42,
+              120
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              27,
+              125
+            ],
+            [
+              40,
+              125
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              50,
+              112
+            ],
+            [
+              59,
+              115
+            ],
+            [
+              59,
+              126
+            ],
+            [
+              50,
+              129
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              51,
+              114
+            ],
+            [
+              56,
+              116
+            ],
+            [
+              56,
+              124
+            ],
+            [
+              51,
+              126
+            ]
+          ],
+          "color": "teal1"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            24,
+            102,
+            34,
+            106
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "rectangle",
+          "coordinates": [
+            26,
+            102,
+            32,
+            105
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              27,
+              102
+            ],
+            [
+              31,
+              102
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              12,
+              134
+            ],
+            [
+              7,
+              139
+            ],
+            [
+              7,
+              170
+            ],
+            [
+              13,
+              174
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "name": "floor-joints-and-audience-seats",
+      "operations": [
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              52,
+              180
+            ],
+            [
+              39,
+              196
+            ]
+          ],
+          "color": "tile",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              99,
+              180
+            ],
+            [
+              93,
+              196
+            ]
+          ],
+          "color": "tile",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              152,
+              180
+            ],
+            [
+              152,
+              196
+            ]
+          ],
+          "color": "tile",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              204,
+              180
+            ],
+            [
+              212,
+              196
+            ]
+          ],
+          "color": "tile",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              253,
+              180
+            ],
+            [
+              274,
+              196
+            ]
+          ],
+          "color": "tile",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              31,
+              188
+            ],
+            [
+              281,
+              188
+            ]
+          ],
+          "color": "tile",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              268,
+              164
+            ],
+            [
+              294,
+              159
+            ],
+            [
+              302,
+              166
+            ],
+            [
+              298,
+              189
+            ],
+            [
+              276,
+              193
+            ],
+            [
+              264,
+              184
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              273,
+              164
+            ],
+            [
+              293,
+              161
+            ],
+            [
+              299,
+              165
+            ],
+            [
+              295,
+              183
+            ],
+            [
+              274,
+              187
+            ],
+            [
+              268,
+              182
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              275,
+              165
+            ],
+            [
+              293,
+              163
+            ],
+            [
+              296,
+              166
+            ],
+            [
+              293,
+              181
+            ],
+            [
+              275,
+              185
+            ],
+            [
+              271,
+              180
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              276,
+              164
+            ],
+            [
+              292,
+              162
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              268,
+              180
+            ],
+            [
+              265,
+              179
+            ],
+            [
+              265,
+              188
+            ],
+            [
+              274,
+              192
+            ]
+          ],
+          "color": "creamShade",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              294,
+              183
+            ],
+            [
+              300,
+              183
+            ],
+            [
+              300,
+              190
+            ],
+            [
+              295,
+              192
+            ]
+          ],
+          "color": "metalLight",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              275,
+              191
+            ],
+            [
+              273,
+              196
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              295,
+              190
+            ],
+            [
+              297,
+              196
+            ]
+          ],
+          "color": "metalDark",
+          "width": 2
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              -2,
+              213
+            ],
+            [
+              34,
+              213
+            ],
+            [
+              36,
+              216
+            ],
+            [
+              0,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              0,
+              198
+            ],
+            [
+              31,
+              198
+            ],
+            [
+              34,
+              201
+            ],
+            [
+              32,
+              213
+            ],
+            [
+              -2,
+              213
+            ],
+            [
+              -2,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              1,
+              199
+            ],
+            [
+              30,
+              199
+            ],
+            [
+              32,
+              201
+            ],
+            [
+              30,
+              211
+            ],
+            [
+              0,
+              211
+            ],
+            [
+              0,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              0,
+              199
+            ],
+            [
+              30,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              -2,
+              201
+            ],
+            [
+              -2,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              38,
+              213
+            ],
+            [
+              74,
+              213
+            ],
+            [
+              76,
+              216
+            ],
+            [
+              40,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              40,
+              198
+            ],
+            [
+              71,
+              198
+            ],
+            [
+              74,
+              201
+            ],
+            [
+              72,
+              213
+            ],
+            [
+              38,
+              213
+            ],
+            [
+              38,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              41,
+              199
+            ],
+            [
+              70,
+              199
+            ],
+            [
+              72,
+              201
+            ],
+            [
+              70,
+              211
+            ],
+            [
+              40,
+              211
+            ],
+            [
+              40,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              40,
+              199
+            ],
+            [
+              70,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              38,
+              201
+            ],
+            [
+              38,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              79,
+              213
+            ],
+            [
+              115,
+              213
+            ],
+            [
+              117,
+              216
+            ],
+            [
+              81,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              81,
+              198
+            ],
+            [
+              112,
+              198
+            ],
+            [
+              115,
+              201
+            ],
+            [
+              113,
+              213
+            ],
+            [
+              79,
+              213
+            ],
+            [
+              79,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              82,
+              199
+            ],
+            [
+              111,
+              199
+            ],
+            [
+              113,
+              201
+            ],
+            [
+              111,
+              211
+            ],
+            [
+              81,
+              211
+            ],
+            [
+              81,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              81,
+              199
+            ],
+            [
+              111,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              79,
+              201
+            ],
+            [
+              79,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              120,
+              213
+            ],
+            [
+              156,
+              213
+            ],
+            [
+              158,
+              216
+            ],
+            [
+              122,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              122,
+              198
+            ],
+            [
+              153,
+              198
+            ],
+            [
+              156,
+              201
+            ],
+            [
+              154,
+              213
+            ],
+            [
+              120,
+              213
+            ],
+            [
+              120,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              123,
+              199
+            ],
+            [
+              152,
+              199
+            ],
+            [
+              154,
+              201
+            ],
+            [
+              152,
+              211
+            ],
+            [
+              122,
+              211
+            ],
+            [
+              122,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              122,
+              199
+            ],
+            [
+              152,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              120,
+              201
+            ],
+            [
+              120,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              161,
+              213
+            ],
+            [
+              197,
+              213
+            ],
+            [
+              199,
+              216
+            ],
+            [
+              163,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              163,
+              198
+            ],
+            [
+              194,
+              198
+            ],
+            [
+              197,
+              201
+            ],
+            [
+              195,
+              213
+            ],
+            [
+              161,
+              213
+            ],
+            [
+              161,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              164,
+              199
+            ],
+            [
+              193,
+              199
+            ],
+            [
+              195,
+              201
+            ],
+            [
+              193,
+              211
+            ],
+            [
+              163,
+              211
+            ],
+            [
+              163,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              163,
+              199
+            ],
+            [
+              193,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              161,
+              201
+            ],
+            [
+              161,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              202,
+              213
+            ],
+            [
+              238,
+              213
+            ],
+            [
+              240,
+              216
+            ],
+            [
+              204,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              204,
+              198
+            ],
+            [
+              235,
+              198
+            ],
+            [
+              238,
+              201
+            ],
+            [
+              236,
+              213
+            ],
+            [
+              202,
+              213
+            ],
+            [
+              202,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              205,
+              199
+            ],
+            [
+              234,
+              199
+            ],
+            [
+              236,
+              201
+            ],
+            [
+              234,
+              211
+            ],
+            [
+              204,
+              211
+            ],
+            [
+              204,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              204,
+              199
+            ],
+            [
+              234,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              202,
+              201
+            ],
+            [
+              202,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              243,
+              213
+            ],
+            [
+              279,
+              213
+            ],
+            [
+              281,
+              216
+            ],
+            [
+              245,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              245,
+              198
+            ],
+            [
+              276,
+              198
+            ],
+            [
+              279,
+              201
+            ],
+            [
+              277,
+              213
+            ],
+            [
+              243,
+              213
+            ],
+            [
+              243,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              246,
+              199
+            ],
+            [
+              275,
+              199
+            ],
+            [
+              277,
+              201
+            ],
+            [
+              275,
+              211
+            ],
+            [
+              245,
+              211
+            ],
+            [
+              245,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              245,
+              199
+            ],
+            [
+              275,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              243,
+              201
+            ],
+            [
+              243,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              284,
+              213
+            ],
+            [
+              320,
+              213
+            ],
+            [
+              322,
+              216
+            ],
+            [
+              286,
+              216
+            ]
+          ],
+          "color": "ink"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              286,
+              198
+            ],
+            [
+              317,
+              198
+            ],
+            [
+              320,
+              201
+            ],
+            [
+              318,
+              213
+            ],
+            [
+              284,
+              213
+            ],
+            [
+              284,
+              201
+            ]
+          ],
+          "color": "coralDark"
+        },
+        {
+          "kind": "polygon",
+          "coordinates": [
+            [
+              287,
+              199
+            ],
+            [
+              316,
+              199
+            ],
+            [
+              318,
+              201
+            ],
+            [
+              316,
+              211
+            ],
+            [
+              286,
+              211
+            ],
+            [
+              286,
+              201
+            ]
+          ],
+          "color": "coral"
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              286,
+              199
+            ],
+            [
+              316,
+              199
+            ]
+          ],
+          "color": "coralHi",
+          "width": 1
+        },
+        {
+          "kind": "line",
+          "coordinates": [
+            [
+              284,
+              201
+            ],
+            [
+              284,
+              213
+            ]
+          ],
+          "color": "creamShade",
+          "width": 1
+        }
+      ]
+    }
+  ]
+}

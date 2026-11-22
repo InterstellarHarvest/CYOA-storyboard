@@ -1,0 +1,62 @@
+{
+  "canonical": [
+    {
+      "log": "canonical.txt",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "log": "sync.txt",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "log": "smoke.txt",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "log": "chapter3-narrative.txt",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "log": "chapter3-briefs.txt",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "log": "chapter3-prepare.txt",
+      "exitCode": 0,
+      "status": "PASS"
+    }
+  ],
+  "imageAndPreservation": {
+    "status": "PASS",
+    "report": "image-and-preservation.json",
+    "checks": 110
+  },
+  "galleryBrowser": {
+    "status": "PASS",
+    "checks": 22,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "report": "gallery-browser.json"
+  },
+  "selectedArtworkBrowser": {
+    "status": "PASS",
+    "checks": 60,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "report": "selected-artwork-browser.txt"
+  },
+  "notRun": [
+    "Live public Pages deployment",
+    "Gameplay/engine runtime QA",
+    "Human user study"
+  ]
+}

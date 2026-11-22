@@ -1,0 +1,595 @@
+{
+  "schema": "out-of-order-native-pilot-review-v1",
+  "date": "2026-11-21",
+  "timezone": "America/New_York",
+  "baseCommit": "d9b6b91604b72115c5402253f00924665e957727",
+  "reviewBranch": "art/ch3-native-pilot-20261121",
+  "candidateStatus": "generated/unselected",
+  "scope": [
+    "scenes:pavilion_reboot/backstage",
+    "scenes:pavilion_reboot/locomotion_stage"
+  ],
+  "notAuthorized": [
+    "Paper Emergency",
+    "canonical replacement or registration",
+    "approval or reapproval",
+    "gameplay integration",
+    "public Pages deployment"
+  ],
+  "renderMethod": {
+    "canvas": [
+      314,
+      206
+    ],
+    "renderer": "Python/Pillow integer native-grid primitives, no antialiasing",
+    "source": "reconstruct.py plus sources/*/scene.json and semantic RGBA layers",
+    "sourceImageReadsInRenderer": 0,
+    "nativeResizeOperations": 0,
+    "previewScaling": "exact 4x NEAREST; analytical crops exact 8x NEAREST",
+    "filtersOrQuantization": false,
+    "provenanceStatement": "The candidate pixels are reproducibly constructed directly on the native canvas from an explicit drawing program. This is coordinate-authored procedural artwork, not a claim of hand-painted pixel-by-pixel authorship. Native construction is supported by the source and rebuild hash check, not dimensions alone. Imagegen large conceptual references have unresolved original native-grid authorship and are not resized, sampled, traced automatically or composited into candidate pixels. Whether the procedural result meets the artistic pixel-art standard remains Nate's visual decision."
+  },
+  "generation": {
+    "mode": "built-in image_gen",
+    "intent": "large conceptual references only",
+    "promptFile": "generation-prompts.json",
+    "finalCandidateGeneration": "independent explicit native-grid drawing; no generated raster input"
+  },
+  "candidates": [
+    {
+      "id": "CH3-PILOT-backstage-v01",
+      "status": "generated",
+      "selection": "unselected",
+      "catalogueKey": "scenes:pavilion_reboot/backstage",
+      "file": "candidates/CH3-PILOT-backstage-v01.png",
+      "zoom": "previews/CH3-PILOT-backstage-v01-4x.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 45,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "6af2ccb3ae86b7fc6ae89f25aa521f9db3e58dc7396e41c067079360493a9b59",
+      "approved": {
+        "key": "scenes:pavilion_reboot/backstage",
+        "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+        "registryFile": "assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png",
+        "registeredSource": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch04-20261120",
+          "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png"
+        },
+        "file": "approved/approved-backstage.png",
+        "width": 314,
+        "height": 206,
+        "mode": "RGB",
+        "uniqueRGB": 25215,
+        "singleUseColorPixelPercent": 26.535,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+        "zoom": "previews/approved-backstage-4x.png"
+      },
+      "conceptReference": {
+        "file": "concept-references/backstage-large-reference.png",
+        "width": 1548,
+        "height": 1016,
+        "mode": "RGB",
+        "uniqueRGB": 132530,
+        "singleUseColorPixelPercent": 4.852,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "sha256": "3cde251e50bf3cd11e3a733b81f8ec46d77aed96525401a1abec7032c6104deb"
+      },
+      "description": {
+        "key": "scenes:pavilion_reboot/backstage",
+        "title": "Backstage",
+        "reconstruction": "Rebuilt the room, floor, beams, scenery, cable loops, crate, sandwich, carton, papers, overturned podium, open exit and attached clapper from explicit native polygons/lines. Concrete uses broad planes rather than stipple. EXIT is a clear native bitmap sign above the doorway; the approved room had its small sign on the door leaf. The clapper retains cabinet, fixed plate, horizontal shaft, rigid supports and cream paddle linkages. It is an attached mechanism, with no face or walking stance.",
+        "limits": "The treatment is deliberately flatter and more diagrammatic than Chapter 2. The plain exit sign was moved to the lintel for legibility, which Nate should assess against the composition lock. Scenery/corridor geography is retained, but precise prop contours and material shadows are reinterpretations. Long carton labels are left to the narration; the sandwich and overturned podium may still need stronger silhouettes. The clapper is mechanically connected but its two paddles remain a silhouette to evaluate for accidental anthropomorphism.",
+        "reference": "scenes:biology_park/tour_tram",
+        "regions": {
+          "cables": [
+            23,
+            0,
+            110,
+            80
+          ],
+          "props": [
+            0,
+            104,
+            145,
+            205
+          ],
+          "clapper": [
+            234,
+            83,
+            292,
+            175
+          ],
+          "exit": [
+            136,
+            47,
+            206,
+            136
+          ]
+        }
+      },
+      "closeups": [
+        {
+          "label": "cables",
+          "box": [
+            23,
+            0,
+            110,
+            80
+          ],
+          "scale": 8,
+          "approved": "closeups/backstage-cables-approved-8x.png",
+          "candidate": "closeups/backstage-cables-candidate-8x.png"
+        },
+        {
+          "label": "props",
+          "box": [
+            0,
+            104,
+            145,
+            205
+          ],
+          "scale": 8,
+          "approved": "closeups/backstage-props-approved-8x.png",
+          "candidate": "closeups/backstage-props-candidate-8x.png"
+        },
+        {
+          "label": "clapper",
+          "box": [
+            234,
+            83,
+            292,
+            175
+          ],
+          "scale": 8,
+          "approved": "closeups/backstage-clapper-approved-8x.png",
+          "candidate": "closeups/backstage-clapper-candidate-8x.png"
+        },
+        {
+          "label": "exit",
+          "box": [
+            136,
+            47,
+            206,
+            136
+          ],
+          "scale": 8,
+          "approved": "closeups/backstage-exit-approved-8x.png",
+          "candidate": "closeups/backstage-exit-candidate-8x.png"
+        }
+      ]
+    },
+    {
+      "id": "CH3-PILOT-locomotion-v01",
+      "status": "generated",
+      "selection": "unselected",
+      "catalogueKey": "scenes:pavilion_reboot/locomotion_stage",
+      "file": "candidates/CH3-PILOT-locomotion-v01.png",
+      "zoom": "previews/CH3-PILOT-locomotion-v01-4x.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 36,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "1c944c9aabc6aa5fd9288dd454fadb49b1d327d0d08a337d59464f65757a36d0",
+      "approved": {
+        "key": "scenes:pavilion_reboot/locomotion_stage",
+        "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+        "registryFile": "assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png",
+        "registeredSource": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch03-20261119",
+          "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C03-locomotion-v04.png"
+        },
+        "file": "approved/approved-locomotion.png",
+        "width": 314,
+        "height": 206,
+        "mode": "RGB",
+        "uniqueRGB": 16885,
+        "singleUseColorPixelPercent": 16.502,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+        "zoom": "previews/approved-locomotion-4x.png"
+      },
+      "conceptReference": {
+        "file": "concept-references/locomotion-large-reference.png",
+        "width": 1548,
+        "height": 1016,
+        "mode": "RGB",
+        "uniqueRGB": 117735,
+        "singleUseColorPixelPercent": 3.877,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "sha256": "764b68f85f0927c70f610ef1ab6195d596d1b6e64010885576a16ed1a197a7ed"
+      },
+      "description": {
+        "key": "scenes:pavilion_reboot/locomotion_stage",
+        "title": "Locomotion Stage",
+        "reconstruction": "Rebuilt the ceiling bands, walls, curtain folds, marked room elements, floor, audience seats, camera cart, microphone, timer and console on the native grid. The moving belt is left, the padded pit is center, a cream stationary landing leads behind/right toward the existing opening, and a sparse suspended net spans the pit. The net has three crosswise ropes and four depth strands with corner attachments. The presenter uses auburn hair, coral neckline, slate costume and one broad open-hand gesture; no portrait resampling or individual fingers. PEOPLE'S PAVILION and 30 are preserved semantically with newly drawn native glyphs.",
+        "limits": "The pit and net are a clearer mechanical interpretation, not a verified architectural floor plan. Net contact/height, the narrow stationary landing and console overlap need Nate's spatial reading. The presenter is intentionally economical and less expressive than her portrait; her hand and feet may look stiff. The room is flatter than Chapter 2, curtain lighting is simplified, and new lettering differs in shape from the selected art despite preserving its wording and numeral. No animation demonstrates actual belt movement.",
+        "reference": "scenes:biology_park/control_tower",
+        "regions": {
+          "machine-and-net": [
+            59,
+            119,
+            253,
+            166
+          ],
+          "presenter": [
+            72,
+            82,
+            116,
+            155
+          ],
+          "countdown": [
+            126,
+            66,
+            191,
+            124
+          ]
+        }
+      },
+      "closeups": [
+        {
+          "label": "machine-and-net",
+          "box": [
+            59,
+            119,
+            253,
+            166
+          ],
+          "scale": 8,
+          "approved": "closeups/locomotion-machine-and-net-approved-8x.png",
+          "candidate": "closeups/locomotion-machine-and-net-candidate-8x.png"
+        },
+        {
+          "label": "presenter",
+          "box": [
+            72,
+            82,
+            116,
+            155
+          ],
+          "scale": 8,
+          "approved": "closeups/locomotion-presenter-approved-8x.png",
+          "candidate": "closeups/locomotion-presenter-candidate-8x.png"
+        },
+        {
+          "label": "countdown",
+          "box": [
+            126,
+            66,
+            191,
+            124
+          ],
+          "scale": 8,
+          "approved": "closeups/locomotion-countdown-approved-8x.png",
+          "candidate": "closeups/locomotion-countdown-candidate-8x.png"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "key": "scenes:exposition/reception",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/conference_hall/reception/reception_scene.png"
+      },
+      "file": "references/reception.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 868,
+      "singleUseColorPixelPercent": 0.22,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+      "zoom": "previews/reception-4x.png"
+    },
+    {
+      "key": "portraits:receptionist:default#layers:background",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/portraits/receptionist/reception_background.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/reception_background.png"
+      },
+      "file": "references/reception-background.png",
+      "width": 564,
+      "height": 278,
+      "mode": "RGB",
+      "uniqueRGB": 25821,
+      "singleUseColorPixelPercent": 8.418,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74"
+    },
+    {
+      "key": "portraits:receptionist:default#layers:foreground",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/receptionist_idle.png"
+      },
+      "file": "references/reception-foreground.png",
+      "width": 564,
+      "height": 278,
+      "mode": "RGBA",
+      "uniqueRGB": 11608,
+      "singleUseColorPixelPercent": 5.015,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d"
+    },
+    {
+      "key": "scenes:biology_park/conveniences_bureau",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      },
+      "file": "references/conveniences_bureau.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 62,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "zoom": "previews/conveniences_bureau-4x.png"
+    },
+    {
+      "key": "scenes:biology_park/control_tower",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      },
+      "file": "references/control_tower.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 64,
+      "singleUseColorPixelPercent": 0.002,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "zoom": "previews/control_tower-4x.png"
+    },
+    {
+      "key": "scenes:biology_park/spore_garden",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/biology_park/spore_garden.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/spore_garden.png"
+      },
+      "file": "references/spore_garden.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 64,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "zoom": "previews/spore_garden-4x.png"
+    },
+    {
+      "key": "scenes:biology_park/tour_tram",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/biology_park/tour_tram.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/tour_tram.png"
+      },
+      "file": "references/tour_tram.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 64,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57",
+      "zoom": "previews/tour_tram-4x.png"
+    },
+    {
+      "key": "scenes:biology_park/moving_forest",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/biology_park/moving_forest.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/moving_forest.png"
+      },
+      "file": "references/moving_forest.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 64,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "5a1f61ab9c8a1c7fac129683df09da9bae48a0f22adb9012d98183e0d10f5c81",
+      "zoom": "previews/moving_forest-4x.png"
+    },
+    {
+      "key": "scenes:biology_park/groundskeeper",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/biology_park/groundskeeper.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/groundskeeper.png"
+      },
+      "file": "references/groundskeeper.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 64,
+      "singleUseColorPixelPercent": 0.0,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "5f3ff412dff5b710bfbbe7a33c6f4b4de0ee815208b7854c393b546212371e95",
+      "zoom": "previews/groundskeeper-4x.png"
+    },
+    {
+      "key": "scenes:house_of_tomorrow/foyer",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/house_of_tomorrow/foyer.png"
+      },
+      "file": "references/chapter1-foyer.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 210,
+      "singleUseColorPixelPercent": 0.036,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607",
+      "zoom": "previews/chapter1-foyer-4x.png"
+    },
+    {
+      "key": "scenes:pavilion_reboot/human_verification_stage",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-A04-verification-continuity-v04.png"
+      },
+      "file": "references/continuity-human_verification_stage.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 16172,
+      "singleUseColorPixelPercent": 15.645,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca",
+      "zoom": "previews/continuity-human_verification_stage-4x.png"
+    },
+    {
+      "key": "scenes:pavilion_reboot/urgency_stage",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C01-urgency-v04.png"
+      },
+      "file": "references/continuity-urgency_stage.png",
+      "width": 314,
+      "height": 206,
+      "mode": "RGB",
+      "uniqueRGB": 16801,
+      "singleUseColorPixelPercent": 16.57,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c",
+      "zoom": "previews/continuity-urgency_stage-4x.png"
+    },
+    {
+      "key": "portraits:pavilion_presenter:idle",
+      "snapshotCommit": "d9b6b91604b72115c5402253f00924665e957727",
+      "registryFile": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "registeredSource": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      },
+      "file": "references/presenter-idle.png",
+      "width": 564,
+      "height": 278,
+      "mode": "RGBA",
+      "uniqueRGB": 6951,
+      "singleUseColorPixelPercent": 3.266,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    }
+  ],
+  "preservedTrackedFileCount": 493
+}
