@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-requested wedding-minimization pass. Remaining wedding involvement is superficial: venue decor, staff misidentifications, auction/reception bystanders, optional ring as access credential, organizer unlocking a restroom route. No family/wedding tasks or explanatory visits. Reframed flood/shutoff review stops around toilets and park departures. Seven editorial stops remain.",
+    "reviewCheckpoint": "2026-11-21: owner-approved crane-grip survival now continues to an authored upper-salvage scene with exactly three choices (B clerk lavatory directions, C pipe hatch, D loading dock). Former manifest inspection is retired. Six editorial stops remain; four fatal and three park-bound nonfatal endings are unchanged.",
     "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -84,6 +84,10 @@
     "approvedSeashells": {
       "status": "owner-approved",
       "note": "Three shells on a counter, no other fixture. Female-intuition instruction dead end, missing toilet complaint electronic record, second attempt denied by circular certification, B appeal or C leave. Removed practical demonstration request. No further repeat seashell attempts, no item gained, no real toilet, and surviving exits retain pending fee."
+    },
+    "approvedUpperSalvage": {
+      "status": "owner-approved",
+      "note": "B/C/D only; clerk directions connect to hotel_staff_lavatory_storage, hatch to hotel_pipe_tunnel, service stairs to hotel_maintenance_dock_exit. Both upper-salvage flags are granted, no second d6, no wedding errands."
     }
   },
   "nodes": {
@@ -1630,7 +1634,7 @@
           "id": "stall_ride_upper_salvage",
           "kind": "continue",
           "text": "CONTINUE",
-          "to": "wip_stall_crane_ride"
+          "to": "hotel_upper_salvage_arrival"
         }
       ]
     },
@@ -1657,12 +1661,6 @@
       },
       "endingArt": "grand_bellevue/final_occupancy",
       "notes": "Owner-approved fatal lead-in and popup copy. Planned aftermath illustration only: broken porcelain toilet beneath the raised empty stall, scattered auction tags, perhaps an abandoned shoe. Do not show the player's face; no death art generated yet. Engine popup uses the standard RETRY/CHECKPOINT/EXIT controls when integrated."
-    },
-    "wip_stall_crane_ride": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/upper_salvage",
-      "text": "DRAFT REVIEW STOP — Survive the d6 grip check and ride the still-rising stall into upper salvage; choose the next way out without automatically finding a working toilet. This is not a gameplay ending.",
-      "choices": []
     },
     "wip_stall_wedding_walk": {
       "mode": "narrative",
@@ -4919,6 +4917,155 @@
       "scene": "grand_bellevue/service_passage",
       "text": "DRAFT REVIEW STOP — With the main water valve closed, every toilet in the hotel may be unusable. Develop a short bathroom consequence and a service/park exit, not a wedding-shutoff explanation scene.",
       "choices": []
+    },
+    "hotel_upper_salvage_arrival": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/upper_salvage",
+      "speaker": "hotel_salvage_clerk",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_upper_salvage_reached": true,
+          "ch4_stall_survived_crane": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The stall rises through the ceiling hatch. You cling to its frame as the crane carries it into a storage mezzanine above the hotel."
+        },
+        {
+          "desc": "It swings beside dismantled sinks, mirrors, and bathroom partitions. You climb onto the metal walkway."
+        },
+        {
+          "desc": "The toilet is still inside the stall. Its plumbing has been disconnected, and the whole arrangement hangs several feet above the floor."
+        },
+        {
+          "desc": "A salvage clerk approaches with a clipboard."
+        },
+        {
+          "say": "CAN YOU PUT THAT BACK?",
+          "who": "visitor"
+        },
+        {
+          "say": "Which part?",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "THE TOILET!",
+          "who": "visitor"
+        },
+        {
+          "say": "Plumbing isn't included in the lot.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "I JUST WANT TO USE IT!",
+          "who": "visitor"
+        },
+        {
+          "say": "Not while it's suspended. Insurance.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "He checks a box on his clipboard."
+        },
+        {
+          "say": "Occupant successfully removed. Excellent.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "An open maintenance hatch leads toward the pipework. Service stairs descend toward the loading dock. Surely somebody knows where an installed toilet is."
+        }
+      ],
+      "choices": [
+        {
+          "id": "upper_salvage_ask_clerk",
+          "kind": "spoken",
+          "text": "ASK WHERE AN INSTALLED TOILET CAN BE FOUND.",
+          "to": "hotel_upper_salvage_clerk_directions"
+        },
+        {
+          "id": "upper_salvage_hatch",
+          "kind": "action",
+          "text": "ENTER THE MAINTENANCE HATCH.",
+          "to": "hotel_pipe_tunnel"
+        },
+        {
+          "id": "upper_salvage_dock",
+          "kind": "action",
+          "text": "DESCEND THE SERVICE STAIRS TOWARD THE LOADING DOCK.",
+          "to": "hotel_maintenance_dock_exit"
+        }
+      ],
+      "notes": "Owner approved B/C/D only. The manifest-inspection option A is explicitly retired. No new roll, item, or wedding task; crane d6 success is upstream."
+    },
+    "hotel_upper_salvage_clerk_directions": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/upper_salvage",
+      "speaker": "hotel_salvage_clerk",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_upper_salvage_staff_lavatory_clue": true
+        }
+      },
+      "text": [
+        {
+          "say": "WHERE CAN I FIND A TOILET THAT ISN'T BEING SOLD?",
+          "who": "visitor"
+        },
+        {
+          "say": "Installed or operational?",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "BOTH!",
+          "who": "visitor"
+        },
+        {
+          "say": "Ah. That's two different departments.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "He consults his clipboard."
+        },
+        {
+          "say": "There's a staff lavatory one floor down.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "DOES IT WORK?",
+          "who": "visitor"
+        },
+        {
+          "say": "It's still on the floor plan.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "THAT'S NOT WHAT I ASKED.",
+          "who": "visitor"
+        },
+        {
+          "say": "That's all the floor plan can tell you.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "He points toward the service stairs."
+        },
+        {
+          "say": "Second landing. Blue door.",
+          "who": "hotel_salvage_clerk"
+        }
+      ],
+      "choices": [
+        {
+          "id": "upper_clerk_to_staff_lavatory",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_staff_lavatory_storage"
+        }
+      ],
+      "notes": "Short owner-approved exchange. Connects to existing sold-for-storage staff lavatory; no replay of wedding introductions."
     }
   }
 }

@@ -21,10 +21,10 @@
 
 | Check | Result |
 | --- | --- |
-| Story nodes | 118 |
-| Nodes reachable from Chapter 4 entry (including SHOW/USE and d6 outcomes) | 118/118 |
+| Story nodes | 119 |
+| Nodes reachable from Chapter 4 entry (including SHOW/USE and d6 outcomes) | 119/119 |
 | Broken choice/SHOW/USE/d6 targets | 0 |
-| Layout unique placements | 118/118 |
+| Layout unique placements | 119/119 |
 | Fatal endings | 4: FINAL OCCUPANCY, FOLDED FOR CONVENIENCE, PRESSED AND STEAMED, MADE TO MEASURE |
 | Explicit nonfatal park exits | 3: service yard, bridal corridor, bridal lavatory |
 | Missing-item and exhausted dialogue actions | Gated in WIP JSON; future game UI must display disabled/greyed with explanatory subtitles |
@@ -34,17 +34,20 @@ The attached JSON is an **approved narrative draft for review and art prompts**,
 
 ## Remaining editorial stops — Chapter 4 is not yet complete
 
-These seven nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
+These six nodes are still explicitly marked `DRAFT REVIEW STOP` and require one-node-at-a-time story review with Nate:
 
 1. `wip_auctioneer_question` — auctioneer conversation.
 2. `wip_freight_lift` — service-side lift continuation.
-3. `wip_stall_crane_ride` — survive the raised stall into upper salvage.
-4. `wip_stall_wedding_walk` — wedding-corridor walk.
-5. `wip_flooded_hotel_corridor` — displaced water entering the public corridor, with restroom/exit consequences only.
-6. `wip_hotel_water_off` — whole-hotel water shutoff, with restroom/exit consequences only.
-7. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
+3. `wip_stall_wedding_walk` — walking past reception guests into the public corridor; no ceremony duties.
+4. `wip_flooded_hotel_corridor` — displaced water entering the public corridor, with restroom/exit consequences only.
+5. `wip_hotel_water_off` — whole-hotel water shutoff, with restroom/exit consequences only.
+6. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
 
-**Suggested next review:** the stall-crane upper-salvage survival continuation, then the two flood branches; each should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+**Suggested next review:** the other surviving stall route (walking past the reception guests), then the two flood/water-shutoff branches; each should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+
+### Approved subsequent node — Upper Salvage
+
+`wip_stall_crane_ride` is retired and replaced with `hotel_upper_salvage_arrival` plus `hotel_upper_salvage_clerk_directions`. There are exactly three choices: **B** ask the salvage clerk about installed toilets (connect to `hotel_staff_lavatory_storage`); **C** take the maintenance hatch (connect to `hotel_pipe_tunnel`); **D** take the service stairs to the loading dock (connect to `hotel_maintenance_dock_exit`). No manifest-inspection puzzle or extra roll. The previously approved crane d6 and fatal outcome remain unchanged. The clerk's short floor-plan joke is published.
 
 ## Subsequent owner directive — wedding is superficial only
 
