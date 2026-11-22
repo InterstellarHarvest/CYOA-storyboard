@@ -422,3 +422,8 @@ Source: review package `v07-chapter-03-consolidated-quality-review` on `art/ch3-
 - No approval status, preview, production path, narrative or gameplay changes with this record.
 
 **Publication repair in the same PR.** The Pages Batch D staging step compares the 23 approved-source references frozen in the Batch D v01 gallery with the canonical previews. It now admits exactly one recorded later approved replacement: `scenes:pavilion_reboot/paper_emergency`, reference v03 `ac0f7c44…77ba7e` → current v04 `93a48082…26919bc978`. This holds only while the preserved v03 copy above keeps its original hash and the record stays `approved` with a null `assetPath`. The other 22 references stay strict. The frozen galleries are unchanged (`tools/sync/ch3-reference-supersession.mjs`; regression checks `tools/sync/qa-ch3-reference-supersession.mjs`). The deployed Batch B provenance note now names B06 v03 as historical, with v04 as its successor.
+
+
+## Chapter 4 Batch 1 owner approval — 2026-11-22
+
+Nate approves all five unchanged: CH4-01 v05, CH4-02 v05, CH4-03 v08, CH4-04 v07 and CH4-05 v07. All are selected/approved, not integrated. Exact source commit `3463e20bd366390008fa4f71c087ed5f334f3a31`; [completion, hashes, paths and coverage](127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md). CH4-03 explicitly remains SOURCE-DERIVED; restroom/ballroom are hybrid native-room/source-derived NPC composites. All historical candidates and prior selections are preserved. Runtime assetPath stays null under docs/105 until verified integration.
