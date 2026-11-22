@@ -1,0 +1,138 @@
+[
+  {
+    "key": "scenes:exposition/reception",
+    "reviewFile": "references/reception.png",
+    "file": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+    "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/conference_hall/reception/reception_scene.png"
+    }
+  },
+  {
+    "key": "scenes:exposition/reception#portraitBackground",
+    "reviewFile": "references/reception-background.png",
+    "file": "assets/selected/art/portraits/receptionist/reception_background.png",
+    "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/portraits/receptionist/reception_background.png"
+    }
+  },
+  {
+    "key": "portraits:receptionist:default#layers:foreground",
+    "reviewFile": "references/receptionist.png",
+    "file": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+    "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/portraits/receptionist/receptionist_idle.png"
+    }
+  },
+  {
+    "key": "scenes:biology_park/exposition_concourse",
+    "reviewFile": "references/chapter2-exposition-concourse.png",
+    "file": "assets/selected/art/scenes/biology_park/exposition_concourse.png",
+    "sha256": "8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/exposition_concourse.png"
+    }
+  },
+  {
+    "key": "scenes:biology_park/conveniences_bureau",
+    "reviewFile": "references/chapter2-conveniences-bureau.png",
+    "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+    "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/conveniences_bureau.png"
+    }
+  },
+  {
+    "key": "scenes:biology_park/service_entry",
+    "reviewFile": "references/chapter2-service-entry.png",
+    "file": "assets/selected/art/scenes/biology_park/service_entry.png",
+    "sha256": "c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/service_entry.png"
+    }
+  },
+  {
+    "key": "scenes:biology_park/control_tower",
+    "reviewFile": "references/chapter2-control-tower.png",
+    "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+    "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/control_tower.png"
+    }
+  },
+  {
+    "key": "scenes:biology_park/spore_garden",
+    "reviewFile": "references/chapter2-spore-garden.png",
+    "file": "assets/selected/art/scenes/biology_park/spore_garden.png",
+    "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/spore_garden.png"
+    }
+  }
+]

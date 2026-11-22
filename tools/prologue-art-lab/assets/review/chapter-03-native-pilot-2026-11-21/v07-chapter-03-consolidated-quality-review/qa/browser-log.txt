@@ -1,0 +1,19 @@
+{
+  "scope": "Chapter 3 consolidated 14-scene quality review",
+  "browsers": [
+    {
+      "browser": "firefox",
+      "status": "PASS",
+      "checks": 17,
+      "sourceImagesVerified": 38,
+      "embeddedImages": 130
+    },
+    {
+      "browser": "chromium",
+      "status": "PASS",
+      "checks": 17,
+      "sourceImagesVerified": 38,
+      "embeddedImages": 130
+    }
+  ]
+}

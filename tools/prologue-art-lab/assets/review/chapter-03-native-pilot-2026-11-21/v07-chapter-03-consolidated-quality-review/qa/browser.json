@@ -1,0 +1,748 @@
+{
+  "scope": "Chapter 3 consolidated 14-scene quality review",
+  "browsers": [
+    {
+      "browser": "firefox",
+      "checks": [
+        {
+          "name": "Six KEEP, zero pixel changes and no merge clearly displayed",
+          "pass": true
+        },
+        {
+          "name": "Exactly 14 matrix rows and 14 scene sections",
+          "pass": true
+        },
+        {
+          "name": "Exactly 15 dialogue pairing sections",
+          "pass": true
+        },
+        {
+          "name": "Every scene native pair remains two 314x206 images",
+          "pass": true
+        },
+        {
+          "name": "Browser hashes every scene/layer/reference/selected Paper input",
+          "pass": true
+        },
+        {
+          "name": "Browser confirms all 14 canonical hashes unchanged",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes all 14 closed masks",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x panel and portrait parents",
+          "pass": true
+        },
+        {
+          "name": "Every scene full 4x pair remains 1256x824 per image",
+          "pass": true
+        },
+        {
+          "name": "4x pair scrolls instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "All 15 native composite canvases retain 564x278",
+          "pass": true
+        },
+        {
+          "name": "Every gallery image decodes at declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Every local matrix/evidence/layer/PNG/QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes enlarged and portrait panels",
+          "pass": true
+        },
+        {
+          "name": "Mobile retains native pixel scale",
+          "pass": true
+        },
+        {
+          "name": "Portable gallery embeds and decodes every image",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "sourceImagesVerified": 38,
+      "links": [
+        {
+          "href": "chapter-03-completion-matrix.json",
+          "status": 200
+        },
+        {
+          "href": "chapter-03-completion-matrix.csv",
+          "status": 200
+        },
+        {
+          "href": "chapter-03-completion-matrix.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/human_verification_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/human_verification_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/human_verification_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/urgency_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/urgency_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/urgency_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_printer-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_printer-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/record_printer-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/courtesy_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/courtesy_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/courtesy_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/arrival-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/arrival-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/arrival-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exit_vestibule-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exit_vestibule-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/exit_vestibule-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/restroom_entrance-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/restroom_entrance-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/restroom_entrance-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/locomotion_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/backstage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/backstage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/backstage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exterior_exit-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exterior_exit-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/exterior_exit-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/surprise_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/surprise_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/surprise_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/service_exit-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/service_exit-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/service_exit-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_scanner-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_scanner-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/record_scanner-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/paper_emergency-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/paper_emergency-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/paper_emergency-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "assessment/exit-vestibule-resolution.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/cross-chapter-consistency.json",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/restroom_entrance.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_attendant-idle.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/human_verification_stage.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-idle.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-excited.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/urgency_stage.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-alarmed.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/surprise_stage.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/service_exit.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-relieved.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/record_printer.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/record_scanner.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_attendant-alarmed.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_attendant-quiet.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/courtesy_stage.png",
+          "status": 200
+        },
+        {
+          "href": "assessment/portrait-composite-findings.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/unselected-alternatives.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/scene-findings.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/guide-coordinates.json",
+          "status": 200
+        },
+        {
+          "href": "sources/scene-records.json",
+          "status": 200
+        },
+        {
+          "href": "sources/paper-pr18-snapshot.json",
+          "status": 200
+        },
+        {
+          "href": "sources/paper-v04-selection-receipt.json",
+          "status": 200
+        }
+      ],
+      "embeddedImages": 130,
+      "errors": []
+    },
+    {
+      "browser": "chromium",
+      "checks": [
+        {
+          "name": "Six KEEP, zero pixel changes and no merge clearly displayed",
+          "pass": true
+        },
+        {
+          "name": "Exactly 14 matrix rows and 14 scene sections",
+          "pass": true
+        },
+        {
+          "name": "Exactly 15 dialogue pairing sections",
+          "pass": true
+        },
+        {
+          "name": "Every scene native pair remains two 314x206 images",
+          "pass": true
+        },
+        {
+          "name": "Browser hashes every scene/layer/reference/selected Paper input",
+          "pass": true
+        },
+        {
+          "name": "Browser confirms all 14 canonical hashes unchanged",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes all 14 closed masks",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x panel and portrait parents",
+          "pass": true
+        },
+        {
+          "name": "Every scene full 4x pair remains 1256x824 per image",
+          "pass": true
+        },
+        {
+          "name": "4x pair scrolls instead of shrinking",
+          "pass": true
+        },
+        {
+          "name": "All 15 native composite canvases retain 564x278",
+          "pass": true
+        },
+        {
+          "name": "Every gallery image decodes at declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Every local matrix/evidence/layer/PNG/QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes enlarged and portrait panels",
+          "pass": true
+        },
+        {
+          "name": "Mobile retains native pixel scale",
+          "pass": true
+        },
+        {
+          "name": "Portable gallery embeds and decodes every image",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "initialDecodeFailures": [],
+      "sourceImagesVerified": 38,
+      "links": [
+        {
+          "href": "chapter-03-completion-matrix.json",
+          "status": 200
+        },
+        {
+          "href": "chapter-03-completion-matrix.csv",
+          "status": 200
+        },
+        {
+          "href": "chapter-03-completion-matrix.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/human_verification_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/human_verification_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/human_verification_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/urgency_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/urgency_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/urgency_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_printer-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_printer-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/record_printer-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/courtesy_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/courtesy_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/courtesy_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/arrival-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/arrival-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/arrival-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exit_vestibule-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exit_vestibule-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/exit_vestibule-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/restroom_entrance-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/restroom_entrance-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/restroom_entrance-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/locomotion_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/backstage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/backstage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/backstage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exterior_exit-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/exterior_exit-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/exterior_exit-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/surprise_stage-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/surprise_stage-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/surprise_stage-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/service_exit-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/service_exit-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/service_exit-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_scanner-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/record_scanner-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/record_scanner-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/paper_emergency-approved-left-protected-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/paper_emergency-approved-left-protected-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "masks/paper_emergency-repair-mask.png",
+          "status": 200
+        },
+        {
+          "href": "assessment/exit-vestibule-resolution.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/cross-chapter-consistency.json",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/restroom_entrance.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_attendant-idle.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/human_verification_stage.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-idle.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-excited.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/urgency_stage.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-alarmed.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/surprise_stage.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/service_exit.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_presenter-relieved.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/record_printer.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/record_scanner.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_attendant-alarmed.png",
+          "status": 200
+        },
+        {
+          "href": "portraits/pavilion_attendant-quiet.png",
+          "status": 200
+        },
+        {
+          "href": "backgrounds/courtesy_stage.png",
+          "status": 200
+        },
+        {
+          "href": "assessment/portrait-composite-findings.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/unselected-alternatives.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "qa/preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/scene-findings.json",
+          "status": 200
+        },
+        {
+          "href": "assessment/guide-coordinates.json",
+          "status": 200
+        },
+        {
+          "href": "sources/scene-records.json",
+          "status": 200
+        },
+        {
+          "href": "sources/paper-pr18-snapshot.json",
+          "status": 200
+        },
+        {
+          "href": "sources/paper-v04-selection-receipt.json",
+          "status": 200
+        }
+      ],
+      "embeddedImages": 130,
+      "errors": []
+    }
+  ]
+}

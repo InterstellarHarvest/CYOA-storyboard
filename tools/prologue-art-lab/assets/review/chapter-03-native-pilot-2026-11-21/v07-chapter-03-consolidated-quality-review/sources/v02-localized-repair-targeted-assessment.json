@@ -1,0 +1,351 @@
+{
+  "newDirection": "Maximize useful detail; remove only distracting noise evident at exact 4x. Local preservation-first repairs replace the withdrawn full-scene reconstruction direction.",
+  "v01Decision": {
+    "status": "not-selected",
+    "previousFullSceneReconstructionDirection": "withdrawn",
+    "historicalPilotFiles": "preserved unchanged",
+    "authority": "Nate, current revised-art-direction request"
+  },
+  "locomotion": {
+    "finding": "The original is a strong composition. Only the six listed presenter pixels meet this first-test cleanup threshold. Other face shading and character marks remain valuable.",
+    "needsCleanup": [
+      {
+        "region": "Hair crown",
+        "points": [
+          [
+            82,
+            87
+          ],
+          [
+            91,
+            89
+          ],
+          [
+            92,
+            90
+          ]
+        ],
+        "reason": "Detached copper pixel and two grey-green boundary interruptions."
+      },
+      {
+        "region": "Outer cheek/hair boundary",
+        "points": [
+          [
+            92,
+            95
+          ]
+        ],
+        "reason": "One desaturated edge fringe; preserve the expressive face core."
+      },
+      {
+        "region": "Open hand",
+        "points": [
+          [
+            111,
+            102
+          ],
+          [
+            114,
+            107
+          ]
+        ],
+        "reason": "One weak connection and one grey fringe; preserve the individual finger shapes."
+      }
+    ],
+    "protected": [
+      {
+        "name": "Foreground audience chair backs",
+        "box": [
+          0,
+          186,
+          314,
+          206
+        ]
+      },
+      {
+        "name": "Detailed empty right chair",
+        "box": [
+          251,
+          156,
+          308,
+          201
+        ]
+      },
+      {
+        "name": "Large camera and rolling stand",
+        "box": [
+          0,
+          103,
+          64,
+          194
+        ]
+      },
+      {
+        "name": "Ceiling lights, architecture and sign",
+        "box": [
+          0,
+          0,
+          314,
+          65
+        ]
+      },
+      {
+        "name": "Countdown 30 and mount",
+        "box": [
+          125,
+          51,
+          191,
+          126
+        ]
+      },
+      {
+        "name": "Curtain folds and mounting hardware",
+        "box": [
+          50,
+          60,
+          266,
+          145
+        ]
+      },
+      {
+        "name": "Wall fixtures, console and background doorway",
+        "box": [
+          217,
+          65,
+          314,
+          157
+        ]
+      },
+      {
+        "name": "Pit, moving floor, net and landing",
+        "box": [
+          58,
+          121,
+          248,
+          164
+        ]
+      },
+      {
+        "name": "Presenter eyes, eyebrows, nose and smile core",
+        "box": [
+          84,
+          91,
+          92,
+          102
+        ]
+      },
+      {
+        "name": "Presenter near hand, cuff, clothes, legs and shoes",
+        "box": [
+          74,
+          108,
+          106,
+          157
+        ]
+      }
+    ],
+    "perspective": {
+      "finding": "No demonstrated geometry defect warrants a pixel edit. The pit side edges recede toward the rear; floor and stage remain visually coherent. Net crossings are busy but readable at 4x. Some net depth/attachment is a subjective still-image reading, not evidence of broken perspective.",
+      "guides": {
+        "pitEdges": [
+          [
+            [
+              127,
+              157
+            ],
+            [
+              145,
+              131
+            ]
+          ],
+          [
+            [
+              228,
+              158
+            ],
+            [
+              208,
+              132
+            ]
+          ]
+        ],
+        "landingRoute": [
+          [
+            220,
+            145
+          ],
+          [
+            240,
+            130
+          ]
+        ]
+      },
+      "proposedGeometryChange": "None. Preserve every geometry pixel; request a minimal marked correction only if Nate identifies a specific remaining problem."
+    },
+    "netPitFloorAssessment": "Inspect the supplied crop and guides. Retain all current strands, orange padding, arrows and landing shading; no demonstrated readability failure is strong enough to justify changing them in this first pass.",
+    "estimatedRepairScope": {
+      "nativePixels": 6,
+      "percentageOfScene": 0.009276,
+      "maximumAllowedMaskPixels": 6,
+      "wholeSceneRepaint": false
+    }
+  },
+  "backstage": {
+    "finding": "The approved original retains valuable lighting, rough concrete variation, scenery, crate/sandwich, papers, cables and depth. The prior broad redraw recommendation is withdrawn. No Backstage pixel repair is justified in this first pass.",
+    "needsCleanup": [],
+    "inspectionWindows": [
+      {
+        "name": "Cable-loop contours",
+        "box": [
+          24,
+          0,
+          116,
+          82
+        ],
+        "finding": "Multiple coils remain recognizable at 4x; their light edges describe cable thickness. Crowding is a watch point, not a reason to flatten or replace the loops."
+      },
+      {
+        "name": "Floor joints and wall/floor boundaries",
+        "box": [
+          93,
+          124,
+          234,
+          206
+        ],
+        "finding": "Diffuse light, floor variation and receding joints support depth. No isolated boundary failure selected for repair; protect their existing variation."
+      },
+      {
+        "name": "Sandwich, carton, podium and certificates",
+        "box": [
+          0,
+          110,
+          146,
+          206
+        ],
+        "finding": "The sandwich layers, unopened carton, leaned podium and paper shapes contribute useful story cues. Long carton text is not readable at native size, but tiny text replacement would add noise. Retain."
+      },
+      {
+        "name": "Attached mechanical clapper",
+        "box": [
+          234,
+          83,
+          292,
+          175
+        ],
+        "finding": "Fixed plinth, supports, horizontal shaft, paddles and cart are mechanically legible. Preserve the already-approved correction exactly."
+      }
+    ],
+    "protected": [
+      {
+        "name": "Scenery and prop grouping",
+        "box": [
+          0,
+          18,
+          142,
+          166
+        ]
+      },
+      {
+        "name": "Foreground crate, sandwich and carton",
+        "box": [
+          0,
+          128,
+          83,
+          206
+        ]
+      },
+      {
+        "name": "Cables and hooks",
+        "box": [
+          24,
+          0,
+          116,
+          82
+        ]
+      },
+      {
+        "name": "Attached mechanical clapper and cabinet",
+        "box": [
+          234,
+          83,
+          292,
+          175
+        ]
+      },
+      {
+        "name": "Ordinary daylight exit and courtyard",
+        "box": [
+          135,
+          53,
+          206,
+          137
+        ]
+      },
+      {
+        "name": "Concrete material, seam shading and daylight floor",
+        "box": [
+          89,
+          123,
+          314,
+          206
+        ]
+      }
+    ],
+    "perspective": {
+      "finding": "Ceiling beams, wall joints and major receding floor lines converge toward the rear corridor. Painted scenery and tipped props have their own planes; their diagonals are not evidence of a shared-room perspective error. No minimal geometric correction is presently justified.",
+      "guides": {
+        "ceilingBeams": [
+          [
+            [
+              51,
+              0
+            ],
+            [
+              114,
+              61
+            ]
+          ],
+          [
+            [
+              278,
+              0
+            ],
+            [
+              212,
+              61
+            ]
+          ]
+        ],
+        "floorEdges": [
+          [
+            [
+              0,
+              193
+            ],
+            [
+              116,
+              126
+            ]
+          ],
+          [
+            [
+              314,
+              182
+            ],
+            [
+              216,
+              130
+            ]
+          ]
+        ]
+      },
+      "proposedGeometryChange": "None."
+    },
+    "estimatedRepairScope": {
+      "nativePixels": 0,
+      "maskPixels": 0,
+      "backstageCandidateProduced": false,
+      "conditionalFutureScope": "Identify exact defective pixels before opening a repair mask; no broad cable, wall or floor mask is proposed."
+    }
+  }
+}

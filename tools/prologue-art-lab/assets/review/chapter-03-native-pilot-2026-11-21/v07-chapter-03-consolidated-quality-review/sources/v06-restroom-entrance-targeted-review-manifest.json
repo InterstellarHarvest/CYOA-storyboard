@@ -1,0 +1,254 @@
+{
+  "schema": "out-of-order-targeted-quality-assessment-v1",
+  "date": "2026-11-22",
+  "version": "v06 assessment only; not new A01 artwork",
+  "assessmentStatus": "generated/unselected; awaiting Nate visual review",
+  "approvedArtworkStatus": "approved, unchanged",
+  "recommendation": "KEEP",
+  "artDirection": "Maximum useful detail, minimum unnecessary pixel noise.",
+  "reviewBranch": "art/ch3-native-pilot-20261121",
+  "startingReviewCommit": "aaba261a1522f5ddd9c663ebed8fa19bb4c49054",
+  "verifiedMain": "d9b6b91604b72115c5402253f00924665e957727",
+  "approvedSource": {
+    "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+    "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png"
+    }
+  },
+  "approvedOriginal": "originals/approved-restroom-entrance.png",
+  "references": [
+    {
+      "key": "scenes:pavilion_reboot/record_printer",
+      "reviewFile": "references/record-printer.png",
+      "canonicalAtVerifiedMain": true,
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/record_printer.png",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/paper_emergency",
+      "reviewFile": "references/paper-emergency-canonical-v03.png",
+      "canonicalAtVerifiedMain": true,
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/restroom_entrance#portraitBackground",
+      "reviewFile": "references/restroom-close-background.png",
+      "canonicalAtVerifiedMain": true,
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance/portraitBackground.png",
+      "sha256": "e4967d1f0e4bc2497fb0ce6e59891d1a25a2e1854b8bf395515cd8d0cc4b5260",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A02-restroom-bg-v04.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_printer#portraitBackground",
+      "reviewFile": "references/record-printer-close-background.png",
+      "canonicalAtVerifiedMain": true,
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/record_printer/portraitBackground.png",
+      "sha256": "46e79ce63fb0bda0af2695393a92c9c7ae064edddedbab0e0f4a5f6e9ad01473",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B03-record-printer-bg-v03.png"
+      }
+    },
+    {
+      "key": "portraits:pavilion_attendant:idle",
+      "reviewFile": "references/attendant-idle.png",
+      "canonicalAtVerifiedMain": true,
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/paper_emergency",
+      "reviewFile": "references/paper-emergency-selected-v04.png",
+      "sha256": "93a48082124600b1afeb45e5ea54856bf253e858e55111295e9d9c26919bc978",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-native-pilot-20261121",
+        "commit": "d1600a34a58497b4886518c6aa9feeaa205d8426",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/v04-paper-emergency-localized-repair/candidate/CH3-B06-paper-emergency-local-v04.png"
+      },
+      "canonicalAtVerifiedMain": false,
+      "status": "owner-selected/approved v04; separate Claude registration pending; canonical still v03"
+    }
+  ],
+  "metrics": {
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "uniqueRGB": 17503,
+    "alphaExtrema": [
+      255,
+      255
+    ],
+    "transparentPixels": 0,
+    "partialAlphaPixels": 0
+  },
+  "referenceMetrics": {
+    "references/record-printer.png": {
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "uniqueRGB": 17361,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "transparentPixels": 0,
+      "partialAlphaPixels": 0
+    },
+    "references/paper-emergency-canonical-v03.png": {
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "uniqueRGB": 20305,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "transparentPixels": 0,
+      "partialAlphaPixels": 0
+    },
+    "references/restroom-close-background.png": {
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "uniqueRGB": 32851,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "transparentPixels": 0,
+      "partialAlphaPixels": 0
+    },
+    "references/record-printer-close-background.png": {
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "uniqueRGB": 32733,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "transparentPixels": 0,
+      "partialAlphaPixels": 0
+    },
+    "references/attendant-idle.png": {
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "uniqueRGB": 7391,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 130714,
+      "partialAlphaPixels": 0
+    },
+    "references/paper-emergency-selected-v04.png": {
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "uniqueRGB": 20133,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "transparentPixels": 0,
+      "partialAlphaPixels": 0
+    }
+  },
+  "candidateProduced": false,
+  "artworkPixelsChanged": 0,
+  "proposedRepairMaskPixels": 0,
+  "protectedArtworkPixels": 64684,
+  "changedPixelList": "sources/changed-pixels.json",
+  "nativeGridAuthorshipLimitation": "Original full-scene native-grid authorship remains unresolved/unproven. The historical localized microphone edit is coordinate-authored; that does not prove the inherited scene. High color count and source-derived softness alone do not justify alteration.",
+  "noGenerationNoFiltering": true,
+  "registrationPerformed": false,
+  "integrationPerformed": false,
+  "mergePerformed": false,
+  "pagesDeploymentPerformed": false,
+  "chapter4Changes": false,
+  "priorTrackedFilesProtected": 1037,
+  "baselineSourceRemoteVerified": "sources/source-a87155b-A01-v09.png",
+  "historicalLabelRule": "Copied historical v09 generated/unselected labels describe its earlier review. The later Batch A ledger approves these exact bytes; this assessment leaves that approval intact.",
+  "prompts": "sources/brief.txt and sources/review-direction.txt; no image generation invoked."
+}

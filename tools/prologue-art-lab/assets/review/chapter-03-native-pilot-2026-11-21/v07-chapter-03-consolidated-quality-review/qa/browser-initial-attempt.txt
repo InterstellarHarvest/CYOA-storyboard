@@ -1,0 +1,18 @@
+{
+  "scope": "Chapter 3 consolidated 14-scene quality review",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "status": "FAIL",
+      "checks": 0,
+      "error": "Error: locator.evaluateAll: EncodingError: The source image cannot be decoded."
+    },
+    {
+      "browser": "firefox",
+      "status": "PASS",
+      "checks": 17,
+      "sourceImagesVerified": 38,
+      "embeddedImages": 130
+    }
+  ]
+}

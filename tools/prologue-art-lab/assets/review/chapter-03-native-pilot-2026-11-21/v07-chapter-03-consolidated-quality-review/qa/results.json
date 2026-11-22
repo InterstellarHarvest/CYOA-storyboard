@@ -1,0 +1,43 @@
+{
+  "technicalValidation": {
+    "status": "PASS",
+    "checks": 553,
+    "report": "preservation.json"
+  },
+  "canonical": {
+    "status": "PASS",
+    "report": "canonical.txt"
+  },
+  "storyboardSmoke": {
+    "status": "PASS",
+    "report": "smoke.txt"
+  },
+  "chapter3Briefs": {
+    "status": "PASS",
+    "report": "chapter3-briefs.txt"
+  },
+  "chapter3NarrativeReadOnly": {
+    "status": "PASS",
+    "report": "chapter3-narrative.txt"
+  },
+  "browser": {
+    "status": "PASS",
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "checks": 34,
+    "sourceImagesHashedPerBrowser": 38,
+    "galleryImagesDecodedPerBrowser": 130,
+    "report": "browser.json"
+  },
+  "notRun": [
+    "Game engine/runtime QA",
+    "Real artwork registration or registration dry run (review-only task)",
+    "PR #18 merge or any main merge",
+    "Public Pages deployment",
+    "Repeated integration/sync full suites; registry/code/production files unchanged"
+  ],
+  "scope": "Assessments and diagnostic composites only; zero artwork or portrait changes",
+  "initialBrowserProbe": "Initial Chromium concurrent decode probe returned EncodingError before assertions; Firefox passed. The source-identifying sequential Chromium recheck decoded all images and passed all 17 assertions. No artwork or gallery images changed. Root cause not established; initial attempt retained in browser-initial-attempt.txt."
+}

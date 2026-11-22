@@ -1,0 +1,194 @@
+{
+  "recommendation": "KEEP",
+  "approvedArtKey": "scenes:pavilion_reboot/restroom_entrance",
+  "approvedVersion": "A01 v09 microphone final",
+  "source": {
+    "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+    "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png"
+    }
+  },
+  "meaningfulDefectsDemonstrated": [],
+  "regions": [
+    {
+      "id": "face",
+      "name": "Attendant face, glasses and hair",
+      "box": [
+        201,
+        94,
+        235,
+        122
+      ],
+      "finding": "The dark glasses, swept dark/gray hair, cheek and smiling mouth identify the same attendant as the approved idle portrait. The reassuring expression fits real_restroom, attendant_greeting and the explicit smile in attendant_refusal. At native and exact 4×, inherited softness does not hide identity or expression. Do not copy the emergency expression into this greeting state.",
+      "action": "KEEP"
+    },
+    {
+      "id": "hands-costume",
+      "name": "Hands, costume, seated silhouette and desk contact",
+      "box": [
+        201,
+        120,
+        245,
+        146
+      ],
+      "finding": "The joined hands read as a quiet clasp; cream sleeves, teal vest, tie and pale badge remain distinct. Forearms terminate at the desktop and the chair back supports the seated reading. The counter deliberately occludes the lower body; absent feet are not evidence of floating. No detached hand, collision or distracting silhouette break is demonstrated.",
+      "action": "KEEP"
+    },
+    {
+      "id": "microphone",
+      "name": "Approved v09 gooseneck microphone correction",
+      "box": [
+        190,
+        119,
+        208,
+        146
+      ],
+      "finding": "Retain the explicitly authored capsule/head, small background gap, one-pixel curved stem and compact desktop base. The cool dark microphone remains separate from the brown chair and cream equipment. The tiny geometry is deliberate and independently documented in the v09 edit record; smoothing or thickening would undo the accepted correction.",
+      "action": "KEEP"
+    },
+    {
+      "id": "desk-equipment",
+      "name": "Desk layout, existing cream unit and plant",
+      "box": [
+        177,
+        106,
+        273,
+        189
+      ],
+      "finding": "The existing cream slotted unit remains on the left, microphone beside it, attendant centered and potted plant at the far right. Their silhouettes and desktop contacts are separate. The cream unit becomes the paper source in Record Printer; do not delete that established equipment or add back the separate unwanted desktop device. No printer/plant overlap is present.",
+      "action": "KEEP"
+    },
+    {
+      "id": "door-signs",
+      "name": "Restroom doorway, two-person pictograms and reader",
+      "box": [
+        63,
+        34,
+        231,
+        185
+      ],
+      "finding": "RESTROOM and both two-person pictograms read clearly. The teal jamb, inner sink/stall sightline, gate and green/red reader stay distinct. The warm tilework, steel pipes and ceiling fixtures explain a real working restroom. The sign glyphs need no cleanup. Reader color changes and visitor movement are successive narrated events, not reasons to repaint this reusable establishing image.",
+      "action": "KEEP"
+    },
+    {
+      "id": "floor-contacts",
+      "name": "Architecture, bench, floor and equipment perspective",
+      "box": [
+        0,
+        137,
+        314,
+        206
+      ],
+      "finding": "Door posts, bench supports, gate pedestal and desk plinth have visible floor contacts. The desk front, narrow top plane, wall tiles and receding floor joints form a coherent stylized view. No demonstrated skew, floating furniture or contact error warrants a new perspective correction.",
+      "action": "KEEP"
+    }
+  ],
+  "protected": [
+    {
+      "name": "Attendant identity and calm seated pose",
+      "box": [
+        201,
+        94,
+        245,
+        144
+      ]
+    },
+    {
+      "name": "Exact v09 microphone repair bounds",
+      "box": [
+        196,
+        123,
+        203,
+        143
+      ]
+    },
+    {
+      "name": "Existing cream feed unit at left",
+      "box": [
+        180,
+        130,
+        199,
+        144
+      ]
+    },
+    {
+      "name": "Plant and clear separation from feed unit",
+      "box": [
+        241,
+        108,
+        271,
+        146
+      ]
+    },
+    {
+      "name": "Counter top, front, corner shading and plinth",
+      "box": [
+        174,
+        140,
+        273,
+        190
+      ]
+    },
+    {
+      "name": "Restroom sign, two-person figures and door architecture",
+      "box": [
+        63,
+        34,
+        179,
+        185
+      ]
+    },
+    {
+      "name": "Wall pictogram, fixtures and warm material shading",
+      "box": [
+        180,
+        34,
+        261,
+        133
+      ]
+    },
+    {
+      "name": "Bench and floor contacts",
+      "box": [
+        0,
+        136,
+        69,
+        206
+      ]
+    },
+    {
+      "name": "Right doorway, daylight and exterior depth",
+      "box": [
+        271,
+        69,
+        314,
+        175
+      ]
+    }
+  ],
+  "proposedRepairMaskPixels": 0,
+  "artworkPixelsChanged": 0,
+  "candidateProduced": false,
+  "maskPolicy": "All 64,684 artwork pixels protected. Black = no proposed edits. Context rectangles only locate details; they are not edit masks.",
+  "perspectiveFinding": "No demonstrated perspective or grounding defect. Construction traces are approximate inspection aids, not recovered camera calibration. The seated figure is occluded by the desk; no visible feet are required.",
+  "microphoneFinding": "The original approved 59-pixel v09 correction remains byte-identical. Its [196,123,203,143] bounds are protected, as is the full scene. No thickening, straightening, deletion or reconstruction.",
+  "deviceFinding": "Preserve existing left cream feed equipment and right plant. Keep the unwanted extra desktop device absent. Do not transfer the closer background intercom footprint onto the main scene.",
+  "continuityFindings": [
+    "Record Printer reuses the establishing architecture and desk, adding receipt activity from the left unit. Matching-coordinate scene and crop comparisons are included.",
+    "Paper Emergency v04 is now Nate-selected/approved, with urgent face and hand repairs; its separate Claude registration is still pending. The canonical preview remains v03. Both are shown and clearly labeled; do not propagate either emergency pose into A01.",
+    "The approved close background uses an independent camera: matching tile/teal/coral/cream materials, doorway/gate, left intercom, gooseneck microphone and right plant. Different device scale and framing are not exact-coordinate continuity errors.",
+    "The idle portrait and main attendant agree on swept gray/dark hair, glasses, cream shirt, teal vest, tie, badge and reassuring clasped-hands pose. An unmodified same-size layer composite demonstrates the approved conversation pairing."
+  ],
+  "narrativeFinding": "Reassuring seated attendant fits the establishing/greeting/refusal states. door_choices uses the separately approved alarmed portrait; no full-scene expression replacement is needed. Visitor motion, reader turns red and the bench sign are narrated beats, not requirements to cram new figures or tiny text into A01.",
+  "manualFinishFinding": "No manual finish is justified by a demonstrated readability defect at native or exact 4×. Reopen only for a specific overlap or pixel problem identified in visual review.",
+  "nativeGridAuthorshipLimitation": "Original full-scene native-grid authorship remains unresolved/unproven. The historical localized microphone edit is coordinate-authored; that does not prove the inherited scene. High color count and source-derived softness alone do not justify alteration."
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "out-of-order-targeted-repair-v02",
+  "version": "v02-localized-repair",
+  "date": "2026-11-21",
+  "timezone": "America/New_York",
+  "reviewBranch": "art/ch3-native-pilot-20261121",
+  "startingReviewCommit": "32df76cb77dc83edf4737e61bf0889bc43821845",
+  "canonicalMainVerified": "d9b6b91604b72115c5402253f00924665e957727",
+  "newDirection": "Maximize useful detail; remove only distracting noise evident at exact 4x. Local preservation-first repairs replace the withdrawn full-scene reconstruction direction.",
+  "v01Decision": {
+    "status": "not-selected",
+    "previousFullSceneReconstructionDirection": "withdrawn",
+    "historicalPilotFiles": "preserved unchanged",
+    "authority": "Nate, current revised-art-direction request"
+  },
+  "status": "generated",
+  "selection": "unselected",
+  "approved": false,
+  "assetPath": null,
+  "approvedSources": {
+    "locomotion": {
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png",
+      "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C03-locomotion-v04.png"
+      }
+    },
+    "backstage": {
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png",
+      "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png"
+      }
+    }
+  },
+  "candidate": {
+    "key": "scenes:pavilion_reboot/locomotion_stage",
+    "file": "candidate/CH3-LOCOMOTION-presenter-local-v02.png",
+    "status": "generated",
+    "selection": "unselected",
+    "approved": false,
+    "assetPath": null,
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "changedPixels": 6,
+    "totalPixels": 64684,
+    "unchangedPixels": 64678,
+    "changedScenePercent": 0.009275864201348093,
+    "changesOutsideAllowedMask": 0,
+    "approvedOriginalSha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+    "candidateSha256": "8d4b6cef5b7d37f9f612da308fdc7868b7f31a9a4eb8947ed3993af66c7cf2e4",
+    "originalUniqueRGB": 16885,
+    "candidateUniqueRGB": 16879,
+    "partialAlphaPixels": 0,
+    "geometryTransforms": 0,
+    "paletteTarget": null,
+    "filters": [],
+    "nativeAuthorshipLimitation": "The inherited original full-scene native-grid authorship remains unresolved. The six documented replacements are native-pixel edits; they do not establish original scene authorship.",
+    "identityAssessment": "Eyes, eyebrows, nose, mouth, body, costume, near hand, gesture, legs and shoes are pixel-identical. Only three hair edge points, one outer cheek/hair fringe and two open-hand edge points change. No scale or pose change.",
+    "remainingLimit": "The result is intentionally subtle. Two contour joins are judgment calls and could be preferred in their original form. All source-derived softness elsewhere remains; no claim of a completed presenter or scene polish."
+  },
+  "backstage": {
+    "candidateProduced": false,
+    "proposedRepairPixels": 0,
+    "allPixelsProtected": true
+  },
+  "assessment": "assessment/targeted-assessment.json",
+  "editMask": "masks/locomotion-authorized-test-mask.png",
+  "maskSha256": "04ea0ebeb505f5837ad5d128d8c4b639db44191d11be99d66485b9783096ccdb",
+  "preEditAssessment": "sources/assessment-first.json",
+  "exactOperations": "sources/repair-plan.json",
+  "editLayer": "sources/presenter-six-pixel-edit-layer.png",
+  "changedPixelLog": "sources/changed-pixels.csv",
+  "generation": "No image generation. Exact source-coordinate RGB replacement only. Larger original source authorship remains unresolved; the repair does not change that provenance.",
+  "preservation": "All 644 preexisting tracked files from startingReviewCommit must remain SHA-256 identical. Only this new version directory may be added.",
+  "publicationAuthorization": "Standing instruction permits review branch commit/push only. No main merge, registration, integration or public Pages deployment.",
+  "stopPoint": "Nate reviews the six-pixel presenter test before any expanded work."
+}

@@ -1,0 +1,625 @@
+{
+  "schema": "chapter-03-consolidated-quality-review-v07",
+  "date": "2026-11-22",
+  "reviewBranch": "art/ch3-native-pilot-20261121",
+  "startingReviewCommit": "9ba1028821ad83759d3c809ca74775758a4d6aef",
+  "verifiedMain": "d9b6b91604b72115c5402253f00924665e957727",
+  "assessmentStatus": "generated/unselected review recommendations; existing artwork approvals unchanged",
+  "newDetailedAssessments": [
+    "human_verification_stage",
+    "urgency_stage",
+    "record_printer",
+    "courtesy_stage",
+    "arrival",
+    "exit_vestibule"
+  ],
+  "sceneCount": 14,
+  "newCandidates": 0,
+  "artworkPixelsChanged": 0,
+  "portraitPixelsChanged": 0,
+  "portraitPairingsChecked": 15,
+  "dialogueNodesCovered": 20,
+  "recommendations": {
+    "newSix": "KEEP all six",
+    "canonicalMasters": "KEEP 13; Paper canonical v03 superseded by Nate-selected v04",
+    "paperV04": "selected/approved; draft registration PR #18 open/unmerged"
+  },
+  "requiredManualTouchups": [],
+  "exitVestibuleUncertainty": "Resolved to KEEP for route/narrative readability; no measured floor plan inferred",
+  "nativeGridAuthorshipLimitation": "Original full-scene/full-character native-grid authorship remains unresolved/unproven. Prior localized coordinate-authored repairs do not establish inherited scene or portrait authorship. Source-derived softness remains; exact dimensions alone do not resolve provenance.",
+  "noGenerationOrFiltering": true,
+  "registrationPerformedByThisTask": false,
+  "integrationPerformed": false,
+  "mergePerformed": false,
+  "pagesDeploymentPerformed": false,
+  "chapter4Changes": false,
+  "priorTrackedFilesProtected": 1137,
+  "sceneSources": [
+    {
+      "key": "scenes:pavilion_reboot/arrival",
+      "reviewFile": "approved/arrival.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/arrival.png",
+      "sha256": "37d0b189fda18ad6659b0fae1f214145acd4ec67595c5e5a520917d6a7cbd478",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B01-arrival-v03.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 30211,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/restroom_entrance",
+      "reviewFile": "approved/restroom_entrance.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+      "sha256": "117dd9d00b6c9d32b4b153f71aaf51c2546ade70b803d45a748728f8d1a1f8b4",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v09-microphone-final-2026-11-19/candidates/CH3-A01-restroom-v09.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 17503,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/human_verification_stage",
+      "reviewFile": "approved/human_verification_stage.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+      "sha256": "8df7e5dd2fffb17449fd43f4d9e7df167d75347efc53b0bde1771fd6d8d001ca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-A04-verification-continuity-v04.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 16172,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/urgency_stage",
+      "reviewFile": "approved/urgency_stage.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png",
+      "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C01-urgency-v04.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 16801,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/locomotion_stage",
+      "reviewFile": "approved/locomotion_stage.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png",
+      "sha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C03-locomotion-v04.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 16885,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/backstage",
+      "reviewFile": "approved/backstage.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png",
+      "sha256": "aa90896023a59454887e9b3bd5b1745cb8b95a5d9737829119abddd9176f4889",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v03-clapper-correction/candidates/CH3-D05-backstage-v03.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 25215,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/exterior_exit",
+      "reviewFile": "approved/exterior_exit.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/exterior_exit.png",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D06-exterior-exit-v01.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 24809,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/surprise_stage",
+      "reviewFile": "approved/surprise_stage.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png",
+      "sha256": "8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch03-20261119",
+        "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C04-surprise-v04.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 15641,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/service_exit",
+      "reviewFile": "approved/service_exit.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/service_exit.png",
+      "sha256": "4a736b2d7b5fd7dea50fe9d93fe36e7465674ce0b8e38e7f2d6517fca73df392",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D01-service-exit-v01.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 18936,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_printer",
+      "reviewFile": "approved/record_printer.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/record_printer.png",
+      "sha256": "1f80f8f17359c07fd24c74741be72bfa6ad941da67bb1622931e3b429bb0a722",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B02-record-printer-v03.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 17361,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/record_scanner",
+      "reviewFile": "approved/record_scanner.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner.png",
+      "sha256": "4afe7d0b1898c1e29443d45aba20614b14951bbf91c40e9508a62dc607fcd1b3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B04-record-scanner-v03.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 14578,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/paper_emergency",
+      "reviewFile": "approved/paper_emergency.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+      "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch02-20261119",
+        "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 20305,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/exit_vestibule",
+      "reviewFile": "approved/exit_vestibule.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/exit_vestibule.png",
+      "sha256": "cc2d2ce27e1e2cbf609fcae2210d3c46c57b749e8850be2219ad6de7f7f807c8",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D07-exit-vestibule-v01.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 20804,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    },
+    {
+      "key": "scenes:pavilion_reboot/courtesy_stage",
+      "reviewFile": "approved/courtesy_stage.png",
+      "file": "assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage.png",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch04-20261120",
+        "commit": "e65f42c19e54f566819289d2b133be246ede13f5",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D08-courtesy-stage-v01.png"
+      },
+      "metrics": {
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "uniqueRGB": 21759,
+        "alphaExtrema": [
+          255,
+          255
+        ],
+        "transparentPixels": 0,
+        "partialAlphaPixels": 0
+      }
+    }
+  ],
+  "crossChapterReferences": [
+    {
+      "key": "scenes:exposition/reception",
+      "reviewFile": "references/reception.png",
+      "file": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/conference_hall/reception/reception_scene.png"
+      }
+    },
+    {
+      "key": "scenes:exposition/reception#portraitBackground",
+      "reviewFile": "references/reception-background.png",
+      "file": "assets/selected/art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/reception_background.png"
+      }
+    },
+    {
+      "key": "portraits:receptionist:default#layers:foreground",
+      "reviewFile": "references/receptionist.png",
+      "file": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/receptionist_idle.png"
+      }
+    },
+    {
+      "key": "scenes:biology_park/exposition_concourse",
+      "reviewFile": "references/chapter2-exposition-concourse.png",
+      "file": "assets/selected/art/scenes/biology_park/exposition_concourse.png",
+      "sha256": "8d7f81908f9d65d2c24c042ea928b3a2d3f7497580b217e9fec673591ba575e3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/exposition_concourse.png"
+      }
+    },
+    {
+      "key": "scenes:biology_park/conveniences_bureau",
+      "reviewFile": "references/chapter2-conveniences-bureau.png",
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    {
+      "key": "scenes:biology_park/service_entry",
+      "reviewFile": "references/chapter2-service-entry.png",
+      "file": "assets/selected/art/scenes/biology_park/service_entry.png",
+      "sha256": "c25a49a72a96df1dc1379dad8ebd445af2f6c8b6adf75705cb52e8800195135c",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/service_entry.png"
+      }
+    },
+    {
+      "key": "scenes:biology_park/control_tower",
+      "reviewFile": "references/chapter2-control-tower.png",
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    {
+      "key": "scenes:biology_park/spore_garden",
+      "reviewFile": "references/chapter2-spore-garden.png",
+      "file": "assets/selected/art/scenes/biology_park/spore_garden.png",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/spore_garden.png"
+      }
+    }
+  ],
+  "paperSelectedV04": {
+    "file": "selected/CH3-B06-paper-emergency-local-v04.png",
+    "sha256": "93a48082124600b1afeb45e5ea54856bf253e858e55111295e9d9c26919bc978",
+    "gitBlobAtSourceCommit": "261474c497624374b957a61a9cdda3190e5e4b15",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "alpha": "opaque",
+    "bitDepth": 8
+  },
+  "promptRecord": "sources/review-direction.txt; no generation calls",
+  "guidePolicy": "Overlays and composites are diagnostics, not replacement art. All scene repair masks are black/zero; all original bytes are preserved."
+}

@@ -1,0 +1,210 @@
+{
+  "recommendation": "KEEP",
+  "approvedArtKey": "scenes:pavilion_reboot/surprise_stage",
+  "approvedVersion": "CH3-C04-surprise-v04.png",
+  "source": {
+    "file": "assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png",
+    "sha256": "8a85f438b734930985140851d38d2d691c8326e71d1aae7891e37b453a03412d",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch03-20261119",
+      "commit": "7bf1f426f3a1d5dba14e7a1bd56ece86a4d23bdb",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch03-2026-11-19/v04-perspective-corrections/candidates/CH3-C04-surprise-v04.png"
+    }
+  },
+  "meaningfulDefectsDemonstrated": [],
+  "regions": [
+    {
+      "id": "presenter",
+      "name": "Presenter expression, gesture and firing-side silhouette",
+      "box": [
+        104,
+        56,
+        140,
+        132
+      ],
+      "finding": "Open mouth, lifted hands, bent knees and auburn/coral/slate identity communicate the startled beat. The entire presenter remains visibly left of the left-facing cannon mouth. Some fine edges are soft, but identity and action are clear at 4x. Preserve the prior 73-pixel left translation and existing scale.",
+      "action": "KEEP"
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon barrel, cradle, pedestal mount and direction",
+      "box": [
+        165,
+        94,
+        199,
+        130
+      ],
+      "finding": "The tilted barrel faces left/up; its collar, angled support and base remain connected and grounded on the platform. No floating part or reversed firing-side relationship is demonstrated. The comic confetti cannon does not require new mechanical detail.",
+      "action": "KEEP"
+    },
+    {
+      "id": "confetti",
+      "name": "Confetti and overlapping effects",
+      "box": [
+        100,
+        52,
+        214,
+        152
+      ],
+      "finding": "Sparse cream/coral confetti crosses the stage and a few costume edges. It supports the early-firing event without hiding the mouth, raised hands, cannon mount or controls. A small patch near the hem can read as confetti or a highlight; that does not justify erasing it.",
+      "action": "KEEP"
+    },
+    {
+      "id": "controls",
+      "name": "Green BEGIN and covered red release on the control pedestal",
+      "box": [
+        220,
+        124,
+        249,
+        163
+      ],
+      "finding": "The left green activation lens/glyph and distinct right red release under its raised cream cover remain readable, with the pedestal support visible. The green lens is brighter in Surprise by the approved state design. Do not replace glyphs with tiny text or flatten the head.",
+      "action": "KEEP"
+    },
+    {
+      "id": "right-wall",
+      "name": "Corrected right-wall pictogram, buttons and PA grille",
+      "box": [
+        263,
+        47,
+        314,
+        155
+      ],
+      "finding": "The fixture edges follow the approved side-wall interpretation rather than the older uniform upward tilt. The separate pictogram, vertical button group and lower grille remain legible. No new perspective defect is demonstrated.",
+      "action": "KEEP"
+    },
+    {
+      "id": "camera",
+      "name": "Large camera, rolling equipment and microphone",
+      "box": [
+        0,
+        96,
+        116,
+        193
+      ],
+      "finding": "The foreground camera and stand are grounded and clearly separate from the platform. The microphone is retained in its approved Surprise state; Locomotion intentionally differs. No obstruction of the cannon firing-side pose is established.",
+      "action": "KEEP"
+    },
+    {
+      "id": "platform",
+      "name": "Raised platform, foot contacts and floor perspective",
+      "box": [
+        86,
+        115,
+        276,
+        192
+      ],
+      "finding": "The presenter and cannon have visible contacts on the raised platform. Its elevation fits the preceding unauthorized-presenter beat. The outer stage, floor joints, chair scale and pedestal support remain coherent; no geometric correction is justified.",
+      "action": "KEEP"
+    }
+  ],
+  "protected": [
+    {
+      "name": "Presenter left/firing-side placement and unchanged scale",
+      "box": [
+        104,
+        56,
+        140,
+        132
+      ]
+    },
+    {
+      "name": "Cannon collar, barrel, bracket and base",
+      "box": [
+        165,
+        94,
+        199,
+        130
+      ]
+    },
+    {
+      "name": "Two-lamp TWO indicator",
+      "box": [
+        128,
+        69,
+        190,
+        120
+      ]
+    },
+    {
+      "name": "Green BEGIN / covered red release / pedestal",
+      "box": [
+        220,
+        124,
+        249,
+        163
+      ]
+    },
+    {
+      "name": "Corrected right-wall fixtures",
+      "box": [
+        263,
+        47,
+        314,
+        155
+      ]
+    },
+    {
+      "name": "Stage architecture, sign and lights",
+      "box": [
+        0,
+        0,
+        314,
+        64
+      ]
+    },
+    {
+      "name": "Curtain folds, mounts and backstage doorway",
+      "box": [
+        50,
+        58,
+        264,
+        148
+      ]
+    },
+    {
+      "name": "Foreground camera and rolling stand",
+      "box": [
+        0,
+        96,
+        65,
+        194
+      ]
+    },
+    {
+      "name": "Audience furniture and floor",
+      "box": [
+        0,
+        158,
+        314,
+        206
+      ]
+    }
+  ],
+  "proposedRepairMaskPixels": 0,
+  "candidateProduced": false,
+  "artworkPixelsChanged": 0,
+  "firingSideCheck": {
+    "presenterInspectionWindow": [
+      104,
+      56,
+      140,
+      132
+    ],
+    "muzzleGuideX": 170,
+    "windowIsContextNotSpriteSegmentation": true,
+    "finding": "Presenter remains on left/firing side; no translation, resize or mirroring. Existing correction preserved exactly."
+  },
+  "perspectiveFinding": "No demonstrated new wall, stage, floor or equipment geometry error. Construction lines are approximate review traces; the earlier v04 wall projection was an authored camera interpretation, not recovered physical calibration. Preserve it.",
+  "controlFinding": "Green BEGIN/activation glyph is on the left; red release stays separate under raised cover on the right. The brighter Surprise green lens is an approved state difference. Preserve head geometry and support.",
+  "narrativeFinding": "The open mouth, startled hands, confetti and left/up-facing cannon support genuine_surprise. Two pale lamps are the approved compact TWO cue. The raised platform follows the preceding presenter-identity event, and the backstage doorway remains available for the exit. Certificate printing/crumpling and door unlocking are successive narrated beats, not mandatory simultaneous visual states.",
+  "crossSceneContinuity": "Architecture, teal curtain family, wall fixture order, camera and control-pedestal placement agree with approved Verification, Urgency and Locomotion views. Urgency has red curtains and Locomotion different floor/net machinery by narrative design. Pedestal green brightness changes intentionally in Surprise. The microphone state also differs intentionally; do not copy Locomotion removal into Surprise.",
+  "manualFinishFinding": "No manual finish is currently justified by a meaningful defect. Reopen only if Nate identifies a specific troublesome pixel/overlap at native/4x scale; source softness and 15,641 colors alone are insufficient.",
+  "sourceAuthorshipLimitation": "Original source-derived full-scene native-grid authorship remains unresolved/unproven; no redraw, filtering or palette cap is proposed."
+}

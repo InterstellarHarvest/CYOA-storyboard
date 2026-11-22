@@ -1,0 +1,19 @@
+{
+  "result": "KEEP existing detail hierarchy",
+  "references": [
+    "scenes:exposition/reception",
+    "scenes:exposition/reception#portraitBackground",
+    "portraits:receptionist:default#layers:foreground",
+    "scenes:biology_park/exposition_concourse",
+    "scenes:biology_park/conveniences_bureau",
+    "scenes:biology_park/service_entry",
+    "scenes:biology_park/control_tower",
+    "scenes:biology_park/spore_garden"
+  ],
+  "reception": "Small scene receptionist communicates hair/costume/pose; the approved portrait adds face and expression. Pavilion scene figures remain readable by auburn/coral/slate or glasses/cream/teal identity without enlarging them or erasing useful shading.",
+  "chapter2": "Bureau, Control Tower, Spore Garden, Service Entry and Concourse retain abundant foliage, equipment and architectural shading. Pavilion keeps a brighter coral/teal theatrical material family. Identical palette counts or equally sparse texture are not required.",
+  "limits": "Pavilion inherits softer RGB transitions and finer tiny faces than Reception. This accepted source-derived difference remains visible; no new unambiguous readability defect warrants global filtering, palette reduction or reconstruction.",
+  "manualTouchupsRequired": [],
+  "newCandidates": 0,
+  "portraitEdits": 0
+}
