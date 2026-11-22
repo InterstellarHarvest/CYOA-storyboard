@@ -4,8 +4,8 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved Lot 14 cataloguing dispute and receipt-locked wheel recall, connecting to existing plumber repair. Removed bride-objected exception on receipt. Only freight-lift WIP remains; all other editorial stop routes are written.",
-    "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
+    "reviewCheckpoint": "2026-11-21: owner-approved W.C. Warehouse Collection freight-lift misunderstanding and three restroom/exit connections. All Chapter 4 editorial review stops are now authored. Full narrative audit and artwork handoff pending validation.",
+    "approval": "Nate approved the complete authored Chapter 4 narrative through all seven Chapter 3 arrival variations, the auction and restroom incidents, optional Lot 31 wedding-ring access routes, Collection Stairs, boiler danger, bridal privacy/AutoFit, three-seashell denial, and the three park-bound nonfatal exits. Four fatal endings are authored. All editorial stop nodes are retired; no wedding-reunion or ceremony duties remain. Artwork and playable-game integration are separate stages.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -17,8 +17,8 @@
       "door_reverse_end",
       "backstage_exit"
     ],
-    "incompleteRoutePolicy": "DRAFT REVIEW STOPS are editorial placeholders, not story endings, not fatal endings, and not approved gameplay. Do not generate artwork or import into the game until they are replaced with written consequences.",
-    "enginePresentationRequirement": "For item-dependent choices, display all four SHOW/USE cards, disabled with a small REQUIRES/NOT IN INVENTORY subtitle when the item is absent. The current game engine hides missing-item choices; the locked-card behavior is a future integration requirement, not implemented by this review JSON. Preserve hidden story-state conditional choices.",
+    "incompleteRoutePolicy": "No DRAFT REVIEW STOP nodes remain in Chapter 4. The public storyboard is an owner-approved narrative source for artwork prompts and eventual gameplay import. Do not mistake absent artwork or future UI work for missing narrative; gameplay import awaits integration/asset checks.",
+    "enginePresentationRequirement": "Conditional SHOW/USE and inspected-clue choices must remain visible but disabled with REQUIRES / NOT IN INVENTORY or ALREADY ATTEMPTED subtitles. The current review JSON may hide unavailable choices; the gameplay UI must implement the desired locked-card behavior. Six inventory slots maximum. Dialogue uses established modes (dialogue, narrative, Focus A) and CONTINUE paging where needed.",
     "approvedItemCardsOnChair": [
       {
         "verb": "show",
@@ -108,7 +108,12 @@
     "approvedLot14Recall": {
       "status": "owner-approved",
       "note": "Original receipt Focus A inspection sets ch4_knows_wheel_lot_14. Cite receipt yields temporary safety-wheel recall with no new dice, item, fee, or wedding duty. B find Commodore; C use maintenance controls. Recovery continues to existing hotel_wheel_return."
-    }
+    },
+    "approvedFreightLift": {
+      "status": "owner-approved",
+      "note": "A salvage clerk directions, B maintenance hatch, C back down and park via service yard. W.C. is Warehouse Collection. Both freight flags set; no new d6, item, fee, or wedding duty."
+    },
+    "narrativeStatus": "owner-approved-node-closure; art-and-gameplay-integration-pending"
   },
   "nodes": {
     "hotel_entry_dispatch": {
@@ -392,7 +397,7 @@
           "id": "service_s3_lift",
           "kind": "action",
           "text": "TAKE THE FREIGHT ELEVATOR UP TO SEARCH FOR A RESTROOM.",
-          "to": "wip_freight_lift"
+          "to": "hotel_freight_wc_misunderstanding"
         },
         {
           "id": "service_yard_leave_park",
@@ -571,12 +576,6 @@
           "to": "hotel_key_master_cabinet"
         }
       }
-    },
-    "wip_freight_lift": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/freight_lift",
-      "text": "DRAFT REVIEW STOP — Freight lift rises from the service dock. Develop a restroom-focused upper-floor arrival or a viable exit, without diverting into wedding logistics.",
-      "choices": []
     },
     "hotel_valve_braced": {
       "mode": "narrative",
@@ -3029,8 +3028,8 @@
       ],
       "choices": [
         {
-          "id": "lot61_escaped_seek_groom",
-          "kind": "continue",
+          "id": "lot61_escaped_seek_toilet",
+          "kind": "action",
           "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
           "to": "hotel_boiler_pressure_intro"
         }
@@ -3080,8 +3079,8 @@
       ],
       "choices": [
         {
-          "id": "lot61_declined_seek_groom",
-          "kind": "continue",
+          "id": "lot61_declined_seek_toilet",
+          "kind": "action",
           "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
           "to": "hotel_boiler_pressure_intro"
         }
@@ -4844,7 +4843,7 @@
       "text": "The smart door remains locked. The camera follows you while the approved bridal-access options wait on its brass panel.",
       "choices": [
         {
-          "id": "door_ask_bridal_criteria",
+          "id": "door_return_ask_bridal_criteria",
           "kind": "spoken",
           "text": "ASK WHAT QUALIFIES SOMEONE AS THE BRIDE.",
           "to": "hotel_bridal_criteria",
@@ -4853,7 +4852,7 @@
           }
         },
         {
-          "id": "door_request_override",
+          "id": "door_return_request_override",
           "kind": "spoken",
           "text": "REQUEST AN EMERGENCY OVERRIDE.",
           "if": {
@@ -4862,7 +4861,7 @@
           "to": "hotel_bridal_emergency_override"
         },
         {
-          "id": "door_show_ring",
+          "id": "door_return_show_ring",
           "kind": "action",
           "text": "SHOW THE WEDDING RING.",
           "if": {
@@ -4871,13 +4870,13 @@
           "to": "hotel_bridal_ring_argument"
         },
         {
-          "id": "door_inspect_gown",
+          "id": "door_return_inspect_gown",
           "kind": "action",
           "text": "STEP BACK AND INSPECT THE WEDDING GOWN.",
           "to": "hotel_bridal_gown_focus"
         },
         {
-          "id": "door_leave",
+          "id": "door_return_leave",
           "kind": "action",
           "text": "GIVE UP ON THIS DOOR AND LEAVE.",
           "to": "hotel_bridal_corridor_exit"
@@ -5453,6 +5452,73 @@
         }
       ],
       "notes": "Owner-approved wheel recovery. Temporary inspection recall leaves original sale legally final. Wheel is a story prop, not an inventory slot or added fee. Reuse existing plumber return and shutoff scene."
+    },
+    "hotel_freight_wc_misunderstanding": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/freight_lift",
+      "speaker": "hotel_lift_voice",
+      "pose": "neutral",
+      "effects": {
+        "set": {
+          "ch4_freight_upper_level_reached": true,
+          "ch4_freight_wc_misunderstanding": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You step into the freight elevator. Its panel has three buttons. One is marked W.C. Finally."
+        },
+        {
+          "desc": "You press it. The elevator rattles upward."
+        },
+        {
+          "say": "Floor Two. W.C.",
+          "who": "hotel_lift_voice"
+        },
+        {
+          "desc": "The doors open onto a storage mezzanine filled with dismantled sinks, toilets, and bathroom partitions."
+        },
+        {
+          "say": "THIS ISN'T A RESTROOM!",
+          "who": "visitor"
+        },
+        {
+          "say": "Warehouse Collection.",
+          "who": "hotel_lift_voice"
+        },
+        {
+          "say": "THEN WHY DOES THE BUTTON SAY W.C.?",
+          "who": "visitor"
+        },
+        {
+          "say": "It was cheaper than replacing the panel.",
+          "who": "hotel_lift_voice"
+        },
+        {
+          "desc": "You step onto the mezzanine. A salvage clerk studies a clipboard nearby. An open maintenance hatch leads toward the pipework. The lift remains behind you."
+        }
+      ],
+      "choices": [
+        {
+          "id": "freight_wc_ask_clerk",
+          "kind": "spoken",
+          "text": "ASK THE SALVAGE CLERK WHERE A WORKING TOILET IS.",
+          "to": "hotel_upper_salvage_clerk_directions"
+        },
+        {
+          "id": "freight_wc_hatch",
+          "kind": "action",
+          "text": "ENTER THE MAINTENANCE HATCH.",
+          "to": "hotel_pipe_tunnel"
+        },
+        {
+          "id": "freight_wc_exit",
+          "kind": "action",
+          "text": "RIDE BACK DOWN AND LEAVE THE HOTEL.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Owner-approved final Chapter 4 editorial stop. W.C. means Warehouse Collection, not water closet. Reuses upstairs clerk and pipe routes without replaying hanging-stall arrival. No extra roll, fee, inventory, or wedding tasks."
     }
   }
 }

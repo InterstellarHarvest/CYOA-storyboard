@@ -32,13 +32,9 @@
 
 The attached JSON is an **approved narrative draft for review and art prompts**, not evidence of finished gameplay or artwork integration. Some item/used-action cards are currently hidden by the review engine instead of shown disabled; preserving the desired future behavior is a separate gameplay/UI integration requirement.
 
-## Remaining editorial stops — Chapter 4 is not yet complete
+## Remaining editorial stops — none
 
-This one node is still explicitly marked `DRAFT REVIEW STOP` and requires one-node-at-a-time story review with Nate:
-
-1. `wip_freight_lift` — service-side lift continuation.
-
-**Suggested next review:** the freight lift. It should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+All former `DRAFT REVIEW STOP` nodes have now been replaced with owner-approved narrative or explicit terminal endings. Chapter 4 narrative node closure is complete; visual assets, engine-specific locked-card display, and chapter-transition wiring remain separate integration work.
 
 ### Approved subsequent node — Upper Salvage
 
@@ -63,6 +59,12 @@ This one node is still explicitly marked `DRAFT REVIEW STOP` and requires one-no
 ### Approved subsequent node — Lot 14 Cataloguing Recall
 
 `wip_auctioneer_dispute` is retired and replaced with `hotel_auctioneer_lot14_dispute` and `hotel_auctioneer_lot14_recall`. The receipt's old bride-objection clause is replaced with a cataloguing-error requirement. A conditional **CITE LOT 14 RECEIPT** action requires `ch4_knows_wheel_lot_14` from Focus A inspection and recalls the plumbing wheel; other choices return to Commodore Bixby or use the maintenance controls. The recalled wheel is a temporary story prop and returns through the existing plumber repair node. No new dice, fees, or wedding roles.
+
+### Approved final node — Freight Elevator W.C.
+
+`wip_freight_lift` is retired and replaced by `hotel_freight_wc_misunderstanding`: the lift's W.C. button means **Warehouse Collection**, not water closet. The player can **A** ask the upstairs salvage clerk about installed toilets, **B** enter the maintenance hatch, or **C** ride back down and head for the park. Both freight flags are set. No additional dice, fee, item, or wedding duties.
+
+See `docs/126_CH4_NARRATIVE_CLOSEOUT_AUDIT_20261121.md` for the final full-chapter audit and remaining gameplay/art dependencies.
 
 ## Subsequent owner directive — wedding is superficial only
 

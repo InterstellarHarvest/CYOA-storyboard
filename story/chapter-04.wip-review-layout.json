@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 21,
+      "layoutRevision": 22,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -184,11 +184,11 @@
           },
           {
             "id": "service",
-            "title": "Service Entrance · Freight and salvage",
+            "title": "Service Entrance · Salvage, W.C. lift, and park exit",
             "nodes": [
               "hotel_service_arrival",
               "hotel_service_foreman",
-              "wip_freight_lift"
+              "hotel_freight_wc_misunderstanding"
             ]
           },
           {
