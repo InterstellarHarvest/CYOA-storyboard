@@ -1,0 +1,39 @@
+{
+  "pixelAndPreservation": {
+    "status": "PASS",
+    "checks": 92,
+    "report": "pixel-and-preservation.json"
+  },
+  "canonical": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "canonical.txt"
+  },
+  "chapter3Narrative": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "chapter3-narrative.txt"
+  },
+  "smoke": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "smoke.txt"
+  },
+  "galleryBrowser": {
+    "status": "PASS",
+    "checks": 26,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "report": "browser.json"
+  },
+  "notRun": [
+    "Game engine/runtime QA",
+    "Live public Pages deployment",
+    "Selected-artwork browser regression not rerun this iteration; earlier 60-check result is historical, not a new v02 run",
+    "Sync tool self-tests not rerun; registry and sync code unchanged"
+  ],
+  "priorVersionStatus": "v01 not selected; full-scene reconstruction direction withdrawn",
+  "stopPoint": "Nate review; no repair expansion"
+}

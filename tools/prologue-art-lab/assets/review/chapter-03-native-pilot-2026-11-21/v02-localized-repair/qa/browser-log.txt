@@ -1,0 +1,223 @@
+{
+  "scope": "v02 targeted assessment and six-pixel repair gallery; local browser QA",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "checks": [
+        {
+          "name": "Assessment appears before first visual test",
+          "pass": true
+        },
+        {
+          "name": "Two native scene previews retain 314x206 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "Browser decoded candidate differs at exactly six native pixels",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x view",
+          "pass": true
+        },
+        {
+          "name": "Full scene exact 4x boxes remain 1256x824",
+          "pass": true
+        },
+        {
+          "name": "Matching full scene 4x pair scrolls without shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every review image decodes at its declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Served original and candidate SHA-256 match",
+          "pass": true
+        },
+        {
+          "name": "Every local evidence source and QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes enlarged review views",
+          "pass": true
+        },
+        {
+          "name": "Mobile native pair stays at logical 314x206",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML has embedded decodable images",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "linkResponses": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion-approved-left-candidate-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion-approved-left-candidate-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "sources/repair-plan.json",
+          "status": 200
+        },
+        {
+          "href": "sources/assessment-first.json",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.csv",
+          "status": 200
+        },
+        {
+          "href": "repair.py",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "sources/preservation-baseline.json",
+          "status": 200
+        },
+        {
+          "href": "qa/pixel-and-preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "checks": [
+        {
+          "name": "Assessment appears before first visual test",
+          "pass": true
+        },
+        {
+          "name": "Two native scene previews retain 314x206 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "Browser decoded candidate differs at exactly six native pixels",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x view",
+          "pass": true
+        },
+        {
+          "name": "Full scene exact 4x boxes remain 1256x824",
+          "pass": true
+        },
+        {
+          "name": "Matching full scene 4x pair scrolls without shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every review image decodes at its declared dimensions",
+          "pass": true
+        },
+        {
+          "name": "Served original and candidate SHA-256 match",
+          "pass": true
+        },
+        {
+          "name": "Every local evidence source and QA link resolves",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes enlarged review views",
+          "pass": true
+        },
+        {
+          "name": "Mobile native pair stays at logical 314x206",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML has embedded decodable images",
+          "pass": true
+        },
+        {
+          "name": "No page JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "linkResponses": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion-approved-left-candidate-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/locomotion-approved-left-candidate-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "sources/repair-plan.json",
+          "status": 200
+        },
+        {
+          "href": "sources/assessment-first.json",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.csv",
+          "status": 200
+        },
+        {
+          "href": "repair.py",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "sources/preservation-baseline.json",
+          "status": 200
+        },
+        {
+          "href": "qa/pixel-and-preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

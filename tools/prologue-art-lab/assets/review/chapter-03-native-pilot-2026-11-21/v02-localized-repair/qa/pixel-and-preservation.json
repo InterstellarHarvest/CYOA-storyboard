@@ -1,0 +1,385 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "Assessment and mask fixed before candidate exists",
+      "pass": true
+    },
+    {
+      "name": "Predeclared mask hash unchanged",
+      "pass": true
+    },
+    {
+      "name": "Candidate and original 314x206 RGB",
+      "pass": true
+    },
+    {
+      "name": "Opaque candidate",
+      "pass": true
+    },
+    {
+      "name": "Exactly six changed pixels",
+      "pass": true
+    },
+    {
+      "name": "Actual changes equal predeclared six coordinates",
+      "pass": true
+    },
+    {
+      "name": "Zero changes outside mask",
+      "pass": true
+    },
+    {
+      "name": "64678 unmasked pixels exactly preserved",
+      "pass": true
+    },
+    {
+      "name": "Effective mask equals predeclared mask",
+      "pass": true
+    },
+    {
+      "name": "Source sample and replacement exact [82, 87]",
+      "pass": true
+    },
+    {
+      "name": "Source sample and replacement exact [91, 89]",
+      "pass": true
+    },
+    {
+      "name": "Source sample and replacement exact [92, 90]",
+      "pass": true
+    },
+    {
+      "name": "Source sample and replacement exact [92, 95]",
+      "pass": true
+    },
+    {
+      "name": "Source sample and replacement exact [111, 102]",
+      "pass": true
+    },
+    {
+      "name": "Source sample and replacement exact [114, 107]",
+      "pass": true
+    },
+    {
+      "name": "Original canonical source SHA-256",
+      "pass": true
+    },
+    {
+      "name": "Original Backstage SHA-256",
+      "pass": true
+    },
+    {
+      "name": "No Backstage repair allowed",
+      "pass": true
+    },
+    {
+      "name": "No Backstage candidate produced",
+      "pass": true
+    },
+    {
+      "name": "Six opaque edit-layer pixels, all other alpha zero",
+      "pass": true
+    },
+    {
+      "name": "Transparent edit layer reconstructs candidate exactly",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview locomotion-approved",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview locomotion-presenter-candidate-v02",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x preview backstage-approved",
+      "pass": true
+    },
+    {
+      "name": "Matching native comparison halves exact",
+      "pass": true
+    },
+    {
+      "name": "Matching 4x comparison exact",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x cropped comparison presenter",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x cropped comparison hair-face",
+      "pass": true
+    },
+    {
+      "name": "Exact 4x cropped comparison open-hand",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Foreground audience chair backs",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Detailed empty right chair",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Large camera and rolling stand",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Ceiling lights, architecture and sign",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Countdown 30 and mount",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Curtain folds and mounting hardware",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Wall fixtures, console and background doorway",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Pit, moving floor, net and landing",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Presenter eyes, eyebrows, nose and smile core",
+      "pass": true
+    },
+    {
+      "name": "Protected detail context: Presenter near hand, cuff, clothes, legs and shoes",
+      "pass": true
+    },
+    {
+      "name": "All 644 prior tracked files unchanged",
+      "pass": true
+    },
+    {
+      "name": "Candidate color count reported without palette target",
+      "pass": true
+    },
+    {
+      "name": "Candidate hash exact",
+      "pass": true
+    },
+    {
+      "name": "Deterministic replay yields same PNG hash",
+      "pass": true
+    },
+    {
+      "name": "Unique HTML anchors",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions originals/approved-locomotion.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/locomotion-protected-detail-guide.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions previews/locomotion-approved-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions masks/locomotion-authorized-test-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions masks/locomotion-mask-overlay.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions masks/locomotion-mask-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/locomotion-perspective-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions originals/approved-backstage.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-protected-detail-guide.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions previews/backstage-approved-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions masks/backstage-proposed-repair-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-cables-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-cables-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-floor-boundaries-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-floor-boundaries-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-story-props-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-story-props-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-mechanical-clapper-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-mechanical-clapper-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions assessment/backstage-perspective-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions originals/approved-locomotion.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions candidate/CH3-LOCOMOTION-presenter-local-v02.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions previews/locomotion-approved-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions previews/locomotion-presenter-candidate-v02-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/presenter-before-after-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/presenter-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/presenter-change-locator-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/hair-face-before-after-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/hair-face-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/hair-face-change-locator-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/open-hand-before-after-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/open-hand-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions comparisons/open-hand-change-locator-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image and declared dimensions references/presenter-idle.png",
+      "pass": true
+    },
+    {
+      "name": "Anchor #locomotion-assessment",
+      "pass": true
+    },
+    {
+      "name": "Anchor #backstage-assessment",
+      "pass": true
+    },
+    {
+      "name": "Anchor #presenter-test",
+      "pass": true
+    },
+    {
+      "name": "Anchor #proof",
+      "pass": true
+    },
+    {
+      "name": "Source link README.md",
+      "pass": true
+    },
+    {
+      "name": "Source link comparisons/locomotion-approved-left-candidate-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "Source link comparisons/locomotion-approved-left-candidate-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Source link sources/repair-plan.json",
+      "pass": true
+    },
+    {
+      "name": "Source link sources/assessment-first.json",
+      "pass": true
+    },
+    {
+      "name": "Source link sources/changed-pixels.csv",
+      "pass": true
+    },
+    {
+      "name": "Source link repair.py",
+      "pass": true
+    },
+    {
+      "name": "Source link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Source link sources/preservation-baseline.json",
+      "pass": true
+    },
+    {
+      "name": "Portable gallery embeds every image",
+      "pass": true
+    }
+  ],
+  "checkCount": 92,
+  "changedPixels": 6,
+  "unchangedPixels": 64678,
+  "outsideMaskChanges": 0,
+  "preservedPreexistingFiles": 644,
+  "previousFilesChanged": [],
+  "backstagePixelsEdited": 0,
+  "geometryPixelsEdited": 0,
+  "imageGenerationUsed": false,
+  "narrativeRegistryGameplayWorkflowChanges": 0,
+  "candidateStatus": "generated/unselected",
+  "sourceAuthorshipLimitationRetained": true
+}

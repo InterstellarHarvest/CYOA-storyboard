@@ -1,0 +1,145 @@
+{
+  "status": "generated/unselected repair proposal and authorized small presenter test",
+  "method": "Six explicit per-pixel replacements sampled from the approved original, no generated raster or image-wide processing",
+  "coordinateConvention": "Top-left origin, zero-based x/y; rectangles in this assessment use Pillow crop-exclusive x1/y1",
+  "sourceSha256": "be99d790754951bcbcd1c26b94a94ff4e84280f5385735951b0f024b322e13c5",
+  "scope": "Only six predeclared presenter pixels. No costume, microphone, legs, scene hardware, pit, net, landing or room edit.",
+  "operations": [
+    {
+      "at": [
+        82,
+        87
+      ],
+      "sample": [
+        81,
+        87
+      ],
+      "defect": "One detached copper pixel above the hair, disconnected from the bob.",
+      "intent": "Restore the adjacent curtain color at the orphan pixel.",
+      "beforeRGB": [
+        174,
+        72,
+        47
+      ],
+      "afterRGB": [
+        100,
+        139,
+        136
+      ]
+    },
+    {
+      "at": [
+        91,
+        89
+      ],
+      "sample": [
+        90,
+        89
+      ],
+      "defect": "Grey/green notch at the outer hair arc, between contiguous copper clusters.",
+      "intent": "Use the neighboring copper shade to connect the existing crown contour.",
+      "beforeRGB": [
+        103,
+        102,
+        96
+      ],
+      "afterRGB": [
+        151,
+        77,
+        56
+      ]
+    },
+    {
+      "at": [
+        92,
+        90
+      ],
+      "sample": [
+        91,
+        90
+      ],
+      "defect": "Second pale green transition on the same right crown contour.",
+      "intent": "Continue the short copper boundary without moving the head or changing its dimensions.",
+      "beforeRGB": [
+        120,
+        132,
+        125
+      ],
+      "afterRGB": [
+        145,
+        70,
+        52
+      ]
+    },
+    {
+      "at": [
+        92,
+        95
+      ],
+      "sample": [
+        92,
+        94
+      ],
+      "defect": "Grey cheek/hair fringe outside the intact eye and eyebrow pixels.",
+      "intent": "Join the existing dark copper hair edge, preserving face core and expression.",
+      "beforeRGB": [
+        117,
+        106,
+        99
+      ],
+      "afterRGB": [
+        112,
+        61,
+        49
+      ]
+    },
+    {
+      "at": [
+        111,
+        102
+      ],
+      "sample": [
+        110,
+        102
+      ],
+      "defect": "Grey-green pixel interrupts the raised fingertip/hand connection.",
+      "intent": "Bridge with neighboring warm skin color while retaining the fingertip and open-hand gesture.",
+      "beforeRGB": [
+        125,
+        145,
+        142
+      ],
+      "afterRGB": [
+        250,
+        185,
+        142
+      ]
+    },
+    {
+      "at": [
+        114,
+        107
+      ],
+      "sample": [
+        113,
+        107
+      ],
+      "defect": "Grey fringe on the underside/end of the open palm.",
+      "intent": "Continue the existing warm shadow edge, without adding or removing a finger.",
+      "beforeRGB": [
+        138,
+        137,
+        124
+      ],
+      "afterRGB": [
+        221,
+        131,
+        96
+      ]
+    }
+  ],
+  "plannedChangedPixels": 6,
+  "maskFile": "masks/locomotion-authorized-test-mask.png",
+  "laterRepairsAuthorized": false,
+  "maskSha256": "04ea0ebeb505f5837ad5d128d8c4b639db44191d11be99d66485b9783096ccdb"
+}
