@@ -74,7 +74,7 @@
               "hotel_chair_stapler_stealth",
               "hotel_chair_stapler_caught",
               "hotel_chair_staff_escort",
-              "wip_chair_staff_escort_loading"
+              "hotel_chair_staff_escort_loading"
             ]
           },
           {
@@ -98,7 +98,7 @@
               "wip_ring_find_groom",
               "wip_chair_bride_groom",
               "wip_chair_bride_ring",
-              "wip_chair_follow_collection"
+              "hotel_chair_follow_collection"
             ]
           },
           {
@@ -113,9 +113,14 @@
           },
           {
             "id": "collection_stairs",
-            "title": "Lot 31 · Collection Stairs and sold staff lavatory",
+            "title": "Lot 31 · Collection ring recovery and staff lavatory",
             "nodes": [
               "hotel_collection_stairs",
+              "hotel_collection_ring_focus",
+              "hotel_collection_ring_porter_recovery",
+              "hotel_collection_ring_stapler_recovery",
+              "hotel_collection_ring_in_pocket",
+              "hotel_collection_ring_to_bride",
               "hotel_collection_porters_groom_clue",
               "hotel_collection_slip_unnoticed",
               "hotel_collection_slip_spotted",

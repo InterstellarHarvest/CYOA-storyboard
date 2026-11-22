@@ -30,7 +30,8 @@
       {"verb":"show","item":"lot_53_dispute_ticket","requires":"LOT 53 DISPUTE TICKET","absentSubtitle":"NOT IN INVENTORY"},
       {"verb":"show","item":"pavilion_temporary_staff_pass","requires":"TEMPORARY STAFF PASS","absentSubtitle":"NOT IN INVENTORY"}
     ],
-    "approvedItemCardAtGroom": {"verb":"show","item":"wedding_ring_lot31","requires":"WEDDING RING — LOT 31","absentSubtitle":"NOT IN INVENTORY","futurePresentation":"Keep the missing-ring SHOW card visible but locked; other groom choices depend on prior conversations/flags. Previously asked groom dialogue cards should grey out after use in the final engine."}
+    "approvedItemCardAtGroom": {"verb":"show","item":"wedding_ring_lot31","requires":"WEDDING RING — LOT 31","absentSubtitle":"NOT IN INVENTORY","futurePresentation":"Keep the missing-ring SHOW card visible but locked; other groom choices depend on prior conversations/flags. Previously asked groom dialogue cards should grey out after use in the final engine."},
+    "approvedCollectionChairRecovery": {"status":"owner-approved","note":"Following Lot 31 or accompanying it on a Staff Pass now converges at Collection Stairs. A new Focus A inspection can retrieve the ring by witnessed porter assistance or discreet Red Stapler use. Both methods award the existing ring item without another d6. The missing-item Red Stapler action must remain visible but disabled with a REQUIRES / NOT IN INVENTORY subtitle in the final game. The original failed ring check forces a detour but does not lose the ring permanently."}
   },
   "nodes": {
     "hotel_entry_dispatch": {
@@ -479,7 +480,7 @@
       "choices":[
         {"id":"chair_investigate_silver","kind":"action","text":"EXAMINE THE FLASH OF SILVER BETWEEN THE CHAIR CUSHIONS.","to":"hotel_chair_ring_focus"},
         {"id":"chair_ask_bride_groom","kind":"spoken","text":"THE GROOM WAS CARRYING THIS CHAIR? WHAT HAPPENED TO HIM?","to":"wip_chair_bride_groom"},
-        {"id":"chair_follow_porters","kind":"action","text":"FOLLOW THE PORTERS WHEN THEY TAKE THE CHAIR TO THE COLLECTION AREA.","to":"wip_chair_follow_collection"}
+        {"id":"chair_follow_porters","kind":"action","text":"FOLLOW THE PORTERS WHEN THEY TAKE THE CHAIR TO THE COLLECTION AREA.","to":"hotel_chair_follow_collection"}
       ],
       "show":{
         "acting_director_badge":{"kind":"action","say":"SHOW YOUR VEGETATION CREDENTIAL AND REQUEST AN INSPECTION OF THE CHAIR'S WOODEN FRAME.","to":"hotel_chair_vegetation_inspection"},
@@ -557,7 +558,7 @@
         {"say":"Excellent initiative! That's the kind of service we pride ourselves on!","who":"hotel_auctioneer"},
         {"desc":"You have become an employee of yet another establishment without applying for a job."}
       ],
-      "choices":[{"id":"staff_escort_dock","kind":"continue","text":"CONTINUE","to":"wip_chair_staff_escort_loading"}]
+      "choices":[{"id":"staff_escort_dock","kind":"continue","text":"CONTINUE","to":"hotel_chair_staff_escort_loading"}]
     },
     "hotel_chair_ring_focus": {
       "mode":"focus","scene":"grand_bellevue/lobby","focus":"grand_bellevue/auction_floor/chair_armrest",
@@ -567,7 +568,7 @@
         {"id":"focus_free_ring_stapler","kind":"action","text":"WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.","if":{"flag":"ch4_chair_seam_open"},"to":"hotel_ring_retrieved"},
         {"id":"focus_free_ring_careful","kind":"action","text":"WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.","if":{"notFlag":"ch4_chair_seam_open"},"check":{"id":"ch4_careful_ring_retrieval","sides":6,"need":4,"mods":[{"if":{"flag":"ch4_chair_vegetation_permitted"},"add":1},{"if":{"flag":"ch4_chair_sale_paused"},"add":2}]},"pass":{"to":"hotel_ring_retrieved"},"fail":{"to":"hotel_ring_slips"}},
         {"id":"focus_show_bride_ring","kind":"action","text":"CALL THE BRIDE OVER AND SHOW HER WHAT IS CAUGHT IN THE UPHOLSTERY.","to":"wip_chair_bride_ring"},
-        {"id":"focus_follow_chair_ring","kind":"action","text":"LET THE PORTERS TAKE THE CHAIR, THEN FOLLOW IT TO COLLECTION.","to":"wip_chair_follow_collection"}
+        {"id":"focus_follow_chair_ring","kind":"action","text":"LET THE PORTERS TAKE THE CHAIR, THEN FOLLOW IT TO COLLECTION.","to":"hotel_chair_follow_collection"}
       ]
     },
     "hotel_ring_retrieved": {
@@ -580,7 +581,7 @@
       "mode":"narrative","scene":"grand_bellevue/lobby",
       "effects":{"set":{"ch4_ring_slipped_inside_chair":true}},
       "text":"You catch the ribbon between your fingers. It seems loose enough. You give it a careful tug.\n\nPing.\n\nThe brass upholstery tack snaps free. The ring slips from the ribbon, strikes the wooden frame, and disappears into the narrow cavity beneath the armrest.\n\nYou hear it rattle downward. Then silence.\n\nYou try to reach into the gap, but your fingers cannot get past the chair's internal supports. Before you can attempt anything else, the porters begin moving the chair.\n\nOne porter calls to the other to watch the arms. The buyer wants the chair in its original condition.\n\nThe chair is lifted onto its trolley. Somewhere inside the upholstery, the wedding ring is still rattling.\n\nYou watch Lot Thirty-One roll toward the collection entrance. The ring isn't lost forever, but you're going to have to follow the chair to retrieve it.",
-      "choices":[{"id":"ring_follow_after_fail","kind":"continue","text":"CONTINUE","to":"wip_chair_follow_collection"}]
+      "choices":[{"id":"ring_follow_after_fail","kind":"continue","text":"CONTINUE","to":"hotel_chair_follow_collection"}]
     },
     "hotel_stall_crane_success":{
       "mode":"narrative","scene":"grand_bellevue/restroom",
@@ -599,8 +600,27 @@
     "wip_stall_wedding_walk":{"mode":"narrative","scene":"grand_bellevue/wedding_corridor","text":"DRAFT REVIEW STOP — Unwritten result of walking past the wedding guests with dignity. This is not a gameplay ending.","choices":[]},
     "wip_chair_bride_groom":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Bride dialogue about the missing groom, with a conditional variant if the player already found him. This is not a gameplay ending.","choices":[]},
     "wip_chair_bride_ring":{"mode":"narrative","scene":"grand_bellevue/lobby","text":"DRAFT REVIEW STOP — Show the caught ring to the bride, allowing recognition without automatically handing over an inventory item. This is not a gameplay ending.","choices":[]},
-    "wip_chair_follow_collection":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — Pursue Lot Thirty-One to the loading dock, accounting for whether the ring is still trapped inside. This is not a gameplay ending.","choices":[]},
-    "wip_chair_staff_escort_loading":{"mode":"narrative","scene":"grand_bellevue/loading_dock","text":"DRAFT REVIEW STOP — Arrive carrying Lot Thirty-One as an authorized staff escort; connects to the service salvage crew. This is not a gameplay ending.","choices":[]},
+    "hotel_chair_follow_collection":{
+      "mode":"narrative","scene":"grand_bellevue/service_passage",
+      "text":[
+        {"desc":"You trail Lot Thirty-One through the service door. The porters wheel it past empty shipping crates toward the collection stairs."},
+        {"desc":"Nobody questions your presence. Apparently, following furniture around is perfectly normal here."},
+        {"if":{"flag":"ch4_ring_slipped_inside_chair"},"desc":"At every bump, something metallic rattles inside the upholstered armrest. The ring is still there."},
+        {"desc":"The trolley rounds a corner. You keep pace."}
+      ],
+      "choices":[{"id":"chair_follow_reach_collection","kind":"continue","text":"CONTINUE","to":"hotel_collection_stairs"}]
+    },
+    "hotel_chair_staff_escort_loading":{
+      "mode":"dialogue","scene":"grand_bellevue/service_passage","speaker":"hotel_porter","pose":"practical",
+      "text":[
+        {"desc":"You carry one end of Lot Thirty-One through the service passage. The porter checks your Staff Pass again."},
+        "Doesn't say anything about furniture removal.",
+        {"desc":"He hands it back."},
+        "Doesn't say you can't, either.",
+        {"desc":"You continue carrying the chair. Your authorization has become remarkably physical."}
+      ],
+      "choices":[{"id":"chair_staff_escort_reach_collection","kind":"continue","text":"CONTINUE","to":"hotel_collection_stairs"}]
+    },
     "hotel_ring_in_pocket":{
       "mode":"narrative","scene":"grand_bellevue/lobby",
       "text":"You straighten beside Lot Thirty-One. A pale blue thread clings to your cuff. The silver wedding ring is safely in your pocket.\n\nThe bride asks a porter whether he's seen her groom.\n\nHe checks his clipboard and assures her that the chair is accounted for.\n\nShe doesn't look reassured.\n\nThe porters prepare to move the chair.\n\nYou have the ring. The groom is missing.\n\nAnd you still need a toilet.",
@@ -732,13 +752,77 @@
     },
     "hotel_collection_stairs":{
       "mode":"narrative","scene":"grand_bellevue/service_passage",
-      "text":"You follow the bride's directions toward the collection stairs.\n\nThe auctioneer's voice still carries through the ventilation grilles.\n\nTwo porters struggle to free Lot Thirty-One from a narrow doorway.\n\nBeneath the trolley wheel lies a crushed white boutonnière and a delivery slip.\n\nLOT 31 — BRIDAL SUITE CHAIR\n\nATTACHED GENTLEMAN — NOT INCLUDED\n\nNOT INCLUDED has been underlined three times.\n\nBeyond the chair, a door reads:\n\nBOILER ACCESS — AUTHORIZED PERSONNEL ONLY\n\nSomething scrapes behind it.\n\nA man coughs, then abruptly goes quiet.\n\nYou may have found the groom.\n\nYou also spot a sign pointing toward the staff lavatory.\n\nA bright red SOLD sticker covers the arrow.\n\nNaturally.",
+      "text":"You reach the collection stairs.\n\nThe auctioneer's voice still carries through the ventilation grilles.\n\nTwo porters struggle to free Lot Thirty-One from a narrow doorway.\n\nBeneath the trolley wheel lies a crushed white boutonnière and a delivery slip.\n\nLOT 31 — BRIDAL SUITE CHAIR\n\nATTACHED GENTLEMAN — NOT INCLUDED\n\nNOT INCLUDED has been underlined three times.\n\nBeyond the chair, a door reads:\n\nBOILER ACCESS — AUTHORIZED PERSONNEL ONLY\n\nSomething scrapes behind it.\n\nA man coughs, then abruptly goes quiet.\n\nYou may have found the groom.\n\nYou also spot a sign pointing toward the staff lavatory.\n\nA bright red SOLD sticker covers the arrow.\n\nNaturally.",
       "choices":[
         {"id":"collection_ask_porters_groom","kind":"spoken","text":"EXCUSE ME. WHAT HAPPENED TO THE GENTLEMAN WHO CAME WITH THAT CHAIR?","to":"hotel_collection_porters_groom_clue"},
         {"id":"collection_slip_past_chair","kind":"action","text":"SLIP THROUGH THE BOILER-ROOM DOOR WHILE THE PORTERS STRUGGLE WITH THE CHAIR.","check":{"id":"ch4_collection_stairs_slip_unnoticed","sides":6,"need":4},"pass":{"effects":{"set":{"ch4_boiler_entry_unnoticed":true}},"to":"hotel_collection_slip_unnoticed"},"fail":{"effects":{"set":{"ch4_boiler_entry_spotted":true,"ch4_not_included_tag":true}},"to":"hotel_collection_slip_spotted"}},
         {"id":"collection_show_staff_pass","kind":"action","text":"SHOW YOUR TEMPORARY STAFF PASS AND REQUEST ACCESS TO THE MAINTENANCE AREA.","if":{"has":"pavilion_temporary_staff_pass"},"to":"hotel_collection_staff_pass"},
-        {"id":"collection_check_staff_lavatory","kind":"action","text":"INVESTIGATE THE STAFF LAVATORY DESPITE THE SOLD SIGN.","to":"hotel_staff_lavatory_storage"}
+        {"id":"collection_check_staff_lavatory","kind":"action","text":"INVESTIGATE THE STAFF LAVATORY DESPITE THE SOLD SIGN.","to":"hotel_staff_lavatory_storage"},
+        {"id":"collection_inspect_chair_ring","kind":"action","text":"INSPECT LOT THIRTY-ONE'S ARMREST BEFORE THE CHAIR IS CRATED.","if":{"notFlag":"ch4_wedding_ring_retrieved"},"to":"hotel_collection_ring_focus"}
       ]
+    },
+    "hotel_collection_ring_focus":{
+      "mode":"focus","scene":"grand_bellevue/service_passage","focus":"grand_bellevue/collection_stairs/chair_armrest",
+      "effects":{"set":{"ch4_ring_spotted_in_chair":true}},
+      "text":[
+        {"desc":"The porters pause with Lot Thirty-One tilted in the doorway. You crouch beside the armrest. A few loose brass tacks expose a narrow cavity beneath the red upholstery."},
+        {"if":{"flag":"ch4_ring_slipped_inside_chair"},"desc":"The wedding ring has fallen beneath a wooden brace. Now that the chair is tilted, you can see it, but your fingers cannot reach."},
+        {"if":{"notFlag":"ch4_ring_slipped_inside_chair"},"desc":"A silver wedding band is caught in a strand of pale blue ribbon behind the loosened fabric."},
+        {"desc":"The porters stand close enough to help—and close enough to notice any tampering. The delivery manifest lists one chair. It does not list a wedding ring."}
+      ],
+      "choices":[
+        {"id":"collection_ring_ask_porter","kind":"action","text":"ASK THE PORTER TO REMOVE THE UNLISTED WEDDING RING.","to":"hotel_collection_ring_porter_recovery"},
+        {"id":"collection_ring_return","kind":"action","text":"STOP INSPECTING AND RETURN TO THE COLLECTION STAIRS.","to":"hotel_collection_stairs"}
+      ],
+      "use":{
+        "red_stapler":{"kind":"action","say":"USE THE RED STAPLER TO OPEN THE UPHOLSTERY SEAM AND FREE THE RING.","to":"hotel_collection_ring_stapler_recovery"}
+      },
+      "notes":"Owner-approved Focus A. The Red Stapler action must be displayed locked with REQUIRES / NOT IN INVENTORY when absent in final gameplay UI. Do not repeat the earlier stapler stealth d6 at collection. The ring is not given until the player explicitly chooses a recovery method."
+    },
+    "hotel_collection_ring_porter_recovery":{
+      "mode":"dialogue","scene":"grand_bellevue/service_passage","speaker":"hotel_porter","pose":"practical",
+      "effects":{"give":["wedding_ring_lot31"],"set":{"ch4_wedding_ring_retrieved":true,"ch4_ring_recovered_at_collection":true,"ch4_ring_recovery_witnessed":true,"ch4_ring_slipped_inside_chair":false}},
+      "text":[
+        {"desc":"You point to the silver ring lodged inside the armrest, then to the delivery manifest."},
+        {"say":"THAT RING ISN'T ON YOUR MANIFEST.","who":"visitor"},
+        "Then it isn't included in the sale.",
+        {"say":"Can you get it out?","who":"visitor"},
+        "We'd better. Imagine delivering something the buyer hasn't paid for.",
+        {"desc":"He carefully tilts the chair and pulls back the loose upholstery. The ring slides along the wooden frame. He catches it in his palm."},
+        {"say":"Should we list it as recovered?","who":"hotel_second_porter"},
+        "No. It wasn't included.",
+        {"desc":"He hands you the ring."},
+        "Best take that before somebody puts a price on it.",
+        {"desc":"You slip the wedding ring into your pocket."}
+      ],
+      "choices":[{"id":"collection_porter_ring_continue","kind":"continue","text":"CONTINUE","to":"hotel_collection_ring_in_pocket"}]
+    },
+    "hotel_collection_ring_stapler_recovery":{
+      "mode":"dialogue","scene":"grand_bellevue/service_passage","speaker":"hotel_porter","pose":"businesslike",
+      "effects":{"give":["wedding_ring_lot31"],"set":{"ch4_wedding_ring_retrieved":true,"ch4_ring_recovered_at_collection":true,"ch4_ring_recovery_unnoticed":true,"ch4_ring_slipped_inside_chair":false}},
+      "text":[
+        {"desc":"The porters are bent over their delivery manifest. You slip the red stapler from your pocket."},
+        {"desc":"Using its metal base, you carefully lever the loose upholstery away from the wooden armrest. The opening widens. You tilt the chair slightly."},
+        {"desc":"The wedding ring rolls along the wooden frame and drops into your palm. Click."},
+        "If anything's fallen off, put it on the discrepancy form.",
+        {"desc":"You slip the stapler and ring into your pockets. No discrepancies are reported."}
+      ],
+      "choices":[{"id":"collection_stapler_ring_continue","kind":"continue","text":"CONTINUE","to":"hotel_collection_ring_in_pocket"}],
+      "notes":"Owner-approved reliable item-assisted recovery without a second stealth check, with no new upholstery damage and no consumption of the Red Stapler."
+    },
+    "hotel_collection_ring_in_pocket":{
+      "mode":"narrative","scene":"grand_bellevue/service_passage",
+      "text":"The silver ring is safely in your pocket. The porters return to their chair and the collection paperwork.\n\nYou can retrace the corridor to the bride, continue toward the boiler room where somebody coughed, or try the staff lavatory.\n\nThe ring can wait. Your bladder would prefer otherwise.",
+      "choices":[
+        {"id":"collection_ring_go_bride","kind":"action","text":"RETURN TO THE BRIDE WITH THE WEDDING RING.","to":"hotel_collection_ring_to_bride"},
+        {"id":"collection_ring_go_boilers","kind":"action","text":"FOLLOW THE CLUE TOWARD BOILER THREE.","to":"hotel_boiler_pressure_intro"},
+        {"id":"collection_ring_go_lavatory","kind":"action","text":"CHECK THE STAFF LAVATORY.","to":"hotel_staff_lavatory_storage"}
+      ]
+    },
+    "hotel_collection_ring_to_bride":{
+      "mode":"narrative","scene":"grand_bellevue/lobby",
+      "text":"You retrace the service passage and emerge beside the auction floor. The bride is still watching the collection crews, looking increasingly concerned.\n\nYou approach with the ring.",
+      "choices":[{"id":"collection_ring_bride_arrival","kind":"continue","text":"CONTINUE","to":"hotel_ring_show_bride"}]
     },
     "hotel_collection_porters_groom_clue":{
       "mode":"dialogue","scene":"grand_bellevue/service_passage","speaker":"hotel_porter","pose":"practical",
