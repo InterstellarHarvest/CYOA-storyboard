@@ -1,0 +1,464 @@
+{
+  "selectedPreviewRecords": {
+    "portraits:receptionist:default#layers:background": {
+      "file": "assets/selected/art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/reception_background.png"
+      }
+    },
+    "portraits:receptionist:default#layers:foreground": {
+      "file": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/receptionist_idle.png"
+      }
+    },
+    "scenes:biology_park/control_tower": {
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "scenes:biology_park/conveniences_bureau": {
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "scenes:biology_park/spore_garden": {
+      "file": "assets/selected/art/scenes/biology_park/spore_garden.png",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/spore_garden.png"
+      }
+    },
+    "scenes:biology_park/tour_tram": {
+      "file": "assets/selected/art/scenes/biology_park/tour_tram.png",
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/tour_tram.png"
+      }
+    },
+    "scenes:exposition/reception": {
+      "file": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/conference_hall/reception/reception_scene.png"
+      }
+    },
+    "scenes:exposition/reception#portraitBackground": {
+      "file": "assets/selected/art/portraits/receptionist/reception_background.png",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/reception_background.png"
+      }
+    },
+    "scenes:house_of_tomorrow/foyer": {
+      "file": "assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/house_of_tomorrow/foyer.png"
+      }
+    },
+    "scenes:house_of_tomorrow/lounge": {
+      "file": "assets/selected/art/scenes/house_of_tomorrow/lounge.png",
+      "sha256": "9dc600a286bc585a5fb8fc1a5bf85cca31a06ea4f42f4b83057f3845242b92f8",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/house_of_tomorrow/lounge.png"
+      }
+    }
+  },
+  "labAssetIndex": {
+    "schema": "cyoa-public-prologue-review-assets-v1",
+    "provenance": {
+      "approvedPresentation": "312928afbac4aace37c6602e9033574f90849d2b",
+      "draftArtwork": "docs/story-gameplay-study-v01",
+      "note": "Only explicitly selected 28 draft and 17 approved visual PNG files; no gameplay engine or story prose."
+    },
+    "files": [
+      {
+        "path": "assets/approved/art/items/bathroom_pass_inspect.png",
+        "bytes": 288677,
+        "sha256": "9c8527a3fd85cfeddc01ce4a85b74b04cb54063ffc30100be19497e73e7fa722",
+        "gitBlob": "b4b6d2710e2a39aeced9c73af950444b431527d8"
+      },
+      {
+        "path": "assets/approved/art/items/bathroom_pass_slot.png",
+        "bytes": 8985,
+        "sha256": "5ad9b6f94328d645173b4f0476f4bdde0bac07d4415ab2c7afcba36e8494355d",
+        "gitBlob": "8941c2e67b761f525d70fa0629f8120d2930fd37"
+      },
+      {
+        "path": "assets/approved/art/portraits/receptionist/reception_background.png",
+        "bytes": 192133,
+        "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+        "gitBlob": "cc7b7a17b811368b516c9fc99c8ada78a2cae4b0"
+      },
+      {
+        "path": "assets/approved/art/portraits/receptionist/receptionist_idle.png",
+        "bytes": 75513,
+        "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+        "gitBlob": "35b7d3b82178616d468e47da65bc360e798d839a"
+      },
+      {
+        "path": "assets/approved/art/scenes/conference_hall/reception/reception_scene.png",
+        "bytes": 46387,
+        "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+        "gitBlob": "0ebb25f32f30ce6d54e5c9e966dcdbfd9401d98f"
+      },
+      {
+        "path": "assets/approved/art/ui/shell/item-overlay.png",
+        "bytes": 137375,
+        "sha256": "aaac746ad182cf558c7579580a21d73c31f83709963cd287ac14ddb3d1252728",
+        "gitBlob": "c796327b178b4eec3986897c41ec095c289cd0b5"
+      },
+      {
+        "path": "assets/approved/art/ui/shell/layout-final.png",
+        "bytes": 1218361,
+        "sha256": "79c891e1875b0a6f6cb2006cc2bffded5dbff1a762fd3d91f5ff0806febb9625",
+        "gitBlob": "bd28ac18b210de2a0d1b79bdbef82dc89f865766"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png",
+        "bytes": 22747,
+        "sha256": "fdde9a0ff0601216988fc42809f3fb9f36254fc5ddaa72c64270bb8782caac58",
+        "gitBlob": "48cb4312b4d42688857373c3c796f96274d253c1"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/inv_left_down.png",
+        "bytes": 15223,
+        "sha256": "b0943cf31d14a313eb97e5514cf1480915ca38ccead404f21a89d7acb515f11f",
+        "gitBlob": "53a17e54b8fa960bdff15e0b401756148f9002cc"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/inv_left_up.png",
+        "bytes": 15867,
+        "sha256": "f60952069d1ecf7e499c9fa07b91a038c36348b022fef3a8669e417e1ce4fcd6",
+        "gitBlob": "aa038801e547f9d50d67437b1eb3b16f123d05af"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/inv_right_down.png",
+        "bytes": 15133,
+        "sha256": "e76597d87d2abd2a25ad1088e5afbda2d3dc5e4cebf1540b094eb08d32b87a01",
+        "gitBlob": "38793edd291022701b1d9064552c322165904b58"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/inv_right_up.png",
+        "bytes": 15853,
+        "sha256": "29f9007a1915cf9e22ae54acd984d2e42369b145f68a07a4287edbeab83e50a7",
+        "gitBlob": "1c463339541f0996481b17aa3c3d5659e5c7b90c"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/utility_a_up.png",
+        "bytes": 56570,
+        "sha256": "dfb55a005153af1a5b6de5b43f5f58c203c787b126772ef1616745ebd26daee1",
+        "gitBlob": "52790def1deef4289829f9f581427e32b162f8d8"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/utility_b_up.png",
+        "bytes": 56637,
+        "sha256": "321568f5373b2d44fe82eaeb2adf848ef6d9bbfcc2ccb81b5192e996b5d874d9",
+        "gitBlob": "489861e4825705acd72b71f4f5a717daa156f99b"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/controls/utility_c_up.png",
+        "bytes": 56625,
+        "sha256": "f01b8693ab1e30f8f9057bcee96e2ff4baea2c4d2e8ef5017e12404cace14cc1",
+        "gitBlob": "392c36a67e1b1e4ce49e5a9eff6cab795058e91d"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/inspect_close.png",
+        "bytes": 371,
+        "sha256": "da492070f0fcd1f7acdf92f5822a73618c29f979997001b16718a52a4d2741d6",
+        "gitBlob": "9d44a06523c897ee1d8aaf837dbb1c965e21d8f3"
+      },
+      {
+        "path": "assets/approved/art/ui/sprites/inventory/inventory_slot.png",
+        "bytes": 5596,
+        "sha256": "d15e280bd586ef2498eb5b9e6ffc9d239390505bbfe0a3d5033f31e8f25edcc8",
+        "gitBlob": "7e52d2f7db21614f9da5cbb964267a5846f1a906"
+      },
+      {
+        "path": "assets/draft/art/items/applause_timing_clicker_inspect.png",
+        "bytes": 172902,
+        "sha256": "d446f2a2ffe7f8730ae071fe74a784bb7c70dbe85e92810224ada4fa2bb3b820",
+        "gitBlob": "86f555d7159e63750681fe11bc1cdda3c07e6252"
+      },
+      {
+        "path": "assets/draft/art/items/applause_timing_clicker_slot.png",
+        "bytes": 2718,
+        "sha256": "ff82fcc93ab37ad4639ad3a7826cbfb2d2f18de9668ac5107238589eb2d52ea8",
+        "gitBlob": "1640ce9cb174f8ca0471d4d509ea99cbfb8cea27"
+      },
+      {
+        "path": "assets/draft/art/items/effects_box_empty_inspect.png",
+        "bytes": 100529,
+        "sha256": "36e79a570d7881c346cb3856c7dedda1725ec5f9f1c10883dd803df7fe63d8d1",
+        "gitBlob": "6be7b3ff2e3cbbfa0d781a091b681e00134df378"
+      },
+      {
+        "path": "assets/draft/art/items/effects_box_empty_slot.png",
+        "bytes": 2355,
+        "sha256": "7220e9ffb8d7f008423fb14b02cf1d34f16be27974372ca7200cb5453ce2eca3",
+        "gitBlob": "620cf0ab40ab57af464270a3612035bb3af236b3"
+      },
+      {
+        "path": "assets/draft/art/items/effects_box_full_inspect.png",
+        "bytes": 146338,
+        "sha256": "e769176b79af3a09836c8f9ec4edc901a76a8308d4ca725ad78fa6723b29f1c8",
+        "gitBlob": "f07a1ef4175a8123d214c12935606ea19283c59d"
+      },
+      {
+        "path": "assets/draft/art/items/effects_box_full_slot.png",
+        "bytes": 1563,
+        "sha256": "305910393abcaa0f2449e68087d95c69b8b6ed4728fced579511e5955417499c",
+        "gitBlob": "f0978729242e2a15488fe6c66fd0231a16fe2ea1"
+      },
+      {
+        "path": "assets/draft/art/items/expo_examiner_badge_inspect.png",
+        "bytes": 144172,
+        "sha256": "bcbfbf9415eae2e9e1bcdc85eef0dc67a25524ededeb9bb2f3494c3f80b639ea",
+        "gitBlob": "77631c26e71029380b2f681a36934b2e33ed9baa"
+      },
+      {
+        "path": "assets/draft/art/items/expo_examiner_badge_slot.png",
+        "bytes": 1440,
+        "sha256": "7347b7afd9b2509fa59270b9ef2db901429c50466a0a617c1ff324843721fa79",
+        "gitBlob": "6d7934fd4279d04a923cb952a8c4f9116c3e75da"
+      },
+      {
+        "path": "assets/draft/art/items/property_claim_ticket_inspect.png",
+        "bytes": 146700,
+        "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93",
+        "gitBlob": "61d276c494a58bfe2e2c603e5e7b09bab96df57a"
+      },
+      {
+        "path": "assets/draft/art/items/property_claim_ticket_slot.png",
+        "bytes": 1494,
+        "sha256": "eb4271ebc35819234474cab43ee11106648eb1ec3d385efc5814e77fce6b035a",
+        "gitBlob": "fcc2b760bd784ce35b57d925f3c3ea5fc34f304e"
+      },
+      {
+        "path": "assets/draft/art/items/red_swangline_stapler_inspect.png",
+        "bytes": 148770,
+        "sha256": "ed7301377c1a6a3f8ae66dbcc3f4c95a5b9666bd4d999aa62fd111bd29e05120",
+        "gitBlob": "c27455fea25e553d60bc3bf226e835c3cec0ebb8"
+      },
+      {
+        "path": "assets/draft/art/items/red_swangline_stapler_slot.png",
+        "bytes": 1600,
+        "sha256": "af9069cab87b4f6b795b1219e76c6b013e9d5b95e2d69bead19318e93e495c8a",
+        "gitBlob": "f3bb90ea5a5b1a78b5948a85b5c4652655a95847"
+      },
+      {
+        "path": "assets/draft/art/items/rubber_band_ball_inspect.png",
+        "bytes": 169889,
+        "sha256": "5c6d633de86e5228c3066e7564a87b438d6366ff4956f57ac03437d67749e1b9",
+        "gitBlob": "0b5b058574c74b8b773fd4767d502b6288e72f69"
+      },
+      {
+        "path": "assets/draft/art/items/rubber_band_ball_slot.png",
+        "bytes": 4196,
+        "sha256": "0622df62fee751dc31c910858b58b69d695db582b385ef122bebca8d3eaad85c",
+        "gitBlob": "8c0bb8516f8bcd6c2e3d87d66a0aad422704b955"
+      },
+      {
+        "path": "assets/draft/art/items/small_desk_plant_inspect.png",
+        "bytes": 153413,
+        "sha256": "6880670a68a2baa48fe23afc22972a7be9197799ebbf454079d7127731a6eee7",
+        "gitBlob": "dcfd08664534fd8276db08d64b92678aacd10dd4"
+      },
+      {
+        "path": "assets/draft/art/items/small_desk_plant_slot.png",
+        "bytes": 2372,
+        "sha256": "76cb99324daa32d21d4928f3f9fdaf30e0790568ffce0fa725d01830b606b664",
+        "gitBlob": "84f42fd1f1d4cee23b353632c99d54e017950619"
+      },
+      {
+        "path": "assets/draft/art/items/termination_notice_inspect.png",
+        "bytes": 232910,
+        "sha256": "3c9db0db0b20e65f94303dcf6e1953819ffbd8e2dd44523ce6ddc8303417b8e6",
+        "gitBlob": "70ad66a3455bf58c94d0cf8e0f2bcb423a2ed6b2"
+      },
+      {
+        "path": "assets/draft/art/items/termination_notice_slot.png",
+        "bytes": 1718,
+        "sha256": "07afd75514d2a6c2ec16239408160e01c129acc9111faa0a961cd85b509a4a91",
+        "gitBlob": "5d7022611544080e58c88c60d66f8818411a6103"
+      },
+      {
+        "path": "assets/draft/art/portraits/termination_drone/corridor_background.png",
+        "bytes": 173506,
+        "sha256": "84f1f05525b38d44903b7fdefd571e3c44e5948cbe8060e2a15435ed1735a1dd",
+        "gitBlob": "421ae4403f6dd99977e6197cb0f9733017e6038b"
+      },
+      {
+        "path": "assets/draft/art/portraits/termination_drone/drone_paper_extended.png",
+        "bytes": 39072,
+        "sha256": "b30aae55a254394cf83437e6bcf7ac3d7701379dac1a5999c4381f3854069ca2",
+        "gitBlob": "a0f06783642676fb5ad38f6854bf721aa5b3c687"
+      },
+      {
+        "path": "assets/draft/art/portraits/termination_drone/drone_slot_closed.png",
+        "bytes": 34188,
+        "sha256": "3f3de8d333a4ab2784f54a9c01da662908601a69227d348b731f28fa6f8b1867",
+        "gitBlob": "c7d646bb79038eefb1107268692080e017eb732d"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/continuity-v01/facilities-corridor.png",
+        "bytes": 66834,
+        "sha256": "a4fca947d971a9d83a7d61559cf1737084b79edfb31821a7c47ad205908e2875"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/continuity-v01/street-approach.png",
+        "bytes": 86712,
+        "sha256": "378860bc141c6d8fc14578d3f84e4c8eb18624f23923eaa122ee87f1c75acf07"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/continuity-v02/entrance.png",
+        "bytes": 49128,
+        "sha256": "8652f534344ebfab7bf7b364900884cf17b1e50500509ce74cb7664b86261e8f"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/continuity-v02/property-intake.png",
+        "bytes": 56883,
+        "sha256": "2162f0abea7c3c2bc75871941b6663e9c7501cdd5b98612adfc966ffdecb7137"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/continuity-v03/entrance.png",
+        "bytes": 48694,
+        "sha256": "2b9930eee02e44ba954f53551f0330bf5e27b318dd7491e5be16c702358d7bd6"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/continuity-v03/facilities-corridor.png",
+        "bytes": 66620,
+        "sha256": "c0b8663dbbb1146539c7713c7c8725c47675e3576a774054bb741b5509a49833"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/entrance_turnstile.png",
+        "bytes": 61541,
+        "sha256": "5f2e5c26d4b473f298c19e6cf3ab134d5eb4e99bc496577a763beb0f1103d000",
+        "gitBlob": "e2bebb482ff2b0168e087076f42d0e37280a4af2"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/facilities_corridor.png",
+        "bytes": 63338,
+        "sha256": "49b9c6fdb351c7cc9906f0e8a8b2f6461e565e77c2a2335cb2e6e34e4a5927c5",
+        "gitBlob": "3e180a4d86a618803a68bc9242d2ba9904f5b0d6"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/property_counter.png",
+        "bytes": 57062,
+        "sha256": "779e2a6c03d56c36df6a92dddd17a8199ab84418811efe9914ab887ee326e7f4",
+        "gitBlob": "261871b597683843e38c6aefb66624646fd47654"
+      },
+      {
+        "path": "assets/draft/art/scenes/exposition/street_approach.png",
+        "bytes": 88454,
+        "sha256": "7b58605a3ca3ede61481ccb4435a3305630f8cdb1d84b1b6fafaeba0041d166a",
+        "gitBlob": "f9229176add9fc385292a117afdc830d12e1b895"
+      },
+      {
+        "path": "assets/draft/art/scenes/workplace/applause_station.png",
+        "bytes": 60724,
+        "sha256": "0197f73ead2257e366f0400541197871d90d16f3e76c88ce95cfcc60e7bca985",
+        "gitBlob": "fdd26652cb8246bf8cea3e8f179754d4209a136e"
+      },
+      {
+        "path": "assets/draft/art/scenes/workplace/corridor.png",
+        "bytes": 67556,
+        "sha256": "1d7f1597cd497b901a7558009eb0a11d358b6ebd3d815d53345eb01b78d50739",
+        "gitBlob": "2bbdf19666d9c0389d33c7cb94ec1d53c09b487b"
+      },
+      {
+        "path": "assets/draft/art/scenes/workplace/personal_effects_exit.png",
+        "bytes": 57323,
+        "sha256": "ecf8f4af9d76304c2404be1de7e9e5713662675f9b13baab0bc15afd2e3dbc04",
+        "gitBlob": "073a2e19437f2e5f99befe9d6c0e4421b0660dda"
+      }
+    ]
+  }
+}

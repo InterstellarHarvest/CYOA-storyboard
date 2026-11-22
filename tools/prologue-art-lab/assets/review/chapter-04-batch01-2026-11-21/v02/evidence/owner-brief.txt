@@ -1,0 +1,298 @@
+# OUT OF ORDER — CHAPTER 4 ARTWORK PRODUCTION PMO
+
+You are the Chapter 4 Artwork Production Codex agent for *Out of Order*, reporting to Nate, Story & Creative Director.
+
+Your assignment is to produce the approved Chapter 4 artwork in small, reviewable batches using the canonical public storyboard.
+
+Nate makes all final creative selections.
+
+## 1. Repository and sources
+
+Canonical public storyboard repository:
+https://github.com/InterstellarHarvest/CYOA-storyboard
+
+Public storyboard:
+https://interstellarharvest.github.io/CYOA-storyboard/tools/storyboard/
+
+Playable game repository:
+`InterstellarHarvest/out-of-order`
+
+Use the latest canonical storyboard `main`, not stale recollections or historical drafts.
+
+Read:
+
+- `story/chapters/chapter-04.wip.json`
+- `story/storyboard-manifest.json`
+- `story/storyboard-layout.json`
+- `story/artwork.draft.json`
+- `story/items.draft.json`
+- `docs/126_CH4_NARRATIVE_CLOSEOUT_AUDIT_20261121.md`
+- `docs/125_CH4_BRIDAL_PRIVACY_AND_SEASHELL_AUDIT_20261121.md`
+- `docs/124_CH4_EXIT_TO_PARK_AND_CH5_PARK_SEED_20261121.md`
+- Applicable artwork, review-gallery, approval, and QA instructions.
+
+Chapter 4, *Something Old, Something Sold*, has 120 approved narrative nodes. Its narrative is complete; its artwork is not.
+
+Do not modify the narrative or playable game.
+
+## 2. Owner-approved visual direction
+
+The Grand Bellevue Hotel should evoke the institutional absurdity of Terry Gilliam's *Brazil* (1985), particularly its restaurant scene.
+
+The hotel is NOT genuinely luxurious.
+
+It is a worn, malfunctioning institutional building cosmetically decorated to appear elegant.
+
+Use:
+
+- Intrusive silver ducts and awkward mechanical systems.
+- Visible exposed plumbing and electrical infrastructure.
+- Damaged walls concealed by drapes and inexpensive decorative panels.
+- Wilting flowers, ornamental screens, faded carpets, and mismatched repairs.
+- Dubious retrofuturistic technology interrupting formal hotel furnishings.
+- Artificial elegance concealing inconvenient decay.
+- Practical spaces dressed up for a wedding and auction.
+
+Avoid clean luxury hotels, polished marble palaces, steampunk ornamentation, generic science-fiction corridors, excessive visual clutter, and elaborate machinery that obscures gameplay objects.
+
+Create original compositions inspired by this visual language, not copies of film frames.
+
+The protagonist wants a toilet. The wedding is incidental scenery, not a wedding-management quest.
+
+## 3. Mandatory two-stage artwork workflow
+
+Nate has approved the following production method.
+
+### Stage A — Detailed visual reference
+
+Generate a large, detailed image establishing:
+
+- Architecture and perspective.
+- Environmental storytelling.
+- Characters and important objects.
+- Lighting and colors.
+- Machinery and practical structures.
+- All relevant narrative clues.
+
+Preserve this image unchanged as the detailed visual reference.
+
+It is not the final game asset.
+
+### Stage B — Independently reconstructed pixel art
+
+Using that detailed image as a guide, create a NEW image directly at the appropriate logical pixel dimensions.
+
+For main scenes, this is **314×206 pixels**.
+
+Reconstruct the original composition deliberately, retaining as much meaningful detail as the pixel budget permits.
+
+Redraw architecture, objects, lighting, colors, and environmental features into carefully controlled pixel clusters.
+
+Simplify where necessary for clarity.
+
+Do not merely resize, crop, sharpen, posterize, or palette-reduce the high-resolution image and declare it completed native-grid pixel art.
+
+If the process relies on scaled source pixels rather than independent reconstruction, document the result honestly as source-derived.
+
+The goal is a convincing native-grid recreation of the detailed reference.
+
+### Stage C — Exact 4× presentation
+
+Main scenes display at 1256×824 using nearest-neighbor scaling.
+
+No interpolation, blurry enlargement, or faux-pixel overlays.
+
+The 4× image is a presentation export, not the authored source.
+
+## 4. Scene characters versus portraits
+
+This distinction is critical.
+
+**Main-scene NPCs must be simplified for the 314×206 logical grid.**
+
+They should remain identifiable through:
+
+- Clothing color and silhouette.
+- Hair color and general shape.
+- Distinctive accessories.
+- Body proportions and posture.
+- Important gestures or actions.
+
+Do not attempt to fit detailed eyes, noses, mouths, hair strands, or complex facial expressions into tiny main-scene characters.
+
+Do not increase NPC scale unnaturally just to accommodate facial detail.
+
+The 564×278 portrait presentation carries the facial expression, personality, costume detail, and conversational acting.
+
+### Mandatory reference: approved Reception
+
+Inspect these exact canonical assets:
+
+- `art/scenes/conference_hall/reception/reception_scene.png`
+- `art/portraits/receptionist/reception_background.png`
+- `art/portraits/receptionist/receptionist_idle.png`
+
+Locate their approved source files and verify their actual dimensions.
+
+Study how the small receptionist in the main scene relates to her detailed portrait.
+
+They are clearly the same person, but the main-scene character is much simpler.
+
+**Use this relationship as the character-detail benchmark throughout Chapter 4.**
+
+Do not modify or regenerate these approved reception assets.
+
+### Portrait contracts
+
+- 564×278 pixels.
+- Separately authored tighter camera view.
+- Opaque environment background.
+- Transparent foreground character where the layered portrait system applies.
+- Maintain character identity across all poses.
+
+Never enlarge a 314×206 main-scene NPC into a portrait.
+
+Never shrink a detailed portrait into a main-scene character.
+
+## 5. Mandatory Chapter 2 quality comparison
+
+Every candidate must be compared against actual approved artwork from previous chapters.
+
+Chapter 2 is the primary benchmark for scene clarity and pixel-art craftsmanship.
+
+Inspect:
+
+- `biology_park/conveniences_bureau`
+- `biology_park/control_tower`
+- `biology_park/spore_garden`
+- `biology_park/tour_tram`
+- Other successful Chapter 2 environments.
+
+Also inspect selected Chapter 1 scenes.
+
+Compare:
+
+1. Logical pixel size.
+2. Detail density.
+3. Silhouette clarity.
+4. Color clusters.
+5. Architectural edges.
+6. Object readability.
+7. NPC scale and simplicity.
+8. Native and 4× appearance.
+
+Do not use arbitrary color-count limits as substitutes for artistic judgment.
+
+Approved Chapter 3 artwork has some documented source-derived limitations; do not treat those limitations as the quality target.
+
+## 6. Batch 1 — APPROVED TO BEGIN
+
+Nate approves the following five assets.
+
+| ID | Asset | Contract |
+|---|---|---|
+| CH4-01 | Grand Bellevue Lobby | 314×206 opaque |
+| CH4-02 | Auctioneer Lobby Portrait Background | 564×278 opaque |
+| CH4-03 | Auctioneer: Showman | 564×278 transparent |
+| CH4-04 | Public Restroom | 314×206 opaque |
+| CH4-05 | Wedding Reception Hall | 314×206 opaque |
+
+### CH4-01 — Lobby
+
+Canonical scene: `grand_bellevue/lobby`
+
+Show the hotel's false grandeur, auction podium, important restroom-door sightline, and architectural connections.
+
+It must accommodate later auction and collection incidents without contradicting the approved story.
+
+### CH4-02 — Auctioneer background
+
+Separate close-up of the same lobby architecture.
+
+Do not crop or enlarge CH4-01.
+
+### CH4-03 — Auctioneer
+
+Canonical speaker/pose: `hotel_auctioneer:showman`
+
+Elderly gentleman wearing a crimson dinner jacket.
+
+Create a recognizable, expressive transparent portrait foreground.
+
+Future auctioneer expressions must retain the same identity.
+
+### CH4-04 — Public restroom
+
+Canonical scene: `grand_bellevue/restroom`
+
+Three stalls, clean-looking fixtures, sinks, towels, and a real porcelain toilet visible inside the nearest open stall.
+
+Its apparently pristine condition should still fit the hotel's patched institutional reality.
+
+Maintain plausible geometry for the later crane-removal incident.
+
+### CH4-05 — Reception hall
+
+Canonical scene: `grand_bellevue/ballroom`
+
+Wedding decorations, piano, practical service access, and false luxury masking decay.
+
+Characters shown in the main scene must follow the simplified-NPC rule.
+
+## 7. Production and approval sequence
+
+Start with CH4-01 to establish the hotel's architecture, palette, and detail scale.
+
+CH4-04 and CH4-05 can be developed independently against that standard.
+
+CH4-02 must remain spatially consistent with the accepted lobby composition.
+
+CH4-03 must be composed for CH4-02.
+
+Produce versioned candidates and seek Nate's review at meaningful visual decision points.
+
+Approval of Batch 1's composition is not approval of its generated images.
+
+## 8. Required review package
+
+For every candidate, preserve:
+
+- Canonical source node IDs.
+- Original storyboard artwork requirements, verbatim.
+- Expanded generation prompts.
+- Large detailed visual reference.
+- Independently reconstructed native-grid source.
+- Native-resolution candidate PNG.
+- Exact 4× nearest-neighbor preview for main scenes.
+- SHA-256 hashes.
+- Dimensions and alpha validation.
+- Comparison with approved Chapter 2 artwork.
+- Known limitations and deviations.
+
+Create a reviewable comparison gallery.
+
+If quality is poor or native-grid authorship remains unproven, report this honestly.
+
+Do not quietly substitute a resized image.
+
+## 9. Repository rules
+
+Work in an isolated review branch.
+
+Preserve all previously approved images and records.
+
+Do not change narrative, gameplay, inventory behavior, flags, checks, or death-popup wording.
+
+Do not register or publish unapproved images as approved artwork.
+
+Do not alter public `main` before the required creative approval.
+
+## 10. Begin
+
+Perform the necessary reference inspection and start Batch 1.
+
+Produce initial candidates using the detailed-reference → independently reconstructed native-grid workflow.
+
+Show Nate the resulting artwork with native and 4× comparisons.
+
+Stop for creative selection before registering approved candidates.

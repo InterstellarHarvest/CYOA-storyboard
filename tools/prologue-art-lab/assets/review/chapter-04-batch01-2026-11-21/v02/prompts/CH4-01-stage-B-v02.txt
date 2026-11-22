@@ -1,0 +1,6 @@
+Stage B v02. Continue independent coordinate-authored reconstruction at [314, 206] from blank canvas; do not open/sample/resize/crop/quantize/filter source rasters. Use preserved detailed reference and approved Chapter 2 comparison.
+Owner feedback verbatim: ['too simple and not detailed enough compared to ch2 stuff imo.', 'which is to saythe portrait can be more detailed and the main scene less simpllistic']
+Changes: Closer room proportions; taller facilities doors; shaped metal shading and collars; lit panel bevels; deeper room connections; patterned worn carpet; richer wood, porcelain lamps and flower clusters. Tiny characters remain simple.
+Editable source: source/lobby.py and source/pixel_primitives.py.
+Known limitations: Still more stylized and planar than Chapter 2. Perspective and foliage/flower rendering do not yet match its richness. Door-intact establishing state; later incidents are not literally shown.
+Not image_gen Stage B; source is native pixel drawing code. Stage A uses built-in image_gen. No CLI/API fallback.

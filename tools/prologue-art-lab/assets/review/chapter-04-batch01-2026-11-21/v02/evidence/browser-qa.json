@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "all three revised cards and every reference/image decode at Pages-style prefix",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-01 native/4x switch, benchmark selector and exact rendered dimensions",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "mobile preserves native pixels and no load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "all three revised cards and every reference/image decode at Pages-style prefix",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-01 native/4x switch, benchmark selector and exact rendered dimensions",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "mobile preserves native pixels and no load/runtime errors",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "primaryBenchmarks": [
+    "biology_park/conveniences_bureau",
+    "biology_park/control_tower",
+    "biology_park/spore_garden",
+    "biology_park/tour_tram"
+  ],
+  "secondaryBenchmarks": [
+    "conference_hall/reception",
+    "house_of_tomorrow/foyer",
+    "house_of_tomorrow/lounge"
+  ],
+  "axes": [
+    {
+      "axis": "Logical pixel size",
+      "approved": "All selected main-scene benchmarks are 314x206; reception portrait pair 564x278.",
+      "candidates": "Exact same contracts, independently created blank canvases."
+    },
+    {
+      "axis": "Detail density",
+      "approved": "Chapter 2 resolves dense foliage, panels, fixtures and depth without losing paths.",
+      "candidates": "Less developed. Large flat surfaces dominate the lobby and hall; material modeling needs another art pass."
+    },
+    {
+      "axis": "Silhouette clarity",
+      "approved": "Clear doors, console masses, tram seating, paths and machinery.",
+      "candidates": "Primary doors/podium/piano/toilet are distinct. Lobby guests and restroom plumbing/plumber overlap too much."
+    },
+    {
+      "axis": "Color clusters",
+      "approved": "Rich controlled clusters describe plants, metal and stone; no color-count quota used.",
+      "candidates": "Deliberate solid clusters and discrete shade bands; no sampled palette or posterization. Color modeling is noticeably simpler."
+    },
+    {
+      "axis": "Architectural edges",
+      "approved": "Perspective-aware cornices, tiled planes, frames and cylindrical plumbing.",
+      "candidates": "Clean integer-coordinate edges, coherent broad planes, but ducts and moldings remain boxy."
+    },
+    {
+      "axis": "Object readability",
+      "approved": "Bureau barriers, control gauges, tram seats and garden paths read at native size.",
+      "candidates": "Paired facilities doors, three stalls, tank/seat/bowl, sinks, piano and broad service opening read. Small flowers and tools are simplified."
+    },
+    {
+      "axis": "NPC scale/simplicity",
+      "approved": "Receptionist is a small roughly 20px-tall scene cluster; the separate portrait carries face and acting. Chapter 2 room benchmarks have no prominent human portraits.",
+      "candidates": "Room people are roughly 27px tall and have no facial features. They were drawn separately from the 564x278 foreground; perspective/scale still needs selection."
+    },
+    {
+      "axis": "Native and 4x appearance",
+      "approved": "Both scales are supplied unchanged except exact NEAREST presentation.",
+      "candidates": "Exact native views and 1256x824 previews. No smoothing. 4x exposes the simpler surfaces; scaling does not fix artistic gaps."
+    }
+  ],
+  "verdict": "Initial composition and native reconstruction candidates, not final-quality equivalence to Chapter 2. Native authorship is verifiable; artistic acceptance remains Nate\u2019s decision.",
+  "perCandidate": {
+    "CH4-01": [
+      "Establishing entry state, before the restroom doors are removed. Later flooding, door removal and pod incidents require state-specific staging; this image is not asserted to depict every later node literally.",
+      "Architecture and route silhouettes are clear. The tiled floor, panels and duct are much flatter and less detailed than Chapter 2. Not recommended as final-quality art yet.",
+      "Small NPCs preserve crimson jacket/silver hair and formal guest silhouettes without facial detail. Tiny guests merge at native size and need a silhouette pass.",
+      "Stage A side/back proportions and some flowers were recomposed to fit the native grid. The runner and clear routes remain."
+    ],
+    "CH4-02": [
+      "Provisional tighter view at the lobby left podium. Spatial approval depends on selection of CH4-01.",
+      "Empty opaque background, independently drawn at 564x278; no crop/enlargement of the main scene. Podium is confined to lower left so it does not occlude the separate foreground.",
+      "Stage A v01 incorrectly contained a person; preserved unchanged. Corrected v02 removes him. Native reconstruction simplifies the curtain, changes its lower silhouette and shortens the podium.",
+      "Material detail is visibly simpler than the approved receptionist background. Cream paneling needs more dimensional modeling."
+    ],
+    "CH4-03": [
+      "Elderly silver-haired showman, crimson jacket, ivory shirt, black bow tie, thin silver moustache and raised wooden gavel. New proposed identity, not selected.",
+      "Native transparent 564x278 foreground, independently authored from blank RGBA. The detailed reference has a gray backdrop; that backdrop was not extracted or keyed.",
+      "Compared with the approved receptionist, the face, hands and cloth are more angular and less natural. The resting hand and smile need creative review.",
+      "Head angle, hair mass and arm silhouette simplify the detailed identity reference. Future poses must use the selected identity; no additional poses are authorized here."
+    ],
+    "CH4-04": [
+      "Entry/pre-flood state: three modular stalls, nearest open, recognizable tank/seat/bowl, three sinks and fresh towels. No missing stalls or active crane.",
+      "Service hatch is drawn broader than the nearest stall frontage, with a clear vertical route. This is a composition proposal, not a checked engineering model of crane geometry.",
+      "The reference added a carpet and chandelier, excessive worn plaster and a clipboard woman instead of Eddie. Native reconstruction omits the carpet/chandelier and uses two small workmen.",
+      "ISOLATE is the only readable native cabinet label. Full EMERGENCY WATER ISOLATION wording is preserved in canonical requirements/reference. No invented valve wheel is present.",
+      "Compared with Chapter 2, fixtures are readable but the sink plumbing and kneeling plumber crowd together. Tile surfaces and metal shading are underdeveloped."
+    ],
+    "CH4-05": [
+      "Piano left, folding screen, organizer with clipboard, two workmen and chair by right service access, incidental tables/flowers/bunting and open walking route.",
+      "The generated reference repeats the lobby architecture too closely; native reconstruction preserves that similarity. Nate should decide whether the hall needs a more distinct footprint.",
+      "Main-scene figures are simple color/posture silhouettes; the musicians are deliberately small. The pictogram is a direction clue, not a view of a working bridal toilet.",
+      "Native cloth folds and table silhouettes read, but flowers, stage and architectural surfaces are less rich than Chapter 2. Not recommended as final-quality art yet."
+    ]
+  }
+}

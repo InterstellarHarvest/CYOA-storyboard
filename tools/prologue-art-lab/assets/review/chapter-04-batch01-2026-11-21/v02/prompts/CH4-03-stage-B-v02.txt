@@ -1,0 +1,6 @@
+Stage B v02. Continue independent coordinate-authored reconstruction at [564, 278] from blank canvas; do not open/sample/resize/crop/quantize/filter source rasters. Use preserved detailed reference and approved Chapter 2 comparison.
+Owner feedback verbatim: ['too simple and not detailed enough compared to ch2 stuff imo.', 'which is to saythe portrait can be more detailed and the main scene less simpllistic']
+Changes: Smaller facial color planes, eye and eyebrow acting, crow’s feet and smile folds, layered silver locks, neck tendons, knuckles/nails and gavel bevels. More shirt, satin and jacket tailoring detail.
+Editable source: source/auctioneer.py and source/pixel_primitives.py.
+Known limitations: Angular face and cloth remain stylized. Head/hand anatomy and likeness to the detailed reference still need Nate’s review. Additional line detail does not by itself establish improved acting.
+Not image_gen Stage B; source is native pixel drawing code. Stage A uses built-in image_gen. No CLI/API fallback.

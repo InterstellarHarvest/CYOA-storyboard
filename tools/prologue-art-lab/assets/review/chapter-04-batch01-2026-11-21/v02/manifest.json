@@ -1,0 +1,175 @@
+{
+  "schema": "out-of-order-ch4-review-v2",
+  "version": "v02",
+  "dateEastern": "2026-11-21",
+  "baseCommit": "d9b6b91604b72115c5402253f00924665e957727",
+  "reviewBranch": "art/ch4-batch01-review-20261121",
+  "status": "generated / unselected; no approval implied",
+  "workflow": "Unchanged detailed AI references -> independently coordinate-authored native pixel reconstruction -> exact 4x scene presentation.",
+  "scope": "Revised lobby and portrait pair establish the detail standard first. Restroom and hall remain in preserved v01 and have not been revised or selected.",
+  "feedback": [
+    "too simple and not detailed enough compared to ch2 stuff imo.",
+    "which is to saythe portrait can be more detailed and the main scene less simpllistic"
+  ],
+  "assets": [
+    {
+      "id": "CH4-01",
+      "title": "Grand Bellevue Lobby",
+      "version": "v02",
+      "status": "generated / unselected",
+      "native": {
+        "file": "native/CH4-01-lobby-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "da83c73dbb271e1e4843b1e9e1cce9be0f780bee9c181ddb65d5e849f9de0fde"
+      },
+      "previous": "../v01/native/CH4-01-lobby-v01.png",
+      "detailedReference": {
+        "file": "detailed/CH4-01-reference-v01.png",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB",
+        "sha256": "a37fdb8e61487f7d63fa157cd0fe205df0f0f58dcafa9934564179688e9a2c4a"
+      },
+      "authoredSource": "source/lobby.py",
+      "assetPath": null,
+      "changes": "Closer room proportions; taller facilities doors; shaped metal shading and collars; lit panel bevels; deeper room connections; patterned worn carpet; richer wood, porcelain lamps and flower clusters. Tiny characters remain simple.",
+      "knownLimitations": "Still more stylized and planar than Chapter 2. Perspective and foliage/flower rendering do not yet match its richness. Door-intact establishing state; later incidents are not literally shown.",
+      "sourceNodeIds": [
+        "entry_backstage_exit",
+        "hotel_lobby_view",
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_bride_ally",
+        "hotel_auction_dispute_ticket",
+        "hotel_auction_chair_lot31",
+        "hotel_chair_vegetation_inspection",
+        "hotel_chair_examiner_inspection",
+        "hotel_chair_stapler_stealth",
+        "hotel_chair_stapler_caught",
+        "hotel_chair_staff_escort",
+        "hotel_chair_ring_focus",
+        "hotel_ring_retrieved",
+        "hotel_ring_slips",
+        "hotel_ring_in_pocket",
+        "hotel_ring_show_bride",
+        "hotel_bride_ring_handover",
+        "hotel_bride_ring_bathroom",
+        "hotel_collection_ring_to_bride",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "fatal_lot61_folded",
+        "hotel_lot61_pod_declined",
+        "hotel_ring_inspect_inscription",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "preview4x": {
+        "file": "previews/CH4-01-lobby-v02-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "10f8bb3e758e7452e10c3002c0563e7b8e0e866eb8eacfcf56651a814c8a68ff"
+      }
+    },
+    {
+      "id": "CH4-02",
+      "title": "Auctioneer close background",
+      "version": "v02",
+      "status": "generated / unselected",
+      "native": {
+        "file": "native/CH4-02-auctioneer-background-v02.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB",
+        "sha256": "03875ce7531034e1a1ff5991d6bf4e9b87e8e6e676432d50047c608ea8a11b28"
+      },
+      "previous": "../v01/native/CH4-02-auctioneer-background-v01.png",
+      "detailedReference": {
+        "file": "detailed/CH4-02-reference-v02-empty.png",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "sha256": "8cfc93733e6fa058da11a1ca979484f5df85d1f0a901251c7847efa94eb1a224"
+      },
+      "authoredSource": "source/backdrop.py",
+      "assetPath": null,
+      "changes": "More fabric folds and fringe, modeled silver duct bands, panel bevels, chipped plaster ledges, faceted lamp glass, worn wood and door hardware. Separate native close camera retained.",
+      "knownLimitations": "Large wall planes remain simple; not yet equal to approved receptionist material modeling. Provisional until lobby accepted.",
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "hotel_lot61_pod_declined",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRequirements": "evidence/canonical-requirements.json"
+    },
+    {
+      "id": "CH4-03",
+      "title": "Auctioneer \u2014 Showman",
+      "version": "v02",
+      "status": "generated / unselected",
+      "native": {
+        "file": "native/CH4-03-auctioneer-showman-v02.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "029cfb146a607452cd88a368b945e5d07d35ccd3da40985ac3a397225c313bf5"
+      },
+      "previous": "../v01/native/CH4-03-auctioneer-showman-v01.png",
+      "detailedReference": {
+        "file": "detailed/CH4-03-reference-v01.png",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "sha256": "f890d199574fe279275d07319d1133bca0eca2999ae7c12eb4b0fd217508ed1a"
+      },
+      "authoredSource": "source/auctioneer.py",
+      "assetPath": null,
+      "changes": "Smaller facial color planes, eye and eyebrow acting, crow\u2019s feet and smile folds, layered silver locks, neck tendons, knuckles/nails and gavel bevels. More shirt, satin and jacket tailoring detail.",
+      "knownLimitations": "Angular face and cloth remain stylized. Head/hand anatomy and likeness to the detailed reference still need Nate\u2019s review. Additional line detail does not by itself establish improved acting.",
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute"
+      ],
+      "canonicalRequirements": "evidence/canonical-requirements.json"
+    }
+  ],
+  "composite": {
+    "file": "previews/auctioneer-composite-v02.png",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB",
+    "sha256": "000a8b5243b318ac9520638b9b9feb2ac22c4f22ccaf924020e71bfbda03fcdc"
+  }
+}

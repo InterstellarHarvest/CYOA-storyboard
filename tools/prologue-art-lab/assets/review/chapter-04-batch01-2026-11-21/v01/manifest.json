@@ -1,0 +1,489 @@
+{
+  "schema": "out-of-order-ch4-review-v1",
+  "dateEastern": "2026-11-21",
+  "baseCommit": "d9b6b91604b72115c5402253f00924665e957727",
+  "reviewBranch": "art/ch4-batch01-review-20261121",
+  "approval": "None. Nate selects; do not register, integrate, publish or merge as approved.",
+  "workflow": {
+    "A": "Built-in image_gen detailed references, original bytes retained.",
+    "B": "Independent coordinate-authored native-grid reconstruction with Python/Pillow ImageDraw.",
+    "C": "Exact 4x nearest-neighbor scene presentation only."
+  },
+  "canonicalRegistryGap": "Pinned main has no Chapter 4 artwork records. No registry was edited. Verbatim source nodes and owner brief are the requirements evidence.",
+  "assets": [
+    {
+      "id": "CH4-01",
+      "title": "Grand Bellevue Lobby",
+      "version": "v01",
+      "status": "generated / unselected",
+      "scene": "grand_bellevue/lobby",
+      "speakerPose": null,
+      "sourceNodeIds": [
+        "entry_backstage_exit",
+        "hotel_lobby_view",
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_bride_ally",
+        "hotel_auction_dispute_ticket",
+        "hotel_auction_chair_lot31",
+        "hotel_chair_vegetation_inspection",
+        "hotel_chair_examiner_inspection",
+        "hotel_chair_stapler_stealth",
+        "hotel_chair_stapler_caught",
+        "hotel_chair_staff_escort",
+        "hotel_chair_ring_focus",
+        "hotel_ring_retrieved",
+        "hotel_ring_slips",
+        "hotel_ring_in_pocket",
+        "hotel_ring_show_bride",
+        "hotel_bride_ring_handover",
+        "hotel_bride_ring_bathroom",
+        "hotel_collection_ring_to_bride",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "fatal_lot61_folded",
+        "hotel_lot61_pod_declined",
+        "hotel_ring_inspect_inscription",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRegistryRecord": null,
+      "assetPath": null,
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "ownerBrief": "evidence/owner-brief.txt",
+      "detailedReference": {
+        "file": "detailed/CH4-01-reference-v01.png",
+        "sha256": "a37fdb8e61487f7d63fa157cd0fe205df0f0f58dcafa9934564179688e9a2c4a",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "native": {
+        "file": "native/CH4-01-lobby-v01.png",
+        "sha256": "a74940d2b530e1b263587cbed905dd0d4ad7aa723ffdcd74f4ed84dd31b91174",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "preview4x": {
+        "file": "previews/CH4-01-lobby-v01-4x.png",
+        "sha256": "fbbdac2a2242a5c629c51495e6b15eac8dd9a7e451044985b2be1e6680dc8bf8",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "authoredSource": [
+        "source/reconstruct.py",
+        "source/pixel_primitives.py"
+      ],
+      "nativeGridAuthorship": "Coordinate-authored at the contracted dimensions from a blank canvas; no raster inputs or resampling. Reproducibility/forbidden-operation check is recorded in evidence/validation.json.",
+      "comparison": "comparison.json",
+      "knownLimitationsAndDeviations": [
+        "Establishing entry state, before the restroom doors are removed. Later flooding, door removal and pod incidents require state-specific staging; this image is not asserted to depict every later node literally.",
+        "Architecture and route silhouettes are clear. The tiled floor, panels and duct are much flatter and less detailed than Chapter 2. Not recommended as final-quality art yet.",
+        "Small NPCs preserve crimson jacket/silver hair and formal guest silhouettes without facial detail. Tiny guests merge at native size and need a silhouette pass.",
+        "Stage A side/back proportions and some flowers were recomposed to fit the native grid. The runner and clear routes remain."
+      ]
+    },
+    {
+      "id": "CH4-02",
+      "title": "Auctioneer Lobby Portrait Background",
+      "version": "v01",
+      "status": "generated / unselected",
+      "scene": "grand_bellevue/lobby",
+      "speakerPose": null,
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "hotel_lot61_pod_declined",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRegistryRecord": null,
+      "assetPath": null,
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "ownerBrief": "evidence/owner-brief.txt",
+      "detailedReference": {
+        "file": "detailed/CH4-02-reference-v02-empty.png",
+        "sha256": "8cfc93733e6fa058da11a1ca979484f5df85d1f0a901251c7847efa94eb1a224",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "native": {
+        "file": "native/CH4-02-auctioneer-background-v01.png",
+        "sha256": "4b47f40a040a0bbd0868d882c50ad2f65f3a1f33fcdce9fc9b4c42869c940977",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "preview4x": null,
+      "authoredSource": [
+        "source/reconstruct.py",
+        "source/pixel_primitives.py"
+      ],
+      "nativeGridAuthorship": "Coordinate-authored at the contracted dimensions from a blank canvas; no raster inputs or resampling. Reproducibility/forbidden-operation check is recorded in evidence/validation.json.",
+      "comparison": "comparison.json",
+      "knownLimitationsAndDeviations": [
+        "Provisional tighter view at the lobby left podium. Spatial approval depends on selection of CH4-01.",
+        "Empty opaque background, independently drawn at 564x278; no crop/enlargement of the main scene. Podium is confined to lower left so it does not occlude the separate foreground.",
+        "Stage A v01 incorrectly contained a person; preserved unchanged. Corrected v02 removes him. Native reconstruction simplifies the curtain, changes its lower silhouette and shortens the podium.",
+        "Material detail is visibly simpler than the approved receptionist background. Cream paneling needs more dimensional modeling."
+      ]
+    },
+    {
+      "id": "CH4-03",
+      "title": "Auctioneer \u2014 Showman",
+      "version": "v01",
+      "status": "generated / unselected",
+      "scene": "grand_bellevue/lobby",
+      "speakerPose": "hotel_auctioneer:showman",
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute"
+      ],
+      "canonicalRegistryRecord": null,
+      "assetPath": null,
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "ownerBrief": "evidence/owner-brief.txt",
+      "detailedReference": {
+        "file": "detailed/CH4-03-reference-v01.png",
+        "sha256": "f890d199574fe279275d07319d1133bca0eca2999ae7c12eb4b0fd217508ed1a",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "native": {
+        "file": "native/CH4-03-auctioneer-showman-v01.png",
+        "sha256": "71a64d80e04ac9ee0f2e7cee52130deae4130c2087ae181e5512c0b6d5dfc281",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "alphaValues": [
+          0,
+          255
+        ],
+        "opaque": false
+      },
+      "preview4x": null,
+      "authoredSource": [
+        "source/auctioneer.py",
+        "source/pixel_primitives.py"
+      ],
+      "nativeGridAuthorship": "Coordinate-authored at the contracted dimensions from a blank canvas; no raster inputs or resampling. Reproducibility/forbidden-operation check is recorded in evidence/validation.json.",
+      "comparison": "comparison.json",
+      "knownLimitationsAndDeviations": [
+        "Elderly silver-haired showman, crimson jacket, ivory shirt, black bow tie, thin silver moustache and raised wooden gavel. New proposed identity, not selected.",
+        "Native transparent 564x278 foreground, independently authored from blank RGBA. The detailed reference has a gray backdrop; that backdrop was not extracted or keyed.",
+        "Compared with the approved receptionist, the face, hands and cloth are more angular and less natural. The resting hand and smile need creative review.",
+        "Head angle, hair mass and arm silhouette simplify the detailed identity reference. Future poses must use the selected identity; no additional poses are authorized here."
+      ]
+    },
+    {
+      "id": "CH4-04",
+      "title": "Public Restroom",
+      "version": "v01",
+      "status": "generated / unselected",
+      "scene": "grand_bellevue/restroom",
+      "speakerPose": null,
+      "sourceNodeIds": [
+        "hotel_restroom_entry",
+        "hotel_restroom_plumber",
+        "hotel_valve_braced",
+        "hotel_valve_flood",
+        "hotel_stall_lot_claimed",
+        "hotel_wheel_buyer_lead",
+        "hotel_lot_receipt_study",
+        "hotel_wheel_return",
+        "hotel_key_master_cabinet",
+        "hotel_stall_porter_protest",
+        "hotel_stall_crane_success",
+        "fatal_stall_final_occupancy"
+      ],
+      "canonicalRegistryRecord": null,
+      "assetPath": null,
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "ownerBrief": "evidence/owner-brief.txt",
+      "detailedReference": {
+        "file": "detailed/CH4-04-reference-v01.png",
+        "sha256": "d919e88db3c6083aca67e491a6fe37dbf465ad4a79d3da603ea751ce14cc93c3",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "native": {
+        "file": "native/CH4-04-restroom-v01.png",
+        "sha256": "bd5422a1a5ffdfe480041a4913a37ea2a749281b0b9ce3c998bba8c08d18192a",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "preview4x": {
+        "file": "previews/CH4-04-restroom-v01-4x.png",
+        "sha256": "7170525e5a52faba6392f6496f8fbabb3aae855ce71eaf394f5cea3612aa2344",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "authoredSource": [
+        "source/reconstruct.py",
+        "source/pixel_primitives.py"
+      ],
+      "nativeGridAuthorship": "Coordinate-authored at the contracted dimensions from a blank canvas; no raster inputs or resampling. Reproducibility/forbidden-operation check is recorded in evidence/validation.json.",
+      "comparison": "comparison.json",
+      "knownLimitationsAndDeviations": [
+        "Entry/pre-flood state: three modular stalls, nearest open, recognizable tank/seat/bowl, three sinks and fresh towels. No missing stalls or active crane.",
+        "Service hatch is drawn broader than the nearest stall frontage, with a clear vertical route. This is a composition proposal, not a checked engineering model of crane geometry.",
+        "The reference added a carpet and chandelier, excessive worn plaster and a clipboard woman instead of Eddie. Native reconstruction omits the carpet/chandelier and uses two small workmen.",
+        "ISOLATE is the only readable native cabinet label. Full EMERGENCY WATER ISOLATION wording is preserved in canonical requirements/reference. No invented valve wheel is present.",
+        "Compared with Chapter 2, fixtures are readable but the sink plumbing and kneeling plumber crowd together. Tile surfaces and metal shading are underdeveloped."
+      ]
+    },
+    {
+      "id": "CH4-05",
+      "title": "Wedding Reception Hall",
+      "version": "v01",
+      "status": "generated / unselected",
+      "scene": "grand_bellevue/ballroom",
+      "speakerPose": null,
+      "sourceNodeIds": [
+        "hotel_wedding_arrival",
+        "hotel_bridal_organizer"
+      ],
+      "canonicalRegistryRecord": null,
+      "assetPath": null,
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "ownerBrief": "evidence/owner-brief.txt",
+      "detailedReference": {
+        "file": "detailed/CH4-05-reference-v01.png",
+        "sha256": "bc6646aa0b18651c72aaf04089b7cf4e731816e081d2c4e90a0ce69d90937754",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "native": {
+        "file": "native/CH4-05-ballroom-v01.png",
+        "sha256": "04a1f6d0054090aeff22fffb0de8a6150f9a09b6ac5de40e2c594fcec76f9e86",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "preview4x": {
+        "file": "previews/CH4-05-ballroom-v01-4x.png",
+        "sha256": "e2ca6575b209859fe8362167b7a70b86a17a2cada00d5977189b1105101097fe",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "alphaValues": [
+          255
+        ],
+        "opaque": true
+      },
+      "authoredSource": [
+        "source/reconstruct.py",
+        "source/pixel_primitives.py"
+      ],
+      "nativeGridAuthorship": "Coordinate-authored at the contracted dimensions from a blank canvas; no raster inputs or resampling. Reproducibility/forbidden-operation check is recorded in evidence/validation.json.",
+      "comparison": "comparison.json",
+      "knownLimitationsAndDeviations": [
+        "Piano left, folding screen, organizer with clipboard, two workmen and chair by right service access, incidental tables/flowers/bunting and open walking route.",
+        "The generated reference repeats the lobby architecture too closely; native reconstruction preserves that similarity. Nate should decide whether the hall needs a more distinct footprint.",
+        "Main-scene figures are simple color/posture silhouettes; the musicians are deliberately small. The pictogram is a direction clue, not a view of a working bridal toilet.",
+        "Native cloth folds and table silhouettes read, but flowers, stage and architectural surfaces are less rich than Chapter 2. Not recommended as final-quality art yet."
+      ]
+    }
+  ],
+  "approvedReferences": [
+    {
+      "canonicalPath": "assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "reviewCopy": "references/scenes__conference_hall__reception__reception_scene.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+      "preview4x": "references/scenes__conference_hall__reception__reception_scene-4x.png"
+    },
+    {
+      "canonicalPath": "assets/selected/art/portraits/receptionist/reception_background.png",
+      "reviewCopy": "references/portraits__receptionist__reception_background.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74"
+    },
+    {
+      "canonicalPath": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "reviewCopy": "references/portraits__receptionist__receptionist_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d"
+    },
+    {
+      "canonicalPath": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "reviewCopy": "references/scenes__biology_park__conveniences_bureau.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "preview4x": "references/scenes__biology_park__conveniences_bureau-4x.png"
+    },
+    {
+      "canonicalPath": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "reviewCopy": "references/scenes__biology_park__control_tower.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "preview4x": "references/scenes__biology_park__control_tower-4x.png"
+    },
+    {
+      "canonicalPath": "assets/selected/art/scenes/biology_park/spore_garden.png",
+      "reviewCopy": "references/scenes__biology_park__spore_garden.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "preview4x": "references/scenes__biology_park__spore_garden-4x.png"
+    },
+    {
+      "canonicalPath": "assets/selected/art/scenes/biology_park/tour_tram.png",
+      "reviewCopy": "references/scenes__biology_park__tour_tram.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57",
+      "preview4x": "references/scenes__biology_park__tour_tram-4x.png"
+    },
+    {
+      "canonicalPath": "assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+      "reviewCopy": "references/scenes__house_of_tomorrow__foyer.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "9e4ea0bc781dbb7cf40d90d71ebce661d244c45bf5892c45ea6e420c9b329607",
+      "preview4x": "references/scenes__house_of_tomorrow__foyer-4x.png"
+    },
+    {
+      "canonicalPath": "assets/selected/art/scenes/house_of_tomorrow/lounge.png",
+      "reviewCopy": "references/scenes__house_of_tomorrow__lounge.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "9dc600a286bc585a5fb8fc1a5bf85cca31a06ea4f42f4b83057f3845242b92f8",
+      "preview4x": "references/scenes__house_of_tomorrow__lounge-4x.png"
+    }
+  ],
+  "composite": {
+    "file": "previews/auctioneer-composite-v01.png",
+    "sha256": "800df3d416aa2e9f982e7a49d724bc011152b9754a3e716937435e7107f814ca",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB",
+    "alphaValues": [
+      255
+    ],
+    "opaque": true
+  }
+}

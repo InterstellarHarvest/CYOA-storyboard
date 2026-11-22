@@ -1,0 +1,44 @@
+{
+  "status": "Requires creative selection; technical checks do not assert Chapter 2 quality.",
+  "benchmarks": [
+    "conveniences_bureau",
+    "control_tower",
+    "spore_garden",
+    "tour_tram"
+  ],
+  "axes": [
+    [
+      "Logical pixel size",
+      "314x206 main; 564x278 separate portrait layers. Matches approved contracts."
+    ],
+    [
+      "Detail density",
+      "Increased door/furniture size, molding layers, light planes, flower clusters and material-specific detail. Chapter 2 remains richer and more natural."
+    ],
+    [
+      "Silhouette clarity",
+      "Restroom pair, podium, ballroom/piano and service connection remain legible. Crowded small guests and arrangements need review."
+    ],
+    [
+      "Color clusters",
+      "New clustered light and shadow follow material planes. Portrait uses smaller facial planes and cloth highlights; no palette-count target, filtering or posterization."
+    ],
+    [
+      "Architectural edges",
+      "New bevel light/shadow and cylinder shading. Still a strongly planar rendering with perspective limitations."
+    ],
+    [
+      "Object readability",
+      "Larger doors, podium paneling, corridor lights/cart, lamps and urns. Their route roles take priority over texture."
+    ],
+    [
+      "NPC scale and simplicity",
+      "Small scene figures have no facial features. Separate transparent portrait adds facial/hair/hand detail at 564x278."
+    ],
+    [
+      "Native and 4x appearance",
+      "Both supplied at exact sizes; v01 side-by-side and four actual Chapter 2 benchmarks included. Scaling is NEAREST only."
+    ]
+  ],
+  "portraitBenchmark": "Approved receptionist is more naturally rendered. v02 adds anatomy and costume detail but does not yet demonstrate equivalent facial realism."
+}
