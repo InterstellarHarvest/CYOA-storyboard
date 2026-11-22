@@ -39,7 +39,7 @@ class Links(HTMLParser):
    self.targets.add(p)
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--commit',required=True);ap.add_argument('--out',required=True);args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--commit',required=True);ap.add_argument('--out',required=True);ap.add_argument('--version',default='v03');args=ap.parse_args()
  out=Path(args.out).resolve()
  assert not out.is_relative_to(ROOT),'Remote report must not change the verified package'
  head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=REPO,text=True).strip()
@@ -66,11 +66,11 @@ def main():
   for job in as_completed(jobs):
    results.append(job.result())
    if len(results)%15==0:print('Verified',len(results),'/',len(targets),'remote files',flush=True)
- gallery='https://raw.githack.com/InterstellarHarvest/CYOA-storyboard/'+head+'/'+PREFIX+'/v02/index.html'
+ gallery='https://raw.githack.com/InterstellarHarvest/CYOA-storyboard/'+head+'/'+PREFIX+'/'+args.version+'/index.html'
  mirror={'url':gallery,'available':False}
  try:
   status,mime,body=fetch(gallery)
-  mirror.update(status=status,mime=mime,available=status==200 and 'text/html' in mime and body==(ROOT/'v02/index.html').read_bytes())
+  mirror.update(status=status,mime=mime,available=status==200 and 'text/html' in mime and body==(ROOT/args.version/'index.html').read_bytes())
  except Exception as exc:mirror['error']=str(exc)
  report={'remoteBranch':branch,'commit':head,'remoteRefVerified':True,'filesVerified':len(results),'imagesVerified':sum(r['path'].endswith('.png') for r in results),'allBytesMatch':True,'browserGallery':mirror,'files':sorted(results,key=lambda r:r['path'])}
  out.write_text(json.dumps(report,indent=2)+'\n')

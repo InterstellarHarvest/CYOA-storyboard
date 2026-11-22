@@ -1,0 +1,10 @@
+Independent native-grid reconstruction brief — v03
+Same close camera, architecture and empty foreground. Warm lamp light, cooler ambient fill, curtain/contact shadows, rounded tarnished duct, modeled velvet folds and darker doorway/wood give the surfaces separate light responses.
+
+Use original detailed reference: ../v02/detailed/CH4-02-reference-v02-empty.png
+Compare directly with actual approved Bureau/Control Tower/reception art and unchanged v01/v02.
+
+Native method: Blank native canvases. Integer-coordinate geometry and curves, native 1-bit geometric coverage masks and material/volume lighting fields evaluated directly on 314x206 or 564x278. No source raster inputs, supersampling, filtering, source downsampling or palette reduction. Not represented as image-model-generated native art.
+Presentation: Exact 4x NEAREST from completed native art. Portrait 4x exports are supplemental inspection views, not a change to the 564x278 portrait presentation contract.
+Known limitations for review: Material lighting is procedurally evaluated from authored native geometry. Some surfaces can look cleaner and more smoothly shaded than the approved receptionist background; the wear and velvet finish still need creative comparison.
+Remain UNSELECTED.

@@ -1,0 +1,74 @@
+Chapter 4 Batch 1 — v03 Art Direction
+
+Review commit 6444d2218fb5563640788be314b8aa47b69eb11b on branch art/ch4-batch01-review-20261121.
+
+Decision: CH4-01, CH4-02 and CH4-03 remain UNSELECTED. v02 is an improvement but does not yet meet the approved artwork's rendering standard. Produce a stronger v03.
+
+The primary issue is material rendering, dimensionality, lighting and pixel-cluster craftsmanship, not basic composition or a lack of decorative objects.
+
+Lobby — CH4-01
+
+Preserve the successful composition and the Brazil (1985)-inspired concept: a shabby, bureaucratic, retrofuturist institutional building disguised with fading hotel grandeur.
+
+Rebuild the native-grid rendering to recover more of the detailed reference's visual richness.
+
+Priorities:
+1. Lighting: Establish a stronger, coherent light hierarchy. The chandelier and wall lamps should illuminate nearby surfaces, with convincing shadows, selective highlights and darker recesses.
+2. Materials: Make stone, tarnished ductwork, aged plaster, chipped paint, worn carpet, wood, metal and velvet visibly distinct through purposeful native-resolution pixel clusters.
+3. Drapery: Replace overly regular scalloped shapes with heavier folds, varied shadow depths, uneven fringe and fabric volume.
+4. Aging: Reintroduce subtle cracks, missing plaster, discoloration, carpet wear and imperfect luxury finishes from the original reference. Integrate them into materials rather than scattering random noise.
+5. Depth: Improve dimensional shading on the doors, podium, floor, windows, flower arrangements and service corridor. Avoid broad, uniform planes.
+6. Visual hierarchy: Preserve important scene readability. Small NPCs should remain simplified, with recognizable silhouettes, clothing and poses. Do not force portrait-level detail into 314×206 figures.
+
+The environment should feel richly rendered but materially deteriorated—fake elegance covering institutional decay and intrusive technology.
+
+Auctioneer background — CH4-02
+
+The current wall panels, curtain and duct remain too flat.
+
+Give the close-up environment the same material richness and lighting hierarchy as the approved receptionist background. Use depth, wear, cast shadows, highlights and varied fabric folds. Keep it consistent with the lobby's architecture, palette and light sources.
+
+Auctioneer foreground — CH4-03
+
+Keep his established identity, age, hairstyle, burgundy formalwear, expression and gavel.
+
+Make the rendering less angular and more volumetric:
+- Model the forehead, cheeks, nose, chin and neck with carefully grouped skin-tone clusters.
+- Render silver hair as illuminated, dimensional locks rather than primarily thin lines.
+- Give the hands believable rounded fingers, knuckles and lighting.
+- Make the velvet/wool jacket, satin lapels and shirt read as different materials.
+- Introduce more sophisticated transitions between highlights, midtones and shadows.
+- Preserve a warm, theatrical, slightly absurd showman's expression.
+
+Use the approved receptionist portrait as the minimum standard for face, hair, clothing and background finish. Aim for comparable perceived craft and dimensionality, not necessarily identical rendering techniques.
+
+Production method
+
+Keep the established workflow:
+1. Use the large detailed reference to study lighting, forms, texture and material relationships.
+2. Independently reconstruct the image at its actual native target grid.
+3. Make deliberate decisions about which details survive at that grid.
+4. Produce exact 4× nearest-neighbor previews.
+5. Never simply downsample a large image and call it finished.
+
+This needs a stronger rendering pass, not just additional outlines, bevels and tiny surface marks. Judge the images at native size first.
+
+Quality comparison
+
+For each asset, perform direct visual comparisons against:
+- Approved Chapter 2 environments, including the Bureau and Control Tower.
+- The approved receptionist background and portrait.
+- The previous v01 and v02 artwork.
+- The original large detailed concept references.
+
+Technical dimensions, transparency and exact scaling must continue passing, but those checks do not constitute visual approval.
+
+Delivery
+
+- Preserve v01 and v02 unchanged.
+- Generate v03 images and a browser review gallery with native and exact 4× views.
+- Include side-by-side v02/v03 and canonical approved-art comparisons.
+- Commit and push the review to the public review branch.
+- Do not modify main, gameplay, narrative or artwork approval statuses.
+- Leave all candidates UNSELECTED for owner review.
+- Do not begin revising the restroom or ballroom until this rendering standard is established.
