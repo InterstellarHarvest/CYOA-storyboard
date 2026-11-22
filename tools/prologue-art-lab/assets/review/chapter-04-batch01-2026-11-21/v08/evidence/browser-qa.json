@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:64473/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "Final/approved/composite/four frozen PNGs decode; unselected/source-derived status and Batch2 scope explicit",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Portrait and two approved benchmarks use actual native and exact4x rasters",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Frozen-background composite native/exact4x controls",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-01 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-02 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-04 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-05 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile preserves native pixels inside scrollable views; no load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Final/approved/composite/four frozen PNGs decode; unselected/source-derived status and Batch2 scope explicit",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Portrait and two approved benchmarks use actual native and exact4x rasters",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Frozen-background composite native/exact4x controls",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-01 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-02 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-04 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-05 exact preserved candidate and original4x preview render",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile preserves native pixels inside scrollable views; no load/runtime errors",
+      "passed": true
+    }
+  ]
+}

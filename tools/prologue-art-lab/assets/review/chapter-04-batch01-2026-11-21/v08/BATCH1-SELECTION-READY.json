@@ -1,0 +1,163 @@
+{
+  "title": "Chapter 4 Batch1 \u2014 selection-ready review handoff",
+  "status": "UNSELECTED",
+  "formalApprovalRegistrationPerformed": false,
+  "productionIntegrationPerformed": false,
+  "approvalBoundary": "Four environment bytes are owner-preferred and frozen. Preferred character design is retained; v08 portrait is a new final review candidate. None is registered approved/integrated.",
+  "canonicalRegistryNote": "Current main has no Chapter4 scene/portrait registry records; production assetPath remains null. Review paths and canonical logical scene/speaker keys are exact.",
+  "assets": [
+    {
+      "id": "CH4-01",
+      "title": "Grand Bellevue Lobby",
+      "version": "v05",
+      "status": "UNSELECTED",
+      "formalSelectionConfirmed": false,
+      "ownerPreferredExactCandidate": true,
+      "frozen": true,
+      "canonicalScene": "grand_bellevue/lobby",
+      "canonicalProductionAssetPath": null,
+      "native": {
+        "file": "../v05/native/CH4-01-lobby-v05.png",
+        "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png",
+      "manifest": "../v05/manifest.json",
+      "provenance": {
+        "kind": "Independently native-drawn environment as recorded in v05",
+        "record": "../v05/evidence/validation.json"
+      }
+    },
+    {
+      "id": "CH4-02",
+      "title": "Auctioneer portrait background",
+      "version": "v05",
+      "status": "UNSELECTED",
+      "formalSelectionConfirmed": false,
+      "ownerPreferredExactCandidate": true,
+      "frozen": true,
+      "canonicalScene": "grand_bellevue/lobby",
+      "canonicalProductionAssetPath": null,
+      "native": {
+        "file": "../v05/native/CH4-02-auctioneer-background-v05.png",
+        "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png",
+      "manifest": "../v05/manifest.json",
+      "provenance": {
+        "kind": "Independently native-drawn environment as recorded in v05",
+        "record": "../v05/evidence/validation.json"
+      }
+    },
+    {
+      "id": "CH4-03",
+      "title": "Auctioneer showman",
+      "version": "v08 final review",
+      "status": "UNSELECTED",
+      "formalSelectionConfirmed": false,
+      "ownerPreferredDesign": true,
+      "ownerPreferredExactCandidate": false,
+      "canonicalScene": "grand_bellevue/lobby",
+      "canonicalSpeakerPose": "hotel_auctioneer:showman",
+      "canonicalProductionAssetPath": null,
+      "native": {
+        "file": "native/CH4-03-auctioneer-source-derived-v08.png",
+        "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-03-auctioneer-v08-4x.png",
+        "sha256": "90a37b1b1752ab85c7e28becfe7dfc5e0c7709e8dfde583187737c65086daa76",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "source": {
+        "file": "../portrait-study-02/generated/CH4-03-auctioneer-fresh-style-original.png",
+        "sha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "sourceReviewedCommit": "2a267beaf182fa6b589d7256ae813de8b168e63a",
+      "sourceGenerationPrompt": "../portrait-study-02/prompts/approved-npcs-only.txt",
+      "sourceGenerationReceipt": "../portrait-study-02/evidence/generation-receipt.json",
+      "method": "SOURCE-DERIVED: preferred original -> premultiplied-alpha Lanczos 564x278 -> cutout cleanup -> targeted near-opaque interior feature contrast cleanup",
+      "independentlyAuthoredAtNativeResolution": false,
+      "processingSource": "source/portrait.py",
+      "derivation": "evidence/portrait-derivation.json",
+      "alphaMatchesV06Exactly": true
+    },
+    {
+      "id": "CH4-04",
+      "title": "Restroom",
+      "version": "v07",
+      "status": "UNSELECTED",
+      "formalSelectionConfirmed": false,
+      "ownerPreferredExactCandidate": true,
+      "frozen": true,
+      "canonicalScene": "grand_bellevue/restroom",
+      "canonicalProductionAssetPath": null,
+      "native": {
+        "file": "../v07/native/CH4-04-restroom-v03.png",
+        "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png",
+      "manifest": "../v07/manifest.json",
+      "provenance": {
+        "kind": "Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction",
+        "record": "../v07/evidence/npc-derivation.json"
+      }
+    },
+    {
+      "id": "CH4-05",
+      "title": "Ballroom",
+      "version": "v07",
+      "status": "UNSELECTED",
+      "formalSelectionConfirmed": false,
+      "ownerPreferredExactCandidate": true,
+      "frozen": true,
+      "canonicalScene": "grand_bellevue/ballroom",
+      "canonicalProductionAssetPath": null,
+      "native": {
+        "file": "../v07/native/CH4-05-ballroom-v03.png",
+        "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-05-ballroom-v03.png",
+      "manifest": "../v07/manifest.json",
+      "provenance": {
+        "kind": "Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction",
+        "record": "../v07/evidence/npc-derivation.json"
+      }
+    }
+  ],
+  "canonicalMain": "622ad879dfe187ff2683ae7072515ed740522243",
+  "freezeRecord": "evidence/frozen-preferred-environments.json"
+}

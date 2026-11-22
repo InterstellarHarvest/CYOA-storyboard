@@ -1,0 +1,56 @@
+{
+  "status": "UNSELECTED",
+  "method": "SOURCE-DERIVED; authorized quality-first portrait policy",
+  "independentlyAuthoredAtNativeResolution": false,
+  "policy": "../PRODUCTION-POLICY.md",
+  "source": "../portrait-study-02/generated/CH4-03-auctioneer-fresh-style-original.png",
+  "sourceSha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+  "sourceDimensions": [
+    1788,
+    880
+  ],
+  "outputDimensions": [
+    564,
+    278
+  ],
+  "pillowVersion": "12.3.0",
+  "reduction": "RGBA -> premultiplied RGBa -> Lanczos 564x278 -> RGBA; no crop or composition shift",
+  "internalFilterComparison": "Preserved the successful Lanczos source reduction and edge cleanup. Compared native interior cleanup at0/55/85percent; selected85 for clearer existing features without new geometry. Intermediate trials remain private.",
+  "cleanup": "Preserved v06 cutout cleanup, then selectively clarified existing face/hair/hands/gavel/tailoring contrast at final resolution. Near-opaque interior only; alpha and boundary colors remain unchanged. No anatomy/costume repaint.",
+  "changedPixelsFromReduction": 12611,
+  "fringeColorPixels": [],
+  "paletteReduction": false,
+  "nativeInteriorCleanup": {
+    "filter": "UnsharpMask",
+    "radius": 0.55,
+    "percent": 85,
+    "threshold": 2,
+    "eligibleRegions": [
+      [
+        270,
+        34,
+        349,
+        132
+      ],
+      [
+        254,
+        153,
+        368,
+        277
+      ],
+      [
+        211,
+        128,
+        420,
+        277
+      ]
+    ],
+    "nearOpaqueInteriorOnly": true,
+    "minimumAlpha": 245,
+    "originalAlphaRetained": true,
+    "changedPixels": 11673
+  },
+  "alphaMatchesV06Exactly": true,
+  "sourceModified": false,
+  "artworkApproved": false
+}

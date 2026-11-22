@@ -1,0 +1,5231 @@
+{
+  "passed": true,
+  "checksPassed": 1304,
+  "artworkApproved": false,
+  "formalSelectionRegistered": false,
+  "frozenEnvironmentCount": 4,
+  "frozenEnvironmentsUnchanged": true,
+  "priorFilesPreserved": 548,
+  "portraitInteriorPixelsChanged": 11673,
+  "portraitAlphaAndBoundaryPreserved": true,
+  "inventoryCanonicalNodesCovered": 120,
+  "batch2GenerationStarted": false,
+  "checks": [
+    {
+      "check": "Prior version preserved: portrait-study-02/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/generated/CH4-03-auctioneer-fresh-style-original.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/comparisons/fresh-style-vs-approved-and-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/comparisons/fresh-style-vs-approved-and-v05-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/direction.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/frozen-environments.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/replay-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/diagnostics/CH4-03-over-frozen-v05-layout-only.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/diagnostics/CH4-03-layout-only-source-derived-564x278.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/prompts/approved-npcs-only.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/previews/attendant-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/previews/presenter-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/previews/v05-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/previews/generated-original-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/previews/composite-layout-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/previews/fresh-layout-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/firefox-v05-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/firefox-style-intro.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/chromium-fresh-style-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/firefox-fresh-style-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/chromium-style-intro.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/chromium-v05-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/firefox-attendant-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-02/evidence/browser/chromium-attendant-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/comparisons/CH4-04-v06-v07.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/comparisons/NPC-v06-v07-approved-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/comparisons/NPC-v06-v07-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/comparisons/CH4-04-v06-v07-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/comparisons/CH4-05-v06-v07-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/comparisons/CH4-05-v06-v07.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/CH4-04-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/scope-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/direction.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/presentation-replay.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/CH4-05-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/CH4-04-npc-only-mask.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/npc-derivation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/CH4-05-npc-only-mask.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/native/CH4-04-restroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/native/CH4-05-ballroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/source/derive.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/prompts/NPC-native-cleanup-v07.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/previews/CH4-05-v06-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/previews/CH4-05-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/previews/CH4-04-v06-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/previews/CH4-04-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/npc/plumber-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/npc/organizer-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/npc/porters-and-chair-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/npc/pianist-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/npc/musician-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/npc/assistant-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/chromium-CH4-05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/chromium-native-room-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/firefox-native-room-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/firefox-CH4-05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/chromium-CH4-04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v07/evidence/browser/firefox-CH4-04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/CH4-03-ILLUSTRATOR-HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/CH4-04-candidate-history-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/CH4-04-candidate-history-approved-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/CH4-03-candidate-history-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/CH4-05-candidate-history-approved-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/scene-npcs-vs-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/CH4-05-candidate-history-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/scene-npcs-vs-approved-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/comparisons/CH4-03-candidate-history-approved-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/portrait-derivation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/scene-visual-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/production-policy-decision.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/environment-generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/frozen-environments.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/canonical-requirements.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/scene-npc-derivation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/presentation-replay.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/scene-npc-generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/native/CH4-03-auctioneer-source-derived-v06.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/native/CH4-05-ballroom-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/native/CH4-04-restroom-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/references/approved-pavilion-urgency_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/references/approved-pavilion-urgency_stage-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/references/approved-pavilion-courtesy_stage-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/references/approved-pavilion-courtesy_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/detailed/CH4-04-reference-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/detailed/CH4-05-reference-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/detailed/NPC-porters-original.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/detailed/NPC-ballroom-people-original.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/detailed/NPC-plumbers-original.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/ballroom.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/portrait.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/restroom.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/scene_people.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/source/scene_tools.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/backgrounds/CH4-05-ballroom-background-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/backgrounds/CH4-04-restroom-background-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/prompts/CH4-04-stage-A-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/prompts/scene-porters-style.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/prompts/CH4-05-stage-A-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/prompts/scene-ballroom-people-style.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/prompts/scene-plumbers-style.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/CH4-03-previous-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-receptionist-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-spore-garden-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/CH4-03-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/CH4-04-previous-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/CH4-05-previous-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/portrait-alpha-dark.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/portrait-alpha-light-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-pavilion-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/CH4-05-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-tour-tram-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/portrait-alpha-dark-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/portrait-alpha-light.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-pavilion-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/auctioneer-over-frozen-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/CH4-04-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/auctioneer-over-frozen-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/npc/plumber-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/npc/organizer-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/npc/porters-and-chair-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/npc/pianist-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/npc/musician-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/npc/assistant-source-derived.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-CH4-05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-CH4-03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-frozen-background-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-ballroom-native-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-ballroom-native-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-CH4-03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-CH4-05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-frozen-background-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-CH4-04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-portrait-native-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-portrait-native-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/chromium-restroom-native-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-restroom-native-comparison.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v06/evidence/browser/firefox-CH4-04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/reception-production-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/reference-source-records.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/generation-receipts-additional.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/canonical-direction.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/source-pin.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/canonical-requirements.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/creative-feedback.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/owner-brief.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/approved-references.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/native/CH4-02-auctioneer-background-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/native/CH4-05-ballroom-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/native/CH4-04-restroom-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/native/CH4-03-auctioneer-showman-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/native/CH4-01-lobby-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__conference_hall__reception__reception_scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__house_of_tomorrow__foyer-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__tour_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__spore_garden-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__house_of_tomorrow__lounge-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__conference_hall__reception__reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/portraits__receptionist__reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__house_of_tomorrow__lounge.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__house_of_tomorrow__foyer.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/references/scenes__biology_park__tour_tram-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/detailed/CH4-04-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/detailed/CH4-01-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/detailed/CH4-02-reference-v02-empty.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/detailed/CH4-05-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/detailed/CH4-03-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/detailed/CH4-02-reference-v01-with-unrequested-person.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/source/pixel_primitives.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/source/reconstruct.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-05-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-05-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-03-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-03-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-04-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-04-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-01-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-02-correction-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-01-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-02-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/prompts/CH4-02-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/CH4-05-ballroom-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/auctioneer-composite-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/main-scenes-1x-contact.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/approved-receptionist-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/main-scenes-4x-contact.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/CH4-01-lobby-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/previews/CH4-04-restroom-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser/firefox-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser/chromium-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v01/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/METHOD-DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/generated/CH4-03-raster-method-test-original.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/comparisons/native-v05-and-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/comparisons/all-six-original-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/comparisons/native-v05-and-approved-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/comparisons/raster-test-and-frontal-reference-1to1.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/frozen-environments.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/replay-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/source/package_study.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/prompts/native-raster-reconstruction.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/previews/pavilion-attendant-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/previews/receptionist-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/previews/pavilion-presenter-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/previews/v05-auctioneer-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/previews/frontal-reference-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/previews/raster-test-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/firefox-receptionist-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/firefox-v05-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/chromium-method-decision.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/firefox-source-test-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/chromium-v05-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/chromium-source-test-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/chromium-receptionist-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: portrait-study-01/evidence/browser/firefox-method-decision.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/perspective-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/npc-style-reference-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/direction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/native/CH4-02-auctioneer-background-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/native/CH4-03-auctioneer-showman-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/native/CH4-01-lobby-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/references/receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/references/groundskeeper__groundskeeper_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/references/courtesy_conductor__courtesy_conductor_talking.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/detailed/CH4-03-front-reference-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/close_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/materials.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/room_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/prompts/CH4-03-stage-A-front-facing.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/prompts/CH4-03-reconstruction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/prompts/CH4-02-reconstruction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/prompts/CH4-01-reconstruction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-03-auctioneer-showman-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/auctioneer-composite-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-01-lobby-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-03-auctioneer-showman-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-receptionist-foreground-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-02-auctioneer-background-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-pavilion-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-03-auctioneer-showman-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-03-v02-v03-v04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-02-auctioneer-background-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-reception-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-pavilion-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/auctioneer-composite-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-02-v02-v03-v04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-01-v02-v03-v04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-02-auctioneer-background-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/previews/CH4-01-lobby-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/firefox-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/chromium-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/chromium-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/firefox-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v04/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/published-browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/published-files-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/direction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/native/CH4-02-auctioneer-background-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/native/CH4-03-auctioneer-showman-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/native/CH4-01-lobby-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/materials.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/prompts/CH4-03-reconstruction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/prompts/CH4-01-reconstruction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/prompts/CH4-02-reconstruction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/auctioneer-composite-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-03-auctioneer-showman-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-03-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/auctioneer-composite-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/approved-receptionist-foreground-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-02-auctioneer-background-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-03-auctioneer-showman-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/approved-reception-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-02-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-01-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-02-auctioneer-background-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/previews/CH4-01-lobby-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/firefox-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/chromium-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/chromium-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/firefox-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v03/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/reception-production-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/reference-source-records.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/generation-receipts-additional.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/canonical-direction.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/source-pin.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/canonical-requirements.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/owner-brief.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/approved-references.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/native/CH4-02-auctioneer-background-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/native/CH4-03-auctioneer-showman-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/native/CH4-01-lobby-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__conference_hall__reception__reception_scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__house_of_tomorrow__foyer-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__tour_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__spore_garden-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__house_of_tomorrow__lounge-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__conference_hall__reception__reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/portraits__receptionist__reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__house_of_tomorrow__lounge.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__house_of_tomorrow__foyer.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/references/scenes__biology_park__tour_tram-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/detailed/CH4-04-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/detailed/CH4-01-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/detailed/CH4-02-reference-v02-empty.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/detailed/CH4-05-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/detailed/CH4-03-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/detailed/CH4-02-reference-v01-with-unrequested-person.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/pixel_primitives.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/prompts/CH4-02-stage-B-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/prompts/CH4-03-stage-B-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/prompts/CH4-01-stage-B-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/previews/auctioneer-composite-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser/firefox-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser/chromium-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v02/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/index.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/README.md",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/online.html",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/CH4-02-allowed-correction-mask.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/targeted-change-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/CH4-02-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/CH4-01-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/direction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/CH4-01-allowed-correction-mask.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/native/CH4-03-auctioneer-showman-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/targeted_qa.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/portrait_paint.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/close_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/materials.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/wall_light.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/room_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/pixel_brush.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/prompts/CH4-03-reconstruction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/prompts/CH4-02-reconstruction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/prompts/CH4-01-reconstruction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-01-v04-v05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/auctioneer-composite-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-03-auctioneer-showman-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-02-v04-v05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-02-auctioneer-background-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-01-lobby-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/portrait-inspection-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-03-auctioneer-showman-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/auctioneer-composite-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-receptionist-foreground-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-02-auctioneer-background-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-pavilion-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-03-auctioneer-showman-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-01-lobby-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-02-auctioneer-background-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-03-v04-v05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-reception-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-pavilion-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-03-auctioneer-showman-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-02-auctioneer-background-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/previews/CH4-01-lobby-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/firefox-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/chromium-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/chromium-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/firefox-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Prior version preserved: v05/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Exact four owner-preferred candidate versions",
+      "passed": true
+    },
+    {
+      "check": "Freeze is not formal approval: CH4-01",
+      "passed": true
+    },
+    {
+      "check": "Frozen exact native PNG: CH4-01",
+      "passed": true
+    },
+    {
+      "check": "Frozen dimensions/mode: CH4-01",
+      "passed": true
+    },
+    {
+      "check": "Existing frozen exact4x preview: CH4-01",
+      "passed": true
+    },
+    {
+      "check": "Freeze is not formal approval: CH4-02",
+      "passed": true
+    },
+    {
+      "check": "Frozen exact native PNG: CH4-02",
+      "passed": true
+    },
+    {
+      "check": "Frozen dimensions/mode: CH4-02",
+      "passed": true
+    },
+    {
+      "check": "Existing frozen exact4x preview: CH4-02",
+      "passed": true
+    },
+    {
+      "check": "Freeze is not formal approval: CH4-04",
+      "passed": true
+    },
+    {
+      "check": "Frozen exact native PNG: CH4-04",
+      "passed": true
+    },
+    {
+      "check": "Frozen dimensions/mode: CH4-04",
+      "passed": true
+    },
+    {
+      "check": "Existing frozen exact4x preview: CH4-04",
+      "passed": true
+    },
+    {
+      "check": "Freeze is not formal approval: CH4-05",
+      "passed": true
+    },
+    {
+      "check": "Frozen exact native PNG: CH4-05",
+      "passed": true
+    },
+    {
+      "check": "Frozen dimensions/mode: CH4-05",
+      "passed": true
+    },
+    {
+      "check": "Existing frozen exact4x preview: CH4-05",
+      "passed": true
+    },
+    {
+      "check": "Final transparent 564x278 portrait contract",
+      "passed": true
+    },
+    {
+      "check": "Real transparent exterior and painted foreground",
+      "passed": true
+    },
+    {
+      "check": "Exact prior alpha/silhouette retained",
+      "passed": true
+    },
+    {
+      "check": "Only declared near-opaque native feature regions changed; boundary colors preserved",
+      "passed": true
+    },
+    {
+      "check": "Honest source-derived classification",
+      "passed": true
+    },
+    {
+      "check": "Preferred source master hash preserved",
+      "passed": true
+    },
+    {
+      "check": "Original source exactly matches the owner-specified preferred commit",
+      "passed": true
+    },
+    {
+      "check": "Exact final source-derived portrait replay",
+      "passed": true
+    },
+    {
+      "check": "Every exact4x pixel: native/CH4-03-auctioneer-source-derived-v08.png",
+      "passed": true
+    },
+    {
+      "check": "Every exact4x pixel: previews/auctioneer-over-frozen-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Every exact4x pixel: comparisons/portrait-v08-study-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Composite uses exact frozen background and final foreground",
+      "passed": true
+    },
+    {
+      "check": "Five selection-ready candidates; no registry/production action",
+      "passed": true
+    },
+    {
+      "check": "Selection-ready exact hash / unselected status: CH4-01",
+      "passed": true
+    },
+    {
+      "check": "Selection-ready exact hash / unselected status: CH4-02",
+      "passed": true
+    },
+    {
+      "check": "Selection-ready exact hash / unselected status: CH4-03",
+      "passed": true
+    },
+    {
+      "check": "Selection-ready exact hash / unselected status: CH4-04",
+      "passed": true
+    },
+    {
+      "check": "Selection-ready exact hash / unselected status: CH4-05",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: story/chapters/chapter-04.wip.json",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: story/artwork.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: story/items.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: story/storyboard-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: story/storyboard-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: story/chapter-04.wip-review-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: docs/126_CH4_NARRATIVE_CLOSEOUT_AUDIT_20261121.md",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: docs/125_CH4_BRIDAL_PRIVACY_AND_SEASHELL_AUDIT_20261121.md",
+      "passed": true
+    },
+    {
+      "check": "Pinned canonical snapshot hash: docs/124_CH4_EXIT_TO_PARK_AND_CH5_PARK_SEED_20261121.md",
+      "passed": true
+    },
+    {
+      "check": "Exact120-node inventory coverage, no missing/invented node IDs",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical demand set: main_scene",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical demand set: portrait",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical demand set: portrait_background",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical demand set: focus_a",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical demand set: fatal_aftermath",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/arrival/hotel_entry_dispatch",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_entry_dispatch",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/loading_lane",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/loading_lane/entry_locomotion_fail",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_locomotion_fail",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/service_alley",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_alley/entry_presenter_help_end",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_presenter_help_end",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_alley/entry_attendant_honest_end",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_attendant_honest_end",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/forecourt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/forecourt/entry_paper_problem_end",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_paper_problem_end",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/forecourt/entry_door_dash_fail",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_door_dash_fail",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/wedding_entry",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/wedding_entry/entry_door_reverse_end",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_door_reverse_end",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/lobby",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/entry_backstage_exit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: entry_backstage_exit",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_lobby_view",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_lobby_view",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auction_reopen_53",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auction_reopen_53",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auction_testimonial",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auction_testimonial",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auction_bride_ally",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auction_bride_ally",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auction_chair_lot31",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auction_chair_lot31",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_chair_vegetation_inspection",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_vegetation_inspection",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_chair_examiner_inspection",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_examiner_inspection",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_chair_stapler_stealth",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_stapler_stealth",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_chair_stapler_caught",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_stapler_caught",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_chair_staff_escort",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_staff_escort",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_chair_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_ring_retrieved",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_ring_retrieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_ring_slips",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_ring_slips",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_bride_ring_bathroom",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bride_ring_bathroom",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_collection_ring_to_bride",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_ring_to_bride",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/fatal_lot61_folded",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: fatal_lot61_folded",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_ring_inspect_inscription",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_ring_inspect_inscription",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auctioneer_restroom_inventory",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auctioneer_restroom_inventory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auctioneer_lot14_dispute",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auctioneer_lot14_dispute",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/lobby/hotel_auctioneer_lot14_recall",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_auctioneer_lot14_recall",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/loading_dock",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/loading_dock/hotel_service_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_service_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/loading_dock/hotel_service_foreman",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_service_foreman",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/loading_dock/hotel_service_park_exit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_service_park_exit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/ballroom",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/ballroom/hotel_wedding_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_wedding_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/ballroom/hotel_bridal_organizer",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_organizer",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/restroom",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_restroom_entry",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_restroom_entry",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_valve_braced",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_valve_braced",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_valve_flood",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_valve_flood",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_stall_lot_claimed",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_stall_lot_claimed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_wheel_buyer_lead",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_wheel_buyer_lead",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_lot_receipt_study",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_lot_receipt_study",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_wheel_return",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_wheel_return",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_key_master_cabinet",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_key_master_cabinet",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_stall_porter_protest",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_stall_porter_protest",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/hotel_stall_crane_success",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_stall_crane_success",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/restroom/fatal_stall_final_occupancy",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: fatal_stall_final_occupancy",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/maintenance",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_pipe_tunnel",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_pipe_tunnel",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_isolator_panel",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_isolator_panel",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_isolator_restrooms",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_isolator_restrooms",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_isolator_entire",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_isolator_entire",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_groom_show_ring",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_groom_show_ring",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_groom_directions_to_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_groom_directions_to_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_groom_leave_behind",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_groom_leave_behind",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/maintenance/hotel_boiler_service_passage",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_boiler_service_passage",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/service_stairs",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_stairs/hotel_maintenance_dock_exit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_maintenance_dock_exit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/refreshment_table",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/refreshment_table/hotel_commodore_bixby",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_commodore_bixby",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/refreshment_table/hotel_bixby_emergency",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bixby_emergency",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/refreshment_table/hotel_bixby_trade",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bixby_trade",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/service_passage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_chair_follow_collection",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_follow_collection",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_chair_staff_escort_loading",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_chair_staff_escort_loading",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_stairs",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_stairs",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_porters_groom_clue",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_porters_groom_clue",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_staff_pass",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_staff_pass",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_staff_pass_first",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_staff_pass_first",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_staff_pass_recognized",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_staff_pass_recognized",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_collection_staff_pass_authorized",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_staff_pass_authorized",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_bride_service_shortcut",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bride_service_shortcut",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_wedding_service_shortcut",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_wedding_service_shortcut",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/service_passage/hotel_water_outage_confirmation",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_water_outage_confirmation",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/boiler_access",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_access/hotel_collection_slip_unnoticed",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_slip_unnoticed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_access/hotel_collection_slip_spotted",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_collection_slip_spotted",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/staff_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/staff_lavatory/hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/staff_lavatory/hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/staff_lavatory/hotel_staff_lavatory_temporary_use_permit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_staff_lavatory_temporary_use_permit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/boiler_room",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_room/hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_room/hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_room/fatal_boiler_pressed_and_steamed",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: fatal_boiler_pressed_and_steamed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_room/hotel_boiler_dispute_hold",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_boiler_dispute_hold",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/boiler_room/hotel_boiler_staff_access",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_boiler_staff_access",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/bridal_dressing_room",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_room",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_room",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_door_knock",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_door_knock",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_criteria",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_criteria",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_false_claim",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_false_claim",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_ring_argument",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_ring_argument",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_gown_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_gown_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_gown_motor",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_gown_motor",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_gown_camera",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_gown_camera",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_gown_try",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_gown_try",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/fatal_bridal_made_to_measure",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: fatal_bridal_made_to_measure",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_autofit_survived",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_autofit_survived",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_dressing_room/hotel_bridal_door_options",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_door_options",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/bridal_corridor",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_corridor/hotel_bridal_corridor_exit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_corridor_exit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/courtyard",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/courtyard/hotel_bridal_corridor_park_exit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_corridor_park_exit",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/courtyard/hotel_bridal_lavatory_park_exit",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_bridal_lavatory_park_exit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/bridal_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_room",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_room",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_inspect",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_inspect",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_first_attempt",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_first_attempt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_instructions",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_instructions",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_complaint",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_complaint",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_second_attempt",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_second_attempt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/bridal_lavatory/hotel_seashell_assessment_appeal",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_seashell_assessment_appeal",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/upper_salvage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/upper_salvage/hotel_upper_salvage_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_upper_salvage_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/upper_salvage/hotel_upper_salvage_clerk_directions",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_upper_salvage_clerk_directions",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/public_corridor/hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/public_corridor/hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: main_scene:grand_bellevue/freight_lift",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: main_scene:grand_bellevue/freight_lift/hotel_freight_wc_misunderstanding",
+      "passed": true
+    },
+    {
+      "check": "Canonical scene field: hotel_freight_wc_misunderstanding",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_auctioneer:showman",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:showman/hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:showman/hotel_auction_reopen_53",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auction_reopen_53",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:showman/hotel_auction_chair_lot31",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auction_chair_lot31",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:showman/hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:showman/hotel_auctioneer_restroom_inventory",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auctioneer_restroom_inventory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:showman/hotel_auctioneer_lot14_dispute",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auctioneer_lot14_dispute",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_salvage_foreman:annoyed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_salvage_foreman:annoyed/hotel_service_foreman",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_service_foreman",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_wedding_organizer:urgent",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_wedding_organizer:urgent/hotel_wedding_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_wedding_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_wedding_organizer:urgent/hotel_bridal_organizer",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_organizer",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_plumber:worried",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_plumber:worried/hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_plumber_assistant:pleased",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_plumber_assistant:pleased/hotel_wheel_buyer_lead",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_wheel_buyer_lead",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_commodore_bixby:delighted",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_commodore_bixby:delighted/hotel_commodore_bixby",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_commodore_bixby",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_commodore_bixby:delighted/hotel_bixby_trade",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bixby_trade",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_commodore_bixby:commanding",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_commodore_bixby:commanding/hotel_bixby_emergency",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bixby_emergency",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_porter:businesslike",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:businesslike/hotel_stall_porter_protest",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_stall_porter_protest",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:businesslike/hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_auctioneer:delighted",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:delighted/hotel_auction_testimonial",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auction_testimonial",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:delighted/hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_bride:determined",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_bride:determined/hotel_auction_bride_ally",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auction_bride_ally",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_auction_clerk:precise",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auction_clerk:precise/hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auction_clerk:precise/hotel_chair_examiner_inspection",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_chair_examiner_inspection",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_porter:uncertain",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:uncertain/hotel_chair_vegetation_inspection",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_chair_vegetation_inspection",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:uncertain/hotel_collection_staff_pass_first",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_staff_pass_first",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_porter:alarmed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:alarmed/hotel_chair_stapler_caught",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_chair_stapler_caught",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:alarmed/hotel_collection_slip_spotted",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_slip_spotted",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_porter:practical",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:practical/hotel_chair_staff_escort",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_chair_staff_escort",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:practical/hotel_chair_staff_escort_loading",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_chair_staff_escort_loading",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:practical/hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:practical/hotel_collection_porters_groom_clue",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_porters_groom_clue",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:practical/hotel_collection_staff_pass_authorized",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_staff_pass_authorized",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_bride:hopeful",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_bride:hopeful/hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_bride:grateful",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_bride:grateful/hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_bride:helpful",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_bride:helpful/hotel_bride_ring_bathroom",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bride_ring_bathroom",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_porter:curious",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:curious/hotel_collection_staff_pass",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_staff_pass",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_porter:relieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_porter:relieved/hotel_collection_staff_pass_recognized",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_collection_staff_pass_recognized",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_wedding_assistant:busy",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_wedding_assistant:busy/hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_wedding_assistant:sympathetic",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_wedding_assistant:sympathetic/hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_wedding_assistant:apologetic",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_wedding_assistant:apologetic/hotel_staff_lavatory_temporary_use_permit",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_staff_lavatory_temporary_use_permit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_boiler_engineer:careful",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_boiler_engineer:careful/hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_boiler_engineer:pleased",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_boiler_engineer:pleased/hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_boiler_engineer:defeated",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_boiler_engineer:defeated/hotel_boiler_dispute_hold",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_boiler_dispute_hold",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_boiler_engineer:practical",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_boiler_engineer:practical/hotel_boiler_staff_access",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_boiler_staff_access",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_boiler_engineer:practical/hotel_water_outage_confirmation",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_water_outage_confirmation",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_groom:nervous",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_groom:nervous/hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_groom:nervous/hotel_groom_directions_to_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_groom_directions_to_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_groom:nervous/hotel_groom_leave_behind",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_groom_leave_behind",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_groom:relieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_groom:relieved/hotel_groom_show_ring",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_groom_show_ring",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_auctioneer:disappointed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:disappointed/hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:bridal_door_ai:neutral",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bridal_door_ai:neutral/hotel_bridal_door_knock",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_door_knock",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bridal_door_ai:neutral/hotel_bridal_criteria",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_criteria",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bridal_door_ai:neutral/hotel_bridal_false_claim",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_false_claim",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bridal_door_ai:neutral/hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bridal_door_ai:neutral/hotel_bridal_ring_argument",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_ring_argument",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bridal_door_ai:neutral/hotel_bridal_gown_camera",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_bridal_gown_camera",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:bathroom_ai:neutral",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bathroom_ai:neutral/hotel_seashell_instructions",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_seashell_instructions",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bathroom_ai:neutral/hotel_seashell_complaint",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_seashell_complaint",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bathroom_ai:neutral/hotel_seashell_second_attempt",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_seashell_second_attempt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:bathroom_ai:neutral/hotel_seashell_assessment_appeal",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_seashell_assessment_appeal",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_salvage_clerk:practical",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_salvage_clerk:practical/hotel_upper_salvage_arrival",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_upper_salvage_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_salvage_clerk:practical/hotel_upper_salvage_clerk_directions",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_upper_salvage_clerk_directions",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_wedding_guest:curious",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_wedding_guest:curious/hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_attendant:professional",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_attendant:professional/hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_auctioneer:bureaucratic",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_auctioneer:bureaucratic/hotel_auctioneer_lot14_recall",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_auctioneer_lot14_recall",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait:hotel_lift_voice:neutral",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait:hotel_lift_voice:neutral/hotel_freight_wc_misunderstanding",
+      "passed": true
+    },
+    {
+      "check": "Canonical speaker/pose: hotel_freight_wc_misunderstanding",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/lobby",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auction_reopen_53",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auction_testimonial",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auction_bride_ally",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auction_chair_lot31",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_chair_vegetation_inspection",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_chair_examiner_inspection",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_chair_stapler_caught",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_chair_staff_escort",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_bride_ring_bathroom",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auctioneer_restroom_inventory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auctioneer_lot14_dispute",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/lobby/hotel_auctioneer_lot14_recall",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/loading_dock",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/loading_dock/hotel_service_foreman",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/ballroom",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/ballroom/hotel_wedding_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/ballroom/hotel_bridal_organizer",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/restroom",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/restroom/hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/restroom/hotel_wheel_buyer_lead",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/restroom/hotel_stall_porter_protest",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/refreshment_table",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/refreshment_table/hotel_commodore_bixby",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/refreshment_table/hotel_bixby_emergency",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/refreshment_table/hotel_bixby_trade",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/service_passage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_chair_staff_escort_loading",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_porters_groom_clue",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_staff_pass",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_staff_pass_first",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_staff_pass_recognized",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_collection_staff_pass_authorized",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/service_passage/hotel_water_outage_confirmation",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/boiler_access",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/boiler_access/hotel_collection_slip_spotted",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/staff_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/staff_lavatory/hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/staff_lavatory/hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/staff_lavatory/hotel_staff_lavatory_temporary_use_permit",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/boiler_room",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/boiler_room/hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/boiler_room/hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/boiler_room/hotel_boiler_dispute_hold",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/boiler_room/hotel_boiler_staff_access",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/maintenance",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/maintenance/hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/maintenance/hotel_groom_show_ring",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/maintenance/hotel_groom_directions_to_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/maintenance/hotel_groom_leave_behind",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/bridal_dressing_room",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_dressing_room/hotel_bridal_door_knock",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_dressing_room/hotel_bridal_criteria",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_dressing_room/hotel_bridal_false_claim",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_dressing_room/hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_dressing_room/hotel_bridal_ring_argument",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_dressing_room/hotel_bridal_gown_camera",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/bridal_lavatory",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_lavatory/hotel_seashell_instructions",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_lavatory/hotel_seashell_complaint",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_lavatory/hotel_seashell_second_attempt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/bridal_lavatory/hotel_seashell_assessment_appeal",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/upper_salvage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/upper_salvage/hotel_upper_salvage_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/upper_salvage/hotel_upper_salvage_clerk_directions",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/public_corridor/hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/public_corridor/hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: portrait_background:grand_bellevue/freight_lift",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: portrait_background:grand_bellevue/freight_lift/hotel_freight_wc_misunderstanding",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/maintenance/water_isolator",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/maintenance/water_isolator/hotel_isolator_panel",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_isolator_panel",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/restroom/lot_14_receipt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/restroom/lot_14_receipt/hotel_lot_receipt_study",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_lot_receipt_study",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/restroom/master_isolator",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/restroom/master_isolator/hotel_key_master_cabinet",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_key_master_cabinet",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/auction_floor/chair_armrest",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/auction_floor/chair_armrest/hotel_chair_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_chair_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/collection_stairs/chair_armrest",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/collection_stairs/chair_armrest/hotel_collection_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_collection_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/bridal_privacy_panel",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/bridal_privacy_panel/hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/autofit_gown",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/autofit_gown/hotel_bridal_gown_focus",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_bridal_gown_focus",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: focus_a:grand_bellevue/three_seashells",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: focus_a:grand_bellevue/three_seashells/hotel_seashell_inspect",
+      "passed": true
+    },
+    {
+      "check": "Canonical Focus A key: hotel_seashell_inspect",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: inventory_slot:lot_53_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:lot_53_dispute_ticket/hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:lot_53_dispute_ticket/hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Exact existing item-art record: inventory_slot:lot_53_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: inventory_inspect:lot_53_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:lot_53_dispute_ticket/hotel_auction_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:lot_53_dispute_ticket/hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Exact existing item-art record: inventory_inspect:lot_53_dispute_ticket",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: inventory_slot:wedding_ring_lot31",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_ring_retrieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_collection_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_ring_inspect_inscription",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_slot:wedding_ring_lot31/hotel_bridal_door_options",
+      "passed": true
+    },
+    {
+      "check": "Exact existing item-art record: inventory_slot:wedding_ring_lot31",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: inventory_inspect:wedding_ring_lot31",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_ring_retrieved",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_ring_show_bride",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_bride_ring_handover",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_collection_ring_in_pocket",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_boiler_groom_encounter",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_bridal_emergency_override",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_ring_inspect_inscription",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: inventory_inspect:wedding_ring_lot31/hotel_bridal_door_options",
+      "passed": true
+    },
+    {
+      "check": "Exact existing item-art record: inventory_inspect:wedding_ring_lot31",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: fatal_aftermath:grand_bellevue/final_occupancy",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: fatal_aftermath:grand_bellevue/final_occupancy/fatal_stall_final_occupancy",
+      "passed": true
+    },
+    {
+      "check": "Exact fatal artRef and brief: fatal_stall_final_occupancy",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: fatal_aftermath:grand_bellevue/pressed_and_steamed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: fatal_aftermath:grand_bellevue/pressed_and_steamed/fatal_boiler_pressed_and_steamed",
+      "passed": true
+    },
+    {
+      "check": "Exact fatal artRef and brief: fatal_boiler_pressed_and_steamed",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: fatal_aftermath:grand_bellevue/folded_for_convenience",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: fatal_aftermath:grand_bellevue/folded_for_convenience/fatal_lot61_folded",
+      "passed": true
+    },
+    {
+      "check": "Exact fatal artRef and brief: fatal_lot61_folded",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: fatal_aftermath:grand_bellevue/made_to_measure",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: fatal_aftermath:grand_bellevue/made_to_measure/fatal_bridal_made_to_measure",
+      "passed": true
+    },
+    {
+      "check": "Exact fatal artRef and brief: fatal_bridal_made_to_measure",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:lobby_door_removal",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:lobby_door_removal/hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_auctioneer_arrival",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:lobby_door_removal/hotel_restroom_entry",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_restroom_entry",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:restroom_active_leak",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:restroom_active_leak/hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_restroom_plumber",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:restroom_braced_or_contained",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:restroom_braced_or_contained/hotel_valve_braced",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_valve_braced",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:restroom_braced_or_contained/hotel_wheel_return",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_wheel_return",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:restroom_braced_or_contained/hotel_key_master_cabinet",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_key_master_cabinet",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:restroom_flood",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:restroom_flood/hotel_valve_flood",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_valve_flood",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:stall_lifting_and_removed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:stall_lifting_and_removed/hotel_stall_lot_claimed",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_stall_lot_claimed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:stall_lifting_and_removed/hotel_stall_crane_success",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_stall_crane_success",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:stall_lifting_and_removed/hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:chair_and_ring_states",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:chair_and_ring_states/hotel_chair_stapler_stealth",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_chair_stapler_stealth",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:chair_and_ring_states/hotel_chair_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_chair_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:chair_and_ring_states/hotel_ring_slips",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_ring_slips",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:chair_and_ring_states/hotel_collection_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_collection_ring_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:chair_and_ring_states/hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_collection_ring_porter_recovery",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:chair_and_ring_states/hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_collection_ring_stapler_recovery",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:staff_boxes_attempt",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:staff_boxes_attempt/hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_staff_lavatory_storage",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:staff_boxes_attempt/hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_staff_lavatory_move_boxes",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:boiler_pressure_state",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:boiler_pressure_state/hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_boiler_pressure_intro",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:boiler_pressure_state/hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_boiler_pressure_relieved",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:lot61_open_and_packed",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:lot61_open_and_packed/hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_lot61_pod_auction",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:lot61_open_and_packed/hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_lot61_pod_escaped",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:lot61_open_and_packed/hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_lot61_pod_declined",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:bridal_privacy_status",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:bridal_privacy_status/hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_bridal_door_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:bridal_privacy_status/hotel_bridal_autofit_survived",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_bridal_autofit_survived",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:gown_motor_manual_slack",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:gown_motor_manual_slack/hotel_bridal_gown_focus",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_bridal_gown_focus",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:gown_motor_manual_slack/hotel_bridal_gown_motor",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_bridal_gown_motor",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:gown_motor_manual_slack/hotel_bridal_autofit_survived",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_bridal_autofit_survived",
+      "passed": true
+    },
+    {
+      "check": "Planning group/status/source node IDs: state_family:public_corridor_flood",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:public_corridor_flood/hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_stall_public_corridor_walk",
+      "passed": true
+    },
+    {
+      "check": "Bidirectional node coverage: state_family:public_corridor_flood/hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Narrative-derived state evidence, not invented canonical key: hotel_flooded_public_corridor",
+      "passed": true
+    },
+    {
+      "check": "Recommended first group is five canonical restroom dialogue/control units; not generated",
+      "passed": true
+    },
+    {
+      "check": "Exactly four new item-art records",
+      "passed": true
+    },
+    {
+      "check": "Temporary props not invented as inventory",
+      "passed": true
+    },
+    {
+      "check": "Inventory handoff is not unauthorized Batch2 generation",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: BATCH1-SELECTION-READY.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: BATCH2-INVENTORY.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: BATCH2-INVENTORY.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: evidence/frozen-preferred-environments.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: native/CH4-03-auctioneer-source-derived-v08.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/CH4-03-auctioneer-v08-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: comparisons/portrait-v08-study-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: comparisons/portrait-v08-study-approved-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: native/CH4-03-auctioneer-source-derived-v08.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: native/CH4-03-auctioneer-source-derived-v08.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/CH4-03-auctioneer-v08-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/approved-pavilion-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/approved-pavilion-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../portrait-study-02/generated/CH4-03-auctioneer-fresh-style-original.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../portrait-study-02/diagnostics/CH4-03-layout-only-source-derived-564x278.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../portrait-study-02/prompts/approved-npcs-only.txt",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../portrait-study-02/evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: evidence/portrait-derivation.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/auctioneer-over-frozen-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/auctioneer-over-frozen-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/alpha-light-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/alpha-dark-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/auctioneer-over-frozen-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/auctioneer-over-frozen-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: previews/auctioneer-over-frozen-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/previews/CH4-01-lobby-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v05/previews/CH4-02-auctioneer-background-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/native/CH4-04-restroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/native/CH4-04-restroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/native/CH4-04-restroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/previews/CH4-04-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/native/CH4-05-ballroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/native/CH4-05-ballroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/native/CH4-05-ballroom-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../v07/previews/CH4-05-candidate-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: BATCH2-INVENTORY.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: BATCH2-NODE-COVERAGE.tsv",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: evidence/canonical-sources.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency: ../PRODUCTION-POLICY.md",
+      "passed": true
+    },
+    {
+      "check": "Production/narrative/gameplay/approval files unchanged",
+      "passed": true
+    }
+  ]
+}

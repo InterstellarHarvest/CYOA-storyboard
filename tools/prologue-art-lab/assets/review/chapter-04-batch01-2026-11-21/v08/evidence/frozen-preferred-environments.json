@@ -1,0 +1,174 @@
+{
+  "ownerDirective": "Freeze exact preferred candidates; no further cosmetic revisions. Formal approval registration remains separate.",
+  "selectionStatus": "UNSELECTED",
+  "assets": [
+    {
+      "id": "CH4-01",
+      "preferredReviewVersion": "v05",
+      "status": "UNSELECTED",
+      "frozen": true,
+      "formalSelectionConfirmed": false,
+      "canonicalScene": "grand_bellevue/lobby",
+      "canonicalProductionAssetPath": null,
+      "canonicalPathNote": "No registered Chapter 4 scene/portrait assetPath in the canonical artwork registry; do not fabricate integration paths.",
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png",
+      "file": "../v05/native/CH4-01-lobby-v05.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "manifest": "../v05/manifest.json",
+      "provenance": {
+        "kind": "Independently native-drawn environment as recorded in v05",
+        "record": "../v05/evidence/validation.json"
+      },
+      "referenceRecord": {
+        "file": "../v02/detailed/CH4-01-reference-v01.png",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB",
+        "sha256": "a37fdb8e61487f7d63fa157cd0fe205df0f0f58dcafa9934564179688e9a2c4a",
+        "alpha": "opaque"
+      },
+      "preview4x": {
+        "file": "../v05/previews/CH4-01-lobby-v05-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "46296d403d903b9d434b0d72a68dbbfe30baaf2bbc5ad52576ea83c149f47914",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "id": "CH4-02",
+      "preferredReviewVersion": "v05",
+      "status": "UNSELECTED",
+      "frozen": true,
+      "formalSelectionConfirmed": false,
+      "canonicalScene": "grand_bellevue/lobby",
+      "canonicalProductionAssetPath": null,
+      "canonicalPathNote": "No registered Chapter 4 scene/portrait assetPath in the canonical artwork registry; do not fabricate integration paths.",
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png",
+      "file": "../v05/native/CH4-02-auctioneer-background-v05.png",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "manifest": "../v05/manifest.json",
+      "provenance": {
+        "kind": "Independently native-drawn environment as recorded in v05",
+        "record": "../v05/evidence/validation.json"
+      },
+      "referenceRecord": {
+        "file": "../v02/detailed/CH4-02-reference-v02-empty.png",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "sha256": "8cfc93733e6fa058da11a1ca979484f5df85d1f0a901251c7847efa94eb1a224",
+        "alpha": "opaque"
+      },
+      "preview4x": {
+        "file": "../v05/previews/CH4-02-auctioneer-background-v05-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB",
+        "sha256": "eaccda9938e6eac7a788ae05b03b666a0b0d85a8319a27dab86591b4b570d34b",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "id": "CH4-04",
+      "preferredReviewVersion": "v07",
+      "status": "UNSELECTED",
+      "frozen": true,
+      "formalSelectionConfirmed": false,
+      "canonicalScene": "grand_bellevue/restroom",
+      "canonicalProductionAssetPath": null,
+      "canonicalPathNote": "No registered Chapter 4 scene/portrait assetPath in the canonical artwork registry; do not fabricate integration paths.",
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png",
+      "file": "../v07/native/CH4-04-restroom-v03.png",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "manifest": "../v07/manifest.json",
+      "provenance": {
+        "kind": "Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction",
+        "record": "../v07/evidence/npc-derivation.json"
+      },
+      "referenceRecord": {
+        "file": "../v06/backgrounds/CH4-04-restroom-background-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "d32384e85e3453a3f576450e388f192e6de169534fe12320c4138397d9155db7"
+      },
+      "preview4x": {
+        "file": "../v07/previews/CH4-04-candidate-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "e0eeea26007c4bc0af5fbf571849800f59a598161487b71e9aa05dc67e97e69f"
+      }
+    },
+    {
+      "id": "CH4-05",
+      "preferredReviewVersion": "v07",
+      "status": "UNSELECTED",
+      "frozen": true,
+      "formalSelectionConfirmed": false,
+      "canonicalScene": "grand_bellevue/ballroom",
+      "canonicalProductionAssetPath": null,
+      "canonicalPathNote": "No registered Chapter 4 scene/portrait assetPath in the canonical artwork registry; do not fabricate integration paths.",
+      "reviewFile": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-05-ballroom-v03.png",
+      "file": "../v07/native/CH4-05-ballroom-v03.png",
+      "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "manifest": "../v07/manifest.json",
+      "provenance": {
+        "kind": "Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction",
+        "record": "../v07/evidence/npc-derivation.json"
+      },
+      "referenceRecord": {
+        "file": "../v06/backgrounds/CH4-05-ballroom-background-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "cc8c34e0d22e296f916264255d232c32c52908bf0d4d215c181fadedf4d0a14f"
+      },
+      "preview4x": {
+        "file": "../v07/previews/CH4-05-candidate-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "54ff04952d8ef485c2dad0e7c8c257d5c4df12f3d6c3092620ddb6d9d202047f"
+      }
+    }
+  ]
+}

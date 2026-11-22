@@ -1,6 +1,8 @@
 # Chapter 4 Batch 1 artwork review
 
-Latest: [v07 scene NPC crispness correction](v07/index.html). Face/hand sampling and native cutout cleanup address v06 softness at4x. Only scene NPC pixels change; poses, scale, placement, room backgrounds, auctioneer and frozen v05 environments are preserved. Source-derived processing is fully recorded. All candidates remain **UNSELECTED**.
+Latest handoff: [v08 final auctioneer review](v08/index.html), [Batch1 selection-ready summary and exact hashes](v08/BATCH1-SELECTION-READY.md), and [canonical Batch2 inventory](v08/BATCH2-INVENTORY.md). The preferred v05 lobby/background and v07 restroom/ballroom are frozen byte-for-byte. The completed portrait uses the established preferred source-derived design. **All artwork remains UNSELECTED**; no formal approval registration or production integration.
+
+Preserved: [v07 scene NPC crispness correction](v07/index.html). Face/hand sampling and native cutout cleanup address v06 softness at4x. Only scene NPC pixels change; poses, scale, placement, room backgrounds, auctioneer and frozen v05 environments are preserved. Source-derived processing is fully recorded. All candidates remain **UNSELECTED**.
 
 Preserved complete package: [v06 auctioneer and resumed environments](v06/index.html). The preferred auctioneer is a source-derived 564×278 candidate under Nate's revised [production policy](PRODUCTION-POLICY.md). Restroom/ballroom v02 use native-drawn room backgrounds plus illustrated source-derived NPCs matching the exact owner-supplied approved Pavilion scene examples; rejected code figures are not used. All methods, originals, prompts, layers and derivations are disclosed. Frozen v05 lobby/background and all earlier versions remain unchanged. Everything remains **UNSELECTED**.
 

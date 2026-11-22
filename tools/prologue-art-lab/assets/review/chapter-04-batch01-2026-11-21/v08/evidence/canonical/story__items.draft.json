@@ -1,0 +1,669 @@
+{
+  "termination_notice": {
+    "name": "TERMINATION NOTICE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "item": [
+            "termination_notice",
+            "signed"
+          ]
+        },
+        "text": "YOUR PINK CARBON COPY OF A TERMINATION NOTICE. YOUR SIGNATURE IS LEGIBLE, EVEN THROUGH THE SMUDGE. THE FORM STATES THAT RECEIPT DOES NOT MEAN AGREEMENT."
+      },
+      {
+        "if": {
+          "item": [
+            "termination_notice",
+            "under_review"
+          ]
+        },
+        "text": "A PINK CARBON COPY MARKED REVIEW REQUESTED. IT CONFIRMS THAT AN OBJECTION WAS RECEIVED, NOT THAT YOUR JOB IS RESTORED."
+      },
+      {
+        "text": "A PINK TRIPLICATE TERMINATION FORM. THE PAPER IS THIN AND RATHER PROUD OF ITSELF."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "termination_notice",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "timing_clicker": {
+    "name": "APPLAUSE TIMING CLICKER",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A PALM-SIZED TIMING CLICKER WITH A BAKELITE BUTTON AND A SIX-SECOND DIAL. YOU USED IT TO SET THE LENGTH OF THE COMPANY'S APPLAUSE. IT STILL WORKS.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "timing_clicker",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "desk_plant": {
+    "name": "SMALL DESK PLANT",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A SMALL GREEN DESK PLANT IN A WHITE PLASTIC POT. A PENCIL LINE MARKS THE RECOMMENDED WATER LEVEL. NOBODY APPEARS TO HAVE OBSERVED IT.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "desk_plant",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "effects_box_full": {
+    "name": "PERSONAL EFFECTS BOX",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A SMALL, SEALED CARDBOARD BOX WITH YOUR NAME WRITTEN ON THE SIDE. IT RATTLES SLIGHTLY WHEN MOVED.",
+    "inspect": {
+      "effects": [
+        {
+          "take": [
+            "effects_box_full"
+          ]
+        },
+        {
+          "give": [
+            "effects_box_empty",
+            "timing_clicker",
+            "desk_plant",
+            "red_stapler",
+            "rubber_band_ball"
+          ]
+        },
+        {
+          "set": {
+            "box_unpacked": true
+          }
+        }
+      ],
+      "once": true
+    }
+  },
+  "effects_box_empty": {
+    "name": "EMPTY PERSONAL EFFECTS BOX",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "THE SAME CARDBOARD BOX, NOW EMPTY. A STRIP OF TAPE HANGS FROM ONE FLAP. IT IS STILL TECHNICALLY PERSONAL PROPERTY."
+  },
+  "red_stapler": {
+    "name": "RED SWANGLINE STAPLER",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A HEAVY RED METAL DESK STAPLER. SWANGLINE IS PRINTED IN SILVER LETTERS ON THE SIDE. NO ONE EVER AGREED WHETHER IT BELONGED TO YOU OR THE OFFICE.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "red_stapler",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "rubber_band_ball": {
+    "name": "RUBBER-BAND BALL",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A DENSE BALL OF OFFICE RUBBER BANDS, WOUND OVER MANY YEARS. YOU CAN'T TELL WHAT ALL THOSE BANDS ARE WOUND AROUND.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "rubber_band_ball",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "property_claim_ticket": {
+    "name": "EXPOSITION PROPERTY CLAIM TICKET",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "flagIs": [
+            "property_record",
+            "stored_all"
+          ]
+        },
+        "text": "AN EXPOSITION OF EVERYTHING PROPERTY CLAIM TICKET. FOUR PERSONAL ARTICLES ARE LISTED AS HELD FOR YOUR CONVENIENCE. COLLECTION: ON DEPARTURE. THE DEPARTURE FIELD IS BLANK."
+      },
+      {
+        "text": "AN EXPOSITION OF EVERYTHING PROPERTY CLAIM TICKET. THREE PERSONAL ARTICLES ARE LISTED AS HELD FOR YOUR CONVENIENCE. COLLECTION: ON DEPARTURE. THE DEPARTURE FIELD IS BLANK."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "property_claim_ticket",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "expo_examiner_badge": {
+    "name": "TEMPORARY EXAMINER BADGE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A PALE BLUE EXPOSITION BADGE EMBOSSED WITH YOUR NAME. BELOW IT: TEMPORARY EXAMINER, OFFICE OF UNVERIFIED CONDITIONS. NO EXPIRATION DATE IS PRINTED.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "expo_examiner_badge",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "wc_key": {
+    "name": "FACILITIES KEY",
+    "slotArt": "art/items/bathroom_pass_slot.png",
+    "inspectArt": "art/items/bathroom_pass_inspect.png",
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "wc_key",
+            "read"
+          ]
+        },
+        "text": "A SMALL KEY ON A WORN FOB, WITH A PAPER TAG TIED THROUGH THE RING. THE TAG HAS BEEN FILLED IN."
+      },
+      {
+        "text": "THE TAG READS:\n\nISSUED TO: EXAMINER, OFFICE OF UNVERIFIED CONDITIONS.\nRETURNED: TODAY, 4:52.\nSIGNED: (A SIGNATURE IN WHAT IS PLAINLY YOUR OWN HANDWRITING.)"
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "wc_key",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "family_portrait_photo": {
+    "name": "COMPLIMENTARY FAMILY PORTRAIT",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A STIFF SHOWROOM PHOTOGRAPH OF THREE EMPTY CHAIRS. THE CROOKED CAMERA CATCHES PART OF A FOURTH CHAIR AT THE RIGHT EDGE, WITH PART OF YOUR SHIRT, LAP, LEGS AND FORWARD-FACING SHOES. YOUR HEAD IS OUT OF FRAME. THE BACK IS STAMPED OFFICIAL HOUSEHOLD RECORD - COMPLIMENTARY COPY.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "family_portrait_photo",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "acting_director_badge": {
+    "name": "ACTING DIRECTOR OF VEGETATION CREDENTIAL",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "An emergency appointment card naming you ACTING DIRECTOR OF VEGETATION. Its issuing office is a gardening machine. That makes it no less valid.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "acting_director_badge",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "certified_seed_canister": {
+    "name": "CERTIFIED BOTANICAL SEED CANISTER",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A dull metal case with a sealed packet of viable seeds from Botanical Specimen 001. KEEP SEALED. DESTINATION: OUTSIDE APPROVED GROWING AREA.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "certified_seed_canister",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "botanical_antidote_public": {
+    "name": "PUBLIC BOTANICAL ANTIDOTE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "botanical_antidote_public",
+            "read"
+          ]
+        },
+        "text": "A chunky glass-vial botanical exposure injector from the first-aid box. The printed handling label is folded beneath a metal clip."
+      },
+      {
+        "text": "The injector is labelled EXPERIMENTAL BOTANICAL EXPOSURE ANTIDOTE. EXPIRED 1977. Its age means the dose may not work. A successful dose fully cures spore and thorn infections; a failed dose changes nothing."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "botanical_antidote_public",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "botanical_antidote_maintenance": {
+    "name": "MAINTENANCE BOTANICAL ANTIDOTE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "botanical_antidote_maintenance",
+            "read"
+          ]
+        },
+        "text": "A chunky glass-vial botanical exposure injector from the industrial decontamination locker. The printed handling label is folded beneath a metal clip."
+      },
+      {
+        "text": "The injector is labelled EXPERIMENTAL BOTANICAL EXPOSURE ANTIDOTE. EXPIRED 1969. Its age means the dose may not work. A successful dose fully cures spore and thorn infections; a failed dose changes nothing."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "botanical_antidote_maintenance",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "botanical_antidote_customs": {
+    "name": "CUSTOMS BOTANICAL ANTIDOTE",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "botanical_antidote_customs",
+            "read"
+          ]
+        },
+        "text": "A chunky glass-vial botanical exposure injector from the agricultural exposure dispenser. The printed handling label is folded beneath a metal clip."
+      },
+      {
+        "text": "The injector is labelled EXPERIMENTAL BOTANICAL EXPOSURE ANTIDOTE. EXPIRED 1981. Its age means the dose may not work. A successful dose fully cures spore and thorn infections; a failed dose changes nothing."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "botanical_antidote_customs",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_approved_departure_authorization": {
+    "name": "APPROVED DEPARTURE AUTHORIZATION",
+    "description": "A valid permit stamped ALREADY USED. The Pavilion insists it was redeemed before you got it.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_approved_departure_authorization",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_certified_record_discrepancy": {
+    "name": "CERTIFIED IDENTITY DISCREPANCY",
+    "description": "A machine-certified conflict between the departed Original and physically present claimant.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_certified_record_discrepancy",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_presentation_service_authorization": {
+    "name": "PRESENTATION SERVICE AUTHORIZATION",
+    "description": "A provisional one-use technical authorization for the hearing.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_presentation_service_authorization",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_representation_diagnostic_record": {
+    "name": "REPRESENTATION DIAGNOSTIC RECORD",
+    "description": "A paper trace of unauthorized movement; exact source must be verified.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_representation_diagnostic_record",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_broadcast_override_sequence": {
+    "name": "BROADCAST OVERRIDE SEQUENCE",
+    "description": "The official patch-panel sequence for simultaneous Pavilion presentation feeds.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_broadcast_override_sequence",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "certificate_fulfilled_requirements": {
+    "name": "SATISFACTION CERTIFICATE",
+    "description": "A document stating all your requirements were fulfilled, despite the evidence.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "certificate_fulfilled_requirements",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_discrepancy_receipt": {
+    "name": "DISCREPANCY RECEIPT",
+    "description": "Proof that the Pavilion accepted a complaint about its own completed record.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_discrepancy_receipt",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_temporary_staff_pass": {
+    "name": "TEMPORARY STAFF PASS",
+    "description": "Provisional status authorizing one service inspection.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_temporary_staff_pass",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_original_appearance_order": {
+    "name": "ORIGINAL APPEARANCE ORDER",
+    "description": "A formal demand that the Original attend a hearing.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_original_appearance_order",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_proof_of_life": {
+    "name": "PROOF OF LIFE CERTIFICATE",
+    "description": "Pulse and warmth are verified, but identity remains disputed.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_proof_of_life",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_duplicate_routing_tag": {
+    "name": "DUPLICATE ROUTING TAG",
+    "description": "A warehouse label assigning your body to surplus registration.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_duplicate_routing_tag",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_empty_claimant_photo": {
+    "name": "EMPTY CLAIMANT PHOTOGRAPH",
+    "description": "The photograph officially excludes the person who sat for it.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_empty_claimant_photo",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_unapproved_exposure": {
+    "name": "UNAPPROVED EXPOSURE",
+    "description": "An authentic photograph rejected by the Pavilion's approved-image machinery.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_unapproved_exposure",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_source_contribution_receipt": {
+    "name": "SOURCE CONTRIBUTION RECEIPT",
+    "description": "A source-credit receipt for the House's partly occupied fourth chair.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_source_contribution_receipt",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_household_routing_strip": {
+    "name": "HOUSEHOLD ROUTING STRIP",
+    "description": "Three empty chair positions linked to three administrative routes.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_household_routing_strip",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_registration_provenance_strip": {
+    "name": "REGISTRATION PROVENANCE STRIP",
+    "description": "Separate certified Original and present claimant serials linked to one name.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_registration_provenance_strip",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "pavilion_satisfaction_certificate": {
+    "name": "SATISFACTION CERTIFICATE",
+    "description": "An official certificate: VISITOR EXPERIENCE COMPLETE. PERSONAL RELIEF ACHIEVED. SATISFACTION LEVEL 100%. You have not used a toilet.",
+    "slotArt": null,
+    "inspectArt": null,
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "pavilion_satisfaction_certificate",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "lot_53_dispute_ticket": {
+    "name": "LOT 53 DISPUTE TICKET",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": "A RED CARBON-COPY TICKET FOR LOT 53. REASON: LACK OF PRIVACY — CUSTOMER PRESENT. THE CLERK HAS STAMPED IT HOLD FOR INSPECTION. IT ENTITLES YOU TO INSPECT THE DISPUTED MERCHANDISE BEFORE IT LEAVES THE HOTEL, BUT IT DOES NOT CANCEL THE SALE.",
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "lot_53_dispute_ticket",
+            "read"
+          ]
+        ]
+      }
+    }
+  },
+  "wedding_ring_lot31": {
+    "name": "WEDDING RING",
+    "slotArt": null,
+    "inspectArt": null,
+    "description": [
+      {
+        "if": {
+          "itemNot": [
+            "wedding_ring_lot31",
+            "read"
+          ]
+        },
+        "text": "A SMALL SILVER WEDDING BAND FREED FROM LOT 31'S UPHOLSTERY. A SHORT PALE BLUE RIBBON STILL CLINGS TO IT. TINY LETTERS ARE ENGRAVED INSIDE, TOO SMALL TO READ AT A GLANCE."
+      },
+      {
+        "text": "YOU TURN THE SILVER BAND BETWEEN YOUR FINGERS. A SMALL STRAND OF BLUE RIBBON HANGS FROM IT.\n\nINSIDE, BENEATH A TINY MAKER'S MARK, YOU CAN FINALLY MAKE OUT THE ENGRAVING:\n\nAS IS, WHERE IS.\n\nTHE STANDARD TERMS OF AN AUCTION.\n\nAS WEDDING PROMISES GO, YOU'VE HEARD WORSE."
+      }
+    ],
+    "read": {
+      "effects": {
+        "mark": [
+          [
+            "wedding_ring_lot31",
+            "read"
+          ]
+        ],
+        "set": {
+          "ch4_ring_inscription_read": true
+        }
+      }
+    }
+  }
+}
