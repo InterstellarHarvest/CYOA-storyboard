@@ -1,5 +1,9 @@
 # Chapter 4 Batch 1 artwork review
 
+Latest portrait work: [reconstruction method study 01](portrait-study-01/index.html). The fresh built-in raster test is preserved at its returned **1785×881** resolution; it failed the requested 564×278 native-size gate. It is a source-sized method test, **not a completed v06 or a new native candidate**. No downsampled substitute was made. [The method assessment](portrait-study-01/METHOD-DECISION.md) documents the visual comparison and proposes direct layered native raster illustration before further portrait revisions. All artwork remains UNSELECTED.
+
+**CH4-01 and CH4-02 are frozen at v05 for owner review.** Their exact native PNGs and hashes are preserved in [the freeze record](portrait-study-01/evidence/frozen-environments.json); no further edits or approval registration have occurred. All v01–v05 package files remain unchanged.
+
 Latest gallery: [v05/index.html](v05/index.html) — priority native pixel-brush portrait painting plus mask-restricted carpet/plaster/lamp/wall corrections to the v04 room base. Actual approved human NPCs and the unchanged frontal study are the portrait references; their rendering standard is not claimed to be automatically achieved. All CH4-01/02/03 candidates remain UNSELECTED. [v05 production notes](v05/README.md). Previous galleries remain unchanged: [v04](v04/index.html), [v03](v03/index.html), [v02](v02/index.html), [full v01 batch](v01/index.html).
 
 v05 adds explicit layered native pigment brush marks for the frontal character, rather than another broad face-lighting pass. Marks mix only with the reconstructed native canvas, with no reference raster sampling or image rescaling. Room edits have changed-pixel masks/protected-region proof; the portrait's alpha silhouette matches v04. No new imagegen call was needed: the preserved v04 frontal study remains the primary guide.

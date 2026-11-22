@@ -1,0 +1,288 @@
+{
+  "study": "CH4-03 portrait-specific reconstruction study 01",
+  "status": "UNSELECTED",
+  "baseCommit": "a89702d9aac81183398fb70bbc97ab4d700e54f6",
+  "publicationBranch": "art/ch4-batch01-review-20261121",
+  "nativeContract": {
+    "dimensions": [
+      564,
+      278
+    ],
+    "alpha": "transparent foreground",
+    "satisfiedByNewStudy": false
+  },
+  "nativeCandidate": null,
+  "decision": "Stop further portrait revisions after failed method test; proposed layered native raster workflow is in METHOD-DECISION.md.",
+  "method": "One fresh built-in raster generation from four visual references, not v05. Returned master preserved byte-for-byte; no resize/crop into native asset. Only exact4x presentation enlargement and one-for-one comparison pasting.",
+  "nativeAuthorshipProven": false,
+  "pillowVersion": "12.3.0",
+  "sourceNodeIds": [
+    "hotel_auctioneer_arrival",
+    "hotel_auction_reopen_53",
+    "hotel_auction_chair_lot31",
+    "hotel_lot61_pod_auction",
+    "hotel_auctioneer_restroom_inventory",
+    "hotel_auctioneer_lot14_dispute"
+  ],
+  "canonicalRequirements": "../v02/evidence/canonical-requirements.json",
+  "referenceInputOrder": [
+    "frontal-reference",
+    "receptionist",
+    "pavilion-attendant",
+    "pavilion-presenter"
+  ],
+  "assets": [
+    {
+      "id": "raster-test",
+      "title": "Fresh raster method test",
+      "classification": "SOURCE-SIZED TEST \u2014 NOT NATIVE",
+      "note": "New raster construction; failed native-size gate. Not a game-asset candidate.",
+      "original": {
+        "file": "generated/CH4-03-raster-method-test-original.png",
+        "sha256": "ab03c24eb6d6126b4142cfb978819093cdbf77fe3ecb14ff2d880a348fa48472",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "exact4x": {
+        "file": "previews/raster-test-exact-4x.png",
+        "sha256": "d7544e4ba26bfc858a78b770e5aecd677afd8596d12829e978bcfd37e1de6831",
+        "dimensions": [
+          7140,
+          3524
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "id": "frontal-reference",
+      "title": "Primary detailed frontal reference",
+      "classification": "DETAILED REFERENCE",
+      "note": "Unchanged original character guide; not native game artwork.",
+      "original": {
+        "file": "../v04/detailed/CH4-03-front-reference-v04.png",
+        "sha256": "9300890318bb925df403d595e12cad16a818ef4a0a14ac36ed120474f00ed347",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/frontal-reference-exact-4x.png",
+        "sha256": "21be309b4c9604e1f625927c478c1c1cebc7edba0eaf92b98a23162ed686bb5d",
+        "dimensions": [
+          7140,
+          3524
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "id": "v05-auctioneer",
+      "title": "Preserved v05 auctioneer",
+      "classification": "UNSELECTED \u2014 NATIVE 564\u00d7278",
+      "note": "Earlier coordinate/brush portrait; no further marks or changes.",
+      "original": {
+        "file": "../v05/native/CH4-03-auctioneer-showman-v05.png",
+        "sha256": "525d0ae1b0ee363427454f9da0e712308ea037efc684dfdcb4d636526449f30b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "exact4x": {
+        "file": "previews/v05-auctioneer-exact-4x.png",
+        "sha256": "5a184d55a7b9d3c440525f42d2b1bc0dac10f58aac7d2699eecfaef0f384a79b",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "id": "receptionist",
+      "title": "Approved receptionist",
+      "classification": "APPROVED REFERENCE \u2014 NATIVE 564\u00d7278",
+      "note": "Compare eyes, cheek/mouth planes, hair masses, contour hierarchy and cloth.",
+      "original": {
+        "file": "../v02/references/portraits__receptionist__receptionist_idle.png",
+        "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "exact4x": {
+        "file": "previews/receptionist-exact-4x.png",
+        "sha256": "230048e64a3192dd1d8de63858b2fa145abbf3822bb4406787b0dc2e9fe76c73",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "id": "pavilion-attendant",
+      "title": "Approved Pavilion attendant",
+      "classification": "APPROVED REFERENCE \u2014 NATIVE 564\u00d7278",
+      "note": "Compare natural anatomy, hand integration and dimensional fabric folds.",
+      "original": {
+        "file": "../v04/references/pavilion_attendant_idle.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "exact4x": {
+        "file": "previews/pavilion-attendant-exact-4x.png",
+        "sha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "id": "pavilion-presenter",
+      "title": "Approved Pavilion presenter",
+      "classification": "APPROVED REFERENCE \u2014 NATIVE 564\u00d7278",
+      "note": "Compare expressive face, hair construction, gesture, tailoring and palette.",
+      "original": {
+        "file": "../v04/references/pavilion_presenter_idle.png",
+        "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "exact4x": {
+        "file": "previews/pavilion-presenter-exact-4x.png",
+        "sha256": "7e011fa7021ff78aed6d2435cea79e51bf4ed9deeb0595fe6cdae27b9713dbe8",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "frozenEnvironments": {
+    "status": "UNSELECTED",
+    "ownerReviewCandidates": true,
+    "freeze": "Preserve exact v05 PNGs; no edits or approval registration.",
+    "files": [
+      {
+        "file": "v05/native/CH4-01-lobby-v05.png",
+        "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0"
+      },
+      {
+        "file": "v05/native/CH4-02-auctioneer-background-v05.png",
+        "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f"
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "file": "comparisons/all-six-original-pixels.png",
+      "sha256": "a7631f1661a597ba16db2836b4b3fb89d259b4baa0b0bcd7c224b0a4554540d5",
+      "dimensions": [
+        3618,
+        2853
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "comparisons/native-v05-and-approved-exact-4x.png",
+      "sha256": "854f31a59d5a0e7c076b4db6b44305fcb4b2317e607d0fb986c155881f4befcc",
+      "dimensions": [
+        4704,
+        2784
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "comparisons/native-v05-and-approved.png",
+      "sha256": "a3d78e1fc25adc159baf346745554da71ef87e75c5979bb82127a2ef6e7cb78a",
+      "dimensions": [
+        1176,
+        696
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "comparisons/raster-test-and-frontal-reference-1to1.png",
+      "sha256": "e219de717b0ab664c8a83dea288435b422d7fc24d67888e85e7fa2452dbf15d7",
+      "dimensions": [
+        3618,
+        951
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "prompt": {
+    "file": "prompts/native-raster-reconstruction.txt",
+    "sha256": "5ea99cda9bca1649d3b93bf4745539c9665491a32267952255c3512f629f10e9"
+  },
+  "receipt": {
+    "file": "evidence/generation-receipt.json",
+    "sha256": "296adb39b7d850b8d8cc485f44d309e3873f47da59f8ea5838638f58d4592c15"
+  },
+  "knownLimitations": [
+    "Native-size generation failed: 1785\u00d7881 returned, 564\u00d7278 requested.",
+    "Internal image-model authorship is unobservable; prompt instructions do not prove native construction.",
+    "The source-sized test is more painterly than the approved NPCs; no new native-size aesthetic comparison is possible.",
+    "The saved original makes export packaging replayable; the stochastic generative call is not bit-for-bit replayable.",
+    "This is not a completed new native portrait review version or an artwork approval."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "creativeApproval": false,
+  "nativeCandidateProduced": false,
+  "visualAssessments": [
+    {
+      "against": "v05 auctioneer",
+      "finding": "The raster test models cheeks/jowls, sockets/lids, mouth/mustache, sculpted silver hair, cloth folds and the two-hand gavel hold more naturally. It changes the underlying anatomy. V05 remains flatter and diagrammatic. This comparison is of original pixels at different source resolutions, not proof of improvement at native size."
+    },
+    {
+      "against": "primary frontal reference",
+      "finding": "The test follows the elderly frontal identity and material treatment very closely. Large-scale transitions and construction are stronger; close resemblance also raises a style concern because the study remains painterly rather than demonstrating native NPC cluster craft."
+    },
+    {
+      "against": "approved receptionist",
+      "finding": "The receptionist achieves facial expression, grouped hair volume, selective contours and clothing distinction at 564\u00d7278. The source-sized test has not demonstrated the same economy and finish at this grid."
+    },
+    {
+      "against": "approved Pavilion attendant",
+      "finding": "The attendant integrates natural hands, neck, shoulders and cloth folds at native size. The test gives a more credible gavel hold than v05, but how it would survive native reconstruction is unresolved."
+    },
+    {
+      "against": "approved Pavilion presenter",
+      "finding": "The presenter combines readable gesture, lively facial anatomy, hair masses and controlled suit shading. The test is more realistic and may diverge in style; no equivalence claim is made."
+    }
+  ],
+  "nativeComparisonVerdict": "NOT AVAILABLE for the new test; no valid native candidate exists.",
+  "exact4xVerdict": "Exact nearest-neighbor inspection exports preserve source pixels; they do not cure the failed native-size output.",
+  "decision": "Use a layered direct-native raster illustrator workflow before further portrait revisions. Do not incrementally repaint v05."
+}

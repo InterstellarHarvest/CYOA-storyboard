@@ -1,0 +1,1687 @@
+{
+  "passed": true,
+  "packagingChecksPassed": 419,
+  "artworkApproved": false,
+  "productionNativeGatePassed": false,
+  "newNativeCandidateExists": false,
+  "frozenEnvironmentPNGsUnchanged": true,
+  "earlierVersionFilesPreserved": 322,
+  "checks": [
+    {
+      "check": "Preserved earlier bytes: v01/index.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/reception-production-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/reference-source-records.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/generation-receipts-additional.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/canonical-direction.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/source-pin.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/canonical-requirements.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/creative-feedback.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/owner-brief.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/approved-references.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/native/CH4-02-auctioneer-background-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/native/CH4-05-ballroom-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/native/CH4-04-restroom-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/native/CH4-03-auctioneer-showman-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/native/CH4-01-lobby-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__conference_hall__reception__reception_scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__house_of_tomorrow__foyer-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__tour_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__spore_garden-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__house_of_tomorrow__lounge-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__conference_hall__reception__reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/portraits__receptionist__reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__house_of_tomorrow__lounge.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__house_of_tomorrow__foyer.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/references/scenes__biology_park__tour_tram-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/detailed/CH4-04-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/detailed/CH4-01-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/detailed/CH4-02-reference-v02-empty.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/detailed/CH4-05-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/detailed/CH4-03-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/detailed/CH4-02-reference-v01-with-unrequested-person.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/source/pixel_primitives.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/source/reconstruct.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-05-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-05-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-03-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-03-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-04-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-04-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-01-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-02-correction-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-01-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-02-stage-B.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/prompts/CH4-02-stage-A.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/CH4-05-ballroom-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/auctioneer-composite-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/main-scenes-1x-contact.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/approved-receptionist-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/main-scenes-4x-contact.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/CH4-01-lobby-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/previews/CH4-04-restroom-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser/firefox-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser/chromium-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v01/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/index.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/online.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/reception-production-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/reference-source-records.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/generation-receipts-additional.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/canonical-direction.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/source-pin.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/canonical-requirements.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/owner-brief.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/approved-references.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/native/CH4-02-auctioneer-background-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/native/CH4-03-auctioneer-showman-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/native/CH4-01-lobby-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__conference_hall__reception__reception_scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__house_of_tomorrow__foyer-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__tour_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__spore_garden-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__house_of_tomorrow__lounge-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__conference_hall__reception__reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/portraits__receptionist__reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__house_of_tomorrow__lounge.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__house_of_tomorrow__foyer.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/references/scenes__biology_park__tour_tram-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/detailed/CH4-04-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/detailed/CH4-01-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/detailed/CH4-02-reference-v02-empty.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/detailed/CH4-05-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/detailed/CH4-03-reference-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/detailed/CH4-02-reference-v01-with-unrequested-person.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/pixel_primitives.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/prompts/CH4-02-stage-B-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/prompts/CH4-03-stage-B-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/prompts/CH4-01-stage-B-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/previews/auctioneer-composite-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser/firefox-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser/chromium-portrait-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v02/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/index.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/README.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/online.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/published-browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/published-files-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/direction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/native/CH4-02-auctioneer-background-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/native/CH4-03-auctioneer-showman-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/native/CH4-01-lobby-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/materials.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/prompts/CH4-03-reconstruction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/prompts/CH4-01-reconstruction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/prompts/CH4-02-reconstruction-v03.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/auctioneer-composite-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-03-auctioneer-showman-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-03-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/auctioneer-composite-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/approved-receptionist-foreground-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-02-auctioneer-background-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-03-auctioneer-showman-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/approved-reception-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-02-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-01-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-02-auctioneer-background-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/previews/CH4-01-lobby-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/firefox-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/chromium-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/chromium-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/firefox-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v03/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/index.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/README.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/online.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/perspective-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/npc-style-reference-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/direction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/native/CH4-02-auctioneer-background-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/native/CH4-03-auctioneer-showman-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/native/CH4-01-lobby-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/references/receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/references/groundskeeper__groundskeeper_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/references/courtesy_conductor__courtesy_conductor_talking.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/detailed/CH4-03-front-reference-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/close_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/materials.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/room_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/prompts/CH4-03-stage-A-front-facing.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/prompts/CH4-03-reconstruction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/prompts/CH4-02-reconstruction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/prompts/CH4-01-reconstruction-v04.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-03-auctioneer-showman-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/auctioneer-composite-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-01-lobby-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-03-auctioneer-showman-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-receptionist-foreground-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-02-auctioneer-background-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-pavilion-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-03-auctioneer-showman-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-03-v02-v03-v04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-02-auctioneer-background-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-reception-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-pavilion-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/auctioneer-composite-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-02-v02-v03-v04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-01-v02-v03-v04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-02-auctioneer-background-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/previews/CH4-01-lobby-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/firefox-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/chromium-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/chromium-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/firefox-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v04/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/index.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/README.md",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/online.html",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/CH4-02-allowed-correction-mask.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/canonical-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/targeted-change-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/CH4-02-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/CH4-01-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/direction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/CH4-01-allowed-correction-mask.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/native/CH4-03-auctioneer-showman-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/targeted_qa.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/portrait_paint.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/close_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/auctioneer.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/materials.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/backdrop.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/wall_light.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/room_detail.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/lobby.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/pixel_brush.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/prompts/CH4-03-reconstruction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/prompts/CH4-02-reconstruction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/prompts/CH4-01-reconstruction-v05.txt",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-01-v04-v05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/auctioneer-composite-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-03-auctioneer-showman-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-02-v04-v05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-02-auctioneer-background-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-01-lobby-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/portrait-inspection-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-03-auctioneer-showman-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/auctioneer-composite-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-receptionist-foreground-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-01-lobby-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-02-auctioneer-background-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-pavilion-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-03-auctioneer-showman-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-01-lobby-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-02-auctioneer-background-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-03-v04-v05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-reception-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-pavilion-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-03-auctioneer-showman-v05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-02-auctioneer-background-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/previews/CH4-01-lobby-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/firefox-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/chromium-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/firefox-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/chromium-lobby-native-card.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/firefox-portrait-comparisons.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/chromium-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved earlier bytes: v05/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen owner-review PNG: v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen owner-review PNG: v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "No artwork selection claimed",
+      "passed": true
+    },
+    {
+      "check": "No invalid native candidate presented",
+      "passed": true
+    },
+    {
+      "check": "Failed native output gate explicitly recorded",
+      "passed": true
+    },
+    {
+      "check": "No downsized/native derivative claimed",
+      "passed": true
+    },
+    {
+      "check": "No manufactured native asset directory",
+      "passed": true
+    },
+    {
+      "check": "Original hash: raster-test",
+      "passed": true
+    },
+    {
+      "check": "Preview hash: raster-test",
+      "passed": true
+    },
+    {
+      "check": "Original dimensions: raster-test",
+      "passed": true
+    },
+    {
+      "check": "Exact 4\u00d7 dimensions: raster-test",
+      "passed": true
+    },
+    {
+      "check": "Alpha/mode preserved: raster-test",
+      "passed": true
+    },
+    {
+      "check": "Every 4\u00d7 preview pixel exact: raster-test",
+      "passed": true
+    },
+    {
+      "check": "Test remains actual non-native 1785\u00d7881",
+      "passed": true
+    },
+    {
+      "check": "Generated master bytes match original receipt",
+      "passed": true
+    },
+    {
+      "check": "Original hash: frontal-reference",
+      "passed": true
+    },
+    {
+      "check": "Preview hash: frontal-reference",
+      "passed": true
+    },
+    {
+      "check": "Original dimensions: frontal-reference",
+      "passed": true
+    },
+    {
+      "check": "Exact 4\u00d7 dimensions: frontal-reference",
+      "passed": true
+    },
+    {
+      "check": "Alpha/mode preserved: frontal-reference",
+      "passed": true
+    },
+    {
+      "check": "Every 4\u00d7 preview pixel exact: frontal-reference",
+      "passed": true
+    },
+    {
+      "check": "Original hash: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "Preview hash: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "Original dimensions: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "Exact 4\u00d7 dimensions: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "Alpha/mode preserved: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "Every 4\u00d7 preview pixel exact: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "v05/approved native raster: v05-auctioneer",
+      "passed": true
+    },
+    {
+      "check": "Original hash: receptionist",
+      "passed": true
+    },
+    {
+      "check": "Preview hash: receptionist",
+      "passed": true
+    },
+    {
+      "check": "Original dimensions: receptionist",
+      "passed": true
+    },
+    {
+      "check": "Exact 4\u00d7 dimensions: receptionist",
+      "passed": true
+    },
+    {
+      "check": "Alpha/mode preserved: receptionist",
+      "passed": true
+    },
+    {
+      "check": "Every 4\u00d7 preview pixel exact: receptionist",
+      "passed": true
+    },
+    {
+      "check": "v05/approved native raster: receptionist",
+      "passed": true
+    },
+    {
+      "check": "Original hash: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "Preview hash: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "Original dimensions: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "Exact 4\u00d7 dimensions: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "Alpha/mode preserved: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "Every 4\u00d7 preview pixel exact: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "v05/approved native raster: pavilion-attendant",
+      "passed": true
+    },
+    {
+      "check": "Original hash: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "Preview hash: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "Original dimensions: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "Exact 4\u00d7 dimensions: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "Alpha/mode preserved: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "Every 4\u00d7 preview pixel exact: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "v05/approved native raster: pavilion-presenter",
+      "passed": true
+    },
+    {
+      "check": "Native benchmark sheet exact 4\u00d7",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: METHOD-DECISION.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: prompts/native-raster-reconstruction.txt",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: comparison.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: comparisons/all-six-original-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: comparisons/native-v05-and-approved-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: comparisons/native-v05-and-approved.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: comparisons/raster-test-and-frontal-reference-1to1.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: generated/CH4-03-raster-method-test-original.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/raster-test-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: generated/CH4-03-raster-method-test-original.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: generated/CH4-03-raster-method-test-original.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/raster-test-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/detailed/CH4-03-front-reference-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/frontal-reference-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/detailed/CH4-03-front-reference-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/detailed/CH4-03-front-reference-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/frontal-reference-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v05/native/CH4-03-auctioneer-showman-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/v05-auctioneer-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v05/native/CH4-03-auctioneer-showman-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v05/native/CH4-03-auctioneer-showman-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/v05-auctioneer-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v02/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/receptionist-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v02/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v02/references/portraits__receptionist__receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/receptionist-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/pavilion-attendant-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/references/pavilion_attendant_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/pavilion-attendant-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/pavilion-presenter-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v04/references/pavilion_presenter_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: previews/pavilion-presenter-exact-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v05/native/CH4-01-lobby-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v05/native/CH4-02-auctioneer-background-v05.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: evidence/frozen-environments.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: evidence/preservation-baseline.json",
+      "passed": true
+    },
+    {
+      "check": "Validation report destination exists; this run writes the self-referenced report",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: ../v05/index.html",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency exists: README.md",
+      "passed": true
+    },
+    {
+      "check": "Canonical/production/story/assets/docs/workflow paths unchanged",
+      "passed": true
+    }
+  ]
+}

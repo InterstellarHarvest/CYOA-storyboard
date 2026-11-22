@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "intent": "Fresh raster reconstruction, with references only",
+  "requiredDimensions": [
+    564,
+    278
+  ],
+  "actualDimensions": [
+    1785,
+    881
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "nativeSizeGatePassed": false,
+  "nativeAuthorshipProven": false,
+  "resized": false,
+  "nativeCandidateProduced": false,
+  "classification": "SOURCE-SIZED METHOD STUDY ONLY \u2014 NOT A NATIVE GAME ASSET",
+  "status": "UNSELECTED",
+  "sha256": "ab03c24eb6d6126b4142cfb978819093cdbf77fe3ecb14ff2d880a348fa48472",
+  "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-3e7e5bb2-f623-4746-a21c-0f47fc906fd4.png",
+  "savedFile": "generated/CH4-03-raster-method-test-original.png",
+  "prompt": "prompts/native-raster-reconstruction.txt",
+  "referenceFiles": [
+    "../v04/detailed/CH4-03-front-reference-v04.png",
+    "../v02/references/portraits__receptionist__receptionist_idle.png",
+    "../v04/references/pavilion_attendant_idle.png",
+    "../v04/references/pavilion_presenter_idle.png"
+  ],
+  "decision": "Stop portrait iterations here. Do not resize or crop this into a native candidate. Document tool/output limitation and propose layered native raster illustration before further revisions."
+}

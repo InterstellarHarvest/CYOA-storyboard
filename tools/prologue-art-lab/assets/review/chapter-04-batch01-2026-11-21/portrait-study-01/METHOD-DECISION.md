@@ -1,0 +1,38 @@
+# CH4-03 portrait reconstruction study — method decision
+
+Status: **UNSELECTED. No new native portrait candidate was produced.** This study is the limitation-and-proposal path requested in Nate's v05 review, not a completed v06. The v05 lobby and background are frozen owner-review candidates, not approved assets.
+
+## Before illustrating: assess the v05 method
+
+The approved receptionist, Pavilion attendant and Pavilion presenter were inspected as actual 564×278 images alongside the auctioneer, not by color count or dimensions alone. V05's facial and garment construction remains flatter and more diagrammatic. Its narrow face, repeated contour bands, eye sockets, hair ridges and segmented jacket shading were established by fixed coordinate shapes. The later brush system still follows that geometry. Adding small lines or highlights cannot reliably correct the structural weakness in this particular implementation. It has reached diminishing returns. This is a finding about this implementation and our results, not a claim that coordinate-based art can never be good.
+
+Decision before generation: do not import, repaint or preserve the v05 portrait substrate. Test one fresh reference-guided raster illustration, requesting actual native 564×278 output. Preserve the complete prompt and returned master. Accept it as a native candidate only if the output contract and authorship can be substantiated; otherwise stop, disclose the limit and propose another method. No more code-drawn anatomy or decorative detail passes were attempted.
+
+## One fresh raster test and its result
+
+The built-in `image_gen.imagegen` tool was used, with the unchanged detailed frontal reference as the primary character guide and the three approved human NPCs as style references. V05 was deliberately not supplied as an input. The request specified actual 564×278 transparent output repeatedly and prohibited drawing large and reducing it.
+
+The returned PNG is **1785×881 RGBA**, not 564×278. Its original bytes are preserved at `generated/CH4-03-raster-method-test-original.png`, SHA-256 `ab03c24eb6d6126b4142cfb978819093cdbf77fe3ecb14ff2d880a348fa48472`. The result has transparency but fails the native-size gate. The tool's internal reconstruction process is not observable, so independent native-grid authorship is also unproven. The prompt is evidence of the request, not evidence of compliance. This one test does not prove that every possible tool configuration would fail.
+
+The test gives stronger facial volume, natural eyelid/socket relationships, grouped silver hair, a more credible two-hand gavel hold and material transitions than v05. However, it is close to the detailed frontal reference's painterly treatment and may be too realistic for the approved NPC family. Neither its polish nor its similarity to that reference establishes the approved NPC finish at native size. The gallery shows original pixels without reducing them into a native-size portrait.
+
+**No resize, crop, tracing, source-pixel sampling, sharpening, posterization or palette reduction was used to manufacture a 564×278 candidate.** Exact 4× nearest-neighbor exports are inspection images only. The method test and detailed reference remain explicitly labelled source-sized studies. A valid new candidate-to-approved-NPC comparison at native size is unavailable because there is no valid new native candidate.
+
+## Proposed production method before further revisions
+
+Use a native raster illustrator working directly in a **564×278 layered document**, rather than another coordinate-shape script or another larger image-model render. Krita is one suitable editor: its [paint layers](https://docs.krita.org/en/reference_manual/layers_and_masks/paint_layers.html) are raster layers and its [pixel brush engine](https://docs.krita.org/en/reference_manual/brushes/brush_engines/pixel_brush_engine.html) supports direct raster painting. This is a proposed workflow, not a claim that an editor automatically supplies illustration skill. No installation, paid service, commissioning or external contact has been initiated.
+
+1. Start from a blank transparent 564×278 document. Keep references in separate reference views; do not paste their pixels into the painting or use a reduced image as a tracing substrate. Keep the existing detailed frontal reference primary. V05 is a comparison, not a geometry constraint.
+2. Reconstruct the head, neck, shoulder girdle, forearms and gavel grip from fresh anatomical masses. Establish normally proportioned elderly anatomy and a calm frontal gaze. Review the value block-in against the three approved NPCs before detail. Change major shapes freely when they fail.
+3. Model eyes, lids, cheekbones, nose, mouth, narrow mustache and jowls with deliberate painted planes and useful edge transitions. Convey age through structure, sag and occlusion before adding any wrinkle accents. Build silver hair as overlapping locks. Establish thumb opposition and finger wrap around an intelligible gavel handle before adding knuckles.
+4. Paint separate burgundy wool/velvet, dark satin, ivory cotton and bow-tie layers. Construct weight, seams, folds and overlapping edges. Use coherent ramps informed by the approved portraits without an arbitrary palette quota. Work at 100% and 400% pixel view; avoid a global gradient or detail/noise pass as a substitute for drawing.
+5. Preserve the editable layered source, brush settings and named native-size stage snapshots: anatomy, value structure, skin/features, hair, costume, hands/gavel and final cluster cleanup. Export each visible paint layer at native size with an explicit normal-alpha compositing order. Preserve layer PNGs and compositing settings so a scripted flatten can reproduce the submitted raster without reference-image reads. Record editor/export version and hashes. A layered document alone does not prove authorship; the stages must corroborate the fresh construction.
+6. Judge the new composite at its actual 564×278 size beside v05, receptionist, attendant and presenter, then at exact 2256×1112 nearest-neighbor. Inspect eyes, mouth, hair, grip, fabric and silhouette rather than merely technical metrics. Submit only one fresh reconstruction after that review. Do not claim approval or resume other rooms.
+
+This requires a capable raster illustrator or a tool that can verifiably author on the fixed native canvas. The available coordinate implementation has not achieved the benchmark, and this built-in image-generation test did not satisfy the native output requirement. I cannot claim a benchmark-quality native reconstruction from either result. Further portrait revisions stop here pending a viable native illustration method; the next action is the proposed construction workflow, not another wrinkle pass.
+
+## Reproduction and preservation
+
+The generative call is not bit-for-bit replayable: no deterministic seed or exposed native canvas control was available. The saved original and input hashes make the exact reviewed test reproducible as an artifact; `source/package_study.py` deterministically regenerates comparisons and exact 4× exports from it. It does not author artwork. `source/validate.py` checks the failed output gate, exact scaling, original master and reference hashes, earlier-version preservation and freeze records. Passing those checks means the study is honestly packaged, not that the failed native-size requirement has been met.
+
+All v01–v05 files remain byte-for-byte preserved. Only this review package and its root review navigation/checksum index are changed. No main, production, narrative, gameplay, approval registry, restroom or ballroom changes are part of the study.

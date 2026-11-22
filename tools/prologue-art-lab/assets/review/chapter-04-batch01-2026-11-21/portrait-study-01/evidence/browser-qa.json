@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:64357/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/portrait-study-01/",
+  "newNativeCandidateExists": false,
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "All six actual-art/reference PNGs decode; failed native gate and environment freeze explicit",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "raster-test uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "frontal-reference uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "v05-auctioneer uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "receptionist uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "pavilion-attendant uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "pavilion-presenter uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile scrolls inside art viewport without shrinking art or page overflow; no load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "All six actual-art/reference PNGs decode; failed native gate and environment freeze explicit",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "raster-test uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "frontal-reference uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "v05-auctioneer uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "receptionist uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "pavilion-attendant uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "pavilion-presenter uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile scrolls inside art viewport without shrinking art or page overflow; no load/runtime errors",
+      "passed": true
+    }
+  ]
+}
