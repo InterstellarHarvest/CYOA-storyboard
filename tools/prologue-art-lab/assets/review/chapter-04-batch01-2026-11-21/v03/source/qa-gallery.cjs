@@ -33,10 +33,15 @@ const server=http.createServer((req,res)=>{
     const a=p.locator('.candidate[data-target="'+id+'"]'),old=p.locator('.previous[data-target="'+id+'"]');
     assert.deepEqual(await a.evaluate(i=>[i.width,i.height,i.naturalWidth,i.naturalHeight]),[w,h,w,h]);
     await p.locator('.scale[data-target="'+id+'"][data-scale="4"]').click();
-    for(const i of [a,old]){await i.evaluate(i=>i.decode());assert.deepEqual(await i.evaluate(i=>[i.width,i.height,i.naturalWidth,i.naturalHeight]),[w*4,h*4,w*4,h*4])}
+    for(const [role,i] of [['candidate',a],['previous',old]]){
+     // Firefox can resolve decode() for its displayed old image while a remote
+     // replacement is still pending. Wait for the requested raster dimensions.
+     await p.waitForFunction(({selector,w,h})=>{const i=document.querySelector(selector);return i.complete&&i.currentSrc===i.src&&i.naturalWidth===w&&i.naturalHeight===h},{selector:'.'+role+'[data-target="'+id+'"]',w:w*4,h:h*4});
+     assert.deepEqual(await i.evaluate(i=>[i.width,i.height,i.naturalWidth,i.naturalHeight]),[w*4,h*4,w*4,h*4]);
+    }
     if(id==='CH4-01'){
      await p.locator('#benchmark').selectOption({label:'Control Tower'});
-     const ref=p.locator('.benchmark[data-target="CH4-01"]');await ref.evaluate(i=>i.decode());assert.match(await ref.getAttribute('src'),/control-tower-4x\.png$/);
+     const ref=p.locator('.benchmark[data-target="CH4-01"]');await p.waitForFunction(()=>{const i=document.querySelector('.benchmark[data-target="CH4-01"]');return i.complete&&i.currentSrc===i.src});assert.match(await ref.getAttribute('src'),/control-tower-4x\.png$/);
      await a.screenshot({path:path.join(out,name+'-lobby-4x.png')});
     }
     await p.locator('.scale[data-target="'+id+'"][data-scale="1"]').click();await a.evaluate(i=>i.decode());
