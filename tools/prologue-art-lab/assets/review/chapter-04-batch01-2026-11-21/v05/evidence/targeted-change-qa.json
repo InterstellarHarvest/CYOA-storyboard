@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "id": "CH4-01",
+      "changedPixels": 2018,
+      "outsideAllowedMask": 0,
+      "allowedMask": "evidence/CH4-01-allowed-correction-mask.png",
+      "deltaImage": "evidence/CH4-01-changed-pixels.png",
+      "protected": [
+        {
+          "region": "duct and ceiling",
+          "unchanged": true
+        },
+        {
+          "region": "paired restroom doors",
+          "unchanged": true
+        },
+        {
+          "region": "podium",
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "id": "CH4-02",
+      "changedPixels": 15037,
+      "outsideAllowedMask": 0,
+      "allowedMask": "evidence/CH4-02-allowed-correction-mask.png",
+      "deltaImage": "evidence/CH4-02-changed-pixels.png",
+      "protected": [
+        {
+          "region": "curtain",
+          "unchanged": true
+        },
+        {
+          "region": "duct and its attachments",
+          "unchanged": true
+        },
+        {
+          "region": "door and wood",
+          "unchanged": true
+        },
+        {
+          "region": "lamp fixture silhouette and construction",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "portraitSilhouette": {
+    "matchesV04Exactly": true,
+    "note": "Frontal composition and opaque silhouette retained; actual skin/hair/costume painting is revised."
+  }
+}
