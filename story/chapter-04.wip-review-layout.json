@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 12,
+      "layoutRevision": 14,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -87,9 +87,10 @@
               "hotel_ring_show_bride",
               "hotel_bride_ring_handover",
               "hotel_bride_ring_bathroom",
-              "wip_bride_staff_corridor_route",
-              "wip_bride_find_wedding_organizer",
-              "hotel_chair_follow_collection"
+              "hotel_bride_service_shortcut",
+              "hotel_bridal_organizer",
+              "hotel_chair_follow_collection",
+              "hotel_ring_inspect_inscription"
             ]
           },
           {
@@ -138,7 +139,7 @@
           },
           {
             "id": "groom_boiler",
-            "title": "Boiler Three · Brief groom encounter and bathroom directions",
+            "title": "Boiler Three · Groom directions and service-yard park exit",
             "nodes": [
               "hotel_boiler_groom_encounter",
               "hotel_groom_show_ring",
@@ -190,10 +191,46 @@
           },
           {
             "id": "wedding",
-            "title": "Wedding Entrance · Missing groom",
+            "title": "Wedding Entrance · Organizer and restroom shortcut",
             "nodes": [
               "hotel_wedding_arrival",
-              "wip_wedding_service"
+              "hotel_wedding_service_shortcut"
+            ]
+          },
+          {
+            "id": "bridal_privacy",
+            "title": "Bridal Dressing Room · AI door, ring, gown, and AutoFit",
+            "nodes": [
+              "hotel_bridal_room",
+              "hotel_bridal_door_knock",
+              "hotel_bridal_door_focus",
+              "hotel_bridal_door_options",
+              "hotel_bridal_criteria",
+              "hotel_bridal_false_claim",
+              "hotel_bridal_emergency_override",
+              "hotel_bridal_ring_argument",
+              "hotel_bridal_gown_focus",
+              "hotel_bridal_gown_motor",
+              "hotel_bridal_gown_camera",
+              "hotel_bridal_gown_try",
+              "fatal_bridal_made_to_measure",
+              "hotel_bridal_autofit_survived",
+              "hotel_bridal_corridor_exit",
+              "hotel_bridal_corridor_park_exit"
+            ]
+          },
+          {
+            "id": "seashells",
+            "title": "Bridal Lavatory · Three seashells and final park exit",
+            "nodes": [
+              "hotel_seashell_room",
+              "hotel_seashell_inspect",
+              "hotel_seashell_first_attempt",
+              "hotel_seashell_instructions",
+              "hotel_seashell_complaint",
+              "hotel_seashell_second_attempt",
+              "hotel_seashell_assessment_appeal",
+              "hotel_bridal_lavatory_park_exit"
             ]
           }
         ]

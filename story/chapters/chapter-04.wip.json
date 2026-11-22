@@ -4,8 +4,8 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved bladder-first Boiler Three rewrite published. Retired groom wedding escort/reunion and bride groom-search/inscription relay; concise ring callback, bridal lavatory directions, staff-lavatory link, and nonfatal service-yard exit toward the park. Preserve three existing fatal endings and boiler d6 1–4 fatal.",
-    "approval": "Approved Chapter 4 restroom quest routes through Lot 31, Collection Stairs, Staff Lavatory, boiler danger, concise Boiler Three A–C choices, and the service-yard nonfatal exit to the Chapter 5 park. Elaborate wedding-reunion subtree explicitly retired. Bridal dressing-room/organizer and other editorial stops remain to be drafted.",
+    "reviewCheckpoint": "2026-11-21: owner-approved bridal organizer and smart door, Focus A gown AutoFit with +1 manual-slack inspection, hidden d6 fourth fatal MADE TO MEASURE, provisional bride fee, three-seashell restroom with appeal and nonfatal park departure. Wedding/organizer and bride-staff connector stops replaced; ring inscription inspection wired. Remaining unrelated WIPs still require owner review.",
+    "approval": "Approved Chapter 4 restroom quest routes through Lot 31, Collection Stairs, Staff Lavatory, boiler danger, concise Boiler Three A–C choices, and the service-yard nonfatal exit to the Chapter 5 park. Elaborate wedding-reunion subtree explicitly retired. Bridal dressing-room/organizer and other editorial stops remain to be drafted. Bridal privacy and seashell arcs owner-approved and now published. Four fatal endings total; do not treat other editorial review stops as game endings.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -76,6 +76,14 @@
     "bladderFirstRevision": {
       "status": "owner-directed",
       "note": "Nate superseded earlier wedding-help approvals: no groom escort or wedding reunion. Boiler Three is a brief source of lavatory directions and optional ring gag. The service yard permits a nonfatal park-bound exit. Preserve only wedding interactions supporting restroom access, inventory puzzles, fatal hazards, or relevant connections."
+    },
+    "approvedBridalPrivacy": {
+      "status": "owner-approved",
+      "note": "Smart door is bride-only. Inspection-gated gown and its motor safety clue; manual-slack INSPECT grants +1 for a hidden d6, base 1–4 fatal, 5–6 survive. Surviving the AutoFit attempt grants provisional bride access plus pending registration fee and leads to a three-seashell lavatory with no toilet. Ring show never unlocks the door. Exit paths converge on the park without Chapter 5 security-plant clues."
+    },
+    "approvedSeashells": {
+      "status": "owner-approved",
+      "note": "Three shells on a counter, no other fixture. Female-intuition instruction dead end, missing toilet complaint electronic record, second attempt denied by circular certification, B appeal or C leave. Removed practical demonstration request. No further repeat seashell attempts, no item gained, no real toilet, and surviving exits retain pending fee."
     }
   },
   "nodes": {
@@ -416,13 +424,13 @@
           "id": "wedding_w1_lavatory",
           "kind": "spoken",
           "text": "I NEED THAT PRIVATE LAVATORY. CAN YOU OPEN THE DRESSING ROOM?",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         },
         {
           "id": "wedding_w2_service",
           "kind": "action",
           "text": "SLIP THROUGH THE SERVICE DOOR WHILE THE ORGANIZER IS DISTRACTED.",
-          "to": "wip_wedding_service"
+          "to": "hotel_wedding_service_shortcut"
         }
       ]
     },
@@ -567,12 +575,6 @@
       "mode": "narrative",
       "scene": "grand_bellevue/freight_lift",
       "text": "DRAFT REVIEW STOP — S3 freight lift route not yet written. This is not a gameplay ending.",
-      "choices": []
-    },
-    "wip_wedding_service": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/service_corridor",
-      "text": "DRAFT REVIEW STOP — W2 wedding service route not yet written. This is not a gameplay ending.",
       "choices": []
     },
     "hotel_valve_braced": {
@@ -1733,6 +1735,15 @@
           "to": "hotel_ring_show_bride"
         },
         {
+          "id": "ring_pocket_inspect",
+          "kind": "action",
+          "text": "INSPECT THE WEDDING RING.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_ring_inspect_inscription"
+        },
+        {
           "id": "ring_pocket_find_restroom",
           "kind": "action",
           "text": "KEEP THE RING AND LOOK FOR ANOTHER RESTROOM.",
@@ -1833,21 +1844,20 @@
         {
           "desc": "A pause."
         },
-        "Well. One of two things.",
         {
           "desc": "She glances toward the service passage."
         },
-        "Listen. If you need to get through the staff corridors, tell the porters you're helping me. They should let you pass.",
-        "And if you find him... please tell him I just want him back."
+        "Listen. If you need to get through the staff corridors, tell the porters you're helping me. They should let you pass."
       ],
       "choices": [
         {
           "id": "bride_handover_next",
           "kind": "continue",
           "text": "CONTINUE",
-          "to": "wip_bride_staff_corridor_route"
+          "to": "hotel_bride_service_shortcut"
         }
-      ]
+      ],
+      "notes": "Bride thanks player, grants staff corridor access, and points to a bathroom-related shortcut. No groom-search errands."
     },
     "hotel_bride_ring_bathroom": {
       "mode": "dialogue",
@@ -1899,7 +1909,7 @@
           "id": "bride_lavatory_organizer",
           "kind": "continue",
           "text": "CONTINUE",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         }
       ]
     },
@@ -2125,6 +2135,15 @@
           "kind": "action",
           "text": "RETURN TO THE BRIDE WITH THE WEDDING RING.",
           "to": "hotel_collection_ring_to_bride"
+        },
+        {
+          "id": "collection_ring_inspect",
+          "kind": "action",
+          "text": "INSPECT THE WEDDING RING.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_ring_inspect_inscription"
         },
         {
           "id": "collection_ring_go_boilers",
@@ -2454,7 +2473,7 @@
           "id": "staff_lavatory_seek_organizer",
           "kind": "action",
           "text": "FIND THE WEDDING ORGANIZER IN THE BALLROOM.",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         },
         {
           "id": "staff_lavatory_return_boilers",
@@ -2517,7 +2536,7 @@
           "id": "lot58_seek_organizer",
           "kind": "action",
           "text": "FIND THE WEDDING ORGANIZER IN THE BALLROOM.",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         },
         {
           "id": "lot58_return_boilers",
@@ -2571,7 +2590,7 @@
           "id": "lot58_permit_organizer",
           "kind": "spoken",
           "text": "YES. WHERE CAN I FIND THE WEDDING ORGANIZER?",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         },
         {
           "id": "lot58_permit_return_boilers",
@@ -2959,18 +2978,6 @@
       ],
       "notes": "Ring remains in inventory; inscription joke only if inspected earlier. No handover or wedding task."
     },
-    "wip_bride_staff_corridor_route": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/service_passage",
-      "text": "DRAFT REVIEW STOP — Bride has the wedding ring; her support grants staff-corridor permission. Build the service passage follow-up without automatically locating the groom. This is not a gameplay ending.",
-      "choices": []
-    },
-    "wip_bride_find_wedding_organizer": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/ballroom",
-      "text": "DRAFT REVIEW STOP — Follow the upstairs flower direction to the wedding organizer for the private bridal-dressing-room lavatory key. No automatic bathroom access; account for any prior organizer meeting. Ring remains in inventory. This is not a gameplay ending.",
-      "choices": []
-    },
     "hotel_lot61_pod_auction": {
       "mode": "dialogue",
       "scene": "grand_bellevue/lobby",
@@ -3211,7 +3218,7 @@
           "id": "groom_directions_to_organizer",
           "kind": "continue",
           "text": "CONTINUE",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         }
       ]
     },
@@ -3267,7 +3274,7 @@
           "id": "groom_leave_organizer",
           "kind": "action",
           "text": "TAKE THE SERVICE STAIRS TOWARD THE BALLROOM.",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         },
         {
           "id": "groom_leave_dock",
@@ -3322,7 +3329,7 @@
           "id": "service_passage_stairs",
           "kind": "action",
           "text": "TAKE THE STAIRS TOWARD THE BRIDAL CORRIDOR.",
-          "to": "wip_bride_find_wedding_organizer"
+          "to": "hotel_bridal_organizer"
         },
         {
           "id": "service_passage_exit",
@@ -3331,6 +3338,1632 @@
           "to": "hotel_service_park_exit"
         }
       ]
+    },
+    "hotel_bridal_organizer": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/ballroom",
+      "speaker": "hotel_wedding_organizer",
+      "pose": "urgent",
+      "text": [
+        {
+          "desc": "You find the organizer outside the ballroom, consulting three clipboards while a florist explains a missing centerpiece."
+        },
+        {
+          "say": "I NEED TO USE THE BRIDAL LAVATORY.",
+          "who": "visitor"
+        },
+        {
+          "say": "Are you a member of the wedding party?",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "say": "NO.",
+          "who": "visitor"
+        },
+        {
+          "say": "Excellent. We've already lost two.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She looks at your expression, then at her watch."
+        },
+        {
+          "say": "Follow me. Quickly.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She leads you down a corridor lined with white flowers."
+        },
+        {
+          "say": "IS THERE A TOILET IN THERE?",
+          "who": "visitor"
+        },
+        {
+          "say": "Of course.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "say": "DOES IT WORK?",
+          "who": "visitor"
+        },
+        {
+          "say": "Nobody's complained.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She stops before an ornate door."
+        },
+        {
+          "say": "It's reserved for the bride. But it's a smart facility. Perhaps you can explain your emergency.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She unlocks the outer dressing-room door."
+        },
+        {
+          "say": "I have to get back. Someone's trying to auction the cake stand with the cake still on it.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She hurries away."
+        }
+      ],
+      "choices": [
+        {
+          "id": "organizer_to_bridal_room",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_bridal_room"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_wedding_organizer_met": true,
+          "ch4_knows_bridal_dressing_lavatory": true,
+          "ch4_knows_organizer_has_lavatory_key": true
+        }
+      },
+      "notes": "Organizer unlocks only the outer dressing-room door, not the AI-controlled bathroom. No involvement in wedding errands."
+    },
+    "hotel_bride_service_shortcut": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/service_passage",
+      "text": "You enter the staff corridor with the bride’s permission. The porters let you pass. A lavatory is marked down one hall; the service stairs toward the bridal dressing room climb another. Daylight shows through the loading dock farther on.",
+      "choices": [
+        {
+          "id": "bride_shortcut_staff",
+          "kind": "action",
+          "text": "CHECK THE STAFF LAVATORY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "bride_shortcut_organizer",
+          "kind": "action",
+          "text": "TAKE THE STAIRS TO FIND THE WEDDING ORGANIZER.",
+          "to": "hotel_bridal_organizer"
+        },
+        {
+          "id": "bride_shortcut_exit",
+          "kind": "action",
+          "text": "LEAVE THROUGH THE SERVICE YARD.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Short owner-directed replacement for wedding errands; bride ally flag is preserved by ring handover."
+    },
+    "hotel_wedding_service_shortcut": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/service_passage",
+      "text": "You slip through the service door while the organizer handles the ballroom. A staff lavatory, a staircase back toward the bridal corridor, and the loading dock are within reach. None guarantees a working toilet.",
+      "choices": [
+        {
+          "id": "wedding_service_staff",
+          "kind": "action",
+          "text": "CHECK THE STAFF LAVATORY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "wedding_service_bridal",
+          "kind": "action",
+          "text": "RETURN UPSTAIRS AND ASK FOR THE BRIDAL LAVATORY KEY.",
+          "to": "hotel_bridal_organizer"
+        },
+        {
+          "id": "wedding_service_exit",
+          "kind": "action",
+          "text": "LEAVE BY THE SERVICE YARD.",
+          "to": "hotel_service_park_exit"
+        }
+      ]
+    },
+    "hotel_bridal_room": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "text": "Inside the dressing room stands another door. A brass panel glows BRIDAL PRIVACY SYSTEM — AUTHORIZED USER: BRIDE. There is no ordinary handle. A white wedding gown hangs nearby. The organizer is already gone.",
+      "choices": [
+        {
+          "id": "bridal_room_inspect_door",
+          "kind": "action",
+          "text": "INSPECT THE SMART DOOR.",
+          "to": "hotel_bridal_door_focus"
+        },
+        {
+          "id": "bridal_room_inspect_gown",
+          "kind": "action",
+          "text": "INSPECT THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_focus"
+        },
+        {
+          "id": "bridal_room_knock",
+          "kind": "action",
+          "text": "KNOCK ON THE BATHROOM DOOR.",
+          "to": "hotel_bridal_door_knock"
+        },
+        {
+          "id": "bridal_room_leave",
+          "kind": "action",
+          "text": "LEAVE THE DRESSING ROOM.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "notes": "Owner approved four dressing-room actions; inspection must reveal safety and identification clues before the risky gown action appears."
+    },
+    "hotel_bridal_door_knock": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "speaker": "bridal_door_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You knock. A green light blinks."
+        },
+        {
+          "say": "Knocking is not a recognized access credential.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "IT USUALLY WORKS ON DOORS.",
+          "who": "visitor"
+        },
+        {
+          "say": "This is a smart door.",
+          "who": "bridal_door_ai"
+        }
+      ],
+      "choices": [
+        {
+          "id": "knock_inspect_door",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_bridal_door_focus"
+        }
+      ]
+    },
+    "hotel_bridal_door_focus": {
+      "mode": "focus",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "focus": "grand_bellevue/bridal_privacy_panel",
+      "effects": {
+        "set": {
+          "ch4_bridal_door_inspected": true
+        }
+      },
+      "text": [
+        {
+          "desc": "There is no handle or keyhole. A polished brass panel holds a camera and a small screen: BRIDAL PRIVACY SYSTEM. OCCUPANT AUTHORIZATION: BRIDE ONLY. VISUAL IDENTIFICATION: ENABLED. PRE-WEDDING GROOM EXCLUSION: ENABLED."
+        },
+        {
+          "say": "Please maintain a respectful distance from the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "I'M NOT THE GROOM.",
+          "who": "visitor"
+        },
+        {
+          "say": "That is not sufficient proof of being the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "I JUST NEED THE TOILET.",
+          "who": "visitor"
+        },
+        {
+          "say": "The bridal lavatory is provided exclusively for the bride's comfort.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "I'M EXTREMELY UNCOMFORTABLE.",
+          "who": "visitor"
+        },
+        {
+          "say": "Your discomfort has been noted.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "It has not been approved.",
+          "who": "bridal_door_ai"
+        }
+      ],
+      "choices": [
+        {
+          "id": "door_ask_bridal_criteria",
+          "kind": "spoken",
+          "text": "ASK WHAT QUALIFIES SOMEONE AS THE BRIDE.",
+          "to": "hotel_bridal_criteria",
+          "if": {
+            "notFlag": "ch4_bridal_identification_explained"
+          }
+        },
+        {
+          "id": "door_request_override",
+          "kind": "spoken",
+          "text": "REQUEST AN EMERGENCY OVERRIDE.",
+          "if": {
+            "notFlag": "ch4_bridal_emergency_override_denied"
+          },
+          "to": "hotel_bridal_emergency_override"
+        },
+        {
+          "id": "door_show_ring",
+          "kind": "action",
+          "text": "SHOW THE WEDDING RING.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_bridal_ring_argument"
+        },
+        {
+          "id": "door_inspect_gown",
+          "kind": "action",
+          "text": "STEP BACK AND INSPECT THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_focus"
+        },
+        {
+          "id": "door_leave",
+          "kind": "action",
+          "text": "GIVE UP ON THIS DOOR AND LEAVE.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "notes": "Focus A close-up. Show missing ring choice visibly locked with REQUIRES: WEDDING RING — LOT 31, NOT IN INVENTORY in future UI. Repeat emergency attempts should remain greyed ALREADY DENIED (current engine may hide)."
+    },
+    "hotel_bridal_criteria": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "speaker": "bridal_door_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "say": "HOW DOES THIS THING KNOW WHO THE BRIDE IS?",
+          "who": "visitor"
+        },
+        {
+          "say": "Bridal identification is based on visual recognition, ceremonial attire, and an approved bridal profile.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "WHAT IF THE BRIDE CHANGES HER CLOTHES?",
+          "who": "visitor"
+        },
+        {
+          "say": "That would be highly irregular.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "WHAT IF SOMEONE ELSE WEARS HER DRESS?",
+          "who": "visitor"
+        },
+        {
+          "say": "The Bridal Privacy System is designed to recognize the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "THAT DOESN'T ANSWER MY QUESTION.",
+          "who": "visitor"
+        },
+        {
+          "say": "Correct. Your question concerns someone who is not the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "You glance at the wedding gown hanging across the room."
+        },
+        {
+          "say": "SO THE DRESS MATTERS?",
+          "who": "visitor"
+        },
+        {
+          "say": "Appropriate bridal presentation is an important consideration.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "AND IF I LOOK LIKE A BRIDE?",
+          "who": "visitor"
+        },
+        {
+          "say": "You may submit yourself for identification.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The camera swivels toward you."
+        },
+        {
+          "say": "You are not presently a bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "I'M AWARE.",
+          "who": "visitor"
+        },
+        {
+          "say": "Excellent. We agree.",
+          "who": "bridal_door_ai"
+        }
+      ],
+      "choices": [
+        {
+          "id": "criteria_inspect_gown",
+          "kind": "action",
+          "text": "INSPECT THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_focus"
+        },
+        {
+          "id": "criteria_claim_bride",
+          "kind": "spoken",
+          "text": "TELL THE DOOR YOU ARE THE BRIDE.",
+          "if": {
+            "notFlag": "ch4_false_bride_claim_rejected"
+          },
+          "to": "hotel_bridal_false_claim"
+        },
+        {
+          "id": "criteria_override",
+          "kind": "spoken",
+          "text": "ASK FOR A HUMAN OVERRIDE.",
+          "if": {
+            "notFlag": "ch4_bridal_emergency_override_denied"
+          },
+          "to": "hotel_bridal_emergency_override"
+        },
+        {
+          "id": "criteria_leave",
+          "kind": "action",
+          "text": "STOP ARGUING AND LEAVE.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_bridal_identification_explained": true
+        }
+      },
+      "notes": "Only explains why the gown might matter; the gown safety clue comes from its own INSPECT interaction."
+    },
+    "hotel_bridal_false_claim": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "speaker": "bridal_door_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You straighten your clothes and face the camera."
+        },
+        {
+          "say": "I AM THE BRIDE.",
+          "who": "visitor"
+        },
+        {
+          "say": "One moment. Verifying.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The camera examines your face, clothing, and shoes."
+        },
+        {
+          "say": "You are not dressed for the occasion.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "THIS IS AN EMERGENCY.",
+          "who": "visitor"
+        },
+        {
+          "say": "Weddings often are. That does not make you the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The indicator turns red."
+        },
+        {
+          "say": "IS THERE AN APPEALS PROCESS?",
+          "who": "visitor"
+        },
+        {
+          "say": "Certainly. The bride may appeal.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "AND ME?",
+          "who": "visitor"
+        },
+        {
+          "say": "You may become the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "You stare at the panel."
+        },
+        {
+          "say": "That was not a recommendation.",
+          "who": "bridal_door_ai"
+        }
+      ],
+      "choices": [
+        {
+          "id": "false_claim_gown",
+          "kind": "action",
+          "text": "INSPECT THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_focus"
+        },
+        {
+          "id": "false_claim_override",
+          "kind": "spoken",
+          "text": "REQUEST AN EMERGENCY OVERRIDE.",
+          "if": {
+            "notFlag": "ch4_bridal_emergency_override_denied"
+          },
+          "to": "hotel_bridal_emergency_override"
+        },
+        {
+          "id": "false_claim_return",
+          "kind": "action",
+          "text": "RETURN TO THE SMART DOOR OPTIONS.",
+          "to": "hotel_bridal_door_options"
+        },
+        {
+          "id": "false_claim_leave",
+          "kind": "action",
+          "text": "LEAVE THE DRESSING ROOM.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_false_bride_claim_rejected": true
+        }
+      },
+      "notes": "Claim becomes ALREADY ATTEMPTED in future choice UI, with no fatality or fee."
+    },
+    "hotel_bridal_emergency_override": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "speaker": "bridal_door_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You press EMERGENCY ASSISTANCE."
+        },
+        {
+          "say": "Please state the nature of your emergency.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "I NEED TO USE THE TOILET. URGENTLY.",
+          "who": "visitor"
+        },
+        {
+          "say": "Understood. Requesting emergency access authorization.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The panel displays PROCESSING."
+        },
+        {
+          "say": "Authorization denied.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "WHY?!",
+          "who": "visitor"
+        },
+        {
+          "say": "Emergency overrides require confirmation from an authorized user.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "IF I WERE AN AUTHORIZED USER, I WOULDN'T NEED AN OVERRIDE!",
+          "who": "visitor"
+        },
+        {
+          "say": "Correct. We receive very few applications.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The screen returns to BRIDAL PRIVACY PROTECTED."
+        }
+      ],
+      "choices": [
+        {
+          "id": "override_gown",
+          "kind": "action",
+          "text": "INSPECT THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_focus"
+        },
+        {
+          "id": "override_ring",
+          "kind": "action",
+          "text": "SHOW THE WEDDING RING.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_bridal_ring_argument"
+        },
+        {
+          "id": "override_return",
+          "kind": "action",
+          "text": "RETURN TO THE SMART DOOR OPTIONS.",
+          "to": "hotel_bridal_door_options"
+        },
+        {
+          "id": "override_leave",
+          "kind": "action",
+          "text": "LEAVE THE DRESSING ROOM.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_bridal_emergency_override_denied": true
+        }
+      },
+      "notes": "One shared rejection; future UI greys the attempted choice as REQUEST ALREADY DENIED. No new fee."
+    },
+    "hotel_bridal_ring_argument": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "speaker": "bridal_door_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You hold the silver wedding ring beneath the camera."
+        },
+        {
+          "say": "THIS IS THE WEDDING RING. DOES THAT COUNT?",
+          "who": "visitor"
+        },
+        {
+          "say": "It establishes possession of wedding property. It does not establish bridal identity.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "IF I HAD IT AT THE WEDDING, WOULD THAT HELP?",
+          "who": "visitor"
+        },
+        {
+          "say": "Possibly with the ceremony. Not with this door.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "YOU HAVE A CAMERA. YOU CAN SEE I NEED THE TOILET.",
+          "who": "visitor"
+        },
+        {
+          "say": "Visual distress is not a valid entry credential.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The indicator remains red. You put the ring away, thoroughly fed up."
+        }
+      ],
+      "choices": [
+        {
+          "id": "ring_rejected_staff",
+          "kind": "action",
+          "text": "RETURN TO THE SERVICE CORRIDOR AND TRY THE STAFF LAVATORY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "ring_rejected_exit",
+          "kind": "action",
+          "text": "GIVE UP AND HEAD OUTSIDE TOWARD THE PARK.",
+          "to": "hotel_bridal_corridor_park_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_bridal_ring_rejected": true
+        }
+      },
+      "notes": "Approved ring rejection never opens door and does not consume ring; argument pushes player back to another bathroom or the park exit."
+    },
+    "hotel_bridal_gown_focus": {
+      "mode": "focus",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "focus": "grand_bellevue/autofit_gown",
+      "effects": {
+        "set": {
+          "ch4_bridal_gown_inspected": true
+        }
+      },
+      "text": [
+        {
+          "desc": "An elaborate white wedding gown hangs from a wheeled dressing stand. The waist is alarmingly narrow. Something metallic glints beneath the bodice."
+        },
+        {
+          "desc": "You pull aside the lace. A motor draws thin cables through the bodice and neckline. The label reads AUTOFIT BRIDAL SYSTEM — ONE SIZE FITS EVERYONE EVENTUALLY."
+        },
+        {
+          "desc": "SAFETY NOTICE: Disconnect automatic fitting mechanism before removing or adjusting garment."
+        },
+        {
+          "desc": "Apparently even wedding dresses are automated now."
+        },
+        {
+          "say": "That garment is reserved for the bride.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "I'M JUST LOOKING.",
+          "who": "visitor"
+        },
+        {
+          "say": "Your inspection has been noted.",
+          "who": "bridal_door_ai"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gown_examine_motor",
+          "kind": "action",
+          "text": "EXAMINE THE AUTOMATIC FITTING MECHANISM.",
+          "if": {
+            "notFlag": "ch4_autofit_release_located"
+          },
+          "to": "hotel_bridal_gown_motor"
+        },
+        {
+          "id": "gown_try_on",
+          "kind": "action",
+          "text": "TRY ON THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_try"
+        },
+        {
+          "id": "gown_hold_camera",
+          "kind": "action",
+          "text": "HOLD THE GOWN UP TO THE CAMERA.",
+          "to": "hotel_bridal_gown_camera"
+        },
+        {
+          "id": "gown_leave_alone",
+          "kind": "action",
+          "text": "LEAVE THE GOWN ALONE.",
+          "to": "hotel_bridal_door_options"
+        }
+      ],
+      "notes": "Owner-approved Focus A reveals danger; risky TRY appears only after gown INSPECT. AutoFit has a manual slack tab to discover separately. No fatality during inspection."
+    },
+    "hotel_bridal_gown_motor": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "text": [
+        {
+          "desc": "You lift the lining and follow cables to a motor beneath the waist. The cables run through the bodice and around the neckline."
+        },
+        {
+          "desc": "Beside the motor is a brass tab: MANUAL SLACK. Below it, in smaller letters: NOT AN EMERGENCY STOP."
+        },
+        {
+          "desc": "You press the tab. The neckline loosens slightly. You release it; the cables stay slack. At least you know where the release is."
+        },
+        {
+          "say": "Unauthorized garment adjustments may invalidate the bridal presentation warranty.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "IS THIS THING STILL TURNED ON?",
+          "who": "visitor"
+        },
+        {
+          "say": "The garment is ready for fitting.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "THAT'S NOT WHAT I ASKED.",
+          "who": "visitor"
+        },
+        {
+          "say": "Correct.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "You carefully replace the lining."
+        }
+      ],
+      "choices": [
+        {
+          "id": "motor_try_gown",
+          "kind": "action",
+          "text": "TRY ON THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_try"
+        },
+        {
+          "id": "motor_hold_camera",
+          "kind": "action",
+          "text": "HOLD THE GOWN UP TO THE CAMERA.",
+          "to": "hotel_bridal_gown_camera"
+        },
+        {
+          "id": "motor_return_door",
+          "kind": "action",
+          "text": "RETURN TO THE SMART DOOR.",
+          "to": "hotel_bridal_door_options"
+        },
+        {
+          "id": "motor_leave",
+          "kind": "action",
+          "text": "LEAVE THE DRESSING ROOM.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_autofit_release_located": true
+        }
+      },
+      "notes": "Finding manual slack provides one nonstacking +1 survival modifier for risky dressing d6."
+    },
+    "hotel_bridal_gown_camera": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "speaker": "bridal_door_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You hold the gown up to the camera as though it might count as a person."
+        },
+        {
+          "say": "Bridal attire detected.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "GOOD. OPEN.",
+          "who": "visitor"
+        },
+        {
+          "say": "No bride detected inside bridal attire.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "You return the gown to the stand."
+        }
+      ],
+      "choices": [
+        {
+          "id": "camera_try_wear",
+          "kind": "action",
+          "text": "TRY THE GOWN ON YOURSELF.",
+          "to": "hotel_bridal_gown_try"
+        },
+        {
+          "id": "camera_return",
+          "kind": "action",
+          "text": "RETURN TO THE SMART DOOR.",
+          "to": "hotel_bridal_door_options"
+        },
+        {
+          "id": "camera_leave",
+          "kind": "action",
+          "text": "LEAVE THE DRESSING ROOM.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_bridal_gown_camera_rejected": true
+        }
+      },
+      "notes": "Owner-approved nonfatal rejection; holding the gown is not enough to open the door."
+    },
+    "hotel_bridal_gown_try": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "text": [
+        {
+          "desc": "You look at the dress. You look at the locked bathroom. There are moments when dignity must take a back seat."
+        },
+        {
+          "desc": "You step into the gown and pull it over your shoulders. A motor hums beneath the fabric."
+        },
+        {
+          "say": "Beginning personalized fitting.",
+          "who": "autofit_system"
+        },
+        {
+          "desc": "The waist tightens. Then the shoulders. Then the neckline."
+        },
+        {
+          "say": "WAIT—",
+          "who": "visitor"
+        },
+        {
+          "desc": "The motor accelerates."
+        }
+      ],
+      "choices": [
+        {
+          "id": "autofit_hidden_roll",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "check": {
+            "id": "ch4_bridal_autofit_survival",
+            "sides": 6,
+            "need": 5,
+            "mods": [
+              {
+                "if": {
+                  "flag": "ch4_autofit_release_located"
+                },
+                "add": 1
+              }
+            ]
+          },
+          "pass": {
+            "to": "hotel_bridal_autofit_survived"
+          },
+          "fail": {
+            "to": "fatal_bridal_made_to_measure"
+          }
+        }
+      ],
+      "notes": "Hidden d6 base 1–4 fatal, 5–6 survive; +1 if manually examined release: raw 1–3 fatal, 4–6 survive. Roll after a deliberate TRY ON action only."
+    },
+    "fatal_bridal_made_to_measure": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "end": true,
+      "text": [
+        {
+          "desc": "The neckline draws tighter. You search beneath the fabric for the release."
+        },
+        {
+          "desc": "The motor interprets your struggling as a poor fit. It makes another adjustment."
+        },
+        {
+          "desc": "The mirror reflects a beautifully tailored wedding dress. The fitting system gives a cheerful chime."
+        },
+        {
+          "say": "Perfect fit achieved.",
+          "who": "autofit_system"
+        },
+        {
+          "desc": "Unfortunately, there is no longer anyone available to wear it."
+        },
+        "ENDING — MADE TO MEASURE."
+      ],
+      "choices": [
+        {
+          "id": "restart_made_to_measure",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "deathPopup": {
+        "id": "ch4_made_to_measure",
+        "title": "MADE TO MEASURE",
+        "description": "The AutoFit system guarantees a perfect silhouette. Breathing room is available at additional cost.",
+        "button": "BEGIN AGAIN",
+        "status": "owner-approved",
+        "artRef": "grand_bellevue/made_to_measure"
+      },
+      "endingArt": "grand_bellevue/made_to_measure",
+      "notes": "Owner-approved fourth Chapter 4 fatal ending; art deferred. A white gown hanging on its stand, absurdly cinched bodice, one abandoned shoe beneath. No face, body details, gore, or complex machinery. One popup title and one narrative, no unrelated title."
+    },
+    "hotel_bridal_autofit_survived": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "text": [
+        {
+          "desc": "The neckline tightens."
+        },
+        {
+          "if": {
+            "flag": "ch4_autofit_release_located"
+          },
+          "desc": "Your fingers find the little brass tab beneath the waist. You press it. The neckline loosens just enough for you to breathe."
+        },
+        {
+          "if": {
+            "notFlag": "ch4_autofit_release_located"
+          },
+          "desc": "You wrench at the fabric, fighting for breath. A seam gives way with a sharp click, and the pressure eases."
+        },
+        {
+          "desc": "The motor stops."
+        },
+        {
+          "say": "Fitting complete.",
+          "who": "autofit_system"
+        },
+        {
+          "desc": "You stand before the mirror, sweating inside an extraordinarily expensive wedding dress."
+        },
+        {
+          "say": "GOOD ENOUGH.",
+          "who": "visitor"
+        },
+        {
+          "desc": "You approach the bathroom. The camera examines you."
+        },
+        {
+          "say": "Bridal presentation detected.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "A green light illuminates."
+        },
+        {
+          "say": "Identity discrepancy noted.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "say": "OPEN THE DOOR.",
+          "who": "visitor"
+        },
+        {
+          "say": "Provisional bridal status approved.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "An electronic chime sounds."
+        },
+        {
+          "say": "Registration fee pending.",
+          "who": "bridal_door_ai"
+        },
+        {
+          "desc": "The lock clicks open."
+        },
+        {
+          "desc": "For the first time since entering the hotel, a bathroom door actually opens for you."
+        }
+      ],
+      "choices": [
+        {
+          "id": "autofit_to_seashells",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_seashell_room"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_autofit_survived": true,
+          "ch4_provisional_bride_registered": true,
+          "ch4_bridal_registration_fee_pending": true
+        }
+      },
+      "notes": "No ring consumed, no second roll. Worn gown is a temporary costume, not an inventory item. The bridal registration fee persists on exit."
+    },
+    "hotel_bridal_corridor_exit": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_corridor",
+      "text": "You abandon the unhelpful smart door and return to the corridor. The service passage leads back toward the staff lavatory. Downstairs, the loading yard offers a way out.",
+      "choices": [
+        {
+          "id": "corridor_staff_lavatory",
+          "kind": "action",
+          "text": "TRY THE STAFF LAVATORY AGAIN.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "corridor_exit_park",
+          "kind": "action",
+          "text": "LEAVE THE HOTEL AND HEAD TOWARD THE PARK.",
+          "to": "hotel_bridal_corridor_park_exit"
+        }
+      ]
+    },
+    "hotel_bridal_corridor_park_exit": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/courtyard",
+      "text": "You leave the bridal corridor and cross the hotel lobby without stopping for another argument. Outside, a small public park lies across the courtyard. Trees, grass, and promising shrubs. You head toward it.\n\nEND CHAPTER 4.",
+      "choices": [],
+      "effects": {
+        "set": {
+          "ch4_exit_route": "bridal_corridor_departure",
+          "ch4_exit_park_approached": true
+        }
+      },
+      "notes": "Nonfatal. Preserve inventory, all flags, and any pending bridal registration fee. Chapter 5 exclusively reveals dead animals or prototype security plants.",
+      "end": true
+    },
+    "hotel_seashell_room": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "text": "You step through the unlocked door. A spotless little room awaits. Against one wall is a narrow counter bearing three seashells. There is no toilet, no other fixture, and no explanation. You check again. Still three shells.",
+      "choices": [
+        {
+          "id": "seashell_room_inspect",
+          "kind": "action",
+          "text": "INSPECT THE THREE SEASHELLS.",
+          "to": "hotel_seashell_inspect"
+        },
+        {
+          "id": "seashell_room_try",
+          "kind": "action",
+          "text": "TRY TO USE THE THREE SEASHELLS.",
+          "if": {
+            "notFlag": "ch4_seashell_first_attempt_failed"
+          },
+          "to": "hotel_seashell_first_attempt"
+        },
+        {
+          "id": "seashell_room_complain",
+          "kind": "spoken",
+          "text": "COMPLAIN THAT THERE IS NO TOILET.",
+          "if": {
+            "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "to": "hotel_seashell_complaint"
+        },
+        {
+          "id": "seashell_room_leave",
+          "kind": "action",
+          "text": "PUT THIS ROOM BEHIND YOU AND LEAVE.",
+          "to": "hotel_bridal_lavatory_park_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_seashell_lavatory_entered": true
+        }
+      },
+      "notes": "No conventional toilet exists. Three shells are props, not inventory items; no bathing, flushing, or successful urination."
+    },
+    "hotel_seashell_inspect": {
+      "mode": "focus",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "focus": "grand_bellevue/three_seashells",
+      "effects": {
+        "set": {
+          "ch4_seashells_inspected": true
+        }
+      },
+      "text": [
+        {
+          "desc": "Three seashells rest on a counter. One is smooth, one ridged, and one differs mainly by being the third. None conceals a button, hose, drain, or toilet."
+        },
+        {
+          "desc": "There is nothing else in the room."
+        }
+      ],
+      "choices": [
+        {
+          "id": "shell_focus_try",
+          "kind": "action",
+          "text": "TRY USING THE SEASHELLS.",
+          "if": {
+            "notFlag": "ch4_seashell_first_attempt_failed"
+          },
+          "to": "hotel_seashell_first_attempt"
+        },
+        {
+          "id": "shell_focus_ask",
+          "kind": "spoken",
+          "text": "ASK THE BATHROOM AI FOR INSTRUCTIONS.",
+          "if": {
+            "notFlag": "ch4_seashell_ai_instructions_requested"
+          },
+          "to": "hotel_seashell_instructions"
+        },
+        {
+          "id": "shell_focus_complain",
+          "kind": "spoken",
+          "text": "FILE A MISSING-TOILET COMPLAINT.",
+          "if": {
+            "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "to": "hotel_seashell_complaint"
+        },
+        {
+          "id": "shell_focus_leave",
+          "kind": "action",
+          "text": "LEAVE THE ROOM.",
+          "to": "hotel_bridal_lavatory_park_exit"
+        }
+      ],
+      "notes": "User-approved item-world inspection gate; shells stay on counter and cannot be picked up as six-slot inventory."
+    },
+    "hotel_seashell_first_attempt": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "text": [
+        {
+          "desc": "You pick up one seashell, consider it, and put it down. You try another. Nothing happens."
+        },
+        {
+          "desc": "The third shell is no more instructive than the first two."
+        },
+        {
+          "say": "Assistance is available for intuitive operation.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "THEN ASSIST ME.",
+          "who": "visitor"
+        }
+      ],
+      "choices": [
+        {
+          "id": "shell_first_ask",
+          "kind": "spoken",
+          "text": "ASK THE AI FOR INSTRUCTIONS.",
+          "if": {
+            "notFlag": "ch4_seashell_ai_instructions_requested"
+          },
+          "to": "hotel_seashell_instructions"
+        },
+        {
+          "id": "shell_first_complain",
+          "kind": "spoken",
+          "text": "FILE A FORMAL COMPLAINT.",
+          "if": {
+            "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "to": "hotel_seashell_complaint"
+        },
+        {
+          "id": "shell_first_retry",
+          "kind": "action",
+          "text": "ATTEMPT THE SEASHELLS A SECOND TIME.",
+          "if": {
+            "notFlag": "ch4_seashell_second_attempt_failed"
+          },
+          "to": "hotel_seashell_second_attempt"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_seashell_first_attempt_failed": true
+        }
+      },
+      "notes": "First attempt nonfatal; three branches previously approved. No extra physical fixture is created."
+    },
+    "hotel_seashell_instructions": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "speaker": "bathroom_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "say": "HOW AM I SUPPOSED TO USE THREE SEASHELLS?",
+          "who": "visitor"
+        },
+        {
+          "say": "Operation is considered intuitive for the intended female user.",
+          "who": "bathroom_ai"
+        },
+        {
+          "if": {
+            "flag": "ch4_provisional_bride_registered"
+          },
+          "say": "I AM REGISTERED AS A BRIDE.",
+          "who": "visitor"
+        },
+        {
+          "if": {
+            "notFlag": "ch4_provisional_bride_registered"
+          },
+          "say": "THAT DOES NOT HELP ME.",
+          "who": "visitor"
+        },
+        {
+          "if": {
+            "flag": "ch4_provisional_bride_registered"
+          },
+          "say": "Provisional registration does not include intuition.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "THEN PLEASE GIVE ME THE INSTRUCTIONS.",
+          "who": "visitor"
+        },
+        {
+          "say": "That would defeat the purpose of intuitive operation.",
+          "who": "bathroom_ai"
+        }
+      ],
+      "choices": [
+        {
+          "id": "instructions_complaint",
+          "kind": "spoken",
+          "text": "FILE A FORMAL COMPLAINT.",
+          "if": {
+            "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "to": "hotel_seashell_complaint"
+        },
+        {
+          "id": "instructions_retry",
+          "kind": "action",
+          "text": "TRY THE THREE SEASHELLS AGAIN.",
+          "if": {
+            "notFlag": "ch4_seashell_second_attempt_failed"
+          },
+          "to": "hotel_seashell_second_attempt"
+        },
+        {
+          "id": "instructions_leave",
+          "kind": "action",
+          "text": "LEAVE THE LAVATORY.",
+          "to": "hotel_bridal_lavatory_park_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_seashell_ai_instructions_requested": true
+        }
+      },
+      "notes": "Short female-intuition exchange with provisional bride flag variation. No instructions ever provided."
+    },
+    "hotel_seashell_complaint": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "speaker": "bathroom_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "say": "THERE IS NO TOILET IN THIS BATHROOM.",
+          "who": "visitor"
+        },
+        {
+          "say": "Your report concerns a missing fixture.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "YES. THE TOILET.",
+          "who": "visitor"
+        },
+        {
+          "say": "An electronic record has been created.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "DOES THAT MEAN SOMEONE WILL BRING ONE?",
+          "who": "visitor"
+        },
+        {
+          "say": "Your complaint will remain available for review.",
+          "who": "bathroom_ai"
+        },
+        {
+          "if": {
+            "flag": "ch4_bridal_registration_fee_pending"
+          },
+          "say": "Your provisional bridal registration fee remains pending.",
+          "who": "bathroom_ai"
+        },
+        {
+          "desc": "You are still standing in front of three seashells."
+        }
+      ],
+      "choices": [
+        {
+          "id": "complaint_second_try",
+          "kind": "action",
+          "text": "TRY THE SEASHELLS AGAIN.",
+          "if": {
+            "notFlag": "ch4_seashell_second_attempt_failed"
+          },
+          "to": "hotel_seashell_second_attempt"
+        },
+        {
+          "id": "complaint_ask_ai",
+          "kind": "spoken",
+          "text": "ASK FOR OPERATING INSTRUCTIONS.",
+          "if": {
+            "notFlag": "ch4_seashell_ai_instructions_requested"
+          },
+          "to": "hotel_seashell_instructions"
+        },
+        {
+          "id": "complaint_leave",
+          "kind": "action",
+          "text": "STOP THIS AND LEAVE.",
+          "to": "hotel_bridal_lavatory_park_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_seashell_missing_toilet_complaint_filed": true
+        }
+      },
+      "notes": "Single approved complaint record, not an inventory item; no new fee, but existing provisional bride fee may be mentioned."
+    },
+    "hotel_seashell_second_attempt": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "speaker": "bathroom_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You stand before the counter. Three seashells. No toilet. You pick up the first, turn it over, and put it down."
+        },
+        {
+          "desc": "Perhaps there is a particular order. You rearrange all three. A pleasant chime sounds."
+        },
+        {
+          "say": "Practical assessment complete.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "DID I DO IT?",
+          "who": "visitor"
+        },
+        {
+          "say": "No.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "THEN WHAT AM I SUPPOSED TO DO?",
+          "who": "visitor"
+        },
+        {
+          "say": "Correct operation requires certification.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "HOW DO I GET CERTIFIED?",
+          "who": "visitor"
+        },
+        {
+          "say": "By demonstrating correct operation.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "THAT'S WHAT I'M TRYING TO DO!",
+          "who": "visitor"
+        },
+        {
+          "say": "Your application has been denied.",
+          "who": "bathroom_ai"
+        },
+        {
+          "desc": "The shells sit innocently on the counter. Your bladder is considerably less innocent."
+        }
+      ],
+      "choices": [
+        {
+          "id": "second_appeal",
+          "kind": "spoken",
+          "text": "CHALLENGE THE ASSESSMENT RESULT.",
+          "to": "hotel_seashell_assessment_appeal"
+        },
+        {
+          "id": "second_leave",
+          "kind": "action",
+          "text": "PUT THE SEASHELLS DOWN AND LEAVE.",
+          "to": "hotel_bridal_lavatory_park_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_seashell_second_attempt_failed": true
+        }
+      },
+      "notes": "Exactly two approved next choices B and C; demonstration request was explicitly retired. No dice roll or fee; do not repeat attempt."
+    },
+    "hotel_seashell_assessment_appeal": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/bridal_lavatory",
+      "speaker": "bathroom_ai",
+      "pose": "neutral",
+      "text": [
+        {
+          "desc": "You address the ceiling."
+        },
+        {
+          "say": "I WANT TO APPEAL THAT ASSESSMENT.",
+          "who": "visitor"
+        },
+        {
+          "say": "On what grounds?",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "THERE ISN'T EVEN A TOILET IN HERE!",
+          "who": "visitor"
+        },
+        {
+          "if": {
+            "flag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "say": "That allegation is already on record.",
+          "who": "bathroom_ai"
+        },
+        {
+          "if": {
+            "flag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "say": "BECAUSE I REPORTED IT!",
+          "who": "visitor"
+        },
+        {
+          "if": {
+            "flag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "say": "Your corroborating testimony has been added.",
+          "who": "bathroom_ai"
+        },
+        {
+          "if": {
+            "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "say": "A missing-fixture report must first be entered into the record.",
+          "who": "bathroom_ai"
+        },
+        {
+          "desc": "Somewhere, an electronic form becomes slightly longer."
+        }
+      ],
+      "choices": [
+        {
+          "id": "appeal_file_missing",
+          "kind": "spoken",
+          "text": "FILE THE MISSING-TOILET COMPLAINT.",
+          "if": {
+            "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "to": "hotel_seashell_complaint"
+        },
+        {
+          "id": "appeal_other",
+          "kind": "action",
+          "text": "RETURN TO ANY UNTRIED ROOM INTERACTIONS.",
+          "if": {
+            "flag": "ch4_seashell_missing_toilet_complaint_filed"
+          },
+          "to": "hotel_seashell_room"
+        },
+        {
+          "id": "appeal_leave",
+          "kind": "action",
+          "text": "PUT THE SEASHELLS DOWN AND LEAVE.",
+          "to": "hotel_bridal_lavatory_park_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_seashell_assessment_appealed": true
+        }
+      },
+      "notes": "If complaint exists, append corroboration; otherwise route to the approved missing-toilet complaint. No duplicate record or extra fee."
+    },
+    "hotel_bridal_lavatory_park_exit": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/courtyard",
+      "end": true,
+      "effects": {
+        "set": {
+          "ch4_exit_route": "bridal_lavatory_departure",
+          "ch4_exit_park_approached": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You carefully replace the three seashells."
+        },
+        {
+          "say": "Thank you for leaving the facilities in their original condition.",
+          "who": "bathroom_ai"
+        },
+        {
+          "say": "THEY'RE IN BETTER CONDITION THAN I AM.",
+          "who": "visitor"
+        },
+        {
+          "desc": "You leave the bridal lavatory. Back in the dressing room, you remove the wedding gown and abandon it on its stand."
+        },
+        {
+          "desc": "You pass through the hotel without stopping for another argument. Outside, a small public park lies across the courtyard. Trees, shrubs, open space."
+        },
+        {
+          "desc": "You head toward the park."
+        },
+        "END CHAPTER 4."
+      ],
+      "choices": [],
+      "notes": "Approved nonfatal bridal lavatory exit; no reroll when removing gown. Preserve inventory, flags, pending bridal registration fee. Chapter 5 begins with any dead animals or dangerous prototype fake plants, not this ending."
+    },
+    "hotel_ring_inspect_inscription": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/lobby",
+      "text": [
+        {
+          "desc": "You turn the silver ring between your fingers. Beneath the pale blue ribbon is a tiny engraving: AS IS, WHERE IS."
+        },
+        {
+          "desc": "Apparently the auctioneer has influenced the wording of the wedding vows."
+        }
+      ],
+      "choices": [
+        {
+          "id": "inscription_show_bride",
+          "kind": "action",
+          "text": "SHOW THE RING TO THE BRIDE.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_ring_show_bride"
+        },
+        {
+          "id": "inscription_find_restroom",
+          "kind": "action",
+          "text": "KEEP THE RING AND SEARCH FOR A RESTROOM.",
+          "to": "hotel_lot61_pod_auction"
+        },
+        {
+          "id": "inscription_service",
+          "kind": "action",
+          "text": "TAKE THE SERVICE PASSAGE TOWARD THE STAFF LAVATORY.",
+          "to": "hotel_staff_lavatory_storage"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_ring_inscription_read": true
+        }
+      },
+      "notes": "Owner-approved READ/INSPECT inscription, AS IS, WHERE IS. No transfer or new item; unlocks existing optional groom joke."
+    },
+    "hotel_bridal_door_options": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/bridal_dressing_room",
+      "text": "The smart door remains locked. The camera follows you while the approved bridal-access options wait on its brass panel.",
+      "choices": [
+        {
+          "id": "door_ask_bridal_criteria",
+          "kind": "spoken",
+          "text": "ASK WHAT QUALIFIES SOMEONE AS THE BRIDE.",
+          "to": "hotel_bridal_criteria",
+          "if": {
+            "notFlag": "ch4_bridal_identification_explained"
+          }
+        },
+        {
+          "id": "door_request_override",
+          "kind": "spoken",
+          "text": "REQUEST AN EMERGENCY OVERRIDE.",
+          "if": {
+            "notFlag": "ch4_bridal_emergency_override_denied"
+          },
+          "to": "hotel_bridal_emergency_override"
+        },
+        {
+          "id": "door_show_ring",
+          "kind": "action",
+          "text": "SHOW THE WEDDING RING.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_bridal_ring_argument"
+        },
+        {
+          "id": "door_inspect_gown",
+          "kind": "action",
+          "text": "STEP BACK AND INSPECT THE WEDDING GOWN.",
+          "to": "hotel_bridal_gown_focus"
+        },
+        {
+          "id": "door_leave",
+          "kind": "action",
+          "text": "GIVE UP ON THIS DOOR AND LEAVE.",
+          "to": "hotel_bridal_corridor_exit"
+        }
+      ],
+      "notes": "Return hub avoids repeating the entire door inspection or previously exhausted dialogue. Future UI should show exhausted and missing-item actions as disabled, with subtitles, not silently hide them."
     }
   }
 }
