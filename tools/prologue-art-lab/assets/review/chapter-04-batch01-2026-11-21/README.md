@@ -2,6 +2,8 @@
 
 Latest gallery: [v02/index.html](v02/index.html). Complete original batch: [v01/index.html](v01/index.html).
 
+Online-preview entry: [v02/online.html](v02/online.html). This additive copy uses absolute image URLs pinned to the verified artifact commit, so a read-only HTML preview can render the gallery without interpreting relative image paths. `prepare-online-gallery.py` regenerates it. The original galleries and candidate bytes remain unchanged. GitHub displays HTML as source; the publication handoff supplies a tested browser-preview link when available.
+
 Nate requested more detail after viewing v01: “too simple and not detailed enough compared to ch2 stuff imo.” He clarified that the portrait should carry more detail and the main scene should look less simplistic. v02 revises CH4-01 lobby, CH4-02 close background and CH4-03 showman first. CH4-04 restroom and CH4-05 hall remain preserved v01 candidates; they have not been revised or selected.
 
 All images are generated/unselected. These are initial reconstruction candidates, with a documented quality gap versus Chapter 2, especially natural materials and face/cloth modeling. No approval, registration, gameplay change, public-main merge or deployment occurred.

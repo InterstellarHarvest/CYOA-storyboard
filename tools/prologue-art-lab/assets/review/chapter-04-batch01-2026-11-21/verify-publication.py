@@ -47,7 +47,7 @@ def main():
  branch='art/ch4-batch01-review-20261121'
  remote=subprocess.check_output(['git','ls-remote','origin','refs/heads/'+branch],cwd=REPO,text=True).strip()
  assert remote.split()[0]==head,'Remote branch must equal the intended commit'
- targets=set(ROOT.rglob('index.html'))
+ targets=set(ROOT.rglob('*.html'))
  for p in sorted(targets):Links(p.parent,targets).feed(p.read_text())
  # Include all image contract files and originals, not just currently visible HTML.
  targets.update(p for p in ROOT.rglob('*.png') if '__pycache__' not in p.parts)
