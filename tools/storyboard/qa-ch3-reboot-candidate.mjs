@@ -137,7 +137,7 @@ assert.equal(new Set(grouped).size,grouped.length,'each preview card belongs to 
 assert.deepEqual(grouped.slice().sort(),Object.keys(nodes).sort(),
   'review-only timeline includes every candidate card and no legacy cards');
 const viewer=fs.readFileSync(path.join(root,'tools/storyboard/index.html'),'utf8');
-assert.ok(viewer.includes('searchParams.get("review")==="ch3-reboot"'),
+assert.ok(viewer.includes('const ch3Review=reviewMode==="ch3-reboot"'),
   'review URL requires explicit query parameter');
 assert.ok(viewer.includes('entry.file="chapters/chapter-03.reboot-candidate.json"'),
   'review URL points at isolated draft rather than archived Chapter 3');

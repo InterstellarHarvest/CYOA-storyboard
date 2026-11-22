@@ -129,14 +129,15 @@ assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
 // The header lists exactly the manifest's chapters, in order; every chapter's art resolves through
 // the ONE shared artwork catalog (no per-chapter art catalogs).
 assert.deepEqual(manifest.chapters.map(c=>[c.id,c.title,c.status]),[
-  ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'archived']],'manifest chapters, order and Chapter 3 reboot archive status');
+  ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'archived'],['chapter-04','Chapter 4 — Something Old, Something Sold','narrative approved · artwork pending · not in game']],'manifest chapters and order, with Chapter 4 narrative-only');
 const archivedChapter3=fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'));
 assert.equal(createHash('sha256').update(archivedChapter3).digest('hex'),'02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1','legacy Chapter 3 narrative is preserved byte-for-byte in the reboot archive');
 const chapters=manifest.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(root,'story',c.file),'utf8')));
 const fatalIds={
   'chapter-01':['exit_chair_fatal'],
   'chapter-02':['fatal_sorter','fatal_hopper','fatal_transformation','fatal_planting','fatal_roots'],
-  'chapter-03':['end_model_citizen','end_reconciled','end_archived']
+   'chapter-03':['end_model_citizen','end_reconciled','end_archived'],
+   'chapter-04':['fatal_stall_final_occupancy','fatal_lot61_folded','fatal_boiler_pressed_and_steamed','fatal_bridal_made_to_measure']
 };
 for(const [i,entry] of manifest.chapters.entries()){
   for(const id of fatalIds[entry.id]||[]){
@@ -144,7 +145,8 @@ for(const [i,entry] of manifest.chapters.entries()){
     assert.ok(n?.end,'fatal node is an ending: '+id);
     assert.ok(n.deathPopup?.title && n.deathPopup?.description,'fatal popup title and punchline exist: '+id);
     assert.ok(n.endingArt && n.endingArt===n.deathPopup.artRef,'single ending art and popup art refer to same record: '+id);
-    assert.ok(artwork.deathScreens[n.endingArt],'death art brief registered: '+id);
+    if(!chapters[i].development?.notForGameplay)
+      assert.ok(artwork.deathScreens[n.endingArt],'death art brief registered: '+id);
   }
 }
 const chair=chapters[1].nodes;
@@ -152,6 +154,9 @@ assert.equal(chair.exit_chair_fatal.deathPopup.artRef,'house_of_tomorrow/rest_as
 assert.equal(Object.values(chair).flatMap(n=>(n.choices||[]).flatMap(c=>[c.to,c.pass?.to,c.fail?.to].filter(Boolean))).filter(to=>to==='exit_chair_fatal').length,3,'three Rest Assured arrival routes share one fatal node');
 
 for(const ch of chapters){
+  // Ch4's approved narrative is in the public dropdown, but its assets and
+  // gameplay importer registration have not yet been produced.
+  if(ch.development?.notForGameplay)continue;
   for(const scene of new Set([ch.scene,...Object.values(ch.nodes).map(x=>x.scene).filter(Boolean)]))
     assert.ok(artwork.scenes[scene],'scene reference '+scene);
   for(const n of Object.values(ch.nodes)){
@@ -161,7 +166,11 @@ for(const ch of chapters){
     if(n.deathPopup?.artRef)assert.ok(artwork.deathScreens[n.deathPopup.artRef],'fatal popup art '+n.deathPopup.artRef);
   }
 }
-assert.deepEqual(Object.keys(layoutSource.chapters),['prologue-00','chapter-01','chapter-02','chapter-03'],'layout has four chapters');
+assert.deepEqual(Object.keys(layoutSource.chapters),['prologue-00','chapter-01','chapter-02','chapter-03','chapter-04'],'layout includes narrative-only Chapter 4');
+assert.equal(Object.keys(chapters[4].nodes).length,120,'Chapter 4 owner-approved narrative has 120 nodes');
+assert.equal(chapters[4].development.notForGameplay,true,'Chapter 4 artwork/gameplay is not silently marked complete');
+assert.equal(layoutSource.chapters['chapter-04'].timeline.incidents.flatMap(g=>g.nodes).length,120,'Chapter 4 main timeline covers all approved nodes');
+assert.deepEqual(layoutSource.chapters['chapter-04'].timeline.incidents.flatMap(g=>g.nodes).slice().sort(),Object.keys(chapters[4].nodes).sort(),'Chapter 4 main timeline covers every node once');
 assert.deepEqual(layoutSource.chapters['prologue-00'].positions,{},'prologue positions retained exactly (none committed)');
 const legacyFixture=JSON.parse(fs.readFileSync(path.join(root,'tools/storyboard/qa-fixtures/legacy-render-snapshot.json'),'utf8'));
 assert.equal(Object.keys(chapters[3].nodes).length,legacyFixture['chapter-03'].cards.length,'Chapter 3 node count matches its committed renderer snapshot');
@@ -343,7 +352,7 @@ document.getElementById('exportLayout').onclick();
 
 // ---- Chapters: header, independent graphs/inspectors, independent layouts and selections ----------
 const select=document.getElementById('chapterSelect');
-assert.deepEqual(select.children.map(o=>[o.value,o.textContent]),[['0','Prologue — The Last Good Day'],['1','Chapter 1 — House of Tomorrow'],['2','Chapter 2 — Biology Park'],['3',"Chapter 3 — The People's Pavilion"]],'header dropdown lists all four manifest chapters in order');
+assert.deepEqual(select.children.map(o=>[o.value,o.textContent]),[['0','Prologue — The Last Good Day'],['1','Chapter 1 — House of Tomorrow'],['2','Chapter 2 — Biology Park'],['3',"Chapter 3 — The People's Pavilion"],['4','Chapter 4 — Something Old, Something Sold']],'header dropdown lists all five manifest chapters in order');
 const switchTo=async index=>{select.listeners.change({target:{value:String(index)}});await new Promise(resolve=>setTimeout(resolve,20));};
 const nodeIds=()=>document.getElementById('nodes').children.map(n=>n.children[0]?.textContent);
 const dragNode=(id,dx,dy,pointerId)=>{
@@ -436,7 +445,7 @@ document.getElementById('exportLayout').onclick();
 assert.equal(downloads.length,1,'one layout file exported');
 const exported=JSON.parse(await downloads[0].text());
 assert.equal(exported.schema,'cyoa-storyboard-layout-v1','exported schema unchanged');
-assert.deepEqual(Object.keys(exported.chapters).sort(),['chapter-01','chapter-02','chapter-03','prologue-00'],'export holds all four chapters');
+assert.deepEqual(Object.keys(exported.chapters).sort(),['chapter-01','chapter-02','chapter-03','chapter-04','prologue-00'],'export holds all five chapters');
 assert.deepEqual(exported.chapters['chapter-02'].positions.park_junction,ch2,'export holds Chapter 2');
 assert.deepEqual(exported.chapters['prologue-00'].positions.drone_intercepts,proA,'export holds Prologue A');
 assert.deepEqual(exported.chapters['prologue-00'].positions.reception_hallway,proB,'export holds Prologue B');
@@ -751,11 +760,16 @@ for(const card of legacyNow['chapter-03'].cards.filter(c=>fatalDetails.has(c.id)
  assert.ok(card.text.some(t=>String(t).includes('ART: '+d.artRef)),'fatality box displays image reference: '+card.id);
  assert.ok(card.text.some(t=>String(t).includes(d.description)),'fatality box displays narrative beat: '+card.id);
 }
+await tSwitch(tv,4);
+const publishedCh4=snapshot(tv);
+assert.equal(publishedCh4.nodes.length,120,'normal main dropdown renders all Chapter 4 nodes');
+assert.ok(publishedCh4.nodes.every(n=>/\bnode tl\b/.test(n.cls)),'published Chapter 4 uses the approved timeline layout');
+assert.match(tv.doc.getElementById('chapterTitle').textContent,/Chapter 4 — Something Old, Something Sold.*narrative approved/,'published Chapter 4 title reports narrative approval without claiming game readiness');
 
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,chapters:manifest.chapters.map(c=>c.id),
  artRecords:productionRecords.length,
- checked:['manifest','all scene references','portrait references','all item artwork','paired scene backgrounds','editable portrait background','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout','chapter header','per-chapter graph+inspector+art refs','cross-chapter hand-off link','independent positions+selection across switches','export all four chapters','Chapter 2 graph+inspector+art refs+layout','Chapter 1 exits link Chapter 2','import into fresh browser','partial import keeps other chapter',
+  checked:['manifest','all integrated scene references','portrait references','all integrated item artwork','paired scene backgrounds','editable portrait background','startup','artwork library','edit prompt','export artwork','item links','SHOW branches','branch proximity','pointer-centered wheel zoom','node drag','live connectors','local saved layout','reload layout','import layout','reset layout','chapter header','per-chapter graph+inspector+art refs','cross-chapter hand-off link','independent positions+selection across switches','export all five chapters','Chapter 2 graph+inspector+art refs+layout','Chapter 1 exits link Chapter 2','import into fresh browser','partial import keeps other chapter',
    'timeline: 36+99 cards','no card/port/label overlap','all authored routes drawn, none invented','hover text','left-to-right forward routes','returns only on real cycles',
    'Ch1 five exits in right column + Ch2 ports','fatal chair terminal','Ch2 five incoming Ch1 routes','Ch2 five preview handoffs','fatal endings never cross chapters',
    'antidote loops attached','PASS/FAIL distinct','stable across reload','port navigation','Fit overview + Start','old cache archived not applied','restore archive',

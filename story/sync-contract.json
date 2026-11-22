@@ -17,6 +17,7 @@
     "item": ["name", "description", "read", "inspect", "slotArt", "inspectArt"]
   },
   "storyboardOnlyFields": {
+    "chapter": ["development"],
     "node": ["notes", "comment", "position", "layout", "storyboardNextChapter", "deathPopup", "endingArt"],
     "choice": ["notes", "displayGroup", "missingReason"],
     "entry": ["notes"]

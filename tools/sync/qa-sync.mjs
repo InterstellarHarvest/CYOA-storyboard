@@ -40,7 +40,7 @@ function expectError(name, mutate, pattern) {
 {
   const dir = scratch(), r = check(dir);
   assert.equal(r.ok, true, 'committed state passes: ' + JSON.stringify(r.errors.slice(0, 5)));
-  assert.equal(r.stats.chapters, 4, 'four chapters');
+  assert.equal(r.stats.chapters, 5, 'five chapters including the published Chapter 4 narrative');
   results.push('baseline passes (' + r.stats.previewed + ' previews)');
   fs.rmSync(dir, { recursive: true, force: true });
 }
@@ -53,6 +53,7 @@ assert.ok(preview.images[approvedKey], 'selected Biology Park entrance is previe
 expectError('missing chapter', (d) => { const m = J(d, 'story/storyboard-manifest.json'); m.chapters = m.chapters.filter((c) => c.id !== 'chapter-03'); W(d, 'story/storyboard-manifest.json', m); }, /required chapter chapter-03 is missing/);
 expectError('broken route', (d) => { const c = J(d, 'story/chapters/chapter-01.draft.json'); c.nodes.house_arrival.choices[0].to = 'nowhere'; W(d, 'story/chapters/chapter-01.draft.json', c); }, /destination nowhere does not exist/);
 expectError('undeclared field', (d) => { const c = J(d, 'story/chapters/chapter-02.draft.json'); c.nodes[c.start].directorComment = 'x'; W(d, 'story/chapters/chapter-02.draft.json', c); }, /directorComment.*neither runtime nor declared storyboard-only/);
+expectError('narrative-only chapter metadata cannot be marked gameplay ready', (d) => { const c = J(d, 'story/chapters/chapter-04.wip.json'); c.development.notForGameplay = false; W(d, 'story/chapters/chapter-04.wip.json', c); }, /development metadata requires notForGameplay=true/);
 expectError('manifest key the importer rejects', (d) => { const m = J(d, 'story/storyboard-manifest.json'); m.preview = 'x'; W(d, 'story/storyboard-manifest.json', m); }, /field "preview" would be rejected/);
 expectError('approved art regresses to generated', (d) => { const a = J(d, 'story/artwork.draft.json'); a.scenes['biology_park/formal_entrance'].status = 'generated'; W(d, 'story/artwork.draft.json', a); }, /REGRESSION.*generated/);
 expectError('integrated art regresses to not-started', (d) => { const a = J(d, 'story/artwork.draft.json'); a.scenes['house_of_tomorrow/arrival'].status = 'not-started'; W(d, 'story/artwork.draft.json', a); }, /REGRESSION.*not-started/);

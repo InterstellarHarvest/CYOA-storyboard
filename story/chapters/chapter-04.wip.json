@@ -3,8 +3,8 @@
   "start": "hotel_entry_dispatch",
   "scene": "grand_bellevue/arrival",
   "development": {
-    "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved W.C. Warehouse Collection freight-lift misunderstanding and three restroom/exit connections. All Chapter 4 editorial review stops are now authored. Full narrative audit and artwork handoff pending validation.",
+    "status": "narrative-approved",
+    "reviewCheckpoint": "2026-11-21: all 120 Chapter 4 nodes authored, owner-approved and audited; no broken links or editorial placeholders. Published in the main storyboard chapter dropdown. Artwork and playable-game integration remain pending.",
     "approval": "Nate approved the complete authored Chapter 4 narrative through all seven Chapter 3 arrival variations, the auction and restroom incidents, optional Lot 31 wedding-ring access routes, Collection Stairs, boiler danger, bridal privacy/AutoFit, three-seashell denial, and the three park-bound nonfatal exits. Four fatal endings are authored. All editorial stop nodes are retired; no wedding-reunion or ceremony duties remain. Artwork and playable-game integration are separate stages.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -18,7 +18,7 @@
       "backstage_exit"
     ],
     "incompleteRoutePolicy": "No DRAFT REVIEW STOP nodes remain in Chapter 4. The public storyboard is an owner-approved narrative source for artwork prompts and eventual gameplay import. Do not mistake absent artwork or future UI work for missing narrative; gameplay import awaits integration/asset checks.",
-    "enginePresentationRequirement": "Conditional SHOW/USE and inspected-clue choices must remain visible but disabled with REQUIRES / NOT IN INVENTORY or ALREADY ATTEMPTED subtitles. The current review JSON may hide unavailable choices; the gameplay UI must implement the desired locked-card behavior. Six inventory slots maximum. Dialogue uses established modes (dialogue, narrative, Focus A) and CONTINUE paging where needed.",
+    "enginePresentationRequirement": "Conditional SHOW/USE and inspected-clue choices must remain visible but disabled with REQUIRES / NOT IN INVENTORY or ALREADY ATTEMPTED subtitles. The current review JSON may hide unavailable choices; the gameplay UI must implement the desired locked-card behavior. Six inventory slots are visible at a time, with left/right scrolling to additional items; six is NOT an item-capacity limit. Dialogue uses established modes (dialogue, narrative, Focus A) and CONTINUE paging where needed.",
     "approvedItemCardsOnChair": [
       {
         "verb": "show",
@@ -4393,7 +4393,7 @@
           "to": "hotel_bridal_lavatory_park_exit"
         }
       ],
-      "notes": "User-approved item-world inspection gate; shells stay on counter and cannot be picked up as six-slot inventory."
+      "notes": "User-approved item-world inspection gate; shells stay on the counter and cannot be picked up as inventory items."
     },
     "hotel_seashell_first_attempt": {
       "mode": "narrative",
@@ -5368,7 +5368,7 @@
           "to": "hotel_pipe_tunnel"
         }
       ],
-      "notes": "Owner-approved short dispute. The conditional receipt action is unlocked by Focus A inspection flag, not a six-slot item. Future UI displays disabled action with REQUIRES: LOT 14 RECEIPT INSPECTED if absent."
+      "notes": "Owner-approved short dispute. The conditional receipt action is unlocked by Focus A inspection flag, not an inventory item. Future UI displays disabled action with REQUIRES: LOT 14 RECEIPT INSPECTED if absent."
     },
     "hotel_auctioneer_lot14_recall": {
       "mode": "dialogue",

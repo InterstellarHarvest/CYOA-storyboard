@@ -1549,13 +1549,9 @@
        entry.status=ch3Review?"review-only · not in game":"approved narrative · not in game";
      }
      if(ch4Review){
-       if(manifest.chapters?.some(ch=>ch.id==="chapter-04"))throw Error("Chapter 4 already exists in the published manifest");
-       manifest.chapters.push({
-         id:"chapter-04",
-         title:"Chapter 4 — Something Old, Something Sold [WIP]",
-         file:"chapters/chapter-04.wip.json",
-         status:"review-only · unfinished story · not in game"
-       });
+       // Chapter 4 is now in the normal public dropdown. Keep historical review links
+       // working without injecting a duplicate chapter or implying unfinished narrative.
+       if(!manifest.chapters?.some(ch=>ch.id==="chapter-04"))throw Error("Chapter 4 is missing from the published manifest");
      }
      const select=$("chapterSelect");select.replaceChildren();
      (manifest.chapters||[]).forEach((entry,i)=>{const opt=el("option","",entry.title||entry.id);opt.value=String(i);select.append(opt);});

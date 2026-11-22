@@ -12,6 +12,9 @@ const art=JSON.parse(fs.readFileSync(path.join(root,'story',manifest.artwork),'u
 const entries=[];
 for(const chap of manifest.chapters){
  const source=JSON.parse(fs.readFileSync(path.join(root,'story',chap.file),'utf8'));
+ // Public narrative chapters can appear in the storyboard before their artwork
+ // exists. Keep their fatal briefs in the story, but out of the game export.
+ if(source.development?.notForGameplay===true)continue;
  for(const [nodeId,node] of Object.entries(source.nodes||{})){
   if(!node.deathPopup)continue;
   if(node.end!==true)throw Error('Death popup on nonterminal node '+chap.id+':'+nodeId);

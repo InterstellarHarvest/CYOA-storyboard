@@ -70,7 +70,11 @@ async function run(name, base) {
   await page.goto(url);
   await ready(page, 29);
   const options = await page.evaluate(() => Array.from(document.querySelectorAll('#chapterSelect option')).map((o) => [o.value, o.textContent]));
-  check(b, 'header dropdown: exactly the four manifest chapters (Prologue, Chapter 1, Chapter 2, Chapter 3), in order', JSON.stringify(options) === JSON.stringify([['0', 'Prologue — The Last Good Day'], ['1', 'Chapter 1 — House of Tomorrow'], ['2', 'Chapter 2 — Biology Park'], ['3', "Chapter 3 — The People's Pavilion"]]), options);
+  check(b, 'header dropdown: all five manifest chapters including Chapter 4, in order', JSON.stringify(options) === JSON.stringify([['0', 'Prologue — The Last Good Day'], ['1', 'Chapter 1 — House of Tomorrow'], ['2', 'Chapter 2 — Biology Park'], ['3', "Chapter 3 — The People's Pavilion"], ['4', 'Chapter 4 — Something Old, Something Sold']]), options);
+  await choose(page, 4, 120);
+  const ch4Heading = await page.textContent('#chapterTitle');
+  check(b, 'main chapter dropdown opens all 120 Chapter 4 narrative nodes, without claiming playable art', ch4Heading.includes('narrative approved') && ch4Heading.includes('not in game'), ch4Heading);
+  await choose(page, 0, 29);
   const a = await drag(page, 'drone_intercepts', 120, 70);
   const h = await drag(page, 'reception_hallway', -90, 80);
   await page.click('#nodes .node >> text=reception_hallway');

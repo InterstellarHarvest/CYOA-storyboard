@@ -3,7 +3,7 @@
 **Owner:** Nate, Chapter 4 Narrative PMO  
 **Checkpoint:** November 21, 2026 (Eastern)  
 **Chapter:** *Something Old, Something Sold*  
-**Review:** https://interstellarharvest.github.io/CYOA-storyboard/tools/storyboard/?review=ch4-wip
+**Public main storyboard:** https://interstellarharvest.github.io/CYOA-storyboard/tools/storyboard/
 
 ## 1. Narrative state
 
@@ -45,7 +45,7 @@ Each fatal node has `end:true`, a unique `deathPopup.id`, exactly one incident-s
 - **Prior-chapter items reused:** vegetation credential, Examiner Badge, Temporary Staff Pass, Red Stapler, and optional rubber band ball. Inspections and SHOW/USE actions retain their d6 consequences or shortcut effects.
 - **Inspection-gated non-items:** reading the Lot 14 receipt sets `ch4_knows_wheel_lot_14`; citing it unlocks the short correction/recall path. Reading the wedding-ring inscription sets `ch4_ring_inscription_read`. The gown's separate manual-slack inspection sets `ch4_autofit_release_located` and grants only the approved nonstacking +1.
 - **Not inventory items:** recalled shutoff wheel (temporary story prop), three seashells (remain on their counter), and the worn wedding gown (temporary costume).
-- **Six inventory slots:** game integration must handle an award when all slots are occupied. This cannot be proven by the narrative graph alone; do not silently add a seventh slot or lose an awarded item.
+- **Six visible inventory slots, not a six-item limit:** the player scrolls left or right to reach additional carried items. The ring/ticket awards must not be dropped merely because the six visible slots are filled; no replacement/overflow step is required on that basis.
 
 Item and exhausted dialogue choices must remain visible but disabled, with **REQUIRES / NOT IN INVENTORY / ALREADY ATTEMPTED** subtitles, according to Nate's UI rule. The review/game engine may currently hide choices on failed `if` predicates; correcting this is a gameplay/UI integration task, not another narrative branch.
 
@@ -64,14 +64,14 @@ Item and exhausted dialogue choices must remain visible but disabled, with **REQ
 ## 6. Outstanding integration checks — not missing narrative
 
 1. **Chapter 3 → 4 exit flag handoff.** Chapter 4 expects `ch3_exit_route` set to one of seven reboot IDs. `story/chapters/chapter-03.reboot-candidate.json` contains those seven ending node IDs, but its endings do not themselves write `ch3_exit_route`; `story/chapters/chapter-03.draft.json` appears to retain earlier exit IDs. Gameplay PMO must confirm which Chapter 3 asset is shipped and set the required route flag before Chapter 4 dispatch. Do not change Chapter 3 narrative from this PMO.
-2. **Inventory capacity and conditional card presentation.** Verify that six-slot inventory can accept the optional Chapter 4 ring/ticket via an explicit item replacement flow when full, and that locked/previously attempted action cards remain visible with subtitles.
+2. **Inventory scrolling and conditional card presentation.** Verify that optional Chapter 4 ring/ticket awards appear in the scrollable inventory, including beyond the six on-screen slots. Verify locked/previously attempted action cards remain visible with explanatory subtitles. Do not impose an invented six-item capacity or replacement flow.
 3. **Chapter 4 → 5 transition.** Three nonfatal Chapter 4 endings physically head toward the park. The engine must map them into Chapter 5 when that chapter exists; no Chapter 5 wildlife/plant hazard reveal belongs in Chapter 4.
 4. **Art asset production.** All artwork, portrait/scene/Focus A assets, and four fatal aftermath PNGs are pending the separate Chapter 4 Artwork PMO; approved text and art briefs must not be mistaken for completed images.
 5. **Playable QA after integration.** This audit verifies JSON navigation and logic statically; hidden d6 probabilities, choice rendering, append-not-replace narration, text typing, CONTINUE pacing, conditionals, inventory, and the death popup must be exercised in the actual game engine later.
 
 ## 7. Handoff status
 
-**Chapter 4 Narrative PMO node closure: complete, pending Nate's final review of the published storyboard and separate art/gameplay integration.** Do not invent more wedding business to fill space. The next creative PMOs may focus on Chapter 4 artwork and Chapter 5 park narrative, with the Chapter 5 seed constrained by `docs/124_CH4_EXIT_TO_PARK_AND_CH5_PARK_SEED_20261121.md`.
+**Chapter 4 Narrative PMO node closure: complete; owner-approved narrative is included in the normal public storyboard dropdown, with separate art/gameplay integration pending.** Do not invent more wedding business to fill space. The next creative PMOs may focus on Chapter 4 artwork and Chapter 5 park narrative, with the Chapter 5 seed constrained by `docs/124_CH4_EXIT_TO_PARK_AND_CH5_PARK_SEED_20261121.md`.
 
 Canonical source paths:
 

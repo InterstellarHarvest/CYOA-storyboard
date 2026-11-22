@@ -54,6 +54,243 @@
     },
     "chapter-03": {
       "positions": {}
+    },
+    "chapter-04": {
+      "positions": {},
+      "layoutRevision": 22,
+      "timeline": {
+        "note": "Viewer-only Chapter 4 narrative timeline. All editorial nodes are approved; artwork and playable-game integration are still pending.",
+        "incidents": [
+          {
+            "id": "entry",
+            "title": "Seven Pavilion Exits · Distinct hotel arrivals",
+            "nodes": [
+              "hotel_entry_dispatch",
+              "entry_locomotion_fail",
+              "entry_presenter_help_end",
+              "entry_paper_problem_end",
+              "entry_attendant_honest_end",
+              "entry_door_dash_fail",
+              "entry_door_reverse_end",
+              "entry_backstage_exit"
+            ]
+          },
+          {
+            "id": "lobby",
+            "title": "Public Lobby · Restroom-fixture auction",
+            "nodes": [
+              "hotel_lobby_view",
+              "hotel_auctioneer_arrival",
+              "hotel_auctioneer_restroom_inventory"
+            ]
+          },
+          {
+            "id": "restroom",
+            "title": "A1 · The last working stall",
+            "nodes": [
+              "hotel_restroom_entry",
+              "hotel_restroom_plumber"
+            ]
+          },
+          {
+            "id": "valve",
+            "title": "A1-A · Last stall, crane survival, and upper salvage",
+            "nodes": [
+              "hotel_valve_braced",
+              "hotel_valve_flood",
+              "hotel_stall_lot_claimed",
+              "hotel_stall_crane_success",
+              "fatal_stall_final_occupancy",
+              "hotel_upper_salvage_arrival",
+              "hotel_upper_salvage_clerk_directions",
+              "hotel_stall_public_corridor_walk",
+              "hotel_flooded_public_corridor"
+            ]
+          },
+          {
+            "id": "stall_protest",
+            "title": "A1-A1 · Porter dispute and Lot 53 auction",
+            "nodes": [
+              "hotel_stall_porter_protest",
+              "hotel_auction_reopen_53",
+              "hotel_auction_testimonial",
+              "hotel_auction_bride_ally",
+              "hotel_auction_dispute_ticket"
+            ]
+          },
+          {
+            "id": "lot31",
+            "title": "Lot 31 · Groom's chair and item interactions",
+            "nodes": [
+              "hotel_auction_chair_lot31",
+              "hotel_chair_vegetation_inspection",
+              "hotel_chair_examiner_inspection",
+              "hotel_chair_stapler_stealth",
+              "hotel_chair_stapler_caught",
+              "hotel_chair_staff_escort",
+              "hotel_chair_staff_escort_loading"
+            ]
+          },
+          {
+            "id": "ring",
+            "title": "Lot 31 · Ring as an optional access credential",
+            "nodes": [
+              "hotel_chair_ring_focus",
+              "hotel_ring_retrieved",
+              "hotel_ring_slips",
+              "hotel_ring_in_pocket",
+              "hotel_ring_show_bride",
+              "hotel_bride_ring_handover",
+              "hotel_bride_ring_bathroom",
+              "hotel_bride_service_shortcut",
+              "hotel_bridal_organizer",
+              "hotel_chair_follow_collection",
+              "hotel_ring_inspect_inscription"
+            ]
+          },
+          {
+            "id": "lot61",
+            "title": "Lot 61 · Emergency Convenience Pod and fatal packing",
+            "nodes": [
+              "hotel_lot61_pod_auction",
+              "hotel_lot61_pod_escaped",
+              "fatal_lot61_folded",
+              "hotel_lot61_pod_declined"
+            ]
+          },
+          {
+            "id": "collection_stairs",
+            "title": "Lot 31 · Collection ring recovery and staff lavatory",
+            "nodes": [
+              "hotel_collection_stairs",
+              "hotel_collection_ring_focus",
+              "hotel_collection_ring_porter_recovery",
+              "hotel_collection_ring_stapler_recovery",
+              "hotel_collection_ring_in_pocket",
+              "hotel_collection_ring_to_bride",
+              "hotel_collection_porters_groom_clue",
+              "hotel_collection_slip_unnoticed",
+              "hotel_collection_slip_spotted",
+              "hotel_collection_staff_pass",
+              "hotel_collection_staff_pass_first",
+              "hotel_collection_staff_pass_recognized",
+              "hotel_collection_staff_pass_authorized",
+              "hotel_staff_lavatory_storage",
+              "hotel_staff_lavatory_move_boxes",
+              "hotel_staff_lavatory_temporary_use_permit"
+            ]
+          },
+          {
+            "id": "boiler_pressure",
+            "title": "Boiler Access · Pressure and working-toilet search",
+            "nodes": [
+              "hotel_boiler_pressure_intro",
+              "hotel_boiler_pressure_relieved",
+              "fatal_boiler_pressed_and_steamed",
+              "hotel_boiler_dispute_hold",
+              "hotel_boiler_staff_access",
+              "hotel_boiler_service_passage"
+            ]
+          },
+          {
+            "id": "groom_boiler",
+            "title": "Boiler Three · Groom directions and service-yard park exit",
+            "nodes": [
+              "hotel_boiler_groom_encounter",
+              "hotel_groom_show_ring",
+              "hotel_groom_directions_to_lavatory",
+              "hotel_groom_leave_behind",
+              "hotel_service_park_exit"
+            ]
+          },
+          {
+            "id": "maintenance",
+            "title": "A1-B · Maintenance walkway and water controls",
+            "nodes": [
+              "hotel_pipe_tunnel",
+              "hotel_isolator_panel",
+              "hotel_isolator_restrooms",
+              "hotel_isolator_entire",
+              "hotel_water_outage_confirmation",
+              "hotel_maintenance_dock_exit"
+            ]
+          },
+          {
+            "id": "wheel",
+            "title": "A1-C · Lot 14 safety wheel, buyer, and catalogue recall",
+            "nodes": [
+              "hotel_wheel_buyer_lead",
+              "hotel_lot_receipt_study",
+              "hotel_commodore_bixby",
+              "hotel_bixby_emergency",
+              "hotel_bixby_trade",
+              "hotel_wheel_return",
+              "hotel_auctioneer_lot14_dispute",
+              "hotel_auctioneer_lot14_recall"
+            ]
+          },
+          {
+            "id": "key",
+            "title": "A1-D · Facilities Key shortcut",
+            "nodes": [
+              "hotel_key_master_cabinet"
+            ]
+          },
+          {
+            "id": "service",
+            "title": "Service Entrance · Salvage, W.C. lift, and park exit",
+            "nodes": [
+              "hotel_service_arrival",
+              "hotel_service_foreman",
+              "hotel_freight_wc_misunderstanding"
+            ]
+          },
+          {
+            "id": "wedding",
+            "title": "Wedding-Side Entrance · Fast access to service toilets",
+            "nodes": [
+              "hotel_wedding_arrival",
+              "hotel_wedding_service_shortcut"
+            ]
+          },
+          {
+            "id": "bridal_privacy",
+            "title": "Bridal Dressing Room · AI door, ring, gown, and AutoFit",
+            "nodes": [
+              "hotel_bridal_room",
+              "hotel_bridal_door_knock",
+              "hotel_bridal_door_focus",
+              "hotel_bridal_door_options",
+              "hotel_bridal_criteria",
+              "hotel_bridal_false_claim",
+              "hotel_bridal_emergency_override",
+              "hotel_bridal_ring_argument",
+              "hotel_bridal_gown_focus",
+              "hotel_bridal_gown_motor",
+              "hotel_bridal_gown_camera",
+              "hotel_bridal_gown_try",
+              "fatal_bridal_made_to_measure",
+              "hotel_bridal_autofit_survived",
+              "hotel_bridal_corridor_exit",
+              "hotel_bridal_corridor_park_exit"
+            ]
+          },
+          {
+            "id": "seashells",
+            "title": "Bridal Lavatory · Three seashells and final park exit",
+            "nodes": [
+              "hotel_seashell_room",
+              "hotel_seashell_inspect",
+              "hotel_seashell_first_attempt",
+              "hotel_seashell_instructions",
+              "hotel_seashell_complaint",
+              "hotel_seashell_second_attempt",
+              "hotel_seashell_assessment_appeal",
+              "hotel_bridal_lavatory_park_exit"
+            ]
+          }
+        ]
+      }
     }
   }
 }
