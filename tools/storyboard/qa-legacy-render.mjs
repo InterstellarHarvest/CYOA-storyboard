@@ -1,4 +1,4 @@
-// Serialises how the storyboard draws the chapter that must NOT change (Chapter 3; the Prologue moved
+// Serialises how the storyboard draws the chapter that must NOT change (the preserved legacy Chapter 3; the Prologue moved
 // to the timeline view on owner request, 2026-11-16):
 // every card's position and text, every SVG connector and label, the stage size and default zoom.
 // The smoke test compares the current viewer against qa-fixtures/legacy-render-snapshot.json, which
@@ -12,6 +12,8 @@ import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 
 export const LEGACY_CHAPTERS=['chapter-03'];
+// The preserved pre-reboot Chapter 3 (byte-identical to story/archives/chapter-03-pre-reboot-20261118.json).
+export const LEGACY_FILE='chapters/chapter-03.draft.json';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 
 class Element{
@@ -28,7 +30,14 @@ export async function renderLegacy(htmlPath,{storage=new Map()}={}){
   const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];
   const els=new Map();
   const doc={getElementById(id){if(!els.has(id))els.set(id,new Element('div',id));return els.get(id);},createElement:t=>new Element(t),createElementNS:(_n,t)=>new Element(t),body:new Element('body')};
-  const load=async url=>{const p=new URL(String(url)).pathname;const rel=p.startsWith('/CYOA-storyboard/')?p.slice('/CYOA-storyboard/'.length):p.slice(1);return {ok:true,json:async()=>JSON.parse(fs.readFileSync(path.resolve(root,rel),'utf8'))};};
+  // Since the Chapter 3 gameplay integration the manifest's chapter-03 is the approved reboot (a timeline
+  // chapter). The preserved legacy graph keeps its published geometry check: this harness alone swaps it
+  // back in memory (legacy file, archived status, no timeline layout), exactly as the viewer saw it
+  // before the activation. The committed manifest and layout are never touched.
+  const legacySwap={'story/storyboard-manifest.json':m=>{const e=m.chapters.find(c=>c.id==='chapter-03');e.file=LEGACY_FILE;e.status='archived';return m;},
+    'story/storyboard-layout.json':l=>{l.chapters['chapter-03']={positions:{}};return l;}};
+  const load=async url=>{const p=new URL(String(url)).pathname;const rel=p.startsWith('/CYOA-storyboard/')?p.slice('/CYOA-storyboard/'.length):p.slice(1);
+    return {ok:true,json:async()=>{const v=JSON.parse(fs.readFileSync(path.resolve(root,rel),'utf8'));return legacySwap[rel]?legacySwap[rel](v):v;}};};
   const ls={getItem:k=>storage.has(k)?storage.get(k):null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)};
   vm.runInNewContext(script,{document:doc,window:{addEventListener(){},localStorage:ls},location:{href:'https://example.org/CYOA-storyboard/tools/storyboard/'},
     fetch:load,URL,Blob,JSON,Object,Math,Number,String,console,setTimeout(fn){fn();return 0;}});

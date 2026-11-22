@@ -18,9 +18,11 @@ const statuses=new Set(a.statusValues);
 assert.match(a.direction,/CHAPTER 3 REBOOT — OWNER-APPROVED HUMAN STAGING EXCEPTION/,'new chapter-specific human art direction resolves older room rule');
 function lifecycle(r,id){
   assert.ok(statuses.has(r.status),id+' legal art status');
-  if(r.status!=='integrated')assert.equal(r.assetPath,null,id+' no invented gameplay path');
+  // Production paths stay null until the separate integration-status reconciliation (2026-11-22):
+  // the game binds the approved bytes by SHA-256 in its own provenance, not through this registry.
+  if(r.status!=='integrated')assert.equal(r.assetPath,null,id+' no production path before integration reconciliation');
 }
-assert.equal(m.chapters.find(c=>c.id==='chapter-03').status,'archived','public Chapter 3 must not accidentally activate');
+assert.deepEqual([m.chapters.find(c=>c.id==='chapter-03').status,m.chapters.find(c=>c.id==='chapter-03').file],['draft','chapters/chapter-03.reboot-candidate.json'],'Chapter 3 activates only as the approved reboot (gameplay integration)');
 assert.equal(scenes.size,14);
 assert.equal(contexts.size,9);
 assert.equal(poses.size,7);
