@@ -27,6 +27,8 @@ jobs:
         run: node tools/sync/check-canon.mjs
       - name: Sync tool self-test (register-art refusals, status never lowered, regression detection)
         run: node tools/sync/qa-sync.mjs
+      - name: Pages Batch D staging guard (23 approved-source references; only the recorded Paper Emergency v03 -> v04 replacement, with its preserved v03 copy)
+        run: node tools/sync/qa-ch3-reference-supersession.mjs
       - name: Storyboard logic, timeline layout and Prologue/Chapter 3 snapshot checks
         run: node tools/storyboard/qa-smoke.mjs
       - name: Verify death-popup game export matches authored fatal boxes
