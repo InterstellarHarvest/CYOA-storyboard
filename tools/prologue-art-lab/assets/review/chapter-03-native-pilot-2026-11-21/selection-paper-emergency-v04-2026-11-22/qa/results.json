@@ -1,0 +1,31 @@
+{
+  "combinedValidation": {
+    "status": "PASS",
+    "checks": 144,
+    "report": "combined-validation.json"
+  },
+  "canonical": {
+    "status": "PASS",
+    "report": "canonical.txt"
+  },
+  "smoke": {
+    "status": "PASS",
+    "report": "smoke.txt"
+  },
+  "browser": {
+    "status": "PASS",
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "checks": 26,
+    "report": "browser.json"
+  },
+  "registrationPerformed": false,
+  "notRun": [
+    "Game engine/runtime QA",
+    "Public Pages deployment",
+    "Real registration or registration rehearsal",
+    "Repeated sync self-tests/selected-artwork browser suite; canonical registry, approved bytes and viewer code unchanged"
+  ]
+}

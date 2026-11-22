@@ -165,7 +165,7 @@ jobs:
               'approval': 'Chapter 3 Batch A A01-A06 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch A section; story/artwork-preview.json). Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
           write(os.environ['B'] + '/v03-localized-corrections/deployment-provenance.json', {**common,
               'gallerySource': os.environ['CH3_BATCH_B_REVIEW_COMMIT'], 'galleryRef': 'art/ch3-pavilion-batch02-20261119',
-              'approval': 'Chapter 3 Batch B B01-B06 v03 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch B section; docs/113; story/artwork-preview.json). Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
+              'approval': 'Chapter 3 Batch B B01-B06 v03 owner-approved 2026-11-19 and registered in canonical main (docs/103 Chapter 3 Batch B section; docs/113; story/artwork-preview.json). B06 Paper Emergency v03 is now historical: Nate approved Paper Emergency v04 as its successor on 2026-11-22 (docs/103 Paper Emergency v04 addendum; story/artwork-preview.json); v03 stays in this gallery as approved history. Approved, not integrated; production assetPath null. Original native-grid authorship unproven.'})
           PY
           echo "Chapter 3 review galleries staged: $(find "_site/$A" -type f | wc -l) Batch A + $(find "_site/$B" -type f | wc -l) Batch B files"
       # All four review snapshots stay immutable; the current mixed-version approval lives outside them.
