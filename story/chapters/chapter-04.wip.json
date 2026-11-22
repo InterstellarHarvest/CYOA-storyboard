@@ -4,7 +4,7 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved crane-grip survival now continues to an authored upper-salvage scene with exactly three choices (B clerk lavatory directions, C pipe hatch, D loading dock). Former manifest inspection is retired. Six editorial stops remain; four fatal and three park-bound nonfatal endings are unchanged.",
+    "reviewCheckpoint": "2026-11-21: owner-approved dignified public corridor walk after rising toilet stall, with three restroom/exit options. Replaces wedding-walk editorial stop; five unfinished stops remain. No wedding help or ceremony logistics.",
     "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
@@ -88,6 +88,10 @@
     "approvedUpperSalvage": {
       "status": "owner-approved",
       "note": "B/C/D only; clerk directions connect to hotel_staff_lavatory_storage, hatch to hotel_pipe_tunnel, service stairs to hotel_maintenance_dock_exit. Both upper-salvage flags are granted, no second d6, no wedding errands."
+    },
+    "approvedStallPublicWalk": {
+      "status": "owner-approved",
+      "note": "The player is fully dressed, not unzipped. Guest has one dry exchange. A staff lavatory, B collection stairs, C park-bound service exit. No dice roll/item/fee; sets ch4_stall_walked_away_publicly."
     }
   },
   "nodes": {
@@ -746,7 +750,7 @@
           "id": "stall_walk_guests",
           "kind": "action",
           "text": "WALK PAST THE WEDDING GUESTS AS THOUGH NOTHING UNUSUAL HAS HAPPENED.",
-          "to": "wip_stall_wedding_walk"
+          "to": "hotel_stall_public_corridor_walk"
         }
       ]
     },
@@ -1661,12 +1665,6 @@
       },
       "endingArt": "grand_bellevue/final_occupancy",
       "notes": "Owner-approved fatal lead-in and popup copy. Planned aftermath illustration only: broken porcelain toilet beneath the raised empty stall, scattered auction tags, perhaps an abandoned shoe. Do not show the player's face; no death art generated yet. Engine popup uses the standard RETRY/CHECKPOINT/EXIT controls when integrated."
-    },
-    "wip_stall_wedding_walk": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/wedding_corridor",
-      "text": "DRAFT REVIEW STOP — Walk past the reception guests with dignity and find the next restroom or hotel exit. No participation in the ceremony; guests are background reactions only.",
-      "choices": []
     },
     "hotel_chair_follow_collection": {
       "mode": "narrative",
@@ -5066,6 +5064,63 @@
         }
       ],
       "notes": "Short owner-approved exchange. Connects to existing sold-for-storage staff lavatory; no replay of wedding introductions."
+    },
+    "hotel_stall_public_corridor_walk": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/public_corridor",
+      "speaker": "hotel_wedding_guest",
+      "pose": "curious",
+      "effects": {
+        "set": {
+          "ch4_stall_walked_away_publicly": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The stall continues upward. You remain on the restroom floor, fully dressed, with several guests watching through the doorway."
+        },
+        {
+          "desc": "You straighten your coat and walk past them. One guest glances toward the disappearing toilet."
+        },
+        {
+          "say": "Are you with the removals?",
+          "who": "hotel_wedding_guest"
+        },
+        {
+          "say": "NOT VOLUNTARILY.",
+          "who": "visitor"
+        },
+        {
+          "desc": "The guest nods sympathetically. You continue down the corridor."
+        },
+        {
+          "desc": "Behind you, the crane groans. Nobody attempts to stop you."
+        },
+        {
+          "desc": "Ahead are a service door, stairs toward the collection area, and a side passage leading outside."
+        }
+      ],
+      "choices": [
+        {
+          "id": "stall_walk_staff_lavatory",
+          "kind": "action",
+          "text": "CHECK THE STAFF LAVATORY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "stall_walk_collection",
+          "kind": "action",
+          "text": "FOLLOW THE PORTERS TOWARD COLLECTION.",
+          "to": "hotel_collection_stairs"
+        },
+        {
+          "id": "stall_walk_exit",
+          "kind": "action",
+          "text": "LEAVE THE HOTEL THROUGH THE SERVICE EXIT.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Owner approved short, dignified walk with exactly three restroom/exit connections. Spectators are background only. No wedding tasks, new dice, or items; protagonist has not unzipped."
     }
   }
 }
