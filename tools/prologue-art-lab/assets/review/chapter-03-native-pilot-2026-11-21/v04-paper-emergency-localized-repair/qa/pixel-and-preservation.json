@@ -1,0 +1,1189 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "Original byte-identical to approved source",
+      "pass": true
+    },
+    {
+      "name": "Candidate native opaque RGB",
+      "pass": true
+    },
+    {
+      "name": "Masks and operations frozen before candidate rendering",
+      "pass": true
+    },
+    {
+      "name": "Declared union hash exact",
+      "pass": true
+    },
+    {
+      "name": "Exactly 327 changes",
+      "pass": true
+    },
+    {
+      "name": "Every change within predeclared mask",
+      "pass": true
+    },
+    {
+      "name": "All 64357 other pixels unchanged",
+      "pass": true
+    },
+    {
+      "name": "Declared union tightly traced at 334 pixels",
+      "pass": true
+    },
+    {
+      "name": "Effective mask is exactly actual changed coordinates",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [167, 185] 9",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [167, 185] 10",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [167, 185] 11",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [167, 185] 12",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [167, 185] 13",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 14",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 15",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 16",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 17",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 18",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 19",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 186] 20",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 21",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 22",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 23",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 24",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 25",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 26",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 27",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 28",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 29",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [165, 183] 30",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [217, 112] 31",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [217, 112] 32",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [217, 112] 33",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [217, 112] 34",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [217, 112] 35",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [217, 112] 36",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [220, 114] 37",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [223, 113] 38",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [221, 113] 39",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [221, 113] 40",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [219, 118] 41",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 42",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 43",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 44",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 45",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 46",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 47",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 48",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 49",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 50",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 51",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 52",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 53",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 54",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 55",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 56",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 57",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 58",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 59",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 60",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 61",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 62",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 63",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 64",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 65",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 66",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 67",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 68",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 69",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 70",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 71",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 72",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 73",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 74",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 75",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 76",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 77",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 78",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 79",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 80",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 81",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 82",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 83",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 84",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 85",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 86",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 87",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 88",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 89",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 90",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 91",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 92",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 93",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 94",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 95",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 96",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 97",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 98",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 99",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 100",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 101",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 102",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 103",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 104",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 105",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 106",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 107",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 108",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 109",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 110",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 111",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 112",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 113",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 114",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 115",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 116",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 117",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 118",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 119",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 120",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 121",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 122",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 123",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 124",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 125",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 126",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 127",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 128",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 129",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 130",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 131",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 132",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 133",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 134",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 135",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 136",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 137",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 138",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 139",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 140",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 141",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 142",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 143",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 144",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 145",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 146",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 147",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 148",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 149",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 150",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 151",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 152",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 153",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 154",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 155",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [233, 141] 156",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [230, 132] 157",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [213, 132] 158",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [208, 138] 159",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [232, 134] 160",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [222, 136] 161",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [215, 137] 162",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [224, 138] 163",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [232, 134] 164",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [235, 134] 165",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [235, 139] 166",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [232, 134] 167",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [215, 137] 168",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [222, 136] 169",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [224, 138] 170",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [219, 135] 171",
+      "pass": true
+    },
+    {
+      "name": "Original source RGB sample exact [208, 138] 172",
+      "pass": true
+    },
+    {
+      "name": "P1 declaration hash pixels and primitive shape exact",
+      "pass": true
+    },
+    {
+      "name": "P1 actual changed count exact",
+      "pass": true
+    },
+    {
+      "name": "P1 effective mask exact",
+      "pass": true
+    },
+    {
+      "name": "face declaration hash pixels and primitive shape exact",
+      "pass": true
+    },
+    {
+      "name": "face actual changed count exact",
+      "pass": true
+    },
+    {
+      "name": "face effective mask exact",
+      "pass": true
+    },
+    {
+      "name": "hands declaration hash pixels and primitive shape exact",
+      "pass": true
+    },
+    {
+      "name": "hands actual changed count exact",
+      "pass": true
+    },
+    {
+      "name": "hands effective mask exact",
+      "pass": true
+    },
+    {
+      "name": "P1 remains within previously assessed crossing",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: P2 right floor loop and fold",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Restroom and two-person signs",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Cream printer/feed unit",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Gooseneck microphone",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Plant including left leaf tips",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Visible counter/desk top and fascia",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Brush heads shafts and ceiling mounts",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Hair outline and hairstyle",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Glasses eyes and upper face",
+      "pass": true
+    },
+    {
+      "name": "Protected context unchanged: Name badge",
+      "pass": true
+    },
+    {
+      "name": "Nose and surrounding upper face unchanged",
+      "pass": true
+    },
+    {
+      "name": "Right two-person sign unchanged",
+      "pass": true
+    },
+    {
+      "name": "Passing receipt remains exact",
+      "pass": true
+    },
+    {
+      "name": "Raised palm does not intersect conservative passing-receipt guard",
+      "pass": true
+    },
+    {
+      "name": "Raised palm stays left of plant protected region",
+      "pass": true
+    },
+    {
+      "name": "Every changed RGB logged, none missing or extra",
+      "pass": true
+    },
+    {
+      "name": "Fourteen old-hand edge pixels restored inside hands mask",
+      "pass": true
+    },
+    {
+      "name": "Transparent edit layer has 327 opaque cells and zero partial alpha",
+      "pass": true
+    },
+    {
+      "name": "Edit layer composites exactly to candidate",
+      "pass": true
+    },
+    {
+      "name": "Exact full-scene 4x approved",
+      "pass": true
+    },
+    {
+      "name": "Exact full-scene 4x candidate-v04",
+      "pass": true
+    },
+    {
+      "name": "Native pair consists of unchanged original and candidate",
+      "pass": true
+    },
+    {
+      "name": "Exact full-scene 4x pair",
+      "pass": true
+    },
+    {
+      "name": "Exact crop 4x face",
+      "pass": true
+    },
+    {
+      "name": "Exact crop 4x hands",
+      "pass": true
+    },
+    {
+      "name": "Exact crop 4x P1",
+      "pass": true
+    },
+    {
+      "name": "Exact crop 4x attendant",
+      "pass": true
+    },
+    {
+      "name": "Exact crop 4x receipt-clearance",
+      "pass": true
+    },
+    {
+      "name": "Exact crop 4x desk-contact",
+      "pass": true
+    },
+    {
+      "name": "All 831 earlier tracked files unchanged",
+      "pass": true
+    },
+    {
+      "name": "Generated unselected, no production path",
+      "pass": true
+    },
+    {
+      "name": "Actual colors reported without palette cap",
+      "pass": true
+    },
+    {
+      "name": "Native operation replay reproduces exact PNG hash",
+      "pass": true
+    },
+    {
+      "name": "HTML anchors unique",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions originals/approved-paper-emergency.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions candidate/CH3-B06-paper-emergency-local-v04.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions previews/paper-emergency-approved-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions previews/paper-emergency-candidate-v04-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/face-before-after-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/face-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/face-before-after-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/hands-before-after-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/hands-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/hands-before-after-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/P1-before-after-native.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/P1-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/P1-before-after-8x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/attendant-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions references/attendant-alarmed.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/P1-declared-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/P1-effective-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/P1-declared-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/face-declared-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/face-effective-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/face-declared-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/hands-declared-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/hands-effective-mask.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions masks/hands-declared-overlay-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions assessment/actual-changes-locator-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/P2-kept-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions assessment/receipt-continuity-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/receipt-clearance-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions comparisons/desk-contact-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions assessment/unchanged-geometry-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "HTML image exact dimensions assessment/protected-detail-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Anchor #comparison",
+      "pass": true
+    },
+    {
+      "name": "Anchor #details",
+      "pass": true
+    },
+    {
+      "name": "Anchor #masks",
+      "pass": true
+    },
+    {
+      "name": "Anchor #continuity",
+      "pass": true
+    },
+    {
+      "name": "Anchor #qa",
+      "pass": true
+    },
+    {
+      "name": "Artifact link README.md",
+      "pass": true
+    },
+    {
+      "name": "Artifact link comparisons/approved-left-candidate-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link comparisons/approved-left-candidate-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link candidate/CH3-B06-paper-emergency-local-v04.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/changed-pixels.csv",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/changed-pixels.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/repair-plan.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/pre-edit-declaration.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/exact-native-edit-layer.png",
+      "pass": true
+    },
+    {
+      "name": "Artifact link repair.py",
+      "pass": true
+    },
+    {
+      "name": "Artifact link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "Artifact link sources/preservation-baseline.json",
+      "pass": true
+    },
+    {
+      "name": "Portable HTML embeds every preview",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link index.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link standalone-gallery.html",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link manifest.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/approved-left-candidate-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/approved-left-candidate-right-native.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/approved-left-candidate-right-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link candidate/CH3-B06-paper-emergency-local-v04.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link previews/paper-emergency-candidate-v04-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/attendant-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/face-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/hands-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/P1-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/P2-kept-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link sources/changed-pixels.csv",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link masks/P1-declared-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link masks/face-declared-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link masks/hands-declared-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link masks/effective-change-mask.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link sources/exact-native-edit-layer.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link sources/repair-plan.json",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link repair.py",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/receipt-clearance-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link comparisons/desk-contact-before-after-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link assessment/receipt-continuity-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link assessment/unchanged-geometry-guide-4x.png",
+      "pass": true
+    },
+    {
+      "name": "GitHub review artifact link references/attendant-alarmed.png",
+      "pass": true
+    }
+  ],
+  "checkCount": 292,
+  "changedPixels": 327,
+  "changedPixelsByRegion": {
+    "P1": 18,
+    "face": 37,
+    "hands": 272
+  },
+  "declaredMaskPixels": 334,
+  "outsideMaskChanges": 0,
+  "P2Changes": 0,
+  "passingReceiptChanges": 0,
+  "palmToReceiptChebyshevDistance": 1,
+  "priorTrackedFilesPreserved": 831,
+  "previousFilesChanged": [],
+  "geometryTransforms": 0,
+  "sourceAuthorshipLimitationRetained": true
+}

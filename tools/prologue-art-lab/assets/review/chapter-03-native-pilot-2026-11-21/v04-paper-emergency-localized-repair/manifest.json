@@ -1,0 +1,196 @@
+{
+  "schema": "out-of-order-paper-emergency-localized-repair-v04",
+  "version": "v04-paper-emergency-localized-repair",
+  "date": "2026-11-22",
+  "timezone": "America/New_York",
+  "reviewBranch": "art/ch3-native-pilot-20261121",
+  "startingReviewCommit": "f0c148d176fbe725df7a2425fab766bc2be37a29",
+  "canonicalMainVerified": "d9b6b91604b72115c5402253f00924665e957727",
+  "canonicalArtKey": "scenes:pavilion_reboot/paper_emergency",
+  "approvedSource": {
+    "file": "assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+    "sha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch02-20261119",
+      "commit": "7337e5e550e64a64357666a0fab6f118500913cd",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch02-2026-11-19/v03-localized-corrections/candidates/CH3-B06-paper-emergency-v03.png"
+    }
+  },
+  "status": "generated",
+  "selection": "unselected",
+  "approved": false,
+  "assetPath": null,
+  "candidate": {
+    "file": "candidate/CH3-B06-paper-emergency-local-v04.png",
+    "status": "generated",
+    "selection": "unselected",
+    "approved": false,
+    "assetPath": null,
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "alpha": "opaque",
+    "sourceSha256": "ac0f7c44d267dd54897507ae3b8b02959a5b76f4fcd9d0418b77b8fdb777ba7e",
+    "candidateSha256": "93a48082124600b1afeb45e5ea54856bf253e858e55111295e9d9c26919bc978",
+    "changedPixels": 327,
+    "changedPixelsByRegion": {
+      "P1": 18,
+      "face": 37,
+      "hands": 272
+    },
+    "unchangedPixels": 64357,
+    "changedPercent": 0.505534598973471,
+    "outsideDeclaredMaskChanges": 0,
+    "P2Changes": 0,
+    "passingReceiptChanges": 0,
+    "protectedGuardChanges": 0,
+    "originalUniqueRGB": 20305,
+    "candidateUniqueRGB": 20133,
+    "paletteTarget": null,
+    "noGlobalFilters": true,
+    "geometryTransforms": 0
+  },
+  "plan": "sources/repair-plan.json",
+  "preEditDeclaration": "sources/pre-edit-declaration.json",
+  "editLayer": "sources/exact-native-edit-layer.png",
+  "everyChangedPixel": "sources/changed-pixels.csv",
+  "declaredMasks": {
+    "P1": {
+      "file": "masks/P1-declared-mask.png",
+      "sha256": "6ecade805771c548cbc56c95bccb795ba9869928b689adba1bd639873780229b",
+      "pixels": 22
+    },
+    "face": {
+      "file": "masks/face-declared-mask.png",
+      "sha256": "43cde4d25fd59f7ba38444725712eb560e09bc1119f2d121ffa4b495922df7d7",
+      "pixels": 38
+    },
+    "hands": {
+      "file": "masks/hands-declared-mask.png",
+      "sha256": "651410a8fa1c736f90975a60b864a243ba1cb677ef2f2e502715f74a72626f4f",
+      "pixels": 274
+    }
+  },
+  "declaredUnion": {
+    "file": "masks/declared-repair-union.png",
+    "sha256": "9afc599cd99d22f5429a5fbb002130f412f3d40ba2b290aa88d5ee3f3c57f1f7",
+    "pixels": 334
+  },
+  "effectiveMask": "masks/effective-change-mask.png",
+  "protectedGuards": [
+    {
+      "name": "P2 right floor loop and fold",
+      "box": [
+        224,
+        169,
+        278,
+        199
+      ]
+    },
+    {
+      "name": "Restroom and two-person signs",
+      "box": [
+        0,
+        0,
+        202,
+        169
+      ]
+    },
+    {
+      "name": "Cream printer/feed unit",
+      "box": [
+        184,
+        130,
+        202,
+        148
+      ]
+    },
+    {
+      "name": "Gooseneck microphone",
+      "box": [
+        194,
+        122,
+        203,
+        140
+      ]
+    },
+    {
+      "name": "Plant including left leaf tips",
+      "box": [
+        242,
+        108,
+        273,
+        145
+      ]
+    },
+    {
+      "name": "Visible counter/desk top and fascia",
+      "box": [
+        199,
+        142,
+        270,
+        184
+      ]
+    },
+    {
+      "name": "Brush heads shafts and ceiling mounts",
+      "box": [
+        227,
+        24,
+        314,
+        111
+      ]
+    },
+    {
+      "name": "Hair outline and hairstyle",
+      "box": [
+        206,
+        97,
+        230,
+        104
+      ]
+    },
+    {
+      "name": "Glasses eyes and upper face",
+      "box": [
+        206,
+        103,
+        230,
+        112
+      ]
+    },
+    {
+      "name": "Name badge",
+      "box": [
+        226,
+        128,
+        232,
+        131
+      ]
+    }
+  ],
+  "decisions": {
+    "P1": "Moving strip passes in front of lower returning loop; one continuous receipt, no new branch",
+    "P2": "KEEP, zero changes",
+    "face": "Urgent open-mouth expression referenced to approved alarmed portrait; head/glasses/eyes/nose/hair unchanged",
+    "hands": "Raised stop palm below passing receipt and left of plant; opposite hand braces on original counter; no player or implied grab",
+    "perspective": "No correction; equipment and floor geometry remain unchanged"
+  },
+  "newlyRevealedCounterEdge": "Fourteen source pixels formerly occupied by the bottom fringe of the old clasped hands are restored from the adjacent original counter-edge color. Existing visible countertop/fascia is unchanged. This is inside the traced former-hand mask, not a desk redesign.",
+  "remainingLimits": [
+    "Counter-braced hand does not depict a literal button press; no new emergency control is invented. Pose/expression remain review choices. Inherited full-scene native-grid authorship remains unresolved.",
+    "P1 is a local depth cue, not an animated simulation of paper flow. Some paper depth elsewhere remains visually complex.",
+    "The changed hand pixels have cleaner clusters than some inherited soft shading; evaluate their stylistic fit at native and exact 4x size."
+  ],
+  "provenance": "No image generation or new detailed reference. All repairs are explicit native-coordinate operations using RGB values sampled from the approved original. Inherited full-scene native-grid authorship remains unresolved.",
+  "preservation": "All 831 preexisting tracked files must remain SHA-256 identical. New files only in this v04 directory.",
+  "stopPoint": "Nate final visual review; no registration, integration, merge or public Pages deployment."
+}

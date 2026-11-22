@@ -1,0 +1,265 @@
+{
+  "scope": "Paper Emergency v04 original/candidate local browser verification",
+  "browsers": [
+    {
+      "browser": "chromium",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "Candidate labeled generated/unselected",
+          "pass": true
+        },
+        {
+          "name": "Original and candidate native boxes remain 314x206",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes exactly 327 changed pixels",
+          "pass": true
+        },
+        {
+          "name": "Browser independently confirms zero outside-mask changes and 334 permitted pixels",
+          "pass": true
+        },
+        {
+          "name": "Browser fetches exact approved/candidate PNG hashes",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x panel",
+          "pass": true
+        },
+        {
+          "name": "Original/candidate full 4x previews retain 1256x824 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "4x pair scrolls without shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every displayed image decodes at declared export dimensions",
+          "pass": true
+        },
+        {
+          "name": "All local source mask comparison and QA links resolve",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes enlarged panels",
+          "pass": true
+        },
+        {
+          "name": "Mobile native previews retain logical 314x206 size",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes every preview",
+          "pass": true
+        },
+        {
+          "name": "No JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "decodedPixelProof": {
+        "changed": 327,
+        "outside": 0,
+        "white": 334
+      },
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-candidate-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-candidate-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "candidate/CH3-B06-paper-emergency-local-v04.png",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.csv",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.json",
+          "status": 200
+        },
+        {
+          "href": "sources/repair-plan.json",
+          "status": 200
+        },
+        {
+          "href": "sources/pre-edit-declaration.json",
+          "status": 200
+        },
+        {
+          "href": "sources/exact-native-edit-layer.png",
+          "status": 200
+        },
+        {
+          "href": "repair.py",
+          "status": 200
+        },
+        {
+          "href": "qa/pixel-and-preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "sources/preservation-baseline.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "browser": "firefox",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "Candidate labeled generated/unselected",
+          "pass": true
+        },
+        {
+          "name": "Original and candidate native boxes remain 314x206",
+          "pass": true
+        },
+        {
+          "name": "Browser independently decodes exactly 327 changed pixels",
+          "pass": true
+        },
+        {
+          "name": "Browser independently confirms zero outside-mask changes and 334 permitted pixels",
+          "pass": true
+        },
+        {
+          "name": "Browser fetches exact approved/candidate PNG hashes",
+          "pass": true
+        },
+        {
+          "name": "Expand opens every exact 4x panel",
+          "pass": true
+        },
+        {
+          "name": "Original/candidate full 4x previews retain 1256x824 CSS pixels",
+          "pass": true
+        },
+        {
+          "name": "4x pair scrolls without shrinking",
+          "pass": true
+        },
+        {
+          "name": "Every displayed image decodes at declared export dimensions",
+          "pass": true
+        },
+        {
+          "name": "All local source mask comparison and QA links resolve",
+          "pass": true
+        },
+        {
+          "name": "Collapse closes enlarged panels",
+          "pass": true
+        },
+        {
+          "name": "Mobile native previews retain logical 314x206 size",
+          "pass": true
+        },
+        {
+          "name": "Portable HTML embeds and decodes every preview",
+          "pass": true
+        },
+        {
+          "name": "No JavaScript exceptions",
+          "pass": true
+        }
+      ],
+      "decodedPixelProof": {
+        "changed": 327,
+        "outside": 0,
+        "white": 334
+      },
+      "links": [
+        {
+          "href": "README.md",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-candidate-right-native.png",
+          "status": 200
+        },
+        {
+          "href": "comparisons/approved-left-candidate-right-4x.png",
+          "status": 200
+        },
+        {
+          "href": "candidate/CH3-B06-paper-emergency-local-v04.png",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.csv",
+          "status": 200
+        },
+        {
+          "href": "sources/changed-pixels.json",
+          "status": 200
+        },
+        {
+          "href": "sources/repair-plan.json",
+          "status": 200
+        },
+        {
+          "href": "sources/pre-edit-declaration.json",
+          "status": 200
+        },
+        {
+          "href": "sources/exact-native-edit-layer.png",
+          "status": 200
+        },
+        {
+          "href": "repair.py",
+          "status": 200
+        },
+        {
+          "href": "qa/pixel-and-preservation.json",
+          "status": 200
+        },
+        {
+          "href": "qa/results.json",
+          "status": 200
+        },
+        {
+          "href": "qa/browser.json",
+          "status": 200
+        },
+        {
+          "href": "manifest.json",
+          "status": 200
+        },
+        {
+          "href": "sources/preservation-baseline.json",
+          "status": 200
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

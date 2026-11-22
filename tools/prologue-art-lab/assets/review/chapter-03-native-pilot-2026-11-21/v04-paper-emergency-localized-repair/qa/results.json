@@ -1,0 +1,37 @@
+{
+  "pixelAndPreservation": {
+    "status": "PASS",
+    "checks": 292,
+    "report": "pixel-and-preservation.json"
+  },
+  "canonical": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "canonical.txt"
+  },
+  "storyboardSmoke": {
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "smoke.txt"
+  },
+  "galleryBrowser": {
+    "status": "PASS",
+    "checks": 28,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "report": "browser.json"
+  },
+  "changedPixels": 327,
+  "outsideMaskChanges": 0,
+  "P2Changes": 0,
+  "clearanceNote": "A first QA assertion assumed two cells of distance from a conservative paper guard. The guard includes surrounding halo/background. The enforced invariant is zero overlap/zero protected-paper changes, with visual clearance review; actual guard distance is recorded. No art was changed to satisfy an arbitrary clearance threshold.",
+  "notRun": [
+    "Engine/runtime QA",
+    "Live public Pages deployment",
+    "Repeated selected-artwork browser regression; approved bytes and viewer code unchanged",
+    "Repeated sync self-tests; registry and sync code unchanged"
+  ],
+  "stopPoint": "Nate final visual review"
+}
