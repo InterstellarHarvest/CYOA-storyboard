@@ -1,0 +1,242 @@
+{
+  "review": "Chapter 4 v07 \u2014 scene NPC crispness correction",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "baseCommit": "314a1134c507a6670f05dd2228cc534e5299ca4e",
+  "policy": "../PRODUCTION-POLICY.md",
+  "sourceDerived": true,
+  "assets": [
+    {
+      "id": "CH4-04",
+      "title": "Restroom",
+      "status": "UNSELECTED",
+      "authorship": "HYBRID: preserved native background plus source-derived NPC art",
+      "native": {
+        "file": "native/CH4-04-restroom-v03.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06"
+      },
+      "preview4x": {
+        "file": "previews/CH4-04-candidate-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "e0eeea26007c4bc0af5fbf571849800f59a598161487b71e9aa05dc67e97e69f"
+      },
+      "previous": {
+        "file": "../v06/native/CH4-04-restroom-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "980fee9db9d49a5ccd3f3a8751a73b92668f54142b8d2d5d26f64b5ef7f60f7c"
+      },
+      "previous4x": {
+        "file": "previews/CH4-04-v06-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "44b898fc94b7b98b3f018dfd3d07399dc902cc09acbfe27790b4c930f43cbcc1"
+      },
+      "benchmark": {
+        "file": "../v06/references/approved-pavilion-courtesy_stage.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98"
+      },
+      "benchmark4x": {
+        "file": "../v06/references/approved-pavilion-courtesy_stage-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "6def59e44e77e174e99acf3d7d45c584784a0540f13e8cecc0d6c2fb543b9635"
+      },
+      "comparison": {
+        "file": "comparisons/CH4-04-v06-v07.png",
+        "dimensions": [
+          676,
+          254
+        ],
+        "mode": "RGB",
+        "sha256": "0087d27b0a0d3b97b79cccbfda366f926e3063377337a74741516ac57090471f"
+      },
+      "comparison4x": {
+        "file": "comparisons/CH4-04-v06-v07-4x.png",
+        "dimensions": [
+          2704,
+          1016
+        ],
+        "mode": "RGB",
+        "sha256": "2670b4df33a1d8f5e58615f185c17f2f09d11a8b7f30e25ae8670caec4800273"
+      },
+      "background": {
+        "file": "../v06/backgrounds/CH4-04-restroom-background-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "d32384e85e3453a3f576450e388f192e6de169534fe12320c4138397d9155db7"
+      }
+    },
+    {
+      "id": "CH4-05",
+      "title": "Ballroom",
+      "status": "UNSELECTED",
+      "authorship": "HYBRID: preserved native background plus source-derived NPC art",
+      "native": {
+        "file": "native/CH4-05-ballroom-v03.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c"
+      },
+      "preview4x": {
+        "file": "previews/CH4-05-candidate-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "54ff04952d8ef485c2dad0e7c8c257d5c4df12f3d6c3092620ddb6d9d202047f"
+      },
+      "previous": {
+        "file": "../v06/native/CH4-05-ballroom-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "630592c03dd5befde444725f6d439a1aeffde0db9dc42e8d2b4965ba434e984f"
+      },
+      "previous4x": {
+        "file": "previews/CH4-05-v06-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "ca5872cb662945471a96e62a07708b853606edf6cf366f8221edb8116dd8a7cb"
+      },
+      "benchmark": {
+        "file": "../v06/references/approved-pavilion-urgency_stage.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c"
+      },
+      "benchmark4x": {
+        "file": "../v06/references/approved-pavilion-urgency_stage-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "f2be114bbb3e5776964c0b15aeae29d4da0559731fc83f535e515466eaea2f88"
+      },
+      "comparison": {
+        "file": "comparisons/CH4-05-v06-v07.png",
+        "dimensions": [
+          676,
+          254
+        ],
+        "mode": "RGB",
+        "sha256": "181050ff9ce58bfe4f52a14887e4de12bfe462e507a7f75b2a4beec8b39d8fcb"
+      },
+      "comparison4x": {
+        "file": "comparisons/CH4-05-v06-v07-4x.png",
+        "dimensions": [
+          2704,
+          1016
+        ],
+        "mode": "RGB",
+        "sha256": "33c9f97fe3b5abdcb629aec89ddd9d4382e2ae7fc26ea3b67dc5eca057fbf564"
+      },
+      "background": {
+        "file": "../v06/backgrounds/CH4-05-ballroom-background-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "cc8c34e0d22e296f916264255d232c32c52908bf0d4d215c181fadedf4d0a14f"
+      }
+    }
+  ],
+  "npcDerivation": "evidence/npc-derivation.json",
+  "npcComparison": {
+    "file": "comparisons/NPC-v06-v07-approved.png",
+    "dimensions": [
+      456,
+      372
+    ],
+    "mode": "RGB",
+    "sha256": "a7cc0bbbb24a9db0666c7121615c1061b4973f5b635696b12fab665f22a270b1"
+  },
+  "npcComparison4x": {
+    "file": "comparisons/NPC-v06-v07-approved-4x.png",
+    "dimensions": [
+      1824,
+      1488
+    ],
+    "mode": "RGB",
+    "sha256": "4fab14a97aa95001076e789c5bbb25d6035554f7c29f86687c1ed849bbe5dead"
+  },
+  "preservedAuctioneer": {
+    "file": "../v06/native/CH4-03-auctioneer-source-derived-v06.png",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGBA",
+    "sha256": "4132c9e941a18c50d9fd9a2a2fed0c430c6c1beeed0d289599bd1761fca26a90"
+  },
+  "frozenLobby": {
+    "file": "../v05/native/CH4-01-lobby-v05.png",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0"
+  },
+  "frozenPortraitBackground": {
+    "file": "../v05/native/CH4-02-auctioneer-background-v05.png",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB",
+    "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f"
+  },
+  "sourcePrompts": [
+    "../v06/prompts/scene-plumbers-style.txt",
+    "../v06/prompts/scene-ballroom-people-style.txt",
+    "../v06/prompts/scene-porters-style.txt"
+  ],
+  "processingBrief": "prompts/NPC-native-cleanup-v07.txt",
+  "knownLimitations": [
+    "Native sprite sizes remain 25-60px wide and 46-74px tall; fourfold display does not add information.",
+    "Some one-pixel source texture is more visible after crisp sampling. Owner review must judge the balance of clarity and illustration quality.",
+    "No independent native authorship is claimed for the source-derived NPCs or hybrid complete scenes."
+  ],
+  "pillowVersion": "12.3.0"
+}

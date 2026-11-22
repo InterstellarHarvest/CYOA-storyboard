@@ -9,3 +9,5 @@ Freeze exact v05 CH4-01 lobby and CH4-02 background PNGs and hashes unless Nate 
 Work and publish completed reviews on `art/ch4-batch01-review-20261121`, preserving all prior versions and complete gallery/QA/provenance. Verify the remote SHA and every image, and return browser and direct PNG links. Do not modify main, production assets/workflows, narrative, gameplay or approval records.
 
 For main-scene people, use the actual approved Pavilion scene NPCs as the finish benchmark. Do not substitute faceless/flat code sprites. v06 uses source-derived illustrated people over native-authored backgrounds; preserve that distinction in manifests and QA and do not call the full hybrid frame independently native-authored.
+
+Inspect small NPC native pixels as well as exact4x exports: correct nearest-neighbor enlargement does not cure a soft reduction. Preserve face/hand information and useful clothing volume; see v07 for the recorded NPC-only correction and unchanged-background scope proof.

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "NPC pixels only; exact union of old/new alpha coverage",
+  "assets": [
+    {
+      "id": "CH4-04",
+      "changedPixels": 2718,
+      "changedPixelsOutsideNPCAlpha": 0,
+      "backgroundAndShadowPixelsOutsideNPCsUnchanged": true,
+      "mask": "evidence/CH4-04-npc-only-mask.png",
+      "delta": "evidence/CH4-04-changed-pixels.png"
+    },
+    {
+      "id": "CH4-05",
+      "changedPixels": 4334,
+      "changedPixelsOutsideNPCAlpha": 0,
+      "backgroundAndShadowPixelsOutsideNPCsUnchanged": true,
+      "mask": "evidence/CH4-05-npc-only-mask.png",
+      "delta": "evidence/CH4-05-changed-pixels.png"
+    }
+  ],
+  "auctioneerUnchanged": true,
+  "frozenV05EnvironmentsUnchanged": true
+}

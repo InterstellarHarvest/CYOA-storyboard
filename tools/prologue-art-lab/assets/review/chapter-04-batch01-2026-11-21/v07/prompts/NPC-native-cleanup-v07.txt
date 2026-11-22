@@ -1,0 +1,5 @@
+User correction: NPCs gained detail, but at 4x they blur.
+
+Preserve the six v06 source-derived NPC illustrations, exact source crops, scale, placement, poses, likeness, room backgrounds and shadows. Keep the auctioneer and frozen v05 environments unchanged. Do not generate new character designs or return to code-drawn figures.
+
+Compare reduction methods internally. Use the strongest readable result at native size and exact4x: preserve facial/hand source contrast through declared feature regions, preserve body/clothing volume, use crisp native silhouette coverage and correct only cutout contamination. No arbitrary palette cap or loss of useful face/hair/hand/clothing information. Document all source-derived operations and parameters reproducibly. Exact4x previews must repeat each final native pixel as a 4x4 block.

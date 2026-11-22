@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:61568/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "All candidate/history/approved/detail images decode; NPC-only scope explicit",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "NPC before/after sheet uses exact original and4x raster pixels",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-04 v06/v07/approved panels render native and exact4x",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-05 v06/v07/approved panels render native and exact4x",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile preserves native pixels with internal scrolling; no runtime/load errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "All candidate/history/approved/detail images decode; NPC-only scope explicit",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "NPC before/after sheet uses exact original and4x raster pixels",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-04 v06/v07/approved panels render native and exact4x",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-05 v06/v07/approved panels render native and exact4x",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile preserves native pixels with internal scrolling; no runtime/load errors",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "status": "UNSELECTED",
+  "method": "SOURCE-DERIVED NPC reduction and native-pixel cleanup",
+  "nativeAuthorshipClaim": false,
+  "pillowVersion": "12.3.0",
+  "sourceArtworkRegenerated": false,
+  "previousArtworkChanged": false,
+  "sourceCropSpriteSizePoseAndPlacementChanged": false,
+  "nativeSilhouetteCoverageChanged": true,
+  "backgroundsChanged": false,
+  "portraitChanged": false,
+  "reduction": {
+    "body": "Premultiplied-alpha Lanczos to 2x native size; nearest sample to native; native RGB unsharp radius0.5/110percent/threshold3",
+    "faceAndHands": "Declared native feature rectangles use 88percent nearest source sample +12percent premultiplied area color",
+    "alpha": "Native pixel coverage from area alpha >=150; opaque interior and clear exterior",
+    "fringeCleanup": "Saturated perimeter contamination uses stable area color",
+    "paletteLimit": null,
+    "finalPreview": "Exact4x nearest-neighbor of the FINAL native PNG; no interpolation"
+  },
+  "internalAlternativesCompared": [
+    "v06 area reduction",
+    "direct nearest sampling",
+    "box reduction",
+    "area reduction with stronger sharpening",
+    "2x prefilter and nearest",
+    "selected feature-aware native treatment"
+  ],
+  "layers": [
+    {
+      "id": "plumber",
+      "room": "restroom",
+      "status": "UNSELECTED",
+      "source": "../v06/detailed/NPC-plumbers-original.png",
+      "sourceSha256": "39bf9c4747bc1d51fd150d8a81cc3d92b852261056a0fa8a7a15d9df637b62ac",
+      "sourceCropAbsolute": [
+        142,
+        27,
+        865,
+        861
+      ],
+      "nativeSpriteSize": [
+        50,
+        58
+      ],
+      "position": [
+        30,
+        127
+      ],
+      "groundY": 185,
+      "featureRectangles": [
+        [
+          13,
+          5,
+          32,
+          20
+        ],
+        [
+          0,
+          1,
+          15,
+          24
+        ]
+      ],
+      "file": "npc/plumber-source-derived.png",
+      "sha256": "bc68828ac9b74306a4875caa58bbd2d8e0df68213f90be8c58cc10e3c01c9c31",
+      "previousFile": "../v06/npc/plumber-source-derived.png",
+      "previousSha256": "be8d60fdd344312eed78d3bc263d615d3f176bf0648bc517e11ce00efe8ca853",
+      "independentlyNativeAuthored": false
+    },
+    {
+      "id": "assistant",
+      "room": "restroom",
+      "status": "UNSELECTED",
+      "source": "../v06/detailed/NPC-plumbers-original.png",
+      "sourceSha256": "39bf9c4747bc1d51fd150d8a81cc3d92b852261056a0fa8a7a15d9df637b62ac",
+      "sourceCropAbsolute": [
+        1068,
+        167,
+        1659,
+        856
+      ],
+      "nativeSpriteSize": [
+        39,
+        46
+      ],
+      "position": [
+        90,
+        119
+      ],
+      "groundY": 165,
+      "featureRectangles": [
+        [
+          14,
+          5,
+          30,
+          20
+        ],
+        [
+          0,
+          10,
+          22,
+          29
+        ]
+      ],
+      "file": "npc/assistant-source-derived.png",
+      "sha256": "a6c087d8695d90b498bc22fba50649d8672aad49526a16401e53bb36b477fc5d",
+      "previousFile": "../v06/npc/assistant-source-derived.png",
+      "previousSha256": "a0a4c72b2efa82d8050b56628cfa05306190cd611e88193e58fa5dad3c58a52b",
+      "independentlyNativeAuthored": false
+    },
+    {
+      "id": "pianist",
+      "room": "ballroom",
+      "status": "UNSELECTED",
+      "source": "../v06/detailed/NPC-ballroom-people-original.png",
+      "sourceSha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+      "sourceCropAbsolute": [
+        114,
+        14,
+        567,
+        835
+      ],
+      "nativeSpriteSize": [
+        31,
+        57
+      ],
+      "position": [
+        54,
+        73
+      ],
+      "groundY": 130,
+      "featureRectangles": [
+        [
+          6,
+          0,
+          17,
+          13
+        ],
+        [
+          21,
+          10,
+          31,
+          21
+        ],
+        [
+          4,
+          23,
+          13,
+          32
+        ]
+      ],
+      "file": "npc/pianist-source-derived.png",
+      "sha256": "676b555c4677492dfd97fd634ca49f80487fd61df3a995cc607b2e72e18599c4",
+      "previousFile": "../v06/npc/pianist-source-derived.png",
+      "previousSha256": "b33dc6bf905e676d4eed0bac23d39b36809b816218991da7ef2d9bb3393eb288",
+      "independentlyNativeAuthored": false
+    },
+    {
+      "id": "musician",
+      "room": "ballroom",
+      "status": "UNSELECTED",
+      "source": "../v06/detailed/NPC-ballroom-people-original.png",
+      "sourceSha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+      "sourceCropAbsolute": [
+        715,
+        15,
+        1081,
+        833
+      ],
+      "nativeSpriteSize": [
+        25,
+        55
+      ],
+      "position": [
+        108,
+        75
+      ],
+      "groundY": 130,
+      "featureRectangles": [
+        [
+          10,
+          0,
+          25,
+          14
+        ],
+        [
+          0,
+          8,
+          8,
+          17
+        ],
+        [
+          19,
+          28,
+          25,
+          37
+        ]
+      ],
+      "file": "npc/musician-source-derived.png",
+      "sha256": "6fb8f2eb3909e3e97ebf3bbf975c86edfec484784e9f92086573ca4af3801fc1",
+      "previousFile": "../v06/npc/musician-source-derived.png",
+      "previousSha256": "2e056aa5fb531f008e39856adde4a5394fe23ec131f6fceffdea9a745d26e611",
+      "independentlyNativeAuthored": false
+    },
+    {
+      "id": "organizer",
+      "room": "ballroom",
+      "status": "UNSELECTED",
+      "source": "../v06/detailed/NPC-ballroom-people-original.png",
+      "sourceSha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+      "sourceCropAbsolute": [
+        1403,
+        23,
+        1694,
+        835
+      ],
+      "nativeSpriteSize": [
+        27,
+        74
+      ],
+      "position": [
+        200,
+        80
+      ],
+      "groundY": 154,
+      "featureRectangles": [
+        [
+          7,
+          0,
+          22,
+          18
+        ],
+        [
+          3,
+          27,
+          14,
+          38
+        ],
+        [
+          20,
+          25,
+          27,
+          35
+        ]
+      ],
+      "file": "npc/organizer-source-derived.png",
+      "sha256": "1abaeb32e555816add4fdcbae127a3dad2f6110dc8967d0ff1a6e232728e0dbd",
+      "previousFile": "../v06/npc/organizer-source-derived.png",
+      "previousSha256": "0344aa5df73361901fe993752b188dce369f26ba4e7c947b8a9063103ec3f993",
+      "independentlyNativeAuthored": false
+    },
+    {
+      "id": "porters-and-chair",
+      "room": "ballroom",
+      "status": "UNSELECTED",
+      "source": "../v06/detailed/NPC-porters-original.png",
+      "sourceSha256": "375348f808643ae25c48a7bd11645f45e667c57247f6098a7a50935196d2fae3",
+      "sourceCropAbsolute": [
+        29,
+        34,
+        1286,
+        1177
+      ],
+      "nativeSpriteSize": [
+        60,
+        55
+      ],
+      "position": [
+        244,
+        81
+      ],
+      "groundY": 136,
+      "featureRectangles": [
+        [
+          8,
+          0,
+          23,
+          14
+        ],
+        [
+          38,
+          0,
+          54,
+          14
+        ],
+        [
+          17,
+          26,
+          27,
+          37
+        ],
+        [
+          36,
+          25,
+          47,
+          37
+        ]
+      ],
+      "file": "npc/porters-and-chair-source-derived.png",
+      "sha256": "6647d5567d771a80a489cd2657b88f7348399470b846738ee6d28a45066544ed",
+      "previousFile": "../v06/npc/porters-and-chair-source-derived.png",
+      "previousSha256": "624a1fa64a1b3ace44f5dad56aee0e54ad0a5226c42c9e9dc844c0f2696b0a40",
+      "independentlyNativeAuthored": false
+    }
+  ]
+}
