@@ -1,0 +1,38 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "status": "UNSELECTED",
+  "intent": "Start over: new old man with gavel and suit in the approved NPC illustration style.",
+  "inputReferences": [
+    {
+      "file": "../v04/references/pavilion_attendant_idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "../v04/references/pavilion_presenter_idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    }
+  ],
+  "inputCount": 2,
+  "highDetailAuctioneerReferenceUsed": false,
+  "previousAuctioneerUsedAsInput": false,
+  "prompt": "prompts/approved-npcs-only.txt",
+  "originalFile": "generated/CH4-03-auctioneer-fresh-style-original.png",
+  "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-b6a156a1-5dc2-425c-ba75-3d4f6dbc1c89.png",
+  "sha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+  "requestedDimensions": [
+    564,
+    278
+  ],
+  "actualDimensions": [
+    1788,
+    880
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "nativeAuthorshipProven": false,
+  "productionReady": false,
+  "note": "Fresh visual style candidate. Preserve original bytes. Size-matched layout diagnostics are explicitly source-derived; they are not independently authored native assets."
+}

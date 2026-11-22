@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:49296/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/portrait-study-02/",
+  "newNativeCandidateExists": false,
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "All style/reference PNGs decode; two-reference restart, source-derived labels and environment freeze explicit",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "fresh uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "attendant uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "presenter uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "v05 uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "composite uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "original uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile scrolls inside art viewport without shrinking art or page overflow; no load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "All style/reference PNGs decode; two-reference restart, source-derived labels and environment freeze explicit",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "fresh uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "attendant uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "presenter uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "v05 uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "composite uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "original uses actual original pixels and exact4x; no CSS fit/downsample",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile scrolls inside art viewport without shrinking art or page overflow; no load/runtime errors",
+      "passed": true
+    }
+  ]
+}

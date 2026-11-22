@@ -1,6 +1,8 @@
 # Chapter 4 Batch 1 artwork review
 
-Latest portrait work: [reconstruction method study 01](portrait-study-01/index.html). The fresh built-in raster test is preserved at its returned **1785×881** resolution; it failed the requested 564×278 native-size gate. It is a source-sized method test, **not a completed v06 or a new native candidate**. No downsampled substitute was made. [The method assessment](portrait-study-01/METHOD-DECISION.md) documents the visual comparison and proposes direct layered native raster illustration before further portrait revisions. All artwork remains UNSELECTED.
+Latest character direction: [portrait study 02 — approved NPC style restart](portrait-study-02/index.html). A fresh old man with gavel and burgundy formalwear, generated using **only the approved Pavilion attendant and presenter**. No high-detail auctioneer drawing or previous auctioneer was a generation input. Original output and explicitly source-derived size-matched style diagnostics are preserved. **UNSELECTED; not a completed native production asset.** The v05 lobby/background remain frozen unchanged.
+
+Previous portrait work: [reconstruction method study 01](portrait-study-01/index.html). The fresh built-in raster test is preserved at its returned **1785×881** resolution; it failed the requested 564×278 native-size gate. It is a source-sized method test, **not a completed v06 or a new native candidate**. No downsampled substitute was made. [The method assessment](portrait-study-01/METHOD-DECISION.md) documents the visual comparison and proposes direct layered native raster illustration before further portrait revisions. All artwork remains UNSELECTED.
 
 **CH4-01 and CH4-02 are frozen at v05 for owner review.** Their exact native PNGs and hashes are preserved in [the freeze record](portrait-study-01/evidence/frozen-environments.json); no further edits or approval registration have occurred. All v01–v05 package files remain unchanged.
 

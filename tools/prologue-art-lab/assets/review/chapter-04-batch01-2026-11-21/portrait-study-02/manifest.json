@@ -1,0 +1,218 @@
+{
+  "id": "CH4-03",
+  "review": "Portrait study 02 \u2014 approved NPC style restart",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "baseCommit": "f5bea5cc033676865d45d20ca9c3ac9842f7585d",
+  "method": "Fresh built-in image generation with ONLY approved Pavilion attendant and presenter. No high-detail auctioneer reference or prior auctioneer image was an input. Code packages presentation only.",
+  "original": {
+    "file": "generated/CH4-03-auctioneer-fresh-style-original.png",
+    "sha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+    "dimensions": [
+      1788,
+      880
+    ],
+    "mode": "RGBA"
+  },
+  "originalExact4x": {
+    "file": "previews/generated-original-exact-4x.png",
+    "sha256": "dffac401ad39af1b0c8c5970e5ded500943b86a713d5d76f25c98b1007319bae",
+    "dimensions": [
+      7152,
+      3520
+    ],
+    "mode": "RGBA"
+  },
+  "layoutDiagnostic": {
+    "classification": "SOURCE-DERIVED; NOT A NATIVE RECONSTRUCTION",
+    "operation": "Nearest-neighbor resize for style/layout review only",
+    "image": {
+      "file": "diagnostics/CH4-03-layout-only-source-derived-564x278.png",
+      "sha256": "1b8f5e7e820c755731e536d309631903968d97eeb650c49261dc9bf3212738e8",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "nativeAuthorshipProven": false
+  },
+  "nativeCandidate": null,
+  "productionReady": false,
+  "inputReferences": [
+    {
+      "file": "../v04/references/pavilion_attendant_idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2"
+    },
+    {
+      "file": "../v04/references/pavilion_presenter_idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784"
+    }
+  ],
+  "prompt": "prompts/approved-npcs-only.txt",
+  "receipt": "evidence/generation-receipt.json",
+  "sourceNodeIds": [
+    "hotel_auctioneer_arrival",
+    "hotel_auction_reopen_53",
+    "hotel_auction_chair_lot31",
+    "hotel_lot61_pod_auction",
+    "hotel_auctioneer_restroom_inventory",
+    "hotel_auctioneer_lot14_dispute"
+  ],
+  "canonicalRequirements": "../v02/evidence/canonical-requirements.json",
+  "comparisonAssets": [
+    {
+      "id": "fresh",
+      "title": "Fresh auctioneer",
+      "classification": "SOURCE-DERIVED LAYOUT ONLY",
+      "one": {
+        "file": "diagnostics/CH4-03-layout-only-source-derived-564x278.png",
+        "sha256": "1b8f5e7e820c755731e536d309631903968d97eeb650c49261dc9bf3212738e8",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "exact4x": {
+        "file": "previews/fresh-layout-exact-4x.png",
+        "sha256": "1e289ad3633a1595e847018f4d164e4a20858d290952516d1ef0d45510430c1c",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "id": "attendant",
+      "title": "Approved Pavilion attendant",
+      "classification": "APPROVED REFERENCE - NATIVE",
+      "one": {
+        "file": "../v04/references/pavilion_attendant_idle.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "exact4x": {
+        "file": "previews/attendant-exact-4x.png",
+        "sha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "id": "presenter",
+      "title": "Approved Pavilion presenter",
+      "classification": "APPROVED REFERENCE - NATIVE",
+      "one": {
+        "file": "../v04/references/pavilion_presenter_idle.png",
+        "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "exact4x": {
+        "file": "previews/presenter-exact-4x.png",
+        "sha256": "7e011fa7021ff78aed6d2435cea79e51bf4ed9deeb0595fe6cdae27b9713dbe8",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "id": "v05",
+      "title": "Preserved v05 auctioneer",
+      "classification": "UNSELECTED - EARLIER NATIVE",
+      "one": {
+        "file": "../v05/native/CH4-03-auctioneer-showman-v05.png",
+        "sha256": "525d0ae1b0ee363427454f9da0e712308ea037efc684dfdcb4d636526449f30b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "exact4x": {
+        "file": "previews/v05-exact-4x.png",
+        "sha256": "5a184d55a7b9d3c440525f42d2b1bc0dac10f58aac7d2699eecfaef0f384a79b",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      }
+    }
+  ],
+  "compositeLayoutDiagnostic": {
+    "file": "diagnostics/CH4-03-over-frozen-v05-layout-only.png",
+    "sha256": "c5690d4e8741968cd7800240b65ee0824529bb064a72854d0ce89881c575078b",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGBA"
+  },
+  "compositeExact4x": {
+    "file": "previews/composite-layout-exact-4x.png",
+    "sha256": "e0f66efadf25f1a9c816ec42518605f5461e70f1dadc6c3ec1552e0db655cd31",
+    "dimensions": [
+      2256,
+      1112
+    ],
+    "mode": "RGBA"
+  },
+  "comparisonSheets": [
+    {
+      "file": "comparisons/fresh-style-vs-approved-and-v05.png",
+      "sha256": "354780f942f07a2935e1abc11c8d4ad1fc070fc219ca123eb1df13fcf33c874d",
+      "dimensions": [
+        1176,
+        752
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "comparisons/fresh-style-vs-approved-and-v05-exact-4x.png",
+      "sha256": "23deecc3a7a2083837c16a15b5238297b9c7a2edddbb5558b5aadc640492010d",
+      "dimensions": [
+        4704,
+        3008
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "frozenEnvironments": {
+    "status": "UNSELECTED",
+    "ownerReviewCandidates": true,
+    "freeze": "Preserve exact v05 PNGs; no edits or approval registration.",
+    "files": [
+      {
+        "file": "v05/native/CH4-01-lobby-v05.png",
+        "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0"
+      },
+      {
+        "file": "v05/native/CH4-02-auctioneer-background-v05.png",
+        "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f"
+      }
+    ]
+  },
+  "pillowVersion": "12.3.0",
+  "knownLimitations": [
+    "Original returned 1788x880 instead of requested 564x278. Independent native-grid production remains unresolved.",
+    "Layout image and composite use resized source pixels and are diagnostic only.",
+    "The face has a slight head tilt while face/torso look toward the viewer.",
+    "Style similarity and selection are for Nate to judge; no approval is claimed.",
+    "Generative call is stochastic; preserved-master presentation exports are reproducible."
+  ]
+}
