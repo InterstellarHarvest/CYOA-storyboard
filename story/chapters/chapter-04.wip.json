@@ -4,8 +4,8 @@
   "scene": "grand_bellevue/arrival",
   "development": {
     "status": "working-draft",
-    "reviewCheckpoint": "2026-11-21: owner-approved bridal organizer and smart door, Focus A gown AutoFit with +1 manual-slack inspection, hidden d6 fourth fatal MADE TO MEASURE, provisional bride fee, three-seashell restroom with appeal and nonfatal park departure. Wedding/organizer and bride-staff connector stops replaced; ring inscription inspection wired. Remaining unrelated WIPs still require owner review.",
-    "approval": "Approved Chapter 4 restroom quest routes through Lot 31, Collection Stairs, Staff Lavatory, boiler danger, concise Boiler Three A–C choices, and the service-yard nonfatal exit to the Chapter 5 park. Elaborate wedding-reunion subtree explicitly retired. Bridal dressing-room/organizer and other editorial stops remain to be drafted. Bridal privacy and seashell arcs owner-approved and now published. Four fatal endings total; do not treat other editorial review stops as game endings.",
+    "reviewCheckpoint": "2026-11-21: owner-requested wedding-minimization pass. Remaining wedding involvement is superficial: venue decor, staff misidentifications, auction/reception bystanders, optional ring as access credential, organizer unlocking a restroom route. No family/wedding tasks or explanatory visits. Reframed flood/shutoff review stops around toilets and park departures. Seven editorial stops remain.",
+    "approval": "Approved Chapter 4 restroom routes through Lot 31, Collection Stairs, staff lavatory, boiler pressure and groom directions, bridal privacy/AutoFit, and the three-seashell room. Four fatal endings and three parkward nonfatal exits are authored; seven unrelated editorial review stops remain. Wedding help, groom reunions, and ceremony errands are explicitly retired.",
     "notForGameplay": true,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
@@ -75,7 +75,7 @@
     },
     "bladderFirstRevision": {
       "status": "owner-directed",
-      "note": "Nate superseded earlier wedding-help approvals: no groom escort or wedding reunion. Boiler Three is a brief source of lavatory directions and optional ring gag. The service yard permits a nonfatal park-bound exit. Preserve only wedding interactions supporting restroom access, inventory puzzles, fatal hazards, or relevant connections."
+      "note": "Nate reaffirmed: the wedding is background scenery only. No groom-search tasks, bride reunions, organizing the ceremony, explaining hotel problems to the family, rescuing cake, or helping auction logistics. Retain only toilet search, checks, optional item access, incidental jokes, and nonfatal park exits."
     },
     "approvedBridalPrivacy": {
       "status": "owner-approved",
@@ -247,7 +247,7 @@
     "entry_door_reverse_end": {
       "mode": "narrative",
       "scene": "grand_bellevue/wedding_entry",
-      "text": "The ridiculous ribbon remains pinned to your coat. FASTEST SATISFIED VISITOR.\n\nYou have never felt less satisfied.\n\nAs you approach the neighboring hotel, a woman carrying several flower arrangements stops directly in front of you. She reads the ribbon. Her eyes brighten.\n\nShe mistakes you for the fast helper she needs and takes your arm. The groom has disappeared, the musicians are arguing, and somebody has taken the chairs.\n\nYou attempt to explain that you are not employed by the hotel. She is already guiding you through a side entrance.\n\nA moment later, you find yourself standing in the middle of an elaborate wedding reception. You glance back toward the lobby. The restroom sign is still visible.\n\nUnfortunately, the woman has noticed you looking away.",
+      "text": "The ridiculous ribbon remains pinned to your coat: FASTEST SATISFIED VISITOR. You have never felt less satisfied.\n\nAt the Grand Bellevue, a woman carrying flowers mistakes the ribbon for a staff credential and ushers you through the side entrance. You point toward a restroom sign. She says there is a private lavatory upstairs and hurries you into the reception hall before you can object.",
       "choices": [
         {
           "id": "continue_from_reverse",
@@ -390,8 +390,14 @@
         {
           "id": "service_s3_lift",
           "kind": "action",
-          "text": "TAKE THE FREIGHT ELEVATOR UP TO THE BALLROOM.",
+          "text": "TAKE THE FREIGHT ELEVATOR UP TO SEARCH FOR A RESTROOM.",
           "to": "wip_freight_lift"
+        },
+        {
+          "id": "service_yard_leave_park",
+          "kind": "action",
+          "text": "LEAVE THE HOTEL BY THE SIDE GATE AND HEAD FOR THE PARK.",
+          "to": "hotel_service_park_exit"
         }
       ]
     },
@@ -568,13 +574,13 @@
     "wip_auctioneer_question": {
       "mode": "narrative",
       "scene": "grand_bellevue/lobby",
-      "text": "DRAFT REVIEW STOP — A2 auctioneer conversation and auction incidents not yet written. This is not a gameplay ending.",
+      "text": "DRAFT REVIEW STOP — Briefly question the auctioneer about the remaining usable restrooms and the latest fixture sale. No wedding-family negotiation or ceremony duties.",
       "choices": []
     },
     "wip_freight_lift": {
       "mode": "narrative",
       "scene": "grand_bellevue/freight_lift",
-      "text": "DRAFT REVIEW STOP — S3 freight lift route not yet written. This is not a gameplay ending.",
+      "text": "DRAFT REVIEW STOP — Freight lift rises from the service dock. Develop a restroom-focused upper-floor arrival or a viable exit, without diverting into wedding logistics.",
       "choices": []
     },
     "hotel_valve_braced": {
@@ -599,7 +605,7 @@
     "hotel_valve_flood": {
       "mode": "narrative",
       "scene": "grand_bellevue/restroom",
-      "text": "For a moment there is nothing but water.\n\nThen Eddie floats past on an overturned basket of clean towels, looking astonished by the speed at which his employment has deteriorated.\n\nThe plumber catches a sink with one hand. The other points toward a small service panel hanging open behind you. He shouts for you to get through it.\n\nWater pours beneath the missing restroom doors and races down the hotel corridor. Somewhere beyond it, a woman screams about her wedding dress. The water seems to be winning.",
+      "text": "For a moment there is nothing but water.\n\nThen Eddie floats past on an overturned basket of clean towels, looking astonished by the speed at which his employment has deteriorated.\n\nThe plumber catches a sink with one hand. The other points toward a small service panel hanging open behind you. He shouts for you to get through it.\n\nWater pours beneath the missing restroom doors and races down the hotel corridor. The water surges toward the public corridor. The water seems to be winning.",
       "choices": [
         {
           "id": "flood_service_escape",
@@ -610,8 +616,8 @@
         {
           "id": "flood_follow_downstairs",
           "kind": "action",
-          "text": "FOLLOW THE FLOOD INTO THE WEDDING CORRIDOR.",
-          "to": "wip_ballroom_flood"
+          "text": "ESCAPE INTO THE CORRIDOR AHEAD OF THE FLOOD.",
+          "to": "wip_flooded_hotel_corridor"
         }
       ]
     },
@@ -623,7 +629,7 @@
         {
           "id": "pipe_talk_groom",
           "kind": "action",
-          "text": "ASK THE MAN IN WEDDING CLOTHES WHAT HE IS HIDING FROM.",
+          "text": "ASK THE MAN IN THE WEDDING SUIT WHERE A TOILET IS.",
           "to": "hotel_boiler_groom_encounter"
         },
         {
@@ -689,13 +695,13 @@
     "hotel_isolator_entire": {
       "mode": "narrative",
       "scene": "grand_bellevue/maintenance",
-      "text": "You heave the MAIN lever downward. Every water pipe in the building gives a long, theatrical sigh. The flood behind you stops.\n\nAn instant later, somewhere in the ballroom, a fountain sputters to a halt. There is a collective gasp, followed by a loud voice announcing that the champagne is not included in the plumbing contract.\n\nYou have rescued the restroom at the expense of every tap in the Grand Bellevue. On the bright side, nobody can accuse you of doing things by halves.\n\nThe groom, if he is still hiding nearby, makes no attempt to congratulate you.",
+      "text": "You pull down the MAIN lever. Every pipe in the Grand Bellevue gives a theatrical sigh. The flood stops. Somewhere beyond the wall, a fountain sputters out, and a guest complains about the champagne service.\n\nYou have stopped the leak by shutting off every tap in the building. That probably includes the toilets.",
       "choices": [
         {
           "id": "hotel_water_ballroom",
           "kind": "action",
-          "text": "HEAD TOWARD THE WEDDING TO EXPLAIN THE WATER SHUTOFF.",
-          "to": "wip_ballroom_water_off"
+          "text": "FOLLOW THE DRY PIPES TO CHECK WHETHER ANY RESTROOM STILL WORKS.",
+          "to": "wip_hotel_water_off"
         },
         {
           "id": "hotel_water_dock",
@@ -1072,7 +1078,7 @@
         {
           "id": "auction_ask_bride",
           "kind": "spoken",
-          "text": "MISS, CAN'T YOU MAKE YOUR FATHER STOP SELLING EVERYTHING?",
+          "text": "MISS, CAN YOU STOP HIM FROM SELLING THE RESTROOM?",
           "to": "hotel_auction_bride_ally"
         },
         {
@@ -1661,7 +1667,7 @@
     "wip_stall_wedding_walk": {
       "mode": "narrative",
       "scene": "grand_bellevue/wedding_corridor",
-      "text": "DRAFT REVIEW STOP — Unwritten result of walking past the wedding guests with dignity. This is not a gameplay ending.",
+      "text": "DRAFT REVIEW STOP — Walk past the reception guests with dignity and find the next restroom or hotel exit. No participation in the ceremony; guests are background reactions only.",
       "choices": []
     },
     "hotel_chair_follow_collection": {
@@ -1758,32 +1764,30 @@
       "pose": "hopeful",
       "text": [
         {
-          "desc": "You approach the bride and open your hand. The silver ring rests in your palm, with a bit of pale blue ribbon still caught around it."
-        },
-        "Oh! That's the ring! That's the one he was supposed to bring!",
-        {
-          "desc": "Her relief lasts about a second."
-        },
-        "Where did you find it?",
-        {
-          "desc": "You point toward Lot Thirty-One."
-        },
-        "Of course. That miserable chair.",
-        {
-          "say": "Ah! A charming matching accessory! Shall we start at—",
-          "who": "hotel_auctioneer"
-        },
-        "Papa. No.",
-        {
-          "say": "Withdrawn! Entirely withdrawn!",
-          "who": "hotel_auctioneer"
+          "desc": "You show the bride the ring, a length of pale blue ribbon still caught around it."
         },
         {
-          "desc": "The bride looks back at you. She doesn't take the ring yet."
-        },
-        {
-          "say": "Can I help you?",
+          "say": "The ring! That was on the chair?",
           "who": "hotel_bride"
+        },
+        {
+          "say": "YES. LOT THIRTY-ONE.",
+          "who": "visitor"
+        },
+        {
+          "say": "Of course. That miserable chair.",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "An unlisted accessory! Shall I open bidding?",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "Papa. No.",
+          "who": "hotel_bride"
+        },
+        {
+          "desc": "She looks back at you, waiting. You still need a toilet."
         }
       ],
       "choices": [
@@ -1821,33 +1825,30 @@
       },
       "text": [
         {
-          "desc": "You hold out the ring. The bride cups her hand beneath yours. The ring and its pale blue ribbon fall into her palm."
+          "desc": "You place the silver ring and its pale blue ribbon in the bride’s hand."
         },
-        "Oh.",
         {
-          "desc": "She turns it over."
+          "say": "Oh! Thank you. Truly.",
+          "who": "hotel_bride"
         },
-        "Thank you. Truly.",
         {
-          "say": "A splendid private transaction! Shall we enter it as Lot Thirty-One A?",
-          "who": "hotel_auctioneer"
-        },
-        "Papa, it isn't an auction lot!",
-        {
-          "say": "Then a complimentary return! Excellent service!",
+          "say": "A splendid private transaction! Shall we list it as—",
           "who": "hotel_auctioneer"
         },
         {
-          "desc": "She closes her fingers around the ring."
-        },
-        "You've brought back the one thing here I actually wanted.",
-        {
-          "desc": "A pause."
+          "say": "Papa. No.",
+          "who": "hotel_bride"
         },
         {
-          "desc": "She glances toward the service passage."
+          "desc": "She turns back to you."
         },
-        "Listen. If you need to get through the staff corridors, tell the porters you're helping me. They should let you pass."
+        {
+          "say": "If you need the staff passage, tell the porters you’re helping me. They should let you through.",
+          "who": "hotel_bride"
+        },
+        {
+          "desc": "You thank her and turn toward the corridor. Perhaps the staff have a working toilet."
+        }
       ],
       "choices": [
         {
@@ -1857,7 +1858,7 @@
           "to": "hotel_bride_service_shortcut"
         }
       ],
-      "notes": "Bride thanks player, grants staff corridor access, and points to a bathroom-related shortcut. No groom-search errands."
+      "notes": "Optional, quick ring transfer for staff-corridor permission; no family/wedding reunion request. Item and existing approved ally/access flags unchanged."
     },
     "hotel_bride_ring_bathroom": {
       "mode": "dialogue",
@@ -1872,37 +1873,25 @@
       },
       "text": [
         {
-          "desc": "The bride looks closely at you."
+          "say": "I STILL NEED A BATHROOM. CAN YOU HELP ME?",
+          "who": "visitor"
         },
-        "Oh! You're the gentleman they left standing beside the toilet!",
         {
-          "say": "The stall, miss. We removed the stall.",
-          "who": "hotel_porter"
+          "say": "There’s a private lavatory off the bridal dressing room upstairs. The organizer has the key.",
+          "who": "hotel_bride"
         },
-        "Yes, thank you.",
         {
-          "desc": "She considers this."
+          "say": "WHERE IS SHE?",
+          "who": "visitor"
         },
-        "There is a private lavatory off the bridal dressing room upstairs. The wedding organizer has the key.",
-        "She's in the ballroom. Probably arguing with the musicians.",
         {
-          "say": "Magnificent acoustics in that room! Lot—",
-          "who": "hotel_auctioneer"
+          "say": "Left past the ballroom, by the white flowers.",
+          "who": "hotel_bride"
         },
-        "Papa.",
         {
-          "say": "I hadn't said a number!",
-          "who": "hotel_auctioneer"
-        },
-        "And you won't.",
-        {
-          "desc": "She points toward the public staircase."
-        },
-        "Upstairs, left at the flowers. Find the organizer and tell her what happened.",
-        {
-          "desc": "She lowers her voice."
-        },
-        "And please don't let my father find out there's another bathroom."
+          "say": "And please don’t tell my father there’s another bathroom.",
+          "who": "hotel_bride"
+        }
       ],
       "choices": [
         {
@@ -1916,12 +1905,12 @@
     "hotel_collection_stairs": {
       "mode": "narrative",
       "scene": "grand_bellevue/service_passage",
-      "text": "You reach the collection stairs.\n\nThe auctioneer's voice still carries through the ventilation grilles.\n\nTwo porters struggle to free Lot Thirty-One from a narrow doorway.\n\nBeneath the trolley wheel lies a crushed white boutonnière and a delivery slip.\n\nLOT 31 — BRIDAL SUITE CHAIR\n\nATTACHED GENTLEMAN — NOT INCLUDED\n\nNOT INCLUDED has been underlined three times.\n\nBeyond the chair, a door reads:\n\nBOILER ACCESS — AUTHORIZED PERSONNEL ONLY\n\nSomething scrapes behind it.\n\nA man coughs, then abruptly goes quiet.\n\nYou may have found the groom.\n\nYou also spot a sign pointing toward the staff lavatory.\n\nA bright red SOLD sticker covers the arrow.\n\nNaturally.",
+      "text": "You reach the collection stairs.\n\nThe auctioneer's voice still carries through the ventilation grilles.\n\nTwo porters struggle to free Lot Thirty-One from a narrow doorway.\n\nBeneath the trolley wheel lies a crushed white boutonnière and a delivery slip.\n\nLOT 31 — BRIDAL SUITE CHAIR\n\nATTACHED GENTLEMAN — NOT INCLUDED\n\nNOT INCLUDED has been underlined three times.\n\nBeyond the chair, a door reads:\n\nBOILER ACCESS — AUTHORIZED PERSONNEL ONLY\n\nSomething scrapes behind it.\n\nA man coughs, then abruptly goes quiet.\n\nThere may be someone inside who knows whether the engineers’ lavatory is open.\n\nYou also spot a sign pointing toward the staff lavatory.\n\nA bright red SOLD sticker covers the arrow.\n\nNaturally.",
       "choices": [
         {
           "id": "collection_ask_porters_groom",
           "kind": "spoken",
-          "text": "EXCUSE ME. WHAT HAPPENED TO THE GENTLEMAN WHO CAME WITH THAT CHAIR?",
+          "text": "ASK WHETHER THE BOILER PASSAGE LEADS TO A WORKING TOILET.",
           "to": "hotel_collection_porters_groom_clue"
         },
         {
@@ -2128,7 +2117,7 @@
     "hotel_collection_ring_in_pocket": {
       "mode": "narrative",
       "scene": "grand_bellevue/service_passage",
-      "text": "The silver ring is safely in your pocket. The porters return to their chair and the collection paperwork.\n\nYou can retrace the corridor to the bride, continue toward the boiler room where somebody coughed, or try the staff lavatory.\n\nThe ring can wait. Your bladder would prefer otherwise.",
+      "text": "The wedding ring is in your pocket. The porters return to their paperwork. You can hand the ring to the bride for staff-passage permission, inspect it, check the engineers’ lavatory beyond Boiler Three, or try the staff lavatory. Your bladder favors the last two.",
       "choices": [
         {
           "id": "collection_ring_go_bride",
@@ -2148,7 +2137,7 @@
         {
           "id": "collection_ring_go_boilers",
           "kind": "action",
-          "text": "FOLLOW THE CLUE TOWARD BOILER THREE.",
+          "text": "CHECK THE ENGINEERS’ LAVATORY BEYOND THE BOILERS.",
           "to": "hotel_boiler_pressure_intro"
         },
         {
@@ -2179,50 +2168,32 @@
       "pose": "practical",
       "effects": {
         "set": {
-          "ch4_groom_trail_confirmed": true
+          "ch4_boiler_lavatory_location_confirmed": true
         }
       },
       "text": [
         {
-          "desc": "The porter looks at you, then consults his delivery slip."
-        },
-        "Ah. The gentleman. Yes. There was a little misunderstanding.",
-        {
-          "say": "We had him listed under accessories.",
-          "who": "hotel_second_porter"
-        },
-        "Until the auction clerk informed us that the groom wasn't included in the sale.",
-        {
-          "say": "He was very relieved.",
-          "who": "hotel_second_porter"
+          "desc": "You point toward the BOILER ACCESS door beyond the chair."
         },
         {
-          "desc": "The porter points toward the boiler-access door."
-        },
-        "He went through there when he heard his future father-in-law calling.",
-        {
-          "desc": "A metallic clang comes from behind the door. Both porters look toward it."
+          "say": "IS THERE AN ENGINEERS’ TOILET THROUGH THERE?",
+          "who": "visitor"
         },
         {
-          "say": "He's been doing that for ten minutes.",
-          "who": "hotel_second_porter"
-        },
-        "Every time the auctioneer shouts SOLD, he knocks something over.",
-        {
-          "desc": "The porter returns his attention to the chair."
-        },
-        "If you find him, please tell him he can't have the chair back. It's already been purchased.",
-        {
-          "desc": "The second porter leans toward you."
+          "say": "Yes. Closed for pressure testing.",
+          "who": "hotel_porter"
         },
         {
-          "say": "And tell him we're sorry about the crate.",
-          "who": "hotel_second_porter"
+          "say": "ANY OTHER WAY IN?",
+          "who": "visitor"
         },
         {
-          "desc": "The first porter gives him a warning look."
+          "say": "You can ask the engineer. I wouldn’t touch the wheel.",
+          "who": "hotel_porter"
         },
-        "We agreed not to mention the crate."
+        {
+          "desc": "He returns to his manifest. You approach the boiler passage."
+        }
       ],
       "choices": [
         {
@@ -2402,11 +2373,6 @@
           "desc": "The porter steps aside and returns your pass."
         },
         "Very good. Authorized maintenance inspection.",
-        "And if you happen to find a gentleman in wedding clothes back there, please tell him he isn't part of Lot Thirty-One.",
-        {
-          "say": "We've checked twice.",
-          "who": "hotel_second_porter"
-        },
         {
           "desc": "You enter the boiler passage. Apparently, you have been hired again."
         }
@@ -2434,33 +2400,22 @@
       },
       "text": [
         {
-          "desc": "You push open the staff lavatory door. There is a toilet. An actual toilet. Unfortunately, it is buried beneath approximately three hundred boxes of wedding favors."
+          "desc": "You open the staff lavatory. An actual toilet sits beneath a mountain of boxes marked WEDDING FAVORS."
         },
         {
-          "desc": "A young wedding assistant is balancing a stack of place cards on the cistern."
+          "desc": "An assistant is stacking place cards on the cistern."
         },
-        "Oh! You're not here for the favors, are you?",
+        "Oh! Are you here for the favors?",
         {
-          "desc": "You point toward the toilet."
+          "say": "NO. THE TOILET.",
+          "who": "visitor"
         },
-        "Oh. That.",
+        "The room was sold to us as overflow storage. The auctioneer called it a convenience facility.",
         {
-          "desc": "She looks embarrassed."
+          "desc": "You look at the boxes. They are very convenient for someone else."
         },
-        "The auctioneer sold us this room as additional wedding storage.",
-        {
-          "desc": "You look at the boxes."
-        },
-        "He called it a convenience facility. Apparently, he didn't specify whose convenience.",
-        {
-          "desc": "She adjusts a wobbling stack."
-        },
-        "There's another lavatory off the bridal dressing room upstairs. But the wedding organizer has the key.",
-        "She's in the ballroom. Last I heard, she was threatening the violinists.",
-        {
-          "desc": "The assistant places another box on the toilet."
-        },
-        "Please don't move anything. I've finally got them arranged by table number."
+        "There’s another lavatory off the bridal dressing room upstairs. The organizer has the key.",
+        "Please don’t disturb the boxes. They’re sorted by table number."
       ],
       "choices": [
         {
@@ -2478,7 +2433,7 @@
         {
           "id": "staff_lavatory_return_boilers",
           "kind": "action",
-          "text": "RETURN TO THE BOILER-ACCESS DOOR AND CONTINUE SEARCHING FOR THE GROOM.",
+          "text": "LEAVE THE BOXES AND CHECK THE ENGINEERS’ LAVATORY.",
           "to": "hotel_boiler_pressure_intro"
         }
       ]
@@ -2541,7 +2496,7 @@
         {
           "id": "lot58_return_boilers",
           "kind": "action",
-          "text": "RETURN TO THE BOILER ROOM AND CONTINUE SEARCHING FOR THE GROOM.",
+          "text": "RETURN TO THE BOILER ROOM AND TRY ANOTHER TOILET.",
           "to": "hotel_boiler_pressure_intro"
         }
       ]
@@ -3044,7 +2999,7 @@
         {
           "id": "lot61_decline_pod",
           "kind": "action",
-          "text": "DECLINE THE DEMONSTRATION AND CONTINUE SEARCHING FOR THE GROOM.",
+          "text": "DECLINE THE DEMONSTRATION AND SEARCH THE SERVICE CORRIDORS FOR A TOILET.",
           "to": "hotel_lot61_pod_declined"
         }
       ]
@@ -3148,18 +3103,6 @@
           "to": "hotel_boiler_pressure_intro"
         }
       ]
-    },
-    "wip_ballroom_flood": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/wedding_corridor",
-      "text": "DRAFT REVIEW STOP — Flood reaches the wedding corridor; the bride, cake, and guests react differently depending on water flags. This is not a gameplay ending.",
-      "choices": []
-    },
-    "wip_ballroom_water_off": {
-      "mode": "narrative",
-      "scene": "grand_bellevue/ballroom",
-      "text": "DRAFT REVIEW STOP — The entire hotel loses water during the wedding. This is not a gameplay ending.",
-      "choices": []
     },
     "wip_auctioneer_dispute": {
       "mode": "narrative",
@@ -4964,6 +4907,18 @@
         }
       ],
       "notes": "Return hub avoids repeating the entire door inspection or previously exhausted dialogue. Future UI should show exhausted and missing-item actions as disabled, with subtitles, not silently hide them."
+    },
+    "wip_flooded_hotel_corridor": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/service_passage",
+      "text": "DRAFT REVIEW STOP — Flood overtakes the adjacent public corridor. Develop bathroom access, safe escape, and park exit; guests and wedding decor are incidental. No rescue, cake, or ceremony job.",
+      "choices": []
+    },
+    "wip_hotel_water_off": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/service_passage",
+      "text": "DRAFT REVIEW STOP — With the main water valve closed, every toilet in the hotel may be unusable. Develop a short bathroom consequence and a service/park exit, not a wedding-shutoff explanation scene.",
+      "choices": []
     }
   }
 }

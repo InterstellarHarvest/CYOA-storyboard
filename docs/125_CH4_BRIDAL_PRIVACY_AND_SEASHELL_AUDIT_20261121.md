@@ -40,11 +40,17 @@ These seven nodes are still explicitly marked `DRAFT REVIEW STOP` and require on
 2. `wip_freight_lift` — service-side lift continuation.
 3. `wip_stall_crane_ride` — survive the raised stall into upper salvage.
 4. `wip_stall_wedding_walk` — wedding-corridor walk.
-5. `wip_ballroom_flood` — displaced water entering ballroom.
-6. `wip_ballroom_water_off` — whole-hotel water shutoff consequence.
+5. `wip_flooded_hotel_corridor` — displaced water entering the public corridor, with restroom/exit consequences only.
+6. `wip_hotel_water_off` — whole-hotel water shutoff, with restroom/exit consequences only.
 7. `wip_auctioneer_dispute` — Lot 14 safety-equipment auction challenge.
 
 **Suggested next review:** the stall-crane upper-salvage survival continuation, then the two flood branches; each should reconnect to existing restroom obstacles or a nonfatal park exit without dragging the player into wedding duties.
+
+## Subsequent owner directive — wedding is superficial only
+
+Nate requested an additional trim after bridal and seashell publication. Previously approved mechanical consequences, items, and bathroom routes remain. All surviving dialogue choices must prioritize finding a toilet, escaping a hazard, or leaving the hotel. Explicit groom-search tasks, wedding reunion, explaining hotel problems to the family, and ceremony logistics were removed or rewritten. Optional ring return to the bride remains because it grants useful staff-corridor permission. The organizer is only a keyholder to the private bathroom. Wedding guests, cake, flowers, and auctioneer family ties are incidental scenery and occasional punchlines.
+
+A direct parkward exit now appears at the loading-dock foreman, sharing the existing service-yard end node rather than creating an additional unique ending.
 
 ## Canonical source paths
 

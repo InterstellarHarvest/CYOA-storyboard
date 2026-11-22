@@ -3,7 +3,7 @@
   "chapters": {
     "chapter-04": {
       "positions": {},
-      "layoutRevision": 14,
+      "layoutRevision": 15,
       "timeline": {
         "note": "REVIEW-ONLY Chapter 4 WIP layout. Editorial stops are not gameplay endings. Published chapters remain untouched.",
         "incidents": [
@@ -49,7 +49,7 @@
               "fatal_stall_final_occupancy",
               "wip_stall_crane_ride",
               "wip_stall_wedding_walk",
-              "wip_ballroom_flood"
+              "wip_flooded_hotel_corridor"
             ]
           },
           {
@@ -78,7 +78,7 @@
           },
           {
             "id": "ring",
-            "title": "Lot 31 · Ring retrieval and bride responses",
+            "title": "Lot 31 · Ring as an optional access credential",
             "nodes": [
               "hotel_chair_ring_focus",
               "hotel_ring_retrieved",
@@ -127,7 +127,7 @@
           },
           {
             "id": "boiler_pressure",
-            "title": "Boiler Access · Pressure test and safe service passage",
+            "title": "Boiler Access · Pressure and working-toilet search",
             "nodes": [
               "hotel_boiler_pressure_intro",
               "hotel_boiler_pressure_relieved",
@@ -150,13 +150,13 @@
           },
           {
             "id": "maintenance",
-            "title": "A1-B · Maintenance walkway and missing groom",
+            "title": "A1-B · Maintenance walkway and water controls",
             "nodes": [
               "hotel_pipe_tunnel",
               "hotel_isolator_panel",
               "hotel_isolator_restrooms",
               "hotel_isolator_entire",
-              "wip_ballroom_water_off",
+              "wip_hotel_water_off",
               "hotel_maintenance_dock_exit"
             ]
           },
@@ -191,7 +191,7 @@
           },
           {
             "id": "wedding",
-            "title": "Wedding Entrance · Organizer and restroom shortcut",
+            "title": "Wedding-Side Entrance · Fast access to service toilets",
             "nodes": [
               "hotel_wedding_arrival",
               "hotel_wedding_service_shortcut"
