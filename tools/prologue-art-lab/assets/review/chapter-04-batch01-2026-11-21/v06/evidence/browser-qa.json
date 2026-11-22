@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:60206/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v06/",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "All candidate/history/approved/original/composite images decode; methods and unselected status explicit",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-03 native/exact4x images, previous comparison and alternate approved benchmark work",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-04 native/exact4x images, previous comparison and alternate approved benchmark work",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-05 native/exact4x images, previous comparison and alternate approved benchmark work",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile retains native pixels inside scrollable viewports; no page overflow or runtime/load errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "All candidate/history/approved/original/composite images decode; methods and unselected status explicit",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-03 native/exact4x images, previous comparison and alternate approved benchmark work",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-04 native/exact4x images, previous comparison and alternate approved benchmark work",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-05 native/exact4x images, previous comparison and alternate approved benchmark work",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile retains native pixels inside scrollable viewports; no page overflow or runtime/load errors",
+      "passed": true
+    }
+  ]
+}

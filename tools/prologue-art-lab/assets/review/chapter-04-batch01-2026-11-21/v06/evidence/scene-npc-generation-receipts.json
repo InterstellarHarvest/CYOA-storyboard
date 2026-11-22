@@ -1,0 +1,62 @@
+[
+  {
+    "id": "plumbers",
+    "tool": "built-in image_gen.imagegen",
+    "originalFile": "detailed/NPC-plumbers-original.png",
+    "sha256": "39bf9c4747bc1d51fd150d8a81cc3d92b852261056a0fa8a7a15d9df637b62ac",
+    "dimensions": [
+      1788,
+      880
+    ],
+    "mode": "RGBA",
+    "prompt": "prompts/scene-plumbers-style.txt",
+    "sourceDerivedSceneNPCs": true,
+    "nativeAuthorshipClaim": false,
+    "inputReferences": [
+      "references/approved-pavilion-courtesy_stage.png",
+      "references/approved-pavilion-urgency_stage.png",
+      "../v04/references/pavilion_attendant_idle.png",
+      "../v04/references/pavilion_presenter_idle.png"
+    ]
+  },
+  {
+    "id": "ballroom-people",
+    "tool": "built-in image_gen.imagegen",
+    "originalFile": "detailed/NPC-ballroom-people-original.png",
+    "sha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+    "dimensions": [
+      1854,
+      848
+    ],
+    "mode": "RGBA",
+    "prompt": "prompts/scene-ballroom-people-style.txt",
+    "sourceDerivedSceneNPCs": true,
+    "nativeAuthorshipClaim": false,
+    "inputReferences": [
+      "references/approved-pavilion-courtesy_stage.png",
+      "references/approved-pavilion-urgency_stage.png",
+      "../v04/references/pavilion_attendant_idle.png",
+      "../v04/references/pavilion_presenter_idle.png"
+    ]
+  },
+  {
+    "id": "porters",
+    "tool": "built-in image_gen.imagegen",
+    "originalFile": "detailed/NPC-porters-original.png",
+    "sha256": "375348f808643ae25c48a7bd11645f45e667c57247f6098a7a50935196d2fae3",
+    "dimensions": [
+      1312,
+      1199
+    ],
+    "mode": "RGBA",
+    "prompt": "prompts/scene-porters-style.txt",
+    "sourceDerivedSceneNPCs": true,
+    "nativeAuthorshipClaim": false,
+    "inputReferences": [
+      "references/approved-pavilion-courtesy_stage.png",
+      "references/approved-pavilion-urgency_stage.png",
+      "../v04/references/pavilion_attendant_idle.png",
+      "../v04/references/pavilion_presenter_idle.png"
+    ]
+  }
+]

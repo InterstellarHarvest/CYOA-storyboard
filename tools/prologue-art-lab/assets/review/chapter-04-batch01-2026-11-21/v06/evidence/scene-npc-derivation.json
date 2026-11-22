@@ -1,0 +1,246 @@
+{
+  "status": "UNSELECTED",
+  "wholeFrameAuthorship": "HYBRID / SOURCE-DERIVED NPC COMPOSITE",
+  "backgroundAuthorship": "Independently drawn directly at 314x206, with separate forbidden-operation replay",
+  "characterAuthorship": "Source-derived from generated art matching the exact owner-supplied approved Pavilion scene NPCs and portraits",
+  "rejectedCodeFiguresUsed": false,
+  "paletteReduction": false,
+  "sharpening": false,
+  "pillowVersion": "12.3.0",
+  "layers": [
+    {
+      "source": "detailed/NPC-plumbers-original.png",
+      "sourceSha256": "39bf9c4747bc1d51fd150d8a81cc3d92b852261056a0fa8a7a15d9df637b62ac",
+      "cell": [
+        0,
+        0,
+        894,
+        880
+      ],
+      "alphaBoundsWithinCell": [
+        142,
+        27,
+        865,
+        861
+      ],
+      "sourceCropAbsolute": [
+        142,
+        27,
+        865,
+        861
+      ],
+      "nativeSpriteSize": [
+        50,
+        58
+      ],
+      "operation": "Alpha-bounds crop; proportional premultiplied-alpha Lanczos; alpha<=40 cleared; saturated cutout-perimeter cleanup only.",
+      "cutoutCleanupPixelCount": 262,
+      "independentlyNativeAuthored": false,
+      "id": "plumber",
+      "room": "restroom",
+      "file": "npc/plumber-source-derived.png",
+      "sha256": "be8d60fdd344312eed78d3bc263d615d3f176bf0648bc517e11ce00efe8ca853",
+      "position": [
+        30,
+        127
+      ],
+      "groundY": 185,
+      "status": "UNSELECTED"
+    },
+    {
+      "source": "detailed/NPC-plumbers-original.png",
+      "sourceSha256": "39bf9c4747bc1d51fd150d8a81cc3d92b852261056a0fa8a7a15d9df637b62ac",
+      "cell": [
+        894,
+        0,
+        1788,
+        880
+      ],
+      "alphaBoundsWithinCell": [
+        174,
+        167,
+        765,
+        856
+      ],
+      "sourceCropAbsolute": [
+        1068,
+        167,
+        1659,
+        856
+      ],
+      "nativeSpriteSize": [
+        39,
+        46
+      ],
+      "operation": "Alpha-bounds crop; proportional premultiplied-alpha Lanczos; alpha<=40 cleared; saturated cutout-perimeter cleanup only.",
+      "cutoutCleanupPixelCount": 172,
+      "independentlyNativeAuthored": false,
+      "id": "assistant",
+      "room": "restroom",
+      "file": "npc/assistant-source-derived.png",
+      "sha256": "a0a4c72b2efa82d8050b56628cfa05306190cd611e88193e58fa5dad3c58a52b",
+      "position": [
+        90,
+        119
+      ],
+      "groundY": 165,
+      "status": "UNSELECTED"
+    },
+    {
+      "source": "detailed/NPC-ballroom-people-original.png",
+      "sourceSha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+      "cell": [
+        0,
+        0,
+        618,
+        848
+      ],
+      "alphaBoundsWithinCell": [
+        114,
+        14,
+        567,
+        835
+      ],
+      "sourceCropAbsolute": [
+        114,
+        14,
+        567,
+        835
+      ],
+      "nativeSpriteSize": [
+        31,
+        57
+      ],
+      "operation": "Alpha-bounds crop; proportional premultiplied-alpha Lanczos; alpha<=40 cleared; saturated cutout-perimeter cleanup only.",
+      "cutoutCleanupPixelCount": 228,
+      "independentlyNativeAuthored": false,
+      "id": "pianist",
+      "room": "ballroom",
+      "file": "npc/pianist-source-derived.png",
+      "sha256": "b33dc6bf905e676d4eed0bac23d39b36809b816218991da7ef2d9bb3393eb288",
+      "position": [
+        54,
+        73
+      ],
+      "groundY": 130,
+      "status": "UNSELECTED"
+    },
+    {
+      "source": "detailed/NPC-ballroom-people-original.png",
+      "sourceSha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+      "cell": [
+        618,
+        0,
+        1236,
+        848
+      ],
+      "alphaBoundsWithinCell": [
+        97,
+        15,
+        463,
+        833
+      ],
+      "sourceCropAbsolute": [
+        715,
+        15,
+        1081,
+        833
+      ],
+      "nativeSpriteSize": [
+        25,
+        55
+      ],
+      "operation": "Alpha-bounds crop; proportional premultiplied-alpha Lanczos; alpha<=40 cleared; saturated cutout-perimeter cleanup only.",
+      "cutoutCleanupPixelCount": 154,
+      "independentlyNativeAuthored": false,
+      "id": "musician",
+      "room": "ballroom",
+      "file": "npc/musician-source-derived.png",
+      "sha256": "2e056aa5fb531f008e39856adde4a5394fe23ec131f6fceffdea9a745d26e611",
+      "position": [
+        108,
+        75
+      ],
+      "groundY": 130,
+      "status": "UNSELECTED"
+    },
+    {
+      "source": "detailed/NPC-ballroom-people-original.png",
+      "sourceSha256": "0f01af56282a1beec19464dea7e03fbef1746ba7c3644048c3271b920a0ae360",
+      "cell": [
+        1236,
+        0,
+        1854,
+        848
+      ],
+      "alphaBoundsWithinCell": [
+        167,
+        23,
+        458,
+        835
+      ],
+      "sourceCropAbsolute": [
+        1403,
+        23,
+        1694,
+        835
+      ],
+      "nativeSpriteSize": [
+        27,
+        74
+      ],
+      "operation": "Alpha-bounds crop; proportional premultiplied-alpha Lanczos; alpha<=40 cleared; saturated cutout-perimeter cleanup only.",
+      "cutoutCleanupPixelCount": 226,
+      "independentlyNativeAuthored": false,
+      "id": "organizer",
+      "room": "ballroom",
+      "file": "npc/organizer-source-derived.png",
+      "sha256": "0344aa5df73361901fe993752b188dce369f26ba4e7c947b8a9063103ec3f993",
+      "position": [
+        200,
+        80
+      ],
+      "groundY": 154,
+      "status": "UNSELECTED"
+    },
+    {
+      "source": "detailed/NPC-porters-original.png",
+      "sourceSha256": "375348f808643ae25c48a7bd11645f45e667c57247f6098a7a50935196d2fae3",
+      "cell": [
+        0,
+        0,
+        1312,
+        1199
+      ],
+      "alphaBoundsWithinCell": [
+        29,
+        34,
+        1286,
+        1177
+      ],
+      "sourceCropAbsolute": [
+        29,
+        34,
+        1286,
+        1177
+      ],
+      "nativeSpriteSize": [
+        60,
+        55
+      ],
+      "operation": "Alpha-bounds crop; proportional premultiplied-alpha Lanczos; alpha<=40 cleared; saturated cutout-perimeter cleanup only.",
+      "cutoutCleanupPixelCount": 396,
+      "independentlyNativeAuthored": false,
+      "id": "porters-and-chair",
+      "room": "ballroom",
+      "file": "npc/porters-and-chair-source-derived.png",
+      "sha256": "624a1fa64a1b3ace44f5dad56aee0e54ad0a5226c42c9e9dc844c0f2696b0a40",
+      "position": [
+        244,
+        81
+      ],
+      "groundY": 136,
+      "status": "UNSELECTED"
+    }
+  ]
+}

@@ -1,0 +1,678 @@
+{
+  "review": "Chapter 4 v06 \u2014 quality-first auctioneer; resumed environments v02",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalMain": "d9b6b91604b72115c5402253f00924665e957727",
+  "baseCommit": "2a267beaf182fa6b589d7256ae813de8b168e63a",
+  "policy": "../PRODUCTION-POLICY.md",
+  "sourceDerivedPortraitException": "AUTHORIZED by Nate; final selection pending",
+  "assets": [
+    {
+      "id": "CH4-03",
+      "title": "Auctioneer \u2014 preferred style",
+      "status": "UNSELECTED",
+      "method": "SOURCE-DERIVED PORTRAIT \u00b7 564\u00d7278",
+      "native": {
+        "file": "native/CH4-03-auctioneer-source-derived-v06.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "4132c9e941a18c50d9fd9a2a2fed0c430c6c1beeed0d289599bd1761fca26a90",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "preview4x": {
+        "file": "previews/CH4-03-candidate-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "f629d82d75156566fa7160f66fd4a20516581a254d386811761b36996af21a63",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "previous": {
+        "file": "../portrait-study-02/diagnostics/CH4-03-layout-only-source-derived-564x278.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "1b8f5e7e820c755731e536d309631903968d97eeb650c49261dc9bf3212738e8",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "previousPreview4x": {
+        "file": "previews/CH4-03-previous-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "2ec85b2d54c93807b03c8e1d083bbf9bc2eb8c4015e926b11863490b4842963f",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "benchmark": {
+        "file": "../v04/references/pavilion_attendant_idle.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "detailedReference": {
+        "file": "../portrait-study-02/generated/CH4-03-auctioneer-fresh-style-original.png",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA",
+        "sha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "comparison": {
+        "file": "comparisons/CH4-03-candidate-history-approved.png",
+        "dimensions": [
+          1176,
+          672
+        ],
+        "mode": "RGB",
+        "sha256": "dd899606b1619c2f3bca465472d6940f9a280a552bce3461c7a9b9961c569508",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "comparison4x": {
+        "file": "comparisons/CH4-03-candidate-history-approved-4x.png",
+        "dimensions": [
+          4704,
+          2688
+        ],
+        "mode": "RGB",
+        "sha256": "44d4962722360db0fa74ec73401124e85861679c7f545d18177f38babb3721d7",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "hotel_lot61_pod_declined",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "independentlyAuthoredAtNativeResolution": false,
+      "backgroundIndependentlyAuthoredAtNativeResolution": false,
+      "editableSource": [
+        "source/portrait.py"
+      ]
+    },
+    {
+      "id": "CH4-04",
+      "title": "Public restroom",
+      "status": "UNSELECTED",
+      "method": "HYBRID SCENE \u00b7 SOURCE-DERIVED NPCs \u00b7 314\u00d7206",
+      "native": {
+        "file": "native/CH4-04-restroom-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "980fee9db9d49a5ccd3f3a8751a73b92668f54142b8d2d5d26f64b5ef7f60f7c",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "preview4x": {
+        "file": "previews/CH4-04-candidate-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "44b898fc94b7b98b3f018dfd3d07399dc902cc09acbfe27790b4c930f43cbcc1",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "previous": {
+        "file": "../v01/native/CH4-04-restroom-v01.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "bd5422a1a5ffdfe480041a4913a37ea2a749281b0b9ce3c998bba8c08d18192a",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "previousPreview4x": {
+        "file": "previews/CH4-04-previous-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "7170525e5a52faba6392f6496f8fbabb3aae855ce71eaf394f5cea3612aa2344",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "benchmark": {
+        "file": "../v02/references/scenes__biology_park__conveniences_bureau.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "detailedReference": {
+        "file": "detailed/CH4-04-reference-v02.png",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB",
+        "sha256": "d830d9ac8e8b4413cb1625337ad98493651b3c54f4467b6bda732f627fdf6311",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "comparison": {
+        "file": "comparisons/CH4-04-candidate-history-approved.png",
+        "dimensions": [
+          676,
+          528
+        ],
+        "mode": "RGB",
+        "sha256": "16f643dec2214108dca1540f97ca327d9acac0c7cf4e92d9f773d53c47bab027",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "comparison4x": {
+        "file": "comparisons/CH4-04-candidate-history-approved-4x.png",
+        "dimensions": [
+          2704,
+          2112
+        ],
+        "mode": "RGB",
+        "sha256": "5379a3eeab4b71ba1df509bf5fd17e9d64dad2193ac280033ba8c3c4ebba29d4",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "sourceNodeIds": [
+        "hotel_restroom_entry",
+        "hotel_restroom_plumber",
+        "hotel_valve_braced",
+        "hotel_valve_flood",
+        "hotel_stall_lot_claimed",
+        "hotel_wheel_buyer_lead",
+        "hotel_lot_receipt_study",
+        "hotel_wheel_return",
+        "hotel_key_master_cabinet",
+        "hotel_stall_porter_protest",
+        "hotel_stall_crane_success",
+        "fatal_stall_final_occupancy"
+      ],
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "independentlyAuthoredAtNativeResolution": false,
+      "backgroundIndependentlyAuthoredAtNativeResolution": true,
+      "editableSource": [
+        "source/restroom.py",
+        "source/scene_tools.py",
+        "source/scene_people.py"
+      ]
+    },
+    {
+      "id": "CH4-05",
+      "title": "Ballroom",
+      "status": "UNSELECTED",
+      "method": "HYBRID SCENE \u00b7 SOURCE-DERIVED NPCs \u00b7 314\u00d7206",
+      "native": {
+        "file": "native/CH4-05-ballroom-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "630592c03dd5befde444725f6d439a1aeffde0db9dc42e8d2b4965ba434e984f",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "preview4x": {
+        "file": "previews/CH4-05-candidate-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "ca5872cb662945471a96e62a07708b853606edf6cf366f8221edb8116dd8a7cb",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "previous": {
+        "file": "../v01/native/CH4-05-ballroom-v01.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "04a1f6d0054090aeff22fffb0de8a6150f9a09b6ac5de40e2c594fcec76f9e86",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "previousPreview4x": {
+        "file": "previews/CH4-05-previous-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "e2ca6575b209859fe8362167b7a70b86a17a2cada00d5977189b1105101097fe",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "benchmark": {
+        "file": "../v02/references/scenes__biology_park__control_tower.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "detailedReference": {
+        "file": "detailed/CH4-05-reference-v02.png",
+        "dimensions": [
+          1547,
+          1016
+        ],
+        "mode": "RGB",
+        "sha256": "422ecc0085c0f081a2e958f05193c759912da202257633dceb78295c0df31c7e",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "comparison": {
+        "file": "comparisons/CH4-05-candidate-history-approved.png",
+        "dimensions": [
+          676,
+          528
+        ],
+        "mode": "RGB",
+        "sha256": "28565716a4ae2c68d58096a605ec3d4f5273b702058ee133eacc24b72098925c",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "comparison4x": {
+        "file": "comparisons/CH4-05-candidate-history-approved-4x.png",
+        "dimensions": [
+          2704,
+          2112
+        ],
+        "mode": "RGB",
+        "sha256": "8098b01689ade7c991e338e6826761b3706f8ed68bba004f18ad80124ff3e6af",
+        "alphaExtrema": [
+          255,
+          255
+        ]
+      },
+      "sourceNodeIds": [
+        "hotel_wedding_arrival",
+        "hotel_bridal_organizer"
+      ],
+      "canonicalRequirements": "evidence/canonical-requirements.json",
+      "independentlyAuthoredAtNativeResolution": false,
+      "backgroundIndependentlyAuthoredAtNativeResolution": true,
+      "editableSource": [
+        "source/ballroom.py",
+        "source/scene_tools.py",
+        "source/scene_people.py"
+      ]
+    }
+  ],
+  "approvedPortraitReferences": [
+    {
+      "file": "../v04/references/pavilion_attendant_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "../v04/references/pavilion_presenter_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "../v02/references/portraits__receptionist__receptionist_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "approvedChapter2References": [
+    {
+      "file": "../v02/references/scenes__biology_park__conveniences_bureau.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "../v02/references/scenes__biology_park__control_tower.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "../v02/references/scenes__biology_park__spore_garden.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "aded321d36cf2ea9c50d3d696230fe2a1606f181ff8fc0d1f2f7bffb92af4ed3",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "../v02/references/scenes__biology_park__tour_tram.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fd2b01dbff9db37a79b5a1519b0adc5be3ce8e60c425d7bfb039a5a2194f6d57",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "frozenEnvironments": {
+    "status": "UNSELECTED",
+    "ownerReviewCandidates": true,
+    "freeze": "Preserve exact v05 PNGs; no edits or approval registration.",
+    "files": [
+      {
+        "file": "v05/native/CH4-01-lobby-v05.png",
+        "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0"
+      },
+      {
+        "file": "v05/native/CH4-02-auctioneer-background-v05.png",
+        "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f"
+      }
+    ]
+  },
+  "composite": {
+    "file": "previews/auctioneer-over-frozen-v05.png",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGBA",
+    "sha256": "fae59bd68f0c196cb696c96e99c20decf9ebf84cf15a7f004e8c719172f574e9",
+    "alphaExtrema": [
+      255,
+      255
+    ]
+  },
+  "composite4x": {
+    "file": "previews/auctioneer-over-frozen-v05-4x.png",
+    "dimensions": [
+      2256,
+      1112
+    ],
+    "mode": "RGBA",
+    "sha256": "ecad3e5617c69c1a3f6bfea816298399dc3b1c116d6f421f15098cd01be918b6",
+    "alphaExtrema": [
+      255,
+      255
+    ]
+  },
+  "comparisons": [
+    {
+      "file": "comparisons/CH4-03-candidate-history-approved.png",
+      "dimensions": [
+        1176,
+        672
+      ],
+      "mode": "RGB",
+      "sha256": "dd899606b1619c2f3bca465472d6940f9a280a552bce3461c7a9b9961c569508",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "comparisons/CH4-03-candidate-history-approved-4x.png",
+      "dimensions": [
+        4704,
+        2688
+      ],
+      "mode": "RGB",
+      "sha256": "44d4962722360db0fa74ec73401124e85861679c7f545d18177f38babb3721d7",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "comparisons/CH4-04-candidate-history-approved.png",
+      "dimensions": [
+        676,
+        528
+      ],
+      "mode": "RGB",
+      "sha256": "16f643dec2214108dca1540f97ca327d9acac0c7cf4e92d9f773d53c47bab027",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "comparisons/CH4-04-candidate-history-approved-4x.png",
+      "dimensions": [
+        2704,
+        2112
+      ],
+      "mode": "RGB",
+      "sha256": "5379a3eeab4b71ba1df509bf5fd17e9d64dad2193ac280033ba8c3c4ebba29d4",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "comparisons/CH4-05-candidate-history-approved.png",
+      "dimensions": [
+        676,
+        528
+      ],
+      "mode": "RGB",
+      "sha256": "28565716a4ae2c68d58096a605ec3d4f5273b702058ee133eacc24b72098925c",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "comparisons/CH4-05-candidate-history-approved-4x.png",
+      "dimensions": [
+        2704,
+        2112
+      ],
+      "mode": "RGB",
+      "sha256": "8098b01689ade7c991e338e6826761b3706f8ed68bba004f18ad80124ff3e6af",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "portraitDerivation": "evidence/portrait-derivation.json",
+  "environmentGenerationReceipts": "evidence/environment-generation-receipts.json",
+  "sceneNPCGenerationReceipts": "evidence/scene-npc-generation-receipts.json",
+  "sceneNPCDerivation": "evidence/scene-npc-derivation.json",
+  "backgrounds": [
+    {
+      "file": "backgrounds/CH4-04-restroom-background-v02.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "d32384e85e3453a3f576450e388f192e6de169534fe12320c4138397d9155db7",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "backgrounds/CH4-05-ballroom-background-v02.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "cc8c34e0d22e296f916264255d232c32c52908bf0d4d215c181fadedf4d0a14f",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "sceneNPCReferences": [
+    {
+      "file": "references/approved-pavilion-courtesy_stage.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "references/approved-pavilion-urgency_stage.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "368134fe2363134d3b63e7a7eae3a7b71b393a9d59484c4b3c456296239a7d2c",
+      "alphaExtrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "pillowVersion": "12.3.0",
+  "knownLimitations": [
+    "All candidates remain unselected; technical QA does not establish artistic approval.",
+    "The portrait is honestly source-derived under the revised policy, not an independently authored native reconstruction.",
+    "Native room writers simplify the architectural studies into material clusters; illustrated NPCs are separately source-derived. Fine surface nuance is less extensive than the large studies.",
+    "The restroom reference shows four basins; native reconstruction intentionally corrects this to three.",
+    "Only entry/pre-flood restroom and establishing ballroom are depicted; no active crane/flood or private bridal lavatory.",
+    "The optional independent-illustrator handoff is archival and no longer blocks the authorized portrait workflow."
+  ]
+}

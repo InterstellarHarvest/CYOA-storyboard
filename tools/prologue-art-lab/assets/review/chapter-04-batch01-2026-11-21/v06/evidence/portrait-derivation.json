@@ -1,0 +1,26 @@
+{
+  "status": "UNSELECTED",
+  "method": "SOURCE-DERIVED; authorized quality-first portrait policy",
+  "independentlyAuthoredAtNativeResolution": false,
+  "policy": "../PRODUCTION-POLICY.md",
+  "source": "../portrait-study-02/generated/CH4-03-auctioneer-fresh-style-original.png",
+  "sourceSha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+  "sourceDimensions": [
+    1788,
+    880
+  ],
+  "outputDimensions": [
+    564,
+    278
+  ],
+  "pillowVersion": "12.3.0",
+  "reduction": "RGBA -> premultiplied RGBa -> Lanczos 564x278 -> RGBA; no crop or composition shift",
+  "internalFilterComparison": "Lanczos selected over bicubic/box for face, hair, hand and suit edge retention. Intermediate diagnostics not published.",
+  "cleanup": "Alpha <=40 cleared; disconnected small cutout debris removed; saturated perimeter outliers replaced by nearest stable interior RGB. Body/face/costume geometry not repainted.",
+  "changedPixelsFromReduction": 938,
+  "fringeColorPixels": [],
+  "paletteReduction": false,
+  "sharpening": false,
+  "sourceModified": false,
+  "artworkApproved": false
+}

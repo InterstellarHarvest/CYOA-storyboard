@@ -1,0 +1,108 @@
+{
+  "creativeApproval": false,
+  "reviewReadyAsUnselectedCandidates": true,
+  "portrait": {
+    "comparison": [
+      "preferred 1788x880 original",
+      "preferred source-derived 564x278 diagnostic",
+      "approved Pavilion attendant",
+      "approved Pavilion presenter"
+    ],
+    "judgment": "The production reduction retains the selected elderly likeness, expressive brows, tilted head, silver locks, mustache, jacket/lapels, bow tie, pocket square, both hands and gavel grip. Lanczos preserves finer transitions than the earlier nearest-neighbor diagnostic. Cutout cleanup removes colored specks without a face/costume repaint.",
+    "nativeAndExact4xInspected": true,
+    "frozenBackgroundCompositeInspected": true,
+    "nativeAuthorshipClaim": false
+  },
+  "restroom": {
+    "vanishingPoint": [
+      185,
+      88
+    ],
+    "cameraFocalPixels": 220,
+    "cameraEyeHeightMeters": 1.6,
+    "canonicalState": "entry, pre-flood; three stalls, nearest open, visible real toilet",
+    "basins": 3,
+    "stallModules": 3,
+    "hatchFootprintWorld": {
+      "x": [
+        1.65,
+        3.25
+      ],
+      "z": [
+        5.9,
+        7.05
+      ],
+      "ceilingHeight": 3.0,
+      "nearestStallFootprint": {
+        "x": [
+          1.75,
+          3.15
+        ],
+        "z": [
+          6.0,
+          7.0
+        ]
+      },
+      "containsCompleteStallFootprint": true
+    },
+    "plumberScaleCorrection": {
+      "reason": "Owner found the initial workmen too small against the sinks/stalls. Initial tiny sprite construction was discarded before publication.",
+      "foregroundKneeler": {
+        "topY": 127,
+        "groundY": 185,
+        "heightPixels": 58,
+        "inferredCrouchedHeightMeters": 0.957
+      },
+      "fartherKneelingAssistant": {
+        "topY": 119,
+        "groundY": 165,
+        "heightPixels": 46,
+        "inferredKneelingHeightMeters": 0.956
+      },
+      "judgment": "Both are illustrated adult kneeling workers at different depths. The blocky code figures were rejected and replaced with source-derived people retaining face, hair, hand and workwear finish from the approved scene-NPC style."
+    },
+    "materialsAndLight": "Cool ceiling boxes and warmer sconces separate porcelain rims/bowls, chrome/brass, copper, banded duct, tile grout, teal painted partitions and the keyed cabinet. Fixtures remain clean.",
+    "perspective": "Floor rays and left-wall tile lines share the camera VP. Closed hatch is projected at the ceiling over the nearest complete stall footprint. Door recess, partition sides and toilet have distinct depth faces.",
+    "limitations": "Tiny cabinet lettering is a native-size abbreviation/cluster rendition; full EMERGENCY WATER ISOLATION remains verbatim in canonical requirements. Fine reference wear/reflection detail is simplified."
+  },
+  "ballroom": {
+    "vanishingPoint": [
+      192,
+      85
+    ],
+    "sceneObjects": [
+      "piano and platform",
+      "two musicians",
+      "organizer with clipboards",
+      "two furniture workers and chair",
+      "service passage",
+      "restroom direction pictogram",
+      "side tables and floral containers",
+      "jointed intrusive duct",
+      "curtains and bunting"
+    ],
+    "humanScale": {
+      "musicians": "55-57px at the raised stage; inferred ~1.7m against a 1.35m effective camera height above platform",
+      "serviceWorkers": "54-55px with feet y135-136; inferred ~1.73m with VP85 and eye1.6m",
+      "organizer": "74px with feet154, head80; inferred ~1.72m"
+    },
+    "lightingAndMaterials": "Cool glazing, warm modest chandelier/sconces, darker service recess, staggered wood boards/grain, heavy curtain folds, plate/glass/flower clusters and cloth folds are individually illustrated.",
+    "perspective": "Floor board edges and window mullions use VP192,85; columns/molding and doorway jambs establish separate wall/depth planes. Piano, keys, stage valance and steps remain readable.",
+    "limitations": "Room materials remain graphic native-grid illustration; source-derived scene people retain real face/hair/hand/cloth detail rather than blank code shapes. All assets remain unselected."
+  },
+  "canonicalComparisons": [
+    "Chapter 2 Bureau",
+    "Chapter 2 Control Tower",
+    "Spore Garden",
+    "Tour Tram",
+    "frozen v05 hotel lobby"
+  ],
+  "dimensionsAndScaleAloneDoNotEstablishVisualApproval": true,
+  "wholeSceneAuthorship": "HYBRID: independent native backgrounds plus source-derived scene NPC illustrations",
+  "sceneNPCStyleReferences": [
+    "exact owner-supplied approved Pavilion courtesy scene with seated attendant",
+    "exact owner-supplied approved Pavilion urgency scene with presenter",
+    "approved Pavilion attendant/presenter portraits"
+  ],
+  "rejectedCodeNPCsUsed": false
+}

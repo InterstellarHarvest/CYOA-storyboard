@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CH4-04",
+    "tool": "built-in image_gen.imagegen",
+    "classification": "Stage A detailed architectural study; not native game artwork",
+    "file": "detailed/CH4-04-reference-v02.png",
+    "sha256": "d830d9ac8e8b4413cb1625337ad98493651b3c54f4467b6bda732f627fdf6311",
+    "dimensions": [
+      1548,
+      1016
+    ],
+    "mode": "RGB",
+    "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-dbbed4a1-d5bc-43e9-812a-de9feeba976b.png",
+    "prompt": "prompts/CH4-04-stage-A-v02.txt",
+    "referenceFiles": [
+      "../v05/native/CH4-01-lobby-v05.png",
+      "../v02/references/scenes__biology_park__conveniences_bureau.png",
+      "../v02/references/scenes__biology_park__control_tower.png"
+    ],
+    "retainedUnchanged": true,
+    "observedDeviation": "Reference depicts four basins; independently authored scene will have exactly three."
+  },
+  {
+    "id": "CH4-05",
+    "tool": "built-in image_gen.imagegen",
+    "classification": "Stage A detailed architectural study; not native game artwork",
+    "file": "detailed/CH4-05-reference-v02.png",
+    "sha256": "422ecc0085c0f081a2e958f05193c759912da202257633dceb78295c0df31c7e",
+    "dimensions": [
+      1547,
+      1016
+    ],
+    "mode": "RGB",
+    "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-e6cf3016-a348-448e-9685-b0b8ecd93bfa.png",
+    "prompt": "prompts/CH4-05-stage-A-v02.txt",
+    "referenceFiles": [
+      "../v05/native/CH4-01-lobby-v05.png",
+      "../v02/references/scenes__biology_park__conveniences_bureau.png",
+      "../v02/references/scenes__biology_park__control_tower.png"
+    ],
+    "retainedUnchanged": true,
+    "observedDeviation": "Reference has oversized metalwork and rich floor reflections; native-grid reconstruction must prioritize gameplay readability."
+  }
+]
