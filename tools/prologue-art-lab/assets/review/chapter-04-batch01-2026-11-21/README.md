@@ -1,6 +1,8 @@
 # Chapter 4 Batch 1 artwork review
 
-Latest gallery: [v03/index.html](v03/index.html) — material/light/form reconstruction of CH4-01/02/03, all UNSELECTED. [v03 production notes](v03/README.md). Previous galleries are preserved unchanged: [v02](v02/index.html), [full v01 batch](v01/index.html).
+Latest gallery: [v04/index.html](v04/index.html) — restored illustrated material detail and a front-facing, natural-proportioned older auctioneer following Nate's latest steering. Approved human NPC detail and palette are the portrait benchmarks. All CH4-01/02/03 candidates remain UNSELECTED. [v04 production notes](v04/README.md). Previous galleries are preserved unchanged: [v03](v03/index.html), [v02](v02/index.html), [full v01 batch](v01/index.html).
+
+v04 adds one new detailed frontal character-reference generation; its original PNG, prompt and receipt are preserved. Native portrait pixels are independently illustrated with explicit material/anatomical ramps, not extracted from that reference. The hotel lighting is retained selectively with material/construction illustration and perspective corrections. Historical method descriptions below refer to their earlier versions; v04's exact sources and limitations are in its manifest and production notes.
 
 Online-preview entry: [v02/online.html](v02/online.html). This additive copy uses absolute image URLs pinned to the verified artifact commit, so a read-only HTML preview can render the gallery without interpreting relative image paths. `prepare-online-gallery.py` regenerates it. The original galleries and candidate bytes remain unchanged. GitHub displays HTML as source; the publication handoff supplies a tested browser-preview link when available.
 

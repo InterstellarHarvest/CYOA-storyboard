@@ -1,0 +1,136 @@
+{
+  "receptionist:default": {
+    "record": {
+      "title": "RECEPTIONIST \u2014 APPROVED M2 LAYERS",
+      "status": "reused",
+      "kind": "portrait",
+      "prompt": "REUSE ONLY. Approved 564\u00d7278 tight desk POV: background layer and receptionist foreground layer remain independently composited for future character animation. No new generation prompt; keep the locked art.",
+      "assetPath": null,
+      "suggestedFilename": null,
+      "dimensions": "564x278",
+      "notes": "Already integrated and approved in production. Do not widen to an alternate lobby or treat the portrait as an enlarged main scene. Foreground MUST be a 564\u00d7278 transparent RGBA PNG with zero painted background; background is scenes[\"exposition/reception\"].portraitBackground.",
+      "layers": [
+        {
+          "role": "background",
+          "path": "art/portraits/receptionist/reception_background.png"
+        },
+        {
+          "role": "foreground",
+          "path": "art/portraits/receptionist/receptionist_idle.png"
+        }
+      ],
+      "portraitBackgroundScene": "exposition/reception",
+      "foregroundFormat": "transparent-rgba-png"
+    },
+    "previews": {
+      "portraits:receptionist:default#layers:background": {
+        "file": "assets/selected/art/portraits/receptionist/reception_background.png",
+        "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+        "size": [
+          564,
+          278
+        ],
+        "alpha": "opaque",
+        "source": {
+          "repo": "InterstellarHarvest/CYOA",
+          "ref": "agent/ch02-art-integration-20261118",
+          "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+          "path": "art/portraits/receptionist/reception_background.png"
+        }
+      },
+      "portraits:receptionist:default#layers:foreground": {
+        "file": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+        "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+        "size": [
+          564,
+          278
+        ],
+        "alpha": "transparent",
+        "source": {
+          "repo": "InterstellarHarvest/CYOA",
+          "ref": "agent/ch02-art-integration-20261118",
+          "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+          "path": "art/portraits/receptionist/receptionist_idle.png"
+        }
+      }
+    }
+  },
+  "pavilion_attendant:idle": {
+    "record": {
+      "title": "PAVILION ATTENDANT \u2014 REASSURING",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/pavilion_reboot/pavilion_attendant/idle.png",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "pavilion_reboot/restroom_entrance",
+      "prompt": "Exactly 564\u00d7278 TRANSPARENT RGBA native pixel-art NPC foreground for separate compositing over the selected matching opaque portrait background. No scenery, no shadow painted on an opaque backdrop, no UI, no protagonist; transparent outside the sprite with pixel-sharp alpha. Match the approved reception portrait density, crisp intentional shading and approachable expressive human anatomy, not a cartoon, photograph or upscale of a scene figure. A human male attendant in his late forties or fifties, neatly side-parted dark hair with a trace of gray, tidy small spectacles, modest cream shirt and slate-teal vest with plain enamel name tab. Seated-to-waist conversation framing, welcoming slightly overeager smile, hands politely together; sincere belief in rules without menace. Consistent model for all attendant poses.",
+      "notes": "CH3 REBOOT: model sheet and canvas anchor must match every pose of pavilion_attendant. Source instances: attendant_greeting, attendant_refusal, attendant_key_callback, record_challenge, record_choices, record_scanner_result. Suggested default background pavilion_reboot/restroom_entrance; other scene-appropriate backgrounds are catalogued on their scene records. Batch A. IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch A A03): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch01-20261118 a87155bfadad42e0deae3bee2e749963d1459a4b, path tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png; SHA-256 28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch A addendum). Approved, not integrated; production assetPath remains null."
+    },
+    "previews": {
+      "portraits:pavilion_attendant:idle": {
+        "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+        "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+        "size": [
+          564,
+          278
+        ],
+        "alpha": "transparent",
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch01-20261118",
+          "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+        }
+      }
+    }
+  },
+  "pavilion_presenter:idle": {
+    "record": {
+      "title": "HUMAN PRESENTER \u2014 SHOWTIME",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/pavilion_reboot/pavilion_presenter/idle.png",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "pavilion_reboot/human_verification_stage",
+      "prompt": "Exactly 564\u00d7278 TRANSPARENT RGBA native pixel-art NPC foreground for separate compositing over the selected matching opaque portrait background. No scenery, no shadow painted on an opaque backdrop, no UI, no protagonist; transparent outside the sprite with pixel-sharp alpha. Match the approved reception portrait density, crisp intentional shading and approachable expressive human anatomy, not a cartoon, photograph or upscale of a scene figure. A human female presenter in her late thirties or forties, distinctive neat short auburn bob, spirited eyebrows, tailored muted-coral blouse with slate-blue presentation jacket and simple clipped microphone. Waist-up, optimistic stage poise, one open inviting hand. Brisk animated personality but genuine humanity; distinct from receptionist and attendant. Consistent model for all presenter poses.",
+      "notes": "CH3 REBOOT: model sheet and canvas anchor must match every pose of pavilion_presenter. Source instances: presenter_verification, photo_verification_reply, authentic_urgency_reply. Suggested default background pavilion_reboot/human_verification_stage; other scene-appropriate backgrounds are catalogued on their scene records. Batch A. IMAGE OWNER-APPROVED 2026-11-19 (Nate, final Art Director approval; Batch A A06): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch01-20261118 a87155bfadad42e0deae3bee2e749963d1459a4b, path tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png; SHA-256 da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784. Original native-grid authorship NOT proven (source-derived grid transfer with localized native-pixel corrections; see docs/103 Chapter 3 Batch A addendum). Approved, not integrated; production assetPath remains null."
+    },
+    "previews": {
+      "portraits:pavilion_presenter:idle": {
+        "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+        "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+        "size": [
+          564,
+          278
+        ],
+        "alpha": "transparent",
+        "source": {
+          "repo": "InterstellarHarvest/CYOA-storyboard",
+          "ref": "art/ch3-pavilion-batch01-20261118",
+          "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+          "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+        }
+      }
+    }
+  },
+  "pavilion_attendant": {
+    "path": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+    "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+    "dimensions": [
+      564,
+      278
+    ]
+  },
+  "pavilion_presenter": {
+    "path": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+    "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+    "dimensions": [
+      564,
+      278
+    ]
+  }
+}

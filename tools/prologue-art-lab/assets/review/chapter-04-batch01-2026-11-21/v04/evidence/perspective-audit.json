@@ -1,0 +1,138 @@
+{
+  "method": "Numeric check of authored native long edges against the shared lobby vanishing point. Pixel rounding tolerance is one logical pixel. Rectangular rear doors remain parallel to their rear-wall plane; this is an illustration audit, not a 3D building model.",
+  "checks": [
+    {
+      "part": "floor_left_boundary",
+      "nativeEndpoints": [
+        [
+          0,
+          179
+        ],
+        [
+          81,
+          149
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.181318681318686,
+      "withinOneNativePixel": true
+    },
+    {
+      "part": "ceiling_left_boundary",
+      "nativeEndpoints": [
+        [
+          54,
+          0
+        ],
+        [
+          81,
+          24
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.375,
+      "withinOneNativePixel": true
+    },
+    {
+      "part": "podium_back_top",
+      "nativeEndpoints": [
+        [
+          8,
+          120
+        ],
+        [
+          47,
+          118
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.20689655172414234,
+      "withinOneNativePixel": true
+    },
+    {
+      "part": "podium_front_top",
+      "nativeEndpoints": [
+        [
+          16,
+          130
+        ],
+        [
+          57,
+          126
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.44578313253012425,
+      "withinOneNativePixel": true
+    },
+    {
+      "part": "podium_front_bottom",
+      "nativeEndpoints": [
+        [
+          16,
+          168
+        ],
+        [
+          55,
+          155
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.15662650602411077,
+      "withinOneNativePixel": true
+    },
+    {
+      "part": "podium_inset_top",
+      "nativeEndpoints": [
+        [
+          21,
+          134
+        ],
+        [
+          50,
+          130
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.03726708074535168,
+      "withinOneNativePixel": true
+    },
+    {
+      "part": "podium_inset_bottom",
+      "nativeEndpoints": [
+        [
+          21,
+          161
+        ],
+        [
+          50,
+          152
+        ]
+      ],
+      "vanishingPoint": [
+        182,
+        112
+      ],
+      "verticalErrorPixels": 0.17391304347825098,
+      "withinOneNativePixel": true
+    }
+  ]
+}

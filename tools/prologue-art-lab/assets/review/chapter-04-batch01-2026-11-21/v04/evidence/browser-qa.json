@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:60402/CYOA-storyboard/tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v04/",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "all candidate/history/canonical/concept images decode",
+      "imageCount": 37,
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-01 native and exact 4x v02/v04 comparisons",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-02 native and exact 4x v02/v04 comparisons",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "CH4-03 native and exact 4x v02/v04 comparisons",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "mobile retains native pixels with scrollable comparisons; no runtime/load errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "all candidate/history/canonical/concept images decode",
+      "imageCount": 37,
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-01 native and exact 4x v02/v04 comparisons",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-02 native and exact 4x v02/v04 comparisons",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "CH4-03 native and exact 4x v02/v04 comparisons",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "mobile retains native pixels with scrollable comparisons; no runtime/load errors",
+      "passed": true
+    }
+  ]
+}

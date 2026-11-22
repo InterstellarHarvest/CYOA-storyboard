@@ -1,0 +1,553 @@
+{
+  "schema": "out-of-order-ch4-review-v04",
+  "dateEastern": "2026-11-22",
+  "version": "v04",
+  "reviewBranch": "art/ch4-batch01-review-20261121",
+  "reviewedBaseCommit": "1fe2685c11a0a156998a13cd24687050e4d9f158",
+  "approval": "UNSELECTED. Technical passing is not creative approval.",
+  "scope": "CH4-01, CH4-02, CH4-03 only. Restroom and ballroom are not revised.",
+  "method": {
+    "A": "Hotel concept references reused unchanged. One new built-in image_gen call creates a detailed frontal auctioneer study, guided by approved human NPCs. Its original PNG, prompt and receipt are preserved in v04.",
+    "B": "Independent blank-native reconstruction: explicit material/anatomy color clusters, native curves and geometric coverage masks. v03 environmental light retained selectively; no procedural portrait face or cloth-gradient substitute. No source raster input, supersampling, smoothing, downsampling or palette reduction. No global palette quota.",
+    "C": "Exact 4x NEAREST from completed native art. Portrait 4x exports are supplemental inspection views, not a change to the 564x278 portrait presentation contract."
+  },
+  "assets": [
+    {
+      "id": "CH4-01",
+      "title": "Grand Bellevue Lobby",
+      "version": "v04",
+      "status": "generated / unselected",
+      "assetPath": null,
+      "native": {
+        "file": "native/CH4-01-lobby-v04.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "4c7d3e004894c9ae7787cf66c6de8ca7ccafeb74a8310743b6ed05daffb7c3f3",
+        "alpha": "opaque"
+      },
+      "preview4x": {
+        "file": "previews/CH4-01-lobby-v04-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "3c1781e3824a1e7d31f3f2cf143260dcd408dd11aac9b60f959c8a1c37ffad3e",
+        "alpha": "opaque"
+      },
+      "previousV02": {
+        "file": "../v02/native/CH4-01-lobby-v02.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "da83c73dbb271e1e4843b1e9e1cce9be0f780bee9c181ddb65d5e849f9de0fde",
+        "alpha": "opaque"
+      },
+      "previousV02Preview4x": {
+        "file": "previews/CH4-01-lobby-v02-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "10f8bb3e758e7452e10c3002c0563e7b8e0e866eb8eacfcf56651a814c8a68ff",
+        "alpha": "opaque"
+      },
+      "previousV03": {
+        "file": "../v03/native/CH4-01-lobby-v03.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "8c153e535e008f12b09ed24a8522e8d027166885269076964fa31b59b3782bec",
+        "alpha": "opaque"
+      },
+      "previousV03Preview4x": {
+        "file": "previews/CH4-01-lobby-v03-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "e67582f6652fbafc870653abb209e098b602cba8f909d6c25b8df91a1bd4a04f",
+        "alpha": "opaque"
+      },
+      "previousV01": {
+        "file": "../v01/native/CH4-01-lobby-v01.png",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "sha256": "a74940d2b530e1b263587cbed905dd0d4ad7aa723ffdcd74f4ed84dd31b91174",
+        "alpha": "opaque"
+      },
+      "detailedReference": {
+        "file": "../v02/detailed/CH4-01-reference-v01.png",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB",
+        "sha256": "a37fdb8e61487f7d63fa157cd0fe205df0f0f58dcafa9934564179688e9a2c4a",
+        "alpha": "opaque"
+      },
+      "authoredSource": [
+        "source/lobby.py",
+        "source/materials.py",
+        "source/room_detail.py"
+      ],
+      "sourceNodeIds": [
+        "entry_backstage_exit",
+        "hotel_lobby_view",
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_bride_ally",
+        "hotel_auction_dispute_ticket",
+        "hotel_auction_chair_lot31",
+        "hotel_chair_vegetation_inspection",
+        "hotel_chair_examiner_inspection",
+        "hotel_chair_stapler_stealth",
+        "hotel_chair_stapler_caught",
+        "hotel_chair_staff_escort",
+        "hotel_chair_ring_focus",
+        "hotel_ring_retrieved",
+        "hotel_ring_slips",
+        "hotel_ring_in_pocket",
+        "hotel_ring_show_bride",
+        "hotel_bride_ring_handover",
+        "hotel_bride_ring_bathroom",
+        "hotel_collection_ring_to_bride",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "fatal_lot61_folded",
+        "hotel_lot61_pod_declined",
+        "hotel_ring_inspect_inscription",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRequirements": "../v02/evidence/canonical-requirements.json",
+      "changes": "v03 lighting/composition retained, with chipped/stained plaster, localized slab cracks and worn tile corners, interrupted carpet nap, directional podium grain/dents, folded velvet seams, petal/urn clusters and fastened duct joints. Floor/window/ceiling long edges now share VP (182,112); podium long edges are corrected. Tiny NPCs remain simple.",
+      "knownLimitations": "The native room is still an economical stylized reconstruction. Aging and flower clusters are visible but less natural than the strongest approved Chapter 2 art. Perspective corrections are an illustration audit, not a full building model.",
+      "comparisonSheet": {
+        "file": "previews/CH4-01-v02-v03-v04-native.png",
+        "dimensions": [
+          990,
+          252
+        ],
+        "mode": "RGB",
+        "sha256": "27d1a15e8cbba2b167dc30cd4e6e460890eb37dcd432a7efcffefb23e89dde5a",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "id": "CH4-02",
+      "title": "Auctioneer Lobby Portrait Background",
+      "version": "v04",
+      "status": "generated / unselected",
+      "assetPath": null,
+      "native": {
+        "file": "native/CH4-02-auctioneer-background-v04.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB",
+        "sha256": "2e69bd29653344e1fe55ae5fc34977f7f457092364df1913eccc90c029dd3543",
+        "alpha": "opaque"
+      },
+      "preview4x": {
+        "file": "previews/CH4-02-auctioneer-background-v04-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB",
+        "sha256": "61809dd429499832ffb52d86426e66c29e81db643a7a37c57dc3e06b3dc6455f",
+        "alpha": "opaque"
+      },
+      "previousV02": {
+        "file": "../v02/native/CH4-02-auctioneer-background-v02.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB",
+        "sha256": "03875ce7531034e1a1ff5991d6bf4e9b87e8e6e676432d50047c608ea8a11b28",
+        "alpha": "opaque"
+      },
+      "previousV02Preview4x": {
+        "file": "previews/CH4-02-auctioneer-background-v02-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB",
+        "sha256": "2f6ae760958c7f87ac7edde29f14e0e8a4df3417fa57998869868540a765a38e",
+        "alpha": "opaque"
+      },
+      "previousV03": {
+        "file": "../v03/native/CH4-02-auctioneer-background-v03.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB",
+        "sha256": "eb59dd9db72aa9c1b650e467b83ba89185545477f5f9f5df45dbd263887cdda3",
+        "alpha": "opaque"
+      },
+      "previousV03Preview4x": {
+        "file": "previews/CH4-02-auctioneer-background-v03-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB",
+        "sha256": "fa7fc82c958ee47a08d4e41b4d75b23dc787d42c44ba0db56af3eda4013c6679",
+        "alpha": "opaque"
+      },
+      "previousV01": {
+        "file": "../v01/native/CH4-02-auctioneer-background-v01.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB",
+        "sha256": "4b47f40a040a0bbd0868d882c50ad2f65f3a1f33fcdce9fc9b4c42869c940977",
+        "alpha": "opaque"
+      },
+      "detailedReference": {
+        "file": "../v02/detailed/CH4-02-reference-v02-empty.png",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "sha256": "8cfc93733e6fa058da11a1ca979484f5df85d1f0a901251c7847efa94eb1a224",
+        "alpha": "opaque"
+      },
+      "authoredSource": [
+        "source/backdrop.py",
+        "source/materials.py",
+        "source/close_detail.py"
+      ],
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_testimonial",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_escaped",
+        "hotel_lot61_pod_declined",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute",
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "canonicalRequirements": "../v02/evidence/canonical-requirements.json",
+      "changes": "Same close hotel camera and warm practical-light hierarchy; illustrated cloth crests/troughs, loaded seams, broken fringe, plaster loss, trim mitres/splices, metal fasteners/tarnish, lamp joints and grain/dents replace smooth fabric gradients.",
+      "knownLimitations": "The close background remains simplified compared with the detailed concept. Lamp-lit planes are deliberately grouped and can still look graphic; owner should judge surface richness beside the approved receptionist background.",
+      "comparisonSheet": {
+        "file": "previews/CH4-02-v02-v03-v04-native.png",
+        "dimensions": [
+          1740,
+          324
+        ],
+        "mode": "RGB",
+        "sha256": "fa88ad1feb4f50d40de1bb8ab1dfcda90fe1aea21a22794c89f13fb64b43cd19",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "id": "CH4-03",
+      "title": "Auctioneer \u2014 Front-facing older man",
+      "version": "v04",
+      "status": "generated / unselected",
+      "assetPath": null,
+      "native": {
+        "file": "native/CH4-03-auctioneer-showman-v04.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "6e7d6eb3f2d74b98f9fd34a48fa9be9cb5c8f67567c868a71508c155d64dc46a",
+        "alpha": "transparent binary"
+      },
+      "preview4x": {
+        "file": "previews/CH4-03-auctioneer-showman-v04-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "7d346e3c06d28c4a97bcacf538fe6314eac11bfca27a39c573e2f73dfa50eb12",
+        "alpha": "transparent binary"
+      },
+      "previousV02": {
+        "file": "../v02/native/CH4-03-auctioneer-showman-v02.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "029cfb146a607452cd88a368b945e5d07d35ccd3da40985ac3a397225c313bf5",
+        "alpha": "transparent binary"
+      },
+      "previousV02Preview4x": {
+        "file": "previews/CH4-03-auctioneer-showman-v02-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "4c0648459ecb5f914f9c7bc5695d031ed8fbcf091a3f23f205bde6c7c34adeee",
+        "alpha": "transparent binary"
+      },
+      "previousV03": {
+        "file": "../v03/native/CH4-03-auctioneer-showman-v03.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "3cc08536fd8884748eb8a1d71bec6ea593022134920e703e4827e18591ee0360",
+        "alpha": "transparent binary"
+      },
+      "previousV03Preview4x": {
+        "file": "previews/CH4-03-auctioneer-showman-v03-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "8cada3b9e48fcb55caa14bd6c64010698b926c9722b0ffa6717bb1ad4b7b5adf",
+        "alpha": "transparent binary"
+      },
+      "previousV01": {
+        "file": "../v01/native/CH4-03-auctioneer-showman-v01.png",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA",
+        "sha256": "71a64d80e04ac9ee0f2e7cee52130deae4130c2087ae181e5512c0b6d5dfc281",
+        "alpha": "transparent binary"
+      },
+      "detailedReference": {
+        "file": "detailed/CH4-03-front-reference-v04.png",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "sha256": "9300890318bb925df403d595e12cad16a818ef4a0a14ac36ed120474f00ed347",
+        "alpha": "opaque"
+      },
+      "authoredSource": [
+        "source/auctioneer.py",
+        "source/materials.py"
+      ],
+      "sourceNodeIds": [
+        "hotel_auctioneer_arrival",
+        "hotel_auction_reopen_53",
+        "hotel_auction_chair_lot31",
+        "hotel_lot61_pod_auction",
+        "hotel_auctioneer_restroom_inventory",
+        "hotel_auctioneer_lot14_dispute"
+      ],
+      "canonicalRequirements": "../v02/evidence/canonical-requirements.json",
+      "changes": "Latest owner steering supersedes the old exaggerated profile: a front-facing ordinary older man, direct gaze, restrained dry expression, natural nose/ears, silver hair, burgundy formalwear and low-held gavel. Explicit skin/hair/cloth ramps restore wrinkles, eyes, fingers, seams, satin and shirt construction. Approved receptionist/attendant/presenter guide human style, detail and compatible palette.",
+      "knownLimitations": "This is a proposed new frontal identity, not an approved model sheet. It remains stylized: face/hair anatomy, apparent age, expression and gavel grip require owner review against the approved human NPCs. No claim that their minimum standard has been met.",
+      "previousDetailedReference": {
+        "file": "../v02/detailed/CH4-03-reference-v01.png",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB",
+        "sha256": "f890d199574fe279275d07319d1133bca0eca2999ae7c12eb4b0fd217508ed1a",
+        "alpha": "opaque"
+      },
+      "comparisonSheet": {
+        "file": "previews/CH4-03-v02-v03-v04-native.png",
+        "dimensions": [
+          1740,
+          324
+        ],
+        "mode": "RGB",
+        "sha256": "f08ed9eb7efac6a0fb55294923e58007510568e1bbfd8f5454c341e1ad6aab7e",
+        "alpha": "opaque"
+      }
+    }
+  ],
+  "approvedReferences": [
+    {
+      "file": "../v02/references/scenes__biology_park__conveniences_bureau.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "alpha": "opaque",
+      "title": "Bureau",
+      "preview4x": {
+        "file": "previews/approved-bureau-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "d20c5e77ea7f736d41718cee387b955050824ccc08a1e63a552e7bcd66b7cf3d",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "file": "../v02/references/scenes__biology_park__control_tower.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "alpha": "opaque",
+      "title": "Control Tower",
+      "preview4x": {
+        "file": "previews/approved-control-tower-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "ec024b48500b49ebda6d5e63d1c7e714ba525652345ff83e52d58ef144a4b9fc",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "file": "../v02/references/scenes__conference_hall__reception__reception_scene.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "fb010301d2df0c06d0cedaff6e35e60661e18764c9e5d9ed755ad78b0ac5fd53",
+      "alpha": "opaque",
+      "title": "Reception scene",
+      "preview4x": {
+        "file": "previews/approved-reception-scene-4x.png",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "sha256": "577bbda805b50ae820ff362f340f66df5a4447d73fb455ed49943742ba43f20a",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "file": "../v02/references/portraits__receptionist__reception_background.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "sha256": "16fe3a96d4304efdbd820981ae8d24039b176d30e28b6c0feee8b2baa08c3c74",
+      "alpha": "opaque",
+      "title": "Reception background",
+      "preview4x": {
+        "file": "previews/approved-reception-background-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB",
+        "sha256": "b176def3dbf19fc314b0955ea742d954595eb68b061525aedec395e27bc1af63",
+        "alpha": "opaque"
+      }
+    },
+    {
+      "file": "../v02/references/portraits__receptionist__receptionist_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "alpha": "transparent binary",
+      "title": "Receptionist foreground",
+      "preview4x": {
+        "file": "previews/approved-receptionist-foreground-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "230048e64a3192dd1d8de63858b2fa145abbf3822bb4406787b0dc2e9fe76c73",
+        "alpha": "transparent binary"
+      }
+    },
+    {
+      "file": "references/pavilion_attendant_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "alpha": "transparent binary",
+      "title": "Pavilion attendant",
+      "preview4x": {
+        "file": "previews/approved-pavilion-attendant-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee",
+        "alpha": "transparent binary"
+      }
+    },
+    {
+      "file": "references/pavilion_presenter_idle.png",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "alpha": "transparent binary",
+      "title": "Pavilion presenter",
+      "preview4x": {
+        "file": "previews/approved-pavilion-presenter-4x.png",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA",
+        "sha256": "7e011fa7021ff78aed6d2435cea79e51bf4ed9deeb0595fe6cdae27b9713dbe8",
+        "alpha": "transparent binary"
+      }
+    }
+  ],
+  "composite": {
+    "file": "previews/auctioneer-composite-v04.png",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB",
+    "sha256": "c47bb727d82623d9a5b212887fc338f506239adc581e0607969767a781954aa7",
+    "alpha": "opaque"
+  },
+  "preservationBaseline": "evidence/preservation-baseline.json",
+  "direction": "evidence/direction-v04.txt",
+  "validation": "evidence/validation.json"
+}
