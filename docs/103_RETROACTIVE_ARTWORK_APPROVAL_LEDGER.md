@@ -437,3 +437,8 @@ Nate explicitly approved all five without modification from `81cf3b5f022510737bd
 ## Chapter 4 B2-02 exact mixed-version approval — 2026-11-23
 
 Nate approves/selects CH4-B2-06/07/08 v02, CH4-B2-09 v03, CH4-B2-10/11 v01 unchanged. Exact hashes, sources, canonical copies and Gameplay PMO handoff: [docs/130](130_CH4_B202_APPROVAL_COMPLETION_20261123.md), with its JSON record and independent verifier. All prior approvals remain unchanged. The two B2-01 plumber v02 alternatives remain unapproved and separate. No narrative/gameplay/engine integration.
+
+
+## Chapter 4 B2-03 v01 exact owner approval — 2026-11-23
+
+Nate explicitly approves/selects all seven B2-03 v01 assets from24c79bff8d33b5997ccb6b7aa7bb86293afef291 unchanged: CH4-B2-12 through18. [docs/131 completion, exact hashes, canonical mappings and Gameplay PMO handoff](131_CH4_B203_APPROVAL_COMPLETION_20261123.md) and accompanying JSON/verifier pin the exact inputs. All prior approvals and B2-01 v01 remain unchanged; B2-01 alternative plumber portraits remain separate and unselected. No narrative/gameplay/engine integration.
