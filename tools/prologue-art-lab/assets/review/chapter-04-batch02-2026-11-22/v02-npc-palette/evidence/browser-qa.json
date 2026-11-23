@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:60921/",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "All new unselected candidates, composites and approved benchmark PNGs decode",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Plumber \u2014 worried",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Eddie \u2014 pleased",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved v01 plumber",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved v01 Eddie",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Plumber \u2014 worried on frozen approved background",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Eddie \u2014 pleased on frozen approved background",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion attendant",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion presenter",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Chapter2 Groundskeeper -61 opaque colors",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Chapter2 Conductor -50 opaque colors",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile preserves native raster in scrolling frame, no load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "All new unselected candidates, composites and approved benchmark PNGs decode",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Plumber \u2014 worried",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Eddie \u2014 pleased",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved v01 plumber",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved v01 Eddie",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Plumber \u2014 worried on frozen approved background",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Eddie \u2014 pleased on frozen approved background",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion attendant",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion presenter",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Chapter2 Groundskeeper -61 opaque colors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Chapter2 Conductor -50 opaque colors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile preserves native raster in scrolling frame, no load/runtime errors",
+      "passed": true
+    }
+  ]
+}

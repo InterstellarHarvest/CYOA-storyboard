@@ -1,0 +1,370 @@
+{
+  "title": "Chapter4 B2-02 Loading dock and service arrivals v01",
+  "groupId": "B2-02",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "inventorySource": "evidence/inventory-source.json",
+  "storyNodeCoverage": [
+    "entry_attendant_honest_end",
+    "entry_locomotion_fail",
+    "entry_presenter_help_end",
+    "hotel_maintenance_dock_exit",
+    "hotel_service_arrival",
+    "hotel_service_foreman",
+    "hotel_service_park_exit"
+  ],
+  "productionIntegrationPerformed": false,
+  "sourceDerived": true,
+  "assets": [
+    {
+      "id": "CH4-B2-06",
+      "title": "Loading Lane",
+      "key": "scenes:grand_bellevue/loading_lane",
+      "inventoryId": "main_scene:grand_bellevue/loading_lane",
+      "kind": "scene",
+      "nodeIds": [
+        "entry_locomotion_fail"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "native": {
+        "file": "native/CH4-B2-06-v01.png",
+        "sha256": "95cf91efe4ac1cf77564d3cdc4b423251f6987227ad8279f9e6f0bdf05e6a7e6",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-06-4x.png",
+        "sha256": "3e06e104bb1e935fce882ed66117a19f71803f37d1b74dcbf8faca546ccdd1ab",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "original": {
+        "file": "originals/CH4-B2-06-original.png",
+        "sha256": "5148fdfc18fbb2cd397341471ffbd37a0f95e7ce472d5e6cf0e5abf3d90312a3",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-06.txt"
+    },
+    {
+      "id": "CH4-B2-07",
+      "title": "Service Alley",
+      "key": "scenes:grand_bellevue/service_alley",
+      "inventoryId": "main_scene:grand_bellevue/service_alley",
+      "kind": "scene",
+      "nodeIds": [
+        "entry_presenter_help_end",
+        "entry_attendant_honest_end"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "native": {
+        "file": "native/CH4-B2-07-v01.png",
+        "sha256": "4f07ea1460df2381b884191b9adeadea9644947948f30f09fe7359126afeb5d4",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-07-4x.png",
+        "sha256": "e3ceb114f99175ac31588fdb93a52c644aac6f733e80a02e2560093862dbd53d",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "original": {
+        "file": "originals/CH4-B2-07-original.png",
+        "sha256": "2767d4ae2d93b147bedba71afcfeac90d8658135f8c42f87286b639bc70ae59b",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-07.txt"
+    },
+    {
+      "id": "CH4-B2-08",
+      "title": "Loading Dock",
+      "key": "scenes:grand_bellevue/loading_dock",
+      "inventoryId": "main_scene:grand_bellevue/loading_dock",
+      "kind": "scene",
+      "nodeIds": [
+        "hotel_service_arrival",
+        "hotel_service_foreman",
+        "hotel_service_park_exit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "native": {
+        "file": "native/CH4-B2-08-v01.png",
+        "sha256": "4e6903237a29e43d6031b713c880d5b22c58d01635bcf2749377e7b2e1f58c20",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-08-4x.png",
+        "sha256": "8980533a550ccae1ef270a2bdec081d65981bf99b71870ecb9758660e46c78ef",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "original": {
+        "file": "originals/CH4-B2-08-original.png",
+        "sha256": "e21bc3b15979aacd2050c528d8ba28870f58ba62aa1b27603c834a4901350150",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-08.txt"
+    },
+    {
+      "id": "CH4-B2-09",
+      "title": "Service Stairs",
+      "key": "scenes:grand_bellevue/service_stairs",
+      "inventoryId": "main_scene:grand_bellevue/service_stairs",
+      "kind": "scene",
+      "nodeIds": [
+        "hotel_maintenance_dock_exit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "native": {
+        "file": "native/CH4-B2-09-v01.png",
+        "sha256": "9195b4b5608d04d85b67c6aa64a917b55607b9e4978d498ff2977bac5165c1ea",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-09-4x.png",
+        "sha256": "bfac5b82fe99ffca74424839e66b932d8220887e94fb909750a3c9a9fe7b80a8",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "original": {
+        "file": "originals/CH4-B2-09-original.png",
+        "sha256": "eba14e1aa7980cda5d55b53fa05604b10bc6bb2e9cbe94e1330aa1fe5275c33d",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-09.txt"
+    },
+    {
+      "id": "CH4-B2-10",
+      "title": "Hotel Salvage Foreman:Annoyed",
+      "key": "portraits:hotel_salvage_foreman:annoyed",
+      "inventoryId": "portrait:hotel_salvage_foreman:annoyed",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_service_foreman"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "native": {
+        "file": "native/CH4-B2-10-v01.png",
+        "sha256": "d394c5c3617f1da66eb6957d8eb2d8594e018e558b30efe0e5eef6d43f095aad",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-10-4x.png",
+        "sha256": "64d1c3ac3dddf5d88b71672c1edf187d5d33f2d7620505d84a230c769488db71",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "original": {
+        "file": "originals/CH4-B2-10-original.png",
+        "sha256": "46a0cd16ba6ac34100e456f102d26f1e98672a10b49ea1117d4785076c0fc7b4",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "prompt": "prompts/CH4-B2-10.txt"
+    },
+    {
+      "id": "CH4-B2-11",
+      "title": "Loading Dock",
+      "key": "scenes:grand_bellevue/loading_dock#portraitBackground",
+      "inventoryId": "portrait_background:grand_bellevue/loading_dock",
+      "kind": "portrait-background",
+      "nodeIds": [
+        "hotel_service_foreman"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "native": {
+        "file": "native/CH4-B2-11-v01.png",
+        "sha256": "27f69050b10d3e10121f7f2c2860db1418504b00d3848daabde420485b9bcc1f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-11-4x.png",
+        "sha256": "c0097de65257864133a726c47200c4375b00f82b4808938cfcdaca62b2e5aff1",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "original": {
+        "file": "originals/CH4-B2-11-original.png",
+        "sha256": "0eda239bef26fdef216e0f1e0f50c36e511d70bef612268c5406420722d77220",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-11.txt"
+    }
+  ],
+  "references": {
+    "approved-lobby.png": {
+      "file": "references/approved-lobby.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "approved-restroom.png": {
+      "file": "references/approved-restroom.png",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "approved-auctioneer.png": {
+      "file": "references/approved-auctioneer.png",
+      "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "approved-attendant.png": {
+      "file": "references/approved-attendant.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "approved-presenter.png": {
+      "file": "references/approved-presenter.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "approved-receptionist.png": {
+      "file": "references/approved-receptionist.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "approved-groundkeeper.png": {
+      "file": "references/approved-groundkeeper.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "approved-conductor.png": {
+      "file": "references/approved-conductor.png",
+      "sha256": "8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "approved-tower.png": {
+      "file": "references/approved-tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "approved-bureau.png": {
+      "file": "references/approved-bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "approved-pavilion-exterior.png": {
+      "file": "references/approved-pavilion-exterior.png",
+      "sha256": "76b3232f685fd392f981f0c846382e3ddccd61ed94d44e09ea1bc5cf032c3e8a",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    }
+  }
+}

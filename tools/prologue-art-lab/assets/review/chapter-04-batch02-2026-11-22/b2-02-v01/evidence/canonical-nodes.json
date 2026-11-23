@@ -1,0 +1,142 @@
+{
+  "entry_attendant_honest_end": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_alley",
+    "text": "The Pavilion's service door closes behind you.\n\nThe attendant's parting words stay with you. You hope you find somewhere to go, too.\n\nAcross the service yard, a delivery truck reverses toward the Grand Bellevue Hotel. Its driver is arguing with a man carrying an enormous flower arrangement.\n\nThe hotel's delivery entrance stands open, held in place by a wooden crate. WEDDING CAKE - THIS SIDE UP.\n\nThe crate is lying on its side.\n\nBeyond the entrance, you notice a familiar symbol mounted above a narrow corridor. A restroom.\n\nPerhaps the attendant's good wishes have finally accomplished something. You slip inside.",
+    "choices": [
+      {
+        "id": "continue_from_attendant",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_service_arrival"
+      }
+    ]
+  },
+  "entry_locomotion_fail": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/loading_lane",
+    "text": "The last foam cushion falls off your shoulder.\n\nYou stand in the loading lane behind the People's Pavilion. The padded collection cart that deposited you outside is already disappearing through a mechanical doorway.\n\nAcross the lane, several workmen are unloading an enormous ornamental staircase from the back of a freight truck.\n\nThe staircase appears to be coming out of the building rather than going in.\n\nGRAND BELLEVUE HOTEL, reads the sign above the loading bay.\n\nBeyond the workers, through an open service entrance, you spot a small rectangular sign. RESTROOMS.\n\nYou look at the staircase. You look at the sign. You decide the workers probably know what they're doing.",
+    "choices": [
+      {
+        "id": "continue_from_locomotion",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_service_arrival"
+      }
+    ]
+  },
+  "entry_presenter_help_end": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_alley",
+    "text": "You emerge from the Pavilion's maintenance passage into a narrow service alley.\n\nFresh air. Daylight. No announcer telling you how well you're performing.\n\nA magnificent improvement.\n\nTwo men struggle past carrying an enormous upholstered sofa between them. Behind them, a third man pushes a trolley loaded with wedding decorations.\n\nThey disappear into the loading entrance of the Grand Bellevue Hotel.\n\nA sign beside the entrance points toward the hotel's service facilities. Below a small restroom symbol, somebody has written STAFF AND VISITORS.\n\nYou have never been so grateful to be either.\n\nYou follow the workers inside.",
+    "choices": [
+      {
+        "id": "continue_from_presenter",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_service_arrival"
+      }
+    ]
+  },
+  "hotel_maintenance_dock_exit": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_stairs",
+    "text": "The iron stairway rattles under your feet. A swinging door at the bottom opens onto the hotel's loading dock. Crates, furniture, and a grand piano occupy most of the floor. An elaborate wedding cake is being wheeled dangerously close to the freight elevator.\n\nYou are still looking for the staff restroom sign when a foreman spots you and points sharply at the moving equipment.",
+    "choices": [
+      {
+        "id": "dock_meet_foreman",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_service_foreman"
+      }
+    ]
+  },
+  "hotel_service_arrival": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/loading_dock",
+    "text": "The hotel's loading area is enormous. Freight elevators line one wall. Wooden crates occupy another. A collection of expensive furniture stands between them, waiting to be removed.\n\nA mechanical hoist slowly lowers an ornate chandelier into a padded shipping container.\n\nTwo workmen argue over a piano that appears to be considerably wider than the doorway through which they intend to move it.\n\nA third man, wearing rolled-up sleeves and a battered cap, watches the proceedings with mounting irritation. He notices you.",
+    "choices": [
+      {
+        "id": "meet_salvage_foreman",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_service_foreman"
+      }
+    ]
+  },
+  "hotel_service_foreman": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/loading_dock",
+    "speaker": "hotel_salvage_foreman",
+    "pose": "annoyed",
+    "text": [
+      "You! Stay clear of that lift!",
+      {
+        "desc": "He points toward the piano."
+      },
+      "If that thing tips over, I'm not putting it back together.",
+      {
+        "desc": "A tremendous crash comes from somewhere upstairs. The foreman closes his eyes."
+      },
+      "That's another one.",
+      "You collecting something?",
+      {
+        "desc": "You point toward the staff facilities corridor."
+      },
+      "Lavatory's down there. Unless they've sold that too.",
+      {
+        "desc": "He turns back to the freight equipment. For once, nobody asks you to help move anything."
+      }
+    ],
+    "choices": [
+      {
+        "id": "service_s1_restroom",
+        "kind": "action",
+        "text": "FOLLOW THE RESTROOM SIGN THROUGH THE SERVICE CORRIDOR.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "service_s3_lift",
+        "kind": "action",
+        "text": "TAKE THE FREIGHT ELEVATOR UP TO SEARCH FOR A RESTROOM.",
+        "to": "hotel_freight_wc_misunderstanding"
+      },
+      {
+        "id": "service_yard_leave_park",
+        "kind": "action",
+        "text": "LEAVE THE HOTEL BY THE SIDE GATE AND HEAD FOR THE PARK.",
+        "to": "hotel_service_park_exit"
+      }
+    ]
+  },
+  "hotel_service_park_exit": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/loading_dock",
+    "end": true,
+    "effects": {
+      "set": {
+        "ch4_exit_route": "service_loading_dock",
+        "ch4_exit_park_approached": true
+      }
+    },
+    "text": [
+      "You follow the service passage to the loading dock. Workers are still carrying pieces of the Grand Bellevue onto trucks. You pass the crates and approach a narrow pedestrian gate.",
+      {
+        "say": "Leaving?",
+        "who": "hotel_service_foreman"
+      },
+      {
+        "say": "YES.",
+        "who": "visitor"
+      },
+      {
+        "say": "Use the side gate. It's the one thing they're not shipping.",
+        "who": "hotel_service_foreman"
+      },
+      "You push through. Across the courtyard is a small public park: trees, grass, a few promising shrubs. Surely you can find a little privacy there.",
+      "You cross the courtyard and head toward the park.\n\nEND CHAPTER 4."
+    ],
+    "choices": [],
+    "notes": "Owner-approved nonfatal Chapter 4 ending. Retain all inventory and existing fee flags, including ch4_bridal_registration_fee_pending if set. Chapter 5 introduces any fried animals, hidden security plant prototypes, or hazards; reveal none here. No bathroom sign."
+  }
+}

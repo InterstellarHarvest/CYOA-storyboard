@@ -1,0 +1,390 @@
+{
+  "pillowVersion": "12.3.0",
+  "allSourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "assets": {
+    "CH4-B2-06": {
+      "sourceDerived": true,
+      "nativeTransfer": "Controlled Lanczos reduction of new composed illustration, then restrained native edge clarification (UnsharpMask radius0.45,60%,threshold3); no palette cap on environment",
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    "CH4-B2-07": {
+      "sourceDerived": true,
+      "nativeTransfer": "Controlled Lanczos reduction of new composed illustration, then restrained native edge clarification (UnsharpMask radius0.45,60%,threshold3); no palette cap on environment",
+      "independentlyAuthoredAtNativeResolution": false,
+      "stagingCorrection": {
+        "file": "originals/CH4-B2-07-worker-corrected.png",
+        "nativeBox": [
+          59,
+          94,
+          96,
+          154
+        ],
+        "changedPixels": 2206,
+        "outsideBoxChangesBeforeFinish": 0,
+        "reason": "Match the exact authored worker count/description"
+      }
+    },
+    "CH4-B2-08": {
+      "sourceDerived": true,
+      "nativeTransfer": "Controlled Lanczos reduction of new composed illustration, then restrained native edge clarification (UnsharpMask radius0.45,60%,threshold3); no palette cap on environment",
+      "independentlyAuthoredAtNativeResolution": false,
+      "stagingCorrection": {
+        "file": "originals/CH4-B2-08-workers-corrected.png",
+        "nativeBox": [
+          212,
+          91,
+          247,
+          115
+        ],
+        "changedPixels": 839,
+        "outsideBoxChangesBeforeFinish": 0,
+        "reason": "Match the exact authored worker count/description"
+      }
+    },
+    "CH4-B2-09": {
+      "sourceDerived": true,
+      "nativeTransfer": "Controlled Lanczos reduction of new composed illustration, then restrained native edge clarification (UnsharpMask radius0.45,60%,threshold3); no palette cap on environment",
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    "CH4-B2-10": {
+      "method": "Opaque-interior weighted median-cut palette fit; every foreground RGB assigned to nearest chosen tone, no dithering or new shading",
+      "calibration": "Approved Chapter2 Groundskeeper61 and Courtesy Conductor50 opaque colors; choose conventional64-tone NPC treatment, not a global environment limit",
+      "sourceRGBColors": 14982,
+      "finalRGBColors": 64,
+      "palette": [
+        [
+          248,
+          226,
+          190
+        ],
+        [
+          245,
+          219,
+          183
+        ],
+        [
+          244,
+          218,
+          181
+        ],
+        [
+          244,
+          217,
+          180
+        ],
+        [
+          244,
+          216,
+          178
+        ],
+        [
+          241,
+          215,
+          178
+        ],
+        [
+          236,
+          207,
+          171
+        ],
+        [
+          233,
+          184,
+          143
+        ],
+        [
+          245,
+          172,
+          123
+        ],
+        [
+          244,
+          169,
+          121
+        ],
+        [
+          244,
+          168,
+          120
+        ],
+        [
+          243,
+          168,
+          120
+        ],
+        [
+          243,
+          165,
+          117
+        ],
+        [
+          241,
+          168,
+          120
+        ],
+        [
+          240,
+          163,
+          115
+        ],
+        [
+          231,
+          162,
+          117
+        ],
+        [
+          193,
+          161,
+          129
+        ],
+        [
+          216,
+          146,
+          104
+        ],
+        [
+          190,
+          145,
+          110
+        ],
+        [
+          178,
+          150,
+          120
+        ],
+        [
+          175,
+          146,
+          115
+        ],
+        [
+          199,
+          128,
+          89
+        ],
+        [
+          189,
+          127,
+          91
+        ],
+        [
+          190,
+          120,
+          84
+        ],
+        [
+          166,
+          141,
+          115
+        ],
+        [
+          155,
+          124,
+          99
+        ],
+        [
+          152,
+          104,
+          78
+        ],
+        [
+          122,
+          99,
+          84
+        ],
+        [
+          134,
+          88,
+          67
+        ],
+        [
+          130,
+          87,
+          68
+        ],
+        [
+          129,
+          87,
+          67
+        ],
+        [
+          125,
+          87,
+          69
+        ],
+        [
+          130,
+          86,
+          66
+        ],
+        [
+          128,
+          86,
+          67
+        ],
+        [
+          126,
+          86,
+          67
+        ],
+        [
+          127,
+          85,
+          66
+        ],
+        [
+          131,
+          82,
+          61
+        ],
+        [
+          125,
+          84,
+          66
+        ],
+        [
+          119,
+          83,
+          66
+        ],
+        [
+          114,
+          78,
+          62
+        ],
+        [
+          105,
+          69,
+          55
+        ],
+        [
+          86,
+          78,
+          76
+        ],
+        [
+          82,
+          73,
+          71
+        ],
+        [
+          85,
+          68,
+          64
+        ],
+        [
+          74,
+          68,
+          69
+        ],
+        [
+          96,
+          66,
+          55
+        ],
+        [
+          95,
+          65,
+          54
+        ],
+        [
+          96,
+          65,
+          53
+        ],
+        [
+          86,
+          65,
+          59
+        ],
+        [
+          97,
+          64,
+          52
+        ],
+        [
+          94,
+          64,
+          53
+        ],
+        [
+          93,
+          64,
+          53
+        ],
+        [
+          88,
+          63,
+          53
+        ],
+        [
+          80,
+          53,
+          43
+        ],
+        [
+          65,
+          51,
+          46
+        ],
+        [
+          68,
+          45,
+          37
+        ],
+        [
+          63,
+          38,
+          29
+        ],
+        [
+          47,
+          44,
+          48
+        ],
+        [
+          44,
+          39,
+          40
+        ],
+        [
+          43,
+          33,
+          29
+        ],
+        [
+          34,
+          31,
+          31
+        ],
+        [
+          32,
+          27,
+          26
+        ],
+        [
+          27,
+          26,
+          26
+        ],
+        [
+          24,
+          21,
+          21
+        ]
+      ],
+      "alphaExactlyPreserved": true,
+      "anatomyReconstructed": false,
+      "gradientsAdded": false,
+      "sourceDerived": true,
+      "nativeTransfer": "Nearest target-grid transfer of newly generated stepped-cluster art; binary cutout alpha; no smooth gradients or sharpening",
+      "sourceGeometryModifiedAtNative": false
+    },
+    "CH4-B2-11": {
+      "sourceDerived": true,
+      "nativeTransfer": "Controlled Lanczos reduction of new composed illustration, then restrained native edge clarification (UnsharpMask radius0.45,60%,threshold3); no palette cap on environment",
+      "independentlyAuthoredAtNativeResolution": false
+    }
+  }
+}

@@ -1,5 +1,14 @@
 # Chapter 4 artwork review instructions
 
+## Latest Chapter4 owner decisions — 2026-11-22
+
+B2-01 v01 (five assets from81cf3b5f022510737bdd2d4ba3703e0173d86772) is now APPROVED and SELECTED unchanged, canonical main fde5708e0043972feeae0309e8a1d1836e756dae, docs128, PR21. All ten approved Chapter4 assets stay exact. Later plumber palette alternatives are new UNSELECTED candidates, never automatic replacements.
+
+Nate explicitly requests compact Chapter1/2 NPC color ramps: preserve anatomy, face/hair/hands/fabric detail, but fewer deliberate shade steps, no excessive gradient shading or fine-grained surface noise. New NPCs use a64-tone no-dither fit calibrated to approved Chapter2 references, not a global palette limit for environments. Actual artwork at native/exact4x remains the visual gate. Follow this direction in subsequent batches.
+
+Current new reviews live in the sibling chapter-04-batch02-2026-11-22 package: b2-02-v01 (six loading-dock/service-arrival assets) and v02-npc-palette (both requested plumber alternatives). Publish completed UNSELECTED candidates with originals, prompts, provenance, comparisons, hashes and QA; no narrative/gameplay or engine integration.
+
+
 ## Owner selection — 2026-11-22 (supersedes review-time status below)
 
 Nate approved all five exact Batch1 selections unchanged from v08: CH4-01/02 v05, CH4-03 v08 and CH4-04/05 v07. They are now APPROVED and SELECTED, not integrated. [Canonical registration/closeout](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/ee5948f14144d2bd99b75432e8d58422e8958bf1/docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md); main commit `ee5948f14144d2bd99b75432e8d58422e8958bf1`, PR20. All five public selected PNGs and registry statuses were verified against immutable owner hashes. [Approval record](BATCH1-APPROVED-20261122.json), [public verification](BATCH1-PUBLIC-VERIFICATION-20261122.json). The old UNSELECTED statements in preserved historical packages describe the review-time state; this later approval supersedes them only for those five exact assets.

@@ -1,0 +1,183 @@
+{
+  "sourceCommit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+  "file": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "sha256": "078a9fd4e7abf798f59b63de436fd240d17e45835d32f728fd1f752ef3c9e693",
+  "group": {
+    "id": "B2-02",
+    "title": "Loading dock and service arrivals",
+    "note": "Dock/lane/alley/stairs continuity, foreman and dock conversation view.",
+    "inventoryIds": [
+      "main_scene:grand_bellevue/loading_lane",
+      "main_scene:grand_bellevue/service_alley",
+      "main_scene:grand_bellevue/loading_dock",
+      "main_scene:grand_bellevue/service_stairs",
+      "portrait:hotel_salvage_foreman:annoyed",
+      "portrait_background:grand_bellevue/loading_dock"
+    ],
+    "primaryUnits": 6,
+    "stateFamilies": 0,
+    "nodeIds": [
+      "entry_attendant_honest_end",
+      "entry_locomotion_fail",
+      "entry_presenter_help_end",
+      "hotel_maintenance_dock_exit",
+      "hotel_service_arrival",
+      "hotel_service_foreman",
+      "hotel_service_park_exit"
+    ],
+    "generationStarted": false
+  },
+  "assets": [
+    {
+      "inventoryId": "main_scene:grand_bellevue/loading_lane",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/loading_lane",
+      "nodeIds": [
+        "entry_locomotion_fail"
+      ],
+      "group": "B2-02",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "The last foam cushion falls off your shoulder.\n\nYou stand in the loading lane behind the People's Pavilion. The padded collection cart that deposited you outside is already disappearing through a mechanical doorway.\n\nAcross the lane, several workmen are unloading an enormous ornamental staircase from the back of a freight truck.\n\nThe staircase appears to be coming out of the building rather than going in.\n\nGRAND BELLEVUE HOTEL, reads the sign above the loading bay.\n\nBeyond the workers, through an open service entrance, you spot a small rectangular sign. RESTROOMS.\n\nYou look at the staircase. You look at the sign. You decide the workers probably know what they're doing."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "main_scene:grand_bellevue/service_alley",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/service_alley",
+      "nodeIds": [
+        "entry_presenter_help_end",
+        "entry_attendant_honest_end"
+      ],
+      "group": "B2-02",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "You emerge from the Pavilion's maintenance passage into a narrow service alley.\n\nFresh air. Daylight. No announcer telling you how well you're performing.\n\nA magnificent improvement.\n\nTwo men struggle past carrying an enormous upholstered sofa between them. Behind them, a third man pushes a trolley loaded with wedding decorations.\n\nThey disappear into the loading entrance of the Grand Bellevue Hotel.\n\nA sign beside the entrance points toward the hotel's service facilities. Below a small restroom symbol, somebody has written STAFF AND VISITORS.\n\nYou have never been so grateful to be either.\n\nYou follow the workers inside."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "main_scene:grand_bellevue/loading_dock",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/loading_dock",
+      "nodeIds": [
+        "hotel_service_arrival",
+        "hotel_service_foreman",
+        "hotel_service_park_exit"
+      ],
+      "group": "B2-02",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "The hotel's loading area is enormous. Freight elevators line one wall. Wooden crates occupy another. A collection of expensive furniture stands between them, waiting to be removed.\n\nA mechanical hoist slowly lowers an ornate chandelier into a padded shipping container.\n\nTwo workmen argue over a piano that appears to be considerably wider than the doorway through which they intend to move it.\n\nA third man, wearing rolled-up sleeves and a battered cap, watches the proceedings with mounting irritation. He notices you."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "main_scene:grand_bellevue/service_stairs",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/service_stairs",
+      "nodeIds": [
+        "hotel_maintenance_dock_exit"
+      ],
+      "group": "B2-02",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "The iron stairway rattles under your feet. A swinging door at the bottom opens onto the hotel's loading dock. Crates, furniture, and a grand piano occupy most of the floor. An elaborate wedding cake is being wheeled dangerously close to the freight elevator.\n\nYou are still looking for the staff restroom sign when a foreman spots you and points sharply at the moving equipment."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "portrait:hotel_salvage_foreman:annoyed",
+      "category": "portrait",
+      "logicalKey": "hotel_salvage_foreman:annoyed",
+      "nodeIds": [
+        "hotel_service_foreman"
+      ],
+      "group": "B2-02",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "speaker",
+        "pose"
+      ],
+      "speaker": "hotel_salvage_foreman",
+      "pose": "annoyed",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "transparent foreground where a visible character/device foreground is used",
+      "coverageState": "UNPRODUCED_EXPLICIT_POSE_KEY",
+      "preferredBatch1Asset": null,
+      "visualRealization": "Human NPC portrait; retain identity across the exact authored poses.",
+      "sceneKeys": [
+        "grand_bellevue/loading_dock"
+      ]
+    },
+    {
+      "inventoryId": "portrait_background:grand_bellevue/loading_dock",
+      "category": "portrait_background",
+      "logicalKey": "grand_bellevue/loading_dock",
+      "nodeIds": [
+        "hotel_service_foreman"
+      ],
+      "group": "B2-02",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene",
+        "speaker"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "opaque architectural background",
+      "coverageState": "PLANNED_DIALOGUE_CONTEXT",
+      "preferredBatch1Asset": null,
+      "canonicalKeyNote": "Derived dialogue-location demand under the established layered portrait contract, not an already registered new canonical background ID.",
+      "planningNote": "One location can share a consistent closer camera among speakers. Voice-only panels may reuse a context view; do not automatically count every key as a distinct PNG."
+    }
+  ]
+}

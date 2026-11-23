@@ -1,0 +1,86 @@
+{
+  "title": "B2-01 plumbers \u2014 requested compact-palette alternatives v02",
+  "status": "UNSELECTED",
+  "ownerRequest": "Run the same Chapter1/2 NPC palette cleanser on both plumber portraits",
+  "approvedV01Modified": false,
+  "backgroundAndFocusArtModified": false,
+  "sourceDerived": true,
+  "artworkReillustrated": true,
+  "approvedV01GeometryNotClaimedIdentical": true,
+  "assets": [
+    {
+      "id": "CH4-B2-01",
+      "title": "Plumber \u2014 worried",
+      "key": "portraits:hotel_plumber:worried",
+      "nodeIds": [
+        "hotel_restroom_plumber"
+      ],
+      "kind": "portrait",
+      "status": "UNSELECTED",
+      "selected": false,
+      "native": {
+        "file": "native/CH4-B2-01-palette-v02.png",
+        "sha256": "1c5769d9bbd4c3c9ab43c0358745c1f8da563d78bb5b69cb5e34cd206dea09de",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-01-palette-v02-4x.png",
+        "sha256": "ba386c2bed389dcfe74265aa8df636ec5321560369b1731915c4be81be2b088f",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "approvedSource": {
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "file": "v01/native/CH4-B2-01-v01.png",
+        "sha256": "cedd81713cbd5ee4bb0a97d869a62c395a1b34ea04ba276fa5ac21c01d5de65d"
+      },
+      "method": "Requested new stepped-ramp illustration from approved identity/pose, nearest target-grid transfer and compact64-tone fit; source-derived, approved original unchanged"
+    },
+    {
+      "id": "CH4-B2-02",
+      "title": "Eddie \u2014 pleased",
+      "key": "portraits:hotel_plumber_assistant:pleased",
+      "nodeIds": [
+        "hotel_wheel_buyer_lead"
+      ],
+      "kind": "portrait",
+      "status": "UNSELECTED",
+      "selected": false,
+      "native": {
+        "file": "native/CH4-B2-02-palette-v02.png",
+        "sha256": "69c8fa47656c39b3a29063fab6f39ec81ed93618761af5d2ea41aa1dbf929b80",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-02-palette-v02-4x.png",
+        "sha256": "b91e97e0377349c1ad1ec18e459cf8e5e864605059d80a96788eca09bfaf8362",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "approvedSource": {
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "file": "v01/native/CH4-B2-02-v01.png",
+        "sha256": "ac47c23105b70af92b970682b72c266726ddbe9a75e182bdf6a71869568d6eea"
+      },
+      "method": "Requested new stepped-ramp illustration from approved identity/pose, nearest target-grid transfer and compact64-tone fit; source-derived, approved original unchanged"
+    }
+  ],
+  "frozenBackground": {
+    "file": "../v01/native/CH4-B2-03-v01.png",
+    "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377"
+  }
+}
