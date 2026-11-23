@@ -1,3 +1,9 @@
+# Current B2-04 owner approval and B2-05 review — 2026-11-23
+
+Nate APPROVES/SELECTS the seven B2-04 primary v01 assets and APPROVES/PRESERVES the three supplemental conditional references unchanged, exclusively from3804fa2013aeb81e17236e4995e2ef1e9596d404. Canonical approval main8a5b91f4effabda5e6ebb5f53f317850931db68b, PR25, docs132. Supplemental states remain reference-only: no new Focus IDs, pages, runtime bindings, nodes or gameplay modes. Preserve all30 approved primary Chapter4 images plus the three approved references and every earlier approval/review exact. Two B2-01 plumber alternatives remain separate/unselected; v01 approvals stay selected.
+
+Current B2-05 v01 contains exactly five canonical portraits: bride determined/hopeful/grateful/helpful and precise auction clerk. All are UNSELECTED. Four bride poses share one identity. Hopeful has empty hands; grateful holds the received silver ring/pale-blue ribbon; helpful does not invent a key. Reuse exact approved lobby background. Follow permanent docs129 and approved B2-04 portrait native palette/cluster/silhouette method, preserving useful source colors/anatomy. Material masks must not erase or recolor rare story objects. Every candidate needs approved Chapter2 comparisons at native/exact4×. No canonical story changes or integration.
+
 # Current owner approval — B2-03, 2026-11-23
 
 Nate explicitly approves all seven B2-03 v01 PNGs unchanged from24c79bff8d33b5997ccb6b7aa7bb86293afef291. Registration is complete on canonical main2c0f1c5a22c234bc561b12d98009a10883cf66ac, PR24, docs131. All23 approved Chapter4 PNGs and all earlier approvals must stay byte-exact. Historical B2-03 review files/UNSELECTED labels remain untouched; the new exact-hash approval receipt supersedes their review-time status. B2-01 plumber alternatives remain separate/unselected; v01 selections remain approved.

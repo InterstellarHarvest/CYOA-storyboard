@@ -1,3 +1,9 @@
+# Current owner approvals and new B2-05 review
+
+B2-04 is registered unchanged on canonical main `8a5b91f4effabda5e6ebb5f53f317850931db68b`, [PR25](https://github.com/InterstellarHarvest/CYOA-storyboard/pull/25): seven primary APPROVED/SELECTED, three supplemental conditional references APPROVED/PRESERVED, with no new Focus IDs or runtime bindings. [Completion/gameplay handoff](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/8a5b91f4effabda5e6ebb5f53f317850931db68b/docs/132_CH4_B204_APPROVAL_COMPLETION_20261123.md), [exact approval receipt](B2-04-APPROVED-20261123.json), [public verification](B2-04-APPROVAL-PUBLIC-VERIFICATION-20261123.json). Historical UNSELECTED notes below are superseded only for the exact approved hashes.
+
+New [B2-05 v01 — bride and auction clerk](b2-05-v01/index.html): five UNSELECTED portraits, native/exact4× canonical comparisons and composites over the unchanged approved lobby background. [Manifest](b2-05-v01/manifest.json), [source method/prompts](b2-05-v01/README.md). Earlier approvals, historical reviews and unselected plumber alternatives remain unchanged.
+
 Public B2-04: [open the verified native/exact4× gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/3804fa2013aeb81e17236e4995e2ef1e9596d404/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/online.html) · [B2-03 completion + B2-04 publication/hashes](B2-04-REVIEW-PUBLICATION-20261123.md) · [public file verification](B2-04-PUBLIC-VERIFICATION-20261123.json). All seven primary assets and three supplemental state frames remain UNSELECTED.
 
 # Current new review — B2-04 v01

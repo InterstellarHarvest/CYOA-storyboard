@@ -1,0 +1,316 @@
+{
+  "canonicalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+  "group": {
+    "id": "B2-05",
+    "title": "Bride and auction clerk",
+    "note": "Four exact bride poses and the precise clerk; reuse frozen lobby portrait background where appropriate.",
+    "inventoryIds": [
+      "portrait:hotel_bride:determined",
+      "portrait:hotel_auction_clerk:precise",
+      "portrait:hotel_bride:hopeful",
+      "portrait:hotel_bride:grateful",
+      "portrait:hotel_bride:helpful"
+    ],
+    "primaryUnits": 5,
+    "stateFamilies": 0,
+    "nodeIds": [
+      "hotel_auction_bride_ally",
+      "hotel_auction_dispute_ticket",
+      "hotel_bride_ring_bathroom",
+      "hotel_bride_ring_handover",
+      "hotel_chair_examiner_inspection",
+      "hotel_ring_show_bride"
+    ],
+    "generationStarted": false
+  },
+  "nodes": {
+    "hotel_auction_bride_ally": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_bride",
+      "pose": "determined",
+      "effects": {
+        "set": {
+          "ch4_bride_ally": true,
+          "ch4_knows_blue_delivery_ledger": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The bride looks at you with sudden appreciation."
+        },
+        "Believe me, I've been trying.",
+        "Papa can't remove anything without my signature in the blue delivery ledger. It's in his own contract.",
+        {
+          "say": "A charming little formality.",
+          "who": "hotel_auctioneer"
+        },
+        "It's at the loading dock. If you need to stop something being taken away, that's the paperwork.",
+        {
+          "say": "A less charming formality.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "You now know where to challenge a removal. Nobody has asked you to fix the wedding."
+        }
+      ],
+      "choices": [
+        {
+          "id": "bride_ally_to_chair",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_auction_chair_lot31"
+        }
+      ]
+    },
+    "hotel_auction_dispute_ticket": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auction_clerk",
+      "pose": "precise",
+      "effects": {
+        "give": [
+          "lot_53_dispute_ticket"
+        ]
+      },
+      "text": [
+        {
+          "desc": "The auctioneer looks delighted."
+        },
+        {
+          "say": "Certainly! Nothing inspires confidence quite like a dissatisfied customer!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "See that the gentleman receives the appropriate paperwork.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "The clerk produces a small pad of red carbon-copy tickets."
+        },
+        "Lot Fifty-Three. Formal objection. Reason for dispute?",
+        {
+          "desc": "You point toward the ceiling, where the last corner of your former stall is disappearing. The clerk looks up."
+        },
+        "Lack of privacy. Very good.",
+        {
+          "desc": "He writes something, stamps the ticket, and tears off the top copy."
+        },
+        "This entitles you to inspect the disputed merchandise before it leaves the hotel. Present it to the collection foreman.",
+        {
+          "say": "A complimentary inspection! You see, sir? We take customer satisfaction very seriously!",
+          "who": "hotel_auctioneer"
+        },
+        "It doesn't cancel the sale, mind you.",
+        {
+          "say": "Naturally! We take sales even more seriously!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "The clerk hands you the ticket. The auctioneer returns to his gavel."
+        }
+      ],
+      "choices": [
+        {
+          "id": "dispute_ticket_to_chair",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_auction_chair_lot31"
+        }
+      ]
+    },
+    "hotel_bride_ring_bathroom": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_bride",
+      "pose": "helpful",
+      "effects": {
+        "set": {
+          "ch4_knows_bridal_dressing_lavatory": true,
+          "ch4_knows_organizer_has_lavatory_key": true
+        }
+      },
+      "text": [
+        {
+          "say": "I STILL NEED A BATHROOM. CAN YOU HELP ME?",
+          "who": "visitor"
+        },
+        {
+          "say": "There’s a private lavatory off the bridal dressing room upstairs. The organizer has the key.",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "WHERE IS SHE?",
+          "who": "visitor"
+        },
+        {
+          "say": "Left past the ballroom, by the white flowers.",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "And please don’t tell my father there’s another bathroom.",
+          "who": "hotel_bride"
+        }
+      ],
+      "choices": [
+        {
+          "id": "bride_lavatory_organizer",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_bridal_organizer"
+        }
+      ]
+    },
+    "hotel_bride_ring_handover": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_bride",
+      "pose": "grateful",
+      "effects": {
+        "take": [
+          "wedding_ring_lot31"
+        ],
+        "set": {
+          "ch4_ring_returned_to_bride": true,
+          "ch4_bride_ally": true,
+          "ch4_bride_service_permission": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You place the silver ring and its pale blue ribbon in the bride’s hand."
+        },
+        {
+          "say": "Oh! Thank you. Truly.",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "A splendid private transaction! Shall we list it as—",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "Papa. No.",
+          "who": "hotel_bride"
+        },
+        {
+          "desc": "She turns back to you."
+        },
+        {
+          "say": "If you need the staff passage, tell the porters you’re helping me. They should let you through.",
+          "who": "hotel_bride"
+        },
+        {
+          "desc": "You thank her and turn toward the corridor. Perhaps the staff have a working toilet."
+        }
+      ],
+      "choices": [
+        {
+          "id": "bride_handover_next",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_bride_service_shortcut"
+        }
+      ],
+      "notes": "Optional, quick ring transfer for staff-corridor permission; no family/wedding reunion request. Item and existing approved ally/access flags unchanged."
+    },
+    "hotel_chair_examiner_inspection": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auction_clerk",
+      "pose": "precise",
+      "effects": {
+        "set": {
+          "ch4_chair_inspection_authorized": true,
+          "ch4_chair_sale_paused": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You present your Temporary Examiner Badge. The clerk examines it."
+        },
+        "Office of Unverified Conditions. Is there something unverified about this item?",
+        {
+          "say": "Certainly not! It's an excellent chair! Four legs, splendid upholstery, perfectly chair-shaped!",
+          "who": "hotel_auctioneer"
+        },
+        "That's not quite the same as verifying its condition, sir.",
+        {
+          "desc": "The clerk stamps the auction sheet: INSPECTION PENDING."
+        },
+        {
+          "say": "Pending? We're in the middle of bidding!",
+          "who": "hotel_auctioneer"
+        },
+        "I'm afraid the sale must be suspended until the examiner has finished.",
+        {
+          "say": "Ladies and gentlemen! A brief intermission while our magnificent chair undergoes an entirely unnecessary official inspection!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "He sets down his gavel. You approach the chair."
+        }
+      ],
+      "choices": [
+        {
+          "id": "examiner_open_focus",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_chair_ring_focus"
+        }
+      ]
+    },
+    "hotel_ring_show_bride": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_bride",
+      "pose": "hopeful",
+      "text": [
+        {
+          "desc": "You show the bride the ring, a length of pale blue ribbon still caught around it."
+        },
+        {
+          "say": "The ring! That was on the chair?",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "YES. LOT THIRTY-ONE.",
+          "who": "visitor"
+        },
+        {
+          "say": "Of course. That miserable chair.",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "An unlisted accessory! Shall I open bidding?",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "Papa. No.",
+          "who": "hotel_bride"
+        },
+        {
+          "desc": "She looks back at you, waiting. You still need a toilet."
+        }
+      ],
+      "choices": [
+        {
+          "id": "bride_ring_handover",
+          "kind": "action",
+          "text": "PLACE THE RING IN THE BRIDE'S HAND.",
+          "if": {
+            "has": "wedding_ring_lot31"
+          },
+          "to": "hotel_bride_ring_handover"
+        },
+        {
+          "id": "bride_ask_lavatory",
+          "kind": "spoken",
+          "text": "I'M SORRY, BUT I STILL NEED A BATHROOM. CAN YOU HELP ME?",
+          "to": "hotel_bride_ring_bathroom"
+        }
+      ]
+    }
+  },
+  "storyFile": "story/chapters/chapter-04.wip.json",
+  "runtimeBindingsChanged": false
+}

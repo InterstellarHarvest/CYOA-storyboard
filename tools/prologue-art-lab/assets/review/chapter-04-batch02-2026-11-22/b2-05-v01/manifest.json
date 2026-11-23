@@ -1,0 +1,430 @@
+{
+  "title": "Chapter 4 B2-05 v01 \u2014 Bride and auction clerk",
+  "groupId": "B2-05",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+  "reviewPreservationBaseline": "11d126e0856695ace519acffe442954dec936095",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "primaryUnits": 5,
+  "productionIntegrationPerformed": false,
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "assets": [
+    {
+      "id": "CH4-B2-26",
+      "title": "Bride \u2014 determined",
+      "key": "portraits:hotel_bride:determined",
+      "inventoryId": "portrait:hotel_bride:determined",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_auction_bride_ally"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-26-v01.png",
+        "sha256": "ec835a0ef3303ba931cdda8ffadc6c576e4824724ab8353b78a690d578a0a541",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-26-4x.png",
+        "sha256": "1cd2edd01bd1aea8f88c54a7d99c9dd99bf3b501fa697431745ff3687f4aa175",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-26-detailed.png",
+        "sha256": "a084b8685560eedd213313aa3b67e7b3be19e55ed9b4d77cd4335b0d68492e3d",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-26-lobby-native.png",
+        "sha256": "dc75e511a113bcc166e5681f9b063f4a327efc7622bd0a85b4e50be2bc45d901",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-26-detailed.txt",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-27",
+      "title": "Auction clerk \u2014 precise",
+      "key": "portraits:hotel_auction_clerk:precise",
+      "inventoryId": "portrait:hotel_auction_clerk:precise",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_auction_dispute_ticket",
+        "hotel_chair_examiner_inspection"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-27-v01.png",
+        "sha256": "e8fae3f87ede6b59411e82d8d9c36429c5859bbf539cb8452e0d4017e95ffe0a",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-27-4x.png",
+        "sha256": "478407713e2c34958fac62f8ff03f2052d469cb3c6b0710d2b88765ec410b7aa",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-27-detailed.png",
+        "sha256": "6813cff10ff718491476a5d1507d7f1772e234ec1dd0b2ad304fbdfcc2fd404d",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-27-lobby-native.png",
+        "sha256": "8560c10f1b8ab75bdfd3c5ab0871c9fbe4b5160927e8954f2a9d754c3a666bfd",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-27-detailed.txt",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-28",
+      "title": "Bride \u2014 hopeful",
+      "key": "portraits:hotel_bride:hopeful",
+      "inventoryId": "portrait:hotel_bride:hopeful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_ring_show_bride"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-28-v01.png",
+        "sha256": "3e837a2ac234d6e673ec40b9e57237c95d19e67f8f092d508ab1867bd86d96e6",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-28-4x.png",
+        "sha256": "6c46890b3533babeb9fd047af75feaa391c736dbbbf6b99ca8435301067017b9",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-28-detailed.png",
+        "sha256": "4668a3ae5c11175e613b256415e75036c9f6580b458de3a9dbda8edd520598b0",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-28-lobby-native.png",
+        "sha256": "62068d2141ae43ec136561a3e0b75d3313241e470a2ee8d6aadfa9b9595b8963",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-28-detailed.txt",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-29",
+      "title": "Bride \u2014 grateful",
+      "key": "portraits:hotel_bride:grateful",
+      "inventoryId": "portrait:hotel_bride:grateful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_bride_ring_handover"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-29-v01.png",
+        "sha256": "d5115b275de84ab01a67629548dafc58515e0fe7acac3246d6bf7f67015ad730",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-29-4x.png",
+        "sha256": "2837b42b9e848cbd13eafa20a103f5715bf36200b0c8d8bfba4b18248c7e3d04",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-29-detailed.png",
+        "sha256": "e0e43e01b4ce91651a1ae63ecb332f302b63e3d1f5e3f9c5bfaaf3fe3d8e12c2",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-29-lobby-native.png",
+        "sha256": "0df48da0869b15759c675be890fb5a9d671881c86ba670b9c63e3da157fe7689",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-29-detailed.txt",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-30",
+      "title": "Bride \u2014 helpful",
+      "key": "portraits:hotel_bride:helpful",
+      "inventoryId": "portrait:hotel_bride:helpful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_bride_ring_bathroom"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-30-v01.png",
+        "sha256": "60e6f29ca3691d939f535a68f55d84dd39723a3411074bffead9ba19ed3e4785",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-30-4x.png",
+        "sha256": "dacd78fb1a7432ecbecf5b4e40daed59983dfdaf98d8aa83e150f3235746ca92",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-30-detailed.png",
+        "sha256": "9d899afc6d7418c855dbd062f46bffc2f16d086647ad05365468f35cdd7b113a",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-30-lobby-native.png",
+        "sha256": "27dfc128faf7017647dd846df85e3347b27391bb7a7e771703e72ed974e3cb01",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-30-detailed.txt",
+      "derivation": "evidence/derivation.json"
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "approved-presenter": {
+      "registryKey": "portraits:pavilion_presenter:idle",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
+    "approved-groom": {
+      "registryKey": "portraits:hotel_groom:nervous",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/portraits/hotel_groom/nervous.png",
+      "sha256": "dd4d497088f3264a04d7182245b176e65cd9a3e5c5f04e7be872adc4cc52352a",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-14-v01.png"
+      }
+    },
+    "approved-lobby-background": {
+      "registryKey": "scenes:grand_bellevue/lobby#portraitBackground",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png"
+      }
+    },
+    "approved-lobby": {
+      "registryKey": "scenes:grand_bellevue/lobby",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png"
+      }
+    },
+    "approved-groundskeeper": {
+      "registryKey": "portraits:groundskeeper:idle",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/groundskeeper/groundskeeper_idle.png"
+      }
+    }
+  },
+  "method": "Built-in imagegen character references matched to approved Pavilion portraits; source-derived native palette/cluster, semantic material-layer, rare-prop and silhouette cleanup following approved B2-04 portrait technique"
+}
