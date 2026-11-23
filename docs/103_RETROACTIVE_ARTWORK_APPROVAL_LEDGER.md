@@ -447,3 +447,8 @@ Nate explicitly approves/selects all seven B2-03 v01 assets from24c79bff8d33b599
 ## Chapter 4 B2-04 — owner approval, 2026-11-23
 
 Nate APPROVES/SELECTS all seven primary v01 assets CH4-B2-19 through CH4-B2-25 unchanged, and APPROVES/PRESERVES the three conditional production references CH4-B2-24-open / CH4-B2-25-slipped / CH4-B2-25-recovered. Exclusive immutable source `3804fa2013aeb81e17236e4995e2ef1e9596d404`. [Exact paths/hashes, conditions, provenance and gameplay handoff](132_CH4_B204_APPROVAL_COMPLETION_20261123.md). No supplemental canonical Focus IDs, pages, nodes, modes or runtime bindings. All prior approvals preserved; plumber alternatives remain unselected. Not integrated.
+
+
+## Chapter 4 B2-05 — mixed-version owner approval, 2026-11-23
+
+Nate APPROVES/SELECTS CH4-B2-26/28/29/30 bride v02 unchanged from `c6dbbaff7bf0edbda7a8ddff14556588c1eacd73`, and CH4-B2-27 precise clerk v01 unchanged from `9afe76fe17dcb02633b82261a6c69457891da50f`. [Exact paths, hashes, sources and gameplay handoff](133_CH4_B205_APPROVAL_COMPLETION_20261123.md). Bride blonde hair/green irises and approved groom remain exact. All earlier approvals and three conditional B2-04 references preserved; alternative plumber portraits remain unselected. No integration.
