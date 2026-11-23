@@ -1,0 +1,158 @@
+{
+  "passed": true,
+  "url": "https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/39b1155dd5b0abb4193a4975dd2819a5cd5b1dae/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/online.html",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "Five unselected assets, two composites and six approved benchmark PNGs decode",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Plumber \u2014 worried",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Eddie \u2014 pleased",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Restroom conversation background",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Lot 14 receipt",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Emergency master isolator",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Plumber over shared restroom background",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Eddie over shared restroom background",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion attendant",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion presenter",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Chapter 4 restroom \u2014 unchanged",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Chapter 2 Bureau",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved Chapter 2 Control Tower",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact4x pixels and display size: Approved receptionist background",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile preserves native raster in scrolling frame, no load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Five unselected assets, two composites and six approved benchmark PNGs decode",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Plumber \u2014 worried",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Eddie \u2014 pleased",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Restroom conversation background",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Lot 14 receipt",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Emergency master isolator",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Plumber over shared restroom background",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Eddie over shared restroom background",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion attendant",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Pavilion presenter",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Chapter 4 restroom \u2014 unchanged",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Chapter 2 Bureau",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved Chapter 2 Control Tower",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact4x pixels and display size: Approved receptionist background",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile preserves native raster in scrolling frame, no load/runtime errors",
+      "passed": true
+    }
+  ],
+  "testerSha256": "2e306ff01f187b2881f4e8b1765bbf33dcfb73b2576fb23acefda5e2a426592e",
+  "note": "Live gallery artwork and controls verified at the immutable publication URL. A subsequent QA-only commit records this report and waits for remote raster loads before asserting dimensions; artwork files are unchanged."
+}
