@@ -1,0 +1,288 @@
+{
+  "ownerDecision": "Nate explicitly approves all seven B2-03 v01 assets unchanged from commit24c79bff8d33b5997ccb6b7aa7bb86293afef291. The alternative B2-01 plumber portraits remain separate and unselected.",
+  "decisionDate": "2026-11-23",
+  "status": "APPROVED_AND_SELECTED",
+  "approvalSourceCommit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+  "canonicalBase": "9fa1f19629956d279f98a118d4280734096f9d56",
+  "registrationTool": "tools/sync/register-art.mjs",
+  "gameplayIntegrationPerformed": false,
+  "runtimeAssetPathsAssigned": false,
+  "assets": [
+    {
+      "id": "CH4-B2-12",
+      "title": "Maintenance walkway",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "e069dbb75908fde2cb51867cd137bdac43301bd38ac8c72a3d266a1e400059c0",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/maintenance",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/maintenance.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/maintenance.png",
+      "storyNodeIds": [
+        "hotel_pipe_tunnel",
+        "hotel_isolator_panel",
+        "hotel_isolator_restrooms",
+        "hotel_isolator_entire",
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_show_ring",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind",
+        "hotel_boiler_service_passage"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-12-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-12-4x.png",
+        "sha256": "ddfb1fa590dbfbcb6b0ebbb77619caa86e796aa5b5309f536f1996c3002c048c"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-13",
+      "title": "Boiler access",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "c7e5eb215898ee1f6128cf321d1f295f3c6896e4764131bd0995c5ce36c2c93f",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/boiler_access",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/boiler_access.png",
+      "storyNodeIds": [
+        "hotel_collection_slip_unnoticed",
+        "hotel_collection_slip_spotted"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-13-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-13-4x.png",
+        "sha256": "bb513f9175015ceae474f974d9363e3b54b03245e5236fcb3a733022abe7cb5e"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-14",
+      "title": "Groom \u2014 nervous",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "dd4d497088f3264a04d7182245b176e65cd9a3e5c5f04e7be872adc4cc52352a",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "registryKey": "portraits:hotel_groom:nervous",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_groom/nervous.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_groom/nervous.png",
+      "storyNodeIds": [
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-14-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-14-4x.png",
+        "sha256": "c64272afa10a6ac7f9a8254c49252fb709cc437afda127545d8a0ea1d9913ed1"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-15",
+      "title": "Groom \u2014 relieved",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "19d8d42ff06b02020d5bdb3ddba33d9f47eb6222bb0c59e635d43bd5bf21691c",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "registryKey": "portraits:hotel_groom:relieved",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_groom/relieved.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_groom/relieved.png",
+      "storyNodeIds": [
+        "hotel_groom_show_ring"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-15-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-15-4x.png",
+        "sha256": "838f0f7b8696895f4214fdfb6a884975295a287c2c28493112113b3647a453c6"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-16",
+      "title": "Boiler access conversation background",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "portrait-background",
+      "registryKey": "scenes:grand_bellevue/boiler_access#portraitBackground",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/boiler_access.png",
+      "storyNodeIds": [
+        "hotel_collection_slip_spotted"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-16-4x.png",
+        "sha256": "7756cf11bc55f5e0f229933a4498262989454521c10de4fcee45a3293a8a523b"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-17",
+      "title": "Maintenance conversation background",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "0836e7de87767563257424d071217098b5b4c5b056f30318e868737573d7364b",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "portrait-background",
+      "registryKey": "scenes:grand_bellevue/maintenance#portraitBackground",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/maintenance/portraitBackground.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/maintenance.png",
+      "storyNodeIds": [
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_show_ring",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-17-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-17-4x.png",
+        "sha256": "a00785308bbe678a211f1a1a5b7c65618591cff6fca8cdedeaa32234e13388c1"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-18",
+      "title": "Central water isolation \u2014 two levers",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "723bb38b569aa15f0520ce5c042fd9a9d30c0eed9a93e537e610a621573fe43f",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "focus",
+      "registryKey": "focus:grand_bellevue/maintenance/water_isolator",
+      "canonicalSelectedPath": "assets/selected/pending-integration/focus/grand_bellevue/maintenance/water_isolator.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/focus/grand_bellevue/maintenance/water_isolator.png",
+      "storyNodeIds": [
+        "hotel_isolator_panel"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-18-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/manifest.json",
+        "sha256": "3d8ce0d471bb1062996f93096dc6dcb23fdcaeab46b3de244298abbc771f0ea7"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/previews/CH4-B2-18-4x.png",
+        "sha256": "f3edbb78126ffd8685d8b7d0c9014bb9c9b8c871afa81426182e7891a1f81cdd"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    }
+  ],
+  "canonicalApprovalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+  "canonicalApprovalDocumentSha256": "f355f2d5485fecbaaf805d5a6759c995ff3e0bf1be88cd668a3b9d10fbb00a3f",
+  "pullRequest": "https://github.com/InterstellarHarvest/CYOA-storyboard/pull/24"
+}

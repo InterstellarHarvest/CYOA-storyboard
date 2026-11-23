@@ -1,0 +1,858 @@
+{
+  "title": "Chapter 4 B2-04 \u2014 Lot31 and Collection Stairs v01",
+  "groupId": "B2-04",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+  "inventorySource": "evidence/inventory-source.json",
+  "primaryUnits": 7,
+  "stateFamilies": 1,
+  "supplementalStateFrames": 3,
+  "nativePNGCount": 10,
+  "storyNodeCoverage": [
+    "hotel_bride_service_shortcut",
+    "hotel_chair_follow_collection",
+    "hotel_chair_ring_focus",
+    "hotel_chair_staff_escort",
+    "hotel_chair_staff_escort_loading",
+    "hotel_chair_stapler_stealth",
+    "hotel_chair_vegetation_inspection",
+    "hotel_collection_porters_groom_clue",
+    "hotel_collection_ring_focus",
+    "hotel_collection_ring_in_pocket",
+    "hotel_collection_ring_porter_recovery",
+    "hotel_collection_ring_stapler_recovery",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized",
+    "hotel_collection_stairs",
+    "hotel_ring_slips",
+    "hotel_stall_porter_protest",
+    "hotel_water_outage_confirmation",
+    "hotel_wedding_service_shortcut"
+  ],
+  "productionIntegrationPerformed": false,
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "assets": [
+    {
+      "id": "CH4-B2-19",
+      "title": "Service passage \u2014 Lot31 at collection",
+      "key": "scenes:grand_bellevue/service_passage",
+      "inventoryId": "main_scene:grand_bellevue/service_passage",
+      "kind": "scene",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_chair_follow_collection",
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_stairs",
+        "hotel_collection_ring_focus",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_ring_in_pocket",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass",
+        "hotel_collection_staff_pass_first",
+        "hotel_collection_staff_pass_recognized",
+        "hotel_collection_staff_pass_authorized",
+        "hotel_bride_service_shortcut",
+        "hotel_wedding_service_shortcut",
+        "hotel_water_outage_confirmation"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-19-v01.png",
+        "sha256": "a5d416c47786a070c3a6acfdba91e2f7756cea4418f39425fea23511608220f9",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-19-4x.png",
+        "sha256": "7fc34803ec401769d87a49752ee7c0a9f026b4ab507959b6ddaa81e6e255faee",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-19-detailed.png",
+        "sha256": "b9de71110033a4113b9e9b47306f6a987602391c28853eccb59b663992130a2d",
+        "dimensions": [
+          1547,
+          1017
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-19-pixel-friendly.png",
+        "sha256": "2e5cbd23229a4301caf84a2e816333a8c2f788170b4dbd1469f769e18674de46",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-19-architecture.png",
+        "layers/CH4-B2-19-floor-structure.png",
+        "layers/CH4-B2-19-material-underpainting.png",
+        "layers/CH4-B2-19-native-lettering.png",
+        "layers/CH4-B2-19-npc-0.png",
+        "layers/CH4-B2-19-npc-1.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-19-complete-story-objects.png",
+        "masks/CH4-B2-19-floor.png",
+        "masks/CH4-B2-19-lettering.png",
+        "masks/CH4-B2-19-npc-0.png",
+        "masks/CH4-B2-19-npc-1.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-20",
+      "title": "Porter \u2014 businesslike",
+      "key": "portraits:hotel_porter:businesslike",
+      "inventoryId": "portrait:hotel_porter:businesslike",
+      "kind": "portrait",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_stall_porter_protest",
+        "hotel_collection_ring_stapler_recovery"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-20-v01.png",
+        "sha256": "863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-20-4x.png",
+        "sha256": "d079ab6068fbfc0ea2fdbd0c2ee052aee3ef80365f7174a02158635ea232108c",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-20-detailed-v02.png",
+        "sha256": "373f3a5aa5bca3e5dc3ff30fc40682be9e9ce1c8d09774a10c500af058d24481",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlySource": null,
+      "layers": [
+        "layers/CH4-B2-20-fabric.png",
+        "layers/CH4-B2-20-hair.png",
+        "layers/CH4-B2-20-native-foreground.png",
+        "layers/CH4-B2-20-skin.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-20-fabric.png",
+        "masks/CH4-B2-20-hair.png",
+        "masks/CH4-B2-20-silhouette.png",
+        "masks/CH4-B2-20-skin.png"
+      ],
+      "authoredSceneKeys": [
+        "grand_bellevue/restroom",
+        "grand_bellevue/service_passage"
+      ]
+    },
+    {
+      "id": "CH4-B2-21",
+      "title": "Porter \u2014 uncertain",
+      "key": "portraits:hotel_porter:uncertain",
+      "inventoryId": "portrait:hotel_porter:uncertain",
+      "kind": "portrait",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_chair_vegetation_inspection",
+        "hotel_collection_staff_pass_first"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-21-v01.png",
+        "sha256": "25d6ac8823dff67881c076c2405e50c7229375ab98bb5e4324511b2f7033f77d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-21-4x.png",
+        "sha256": "4e6e45c557f456e1092f14cfdb3e2322276b6707e1a1c45ca65203fb80d581ba",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-21-detailed.png",
+        "sha256": "4653c80fae00376ae6a2f49a10f4a67fe6ae7c58c15b8a4f1a89f84d8f68bf5e",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlySource": null,
+      "layers": [
+        "layers/CH4-B2-21-fabric.png",
+        "layers/CH4-B2-21-hair.png",
+        "layers/CH4-B2-21-native-foreground.png",
+        "layers/CH4-B2-21-skin.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-21-fabric.png",
+        "masks/CH4-B2-21-hair.png",
+        "masks/CH4-B2-21-silhouette.png",
+        "masks/CH4-B2-21-skin.png"
+      ],
+      "authoredSceneKeys": [
+        "grand_bellevue/lobby",
+        "grand_bellevue/service_passage"
+      ]
+    },
+    {
+      "id": "CH4-B2-22",
+      "title": "Porter \u2014 practical",
+      "key": "portraits:hotel_porter:practical",
+      "inventoryId": "portrait:hotel_porter:practical",
+      "kind": "portrait",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_chair_staff_escort",
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass_authorized"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-22-v01.png",
+        "sha256": "646386199bfad2bd77e73bb3137dfac9c5b8effa85e324e906208ae48a62c11e",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-22-4x.png",
+        "sha256": "601d7b52b8e636b8c08f89a2eeece913bc85b58c98d7370792d063dfd45a1ef6",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-22-detailed.png",
+        "sha256": "b3e49eb32f7afcf9f1794ce0c07aaf0832db3061ebf3d5ba52645c02cfee79a0",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlySource": null,
+      "layers": [
+        "layers/CH4-B2-22-fabric.png",
+        "layers/CH4-B2-22-hair.png",
+        "layers/CH4-B2-22-native-foreground.png",
+        "layers/CH4-B2-22-skin.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-22-fabric.png",
+        "masks/CH4-B2-22-hair.png",
+        "masks/CH4-B2-22-silhouette.png",
+        "masks/CH4-B2-22-skin.png"
+      ],
+      "authoredSceneKeys": [
+        "grand_bellevue/lobby",
+        "grand_bellevue/service_passage"
+      ]
+    },
+    {
+      "id": "CH4-B2-23",
+      "title": "Service-passage conversation background",
+      "key": "scenes:grand_bellevue/service_passage#portraitBackground",
+      "inventoryId": "portrait_background:grand_bellevue/service_passage",
+      "kind": "portrait-background",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass",
+        "hotel_collection_staff_pass_first",
+        "hotel_collection_staff_pass_recognized",
+        "hotel_collection_staff_pass_authorized",
+        "hotel_water_outage_confirmation"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-23-v01.png",
+        "sha256": "b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-23-4x.png",
+        "sha256": "9d0877415cbfb8b6a1893b35accf00e2dddc1120549dc238d08a68b179e5c865",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-23-detailed.png",
+        "sha256": "aa7da1e1e03b4b9fc121dc9ae30c01919f9a54f09dd4ad795bca2624dd0a7be2",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-23-pixel-friendly.png",
+        "sha256": "9a1dcfc69b094904e86a8fc84ec6d0c81c85f371e8de4c2815fc4012db348090",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-23-material-underpainting.png",
+        "layers/CH4-B2-23-native-details.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-23-native-details.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-24",
+      "title": "Auction armrest \u2014 ring caught",
+      "key": "focus:grand_bellevue/auction_floor/chair_armrest",
+      "inventoryId": "focus_a:grand_bellevue/auction_floor/chair_armrest",
+      "kind": "focus",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_chair_ring_focus"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-24-v01.png",
+        "sha256": "facb4981ccef1f270f200346333ce108a9db7679fb383982d4704e8b65fa0fc7",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-24-4x.png",
+        "sha256": "7bd1f624f73267f593a6551fadb6d54a7b156c91574ba7b1544aa1f192011232",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-24-detailed.png",
+        "sha256": "0185270fbce87d856094c9795a93578d14461a641e8fc59908b3ccbb3d7bf2b9",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-24-pixel-friendly.png",
+        "sha256": "69c5fae481082a7519d4eb0fada3842e0d6cee52ecde97d138f6c5becbc600a6",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-24-material-underpainting.png",
+        "layers/CH4-B2-24-native-details.png",
+        "layers/CH4-B2-24-open-native-object.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-24-blue-ribbon-material.png",
+        "masks/CH4-B2-24-native-details.png",
+        "masks/CH4-B2-24-open-allowed.png",
+        "masks/CH4-B2-24-silver-band-material.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-25",
+      "title": "Collection armrest \u2014 ring caught",
+      "key": "focus:grand_bellevue/collection_stairs/chair_armrest",
+      "inventoryId": "focus_a:grand_bellevue/collection_stairs/chair_armrest",
+      "kind": "focus",
+      "unitType": "primary",
+      "nodeIds": [
+        "hotel_collection_ring_focus"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-25-v01.png",
+        "sha256": "68bbf32b040a984201dfb0f5b83b1315cf391848848500b1e7ee97819a5f5645",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-25-4x.png",
+        "sha256": "4de5c62af4652e3f2583b132fc5a653f41b603b3be1a395aafb611931e407faf",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-25-detailed.png",
+        "sha256": "de2b5265264fc9769bfc246f473a0dc3e749401338cf0ab5ff110300a1ee34b9",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-25-pixel-friendly.png",
+        "sha256": "0a2b583f4e63aca40cf2afff088054ef6ccd0f080c527301e635909ed4a20ece",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-25-material-underpainting.png",
+        "layers/CH4-B2-25-native-details.png",
+        "layers/CH4-B2-25-ring-removed.png",
+        "layers/CH4-B2-25-slipped-ring.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-25-brace-front-occlusion.png",
+        "masks/CH4-B2-25-native-details.png",
+        "masks/CH4-B2-25-states-allowed.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-24-open",
+      "title": "Auction armrest \u2014 seam opened, ring still caught",
+      "key": null,
+      "baseFocusKey": "focus:grand_bellevue/auction_floor/chair_armrest",
+      "baseAssetId": "CH4-B2-24",
+      "inventoryId": "state_family:chair_and_ring_states",
+      "kind": "focus-state",
+      "unitType": "supplemental-state",
+      "nodeIds": [
+        "hotel_chair_stapler_stealth",
+        "hotel_chair_ring_focus"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "authoredEvidence": {
+        "id": "CH4-B2-24-open",
+        "baseAssetId": "CH4-B2-24",
+        "baseFocusKey": "grand_bellevue/auction_floor/chair_armrest",
+        "canonicalKey": null,
+        "title": "Auction armrest \u2014 seam opened, ring still caught",
+        "authoredCondition": {
+          "flag": "ch4_chair_seam_open"
+        },
+        "nodeIds": [
+          "hotel_chair_stapler_stealth",
+          "hotel_chair_ring_focus"
+        ],
+        "truth": "The seam is separated just enough; ring still caught by pale blue ribbon and not yet in inventory. No stapler remains in the image."
+      },
+      "native": {
+        "file": "native/CH4-B2-24-open-v01.png",
+        "sha256": "a90e705303261114f882f0f270c195716f1a6e6b7384f6792373bc650c9b204c",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-24-open-4x.png",
+        "sha256": "60edf3e6c2d2774057fe96c52707f79ae8cdb4ee53e4820e0c30920062f41e08",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-24-detailed.png",
+        "sha256": "0185270fbce87d856094c9795a93578d14461a641e8fc59908b3ccbb3d7bf2b9",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-24-pixel-friendly.png",
+        "sha256": "69c5fae481082a7519d4eb0fada3842e0d6cee52ecde97d138f6c5becbc600a6",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-24-open-native-object.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-24-open-allowed.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-25-slipped",
+      "title": "Collection armrest \u2014 slipped ring beneath wooden brace",
+      "key": null,
+      "baseFocusKey": "focus:grand_bellevue/collection_stairs/chair_armrest",
+      "baseAssetId": "CH4-B2-25",
+      "inventoryId": "state_family:chair_and_ring_states",
+      "kind": "focus-state",
+      "unitType": "supplemental-state",
+      "nodeIds": [
+        "hotel_ring_slips",
+        "hotel_collection_ring_focus"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "authoredEvidence": {
+        "id": "CH4-B2-25-slipped",
+        "baseAssetId": "CH4-B2-25",
+        "baseFocusKey": "grand_bellevue/collection_stairs/chair_armrest",
+        "canonicalKey": null,
+        "title": "Collection armrest \u2014 slipped ring beneath wooden brace",
+        "authoredCondition": {
+          "flag": "ch4_ring_slipped_inside_chair"
+        },
+        "nodeIds": [
+          "hotel_ring_slips",
+          "hotel_collection_ring_focus"
+        ],
+        "truth": "Ring is detached from ribbon and visible deeper beneath the wooden brace only at the tilted collection camera; it remains unreachable by fingers."
+      },
+      "native": {
+        "file": "native/CH4-B2-25-slipped-v01.png",
+        "sha256": "afc5ba21cf2b472a762538ee9bbeb8ae571f64e27815d36a3849fd9ba5dd6846",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-25-slipped-4x.png",
+        "sha256": "f703075ad6134e23dabbf13b4c1172835eaae9bdc3f24bd393fcd97a148fc0dd",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-25-detailed.png",
+        "sha256": "de2b5265264fc9769bfc246f473a0dc3e749401338cf0ab5ff110300a1ee34b9",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-25-pixel-friendly.png",
+        "sha256": "0a2b583f4e63aca40cf2afff088054ef6ccd0f080c527301e635909ed4a20ece",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-25-ring-removed.png",
+        "layers/CH4-B2-25-slipped-ring.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-25-states-allowed.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-25-recovered",
+      "title": "Collection armrest \u2014 ring recovered, cavity empty",
+      "key": null,
+      "baseFocusKey": "focus:grand_bellevue/collection_stairs/chair_armrest",
+      "baseAssetId": "CH4-B2-25",
+      "inventoryId": "state_family:chair_and_ring_states",
+      "kind": "focus-state",
+      "unitType": "supplemental-state",
+      "nodeIds": [
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "authoredEvidence": {
+        "id": "CH4-B2-25-recovered",
+        "baseAssetId": "CH4-B2-25",
+        "baseFocusKey": "grand_bellevue/collection_stairs/chair_armrest",
+        "canonicalKey": null,
+        "title": "Collection armrest \u2014 ring recovered, cavity empty",
+        "authoredInventoryEvidence": {
+          "has": "wedding_ring_lot31"
+        },
+        "nodeIds": [
+          "hotel_collection_ring_porter_recovery",
+          "hotel_collection_ring_stapler_recovery"
+        ],
+        "truth": "After explicit recovery gives the ring, the cavity no longer contains it. Ribbon and existing loose upholstery remain; no new damage is invented.",
+        "bindingNote": "Post-recovery object-state reference only. The authored recovery nodes are dialogue; this does not propose displaying Focus there or changing their mode."
+      },
+      "native": {
+        "file": "native/CH4-B2-25-recovered-v01.png",
+        "sha256": "6cd99a639036a2ae746d7e7bcaca30a4d3914ebb125a3a59fde62e3a37f7ade1",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-25-recovered-4x.png",
+        "sha256": "71044ff294d0619c1725fdf115b4bbc2bd7ad8ed3e7b7345b44c473e632f96db",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-25-detailed.png",
+        "sha256": "de2b5265264fc9769bfc246f473a0dc3e749401338cf0ab5ff110300a1ee34b9",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-25-pixel-friendly.png",
+        "sha256": "0a2b583f4e63aca40cf2afff088054ef6ccd0f080c527301e635909ed4a20ece",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-25-ring-removed.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-25-states-allowed.png"
+      ]
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "approved-groundkeeper": {
+      "registryKey": "portraits:groundskeeper:idle",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/groundskeeper/groundskeeper_idle.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "approved-boiler-access": {
+      "registryKey": "scenes:grand_bellevue/boiler_access",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access.png",
+      "sha256": "c7e5eb215898ee1f6128cf321d1f295f3c6896e4764131bd0995c5ce36c2c93f",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-13-v01.png"
+      }
+    },
+    "approved-groom": {
+      "registryKey": "portraits:hotel_groom:nervous",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/portraits/hotel_groom/nervous.png",
+      "sha256": "dd4d497088f3264a04d7182245b176e65cd9a3e5c5f04e7be872adc4cc52352a",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-14-v01.png"
+      }
+    },
+    "approved-lobby": {
+      "registryKey": "scenes:grand_bellevue/lobby",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png"
+      }
+    },
+    "approved-restroom": {
+      "registryKey": "scenes:grand_bellevue/restroom",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png"
+      }
+    },
+    "approved-isolator-focus": {
+      "registryKey": "focus:grand_bellevue/maintenance/water_isolator",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/focus/grand_bellevue/maintenance/water_isolator.png",
+      "sha256": "723bb38b569aa15f0520ce5c042fd9a9d30c0eed9a93e537e610a621573fe43f",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-18-v01.png"
+      }
+    },
+    "approved-lobby-conversation": {
+      "registryKey": "scenes:grand_bellevue/lobby#portraitBackground",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png"
+      }
+    },
+    "approved-restroom-conversation": {
+      "registryKey": "scenes:grand_bellevue/restroom#portraitBackground",
+      "approvalCommit": "2c0f1c5a22c234bc561b12d98009a10883cf66ac",
+      "canonicalFile": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-03-v01.png"
+      }
+    }
+  },
+  "stateBindingPlan": "evidence/state-plan.json"
+}

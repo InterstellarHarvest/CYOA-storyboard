@@ -1,0 +1,43 @@
+{
+  "family": "chair_and_ring_states",
+  "status": "UNSELECTED",
+  "canonicalKey": null,
+  "purpose": "Production-only full-frame Focus variants and editable native object layers; no runtime binding or narrative change.",
+  "primaryAssets": ["CH4-B2-19", "CH4-B2-20", "CH4-B2-21", "CH4-B2-22", "CH4-B2-23", "CH4-B2-24", "CH4-B2-25"],
+  "states": [
+    {
+      "id": "CH4-B2-24-open",
+      "baseAssetId": "CH4-B2-24",
+      "baseFocusKey": "grand_bellevue/auction_floor/chair_armrest",
+      "canonicalKey": null,
+      "title": "Auction armrest — seam opened, ring still caught",
+      "authoredCondition": {"flag": "ch4_chair_seam_open"},
+      "nodeIds": ["hotel_chair_stapler_stealth", "hotel_chair_ring_focus"],
+      "truth": "The seam is separated just enough; ring still caught by pale blue ribbon and not yet in inventory. No stapler remains in the image."
+    },
+    {
+      "id": "CH4-B2-25-slipped",
+      "baseAssetId": "CH4-B2-25",
+      "baseFocusKey": "grand_bellevue/collection_stairs/chair_armrest",
+      "canonicalKey": null,
+      "title": "Collection armrest — slipped ring beneath wooden brace",
+      "authoredCondition": {"flag": "ch4_ring_slipped_inside_chair"},
+      "nodeIds": ["hotel_ring_slips", "hotel_collection_ring_focus"],
+      "truth": "Ring is detached from ribbon and visible deeper beneath the wooden brace only at the tilted collection camera; it remains unreachable by fingers."
+    },
+    {
+      "id": "CH4-B2-25-recovered",
+      "baseAssetId": "CH4-B2-25",
+      "baseFocusKey": "grand_bellevue/collection_stairs/chair_armrest",
+      "canonicalKey": null,
+      "title": "Collection armrest — ring recovered, cavity empty",
+      "authoredInventoryEvidence": {"has": "wedding_ring_lot31"},
+      "nodeIds": ["hotel_collection_ring_porter_recovery", "hotel_collection_ring_stapler_recovery"],
+      "truth": "After explicit recovery gives the ring, the cavity no longer contains it. Ribbon and existing loose upholstery remain; no new damage is invented.",
+      "bindingNote": "Post-recovery object-state reference only. The authored recovery nodes are dialogue; this does not propose displaying Focus there or changing their mode."
+    }
+  ],
+  "baseCollectionCondition": {"notFlag": "ch4_ring_slipped_inside_chair"},
+  "baseCollectionTruth": "A silver wedding band is still caught in pale blue ribbon behind the loosened fabric.",
+  "implementationBoundary": "The current catalog enumerates Focus bases/pages, not conditional Focus states. No new registry keys, pages, runtime fields or conditions are installed. Selection/registration method and engine binding remain separate from this production review; do not misrepresent mutually exclusive states as sequential pages."
+}

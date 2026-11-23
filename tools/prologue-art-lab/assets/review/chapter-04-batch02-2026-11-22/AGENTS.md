@@ -1,3 +1,9 @@
+# Current owner approval — B2-03, 2026-11-23
+
+Nate explicitly approves all seven B2-03 v01 PNGs unchanged from24c79bff8d33b5997ccb6b7aa7bb86293afef291. Registration is complete on canonical main2c0f1c5a22c234bc561b12d98009a10883cf66ac, PR24, docs131. All23 approved Chapter4 PNGs and all earlier approvals must stay byte-exact. Historical B2-03 review files/UNSELECTED labels remain untouched; the new exact-hash approval receipt supersedes their review-time status. B2-01 plumber alternatives remain separate/unselected; v01 selections remain approved.
+
+The owner authorizes automatic B2-04 production after registration verification: seven primary Lot31/Collection Stairs demands plus supported chair/ring state-family review frames. All B2-04 candidates stay UNSELECTED until Nate approves. No narrative/gameplay/engine integration. Use the permanent standard, exact Chapter2 and approved human portrait benchmarks, detailed sources, native material/structural layers, complete protected-object masks and native/exact4x visual/browser QA.
+
 # Current owner authorization and status — 2026-11-23
 
 Nate explicitly approved all six B2-02 assets unchanged: CH4-B2-06/07/08 v02, CH4-B2-09 v03, CH4-B2-10/11 v01. Registration is complete at canonical main9fa1f19629956d279f98a118d4280734096f9d56, PR23, docs130. All16 approved Chapter4 PNGs and all earlier approvals must remain byte-exact. The two B2-01 v02 plumber alternatives remain a separate unapproved decision; approved B2-01 v01 is unchanged. Older pending/no-registration notes below describe their earlier scope and are superseded by this exact approval only.

@@ -1,0 +1,450 @@
+{
+  "sourceCommit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+  "inventoryPath": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "inventorySha256": "078a9fd4e7abf798f59b63de436fd240d17e45835d32f728fd1f752ef3c9e693",
+  "group": {
+    "id": "B2-04",
+    "title": "Lot 31 and Collection Stairs",
+    "note": "Service passage, porter core poses and both authored chair-armrest Focus A views/conditional states.",
+    "inventoryIds": [
+      "main_scene:grand_bellevue/service_passage",
+      "portrait:hotel_porter:businesslike",
+      "portrait:hotel_porter:uncertain",
+      "portrait:hotel_porter:practical",
+      "portrait_background:grand_bellevue/service_passage",
+      "focus_a:grand_bellevue/auction_floor/chair_armrest",
+      "focus_a:grand_bellevue/collection_stairs/chair_armrest",
+      "state_family:chair_and_ring_states"
+    ],
+    "primaryUnits": 7,
+    "stateFamilies": 1,
+    "nodeIds": [
+      "hotel_bride_service_shortcut",
+      "hotel_chair_follow_collection",
+      "hotel_chair_ring_focus",
+      "hotel_chair_staff_escort",
+      "hotel_chair_staff_escort_loading",
+      "hotel_chair_stapler_stealth",
+      "hotel_chair_vegetation_inspection",
+      "hotel_collection_porters_groom_clue",
+      "hotel_collection_ring_focus",
+      "hotel_collection_ring_in_pocket",
+      "hotel_collection_ring_porter_recovery",
+      "hotel_collection_ring_stapler_recovery",
+      "hotel_collection_staff_pass",
+      "hotel_collection_staff_pass_authorized",
+      "hotel_collection_staff_pass_first",
+      "hotel_collection_staff_pass_recognized",
+      "hotel_collection_stairs",
+      "hotel_ring_slips",
+      "hotel_stall_porter_protest",
+      "hotel_water_outage_confirmation",
+      "hotel_wedding_service_shortcut"
+    ],
+    "generationStarted": false,
+    "reviewSlices": [
+      {
+        "slice": "A",
+        "scope": "Service passage, closer background and three core porter poses",
+        "primaryUnits": 5
+      },
+      {
+        "slice": "B",
+        "scope": "Two authored chair-armrest Focus A views plus supported ring-position states",
+        "primaryUnits": 2,
+        "stateFamilies": 1
+      }
+    ]
+  },
+  "assets": [
+    {
+      "inventoryId": "main_scene:grand_bellevue/service_passage",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/service_passage",
+      "nodeIds": [
+        "hotel_chair_follow_collection",
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_stairs",
+        "hotel_collection_ring_focus",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_ring_in_pocket",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass",
+        "hotel_collection_staff_pass_first",
+        "hotel_collection_staff_pass_recognized",
+        "hotel_collection_staff_pass_authorized",
+        "hotel_bride_service_shortcut",
+        "hotel_wedding_service_shortcut",
+        "hotel_water_outage_confirmation"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "You trail Lot Thirty-One through the service door. The porters wheel it past empty shipping crates toward the collection stairs.",
+        "Nobody questions your presence. Apparently, following furniture around is perfectly normal here."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "portrait:hotel_porter:businesslike",
+      "category": "portrait",
+      "logicalKey": "hotel_porter:businesslike",
+      "nodeIds": [
+        "hotel_stall_porter_protest",
+        "hotel_collection_ring_stapler_recovery"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "speaker",
+        "pose"
+      ],
+      "speaker": "hotel_porter",
+      "pose": "businesslike",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "transparent foreground where a visible character/device foreground is used",
+      "coverageState": "UNPRODUCED_EXPLICIT_POSE_KEY",
+      "preferredBatch1Asset": null,
+      "visualRealization": "Human NPC portrait; retain identity across the exact authored poses.",
+      "sceneKeys": [
+        "grand_bellevue/restroom",
+        "grand_bellevue/service_passage"
+      ]
+    },
+    {
+      "inventoryId": "portrait:hotel_porter:uncertain",
+      "category": "portrait",
+      "logicalKey": "hotel_porter:uncertain",
+      "nodeIds": [
+        "hotel_chair_vegetation_inspection",
+        "hotel_collection_staff_pass_first"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "speaker",
+        "pose"
+      ],
+      "speaker": "hotel_porter",
+      "pose": "uncertain",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "transparent foreground where a visible character/device foreground is used",
+      "coverageState": "UNPRODUCED_EXPLICIT_POSE_KEY",
+      "preferredBatch1Asset": null,
+      "visualRealization": "Human NPC portrait; retain identity across the exact authored poses.",
+      "sceneKeys": [
+        "grand_bellevue/lobby",
+        "grand_bellevue/service_passage"
+      ]
+    },
+    {
+      "inventoryId": "portrait:hotel_porter:practical",
+      "category": "portrait",
+      "logicalKey": "hotel_porter:practical",
+      "nodeIds": [
+        "hotel_chair_staff_escort",
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass_authorized"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "speaker",
+        "pose"
+      ],
+      "speaker": "hotel_porter",
+      "pose": "practical",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "transparent foreground where a visible character/device foreground is used",
+      "coverageState": "UNPRODUCED_EXPLICIT_POSE_KEY",
+      "preferredBatch1Asset": null,
+      "visualRealization": "Human NPC portrait; retain identity across the exact authored poses.",
+      "sceneKeys": [
+        "grand_bellevue/lobby",
+        "grand_bellevue/service_passage"
+      ]
+    },
+    {
+      "inventoryId": "portrait_background:grand_bellevue/service_passage",
+      "category": "portrait_background",
+      "logicalKey": "grand_bellevue/service_passage",
+      "nodeIds": [
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass",
+        "hotel_collection_staff_pass_first",
+        "hotel_collection_staff_pass_recognized",
+        "hotel_collection_staff_pass_authorized",
+        "hotel_water_outage_confirmation"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene",
+        "speaker"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "opaque architectural background",
+      "coverageState": "PLANNED_DIALOGUE_CONTEXT",
+      "preferredBatch1Asset": null,
+      "canonicalKeyNote": "Derived dialogue-location demand under the established layered portrait contract, not an already registered new canonical background ID.",
+      "planningNote": "One location can share a consistent closer camera among speakers. Voice-only panels may reuse a context view; do not automatically count every key as a distinct PNG."
+    },
+    {
+      "inventoryId": "focus_a:grand_bellevue/auction_floor/chair_armrest",
+      "category": "focus_a",
+      "logicalKey": "grand_bellevue/auction_floor/chair_armrest",
+      "nodeIds": [
+        "hotel_chair_ring_focus"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "mode",
+        "focus",
+        "text"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "dimensionsBasis": "Established Focus A convention; no CH4 registry record yet",
+      "coverageState": "UNPRODUCED_EXPLICIT_FOCUS_KEY",
+      "sourceTexts": {
+        "hotel_chair_ring_focus": "The carved wooden arm of Lot Thirty-One fills your view.\n\nA row of small brass tacks secures the dark red upholstery to the frame. One tack has worked loose.\n\nJust beyond it, something silver catches the light.\n\nYou lean closer.\n\nA ring.\n\nA short length of pale blue ribbon is tangled around the band, trapping it between the wooden frame and a fold of fabric. Tiny letters are engraved along the inside, but you cannot make them out from this angle.\n\nThe ring is caught firmly enough that it won't simply fall out.\n\nThe chair shifts slightly as one of the porters adjusts its position. The ring slips a fraction deeper into the upholstery.\n\nYou need to decide what to do before the chair is taken away."
+      },
+      "sourceNotes": {
+        "hotel_chair_ring_focus": null
+      }
+    },
+    {
+      "inventoryId": "focus_a:grand_bellevue/collection_stairs/chair_armrest",
+      "category": "focus_a",
+      "logicalKey": "grand_bellevue/collection_stairs/chair_armrest",
+      "nodeIds": [
+        "hotel_collection_ring_focus"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "mode",
+        "focus",
+        "text"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "dimensionsBasis": "Established Focus A convention; no CH4 registry record yet",
+      "coverageState": "UNPRODUCED_EXPLICIT_FOCUS_KEY",
+      "sourceTexts": {
+        "hotel_collection_ring_focus": [
+          {
+            "desc": "The porters pause with Lot Thirty-One tilted in the doorway. You crouch beside the armrest. A few loose brass tacks expose a narrow cavity beneath the red upholstery."
+          },
+          {
+            "if": {
+              "flag": "ch4_ring_slipped_inside_chair"
+            },
+            "desc": "The wedding ring has fallen beneath a wooden brace. Now that the chair is tilted, you can see it, but your fingers cannot reach."
+          },
+          {
+            "if": {
+              "notFlag": "ch4_ring_slipped_inside_chair"
+            },
+            "desc": "A silver wedding band is caught in a strand of pale blue ribbon behind the loosened fabric."
+          },
+          {
+            "desc": "The porters stand close enough to help\u2014and close enough to notice any tampering. The delivery manifest lists one chair. It does not list a wedding ring."
+          }
+        ]
+      },
+      "sourceNotes": {
+        "hotel_collection_ring_focus": "Owner-approved Focus A. The Red Stapler action must be displayed locked with REQUIRES / NOT IN INVENTORY when absent in final gameplay UI. Do not repeat the earlier stapler stealth d6 at collection. The ring is not given until the player explicitly chooses a recovery method."
+      }
+    },
+    {
+      "inventoryId": "state_family:chair_and_ring_states",
+      "category": "state_family",
+      "logicalKey": "chair_and_ring_states",
+      "nodeIds": [
+        "hotel_chair_stapler_stealth",
+        "hotel_chair_ring_focus",
+        "hotel_ring_slips",
+        "hotel_collection_ring_focus",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery"
+      ],
+      "group": "B2-04",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "text",
+        "effects/flags where present"
+      ],
+      "canonicalKey": null,
+      "coverageState": "NARRATIVE_DERIVED_VARIANT_PLAN",
+      "representation": "Layer/focus-state/full-frame choice remains production planning; one family can have multiple images or reuse.",
+      "description": "Focus/prop variants for loosened seam, caught ring, deeper slipped ring and recovered ring. Use the exact conditional flag text; do not mandate whole-room repaints.",
+      "evidence": {
+        "hotel_chair_stapler_stealth": {
+          "scene": "grand_bellevue/lobby",
+          "text": "The auctioneer launches into an enthusiastic description of the chair's craftsmanship. Everyone turns toward the podium.\n\nYou seize the opportunity. You slip behind the chair, wedge the stapler's metal base beneath the loosened upholstery, and carefully apply pressure.\n\nClick.\n\nThe seam separates just enough. Something silver glints inside.\n\nYou withdraw the stapler, slip it into your pocket, and straighten up. The auctioneer is still talking. The porter is still watching the bidders. Nobody has noticed a thing.",
+          "effects": null
+        },
+        "hotel_chair_ring_focus": {
+          "scene": "grand_bellevue/lobby",
+          "text": "The carved wooden arm of Lot Thirty-One fills your view.\n\nA row of small brass tacks secures the dark red upholstery to the frame. One tack has worked loose.\n\nJust beyond it, something silver catches the light.\n\nYou lean closer.\n\nA ring.\n\nA short length of pale blue ribbon is tangled around the band, trapping it between the wooden frame and a fold of fabric. Tiny letters are engraved along the inside, but you cannot make them out from this angle.\n\nThe ring is caught firmly enough that it won't simply fall out.\n\nThe chair shifts slightly as one of the porters adjusts its position. The ring slips a fraction deeper into the upholstery.\n\nYou need to decide what to do before the chair is taken away.",
+          "effects": {
+            "set": {
+              "ch4_ring_spotted_in_chair": true
+            }
+          }
+        },
+        "hotel_ring_slips": {
+          "scene": "grand_bellevue/lobby",
+          "text": "You catch the ribbon between your fingers. It seems loose enough. You give it a careful tug.\n\nPing.\n\nThe brass upholstery tack snaps free. The ring slips from the ribbon, strikes the wooden frame, and disappears into the narrow cavity beneath the armrest.\n\nYou hear it rattle downward. Then silence.\n\nYou try to reach into the gap, but your fingers cannot get past the chair's internal supports. Before you can attempt anything else, the porters begin moving the chair.\n\nOne porter calls to the other to watch the arms. The buyer wants the chair in its original condition.\n\nThe chair is lifted onto its trolley. Somewhere inside the upholstery, the wedding ring is still rattling.\n\nYou watch Lot Thirty-One roll toward the collection entrance. The ring isn't lost forever, but you're going to have to follow the chair to retrieve it.",
+          "effects": {
+            "set": {
+              "ch4_ring_slipped_inside_chair": true
+            }
+          }
+        },
+        "hotel_collection_ring_focus": {
+          "scene": "grand_bellevue/service_passage",
+          "text": [
+            {
+              "desc": "The porters pause with Lot Thirty-One tilted in the doorway. You crouch beside the armrest. A few loose brass tacks expose a narrow cavity beneath the red upholstery."
+            },
+            {
+              "if": {
+                "flag": "ch4_ring_slipped_inside_chair"
+              },
+              "desc": "The wedding ring has fallen beneath a wooden brace. Now that the chair is tilted, you can see it, but your fingers cannot reach."
+            },
+            {
+              "if": {
+                "notFlag": "ch4_ring_slipped_inside_chair"
+              },
+              "desc": "A silver wedding band is caught in a strand of pale blue ribbon behind the loosened fabric."
+            },
+            {
+              "desc": "The porters stand close enough to help\u2014and close enough to notice any tampering. The delivery manifest lists one chair. It does not list a wedding ring."
+            }
+          ],
+          "effects": {
+            "set": {
+              "ch4_ring_spotted_in_chair": true
+            }
+          }
+        },
+        "hotel_collection_ring_porter_recovery": {
+          "scene": "grand_bellevue/service_passage",
+          "text": [
+            {
+              "desc": "You point to the silver ring lodged inside the armrest, then to the delivery manifest."
+            },
+            {
+              "say": "THAT RING ISN'T ON YOUR MANIFEST.",
+              "who": "visitor"
+            },
+            "Then it isn't included in the sale.",
+            {
+              "say": "Can you get it out?",
+              "who": "visitor"
+            },
+            "We'd better. Imagine delivering something the buyer hasn't paid for.",
+            {
+              "desc": "He carefully tilts the chair and pulls back the loose upholstery. The ring slides along the wooden frame. He catches it in his palm."
+            },
+            {
+              "say": "Should we list it as recovered?",
+              "who": "hotel_second_porter"
+            },
+            "No. It wasn't included.",
+            {
+              "desc": "He hands you the ring."
+            },
+            "Best take that before somebody puts a price on it.",
+            {
+              "desc": "You slip the wedding ring into your pocket."
+            }
+          ],
+          "effects": {
+            "give": [
+              "wedding_ring_lot31"
+            ],
+            "set": {
+              "ch4_wedding_ring_retrieved": true,
+              "ch4_ring_recovered_at_collection": true,
+              "ch4_ring_recovery_witnessed": true,
+              "ch4_ring_slipped_inside_chair": false
+            }
+          }
+        },
+        "hotel_collection_ring_stapler_recovery": {
+          "scene": "grand_bellevue/service_passage",
+          "text": [
+            {
+              "desc": "The porters are bent over their delivery manifest. You slip the red stapler from your pocket."
+            },
+            {
+              "desc": "Using its metal base, you carefully lever the loose upholstery away from the wooden armrest. The opening widens. You tilt the chair slightly."
+            },
+            {
+              "desc": "The wedding ring rolls along the wooden frame and drops into your palm. Click."
+            },
+            "If anything's fallen off, put it on the discrepancy form.",
+            {
+              "desc": "You slip the stapler and ring into your pockets. No discrepancies are reported."
+            }
+          ],
+          "effects": {
+            "give": [
+              "wedding_ring_lot31"
+            ],
+            "set": {
+              "ch4_wedding_ring_retrieved": true,
+              "ch4_ring_recovered_at_collection": true,
+              "ch4_ring_recovery_unnoticed": true,
+              "ch4_ring_slipped_inside_chair": false
+            }
+          }
+        }
+      }
+    }
+  ]
+}

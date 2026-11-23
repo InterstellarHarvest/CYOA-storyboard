@@ -1,0 +1,817 @@
+{
+  "hotel_bride_service_shortcut": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_passage",
+    "text": "You enter the staff corridor with the bride\u2019s permission. The porters let you pass. A lavatory is marked down one hall; the service stairs toward the bridal dressing room climb another. Daylight shows through the loading dock farther on.",
+    "choices": [
+      {
+        "id": "bride_shortcut_staff",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "bride_shortcut_organizer",
+        "kind": "action",
+        "text": "TAKE THE STAIRS TO FIND THE WEDDING ORGANIZER.",
+        "to": "hotel_bridal_organizer"
+      },
+      {
+        "id": "bride_shortcut_exit",
+        "kind": "action",
+        "text": "LEAVE THROUGH THE SERVICE YARD.",
+        "to": "hotel_service_park_exit"
+      }
+    ],
+    "notes": "Short owner-directed replacement for wedding errands; bride ally flag is preserved by ring handover."
+  },
+  "hotel_chair_follow_collection": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_passage",
+    "text": [
+      {
+        "desc": "You trail Lot Thirty-One through the service door. The porters wheel it past empty shipping crates toward the collection stairs."
+      },
+      {
+        "desc": "Nobody questions your presence. Apparently, following furniture around is perfectly normal here."
+      },
+      {
+        "if": {
+          "flag": "ch4_ring_slipped_inside_chair"
+        },
+        "desc": "At every bump, something metallic rattles inside the upholstered armrest. The ring is still there."
+      },
+      {
+        "desc": "The trolley rounds a corner. You keep pace."
+      }
+    ],
+    "choices": [
+      {
+        "id": "chair_follow_reach_collection",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_stairs"
+      }
+    ]
+  },
+  "hotel_chair_ring_focus": {
+    "mode": "focus",
+    "scene": "grand_bellevue/lobby",
+    "focus": "grand_bellevue/auction_floor/chair_armrest",
+    "effects": {
+      "set": {
+        "ch4_ring_spotted_in_chair": true
+      }
+    },
+    "text": "The carved wooden arm of Lot Thirty-One fills your view.\n\nA row of small brass tacks secures the dark red upholstery to the frame. One tack has worked loose.\n\nJust beyond it, something silver catches the light.\n\nYou lean closer.\n\nA ring.\n\nA short length of pale blue ribbon is tangled around the band, trapping it between the wooden frame and a fold of fabric. Tiny letters are engraved along the inside, but you cannot make them out from this angle.\n\nThe ring is caught firmly enough that it won't simply fall out.\n\nThe chair shifts slightly as one of the porters adjusts its position. The ring slips a fraction deeper into the upholstery.\n\nYou need to decide what to do before the chair is taken away.",
+    "choices": [
+      {
+        "id": "focus_free_ring_stapler",
+        "kind": "action",
+        "text": "WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.",
+        "if": {
+          "flag": "ch4_chair_seam_open"
+        },
+        "to": "hotel_ring_retrieved"
+      },
+      {
+        "id": "focus_free_ring_careful",
+        "kind": "action",
+        "text": "WORK THE BLUE RIBBON LOOSE AND SLIP THE RING INTO YOUR POCKET.",
+        "if": {
+          "notFlag": "ch4_chair_seam_open"
+        },
+        "check": {
+          "id": "ch4_careful_ring_retrieval",
+          "sides": 6,
+          "need": 4,
+          "mods": [
+            {
+              "if": {
+                "flag": "ch4_chair_vegetation_permitted"
+              },
+              "add": 1
+            },
+            {
+              "if": {
+                "flag": "ch4_chair_sale_paused"
+              },
+              "add": 2
+            }
+          ]
+        },
+        "pass": {
+          "to": "hotel_ring_retrieved"
+        },
+        "fail": {
+          "to": "hotel_ring_slips"
+        }
+      },
+      {
+        "id": "focus_follow_chair_ring",
+        "kind": "action",
+        "text": "LET THE PORTERS TAKE THE CHAIR, THEN FOLLOW IT TO COLLECTION.",
+        "to": "hotel_chair_follow_collection"
+      }
+    ]
+  },
+  "hotel_chair_staff_escort": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_porter",
+    "pose": "practical",
+    "effects": {
+      "set": {
+        "ch4_lot31_staff_escort": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You present your Temporary Staff Pass to a porter. He examines it."
+      },
+      "People's Pavilion? Isn't that the building across the courtyard?",
+      {
+        "desc": "You point to the authorization for a service inspection. The porter reads it again."
+      },
+      "One service inspection. Doesn't say what sort.",
+      {
+        "say": "Ah! A visiting professional! Our merchandise attracts experts from across the Exposition!",
+        "who": "hotel_auctioneer"
+      },
+      "Well, I suppose you can accompany the chair to collection. We're taking it down to the loading dock. Just stay clear of the freight equipment.",
+      {
+        "desc": "He hands your pass back, considers the enormous chair, and looks at you."
+      },
+      "Actually, since you're staff... mind giving us a hand?",
+      {
+        "desc": "He hands you one end of a carrying strap. You find yourself helping two porters move Lot Thirty-One toward the service entrance."
+      },
+      {
+        "say": "Excellent initiative! That's the kind of service we pride ourselves on!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "You have become an employee of yet another establishment without applying for a job."
+      }
+    ],
+    "choices": [
+      {
+        "id": "staff_escort_dock",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_chair_staff_escort_loading"
+      }
+    ]
+  },
+  "hotel_chair_staff_escort_loading": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "practical",
+    "text": [
+      {
+        "desc": "You carry one end of Lot Thirty-One through the service passage. The porter checks your Staff Pass again."
+      },
+      "Doesn't say anything about furniture removal.",
+      {
+        "desc": "He hands it back."
+      },
+      "Doesn't say you can't, either.",
+      {
+        "desc": "You continue carrying the chair. Your authorization has become remarkably physical."
+      }
+    ],
+    "choices": [
+      {
+        "id": "chair_staff_escort_reach_collection",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_stairs"
+      }
+    ]
+  },
+  "hotel_chair_stapler_stealth": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "text": "The auctioneer launches into an enthusiastic description of the chair's craftsmanship. Everyone turns toward the podium.\n\nYou seize the opportunity. You slip behind the chair, wedge the stapler's metal base beneath the loosened upholstery, and carefully apply pressure.\n\nClick.\n\nThe seam separates just enough. Something silver glints inside.\n\nYou withdraw the stapler, slip it into your pocket, and straighten up. The auctioneer is still talking. The porter is still watching the bidders. Nobody has noticed a thing.",
+    "choices": [
+      {
+        "id": "stapler_stealth_focus",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_chair_ring_focus"
+      }
+    ]
+  },
+  "hotel_chair_vegetation_inspection": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_porter",
+    "pose": "uncertain",
+    "effects": {
+      "set": {
+        "ch4_chair_inspection_authorized": true,
+        "ch4_chair_vegetation_permitted": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You present your Acting Director of Vegetation credential to the porter. He examines it carefully."
+      },
+      "Vegetation?",
+      {
+        "desc": "You gesture toward the chair's carved wooden arms. The porter looks at the chair, then your credential."
+      },
+      "Well, I suppose it was a tree.",
+      {
+        "say": "Quite right! We mustn't interfere with an official botanical inspection!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "The porter steps aside."
+      },
+      "Very good, sir. Inspect away.",
+      {
+        "say": "Ladies and gentlemen! Lot Thirty-One is now undergoing a government inspection! A valuable endorsement indeed!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "You approach the chair. The loose upholstery is within reach."
+      }
+    ],
+    "choices": [
+      {
+        "id": "vegetation_open_focus",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_chair_ring_focus"
+      }
+    ]
+  },
+  "hotel_collection_porters_groom_clue": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "practical",
+    "effects": {
+      "set": {
+        "ch4_boiler_lavatory_location_confirmed": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You point toward the BOILER ACCESS door beyond the chair."
+      },
+      {
+        "say": "IS THERE AN ENGINEERS\u2019 TOILET THROUGH THERE?",
+        "who": "visitor"
+      },
+      {
+        "say": "Yes. Closed for pressure testing.",
+        "who": "hotel_porter"
+      },
+      {
+        "say": "ANY OTHER WAY IN?",
+        "who": "visitor"
+      },
+      {
+        "say": "You can ask the engineer. I wouldn\u2019t touch the wheel.",
+        "who": "hotel_porter"
+      },
+      {
+        "desc": "He returns to his manifest. You approach the boiler passage."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_porters_to_boilers",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "hotel_collection_ring_focus": {
+    "mode": "focus",
+    "scene": "grand_bellevue/service_passage",
+    "focus": "grand_bellevue/collection_stairs/chair_armrest",
+    "effects": {
+      "set": {
+        "ch4_ring_spotted_in_chair": true
+      }
+    },
+    "text": [
+      {
+        "desc": "The porters pause with Lot Thirty-One tilted in the doorway. You crouch beside the armrest. A few loose brass tacks expose a narrow cavity beneath the red upholstery."
+      },
+      {
+        "if": {
+          "flag": "ch4_ring_slipped_inside_chair"
+        },
+        "desc": "The wedding ring has fallen beneath a wooden brace. Now that the chair is tilted, you can see it, but your fingers cannot reach."
+      },
+      {
+        "if": {
+          "notFlag": "ch4_ring_slipped_inside_chair"
+        },
+        "desc": "A silver wedding band is caught in a strand of pale blue ribbon behind the loosened fabric."
+      },
+      {
+        "desc": "The porters stand close enough to help\u2014and close enough to notice any tampering. The delivery manifest lists one chair. It does not list a wedding ring."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_ring_ask_porter",
+        "kind": "action",
+        "text": "ASK THE PORTER TO REMOVE THE UNLISTED WEDDING RING.",
+        "to": "hotel_collection_ring_porter_recovery"
+      },
+      {
+        "id": "collection_ring_return",
+        "kind": "action",
+        "text": "STOP INSPECTING AND RETURN TO THE COLLECTION STAIRS.",
+        "to": "hotel_collection_stairs"
+      }
+    ],
+    "use": {
+      "red_stapler": {
+        "kind": "action",
+        "say": "USE THE RED STAPLER TO OPEN THE UPHOLSTERY SEAM AND FREE THE RING.",
+        "to": "hotel_collection_ring_stapler_recovery"
+      }
+    },
+    "notes": "Owner-approved Focus A. The Red Stapler action must be displayed locked with REQUIRES / NOT IN INVENTORY when absent in final gameplay UI. Do not repeat the earlier stapler stealth d6 at collection. The ring is not given until the player explicitly chooses a recovery method."
+  },
+  "hotel_collection_ring_in_pocket": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_passage",
+    "text": "The wedding ring is in your pocket. The porters return to their paperwork. You can hand the ring to the bride for staff-passage permission, inspect it, check the engineers\u2019 lavatory beyond Boiler Three, or try the staff lavatory. Your bladder favors the last two.",
+    "choices": [
+      {
+        "id": "collection_ring_go_bride",
+        "kind": "action",
+        "text": "RETURN TO THE BRIDE WITH THE WEDDING RING.",
+        "to": "hotel_collection_ring_to_bride"
+      },
+      {
+        "id": "collection_ring_inspect",
+        "kind": "action",
+        "text": "INSPECT THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_ring_inspect_inscription"
+      },
+      {
+        "id": "collection_ring_go_boilers",
+        "kind": "action",
+        "text": "CHECK THE ENGINEERS\u2019 LAVATORY BEYOND THE BOILERS.",
+        "to": "hotel_boiler_pressure_intro"
+      },
+      {
+        "id": "collection_ring_go_lavatory",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      }
+    ]
+  },
+  "hotel_collection_ring_porter_recovery": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "practical",
+    "effects": {
+      "give": [
+        "wedding_ring_lot31"
+      ],
+      "set": {
+        "ch4_wedding_ring_retrieved": true,
+        "ch4_ring_recovered_at_collection": true,
+        "ch4_ring_recovery_witnessed": true,
+        "ch4_ring_slipped_inside_chair": false
+      }
+    },
+    "text": [
+      {
+        "desc": "You point to the silver ring lodged inside the armrest, then to the delivery manifest."
+      },
+      {
+        "say": "THAT RING ISN'T ON YOUR MANIFEST.",
+        "who": "visitor"
+      },
+      "Then it isn't included in the sale.",
+      {
+        "say": "Can you get it out?",
+        "who": "visitor"
+      },
+      "We'd better. Imagine delivering something the buyer hasn't paid for.",
+      {
+        "desc": "He carefully tilts the chair and pulls back the loose upholstery. The ring slides along the wooden frame. He catches it in his palm."
+      },
+      {
+        "say": "Should we list it as recovered?",
+        "who": "hotel_second_porter"
+      },
+      "No. It wasn't included.",
+      {
+        "desc": "He hands you the ring."
+      },
+      "Best take that before somebody puts a price on it.",
+      {
+        "desc": "You slip the wedding ring into your pocket."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_porter_ring_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_ring_in_pocket"
+      }
+    ]
+  },
+  "hotel_collection_ring_stapler_recovery": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "businesslike",
+    "effects": {
+      "give": [
+        "wedding_ring_lot31"
+      ],
+      "set": {
+        "ch4_wedding_ring_retrieved": true,
+        "ch4_ring_recovered_at_collection": true,
+        "ch4_ring_recovery_unnoticed": true,
+        "ch4_ring_slipped_inside_chair": false
+      }
+    },
+    "text": [
+      {
+        "desc": "The porters are bent over their delivery manifest. You slip the red stapler from your pocket."
+      },
+      {
+        "desc": "Using its metal base, you carefully lever the loose upholstery away from the wooden armrest. The opening widens. You tilt the chair slightly."
+      },
+      {
+        "desc": "The wedding ring rolls along the wooden frame and drops into your palm. Click."
+      },
+      "If anything's fallen off, put it on the discrepancy form.",
+      {
+        "desc": "You slip the stapler and ring into your pockets. No discrepancies are reported."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_stapler_ring_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_ring_in_pocket"
+      }
+    ],
+    "notes": "Owner-approved reliable item-assisted recovery without a second stealth check, with no new upholstery damage and no consumption of the Red Stapler."
+  },
+  "hotel_collection_staff_pass": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "curious",
+    "text": [
+      {
+        "desc": "You produce your Temporary Staff Pass. The porter examines it, looks at Lot Thirty-One, and consults his clipboard."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_staff_pass_known",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "if": {
+          "flag": "ch4_lot31_staff_escort"
+        },
+        "to": "hotel_collection_staff_pass_recognized"
+      },
+      {
+        "id": "collection_staff_pass_first",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "if": {
+          "notFlag": "ch4_lot31_staff_escort"
+        },
+        "to": "hotel_collection_staff_pass_first"
+      }
+    ]
+  },
+  "hotel_collection_staff_pass_authorized": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "practical",
+    "effects": {
+      "set": {
+        "ch4_maintenance_access_authorized": true
+      }
+    },
+    "text": [
+      {
+        "desc": "The porter retrieves his clipboard."
+      },
+      "Name?",
+      {
+        "desc": "You gesture toward the pass. He writes TEMPORARY."
+      },
+      "Purpose of visit?",
+      {
+        "desc": "You indicate the boiler-room door. He writes OFFICIAL."
+      },
+      {
+        "desc": "The porter steps aside and returns your pass."
+      },
+      "Very good. Authorized maintenance inspection.",
+      {
+        "desc": "You enter the boiler passage. Apparently, you have been hired again."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_authorized_to_groom",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "hotel_collection_staff_pass_first": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "uncertain",
+    "text": [
+      "People's Pavilion? Isn't that across the courtyard?",
+      {
+        "say": "It says temporary staff.",
+        "who": "hotel_second_porter"
+      },
+      "Yes, but temporary staff for whom?",
+      {
+        "desc": "The second porter looks around at the half-dismantled hotel."
+      },
+      {
+        "say": "At this rate, all the staff are temporary.",
+        "who": "hotel_second_porter"
+      },
+      {
+        "desc": "The first porter considers this."
+      },
+      "Fair point."
+    ],
+    "choices": [
+      {
+        "id": "collection_staff_first_authorization",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_staff_pass_authorized"
+      }
+    ]
+  },
+  "hotel_collection_staff_pass_recognized": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "relieved",
+    "text": [
+      "Oh! Our visiting inspector. Back again?",
+      {
+        "say": "Excellent. Perhaps he can explain why this chair won't fit through the door.",
+        "who": "hotel_second_porter"
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_staff_known_authorization",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_staff_pass_authorized"
+      }
+    ]
+  },
+  "hotel_collection_stairs": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_passage",
+    "text": "You reach the collection stairs.\n\nThe auctioneer's voice still carries through the ventilation grilles.\n\nTwo porters struggle to free Lot Thirty-One from a narrow doorway.\n\nBeneath the trolley wheel lies a crushed white boutonni\u00e8re and a delivery slip.\n\nLOT 31 \u2014 BRIDAL SUITE CHAIR\n\nATTACHED GENTLEMAN \u2014 NOT INCLUDED\n\nNOT INCLUDED has been underlined three times.\n\nBeyond the chair, a door reads:\n\nBOILER ACCESS \u2014 AUTHORIZED PERSONNEL ONLY\n\nSomething scrapes behind it.\n\nA man coughs, then abruptly goes quiet.\n\nThere may be someone inside who knows whether the engineers\u2019 lavatory is open.\n\nYou also spot a sign pointing toward the staff lavatory.\n\nA bright red SOLD sticker covers the arrow.\n\nNaturally.",
+    "choices": [
+      {
+        "id": "collection_ask_porters_groom",
+        "kind": "spoken",
+        "text": "ASK WHETHER THE BOILER PASSAGE LEADS TO A WORKING TOILET.",
+        "to": "hotel_collection_porters_groom_clue"
+      },
+      {
+        "id": "collection_slip_past_chair",
+        "kind": "action",
+        "text": "SLIP THROUGH THE BOILER-ROOM DOOR WHILE THE PORTERS STRUGGLE WITH THE CHAIR.",
+        "check": {
+          "id": "ch4_collection_stairs_slip_unnoticed",
+          "sides": 6,
+          "need": 4
+        },
+        "pass": {
+          "effects": {
+            "set": {
+              "ch4_boiler_entry_unnoticed": true
+            }
+          },
+          "to": "hotel_collection_slip_unnoticed"
+        },
+        "fail": {
+          "effects": {
+            "set": {
+              "ch4_boiler_entry_spotted": true,
+              "ch4_not_included_tag": true
+            }
+          },
+          "to": "hotel_collection_slip_spotted"
+        }
+      },
+      {
+        "id": "collection_show_staff_pass",
+        "kind": "action",
+        "text": "SHOW YOUR TEMPORARY STAFF PASS AND REQUEST ACCESS TO THE MAINTENANCE AREA.",
+        "if": {
+          "has": "pavilion_temporary_staff_pass"
+        },
+        "to": "hotel_collection_staff_pass"
+      },
+      {
+        "id": "collection_check_staff_lavatory",
+        "kind": "action",
+        "text": "INVESTIGATE THE STAFF LAVATORY DESPITE THE SOLD SIGN.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "collection_inspect_chair_ring",
+        "kind": "action",
+        "text": "INSPECT LOT THIRTY-ONE'S ARMREST BEFORE THE CHAIR IS CRATED.",
+        "if": {
+          "notFlag": "ch4_wedding_ring_retrieved"
+        },
+        "to": "hotel_collection_ring_focus"
+      }
+    ]
+  },
+  "hotel_ring_slips": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "effects": {
+      "set": {
+        "ch4_ring_slipped_inside_chair": true
+      }
+    },
+    "text": "You catch the ribbon between your fingers. It seems loose enough. You give it a careful tug.\n\nPing.\n\nThe brass upholstery tack snaps free. The ring slips from the ribbon, strikes the wooden frame, and disappears into the narrow cavity beneath the armrest.\n\nYou hear it rattle downward. Then silence.\n\nYou try to reach into the gap, but your fingers cannot get past the chair's internal supports. Before you can attempt anything else, the porters begin moving the chair.\n\nOne porter calls to the other to watch the arms. The buyer wants the chair in its original condition.\n\nThe chair is lifted onto its trolley. Somewhere inside the upholstery, the wedding ring is still rattling.\n\nYou watch Lot Thirty-One roll toward the collection entrance. The ring isn't lost forever, but you're going to have to follow the chair to retrieve it.",
+    "choices": [
+      {
+        "id": "ring_follow_after_fail",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_chair_follow_collection"
+      }
+    ]
+  },
+  "hotel_stall_porter_protest": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_porter",
+    "pose": "businesslike",
+    "text": [
+      {
+        "desc": "The porter looks down from his clipboard."
+      },
+      "Of course you are, sir. That's why we left you there.",
+      {
+        "desc": "You point toward the stall, now halfway through the ceiling."
+      },
+      "We're strictly prohibited from lifting occupied fixtures. So we've removed the fixture and left the occupant. Perfectly safe.",
+      {
+        "desc": "He makes a checkmark on the clipboard."
+      },
+      "Now, if you're disputing the sale, that's an entirely different matter.",
+      {
+        "desc": "You attempt to explain that you simply want to use the toilet. The porter produces a bright red placard."
+      },
+      "Oh, you must take that up with the auctioneer. Here, I'll signal him.",
+      {
+        "desc": "He waves the placard enthusiastically."
+      },
+      "DISPUTE ON LOT FIFTY-THREE!",
+      {
+        "say": "An objection? Excellent! Competitive interest! Bring the gentleman forward!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "A wedding guest applauds. The porter ushers you into the lobby toward the podium."
+      }
+    ],
+    "choices": [
+      {
+        "id": "porter_to_auction",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_auction_reopen_53"
+      }
+    ]
+  },
+  "hotel_water_outage_confirmation": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_boiler_engineer",
+    "pose": "practical",
+    "effects": {
+      "set": {
+        "ch4_hotel_water_outage_confirmed": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You follow the now-silent pipes into the service corridor. You turn on a nearby washbasin tap. Nothing."
+      },
+      {
+        "desc": "An engineer approaches, studying a pressure gauge."
+      },
+      {
+        "say": "DO ANY OF THE TOILETS STILL WORK?",
+        "who": "visitor"
+      },
+      {
+        "say": "Mechanically, yes. Hydraulically, no.",
+        "who": "hotel_boiler_engineer"
+      },
+      {
+        "say": "I ONLY NEED ONE!",
+        "who": "visitor"
+      },
+      {
+        "say": "Then you'd have one toilet that doesn't flush.",
+        "who": "hotel_boiler_engineer"
+      },
+      {
+        "say": "I'D TAKE IT!",
+        "who": "visitor"
+      },
+      {
+        "say": "Access is a separate issue.",
+        "who": "hotel_boiler_engineer"
+      },
+      {
+        "desc": "He returns to his gauge. The corridor branches toward the staff lavatory, the boiler room, and the loading dock."
+      }
+    ],
+    "choices": [
+      {
+        "id": "water_outage_check_staff",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY ANYWAY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "water_outage_check_engineers",
+        "kind": "action",
+        "text": "TRY THE ENGINEERS' LAVATORY.",
+        "to": "hotel_boiler_pressure_intro"
+      },
+      {
+        "id": "water_outage_exit",
+        "kind": "action",
+        "text": "LEAVE THE HOTEL THROUGH THE LOADING DOCK.",
+        "to": "hotel_service_park_exit"
+      }
+    ],
+    "notes": "Owner-approved concise consequence for ENTIRE HOTEL shutoff. Existing ch4_hotel_water_off and ch4_restroom_water_off flags persist. No second d6, fee, item, or wedding duties."
+  },
+  "hotel_wedding_service_shortcut": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_passage",
+    "text": "You slip through the service door while the organizer handles the ballroom. A staff lavatory, a staircase back toward the bridal corridor, and the loading dock are within reach. None guarantees a working toilet.",
+    "choices": [
+      {
+        "id": "wedding_service_staff",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "wedding_service_bridal",
+        "kind": "action",
+        "text": "RETURN UPSTAIRS AND ASK FOR THE BRIDAL LAVATORY KEY.",
+        "to": "hotel_bridal_organizer"
+      },
+      {
+        "id": "wedding_service_exit",
+        "kind": "action",
+        "text": "LEAVE BY THE SERVICE YARD.",
+        "to": "hotel_service_park_exit"
+      }
+    ]
+  }
+}

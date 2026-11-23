@@ -1,3 +1,13 @@
+# Current new review — B2-04 v01
+
+[Lot31 and Collection Stairs gallery](b2-04-v01/index.html): seven primary assets plus three chair/ring state-family frames, all **UNSELECTED** pending Nate. [Manifest and exact hashes](b2-04-v01/manifest.json), [production/source prompts](b2-04-v01/README.md), [bounded state evidence](b2-04-v01/evidence/state-plan.json). No narrative/gameplay/engine integration.
+
+B2-03 registration/public deployment is verified: [seven exact selected PNGs](B2-03-APPROVED-20261123.json), [GitHub/live Pages mappings and preservation](B2-03-APPROVAL-PUBLIC-VERIFICATION-20261123.json). The B2-01 alternative plumber portraits remain separate/unselected.
+
+# B2-03 owner approval completed — 2026-11-23
+
+All seven B2-03 v01 PNGs from24c79bff8d33b5997ccb6b7aa7bb86293afef291 are now **APPROVED and SELECTED unchanged** at canonical main `2c0f1c5a22c234bc561b12d98009a10883cf66ac`, [PR24](https://github.com/InterstellarHarvest/CYOA-storyboard/pull/24). [Completion/gameplay handoff](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/2c0f1c5a22c234bc561b12d98009a10883cf66ac/docs/131_CH4_B203_APPROVAL_COMPLETION_20261123.md), [exact selection receipt](B2-03-APPROVED-20261123.json). Every prior approval and historical review version remains unchanged; older UNSELECTED labels below are historical. B2-01 plumber alternatives remain a separate unselected decision. No narrative/gameplay/engine integration.
+
 Public B2-03 v01: [open the pinned browser gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/24c79bff8d33b5997ccb6b7aa7bb86293afef291/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/online.html) · [review publication and exact candidate hashes](B2-03-REVIEW-PUBLICATION-20261123.md). Seven UNSELECTED candidates; [verified public package](B2-03-PUBLIC-VERIFICATION-20261123.json).
 
 # Current status — 2026-11-23
