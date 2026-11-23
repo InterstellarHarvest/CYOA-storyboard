@@ -1,3 +1,5 @@
+Public B2-04: [open the verified native/exact4× gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/3804fa2013aeb81e17236e4995e2ef1e9596d404/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/online.html) · [B2-03 completion + B2-04 publication/hashes](B2-04-REVIEW-PUBLICATION-20261123.md) · [public file verification](B2-04-PUBLIC-VERIFICATION-20261123.json). All seven primary assets and three supplemental state frames remain UNSELECTED.
+
 # Current new review — B2-04 v01
 
 [Lot31 and Collection Stairs gallery](b2-04-v01/index.html): seven primary assets plus three chair/ring state-family frames, all **UNSELECTED** pending Nate. [Manifest and exact hashes](b2-04-v01/manifest.json), [production/source prompts](b2-04-v01/README.md), [bounded state evidence](b2-04-v01/evidence/state-plan.json). No narrative/gameplay/engine integration.
