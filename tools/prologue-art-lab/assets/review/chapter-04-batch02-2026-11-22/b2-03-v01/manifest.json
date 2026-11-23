@@ -1,0 +1,495 @@
+{
+  "title": "Chapter 4 B2-03 \u2014 Maintenance access and water isolation v01",
+  "groupId": "B2-03",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "9fa1f19629956d279f98a118d4280734096f9d56",
+  "inventorySource": "evidence/inventory-source.json",
+  "storyNodeCoverage": [
+    "hotel_boiler_groom_encounter",
+    "hotel_boiler_service_passage",
+    "hotel_collection_slip_spotted",
+    "hotel_collection_slip_unnoticed",
+    "hotel_groom_directions_to_lavatory",
+    "hotel_groom_leave_behind",
+    "hotel_groom_show_ring",
+    "hotel_isolator_entire",
+    "hotel_isolator_panel",
+    "hotel_isolator_restrooms",
+    "hotel_pipe_tunnel"
+  ],
+  "productionIntegrationPerformed": false,
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "assets": [
+    {
+      "id": "CH4-B2-12",
+      "title": "Maintenance walkway",
+      "key": "scenes:grand_bellevue/maintenance",
+      "inventoryId": "main_scene:grand_bellevue/maintenance",
+      "kind": "scene",
+      "nodeIds": [
+        "hotel_pipe_tunnel",
+        "hotel_isolator_panel",
+        "hotel_isolator_restrooms",
+        "hotel_isolator_entire",
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_show_ring",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind",
+        "hotel_boiler_service_passage"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-12-v01.png",
+        "sha256": "e069dbb75908fde2cb51867cd137bdac43301bd38ac8c72a3d266a1e400059c0",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-12-4x.png",
+        "sha256": "ddfb1fa590dbfbcb6b0ebbb77619caa86e796aa5b5309f536f1996c3002c048c",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-12-detailed.png",
+        "sha256": "4c5597998964630e915ba89b75546978b65024f2b9da89d407028f3dc639d221",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-12-pixel-friendly.png",
+        "sha256": "2a9be3bf0c341fe0d9fad7e0b946a6189ad6125a1011e11fb119700ce604d6fe",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-12-architecture.png",
+        "layers/CH4-B2-12-floor-structure.png",
+        "layers/CH4-B2-12-material-underpainting.png",
+        "layers/CH4-B2-12-npc-0.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-12-floor.png",
+        "masks/CH4-B2-12-npc-0.png",
+        "masks/CH4-B2-12-plaster.png",
+        "masks/CH4-B2-12-protected-story-objects.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-13",
+      "title": "Boiler access",
+      "key": "scenes:grand_bellevue/boiler_access",
+      "inventoryId": "main_scene:grand_bellevue/boiler_access",
+      "kind": "scene",
+      "nodeIds": [
+        "hotel_collection_slip_unnoticed",
+        "hotel_collection_slip_spotted"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-13-v01.png",
+        "sha256": "c7e5eb215898ee1f6128cf321d1f295f3c6896e4764131bd0995c5ce36c2c93f",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-13-4x.png",
+        "sha256": "bb513f9175015ceae474f974d9363e3b54b03245e5236fcb3a733022abe7cb5e",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-13-detailed.png",
+        "sha256": "ee68cf37cef778570fa2e47bbbb64fd05810424e0069906ed7c833b57dccafd7",
+        "dimensions": [
+          1550,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-13-pixel-friendly.png",
+        "sha256": "97a0b1d2618dcf6d12a9fdcb42a10fe18e3253494518b982087d4714f5441280",
+        "dimensions": [
+          1547,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-13-architecture.png",
+        "layers/CH4-B2-13-floor-structure.png",
+        "layers/CH4-B2-13-material-underpainting.png",
+        "layers/CH4-B2-13-npc-0.png",
+        "layers/CH4-B2-13-npc-1.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-13-floor.png",
+        "masks/CH4-B2-13-npc-0.png",
+        "masks/CH4-B2-13-npc-1.png",
+        "masks/CH4-B2-13-plaster.png",
+        "masks/CH4-B2-13-protected-story-objects.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-14",
+      "title": "Groom \u2014 nervous",
+      "key": "portraits:hotel_groom:nervous",
+      "inventoryId": "portrait:hotel_groom:nervous",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-14-v01.png",
+        "sha256": "dd4d497088f3264a04d7182245b176e65cd9a3e5c5f04e7be872adc4cc52352a",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-14-4x.png",
+        "sha256": "c64272afa10a6ac7f9a8254c49252fb709cc437afda127545d8a0ea1d9913ed1",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-14-detailed.png",
+        "sha256": "737241dd9b61d023e17f03db8db7963d3768aceeed0eed9ae531c1982221d600",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlySource": null,
+      "layers": [
+        "layers/CH4-B2-14-fabric.png",
+        "layers/CH4-B2-14-hair.png",
+        "layers/CH4-B2-14-native-foreground.png",
+        "layers/CH4-B2-14-skin.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-14-fabric.png",
+        "masks/CH4-B2-14-hair.png",
+        "masks/CH4-B2-14-silhouette.png",
+        "masks/CH4-B2-14-skin.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-15",
+      "title": "Groom \u2014 relieved",
+      "key": "portraits:hotel_groom:relieved",
+      "inventoryId": "portrait:hotel_groom:relieved",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_groom_show_ring"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-15-v01.png",
+        "sha256": "19d8d42ff06b02020d5bdb3ddba33d9f47eb6222bb0c59e635d43bd5bf21691c",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-15-4x.png",
+        "sha256": "838f0f7b8696895f4214fdfb6a884975295a287c2c28493112113b3647a453c6",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-15-detailed.png",
+        "sha256": "867fbe715c5c9bad2bc0b7c7abea845eac2ca771c9cfbb28a297d2b6bfb370b5",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlySource": null,
+      "layers": [
+        "layers/CH4-B2-15-fabric.png",
+        "layers/CH4-B2-15-hair.png",
+        "layers/CH4-B2-15-native-foreground.png",
+        "layers/CH4-B2-15-skin.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-15-fabric.png",
+        "masks/CH4-B2-15-hair.png",
+        "masks/CH4-B2-15-silhouette.png",
+        "masks/CH4-B2-15-skin.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-16",
+      "title": "Boiler access conversation background",
+      "key": "scenes:grand_bellevue/boiler_access#portraitBackground",
+      "inventoryId": "portrait_background:grand_bellevue/boiler_access",
+      "kind": "portrait-background",
+      "nodeIds": [
+        "hotel_collection_slip_spotted"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-16-v01.png",
+        "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-16-4x.png",
+        "sha256": "7756cf11bc55f5e0f229933a4498262989454521c10de4fcee45a3293a8a523b",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-16-detailed.png",
+        "sha256": "eb702034343d3b4c2477c285ba30a3900d98fd69108cc7011fca6302c8b53729",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-16-pixel-friendly.png",
+        "sha256": "42ddd438827a3b531c5480b0922d0bd49fb3ce4dfc85246aafc147c132b85560",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-16-material-underpainting.png",
+        "layers/CH4-B2-16-native-detail-lettering.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-16-native-detail-lettering.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-17",
+      "title": "Maintenance conversation background",
+      "key": "scenes:grand_bellevue/maintenance#portraitBackground",
+      "inventoryId": "portrait_background:grand_bellevue/maintenance",
+      "kind": "portrait-background",
+      "nodeIds": [
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_show_ring",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-17-v01.png",
+        "sha256": "0836e7de87767563257424d071217098b5b4c5b056f30318e868737573d7364b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-17-4x.png",
+        "sha256": "a00785308bbe678a211f1a1a5b7c65618591cff6fca8cdedeaa32234e13388c1",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-17-detailed.png",
+        "sha256": "0af644533ed4ec1851a9608558b2be4666394ffbaecbb5777f528ce45ae99535",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-17-pixel-friendly.png",
+        "sha256": "eaf6381b1715536b6bed5158fd8708647f44f7173b627f7b845c37c5af2d0c21",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-17-material-underpainting.png",
+        "layers/CH4-B2-17-native-detail-lettering.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-17-native-detail-lettering.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-18",
+      "title": "Central water isolation \u2014 two levers",
+      "key": "focus:grand_bellevue/maintenance/water_isolator",
+      "inventoryId": "focus_a:grand_bellevue/maintenance/water_isolator",
+      "kind": "focus",
+      "nodeIds": [
+        "hotel_isolator_panel"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-18-v01.png",
+        "sha256": "723bb38b569aa15f0520ce5c042fd9a9d30c0eed9a93e537e610a621573fe43f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-18-4x.png",
+        "sha256": "f3edbb78126ffd8685d8b7d0c9014bb9c9b8c871afa81426182e7891a1f81cdd",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-18-detailed.png",
+        "sha256": "25d69f9f06db6c4e84aec213c5ae516ab5b9c9d854c90ebbfe1a1a11384a5761",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-18-pixel-friendly.png",
+        "sha256": "a1876ec2e7fc8ae84c76de90b27621292c3dc6bd24ab6a9da6c69738d64ae1f7",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "layers": [
+        "layers/CH4-B2-18-material-underpainting.png",
+        "layers/CH4-B2-18-native-detail-lettering.png"
+      ],
+      "masks": [
+        "masks/CH4-B2-18-native-detail-lettering.png"
+      ]
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "9fa1f19629956d279f98a118d4280734096f9d56",
+      "canonicalFile": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "9fa1f19629956d279f98a118d4280734096f9d56",
+      "canonicalFile": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "approved-groundkeeper": {
+      "registryKey": "portraits:groundskeeper:idle",
+      "approvalCommit": "9fa1f19629956d279f98a118d4280734096f9d56",
+      "canonicalFile": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/groundskeeper/groundskeeper_idle.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "9fa1f19629956d279f98a118d4280734096f9d56",
+      "canonicalFile": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    }
+  }
+}

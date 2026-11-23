@@ -1,3 +1,9 @@
+# Current owner authorization and status — 2026-11-23
+
+Nate explicitly approved all six B2-02 assets unchanged: CH4-B2-06/07/08 v02, CH4-B2-09 v03, CH4-B2-10/11 v01. Registration is complete at canonical main9fa1f19629956d279f98a118d4280734096f9d56, PR23, docs130. All16 approved Chapter4 PNGs and all earlier approvals must remain byte-exact. The two B2-01 v02 plumber alternatives remain a separate unapproved decision; approved B2-01 v01 is unchanged. Older pending/no-registration notes below describe their earlier scope and are superseded by this exact approval only.
+
+Owner authorized automatic continuation to the next canonical group. Current B2-03 v01 contains exactly seven maintenance/water-isolation demands from the v08 inventory, all UNSELECTED. Publish completed source/provenance/visual/browser reviews to the existing public review branch automatically; do not register/select any B2-03 candidate until Nate approves. Preserve prior review packages and source files. No narrative/gameplay/engine integration. Follow docs129 and exact Chapter2 benchmarks; full story-object masks protect every subsequent native structure pass.
+
 # Chapter 4 Batch 2 artwork review
 
 ## B2-09 v03 targeted correction — 2026-11-23

@@ -1,0 +1,2612 @@
+{
+  "passed": true,
+  "checksPassed": 650,
+  "assets": 7,
+  "status": "UNSELECTED",
+  "historicalFilesPreserved": 424,
+  "canonicalFilesChanged": 0,
+  "integrationPerformed": false,
+  "visualAssessment": "evidence/visual-review.md",
+  "checks": [
+    {
+      "check": "Exactly seven UNSELECTED candidates",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical group demands",
+      "passed": true
+    },
+    {
+      "check": "Exact11-node story coverage",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Separate native structure protects complete story objects CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-12",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Separate native structure protects complete story objects CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-13",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-14",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-15",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-16",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-17",
+      "passed": true
+    },
+    {
+      "check": "No owner selection inferred CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Manifest PNG hashes CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Native dimensions CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Alpha contract CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x pixels CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Source-derived editable provenance CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Direct Chapter2 native/4x comparisons CH4-B2-18",
+      "passed": true
+    },
+    {
+      "check": "Exact approved Chapter2 benchmark approved-bureau",
+      "passed": true
+    },
+    {
+      "check": "Exact approved Chapter2 benchmark approved-tower",
+      "passed": true
+    },
+    {
+      "check": "Exact approved Chapter2 benchmark approved-groundkeeper",
+      "passed": true
+    },
+    {
+      "check": "Exact approved Chapter2 benchmark approved-attendant",
+      "passed": true
+    },
+    {
+      "check": "Independent foreground/background composite 14",
+      "passed": true
+    },
+    {
+      "check": "Independent foreground/background composite 15",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved B2-01-PUBLIC-VERIFICATION-20261122.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved B2-01-APPROVED-20261122.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved SHA256SUMS",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/index.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/README.md",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/online.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/index.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/README.md",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/online.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/index.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/README.md",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/online.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/index.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/README.md",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/online.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/index.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/README.md",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/online.html",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/comparisons/plumbers-v01-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/comparisons/plumbers-v01-v02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/visual-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/palette-treatment.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/native/CH4-B2-02-palette-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/native/CH4-B2-01-palette-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-plumber.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-attendant.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-restroom-background.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-conductor.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-groundkeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-eddie.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/approved-presenter.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/references/foreman-style-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/package.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/verify_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/palette.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/quantize_only_diagnostic.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/source/prepare.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/originals/CH4-B2-02-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/originals/CH4-B2-01-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/diagnostics/quantize-only-CH4-B2-02-palette-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/diagnostics/quantize-only-CH4-B2-01-palette-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/prompts/CH4-B2-02.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/prompts/CH4-B2-01.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-eddie-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/CH4-B2-01-composite-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-restroom-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/CH4-B2-01-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/CH4-B2-02-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-plumber-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-conductor-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-groundkeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/CH4-B2-02-palette-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/approved-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/CH4-B2-02-composite-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/previews/CH4-B2-01-palette-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/chromium-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/firefox-CH4-B2-01-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/chromium-CH4-B2-01-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/firefox-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/chromium-CH4-B2-02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/firefox-CH4-B2-02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v02-npc-palette/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/comparisons/B2-09-v02-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/comparisons/B2-09-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/layers/native-cake-and-trolley.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/layers/native-structure-object-safe.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/changed-pixels-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/targeted-change.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/story-object-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/visual-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/frozen-siblings.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/native/CH4-B2-09-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/references/CH4-B2-09-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/references/detailed-cake-crop.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/references/approved-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/references/CH4-B2-09-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/references/material-restoration-before-refinement.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/source/package.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/source/verify_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/source/restore.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/cake-v02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/CH4-B2-09-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/cake-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/CH4-B2-09-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/cake-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/previews/cake-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/masks/foreground-hand-preserved.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/masks/cake-and-trolley-protected.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/firefox-difference-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/firefox-current-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/chromium-current-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/chromium-difference-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/firefox-cake-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/chromium-cake-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/chromium-crop-current-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v03-cake/evidence/browser/firefox-crop-current-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/comparisons/B2-01-all-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/comparisons/B2-01-all-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/font-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/published-browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/dimension-contract.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/derivation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/canonical-nodes.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/visual-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/canonical-v08-inventory.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/native/CH4-B2-05-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/native/CH4-B2-04-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/native/CH4-B2-01-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/native/CH4-B2-02-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/native/CH4-B2-03-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/approved-reception-background.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/approved-attendant.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/approved-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/approved-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/approved-presenter.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/approved-restroom.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/references/plumber-identity.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/package.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/verify_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/pixel_text.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/source/prepare.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/originals/CH4-B2-03-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/originals/CH4-B2-04-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/originals/CH4-B2-05-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/originals/CH4-B2-02-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/originals/CH4-B2-03-label-cleanup.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/originals/CH4-B2-01-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/prompts/CH4-B2-03-cleanup.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/prompts/CH4-B2-04.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/prompts/CH4-B2-05.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/prompts/CH4-B2-02.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/prompts/CH4-B2-03.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/prompts/CH4-B2-01.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-01-composite-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/approved-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-01-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-02-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/approved-restroom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-02-alpha-light.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/approved-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-01-alpha-dark.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-05-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-01-alpha-light.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/approved-reception-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/approved-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-02-composite-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/previews/CH4-B2-02-alpha-dark.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/fonts/tiny5-approved-atlas.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/fonts/pressstart-approved-atlas.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/fonts/pressstart-approved-mapping.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/fonts/tiny5-approved-mapping.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/chromium-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/chromium-CH4-B2-04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/firefox-CH4-B2-04-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/firefox-CH4-B2-01-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/chromium-CH4-B2-01-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/firefox-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/firefox-CH4-B2-05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/chromium-CH4-B2-05-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/chromium-CH4-B2-02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/firefox-CH4-B2-02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved v01/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/comparisons/B2-02-all-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/comparisons/B2-02-all-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/derivation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/canonical-nodes.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/inventory-source.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/visual-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/native/CH4-B2-06-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/native/CH4-B2-07-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/native/CH4-B2-08-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/native/CH4-B2-11-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/native/CH4-B2-10-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/native/CH4-B2-09-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-auctioneer.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-attendant.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-conductor.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-groundkeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-receptionist.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-pavilion-exterior.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-presenter.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-restroom.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/references/approved-lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/package.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/verify_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/palette.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/source/prepare.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-08-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-09-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-11-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-10-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-07-worker-corrected.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-07-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-06-original.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-10-internal-initial-study.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/originals/CH4-B2-08-workers-corrected.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-07-correction.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-10-initial-study.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-08-correction.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-10.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-11.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-07.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-06.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-08.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/prompts/CH4-B2-09.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-receptionist-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/foreman-composite.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/CH4-B2-10-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/CH4-B2-08-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/foreman-composite-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/CH4-B2-06-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-restroom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/CH4-B2-11-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-conductor-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-groundkeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/foreman-alpha-dark.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/CH4-B2-09-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-attendant-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-pavilion-exterior-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/foreman-alpha-light.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/CH4-B2-07-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/previews/approved-auctioneer-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/firefox-CH4-B2-09-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/chromium-CH4-B2-09-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/chromium-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/chromium-CH4-B2-10-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/firefox-CH4-B2-10-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/chromium-CH4-B2-06-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/firefox-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/firefox-CH4-B2-06-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/chromium-CH4-B2-08-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/firefox-CH4-B2-08-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v01/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/comparisons/native-construction-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/comparisons/v01-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/comparisons/canonical-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/comparisons/canonical-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/comparisons/v01-v02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/comparisons/native-construction-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-09-material-underpainting.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-06-npc-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-06-npc-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-08-native-structure.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-07-native-structure.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-06-npc-3.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-06-npc-2.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-07-npc-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-06-native-structure.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-07-npc-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-09-native-structure.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-07-npc-2.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-08-material-underpainting.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-09-npc-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-06-material-underpainting.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-09-npc-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-07-material-underpainting.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-08-npc-2.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-08-npc-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/layers/CH4-B2-08-npc-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/palette-diagnostics.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/native-reconstruction.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/generation-receipts.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/visual-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/native/CH4-B2-06-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/native/CH4-B2-07-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/native/CH4-B2-08-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/native/CH4-B2-09-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/approved-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/CH4-B2-10-retained-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/approved-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/CH4-B2-11-retained-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/approved-restroom.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/approved-lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/source/package.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/source/verify_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/source/qa-gallery.cjs",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/source/native_rebuild.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/originals/CH4-B2-09-pixel-friendly.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/originals/CH4-B2-07-pixel-friendly.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/originals/CH4-B2-06-pixel-friendly.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/originals/CH4-B2-08-pixel-friendly.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/diagnostics/CH4-B2-08-direct-transfer-diagnostic.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/diagnostics/CH4-B2-09-direct-transfer-diagnostic.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/diagnostics/CH4-B2-06-direct-transfer-diagnostic.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/diagnostics/CH4-B2-07-direct-transfer-diagnostic.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/prompts/CH4-B2-07.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/prompts/CH4-B2-06.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/prompts/CH4-B2-08.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/prompts/CH4-B2-09.txt",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-10-retained-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-11-retained-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-06-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-08-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/approved-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-06-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-09-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/approved-restroom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-07-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-09-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-08-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/approved-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/approved-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/previews/CH4-B2-07-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-person-2.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-person-3.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-person-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-person-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-material-gold.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-steel.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-objects.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-person-2.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-material-wood.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-person-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-material-copper.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-material-copper.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-people.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-person-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-material-copper.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-material-copper.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-steel.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-people.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-wall.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-wall.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-objects.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-person-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-steel.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-material-wood.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-person-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-people.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-objects.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-person-1.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-material-wood.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-person-0.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-08-person-2.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-wall.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-wall.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-06-steel.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-people.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-09-objects.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/masks/CH4-B2-07-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/detailed/CH4-B2-08-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/detailed/CH4-B2-06-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/detailed/CH4-B2-07-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/detailed/CH4-B2-09-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/v01/CH4-B2-06-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/v01/CH4-B2-07-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/v01/CH4-B2-08-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/references/v01/CH4-B2-09-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/firefox-CH4-B2-09-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/chromium-CH4-B2-09-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/chromium-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/chromium-CH4-B2-06-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/firefox-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/firefox-CH4-B2-06-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/firefox-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/chromium-CH4-B2-08-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/firefox-CH4-B2-08-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/chromium-mobile.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/firefox-CH4-B2-07-native.png",
+      "passed": true
+    },
+    {
+      "check": "Historical bytes preserved b2-02-v02-pixel/evidence/browser/chromium-CH4-B2-07-native.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged .github/workflows/pages.yml",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged .github/workflows/prologue-art-lab-review.yml",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged .github/workflows/storyboard-review.yml",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/deaths/classified_as_compost.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/deaths/new_arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/deaths/personal_growth.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/deaths/reclassified.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/deaths/rest_assured_voluntary.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/deaths/site_improvement.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/focus/biology_park/aid_box_open.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/focus/biology_park/decontamination_kit_open.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/focus/biology_park/exposure_dispenser_open.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/focus/house_of_tomorrow/album_page_1.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/focus/house_of_tomorrow/album_page_2.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/focus/house_of_tomorrow/album_page_3.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/acting_director_badge_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/acting_director_badge_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/applause_timing_clicker_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/applause_timing_clicker_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/bathroom_pass_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/bathroom_pass_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/botanical_antidote_customs_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/botanical_antidote_customs_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/botanical_antidote_maintenance_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/botanical_antidote_maintenance_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/botanical_antidote_public_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/botanical_antidote_public_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/certified_seed_canister_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/certified_seed_canister_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/effects_box_empty_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/effects_box_empty_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/effects_box_full_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/effects_box_full_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/expo_examiner_badge_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/expo_examiner_badge_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/family_portrait_photo_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/family_portrait_photo_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/property_claim_ticket_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/property_claim_ticket_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/red_swangline_stapler_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/red_swangline_stapler_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/rubber_band_ball_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/rubber_band_ball_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/small_desk_plant_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/small_desk_plant_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/termination_notice_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/items/termination_notice_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/courtesy_conductor/concourse_crash_background.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/courtesy_conductor/courtesy_conductor_talking.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/groundskeeper/groundskeeper_background.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/house/dining_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/house/foyer_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/house/lounge_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/house/portrait_gallery_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/receptionist/reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/termination_drone/corridor_background.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/termination_drone/drone_paper_extended.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/portraits/termination_drone/drone_slot_closed.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/abandoned_station.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/agricultural_customs.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/authorization_archive.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/central_flower.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/concourse_crash.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/damaged_walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/exposition_concourse.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/formal_entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/jungle_junction.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/lower_irrigation.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/maintenance_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/moving_forest.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/overgrown_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/planting_hopper.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/planting_machine.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/public_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/reserve_siding.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/reserve_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/sensor_gallery.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/service_entry.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/sorting_conveyor.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/tour_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/translator_machine.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/biology_park/waste_chute.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/exposition/continuity-v01/street-approach.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/exposition/continuity-v02/property-intake.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/exposition/continuity-v03/entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/bathroom.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/bedroom.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/chair.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/dining.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/lounge.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/maintenance.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/passage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/portrait_gallery.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/public_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/service_hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/foyer_named_plant_pedestal.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/portrait_gallery_album_removed.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_desk_plant.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_red_stapler.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_rubber_band_ball.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_timing_clicker.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/storage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/house_of_tomorrow/utility_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/workplace/applause_station.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/workplace/corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/art/scenes/workplace/personal_effects_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_attendant/alarmed.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_attendant/quiet.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_presenter/alarmed.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_presenter/excited.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/portraits/pavilion_presenter/relieved.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/backstage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/courtesy_stage/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/exit_vestibule.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/exterior_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/human_verification_stage/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/locomotion_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/paper_emergency.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/record_printer.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/record_printer/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/record_scanner/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/restroom_entrance/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/service_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/service_exit/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/surprise_stage/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged assets/selected/pending-integration/scenes/pavilion_reboot/urgency_stage/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/archives/README.md",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/archives/chapter-03-pre-reboot-20261118.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/artwork-preview.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/artwork.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapter-03.reboot-review-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapter-04.wip-review-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapters/chapter-01.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapters/chapter-02.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapters/chapter-03.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapters/chapter-03.reboot-candidate.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapters/chapter-04.wip.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/chapters/prologue-00.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/death-presentations.export.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/game-integration.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/items.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/storyboard-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/storyboard-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative/gameplay/selected registry unchanged story/sync-contract.json",
+      "passed": true
+    },
+    {
+      "check": "Full exact canonical isolator wording",
+      "passed": true
+    }
+  ]
+}

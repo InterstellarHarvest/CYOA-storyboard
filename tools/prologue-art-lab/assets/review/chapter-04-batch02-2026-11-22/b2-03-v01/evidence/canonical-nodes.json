@@ -1,0 +1,431 @@
+{
+  "hotel_boiler_groom_encounter": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/maintenance",
+    "speaker": "hotel_groom",
+    "pose": "nervous",
+    "effects": {
+      "set": {
+        "ch4_groom_located": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You round Boiler Three. A man in a rumpled wedding suit crouches behind a stack of coal scuttles."
+      },
+      {
+        "say": "If you're here for the wedding, I'm not available.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "I'M LOOKING FOR A TOILET.",
+        "who": "visitor"
+      },
+      {
+        "say": "Oh. Then you're having a worse day than I am.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "SOLD!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "The groom ducks at the sound coming through the vent."
+      },
+      {
+        "say": "Apparently there's a private lavatory off the bridal dressing room. The organizer has the key.",
+        "who": "hotel_groom"
+      },
+      {
+        "desc": "That's considerably more useful than anything else he's said."
+      }
+    ],
+    "choices": [
+      {
+        "id": "groom_ask_directions",
+        "kind": "spoken",
+        "text": "HOW DO I REACH THE BRIDAL DRESSING ROOM?",
+        "to": "hotel_groom_directions_to_lavatory"
+      },
+      {
+        "id": "groom_show_ring",
+        "kind": "action",
+        "text": "SHOW THE GROOM THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_groom_show_ring"
+      },
+      {
+        "id": "groom_leave",
+        "kind": "action",
+        "text": "LEAVE HIM HIDING AND RETURN TO THE SERVICE PASSAGE.",
+        "to": "hotel_groom_leave_behind"
+      }
+    ],
+    "notes": "Owner-approved bladder-first replacement. Ring SHOW is visible but locked when item absent in future UI, with REQUIRES: WEDDING RING \u2014 LOT 31. No groom escort, wedding reunion, or persuasion check."
+  },
+  "hotel_boiler_service_passage": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/maintenance",
+    "text": "You leave the overheated boiler room. The service passage branches toward a staff lavatory, stairs to the ballroom, and a loading dock where daylight filters around stacked crates. Your bladder votes for whichever route has an actual working toilet.",
+    "choices": [
+      {
+        "id": "service_passage_staff",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "service_passage_stairs",
+        "kind": "action",
+        "text": "TAKE THE STAIRS TOWARD THE BRIDAL CORRIDOR.",
+        "to": "hotel_bridal_organizer"
+      },
+      {
+        "id": "service_passage_exit",
+        "kind": "action",
+        "text": "LEAVE BY THE LOADING DOCK.",
+        "to": "hotel_service_park_exit"
+      }
+    ]
+  },
+  "hotel_collection_slip_spotted": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/boiler_access",
+    "speaker": "hotel_porter",
+    "pose": "alarmed",
+    "text": [
+      {
+        "desc": "You squeeze behind Lot Thirty-One as the porters shove. Your sleeve catches on the trim. The chair swings around. Unfortunately, so do you."
+      },
+      {
+        "desc": "You find yourself face-to-face with a startled porter."
+      },
+      "Sir! You're attached to the merchandise!",
+      {
+        "say": "Is he included?",
+        "who": "hotel_second_porter"
+      },
+      {
+        "desc": "The first porter examines his delivery slip."
+      },
+      "Certainly not. It says so three times.",
+      {
+        "desc": "He carefully detaches your sleeve from the chair, produces a small paper tag, and pins it to your coat: NOT INCLUDED."
+      },
+      "There. That should prevent any further confusion.",
+      {
+        "desc": "He opens the boiler-room door and ushers you through."
+      },
+      "Please keep clear of the collection area, sir.",
+      {
+        "desc": "The door closes behind you. You look down at your new label. Apparently, you're no longer considered merchandise. A small victory."
+      },
+      {
+        "desc": "Beyond the nearest boiler, the hem of a wedding coat disappears behind the pipes."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_spotted_to_groom",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "hotel_collection_slip_unnoticed": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/boiler_access",
+    "text": "You squeeze between Lot Thirty-One and the wall as both porters heave against the chair.\n\nA loose strip of upholstery catches your sleeve.\n\nThe chair lurches sideways.\n\nYou're still attached.\n\nYou duck with the chair's movement, grab the boiler-room handle, and slip inside.\n\nBehind you, the porters congratulate themselves on finally moving the chair.\n\nThey haven't.\n\nThe door clicks shut.\n\nNeither porter notices your departure.\n\nWarm pipes hiss overhead.\n\nAround the nearest boiler, the hem of a wedding coat disappears from view.\n\nYou straighten your sleeve.\n\nYou appear to be considerably easier to transport than the furniture.",
+    "choices": [
+      {
+        "id": "collection_unnoticed_to_groom",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "hotel_groom_directions_to_lavatory": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/maintenance",
+    "speaker": "hotel_groom",
+    "pose": "nervous",
+    "effects": {
+      "set": {
+        "ch4_knows_bridal_dressing_lavatory": true,
+        "ch4_knows_organizer_has_lavatory_key": true,
+        "ch4_groom_directions_received": true,
+        "ch4_groom_located": true
+      }
+    },
+    "text": [
+      {
+        "say": "HOW DO I GET TO THE BRIDAL DRESSING ROOM?",
+        "who": "visitor"
+      },
+      {
+        "say": "Service stairs. Up one floor, then left past the ballroom.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "There's a door with white flowers around it. The wedding organizer has the key.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "THANK YOU.",
+        "who": "visitor"
+      },
+      {
+        "say": "If you happen to see my bride, could you\u2014",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "I'M LOOKING FOR A TOILET.",
+        "who": "visitor"
+      },
+      {
+        "say": "Right. Of course. Good luck.",
+        "who": "hotel_groom"
+      },
+      {
+        "desc": "He ducks back into hiding. You take the service stairs toward the bridal corridor."
+      }
+    ],
+    "choices": [
+      {
+        "id": "groom_directions_to_organizer",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_bridal_organizer"
+      }
+    ]
+  },
+  "hotel_groom_leave_behind": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/maintenance",
+    "speaker": "hotel_groom",
+    "pose": "nervous",
+    "effects": {
+      "set": {
+        "ch4_groom_located": true,
+        "ch4_groom_left_behind": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You step around Boiler Three toward the service door."
+      },
+      {
+        "say": "You're not going to tell anyone I'm here, are you?",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "NO.",
+        "who": "visitor"
+      },
+      {
+        "say": "Thank you.",
+        "who": "hotel_groom"
+      },
+      {
+        "desc": "You open the door."
+      },
+      {
+        "say": "And if anybody asks\u2014",
+        "who": "hotel_groom"
+      },
+      {
+        "desc": "You let the door close. His problems remain on the other side."
+      },
+      {
+        "desc": "Ahead: the staff lavatory, stairs toward the ballroom, and a loading dock opening onto daylight. Still no toilet."
+      }
+    ],
+    "choices": [
+      {
+        "id": "groom_leave_staff_lavatory",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "groom_leave_organizer",
+        "kind": "action",
+        "text": "TAKE THE SERVICE STAIRS TOWARD THE BALLROOM.",
+        "to": "hotel_bridal_organizer"
+      },
+      {
+        "id": "groom_leave_dock",
+        "kind": "action",
+        "text": "HEAD THROUGH THE LOADING DOCK AND LEAVE THE HOTEL.",
+        "to": "hotel_service_park_exit"
+      }
+    ]
+  },
+  "hotel_groom_show_ring": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/maintenance",
+    "speaker": "hotel_groom",
+    "pose": "relieved",
+    "effects": {
+      "set": {
+        "ch4_groom_saw_ring": true,
+        "ch4_groom_located": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You show the silver band, its pale blue ribbon still attached."
+      },
+      {
+        "say": "The ring! You found it!",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "IN A CHAIR.",
+        "who": "visitor"
+      },
+      {
+        "say": "I tied that ribbon around it because I was afraid I'd lose it.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "GOOD SYSTEM.",
+        "who": "visitor"
+      },
+      {
+        "say": "I see the flaw now. Better keep hold of it. I don't trust myself.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "I WASN'T OFFERING.",
+        "who": "visitor"
+      },
+      {
+        "if": {
+          "flag": "ch4_ring_inscription_read"
+        },
+        "say": "AS IS, WHERE IS?",
+        "who": "visitor"
+      },
+      {
+        "if": {
+          "flag": "ch4_ring_inscription_read"
+        },
+        "say": "I thought it sounded romantic. Her father asked whether it was legally binding.",
+        "who": "hotel_groom"
+      },
+      {
+        "desc": "You pocket the ring again."
+      }
+    ],
+    "choices": [
+      {
+        "id": "ring_groom_get_directions",
+        "kind": "spoken",
+        "text": "ASK HOW TO REACH THE BRIDAL LAVATORY.",
+        "to": "hotel_groom_directions_to_lavatory"
+      },
+      {
+        "id": "ring_groom_leave",
+        "kind": "action",
+        "text": "LEAVE THE GROOM TO HIS HIDING PLACE.",
+        "to": "hotel_groom_leave_behind"
+      }
+    ],
+    "notes": "Ring remains in inventory; inscription joke only if inspected earlier. No handover or wedding task."
+  },
+  "hotel_isolator_entire": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/maintenance",
+    "text": "You pull down the MAIN lever. Every pipe in the Grand Bellevue gives a theatrical sigh. The flood stops. Somewhere beyond the wall, a fountain sputters out, and a guest complains about the champagne service.\n\nYou have stopped the leak by shutting off every tap in the building. That probably includes the toilets.",
+    "choices": [
+      {
+        "id": "hotel_water_ballroom",
+        "kind": "action",
+        "text": "FOLLOW THE DRY PIPES TO CHECK WHETHER ANY RESTROOM STILL WORKS.",
+        "to": "hotel_water_outage_confirmation"
+      },
+      {
+        "id": "hotel_water_dock",
+        "kind": "action",
+        "text": "TAKE THE SERVICE STAIRS TO THE LOADING DOCK.",
+        "to": "hotel_maintenance_dock_exit"
+      }
+    ]
+  },
+  "hotel_isolator_panel": {
+    "mode": "focus",
+    "scene": "grand_bellevue/maintenance",
+    "focus": "grand_bellevue/maintenance/water_isolator",
+    "text": "Two great brass levers stand inside a recessed metal frame.\n\nRESTROOMS, reads the neat engraved label beneath the first.\n\nENTIRE HOTEL, reads the label beneath the second.\n\nSomeone has pasted a fresh auction sticker across the frame: LOT NINETEEN \u2014 TWO MATCHING DECORATIVE LEVERS.\n\nFrom the restroom wall comes the unmistakable sound of water hitting something it should not. Both levers appear to be connected.",
+    "choices": [
+      {
+        "id": "isolate_restrooms",
+        "kind": "action",
+        "text": "SHUT OFF WATER TO THE RESTROOMS ONLY.",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "contained",
+            "ch4_restroom_water_off": true
+          }
+        },
+        "to": "hotel_isolator_restrooms"
+      },
+      {
+        "id": "isolate_hotel",
+        "kind": "action",
+        "text": "CLOSE THE MAIN WATER SUPPLY FOR THE ENTIRE HOTEL.",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "contained",
+            "ch4_hotel_water_off": true,
+            "ch4_restroom_water_off": true
+          }
+        },
+        "to": "hotel_isolator_entire"
+      }
+    ]
+  },
+  "hotel_isolator_restrooms": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/maintenance",
+    "text": "The RESTROOMS lever moves with a satisfying clunk. The hiss in the pipes fades. A moment later, through the wall, you hear the plumber give a grateful cheer.\n\nYou retrace your steps, already imagining a calm, dry stall. The plumber meets you at the access hatch and assures you the leak is under control. Unfortunately, he adds, the lavatories cannot flush without water.\n\nYou tell yourself that this is an inconvenience you can reason with. Then you hear the porters outside counting toilets.",
+    "choices": [
+      {
+        "id": "restrooms_off_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_stall_lot_claimed"
+      }
+    ]
+  },
+  "hotel_pipe_tunnel": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/maintenance",
+    "text": "You duck through the access panel behind the sinks. The space beyond is wider than expected: a narrow maintenance walkway with pipes along one wall and hotel rooms on the other.\n\nA brass plate reads CENTRAL WATER ISOLATION \u2014 STAFF ONLY. Someone has hung a numbered auction tag from it.\n\nFarther along the walkway, a man in a wedding suit is crouched behind a boiler. His boutonni\u00e8re is caught on a bolt. He sees you and immediately puts a finger to his lips.\n\nAt the opposite end, an EXIT TO LOADING DOCK sign points down a steep iron stairway.\n\nYou have found three things. None is a toilet.",
+    "choices": [
+      {
+        "id": "pipe_talk_groom",
+        "kind": "action",
+        "text": "ASK THE MAN IN THE WEDDING SUIT WHERE A TOILET IS.",
+        "to": "hotel_boiler_groom_encounter"
+      },
+      {
+        "id": "pipe_water_controls",
+        "kind": "action",
+        "text": "INSPECT THE HOTEL'S CENTRAL WATER CONTROLS.",
+        "to": "hotel_isolator_panel"
+      },
+      {
+        "id": "pipe_loading_dock",
+        "kind": "action",
+        "text": "TAKE THE IRON STAIRS TOWARD THE LOADING DOCK.",
+        "to": "hotel_maintenance_dock_exit"
+      }
+    ]
+  }
+}

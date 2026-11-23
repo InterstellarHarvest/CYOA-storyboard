@@ -1,0 +1,231 @@
+{
+  "sourceCommit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+  "inventoryPath": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "inventorySha256": "078a9fd4e7abf798f59b63de436fd240d17e45835d32f728fd1f752ef3c9e693",
+  "group": {
+    "id": "B2-03",
+    "title": "Maintenance access and water isolation",
+    "note": "Pipe walkway, boiler access, groom identity/poses and the two-lever Focus A.",
+    "inventoryIds": [
+      "main_scene:grand_bellevue/maintenance",
+      "main_scene:grand_bellevue/boiler_access",
+      "portrait:hotel_groom:nervous",
+      "portrait:hotel_groom:relieved",
+      "portrait_background:grand_bellevue/boiler_access",
+      "portrait_background:grand_bellevue/maintenance",
+      "focus_a:grand_bellevue/maintenance/water_isolator"
+    ],
+    "primaryUnits": 7,
+    "stateFamilies": 0,
+    "nodeIds": [
+      "hotel_boiler_groom_encounter",
+      "hotel_boiler_service_passage",
+      "hotel_collection_slip_spotted",
+      "hotel_collection_slip_unnoticed",
+      "hotel_groom_directions_to_lavatory",
+      "hotel_groom_leave_behind",
+      "hotel_groom_show_ring",
+      "hotel_isolator_entire",
+      "hotel_isolator_panel",
+      "hotel_isolator_restrooms",
+      "hotel_pipe_tunnel"
+    ],
+    "generationStarted": false
+  },
+  "assets": [
+    {
+      "inventoryId": "main_scene:grand_bellevue/maintenance",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/maintenance",
+      "nodeIds": [
+        "hotel_pipe_tunnel",
+        "hotel_isolator_panel",
+        "hotel_isolator_restrooms",
+        "hotel_isolator_entire",
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_show_ring",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind",
+        "hotel_boiler_service_passage"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "You duck through the access panel behind the sinks. The space beyond is wider than expected: a narrow maintenance walkway with pipes along one wall and hotel rooms on the other.\n\nA brass plate reads CENTRAL WATER ISOLATION \u2014 STAFF ONLY. Someone has hung a numbered auction tag from it.\n\nFarther along the walkway, a man in a wedding suit is crouched behind a boiler. His boutonni\u00e8re is caught on a bolt. He sees you and immediately puts a finger to his lips.\n\nAt the opposite end, an EXIT TO LOADING DOCK sign points down a steep iron stairway.\n\nYou have found three things. None is a toilet."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "main_scene:grand_bellevue/boiler_access",
+      "category": "main_scene",
+      "logicalKey": "grand_bellevue/boiler_access",
+      "nodeIds": [
+        "hotel_collection_slip_unnoticed",
+        "hotel_collection_slip_spotted"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene"
+      ],
+      "dimensions": [
+        314,
+        206
+      ],
+      "coverageState": "UNPRODUCED_LOGICAL_DEMAND",
+      "preferredBatch1Asset": null,
+      "sourceExcerpt": [
+        "You squeeze between Lot Thirty-One and the wall as both porters heave against the chair.\n\nA loose strip of upholstery catches your sleeve.\n\nThe chair lurches sideways.\n\nYou're still attached.\n\nYou duck with the chair's movement, grab the boiler-room handle, and slip inside.\n\nBehind you, the porters congratulate themselves on finally moving the chair.\n\nThey haven't.\n\nThe door clicks shut.\n\nNeither porter notices your departure.\n\nWarm pipes hiss overhead.\n\nAround the nearest boiler, the hem of a wedding coat disappears from view.\n\nYou straighten your sleeve.\n\nYou appear to be considerably easier to transport than the furniture."
+      ],
+      "planningNote": "Scene key is canonical; required visual content comes from its nodes, not a newly invented asset brief."
+    },
+    {
+      "inventoryId": "portrait:hotel_groom:nervous",
+      "category": "portrait",
+      "logicalKey": "hotel_groom:nervous",
+      "nodeIds": [
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "speaker",
+        "pose"
+      ],
+      "speaker": "hotel_groom",
+      "pose": "nervous",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "transparent foreground where a visible character/device foreground is used",
+      "coverageState": "UNPRODUCED_EXPLICIT_POSE_KEY",
+      "preferredBatch1Asset": null,
+      "visualRealization": "Human NPC portrait; retain identity across the exact authored poses.",
+      "sceneKeys": [
+        "grand_bellevue/maintenance"
+      ]
+    },
+    {
+      "inventoryId": "portrait:hotel_groom:relieved",
+      "category": "portrait",
+      "logicalKey": "hotel_groom:relieved",
+      "nodeIds": [
+        "hotel_groom_show_ring"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "speaker",
+        "pose"
+      ],
+      "speaker": "hotel_groom",
+      "pose": "relieved",
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "transparent foreground where a visible character/device foreground is used",
+      "coverageState": "UNPRODUCED_EXPLICIT_POSE_KEY",
+      "preferredBatch1Asset": null,
+      "visualRealization": "Human NPC portrait; retain identity across the exact authored poses.",
+      "sceneKeys": [
+        "grand_bellevue/maintenance"
+      ]
+    },
+    {
+      "inventoryId": "portrait_background:grand_bellevue/boiler_access",
+      "category": "portrait_background",
+      "logicalKey": "grand_bellevue/boiler_access",
+      "nodeIds": [
+        "hotel_collection_slip_spotted"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene",
+        "speaker"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "opaque architectural background",
+      "coverageState": "PLANNED_DIALOGUE_CONTEXT",
+      "preferredBatch1Asset": null,
+      "canonicalKeyNote": "Derived dialogue-location demand under the established layered portrait contract, not an already registered new canonical background ID.",
+      "planningNote": "One location can share a consistent closer camera among speakers. Voice-only panels may reuse a context view; do not automatically count every key as a distinct PNG."
+    },
+    {
+      "inventoryId": "portrait_background:grand_bellevue/maintenance",
+      "category": "portrait_background",
+      "logicalKey": "grand_bellevue/maintenance",
+      "nodeIds": [
+        "hotel_boiler_groom_encounter",
+        "hotel_groom_show_ring",
+        "hotel_groom_directions_to_lavatory",
+        "hotel_groom_leave_behind"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "scene",
+        "speaker"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "alpha": "opaque architectural background",
+      "coverageState": "PLANNED_DIALOGUE_CONTEXT",
+      "preferredBatch1Asset": null,
+      "canonicalKeyNote": "Derived dialogue-location demand under the established layered portrait contract, not an already registered new canonical background ID.",
+      "planningNote": "One location can share a consistent closer camera among speakers. Voice-only panels may reuse a context view; do not automatically count every key as a distinct PNG."
+    },
+    {
+      "inventoryId": "focus_a:grand_bellevue/maintenance/water_isolator",
+      "category": "focus_a",
+      "logicalKey": "grand_bellevue/maintenance/water_isolator",
+      "nodeIds": [
+        "hotel_isolator_panel"
+      ],
+      "group": "B2-03",
+      "artworkStatus": "UNSELECTED",
+      "registeredAssetPath": null,
+      "canonicalEvidenceFields": [
+        "mode",
+        "focus",
+        "text"
+      ],
+      "dimensions": [
+        564,
+        278
+      ],
+      "dimensionsBasis": "Established Focus A convention; no CH4 registry record yet",
+      "coverageState": "UNPRODUCED_EXPLICIT_FOCUS_KEY",
+      "sourceTexts": {
+        "hotel_isolator_panel": "Two great brass levers stand inside a recessed metal frame.\n\nRESTROOMS, reads the neat engraved label beneath the first.\n\nENTIRE HOTEL, reads the label beneath the second.\n\nSomeone has pasted a fresh auction sticker across the frame: LOT NINETEEN \u2014 TWO MATCHING DECORATIVE LEVERS.\n\nFrom the restroom wall comes the unmistakable sound of water hitting something it should not. Both levers appear to be connected."
+      },
+      "sourceNotes": {
+        "hotel_isolator_panel": null
+      }
+    }
+  ]
+}

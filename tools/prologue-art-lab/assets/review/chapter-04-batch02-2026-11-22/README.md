@@ -1,3 +1,11 @@
+# Current status — 2026-11-23
+
+B2-02 is now **APPROVED and SELECTED unchanged**: B2-06/07/08 v02, B2-09 v03, B2-10/11 v01. Canonical main `9fa1f19629956d279f98a118d4280734096f9d56`, [PR23](https://github.com/InterstellarHarvest/CYOA-storyboard/pull/23), [completion/gameplay handoff](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/9fa1f19629956d279f98a118d4280734096f9d56/docs/130_CH4_B202_APPROVAL_COMPLETION_20261123.md), [approval hashes](B2-02-APPROVED-20261123.json), [GitHub and live Pages verification](B2-02-PUBLIC-VERIFICATION-20261123.json). Every approved PNG and previous approval remains exact. Historical UNSELECTED labels below are superseded only for these six hashes. No gameplay/engine integration.
+
+Next review: [B2-03 Maintenance access and water isolation v01](b2-03-v01/index.html), seven **UNSELECTED** candidates, following permanent docs/129 and exact canonical Chapter2 native/exact4× comparisons. [Manifest](b2-03-v01/manifest.json), [production and prompts](b2-03-v01/README.md). The two B2-01 plumber v02 alternatives remain separate and unapproved; existing approved v01 portraits remain selected.
+
+---
+
 # Chapter 4 Batch 2
 
 Latest focused review: [B2-09 v03 cake and trolley correction](b2-02-v03-cake/index.html). Only the cake/trolley silhouette changes; the existing palette and every outside pixel remain exact. B2-06/07/08 v02 are selection-ready and frozen unchanged; formal selection remains pending. B2-09 v03 is **UNSELECTED**. [Direct comparison](b2-02-v03-cake/comparisons/B2-09-v02-v03-4x.png).
