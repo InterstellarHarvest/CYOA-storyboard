@@ -1,5 +1,8 @@
 # Chapter 4 Batch 2
 
+Latest consolidated review: [B2-02 v02 native pixel reinterpretation](b2-02-v02-pixel/index.html) — four main scenes, preserving the v01 detailed concepts and exact retained foreman/background. All revised candidates UNSELECTED. [Permanent production standard](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/cc2afd6def0bc41d9a193456eff95d2ce3cb488a/docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md), now canonical main at cc2afd6def0bc41d9a193456eff95d2ce3cb488a (PR22). This explicitly supersedes resize/quantization-only finalization.
+
+
 B2-01 v01 is now **APPROVED and SELECTED unchanged** at canonical main `fde5708e0043972feeae0309e8a1d1836e756dae` (PR21). [Completion/hashes/paths/nodes/gameplay handoff](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/fde5708e0043972feeae0309e8a1d1836e756dae/docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md), [approval record](B2-01-APPROVED-20261122.json), [live public verification](B2-01-PUBLIC-VERIFICATION-20261122.json). All five approved PNGs are exact, including the two original plumber portraits. No engine integration.
 
 New **UNSELECTED** reviews:

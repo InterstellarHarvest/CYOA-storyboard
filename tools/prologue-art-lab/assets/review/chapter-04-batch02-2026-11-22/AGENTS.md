@@ -1,5 +1,14 @@
 # Chapter 4 Batch 2 artwork review
 
+## Permanent owner production standard —2026-11-22 (current authority)
+
+Follow [docs/129](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/cc2afd6def0bc41d9a193456eff95d2ce3cb488a/docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md) for all remaining chapters. Chapter2 establishes pixel-cluster craftsmanship; the detailed concept establishes artistic ambition. Generate the rich reference, then create a SEPARATE native interpretation with controlled material ramps, readable cluster shapes, clear edges, simplified scene figures and deliberate lighting. Direct shrinking or palette reduction alone is not a completed method. Accurate source-derived provenance remains mandatory.
+
+Use the artwork hierarchy:314×206 main scenes have rich environmental detail, concise small NPCs;564×278 portraits retain expressive faces/hair/hands/clothes with controlled palette; portrait backgrounds retain richer materials/light with their own palette needs;564×278 Focus retains maximum useful object detail and readable chunky perspective-correct lettering. The64-tone studies calibrate an approach, never a universal cap or an approval test. Compare every image at native and exact4× directly against canonical Chapter2 artwork. Technical checks and color counts cannot establish visual readiness.
+
+Current consolidated rework: sibling Batch2/b2-02-v02-pixel revises ONLY CH4-B2-06/07/08/09. The v01 concepts, all earlier versions, foreman/background files and approved assets remain exact. Revisions are UNSELECTED. The two plumber v02 palette alternatives remain separate/unapproved; B2-01 v01 remains registered approved. This section supersedes older reduce/sharpen-only production guidance below; historical descriptions remain evidence of the old method.
+
+
 ## Current owner decisions (supersede review-time statuses below)
 
 All five B2-01 v01 assets are APPROVED/SELECTED unchanged, canonical main fde5708e0043972feeae0309e8a1d1836e756dae, docs128, PR21. Keep all ten approved Chapter4 assets exact. Later palette alternatives never silently replace owner selections. No engine integration.

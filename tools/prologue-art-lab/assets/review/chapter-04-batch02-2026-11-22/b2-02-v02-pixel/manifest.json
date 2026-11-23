@@ -1,0 +1,408 @@
+{
+  "title": "B2-02 v02 - four-scene native pixel-art reinterpretation",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "standardCommit": "cc2afd6def0bc41d9a193456eff95d2ce3cb488a",
+  "standard": "docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md",
+  "previousReviewCommit": "b3abaae4238b87bdc27f444637b83a2c549838f9",
+  "sourceDerived": true,
+  "pipeline": "Detailed reference -> separate pixel-friendly source -> diagnostic native transfer -> semantic material masks/ramps and selected cluster reconstruction -> native geometry/light-plane/object-edge painting -> isolated native region layers -> exact4x",
+  "paletteCountsAreDiagnosticOnly": true,
+  "assets": [
+    {
+      "id": "CH4-B2-06",
+      "title": "Loading Lane",
+      "key": "scenes:grand_bellevue/loading_lane",
+      "nodeIds": [
+        "entry_locomotion_fail"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-06-v02.png",
+        "sha256": "9cd7d2e916770097425c990a43b1d9ecffe36bad2ec050b4b73964c440299de6",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-06-4x.png",
+        "sha256": "4798400c0d1fde9a948a2a7000040e77c0f092889c34f32d35205a9af656a3d0",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "previousNative": {
+        "file": "references/v01/CH4-B2-06-v01.png",
+        "sha256": "95cf91efe4ac1cf77564d3cdc4b423251f6987227ad8279f9e6f0bdf05e6a7e6",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "references/detailed/CH4-B2-06-reference.png",
+        "sha256": "5148fdfc18fbb2cd397341471ffbd37a0f95e7ce472d5e6cf0e5abf3d90312a3",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-06-pixel-friendly.png",
+        "sha256": "59f49c714c5d0b8ce89e5247433034e29fb2d589d3f704566c5a5608a954af48",
+        "dimensions": [
+          1547,
+          1017
+        ],
+        "mode": "RGB"
+      },
+      "directTransferDiagnostic": {
+        "file": "diagnostics/CH4-B2-06-direct-transfer-diagnostic.png",
+        "sha256": "921f86db3bb3be538a8a5f7b746ec7acd6a99ebad2ce57a43a8d0cd090350384",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "nativeLayers": [
+        "layers/CH4-B2-06-material-underpainting.png",
+        "layers/CH4-B2-06-native-structure.png",
+        "layers/CH4-B2-06-npc-0.png",
+        "layers/CH4-B2-06-npc-1.png",
+        "layers/CH4-B2-06-npc-2.png",
+        "layers/CH4-B2-06-npc-3.png"
+      ],
+      "nativeMasks": [
+        "masks/CH4-B2-06-floor.png",
+        "masks/CH4-B2-06-material-copper.png",
+        "masks/CH4-B2-06-material-wood.png",
+        "masks/CH4-B2-06-objects.png",
+        "masks/CH4-B2-06-people.png",
+        "masks/CH4-B2-06-person-0.png",
+        "masks/CH4-B2-06-person-1.png",
+        "masks/CH4-B2-06-person-2.png",
+        "masks/CH4-B2-06-person-3.png",
+        "masks/CH4-B2-06-steel.png",
+        "masks/CH4-B2-06-wall.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-07",
+      "title": "Service Alley",
+      "key": "scenes:grand_bellevue/service_alley",
+      "nodeIds": [
+        "entry_presenter_help_end",
+        "entry_attendant_honest_end"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-07-v02.png",
+        "sha256": "aee362709a49a3234dcc8a17f2624de27b64f4da2b4b5a27265a98820241c54a",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-07-4x.png",
+        "sha256": "4c2a8d860d226423a7b0a961294cf992a6383dc68c1581f85879b4a59ed7008c",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "previousNative": {
+        "file": "references/v01/CH4-B2-07-v01.png",
+        "sha256": "4f07ea1460df2381b884191b9adeadea9644947948f30f09fe7359126afeb5d4",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "references/detailed/CH4-B2-07-reference.png",
+        "sha256": "b7e59f9ffccfebb6beeabb28ca2d78e5bed43038eb3736420b2e1af80bd64a93",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-07-pixel-friendly.png",
+        "sha256": "0a396fcbfe1fc41fefbb8b8ab59385b1c531854c242e958d66206f24cfc0fe60",
+        "dimensions": [
+          1546,
+          1017
+        ],
+        "mode": "RGB"
+      },
+      "directTransferDiagnostic": {
+        "file": "diagnostics/CH4-B2-07-direct-transfer-diagnostic.png",
+        "sha256": "68fea02e4227b6914ec3b5985ed88db4df671faeae48c8c0d7e9e21fdd07000f",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "nativeLayers": [
+        "layers/CH4-B2-07-material-underpainting.png",
+        "layers/CH4-B2-07-native-structure.png",
+        "layers/CH4-B2-07-npc-0.png",
+        "layers/CH4-B2-07-npc-1.png",
+        "layers/CH4-B2-07-npc-2.png"
+      ],
+      "nativeMasks": [
+        "masks/CH4-B2-07-floor.png",
+        "masks/CH4-B2-07-material-copper.png",
+        "masks/CH4-B2-07-objects.png",
+        "masks/CH4-B2-07-people.png",
+        "masks/CH4-B2-07-person-0.png",
+        "masks/CH4-B2-07-person-1.png",
+        "masks/CH4-B2-07-person-2.png",
+        "masks/CH4-B2-07-steel.png",
+        "masks/CH4-B2-07-wall.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-08",
+      "title": "Loading Dock",
+      "key": "scenes:grand_bellevue/loading_dock",
+      "nodeIds": [
+        "hotel_service_arrival",
+        "hotel_service_foreman",
+        "hotel_service_park_exit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-08-v02.png",
+        "sha256": "a867a114d2286b382acc756eb8e803bec87b66790a24ce3498603cb9bd21c79c",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-08-4x.png",
+        "sha256": "7aa53bc601173895dc4b169acb81193f1c34bf80d0130eb1c4ff8270b7960261",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "previousNative": {
+        "file": "references/v01/CH4-B2-08-v01.png",
+        "sha256": "4e6903237a29e43d6031b713c880d5b22c58d01635bcf2749377e7b2e1f58c20",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "references/detailed/CH4-B2-08-reference.png",
+        "sha256": "2a6abfcfbeb68e8aba4e68b9ca5fc1b417f0f9fb5104543c39526b7693692672",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-08-pixel-friendly.png",
+        "sha256": "822c35a2eecd008cb75e6b42bd33c85225c47a01c82e2e4f2827924075ae0ae7",
+        "dimensions": [
+          1547,
+          1017
+        ],
+        "mode": "RGB"
+      },
+      "directTransferDiagnostic": {
+        "file": "diagnostics/CH4-B2-08-direct-transfer-diagnostic.png",
+        "sha256": "41a81cc796f444ccffc2aecb65cd1713e16cf437e3f25dc396c4bf8f7f88d3af",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "nativeLayers": [
+        "layers/CH4-B2-08-material-underpainting.png",
+        "layers/CH4-B2-08-native-structure.png",
+        "layers/CH4-B2-08-npc-0.png",
+        "layers/CH4-B2-08-npc-1.png",
+        "layers/CH4-B2-08-npc-2.png"
+      ],
+      "nativeMasks": [
+        "masks/CH4-B2-08-floor.png",
+        "masks/CH4-B2-08-material-copper.png",
+        "masks/CH4-B2-08-material-gold.png",
+        "masks/CH4-B2-08-material-wood.png",
+        "masks/CH4-B2-08-objects.png",
+        "masks/CH4-B2-08-people.png",
+        "masks/CH4-B2-08-person-0.png",
+        "masks/CH4-B2-08-person-1.png",
+        "masks/CH4-B2-08-person-2.png",
+        "masks/CH4-B2-08-steel.png",
+        "masks/CH4-B2-08-wall.png"
+      ]
+    },
+    {
+      "id": "CH4-B2-09",
+      "title": "Service Stairs",
+      "key": "scenes:grand_bellevue/service_stairs",
+      "nodeIds": [
+        "hotel_maintenance_dock_exit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-09-v02.png",
+        "sha256": "ff1857cbd827c635fe929809712a1a1728c2154e84483e4bc208300c83255c41",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-09-4x.png",
+        "sha256": "22d7d8f5990c5a37be70364888188618b4b9f5267eaee43c752f384c295266ae",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "previousNative": {
+        "file": "references/v01/CH4-B2-09-v01.png",
+        "sha256": "9195b4b5608d04d85b67c6aa64a917b55607b9e4978d498ff2977bac5165c1ea",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "references/detailed/CH4-B2-09-reference.png",
+        "sha256": "eba14e1aa7980cda5d55b53fa05604b10bc6bb2e9cbe94e1330aa1fe5275c33d",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlySource": {
+        "file": "originals/CH4-B2-09-pixel-friendly.png",
+        "sha256": "6c9e30de1d9eb3fcb7f8949a73febf0e80f41d46a20bc62ae141510ab99b0914",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "directTransferDiagnostic": {
+        "file": "diagnostics/CH4-B2-09-direct-transfer-diagnostic.png",
+        "sha256": "2178c4015700a543ac6138c9af668a383839560efe1c3cde2765c6a20eab6acf",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "nativeLayers": [
+        "layers/CH4-B2-09-material-underpainting.png",
+        "layers/CH4-B2-09-native-structure.png",
+        "layers/CH4-B2-09-npc-0.png",
+        "layers/CH4-B2-09-npc-1.png"
+      ],
+      "nativeMasks": [
+        "masks/CH4-B2-09-floor.png",
+        "masks/CH4-B2-09-material-copper.png",
+        "masks/CH4-B2-09-material-wood.png",
+        "masks/CH4-B2-09-objects.png",
+        "masks/CH4-B2-09-people.png",
+        "masks/CH4-B2-09-person-0.png",
+        "masks/CH4-B2-09-person-1.png",
+        "masks/CH4-B2-09-steel.png",
+        "masks/CH4-B2-09-wall.png"
+      ]
+    }
+  ],
+  "retainedCandidates": [
+    {
+      "id": "CH4-B2-10",
+      "status": "UNSELECTED",
+      "role": "Retained v01 candidate, not revised in this four-main-scene pass",
+      "native": {
+        "file": "references/CH4-B2-10-retained-v01.png",
+        "sha256": "d394c5c3617f1da66eb6957d8eb2d8594e018e558b30efe0e5eef6d43f095aad",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-10-retained-v01-4x.png",
+        "sha256": "64d1c3ac3dddf5d88b71672c1edf187d5d33f2d7620505d84a230c769488db71",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "originalPath": "../b2-02-v01/native/CH4-B2-10-v01.png"
+    },
+    {
+      "id": "CH4-B2-11",
+      "status": "UNSELECTED",
+      "role": "Retained v01 candidate, not revised in this four-main-scene pass",
+      "native": {
+        "file": "references/CH4-B2-11-retained-v01.png",
+        "sha256": "27f69050b10d3e10121f7f2c2860db1418504b00d3848daabde420485b9bcc1f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-11-retained-v01-4x.png",
+        "sha256": "c0097de65257864133a726c47200c4375b00f82b4808938cfcdaca62b2e5aff1",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "originalPath": "../b2-02-v01/native/CH4-B2-11-v01.png"
+    }
+  ],
+  "narrativeOrGameplayChanged": false,
+  "approvedAssetsModified": false
+}
