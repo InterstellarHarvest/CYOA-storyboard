@@ -1,5 +1,12 @@
 # Out of Order — Chapter 4 artwork production policy
 
+## Owner selection — 2026-11-22 (supersedes review-time status below)
+
+Nate approved all five exact Batch1 selections unchanged from v08: CH4-01/02 v05, CH4-03 v08 and CH4-04/05 v07. They are now APPROVED and SELECTED, not integrated. [Canonical registration/closeout](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/ee5948f14144d2bd99b75432e8d58422e8958bf1/docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md); main commit `ee5948f14144d2bd99b75432e8d58422e8958bf1`, PR20. All five public selected PNGs and registry statuses were verified against immutable owner hashes. [Approval record](BATCH1-APPROVED-20261122.json), [public verification](BATCH1-PUBLIC-VERIFICATION-20261122.json). The old UNSELECTED statements in preserved historical packages describe the review-time state; this later approval supersedes them only for those five exact assets.
+
+New work: [B2-01 five-asset gallery](../chapter-04-batch02-2026-11-22/v01/index.html). New Batch2 candidates remain UNSELECTED. Preserve all approved PNGs and every earlier version. No narrative/gameplay/engine integration.
+
+
 Owner decision: Nate's policy update in this session supersedes the earlier independent-native-authorship requirement for portraits. **Visual consistency with approved artwork takes priority.** Keep this record with subsequent Chapter 4 review batches; do not reopen the resolved production-method decision.
 
 - Use approved NPC artwork as the primary portrait style reference. Preserve generated originals, exact prompts, input references and hashes.

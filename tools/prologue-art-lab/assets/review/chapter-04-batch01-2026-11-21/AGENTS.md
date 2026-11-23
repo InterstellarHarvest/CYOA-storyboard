@@ -1,5 +1,12 @@
 # Chapter 4 artwork review instructions
 
+## Owner selection — 2026-11-22 (supersedes review-time status below)
+
+Nate approved all five exact Batch1 selections unchanged from v08: CH4-01/02 v05, CH4-03 v08 and CH4-04/05 v07. They are now APPROVED and SELECTED, not integrated. [Canonical registration/closeout](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/ee5948f14144d2bd99b75432e8d58422e8958bf1/docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md); main commit `ee5948f14144d2bd99b75432e8d58422e8958bf1`, PR20. All five public selected PNGs and registry statuses were verified against immutable owner hashes. [Approval record](BATCH1-APPROVED-20261122.json), [public verification](BATCH1-PUBLIC-VERIFICATION-20261122.json). The old UNSELECTED statements in preserved historical packages describe the review-time state; this later approval supersedes them only for those five exact assets.
+
+New work: B2-01 five-asset gallery in the sibling chapter-04-batch02-2026-11-22 package. New Batch2 candidates remain UNSELECTED. Preserve all approved PNGs and every earlier version. No narrative/gameplay/engine integration.
+
+
 Read [PRODUCTION-POLICY.md](PRODUCTION-POLICY.md) before starting another batch. Nate explicitly authorized disclosed source-derived portraits; do not reopen the resolved independent-native-only restriction. Visual consistency with approved NPCs takes priority. Preserve originals/provenance, reduce with a quality-preserving process, clean up at final resolution as needed and export exact 4× nearest-neighbor previews. Never claim independent native authorship for a derived asset.
 
 The preferred auctioneer is `portrait-study-02`, not the v01–v05 designs. Do not resume its discontinued drawing-code reconstruction. Keep portrait work separate from environment construction.

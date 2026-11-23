@@ -1,0 +1,15 @@
+{
+  "source": "Approved project bitmap font atlases; not newly rasterized smooth fonts",
+  "originalMapping": "tools/prologue-art-lab/bitmap-fonts.json",
+  "faces": [
+    "tiny5-3x",
+    "pressstart2p-2x"
+  ],
+  "method": "Exact nearest-pixel extraction of authored 3x/2x glyph clusters; binary alpha; native integer sizing and nearest-pixel plane projection",
+  "files": {
+    "fonts/pressstart-approved-atlas.png": "b7d7c80ea89683e6dea3c2336257acced88f58c08ab0a5f16f72925e9c99845a",
+    "fonts/pressstart-approved-mapping.json": "264acff3f6e8f426214c0c1ddcca6cd90b967205021e4da60a18e8c1a481d25c",
+    "fonts/tiny5-approved-atlas.png": "f89e8170da0b9fb97146173c43ff36b5ba9f674789bfb753679cb9f4c093afb1",
+    "fonts/tiny5-approved-mapping.json": "e0b45f4444e911ae6a1330a0414c901bfe619e725754b5f8a309b3c62955c6aa"
+  }
+}

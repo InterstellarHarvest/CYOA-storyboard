@@ -1,0 +1,281 @@
+{
+  "pillowVersion": "12.3.0",
+  "sourceModified": false,
+  "allSourceDerived": true,
+  "assets": {
+    "CH4-B2-01": {
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "reduction": "Premultiplied RGBa Lanczos to564x278; no crop/repose",
+      "alphaCleanup": "<=40 alpha and disconnected debris removed; original interior alpha retained",
+      "fringeColorPixelsRepaired": 0,
+      "interiorFinish": {
+        "filter": "UnsharpMask",
+        "radius": 0.55,
+        "percent": 75,
+        "threshold": 2,
+        "nearOpaqueInteriorOnly": true,
+        "pixelsChanged": 21989,
+        "alphaUnchangedDuringFinish": true
+      },
+      "sourceDimensions": [
+        1787,
+        880
+      ],
+      "changedPixelsFromRawReduction": 23104
+    },
+    "CH4-B2-02": {
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "reduction": "Premultiplied RGBa Lanczos to564x278; no crop/repose",
+      "alphaCleanup": "<=40 alpha and disconnected debris removed; original interior alpha retained",
+      "fringeColorPixelsRepaired": 6,
+      "interiorFinish": {
+        "filter": "UnsharpMask",
+        "radius": 0.55,
+        "percent": 75,
+        "threshold": 2,
+        "nearOpaqueInteriorOnly": true,
+        "pixelsChanged": 17556,
+        "alphaUnchangedDuringFinish": true
+      },
+      "sourceDimensions": [
+        1788,
+        880
+      ],
+      "changedPixelsFromRawReduction": 19041,
+      "portraitPropLettering": {
+        "text": [
+          "LOT",
+          "14"
+        ],
+        "font": "approved Tiny5 integer bitmap",
+        "planeQuad": [
+          [
+            241,
+            182
+          ],
+          [
+            269,
+            179
+          ],
+          [
+            276,
+            223
+          ],
+          [
+            253,
+            228
+          ]
+        ],
+        "method": "Perspective-projected top receipt inset, no changes to fingers; full receipt copy belongs to the Focus A asset",
+        "minimumNativeCapHeight": 5
+      }
+    },
+    "CH4-B2-03": {
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "sourceDimensions": [
+        1786,
+        880
+      ],
+      "reduction": "Lanczos to opaque564x278; newly generated close composition, not an enlargement of approved scene",
+      "readablePortraitContextLabel": {
+        "text": "WATER",
+        "font": "approved Tiny5 bitmap; 5px cap height",
+        "planeQuad": [
+          [
+            209,
+            104
+          ],
+          [
+            247,
+            104
+          ],
+          [
+            247,
+            118
+          ],
+          [
+            209,
+            118
+          ]
+        ],
+        "mainSceneUnchanged": true
+      },
+      "nativeLabelCleanup": {
+        "method": "Use only the imagegen-edited blank upper cabinet plaque, retaining every other reduced pixel exactly",
+        "box": [
+          209,
+          104,
+          247,
+          118
+        ],
+        "changedPixels": 532,
+        "outsideBoxChanges": 0,
+        "source": "originals/CH4-B2-03-label-cleanup.png"
+      }
+    },
+    "CH4-B2-04": {
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "sourceDimensions": [
+        1785,
+        881
+      ],
+      "reduction": "Lanczos to opaque564x278; newly generated close composition, not an enlargement of approved scene",
+      "nativeLettering": {
+        "method": "Approved Tiny5 bitmap atlas; hard 0/255 glyphs, integer clusters; nearest-pixel homography aligns text to the receipt plane",
+        "sourceNode": "hotel_lot_receipt_study",
+        "lines": [
+          "LOT 14 \u2014 BRASS WATER SHUTOFF WHEEL.",
+          "BUYER \u2014 COMMODORE E. BIXBY.",
+          "PURCHASE PRICE \u2014 12.00.",
+          "DECLARED PURPOSE \u2014 NAVAL DECORATION.",
+          "ALL SALES FINAL",
+          "CATALOGUING ERRORS REQUIRE ORIGINAL RECEIPT."
+        ],
+        "renderedRows": [
+          "LOT 14 \u2014 BRASS WATER SHUTOFF WHEEL.",
+          "BUYER \u2014 COMMODORE E. BIXBY.",
+          "PURCHASE PRICE \u2014 12.00.",
+          "DECLARED PURPOSE \u2014 NAVAL DECORATION.",
+          "ALL SALES FINAL",
+          "CATALOGUING ERRORS REQUIRE",
+          "ORIGINAL RECEIPT."
+        ],
+        "safeTextRectInPaperPlane": [
+          46,
+          22,
+          466,
+          202
+        ],
+        "glyphBoundsInPaperPlane": [
+          [
+            52,
+            26,
+            412,
+            36
+          ],
+          [
+            52,
+            52,
+            336,
+            62
+          ],
+          [
+            52,
+            78,
+            278,
+            88
+          ],
+          [
+            52,
+            104,
+            440,
+            114
+          ],
+          [
+            52,
+            138,
+            289,
+            153
+          ],
+          [
+            52,
+            173,
+            334,
+            183
+          ],
+          [
+            52,
+            189,
+            222,
+            199
+          ]
+        ],
+        "paperPlaneSize": [
+          480,
+          224
+        ],
+        "paperPlaneQuad": [
+          [
+            42,
+            29
+          ],
+          [
+            516,
+            25
+          ],
+          [
+            516,
+            251
+          ],
+          [
+            38,
+            254
+          ]
+        ],
+        "minimumPaperPlaneMargins": [
+          52,
+          26,
+          40,
+          25
+        ],
+        "exceptionWrap": "Only line wrapping changes; exact canonical phrase is preserved.",
+        "minimumNativeCapHeight": 10,
+        "paletteCap": false
+      }
+    },
+    "CH4-B2-05": {
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "sourceDimensions": [
+        1788,
+        880
+      ],
+      "reduction": "Lanczos to opaque564x278; newly generated close composition, not an enlargement of approved scene",
+      "nativeLettering": {
+        "method": "Approved Press Start bitmap glyphs; nearest-pixel homography follows the actual enamel plaque perspective; bevel/hardware untouched",
+        "text": [
+          "EMERGENCY",
+          "WATER ISOLATION"
+        ],
+        "planeSize": [
+          128,
+          28
+        ],
+        "planeQuad": [
+          [
+            306,
+            38
+          ],
+          [
+            423,
+            35
+          ],
+          [
+            424,
+            60
+          ],
+          [
+            306,
+            64
+          ]
+        ],
+        "changedBounds": [
+          305,
+          34,
+          425,
+          65
+        ],
+        "outsideLabelChanges": 0,
+        "nativeCapHeightApproximate": 7,
+        "glyphMaskAlpha": [
+          0,
+          255
+        ]
+      }
+    }
+  }
+}

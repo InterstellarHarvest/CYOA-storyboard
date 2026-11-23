@@ -1,0 +1,35 @@
+{
+  "focusDimensions": [
+    564,
+    278
+  ],
+  "focusAlpha": "opaque",
+  "portraitDimensions": [
+    564,
+    278
+  ],
+  "portraitAlpha": "transparent",
+  "backgroundDimensions": [
+    564,
+    278
+  ],
+  "authority": [
+    "docs/105_CANONICAL_SYNC_PIPELINE.md#Owner/Story Director dimension resolution",
+    "tools/sync/lib.mjs contractFor",
+    "docs/108_CHAPTER_02_ARTWORK_COMPLETION_AND_GAMEPLAY_HANDOFF_20261117.md"
+  ],
+  "notItemInspectDimensions": [
+    565,
+    451
+  ],
+  "actualRuntimeEvidence": {
+    "repository": "InterstellarHarvest/out-of-order",
+    "commit": "d849da779667b3bcde5dedf2e7d5a7601d8b4b6e",
+    "file": "game/js/stage.js",
+    "lines": "147-168",
+    "focus": "focus: { size: [564, 278], scale: 1 }",
+    "inspect": "inspect: { size: [565, 451] }",
+    "readOnlyInspection": true
+  },
+  "narrativeModified": false
+}

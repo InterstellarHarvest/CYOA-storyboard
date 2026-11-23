@@ -1,5 +1,12 @@
 # Chapter 4 Batch 1 artwork review
 
+## Owner selection — 2026-11-22 (supersedes review-time status below)
+
+Nate approved all five exact Batch1 selections unchanged from v08: CH4-01/02 v05, CH4-03 v08 and CH4-04/05 v07. They are now APPROVED and SELECTED, not integrated. [Canonical registration/closeout](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/ee5948f14144d2bd99b75432e8d58422e8958bf1/docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md); main commit `ee5948f14144d2bd99b75432e8d58422e8958bf1`, PR20. All five public selected PNGs and registry statuses were verified against immutable owner hashes. [Approval record](BATCH1-APPROVED-20261122.json), [public verification](BATCH1-PUBLIC-VERIFICATION-20261122.json). The old UNSELECTED statements in preserved historical packages describe the review-time state; this later approval supersedes them only for those five exact assets.
+
+New work: [B2-01 five-asset gallery](../chapter-04-batch02-2026-11-22/v01/index.html). New Batch2 candidates remain UNSELECTED. Preserve all approved PNGs and every earlier version. No narrative/gameplay/engine integration.
+
+
 Latest handoff: [v08 final auctioneer review](v08/index.html), [Batch1 selection-ready summary and exact hashes](v08/BATCH1-SELECTION-READY.md), and [canonical Batch2 inventory](v08/BATCH2-INVENTORY.md). The preferred v05 lobby/background and v07 restroom/ballroom are frozen byte-for-byte. The completed portrait uses the established preferred source-derived design. **All artwork remains UNSELECTED**; no formal approval registration or production integration.
 
 Preserved: [v07 scene NPC crispness correction](v07/index.html). Face/hand sampling and native cutout cleanup address v06 softness at4x. Only scene NPC pixels change; poses, scale, placement, room backgrounds, auctioneer and frozen v05 environments are preserved. Source-derived processing is fully recorded. All candidates remain **UNSELECTED**.

@@ -1,0 +1,253 @@
+{
+  "hotel_restroom_plumber": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_plumber",
+    "pose": "worried",
+    "text": [
+      "Oh! Sorry, sir.",
+      {
+        "desc": "He sets down his wrench."
+      },
+      "Didn't know anybody was still using the facilities. Go right ahead. I'll give you a minute.",
+      {
+        "desc": "You are almost overcome by gratitude. The plumber turns toward his assistant, who is disconnecting a copper pipe."
+      },
+      "Hold off on that one, Eddie. Gentleman needs the lavatory.",
+      {
+        "say": "Right you are!",
+        "who": "hotel_plumber_assistant"
+      },
+      {
+        "desc": "A metallic snapping sound comes from beneath the sink. The plumber's expression changes."
+      },
+      "Eddie?",
+      {
+        "desc": "A violent jet of water erupts from the wall, strikes the opposite sink, ricochets across the floor, and sends fresh towels flying. You jump backward. The plumber lunges toward a valve and finds only a bare metal shaft."
+      },
+      "Oh, for the love of\u2014",
+      {
+        "say": "What's wrong?",
+        "who": "hotel_plumber_assistant"
+      },
+      "Where's the bloody shutoff wheel?",
+      {
+        "say": "Sold it.",
+        "who": "hotel_plumber_assistant"
+      },
+      {
+        "desc": "The plumber closes his eyes."
+      },
+      "Of course you did.",
+      {
+        "say": "Fella gave twelve for it. Said it looked nautical.",
+        "who": "hotel_plumber_assistant"
+      },
+      "It's a valve handle, Eddie!",
+      {
+        "say": "Well, he didn't ask.",
+        "who": "hotel_plumber_assistant"
+      },
+      {
+        "desc": "A second pipe begins rattling. The plumber looks at it."
+      },
+      "Terribly sorry, sir. Little trouble with the plumbing. Possibly a medium-sized trouble.",
+      {
+        "desc": "Above the sinks hangs a locked cabinet marked EMERGENCY WATER ISOLATION. Its brass keyhole appears to be one of the few fittings nobody has bought."
+      }
+    ],
+    "choices": [
+      {
+        "id": "a1a_close_valve",
+        "kind": "action",
+        "text": "HELP THE PLUMBER TURN THE BARE VALVE SHAFT BEFORE ANOTHER PIPE BURSTS.",
+        "check": {
+          "id": "ch4_restroom_valve_grip",
+          "sides": 6,
+          "need": 4
+        },
+        "pass": {
+          "result": "You catch the bare spindle between the wrench's jaws. It shudders, then turns. The violent spray collapses to a thin, furious dribble.",
+          "effects": {
+            "set": {
+              "ch4_restroom_leak": "braced",
+              "ch4_plumber_helped": true
+            }
+          },
+          "to": "hotel_valve_braced"
+        },
+        "fail": {
+          "result": "The wrench slips. A dreadful metallic pop comes from inside the wall. The spray doubles and knocks you into a stack of clean towels.",
+          "effects": {
+            "set": {
+              "ch4_restroom_leak": "flooding"
+            }
+          },
+          "to": "hotel_valve_flood"
+        }
+      },
+      {
+        "id": "a1b_maintenance",
+        "kind": "action",
+        "text": "FOLLOW THE PLUMBING THROUGH THE MAINTENANCE ACCESS.",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "uncontained"
+          }
+        },
+        "to": "hotel_pipe_tunnel"
+      },
+      {
+        "id": "a1c_wheel_buyer",
+        "kind": "spoken",
+        "text": "WHO BOUGHT THE SHUTOFF WHEEL?",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "uncontained"
+          }
+        },
+        "to": "hotel_wheel_buyer_lead"
+      }
+    ],
+    "use": {
+      "wc_key": {
+        "kind": "action",
+        "say": "TRY THE FACILITIES KEY IN THE EMERGENCY CABINET.",
+        "to": "hotel_key_master_cabinet"
+      }
+    }
+  },
+  "hotel_wheel_buyer_lead": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_plumber_assistant",
+    "pose": "pleased",
+    "text": [
+      "Oh, I remember him. Green auction paddle. Little cap with an anchor on it.",
+      {
+        "say": "Where did he go?",
+        "who": "hotel_plumber"
+      },
+      "Toward the wedding drinks, I think. Said he was going to turn an ice bucket into a boat.",
+      {
+        "desc": "Eddie retrieves a damp receipt from his pocket. The ink is beginning to spread."
+      },
+      "Twelve for the lot. Seemed a fair price.",
+      {
+        "say": "It's the emergency water shutoff, Eddie.",
+        "who": "hotel_plumber"
+      },
+      "Well, he did ask if it worked under pressure."
+    ],
+    "choices": [
+      {
+        "id": "wheel_find_buyer",
+        "kind": "action",
+        "text": "FIND THE BUYER WITH THE GREEN PADDLE.",
+        "to": "hotel_commodore_bixby"
+      },
+      {
+        "id": "wheel_read_receipt",
+        "kind": "action",
+        "text": "EXAMINE EDDIE'S RECEIPT FOR THE LOT NUMBER.",
+        "to": "hotel_lot_receipt_study"
+      },
+      {
+        "id": "wheel_ignore_buyer",
+        "kind": "action",
+        "text": "LEAVE THE AUCTION ALONE AND TRY THE MAINTENANCE SHUTOFF.",
+        "to": "hotel_pipe_tunnel"
+      }
+    ]
+  },
+  "hotel_lot_receipt_study": {
+    "mode": "focus",
+    "scene": "grand_bellevue/restroom",
+    "focus": "grand_bellevue/restroom/lot_14_receipt",
+    "effects": {
+      "set": {
+        "ch4_knows_wheel_lot_14": true
+      }
+    },
+    "text": "The little receipt is almost illegible. You smooth it against a dry patch of tile.\n\nLOT 14 \u2014 BRASS WATER SHUTOFF WHEEL.\nBUYER \u2014 COMMODORE E. BIXBY.\nPURCHASE PRICE \u2014 12.00.\nDECLARED PURPOSE \u2014 NAVAL DECORATION.\n\nAt the bottom, someone has stamped ALL SALES FINAL, including the emergency fixtures. There is a small handwritten exception: CATALOGUING ERRORS REQUIRE ORIGINAL RECEIPT.",
+    "choices": [
+      {
+        "id": "receipt_find_commodore",
+        "kind": "action",
+        "text": "FIND COMMODORE BIXBY AND ASK FOR THE WHEEL.",
+        "to": "hotel_commodore_bixby"
+      },
+      {
+        "id": "receipt_appeal_auctioneer",
+        "kind": "action",
+        "text": "TAKE THE LOT NUMBER TO THE AUCTIONEER AND CHALLENGE THE SALE.",
+        "to": "hotel_auctioneer_lot14_dispute"
+      }
+    ]
+  },
+  "hotel_key_master_cabinet": {
+    "mode": "focus",
+    "scene": "grand_bellevue/restroom",
+    "focus": "grand_bellevue/restroom/master_isolator",
+    "effects": {
+      "set": {
+        "ch4_restroom_leak": "contained",
+        "ch4_restroom_water_off": true,
+        "ch4_plumber_helped": true,
+        "ch4_master_key_recognized": true
+      }
+    },
+    "text": "The Facilities Key slides into the emergency cabinet as if it has been waiting there for you. One quarter turn, and the catch opens.\n\nInside is a single large red lever. You pull it. The pipes shudder, the water subsides, and the room becomes suddenly quiet.\n\nThe plumber peers at the key's paper tag. The return date says today, four fifty-two, and the signature belongs to the examiner.\n\nHe looks at you. Then at the signature. Then back at you. In the end he chooses to be grateful rather than curious.\n\nYou keep the key. The line is shut off, but the last stall is still standing. For now.",
+    "choices": [
+      {
+        "id": "master_key_try_stall",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_stall_lot_claimed"
+      }
+    ]
+  },
+  "hotel_stall_porter_protest": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_porter",
+    "pose": "businesslike",
+    "text": [
+      {
+        "desc": "The porter looks down from his clipboard."
+      },
+      "Of course you are, sir. That's why we left you there.",
+      {
+        "desc": "You point toward the stall, now halfway through the ceiling."
+      },
+      "We're strictly prohibited from lifting occupied fixtures. So we've removed the fixture and left the occupant. Perfectly safe.",
+      {
+        "desc": "He makes a checkmark on the clipboard."
+      },
+      "Now, if you're disputing the sale, that's an entirely different matter.",
+      {
+        "desc": "You attempt to explain that you simply want to use the toilet. The porter produces a bright red placard."
+      },
+      "Oh, you must take that up with the auctioneer. Here, I'll signal him.",
+      {
+        "desc": "He waves the placard enthusiastically."
+      },
+      "DISPUTE ON LOT FIFTY-THREE!",
+      {
+        "say": "An objection? Excellent! Competitive interest! Bring the gentleman forward!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "A wedding guest applauds. The porter ushers you into the lobby toward the podium."
+      }
+    ],
+    "choices": [
+      {
+        "id": "porter_to_auction",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_auction_reopen_53"
+      }
+    ]
+  }
+}
