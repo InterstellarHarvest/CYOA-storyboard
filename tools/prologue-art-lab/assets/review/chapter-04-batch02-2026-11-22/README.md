@@ -1,3 +1,5 @@
+Public B2-05: [open the verified native/exact4× gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/1574db1d2d8e6de529c73c1aba55d4466d6ca80d/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v01/online.html) · [B2-04 completion and B2-05 publication/hashes](B2-05-REVIEW-PUBLICATION-20261123.md). All five new portraits remain UNSELECTED.
+
 # Current owner approvals and new B2-05 review
 
 B2-04 is registered unchanged on canonical main `8a5b91f4effabda5e6ebb5f53f317850931db68b`, [PR25](https://github.com/InterstellarHarvest/CYOA-storyboard/pull/25): seven primary APPROVED/SELECTED, three supplemental conditional references APPROVED/PRESERVED, with no new Focus IDs or runtime bindings. [Completion/gameplay handoff](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/8a5b91f4effabda5e6ebb5f53f317850931db68b/docs/132_CH4_B204_APPROVAL_COMPLETION_20261123.md), [exact approval receipt](B2-04-APPROVED-20261123.json), [public verification](B2-04-APPROVAL-PUBLIC-VERIFICATION-20261123.json). Historical UNSELECTED notes below are superseded only for the exact approved hashes.
