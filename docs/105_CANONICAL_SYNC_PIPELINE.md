@@ -58,6 +58,9 @@ You do not need to wait for game integration.
 
 ### 2. Art publishing (Art Director / owner selection, any session)
 
+Before generating new artwork, follow the permanent [pixel-art production standard](129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md), owner ruling2026-11-22. Approved Chapter2 establishes pixel-cluster craftsmanship; detailed sources establish artistic ambition. A direct resize, palette reduction or passing technical checks alone never makes a candidate selection-ready. Use the artwork-type detail hierarchy, separate native reinterpretation and native/exact4× visual comparisons. This production rule does not alter any existing approval or engine integration.
+
+
 ```
 node tools/sync/register-art.mjs --key scenes:biology_park/formal_entrance --file <selected.png> \
   --source-repo InterstellarHarvest/out-of-order --source-ref <branch> --source-commit <40-hex> --source-path <path> --status approved
