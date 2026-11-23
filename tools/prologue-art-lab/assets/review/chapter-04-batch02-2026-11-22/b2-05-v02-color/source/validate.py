@@ -20,8 +20,11 @@ def main():
  check((ROOT/'references/CH4-B2-27-v01.png').read_bytes()==(OLD/'native/CH4-B2-27-v01.png').read_bytes(),'Clerk retained byte-exact v01, not revised or selected')
  # Git's content comparison includes working-tree bytes, not only the index.
  protected=['story','assets/selected','docs','.github','tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21']
- protected +=[str(p.relative_to(REPO))for p in ROOT.parent.iterdir()if p.is_dir()and p!=ROOT]
+ protected +=[str(p.relative_to(REPO))for p in ROOT.parent.iterdir()if p.is_dir()and p!=ROOT and p.name!='b2-05-v02-hair']
  check(not subprocess.check_output(['git','diff','--name-only',BASE,'--',*protected],cwd=REPO,text=True),'Every prior version, approval, story/gameplay/workflow file unchanged')
+ archive='tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v02-hair'
+ for path in subprocess.check_output(['git','ls-tree','-r','--name-only','97ccd2b8a0943374453c7a4a56af1868cb559c3f',archive],cwd=REPO,text=True).splitlines():
+  check((REPO/path).read_bytes()==subprocess.check_output(['git','show','97ccd2b8a0943374453c7a4a56af1868cb559c3f:'+path],cwd=REPO),'Exact preserved first hair-only study '+path)
  class Links(HTMLParser):
   def handle_starttag(self,t,attrs):
    for k,v in attrs:
