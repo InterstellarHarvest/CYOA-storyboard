@@ -48,12 +48,43 @@
           {"id": "courier_customs", "title": "Courier route & customs exit", "nodes": ["courier_assignment", "customs_checkpoint", "customs_seeds_destroyed", "customs_seed_rupture", "customs_dust_avoided", "customs_dust_infected", "customs_exit", "customs_kit_focus", "customs_kit_read_focus"]},
           {"id": "public_exit", "title": "Public exit & antidote kit", "nodes": ["public_exit_staging", "public_kit_focus", "public_kit_read_focus"]},
           {"id": "maintenance_exit", "title": "Irrigation & maintenance exit", "nodes": ["irrigation_hub", "maintenance_exit_staging", "maintenance_kit_focus", "maintenance_kit_read_focus"]},
-          {"id": "endings", "title": "Living endings → Chapter 3 (preview)", "nodes": ["end_concourse_robot", "end_underground_station", "end_public", "end_maintenance", "end_customs"]}
+          {"id": "endings", "title": "Living endings → Chapter 3", "nodes": ["end_concourse_robot", "end_underground_station", "end_public", "end_maintenance", "end_customs"]}
         ]
       }
     },
     "chapter-03": {
-      "positions": {}
+      "positions": {},
+      "layoutRevision": 3,
+      "timeline": {
+        "note": "Viewer-only grouping for the storyboard timeline. Not read by the game or the story importer.",
+        "incidents": [
+          {
+            "id": "arrival",
+            "title": "Arrival · One Experience Per Person",
+            "nodes": ["pavilion_arrival", "real_restroom", "attendant_greeting", "attendant_refusal", "attendant_key_callback"]
+          },
+          {
+            "id": "human",
+            "title": "Human Verification · Live demonstrations",
+            "nodes": ["human_verification_arrival", "presenter_verification", "photo_verification", "photo_verification_reply", "authentic_urgency", "authentic_urgency_visitor", "authentic_urgency_reply", "human_locomotion", "locomotion_pass", "locomotion_fail", "unauthorized_presenter", "genuine_surprise", "presenter_help_end"]
+          },
+          {
+            "id": "record",
+            "title": "The Original's Record · Endless receipt",
+            "nodes": ["record_print", "record_challenge", "record_choices", "stapler_printer_snarl", "record_scanner", "record_scanner_result", "paper_problem_end", "attendant_honest", "attendant_honest_end"]
+          },
+          {
+            "id": "door",
+            "title": "The Real Door · Courtesy and misdirection",
+            "nodes": ["door_wait", "door_choices", "door_dash_pass", "door_dash_fail", "door_courtesy", "door_reverse_end"]
+          },
+          {
+            "id": "departure",
+            "title": "Shared backstage departure",
+            "nodes": ["backstage_exit"]
+          }
+        ]
+      }
     },
     "chapter-04": {
       "positions": {},

@@ -5,8 +5,9 @@
 // Checks: card/port/label overlaps from real bounding boxes; every connector sampled along its path
 // never runs through a card it does not belong to; reading zoom and label size; ports; Fit/Start;
 // wheel zoom; pan; drag; Reset; Export/Import; old-cache migration; reload stability; port
-// navigation; chapter pills select, inspect and drag; per-chapter view memory; Chapter 3 cards and
-// connectors identical to the published viewer.
+// navigation; chapter pills select, inspect and drag; per-chapter view memory; the approved Chapter 3
+// reboot timeline and its five incoming Chapter 2 routes; the preserved legacy Chapter 3 (swapped in
+// for this check only, in its own browser context) with cards and connectors identical to the published viewer.
 // Screenshots (beginning, middle, end, overview of both chapters) go to --out or the OS temp folder.
 'use strict';
 
@@ -72,14 +73,20 @@ async function run(name, base) {
   const cardPos = (page, id) => page.evaluate((x) => { const n = Array.from(document.querySelectorAll('#nodes .node')).find((c) => c.firstChild.textContent === x); return n && { x: parseFloat(n.style.left), y: parseFloat(n.style.top) }; }, id);
   const shot = async (page, file) => page.screenshot({ path: path.join(OUT, name + '_' + file + '.png') });
 
-  const ctx = await browser.newContext({ viewport: { width: 1500, height: 950 }, acceptDownloads: true });
-  const page = await ctx.newPage();
-  watch(page);
-  await page.goto(url);
-  await ready(page, 29);
-
-  // ---- Chapter 3 renders exactly as the published viewer did ----------------------------------
+  // ---- The preserved legacy Chapter 3 renders exactly as the published viewer did -------------
+  // Since the gameplay integration the manifest's chapter-03 is the approved reboot. This context alone
+  // serves the manifest and layout as they were before the activation (legacy file, archived status,
+  // no Chapter 3 timeline); the committed files are untouched.
+  const legacyCtx = await browser.newContext({ viewport: { width: 1500, height: 950 } });
+  const readStory = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, 'story', f), 'utf8'));
+  await legacyCtx.route('**/story/storyboard-manifest.json', (route) => { const m = readStory('storyboard-manifest.json'); const e = m.chapters.find((c) => c.id === 'chapter-03'); e.file = 'chapters/chapter-03.draft.json'; e.status = 'archived'; route.fulfill({ contentType: 'application/json', body: JSON.stringify(m) }); });
+  await legacyCtx.route('**/story/storyboard-layout.json', (route) => { const l = readStory('storyboard-layout.json'); l.chapters['chapter-03'] = { positions: {} }; route.fulfill({ contentType: 'application/json', body: JSON.stringify(l) }); });
+  const legacyPage = await legacyCtx.newPage();
+  watch(legacyPage);
+  await legacyPage.goto(url);
+  await ready(legacyPage, 29);
   for (const [index, key, count] of [[3, 'chapter-03', 62]]) {
+    const page = legacyPage;
     await choose(page, index, count);
     const now = await page.evaluate(() => ({
       cards: Array.from(document.querySelectorAll('#nodes .node')).map((c) => ({ id: c.firstChild.textContent, className: c.className, left: c.style.left, top: c.style.top, text: Array.from(c.children).map((x) => x.textContent) })),
@@ -99,13 +106,20 @@ async function run(name, base) {
     if (key === 'chapter-03') check(b, 'chapter-03: fatal cards show their death-popup title and art ID', now.cards.filter((c) => FATAL.has(c.id)).every((c) => /death-node/.test(c.className) && c.text.some((t) => /^ART: /.test(t))));
     check(b, key + ': every connector, arrow and label identical to the published viewer', JSON.stringify(now.shapes) === JSON.stringify(baseShapes), now.shapes.find((c, i) => JSON.stringify(c) !== JSON.stringify(baseShapes[i])));
     check(b, key + ': no timeline chrome, ports or legend', !now.ports && !now.timelineClass && now.legend === 'none' && now.jump === 'none', now);
-    await shot(page, key + '_default');
+    await shot(page, key + '_legacy_default');
   }
+  await legacyCtx.close();
 
-  // ---- Chapter 1 and Chapter 2 timelines ----------------------------------------------------------
+  const ctx = await browser.newContext({ viewport: { width: 1500, height: 950 }, acceptDownloads: true });
+  const page = await ctx.newPage();
+  watch(page);
+  await page.goto(url);
+  await ready(page, 29);
+
+  // ---- Prologue, Chapter 1, Chapter 2 and Chapter 3 timelines --------------------------------------
   const geometry = {};
-  const startOf = { 'prologue-00': 'work_complete', 'chapter-01': 'house_arrival', 'chapter-02': 'bureau_arrival' };
-  for (const [index, key, count] of [[0, 'prologue-00', 29], [1, 'chapter-01', 36], [2, 'chapter-02', 99]]) {
+  const startOf = { 'prologue-00': 'work_complete', 'chapter-01': 'house_arrival', 'chapter-02': 'bureau_arrival', 'chapter-03': 'pavilion_arrival' };
+  for (const [index, key, count] of [[0, 'prologue-00', 29], [1, 'chapter-01', 36], [2, 'chapter-02', 99], [3, 'chapter-03', 34]]) {
     await choose(page, index, count);
     await page.click('#tlStart');
     const view = await page.evaluate((start) => {
@@ -173,8 +187,15 @@ async function run(name, base) {
   check(b, 'Chapter 1: fatal chair has no route or port out', !c1.edges.some((e) => e.from === 'exit_chair_fatal') && !c1.ports.some((p) => /exit_chair_fatal/.test(p.id)));
   check(b, 'Chapter 2: five incoming Chapter 1 routes into bureau_arrival', c2.ports.filter((p) => p.dir === 'in').map((p) => p.source).sort().join() === [...exits].sort().join()
     && c2.edges.filter((e) => e.route === 'port' && /^in:/.test(e.from)).every((e) => e.to === 'bureau_arrival'));
-  check(b, 'Chapter 2: five preview-only handoffs to Chapter 3, none from a fatal ending', c2.ports.filter((p) => p.dir === 'out').length === 5
-    && c2.ports.filter((p) => p.dir === 'out').every((p) => p.mode === 'preview' && p.chapter === 'chapter-03' && /PREVIEW HANDOFF · NOT GAMEPLAY/.test(p.text) && !/fatal/.test(p.id)));
+  const livingEnds = ['end_concourse_robot', 'end_underground_station', 'end_public', 'end_maintenance', 'end_customs'];
+  check(b, 'Chapter 2: five gameplay transitions to Chapter 3 from the living endings, none from a fatal ending, no preview handoff', c2.ports.filter((p) => p.dir === 'out').map((p) => p.id).sort().join() === livingEnds.map((id) => 'out:' + id + '>chapter-03').sort().join()
+    && c2.ports.filter((p) => p.dir === 'out').every((p) => p.mode === 'gameplay' && p.chapter === 'chapter-03' && /TO CHAPTER 3 · GAMEPLAY/.test(p.text) && /Pavilion Arrival/.test(p.text)) && !c2.ports.some((p) => p.mode === 'preview'));
+  const c3 = geometry['chapter-03'];
+  check(b, 'Chapter 3: five incoming Chapter 2 routes into pavilion_arrival and no outgoing chapter route', c3.ports.filter((p) => p.dir === 'in').map((p) => p.source).sort().join() === [...livingEnds].sort().join()
+    && c3.ports.every((p) => p.dir === 'in' && p.chapter === 'chapter-02' && p.mode === 'gameplay')
+    && c3.edges.filter((e) => e.route === 'port' && /^in:/.test(e.from)).length === 5 && c3.edges.filter((e) => e.route === 'port' && /^in:/.test(e.from)).every((e) => e.to === 'pavilion_arrival'));
+  const ch3Ends = ['locomotion_fail', 'presenter_help_end', 'paper_problem_end', 'attendant_honest_end', 'door_dash_fail', 'door_reverse_end', 'backstage_exit'];
+  check(b, 'Chapter 3: its seven endings are drawn as surviving endings, never fatal', ch3Ends.every((id) => { const c = c3.cards.find((x) => x.id === id); return c && !/\bfatal\b|death-node/.test(c.cls); }));
 
   const c0 = geometry['prologue-00'];
   check(b, 'Prologue: timeline with its Chapter 1 hand-off pill on the right', c0.cards.find((c) => c.id === 'reception_hallway').x === Math.max(...c0.cards.map((c) => c.x))
@@ -198,9 +219,10 @@ async function run(name, base) {
   check(b, 'a pill can be dragged like a card, is saved with the chapter, and dropping it does not navigate', pillAfter.x === pillBefore.x + 40 && pillAfter.y === pillBefore.y - 99
     && JSON.stringify(pillSaved) === JSON.stringify(pillAfter) && await page.inputValue('#chapterSelect') === '2', [pillBefore, pillAfter, pillSaved]);
   await page.click('#resetLayout');
-  await page.click('#ports .port[data-port="out:end_customs>chapter-03:preview"]');
-  check(b, 'clicking a preview handoff pill inspects it as storyboard-only and stays in Chapter 2', await page.inputValue('#chapterSelect') === '2'
-    && /storyboard preview only, not gameplay/.test(await page.evaluate(() => document.getElementById('details').innerText)));
+  await page.click('#ports .port[data-port="out:end_customs>chapter-03"]');
+  const ch3PillText = await page.evaluate(() => document.getElementById('details').innerText);
+  check(b, 'clicking a Chapter 3 transition pill inspects it as gameplay and stays in Chapter 2', await page.inputValue('#chapterSelect') === '2'
+    && !/storyboard preview only, not gameplay/.test(ch3PillText) && /Open Chapter 3 — The People's Pavilion at Pavilion Arrival/.test(ch3PillText), ch3PillText.slice(0, 300));
 
   // ---- Per-chapter view memory -------------------------------------------------------------------
   await choose(page, 1, 36);
@@ -245,8 +267,9 @@ async function run(name, base) {
   const file = path.join(OUT, name + '_exported-layout.json');
   await download.saveAs(file);
   const exported = JSON.parse(fs.readFileSync(file, 'utf8'));
-  check(b, 'Export Layout keeps schema v1, adds the Prologue/Chapter 1/2 revision and incident metadata, leaves Chapter 3 positions-only', exported.schema === 'cyoa-storyboard-layout-v1' && exported.chapters['chapter-01'].layoutRevision === 2
-    && exported.chapters['chapter-01'].positions.welcome_home.x === dragged.x && exported.chapters['chapter-02'].timeline.incidents.length >= 10 && exported.chapters['prologue-00'].layoutRevision === 2 && JSON.stringify(Object.keys(exported.chapters['chapter-03'])) === '["positions"]');
+  check(b, 'Export Layout keeps schema v1 with every chapter\'s revision and incident metadata (Chapter 3: the reboot timeline, revision 3)', exported.schema === 'cyoa-storyboard-layout-v1' && exported.chapters['chapter-01'].layoutRevision === 2
+    && exported.chapters['chapter-01'].positions.welcome_home.x === dragged.x && exported.chapters['chapter-02'].timeline.incidents.length >= 10 && exported.chapters['prologue-00'].layoutRevision === 2
+    && exported.chapters['chapter-03'].layoutRevision === 3 && exported.chapters['chapter-03'].timeline.incidents.flatMap((i) => i.nodes).length === 34);
   await page.click('#resetLayout');
   check(b, 'Reset Layout returns Chapter 1 to the timeline default', JSON.stringify(await cardPos(page, 'welcome_home')) === JSON.stringify(defaultPos));
   await page.setInputFiles('#fileLayout', file);
@@ -263,10 +286,11 @@ async function run(name, base) {
   await page.click('#details button.choice >> text=Open Chapter 2 — Biology Park at Bureau Arrival');
   await ready(page, 99);
   check(b, 'a Chapter 1 exit pill\'s inspector button opens Chapter 2 at bureau_arrival', await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Bureau Arrival');
-  await page.click('#ports .port[data-port="out:end_customs>chapter-03:preview"]');
-  await page.click('#details button.choice >> text=Open Chapter 3');
-  await ready(page, 62);
-  check(b, 'a preview handoff pill\'s inspector button opens Chapter 3 unchanged', await page.inputValue('#chapterSelect') === '3' && await page.evaluate(() => document.querySelectorAll('#ports .port').length) === 0);
+  await page.click('#ports .port[data-port="out:end_customs>chapter-03"]');
+  await page.click("#details button.choice >> text=Open Chapter 3 — The People's Pavilion at Pavilion Arrival");
+  await ready(page, 34);
+  check(b, 'a Chapter 2 ending pill\'s inspector button opens Chapter 3 at pavilion_arrival with its five incoming pills', await page.inputValue('#chapterSelect') === '3'
+    && await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Pavilion Arrival' && await page.evaluate(() => document.querySelectorAll('#ports .port').length) === 5);
   await ctx.close();
 
   // ---- Old cached layouts never hide the new default; reload stability -------------------------
@@ -275,6 +299,7 @@ async function run(name, base) {
     if (sessionStorage.getItem('seeded')) return; sessionStorage.setItem('seeded', '1');
     localStorage.setItem('cyoa-storyboard-layout-v1:chapter-01', JSON.stringify({ positions: { house_arrival: { x: 3000, y: 900 } } }));
     localStorage.setItem('cyoa-storyboard-layout-v1:prologue-00', JSON.stringify({ positions: { drone_intercepts: { x: 777, y: 333 } } }));
+    localStorage.setItem('cyoa-storyboard-layout-v1:chapter-03', JSON.stringify({ positions: { pavilion_arrival: { x: 555, y: 444 } } }));
   });
   const p2 = await ctx2.newPage();
   watch(p2);
@@ -295,6 +320,10 @@ async function run(name, base) {
   check(b, 'Chapter 1 timeline identical across a reload', first === second);
   await p2.click('#restoreLayout');
   check(b, 'Restore previous arrangement brings the archived position back', JSON.stringify(await cardPos(p2, 'house_arrival')) === JSON.stringify({ x: 3000, y: 900 }));
+  await choose(p2, 3, 34);
+  const c3Start = c3.cards.find((c) => c.id === 'pavilion_arrival');
+  check(b, 'an old cached legacy Chapter 3 layout is archived, not applied, and the reboot timeline shows', JSON.stringify(await cardPos(p2, 'pavilion_arrival')) === JSON.stringify({ x: Math.round(c3Start.x), y: Math.round(c3Start.y) })
+    && await p2.evaluate(() => JSON.parse(localStorage.getItem('cyoa-storyboard-layout-v1:chapter-03@archive-r1') || 'null')?.positions?.pavilion_arrival?.x) === 555);
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);
   await browser.close();
