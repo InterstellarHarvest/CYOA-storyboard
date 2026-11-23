@@ -427,3 +427,8 @@ Source: review package `v07-chapter-03-consolidated-quality-review` on `art/ch3-
 ## Chapter 4 Batch 1 owner approval — 2026-11-22
 
 Nate approves all five unchanged: CH4-01 v05, CH4-02 v05, CH4-03 v08, CH4-04 v07 and CH4-05 v07. All are selected/approved, not integrated. Exact source commit `3463e20bd366390008fa4f71c087ed5f334f3a31`; [completion, hashes, paths and coverage](127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md). CH4-03 explicitly remains SOURCE-DERIVED; restroom/ballroom are hybrid native-room/source-derived NPC composites. All historical candidates and prior selections are preserved. Runtime assetPath stays null under docs/105 until verified integration.
+
+
+## Chapter 4 B2-01 v01 owner approval — 2026-11-22
+
+Nate explicitly approved all five without modification from `81cf3b5f022510737bdd2d4ba3703e0173d86772`: worried plumber, pleased assistant, shared restroom portrait background, Lot14 receipt Focus A and master-isolator Focus A. APPROVED/SELECTED, not integrated; all source-derived provenance retained. [Exact hashes, canonical copies, mappings and gameplay handoff](128_CH4_B201_APPROVAL_COMPLETION_20261122.md). Batch1 and all earlier selected images/metadata remain unchanged. Runtime assetPath stays null under docs105/127 pending verified integration.

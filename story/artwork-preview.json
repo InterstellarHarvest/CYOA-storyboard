@@ -137,6 +137,36 @@
         "path": "art/focus/biology_park/aid_box_open.png"
       }
     },
+    "focus:grand_bellevue/restroom/lot_14_receipt": {
+      "file": "assets/selected/pending-integration/focus/grand_bellevue/restroom/lot_14_receipt.png",
+      "sha256": "af9f7b03eacfe54721e52217b265b7fcdc852b0eb7cf1d0cd1fd7e7f1eef85d3",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-04-v01.png"
+      }
+    },
+    "focus:grand_bellevue/restroom/master_isolator": {
+      "file": "assets/selected/pending-integration/focus/grand_bellevue/restroom/master_isolator.png",
+      "sha256": "ba494521a177b397cc9db901e83046fccc83afcfcebca890b23a0656be042153",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-05-v01.png"
+      }
+    },
     "focus:house_of_tomorrow/portrait_gallery/album#pages:1": {
       "file": "assets/selected/art/focus/house_of_tomorrow/album_page_1.png",
       "sha256": "c789a17a2e2ee45a7db07cd9e2aa0a4457dabe68dd88901aaf254f168a100ba7",
@@ -705,6 +735,36 @@
         "ref": "art/ch4-batch01-review-20261121",
         "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
         "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/native/CH4-03-auctioneer-source-derived-v08.png"
+      }
+    },
+    "portraits:hotel_plumber:worried": {
+      "file": "assets/selected/pending-integration/portraits/hotel_plumber/worried.png",
+      "sha256": "cedd81713cbd5ee4bb0a97d869a62c395a1b34ea04ba276fa5ac21c01d5de65d",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-01-v01.png"
+      }
+    },
+    "portraits:hotel_plumber_assistant:pleased": {
+      "file": "assets/selected/pending-integration/portraits/hotel_plumber_assistant/pleased.png",
+      "sha256": "ac47c23105b70af92b970682b72c266726ddbe9a75e182bdf6a71869568d6eea",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-02-v01.png"
       }
     },
     "portraits:house:idle#views:house_of_tomorrow/dining": {
@@ -1515,6 +1575,21 @@
         "ref": "art/ch4-batch01-review-20261121",
         "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
         "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png"
+      }
+    },
+    "scenes:grand_bellevue/restroom#portraitBackground": {
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-03-v01.png"
       }
     },
     "scenes:house_of_tomorrow/arrival": {
