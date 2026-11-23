@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "assetCommit": "838025a30191c0c096231889cd916968f327eecc",
+  "galleryCommit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+  "publicGalleryReport": "b2-03-public-browser-20261123/report.json",
+  "publicFileReport": "B2-03-PUBLIC-VERIFICATION-20261123.json",
+  "allSevenRemainUnselected": true,
+  "browserChecks": 14,
+  "note": "Initial hosted QA observed the prior loaded raster immediately after a source switch. The verifier now waits for requested currentSrc, complete and exact natural size before decode. All public native/4x controls then passed in Chromium and Firefox; no gallery artwork changed."
+}
