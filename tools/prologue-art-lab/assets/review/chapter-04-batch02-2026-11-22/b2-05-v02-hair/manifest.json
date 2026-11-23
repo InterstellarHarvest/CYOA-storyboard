@@ -1,0 +1,392 @@
+{
+  "title": "B2-05 v02 \u2014 bride honey-blonde hair only",
+  "status": "UNSELECTED",
+  "baseCommit": "9afe76fe17dcb02633b82261a6c69457891da50f",
+  "canonicalApprovalBaseline": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+  "groupId": "B2-05",
+  "revisedAssets": 4,
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "approvedArtModified": false,
+  "integrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-26",
+      "title": "Bride \u2014 determined",
+      "key": "portraits:hotel_bride:determined",
+      "inventoryId": "portrait:hotel_bride:determined",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_auction_bride_ally"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-26-v02.png",
+        "sha256": "28e027cc89af4a5e2107c90eb3b56f4ac76e38c844cd8c5f2669f2100c70b293",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-26-4x.png",
+        "sha256": "db4ae4d3e0840dcd1ddab2a6d615820146eab0da52289ea7534ec02056ca1380",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-26-lobby-native.png",
+        "sha256": "fe04e69f2023452d4a9f3bf1716849f48e205cb693eef5d1a305917ddbfeca8e",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/hair-color-direction.txt",
+      "derivation": "evidence/targeted-change.json",
+      "version": "v02",
+      "base": {
+        "file": "references/CH4-B2-26-v01.png",
+        "sha256": "ec835a0ef3303ba931cdda8ffadc6c576e4824724ab8353b78a690d578a0a541",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "baseCommit": "9afe76fe17dcb02633b82261a6c69457891da50f",
+      "detailedPoseReference": {
+        "file": "../b2-05-v01/originals/CH4-B2-26-detailed.png",
+        "sha256": "a084b8685560eedd213313aa3b67e7b3be19e55ed9b4d77cd4335b0d68492e3d"
+      },
+      "hairDirectionReference": {
+        "file": "originals/bride-honey-blonde-direction-reference.png",
+        "sha256": "e2bd16f7f89c12fbf3308ad0bdcc2ed016d081a521a2a8be772ed47648576395",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "processingSource": "source/recolor.py",
+      "hairMask": "masks/CH4-B2-26-hair-only.png",
+      "hairLayer": "layers/CH4-B2-26-blonde-hair.png"
+    },
+    {
+      "id": "CH4-B2-28",
+      "title": "Bride \u2014 hopeful",
+      "key": "portraits:hotel_bride:hopeful",
+      "inventoryId": "portrait:hotel_bride:hopeful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_ring_show_bride"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-28-v02.png",
+        "sha256": "2324bd1fce9c6ca63cfdfb0b7a348cfaea83b82ae350d934926e1efa4298f3cd",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-28-4x.png",
+        "sha256": "cea75a199b936bd97c13c4afa7035d248f96ced81088cc38a7e03bab12a04fce",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-28-lobby-native.png",
+        "sha256": "fe6585afccd8fe6831eae0c5cbdc971ee58506ac5ae81d850b955b7deea23548",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/hair-color-direction.txt",
+      "derivation": "evidence/targeted-change.json",
+      "version": "v02",
+      "base": {
+        "file": "references/CH4-B2-28-v01.png",
+        "sha256": "3e837a2ac234d6e673ec40b9e57237c95d19e67f8f092d508ab1867bd86d96e6",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "baseCommit": "9afe76fe17dcb02633b82261a6c69457891da50f",
+      "detailedPoseReference": {
+        "file": "../b2-05-v01/originals/CH4-B2-28-detailed.png",
+        "sha256": "4668a3ae5c11175e613b256415e75036c9f6580b458de3a9dbda8edd520598b0"
+      },
+      "hairDirectionReference": {
+        "file": "originals/bride-honey-blonde-direction-reference.png",
+        "sha256": "e2bd16f7f89c12fbf3308ad0bdcc2ed016d081a521a2a8be772ed47648576395",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "processingSource": "source/recolor.py",
+      "hairMask": "masks/CH4-B2-28-hair-only.png",
+      "hairLayer": "layers/CH4-B2-28-blonde-hair.png"
+    },
+    {
+      "id": "CH4-B2-29",
+      "title": "Bride \u2014 grateful",
+      "key": "portraits:hotel_bride:grateful",
+      "inventoryId": "portrait:hotel_bride:grateful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_bride_ring_handover"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-29-v02.png",
+        "sha256": "bb01599f1fbaeca5a0b543e62cbc562b951fdbb44d514ec44fd9ead99c1cf22b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-29-4x.png",
+        "sha256": "fe5d5c6cbbeea0d3ca360e90988f85b9a08cec7b6c3d85a191f36a0b106c9b6b",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-29-lobby-native.png",
+        "sha256": "fcc0899bb3050723cf665f91c52095d557f059d4d2600976cec34a6d565cdbb9",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/hair-color-direction.txt",
+      "derivation": "evidence/targeted-change.json",
+      "version": "v02",
+      "base": {
+        "file": "references/CH4-B2-29-v01.png",
+        "sha256": "d5115b275de84ab01a67629548dafc58515e0fe7acac3246d6bf7f67015ad730",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "baseCommit": "9afe76fe17dcb02633b82261a6c69457891da50f",
+      "detailedPoseReference": {
+        "file": "../b2-05-v01/originals/CH4-B2-29-detailed.png",
+        "sha256": "e0e43e01b4ce91651a1ae63ecb332f302b63e3d1f5e3f9c5bfaaf3fe3d8e12c2"
+      },
+      "hairDirectionReference": {
+        "file": "originals/bride-honey-blonde-direction-reference.png",
+        "sha256": "e2bd16f7f89c12fbf3308ad0bdcc2ed016d081a521a2a8be772ed47648576395",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "processingSource": "source/recolor.py",
+      "hairMask": "masks/CH4-B2-29-hair-only.png",
+      "hairLayer": "layers/CH4-B2-29-blonde-hair.png"
+    },
+    {
+      "id": "CH4-B2-30",
+      "title": "Bride \u2014 helpful",
+      "key": "portraits:hotel_bride:helpful",
+      "inventoryId": "portrait:hotel_bride:helpful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_bride_ring_bathroom"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-30-v02.png",
+        "sha256": "e45c9ad28efc838c6652a7b406559225c79eff76c5c43a6849bcddacba542267",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-30-4x.png",
+        "sha256": "56e3a76b7ee92b9f74d6e82099f8f1647697f527689ce0f899fb4623155d1e82",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "composite": {
+        "file": "previews/CH4-B2-30-lobby-native.png",
+        "sha256": "095cddad64ffb50417247806ae2eee779461e735a24d4e17474c3aae6f69f16c",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/hair-color-direction.txt",
+      "derivation": "evidence/targeted-change.json",
+      "version": "v02",
+      "base": {
+        "file": "references/CH4-B2-30-v01.png",
+        "sha256": "60e6f29ca3691d939f535a68f55d84dd39723a3411074bffead9ba19ed3e4785",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "baseCommit": "9afe76fe17dcb02633b82261a6c69457891da50f",
+      "detailedPoseReference": {
+        "file": "../b2-05-v01/originals/CH4-B2-30-detailed.png",
+        "sha256": "9d899afc6d7418c855dbd062f46bffc2f16d086647ad05365468f35cdd7b113a"
+      },
+      "hairDirectionReference": {
+        "file": "originals/bride-honey-blonde-direction-reference.png",
+        "sha256": "e2bd16f7f89c12fbf3308ad0bdcc2ed016d081a521a2a8be772ed47648576395",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "processingSource": "source/recolor.py",
+      "hairMask": "masks/CH4-B2-30-hair-only.png",
+      "hairLayer": "layers/CH4-B2-30-blonde-hair.png"
+    }
+  ],
+  "retainedClerk": {
+    "id": "CH4-B2-27",
+    "version": "v01",
+    "status": "UNSELECTED",
+    "native": {
+      "file": "references/CH4-B2-27-v01.png",
+      "sha256": "e8fae3f87ede6b59411e82d8d9c36429c5859bbf539cb8452e0d4017e95ffe0a",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA"
+    },
+    "sourceCommit": "9afe76fe17dcb02633b82261a6c69457891da50f"
+  },
+  "canonicalBenchmarks": {
+    "approved-presenter": {
+      "registryKey": "portraits:pavilion_presenter:idle",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
+    "approved-groom": {
+      "registryKey": "portraits:hotel_groom:nervous",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/portraits/hotel_groom/nervous.png",
+      "sha256": "dd4d497088f3264a04d7182245b176e65cd9a3e5c5f04e7be872adc4cc52352a",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-14-v01.png"
+      }
+    },
+    "approved-lobby-background": {
+      "registryKey": "scenes:grand_bellevue/lobby#portraitBackground",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png"
+      }
+    },
+    "approved-groundskeeper": {
+      "registryKey": "portraits:groundskeeper:idle",
+      "approvalCommit": "8a5b91f4effabda5e6ebb5f53f317850931db68b",
+      "file": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/groundskeeper/groundskeeper_idle.png"
+      }
+    }
+  },
+  "targetedChange": "evidence/targeted-change.json"
+}

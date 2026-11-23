@@ -1,3 +1,7 @@
+# Latest bride direction — B2-05 v02, 2026-11-23
+
+Nate requested a different hair color from the groom so the bride/groom read as lovers rather than relatives. Current review direction is honey-blonde bride versus the unchanged approved dark-brown groom. Revise only the four existing bride portraits; preserve original hair shapes, face/brows/ears/earrings, veil/gown, hands, props and exact alpha. The v02-hair package contains precise native color masks, source reference/prompt, before/after/groom comparisons and native/exact4× previews. All four revised portraits remain UNSELECTED pending Nate; the exact v01 clerk stays unchanged/unselected. This does not authorize repainting the approved groom or any earlier approved image.
+
 # Current B2-04 owner approval and B2-05 review — 2026-11-23
 
 Nate APPROVES/SELECTS the seven B2-04 primary v01 assets and APPROVES/PRESERVES the three supplemental conditional references unchanged, exclusively from3804fa2013aeb81e17236e4995e2ef1e9596d404. Canonical approval main8a5b91f4effabda5e6ebb5f53f317850931db68b, PR25, docs132. Supplemental states remain reference-only: no new Focus IDs, pages, runtime bindings, nodes or gameplay modes. Preserve all30 approved primary Chapter4 images plus the three approved references and every earlier approval/review exact. Two B2-01 plumber alternatives remain separate/unselected; v01 approvals stay selected.
