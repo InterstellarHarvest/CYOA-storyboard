@@ -1,5 +1,0 @@
-# Bride hair-color review
-
-All four revised native portraits and exact4× previews were compared with v01, the unchanged approved groom, approved Chapter2 groundskeeper and Pavilion presenter. The muted honey-blonde ramp now reads distinctly lighter/golden than the groom's dark brown. Original hair locks and forehead curls retain their existing cluster contours and shade hierarchy. Dark native outlines/root shadows remain, avoiding neon yellow or a flat fill.
-
-The correction is restricted to the actual native hair masks, with explicit ear and facial-feature exclusions. Face/brows/expression, earrings, hands, veil/gown, ring/ribbon and all original alpha pixels remain unchanged. The generated reference was used only for color direction; its unrelated background/alpha changes are excluded. No generated face or pose replaces the existing native figure. The clerk, groom, approved backgrounds and every earlier version are untouched. All four revisions remain UNSELECTED; this visual assessment permits review publication, not owner selection.

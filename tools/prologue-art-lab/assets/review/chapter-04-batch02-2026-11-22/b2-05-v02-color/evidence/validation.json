@@ -1,0 +1,833 @@
+{
+  "passed": true,
+  "checksPassed": 204,
+  "status": "UNSELECTED",
+  "revisedBridePoses": 4,
+  "changedHairPixels": 9002,
+  "changedIrisPixels": 49,
+  "outsideHairAndIrisMaskChanges": 0,
+  "faceExceptIrisAndEarChecksPassed": true,
+  "allOriginalAlphaUnchanged": true,
+  "clerkAndGroomUnchanged": true,
+  "priorApprovalsAndReviewsUnchanged": true,
+  "replayFilesIdentical": 61,
+  "integrationPerformed": false,
+  "checks": [
+    {
+      "check": "Exactly four unselected bride hair/iris color revisions",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 native564x278 RGBA",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 final hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 exact pinned v01 base",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 exact original alpha/silhouette",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 exact changed-pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 zero changes outside native hair-and-iris masks",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 facial features/eyebrows exact except requested iris colors",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 explicit green iris pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 all dark pupil pixels and white/catchlight pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 complete ear/earring unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 neck/lower veil/gown/hands/props unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 exact original plus blonde hair and green iris layers",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 preview hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 exact approved-background composite",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-26 pending owner selection/honest provenance",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 native564x278 RGBA",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 final hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 exact pinned v01 base",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 exact original alpha/silhouette",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 exact changed-pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 zero changes outside native hair-and-iris masks",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 facial features/eyebrows exact except requested iris colors",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 explicit green iris pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 all dark pupil pixels and white/catchlight pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 complete ear/earring unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 neck/lower veil/gown/hands/props unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 exact original plus blonde hair and green iris layers",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 preview hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 exact approved-background composite",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-28 pending owner selection/honest provenance",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 native564x278 RGBA",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 final hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 exact pinned v01 base",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 exact original alpha/silhouette",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 exact changed-pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 zero changes outside native hair-and-iris masks",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 facial features/eyebrows exact except requested iris colors",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 explicit green iris pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 all dark pupil pixels and white/catchlight pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 complete ear/earring unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 neck/lower veil/gown/hands/props unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 exact original plus blonde hair and green iris layers",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 preview hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 exact approved-background composite",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-29 pending owner selection/honest provenance",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 native564x278 RGBA",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 final hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 exact pinned v01 base",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 exact original alpha/silhouette",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 exact changed-pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 zero changes outside native hair-and-iris masks",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 facial features/eyebrows exact except requested iris colors",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 explicit green iris pixel count",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 all dark pupil pixels and white/catchlight pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 complete ear/earring unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 neck/lower veil/gown/hands/props unchanged",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 exact original plus blonde hair and green iris layers",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 preview hash",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 exact approved-background composite",
+      "passed": true
+    },
+    {
+      "check": "CH4-B2-30 pending owner selection/honest provenance",
+      "passed": true
+    },
+    {
+      "check": "Exact unchanged approved reference approved-groom",
+      "passed": true
+    },
+    {
+      "check": "Exact unchanged approved reference approved-groundskeeper",
+      "passed": true
+    },
+    {
+      "check": "Exact unchanged approved reference approved-presenter",
+      "passed": true
+    },
+    {
+      "check": "Exact unchanged approved reference approved-lobby-background",
+      "passed": true
+    },
+    {
+      "check": "Clerk retained byte-exact v01, not revised or selected",
+      "passed": true
+    },
+    {
+      "check": "Every prior version, approval, story/gameplay/workflow file unchanged",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/targeted-change.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/all-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/all-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency originals/bride-honey-blonde-direction-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-26-v01-v02-groom-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-26-v01-v02-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency masks/CH4-B2-26-allowed-hair-and-irises.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/CH4-B2-26-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-26-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-26-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-26-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-26-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-26-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-26-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-26-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-28-v01-v02-groom-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-28-v01-v02-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency masks/CH4-B2-28-allowed-hair-and-irises.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/CH4-B2-28-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-28-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-28-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-28-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-28-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-28-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-28-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-28-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-29-v01-v02-groom-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-29-v01-v02-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency masks/CH4-B2-29-allowed-hair-and-irises.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/CH4-B2-29-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-29-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-29-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-29-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-29-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-29-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-29-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-29-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-30-v01-v02-groom-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/CH4-B2-30-v01-v02-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency masks/CH4-B2-30-allowed-hair-and-irises.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/CH4-B2-30-changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-30-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-30-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-B2-30-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groom.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-30-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-30-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-30-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-lobby-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-30-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-27-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-27-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-27-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-B2-27-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-B2-27-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-presenter.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-presenter.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/approved-presenter.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/approved-presenter-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Byte-identical deterministic hair edit/gallery replay",
+      "passed": true
+    }
+  ]
+}

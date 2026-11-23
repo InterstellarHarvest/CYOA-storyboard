@@ -1,4 +1,4 @@
-Latest focused review: [B2-05 v02 — honey-blonde bride](b2-05-v02-hair/index.html), four UNSELECTED hair-color revisions. Every non-hair pixel and original alpha remains exact. [Before/after and approved groom comparison](b2-05-v02-hair/comparisons/all-native.png). Approved groom and exact v01 clerk are unchanged; earlier versions stay preserved.
+Latest focused review: [B2-05 v02 — blonde hair and green eyes](b2-05-v02-color/index.html), four UNSELECTED hair-color revisions. Every pixel outside hair and iris masks and original alpha remains exact. [Before/after and approved groom comparison](b2-05-v02-color/comparisons/all-native.png). Approved groom and exact v01 clerk are unchanged; earlier versions stay preserved.
 
 Public B2-05: [open the verified native/exact4× gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/1574db1d2d8e6de529c73c1aba55d4466d6ca80d/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v01/online.html) · [B2-04 completion and B2-05 publication/hashes](B2-05-REVIEW-PUBLICATION-20261123.md). All five new portraits remain UNSELECTED.
 
