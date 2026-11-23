@@ -1,3 +1,9 @@
+# Latest approval and new B2-06 review
+
+B2-05 is APPROVED/SELECTED unchanged on canonical main `f068f1005d313a3e2869f332398a97e2e4c772db`, [PR26](https://github.com/InterstellarHarvest/CYOA-storyboard/pull/26): four blonde/green-eyed bride v02 portraits plus the original precise clerk v01. [Completion/paths/hashes/provenance/gameplay handoff](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/f068f1005d313a3e2869f332398a97e2e4c772db/docs/133_CH4_B205_APPROVAL_COMPLETION_20261123.md), [exact approval receipt](B2-05-APPROVED-20261123.json), [public verification](B2-05-APPROVAL-PUBLIC-VERIFICATION-20261123.json). Historical pending labels below are superseded only for the exact five approved source PNGs. All earlier approvals, groom and unselected plumber alternatives remain untouched.
+
+New [B2-06 v01 — auctioneer/porter expression extensions](b2-06-v01/index.html): six UNSELECTED portraits, exact canonical eight-node coverage, native/exact4× approved Chapter2/3 and same-identity comparisons, source references/prompts and background composites. [Manifest](b2-06-v01/manifest.json), [production method](b2-06-v01/README.md).
+
 Latest focused review: [B2-05 v02 — blonde hair and green eyes](b2-05-v02-color/index.html), four UNSELECTED hair-color revisions. Every pixel outside hair and iris masks and original alpha remains exact. [Before/after and approved groom comparison](b2-05-v02-color/comparisons/all-native.png). Approved groom and exact v01 clerk are unchanged; earlier versions stay preserved.
 
 Public B2-05: [open the verified native/exact4× gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/1574db1d2d8e6de529c73c1aba55d4466d6ca80d/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v01/online.html) · [B2-04 completion and B2-05 publication/hashes](B2-05-REVIEW-PUBLICATION-20261123.md). All five new portraits remain UNSELECTED.

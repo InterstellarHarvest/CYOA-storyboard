@@ -1,0 +1,316 @@
+{
+  "python": "3.13.15",
+  "pillow": "12.3.0",
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "palettePolicy": "Local opaque-only64-tone fitting calibrated to approved B2-04/B2-05 portraits; not a universal cap or a visual approval test",
+  "assets": [
+    {
+      "id": "CH4-B2-31",
+      "sourceFile": "originals/CH4-B2-31-detailed.png",
+      "sourceSha256": "ed8d61cb486c2397e159f25b61a35aab2a60c45ce72338dcc232b4e968d7d993",
+      "sourceSilhouetteBox": [
+        522,
+        57,
+        1430,
+        869
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 275,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 61,
+      "quietSurfacePixelsMerged": 996,
+      "nativeWarmPlanePixelsMerged": 467,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 353,
+      "protectedRegions": [
+        [
+          195,
+          28,
+          325,
+          145
+        ],
+        [
+          190,
+          150,
+          280,
+          260
+        ],
+        [
+          340,
+          135,
+          430,
+          215
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-32",
+      "sourceFile": "originals/CH4-B2-32-detailed.png",
+      "sourceSha256": "05756240afd7c32824dc544bc703e6b7dd77b06ab07f6d66e4f31cdf6d100096",
+      "sourceSilhouetteBox": [
+        531,
+        41,
+        1346,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 239,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 62,
+      "quietSurfacePixelsMerged": 1473,
+      "nativeWarmPlanePixelsMerged": 587,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 0,
+      "protectedRegions": [
+        [
+          240,
+          28,
+          365,
+          150
+        ],
+        [
+          210,
+          130,
+          280,
+          215
+        ],
+        [
+          350,
+          190,
+          425,
+          275
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-33",
+      "sourceFile": "originals/CH4-B2-33-detailed.png",
+      "sourceSha256": "73b802655fb027964293656ee0393af59591bc5368755de43acd075297bb7aba",
+      "sourceSilhouetteBox": [
+        498,
+        65,
+        1310,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 245,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 64,
+      "quietSurfacePixelsMerged": 1605,
+      "nativeWarmPlanePixelsMerged": 758,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 0,
+      "protectedRegions": [
+        [
+          205,
+          28,
+          340,
+          150
+        ],
+        [
+          205,
+          150,
+          300,
+          230
+        ],
+        [
+          335,
+          170,
+          410,
+          270
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "silver_or_light_detail",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-34",
+      "sourceFile": "originals/CH4-B2-34-cutout.png",
+      "sourceSha256": "8821707fbdc26e72d93085ed7ee9958723624b8cb0722d79ca362b14cffb8399",
+      "sourceSilhouetteBox": [
+        585,
+        80,
+        1260,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 208,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 59,
+      "quietSurfacePixelsMerged": 590,
+      "nativeWarmPlanePixelsMerged": 431,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 0,
+      "protectedRegions": [
+        [
+          235,
+          28,
+          365,
+          150
+        ],
+        [
+          235,
+          145,
+          335,
+          225
+        ],
+        [
+          330,
+          205,
+          420,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-35",
+      "sourceFile": "originals/CH4-B2-35-detailed.png",
+      "sourceSha256": "31995eaa53e12ba52fdf3bba8cb1da502b42fecf0220ee6609a8fac44816e4df",
+      "sourceSilhouetteBox": [
+        586,
+        73,
+        1232,
+        856
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 203,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 60,
+      "quietSurfacePixelsMerged": 934,
+      "nativeWarmPlanePixelsMerged": 356,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 243,
+      "protectedRegions": [
+        [
+          220,
+          28,
+          340,
+          150
+        ],
+        [
+          215,
+          170,
+          330,
+          250
+        ],
+        [
+          280,
+          215,
+          370,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "silver_or_light_detail",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-36",
+      "sourceFile": "originals/CH4-B2-36-detailed.png",
+      "sourceSha256": "8bb399353241a1814fa13f2aae03f4be162ae3204dfcf593a80da897950f84db",
+      "sourceSilhouetteBox": [
+        531,
+        61,
+        1364,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 250,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 58,
+      "quietSurfacePixelsMerged": 1037,
+      "nativeWarmPlanePixelsMerged": 374,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 153,
+      "protectedRegions": [
+        [
+          215,
+          28,
+          340,
+          150
+        ],
+        [
+          220,
+          175,
+          335,
+          270
+        ],
+        [
+          345,
+          140,
+          445,
+          220
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    }
+  ]
+}

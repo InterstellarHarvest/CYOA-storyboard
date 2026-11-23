@@ -1,0 +1,380 @@
+{
+  "canonicalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+  "group": {
+    "id": "B2-06",
+    "title": "Auctioneer and porter expression extensions",
+    "note": "Three remaining auctioneer poses and three porter poses; retain established identities.",
+    "inventoryIds": [
+      "portrait:hotel_auctioneer:delighted",
+      "portrait:hotel_porter:alarmed",
+      "portrait:hotel_porter:curious",
+      "portrait:hotel_porter:relieved",
+      "portrait:hotel_auctioneer:disappointed",
+      "portrait:hotel_auctioneer:bureaucratic"
+    ],
+    "primaryUnits": 6,
+    "stateFamilies": 0,
+    "nodeIds": [
+      "hotel_auction_testimonial",
+      "hotel_auctioneer_lot14_recall",
+      "hotel_chair_stapler_caught",
+      "hotel_collection_slip_spotted",
+      "hotel_collection_staff_pass",
+      "hotel_collection_staff_pass_recognized",
+      "hotel_lot61_pod_declined",
+      "hotel_lot61_pod_escaped"
+    ],
+    "generationStarted": false
+  },
+  "storyFile": "story/chapters/chapter-04.wip.json",
+  "nodes": {
+    "hotel_auction_testimonial": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "delighted",
+      "effects": {
+        "set": {
+          "ch4_auction_demonstrator": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The auctioneer's eyes light up."
+        },
+        "A testimonial! Ladies and gentlemen, our exceptional water pressure, personally verified by this gentleman!",
+        {
+          "desc": "A wedding guest raises her hand."
+        },
+        {
+          "say": "Excuse me. Is it self-cleaning?",
+          "who": "hotel_wedding_guest"
+        },
+        "Madam, it washed this gentleman and half the corridor without anyone touching a single control!",
+        {
+          "say": "Papa, that's a burst pipe!",
+          "who": "hotel_bride"
+        },
+        "Precisely! Fully automatic!",
+        {
+          "desc": "The guest nods appreciatively. The auctioneer turns toward his clerk."
+        },
+        "Make a note of our enthusiastic demonstrator!",
+        {
+          "desc": "The clerk writes PRODUCT DEMONSTRATOR — GENTLEMAN, DAMP. You stare at the entry."
+        },
+        "Splendid! Moving along!",
+        {
+          "desc": "He raises his gavel."
+        }
+      ],
+      "choices": [
+        {
+          "id": "demo_to_chair",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_auction_chair_lot31"
+        }
+      ]
+    },
+    "hotel_auctioneer_lot14_recall": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "bureaucratic",
+      "effects": {
+        "set": {
+          "ch4_lot14_catalogue_correction": true,
+          "ch4_valve_wheel_recovered": true,
+          "ch4_lot14_recalled_temporary": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You point to the original receipt."
+        },
+        {
+          "say": "LOT FOURTEEN. WATER SHUTOFF WHEEL.",
+          "who": "visitor"
+        },
+        {
+          "say": "Hmm. The catalogue lists it as naval decoration.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "IT WAS ATTACHED TO A WATER PIPE!",
+          "who": "visitor"
+        },
+        {
+          "say": "Oh, dear. Incorrectly described merchandise.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "SO THE SALE IS CANCELLED?",
+          "who": "visitor"
+        },
+        {
+          "say": "Certainly not. All sales are final.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "THEN GIVE ME THE WHEEL!",
+          "who": "visitor"
+        },
+        {
+          "say": "Naturally. We must recall it for inspection.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "He stamps the correction form: RECALL AUTHORIZED."
+        },
+        {
+          "desc": "Two porters retrieve the brass wheel from Commodore Bixby's ice-bucket boat."
+        },
+        {
+          "say": "But I've only just launched her!",
+          "who": "hotel_commodore_bixby"
+        },
+        {
+          "say": "For legal purposes, Commodore, you haven't taken delivery.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "The porters hand you the wheel."
+        },
+        {
+          "say": "Please return it when you've finished inspecting it.",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "You leave before he can reconsider."
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot14_recall_return_wheel",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_wheel_return"
+        }
+      ],
+      "notes": "Owner-approved wheel recovery. Temporary inspection recall leaves original sale legally final. Wheel is a story prop, not an inventory slot or added fee. Reuse existing plumber return and shutoff scene."
+    },
+    "hotel_chair_stapler_caught": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_porter",
+      "pose": "alarmed",
+      "text": [
+        {
+          "desc": "You wedge the stapler beneath the upholstered armrest. RRRIP. The stitching tears."
+        },
+        "Sir! You've damaged the merchandise!",
+        {
+          "say": "Good heavens! Is that your chair?",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "You shake your head."
+        },
+        {
+          "say": "Well, it may very shortly have to be!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "say": "Papa, he hasn't purchased anything!",
+          "who": "hotel_bride"
+        },
+        {
+          "say": "Then I suggest we find him a buyer before he damages anything else!",
+          "who": "hotel_auctioneer"
+        },
+        {
+          "desc": "You retrieve your stapler. The chair's upholstery is open, but everyone has noticed."
+        }
+      ],
+      "choices": [
+        {
+          "id": "stapler_caught_focus",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_chair_ring_focus"
+        }
+      ]
+    },
+    "hotel_collection_slip_spotted": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/boiler_access",
+      "speaker": "hotel_porter",
+      "pose": "alarmed",
+      "text": [
+        {
+          "desc": "You squeeze behind Lot Thirty-One as the porters shove. Your sleeve catches on the trim. The chair swings around. Unfortunately, so do you."
+        },
+        {
+          "desc": "You find yourself face-to-face with a startled porter."
+        },
+        "Sir! You're attached to the merchandise!",
+        {
+          "say": "Is he included?",
+          "who": "hotel_second_porter"
+        },
+        {
+          "desc": "The first porter examines his delivery slip."
+        },
+        "Certainly not. It says so three times.",
+        {
+          "desc": "He carefully detaches your sleeve from the chair, produces a small paper tag, and pins it to your coat: NOT INCLUDED."
+        },
+        "There. That should prevent any further confusion.",
+        {
+          "desc": "He opens the boiler-room door and ushers you through."
+        },
+        "Please keep clear of the collection area, sir.",
+        {
+          "desc": "The door closes behind you. You look down at your new label. Apparently, you're no longer considered merchandise. A small victory."
+        },
+        {
+          "desc": "Beyond the nearest boiler, the hem of a wedding coat disappears behind the pipes."
+        }
+      ],
+      "choices": [
+        {
+          "id": "collection_spotted_to_groom",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_boiler_pressure_intro"
+        }
+      ]
+    },
+    "hotel_collection_staff_pass": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/service_passage",
+      "speaker": "hotel_porter",
+      "pose": "curious",
+      "text": [
+        {
+          "desc": "You produce your Temporary Staff Pass. The porter examines it, looks at Lot Thirty-One, and consults his clipboard."
+        }
+      ],
+      "choices": [
+        {
+          "id": "collection_staff_pass_known",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "if": {
+            "flag": "ch4_lot31_staff_escort"
+          },
+          "to": "hotel_collection_staff_pass_recognized"
+        },
+        {
+          "id": "collection_staff_pass_first",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "if": {
+            "notFlag": "ch4_lot31_staff_escort"
+          },
+          "to": "hotel_collection_staff_pass_first"
+        }
+      ]
+    },
+    "hotel_collection_staff_pass_recognized": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/service_passage",
+      "speaker": "hotel_porter",
+      "pose": "relieved",
+      "text": [
+        "Oh! Our visiting inspector. Back again?",
+        {
+          "say": "Excellent. Perhaps he can explain why this chair won't fit through the door.",
+          "who": "hotel_second_porter"
+        }
+      ],
+      "choices": [
+        {
+          "id": "collection_staff_known_authorization",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_collection_staff_pass_authorized"
+        }
+      ]
+    },
+    "hotel_lot61_pod_declined": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "disappointed",
+      "text": [
+        {
+          "desc": "The auctioneer looks disappointed."
+        },
+        "A cautious gentleman! Quite right! Safety first!",
+        {
+          "desc": "He turns toward the audience."
+        },
+        "Who'll give me twenty-five?",
+        {
+          "desc": "The porters begin wheeling the pod toward the collection area. You leave before anybody asks you to help."
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot61_declined_seek_toilet",
+          "kind": "action",
+          "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
+          "to": "hotel_boiler_pressure_intro"
+        }
+      ]
+    },
+    "hotel_lot61_pod_escaped": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/lobby",
+      "speaker": "hotel_auctioneer",
+      "pose": "delighted",
+      "effects": {
+        "set": {
+          "ch4_pod_survived_packing": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You step inside. The door closes with a reassuring click. There is a toilet, walls, privacy. You are almost overcome with gratitude."
+        },
+        {
+          "desc": "Outside, the auctioneer raises his voice."
+        },
+        "Ladies and gentlemen! Observe the remarkable efficiency of our emergency sanitation system!",
+        {
+          "desc": "You reach toward your belt."
+        },
+        "And now, its most impressive feature!",
+        {
+          "desc": "A mechanical clunk comes from beneath the floor."
+        },
+        "Automatic packing for convenient transport!",
+        {
+          "desc": "The walls begin moving inward. You grab the door handle. It won't turn."
+        },
+        {
+          "desc": "You throw your weight against the door. The latch gives way. You tumble onto the auction floor."
+        },
+        {
+          "desc": "Behind you, the booth folds inward with a series of metallic bangs. Seconds later, it has become a remarkably compact shipping case. The audience applauds."
+        },
+        "Extraordinary! Completely portable!",
+        {
+          "desc": "You stand up. Your clothing is intact. Your dignity is not. You still need a toilet."
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot61_escaped_seek_toilet",
+          "kind": "action",
+          "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
+          "to": "hotel_boiler_pressure_intro"
+        }
+      ]
+    }
+  },
+  "runtimeBindingsChanged": false
+}

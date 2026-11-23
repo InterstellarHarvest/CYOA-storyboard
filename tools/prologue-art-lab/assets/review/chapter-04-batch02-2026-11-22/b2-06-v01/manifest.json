@@ -1,0 +1,802 @@
+{
+  "title": "Chapter4 B2-06 v01 \u2014 Auctioneer and porter expression extensions",
+  "groupId": "B2-06",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "f068f1005d313a3e2869f332398a97e2e4c772db",
+  "reviewPreservationBaseline": "c6dbbaff7bf0edbda7a8ddff14556588c1eacd73",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "primaryUnits": 6,
+  "storyNodeCoverage": [
+    "hotel_auction_testimonial",
+    "hotel_auctioneer_lot14_recall",
+    "hotel_chair_stapler_caught",
+    "hotel_collection_slip_spotted",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_recognized",
+    "hotel_lot61_pod_declined",
+    "hotel_lot61_pod_escaped"
+  ],
+  "productionIntegrationPerformed": false,
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "assets": [
+    {
+      "id": "CH4-B2-31",
+      "title": "Auctioneer \u2014 delighted",
+      "version": "v01",
+      "key": "portraits:hotel_auctioneer:delighted",
+      "inventoryId": "portrait:hotel_auctioneer:delighted",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_auction_testimonial",
+        "hotel_lot61_pod_escaped"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "primaryScene": "grand_bellevue/lobby",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-31-v01.png",
+        "sha256": "1d1121394a9a628116f8d110ba122159c0ae32894414b9bec4ec641e662f84e4",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-31-4x.png",
+        "sha256": "1ba0886fbd2561a3a1a6541b13a17c5a1d660c2da7b43212b8d5d60e30aaeba8",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-31-detailed.png",
+        "sha256": "ed8d61cb486c2397e159f25b61a35aab2a60c45ce72338dcc232b4e968d7d993",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "effectiveSource": {
+        "file": "originals/CH4-B2-31-detailed.png",
+        "sha256": "ed8d61cb486c2397e159f25b61a35aab2a60c45ce72338dcc232b4e968d7d993",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "identityReference": "references/approved-auctioneer.png",
+      "composites": {
+        "grand_bellevue/lobby": {
+          "native": {
+            "file": "previews/CH4-B2-31-lobby-native.png",
+            "sha256": "b73da523b68b8a52c6ee8dcf192b11f5db4c1885860a5181bb9c9f44e21c81ef",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-31-lobby-4x.png",
+            "sha256": "f4c316e2b0cd3f85aa86a951b85c2917f2deeb97a4806202a146237dc092364a",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-lobby-background.png"
+        }
+      },
+      "composite": {
+        "file": "previews/CH4-B2-31-lobby-native.png",
+        "sha256": "b73da523b68b8a52c6ee8dcf192b11f5db4c1885860a5181bb9c9f44e21c81ef",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-31-detailed.txt",
+      "processingSource": "source/native_build.py",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-32",
+      "title": "Porter \u2014 alarmed",
+      "version": "v01",
+      "key": "portraits:hotel_porter:alarmed",
+      "inventoryId": "portrait:hotel_porter:alarmed",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_chair_stapler_caught",
+        "hotel_collection_slip_spotted"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/boiler_access",
+        "grand_bellevue/lobby"
+      ],
+      "primaryScene": "grand_bellevue/lobby",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-32-v01.png",
+        "sha256": "19653d7cb5e1a04cc87c195b551d9533f7bb5aac0f8a5842c45fa56ba4d85061",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-32-4x.png",
+        "sha256": "17c23d0472eed3a894b110f444fcbc3c8905430648caf875edf0b917633b7f10",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-32-detailed.png",
+        "sha256": "05756240afd7c32824dc544bc703e6b7dd77b06ab07f6d66e4f31cdf6d100096",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "effectiveSource": {
+        "file": "originals/CH4-B2-32-detailed.png",
+        "sha256": "05756240afd7c32824dc544bc703e6b7dd77b06ab07f6d66e4f31cdf6d100096",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "identityReference": "references/approved-porter.png",
+      "composites": {
+        "grand_bellevue/boiler_access": {
+          "native": {
+            "file": "previews/CH4-B2-32-boiler_access-native.png",
+            "sha256": "19b73c6893451de92e4e342341d263fb46b374a046e6baa74626ffb45063a069",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-32-boiler_access-4x.png",
+            "sha256": "49b8cfae3802b9049861b35f30ef84b94bdd71ce4e4a5a9c1cd953638d765575",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-boiler-background.png"
+        },
+        "grand_bellevue/lobby": {
+          "native": {
+            "file": "previews/CH4-B2-32-lobby-native.png",
+            "sha256": "f8282ce373b8fea38fd45154d91964f3cadcc526ae914667bd6e8f659ebd14b0",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-32-lobby-4x.png",
+            "sha256": "fe5dc7f6cdb70f4ee81b4e1f07ee2fda8d5e13df2fb93686b4a2b102651fafe5",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-lobby-background.png"
+        }
+      },
+      "composite": {
+        "file": "previews/CH4-B2-32-lobby-native.png",
+        "sha256": "f8282ce373b8fea38fd45154d91964f3cadcc526ae914667bd6e8f659ebd14b0",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-32-detailed.txt",
+      "processingSource": "source/native_build.py",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-33",
+      "title": "Porter \u2014 curious",
+      "version": "v01",
+      "key": "portraits:hotel_porter:curious",
+      "inventoryId": "portrait:hotel_porter:curious",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_collection_staff_pass"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/service_passage"
+      ],
+      "primaryScene": "grand_bellevue/service_passage",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-33-v01.png",
+        "sha256": "532a62994a8e3d5976144136f43c8699b3f0ddec291db7a05af412b2d06da6a0",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-33-4x.png",
+        "sha256": "fd04d1aacf9b41efb06bdb93e3297bfdd341c08ef54845fbeaf6aba8c62c6b94",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-33-detailed.png",
+        "sha256": "73b802655fb027964293656ee0393af59591bc5368755de43acd075297bb7aba",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "effectiveSource": {
+        "file": "originals/CH4-B2-33-detailed.png",
+        "sha256": "73b802655fb027964293656ee0393af59591bc5368755de43acd075297bb7aba",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "identityReference": "references/approved-porter.png",
+      "composites": {
+        "grand_bellevue/service_passage": {
+          "native": {
+            "file": "previews/CH4-B2-33-service_passage-native.png",
+            "sha256": "12fbc2cd1ddb37ee8c0032a8ab54e49bff8475bb0cc3f207e28761443148e93b",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-33-service_passage-4x.png",
+            "sha256": "63fd10f1f787dedbd532aab92d3b704ce84c78edb89f14b09df176366eda99a1",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-service-background.png"
+        }
+      },
+      "composite": {
+        "file": "previews/CH4-B2-33-service_passage-native.png",
+        "sha256": "12fbc2cd1ddb37ee8c0032a8ab54e49bff8475bb0cc3f207e28761443148e93b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-33-detailed.txt",
+      "processingSource": "source/native_build.py",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-34",
+      "title": "Porter \u2014 relieved",
+      "version": "v01",
+      "key": "portraits:hotel_porter:relieved",
+      "inventoryId": "portrait:hotel_porter:relieved",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_collection_staff_pass_recognized"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/service_passage"
+      ],
+      "primaryScene": "grand_bellevue/service_passage",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-34-v01.png",
+        "sha256": "0be33df015e9eae683021df5b4e128a80c857fc89ae3fc081db370bed8cfef75",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-34-4x.png",
+        "sha256": "aa880a3b074b553da69e07088ee4adf3e9bbcebde4ab46c4a598849542291f87",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-34-detailed.png",
+        "sha256": "8249192058cc42c1a5ed4d8b6e8c55cbeb1095c3ea5ce588e6068538725105d1",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "effectiveSource": {
+        "file": "originals/CH4-B2-34-cutout.png",
+        "sha256": "8821707fbdc26e72d93085ed7ee9958723624b8cb0722d79ca362b14cffb8399",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "identityReference": "references/approved-porter.png",
+      "composites": {
+        "grand_bellevue/service_passage": {
+          "native": {
+            "file": "previews/CH4-B2-34-service_passage-native.png",
+            "sha256": "b8cb72028d1bca936723e8e57991bd0bcd28edc0c51dd30f1fc5f7d939b61bfe",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-34-service_passage-4x.png",
+            "sha256": "ed67a5a265008ba1bba871ca5c3892d78eb7658d588a4ef9ce4a2a8ec9121557",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-service-background.png"
+        }
+      },
+      "composite": {
+        "file": "previews/CH4-B2-34-service_passage-native.png",
+        "sha256": "b8cb72028d1bca936723e8e57991bd0bcd28edc0c51dd30f1fc5f7d939b61bfe",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-34-detailed.txt",
+      "processingSource": "source/native_build.py",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-35",
+      "title": "Auctioneer \u2014 disappointed",
+      "version": "v01",
+      "key": "portraits:hotel_auctioneer:disappointed",
+      "inventoryId": "portrait:hotel_auctioneer:disappointed",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_lot61_pod_declined"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "primaryScene": "grand_bellevue/lobby",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-35-v01.png",
+        "sha256": "07ebaa5a00f4119855a9b6ba319ce3614b2b3c710243857f7756b08022cb33fc",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-35-4x.png",
+        "sha256": "ad4fa451dc57d67d02dcdee2400e8daabfbc8263414dfa8a2feecf13b3505534",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-35-detailed.png",
+        "sha256": "31995eaa53e12ba52fdf3bba8cb1da502b42fecf0220ee6609a8fac44816e4df",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "effectiveSource": {
+        "file": "originals/CH4-B2-35-detailed.png",
+        "sha256": "31995eaa53e12ba52fdf3bba8cb1da502b42fecf0220ee6609a8fac44816e4df",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "identityReference": "references/approved-auctioneer.png",
+      "composites": {
+        "grand_bellevue/lobby": {
+          "native": {
+            "file": "previews/CH4-B2-35-lobby-native.png",
+            "sha256": "7ad5e0e13ff8e96db4e78ef830e1b7ef7beed0e4edb32e60a29977ac6dfb2794",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-35-lobby-4x.png",
+            "sha256": "5aea38bc7989cb4fef8335cb519f686eee3fbf5c5607d55941143ecd550f1a98",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-lobby-background.png"
+        }
+      },
+      "composite": {
+        "file": "previews/CH4-B2-35-lobby-native.png",
+        "sha256": "7ad5e0e13ff8e96db4e78ef830e1b7ef7beed0e4edb32e60a29977ac6dfb2794",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-35-detailed.txt",
+      "processingSource": "source/native_build.py",
+      "derivation": "evidence/derivation.json"
+    },
+    {
+      "id": "CH4-B2-36",
+      "title": "Auctioneer \u2014 bureaucratic",
+      "version": "v01",
+      "key": "portraits:hotel_auctioneer:bureaucratic",
+      "inventoryId": "portrait:hotel_auctioneer:bureaucratic",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "primaryScene": "grand_bellevue/lobby",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-36-v01.png",
+        "sha256": "cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-36-4x.png",
+        "sha256": "c23e75561cd23f5c9ae95acdbce8157d45a8db2fc028c1da37b57b80b16f3ea4",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-36-detailed.png",
+        "sha256": "8bb399353241a1814fa13f2aae03f4be162ae3204dfcf593a80da897950f84db",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "effectiveSource": {
+        "file": "originals/CH4-B2-36-detailed.png",
+        "sha256": "8bb399353241a1814fa13f2aae03f4be162ae3204dfcf593a80da897950f84db",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "identityReference": "references/approved-auctioneer.png",
+      "composites": {
+        "grand_bellevue/lobby": {
+          "native": {
+            "file": "previews/CH4-B2-36-lobby-native.png",
+            "sha256": "0e73cb2882dffadd87c21f546c10e82f0e22519e5e3b31525c9bcea591b0f4a9",
+            "dimensions": [
+              564,
+              278
+            ],
+            "mode": "RGB"
+          },
+          "preview4x": {
+            "file": "previews/CH4-B2-36-lobby-4x.png",
+            "sha256": "4ce1dbdc5dee4b2123a9a788cd1d2a1e40701421dfd1b371fb1e4616da3cdcf8",
+            "dimensions": [
+              2256,
+              1112
+            ],
+            "mode": "RGB"
+          },
+          "backgroundReference": "references/approved-lobby-background.png"
+        }
+      },
+      "composite": {
+        "file": "previews/CH4-B2-36-lobby-native.png",
+        "sha256": "0e73cb2882dffadd87c21f546c10e82f0e22519e5e3b31525c9bcea591b0f4a9",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "prompts/CH4-B2-36-detailed.txt",
+      "processingSource": "source/native_build.py",
+      "derivation": "evidence/derivation.json"
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-auctioneer": {
+      "registryKey": "portraits:hotel_auctioneer:showman",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/portraits/hotel_auctioneer/showman.png",
+      "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/native/CH4-03-auctioneer-source-derived-v08.png"
+      }
+    },
+    "approved-porter": {
+      "registryKey": "portraits:hotel_porter:businesslike",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/portraits/hotel_porter/businesslike.png",
+      "sha256": "863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-20-v01.png"
+      }
+    },
+    "approved-porter-practical": {
+      "registryKey": "portraits:hotel_porter:practical",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/portraits/hotel_porter/practical.png",
+      "sha256": "646386199bfad2bd77e73bb3137dfac9c5b8effa85e324e906208ae48a62c11e",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-22-v01.png"
+      }
+    },
+    "approved-porter-uncertain": {
+      "registryKey": "portraits:hotel_porter:uncertain",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/portraits/hotel_porter/uncertain.png",
+      "sha256": "25d6ac8823dff67881c076c2405e50c7229375ab98bb5e4324511b2f7033f77d",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-21-v01.png"
+      }
+    },
+    "approved-groundskeeper": {
+      "registryKey": "portraits:groundskeeper:idle",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/groundskeeper/groundskeeper_idle.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "approved-presenter": {
+      "registryKey": "portraits:pavilion_presenter:idle",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
+    "approved-lobby-background": {
+      "registryKey": "scenes:grand_bellevue/lobby#portraitBackground",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png"
+      }
+    },
+    "approved-service-background": {
+      "registryKey": "scenes:grand_bellevue/service_passage#portraitBackground",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage/portraitBackground.png",
+      "sha256": "b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-23-v01.png"
+      }
+    },
+    "approved-boiler-background": {
+      "registryKey": "scenes:grand_bellevue/boiler_access#portraitBackground",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
+      "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png"
+      }
+    },
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "f068f1005d313a3e2869f332398a97e2e4c772db",
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    }
+  },
+  "method": "Built-in imagegen detailed references preserving approved identities, followed by native opaque-only palette fit, protected cluster/silhouette/fringe cleanup and editable material layers"
+}
