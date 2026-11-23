@@ -1,0 +1,490 @@
+{
+  "ownerDecision": "Nate approves/selects all seven B2-04 v01 primary assets unchanged, and approves/preserves the three supplemental conditional production reference states without runtime bindings.",
+  "decisionDate": "2026-11-23",
+  "status": "APPROVED_AND_SELECTED_PRIMARY_APPROVED_PRESERVED_SUPPLEMENTAL",
+  "approvalSourceCommit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+  "canonicalBase": "0e83a6ed4d781d484697d475c692a4e47b63123b",
+  "registrationTool": "tools/sync/register-art.mjs",
+  "gameplayIntegrationPerformed": false,
+  "runtimeAssetPathsAssigned": false,
+  "assets": [
+    {
+      "id": "CH4-B2-19",
+      "title": "Service passage — Lot31 at collection",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "a5d416c47786a070c3a6acfdba91e2f7756cea4418f39425fea23511608220f9",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/service_passage",
+      "storyNodeIds": [
+        "hotel_chair_follow_collection",
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_stairs",
+        "hotel_collection_ring_focus",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_ring_in_pocket",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass",
+        "hotel_collection_staff_pass_first",
+        "hotel_collection_staff_pass_recognized",
+        "hotel_collection_staff_pass_authorized",
+        "hotel_bride_service_shortcut",
+        "hotel_wedding_service_shortcut",
+        "hotel_water_outage_confirmation"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-19-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-19-4x.png",
+        "sha256": "7fc34803ec401769d87a49752ee7c0a9f026b4ab507959b6ddaa81e6e255faee"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/service_passage.png"
+    },
+    {
+      "id": "CH4-B2-20",
+      "title": "Porter — businesslike",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "registryKey": "portraits:hotel_porter:businesslike",
+      "storyNodeIds": [
+        "hotel_stall_porter_protest",
+        "hotel_collection_ring_stapler_recovery"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-20-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-20-4x.png",
+        "sha256": "d079ab6068fbfc0ea2fdbd0c2ee052aee3ef80365f7174a02158635ea232108c"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_porter/businesslike.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_porter/businesslike.png"
+    },
+    {
+      "id": "CH4-B2-21",
+      "title": "Porter — uncertain",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "25d6ac8823dff67881c076c2405e50c7229375ab98bb5e4324511b2f7033f77d",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "registryKey": "portraits:hotel_porter:uncertain",
+      "storyNodeIds": [
+        "hotel_chair_vegetation_inspection",
+        "hotel_collection_staff_pass_first"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-21-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-21-4x.png",
+        "sha256": "4e6e45c557f456e1092f14cfdb3e2322276b6707e1a1c45ca65203fb80d581ba"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_porter/uncertain.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_porter/uncertain.png"
+    },
+    {
+      "id": "CH4-B2-22",
+      "title": "Porter — practical",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "646386199bfad2bd77e73bb3137dfac9c5b8effa85e324e906208ae48a62c11e",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "registryKey": "portraits:hotel_porter:practical",
+      "storyNodeIds": [
+        "hotel_chair_staff_escort",
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass_authorized"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-22-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-22-4x.png",
+        "sha256": "601d7b52b8e636b8c08f89a2eeece913bc85b58c98d7370792d063dfd45a1ef6"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_porter/practical.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_porter/practical.png"
+    },
+    {
+      "id": "CH4-B2-23",
+      "title": "Service-passage conversation background",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "portrait-background",
+      "registryKey": "scenes:grand_bellevue/service_passage#portraitBackground",
+      "storyNodeIds": [
+        "hotel_chair_staff_escort_loading",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_porters_groom_clue",
+        "hotel_collection_staff_pass",
+        "hotel_collection_staff_pass_first",
+        "hotel_collection_staff_pass_recognized",
+        "hotel_collection_staff_pass_authorized",
+        "hotel_water_outage_confirmation"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-23-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-23-4x.png",
+        "sha256": "9d0877415cbfb8b6a1893b35accf00e2dddc1120549dc238d08a68b179e5c865"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage/portraitBackground.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/service_passage.png"
+    },
+    {
+      "id": "CH4-B2-24",
+      "title": "Auction armrest — ring caught",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "facb4981ccef1f270f200346333ce108a9db7679fb383982d4704e8b65fa0fc7",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "focus",
+      "registryKey": "focus:grand_bellevue/auction_floor/chair_armrest",
+      "storyNodeIds": [
+        "hotel_chair_ring_focus"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-24-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-24-4x.png",
+        "sha256": "7bd1f624f73267f593a6551fadb6d54a7b156c91574ba7b1544aa1f192011232"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/focus/grand_bellevue/auction_floor/chair_armrest.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/focus/grand_bellevue/auction_floor/chair_armrest.png"
+    },
+    {
+      "id": "CH4-B2-25",
+      "title": "Collection armrest — ring caught",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "68bbf32b040a984201dfb0f5b83b1315cf391848848500b1e7ee97819a5f5645",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "focus",
+      "registryKey": "focus:grand_bellevue/collection_stairs/chair_armrest",
+      "storyNodeIds": [
+        "hotel_collection_ring_focus"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-25-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-25-4x.png",
+        "sha256": "4de5c62af4652e3f2583b132fc5a653f41b603b3be1a395aafb611931e407faf"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "SELECTED",
+      "canonicalSelectedPath": "assets/selected/pending-integration/focus/grand_bellevue/collection_stairs/chair_armrest.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/focus/grand_bellevue/collection_stairs/chair_armrest.png"
+    }
+  ],
+  "supplementalReferences": [
+    {
+      "id": "CH4-B2-24-open",
+      "title": "Auction armrest — seam opened, ring still caught",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "a90e705303261114f882f0f270c195716f1a6e6b7384f6792373bc650c9b204c",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "focus-state",
+      "registryKey": null,
+      "storyNodeIds": [
+        "hotel_chair_stapler_stealth",
+        "hotel_chair_ring_focus"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-24-open-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-24-open-4x.png",
+        "sha256": "60edf3e6c2d2774057fe96c52707f79ae8cdb4ee53e4820e0c30920062f41e08"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-04/CH4-B2-24-open-v01.png",
+      "baseFocusKey": "focus:grand_bellevue/auction_floor/chair_armrest",
+      "baseAssetId": "CH4-B2-24",
+      "authoredEvidence": {
+        "id": "CH4-B2-24-open",
+        "baseAssetId": "CH4-B2-24",
+        "baseFocusKey": "grand_bellevue/auction_floor/chair_armrest",
+        "canonicalKey": null,
+        "title": "Auction armrest — seam opened, ring still caught",
+        "authoredCondition": {
+          "flag": "ch4_chair_seam_open"
+        },
+        "nodeIds": [
+          "hotel_chair_stapler_stealth",
+          "hotel_chair_ring_focus"
+        ],
+        "truth": "The seam is separated just enough; ring still caught by pale blue ribbon and not yet in inventory. No stapler remains in the image."
+      },
+      "implementationBoundaries": "Conditional production reference only. No canonical Focus key, page, node, mode, runtime binding or assetPath is introduced. Integration must resolve existing authored conditions separately."
+    },
+    {
+      "id": "CH4-B2-25-slipped",
+      "title": "Collection armrest — slipped ring beneath wooden brace",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "afc5ba21cf2b472a762538ee9bbeb8ae571f64e27815d36a3849fd9ba5dd6846",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "focus-state",
+      "registryKey": null,
+      "storyNodeIds": [
+        "hotel_ring_slips",
+        "hotel_collection_ring_focus"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-25-slipped-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-25-slipped-4x.png",
+        "sha256": "f703075ad6134e23dabbf13b4c1172835eaae9bdc3f24bd393fcd97a148fc0dd"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-04/CH4-B2-25-slipped-v01.png",
+      "baseFocusKey": "focus:grand_bellevue/collection_stairs/chair_armrest",
+      "baseAssetId": "CH4-B2-25",
+      "authoredEvidence": {
+        "id": "CH4-B2-25-slipped",
+        "baseAssetId": "CH4-B2-25",
+        "baseFocusKey": "grand_bellevue/collection_stairs/chair_armrest",
+        "canonicalKey": null,
+        "title": "Collection armrest — slipped ring beneath wooden brace",
+        "authoredCondition": {
+          "flag": "ch4_ring_slipped_inside_chair"
+        },
+        "nodeIds": [
+          "hotel_ring_slips",
+          "hotel_collection_ring_focus"
+        ],
+        "truth": "Ring is detached from ribbon and visible deeper beneath the wooden brace only at the tilted collection camera; it remains unreachable by fingers."
+      },
+      "implementationBoundaries": "Conditional production reference only. No canonical Focus key, page, node, mode, runtime binding or assetPath is introduced. Integration must resolve existing authored conditions separately."
+    },
+    {
+      "id": "CH4-B2-25-recovered",
+      "title": "Collection armrest — ring recovered, cavity empty",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "6cd99a639036a2ae746d7e7bcaca30a4d3914ebb125a3a59fde62e3a37f7ade1",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "focus-state",
+      "registryKey": null,
+      "storyNodeIds": [
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-25-recovered-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/manifest.json",
+        "sha256": "1d1134e958bc8262f7bf6d34bdd32e7d8bb20df308d8742ede0576726e3a8e20"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/previews/CH4-B2-25-recovered-4x.png",
+        "sha256": "71044ff294d0619c1725fdf115b4bbc2bd7ad8ed3e7b7345b44c473e632f96db"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "runtimeBindingInstalled": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-04/CH4-B2-25-recovered-v01.png",
+      "baseFocusKey": "focus:grand_bellevue/collection_stairs/chair_armrest",
+      "baseAssetId": "CH4-B2-25",
+      "authoredEvidence": {
+        "id": "CH4-B2-25-recovered",
+        "baseAssetId": "CH4-B2-25",
+        "baseFocusKey": "grand_bellevue/collection_stairs/chair_armrest",
+        "canonicalKey": null,
+        "title": "Collection armrest — ring recovered, cavity empty",
+        "authoredInventoryEvidence": {
+          "has": "wedding_ring_lot31"
+        },
+        "nodeIds": [
+          "hotel_collection_ring_porter_recovery",
+          "hotel_collection_ring_stapler_recovery"
+        ],
+        "truth": "After explicit recovery gives the ring, the cavity no longer contains it. Ribbon and existing loose upholstery remain; no new damage is invented.",
+        "bindingNote": "Post-recovery object-state reference only. The authored recovery nodes are dialogue; this does not propose displaying Focus there or changing their mode."
+      },
+      "implementationBoundaries": "Conditional production reference only. No canonical Focus key, page, node, mode, runtime binding or assetPath is introduced. Integration must resolve existing authored conditions separately."
+    }
+  ],
+  "plumberAlternatives": "Remain separate and UNSELECTED; approved B2-01 v01 portraits remain selected.",
+  "validation": {
+    "selectionPreservationChecks": 365,
+    "previousSelectionsPreserved": 168,
+    "canonicalCheck": "PASS",
+    "syncRegressionChecks": 23,
+    "chapter3ReferenceGuards": 10,
+    "storyboardSmoke": "PASS",
+    "fatalExport": "PASS",
+    "artLabStatic": "PASS",
+    "selectedArtworkBrowserChecks": 60,
+    "browserEngines": [
+      "Chromium",
+      "Firefox"
+    ]
+  }
+}

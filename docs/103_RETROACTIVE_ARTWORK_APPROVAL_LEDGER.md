@@ -442,3 +442,8 @@ Nate approves/selects CH4-B2-06/07/08 v02, CH4-B2-09 v03, CH4-B2-10/11 v01 uncha
 ## Chapter 4 B2-03 v01 exact owner approval — 2026-11-23
 
 Nate explicitly approves/selects all seven B2-03 v01 assets from24c79bff8d33b5997ccb6b7aa7bb86293afef291 unchanged: CH4-B2-12 through18. [docs/131 completion, exact hashes, canonical mappings and Gameplay PMO handoff](131_CH4_B203_APPROVAL_COMPLETION_20261123.md) and accompanying JSON/verifier pin the exact inputs. All prior approvals and B2-01 v01 remain unchanged; B2-01 alternative plumber portraits remain separate and unselected. No narrative/gameplay/engine integration.
+
+
+## Chapter 4 B2-04 — owner approval, 2026-11-23
+
+Nate APPROVES/SELECTS all seven primary v01 assets CH4-B2-19 through CH4-B2-25 unchanged, and APPROVES/PRESERVES the three conditional production references CH4-B2-24-open / CH4-B2-25-slipped / CH4-B2-25-recovered. Exclusive immutable source `3804fa2013aeb81e17236e4995e2ef1e9596d404`. [Exact paths/hashes, conditions, provenance and gameplay handoff](132_CH4_B204_APPROVAL_COMPLETION_20261123.md). No supplemental canonical Focus IDs, pages, nodes, modes or runtime bindings. All prior approvals preserved; plumber alternatives remain unselected. Not integrated.
