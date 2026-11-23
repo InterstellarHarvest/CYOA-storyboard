@@ -1295,6 +1295,26 @@
         "prompt": "Exact owner-selected B2-03 v01 CH4-B2-16; preserve existing approved PNG bytes. Authoritative source manifest and production provenance pinned in docs/131.",
         "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-03 v01 CH4-B2-16. SOURCE-DERIVED native interpretation, not independent native-grid authorship. Exact source 24c79bff8d33b5997ccb6b7aa7bb86293afef291:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png; SHA-256 e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3. Manifest, masks, material/structural/letter layers, detailed sources and prompts are pinned in docs/131. Not integrated; runtime assetPath remains null. The two B2-01 plumber alternatives remain separate and unapproved; earlier v01 approvals remain selected."
       }
+    },
+    "grand_bellevue/service_passage": {
+      "title": "Service passage — Lot31 at collection",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/service_passage.png",
+      "prompt": "Exact owner-selected B2-04 v01 CH4-B2-19; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-19-v01.png; SHA-256 a5d416c47786a070c3a6acfdba91e2f7756cea4418f39425fea23511608220f9. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected.",
+      "portraitBackground": {
+        "title": "Service-passage conversation background",
+        "kind": "portrait-background",
+        "status": "approved",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/service_passage.png",
+        "prompt": "Exact owner-selected B2-04 v01 CH4-B2-23; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+        "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-23-v01.png; SHA-256 b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected."
+      }
     }
   },
   "portraits": {
@@ -1598,6 +1618,42 @@
       "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-03 v01 CH4-B2-15. SOURCE-DERIVED native interpretation, not independent native-grid authorship. Exact source 24c79bff8d33b5997ccb6b7aa7bb86293afef291:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-15-v01.png; SHA-256 19d8d42ff06b02020d5bdb3ddba33d9f47eb6222bb0c59e635d43bd5bf21691c. Manifest, masks, material/structural/letter layers, detailed sources and prompts are pinned in docs/131. Not integrated; runtime assetPath remains null. The two B2-01 plumber alternatives remain separate and unapproved; earlier v01 approvals remain selected.",
       "foregroundFormat": "transparent-rgba-png",
       "portraitBackgroundScene": "grand_bellevue/maintenance"
+    },
+    "hotel_porter:businesslike": {
+      "title": "Porter — businesslike",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_porter/businesslike.png",
+      "prompt": "Exact owner-selected B2-04 v01 CH4-B2-20; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-20-v01.png; SHA-256 863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/service_passage"
+    },
+    "hotel_porter:uncertain": {
+      "title": "Porter — uncertain",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_porter/uncertain.png",
+      "prompt": "Exact owner-selected B2-04 v01 CH4-B2-21; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-21-v01.png; SHA-256 25d6ac8823dff67881c076c2405e50c7229375ab98bb5e4324511b2f7033f77d. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/service_passage"
+    },
+    "hotel_porter:practical": {
+      "title": "Porter — practical",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_porter/practical.png",
+      "prompt": "Exact owner-selected B2-04 v01 CH4-B2-22; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-22-v01.png; SHA-256 646386199bfad2bd77e73bb3137dfac9c5b8effa85e324e906208ae48a62c11e. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/service_passage"
     }
   },
   "items": {
@@ -2544,6 +2600,26 @@
       "suggestedFilename": "art/focus/grand_bellevue/maintenance/water_isolator.png",
       "prompt": "Exact owner-selected B2-03 v01 CH4-B2-18; preserve existing approved PNG bytes. Authoritative source manifest and production provenance pinned in docs/131.",
       "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-03 v01 CH4-B2-18. SOURCE-DERIVED native interpretation, not independent native-grid authorship. Exact source 24c79bff8d33b5997ccb6b7aa7bb86293afef291:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-18-v01.png; SHA-256 723bb38b569aa15f0520ce5c042fd9a9d30c0eed9a93e537e610a621573fe43f. Manifest, masks, material/structural/letter layers, detailed sources and prompts are pinned in docs/131. Not integrated; runtime assetPath remains null. The two B2-01 plumber alternatives remain separate and unapproved; earlier v01 approvals remain selected."
+    },
+    "grand_bellevue/auction_floor/chair_armrest": {
+      "title": "Auction armrest — ring caught",
+      "kind": "focus",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/grand_bellevue/auction_floor/chair_armrest.png",
+      "prompt": "Exact owner-selected B2-04 v01 CH4-B2-24; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-24-v01.png; SHA-256 facb4981ccef1f270f200346333ce108a9db7679fb383982d4704e8b65fa0fc7. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected."
+    },
+    "grand_bellevue/collection_stairs/chair_armrest": {
+      "title": "Collection armrest — ring caught",
+      "kind": "focus",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/grand_bellevue/collection_stairs/chair_armrest.png",
+      "prompt": "Exact owner-selected B2-04 v01 CH4-B2-25; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-25-v01.png; SHA-256 68bbf32b040a984201dfb0f5b83b1315cf391848848500b1e7ee97819a5f5645. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected."
     }
   },
   "deathScreens": {
