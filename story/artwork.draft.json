@@ -1155,6 +1155,56 @@
         "prompt": "Exactly 564×278 newly authored OPAQUE pixel-art conversation background, independently composed at native resolution. It is a tighter, closer POV into the companion 314×206 scene, matching its architecture, palette, lights, furniture and action geography without reusing, enlarging, blurring or panning a crop. No NPCs, no portraits, no protagonist, no UI frame; reserve clean center space for a separately composited full-size transparent human foreground. Close POV onto the relocated restroom door frame on its overhead rail, sealed former doorway and spotlight at a side. Same restroom entrance tile, reader and door hardware as restroom_entrance; visibly dislocated rather than a magical replacement.",
         "notes": "CH3 REBOOT: paired with pavilion_reboot/courtesy_stage; shared by every attendee/presenter pose used at this scene. Batch D. IMAGE OWNER-APPROVED 2026-11-20 (Nate, final Art Director approval; Chapter 3 Batch D selection CH3-D09-courtesy-stage-bg v02, docs/122): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch04-20261120 e65f42c19e54f566819289d2b133be246ede13f5, path tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v02-close-camera-corrections/candidates/CH3-D09-courtesy-stage-bg-v02.png; SHA-256 b0786ebd4147c6b0e6441838c725751a794db04fa9bcce4341aa1a3a7f1e7623. Original full-scene/full-character native-grid authorship NOT proven; source-derived RGB softness remains (accepted limitation; registration acknowledges the exact bytes only; see docs/103 Chapter 3 Batch D section). Approved, not integrated; production assetPath remains null."
       }
+    },
+    "grand_bellevue/lobby": {
+      "title": "GRAND BELLEVUE LOBBY",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/lobby.png",
+      "prompt": "Exact owner-selected CH4-01 artwork; do not regenerate or alter. Independently native-drawn environment as recorded in v05. Approved source and full processing evidence are pinned in docs/127.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; CH4-01 v05. Immutable source InterstellarHarvest/CYOA-storyboard@3463e20bd366390008fa4f71c087ed5f334f3a31; tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png; SHA-256 582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0. Source nodes: entry_backstage_exit, hotel_lobby_view, hotel_auctioneer_arrival, hotel_auction_reopen_53, hotel_auction_testimonial, hotel_auction_bride_ally, hotel_auction_dispute_ticket, hotel_auction_chair_lot31, hotel_chair_vegetation_inspection, hotel_chair_examiner_inspection, hotel_chair_stapler_stealth, hotel_chair_stapler_caught, hotel_chair_staff_escort, hotel_chair_ring_focus, hotel_ring_retrieved, hotel_ring_slips, hotel_ring_in_pocket, hotel_ring_show_bride, hotel_bride_ring_handover, hotel_bride_ring_bathroom, hotel_collection_ring_to_bride, hotel_lot61_pod_auction, hotel_lot61_pod_escaped, fatal_lot61_folded, hotel_lot61_pod_declined, hotel_ring_inspect_inscription, hotel_auctioneer_restroom_inventory, hotel_auctioneer_lot14_dispute, hotel_auctioneer_lot14_recall. Provenance: Independently native-drawn environment as recorded in v05. See docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md and JSON. Approved, not integrated. Suggested game destination follows repository conventions; assetPath remains null until verified Gameplay PMO integration (docs/105). Historical UNSELECTED labels are preserved as review-time evidence, superseded by this owner selection.",
+      "portraitBackground": {
+        "title": "AUCTIONEER PORTRAIT BACKGROUND",
+        "kind": "portrait-background",
+        "status": "approved",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/lobby.png",
+        "prompt": "Exact owner-selected CH4-02 artwork; do not regenerate or alter. Independently native-drawn environment as recorded in v05. Approved source and full processing evidence are pinned in docs/127.",
+        "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; CH4-02 v05. Immutable source InterstellarHarvest/CYOA-storyboard@3463e20bd366390008fa4f71c087ed5f334f3a31; tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png; SHA-256 b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f. Source nodes: hotel_auctioneer_arrival, hotel_auction_reopen_53, hotel_auction_testimonial, hotel_auction_bride_ally, hotel_auction_dispute_ticket, hotel_auction_chair_lot31, hotel_chair_vegetation_inspection, hotel_chair_examiner_inspection, hotel_chair_stapler_caught, hotel_chair_staff_escort, hotel_ring_show_bride, hotel_bride_ring_handover, hotel_bride_ring_bathroom, hotel_lot61_pod_auction, hotel_lot61_pod_escaped, hotel_lot61_pod_declined, hotel_auctioneer_restroom_inventory, hotel_auctioneer_lot14_dispute, hotel_auctioneer_lot14_recall. Provenance: Independently native-drawn environment as recorded in v05. See docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md and JSON. Approved, not integrated. Suggested game destination follows repository conventions; assetPath remains null until verified Gameplay PMO integration (docs/105). Historical UNSELECTED labels are preserved as review-time evidence, superseded by this owner selection."
+      }
+    },
+    "grand_bellevue/restroom": {
+      "title": "RESTROOM",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/restroom.png",
+      "prompt": "Exact owner-selected CH4-04 artwork; do not regenerate or alter. Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction. Approved source and full processing evidence are pinned in docs/127.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; CH4-04 v07. Immutable source InterstellarHarvest/CYOA-storyboard@3463e20bd366390008fa4f71c087ed5f334f3a31; tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png; SHA-256 83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06. Source nodes: hotel_restroom_entry, hotel_restroom_plumber, hotel_valve_braced, hotel_valve_flood, hotel_stall_lot_claimed, hotel_wheel_buyer_lead, hotel_lot_receipt_study, hotel_wheel_return, hotel_key_master_cabinet, hotel_stall_porter_protest, hotel_stall_crane_success, fatal_stall_final_occupancy. Provenance: Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction. See docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md and JSON. Approved, not integrated. Suggested game destination follows repository conventions; assetPath remains null until verified Gameplay PMO integration (docs/105). Historical UNSELECTED labels are preserved as review-time evidence, superseded by this owner selection.",
+      "portraitBackground": {
+        "title": "RESTROOM CONVERSATION BACKGROUND",
+        "kind": "portrait-background",
+        "status": "approved",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/restroom.png",
+        "prompt": "Exact owner-selected B2-01 v01 CH4-B2-03; preserve these approved bytes, do not regenerate. The source manifest/prompt/derivation are pinned in docs/128.",
+        "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; B2-01 v01 CH4-B2-03. Source InterstellarHarvest/CYOA-storyboard@81cf3b5f022510737bdd2d4ba3703e0173d86772; tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-03-v01.png; SHA-256 77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377. SOURCE-DERIVED under the authorized quality-first policy, not independently authored at native resolution. Full generation originals, input references, prompts, reduction/alpha cleanup and perspective-correct bitmap lettering: tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/evidence/derivation.json. Source nodes: hotel_restroom_plumber, hotel_wheel_buyer_lead, hotel_stall_porter_protest. Canonical completion/verification: docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md. Approved, not integrated; runtime assetPath stays null under docs/105/127 until verified gameplay integration. Historical UNSELECTED review records remain unchanged and are superseded by this exact owner selection."
+      }
+    },
+    "grand_bellevue/ballroom": {
+      "title": "BALLROOM",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/ballroom.png",
+      "prompt": "Exact owner-selected CH4-05 artwork; do not regenerate or alter. Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction. Approved source and full processing evidence are pinned in docs/127.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; CH4-05 v07. Immutable source InterstellarHarvest/CYOA-storyboard@3463e20bd366390008fa4f71c087ed5f334f3a31; tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-05-ballroom-v03.png; SHA-256 76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c. Source nodes: hotel_wedding_arrival, hotel_bridal_organizer. Provenance: Hybrid native room background with source-derived illustrated NPCs and v07 crispness correction. See docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md and JSON. Approved, not integrated. Suggested game destination follows repository conventions; assetPath remains null until verified Gameplay PMO integration (docs/105). Historical UNSELECTED labels are preserved as review-time evidence, superseded by this owner selection."
     }
   },
   "portraits": {
@@ -1386,6 +1436,42 @@
       "portraitBackgroundScene": "pavilion_reboot/service_exit",
       "prompt": "Exactly 564×278 TRANSPARENT RGBA native pixel-art NPC foreground for separate compositing over the selected matching opaque portrait background. No scenery, no shadow painted on an opaque backdrop, no UI, no protagonist; transparent outside the sprite with pixel-sharp alpha. Match the approved reception portrait density, crisp intentional shading and approachable expressive human anatomy, not a cartoon, photograph or upscale of a scene figure. SAME presenter and anchor, expression genuinely relieved, warm unguarded thankful smile, one hand gesturing toward the humble service door. A rare quiet human connection, not a new glamorous costume or authority figure.",
       "notes": "CH3 REBOOT: model sheet and canvas anchor must match every pose of pavilion_presenter. Source instances: presenter_help_end. Suggested default background pavilion_reboot/service_exit; other scene-appropriate backgrounds are catalogued on their scene records. Batch C. IMAGE OWNER-APPROVED 2026-11-20 (Nate, final Art Director approval; Chapter 3 Batch D selection CH3-D04-presenter-relieved v01, docs/122): exact selected bytes InterstellarHarvest/CYOA-storyboard@art/ch3-pavilion-batch04-20261120 e65f42c19e54f566819289d2b133be246ede13f5, path tools/prologue-art-lab/assets/review/chapter-03-batch04-2026-11-20/v01/candidates/CH3-D04-presenter-relieved-v01.png; SHA-256 29a349c7bcdfe32d2885709dc91977beb7e3869d2461913cfd89afdacebbda9b. Original full-scene/full-character native-grid authorship NOT proven; source-derived RGB softness remains (accepted limitation; registration acknowledges the exact bytes only; see docs/103 Chapter 3 Batch D section). Approved, not integrated; production assetPath remains null."
+    },
+    "hotel_auctioneer:showman": {
+      "title": "AUCTIONEER SHOWMAN",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_auctioneer/showman.png",
+      "prompt": "Exact owner-selected CH4-03 artwork; do not regenerate or alter. SOURCE-DERIVED: preferred original -> premultiplied-alpha Lanczos 564x278 -> cutout cleanup -> targeted near-opaque interior feature contrast cleanup. Approved source and full processing evidence are pinned in docs/127.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; CH4-03 v08 final review. Immutable source InterstellarHarvest/CYOA-storyboard@3463e20bd366390008fa4f71c087ed5f334f3a31; tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/native/CH4-03-auctioneer-source-derived-v08.png; SHA-256 231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78. Source nodes: hotel_auctioneer_arrival, hotel_auction_reopen_53, hotel_auction_chair_lot31, hotel_lot61_pod_auction, hotel_auctioneer_restroom_inventory, hotel_auctioneer_lot14_dispute. Provenance: SOURCE-DERIVED: preferred original -> premultiplied-alpha Lanczos 564x278 -> cutout cleanup -> targeted near-opaque interior feature contrast cleanup. See docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md and JSON. Approved, not integrated. Suggested game destination follows repository conventions; assetPath remains null until verified Gameplay PMO integration (docs/105). Historical UNSELECTED labels are preserved as review-time evidence, superseded by this owner selection.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/lobby"
+    },
+    "hotel_plumber:worried": {
+      "title": "PLUMBER — WORRIED",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_plumber/worried.png",
+      "prompt": "Exact owner-selected B2-01 v01 CH4-B2-01; preserve these approved bytes, do not regenerate. The source manifest/prompt/derivation are pinned in docs/128.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; B2-01 v01 CH4-B2-01. Source InterstellarHarvest/CYOA-storyboard@81cf3b5f022510737bdd2d4ba3703e0173d86772; tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-01-v01.png; SHA-256 cedd81713cbd5ee4bb0a97d869a62c395a1b34ea04ba276fa5ac21c01d5de65d. SOURCE-DERIVED under the authorized quality-first policy, not independently authored at native resolution. Full generation originals, input references, prompts, reduction/alpha cleanup and perspective-correct bitmap lettering: tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/evidence/derivation.json. Source nodes: hotel_restroom_plumber. Canonical completion/verification: docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md. Approved, not integrated; runtime assetPath stays null under docs/105/127 until verified gameplay integration. Historical UNSELECTED review records remain unchanged and are superseded by this exact owner selection.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/restroom"
+    },
+    "hotel_plumber_assistant:pleased": {
+      "title": "EDDIE — PLEASED",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_plumber_assistant/pleased.png",
+      "prompt": "Exact owner-selected B2-01 v01 CH4-B2-02; preserve these approved bytes, do not regenerate. The source manifest/prompt/derivation are pinned in docs/128.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; B2-01 v01 CH4-B2-02. Source InterstellarHarvest/CYOA-storyboard@81cf3b5f022510737bdd2d4ba3703e0173d86772; tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-02-v01.png; SHA-256 ac47c23105b70af92b970682b72c266726ddbe9a75e182bdf6a71869568d6eea. SOURCE-DERIVED under the authorized quality-first policy, not independently authored at native resolution. Full generation originals, input references, prompts, reduction/alpha cleanup and perspective-correct bitmap lettering: tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/evidence/derivation.json. Source nodes: hotel_wheel_buyer_lead. Canonical completion/verification: docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md. Approved, not integrated; runtime assetPath stays null under docs/105/127 until verified gameplay integration. Historical UNSELECTED review records remain unchanged and are superseded by this exact owner selection.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/restroom"
     }
   },
   "items": {
@@ -2302,6 +2388,26 @@
       "suggestedFilename": "art/focus/pavilion_death_pedestal_detail.png",
       "prompt": "EXACT 564×278 native pixel art Focus A object close-up; separate from 314×206 scene. Airtight completely sealed museum preservation casing around anonymous body, no face, no depiction of breathing or movement after death; bleakly cheerful authenticity plaque, tasteful and non-graphic. Palette harmonizes Pavilion art; no UI shell, no invented tiny gibberish labels, no scaling.",
       "notes": "ARCHIVED / RETIRED / UNUSED — PRE-REBOOT CHAPTER 3. Historical prompt ONLY; do not generate, select, import or treat as production backlog. The 2026-11-18 approved story uses pavilion_reboot/* instead. See docs/112_CH3_ARTWORK_AUDIT_AND_GENERATION_HANDOFF_20261118.md.\nCH3 focus art prompt, not generated; use only if future approved Focus A interaction actually needs it."
+    },
+    "grand_bellevue/restroom/lot_14_receipt": {
+      "title": "LOT 14 RECEIPT",
+      "kind": "focus",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/grand_bellevue/restroom/lot_14_receipt.png",
+      "prompt": "Exact owner-selected B2-01 v01 CH4-B2-04; preserve these approved bytes, do not regenerate. The source manifest/prompt/derivation are pinned in docs/128.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; B2-01 v01 CH4-B2-04. Source InterstellarHarvest/CYOA-storyboard@81cf3b5f022510737bdd2d4ba3703e0173d86772; tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-04-v01.png; SHA-256 af9f7b03eacfe54721e52217b265b7fcdc852b0eb7cf1d0cd1fd7e7f1eef85d3. SOURCE-DERIVED under the authorized quality-first policy, not independently authored at native resolution. Full generation originals, input references, prompts, reduction/alpha cleanup and perspective-correct bitmap lettering: tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/evidence/derivation.json. Source nodes: hotel_lot_receipt_study. Canonical completion/verification: docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md. Approved, not integrated; runtime assetPath stays null under docs/105/127 until verified gameplay integration. Historical UNSELECTED review records remain unchanged and are superseded by this exact owner selection."
+    },
+    "grand_bellevue/restroom/master_isolator": {
+      "title": "EMERGENCY MASTER ISOLATOR",
+      "kind": "focus",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/grand_bellevue/restroom/master_isolator.png",
+      "prompt": "Exact owner-selected B2-01 v01 CH4-B2-05; preserve these approved bytes, do not regenerate. The source manifest/prompt/derivation are pinned in docs/128.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-22; B2-01 v01 CH4-B2-05. Source InterstellarHarvest/CYOA-storyboard@81cf3b5f022510737bdd2d4ba3703e0173d86772; tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-05-v01.png; SHA-256 ba494521a177b397cc9db901e83046fccc83afcfcebca890b23a0656be042153. SOURCE-DERIVED under the authorized quality-first policy, not independently authored at native resolution. Full generation originals, input references, prompts, reduction/alpha cleanup and perspective-correct bitmap lettering: tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/evidence/derivation.json. Source nodes: hotel_key_master_cabinet. Canonical completion/verification: docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md. Approved, not integrated; runtime assetPath stays null under docs/105/127 until verified gameplay integration. Historical UNSELECTED review records remain unchanged and are superseded by this exact owner selection."
     }
   },
   "deathScreens": {
