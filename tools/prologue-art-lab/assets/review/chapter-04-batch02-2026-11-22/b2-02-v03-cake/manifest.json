@@ -1,0 +1,63 @@
+{
+  "title": "B2-09 Service Stairs v03 - targeted wedding-cake/trolley restoration",
+  "status": "UNSELECTED",
+  "assetId": "CH4-B2-09",
+  "key": "scenes:grand_bellevue/service_stairs",
+  "nodeIds": [
+    "hotel_maintenance_dock_exit"
+  ],
+  "baseCommit": "62ef2059585de49292bbec2742d3c637d2eae818",
+  "base": {
+    "file": "references/CH4-B2-09-v02.png",
+    "sha256": "ff1857cbd827c635fe929809712a1a1728c2154e84483e4bc208300c83255c41",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB"
+  },
+  "native": {
+    "file": "native/CH4-B2-09-v03.png",
+    "sha256": "b4d6fb424c8f608cac816c10d59f9eab570a36b4ab9bc0fc9b921a781ee64166",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB"
+  },
+  "preview4x": {
+    "file": "previews/CH4-B2-09-v03-4x.png",
+    "sha256": "ace45ab9218a5e30446d67254908b865694cf056ef1db0706e6be9231a17d4c8",
+    "dimensions": [
+      1256,
+      824
+    ],
+    "mode": "RGB"
+  },
+  "originalDetailedReference": {
+    "file": "references/CH4-B2-09-detailed-reference.png",
+    "sha256": "eba14e1aa7980cda5d55b53fa05604b10bc6bb2e9cbe94e1330aa1fe5275c33d",
+    "dimensions": [
+      1548,
+      1016
+    ],
+    "mode": "RGB"
+  },
+  "sourceDerived": true,
+  "method": "Targeted native restoration/painting from existing editable material/structural layers; no new generated artwork or whole-scene rerender",
+  "changedPixels": 723,
+  "changedBounds": [
+    152,
+    88,
+    184,
+    141
+  ],
+  "outsideProtectedObjectChanges": 0,
+  "paletteChanged": false,
+  "otherScenesModified": false,
+  "formalApprovalRegistered": false,
+  "integrationPerformed": false,
+  "processingSource": "source/restore.py",
+  "scopeEvidence": "evidence/targeted-change.json",
+  "frozenSiblings": "evidence/frozen-siblings.json"
+}

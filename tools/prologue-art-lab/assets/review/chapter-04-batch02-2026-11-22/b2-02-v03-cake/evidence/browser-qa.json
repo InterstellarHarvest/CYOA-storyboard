@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:52731/",
+  "checks": [
+    {
+      "browser": "chromium",
+      "check": "B2-09-only gallery: all six candidate/comparison/crop/reference images decode",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact 4x pixels and display: B2-09 v03 - restored cake and trolley",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact 4x pixels and display: Preserved B2-09 v02",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact 4x pixels and display: v03 cake/trolley crop",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact 4x pixels and display: v02 crop",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact 4x pixels and display: Changed-pixel map",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Native/exact 4x pixels and display: Approved Chapter 2 Bureau - craft benchmark",
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "check": "Mobile preserves 314px native raster, no page overflow or load/runtime errors",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "B2-09-only gallery: all six candidate/comparison/crop/reference images decode",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact 4x pixels and display: B2-09 v03 - restored cake and trolley",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact 4x pixels and display: Preserved B2-09 v02",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact 4x pixels and display: v03 cake/trolley crop",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact 4x pixels and display: v02 crop",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact 4x pixels and display: Changed-pixel map",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Native/exact 4x pixels and display: Approved Chapter 2 Bureau - craft benchmark",
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "check": "Mobile preserves 314px native raster, no page overflow or load/runtime errors",
+      "passed": true
+    }
+  ]
+}

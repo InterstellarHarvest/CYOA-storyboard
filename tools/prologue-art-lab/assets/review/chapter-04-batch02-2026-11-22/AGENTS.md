@@ -1,5 +1,12 @@
 # Chapter 4 Batch 2 artwork review
 
+## B2-09 v03 targeted correction — 2026-11-23
+
+Nate called B2-06/07/08 v02 successful and selection-ready; preserve their exact bytes. This is not formal approval/selection. Only B2-09 is corrected in `b2-02-v03-cake`: restore the tiered wedding cake and trolley, keeping the existing scene palette and all pixels outside the protected object exact. No full-group regeneration, approved-image edits or approval registration.
+
+Retain the successful separate native material/structural layer technique. Complete story-object masks must clip ALL later structural painting, including elevator/wall geometry and floor/grout passes. Include upper silhouettes, flowers, overhangs, handles, frames and wheels. Inspect source-to-final object crops at native and exact 4×: hashes and color counts do not detect omitted story objects. The B2-09 correction remains UNSELECTED pending Nate's review.
+
+
 ## Permanent owner production standard —2026-11-22 (current authority)
 
 Follow [docs/129](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/cc2afd6def0bc41d9a193456eff95d2ce3cb488a/docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md) for all remaining chapters. Chapter2 establishes pixel-cluster craftsmanship; the detailed concept establishes artistic ambition. Generate the rich reference, then create a SEPARATE native interpretation with controlled material ramps, readable cluster shapes, clear edges, simplified scene figures and deliberate lighting. Direct shrinking or palette reduction alone is not a completed method. Accurate source-derived provenance remains mandatory.

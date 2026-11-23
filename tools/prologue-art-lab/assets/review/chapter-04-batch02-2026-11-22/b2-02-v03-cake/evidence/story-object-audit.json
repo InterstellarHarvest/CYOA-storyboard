@@ -1,0 +1,47 @@
+{
+  "scope": "Inspect narrative-critical objects against detailed sources and native layers; only B2-09 is changed. Visual checks are separate from file/alpha/scale QA.",
+  "sourceCommit": "62ef2059585de49292bbec2742d3c637d2eae818",
+  "findings": [
+    {
+      "id": "CH4-B2-06",
+      "objects": [
+        "Detached ornamental staircase and freight truck",
+        "Workmen and empty padded cart",
+        "Hotel/restroom wayfinding"
+      ],
+      "visualResult": "Present and recognizable in v02. Preserve exact pixels; no rerender."
+    },
+    {
+      "id": "CH4-B2-07",
+      "objects": [
+        "Carried upholstered sofa",
+        "Two carrying men plus trolley-pushing man",
+        "Wedding-decoration trolley"
+      ],
+      "visualResult": "Present and recognizable in v02. Preserve exact pixels; no rerender."
+    },
+    {
+      "id": "CH4-B2-08",
+      "objects": [
+        "Suspended chandelier and padded container",
+        "Grand piano",
+        "Two piano workmen and foreman",
+        "Ordinary side gate"
+      ],
+      "visualResult": "Present and recognizable in v02. Preserve exact pixels; no rerender."
+    },
+    {
+      "id": "CH4-B2-09",
+      "objects": [
+        "Tiered wedding cake/bouquet/icing",
+        "Trolley cloth, frame and casters",
+        "Mover/foreground hand"
+      ],
+      "visualResult": "v02 upper tiers were covered by elevator-panel painting; incomplete object protection also exposed cart/frame to floor/structure operations. v03 restores complete silhouette and native tier detail, preserving the foreground hand."
+    }
+  ],
+  "preventiveRule": "After all structural paint is drawn, clip its alpha against complete protected story-object silhouettes. Include tops/flowers, overhangs, handles, frames and wheels. Retain explicit foreground occluders and inspect source-to-final object crops at native/exact4x. Never rely solely on palette/count/file checks.",
+  "v03Method": "Existing native-layer edit with source-matching object treatment; no new generated illustration.",
+  "ownerApproval": false,
+  "status": "UNSELECTED"
+}

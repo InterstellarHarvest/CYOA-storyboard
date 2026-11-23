@@ -1,5 +1,7 @@
 # Chapter 4 Batch 2
 
+Latest focused review: [B2-09 v03 cake and trolley correction](b2-02-v03-cake/index.html). Only the cake/trolley silhouette changes; the existing palette and every outside pixel remain exact. B2-06/07/08 v02 are selection-ready and frozen unchanged; formal selection remains pending. B2-09 v03 is **UNSELECTED**. [Direct comparison](b2-02-v03-cake/comparisons/B2-09-v02-v03-4x.png).
+
 Latest consolidated review: [B2-02 v02 native pixel reinterpretation](b2-02-v02-pixel/index.html) — four main scenes, preserving the v01 detailed concepts and exact retained foreman/background. All revised candidates UNSELECTED. [Permanent production standard](https://github.com/InterstellarHarvest/CYOA-storyboard/blob/cc2afd6def0bc41d9a193456eff95d2ce3cb488a/docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md), now canonical main at cc2afd6def0bc41d9a193456eff95d2ce3cb488a (PR22). This explicitly supersedes resize/quantization-only finalization.
 
 
