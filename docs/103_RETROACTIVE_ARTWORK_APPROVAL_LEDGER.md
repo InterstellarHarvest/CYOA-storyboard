@@ -432,3 +432,8 @@ Nate approves all five unchanged: CH4-01 v05, CH4-02 v05, CH4-03 v08, CH4-04 v07
 ## Chapter 4 B2-01 v01 owner approval — 2026-11-22
 
 Nate explicitly approved all five without modification from `81cf3b5f022510737bdd2d4ba3703e0173d86772`: worried plumber, pleased assistant, shared restroom portrait background, Lot14 receipt Focus A and master-isolator Focus A. APPROVED/SELECTED, not integrated; all source-derived provenance retained. [Exact hashes, canonical copies, mappings and gameplay handoff](128_CH4_B201_APPROVAL_COMPLETION_20261122.md). Batch1 and all earlier selected images/metadata remain unchanged. Runtime assetPath stays null under docs105/127 pending verified integration.
+
+
+## Chapter 4 B2-02 exact mixed-version approval — 2026-11-23
+
+Nate approves/selects CH4-B2-06/07/08 v02, CH4-B2-09 v03, CH4-B2-10/11 v01 unchanged. Exact hashes, sources, canonical copies and Gameplay PMO handoff: [docs/130](130_CH4_B202_APPROVAL_COMPLETION_20261123.md), with its JSON record and independent verifier. All prior approvals remain unchanged. The two B2-01 plumber v02 alternatives remain unapproved and separate. No narrative/gameplay/engine integration.

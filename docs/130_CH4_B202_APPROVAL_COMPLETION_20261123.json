@@ -1,0 +1,237 @@
+{
+  "ownerDecision": "Nate approves all six B2-02 assets in their exact reviewed versions; the two B2-01 plumber alternatives remain a separate unapproved decision.",
+  "decisionDate": "2026-11-23",
+  "status": "APPROVED_AND_SELECTED",
+  "approvalSourceCommit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+  "canonicalBase": "cc2afd6def0bc41d9a193456eff95d2ce3cb488a",
+  "registrationTool": "tools/sync/register-art.mjs",
+  "gameplayIntegrationPerformed": false,
+  "runtimeAssetPathsAssigned": false,
+  "assets": [
+    {
+      "id": "CH4-B2-06",
+      "title": "Loading Lane",
+      "version": "v02",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "9cd7d2e916770097425c990a43b1d9ecffe36bad2ec050b4b73964c440299de6",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/loading_lane",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/loading_lane.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/loading_lane.png",
+      "storyNodeIds": [
+        "entry_locomotion_fail"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/native/CH4-B2-06-v02.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/manifest.json",
+        "sha256": "2a64a9b861ed8726d7e59bddbbf621a39fddda129d3dfd3f43803fdfe616e5a8"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/previews/CH4-B2-06-4x.png",
+        "sha256": "4798400c0d1fde9a948a2a7000040e77c0f092889c34f32d35205a9af656a3d0"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-07",
+      "title": "Service Alley",
+      "version": "v02",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "aee362709a49a3234dcc8a17f2624de27b64f4da2b4b5a27265a98820241c54a",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/service_alley",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/service_alley.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/service_alley.png",
+      "storyNodeIds": [
+        "entry_presenter_help_end",
+        "entry_attendant_honest_end"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/native/CH4-B2-07-v02.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/manifest.json",
+        "sha256": "2a64a9b861ed8726d7e59bddbbf621a39fddda129d3dfd3f43803fdfe616e5a8"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/previews/CH4-B2-07-4x.png",
+        "sha256": "4c2a8d860d226423a7b0a961294cf992a6383dc68c1581f85879b4a59ed7008c"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-08",
+      "title": "Loading Dock",
+      "version": "v02",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "a867a114d2286b382acc756eb8e803bec87b66790a24ce3498603cb9bd21c79c",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/loading_dock",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/loading_dock.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/loading_dock.png",
+      "storyNodeIds": [
+        "hotel_service_arrival",
+        "hotel_service_foreman",
+        "hotel_service_park_exit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/native/CH4-B2-08-v02.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/manifest.json",
+        "sha256": "2a64a9b861ed8726d7e59bddbbf621a39fddda129d3dfd3f43803fdfe616e5a8"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v02-pixel/previews/CH4-B2-08-4x.png",
+        "sha256": "7aa53bc601173895dc4b169acb81193f1c34bf80d0130eb1c4ff8270b7960261"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-09",
+      "title": "B2-09 Service Stairs v03 - targeted wedding-cake/trolley restoration",
+      "version": "v03",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "b4d6fb424c8f608cac816c10d59f9eab570a36b4ab9bc0fc9b921a781ee64166",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "scene",
+      "registryKey": "scenes:grand_bellevue/service_stairs",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/service_stairs.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/service_stairs.png",
+      "storyNodeIds": [
+        "hotel_maintenance_dock_exit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v03-cake/native/CH4-B2-09-v03.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v03-cake/manifest.json",
+        "sha256": "27df4c30babc1fba881c91be1753aa839a59176ab7cc6b92c0e345d1296b4fe5"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v03-cake/previews/CH4-B2-09-v03-4x.png",
+        "sha256": "ace45ab9218a5e30446d67254908b865694cf056ef1db0706e6be9231a17d4c8"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-10",
+      "title": "Hotel Salvage Foreman:Annoyed",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "d394c5c3617f1da66eb6957d8eb2d8594e018e558b30efe0e5eef6d43f095aad",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "registryKey": "portraits:hotel_salvage_foreman:annoyed",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_salvage_foreman/annoyed.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_salvage_foreman/annoyed.png",
+      "storyNodeIds": [
+        "hotel_service_foreman"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v01/native/CH4-B2-10-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v01/manifest.json",
+        "sha256": "37c74f492d58118011f95c28e186d550edb29a808b2f3ee04fd7df4a44c5f020"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v01/previews/CH4-B2-10-4x.png",
+        "sha256": "64d1c3ac3dddf5d88b71672c1edf187d5d33f2d7620505d84a230c769488db71"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-11",
+      "title": "Loading Dock",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "sha256": "27f69050b10d3e10121f7f2c2860db1418504b00d3848daabde420485b9bcc1f",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "portrait-background",
+      "registryKey": "scenes:grand_bellevue/loading_dock#portraitBackground",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/loading_dock/portraitBackground.png",
+      "assetPath": null,
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/loading_dock.png",
+      "storyNodeIds": [
+        "hotel_service_foreman"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "a105d4e42fb3581186a1d1a18a35b4ac1f190a3c",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v01/native/CH4-B2-11-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v01/manifest.json",
+        "sha256": "37c74f492d58118011f95c28e186d550edb29a808b2f3ee04fd7df4a44c5f020"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-02-v01/previews/CH4-B2-11-4x.png",
+        "sha256": "c0097de65257864133a726c47200c4375b00f82b4808938cfcdaca62b2e5aff1"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    }
+  ]
+}
