@@ -73,11 +73,36 @@ assert.equal(digest(v03), S.historicalSha256); assert.equal(digest(v04), S.curre
   assert.throws(() => checkApprovedReferences({ refs: r2, previews, art, digest, readRepo: R, reviewDigest: (f) => Object.values(r2).find((r) => r.reviewFile === f).sha256 }),
     /is not the recorded historical selection/); ok('a Paper Emergency reference other than v03 fails');
 }
-// The supersession also requires the record to stay approved, unintegrated and documented.
+// The supersession requires the record approved with no production path (before gameplay integration) OR integrated at
+// exactly its suggestedFilename by a published game build that used exactly the v04 bytes there, its preview citing that
+// build (after the integration-status reconciliation), and notes naming both hashes. Both states are built explicitly,
+// whatever the repository holds now.
 {
-  const a = clone(art); a.scenes[S.record].assetPath = 'art/scenes/pavilion_reboot/paper_emergency.png';
-  refused({ a }, /must stay approved with no production assetPath/);
-  const b = clone(art); b.scenes[S.record].notes = b.scenes[S.record].notes.split(S.historicalSha256).join('');
-  refused({ a: b }, /notes must name/); ok('the exception requires the record approved, no production path, notes naming both hashes');
+  const PATH = 'art/scenes/pavilion_reboot/paper_emergency.png', PREVIEW = 'assets/selected/' + PATH;
+  const GAME = { repo: 'InterstellarHarvest/out-of-order', branch: 'agent/example', commit: 'c'.repeat(40) };
+  const state = (status, assetPath) => { const a = clone(art); a.scenes[S.record].status = status; a.scenes[S.record].assetPath = assetPath; return a; };
+  const report = (images, game = GAME) => Buffer.from(JSON.stringify({ schema: 'cyoa-game-integration-v1', game, images }));
+  const used = (sha = S.currentSha256, path = PATH, key = S.key) => [{ key, path, sha256: sha, kind: 'scene' }];
+  // The integrated preview: v04 bytes at the production path, citing the game build (register-art via sync.js publish).
+  const moved = (game = GAME) => { const p = clone(previews); p[S.key] = { ...p[S.key], file: PREVIEW, source: { repo: game.repo, ref: game.branch, commit: game.commit, path: PATH } }; return p; };
+  const integrated = (o = {}) => ({ a: o.a || state('integrated', PATH), p: o.p || moved(), files: { [PREVIEW]: v04, 'story/game-integration.json': report(o.images || used(), o.game), ...(o.files || {}) }, missing: o.missing || [] });
+  assert.equal(run({ a: state('approved', null) }).superseded.length, 1); ok('before integration: approved with no production path passes');
+  assert.equal(run(integrated()).superseded.length, 1);
+  ok('after reconciliation: integrated at its suggestedFilename by a game build that used exactly v04, preview citing that build, passes');
+  refused({ a: state('approved', PATH) }, /must stay approved with no production assetPath, or be integrated/); ok('approved WITH a production path fails');
+  refused({ a: state('generated', null) }, /neither approved nor integrated/); ok('a status lowered to generated fails');
+  refused(integrated({ missing: ['story/game-integration.json'] }), /without a game integration report/); ok('integrated with no game integration report fails');
+  refused(integrated({ images: [] }), /did not use exactly/); ok('integrated while the game report does not list the record fails');
+  refused(integrated({ images: used(S.historicalSha256) }), /did not use exactly/); ok('integrated by a build that used v03 bytes fails');
+  refused(integrated({ images: used(S.currentSha256, 'art/scenes/other.png') }), /did not use exactly/); ok('integrated at another path than the game used fails');
+  refused(integrated({ images: used().concat(used(S.historicalSha256)) }), /did not use exactly/); ok('a report listing the record twice fails');
+  refused(integrated({ a: state('integrated', 'art/scenes/pavilion_reboot/elsewhere.png'), images: used(S.currentSha256, 'art/scenes/pavilion_reboot/elsewhere.png') }), /exactly its suggestedFilename/);
+  ok('integrated at a path other than its suggestedFilename fails');
+  refused(integrated({ game: { ...GAME, repo: 'InterstellarHarvest/CYOA' }, p: moved({ ...GAME, repo: 'InterstellarHarvest/CYOA' }) }), /must name InterstellarHarvest\/out-of-order/);
+  ok('a report from another repository fails');
+  refused(integrated({ p: previews }), /an integrated preview lives at/); ok('an integrated record whose preview still cites the approved selection fails');
+  refused(integrated({ files: { [PREVIEW]: v03 } }), /canonical preview bytes are not the approved replacement/); ok('an integrated preview holding v03 bytes fails');
+  const b = state('approved', null); b.scenes[S.record].notes = b.scenes[S.record].notes.split(S.historicalSha256).join('');
+  refused({ a: b }, /notes must name/); ok('the exception still requires notes naming both hashes');
 }
 console.log(JSON.stringify({ result: 'PASS', checks: results.length, results }, null, 1));

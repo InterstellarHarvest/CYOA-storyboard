@@ -140,6 +140,14 @@ async function run(name, base) {
     check(b, filter + ' filter lists exactly the ' + expected[filter].length + ' catalogue records it should, with matching status labels', exact && statusOk && (filter !== 'Archived' || seen[filter].length > 0),
       { extra: seen[filter].filter((k) => !expected[filter].includes(k)).slice(0, 3), missing: expected[filter].filter((k) => !seen[filter].includes(k)).slice(0, 3), n: seen[filter].length });
   }
+  // The 29 Chapter 3 selections (game docs/104): listed all together under the filter their canonical status names,
+  // Approved before the integration-status reconciliation, Integrated after it, never split and never both.
+  const ch3Keys = CATALOG_REFS.filter((x) => /^art\/(scenes|portraits)\/pavilion_reboot\//.test(x.record.suggestedFilename || '')).map((x) => x.key);
+  const ch3Status = [...new Set(ch3Keys.map((k) => statusOf(CATALOG_REFS.find((x) => x.key === k).record)))];
+  const ch3Filter = ch3Status.length === 1 && { integrated: 'Integrated', approved: 'Approved' }[ch3Status[0]];
+  check(b, 'the 29 Chapter 3 selections are listed together under ' + ch3Filter + ' (their canonical status) and under no other selected filter',
+    ch3Keys.length === 29 && !!ch3Filter && ch3Keys.every((k) => seen[ch3Filter].includes(k) && seen.Selected.includes(k)) && !ch3Keys.some((k) => seen[ch3Filter === 'Integrated' ? 'Approved' : 'Integrated'].includes(k)),
+    { n: ch3Keys.length, status: ch3Status });
   const union = (...fs) => [...new Set(fs.flatMap((f) => seen[f]))].sort();
   const allKeys = (await rows('All')).map(keyOf).sort();
   check(b, 'Selected + Active pending + Archived partition All; Integrated + Approved = Selected',
@@ -152,7 +160,12 @@ async function run(name, base) {
   await openArt('HOUSE OF TOMORROW — ARRIVAL');
   let f = await figures();
   check(b, 'scene shown at native 314x206, 1 image', f.length === 1 && f[0].w === 314 && f[0].h === 206 && f[0].imgs[0].nw === 314, f);
-  check(b, 'scene provenance names the source commit', /Selected source: InterstellarHarvest\/CYOA/.test(await page.textContent('#details .prov')));
+  // The integrated scene cites the game build that uses it (repository renamed 2026-11-19 from InterstellarHarvest/CYOA
+  // to InterstellarHarvest/out-of-order); the viewer shows exactly the registered source, commit included.
+  const arrivalSrc = PREVIEW.images['scenes:house_of_tomorrow/arrival'].source;
+  const arrivalProv = 'Selected source: ' + arrivalSrc.repo + (arrivalSrc.ref ? ' (' + arrivalSrc.ref + ')' : '') + ' @ ' + arrivalSrc.commit.slice(0, 10) + ' : ' + arrivalSrc.path;
+  check(b, 'scene provenance names the source commit', ['InterstellarHarvest/CYOA', 'InterstellarHarvest/out-of-order'].includes(arrivalSrc.repo)
+    && /^[0-9a-f]{40}$/.test(arrivalSrc.commit) && (await page.textContent('#details .prov')).includes(arrivalProv), arrivalProv);
   await page.screenshot({ path: path.join(OUT, b + '_1_scene.png') });
 
   // 4. Scene states: overlay over its base scene, replacement alone.
