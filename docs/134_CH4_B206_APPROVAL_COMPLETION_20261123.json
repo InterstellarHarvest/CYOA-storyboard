@@ -1,0 +1,277 @@
+{
+  "ownerDecision": "Nate approves/selects all six B2-06 v01 portraits unchanged from f6840e5d69f70435f88ce9ece720583566fce8e2.",
+  "decisionDate": "2026-11-23",
+  "status": "APPROVED_AND_SELECTED",
+  "approvalSourceCommit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+  "canonicalBase": "f068f1005d313a3e2869f332398a97e2e4c772db",
+  "registrationTool": "tools/sync/register-art.mjs",
+  "runtimeAssetPathsAssigned": false,
+  "gameplayIntegrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-31",
+      "title": "Auctioneer — delighted",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "kind": "portrait",
+      "sha256": "1d1121394a9a628116f8d110ba122159c0ae32894414b9bec4ec641e662f84e4",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "registryKey": "portraits:hotel_auctioneer:delighted",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_auctioneer/delighted.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_auctioneer/delighted.png",
+      "assetPath": null,
+      "portraitBackgroundScene": "grand_bellevue/lobby",
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "storyNodeIds": [
+        "hotel_auction_testimonial",
+        "hotel_lot61_pod_escaped"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-31-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/manifest.json",
+        "sha256": "056dad72f2f8e56a9c8b56e5fb3810170ab993095670a5472c7f1e802c82ef2c"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/previews/CH4-B2-31-4x.png",
+        "sha256": "1ba0886fbd2561a3a1a6541b13a17c5a1d660c2da7b43212b8d5d60e30aaeba8"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-32",
+      "title": "Porter — alarmed",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "kind": "portrait",
+      "sha256": "19653d7cb5e1a04cc87c195b551d9533f7bb5aac0f8a5842c45fa56ba4d85061",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "registryKey": "portraits:hotel_porter:alarmed",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_porter/alarmed.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_porter/alarmed.png",
+      "assetPath": null,
+      "portraitBackgroundScene": "grand_bellevue/lobby",
+      "sceneKeys": [
+        "grand_bellevue/boiler_access",
+        "grand_bellevue/lobby"
+      ],
+      "storyNodeIds": [
+        "hotel_chair_stapler_caught",
+        "hotel_collection_slip_spotted"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-32-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/manifest.json",
+        "sha256": "056dad72f2f8e56a9c8b56e5fb3810170ab993095670a5472c7f1e802c82ef2c"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/previews/CH4-B2-32-4x.png",
+        "sha256": "17c23d0472eed3a894b110f444fcbc3c8905430648caf875edf0b917633b7f10"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-33",
+      "title": "Porter — curious",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "kind": "portrait",
+      "sha256": "532a62994a8e3d5976144136f43c8699b3f0ddec291db7a05af412b2d06da6a0",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "registryKey": "portraits:hotel_porter:curious",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_porter/curious.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_porter/curious.png",
+      "assetPath": null,
+      "portraitBackgroundScene": "grand_bellevue/service_passage",
+      "sceneKeys": [
+        "grand_bellevue/service_passage"
+      ],
+      "storyNodeIds": [
+        "hotel_collection_staff_pass"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-33-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/manifest.json",
+        "sha256": "056dad72f2f8e56a9c8b56e5fb3810170ab993095670a5472c7f1e802c82ef2c"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/previews/CH4-B2-33-4x.png",
+        "sha256": "fd04d1aacf9b41efb06bdb93e3297bfdd341c08ef54845fbeaf6aba8c62c6b94"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-34",
+      "title": "Porter — relieved",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "kind": "portrait",
+      "sha256": "0be33df015e9eae683021df5b4e128a80c857fc89ae3fc081db370bed8cfef75",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "registryKey": "portraits:hotel_porter:relieved",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_porter/relieved.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_porter/relieved.png",
+      "assetPath": null,
+      "portraitBackgroundScene": "grand_bellevue/service_passage",
+      "sceneKeys": [
+        "grand_bellevue/service_passage"
+      ],
+      "storyNodeIds": [
+        "hotel_collection_staff_pass_recognized"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-34-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/manifest.json",
+        "sha256": "056dad72f2f8e56a9c8b56e5fb3810170ab993095670a5472c7f1e802c82ef2c"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/previews/CH4-B2-34-4x.png",
+        "sha256": "aa880a3b074b553da69e07088ee4adf3e9bbcebde4ab46c4a598849542291f87"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-35",
+      "title": "Auctioneer — disappointed",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "kind": "portrait",
+      "sha256": "07ebaa5a00f4119855a9b6ba319ce3614b2b3c710243857f7756b08022cb33fc",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "registryKey": "portraits:hotel_auctioneer:disappointed",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_auctioneer/disappointed.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_auctioneer/disappointed.png",
+      "assetPath": null,
+      "portraitBackgroundScene": "grand_bellevue/lobby",
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "storyNodeIds": [
+        "hotel_lot61_pod_declined"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-35-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/manifest.json",
+        "sha256": "056dad72f2f8e56a9c8b56e5fb3810170ab993095670a5472c7f1e802c82ef2c"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/previews/CH4-B2-35-4x.png",
+        "sha256": "ad4fa451dc57d67d02dcdee2400e8daabfbc8263414dfa8a2feecf13b3505534"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    },
+    {
+      "id": "CH4-B2-36",
+      "title": "Auctioneer — bureaucratic",
+      "version": "v01",
+      "status": "approved",
+      "selectionStatus": "SELECTED",
+      "kind": "portrait",
+      "sha256": "cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "registryKey": "portraits:hotel_auctioneer:bureaucratic",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_auctioneer/bureaucratic.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_auctioneer/bureaucratic.png",
+      "assetPath": null,
+      "portraitBackgroundScene": "grand_bellevue/lobby",
+      "sceneKeys": [
+        "grand_bellevue/lobby"
+      ],
+      "storyNodeIds": [
+        "hotel_auctioneer_lot14_recall"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-36-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/manifest.json",
+        "sha256": "056dad72f2f8e56a9c8b56e5fb3810170ab993095670a5472c7f1e802c82ef2c"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/previews/CH4-B2-36-4x.png",
+        "sha256": "c23e75561cd23f5c9ae95acdbce8157d45a8db2fc028c1da37b57b80b16f3ea4"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false
+    }
+  ],
+  "plumberAlternatives": "Remain separate and UNSELECTED; their original v01 selections remain approved.",
+  "validation": {
+    "selectionPreservationChecks": 347,
+    "previousSelectedMappingsAndBytesPreserved": 180,
+    "canonicalCheck": "PASS",
+    "syncRegressionChecks": 23,
+    "chapter3ReferenceGuards": 10,
+    "storyboardSmoke": "PASS",
+    "fatalExport": "PASS",
+    "artLabStatic": "PASS",
+    "selectedArtworkBrowserChecks": 60,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ]
+  }
+}
