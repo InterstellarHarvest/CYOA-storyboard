@@ -85,3 +85,16 @@ Timing is decided by a later authorized integration task. No flags, nodes or bin
 | B2-18 / B2-19 | Restroom, lobby and Lot 61 state families | Derive from the R1-refined masters once selected. |
 
 Old B2-15 (approaches and exits) needs no production: it is resolved by text-led presentation and reuse (docs/137).
+
+## 4. Reconciliation with the existing B2-09 v01/v02 package (docs/139 §3)
+
+An UNSELECTED B2-09 package made under the old brief already exists on the review branch (`b896f50`). **Do not regenerate what it already covers.** Candidates go to Nate for selection, unchanged:
+- **NEW-05 Bixby:** CH4-B2-49 v01.
+- **NEW-18 base:** CH4-B2-51-emergency v02 (the no-wheel plate).
+- **Localized states:** CH4-B2-51 v01 (wheel boat) and CH4-B2-51-trade v02 (fender).
+
+**Still to produce, after Nate approves:**
+1. the wedding organizer portrait (NEW-06);
+2. one water-under-the-ballroom-door state derived from the NEW-18 base.
+
+**Redundant, preserved, never selected:** CH4-B2-50, CH4-B2-48 and its two states (B2-48 also has a red-rectangle artifact).

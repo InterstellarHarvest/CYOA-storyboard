@@ -252,3 +252,5 @@ Fully reversible with `git revert`. Nothing in any review package, approval docu
 - Reuse scene keys (C3) still bind at integration.
 
 **Validation of the applied branch:** see the PR and the [verification JSON](137_CH4_ARTWORK_CONSOLIDATION_VERIFICATION_20261124.json).
+
+**Follow-up (2026-11-24):** player speaker correction, merge of storyboard main 38bdb99 (PR #28), B2-09 v02 disposition and validation are in [docs/139](139_CH4_SPEAKER_CORRECTION_MAIN_RECONCILIATION_AND_B209_V02_DISPOSITION_20261124.md). The deferred Chapter 4 integration gaps are in [docs/140](140_CH4_GAMEPLAY_INTEGRATION_WORK_PACKAGE_20261124.md).
