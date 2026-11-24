@@ -7,8 +7,11 @@
 //   - the reference is the original v03 (ac0f7c44...) and the canonical preview is exactly v04 (93a48082...),
 //     in the registry and in the preview file's bytes;
 //   - the preserved v03 history copy still has its original hash;
-//   - the record is still `approved` with no production assetPath, and its notes name both hashes.
+//   - the record is still `approved` with no production assetPath, or (after the integration-status reconciliation)
+//     `integrated` at its suggestedFilename by a game build whose story/game-integration.json used exactly the
+//     approved replacement bytes there (ch3-integration-state.mjs), and its notes name both hashes.
 // Any other difference, for this key or any other, fails. The gallery itself is never modified.
+import { ch3IntegrationState } from './ch3-integration-state.mjs';
 export const PAPER_EMERGENCY_V04 = Object.freeze({
   key: 'scenes:pavilion_reboot/paper_emergency',
   record: 'pavilion_reboot/paper_emergency',
@@ -46,7 +49,13 @@ export function checkApprovedReferences({ refs, previews, art, readRepo, reviewD
     try { history = readRepo(s.historyFile); } catch (e) { fail(key + ': preserved historical copy ' + s.historyFile + ' is missing'); }
     if (digest(history) !== s.historicalSha256) fail(key + ': preserved historical copy ' + s.historyFile + ' no longer has its original sha256 ' + s.historicalSha256);
     const rec = art.scenes[s.record];
-    if (!rec || rec.status !== 'approved' || rec.assetPath !== null) fail(key + ': record must stay approved with no production assetPath');
+    // Before gameplay integration: approved, no production path. After the integration-status reconciliation:
+    // integrated at exactly its suggestedFilename, by a published game build (story/game-integration.json) that used
+    // exactly the approved replacement bytes there, its preview citing that build (ch3-integration-state.mjs).
+    let gi = null;
+    try { gi = JSON.parse(readRepo('story/game-integration.json')); } catch (e) { gi = null; }
+    try { ch3IntegrationState({ key, record: rec, sha256: s.currentSha256, integration: gi, preview: p }); }
+    catch (e) { fail(key + ': record must stay approved with no production assetPath, or be integrated at its suggestedFilename by a game build that used exactly ' + s.currentSha256 + ' (' + e.message + ')'); }
     if (!String(rec.notes).includes(s.currentSha256) || !String(rec.notes).includes(s.historicalSha256)) fail(key + ': record notes must name the replacement and the historical selection');
     superseded.push({ key, historicalSha256: s.historicalSha256, currentSha256: s.currentSha256, historyFile: s.historyFile, approved: s.approved });
   }
