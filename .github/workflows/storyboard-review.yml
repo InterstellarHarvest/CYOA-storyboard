@@ -29,6 +29,8 @@ jobs:
         run: node tools/sync/qa-sync.mjs
       - name: Pages Batch D staging guard (23 approved-source references; only the recorded Paper Emergency v03 -> v04 replacement, with its preserved v03 copy)
         run: node tools/sync/qa-ch3-reference-supersession.mjs
+      - name: Chapter 3 integration state (approved with no path, or integrated by a game build that used the exact approved bytes; wrong hashes, paths, reports and status regressions refused)
+        run: node tools/sync/qa-ch3-integration-state.mjs
       - name: Storyboard logic, timeline layout and Prologue/Chapter 3 snapshot checks
         run: node tools/storyboard/qa-smoke.mjs
       - name: Verify death-popup game export matches authored fatal boxes
