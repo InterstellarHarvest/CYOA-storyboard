@@ -1,0 +1,143 @@
+{
+  "canonicalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "formalInventoryStateFamilies": 0,
+  "conditionalReferenceBasis": "Within-node authored wheel handoff/trade beats; no new inventory demands, scene keys or dispatch",
+  "wheelIsInventoryItem": false,
+  "group": {
+    "id": "B2-09",
+    "title": "Commodore Bixby and the wheel",
+    "note": "Refreshment-table setting/background and two exact Bixby poses. Wheel is a temporary story prop, not new inventory.",
+    "inventoryIds": [
+      "main_scene:grand_bellevue/refreshment_table",
+      "portrait:hotel_commodore_bixby:delighted",
+      "portrait:hotel_commodore_bixby:commanding",
+      "portrait_background:grand_bellevue/refreshment_table"
+    ],
+    "primaryUnits": 4,
+    "stateFamilies": 0,
+    "nodeIds": [
+      "hotel_bixby_emergency",
+      "hotel_bixby_trade",
+      "hotel_commodore_bixby"
+    ],
+    "generationStarted": false
+  },
+  "storyFile": "story/chapters/chapter-04.wip.json",
+  "nodes": {
+    "hotel_bixby_emergency": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/refreshment_table",
+      "speaker": "hotel_commodore_bixby",
+      "pose": "commanding",
+      "effects": {
+        "set": {
+          "ch4_bixby_expects_bridge": true,
+          "ch4_valve_wheel_recovered": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The Commodore straightens so abruptly that his tiny cap nearly falls off."
+        },
+        "An emergency at sea! Why didn't you say so?",
+        {
+          "desc": "He pulls the wheel free of the ice bucket and presses it into your hands."
+        },
+        "Take the helm, sailor. Save the vessel. I'll be expecting a tour of the bridge when this is all over.",
+        {
+          "desc": "Behind him, a wedding guest slips on the advancing water. The Commodore blows a small whistle and begins organizing a lifeboat drill using dining chairs."
+        }
+      ],
+      "choices": [
+        {
+          "id": "bixby_return_wheel",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_wheel_return"
+        }
+      ]
+    },
+    "hotel_bixby_trade": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/refreshment_table",
+      "speaker": "hotel_commodore_bixby",
+      "pose": "delighted",
+      "effects": {
+        "set": {
+          "ch4_valve_wheel_recovered": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You offer the rubber band ball. It is almost exactly the right size for the ice bucket. Bixby sets it alongside his little vessel and gasps."
+        },
+        "A perfect fender! Look at the elasticity!",
+        {
+          "desc": "He hands you the brass wheel without another word, then ties the rubber band ball to the bucket with a length of napkin. It remains with him, part of his new ship."
+        },
+        "Splendid trade, sailor. Safe passage!"
+      ],
+      "choices": [
+        {
+          "id": "trade_return_wheel",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_wheel_return"
+        }
+      ]
+    },
+    "hotel_commodore_bixby": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/refreshment_table",
+      "speaker": "hotel_commodore_bixby",
+      "pose": "delighted",
+      "text": [
+        {
+          "desc": "At the edge of the reception, a gentleman in a miniature naval cap has mounted the stolen valve wheel on a silver ice bucket. A green auction paddle sticks out of his coat pocket."
+        },
+        "There she is! Fine little craft, isn't she?",
+        {
+          "desc": "He gives the wheel an experimental turn. The bucket rolls into a chair. He catches it just before it falls."
+        },
+        "Rudder needs work, but we'll have her seaworthy by Thursday.",
+        {
+          "desc": "Water creeps out from beneath the ballroom door and touches the toe of his polished shoe. He looks down with professional interest."
+        },
+        "Tide's coming in."
+      ],
+      "choices": [
+        {
+          "id": "bixby_emergency_truth",
+          "kind": "spoken",
+          "text": "THAT'S THE HOTEL'S SHUTOFF WHEEL. THE BUILDING IS FLOODING!",
+          "to": "hotel_bixby_emergency"
+        },
+        {
+          "id": "bixby_rubber_fender_trade",
+          "kind": "action",
+          "text": "TRADE YOUR RUBBER BAND BALL AS A FENDER FOR HIS LITTLE BOAT.",
+          "if": {
+            "has": "rubber_band_ball"
+          },
+          "effects": {
+            "take": [
+              "rubber_band_ball"
+            ],
+            "set": {
+              "ch4_bixby_fender_trade": true
+            }
+          },
+          "to": "hotel_bixby_trade"
+        },
+        {
+          "id": "bixby_auction_dispute",
+          "kind": "action",
+          "text": "GO BACK TO THE AUCTIONEER AND DEMAND THE SALE BE REVERSED.",
+          "to": "hotel_auctioneer_lot14_dispute"
+        }
+      ]
+    }
+  },
+  "runtimeBindingsChanged": false
+}

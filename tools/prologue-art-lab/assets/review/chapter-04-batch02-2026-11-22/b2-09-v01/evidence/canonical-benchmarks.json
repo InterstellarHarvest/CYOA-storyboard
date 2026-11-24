@@ -1,0 +1,206 @@
+{
+  "approved-bureau": {
+    "registryKey": "scenes:biology_park/conveniences_bureau",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+    "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/conveniences_bureau.png"
+    }
+  },
+  "approved-tower": {
+    "registryKey": "scenes:biology_park/control_tower",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+    "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/scenes/biology_park/control_tower.png"
+    }
+  },
+  "approved-attendant": {
+    "registryKey": "portraits:pavilion_attendant:idle",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+    "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+    }
+  },
+  "approved-presenter": {
+    "registryKey": "portraits:pavilion_presenter:idle",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+    "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch3-pavilion-batch01-20261118",
+      "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+      "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+    }
+  },
+  "approved-auctioneer": {
+    "registryKey": "portraits:hotel_auctioneer:showman",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/portraits/hotel_auctioneer/showman.png",
+    "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch4-batch01-review-20261121",
+      "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/native/CH4-03-auctioneer-source-derived-v08.png"
+    }
+  },
+  "approved-engineer": {
+    "registryKey": "portraits:hotel_boiler_engineer:careful",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/careful.png",
+    "sha256": "f5291b027540cb41898fd2032ea3462723269fd319ebe156b3a2e2a80acc9067",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch4-batch01-review-20261121",
+      "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-43-v01.png"
+    }
+  },
+  "approved-ballroom": {
+    "registryKey": "scenes:grand_bellevue/ballroom",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/scenes/grand_bellevue/ballroom.png",
+    "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch4-batch01-review-20261121",
+      "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-05-ballroom-v03.png"
+    }
+  },
+  "approved-lobby": {
+    "registryKey": "scenes:grand_bellevue/lobby",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+    "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch4-batch01-review-20261121",
+      "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png"
+    }
+  },
+  "approved-lobby-background": {
+    "registryKey": "scenes:grand_bellevue/lobby#portraitBackground",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+    "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch4-batch01-review-20261121",
+      "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png"
+    }
+  },
+  "approved-receptionist": {
+    "registryKey": "portraits:receptionist:default#layers:foreground",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+    "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+    "size": [
+      564,
+      278
+    ],
+    "alpha": "transparent",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/portraits/receptionist/receptionist_idle.png"
+    }
+  },
+  "approved-rubber-band-ball": {
+    "registryKey": "items:rubber_band_ball#inspect",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/art/items/rubber_band_ball_inspect.png",
+    "sha256": "5c6d633de86e5228c3066e7564a87b438d6366ff4956f57ac03437d67749e1b9",
+    "size": [
+      565,
+      451
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA",
+      "ref": "agent/ch02-art-integration-20261118",
+      "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+      "path": "art/items/rubber_band_ball_inspect.png"
+    }
+  },
+  "approved-restroom": {
+    "registryKey": "scenes:grand_bellevue/restroom",
+    "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+    "file": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+    "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+    "size": [
+      314,
+      206
+    ],
+    "alpha": "opaque",
+    "source": {
+      "repo": "InterstellarHarvest/CYOA-storyboard",
+      "ref": "art/ch4-batch01-review-20261121",
+      "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png"
+    }
+  }
+}
