@@ -49,6 +49,8 @@ const FILTER_RULES = {
 // Preview keys (register format "scenes:id#portraitBackground") in the viewer's key format. A selected
 // container (layered portrait, complete views, multipage Focus) is previewed through its children.
 const PREVIEW_KEYS = Object.keys(PREVIEW.images).map((k) => k.replace(':', '/').replace('#', '/'));
+// docs/137 C1/C2: approved no-image records show a NO IMAGE tag instead of a thumbnail and have no preview.
+const NO_IMAGE_KEYS = new Set(CATALOG_REFS.filter((x) => ['text-led', 'voice-only'].includes(x.record && x.record.format)).map((x) => x.key));
 const SELECTED_PREVIEWED = new Set(CATALOG_REFS.map((x) => x.key).filter((k) => PREVIEW_KEYS.includes(k) || PREVIEW_KEYS.some((p) => p.startsWith(k + '/'))));
 
 const results = [];
@@ -115,8 +117,9 @@ async function run(name, base) {
   const n = Number((overview.match(/(\d+) selected images viewable here/) || [])[1]);
   check(b, 'library reports the viewable selected images', n === served.length, overview.slice(0, 300));
   await openList('Selected');
-  const selectedButtons = await page.$$eval('#details button.art-brief', (bs) => bs.map((x) => ({ thumb: !!x.querySelector('img.thumb'), t: x.textContent })));
-  check(b, 'Selected filter: every selected record shows a thumbnail', selectedButtons.length > 0 && selectedButtons.every((x) => x.thumb), selectedButtons.filter((x) => !x.thumb).slice(0, 3));
+  const selectedButtons = await page.$$eval('#details button.art-brief', (bs) => bs.map((x) => ({ thumb: !!x.querySelector('img.thumb'), noImage: !!x.querySelector('.no-image-tag'), key: (x.querySelector('.art-meta') || {}).textContent.split(' · ')[0], t: x.textContent })));
+  check(b, 'Selected filter: every selected image record shows a thumbnail', selectedButtons.length > 0 && selectedButtons.every((x) => x.thumb || (x.noImage && NO_IMAGE_KEYS.has(x.key))), selectedButtons.filter((x) => !x.thumb && !x.noImage).slice(0, 3));
+  check(b, 'Selected filter: the approved no-image records (docs/137) show a NO IMAGE tag and no thumbnail', selectedButtons.filter((x) => x.noImage).map((x) => x.key).sort().join() === [...NO_IMAGE_KEYS].sort().join() && selectedButtons.every((x) => !(x.noImage && x.thumb)), selectedButtons.filter((x) => x.noImage).map((x) => x.key));
   // Filter matrix. Since the Chapter 3 reboot (2a1022b) the library separates ACTIVE records from RETIRED
   // historical ones ("Archived"; the "Not selected yet" filter became "Active pending"). Every filter must list
   // exactly the records the committed catalogue predicts, and the five sets must partition consistently.
@@ -151,7 +154,7 @@ async function run(name, base) {
     JSON.stringify(union('Selected', 'Active pending', 'Archived')) === JSON.stringify(allKeys) && seen.Selected.length + seen['Active pending'].length + seen.Archived.length === allKeys.length
     && JSON.stringify(union('Integrated', 'Approved')) === JSON.stringify(seen.Selected) && seen.Integrated.length + seen.Approved.length === seen.Selected.length,
     { all: allKeys.length, selected: seen.Selected.length, pending: seen['Active pending'].length, archived: seen.Archived.length });
-  check(b, 'every Selected record has a byte-checked preview', seen.Selected.every((k) => SELECTED_PREVIEWED.has(k)), seen.Selected.filter((k) => !SELECTED_PREVIEWED.has(k)).slice(0, 3));
+  check(b, 'every Selected image record has a byte-checked preview', seen.Selected.every((k) => SELECTED_PREVIEWED.has(k) || NO_IMAGE_KEYS.has(k)), seen.Selected.filter((k) => !SELECTED_PREVIEWED.has(k) && !NO_IMAGE_KEYS.has(k)).slice(0, 3));
 
   // 3. Main scene at native 1x (314 fits the pane).
   await openArt('HOUSE OF TOMORROW — ARRIVAL');

@@ -17,6 +17,12 @@ import crypto from 'node:crypto';
 
 export const SELECTED = ['approved', 'integrated', 'reused'];
 export const STATUS_VALUES = ['not-started', 'prompted', 'generated', 'approved', 'integrated', 'reused'];
+// Presentation formats a record may declare. 'opaque-complete' (docs/92) is an image container;
+// the two NO-IMAGE formats (docs/137, Nate 2026-11-24) are owner-approved presentation decisions
+// that must never carry an image: 'text-led' scenes keep the previous scene image on screen (C1),
+// 'voice-only' speakers lead dialogue in Narrative B without a portrait (C2).
+export const FORMATS = { 'opaque-complete': 'portraits', 'text-led': 'scenes', 'voice-only': 'portraits' };
+export const NO_IMAGE_FORMATS = ['text-led', 'voice-only'];
 
 export const sha256 = (buf) => crypto.createHash('sha256').update(buf).digest('hex');
 export const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));

@@ -163,4 +163,6 @@ Relieved means gauge needle physically in GREEN, overhead relief steam and outer
 
 ## Automatic next group
 
-Proceed to B2-09 — Commodore Bixby and the wheel, using canonical v08 inventory/current nodes: refreshment-table main scene/background and Bixby delighted/commanding portraits. Preserve temporary brass valve wheel on silver ice bucket, green auction paddle, miniature naval cap, water and authored handoff/trade continuity. The wheel is not a new inventory item. Follow docs129, actual approved Chapter2/4 native/exact4× comparisons and source-derived provenance. Publish the new review UNSELECTED.
+> **SUPERSEDED — 2026-11-24, Nate.** This paragraph is replaced by [docs/137 §10](137_CH4_ARTWORK_CONSOLIDATION_PROPOSAL_20261124.md#10-b2-09-is-paused-revised-scope) and the revised production brief [docs/138](138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md). **Do not start the original four-asset B2-09** (no refreshment-table scene or background, no commanding Bixby portrait). The original text is kept below, struck through, as history.
+
+~~Proceed to B2-09 — Commodore Bixby and the wheel, using canonical v08 inventory/current nodes: refreshment-table main scene/background and Bixby delighted/commanding portraits. Preserve temporary brass valve wheel on silver ice bucket, green auction paddle, miniature naval cap, water and authored handoff/trade continuity. The wheel is not a new inventory item. Follow docs129, actual approved Chapter2/4 native/exact4× comparisons and source-derived provenance. Publish the new review UNSELECTED.~~

@@ -467,3 +467,8 @@ Nate APPROVES/SELECTS five primary v01 assets CH4-B2-37 through41 and APPROVES/P
 ## Chapter4 B2-08 — owner approval, 2026-11-24
 
 Nate APPROVES/SELECTS six primary v01 assets CH4-B2-42 through47 and APPROVES/PRESERVES six relief/inspection/staff production references unchanged from `6ddaf567bcc2369c2122256a6ec0daa93f5f886e`. [Exact paths/hashes, mappings, source-derived provenance and gameplay handoff](136_CH4_B208_APPROVAL_COMPLETION_20261124.md). Earlier approvals, ring references and plumber alternatives stay exact. Supplemental references create no canonical Focus IDs or runtime bindings. No integration.
+
+
+## Chapter4 artwork consolidation — owner approval, 2026-11-24
+
+Nate APPROVES the docs/137 consolidation (PR #31): seven retirements from ACTIVE Chapter 4 coverage — CH4-B2-33→B2-21, B2-34→B2-22, B2-28→B2-26, B2-36→CH4-03, B2-39→B2-40, B2-46→B2-43, B2-16→B2-23 — with every approval, byte, hash and source preserved ([verbatim ledger](137_CH4_RETIRED_ARTWORK_LEDGER_20261124.json); CH4-B2-16 bytes kept at `tools/prologue-art-lab/assets/approved/retired-selections/chapter-04/`). Also approved: CH4-NEW-18 shared ballroom/reception closer background (active target 63), nine NO-IMAGE presentation records (three text-led scenes, six voice-only speakers; docs/137 C1/C2), Bixby commanding → delighted (one Bixby expression), the corrected ring inspection brief (AS IS, WHERE IS.), and the revised B2-09 ([docs/138](138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md)) superseding docs/136 "Automatic next group". The five refinement candidates (CH4-01, CH4-04, CH4-05, CH4-B2-03, CH4-B2-11) stay selected until Nate reviews replacements.

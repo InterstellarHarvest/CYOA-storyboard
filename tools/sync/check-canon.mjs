@@ -16,10 +16,11 @@
 //   integrated every `integrated` record is in story/game-integration.json with the same SHA-256, and
 //              every image the game reports is `integrated` or `reused` here
 //   package    nothing in assets/selected/ is unregistered
+//   no-image   'text-led' / 'voice-only' records (docs/137) are approved and carry no path, preview or nested art
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { artRecords, statusOf, checkContract, sha256, readJson, SELECTED, STATUS_VALUES } from './lib.mjs';
+import { artRecords, statusOf, checkContract, sha256, readJson, SELECTED, STATUS_VALUES, FORMATS, NO_IMAGE_FORMATS } from './lib.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const S = (p) => path.join(ROOT, 'story', p);
@@ -88,6 +89,16 @@ export function checkCanon() {
     if (!STATUS_VALUES.includes(st)) err(e.key + ': unknown status ' + st);
     const container = !!(e.record.views || e.record.pages || e.record.layers);
     const p = preview.images[e.key];
+    const fmt = e.layer ? undefined : e.record.format;
+    if (fmt !== undefined && (FORMATS[fmt] !== e.group || e.variant)) err(e.key + ': format "' + fmt + '" is not valid here (known: ' + Object.entries(FORMATS).map(([f, g]) => f + ' on ' + g).join(', ') + ')');
+    if (NO_IMAGE_FORMATS.includes(fmt)) {
+      // An owner-approved presentation decision with no image (docs/137): never an art slot.
+      if (st !== 'approved') err(e.key + ': a ' + fmt + ' record is an approved no-image decision; status must be approved, not ' + st);
+      if (e.record.assetPath != null || e.record.suggestedFilename != null) err(e.key + ': a ' + fmt + ' record must not name an assetPath or suggestedFilename');
+      if (p) err(e.key + ': a ' + fmt + ' record must not have a public preview');
+      if (e.record.portraitBackground || e.record.states || e.record.views || e.record.pages || e.record.layers) err(e.key + ': a ' + fmt + ' record must not nest art');
+      continue;
+    }
     if (container) {
       const kids = records.filter((k) => k.key.startsWith(e.key + '#'));
       if (SELECTED.includes(st) && !kids.some((k) => SELECTED.includes(statusOf(k)))) err(e.key + ': selected container without any selected view/page/layer');
