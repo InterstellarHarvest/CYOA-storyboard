@@ -1,3 +1,5 @@
+[Latest public B2-07 browser gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/f666c8628b277fb50ddd8229dabc332c63a79006/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/online.html) · [Publication and QA receipt](B2-07-REVIEW-PUBLICATION-20261123.md)
+
 # Current B2-06 owner approval and B2-07 review — 2026-11-23
 
 B2-06 all six v01 portraits are APPROVED/SELECTED unchanged from f6840e5d69f70435f88ce9ece720583566fce8e2. Canonical main ac2916cf077d960ee17fef5678649d594b1581d6, PR27, docs134. Preserve all41 approved Chapter4 primary PNGs, three conditional ring references, all186 total previous selections and all historical reviews. The unselected plumber alternatives remain separate. Historical review labels stay untouched; only the exact selected hashes are superseded by the new approval receipt. No engine integration.
