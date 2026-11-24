@@ -42,7 +42,12 @@ SELECTED = ('approved', 'integrated', 'reused')
 NOART = {'C1': 'TEXT-LED (C1)', 'C2': 'NO PORTRAIT (C2)'}
 APPROVAL_DOCS = sorted(DOCS.glob('1[23][0-9]_CH4_*APPROVAL_COMPLETION_*.json'))
 AUDIT = {'main': 'b56f91e19e890c340d92c72d6d2c4822f0f178d9', 'review': '6ddaf567bcc2369c2122256a6ec0daa93f5f886e'}
-CANON_BASE = '96e3c2a68e3f31afec2aed6cfd8b7634b774980f'  # main after PR #30, before consolidation
+CANON_BASE = '96e3c2a68e3f31afec2aed6cfd8b7634b774980f'  # main after PR #30, before consolidation (plan derivation)
+MAIN_BASE = '38bdb999b970b2f03e947e31bb2e51e495b02aab'   # storyboard main merged into PR #31 (PR #28: 29 Chapter 3 records)
+SPEAKER_AUDIT = DOCS / '139_CH4_PLAYER_SPEAKER_AUDIT_20261124.json'
+# docs/139: Nate approved who "visitor" -> "you" only where the speaker is the player. Chapter 4's player voice is
+# all caps; the one lower-case line was audited by hand.
+LOWERCASE_PLAYER = {('hotel_collection_ring_porter_recovery', 3): "Follows your own line about the manifest, is addressed to the porter (the node's speaker) and he answers it ('We'd better.'): the player. Lower case kept exactly as authored."}
 LEDGER = DOCS / '137_CH4_RETIRED_ARTWORK_LEDGER_20261124.json'
 RETIRED_DIR = 'tools/prologue-art-lab/assets/approved/retired-selections/chapter-04'
 DECISION = 'Nate approved all four docs/137 decisions on 2026-11-24 (PR #31).'
@@ -378,10 +383,10 @@ def coverage(chapter, art, plan, proposed=True):
     return rows
 
 
-def load_canon(root=ROOT, base=False):
-    """This tree's canon, or (base=True) the pre-consolidation canon at CANON_BASE."""
-    if base:
-        get = lambda rel: json.loads(git('show', CANON_BASE + ':' + rel))
+def load_canon(root=ROOT, base=False, ref=None):
+    """This tree's canon, (base=True) the pre-consolidation canon at CANON_BASE, or the canon at git `ref`."""
+    if base or ref:
+        get = lambda rel: json.loads(git('show', (ref or CANON_BASE) + ':' + rel))
         return get(CHAPTER), get(ARTWORK), get(PREVIEW)['images']
     return rd(CHAPTER, root), rd(ARTWORK, root), rd(PREVIEW, root)['images']
 
@@ -469,20 +474,28 @@ def live_file(r):
     return p
 
 
-def verify_applied(check, report, b_ch, b_art, b_pv, chapter, art, preview):
-    """This tree must be exactly CANON_BASE plus the approved edit set (and nothing else)."""
-    diffs = []
-    for nid in b_ch['nodes']:
-        b, p = b_ch['nodes'][nid], chapter['nodes'][nid]
-        diffs += [[nid, k, b.get(k), p.get(k)] for k in sorted(set(b) | set(p)) if b.get(k) != p.get(k)]
-    expect = [[n, 'pose', o, w] for d in RETIRE.values() for n, o, w in d['poseChanges']] + [[n, 'pose', o, w] for n, _, o, w in REUSE_POSES]
-    check(sorted(diffs) == sorted(expect) and {k: v for k, v in b_ch.items() if k != 'nodes'} == {k: v for k, v in chapter.items() if k != 'nodes'},
-          'Chapter 4 differs from CANON_BASE only in 8 pose fields (7 retirements + Bixby commanding -> delighted); text, choices, flags, items, d6, endings untouched', diffs)
-    report['poseChanges'] = diffs
+def verify_applied(check, report, plan_art, b_ch, b_art, b_pv, chapter, art, preview):
+    """This tree must be exactly MAIN_BASE plus the approved edit sets (consolidation + speaker) and nothing else."""
+    exp_ch = copy.deepcopy(b_ch)
+    poses = [[n, o, w] for d in RETIRE.values() for n, o, w in d['poseChanges']] + [[n, o, w] for n, _, o, w in REUSE_POSES]
+    for n, o, w in poses:
+        assert exp_ch['nodes'][n]['pose'] == o
+        exp_ch['nodes'][n]['pose'] = w
+    audit = json.loads(SPEAKER_AUDIT.read_text(encoding='utf-8'))['changes']
+    check(audit == speaker_audit(b_ch), 'Speaker audit ledger = a fresh audit of MAIN_BASE (%d occurrences, each with a rationale)' % len(audit))
+    for a in audit:
+        v = exp_ch['nodes'][a['node']]
+        for k in a['path']:
+            v = v[k]
+        v['who'] = 'you'
+    check(exp_ch == chapter, 'Chapter 4 = MAIN_BASE + exactly 8 pose remaps + %d audited who visitor -> you; wording, capitals, choices, conditions, flags, items, dice, endings untouched' % len(audit))
+    check('"visitor"' not in json.dumps(chapter), 'No "visitor" value remains anywhere in Chapter 4')
+    report['poseChanges'] = poses
+    report['speakerChanges'] = len(audit)
     for rel in ('story/items.draft.json', 'story/storyboard-manifest.json', 'story/chapters/prologue-00.draft.json', 'story/chapters/chapter-01.draft.json',
-                'story/chapters/chapter-02.draft.json', 'story/chapters/chapter-03.draft.json', 'story/death-presentations.export.json',
+                'story/chapters/chapter-02.draft.json', 'story/chapters/chapter-03.draft.json', 'story/chapters/chapter-03.reboot-candidate.json', 'story/death-presentations.export.json',
                 'story/game-integration.json', 'story/sync-contract.json', 'story/storyboard-layout.json'):
-        check(git('show', CANON_BASE + ':' + rel) == (ROOT / rel).read_bytes(), 'Byte-identical to CANON_BASE: ' + rel)
+        check(git('show', MAIN_BASE + ':' + rel) == (ROOT / rel).read_bytes(), 'Byte-identical to MAIN_BASE: ' + rel)
     exp = copy.deepcopy(b_art)
     for k, d in RETIRE.items():
         if k.startswith('portrait:'):
@@ -502,33 +515,52 @@ def verify_applied(check, report, b_ch, b_art, b_pv, chapter, art, preview):
         (exp['scenes'] if cat == 'main_scene' else exp['portraits'])[lk] = rec
     for side, b in RING_BRIEF.items():
         exp['items']['wedding_ring_lot31'][side].update(b)
-    check(exp == art, 'Artwork registry = CANON_BASE + exactly the approved edits (retirement notes, B2-16 out, alarmed background scene, 9 no-image records, ring brief)')
+    check(exp == art, 'Artwork registry = MAIN_BASE + exactly the approved edits (retirement notes, B2-16 out, alarmed background scene, 9 no-image records, ring brief)')
     ring = art['items']['wedding_ring_lot31']
     check(all(ring[side]['status'] == 'not-started' and ring[side]['assetPath'] is None and {k: ring[side][k] for k in b} == b for side, b in RING_BRIEF.items())
           and 'AS IS, WHERE IS.' in ring['inspect']['prompt'] and not ring['inspect']['notes'].startswith('CH4 WORKING DRAFT'),
           'Ring brief matches the approved inscription reveal (AS IS, WHERE IS.); art stays unproduced')
     ledger = json.loads(LEDGER.read_text(encoding='utf-8'))
     led = {e['id']: e for e in ledger['retired']}
-    check(sorted(led) == sorted(d['id'] for d in RETIRE.values()) and all(led[d['id']]['originalRecordVerbatim'] == registry_record(b_art, k) for k, d in RETIRE.items()),
-          'Ledger holds all 7 retired records verbatim from CANON_BASE')
+    check(sorted(led) == sorted(d['id'] for d in RETIRE.values()) and all(led[d['id']]['originalRecordVerbatim'] == registry_record(plan_art, k) == registry_record(b_art, k) for k, d in RETIRE.items()),
+          'Ledger holds all 7 retired records verbatim (identical at CANON_BASE and MAIN_BASE)')
     bpk = 'scenes:grand_bellevue/boiler_access#portraitBackground'
     kept = ROOT / RETIRED_DIR / 'CH4-B2-16-v01.png'
     check(kept.exists() and sha(kept.read_bytes()) == b_pv[bpk]['sha256'] == 'e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3'
           and sha(git('show', b_pv[bpk]['source']['commit'] + ':' + b_pv[bpk]['source']['path'])) == b_pv[bpk]['sha256'],
           'CH4-B2-16 exact bytes preserved in the retired archive and at its pinned source commit')
-    check(preview == {k: v for k, v in b_pv.items() if k != bpk}, 'Preview registry = CANON_BASE minus only the CH4-B2-16 entry; every other entry identical')
+    check(preview == {k: v for k, v in b_pv.items() if k != bpk}, 'Preview registry = MAIN_BASE minus only the CH4-B2-16 entry; every other entry identical')
     bad = [k for k, v in preview.items() if sha((ROOT / v['file']).read_bytes()) != v['sha256']]
     check(not bad, 'Every selected file matches its preview SHA (%d)' % len(preview), bad)
-    base_files = set(git('ls-tree', '-r', '--name-only', CANON_BASE, '--', 'assets/selected').decode().split('\n')) - {''}
+    base_files = set(git('ls-tree', '-r', '--name-only', MAIN_BASE, '--', 'assets/selected').decode().split('\n')) - {''}
     now_files = {str(p.relative_to(ROOT)) for p in (ROOT / 'assets/selected').rglob('*') if p.is_file() and p.name != '.DS_Store'}
-    check(base_files - now_files == {b_pv[bpk]['file']} and not now_files - base_files, 'Selected package = CANON_BASE minus the one retired CH4-B2-16 copy')
-    hist = [h for h in git('diff', '--name-status', CANON_BASE, '--', 'tools/prologue-art-lab/assets', 'docs').decode().split('\n') if h]
+    check(base_files - now_files == {b_pv[bpk]['file']} and not now_files - base_files, 'Selected package = MAIN_BASE minus the one retired CH4-B2-16 copy')
+    hist = [h for h in git('diff', '--name-status', MAIN_BASE, '--', 'tools/prologue-art-lab/assets', 'docs').decode().split('\n') if h]
     bad = [h for h in hist if not h.startswith('A') and not h.split('\t')[-1].startswith(('docs/136_CH4_B208_APPROVAL_COMPLETION_20261124.md', 'docs/103_'))]
     check(not bad, 'No review package, approval record or art-lab asset modified or deleted (additions only; docs/103 and docs/136 annotated)', bad)
     ni = no_image_records(b_ch)
     check(len(ni) == 9 and sum(r['format'] == 'text-led' for r in ni.values()) == 3 and sum(r['format'] == 'voice-only' for r in ni.values()) == 6,
           '9 approved no-image presentation records: 3 text-led scenes (C1), 6 voice-only speakers (C2)')
     check(all(registry_record(art, k)['assetPath'] is None and preview_key(k) not in preview for k in ni), 'No-image records carry no assetPath and no preview')
+    # PR #28 (merged in): the 29 Chapter 3 selections, defined as main's own QA does (suggestedFilename under
+    # art/(scenes|portraits)/pavilion_reboot/), keep record, preview, bytes and the game-integration report.
+    def by_key(a, k):
+        g, rest = k.split(':', 1)
+        i, _, v = rest.partition('#')
+        r = a.get(g, {}).get(i)
+        return r.get(v) if (r is not None and v) else r
+    ch3keys = sorted(k for k in b_pv if re.match(r'^art/(scenes|portraits)/pavilion_reboot/', (by_key(b_art, k) or {}).get('suggestedFilename') or ''))
+    same = [k for k in ch3keys if by_key(art, k) == by_key(b_art, k) and preview.get(k) == b_pv[k] and sha((ROOT / b_pv[k]['file']).read_bytes()) == b_pv[k]['sha256']]
+    statuses = sorted({by_key(b_art, k)['status'] for k in ch3keys})
+    integ_bytes = git('show', MAIN_BASE + ':story/game-integration.json') == (ROOT / 'story/game-integration.json').read_bytes()
+    check(len(ch3keys) == 29 and len(same) == 29 and integ_bytes,
+          'PR #28: all 29 Chapter 3 selections keep record (status, production path, approval notes), preview, SHA-256 bytes and the game-integration report exactly as main',
+          {'n': len(ch3keys), 'same': len(same), 'statuses': statuses})
+    report['chapter3Selections'] = {'count': len(ch3keys), 'statuses': statuses, 'assetPaths': sum(1 for k in ch3keys if by_key(art, k).get('assetPath'))}
+    for g, i in [(g, i) for g in ('scenes', 'portraits', 'focus', 'items', 'deathScreens') for i in plan_art.get(g, {})]:
+        if json.dumps(plan_art[g][i]).find('grand_bellevue') != -1 or i.startswith('hotel_'):
+            if plan_art[g][i] != b_art[g].get(i):
+                check(False, 'PR #28 changed no Chapter 4 record: ' + g + ':' + i)
 
 
 def verify_core(check):
@@ -538,7 +570,11 @@ def verify_core(check):
     report = {}
 
     b_ch, b_art, b_pv = load_canon(base=True)
+    m_ch, m_art, m_pv = load_canon(ref=MAIN_BASE)
     report['canonicalBase'] = CANON_BASE
+    report['mainBase'] = MAIN_BASE
+    check(subprocess.run(['git', 'merge-base', '--is-ancestor', MAIN_BASE, 'HEAD'], cwd=ROOT).returncode == 0, 'MAIN_BASE %s (storyboard main with PR #28) is merged into this branch' % MAIN_BASE[:7])
+    check(classify(derive(m_ch, m_art), m_art, m_pv) == classify(derive(b_ch, b_art), b_art, b_pv), 'The 90 Chapter 4 requirements and dispositions are identical derived at CANON_BASE and at MAIN_BASE')
     check(subprocess.run(['git', 'merge-base', '--is-ancestor', CANON_BASE, 'HEAD'], cwd=ROOT).returncode == 0, 'CANON_BASE %s is an ancestor of this branch' % CANON_BASE[:7])
 
     # Narrative structure ----------------------------------------------------------------------
@@ -709,7 +745,7 @@ def verify_core(check):
     changed_rows = [r['node'] for r in rows if 'portrait' in r and (r['portraitNow'] != r['portrait'] or r['backgroundNow'] != r['background'])]
     expect = sorted(n for d in RETIRE.values() for n, _, _ in d['poseChanges']) + ['hotel_collection_slip_spotted']
     check(sorted(changed_rows) == sorted(expect), 'Exactly the 8 retirement nodes change presentation among approved art', sorted(changed_rows))
-    verify_applied(check, report, b_ch, b_art, b_pv, chapter, art, preview)
+    verify_applied(check, report, b_art, m_ch, m_art, m_pv, chapter, art, preview)
 
     # Coverage ---------------------------------------------------------------------------------
     unresolved = [r['node'] for r in rows if '??' in json.dumps(r)]
@@ -793,6 +829,51 @@ def retired_prefix(d):
     nodes = ', '.join(n for n, _, _ in d['poseChanges'])
     return ('ARCHIVED / RETIRED / UNUSED — CHAPTER 4 CONSOLIDATION (docs/137; Nate, 2026-11-24). Approved image kept as history: '
             + nodes + ' now use ' + d['replacementId'] + '. Do not generate, re-select or import. Original approval record follows: ')
+
+
+def speaker_audit(chapter):
+    """Every who "visitor" in Chapter 4 with its exact place, words and the reason it is the player."""
+    out = []
+    for nid, n in chapter['nodes'].items():
+        def walk(v, path):
+            if isinstance(v, dict):
+                if v.get('who') == 'visitor':
+                    key = (nid, path[1]) if len(path) == 2 and path[0] == 'text' else None
+                    if v['say'].isupper():
+                        why = 'All-caps player line (Chapter 4 voices the player in capitals), spoken to ' + (n.get('speaker') or 'the scene') + '.'
+                    elif key in LOWERCASE_PLAYER:
+                        why = LOWERCASE_PLAYER[key]
+                    else:
+                        raise SystemExit('unaudited visitor line: %s %s %r' % (nid, path, v['say']))
+                    out.append({'node': nid, 'path': path, 'mode': n['mode'], 'nodeSpeaker': n.get('speaker'), 'say': v['say'], 'from': 'visitor', 'to': 'you', 'rationale': why})
+                for k, x in v.items():
+                    walk(x, path + [k])
+            elif isinstance(v, list):
+                for i, x in enumerate(v):
+                    walk(x, path + [i])
+        walk(n, [])
+    return out
+
+
+def apply_speaker(root):
+    """docs/139: who "visitor" -> "you" for the audited player lines; nothing else in the chapter changes."""
+    root = Path(root)
+    main_ch = load_canon(ref=MAIN_BASE)[0]
+    audit = speaker_audit(main_ch)
+    ch = rd(CHAPTER, root)
+    for a in audit:
+        v = ch['nodes'][a['node']]
+        for k in a['path']:
+            v = v[k]
+        assert v.get('who') == 'visitor' and v['say'] == a['say'], a
+        v['who'] = 'you'
+    (root / CHAPTER).write_text(json.dumps(ch, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    SPEAKER_AUDIT.write_text(json.dumps({
+        'schema': 'out-of-order-speaker-audit-v1', 'decision': 'Nate approved 2026-11-24: change who "visitor" to "you" only where the speaker is the player; no wording, capitalisation, choice, condition, flag, item, dice or ending changes.',
+        'chapter': CHAPTER, 'base': MAIN_BASE, 'occurrences': len(audit), 'changed': len(audit),
+        'unrelatedVisitorUses': 'None in Chapter 4. Chapter 3 keeps its NPC visitor (story/chapters/chapter-03*.json unchanged).',
+        'changes': audit}, indent=1, ensure_ascii=False) + '\n', encoding='utf-8')
+    return audit
 
 
 def apply_edits(root, ledger=False):
@@ -894,7 +975,7 @@ def tree_copy(dest, base):
     """A throwaway tree: CANON_BASE (git archive) or this working tree's story/tools/assets."""
     dest.mkdir(parents=True)
     if base:
-        tar = subprocess.Popen(['git', 'archive', CANON_BASE], cwd=ROOT, stdout=subprocess.PIPE)
+        tar = subprocess.Popen(['git', 'archive', MAIN_BASE], cwd=ROOT, stdout=subprocess.PIPE)
         subprocess.check_call(['tar', '-x', '-C', str(dest)], stdin=tar.stdout)
         tar.wait()
     else:
@@ -909,13 +990,13 @@ def game_check(game):
     base_dir, now_dir = tmp / 'base', tmp / 'now'
     tree_copy(base_dir, True)
     tree_copy(now_dir, False)
-    res = {'canonicalBase': CANON_BASE}
+    res = {'baseTree': MAIN_BASE}
 
     def run(cmd, cwd):
         p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
         return p.returncode, (p.stdout + p.stderr).strip().splitlines()[-2:]
     for name, cmd in (('check-canon', ['node', 'tools/sync/check-canon.mjs']), ('qa-smoke', ['node', 'tools/storyboard/qa-smoke.mjs'])):
-        for label, d in (('CANON_BASE', base_dir), ('applied', now_dir)):
+        for label, d in (('MAIN_BASE', base_dir), ('applied', now_dir)):
             rc, tail = run(cmd, d)
             res['%s:%s' % (name, label)] = {'exit': rc, 'tail': tail}
             check(rc == 0, '%s passes on the %s tree' % (name, label), tail)
@@ -1048,6 +1129,9 @@ if __name__ == '__main__':
     elif cmd == 'apply':
         apply_edits(ROOT, ledger=True)
         print('applied; now run build, verify and game-check')
+    elif cmd == 'apply-speaker':
+        a = apply_speaker(ROOT)
+        print('who visitor -> you: %d audited player lines' % len(a))
     elif cmd == 'verify':
         sys.exit(verify())
     elif cmd == 'game-check':

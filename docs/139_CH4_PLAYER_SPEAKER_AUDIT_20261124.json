@@ -1,0 +1,1272 @@
+{
+ "schema": "out-of-order-speaker-audit-v1",
+ "decision": "Nate approved 2026-11-24: change who \"visitor\" to \"you\" only where the speaker is the player; no wording, capitalisation, choice, condition, flag, item, dice or ending changes.",
+ "chapter": "story/chapters/chapter-04.wip.json",
+ "base": "38bdb999b970b2f03e947e31bb2e51e495b02aab",
+ "occurrences": 97,
+ "changed": 97,
+ "unrelatedVisitorUses": "None in Chapter 4. Chapter 3 keeps its NPC visitor (story/chapters/chapter-03*.json unchanged).",
+ "changes": [
+  {
+   "node": "hotel_ring_show_bride",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_bride",
+   "say": "YES. LOT THIRTY-ONE.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_bride."
+  },
+  {
+   "node": "hotel_bride_ring_bathroom",
+   "path": [
+    "text",
+    0
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_bride",
+   "say": "I STILL NEED A BATHROOM. CAN YOU HELP ME?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_bride."
+  },
+  {
+   "node": "hotel_bride_ring_bathroom",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_bride",
+   "say": "WHERE IS SHE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_bride."
+  },
+  {
+   "node": "hotel_collection_ring_porter_recovery",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_porter",
+   "say": "THAT RING ISN'T ON YOUR MANIFEST.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_porter."
+  },
+  {
+   "node": "hotel_collection_ring_porter_recovery",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_porter",
+   "say": "Can you get it out?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "Follows your own line about the manifest, is addressed to the porter (the node's speaker) and he answers it ('We'd better.'): the player. Lower case kept exactly as authored."
+  },
+  {
+   "node": "hotel_collection_porters_groom_clue",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_porter",
+   "say": "IS THERE AN ENGINEERS’ TOILET THROUGH THERE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_porter."
+  },
+  {
+   "node": "hotel_collection_porters_groom_clue",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_porter",
+   "say": "ANY OTHER WAY IN?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_porter."
+  },
+  {
+   "node": "hotel_staff_lavatory_storage",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_wedding_assistant",
+   "say": "NO. THE TOILET.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_wedding_assistant."
+  },
+  {
+   "node": "hotel_boiler_pressure_intro",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "THERE'S A TOILET IN THERE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_boiler_pressure_intro",
+   "path": [
+    "text",
+    7
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "AND THEN I CAN USE THE TOILET?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_boiler_pressure_relieved",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "YOU SAID IT WOULD OPEN!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_boiler_dispute_hold",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "SO THE TOILET'S OPEN?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_boiler_staff_access",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "THAT'S GOOD.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_boiler_groom_encounter",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "I'M LOOKING FOR A TOILET.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_show_ring",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "IN A CHAIR.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_show_ring",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "GOOD SYSTEM.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_show_ring",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "I WASN'T OFFERING.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_show_ring",
+   "path": [
+    "text",
+    7
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "AS IS, WHERE IS?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_directions_to_lavatory",
+   "path": [
+    "text",
+    0
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "HOW DO I GET TO THE BRIDAL DRESSING ROOM?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_directions_to_lavatory",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "THANK YOU.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_directions_to_lavatory",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "I'M LOOKING FOR A TOILET.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_groom_leave_behind",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_groom",
+   "say": "NO.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_groom."
+  },
+  {
+   "node": "hotel_service_park_exit",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "YES.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_organizer",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_wedding_organizer",
+   "say": "I NEED TO USE THE BRIDAL LAVATORY.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_wedding_organizer."
+  },
+  {
+   "node": "hotel_bridal_organizer",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_wedding_organizer",
+   "say": "NO.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_wedding_organizer."
+  },
+  {
+   "node": "hotel_bridal_organizer",
+   "path": [
+    "text",
+    8
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_wedding_organizer",
+   "say": "IS THERE A TOILET IN THERE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_wedding_organizer."
+  },
+  {
+   "node": "hotel_bridal_organizer",
+   "path": [
+    "text",
+    10
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_wedding_organizer",
+   "say": "DOES IT WORK?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_wedding_organizer."
+  },
+  {
+   "node": "hotel_bridal_door_knock",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "IT USUALLY WORKS ON DOORS.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_door_focus",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "focus",
+   "nodeSpeaker": null,
+   "say": "I'M NOT THE GROOM.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_door_focus",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "focus",
+   "nodeSpeaker": null,
+   "say": "I JUST NEED THE TOILET.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_door_focus",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "focus",
+   "nodeSpeaker": null,
+   "say": "I'M EXTREMELY UNCOMFORTABLE.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    0
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "HOW DOES THIS THING KNOW WHO THE BRIDE IS?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "WHAT IF THE BRIDE CHANGES HER CLOTHES?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "WHAT IF SOMEONE ELSE WEARS HER DRESS?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "THAT DOESN'T ANSWER MY QUESTION.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    9
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "SO THE DRESS MATTERS?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    11
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "AND IF I LOOK LIKE A BRIDE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_criteria",
+   "path": [
+    "text",
+    15
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "I'M AWARE.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_false_claim",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "I AM THE BRIDE.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_false_claim",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "THIS IS AN EMERGENCY.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_false_claim",
+   "path": [
+    "text",
+    8
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "IS THERE AN APPEALS PROCESS?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_false_claim",
+   "path": [
+    "text",
+    10
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "AND ME?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_emergency_override",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "I NEED TO USE THE TOILET. URGENTLY.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_emergency_override",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "WHY?!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_emergency_override",
+   "path": [
+    "text",
+    8
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "IF I WERE AN AUTHORIZED USER, I WOULDN'T NEED AN OVERRIDE!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_ring_argument",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "THIS IS THE WEDDING RING. DOES THAT COUNT?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_ring_argument",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "IF I HAD IT AT THE WEDDING, WOULD THAT HELP?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_ring_argument",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "YOU HAVE A CAMERA. YOU CAN SEE I NEED THE TOILET.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_gown_focus",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "focus",
+   "nodeSpeaker": null,
+   "say": "I'M JUST LOOKING.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_gown_motor",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "IS THIS THING STILL TURNED ON?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_gown_motor",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "THAT'S NOT WHAT I ASKED.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_gown_camera",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bridal_door_ai",
+   "say": "GOOD. OPEN.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bridal_door_ai."
+  },
+  {
+   "node": "hotel_bridal_gown_try",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "WAIT—",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_autofit_survived",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "GOOD ENOUGH.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_bridal_autofit_survived",
+   "path": [
+    "text",
+    11
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "OPEN THE DOOR.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_seashell_first_attempt",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "THEN ASSIST ME.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_seashell_instructions",
+   "path": [
+    "text",
+    0
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "HOW AM I SUPPOSED TO USE THREE SEASHELLS?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_instructions",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "I AM REGISTERED AS A BRIDE.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_instructions",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "THAT DOES NOT HELP ME.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_instructions",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "THEN PLEASE GIVE ME THE INSTRUCTIONS.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_complaint",
+   "path": [
+    "text",
+    0
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "THERE IS NO TOILET IN THIS BATHROOM.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_complaint",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "YES. THE TOILET.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_complaint",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "DOES THAT MEAN SOMEONE WILL BRING ONE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_second_attempt",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "DID I DO IT?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_second_attempt",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "THEN WHAT AM I SUPPOSED TO DO?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_second_attempt",
+   "path": [
+    "text",
+    7
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "HOW DO I GET CERTIFIED?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_second_attempt",
+   "path": [
+    "text",
+    9
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "THAT'S WHAT I'M TRYING TO DO!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_assessment_appeal",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "I WANT TO APPEAL THAT ASSESSMENT.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_assessment_appeal",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "THERE ISN'T EVEN A TOILET IN HERE!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_seashell_assessment_appeal",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "bathroom_ai",
+   "say": "BECAUSE I REPORTED IT!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to bathroom_ai."
+  },
+  {
+   "node": "hotel_bridal_lavatory_park_exit",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "narrative",
+   "nodeSpeaker": null,
+   "say": "THEY'RE IN BETTER CONDITION THAN I AM.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to the scene."
+  },
+  {
+   "node": "hotel_upper_salvage_arrival",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "CAN YOU PUT THAT BACK?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_upper_salvage_arrival",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "THE TOILET!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_upper_salvage_arrival",
+   "path": [
+    "text",
+    8
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "I JUST WANT TO USE IT!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_upper_salvage_clerk_directions",
+   "path": [
+    "text",
+    0
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "WHERE CAN I FIND A TOILET THAT ISN'T BEING SOLD?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_upper_salvage_clerk_directions",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "BOTH!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_upper_salvage_clerk_directions",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "DOES IT WORK?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_upper_salvage_clerk_directions",
+   "path": [
+    "text",
+    8
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_salvage_clerk",
+   "say": "THAT'S NOT WHAT I ASKED.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_salvage_clerk."
+  },
+  {
+   "node": "hotel_stall_public_corridor_walk",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_wedding_guest",
+   "say": "NOT VOLUNTARILY.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_wedding_guest."
+  },
+  {
+   "node": "hotel_flooded_public_corridor",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_attendant",
+   "say": "IT'S A FLOOD!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_attendant."
+  },
+  {
+   "node": "hotel_flooded_public_corridor",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_attendant",
+   "say": "WHERE CAN I FIND A WORKING TOILET?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_attendant."
+  },
+  {
+   "node": "hotel_water_outage_confirmation",
+   "path": [
+    "text",
+    2
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "DO ANY OF THE TOILETS STILL WORK?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_water_outage_confirmation",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "I ONLY NEED ONE!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_water_outage_confirmation",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_boiler_engineer",
+   "say": "I'D TAKE IT!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_boiler_engineer."
+  },
+  {
+   "node": "hotel_auctioneer_restroom_inventory",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "HAVE YOU SOLD ALL THE RESTROOMS, OR IS THERE ONE LEFT?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_restroom_inventory",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "ARE ANY OF THEM AVAILABLE?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_restroom_inventory",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "TO USE.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_restroom_inventory",
+   "path": [
+    "text",
+    7
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "I'M NOT SELLING ANYTHING!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_dispute",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "YOU SOLD THE HOTEL'S EMERGENCY WATER SHUTOFF!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_dispute",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "THE HOTEL'S FLOODING!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_dispute",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "REVERSE THE SALE!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_recall",
+   "path": [
+    "text",
+    1
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "LOT FOURTEEN. WATER SHUTOFF WHEEL.",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_recall",
+   "path": [
+    "text",
+    3
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "IT WAS ATTACHED TO A WATER PIPE!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_recall",
+   "path": [
+    "text",
+    5
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "SO THE SALE IS CANCELLED?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_auctioneer_lot14_recall",
+   "path": [
+    "text",
+    7
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_auctioneer",
+   "say": "THEN GIVE ME THE WHEEL!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_auctioneer."
+  },
+  {
+   "node": "hotel_freight_wc_misunderstanding",
+   "path": [
+    "text",
+    4
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_lift_voice",
+   "say": "THIS ISN'T A RESTROOM!",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_lift_voice."
+  },
+  {
+   "node": "hotel_freight_wc_misunderstanding",
+   "path": [
+    "text",
+    6
+   ],
+   "mode": "dialogue",
+   "nodeSpeaker": "hotel_lift_voice",
+   "say": "THEN WHY DOES THE BUTTON SAY W.C.?",
+   "from": "visitor",
+   "to": "you",
+   "rationale": "All-caps player line (Chapter 4 voices the player in capitals), spoken to hotel_lift_voice."
+  }
+ ]
+}

@@ -1754,7 +1754,7 @@
         },
         {
           "say": "YES. LOT THIRTY-ONE.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Of course. That miserable chair.",
@@ -1856,7 +1856,7 @@
       "text": [
         {
           "say": "I STILL NEED A BATHROOM. CAN YOU HELP ME?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "There’s a private lavatory off the bridal dressing room upstairs. The organizer has the key.",
@@ -1864,7 +1864,7 @@
         },
         {
           "say": "WHERE IS SHE?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Left past the ballroom, by the white flowers.",
@@ -2022,12 +2022,12 @@
         },
         {
           "say": "THAT RING ISN'T ON YOUR MANIFEST.",
-          "who": "visitor"
+          "who": "you"
         },
         "Then it isn't included in the sale.",
         {
           "say": "Can you get it out?",
-          "who": "visitor"
+          "who": "you"
         },
         "We'd better. Imagine delivering something the buyer hasn't paid for.",
         {
@@ -2159,7 +2159,7 @@
         },
         {
           "say": "IS THERE AN ENGINEERS’ TOILET THROUGH THERE?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Yes. Closed for pressure testing.",
@@ -2167,7 +2167,7 @@
         },
         {
           "say": "ANY OTHER WAY IN?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "You can ask the engineer. I wouldn’t touch the wheel.",
@@ -2390,7 +2390,7 @@
         "Oh! Are you here for the favors?",
         {
           "say": "NO. THE TOILET.",
-          "who": "visitor"
+          "who": "you"
         },
         "The room was sold to us as overflow storage. The auctioneer called it a convenience facility.",
         {
@@ -2554,7 +2554,7 @@
         "Closed until we complete the emergency pressure test.",
         {
           "say": "THERE'S A TOILET IN THERE?",
-          "who": "visitor"
+          "who": "you"
         },
         "Allegedly.",
         {
@@ -2566,7 +2566,7 @@
         },
         {
           "say": "AND THEN I CAN USE THE TOILET?",
-          "who": "visitor"
+          "who": "you"
         },
         "Then you can apply.",
         {
@@ -2645,7 +2645,7 @@
         },
         {
           "say": "YOU SAID IT WOULD OPEN!",
-          "who": "visitor"
+          "who": "you"
         },
         "The passage did. Excellent progress!",
         {
@@ -2711,7 +2711,7 @@
         "Can't test disputed equipment. Safety regulations.",
         {
           "say": "SO THE TOILET'S OPEN?",
-          "who": "visitor"
+          "who": "you"
         },
         "No test, no opening. Excellent safety record!",
         {
@@ -2759,7 +2759,7 @@
         "Then you're ineligible to volunteer.",
         {
           "say": "THAT'S GOOD.",
-          "who": "visitor"
+          "who": "you"
         },
         "For you. Terrible for our staffing plan.",
         {
@@ -2796,7 +2796,7 @@
         },
         {
           "say": "I'M LOOKING FOR A TOILET.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Oh. Then you're having a worse day than I am.",
@@ -2863,7 +2863,7 @@
         },
         {
           "say": "IN A CHAIR.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "I tied that ribbon around it because I was afraid I'd lose it.",
@@ -2871,7 +2871,7 @@
         },
         {
           "say": "GOOD SYSTEM.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "I see the flaw now. Better keep hold of it. I don't trust myself.",
@@ -2879,14 +2879,14 @@
         },
         {
           "say": "I WASN'T OFFERING.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "if": {
             "flag": "ch4_ring_inscription_read"
           },
           "say": "AS IS, WHERE IS?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "if": {
@@ -3102,7 +3102,7 @@
       "text": [
         {
           "say": "HOW DO I GET TO THE BRIDAL DRESSING ROOM?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Service stairs. Up one floor, then left past the ballroom.",
@@ -3114,7 +3114,7 @@
         },
         {
           "say": "THANK YOU.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "If you happen to see my bride, could you—",
@@ -3122,7 +3122,7 @@
         },
         {
           "say": "I'M LOOKING FOR A TOILET.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Right. Of course. Good luck.",
@@ -3162,7 +3162,7 @@
         },
         {
           "say": "NO.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Thank you.",
@@ -3221,7 +3221,7 @@
         },
         {
           "say": "YES.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Use the side gate. It's the one thing they're not shipping.",
@@ -3269,7 +3269,7 @@
         },
         {
           "say": "I NEED TO USE THE BRIDAL LAVATORY.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Are you a member of the wedding party?",
@@ -3277,7 +3277,7 @@
         },
         {
           "say": "NO.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Excellent. We've already lost two.",
@@ -3295,7 +3295,7 @@
         },
         {
           "say": "IS THERE A TOILET IN THERE?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Of course.",
@@ -3303,7 +3303,7 @@
         },
         {
           "say": "DOES IT WORK?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Nobody's complained.",
@@ -3442,7 +3442,7 @@
         },
         {
           "say": "IT USUALLY WORKS ON DOORS.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "This is a smart door.",
@@ -3477,7 +3477,7 @@
         },
         {
           "say": "I'M NOT THE GROOM.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "That is not sufficient proof of being the bride.",
@@ -3485,7 +3485,7 @@
         },
         {
           "say": "I JUST NEED THE TOILET.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "The bridal lavatory is provided exclusively for the bride's comfort.",
@@ -3493,7 +3493,7 @@
         },
         {
           "say": "I'M EXTREMELY UNCOMFORTABLE.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Your discomfort has been noted.",
@@ -3555,7 +3555,7 @@
       "text": [
         {
           "say": "HOW DOES THIS THING KNOW WHO THE BRIDE IS?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Bridal identification is based on visual recognition, ceremonial attire, and an approved bridal profile.",
@@ -3563,7 +3563,7 @@
         },
         {
           "say": "WHAT IF THE BRIDE CHANGES HER CLOTHES?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "That would be highly irregular.",
@@ -3571,7 +3571,7 @@
         },
         {
           "say": "WHAT IF SOMEONE ELSE WEARS HER DRESS?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "The Bridal Privacy System is designed to recognize the bride.",
@@ -3579,7 +3579,7 @@
         },
         {
           "say": "THAT DOESN'T ANSWER MY QUESTION.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Correct. Your question concerns someone who is not the bride.",
@@ -3590,7 +3590,7 @@
         },
         {
           "say": "SO THE DRESS MATTERS?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Appropriate bridal presentation is an important consideration.",
@@ -3598,7 +3598,7 @@
         },
         {
           "say": "AND IF I LOOK LIKE A BRIDE?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "You may submit yourself for identification.",
@@ -3613,7 +3613,7 @@
         },
         {
           "say": "I'M AWARE.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Excellent. We agree.",
@@ -3670,7 +3670,7 @@
         },
         {
           "say": "I AM THE BRIDE.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "One moment. Verifying.",
@@ -3685,7 +3685,7 @@
         },
         {
           "say": "THIS IS AN EMERGENCY.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Weddings often are. That does not make you the bride.",
@@ -3696,7 +3696,7 @@
         },
         {
           "say": "IS THERE AN APPEALS PROCESS?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Certainly. The bride may appeal.",
@@ -3704,7 +3704,7 @@
         },
         {
           "say": "AND ME?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "You may become the bride.",
@@ -3769,7 +3769,7 @@
         },
         {
           "say": "I NEED TO USE THE TOILET. URGENTLY.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Understood. Requesting emergency access authorization.",
@@ -3784,7 +3784,7 @@
         },
         {
           "say": "WHY?!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Emergency overrides require confirmation from an authorized user.",
@@ -3792,7 +3792,7 @@
         },
         {
           "say": "IF I WERE AN AUTHORIZED USER, I WOULDN'T NEED AN OVERRIDE!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Correct. We receive very few applications.",
@@ -3849,7 +3849,7 @@
         },
         {
           "say": "THIS IS THE WEDDING RING. DOES THAT COUNT?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "It establishes possession of wedding property. It does not establish bridal identity.",
@@ -3857,7 +3857,7 @@
         },
         {
           "say": "IF I HAD IT AT THE WEDDING, WOULD THAT HELP?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Possibly with the ceremony. Not with this door.",
@@ -3865,7 +3865,7 @@
         },
         {
           "say": "YOU HAVE A CAMERA. YOU CAN SEE I NEED THE TOILET.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Visual distress is not a valid entry credential.",
@@ -3924,7 +3924,7 @@
         },
         {
           "say": "I'M JUST LOOKING.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Your inspection has been noted.",
@@ -3981,7 +3981,7 @@
         },
         {
           "say": "IS THIS THING STILL TURNED ON?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "The garment is ready for fitting.",
@@ -3989,7 +3989,7 @@
         },
         {
           "say": "THAT'S NOT WHAT I ASKED.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Correct.",
@@ -4047,7 +4047,7 @@
         },
         {
           "say": "GOOD. OPEN.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "No bride detected inside bridal attire.",
@@ -4103,7 +4103,7 @@
         },
         {
           "say": "WAIT—",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "desc": "The motor accelerates."
@@ -4210,7 +4210,7 @@
         },
         {
           "say": "GOOD ENOUGH.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "desc": "You approach the bathroom. The camera examines you."
@@ -4228,7 +4228,7 @@
         },
         {
           "say": "OPEN THE DOOR.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Provisional bridal status approved.",
@@ -4411,7 +4411,7 @@
         },
         {
           "say": "THEN ASSIST ME.",
-          "who": "visitor"
+          "who": "you"
         }
       ],
       "choices": [
@@ -4458,7 +4458,7 @@
       "text": [
         {
           "say": "HOW AM I SUPPOSED TO USE THREE SEASHELLS?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Operation is considered intuitive for the intended female user.",
@@ -4469,14 +4469,14 @@
             "flag": "ch4_provisional_bride_registered"
           },
           "say": "I AM REGISTERED AS A BRIDE.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "if": {
             "notFlag": "ch4_provisional_bride_registered"
           },
           "say": "THAT DOES NOT HELP ME.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "if": {
@@ -4487,7 +4487,7 @@
         },
         {
           "say": "THEN PLEASE GIVE ME THE INSTRUCTIONS.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "That would defeat the purpose of intuitive operation.",
@@ -4535,7 +4535,7 @@
       "text": [
         {
           "say": "THERE IS NO TOILET IN THIS BATHROOM.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Your report concerns a missing fixture.",
@@ -4543,7 +4543,7 @@
         },
         {
           "say": "YES. THE TOILET.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "An electronic record has been created.",
@@ -4551,7 +4551,7 @@
         },
         {
           "say": "DOES THAT MEAN SOMEONE WILL BRING ONE?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Your complaint will remain available for review.",
@@ -4619,7 +4619,7 @@
         },
         {
           "say": "DID I DO IT?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "No.",
@@ -4627,7 +4627,7 @@
         },
         {
           "say": "THEN WHAT AM I SUPPOSED TO DO?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Correct operation requires certification.",
@@ -4635,7 +4635,7 @@
         },
         {
           "say": "HOW DO I GET CERTIFIED?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "By demonstrating correct operation.",
@@ -4643,7 +4643,7 @@
         },
         {
           "say": "THAT'S WHAT I'M TRYING TO DO!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Your application has been denied.",
@@ -4685,7 +4685,7 @@
         },
         {
           "say": "I WANT TO APPEAL THAT ASSESSMENT.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "On what grounds?",
@@ -4693,7 +4693,7 @@
         },
         {
           "say": "THERE ISN'T EVEN A TOILET IN HERE!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "if": {
@@ -4707,7 +4707,7 @@
             "flag": "ch4_seashell_missing_toilet_complaint_filed"
           },
           "say": "BECAUSE I REPORTED IT!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "if": {
@@ -4780,7 +4780,7 @@
         },
         {
           "say": "THEY'RE IN BETTER CONDITION THAN I AM.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "desc": "You leave the bridal lavatory. Back in the dressing room, you remove the wedding gown and abandon it on its stand."
@@ -4910,7 +4910,7 @@
         },
         {
           "say": "CAN YOU PUT THAT BACK?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Which part?",
@@ -4918,7 +4918,7 @@
         },
         {
           "say": "THE TOILET!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Plumbing isn't included in the lot.",
@@ -4926,7 +4926,7 @@
         },
         {
           "say": "I JUST WANT TO USE IT!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Not while it's suspended. Insurance.",
@@ -4978,7 +4978,7 @@
       "text": [
         {
           "say": "WHERE CAN I FIND A TOILET THAT ISN'T BEING SOLD?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Installed or operational?",
@@ -4986,7 +4986,7 @@
         },
         {
           "say": "BOTH!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Ah. That's two different departments.",
@@ -5001,7 +5001,7 @@
         },
         {
           "say": "DOES IT WORK?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "It's still on the floor plan.",
@@ -5009,7 +5009,7 @@
         },
         {
           "say": "THAT'S NOT WHAT I ASKED.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "That's all the floor plan can tell you.",
@@ -5056,7 +5056,7 @@
         },
         {
           "say": "NOT VOLUNTARILY.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "desc": "The guest nods sympathetically. You continue down the corridor."
@@ -5110,7 +5110,7 @@
         },
         {
           "say": "IT'S A FLOOD!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Only until Facilities completes the paperwork.",
@@ -5121,7 +5121,7 @@
         },
         {
           "say": "WHERE CAN I FIND A WORKING TOILET?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Staff facilities are through that door.",
@@ -5179,7 +5179,7 @@
         },
         {
           "say": "DO ANY OF THE TOILETS STILL WORK?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Mechanically, yes. Hydraulically, no.",
@@ -5187,7 +5187,7 @@
         },
         {
           "say": "I ONLY NEED ONE!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Then you'd have one toilet that doesn't flush.",
@@ -5195,7 +5195,7 @@
         },
         {
           "say": "I'D TAKE IT!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Access is a separate issue.",
@@ -5243,7 +5243,7 @@
         },
         {
           "say": "HAVE YOU SOLD ALL THE RESTROOMS, OR IS THERE ONE LEFT?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Three stalls remain on the premises!",
@@ -5251,7 +5251,7 @@
         },
         {
           "say": "ARE ANY OF THEM AVAILABLE?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "To inspect? Certainly!",
@@ -5259,7 +5259,7 @@
         },
         {
           "say": "TO USE.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Ah! A live demonstration. Very persuasive!",
@@ -5267,7 +5267,7 @@
         },
         {
           "say": "I'M NOT SELLING ANYTHING!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Then we'll call it a preview.",
@@ -5315,7 +5315,7 @@
         },
         {
           "say": "YOU SOLD THE HOTEL'S EMERGENCY WATER SHUTOFF!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "We sold a brass nautical fitting.",
@@ -5323,7 +5323,7 @@
         },
         {
           "say": "THE HOTEL'S FLOODING!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "That does explain the damp bidding paddles.",
@@ -5331,7 +5331,7 @@
         },
         {
           "say": "REVERSE THE SALE!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Cataloguing errors may be appealed.",
@@ -5388,7 +5388,7 @@
         },
         {
           "say": "LOT FOURTEEN. WATER SHUTOFF WHEEL.",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Hmm. The catalogue lists it as naval decoration.",
@@ -5396,7 +5396,7 @@
         },
         {
           "say": "IT WAS ATTACHED TO A WATER PIPE!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Oh, dear. Incorrectly described merchandise.",
@@ -5404,7 +5404,7 @@
         },
         {
           "say": "SO THE SALE IS CANCELLED?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Certainly not. All sales are final.",
@@ -5412,7 +5412,7 @@
         },
         {
           "say": "THEN GIVE ME THE WHEEL!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Naturally. We must recall it for inspection.",
@@ -5480,7 +5480,7 @@
         },
         {
           "say": "THIS ISN'T A RESTROOM!",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "Warehouse Collection.",
@@ -5488,7 +5488,7 @@
         },
         {
           "say": "THEN WHY DOES THE BUTTON SAY W.C.?",
-          "who": "visitor"
+          "who": "you"
         },
         {
           "say": "It was cheaper than replacing the panel.",
