@@ -1,3 +1,5 @@
+[Latest public B2-08 browser gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/8ef7d20725beb69970f948561aacc49b2400b181/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/online.html) · [Publication/QA receipt](B2-08-REVIEW-PUBLICATION-20261123.md)
+
 # Current B2-07 owner approval and B2-08 review — 2026-11-23
 
 B2-07 five primary v01 assets are APPROVED/SELECTED and four supplemental cleared/permit frames APPROVED/PRESERVED unchanged from8d32d44c787c09884ca0b3455c34f2a539d34db2. Canonical main b56f91e19e890c340d92c72d6d2c4822f0f178d9, PR29, docs135. Preserve all46 approved Chapter4 primary images, seven conditional references and191 total selections, all prior records/history and unselected plumber alternatives. Supplemental references create no canonical Focus IDs, nodes, modes or runtime bindings. No integration.
