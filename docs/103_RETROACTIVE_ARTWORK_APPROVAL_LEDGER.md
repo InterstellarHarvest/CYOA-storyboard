@@ -452,3 +452,8 @@ Nate APPROVES/SELECTS all seven primary v01 assets CH4-B2-19 through CH4-B2-25 u
 ## Chapter 4 B2-05 — mixed-version owner approval, 2026-11-23
 
 Nate APPROVES/SELECTS CH4-B2-26/28/29/30 bride v02 unchanged from `c6dbbaff7bf0edbda7a8ddff14556588c1eacd73`, and CH4-B2-27 precise clerk v01 unchanged from `9afe76fe17dcb02633b82261a6c69457891da50f`. [Exact paths, hashes, sources and gameplay handoff](133_CH4_B205_APPROVAL_COMPLETION_20261123.md). Bride blonde hair/green irises and approved groom remain exact. All earlier approvals and three conditional B2-04 references preserved; alternative plumber portraits remain unselected. No integration.
+
+
+## Chapter 4 B2-06 — owner approval, 2026-11-23
+
+Nate APPROVES/SELECTS all six v01 portraits CH4-B2-31 through CH4-B2-36 unchanged from `f6840e5d69f70435f88ce9ece720583566fce8e2`. [Exact paths/hashes, source-derived provenance, mappings and gameplay handoff](134_CH4_B206_APPROVAL_COMPLETION_20261123.md). Earlier auctioneer/porter portraits and all prior approvals remain exact. Three supplemental ring references remain reference-only; plumber alternatives remain unselected. No integration.
