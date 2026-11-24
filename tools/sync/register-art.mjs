@@ -18,7 +18,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { artRecords, checkContract, sha256, readJson, writeJson } from './lib.mjs';
+import { artRecords, checkContract, sha256, readJson, writeJson, NO_IMAGE_FORMATS } from './lib.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const ART = path.join(ROOT, 'story/artwork.draft.json');
@@ -51,6 +51,7 @@ export function register(entries, opts = {}) {
     if (e.record.views || e.record.pages || e.record.layers) { errors.push(req.key + ': is a container; register its views/pages/layers'); continue; }
     const status = req.status || 'approved';
     if (!['approved', 'integrated', 'reused'].includes(status)) { errors.push(req.key + ': status must be approved, integrated or reused'); continue; }
+    if (e && NO_IMAGE_FORMATS.includes(e.record.format)) { errors.push(req.key + ': is an approved no-image ' + e.record.format + ' record (docs/137); it never takes an image'); continue; }
     const src = req.source || {};
     for (const k of ['repo', 'commit', 'path']) if (!src[k]) errors.push(req.key + ': source.' + k + ' is required (provenance)');
     if (src.commit && !/^[0-9a-f]{40}$/.test(src.commit)) errors.push(req.key + ': source.commit must be a full 40-hex SHA');

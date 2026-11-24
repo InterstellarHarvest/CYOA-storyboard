@@ -1,6 +1,6 @@
 # Chapter 4 artwork consolidation — proposal for Nate's approval
 
-**Status: PROPOSED. Nothing here is applied.** This branch adds only documentation, a plan, review sheets and a tool. No story, registry, selected-art or viewer byte changes (verified, §12). The seven retirements and every reuse mapping are prepared, dry-run tested and waiting for one decision (§1).
+**Status: APPROVED by Nate on 2026-11-24 and APPLIED on this review branch (§14).** Not merged or deployed. §1–§13 are the proposal exactly as approved; §14 records what was implemented and how it was validated. The game-engine capabilities (C1/C2) are a separate game PR.
 
 - Machine-readable plan: [137_CH4_ARTWORK_CONSOLIDATION_PLAN_20261124.json](137_CH4_ARTWORK_CONSOLIDATION_PLAN_20261124.json)
 - Node-by-node coverage (all 120 nodes, now → proposed): [137_CH4_NODE_ART_COVERAGE_20261124.tsv](137_CH4_NODE_ART_COVERAGE_20261124.tsv)
@@ -222,3 +222,33 @@ Fully reversible with `git revert`. Nothing in any review package, approval docu
 
 - Inline speaker tags without portraits: `hotel_second_porter`, `autofit_system`, and `hotel_service_foreman` (which differs from `hotel_salvage_foreman`). From v08 `inlineSpeakerQuestions`; all are incidental voices, and C2 doesn't apply because they never lead a node.
 - The stale ring-inscription art note (NEW-13).
+
+## 14. Approval and implementation (2026-11-24)
+
+**Nate's decision:**
+- approve all four items in §1;
+- the active production target is **63** (45 retained + 17 new + CH4-NEW-18);
+- C1 and C2 are to be built as a separate, reviewable game-engine PR;
+- B2-09 is revised as in §10 / [docs/138](138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md);
+- mark docs/136's old next group superseded and correct the ring brief;
+- keep the five refinement candidates selected until replacements are reviewed;
+- preserve every original, approval, source and hash.
+
+**Applied on this branch** (`python3 tools/sync/ch4-consolidation.py apply`, then build / verify / game-check):
+
+| Change | Detail |
+|---|---|
+| `chapter-04.wip.json` | **8 `pose` values only**: the 7 retirements of §4, plus `hotel_bixby_emergency` commanding → delighted (one Bixby expression). No text, choice, flag, item, d6 or ending changes. |
+| Six retired portraits | Remain `approved` with their bytes, previews and full approval notes. Their notes are now prefixed with the viewer's existing archive convention (`ARCHIVED / RETIRED / UNUSED — CHAPTER 4 CONSOLIDATION …`, Chapter 3 precedent), so they move to the **Archived** filter. The original notes follow unchanged and the first SHA-256 is still the approved one. |
+| CH4-B2-16 | The record leaves `scenes[grand_bellevue/boiler_access]`. It is preserved verbatim in the [retired-artwork ledger](137_CH4_RETIRED_ARTWORK_LEDGER_20261124.json), with its exact bytes **moved, not deleted**, to `tools/prologue-art-lab/assets/approved/retired-selections/chapter-04/CH4-B2-16-v01.png` (SHA-256 `e396db07…f77f3`, also intact at source commit `24c79bf`). `hotel_porter:alarmed.portraitBackgroundScene` is now `grand_bellevue/service_passage`. |
+| **No-image presentation records** | 3 `format: "text-led"` scenes (arrival, forecourt, courtyard) and 6 `format: "voice-only"` speakers (door AI, bathroom AI, lift voice, salvage clerk, wedding guest, attendant). They are `approved` with no path, preview or nested art. `check-canon` rejects any image on them (6 mutation tests), `register-art` refuses them, and the viewer labels them NO IMAGE. They are the canonical signal the game's C1/C2 capability consumes. |
+| Ring brief | `wedding_ring_lot31` slot and inspect briefs now match the approved reveal: a tiny maker's mark and **AS IS, WHERE IS.**, small enough that the unread description stays true. Status stays `not-started`. |
+| qa-smoke | Catalog count 256 → 264 (−1 CH4-B2-16, +9 no-image records), plus a voice-only assertion. |
+| docs | docs/136 "Automatic next group" marked SUPERSEDED (original kept, struck through). A docs/103 ledger entry. [docs/138](138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md) revised B2-09 brief and queue. |
+
+**Not changed:**
+- CH4-01, CH4-04, CH4-05, CH4-B2-03 and CH4-B2-11 stay selected.
+- No review package, approval record, source file or hash is modified or deleted. `verify` checks this: the only non-additions under docs/ and the art-lab assets are the two annotations.
+- Reuse scene keys (C3) still bind at integration.
+
+**Validation of the applied branch:** see the PR and the [verification JSON](137_CH4_ARTWORK_CONSOLIDATION_VERIFICATION_20261124.json).

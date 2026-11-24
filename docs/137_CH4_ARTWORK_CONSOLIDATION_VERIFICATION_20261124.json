@@ -2,7 +2,7 @@
  "schema": "out-of-order-ch4-consolidation-verification-v1",
  "tool": "tools/sync/ch4-consolidation.py verify",
  "result": "PASS",
- "passed": 266,
+ "passed": 296,
  "failed": 0,
  "report": {
   "canonicalBase": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
@@ -16,7 +16,7 @@
    "REUSE": 6,
    "NEW": 17,
    "NEW_RENDERER_EXCEPTION": 1,
-   "RETIRE_PROPOSED": 7
+   "RETIRED": 7
   },
   "fourX": {
    "checked": 47,
@@ -29,6 +29,56 @@
    ]
   },
   "sourceBlobsIdentical": 52,
+  "poseChanges": [
+   [
+    "hotel_bixby_emergency",
+    "pose",
+    "commanding",
+    "delighted"
+   ],
+   [
+    "hotel_ring_show_bride",
+    "pose",
+    "hopeful",
+    "determined"
+   ],
+   [
+    "hotel_collection_staff_pass",
+    "pose",
+    "curious",
+    "uncertain"
+   ],
+   [
+    "hotel_collection_staff_pass_recognized",
+    "pose",
+    "relieved",
+    "practical"
+   ],
+   [
+    "hotel_staff_lavatory_move_boxes",
+    "pose",
+    "sympathetic",
+    "apologetic"
+   ],
+   [
+    "hotel_boiler_staff_access",
+    "pose",
+    "practical",
+    "careful"
+   ],
+   [
+    "hotel_water_outage_confirmation",
+    "pose",
+    "practical",
+    "careful"
+   ],
+   [
+    "hotel_auctioneer_lot14_recall",
+    "pose",
+    "bureaucratic",
+    "showman"
+   ]
+  ],
   "c2Nodes": [
    "hotel_bridal_door_knock",
    "hotel_bridal_criteria",
@@ -87,9 +137,8 @@
  },
  "checks": [
   {
-   "check": "No story/, assets/, art-lab assets or viewer file differs from the canonical base",
-   "passed": true,
-   "detail": []
+   "check": "CANON_BASE 96e3c2a is an ancestor of this branch",
+   "passed": true
   },
   {
    "check": "120 Chapter 4 nodes",
@@ -200,7 +249,7 @@
    "detail": []
   },
   {
-   "check": "Committed plan JSON equals a fresh derivation from canon (rebuild if this fails)",
+   "check": "Committed plan JSON equals a fresh derivation from CANON_BASE (rebuild if this fails)",
    "passed": true
   },
   {
@@ -212,11 +261,15 @@
     "REUSE": 6,
     "NEW": 17,
     "NEW_RENDERER_EXCEPTION": 1,
-    "RETIRE_PROPOSED": 7
+    "RETIRED": 7
    }
   },
   {
-   "check": "7 retirements proposed, 45 approved retained",
+   "check": "7 retirements, 45 approved retained",
+   "passed": true
+  },
+  {
+   "check": "Approved active primary target = 63 (45 retained + 17 new + CH4-NEW-18)",
    "passed": true
   },
   {
@@ -1081,7 +1134,7 @@
    "passed": true
   },
   {
-   "check": "Node hotel_collection_staff_pass currently hotel_porter:curious",
+   "check": "Node hotel_collection_staff_pass: hotel_porter:curious -> uncertain",
    "passed": true
   },
   {
@@ -1100,7 +1153,7 @@
    "passed": true
   },
   {
-   "check": "Node hotel_collection_staff_pass_recognized currently hotel_porter:relieved",
+   "check": "Node hotel_collection_staff_pass_recognized: hotel_porter:relieved -> practical",
    "passed": true
   },
   {
@@ -1119,7 +1172,7 @@
    "passed": true
   },
   {
-   "check": "Node hotel_ring_show_bride currently hotel_bride:hopeful",
+   "check": "Node hotel_ring_show_bride: hotel_bride:hopeful -> determined",
    "passed": true
   },
   {
@@ -1138,7 +1191,7 @@
    "passed": true
   },
   {
-   "check": "Node hotel_auctioneer_lot14_recall currently hotel_auctioneer:bureaucratic",
+   "check": "Node hotel_auctioneer_lot14_recall: hotel_auctioneer:bureaucratic -> showman",
    "passed": true
   },
   {
@@ -1157,7 +1210,7 @@
    "passed": true
   },
   {
-   "check": "Node hotel_staff_lavatory_move_boxes currently hotel_wedding_assistant:sympathetic",
+   "check": "Node hotel_staff_lavatory_move_boxes: hotel_wedding_assistant:sympathetic -> apologetic",
    "passed": true
   },
   {
@@ -1176,11 +1229,11 @@
    "passed": true
   },
   {
-   "check": "Node hotel_boiler_staff_access currently hotel_boiler_engineer:practical",
+   "check": "Node hotel_boiler_staff_access: hotel_boiler_engineer:practical -> careful",
    "passed": true
   },
   {
-   "check": "Node hotel_water_outage_confirmation currently hotel_boiler_engineer:practical",
+   "check": "Node hotel_water_outage_confirmation: hotel_boiler_engineer:practical -> careful",
    "passed": true
   },
   {
@@ -1208,6 +1261,11 @@
    }
   },
   {
+   "check": "Applied canon resolves every node exactly as the approved plan (main scene, portrait, background, Focus, ending)",
+   "passed": true,
+   "detail": []
+  },
+  {
    "check": "B2-16 -> B2-23 resolves through the importer background rule for hotel_collection_slip_spotted",
    "passed": true
   },
@@ -1232,6 +1290,170 @@
     "hotel_staff_lavatory_move_boxes",
     "hotel_water_outage_confirmation"
    ]
+  },
+  {
+   "check": "Chapter 4 differs from CANON_BASE only in 8 pose fields (7 retirements + Bixby commanding -> delighted); text, choices, flags, items, d6, endings untouched",
+   "passed": true,
+   "detail": [
+    [
+     "hotel_bixby_emergency",
+     "pose",
+     "commanding",
+     "delighted"
+    ],
+    [
+     "hotel_ring_show_bride",
+     "pose",
+     "hopeful",
+     "determined"
+    ],
+    [
+     "hotel_collection_staff_pass",
+     "pose",
+     "curious",
+     "uncertain"
+    ],
+    [
+     "hotel_collection_staff_pass_recognized",
+     "pose",
+     "relieved",
+     "practical"
+    ],
+    [
+     "hotel_staff_lavatory_move_boxes",
+     "pose",
+     "sympathetic",
+     "apologetic"
+    ],
+    [
+     "hotel_boiler_staff_access",
+     "pose",
+     "practical",
+     "careful"
+    ],
+    [
+     "hotel_water_outage_confirmation",
+     "pose",
+     "practical",
+     "careful"
+    ],
+    [
+     "hotel_auctioneer_lot14_recall",
+     "pose",
+     "bureaucratic",
+     "showman"
+    ]
+   ]
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/items.draft.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/storyboard-manifest.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/chapters/prologue-00.draft.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/chapters/chapter-01.draft.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/chapters/chapter-02.draft.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/chapters/chapter-03.draft.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/death-presentations.export.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/game-integration.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/sync-contract.json",
+   "passed": true
+  },
+  {
+   "check": "Byte-identical to CANON_BASE: story/storyboard-layout.json",
+   "passed": true
+  },
+  {
+   "check": "Retired CH4-B2-33: archived (viewer Archived filter) with its approval, fields and first SHA-256 unchanged",
+   "passed": true
+  },
+  {
+   "check": "Retired CH4-B2-34: archived (viewer Archived filter) with its approval, fields and first SHA-256 unchanged",
+   "passed": true
+  },
+  {
+   "check": "Retired CH4-B2-28: archived (viewer Archived filter) with its approval, fields and first SHA-256 unchanged",
+   "passed": true
+  },
+  {
+   "check": "Retired CH4-B2-36: archived (viewer Archived filter) with its approval, fields and first SHA-256 unchanged",
+   "passed": true
+  },
+  {
+   "check": "Retired CH4-B2-39: archived (viewer Archived filter) with its approval, fields and first SHA-256 unchanged",
+   "passed": true
+  },
+  {
+   "check": "Retired CH4-B2-46: archived (viewer Archived filter) with its approval, fields and first SHA-256 unchanged",
+   "passed": true
+  },
+  {
+   "check": "Boiler-access scene keeps its original notes; retirement appended",
+   "passed": true
+  },
+  {
+   "check": "Artwork registry = CANON_BASE + exactly the approved edits (retirement notes, B2-16 out, alarmed background scene, 9 no-image records, ring brief)",
+   "passed": true
+  },
+  {
+   "check": "Ring brief matches the approved inscription reveal (AS IS, WHERE IS.); art stays unproduced",
+   "passed": true
+  },
+  {
+   "check": "Ledger holds all 7 retired records verbatim from CANON_BASE",
+   "passed": true
+  },
+  {
+   "check": "CH4-B2-16 exact bytes preserved in the retired archive and at its pinned source commit",
+   "passed": true
+  },
+  {
+   "check": "Preview registry = CANON_BASE minus only the CH4-B2-16 entry; every other entry identical",
+   "passed": true
+  },
+  {
+   "check": "Every selected file matches its preview SHA (196)",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "Selected package = CANON_BASE minus the one retired CH4-B2-16 copy",
+   "passed": true
+  },
+  {
+   "check": "No review package, approval record or art-lab asset modified or deleted (additions only; docs/103 and docs/136 annotated)",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "9 approved no-image presentation records: 3 text-led scenes (C1), 6 voice-only speakers (C2)",
+   "passed": true
+  },
+  {
+   "check": "No-image records carry no assetPath and no preview",
+   "passed": true
   },
   {
    "check": "All 120 nodes have a resolved main scene and, where shown, portrait/background/focus/ending",
@@ -1302,51 +1524,50 @@
    }
   }
  ],
- "dryRun": {
-  "commit": "ee05972308d017ac8006369c1d10ef95693fc421",
-  "removedRecordPreservedVerbatim": {
-   "title": "Boiler access conversation background",
-   "kind": "portrait-background",
-   "status": "approved",
-   "dimensions": "564x278",
-   "assetPath": null,
-   "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/boiler_access.png",
-   "prompt": "Exact owner-selected B2-03 v01 CH4-B2-16; preserve existing approved PNG bytes. Authoritative source manifest and production provenance pinned in docs/131.",
-   "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-03 v01 CH4-B2-16. SOURCE-DERIVED native interpretation, not independent native-grid authorship. Exact source 24c79bff8d33b5997ccb6b7aa7bb86293afef291:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png; SHA-256 e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3. Manifest, masks, material/structural/letter layers, detailed sources and prompts are pinned in docs/131. Not integrated; runtime assetPath remains null. The two B2-01 plumber alternatives remain separate and unapproved; earlier v01 approvals remain selected."
-  },
-  "removedPublicPreviewCopy": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
-  "check-canon:base": {
+ "gameCheck": {
+  "canonicalBase": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+  "check-canon:CANON_BASE": {
    "exit": 0,
    "tail": [
-    "  5 chapters, 318 nodes, 547 routes; 271 art records (82 approved, 111 integrated, 73 not-started, 5 reused); 197 previewed",
     "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
     "RESULT: OK"
    ]
   },
-  "check-canon:proposed": {
+  "check-canon:applied": {
    "exit": 0,
    "tail": [
-    "  5 chapters, 318 nodes, 547 routes; 270 art records (81 approved, 111 integrated, 73 not-started, 5 reused); 196 previewed",
     "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
     "RESULT: OK"
    ]
   },
-  "qa-smoke:base": {
+  "qa-smoke:CANON_BASE": {
    "exit": 0,
    "tail": [
     "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":256,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
    ]
   },
-  "qa-smoke:proposed": {
+  "qa-smoke:applied": {
    "exit": 0,
    "tail": [
-    "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":255,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
+    "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":264,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
    ]
   },
   "game": {
    "repo": "InterstellarHarvest/out-of-order",
    "commit": "3a8e07a427366672115c4307129254e7a20a5fdd",
    "changedNodes": {
+    "hotel_bixby_emergency": [
+     {
+      "speaker": "hotel_commodore_bixby",
+      "pose": "commanding",
+      "background": "grand_bellevue/refreshment_table"
+     },
+     {
+      "speaker": "hotel_commodore_bixby",
+      "pose": "delighted",
+      "background": "grand_bellevue/refreshment_table"
+     }
+    ],
     "hotel_ring_show_bride": [
      {
       "speaker": "hotel_bride",
@@ -1445,157 +1666,94 @@
     ]
    },
    "baseWarnings": 158,
-   "proposedWarnings": 151,
-   "portraitlessLeadSpeakers": [
-    "speaker bathroom_ai: no portrait record bathroom_ai:neutral (missing required artwork; DEV PLACEHOLDER)",
-    "speaker bridal_door_ai: no portrait record bridal_door_ai:neutral (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_attendant: no portrait record hotel_attendant:professional (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_commodore_bixby: no portrait record hotel_commodore_bixby:commanding (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_commodore_bixby: no portrait record hotel_commodore_bixby:delighted (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_lift_voice: no portrait record hotel_lift_voice:neutral (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_salvage_clerk: no portrait record hotel_salvage_clerk:practical (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_wedding_guest: no portrait record hotel_wedding_guest:curious (missing required artwork; DEV PLACEHOLDER)",
-    "speaker hotel_wedding_organizer: no portrait record hotel_wedding_organizer:urgent (missing required artwork; DEV PLACEHOLDER)"
-   ]
+   "appliedWarnings": 150,
+   "note": "Game main predates the C1/C2 capability, so no-image records still import as DEV PLACEHOLDERs (preview) there, exactly as the missing records did before."
   },
   "checks": [
    {
-    "check": "check-canon passes on the base tree",
+    "check": "check-canon passes on the CANON_BASE tree",
     "passed": true,
     "detail": [
-     "  5 chapters, 318 nodes, 547 routes; 271 art records (82 approved, 111 integrated, 73 not-started, 5 reused); 197 previewed",
      "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
      "RESULT: OK"
     ]
    },
    {
-    "check": "check-canon passes on the proposed tree",
+    "check": "check-canon passes on the applied tree",
     "passed": true,
     "detail": [
-     "  5 chapters, 318 nodes, 547 routes; 270 art records (81 approved, 111 integrated, 73 not-started, 5 reused); 196 previewed",
      "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
      "RESULT: OK"
     ]
    },
    {
-    "check": "qa-smoke passes on the base tree",
+    "check": "qa-smoke passes on the CANON_BASE tree",
     "passed": true,
     "detail": [
      "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":256,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
     ]
    },
    {
-    "check": "qa-smoke passes on the proposed tree",
+    "check": "qa-smoke passes on the applied tree",
     "passed": true,
     "detail": [
-     "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":255,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
+     "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":264,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
     ]
    },
    {
-    "check": "Proposed Chapter 4 differs from canon ONLY in the 7 pose fields (text, choices, flags, items, d6, endings untouched)",
+    "check": "check-canon rejects mutant: voice-only with an assetPath",
     "passed": true,
     "detail": [
-     [
-      "hotel_ring_show_bride",
-      "pose",
-      "hopeful",
-      "determined"
-     ],
-     [
-      "hotel_collection_staff_pass",
-      "pose",
-      "curious",
-      "uncertain"
-     ],
-     [
-      "hotel_collection_staff_pass_recognized",
-      "pose",
-      "relieved",
-      "practical"
-     ],
-     [
-      "hotel_staff_lavatory_move_boxes",
-      "pose",
-      "sympathetic",
-      "apologetic"
-     ],
-     [
-      "hotel_boiler_staff_access",
-      "pose",
-      "practical",
-      "careful"
-     ],
-     [
-      "hotel_water_outage_confirmation",
-      "pose",
-      "practical",
-      "careful"
-     ],
-     [
-      "hotel_auctioneer_lot14_recall",
-      "pose",
-      "bureaucratic",
-      "showman"
-     ]
+     "  x portraits:bridal_door_ai:neutral: a voice-only record must not name an assetPath or suggestedFilename",
+     "RESULT: 1 ERROR(S)"
     ]
    },
    {
-    "check": "Unchanged by the proposal: story/items.draft.json",
-    "passed": true
+    "check": "check-canon rejects mutant: text-led scene with a preview",
+    "passed": true,
+    "detail": [
+     "  x scenes:grand_bellevue/arrival: a text-led record must not have a public preview",
+     "RESULT: 1 ERROR(S)"
+    ]
    },
    {
-    "check": "Unchanged by the proposal: story/storyboard-manifest.json",
-    "passed": true
+    "check": "check-canon rejects mutant: text-led scene with a nested background",
+    "passed": true,
+    "detail": [
+     "  x scenes:grand_bellevue/arrival: a text-led record must not nest art",
+     "RESULT: 1 ERROR(S)"
+    ]
    },
    {
-    "check": "Unchanged by the proposal: story/chapters/chapter-01.draft.json",
-    "passed": true
+    "check": "check-canon rejects mutant: voice-only demoted to not-started",
+    "passed": true,
+    "detail": [
+     "  x portraits:bridal_door_ai:neutral: a voice-only record is an approved no-image decision; status must be approved, not not-started",
+     "RESULT: 1 ERROR(S)"
+    ]
    },
    {
-    "check": "Unchanged by the proposal: story/chapters/chapter-02.draft.json",
-    "passed": true
+    "check": "check-canon rejects mutant: voice-only on a scene record",
+    "passed": true,
+    "detail": [
+     "  x scenes:grand_bellevue/arrival: format \"voice-only\" is not valid here (known: opaque-complete on portraits, text-led on scenes, voice-only on portraits)",
+     "RESULT: 1 ERROR(S)"
+    ]
    },
    {
-    "check": "Unchanged by the proposal: story/chapters/chapter-03.draft.json",
-    "passed": true
+    "check": "check-canon rejects mutant: unknown format",
+    "passed": true,
+    "detail": [
+     "  x portraits:bridal_door_ai:neutral: approved but has no public preview (register it with tools/sync/register-art.mjs)",
+     "RESULT: 2 ERROR(S)"
+    ]
    },
    {
-    "check": "Unchanged by the proposal: story/chapters/prologue-00.draft.json",
-    "passed": true
-   },
-   {
-    "check": "Unchanged by the proposal: story/death-presentations.export.json",
-    "passed": true
-   },
-   {
-    "check": "Unchanged by the proposal: story/game-integration.json",
-    "passed": true
-   },
-   {
-    "check": "Artwork registry section unchanged: items",
-    "passed": true
-   },
-   {
-    "check": "Artwork registry section unchanged: focus",
-    "passed": true
-   },
-   {
-    "check": "Artwork registry section unchanged: deathScreens",
-    "passed": true
-   },
-   {
-    "check": "Selected package: every byte identical; only the CH4-B2-16 public preview copy leaves the active package",
-    "passed": true
-   },
-   {
-    "check": "Retired CH4-B2-16 record captured verbatim (approved; SHA-256 e396db07...)",
-    "passed": true
-   },
-   {
-    "check": "Game importer: exactly the 8 retirement nodes resolve differently",
+    "check": "Game importer (main 3a8e07a): exactly the 9 remapped nodes resolve differently",
     "passed": true,
     "detail": [
      "hotel_auctioneer_lot14_recall",
+     "hotel_bixby_emergency",
      "hotel_boiler_staff_access",
      "hotel_collection_slip_spotted",
      "hotel_collection_staff_pass",
@@ -1611,6 +1769,10 @@
    },
    {
     "check": "Game importer: Prologue + Chapters 1-3 runtime output byte-identical before/after",
+    "passed": true
+   },
+   {
+    "check": "Game importer converts both trees in preview mode",
     "passed": true
    }
   ],

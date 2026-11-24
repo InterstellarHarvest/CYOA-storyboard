@@ -1,0 +1,286 @@
+{
+ "schema": "out-of-order-retired-artwork-ledger-v1",
+ "decision": "Nate approved all four docs/137 decisions on 2026-11-24 (PR #31).",
+ "decisionDate": "2026-11-24",
+ "canonicalBase": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+ "policy": "Retirement removes an approved image from ACTIVE Chapter 4 coverage only. Approval history (docs/103, docs/127-136), source review packages, exact bytes and SHA-256 values are preserved; nothing is regenerated, recolored or re-encoded.",
+ "retired": [
+  {
+   "id": "CH4-B2-33",
+   "title": "Porter - curious",
+   "registryKey": "portraits:hotel_porter:curious",
+   "replacementId": "CH4-B2-21",
+   "replacementKey": "portraits:hotel_porter:uncertain",
+   "nodes": [
+    "hotel_collection_staff_pass"
+   ],
+   "continuity": "The porter examines the pass, looks at Lot 31 and consults his clipboard. B2-21 (hand to chin, clipboard) shows exactly that, on the same service-passage background. The next node already uses B2-21.",
+   "originalRecordVerbatim": {
+    "title": "Porter — curious",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_porter/curious.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/service_passage",
+    "prompt": "Exact owner-selected B2-06 v01 CH4-B2-33. Preserve approved bytes. Immutable source and provenance in docs/134.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-06 CH4-B2-33 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-33-v01.png; SHA-256 532a62994a8e3d5976144136f43c8699b3f0ddec291db7a05af412b2d06da6a0. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+   },
+   "activeRecordKept": true,
+   "publicPreview": {
+    "file": "assets/selected/pending-integration/portraits/hotel_porter/curious.png",
+    "sha256": "532a62994a8e3d5976144136f43c8699b3f0ddec291db7a05af412b2d06da6a0",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "transparent",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-33-v01.png"
+    }
+   }
+  },
+  {
+   "id": "CH4-B2-34",
+   "title": "Porter - relieved",
+   "registryKey": "portraits:hotel_porter:relieved",
+   "replacementId": "CH4-B2-22",
+   "replacementKey": "portraits:hotel_porter:practical",
+   "nodes": [
+    "hotel_collection_staff_pass_recognized"
+   ],
+   "continuity": "\"Oh! Our visiting inspector. Back again?\" B2-22 has the same smile and an open welcoming arm, holds the same clipboard and stands on the same background. The next node (authorized) already uses B2-22.",
+   "originalRecordVerbatim": {
+    "title": "Porter — relieved",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_porter/relieved.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/service_passage",
+    "prompt": "Exact owner-selected B2-06 v01 CH4-B2-34. Preserve approved bytes. Immutable source and provenance in docs/134.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-06 CH4-B2-34 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-34-v01.png; SHA-256 0be33df015e9eae683021df5b4e128a80c857fc89ae3fc081db370bed8cfef75. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+   },
+   "activeRecordKept": true,
+   "publicPreview": {
+    "file": "assets/selected/pending-integration/portraits/hotel_porter/relieved.png",
+    "sha256": "0be33df015e9eae683021df5b4e128a80c857fc89ae3fc081db370bed8cfef75",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "transparent",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-34-v01.png"
+    }
+   }
+  },
+  {
+   "id": "CH4-B2-28",
+   "title": "Bride - hopeful",
+   "registryKey": "portraits:hotel_bride:hopeful",
+   "replacementId": "CH4-B2-26",
+   "replacementKey": "portraits:hotel_bride:determined",
+   "nodes": [
+    "hotel_ring_show_bride"
+   ],
+   "continuity": "You SHOW the ring; it is still yours. B2-26 has empty hands (open palm). The ring-holding grateful pose (B2-29) stays only on hotel_bride_ring_handover, after the ring is placed in her hand.",
+   "originalRecordVerbatim": {
+    "title": "Bride — hopeful",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_bride/hopeful.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/lobby",
+    "prompt": "Exact owner-selected B2-05 v02 CH4-B2-28. Preserve approved PNG bytes. Source manifests and processing provenance in docs/133.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-05 CH4-B2-28 v02. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source c6dbbaff7bf0edbda7a8ddff14556588c1eacd73:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v02-color/native/CH4-B2-28-v02.png; SHA-256 953068a9268d30b05bda06e167d7820cd97dc933d7f28fad5da8ca7d30eb4a38. Honey-blonde hair and green irises preserved exactly. No integration; runtime assetPath remains null. All earlier approvals and unselected plumber alternatives remain unchanged. Approval/gameplay handoff docs/133."
+   },
+   "activeRecordKept": true,
+   "publicPreview": {
+    "file": "assets/selected/pending-integration/portraits/hotel_bride/hopeful.png",
+    "sha256": "953068a9268d30b05bda06e167d7820cd97dc933d7f28fad5da8ca7d30eb4a38",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "transparent",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "c6dbbaff7bf0edbda7a8ddff14556588c1eacd73",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v02-color/native/CH4-B2-28-v02.png"
+    }
+   }
+  },
+  {
+   "id": "CH4-B2-36",
+   "title": "Auctioneer - bureaucratic",
+   "registryKey": "portraits:hotel_auctioneer:bureaucratic",
+   "replacementId": "CH4-03",
+   "replacementKey": "portraits:hotel_auctioneer:showman",
+   "nodes": [
+    "hotel_auctioneer_lot14_recall"
+   ],
+   "continuity": "Same lobby podium background and the same gavel. The RECALL AUTHORIZED stamp is narrated, not held. The preceding dispute node already uses CH4-03.",
+   "originalRecordVerbatim": {
+    "title": "Auctioneer — bureaucratic",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_auctioneer/bureaucratic.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/lobby",
+    "prompt": "Exact owner-selected B2-06 v01 CH4-B2-36. Preserve approved bytes. Immutable source and provenance in docs/134.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-06 CH4-B2-36 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-36-v01.png; SHA-256 cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+   },
+   "activeRecordKept": true,
+   "publicPreview": {
+    "file": "assets/selected/pending-integration/portraits/hotel_auctioneer/bureaucratic.png",
+    "sha256": "cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "transparent",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-36-v01.png"
+    }
+   }
+  },
+  {
+   "id": "CH4-B2-39",
+   "title": "Wedding assistant - sympathetic",
+   "registryKey": "portraits:hotel_wedding_assistant:sympathetic",
+   "replacementId": "CH4-B2-40",
+   "replacementKey": "portraits:hotel_wedding_assistant:apologetic",
+   "nodes": [
+    "hotel_staff_lavatory_move_boxes"
+   ],
+   "continuity": "Neither pose holds a prop, so box, ribbon and clipboard continuity lives in the background states (CH4-B2-41-cleared / -permit). Most of the node is embarrassment and apology (\"Oh, dear\", \"I'm terribly sorry\"). Soft note: the node opens \"The assistant looks sympathetic\"; B2-40's gentle clasped-hands smile still reads that way.",
+   "originalRecordVerbatim": {
+    "title": "Wedding assistant — sympathetic",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_wedding_assistant/sympathetic.png",
+    "prompt": "Exact owner-selected B2-07 v01 CH4-B2-39; preserve approved bytes. Pinned source/provenance in docs/135.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-39 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-39-v01.png; SHA-256 455f63371671ad61d8543073cc25e0d8db4fd80849032ba05e0c7c993a84db7d. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135.",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+   },
+   "activeRecordKept": true,
+   "publicPreview": {
+    "file": "assets/selected/pending-integration/portraits/hotel_wedding_assistant/sympathetic.png",
+    "sha256": "455f63371671ad61d8543073cc25e0d8db4fd80849032ba05e0c7c993a84db7d",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "transparent",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-39-v01.png"
+    }
+   }
+  },
+  {
+   "id": "CH4-B2-46",
+   "title": "Boiler engineer - practical",
+   "registryKey": "portraits:hotel_boiler_engineer:practical",
+   "replacementId": "CH4-B2-43",
+   "replacementKey": "portraits:hotel_boiler_engineer:careful",
+   "nodes": [
+    "hotel_boiler_staff_access",
+    "hotel_water_outage_confirmation"
+   ],
+   "continuity": "Same identity and coverall; neither pose holds the gauge or the gate key. Staff access: he opens the maintenance gate (the narrated action; B2-43 points toward it). Water outage: over the service-passage background, unchanged. Registered by PR #30 (merged 2026-11-24) before this review, so retirement is a pose remap rather than an omission.",
+   "originalRecordVerbatim": {
+    "title": "Boiler engineer — practical",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_boiler_engineer/practical.png",
+    "prompt": "Exact owner-selected B2-08 v01 CH4-B2-46; preserve approved bytes. Pinned source/provenance in docs/136.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-46 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-46-v01.png; SHA-256 63a263464015a09f46cd11724f8d448b1c0744ed3fb224153025eacc9b0839a9. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136.",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/boiler_room"
+   },
+   "activeRecordKept": true,
+   "publicPreview": {
+    "file": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/practical.png",
+    "sha256": "63a263464015a09f46cd11724f8d448b1c0744ed3fb224153025eacc9b0839a9",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "transparent",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-46-v01.png"
+    }
+   }
+  },
+  {
+   "id": "CH4-B2-16",
+   "title": "Boiler-access portrait background",
+   "registryKey": "scenes:grand_bellevue/boiler_access#portraitBackground",
+   "replacementId": "CH4-B2-23",
+   "replacementKey": "scenes:grand_bellevue/service_passage#portraitBackground",
+   "nodes": [
+    "hotel_collection_slip_spotted"
+   ],
+   "continuity": "hotel_collection_slip_spotted: the player is still OUTSIDE the boiler door beside Lot 31 until the porter \"opens the boiler-room door and ushers you through\". B2-23 shows that exact spot (Lot 31, BOILER ACCESS door, collection stairs), so it is more truthful than B2-16, which looks out from inside the boiler access. The boiler-access MAIN scene (CH4-B2-13) is kept.",
+   "originalRecordVerbatim": {
+    "title": "Boiler access conversation background",
+    "kind": "portrait-background",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/boiler_access.png",
+    "prompt": "Exact owner-selected B2-03 v01 CH4-B2-16; preserve existing approved PNG bytes. Authoritative source manifest and production provenance pinned in docs/131.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-03 v01 CH4-B2-16. SOURCE-DERIVED native interpretation, not independent native-grid authorship. Exact source 24c79bff8d33b5997ccb6b7aa7bb86293afef291:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png; SHA-256 e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3. Manifest, masks, material/structural/letter layers, detailed sources and prompts are pinned in docs/131. Not integrated; runtime assetPath remains null. The two B2-01 plumber alternatives remain separate and unapproved; earlier v01 approvals remain selected."
+   },
+   "activeRecordKept": false,
+   "mechanism": "Importer rule (game convert.js bgFor): a scene's own portraitBackground always wins and node backdrop is not an authorable field. Retirement therefore (1) moves the boiler_access#portraitBackground record and its public preview copy out of the active registry (record text, SHA-256 and pinned source preserved verbatim in docs/137 section 5 and git history; bytes stay at source commit 24c79bf) and (2) sets portraits[hotel_porter:alarmed].portraitBackgroundScene grand_bellevue/lobby -> grand_bellevue/service_passage. The lobby node hotel_chair_stapler_caught keeps the lobby background because the lobby scene has its own.",
+   "publicPreviewAtRetirement": {
+    "file": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
+    "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3",
+    "size": [
+     564,
+     278
+    ],
+    "alpha": "opaque",
+    "source": {
+     "repo": "InterstellarHarvest/CYOA-storyboard",
+     "ref": "art/ch4-batch01-review-20261121",
+     "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+     "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png"
+    }
+   },
+   "preservedBytes": {
+    "path": "tools/prologue-art-lab/assets/approved/retired-selections/chapter-04/CH4-B2-16-v01.png",
+    "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3"
+   }
+  }
+ ]
+}

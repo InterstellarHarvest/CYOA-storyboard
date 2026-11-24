@@ -33,7 +33,7 @@ const productionRecords=[
 // portrait backgrounds and 7 foreground poses. The 65 retired records remain
 // present for history but must never count as active Chapter 3 production.
 // Chapter 4 WIP review has two new inventory objects, each with slot + inspect placeholder records. Neither is approved art.
-assert.equal(productionRecords.length,171+14+8+7+2*2+52,'shared art catalog retains history, Chapter 4 item placeholders and fifty-two owner-selected Chapter 4 records');
+assert.equal(productionRecords.length,171+14+8+7+2*2+51+9,'shared art catalog retains history, Chapter 4 item placeholders, fifty-one active owner-selected Chapter 4 images (CH4-B2-16 retired) and nine approved no-image presentation records (docs/137)');
 for(const id of ['lot_53_dispute_ticket','wedding_ring_lot31']){
   assert.ok(items[id], 'new Chapter 4 WIP inventory item '+id);
   for(const variant of ['slot','inspect']){
@@ -117,6 +117,12 @@ for(const portrait of Object.values(artwork.portraits)){
   if(portrait.format==='opaque-complete'){
     assert.ok(Object.values(portrait.views||{}).length>=1,'House intercom uses complete scene-specific opaque views');
     assert.ok(Object.entries(portrait.views).every(([k,view])=>houseBriefViews.includes(k)||(view.status==='integrated'&&view.assetPath)),'all selected House portrait views integrated');
+    continue;
+  }
+  if(portrait.format==='voice-only'){
+    // docs/137 C2: an approved no-image speaker never carries portrait art or a background pairing.
+    assert.equal(portrait.status,'approved','voice-only speaker is an approved presentation decision');
+    assert.ok(portrait.assetPath==null&&portrait.suggestedFilename==null&&!portrait.foregroundFormat&&!portrait.portraitBackgroundScene&&!portrait.layers,'voice-only speaker carries no image fields');
     continue;
   }
   assert.equal(portrait.foregroundFormat,'transparent-rgba-png','layered NPC foreground remains transparent');

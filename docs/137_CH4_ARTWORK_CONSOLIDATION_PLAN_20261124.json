@@ -1,7 +1,7 @@
 {
  "schema": "out-of-order-ch4-artwork-consolidation-v1",
  "title": "Chapter 4 artwork consolidation - proposed inventory, mappings and coverage",
- "status": "PROPOSED - awaiting Nate. No registry, story or selected-art bytes are changed by this record.",
+ "status": "APPROVED by Nate 2026-11-24 (PR #31) and applied by tools/sync/ch4-consolidation.py apply. Derived from the pre-consolidation canon CANON_BASE so every mapping stays reproducible.",
  "canonicalBase": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
  "auditCheckpoints": {
   "main": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
@@ -21,7 +21,7 @@
   },
   "approvedPrimaryOnMain": 52,
   "retainedApproved": 45,
-  "retirementsProposed": 7,
+  "retired": 7,
   "newPrimary": 17,
   "newRendererException": 1,
   "reuse": 6,
@@ -1156,7 +1156,7 @@
    "assetId": "CH4-B2-28",
    "selectedFile": "assets/selected/pending-integration/portraits/hotel_bride/hopeful.png",
    "sha256": "953068a9268d30b05bda06e167d7820cd97dc933d7f28fad5da8ca7d30eb4a38",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait:hotel_bride:determined",
    "replacementId": "CH4-B2-26"
   },
@@ -1219,7 +1219,7 @@
    "assetId": "CH4-B2-16",
    "selectedFile": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
    "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait_background:grand_bellevue/service_passage",
    "replacementId": "CH4-B2-23"
   },
@@ -1233,7 +1233,7 @@
    "assetId": "CH4-B2-33",
    "selectedFile": "assets/selected/pending-integration/portraits/hotel_porter/curious.png",
    "sha256": "532a62994a8e3d5976144136f43c8699b3f0ddec291db7a05af412b2d06da6a0",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait:hotel_porter:uncertain",
    "replacementId": "CH4-B2-21"
   },
@@ -1247,7 +1247,7 @@
    "assetId": "CH4-B2-34",
    "selectedFile": "assets/selected/pending-integration/portraits/hotel_porter/relieved.png",
    "sha256": "0be33df015e9eae683021df5b4e128a80c857fc89ae3fc081db370bed8cfef75",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait:hotel_porter:practical",
    "replacementId": "CH4-B2-22"
   },
@@ -1301,7 +1301,7 @@
    "assetId": "CH4-B2-39",
    "selectedFile": "assets/selected/pending-integration/portraits/hotel_wedding_assistant/sympathetic.png",
    "sha256": "455f63371671ad61d8543073cc25e0d8db4fd80849032ba05e0c7c993a84db7d",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait:hotel_wedding_assistant:apologetic",
    "replacementId": "CH4-B2-40"
   },
@@ -1407,7 +1407,7 @@
    "assetId": "CH4-B2-46",
    "selectedFile": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/practical.png",
    "sha256": "63a263464015a09f46cd11724f8d448b1c0744ed3fb224153025eacc9b0839a9",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait:hotel_boiler_engineer:careful",
    "replacementId": "CH4-B2-43"
   },
@@ -1745,7 +1745,7 @@
    "assetId": "CH4-B2-36",
    "selectedFile": "assets/selected/pending-integration/portraits/hotel_auctioneer/bureaucratic.png",
    "sha256": "cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef",
-   "disposition": "RETIRE_PROPOSED",
+   "disposition": "RETIRED",
    "replacement": "portrait:hotel_auctioneer:showman",
    "replacementId": "CH4-03"
   },

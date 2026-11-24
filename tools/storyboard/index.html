@@ -55,6 +55,8 @@
 .item-art{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}.item-art figure{margin:6px 0}.item-art figcaption{font-size:11px;color:#a8b9c4}
 .art-brief{position:relative}.art-brief.has-thumb{padding-right:112px;min-height:52px}
 .art-brief .thumb{position:absolute;right:7px;top:6px;height:38px;max-width:96px;image-rendering:pixelated;border:1px solid #465563}
+.art-brief.no-image{padding-right:172px}
+.art-brief .no-image-tag{position:absolute;right:7px;top:6px;padding:2px 6px;font-size:10px;letter-spacing:.06em;border:1px dashed #7d8b96;color:#c9d2d9;border-radius:3px}
 .art-brief.nested{margin-left:14px;width:calc(100% - 14px);border-left-color:#4b6470}
 .art-filter{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}.art-filter button{padding:4px 9px;font-size:12px}.art-filter button.on{background:#3f5f6d;border-color:#7fb0c2}
 #artZoom{max-width:96vw;max-height:94vh;padding:0;border:1px solid #577c86;background:#10161c;color:#e2e8ee}
@@ -1155,7 +1157,8 @@
    }
    if(!shown){
      const st=record.status||"not-started";
-     sec.append(el("p","muted",SELECTED_STATUS.includes(st)&&!record.views&&!record.pages&&!record.layers?"Selected ("+st+"), but no public preview is registered yet (tools/sync/register-art.mjs).":st==="generated"?"Candidates exist; none selected yet.":SELECTED_STATUS.includes(st)?"Open a view / page / layer above.":"No selected artwork yet."));
+     if(noImageTag(record))sec.append(el("p","muted",noImageTag(record)+" — an owner-approved presentation decision (docs/137). There is nothing to select or commission."));
+     else sec.append(el("p","muted",SELECTED_STATUS.includes(st)&&!record.views&&!record.pages&&!record.layers?"Selected ("+st+"), but no public preview is registered yet (tools/sync/register-art.mjs).":st==="generated"?"Candidates exist; none selected yet.":SELECTED_STATUS.includes(st)?"Open a view / page / layer above.":"No selected artwork yet."));
    }
    if(own)sec.append(el("p","meta prov",provenanceLine(own)));
    pane.append(sec);
@@ -1163,13 +1166,17 @@
  function artRefsForItem(id){return [{group:"items",id,variant:"slot"},{group:"items",id,variant:"inspect"}];}
  function retiredArt(record){return /^ARCHIVED \/ RETIRED \/ UNUSED\b/.test(record?.notes||"");}
  function artStatusText(record){return retiredArt(record)?"ARCHIVED · DO NOT GENERATE":(record?.status||"NOT DEFINED");}
+ // docs/137 C1/C2: owner-approved presentation decisions that never carry an image.
+ const NO_IMAGE_FORMATS={"text-led":"NO IMAGE · TEXT-LED","voice-only":"NO IMAGE · VOICE ONLY"};
+ function noImageTag(record){return NO_IMAGE_FORMATS[record?.format]||"";}
+ function markNoImage(b,record){const tag=noImageTag(record);if(tag){b.append(el("span","no-image-tag",tag));b.classList.add("no-image");}}
  function artworkLinks(pane,refs){
    if(!refs.length)return;
    pane.append(el("h3","","Artwork references"));
    refs.forEach(ref=>{
      const record=artworkAt(ref.group,ref.id,ref.variant);
      const b=el("button","art-brief",(ref.conditional?"STATE · ":"")+(record?.title||artKey(ref))),t=thumbOf(ref,record);
-     if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}
+     if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}else markNoImage(b,record);
      b.append(el("span","art-meta",artKey(ref)+" · "+artStatusText(record)+" · "+(record?.assetPath||record?.suggestedFilename||"no filename")));
      if(record)b.addEventListener("click",()=>selectArt(ref));else b.disabled=true;
      pane.append(b);
@@ -1218,7 +1225,7 @@
  function selectArt(ref){
    const record=artworkAt(ref.group,ref.id,ref.variant);if(!record)return;
    state.selected={type:"art",...ref};renderGraph();
-   const pane=detailHead(record.title||artKey(ref),artKey(ref)+" · "+(record.kind||ref.group)+" · "+(record.dimensions||"dimensions TBD"));
+   const pane=detailHead(record.title||artKey(ref),artKey(ref)+" · "+(record.kind||ref.group)+" · "+(noImageTag(record)?"no image":record.dimensions||"dimensions TBD"));
    if(ref.variant&&ref.variant!=="portraitBackground"&&ref.group!=="items"){
      const parent=artworkAt(ref.group,ref.id),up=el("button","art-brief","↑ "+(parent?.title||ref.id));
      up.onclick=()=>selectArt({group:ref.group,id:ref.id});pane.append(up);
@@ -1301,7 +1308,7 @@
      pane.append(el("h3","",({scenes:"Shared scenes, scene states & portrait backgrounds",portraits:"Shared portraits & conversation views",focus:"Focus close-ups & pages",items:"Item slot & inspection art",deathScreens:"Fatal-ending aftermath art"})[group]+" ("+records.length+")"));
      records.forEach(ref=>{
        const b=el("button","art-brief"+(ref.nested?" nested":""),ref.record.title||artKey(ref)),t=thumbOf(ref,ref.record);
-       if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}
+       if(t){const img=el("img","thumb");img.src=t.url;img.alt="";img.loading="lazy";b.append(img);b.classList.add("has-thumb");}else markNoImage(b,ref.record);
        b.append(el("span","art-meta",artKey(ref)+" · "+artStatusText(ref.record)));
        b.onclick=()=>selectArt(ref);pane.append(b);
      });

@@ -876,7 +876,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/refreshment_table",
       "speaker": "hotel_commodore_bixby",
-      "pose": "commanding",
+      "pose": "delighted",
       "effects": {
         "set": {
           "ch4_bixby_expects_bridge": true,
@@ -1743,7 +1743,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/lobby",
       "speaker": "hotel_bride",
-      "pose": "hopeful",
+      "pose": "determined",
       "text": [
         {
           "desc": "You show the bride the ring, a length of pale blue ribbon still caught around it."
@@ -2248,7 +2248,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/service_passage",
       "speaker": "hotel_porter",
-      "pose": "curious",
+      "pose": "uncertain",
       "text": [
         {
           "desc": "You produce your Temporary Staff Pass. The porter examines it, looks at Lot Thirty-One, and consults his clipboard."
@@ -2312,7 +2312,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/service_passage",
       "speaker": "hotel_porter",
-      "pose": "relieved",
+      "pose": "practical",
       "text": [
         "Oh! Our visiting inspector. Back again?",
         {
@@ -2424,7 +2424,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/staff_lavatory",
       "speaker": "hotel_wedding_assistant",
-      "pose": "sympathetic",
+      "pose": "apologetic",
       "effects": {
         "set": {
           "ch4_lot58_toilet_sold_separately": true
@@ -2732,7 +2732,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/boiler_room",
       "speaker": "hotel_boiler_engineer",
-      "pose": "practical",
+      "pose": "careful",
       "effects": {
         "set": {
           "ch4_boiler_staff_access": true
@@ -5164,7 +5164,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/service_passage",
       "speaker": "hotel_boiler_engineer",
-      "pose": "practical",
+      "pose": "careful",
       "effects": {
         "set": {
           "ch4_hotel_water_outage_confirmed": true
@@ -5374,7 +5374,7 @@
       "mode": "dialogue",
       "scene": "grand_bellevue/lobby",
       "speaker": "hotel_auctioneer",
-      "pose": "bureaucratic",
+      "pose": "showman",
       "effects": {
         "set": {
           "ch4_lot14_catalogue_correction": true,
