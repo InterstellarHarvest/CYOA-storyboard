@@ -462,3 +462,8 @@ Nate APPROVES/SELECTS all six v01 portraits CH4-B2-31 through CH4-B2-36 unchange
 ## Chapter4 B2-07 — owner approval, 2026-11-23
 
 Nate APPROVES/SELECTS five primary v01 assets CH4-B2-37 through41 and APPROVES/PRESERVES four cleared/permit production references unchanged from `8d32d44c787c09884ca0b3455c34f2a539d34db2`. [Exact paths/hashes, mappings, source-derived provenance and gameplay handoff](135_CH4_B207_APPROVAL_COMPLETION_20261123.md). Earlier approvals, ring references and plumber alternatives stay exact. Supplemental references create no canonical Focus IDs or runtime bindings. No integration.
+
+
+## Chapter4 B2-08 — owner approval, 2026-11-24
+
+Nate APPROVES/SELECTS six primary v01 assets CH4-B2-42 through47 and APPROVES/PRESERVES six relief/inspection/staff production references unchanged from `6ddaf567bcc2369c2122256a6ec0daa93f5f886e`. [Exact paths/hashes, mappings, source-derived provenance and gameplay handoff](136_CH4_B208_APPROVAL_COMPLETION_20261124.md). Earlier approvals, ring references and plumber alternatives stay exact. Supplemental references create no canonical Focus IDs or runtime bindings. No integration.
