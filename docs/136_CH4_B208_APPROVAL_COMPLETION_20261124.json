@@ -1,0 +1,536 @@
+{
+  "ownerDecision": "Nate approves/selects six B2-08 v01 primary assets and approves/preserves six conditional production references unchanged from 6ddaf567bcc2369c2122256a6ec0daa93f5f886e.",
+  "decisionDate": "2026-11-24",
+  "status": "APPROVED_AND_SELECTED_WITH_PRESERVED_REFERENCES",
+  "approvalSourceCommit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+  "canonicalBase": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+  "registrationTool": "tools/sync/register-art.mjs",
+  "runtimeAssetPathsAssigned": false,
+  "gameplayIntegrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-42",
+      "title": "Boiler pressure-test room",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "c4441ea36243bf1b6161359b4d5d3956b70e612a293bd144f7fef107e29e121c",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "main_scene",
+      "storyNodeIds": [
+        "hotel_boiler_pressure_intro",
+        "hotel_boiler_pressure_relieved",
+        "fatal_boiler_pressed_and_steamed",
+        "hotel_boiler_dispute_hold",
+        "hotel_boiler_staff_access"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-42-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-42-4x.png",
+        "sha256": "d3a81de44e23bb0dec18ae10b3e549456cd79cd2e978cf4bd25c584f58b53388"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "scenes:grand_bellevue/boiler_room",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_room.png",
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/boiler_room.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ]
+    },
+    {
+      "id": "CH4-B2-43",
+      "title": "Boiler engineer — careful",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "f5291b027540cb41898fd2032ea3462723269fd319ebe156b3a2e2a80acc9067",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_boiler_pressure_intro"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-43-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-43-4x.png",
+        "sha256": "5ef8cf48a9c4695fd15235ee280791bc89fb235bd6d89407799eeb526fa1c9d3"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_boiler_engineer:careful",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/careful.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_boiler_engineer/careful.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-44",
+      "title": "Boiler engineer — pleased",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "77ae105216f93d7c889716c00cce3abcf7b2f1323e47171095ff9cc4a8792730",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_boiler_pressure_relieved"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-44-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-44-4x.png",
+        "sha256": "ecec7cb2879a9f9d0467cbc0e9d422cb97ec51a08ff736e4106f3ef00b53ae9f"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_boiler_engineer:pleased",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/pleased.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_boiler_engineer/pleased.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-45",
+      "title": "Boiler engineer — defeated",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "4ed315b347d1aa8c976d4b8c78322eaa5fd064d24e525923ac7c830c0ec8267d",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_boiler_dispute_hold"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-45-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-45-4x.png",
+        "sha256": "2f9815d4771942b61b81b2b8d005ae2c292101bf0b884ec0b3de7c302f994b6d"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_boiler_engineer:defeated",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/defeated.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_boiler_engineer/defeated.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-46",
+      "title": "Boiler engineer — practical",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "63a263464015a09f46cd11724f8d448b1c0744ed3fb224153025eacc9b0839a9",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_boiler_staff_access",
+        "hotel_water_outage_confirmation"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-46-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-46-4x.png",
+        "sha256": "1ef50240660cb6d7bfb23566eb885608dca17e3c875b30236dafd9bec6531e93"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_boiler_engineer:practical",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/practical.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_boiler_engineer/practical.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/boiler_room",
+        "grand_bellevue/service_passage"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-47",
+      "title": "Boiler-room closer background",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "5cf871e30bce74f86343546653f22352981eeb559592c0162ef98ff32cf63034",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "portrait_background",
+      "storyNodeIds": [
+        "hotel_boiler_pressure_intro",
+        "hotel_boiler_pressure_relieved",
+        "hotel_boiler_dispute_hold",
+        "hotel_boiler_staff_access"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-47-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-47-4x.png",
+        "sha256": "7393bc49bca0c4072be85566de05e37de24b7860103d2e312370180c7ef53662"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "scenes:grand_bellevue/boiler_room#portraitBackground",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_room/portraitBackground.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/boiler_room.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ]
+    }
+  ],
+  "supplementalReferences": [
+    {
+      "id": "CH4-B2-42-relieved",
+      "title": "CH4-B2-42-relieved",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "8278a9dbb107cdf62e5883a386626fff9b30d7d933e08e10a81c30bb9703c051",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_boiler_pressure_relieved"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-42-relieved-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-42-relieved-4x.png",
+        "sha256": "b8fe71376fbcc6b2827476bb24e0708089b9159a01b469e14074afbc782c24f3"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-42-relieved-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-42",
+      "authoredCondition": "After the successful test: gauge needle physically points into GREEN; overhead steam, outer lavatory passage open, inner door still CLOSED with SANITATION CLEARANCE PENDING. Maintenance gate remains closed.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-42-inspection-hold",
+      "title": "CH4-B2-42-inspection-hold",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "93f7ab9c125077718aa345b9374ee3368caf2499010ee4862b6e189205c7d482",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_boiler_dispute_hold"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-42-inspection-hold-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-42-inspection-hold-4x.png",
+        "sha256": "7de5be18b58b8a531a190a5c7d73271e081bc5905fa3adbbc5e816bf23f69ee4"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-42-inspection-hold-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-42",
+      "authoredCondition": "Existing Lot53 dispute suspends the test: DO NOT OPERATE tag on wheel, inspection walkway gate unchained/open; pressure remains RED and lavatory door CLOSED/chained.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-42-staff-access",
+      "title": "CH4-B2-42-staff-access",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "b179c47d6cc0730ba7f88d8c5e8c159be46dca9c99539fce5da4186ddf8efbba",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_boiler_staff_access"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-42-staff-access-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-42-staff-access-4x.png",
+        "sha256": "bf55c130aa4189852ca3461d8f76a0f0e8acae7b71e2137120465b3ffdd60d5d"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-42-staff-access-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-42",
+      "authoredCondition": "Existing Temporary Staff Pass bypass: maintenance gate open, pressure still RED, no test or DO NOT OPERATE tag, lavatory door remains CLOSED/chained.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-47-relieved",
+      "title": "CH4-B2-47-relieved",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "25b3b3bf50e84fe62510b43cda9072e976ad4c316eea8223ed04a0668d784692",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_boiler_pressure_relieved"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-47-relieved-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-47-relieved-4x.png",
+        "sha256": "d91a3815f11562407956b3099d4ac39c5220473b3ca2224a21829efdabc9b41b"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-47-relieved-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-47",
+      "authoredCondition": "After the successful test: gauge needle physically points into GREEN; overhead steam, outer lavatory passage open, inner door still CLOSED with SANITATION CLEARANCE PENDING. Maintenance gate remains closed.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-47-inspection-hold",
+      "title": "CH4-B2-47-inspection-hold",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "01e200de1f21d56328dc876166bcc77ecd0bd43ba8ab7fee556f514bfcb2af0f",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_boiler_dispute_hold"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-47-inspection-hold-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-47-inspection-hold-4x.png",
+        "sha256": "99873056c0a69330e070597c5f667cbe056d83b3af75632fa6bd740aff26dd03"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-47-inspection-hold-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-47",
+      "authoredCondition": "Existing Lot53 dispute suspends the test: DO NOT OPERATE tag on wheel, inspection walkway gate unchained/open; pressure remains RED and lavatory door CLOSED/chained.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-47-staff-access",
+      "title": "CH4-B2-47-staff-access",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "fb67d5ae76b4f91de9995ed6095e396b769e688bbcc3f9e8931ae4a8ec56b7ea",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_boiler_staff_access"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-47-staff-access-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/manifest.json",
+        "sha256": "11aa08660003f225179da994f171c5f64eaab308bd1bd9638f5a3a76dad61eef"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/previews/CH4-B2-47-staff-access-4x.png",
+        "sha256": "06abe62ec62d643db8d098f59b436fde55d7d304067b26731aa1fd1d679f16c5"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-47-staff-access-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-47",
+      "authoredCondition": "Existing Temporary Staff Pass bypass: maintenance gate open, pressure still RED, no test or DO NOT OPERATE tag, lavatory door remains CLOSED/chained.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    }
+  ],
+  "plumberAlternatives": "Separate UNSELECTED alternatives, original v01 selections unchanged.",
+  "validation": {
+    "selectionPreservationChecks": 407,
+    "previousSelectionsPreserved": 191,
+    "supplementalReferencesPreserved": 6,
+    "canonicalCheck": "PASS",
+    "syncRegressionChecks": 23,
+    "chapter3ReferenceGuards": 10,
+    "storyboardSmoke": "PASS",
+    "fatalExport": "PASS",
+    "artLabStatic": "PASS",
+    "selectedArtworkBrowserChecks": 60,
+    "browserEngines": [
+      "Chromium",
+      "Firefox"
+    ]
+  }
+}

@@ -1335,6 +1335,26 @@
         "prompt": "Exact owner-selected B2-07 v01 CH4-B2-41; preserve approved bytes. Pinned source/provenance in docs/135.",
         "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-41 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-41-v01.png; SHA-256 a8ba232710e12784d7103b9882a3c6e8286e8cca89bd29fe7abbfab90b6d2b94. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135."
       }
+    },
+    "grand_bellevue/boiler_room": {
+      "title": "Boiler pressure-test room",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/boiler_room.png",
+      "prompt": "Exact owner-selected B2-08 v01 CH4-B2-42; preserve approved bytes. Pinned source/provenance in docs/136.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-42 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-42-v01.png; SHA-256 c4441ea36243bf1b6161359b4d5d3956b70e612a293bd144f7fef107e29e121c. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136.",
+      "portraitBackground": {
+        "title": "Boiler-room closer background",
+        "kind": "portrait-background",
+        "status": "approved",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/boiler_room.png",
+        "prompt": "Exact owner-selected B2-08 v01 CH4-B2-47; preserve approved bytes. Pinned source/provenance in docs/136.",
+        "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-47 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-47-v01.png; SHA-256 5cf871e30bce74f86343546653f22352981eeb559592c0162ef98ff32cf63034. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136."
+      }
     }
   },
   "portraits": {
@@ -1842,6 +1862,54 @@
       "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-40 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-40-v01.png; SHA-256 f3b61e1ba4f2ebc98b9b9a70b88a969784314e1501ac9c33cce2c88573df00ad. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135.",
       "foregroundFormat": "transparent-rgba-png",
       "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+    },
+    "hotel_boiler_engineer:careful": {
+      "title": "Boiler engineer — careful",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_boiler_engineer/careful.png",
+      "prompt": "Exact owner-selected B2-08 v01 CH4-B2-43; preserve approved bytes. Pinned source/provenance in docs/136.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-43 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-43-v01.png; SHA-256 f5291b027540cb41898fd2032ea3462723269fd319ebe156b3a2e2a80acc9067. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    "hotel_boiler_engineer:pleased": {
+      "title": "Boiler engineer — pleased",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_boiler_engineer/pleased.png",
+      "prompt": "Exact owner-selected B2-08 v01 CH4-B2-44; preserve approved bytes. Pinned source/provenance in docs/136.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-44 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-44-v01.png; SHA-256 77ae105216f93d7c889716c00cce3abcf7b2f1323e47171095ff9cc4a8792730. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    "hotel_boiler_engineer:defeated": {
+      "title": "Boiler engineer — defeated",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_boiler_engineer/defeated.png",
+      "prompt": "Exact owner-selected B2-08 v01 CH4-B2-45; preserve approved bytes. Pinned source/provenance in docs/136.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-45 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-45-v01.png; SHA-256 4ed315b347d1aa8c976d4b8c78322eaa5fd064d24e525923ac7c830c0ec8267d. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
+    },
+    "hotel_boiler_engineer:practical": {
+      "title": "Boiler engineer — practical",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_boiler_engineer/practical.png",
+      "prompt": "Exact owner-selected B2-08 v01 CH4-B2-46; preserve approved bytes. Pinned source/provenance in docs/136.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-24; CH4-B2-46 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 6ddaf567bcc2369c2122256a6ec0daa93f5f886e:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-46-v01.png; SHA-256 63a263464015a09f46cd11724f8d448b1c0744ed3fb224153025eacc9b0839a9. Supplemental relief/inspection/staff frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/136.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/boiler_room"
     }
   },
   "items": {
