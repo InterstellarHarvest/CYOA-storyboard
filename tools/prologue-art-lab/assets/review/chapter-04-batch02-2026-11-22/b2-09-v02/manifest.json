@@ -1,0 +1,699 @@
+{
+  "title": "Chapter4 B2-09 v02 \u2014 Commodore Bixby and the wheel",
+  "groupId": "B2-09",
+  "reviewVersion": "v02",
+  "previousReviewCommit": "652c8441032f8adf1d4a486bbda8fd4fb1e8d6cc",
+  "correction": "Owner-directed Chapter2 main-scene readability pass and removed-wheel material context; two portrait foregrounds and primary dialogue background retained byte-for-byte",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+  "reviewPreservationBaseline": "652c8441032f8adf1d4a486bbda8fd4fb1e8d6cc",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "formalInventoryStateFamilies": 0,
+  "conditionalReferenceBasis": "Within-node authored wheel handoff/trade beats; no new inventory demands, scene keys or dispatch",
+  "wheelIsInventoryItem": false,
+  "primaryUnits": 4,
+  "supplementalReferenceFrames": 4,
+  "storyNodeCoverage": [
+    "hotel_bixby_emergency",
+    "hotel_bixby_trade",
+    "hotel_commodore_bixby"
+  ],
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "productionIntegrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-48",
+      "title": "Refreshment alcove \u2014 Bixby and the wheel",
+      "version": "v02",
+      "inventoryId": "main_scene:grand_bellevue/refreshment_table",
+      "key": "scenes:grand_bellevue/refreshment_table",
+      "kind": "main_scene",
+      "nodeIds": [
+        "hotel_commodore_bixby",
+        "hotel_bixby_emergency",
+        "hotel_bixby_trade"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-48-v02.png",
+        "sha256": "afb1014529e91677214e259a07e31d589198de9fc0f1588426f9242e3e93beed",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-48-4x.png",
+        "sha256": "4d21783976785e61a46a8e98dd3966730d2071c5be655141e97215d0c127f9d3",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-48-detailed.png",
+        "sha256": "890977e310281b9c28eef80c94abc45ea28fb4c4183199585409b48666c1f279",
+        "dimensions": [
+          1551,
+          1014
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlyReference": {
+        "file": "originals/CH4-B2-48-pixel-friendly-readability.png",
+        "sha256": "f127d2a6e039d6ca191f4d192229b801ee130e7cdc0428f6918c74fa1a63d85b",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-48-detailed.txt"
+    },
+    {
+      "id": "CH4-B2-49",
+      "title": "Commodore Bixby \u2014 delighted",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_commodore_bixby:delighted",
+      "key": "portraits:hotel_commodore_bixby:delighted",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_commodore_bixby",
+        "hotel_bixby_trade"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-49-v01.png",
+        "sha256": "44f81292dc520eeabc6864c21449fb033db4891702c6102634b126b344ee05b8",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-49-4x.png",
+        "sha256": "d7a3c515d8c1e2a3b2354d68498c020a16e16cb5af5f1492d68d525b7098925c",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-49-detailed.png",
+        "sha256": "f4ace21aa60468c52cd168ed2f672687b68680d28836b12f3e881cc7839210e4",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-49-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-51",
+        "native": {
+          "file": "previews/CH4-B2-49-composite-native.png",
+          "sha256": "d1ef2bdf61298e192fcd829a42c98bb4ef256faad3cd6b1984832326db1138ba",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-49-composite-4x.png",
+          "sha256": "5d56afd34aeca748f1f99def15c8cca37a844d17d8fd5ad9e25f82b016ca3bf7",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      },
+      "primaryScene": "grand_bellevue/refreshment_table",
+      "sceneKeys": [
+        "grand_bellevue/refreshment_table"
+      ],
+      "tradeComposite": {
+        "backgroundAssetId": "CH4-B2-51-trade",
+        "native": {
+          "file": "previews/CH4-B2-49-trade-native.png",
+          "sha256": "09deb73f835db59c70955205fea39c4962b5da7998c2e42ecbef246359bb9c12",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-49-trade-4x.png",
+          "sha256": "347b47f0e177a55e48660f79f1c57c35a9aa1e531cf17ced3209426a28772ac5",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      }
+    },
+    {
+      "id": "CH4-B2-50",
+      "title": "Commodore Bixby \u2014 commanding",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_commodore_bixby:commanding",
+      "key": "portraits:hotel_commodore_bixby:commanding",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_bixby_emergency"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-50-v01.png",
+        "sha256": "898ae033654709046d85ff2834508a5135f20cf441812b18e373aff967bb1d92",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-50-4x.png",
+        "sha256": "e898d98645993534cfad735a8b571b3b7b77080150a1bd112a68f5d6837f9478",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-50-detailed.png",
+        "sha256": "171154ceffc3ccc7b560e47104d4b239c74e5c3b6c9b642b9b58e28c92bdde67",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-50-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-51-emergency",
+        "native": {
+          "file": "previews/CH4-B2-50-composite-native.png",
+          "sha256": "df466f89fb9ae8b5334aedd12b744f2e108e3bac3e758104fc29424d5e4f23f3",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-50-composite-4x.png",
+          "sha256": "5f413d03ca6228021c17f72d438271bd86c600ba9104063aa4dc0a6660b6e36c",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      },
+      "primaryScene": "grand_bellevue/refreshment_table",
+      "sceneKeys": [
+        "grand_bellevue/refreshment_table"
+      ]
+    },
+    {
+      "id": "CH4-B2-51",
+      "title": "Refreshment-table dialogue background",
+      "version": "v01",
+      "inventoryId": "portrait_background:grand_bellevue/refreshment_table",
+      "key": "scenes:grand_bellevue/refreshment_table#portraitBackground",
+      "kind": "portrait_background",
+      "nodeIds": [
+        "hotel_commodore_bixby",
+        "hotel_bixby_emergency",
+        "hotel_bixby_trade"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-51-v01.png",
+        "sha256": "688d5428c0e67e0b2fbed16fccd59153fc89a280b5aa78cb17e8e8494eccab17",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-51-4x.png",
+        "sha256": "049d52084e8955d41c6dc117efa4ebecc3a18a875829b0d9c2bcfbb3026ddda7",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-51-detailed.png",
+        "sha256": "30506d5954c1cb97d8ef95c706618efe71da6b7a8ca6616ff000e98f56f29268",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlyReference": {
+        "file": "originals/CH4-B2-51-pixel-friendly.png",
+        "sha256": "7a238f2bcc645b9a4c7382125c6a95b98faf22887f4b20a44ee9ede52ffe9f5b",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-51-detailed.txt"
+    }
+  ],
+  "supplementalStates": [
+    {
+      "id": "CH4-B2-48-emergency",
+      "baseAssetId": "CH4-B2-48",
+      "version": "v02",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Final emergency beat after the brass wheel is handed off: bucket has no wheel; Bixby blows whistle, organizes dining chairs and a guest slips on shallow advancing water. The closer background crops out the guest/chair drill; commanding foreground supplies Bixby.",
+      "nodeIds": [
+        "hotel_bixby_emergency"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-48-emergency-v02.png",
+        "sha256": "20c1145244ff24c961a7679a0bf4a0d06f8b7735c677d6cd380de65c8a8c548d",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-48-emergency-4x.png",
+        "sha256": "584f30741cb48d491884d49c9e08383cecb276b67483d0d6e080bc4edca419d4",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-48-emergency-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-48-emergency-readability-reference.png",
+        "sha256": "716eb67902c21922cabc9579002eab56fac1b3915fde293e010bea616fa747e7",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-48"
+    },
+    {
+      "id": "CH4-B2-48-trade",
+      "baseAssetId": "CH4-B2-48",
+      "version": "v02",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Final trade beat after the wheel is handed off and rubber_band_ball is taken from inventory: no mounted wheel; the approved-design rubber-band ball remains tied to bucket with a length of napkin as a fender. Bixby remains delighted.",
+      "nodeIds": [
+        "hotel_bixby_trade"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-48-trade-v02.png",
+        "sha256": "aae195f34e3b1a6402c548afc1a543bd75cd9146772b3dd4bb8b7edc7050502d",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-48-trade-4x.png",
+        "sha256": "caf4edd613333705fb44576f14aedd126b10eacb3400025a569f9c89d6e45642",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-48-trade-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-48-wheel-removed-readability-reference.png",
+        "sha256": "914cccc3fdf811de2aaa909f10e051f06ede582a2a56da2fcb5f959b9fc3a955",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-48"
+    },
+    {
+      "id": "CH4-B2-51-emergency",
+      "baseAssetId": "CH4-B2-51",
+      "version": "v02",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Final emergency beat after the brass wheel is handed off: bucket has no wheel; Bixby blows whistle, organizes dining chairs and a guest slips on shallow advancing water. The closer background crops out the guest/chair drill; commanding foreground supplies Bixby.",
+      "nodeIds": [
+        "hotel_bixby_emergency"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-51-emergency-v02.png",
+        "sha256": "9189643363e184bb8cb124fa61a868e6eb00b5bfc0fe95e6f944cacc514a377f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-51-emergency-4x.png",
+        "sha256": "a01a366ecfba91ba75ac4329478a6d8725bba27300afac542145b8de41f8664f",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-51-emergency-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-51-wheel-removed-reference.png",
+        "sha256": "1a09ac37bee4642f0d708aa4135b6c6b7b79467405a9f50171faab8b235defc7",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-51"
+    },
+    {
+      "id": "CH4-B2-51-trade",
+      "baseAssetId": "CH4-B2-51",
+      "version": "v02",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Final trade beat after the wheel is handed off and rubber_band_ball is taken from inventory: no mounted wheel; the approved-design rubber-band ball remains tied to bucket with a length of napkin as a fender. Bixby remains delighted.",
+      "nodeIds": [
+        "hotel_bixby_trade"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-51-trade-v02.png",
+        "sha256": "77c6cded999a4918afd6fc13bc8f9fed55afe1050c14233884646da6b91a5cb1",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-51-trade-4x.png",
+        "sha256": "1935e37fed97a04ae8be3e627021efa5079a4575aeb32571bb74203e223427ab",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-51-trade-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-51-wheel-removed-reference.png",
+        "sha256": "1a09ac37bee4642f0d708aa4135b6c6b7b79467405a9f50171faab8b235defc7",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-51"
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "approved-presenter": {
+      "registryKey": "portraits:pavilion_presenter:idle",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
+    "approved-auctioneer": {
+      "registryKey": "portraits:hotel_auctioneer:showman",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/portraits/hotel_auctioneer/showman.png",
+      "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/native/CH4-03-auctioneer-source-derived-v08.png"
+      }
+    },
+    "approved-engineer": {
+      "registryKey": "portraits:hotel_boiler_engineer:careful",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/portraits/hotel_boiler_engineer/careful.png",
+      "sha256": "f5291b027540cb41898fd2032ea3462723269fd319ebe156b3a2e2a80acc9067",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-43-v01.png"
+      }
+    },
+    "approved-ballroom": {
+      "registryKey": "scenes:grand_bellevue/ballroom",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/ballroom.png",
+      "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-05-ballroom-v03.png"
+      }
+    },
+    "approved-lobby": {
+      "registryKey": "scenes:grand_bellevue/lobby",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-01-lobby-v05.png"
+      }
+    },
+    "approved-lobby-background": {
+      "registryKey": "scenes:grand_bellevue/lobby#portraitBackground",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v05/native/CH4-02-auctioneer-background-v05.png"
+      }
+    },
+    "approved-receptionist": {
+      "registryKey": "portraits:receptionist:default#layers:foreground",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/portraits/receptionist/receptionist_idle.png"
+      }
+    },
+    "approved-rubber-band-ball": {
+      "registryKey": "items:rubber_band_ball#inspect",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/art/items/rubber_band_ball_inspect.png",
+      "sha256": "5c6d633de86e5228c3066e7564a87b438d6366ff4956f57ac03437d67749e1b9",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/items/rubber_band_ball_inspect.png"
+      }
+    },
+    "approved-restroom": {
+      "registryKey": "scenes:grand_bellevue/restroom",
+      "approvalCommit": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png"
+      }
+    }
+  },
+  "method": "Detailed built-in imagegen references; separate environment pixel-friendly interpretation; target-grid material/cluster/structure/lettering and occlusion construction; protected source-derived portrait palettes/anatomy/silhouettes; bounded state-object references."
+}

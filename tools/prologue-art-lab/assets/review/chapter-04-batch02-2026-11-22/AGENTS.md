@@ -1,3 +1,9 @@
+# Main-scene readability direction —2026-11-24
+
+Nate requires main scenes to remain readable at exact4×. Use approved Chapter2 Bureau/Control Tower as the primary benchmarks for small-scale environmental detail. Favor larger connected shade groups, quiet surfaces, sparse meaningful wear and clear story-object silhouettes; avoid isolated speckle, repeated grain and tiny high-contrast marks. Keep small NPCs simple. Detailed portraits remain a separate tier. Native dimensions and nearest-neighbor scaling alone do not satisfy this artistic gate. Apply to unselected/new scenes; never silently repaint approved images.
+
+B2-09 v02 revises only its unselected main scene and two outcomes for readability, and corrects the wheel-removed material context in both dialogue outcomes. Portrait foregrounds49/50 and primary background51 remain byte-exact v01. Preserve the entire published v01 package. All new frames stay UNSELECTED.
+
 # Current B2-08 owner approval and B2-09 review — 2026-11-24
 
 B2-08 six primary v01 assets are APPROVED/SELECTED and six relieved/inspection/staff frames APPROVED/PRESERVED unchanged from6ddaf567bcc2369c2122256a6ec0daa93f5f886e. Canonical main96e3c2a68e3f31afec2aed6cfd8b7634b774980f, PR30, docs136. Preserve all52 approved Chapter4 primary PNGs,13 approved conditional references,197 total selections, earlier records/reviews and unselected plumber alternatives. Conditional references retain null canonical/Focus/runtime IDs; no new scene keys or dispatch. No integration.

@@ -1,0 +1,80 @@
+{
+  "CH4-B2-48": {
+    "sourceDerived": true,
+    "independentlyAuthoredAtNativeResolution": false,
+    "nativeSize": [
+      314,
+      206
+    ],
+    "localBasePalette": 96,
+    "quietSurfacePixelsMerged": 234,
+    "nativeStructureChangesInsideProtectedObjects": 0,
+    "states": {
+      "emergency": {
+        "changedPixels": 17977,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-48-emergency-allowed.png",
+        "wheelMounted": false,
+        "rubberFenderAttached": false
+      },
+      "trade": {
+        "changedPixels": 1335,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-48-trade-allowed.png",
+        "wheelMounted": false,
+        "rubberFenderAttached": true
+      }
+    },
+    "sourcePixelFriendly": {
+      "file": "originals/CH4-B2-48-pixel-friendly-readability.png",
+      "sha256": "f127d2a6e039d6ca191f4d192229b801ee130e7cdc0428f6918c74fa1a63d85b"
+    },
+    "cleanWheelReference": {
+      "file": "originals/CH4-B2-48-wheel-removed-readability-reference.png",
+      "sha256": "914cccc3fdf811de2aaa909f10e051f06ede582a2a56da2fcb5f959b9fc3a955"
+    },
+    "wheelPolicy": "Temporary Lot14 brass plumbing valve wheel, no inventory art/ID or nautical replacement",
+    "rubberFenderMethod": "Native sphere/band/napkin illustration studied from exact approved inspect artwork, not a resized inspect PNG",
+    "initialWheelMounted": true,
+    "stateMaterialCorrection": "v02: removed-wheel source regions never inherit the mounted brass-wheel material mask; other material/figure/fixture decisions unchanged"
+  },
+  "CH4-B2-51": {
+    "sourceDerived": true,
+    "independentlyAuthoredAtNativeResolution": false,
+    "nativeSize": [
+      564,
+      278
+    ],
+    "localBasePalette": 128,
+    "quietSurfacePixelsMerged": 618,
+    "nativeStructureChangesInsideProtectedObjects": 0,
+    "states": {
+      "emergency": {
+        "changedPixels": 7231,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-51-emergency-allowed.png",
+        "wheelMounted": false,
+        "rubberFenderAttached": false
+      },
+      "trade": {
+        "changedPixels": 8855,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-51-trade-allowed.png",
+        "wheelMounted": false,
+        "rubberFenderAttached": true
+      }
+    },
+    "sourcePixelFriendly": {
+      "file": "originals/CH4-B2-51-pixel-friendly.png",
+      "sha256": "7a238f2bcc645b9a4c7382125c6a95b98faf22887f4b20a44ee9ede52ffe9f5b"
+    },
+    "cleanWheelReference": {
+      "file": "originals/CH4-B2-51-wheel-removed-reference.png",
+      "sha256": "1a09ac37bee4642f0d708aa4135b6c6b7b79467405a9f50171faab8b235defc7"
+    },
+    "wheelPolicy": "Temporary Lot14 brass plumbing valve wheel, no inventory art/ID or nautical replacement",
+    "rubberFenderMethod": "Native sphere/band/napkin illustration studied from exact approved inspect artwork, not a resized inspect PNG",
+    "initialWheelMounted": true,
+    "stateMaterialCorrection": "v02: removed-wheel source regions never inherit the mounted brass-wheel material mask; other material/figure/fixture decisions unchanged"
+  }
+}
