@@ -1,3 +1,11 @@
+# Current B2-06 owner approval and B2-07 review — 2026-11-23
+
+B2-06 all six v01 portraits are APPROVED/SELECTED unchanged from f6840e5d69f70435f88ce9ece720583566fce8e2. Canonical main ac2916cf077d960ee17fef5678649d594b1581d6, PR27, docs134. Preserve all41 approved Chapter4 primary PNGs, three conditional ring references, all186 total previous selections and all historical reviews. The unselected plumber alternatives remain separate. Historical review labels stay untouched; only the exact selected hashes are superseded by the new approval receipt. No engine integration.
+
+B2-07 v01 contains five UNSELECTED primary demands from the canonical inventory: staff-lavatory main scene, wedding assistant busy/sympathetic/apologetic, closer portrait background. Four UNSELECTED conditional references depict the sealed toilet reveal and final open lid/clipboard-on-seat beat at both grids. They create no canonical keys, Focus IDs, nodes, modes, flags or runtime bindings. The cleared frame depicts the first seat reveal before the later one-box replacement; timing is deferred. Keep place cards on cistern, WEDDING FAVORS boxes, exact tag wording and clipboard on seat. No invented leak, broken toilet, actual use/flush, props or story changes. Follow permanent docs129, complete story-object masks including scarce ribbon colors, source-derived provenance and native/exact4× approved Chapter2/3/4 comparisons. Publish completed reviews automatically; no selection before Nate approves.
+
+[B2-07 v01 gallery](b2-07-v01/index.html) · [manifest](b2-07-v01/manifest.json) · [B2-06 public approval verification](B2-06-APPROVAL-PUBLIC-VERIFICATION-20261123.json)
+
 Public B2-06: [open the verified native/exact4× gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/1e565a9d386fedb89f0ae5d9646346df87ef15ea/tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/online.html) · [B2-05 completion and B2-06 publication/hashes](B2-06-REVIEW-PUBLICATION-20261123.md). All six new candidates remain UNSELECTED.
 
 # Latest approval and new B2-06 review

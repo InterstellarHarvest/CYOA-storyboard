@@ -1,0 +1,144 @@
+{
+  "python": "3.13.15",
+  "pillow": "12.3.0",
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "palettePolicy": "Local opaque-only64-tone fitting calibrated to approved B2-04/B2-05 portraits; not a universal cap or a visual approval test",
+  "assets": [
+    {
+      "id": "CH4-B2-38",
+      "sourceFile": "originals/CH4-B2-38-detailed.png",
+      "sourceSha256": "a386e47f993d494d1e24a0c98fb5f8250ef0cef6ab578c29c304d5a1b376054e",
+      "sourceSilhouetteBox": [
+        431,
+        130,
+        945,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 169,
+        "horizontalOffsetFromCenter": 60,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 58,
+      "quietSurfacePixelsMerged": 48,
+      "nativeWarmPlanePixelsMerged": 391,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 9,
+      "protectedRegions": [
+        [
+          280,
+          30,
+          405,
+          150
+        ],
+        [
+          245,
+          140,
+          445,
+          270
+        ]
+      ],
+      "materialMasks": [
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-39",
+      "sourceFile": "originals/CH4-B2-39-detailed.png",
+      "sourceSha256": "a2d62631b5f61334d4e52354fcd87662979b7627698b4ffab6c17b08b27aae76",
+      "sourceSilhouetteBox": [
+        423,
+        126,
+        1187,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 249,
+        "horizontalOffsetFromCenter": 60,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 58,
+      "quietSurfacePixelsMerged": 183,
+      "nativeWarmPlanePixelsMerged": 329,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 23,
+      "protectedRegions": [
+        [
+          255,
+          30,
+          385,
+          145
+        ],
+        [
+          230,
+          160,
+          535,
+          270
+        ]
+      ],
+      "materialMasks": [
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-40",
+      "sourceFile": "originals/CH4-B2-40-detailed.png",
+      "sourceSha256": "6eb7e0555df2a6390e90ca63cc4b430576a73964c0e7958c13a8a0f050a58aff",
+      "sourceSilhouetteBox": [
+        486,
+        128,
+        878,
+        881
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 128,
+        "horizontalOffsetFromCenter": 60,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 58,
+      "quietSurfacePixelsMerged": 387,
+      "nativeWarmPlanePixelsMerged": 322,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 16,
+      "protectedRegions": [
+        [
+          275,
+          30,
+          395,
+          145
+        ],
+        [
+          280,
+          195,
+          420,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    }
+  ]
+}

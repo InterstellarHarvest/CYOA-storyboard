@@ -1,0 +1,695 @@
+{
+  "title": "Chapter4 B2-07 v01 \u2014 Staff lavatory used as storage",
+  "groupId": "B2-07",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "ac2916cf077d960ee17fef5678649d594b1581d6",
+  "reviewPreservationBaseline": "f6840e5d69f70435f88ce9ece720583566fce8e2",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "primaryUnits": 5,
+  "supplementalReferenceFrames": 4,
+  "storyNodeCoverage": [
+    "hotel_staff_lavatory_move_boxes",
+    "hotel_staff_lavatory_storage",
+    "hotel_staff_lavatory_temporary_use_permit"
+  ],
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "productionIntegrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-37",
+      "title": "Staff lavatory \u2014 boxed-in entry",
+      "version": "v01",
+      "inventoryId": "main_scene:grand_bellevue/staff_lavatory",
+      "key": "scenes:grand_bellevue/staff_lavatory",
+      "kind": "main_scene",
+      "nodeIds": [
+        "hotel_staff_lavatory_storage",
+        "hotel_staff_lavatory_move_boxes",
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-37-v01.png",
+        "sha256": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-37-4x.png",
+        "sha256": "5f12ecc73f897fd5f9e0b84cecab3c0fd6c1f086977bc612a0f406254aac25aa",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-37-detailed.png",
+        "sha256": "378a21375609568a0f007b09a0a1402d8442c1de5e396d57a3818ea1d002d979",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlyReference": {
+        "file": "originals/CH4-B2-37-pixel-friendly.png",
+        "sha256": "b86098e3adacc732fb15b0dc070efa36d6cbb800dd4f54afc1639220f491773e",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-37-detailed.txt"
+    },
+    {
+      "id": "CH4-B2-38",
+      "title": "Wedding assistant \u2014 busy",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_wedding_assistant:busy",
+      "key": "portraits:hotel_wedding_assistant:busy",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_staff_lavatory_storage"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-38-v01.png",
+        "sha256": "0b1551cdfd6a744e5d61961dc7e9c679fd9519cc0877297b1bb08f25288c3515",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-38-4x.png",
+        "sha256": "d91f7f80ab3fe7113cc5f1f5c7c7b7ae0e6198355535153fbcdeb48163988c62",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-38-detailed.png",
+        "sha256": "a386e47f993d494d1e24a0c98fb5f8250ef0cef6ab578c29c304d5a1b376054e",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-38-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-41",
+        "native": {
+          "file": "previews/CH4-B2-38-composite-native.png",
+          "sha256": "83a715959bf41f09030d458c13c8c674d38c6dfe95d5c3b7875e067a3fd17cc9",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-38-composite-4x.png",
+          "sha256": "c48f7d1a618437dcbf21d10d21cab170db01566417915026a3c5428ef99fbbae",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      }
+    },
+    {
+      "id": "CH4-B2-39",
+      "title": "Wedding assistant \u2014 sympathetic",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_wedding_assistant:sympathetic",
+      "key": "portraits:hotel_wedding_assistant:sympathetic",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_staff_lavatory_move_boxes"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-39-v01.png",
+        "sha256": "455f63371671ad61d8543073cc25e0d8db4fd80849032ba05e0c7c993a84db7d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-39-4x.png",
+        "sha256": "31fa2c48c5e6d61f6b287c2cf7e2d474ac1894921807f76413f730d3d1dfc02f",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-39-detailed.png",
+        "sha256": "a2d62631b5f61334d4e52354fcd87662979b7627698b4ffab6c17b08b27aae76",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-39-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-41-cleared",
+        "native": {
+          "file": "previews/CH4-B2-39-composite-native.png",
+          "sha256": "9f7da16d63af667673f6d43c27503caeefbb3eeb8f0e6a8c648595a8bd8407b2",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-39-composite-4x.png",
+          "sha256": "fcd97a0a7d2309f1386bc7f552b87c18539e9cd2dc7a4a0962eab4448c967d21",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      }
+    },
+    {
+      "id": "CH4-B2-40",
+      "title": "Wedding assistant \u2014 apologetic",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_wedding_assistant:apologetic",
+      "key": "portraits:hotel_wedding_assistant:apologetic",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-40-v01.png",
+        "sha256": "f3b61e1ba4f2ebc98b9b9a70b88a969784314e1501ac9c33cce2c88573df00ad",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-40-4x.png",
+        "sha256": "9db1ec9c77eb6a30944b36b78640c45e87883d9167634d12924970ffa073ae97",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-40-detailed.png",
+        "sha256": "6eb7e0555df2a6390e90ca63cc4b430576a73964c0e7958c13a8a0f050a58aff",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-40-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-41-permit",
+        "native": {
+          "file": "previews/CH4-B2-40-composite-native.png",
+          "sha256": "a63f393586bd5832ca0a095a1d4119effa44737022ba787dd9eb165d75797b7d",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-40-composite-4x.png",
+          "sha256": "90c64d153cc4a39cd65191f8ef8dd8abc70faab2e1515f0d3c2246e0846059ad",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      }
+    },
+    {
+      "id": "CH4-B2-41",
+      "title": "Staff lavatory \u2014 closer entry background",
+      "version": "v01",
+      "inventoryId": "portrait_background:grand_bellevue/staff_lavatory",
+      "key": "scenes:grand_bellevue/staff_lavatory#portraitBackground",
+      "kind": "portrait_background",
+      "nodeIds": [
+        "hotel_staff_lavatory_storage",
+        "hotel_staff_lavatory_move_boxes",
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-41-v01.png",
+        "sha256": "a8ba232710e12784d7103b9882a3c6e8286e8cca89bd29fe7abbfab90b6d2b94",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-41-4x.png",
+        "sha256": "4586c433d5ed82dc971c85c87f21a155acb47c57f7a87d4b314cca69c6aab79c",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-41-detailed.png",
+        "sha256": "44cb4d2e02a91f2bbd635aaa87d36252c3f968f4f063db12edfdfa7390fc85b5",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlyReference": {
+        "file": "originals/CH4-B2-41-pixel-friendly.png",
+        "sha256": "3f7d1c9356721a3cb0e9b7a020a39d26b881250fedd2bf46879a6c1e9937a155",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-41-detailed.txt"
+    }
+  ],
+  "supplementalStates": [
+    {
+      "id": "CH4-B2-37-cleared",
+      "baseAssetId": "CH4-B2-37",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "After the boxes are removed and the closed seat is visible for the first time: red ribbon and LOT58 tag remain. The assistant later replaces one box; this reference does not prescribe that timing.",
+      "nodeIds": [
+        "hotel_staff_lavatory_move_boxes"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-37-cleared-v01.png",
+        "sha256": "97a1485382bfdda21a70258af8be957ace82fa19b0a8e64b3179e14e43ce73df",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-37-cleared-4x.png",
+        "sha256": "aa97e828cd88281fef4fbc93db9b9c82e56e7d5f57572137b3af95fde66b83af",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-37-entry-box-occluder.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-37-pixel-friendly.png",
+        "sha256": "b86098e3adacc732fb15b0dc070efa36d6cbb800dd4f54afc1639220f491773e",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-37"
+    },
+    {
+      "id": "CH4-B2-37-permit",
+      "baseAssetId": "CH4-B2-37",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Final authored beat after the SOLD ribbon is removed, lid raised and assistant places the clipboard on the seat. No use or flushing occurs.",
+      "nodeIds": [
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-37-permit-v01.png",
+        "sha256": "1e410771e048a01f43ec77ddeee1d61a137338579a428e160e952d674a352c85",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-37-permit-4x.png",
+        "sha256": "15c43cca4bd75168fd0cabc954e2a10e8a3be82f68348bbc4199e0fe6c43e7ae",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-37-permit-toilet-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-37-permit-reference.png",
+        "sha256": "24e27a0240a9c2fec8b3c753568c56bf59a71a64e7e4e9f09556a1d394f17fdb",
+        "dimensions": [
+          1549,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-37-cleared"
+    },
+    {
+      "id": "CH4-B2-41-cleared",
+      "baseAssetId": "CH4-B2-41",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "After the boxes are removed and the closed seat is visible for the first time: red ribbon and LOT58 tag remain. The assistant later replaces one box; this reference does not prescribe that timing.",
+      "nodeIds": [
+        "hotel_staff_lavatory_move_boxes"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-41-cleared-v01.png",
+        "sha256": "7eb87b07f2f1390e2e2d278c3f757d66db1e0afd8bcf716821bf9c324eeeb668",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-41-cleared-4x.png",
+        "sha256": "6971e3ad67319513d22f248ed1168942a743ab36d46a0dfc73b69f64eeb00b08",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-41-entry-box-occluder.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-41-pixel-friendly.png",
+        "sha256": "3f7d1c9356721a3cb0e9b7a020a39d26b881250fedd2bf46879a6c1e9937a155",
+        "dimensions": [
+          1785,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-41"
+    },
+    {
+      "id": "CH4-B2-41-permit",
+      "baseAssetId": "CH4-B2-41",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Final authored beat after the SOLD ribbon is removed, lid raised and assistant places the clipboard on the seat. No use or flushing occurs.",
+      "nodeIds": [
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-41-permit-v01.png",
+        "sha256": "2bd720955c229d775d9b5f55ecb2bea4b74670c1e00517231e2d771d58e82831",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-41-permit-4x.png",
+        "sha256": "a789a485065bc718613b492accff28e45a94df0c4c6771f6e9db753ed5800095",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-41-permit-toilet-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-41-permit-reference.png",
+        "sha256": "4d07e03b969e7163aff47086c568d919d7351c2af8be84a32a48cccaaa248b1d",
+        "dimensions": [
+          1786,
+          881
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-41-cleared"
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "approved-restroom": {
+      "registryKey": "scenes:grand_bellevue/restroom",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3463e20bd366390008fa4f71c087ed5f334f3a31",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v07/native/CH4-04-restroom-v03.png"
+      }
+    },
+    "approved-service-passage": {
+      "registryKey": "scenes:grand_bellevue/service_passage",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage.png",
+      "sha256": "a5d416c47786a070c3a6acfdba91e2f7756cea4418f39425fea23511608220f9",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-19-v01.png"
+      }
+    },
+    "approved-service-background": {
+      "registryKey": "scenes:grand_bellevue/service_passage#portraitBackground",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage/portraitBackground.png",
+      "sha256": "b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-23-v01.png"
+      }
+    },
+    "approved-restroom-background": {
+      "registryKey": "scenes:grand_bellevue/restroom#portraitBackground",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "81cf3b5f022510737bdd2d4ba3703e0173d86772",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-03-v01.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "approved-presenter": {
+      "registryKey": "portraits:pavilion_presenter:idle",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
+    "approved-bride": {
+      "registryKey": "portraits:hotel_bride:determined",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/portraits/hotel_bride/determined.png",
+      "sha256": "301d2fe0ccfd8eb7324ee9dffa4711f98aa0ee2e4d53378b43794eca240277ee",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "c6dbbaff7bf0edbda7a8ddff14556588c1eacd73",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-05-v02-color/native/CH4-B2-26-v02.png"
+      }
+    },
+    "approved-porter": {
+      "registryKey": "portraits:hotel_porter:businesslike",
+      "approvalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+      "file": "assets/selected/pending-integration/portraits/hotel_porter/businesslike.png",
+      "sha256": "863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-20-v01.png"
+      }
+    }
+  },
+  "method": "Detailed built-in imagegen references; separate environment pixel-friendly interpretation; target-grid material/cluster/structure/lettering and occlusion construction; protected source-derived portrait palettes/anatomy/silhouettes; bounded state-object references."
+}

@@ -1,0 +1,198 @@
+{
+  "canonicalCommit": "ac2916cf077d960ee17fef5678649d594b1581d6",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "group": {
+    "id": "B2-07",
+    "title": "Staff lavatory used as storage",
+    "note": "The boxed-in actual toilet, closer background and three wedding-assistant poses.",
+    "inventoryIds": [
+      "main_scene:grand_bellevue/staff_lavatory",
+      "portrait:hotel_wedding_assistant:busy",
+      "portrait:hotel_wedding_assistant:sympathetic",
+      "portrait:hotel_wedding_assistant:apologetic",
+      "portrait_background:grand_bellevue/staff_lavatory",
+      "state_family:staff_boxes_attempt"
+    ],
+    "primaryUnits": 5,
+    "stateFamilies": 1,
+    "nodeIds": [
+      "hotel_staff_lavatory_move_boxes",
+      "hotel_staff_lavatory_storage",
+      "hotel_staff_lavatory_temporary_use_permit"
+    ],
+    "generationStarted": false
+  },
+  "storyFile": "story/chapters/chapter-04.wip.json",
+  "nodes": {
+    "hotel_staff_lavatory_move_boxes": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/staff_lavatory",
+      "speaker": "hotel_wedding_assistant",
+      "pose": "sympathetic",
+      "effects": {
+        "set": {
+          "ch4_lot58_toilet_sold_separately": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The assistant looks sympathetic."
+        },
+        "Oh! Of course. Just a moment.",
+        {
+          "desc": "She begins removing boxes. You help clear a space around the toilet. For the first time in what feels like hours, you can actually see the seat."
+        },
+        "There! That should—",
+        {
+          "desc": "She stops. A red ribbon is stretched across the toilet lid. Attached to it is an auction tag: LOT 58 — STAFF TOILET. SOLD — COLLECTION AFTER CEREMONY. DO NOT TEST."
+        },
+        {
+          "desc": "The assistant stares at it."
+        },
+        "Oh, dear.",
+        {
+          "desc": "She reads the tag again."
+        },
+        "He sold the room to us for storage and the toilet to somebody else.",
+        {
+          "desc": "She looks genuinely embarrassed."
+        },
+        "I'm terribly sorry. The buyer apparently insists on receiving it in its original condition.",
+        {
+          "desc": "She carefully replaces one of the boxes."
+        },
+        "I really think you should find the wedding organizer.",
+        {
+          "desc": "You look at the toilet. It looks perfectly functional. That somehow makes everything worse."
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot58_ignore_sale_tag",
+          "kind": "action",
+          "text": "IGNORE THE AUCTION TAG AND TRY TO USE THE TOILET ANYWAY.",
+          "to": "hotel_staff_lavatory_temporary_use_permit"
+        },
+        {
+          "id": "lot58_seek_organizer",
+          "kind": "action",
+          "text": "FIND THE WEDDING ORGANIZER IN THE BALLROOM.",
+          "to": "hotel_bridal_organizer"
+        },
+        {
+          "id": "lot58_return_boilers",
+          "kind": "action",
+          "text": "RETURN TO THE BOILER ROOM AND TRY ANOTHER TOILET.",
+          "to": "hotel_boiler_pressure_intro"
+        }
+      ]
+    },
+    "hotel_staff_lavatory_storage": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/staff_lavatory",
+      "speaker": "hotel_wedding_assistant",
+      "pose": "busy",
+      "effects": {
+        "set": {
+          "ch4_staff_lavatory_sold_for_storage": true,
+          "ch4_knows_bridal_dressing_lavatory": true,
+          "ch4_knows_organizer_has_lavatory_key": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You open the staff lavatory. An actual toilet sits beneath a mountain of boxes marked WEDDING FAVORS."
+        },
+        {
+          "desc": "An assistant is stacking place cards on the cistern."
+        },
+        "Oh! Are you here for the favors?",
+        {
+          "say": "NO. THE TOILET.",
+          "who": "visitor"
+        },
+        "The room was sold to us as overflow storage. The auctioneer called it a convenience facility.",
+        {
+          "desc": "You look at the boxes. They are very convenient for someone else."
+        },
+        "There’s another lavatory off the bridal dressing room upstairs. The organizer has the key.",
+        "Please don’t disturb the boxes. They’re sorted by table number."
+      ],
+      "choices": [
+        {
+          "id": "staff_lavatory_ask_clear_boxes",
+          "kind": "spoken",
+          "text": "COULD YOU MOVE THESE BOXES? I REALLY NEED TO USE THAT TOILET.",
+          "to": "hotel_staff_lavatory_move_boxes"
+        },
+        {
+          "id": "staff_lavatory_seek_organizer",
+          "kind": "action",
+          "text": "FIND THE WEDDING ORGANIZER IN THE BALLROOM.",
+          "to": "hotel_bridal_organizer"
+        },
+        {
+          "id": "staff_lavatory_return_boilers",
+          "kind": "action",
+          "text": "LEAVE THE BOXES AND CHECK THE ENGINEERS’ LAVATORY.",
+          "to": "hotel_boiler_pressure_intro"
+        }
+      ]
+    },
+    "hotel_staff_lavatory_temporary_use_permit": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/staff_lavatory",
+      "speaker": "hotel_wedding_assistant",
+      "pose": "apologetic",
+      "effects": {
+        "set": {
+          "ch4_lot58_permit_paradox": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You remove the SOLD ribbon and lift the toilet lid. Finally. You reach toward your belt."
+        },
+        "Wait! You'll need a Temporary Use Permit.",
+        {
+          "desc": "She checks her clipboard."
+        },
+        "To issue one, I first need to verify that the toilet flushes.",
+        {
+          "desc": "You reach for the handle."
+        },
+        "No! Testing a sold toilet requires a Temporary Use Permit!",
+        {
+          "desc": "She looks at the paperwork."
+        },
+        "Oh.",
+        {
+          "desc": "A pause."
+        },
+        "Well, there's an exception form. The wedding organizer can sign it.",
+        {
+          "desc": "She places her clipboard on the toilet seat."
+        },
+        "Shall I start the paperwork?",
+        {
+          "desc": "You stare at the toilet. Two feet away. Completely functional. Entirely unavailable."
+        }
+      ],
+      "choices": [
+        {
+          "id": "lot58_permit_organizer",
+          "kind": "spoken",
+          "text": "YES. WHERE CAN I FIND THE WEDDING ORGANIZER?",
+          "to": "hotel_bridal_organizer"
+        },
+        {
+          "id": "lot58_permit_return_boilers",
+          "kind": "action",
+          "text": "LEAVE THE PAPERWORK BEHIND AND RETURN TO THE BOILER ROOM.",
+          "to": "hotel_boiler_pressure_intro"
+        }
+      ]
+    }
+  },
+  "runtimeBindingsChanged": false
+}
