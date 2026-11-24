@@ -1,3 +1,13 @@
+# STOP — automatic continuation suspended (Nate, 2026-11-24)
+
+Do **not** generate, revise, select or register any Chapter 4 artwork automatically, and do not start any "next group". Every earlier "automatic continuation" authorization in this file is suspended until Nate approves new production explicitly.
+
+- The original four-asset B2-09 (refreshment-table scene and background, Bixby delighted *and* commanding) is **superseded** by storyboard docs/137 §10 and the revised three-asset brief docs/138 (one Bixby portrait, one wedding organizer, one shared ballroom-doorway background, localized props). See PR #31 (`art/ch4-consolidation-review-20261124`).
+- The existing B2-09 v01/v02 package below stays exactly as published, UNSELECTED. Its asset-by-asset reuse/revise/redundant disposition is in docs/139 on that branch. Nothing here is deleted or overwritten.
+- New B2-09 generation waits for Nate's explicit approval.
+
+---
+
 # Main-scene readability direction —2026-11-24
 
 Nate requires main scenes to remain readable at exact4×. Use approved Chapter2 Bureau/Control Tower as the primary benchmarks for small-scale environmental detail. Favor larger connected shade groups, quiet surfaces, sparse meaningful wear and clear story-object silhouettes; avoid isolated speckle, repeated grain and tiny high-contrast marks. Keep small NPCs simple. Detailed portraits remain a separate tier. Native dimensions and nearest-neighbor scaling alone do not satisfy this artistic gate. Apply to unselected/new scenes; never silently repaint approved images.
