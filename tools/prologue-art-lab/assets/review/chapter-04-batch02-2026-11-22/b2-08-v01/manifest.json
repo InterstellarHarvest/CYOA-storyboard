@@ -1,0 +1,885 @@
+{
+  "title": "Chapter4 B2-08 v01 \u2014 Boiler pressure-test room",
+  "groupId": "B2-08",
+  "status": "UNSELECTED",
+  "branch": "art/ch4-batch01-review-20261121",
+  "canonicalApprovalBaseline": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+  "reviewPreservationBaseline": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "primaryUnits": 6,
+  "supplementalReferenceFrames": 6,
+  "storyNodeCoverage": [
+    "fatal_boiler_pressed_and_steamed",
+    "hotel_boiler_dispute_hold",
+    "hotel_boiler_pressure_intro",
+    "hotel_boiler_pressure_relieved",
+    "hotel_boiler_staff_access",
+    "hotel_water_outage_confirmation"
+  ],
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "productionIntegrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-42",
+      "title": "Boiler pressure-test room",
+      "version": "v01",
+      "inventoryId": "main_scene:grand_bellevue/boiler_room",
+      "key": "scenes:grand_bellevue/boiler_room",
+      "kind": "main_scene",
+      "nodeIds": [
+        "hotel_boiler_pressure_intro",
+        "hotel_boiler_pressure_relieved",
+        "fatal_boiler_pressed_and_steamed",
+        "hotel_boiler_dispute_hold",
+        "hotel_boiler_staff_access"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-42-v01.png",
+        "sha256": "c4441ea36243bf1b6161359b4d5d3956b70e612a293bd144f7fef107e29e121c",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-42-4x.png",
+        "sha256": "d3a81de44e23bb0dec18ae10b3e549456cd79cd2e978cf4bd25c584f58b53388",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-42-detailed.png",
+        "sha256": "c957eba63a8d4053b4ef19437b0003d5e22032005a01a1e21b7b08ec44764477",
+        "dimensions": [
+          1552,
+          1013
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlyReference": {
+        "file": "originals/CH4-B2-42-pixel-friendly.png",
+        "sha256": "468865939b0314f14bbc8278b071d5c6f5e34d4185545496c8d8b1a01b402c2f",
+        "dimensions": [
+          1550,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-42-detailed.txt"
+    },
+    {
+      "id": "CH4-B2-43",
+      "title": "Boiler engineer \u2014 careful",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_boiler_engineer:careful",
+      "key": "portraits:hotel_boiler_engineer:careful",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_boiler_pressure_intro"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-43-v01.png",
+        "sha256": "f5291b027540cb41898fd2032ea3462723269fd319ebe156b3a2e2a80acc9067",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-43-4x.png",
+        "sha256": "5ef8cf48a9c4695fd15235ee280791bc89fb235bd6d89407799eeb526fa1c9d3",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-43-detailed.png",
+        "sha256": "65a4e0d50a15907c04e0b4c39d38e44fafacd8306c290844b7bc0b0929c744bf",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-43-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-47",
+        "native": {
+          "file": "previews/CH4-B2-43-composite-native.png",
+          "sha256": "d1191808e2e1b9086a982f404a34ce91bc61136a1042b7c45ae131e5109e2faa",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-43-composite-4x.png",
+          "sha256": "98f0a33843f9285b0ad2a98a6151719fbd2c1e4abd62e93cfc2ed98ab897bc47",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      },
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ],
+      "primaryScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-44",
+      "title": "Boiler engineer \u2014 pleased",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_boiler_engineer:pleased",
+      "key": "portraits:hotel_boiler_engineer:pleased",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_boiler_pressure_relieved"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-44-v01.png",
+        "sha256": "77ae105216f93d7c889716c00cce3abcf7b2f1323e47171095ff9cc4a8792730",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-44-4x.png",
+        "sha256": "ecec7cb2879a9f9d0467cbc0e9d422cb97ec51a08ff736e4106f3ef00b53ae9f",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-44-detailed.png",
+        "sha256": "13984b9bb7bdd6711c7e85075493cbc7443d6734fe2a4cc97c43f5b61a89ac8c",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-44-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-47-relieved",
+        "native": {
+          "file": "previews/CH4-B2-44-composite-native.png",
+          "sha256": "77116506c2c3aaa2e8a039030ff1fcd3c595743f32daccb854dd6ba2a3a1a7b5",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-44-composite-4x.png",
+          "sha256": "12bd78099b1ecfabacdcf8d323fe06b9fc1aa7f42f2363cffaf6eecddc7bbd92",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      },
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ],
+      "primaryScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-45",
+      "title": "Boiler engineer \u2014 defeated",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_boiler_engineer:defeated",
+      "key": "portraits:hotel_boiler_engineer:defeated",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_boiler_dispute_hold"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-45-v01.png",
+        "sha256": "4ed315b347d1aa8c976d4b8c78322eaa5fd064d24e525923ac7c830c0ec8267d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-45-4x.png",
+        "sha256": "2f9815d4771942b61b81b2b8d005ae2c292101bf0b884ec0b3de7c302f994b6d",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-45-detailed.png",
+        "sha256": "9df49ba751c4711375e0b6a74caaa2eb336c1477cf114fba28328ce343bb4126",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-45-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-47-inspection-hold",
+        "native": {
+          "file": "previews/CH4-B2-45-composite-native.png",
+          "sha256": "8d106145a63f2112d2de670320acc3f883e607340eb8b84fdb1ef18f41f01104",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-45-composite-4x.png",
+          "sha256": "6c2e42958a7370431db5c326b0bc913362ece2ca5ac710031e67545cd8e0b8ee",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      },
+      "sceneKeys": [
+        "grand_bellevue/boiler_room"
+      ],
+      "primaryScene": "grand_bellevue/boiler_room"
+    },
+    {
+      "id": "CH4-B2-46",
+      "title": "Boiler engineer \u2014 practical",
+      "version": "v01",
+      "inventoryId": "portrait:hotel_boiler_engineer:practical",
+      "key": "portraits:hotel_boiler_engineer:practical",
+      "kind": "portrait",
+      "nodeIds": [
+        "hotel_boiler_staff_access",
+        "hotel_water_outage_confirmation"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-46-v01.png",
+        "sha256": "63a263464015a09f46cd11724f8d448b1c0744ed3fb224153025eacc9b0839a9",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-46-4x.png",
+        "sha256": "1ef50240660cb6d7bfb23566eb885608dca17e3c875b30236dafd9bec6531e93",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-46-detailed.png",
+        "sha256": "150079c2be6917c455282c2a0b36eeaf4bdf283a7f66450109c37603d6f133dc",
+        "dimensions": [
+          1788,
+          880
+        ],
+        "mode": "RGBA"
+      },
+      "pixelFriendlyReference": null,
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-46-detailed.txt",
+      "composite": {
+        "backgroundAssetId": "CH4-B2-47-staff-access",
+        "native": {
+          "file": "previews/CH4-B2-46-composite-native.png",
+          "sha256": "d9ac5eac918f8d742d05806b54b96ec3ce55b86d1484a761bdb2bb874a3dd5ce",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-46-composite-4x.png",
+          "sha256": "6d6745976426e39e5b13d318a58068c500f7b21847e89fe49bc7af6c07d98ac7",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      },
+      "sceneKeys": [
+        "grand_bellevue/boiler_room",
+        "grand_bellevue/service_passage"
+      ],
+      "primaryScene": "grand_bellevue/boiler_room",
+      "serviceComposite": {
+        "backgroundReference": "references/approved-service-background.png",
+        "native": {
+          "file": "previews/CH4-B2-46-service-native.png",
+          "sha256": "0d8d550ddea88bfee23dcc526194a7ab3e3a3f9ab4376880cca652d1afac783a",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        },
+        "preview4x": {
+          "file": "previews/CH4-B2-46-service-4x.png",
+          "sha256": "e0e658b47b50e3d126a57798f61e8cb8844b6e7ed1d601f17040ead70f32502b",
+          "dimensions": [
+            2256,
+            1112
+          ],
+          "mode": "RGB"
+        },
+        "reviewOnly": true
+      }
+    },
+    {
+      "id": "CH4-B2-47",
+      "title": "Boiler-room closer background",
+      "version": "v01",
+      "inventoryId": "portrait_background:grand_bellevue/boiler_room",
+      "key": "scenes:grand_bellevue/boiler_room#portraitBackground",
+      "kind": "portrait_background",
+      "nodeIds": [
+        "hotel_boiler_pressure_intro",
+        "hotel_boiler_pressure_relieved",
+        "hotel_boiler_dispute_hold",
+        "hotel_boiler_staff_access"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "native": {
+        "file": "native/CH4-B2-47-v01.png",
+        "sha256": "5cf871e30bce74f86343546653f22352981eeb559592c0162ef98ff32cf63034",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-47-4x.png",
+        "sha256": "7393bc49bca0c4072be85566de05e37de24b7860103d2e312370180c7ef53662",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "detailedReference": {
+        "file": "originals/CH4-B2-47-detailed.png",
+        "sha256": "ac63fbed445d0b1a208d53e736c2a5f8ed589bca8cd59a73d127a21dc9af7bed",
+        "dimensions": [
+          1657,
+          949
+        ],
+        "mode": "RGB"
+      },
+      "pixelFriendlyReference": {
+        "file": "originals/CH4-B2-47-pixel-friendly.png",
+        "sha256": "e51646af87d61ecd5859fbc81fc50910bbf3dcf5f989943f8d574da67957eeb3",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "processingSource": "source/native_build.py",
+      "prompt": "prompts/CH4-B2-47-detailed.txt"
+    }
+  ],
+  "supplementalStates": [
+    {
+      "id": "CH4-B2-42-relieved",
+      "baseAssetId": "CH4-B2-42",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "After the successful test: gauge needle physically points into GREEN; overhead steam, outer lavatory passage open, inner door still CLOSED with SANITATION CLEARANCE PENDING. Maintenance gate remains closed.",
+      "nodeIds": [
+        "hotel_boiler_pressure_relieved"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-42-relieved-v01.png",
+        "sha256": "8278a9dbb107cdf62e5883a386626fff9b30d7d933e08e10a81c30bb9703c051",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-42-relieved-4x.png",
+        "sha256": "b8fe71376fbcc6b2827476bb24e0708089b9159a01b469e14074afbc782c24f3",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-42-relieved-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-42-relieved-reference.png",
+        "sha256": "2a32a17de70b58e3ac722a57b01b6a7dc10ab33de890d5d55bb4043c1904f9a6",
+        "dimensions": [
+          1550,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-42"
+    },
+    {
+      "id": "CH4-B2-42-inspection-hold",
+      "baseAssetId": "CH4-B2-42",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Existing Lot53 dispute suspends the test: DO NOT OPERATE tag on wheel, inspection walkway gate unchained/open; pressure remains RED and lavatory door CLOSED/chained.",
+      "nodeIds": [
+        "hotel_boiler_dispute_hold"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-42-inspection-hold-v01.png",
+        "sha256": "93f7ab9c125077718aa345b9374ee3368caf2499010ee4862b6e189205c7d482",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-42-inspection-hold-4x.png",
+        "sha256": "7de5be18b58b8a531a190a5c7d73271e081bc5905fa3adbbc5e816bf23f69ee4",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-42-inspection-hold-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-42-staff-access-reference.png",
+        "sha256": "a9240a122bf76773005965dfa5672f310c3250a4fe7a479b824f18accd43aabf",
+        "dimensions": [
+          1550,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-42"
+    },
+    {
+      "id": "CH4-B2-42-staff-access",
+      "baseAssetId": "CH4-B2-42",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Existing Temporary Staff Pass bypass: maintenance gate open, pressure still RED, no test or DO NOT OPERATE tag, lavatory door remains CLOSED/chained.",
+      "nodeIds": [
+        "hotel_boiler_staff_access"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-42-staff-access-v01.png",
+        "sha256": "b179c47d6cc0730ba7f88d8c5e8c159be46dca9c99539fce5da4186ddf8efbba",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-42-staff-access-4x.png",
+        "sha256": "bf55c130aa4189852ca3461d8f76a0f0e8acae7b71e2137120465b3ffdd60d5d",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-42-staff-access-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-42-staff-access-reference.png",
+        "sha256": "a9240a122bf76773005965dfa5672f310c3250a4fe7a479b824f18accd43aabf",
+        "dimensions": [
+          1550,
+          1015
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-42"
+    },
+    {
+      "id": "CH4-B2-47-relieved",
+      "baseAssetId": "CH4-B2-47",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "After the successful test: gauge needle physically points into GREEN; overhead steam, outer lavatory passage open, inner door still CLOSED with SANITATION CLEARANCE PENDING. Maintenance gate remains closed.",
+      "nodeIds": [
+        "hotel_boiler_pressure_relieved"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-47-relieved-v01.png",
+        "sha256": "25b3b3bf50e84fe62510b43cda9072e976ad4c316eea8223ed04a0668d784692",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-47-relieved-4x.png",
+        "sha256": "d91a3815f11562407956b3099d4ac39c5220473b3ca2224a21829efdabc9b41b",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-47-relieved-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-47-relieved-reference.png",
+        "sha256": "e82b2440c59d189b087bfe296359ed08aa5e58f47daeda99cc32e60539fb99e6",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-47"
+    },
+    {
+      "id": "CH4-B2-47-inspection-hold",
+      "baseAssetId": "CH4-B2-47",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Existing Lot53 dispute suspends the test: DO NOT OPERATE tag on wheel, inspection walkway gate unchained/open; pressure remains RED and lavatory door CLOSED/chained.",
+      "nodeIds": [
+        "hotel_boiler_dispute_hold"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-47-inspection-hold-v01.png",
+        "sha256": "01e200de1f21d56328dc876166bcc77ecd0bd43ba8ab7fee556f514bfcb2af0f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-47-inspection-hold-4x.png",
+        "sha256": "99873056c0a69330e070597c5f667cbe056d83b3af75632fa6bd740aff26dd03",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-47-inspection-hold-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-47-staff-access-reference.png",
+        "sha256": "492a09bc121c0c67843a9f28e8181e981ec591c0eeb48ad75be28b446d6e144f",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-47"
+    },
+    {
+      "id": "CH4-B2-47-staff-access",
+      "baseAssetId": "CH4-B2-47",
+      "version": "v01",
+      "kind": "conditional-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "condition": "Existing Temporary Staff Pass bypass: maintenance gate open, pressure still RED, no test or DO NOT OPERATE tag, lavatory door remains CLOSED/chained.",
+      "nodeIds": [
+        "hotel_boiler_staff_access"
+      ],
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "implementationBoundary": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs.",
+      "native": {
+        "file": "native/CH4-B2-47-staff-access-v01.png",
+        "sha256": "fb67d5ae76b4f91de9995ed6095e396b769e688bbcc3f9e8931ae4a8ec56b7ea",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-B2-47-staff-access-4x.png",
+        "sha256": "06abe62ec62d643db8d098f59b436fde55d7d304067b26731aa1fd1d679f16c5",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/CH4-B2-47-staff-access-allowed.png",
+      "sourceReference": {
+        "file": "originals/CH4-B2-47-staff-access-reference.png",
+        "sha256": "492a09bc121c0c67843a9f28e8181e981ec591c0eeb48ad75be28b446d6e144f",
+        "dimensions": [
+          1787,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "comparisonBaseId": "CH4-B2-47"
+    }
+  ],
+  "canonicalBenchmarks": {
+    "approved-bureau": {
+      "registryKey": "scenes:biology_park/conveniences_bureau",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/conveniences_bureau.png"
+      }
+    },
+    "approved-tower": {
+      "registryKey": "scenes:biology_park/control_tower",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA",
+        "ref": "agent/ch02-art-integration-20261118",
+        "commit": "2b9883bcbbeefee2e871214388b78a57a388ee94",
+        "path": "art/scenes/biology_park/control_tower.png"
+      }
+    },
+    "approved-attendant": {
+      "registryKey": "portraits:pavilion_attendant:idle",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/portraits/pavilion_attendant/idle.png",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A03-attendant-idle-v04.png"
+      }
+    },
+    "approved-presenter": {
+      "registryKey": "portraits:pavilion_presenter:idle",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/portraits/pavilion_presenter/idle.png",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch3-pavilion-batch01-20261118",
+        "commit": "a87155bfadad42e0deae3bee2e749963d1459a4b",
+        "path": "tools/prologue-art-lab/assets/review/chapter-03-batch01-2026-11-18/v04/candidates/CH3-A06-presenter-idle-v04.png"
+      }
+    },
+    "approved-service-background": {
+      "registryKey": "scenes:grand_bellevue/service_passage#portraitBackground",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage/portraitBackground.png",
+      "sha256": "b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-23-v01.png"
+      }
+    },
+    "approved-boiler-access-background": {
+      "registryKey": "scenes:grand_bellevue/boiler_access#portraitBackground",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
+      "sha256": "e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "24c79bff8d33b5997ccb6b7aa7bb86293afef291",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png"
+      }
+    },
+    "approved-service-passage": {
+      "registryKey": "scenes:grand_bellevue/service_passage",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/service_passage.png",
+      "sha256": "a5d416c47786a070c3a6acfdba91e2f7756cea4418f39425fea23511608220f9",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-19-v01.png"
+      }
+    },
+    "approved-assistant": {
+      "registryKey": "portraits:hotel_wedding_assistant:busy",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/portraits/hotel_wedding_assistant/busy.png",
+      "sha256": "0b1551cdfd6a744e5d61961dc7e9c679fd9519cc0877297b1bb08f25288c3515",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-38-v01.png"
+      }
+    },
+    "approved-porter": {
+      "registryKey": "portraits:hotel_porter:businesslike",
+      "approvalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+      "file": "assets/selected/pending-integration/portraits/hotel_porter/businesslike.png",
+      "sha256": "863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "3804fa2013aeb81e17236e4995e2ef1e9596d404",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-20-v01.png"
+      }
+    }
+  },
+  "method": "Detailed built-in imagegen references; separate environment pixel-friendly interpretation; target-grid material/cluster/structure/lettering and occlusion construction; protected source-derived portrait palettes/anatomy/silhouettes; bounded state-object references."
+}

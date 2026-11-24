@@ -1,0 +1,182 @@
+{
+  "CH4-B2-42": {
+    "sourceDerived": true,
+    "independentlyAuthoredAtNativeResolution": false,
+    "nativeSize": [
+      314,
+      206
+    ],
+    "localBasePalette": 96,
+    "quietClustersMerged": 766,
+    "nativeStructureChangesInsideProtectedObjects": 0,
+    "sourcePixelFriendly": {
+      "file": "originals/CH4-B2-42-pixel-friendly.png",
+      "sha256": "468865939b0314f14bbc8278b071d5c6f5e34d4185545496c8d8b1a01b402c2f"
+    },
+    "relievedObjectReference": {
+      "file": "originals/CH4-B2-42-relieved-reference.png",
+      "sha256": "2a32a17de70b58e3ac722a57b01b6a7dc10ab33de890d5d55bb4043c1904f9a6"
+    },
+    "initialGauge": {
+      "center": [
+        63,
+        36
+      ],
+      "needleTip": [
+        71,
+        27
+      ],
+      "sector": "RED",
+      "rotationDegrees": 317
+    },
+    "states": {
+      "relieved": {
+        "changedPixels": 5572,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-42-relieved-allowed.png",
+        "gauge": {
+          "center": [
+            63,
+            36
+          ],
+          "needleTip": [
+            56,
+            26
+          ],
+          "sector": "GREEN",
+          "rotationDegrees": 228
+        }
+      },
+      "inspection-hold": {
+        "changedPixels": 4269,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-42-inspection-hold-allowed.png",
+        "gauge": {
+          "center": [
+            63,
+            36
+          ],
+          "needleTip": [
+            71,
+            27
+          ],
+          "sector": "RED",
+          "rotationDegrees": 317
+        }
+      },
+      "staff-access": {
+        "changedPixels": 3835,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-42-staff-access-allowed.png",
+        "gauge": {
+          "center": [
+            63,
+            36
+          ],
+          "needleTip": [
+            71,
+            27
+          ],
+          "sector": "RED",
+          "rotationDegrees": 317
+        }
+      }
+    },
+    "nativeCorrections": [
+      "Physically rotate needle into green; do not merely recolor a red-pointing needle.",
+      "Keep existing right-hand lavatory-door hinges; main reference left-swing is not transferred.",
+      "Inner door remains closed; inspection/staff bypass does not open lavatory.",
+      "Readable inset perspective bitmap plates; separate open gate/tag/steam layers."
+    ]
+  },
+  "CH4-B2-47": {
+    "sourceDerived": true,
+    "independentlyAuthoredAtNativeResolution": false,
+    "nativeSize": [
+      564,
+      278
+    ],
+    "localBasePalette": 128,
+    "quietClustersMerged": 1433,
+    "nativeStructureChangesInsideProtectedObjects": 0,
+    "sourcePixelFriendly": {
+      "file": "originals/CH4-B2-47-pixel-friendly.png",
+      "sha256": "e51646af87d61ecd5859fbc81fc50910bbf3dcf5f989943f8d574da67957eeb3"
+    },
+    "relievedObjectReference": {
+      "file": "originals/CH4-B2-47-relieved-reference.png",
+      "sha256": "e82b2440c59d189b087bfe296359ed08aa5e58f47daeda99cc32e60539fb99e6"
+    },
+    "initialGauge": {
+      "center": [
+        100,
+        49
+      ],
+      "needleTip": [
+        112,
+        34
+      ],
+      "sector": "RED",
+      "rotationDegrees": 317
+    },
+    "states": {
+      "relieved": {
+        "changedPixels": 14329,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-47-relieved-allowed.png",
+        "gauge": {
+          "center": [
+            100,
+            49
+          ],
+          "needleTip": [
+            89,
+            33
+          ],
+          "sector": "GREEN",
+          "rotationDegrees": 228
+        }
+      },
+      "inspection-hold": {
+        "changedPixels": 11530,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-47-inspection-hold-allowed.png",
+        "gauge": {
+          "center": [
+            100,
+            49
+          ],
+          "needleTip": [
+            112,
+            34
+          ],
+          "sector": "RED",
+          "rotationDegrees": 317
+        }
+      },
+      "staff-access": {
+        "changedPixels": 10045,
+        "outsideAllowedChanges": 0,
+        "allowedMask": "masks/CH4-B2-47-staff-access-allowed.png",
+        "gauge": {
+          "center": [
+            100,
+            49
+          ],
+          "needleTip": [
+            112,
+            34
+          ],
+          "sector": "RED",
+          "rotationDegrees": 317
+        }
+      }
+    },
+    "nativeCorrections": [
+      "Physically rotate needle into green; do not merely recolor a red-pointing needle.",
+      "Keep existing right-hand lavatory-door hinges; main reference left-swing is not transferred.",
+      "Inner door remains closed; inspection/staff bypass does not open lavatory.",
+      "Readable inset perspective bitmap plates; separate open gate/tag/steam layers."
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "canonicalCommit": "b56f91e19e890c340d92c72d6d2c4822f0f178d9",
+  "inventorySource": "tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/BATCH2-INVENTORY.json",
+  "group": {
+    "id": "B2-08",
+    "title": "Boiler pressure-test room",
+    "note": "Boiler setting/background and four engineer poses; keep fatal hanger artwork separate.",
+    "inventoryIds": [
+      "main_scene:grand_bellevue/boiler_room",
+      "portrait:hotel_boiler_engineer:careful",
+      "portrait:hotel_boiler_engineer:pleased",
+      "portrait:hotel_boiler_engineer:defeated",
+      "portrait:hotel_boiler_engineer:practical",
+      "portrait_background:grand_bellevue/boiler_room",
+      "state_family:boiler_pressure_state"
+    ],
+    "primaryUnits": 6,
+    "stateFamilies": 1,
+    "nodeIds": [
+      "fatal_boiler_pressed_and_steamed",
+      "hotel_boiler_dispute_hold",
+      "hotel_boiler_pressure_intro",
+      "hotel_boiler_pressure_relieved",
+      "hotel_boiler_staff_access",
+      "hotel_water_outage_confirmation"
+    ],
+    "generationStarted": false
+  },
+  "storyFile": "story/chapters/chapter-04.wip.json",
+  "nodes": {
+    "fatal_boiler_pressed_and_steamed": {
+      "mode": "narrative",
+      "scene": "grand_bellevue/boiler_room",
+      "end": true,
+      "text": "You turn the wheel.\n\nThe valve shrieks.\n\nAn enormous cloud of steam engulfs you.\n\nWhen it clears, your tuxedo hangs from a wire hanger. Jacket and trousers, perfectly pressed. Still steaming.\n\nThe engineer examines the result.\n\nWell. At least the steam press works.\n\nENDING — PRESSED AND STEAMED.",
+      "choices": [
+        {
+          "id": "restart_pressed_and_steamed",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
+      "deathPopup": {
+        "id": "ch4_pressed_and_steamed",
+        "title": "PRESSED AND STEAMED",
+        "description": "The emergency pressure test has passed. Your formalwear has never looked better. Unfortunately, its former occupant is unavailable for comment.",
+        "button": "BEGIN AGAIN",
+        "status": "owner-approved",
+        "artRef": "grand_bellevue/pressed_and_steamed"
+      },
+      "endingArt": "grand_bellevue/pressed_and_steamed",
+      "notes": "Owner-approved fatal outcome with d6 1–4, no modifiers. Illustration ONLY: a steaming tuxedo jacket and matching trousers together on a single wire clothes hanger, as though freshly steam-pressed. Simple, immediately absurd visual. No boiler, gauge, clipboard, shoe, text, person, face, or gore in the artwork. No image generated yet. Popup has exactly one incident-specific heading and its narrative beside art; future engine has RETRY/CHECKPOINT/EXIT controls."
+    },
+    "hotel_boiler_dispute_hold": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/boiler_room",
+      "speaker": "hotel_boiler_engineer",
+      "pose": "defeated",
+      "effects": {
+        "set": {
+          "ch4_boiler_inspection_hold": true,
+          "ch4_boiler_inspection_access": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You show the red carbon-copy Lot 53 Dispute Ticket."
+        },
+        "That's for a toilet stall.",
+        {
+          "desc": "You point toward the connected pipes."
+        },
+        "Oh, bother. Associated fixtures.",
+        {
+          "desc": "He hangs a DO NOT OPERATE tag on the pressure-relief wheel."
+        },
+        "Can't test disputed equipment. Safety regulations.",
+        {
+          "say": "SO THE TOILET'S OPEN?",
+          "who": "visitor"
+        },
+        "No test, no opening. Excellent safety record!",
+        {
+          "desc": "He unchains the inspection walkway. Somebody coughs behind Boiler Three."
+        }
+      ],
+      "choices": [
+        {
+          "id": "boiler_dispute_to_groom",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_boiler_groom_encounter"
+        }
+      ],
+      "notes": "Owner-approved item-bypass payoff. Lot 53 Dispute Ticket stays in inventory; safety test suspended rather than passed, lavatory remains closed."
+    },
+    "hotel_boiler_pressure_intro": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/boiler_room",
+      "speaker": "hotel_boiler_engineer",
+      "pose": "careful",
+      "effects": {
+        "set": {
+          "ch4_boiler_pressure_incident_seen": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The boiler room is sweltering. A pressure gauge trembles in the red. Beside it stands a chained door marked ENGINEERS' LAVATORY."
+        },
+        "Closed until we complete the emergency pressure test.",
+        {
+          "say": "THERE'S A TOILET IN THERE?",
+          "who": "visitor"
+        },
+        "Allegedly.",
+        {
+          "desc": "He points toward a large brass wheel."
+        },
+        "Regulations require an independent volunteer to operate that while I certify the results.",
+        {
+          "desc": "The warning plate reads HIGH-PRESSURE STEAM. The engineer is standing remarkably far away."
+        },
+        {
+          "say": "AND THEN I CAN USE THE TOILET?",
+          "who": "visitor"
+        },
+        "Then you can apply.",
+        {
+          "desc": "Somebody coughs behind Boiler Three."
+        },
+        "Gentleman in a wedding suit wouldn't volunteer either. Said he was under enough pressure already."
+      ],
+      "choices": [
+        {
+          "id": "boiler_volunteer_relief",
+          "kind": "action",
+          "text": "VOLUNTEER TO OPERATE THE PRESSURE-RELIEF WHEEL.",
+          "check": {
+            "id": "ch4_boiler_steam_relief_survival",
+            "sides": 6,
+            "need": 5
+          },
+          "pass": {
+            "to": "hotel_boiler_pressure_relieved"
+          },
+          "fail": {
+            "to": "fatal_boiler_pressed_and_steamed"
+          }
+        },
+        {
+          "id": "boiler_show_dispute_ticket",
+          "kind": "action",
+          "text": "SHOW THE LOT 53 DISPUTE TICKET AND DEMAND AN INSPECTION HOLD.",
+          "if": {
+            "has": "lot_53_dispute_ticket"
+          },
+          "to": "hotel_boiler_dispute_hold"
+        },
+        {
+          "id": "boiler_show_staff_pass",
+          "kind": "action",
+          "text": "SHOW YOUR TEMPORARY STAFF PASS AND REQUEST MAINTENANCE ACCESS.",
+          "if": {
+            "has": "pavilion_temporary_staff_pass"
+          },
+          "to": "hotel_boiler_staff_access"
+        },
+        {
+          "id": "boiler_check_cough",
+          "kind": "action",
+          "text": "LOOK BEHIND BOILER THREE, AWAY FROM THE PRESSURE WHEEL.",
+          "to": "hotel_boiler_groom_encounter"
+        },
+        {
+          "id": "boiler_leave_for_service",
+          "kind": "action",
+          "text": "LEAVE THE BOILER ROOM AND SEARCH THE SERVICE PASSAGE.",
+          "to": "hotel_boiler_service_passage"
+        }
+      ],
+      "notes": "Owner-approved tightened boiler incident. Hidden d6: 1–4 fatal, 5–6 survive, no modifiers. Four cards remain visible in future engine presentation; B and C must be disabled with REQUIRES / NOT IN INVENTORY subtitles if their items are absent. The current review JSON uses if.has gating because the game engine cannot yet display locked missing-item cards. Do not replay the later groom introduction when ch4_groom_located is already true."
+    },
+    "hotel_boiler_pressure_relieved": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/boiler_room",
+      "speaker": "hotel_boiler_engineer",
+      "pose": "pleased",
+      "effects": {
+        "set": {
+          "ch4_boiler_pressure_relieved": true,
+          "ch4_boiler_lavatory_passage_open": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You turn the wheel. Steam roars overhead. The gauge drops into the green."
+        },
+        "PASS! Beautifully done!",
+        {
+          "desc": "He unlocks the passage. Beyond it, another door reads SANITATION CLEARANCE PENDING."
+        },
+        {
+          "say": "YOU SAID IT WOULD OPEN!",
+          "who": "visitor"
+        },
+        "The passage did. Excellent progress!",
+        {
+          "desc": "A nervous cough comes from behind Boiler Three."
+        }
+      ],
+      "choices": [
+        {
+          "id": "boiler_pressure_pass_to_groom",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_boiler_groom_encounter"
+        }
+      ]
+    },
+    "hotel_boiler_staff_access": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/boiler_room",
+      "speaker": "hotel_boiler_engineer",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_boiler_staff_access": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You show your Temporary Staff Pass."
+        },
+        {
+          "if": {
+            "flag": "ch4_maintenance_access_authorized"
+          },
+          "say": "Ah, the temporary official the porters sent down. They warned me you were coming.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "if": {
+            "notFlag": "ch4_maintenance_access_authorized"
+          },
+          "say": "Temporary staff? Well, I suppose that's most of our staff these days.",
+          "who": "hotel_boiler_engineer"
+        },
+        "Then you're ineligible to volunteer.",
+        {
+          "say": "THAT'S GOOD.",
+          "who": "visitor"
+        },
+        "For you. Terrible for our staffing plan.",
+        {
+          "desc": "He opens the maintenance gate. From behind Boiler Three comes another cough."
+        }
+      ],
+      "choices": [
+        {
+          "id": "boiler_staff_access_to_groom",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_boiler_groom_encounter"
+        }
+      ],
+      "notes": "Owner-approved Staff Pass bypass. Pass retained, no roll, boiler pressure remains high, lavatory stays closed. Conditional porter recognition is a brief callback and must not add another full conversation."
+    },
+    "hotel_water_outage_confirmation": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/service_passage",
+      "speaker": "hotel_boiler_engineer",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_hotel_water_outage_confirmed": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You follow the now-silent pipes into the service corridor. You turn on a nearby washbasin tap. Nothing."
+        },
+        {
+          "desc": "An engineer approaches, studying a pressure gauge."
+        },
+        {
+          "say": "DO ANY OF THE TOILETS STILL WORK?",
+          "who": "visitor"
+        },
+        {
+          "say": "Mechanically, yes. Hydraulically, no.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "say": "I ONLY NEED ONE!",
+          "who": "visitor"
+        },
+        {
+          "say": "Then you'd have one toilet that doesn't flush.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "say": "I'D TAKE IT!",
+          "who": "visitor"
+        },
+        {
+          "say": "Access is a separate issue.",
+          "who": "hotel_boiler_engineer"
+        },
+        {
+          "desc": "He returns to his gauge. The corridor branches toward the staff lavatory, the boiler room, and the loading dock."
+        }
+      ],
+      "choices": [
+        {
+          "id": "water_outage_check_staff",
+          "kind": "action",
+          "text": "CHECK THE STAFF LAVATORY ANYWAY.",
+          "to": "hotel_staff_lavatory_storage"
+        },
+        {
+          "id": "water_outage_check_engineers",
+          "kind": "action",
+          "text": "TRY THE ENGINEERS' LAVATORY.",
+          "to": "hotel_boiler_pressure_intro"
+        },
+        {
+          "id": "water_outage_exit",
+          "kind": "action",
+          "text": "LEAVE THE HOTEL THROUGH THE LOADING DOCK.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Owner-approved concise consequence for ENTIRE HOTEL shutoff. Existing ch4_hotel_water_off and ch4_restroom_water_off flags persist. No second d6, fee, item, or wedding duties."
+    }
+  },
+  "runtimeBindingsChanged": false
+}

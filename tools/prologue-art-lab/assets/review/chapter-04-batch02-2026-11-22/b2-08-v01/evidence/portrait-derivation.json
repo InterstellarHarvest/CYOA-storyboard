@@ -1,0 +1,188 @@
+{
+  "python": "3.13.15",
+  "pillow": "12.3.0",
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "palettePolicy": "Local opaque-only64-tone fitting calibrated to approved B2-04/B2-05 portraits; not a universal cap or a visual approval test",
+  "assets": [
+    {
+      "id": "CH4-B2-43",
+      "sourceFile": "originals/CH4-B2-43-detailed.png",
+      "sourceSha256": "65a4e0d50a15907c04e0b4c39d38e44fafacd8306c290844b7bc0b0929c744bf",
+      "sourceSilhouetteBox": [
+        390,
+        15,
+        1372,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 279,
+        "horizontalOffsetFromCenter": 90,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 62,
+      "quietSurfacePixelsMerged": 4,
+      "nativeWarmPlanePixelsMerged": 532,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 5,
+      "protectedRegions": [
+        [
+          285,
+          30,
+          440,
+          145
+        ],
+        [
+          175,
+          130,
+          535,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-44",
+      "sourceFile": "originals/CH4-B2-44-detailed.png",
+      "sourceSha256": "13984b9bb7bdd6711c7e85075493cbc7443d6734fe2a4cc97c43f5b61a89ac8c",
+      "sourceSilhouetteBox": [
+        359,
+        13,
+        1362,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 285,
+        "horizontalOffsetFromCenter": 90,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 61,
+      "quietSurfacePixelsMerged": 0,
+      "nativeWarmPlanePixelsMerged": 544,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 3,
+      "protectedRegions": [
+        [
+          285,
+          30,
+          440,
+          145
+        ],
+        [
+          175,
+          130,
+          535,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "burgundy_material",
+        "dark_ink",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-45",
+      "sourceFile": "originals/CH4-B2-45-detailed.png",
+      "sourceSha256": "9df49ba751c4711375e0b6a74caaa2eb336c1477cf114fba28328ce343bb4126",
+      "sourceSilhouetteBox": [
+        367,
+        11,
+        1377,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 286,
+        "horizontalOffsetFromCenter": 90,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 62,
+      "quietSurfacePixelsMerged": 1,
+      "nativeWarmPlanePixelsMerged": 582,
+      "detachedSilhouettePixelsRemoved": 1,
+      "boundaryFringePixelsRecolored": 10,
+      "protectedRegions": [
+        [
+          285,
+          30,
+          440,
+          145
+        ],
+        [
+          175,
+          130,
+          535,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "dark_ink",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    },
+    {
+      "id": "CH4-B2-46",
+      "sourceFile": "originals/CH4-B2-46-detailed.png",
+      "sourceSha256": "150079c2be6917c455282c2a0b36eeaf4bdf283a7f66450109c37603d6f133dc",
+      "sourceSilhouetteBox": [
+        364,
+        11,
+        1373,
+        880
+      ],
+      "nativeComposition": {
+        "top": 32,
+        "height": 246,
+        "width": 286,
+        "horizontalOffsetFromCenter": 90,
+        "uniformNearestTransfer": true
+      },
+      "method": "SOURCE-DERIVED native opaque-only coherent palette interpretation, protected cluster merging, binary silhouette and fringe cleanup with separate material layers; not independent whole-image native-grid authorship",
+      "localFitColors": 64,
+      "opaqueColorCount": 62,
+      "quietSurfacePixelsMerged": 1,
+      "nativeWarmPlanePixelsMerged": 561,
+      "detachedSilhouettePixelsRemoved": 0,
+      "boundaryFringePixelsRecolored": 3,
+      "protectedRegions": [
+        [
+          285,
+          30,
+          440,
+          145
+        ],
+        [
+          175,
+          130,
+          535,
+          277
+        ]
+      ],
+      "materialMasks": [
+        "dark_ink",
+        "ivory_material",
+        "neutral_material",
+        "warm_skin_or_wood"
+      ]
+    }
+  ]
+}
