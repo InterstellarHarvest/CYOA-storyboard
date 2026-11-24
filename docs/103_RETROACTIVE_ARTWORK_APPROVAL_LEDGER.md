@@ -457,3 +457,8 @@ Nate APPROVES/SELECTS CH4-B2-26/28/29/30 bride v02 unchanged from `c6dbbaff7bf0e
 ## Chapter 4 B2-06 — owner approval, 2026-11-23
 
 Nate APPROVES/SELECTS all six v01 portraits CH4-B2-31 through CH4-B2-36 unchanged from `f6840e5d69f70435f88ce9ece720583566fce8e2`. [Exact paths/hashes, source-derived provenance, mappings and gameplay handoff](134_CH4_B206_APPROVAL_COMPLETION_20261123.md). Earlier auctioneer/porter portraits and all prior approvals remain exact. Three supplemental ring references remain reference-only; plumber alternatives remain unselected. No integration.
+
+
+## Chapter4 B2-07 — owner approval, 2026-11-23
+
+Nate APPROVES/SELECTS five primary v01 assets CH4-B2-37 through41 and APPROVES/PRESERVES four cleared/permit production references unchanged from `8d32d44c787c09884ca0b3455c34f2a539d34db2`. [Exact paths/hashes, mappings, source-derived provenance and gameplay handoff](135_CH4_B207_APPROVAL_COMPLETION_20261123.md). Earlier approvals, ring references and plumber alternatives stay exact. Supplemental references create no canonical Focus IDs or runtime bindings. No integration.

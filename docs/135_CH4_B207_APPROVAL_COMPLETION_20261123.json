@@ -1,0 +1,406 @@
+{
+  "ownerDecision": "Nate approves/selects five B2-07 v01 primary assets and approves/preserves four conditional production references unchanged from 8d32d44c787c09884ca0b3455c34f2a539d34db2.",
+  "decisionDate": "2026-11-23",
+  "status": "APPROVED_AND_SELECTED_WITH_PRESERVED_REFERENCES",
+  "approvalSourceCommit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+  "canonicalBase": "ac2916cf077d960ee17fef5678649d594b1581d6",
+  "registrationTool": "tools/sync/register-art.mjs",
+  "runtimeAssetPathsAssigned": false,
+  "gameplayIntegrationPerformed": false,
+  "assets": [
+    {
+      "id": "CH4-B2-37",
+      "title": "Staff lavatory — boxed-in entry",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "main_scene",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_storage",
+        "hotel_staff_lavatory_move_boxes",
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-37-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-37-4x.png",
+        "sha256": "5f12ecc73f897fd5f9e0b84cecab3c0fd6c1f086977bc612a0f406254aac25aa"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "scenes:grand_bellevue/staff_lavatory",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory.png",
+      "suggestedEngineDestination": "art/scenes/grand_bellevue/staff_lavatory.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/staff_lavatory"
+      ]
+    },
+    {
+      "id": "CH4-B2-38",
+      "title": "Wedding assistant — busy",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "0b1551cdfd6a744e5d61961dc7e9c679fd9519cc0877297b1bb08f25288c3515",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_storage"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-38-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-38-4x.png",
+        "sha256": "d91f7f80ab3fe7113cc5f1f5c7c7b7ae0e6198355535153fbcdeb48163988c62"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_wedding_assistant:busy",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_wedding_assistant/busy.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_wedding_assistant/busy.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/staff_lavatory"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+    },
+    {
+      "id": "CH4-B2-39",
+      "title": "Wedding assistant — sympathetic",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "455f63371671ad61d8543073cc25e0d8db4fd80849032ba05e0c7c993a84db7d",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_move_boxes"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-39-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-39-4x.png",
+        "sha256": "31fa2c48c5e6d61f6b287c2cf7e2d474ac1894921807f76413f730d3d1dfc02f"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_wedding_assistant:sympathetic",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_wedding_assistant/sympathetic.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_wedding_assistant/sympathetic.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/staff_lavatory"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+    },
+    {
+      "id": "CH4-B2-40",
+      "title": "Wedding assistant — apologetic",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "f3b61e1ba4f2ebc98b9b9a70b88a969784314e1501ac9c33cce2c88573df00ad",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGBA",
+      "kind": "portrait",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-40-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-40-4x.png",
+        "sha256": "9db1ec9c77eb6a30944b36b78640c45e87883d9167634d12924970ffa073ae97"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "portraits:hotel_wedding_assistant:apologetic",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_wedding_assistant/apologetic.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_wedding_assistant/apologetic.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/staff_lavatory"
+      ],
+      "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+    },
+    {
+      "id": "CH4-B2-41",
+      "title": "Staff lavatory — closer entry background",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "a8ba232710e12784d7103b9882a3c6e8286e8cca89bd29fe7abbfab90b6d2b94",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "portrait_background",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_storage",
+        "hotel_staff_lavatory_move_boxes",
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-41-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-41-4x.png",
+        "sha256": "4586c433d5ed82dc971c85c87f21a155acb47c57f7a87d4b314cca69c6aab79c"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "SELECTED",
+      "registryKey": "scenes:grand_bellevue/staff_lavatory#portraitBackground",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory/portraitBackground.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/staff_lavatory.png",
+      "assetPath": null,
+      "sceneKeys": [
+        "grand_bellevue/staff_lavatory"
+      ]
+    }
+  ],
+  "supplementalReferences": [
+    {
+      "id": "CH4-B2-37-cleared",
+      "title": "CH4-B2-37-cleared",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "97a1485382bfdda21a70258af8be957ace82fa19b0a8e64b3179e14e43ce73df",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_move_boxes"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-37-cleared-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-37-cleared-4x.png",
+        "sha256": "aa97e828cd88281fef4fbc93db9b9c82e56e7d5f57572137b3af95fde66b83af"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-37-cleared-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-37",
+      "authoredCondition": "After the boxes are removed and the closed seat is visible for the first time: red ribbon and LOT58 tag remain. The assistant later replaces one box; this reference does not prescribe that timing.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-37-permit",
+      "title": "CH4-B2-37-permit",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "1e410771e048a01f43ec77ddeee1d61a137338579a428e160e952d674a352c85",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-37-permit-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-37-permit-4x.png",
+        "sha256": "15c43cca4bd75168fd0cabc954e2a10e8a3be82f68348bbc4199e0fe6c43e7ae"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-37-permit-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-37",
+      "authoredCondition": "Final authored beat after the SOLD ribbon is removed, lid raised and assistant places the clipboard on the seat. No use or flushing occurs.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-41-cleared",
+      "title": "CH4-B2-41-cleared",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "7eb87b07f2f1390e2e2d278c3f757d66db1e0afd8bcf716821bf9c324eeeb668",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_move_boxes"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-41-cleared-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-41-cleared-4x.png",
+        "sha256": "6971e3ad67319513d22f248ed1168942a743ab36d46a0dfc73b69f64eeb00b08"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-41-cleared-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-41",
+      "authoredCondition": "After the boxes are removed and the closed seat is visible for the first time: red ribbon and LOT58 tag remain. The assistant later replaces one box; this reference does not prescribe that timing.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    },
+    {
+      "id": "CH4-B2-41-permit",
+      "title": "CH4-B2-41-permit",
+      "version": "v01",
+      "status": "approved",
+      "sha256": "2bd720955c229d775d9b5f55ecb2bea4b74670c1e00517231e2d771d58e82831",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "kind": "conditional-production-reference",
+      "storyNodeIds": [
+        "hotel_staff_lavatory_temporary_use_permit"
+      ],
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-batch01-review-20261121",
+        "commit": "8d32d44c787c09884ca0b3455c34f2a539d34db2",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-41-permit-v01.png"
+      },
+      "sourceManifest": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/manifest.json",
+        "sha256": "f48ce042d9950a5626e4f85a4dccdd9b9daa1f56e649def929d66f7a80ec2fcd"
+      },
+      "approvedPreview4x": {
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/previews/CH4-B2-41-permit-4x.png",
+        "sha256": "a789a485065bc718613b492accff28e45a94df0c4c6771f6e9db753ed5800095"
+      },
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "selectionStatus": "APPROVED_PRESERVED_REFERENCE_ONLY",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-41-permit-v01.png",
+      "registryKey": null,
+      "canonicalKey": null,
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "runtimeBindingInstalled": false,
+      "baseAssetId": "CH4-B2-41",
+      "authoredCondition": "Final authored beat after the SOLD ribbon is removed, lid raised and assistant places the clipboard on the seat. No use or flushing occurs.",
+      "implementationBoundaries": "Conditional reference only. A later authorized gameplay/integration task must decide timing; do not infer flag dispatch, new nodes, modes or canonical IDs."
+    }
+  ],
+  "plumberAlternatives": "Separate UNSELECTED alternatives, original v01 selections unchanged.",
+  "validation": {
+    "selectionPreservationChecks": 367,
+    "previousSelectionsPreserved": 186,
+    "supplementalReferencesPreserved": 4,
+    "canonicalCheck": "PASS",
+    "syncRegressionChecks": 23,
+    "chapter3ReferenceGuards": 10,
+    "storyboardSmoke": "PASS",
+    "fatalExport": "PASS",
+    "artLabStatic": "PASS",
+    "selectedArtworkBrowserChecks": 60,
+    "browserEngines": [
+      "Chromium",
+      "Firefox"
+    ]
+  }
+}

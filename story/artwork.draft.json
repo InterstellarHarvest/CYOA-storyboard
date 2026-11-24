@@ -1315,6 +1315,26 @@
         "prompt": "Exact owner-selected B2-04 v01 CH4-B2-23; preserve approved bytes. Immutable source manifest and provenance in docs/132.",
         "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23. SOURCE-DERIVED native interpretation; not independent native-grid authorship. Source 3804fa2013aeb81e17236e4995e2ef1e9596d404:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-23-v01.png; SHA-256 b3c41ce02b3812d7ee3829bdd39e556fc648f730094d781ce19680c2a6ce6721. Not integrated; runtime assetPath remains null. Detailed sources, native layers and prompts remain pinned in docs/132. B2-01 plumber alternatives remain separate and unselected."
       }
+    },
+    "grand_bellevue/staff_lavatory": {
+      "title": "Staff lavatory — boxed-in entry",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/staff_lavatory.png",
+      "prompt": "Exact owner-selected B2-07 v01 CH4-B2-37; preserve approved bytes. Pinned source/provenance in docs/135.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-37 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-37-v01.png; SHA-256 84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135.",
+      "portraitBackground": {
+        "title": "Staff lavatory — closer entry background",
+        "kind": "portrait-background",
+        "status": "approved",
+        "dimensions": "564x278",
+        "assetPath": null,
+        "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/staff_lavatory.png",
+        "prompt": "Exact owner-selected B2-07 v01 CH4-B2-41; preserve approved bytes. Pinned source/provenance in docs/135.",
+        "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-41 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-41-v01.png; SHA-256 a8ba232710e12784d7103b9882a3c6e8286e8cca89bd29fe7abbfab90b6d2b94. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135."
+      }
     }
   },
   "portraits": {
@@ -1786,6 +1806,42 @@
       "portraitBackgroundScene": "grand_bellevue/lobby",
       "prompt": "Exact owner-selected B2-06 v01 CH4-B2-36. Preserve approved bytes. Immutable source and provenance in docs/134.",
       "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-06 CH4-B2-36 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-36-v01.png; SHA-256 cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+    },
+    "hotel_wedding_assistant:busy": {
+      "title": "Wedding assistant — busy",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_wedding_assistant/busy.png",
+      "prompt": "Exact owner-selected B2-07 v01 CH4-B2-38; preserve approved bytes. Pinned source/provenance in docs/135.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-38 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-38-v01.png; SHA-256 0b1551cdfd6a744e5d61961dc7e9c679fd9519cc0877297b1bb08f25288c3515. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+    },
+    "hotel_wedding_assistant:sympathetic": {
+      "title": "Wedding assistant — sympathetic",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_wedding_assistant/sympathetic.png",
+      "prompt": "Exact owner-selected B2-07 v01 CH4-B2-39; preserve approved bytes. Pinned source/provenance in docs/135.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-39 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-39-v01.png; SHA-256 455f63371671ad61d8543073cc25e0d8db4fd80849032ba05e0c7c993a84db7d. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
+    },
+    "hotel_wedding_assistant:apologetic": {
+      "title": "Wedding assistant — apologetic",
+      "kind": "portrait",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/portraits/grand_bellevue/hotel_wedding_assistant/apologetic.png",
+      "prompt": "Exact owner-selected B2-07 v01 CH4-B2-40; preserve approved bytes. Pinned source/provenance in docs/135.",
+      "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; CH4-B2-40 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source 8d32d44c787c09884ca0b3455c34f2a539d34db2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-07-v01/native/CH4-B2-40-v01.png; SHA-256 f3b61e1ba4f2ebc98b9b9a70b88a969784314e1501ac9c33cce2c88573df00ad. Supplemental cleared/permit frames remain separate approved-preserved references, no new Focus IDs or runtime dispatch. All previous approvals and unselected plumber alternatives stay exact. Not integrated; assetPath null. Completion/gameplay handoff docs/135.",
+      "foregroundFormat": "transparent-rgba-png",
+      "portraitBackgroundScene": "grand_bellevue/staff_lavatory"
     }
   },
   "items": {
