@@ -1,0 +1,1619 @@
+{
+ "schema": "out-of-order-ch4-consolidation-verification-v1",
+ "tool": "tools/sync/ch4-consolidation.py verify",
+ "result": "PASS",
+ "passed": 266,
+ "failed": 0,
+ "report": {
+  "canonicalBase": "96e3c2a68e3f31afec2aed6cfd8b7634b774980f",
+  "d6": {
+   "count": 8,
+   "sha256": "5357e75d4314aac481dbfa9e957100ef94539af6728a72fac3ad60ee605726e2"
+  },
+  "counts": {
+   "NARRATIVE": 14,
+   "RETAIN": 45,
+   "REUSE": 6,
+   "NEW": 17,
+   "NEW_RENDERER_EXCEPTION": 1,
+   "RETIRE_PROPOSED": 7
+  },
+  "fourX": {
+   "checked": 47,
+   "noRecordedPreview": [
+    "CH4-01",
+    "CH4-02",
+    "CH4-03",
+    "CH4-04",
+    "CH4-05"
+   ]
+  },
+  "sourceBlobsIdentical": 52,
+  "c2Nodes": [
+   "hotel_bridal_door_knock",
+   "hotel_bridal_criteria",
+   "hotel_bridal_false_claim",
+   "hotel_bridal_emergency_override",
+   "hotel_bridal_ring_argument",
+   "hotel_bridal_gown_camera",
+   "hotel_seashell_instructions",
+   "hotel_seashell_complaint",
+   "hotel_seashell_second_attempt",
+   "hotel_seashell_assessment_appeal",
+   "hotel_upper_salvage_arrival",
+   "hotel_upper_salvage_clerk_directions",
+   "hotel_stall_public_corridor_walk",
+   "hotel_flooded_public_corridor",
+   "hotel_freight_wc_misunderstanding"
+  ],
+  "c1Nodes": [
+   "hotel_entry_dispatch",
+   "entry_paper_problem_end",
+   "entry_door_dash_fail",
+   "hotel_bridal_corridor_park_exit",
+   "hotel_bridal_lavatory_park_exit"
+  ],
+  "colorDiagnostics": {
+   "refinementFlags": {
+    "CH4-01": 2542,
+    "CH4-B2-11": 83600,
+    "CH4-05": 3669,
+    "CH4-04": 2524,
+    "CH4-B2-03": 49487
+   },
+   "chapter2SceneBenchmarks": {
+    "count": 28,
+    "min": 58,
+    "max": 64
+   },
+   "otherChapter4Approved": {
+    "CH4-B2-06": 69,
+    "CH4-B2-07": 71,
+    "CH4-02": 689,
+    "CH4-B2-08": 74,
+    "CH4-B2-12": 93,
+    "CH4-B2-09": 64,
+    "CH4-B2-19": 102,
+    "CH4-B2-23": 138,
+    "CH4-B2-13": 95,
+    "CH4-B2-16": 132,
+    "CH4-B2-37": 133,
+    "CH4-B2-41": 172,
+    "CH4-B2-42": 137,
+    "CH4-B2-47": 123,
+    "CH4-B2-17": 131
+   }
+  }
+ },
+ "checks": [
+  {
+   "check": "No story/, assets/, art-lab assets or viewer file differs from the canonical base",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "120 Chapter 4 nodes",
+   "passed": true,
+   "detail": 120
+  },
+  {
+   "check": "Every choice / SHOW / USE / pass / fail destination resolves (251 links)",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "All 120 nodes reachable from hotel_entry_dispatch (ignoring conditions)",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "Seven Chapter 3 entry routes: dispatch keys on ch3_exit_route and each lands on an existing node",
+   "passed": true,
+   "detail": [
+    "locomotion_fail",
+    "presenter_help_end",
+    "paper_problem_end",
+    "attendant_honest_end",
+    "door_dash_fail",
+    "door_reverse_end",
+    "backstage_exit"
+   ]
+  },
+  {
+   "check": "Hidden d6 checks present (8 x d6)",
+   "passed": true,
+   "detail": [
+    "ch4_restroom_valve_grip",
+    "ch4_stall_crane_grip",
+    "ch4_chair_stapler_stealth",
+    "ch4_careful_ring_retrieval",
+    "ch4_collection_stairs_slip_unnoticed",
+    "ch4_boiler_steam_relief_survival",
+    "ch4_pod_packing_escape",
+    "ch4_bridal_autofit_survival"
+   ]
+  },
+  {
+   "check": "Four fatal endings: end=true with a complete deathPopup (id/title/description/button)",
+   "passed": true,
+   "detail": [
+    "fatal_stall_final_occupancy",
+    "fatal_boiler_pressed_and_steamed",
+    "fatal_lot61_folded",
+    "fatal_bridal_made_to_measure"
+   ]
+  },
+  {
+   "check": "Death-presentation export inspected (Chapter 4 is notForGameplay; export coverage reported, not required)",
+   "passed": true,
+   "detail": {
+    "fatal_stall_final_occupancy": false,
+    "fatal_boiler_pressed_and_steamed": false,
+    "fatal_lot61_folded": false,
+    "fatal_bridal_made_to_measure": false
+   }
+  },
+  {
+   "check": "Every item Chapter 4 gives, takes, tests, SHOWs or USEs exists in items.draft.json",
+   "passed": true,
+   "detail": [
+    "acting_director_badge",
+    "expo_examiner_badge",
+    "lot_53_dispute_ticket",
+    "pavilion_temporary_staff_pass",
+    "red_stapler",
+    "rubber_band_ball",
+    "wc_key",
+    "wedding_ring_lot31"
+   ]
+  },
+  {
+   "check": "Approved item-gated card rules present in development metadata",
+   "passed": true
+  },
+  {
+   "check": "Independent derivation = 90 logical requirements (23 scenes, 36 poses, 15 backgrounds, 8 Focus, 4 item, 4 fatal)",
+   "passed": true,
+   "detail": {
+    "main_scene": 23,
+    "portrait": 36,
+    "portrait_background": 15,
+    "focus_a": 8,
+    "inventory_slot": 2,
+    "inventory_inspect": 2,
+    "fatal_aftermath": 4
+   }
+  },
+  {
+   "check": "Every requirement has exactly one disposition",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "No decision names a requirement that canon does not have",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "No requirement is decided twice",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "Committed plan JSON equals a fresh derivation from canon (rebuild if this fails)",
+   "passed": true
+  },
+  {
+   "check": "Approved primary Chapter 4 selections on main = 52 (46 at audit + 6 B2-08 via PR #30)",
+   "passed": true,
+   "detail": {
+    "NARRATIVE": 14,
+    "RETAIN": 45,
+    "REUSE": 6,
+    "NEW": 17,
+    "NEW_RENDERER_EXCEPTION": 1,
+    "RETIRE_PROPOSED": 7
+   }
+  },
+  {
+   "check": "7 retirements proposed, 45 approved retained",
+   "passed": true
+  },
+  {
+   "check": "17 genuinely new primary images (Nate's list)",
+   "passed": true,
+   "detail": 17
+  },
+  {
+   "check": "21 remaining demands resolved without Nate's 17 (reuse + narrative + 1 renderer exception)",
+   "passed": true
+  },
+  {
+   "check": "Approval records docs/127-136 name 52 primary assets",
+   "passed": true,
+   "detail": 52
+  },
+  {
+   "check": "Native CH4-B2-06 314x206 opaque: main_scene:grand_bellevue/loading_lane",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-06 (130_CH4_B202_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-06 @ a105d4e",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-06",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-07 314x206 opaque: main_scene:grand_bellevue/service_alley",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-07 (130_CH4_B202_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-07 @ a105d4e",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-07",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-01 314x206 opaque: main_scene:grand_bellevue/lobby",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-01 (127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-01 @ 3463e20",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-03 564x278 transparent: portrait:hotel_auctioneer:showman",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-03 (127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-03 @ 3463e20",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-02 564x278 opaque: portrait_background:grand_bellevue/lobby",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-02 (127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-02 @ 3463e20",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-08 314x206 opaque: main_scene:grand_bellevue/loading_dock",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-08 (130_CH4_B202_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-08 @ a105d4e",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-08",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-10 564x278 transparent: portrait:hotel_salvage_foreman:annoyed",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-10 (130_CH4_B202_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-10 @ a105d4e",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-10",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-11 564x278 opaque: portrait_background:grand_bellevue/loading_dock",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-11 (130_CH4_B202_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-11 @ a105d4e",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-11",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-05 314x206 opaque: main_scene:grand_bellevue/ballroom",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-05 (127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-05 @ 3463e20",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-04 314x206 opaque: main_scene:grand_bellevue/restroom",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-04 (127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-04 @ 3463e20",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-01 564x278 transparent: portrait:hotel_plumber:worried",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-01 (128_CH4_B201_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-01 @ 81cf3b5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-01",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-03 564x278 opaque: portrait_background:grand_bellevue/restroom",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-03 (128_CH4_B201_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-03 @ 81cf3b5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-03",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-12 314x206 opaque: main_scene:grand_bellevue/maintenance",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-12 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-12 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-12",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-18 564x278 opaque: focus_a:grand_bellevue/maintenance/water_isolator",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-18 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-18 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-18",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-09 314x206 opaque: main_scene:grand_bellevue/service_stairs",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-09 (130_CH4_B202_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-09 @ a105d4e",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-09",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-02 564x278 transparent: portrait:hotel_plumber_assistant:pleased",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-02 (128_CH4_B201_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-02 @ 81cf3b5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-02",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-04 564x278 opaque: focus_a:grand_bellevue/restroom/lot_14_receipt",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-04 (128_CH4_B201_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-04 @ 81cf3b5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-04",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-05 564x278 opaque: focus_a:grand_bellevue/restroom/master_isolator",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-05 (128_CH4_B201_APPROVAL_COMPLETION_20261122.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-05 @ 81cf3b5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-05",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-20 564x278 transparent: portrait:hotel_porter:businesslike",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-20 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-20 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-20",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-31 564x278 transparent: portrait:hotel_auctioneer:delighted",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-31 (134_CH4_B206_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-31 @ f6840e5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-31",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-26 564x278 transparent: portrait:hotel_bride:determined",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-26 (133_CH4_B205_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-26 @ c6dbbaf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-26",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-27 564x278 transparent: portrait:hotel_auction_clerk:precise",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-27 (133_CH4_B205_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-27 @ 9afe76f",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-27",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-21 564x278 transparent: portrait:hotel_porter:uncertain",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-21 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-21 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-21",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-32 564x278 transparent: portrait:hotel_porter:alarmed",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-32 (134_CH4_B206_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-32 @ f6840e5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-32",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-22 564x278 transparent: portrait:hotel_porter:practical",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-22 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-22 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-22",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-24 564x278 opaque: focus_a:grand_bellevue/auction_floor/chair_armrest",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-24 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-24 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-24",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-19 314x206 opaque: main_scene:grand_bellevue/service_passage",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-19 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-19 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-19",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-23 564x278 opaque: portrait_background:grand_bellevue/service_passage",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-23 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-23 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-23",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-28 564x278 transparent: portrait:hotel_bride:hopeful",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-28 (133_CH4_B205_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-28 @ c6dbbaf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-28",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-29 564x278 transparent: portrait:hotel_bride:grateful",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-29 (133_CH4_B205_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-29 @ c6dbbaf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-29",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-30 564x278 transparent: portrait:hotel_bride:helpful",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-30 (133_CH4_B205_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-30 @ c6dbbaf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-30",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-25 564x278 opaque: focus_a:grand_bellevue/collection_stairs/chair_armrest",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-25 (132_CH4_B204_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-25 @ 3804fa2",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-25",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-13 314x206 opaque: main_scene:grand_bellevue/boiler_access",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-13 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-13 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-13",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-16 564x278 opaque: portrait_background:grand_bellevue/boiler_access",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-16 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-16 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-16",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-33 564x278 transparent: portrait:hotel_porter:curious",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-33 (134_CH4_B206_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-33 @ f6840e5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-33",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-34 564x278 transparent: portrait:hotel_porter:relieved",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-34 (134_CH4_B206_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-34 @ f6840e5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-34",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-37 314x206 opaque: main_scene:grand_bellevue/staff_lavatory",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-37 (135_CH4_B207_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-37 @ 8d32d44",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-37",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-38 564x278 transparent: portrait:hotel_wedding_assistant:busy",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-38 (135_CH4_B207_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-38 @ 8d32d44",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-38",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-41 564x278 opaque: portrait_background:grand_bellevue/staff_lavatory",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-41 (135_CH4_B207_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-41 @ 8d32d44",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-41",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-39 564x278 transparent: portrait:hotel_wedding_assistant:sympathetic",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-39 (135_CH4_B207_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-39 @ 8d32d44",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-39",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-40 564x278 transparent: portrait:hotel_wedding_assistant:apologetic",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-40 (135_CH4_B207_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-40 @ 8d32d44",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-40",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-42 314x206 opaque: main_scene:grand_bellevue/boiler_room",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-42 (136_CH4_B208_APPROVAL_COMPLETION_20261124.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-42 @ 6ddaf56",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-42",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-43 564x278 transparent: portrait:hotel_boiler_engineer:careful",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-43 (136_CH4_B208_APPROVAL_COMPLETION_20261124.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-43 @ 6ddaf56",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-43",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-47 564x278 opaque: portrait_background:grand_bellevue/boiler_room",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-47 (136_CH4_B208_APPROVAL_COMPLETION_20261124.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-47 @ 6ddaf56",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-47",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-44 564x278 transparent: portrait:hotel_boiler_engineer:pleased",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-44 (136_CH4_B208_APPROVAL_COMPLETION_20261124.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-44 @ 6ddaf56",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-44",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-45 564x278 transparent: portrait:hotel_boiler_engineer:defeated",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-45 (136_CH4_B208_APPROVAL_COMPLETION_20261124.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-45 @ 6ddaf56",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-45",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-46 564x278 transparent: portrait:hotel_boiler_engineer:practical",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-46 (136_CH4_B208_APPROVAL_COMPLETION_20261124.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-46 @ 6ddaf56",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-46",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-14 564x278 transparent: portrait:hotel_groom:nervous",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-14 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-14 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-14",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-17 564x278 opaque: portrait_background:grand_bellevue/maintenance",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-17 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-17 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-17",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-15 564x278 transparent: portrait:hotel_groom:relieved",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-15 (131_CH4_B203_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-15 @ 24c79bf",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-15",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-35 564x278 transparent: portrait:hotel_auctioneer:disappointed",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-35 (134_CH4_B206_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-35 @ f6840e5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-35",
+   "passed": true
+  },
+  {
+   "check": "Native CH4-B2-36 564x278 transparent: portrait:hotel_auctioneer:bureaucratic",
+   "passed": true
+  },
+  {
+   "check": "Selected bytes = preview SHA = approval record SHA: CH4-B2-36 (134_CH4_B206_APPROVAL_COMPLETION_20261123.json)",
+   "passed": true
+  },
+  {
+   "check": "Pinned source blob identical: CH4-B2-36 @ f6840e5",
+   "passed": true
+  },
+  {
+   "check": "Approved exact 4x preview = nearest-neighbour 4x of native: CH4-B2-36",
+   "passed": true
+  },
+  {
+   "check": "13 approved supplemental references preserved byte-exact (7 earlier + 6 B2-08)",
+   "passed": true,
+   "detail": [
+    "CH4-B2-24-open",
+    "CH4-B2-25-slipped",
+    "CH4-B2-25-recovered",
+    "CH4-B2-37-cleared",
+    "CH4-B2-37-permit",
+    "CH4-B2-41-cleared",
+    "CH4-B2-41-permit",
+    "CH4-B2-42-relieved",
+    "CH4-B2-42-inspection-hold",
+    "CH4-B2-42-staff-access",
+    "CH4-B2-47-relieved",
+    "CH4-B2-47-inspection-hold",
+    "CH4-B2-47-staff-access"
+   ]
+  },
+  {
+   "check": "Every supplemental reference is assigned to exactly one state family",
+   "passed": true
+  },
+  {
+   "check": "12 state families, every listed node exists",
+   "passed": true
+  },
+  {
+   "check": "Retire CH4-B2-33 -> CH4-B2-21: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Same character: CH4-B2-33 / CH4-B2-21",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_collection_staff_pass currently hotel_porter:curious",
+   "passed": true
+  },
+  {
+   "check": "Pose remap covers every node of CH4-B2-33",
+   "passed": true,
+   "detail": [
+    "hotel_collection_staff_pass"
+   ]
+  },
+  {
+   "check": "Retire CH4-B2-34 -> CH4-B2-22: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Same character: CH4-B2-34 / CH4-B2-22",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_collection_staff_pass_recognized currently hotel_porter:relieved",
+   "passed": true
+  },
+  {
+   "check": "Pose remap covers every node of CH4-B2-34",
+   "passed": true,
+   "detail": [
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  {
+   "check": "Retire CH4-B2-28 -> CH4-B2-26: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Same character: CH4-B2-28 / CH4-B2-26",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_ring_show_bride currently hotel_bride:hopeful",
+   "passed": true
+  },
+  {
+   "check": "Pose remap covers every node of CH4-B2-28",
+   "passed": true,
+   "detail": [
+    "hotel_ring_show_bride"
+   ]
+  },
+  {
+   "check": "Retire CH4-B2-36 -> CH4-03: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Same character: CH4-B2-36 / CH4-03",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_auctioneer_lot14_recall currently hotel_auctioneer:bureaucratic",
+   "passed": true
+  },
+  {
+   "check": "Pose remap covers every node of CH4-B2-36",
+   "passed": true,
+   "detail": [
+    "hotel_auctioneer_lot14_recall"
+   ]
+  },
+  {
+   "check": "Retire CH4-B2-39 -> CH4-B2-40: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Same character: CH4-B2-39 / CH4-B2-40",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_staff_lavatory_move_boxes currently hotel_wedding_assistant:sympathetic",
+   "passed": true
+  },
+  {
+   "check": "Pose remap covers every node of CH4-B2-39",
+   "passed": true,
+   "detail": [
+    "hotel_staff_lavatory_move_boxes"
+   ]
+  },
+  {
+   "check": "Retire CH4-B2-46 -> CH4-B2-43: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Same character: CH4-B2-46 / CH4-B2-43",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_boiler_staff_access currently hotel_boiler_engineer:practical",
+   "passed": true
+  },
+  {
+   "check": "Node hotel_water_outage_confirmation currently hotel_boiler_engineer:practical",
+   "passed": true
+  },
+  {
+   "check": "Pose remap covers every node of CH4-B2-46",
+   "passed": true,
+   "detail": [
+    "hotel_boiler_staff_access",
+    "hotel_water_outage_confirmation"
+   ]
+  },
+  {
+   "check": "Retire CH4-B2-16 -> CH4-B2-23: both approved; replacement retained",
+   "passed": true
+  },
+  {
+   "check": "Ring rule: the ring-holding grateful bride appears only where the ring is handed over",
+   "passed": true,
+   "detail": {
+    "grateful": [
+     "hotel_bride_ring_handover"
+    ],
+    "ringTaken": [
+     "hotel_bride_ring_handover"
+    ]
+   }
+  },
+  {
+   "check": "B2-16 -> B2-23 resolves through the importer background rule for hotel_collection_slip_spotted",
+   "passed": true
+  },
+  {
+   "check": "Alarmed porter keeps the lobby background in the lobby (hotel_chair_stapler_caught)",
+   "passed": true
+  },
+  {
+   "check": "Boiler-access MAIN scene CH4-B2-13 kept on both slip nodes",
+   "passed": true
+  },
+  {
+   "check": "Exactly the 8 retirement nodes change presentation among approved art",
+   "passed": true,
+   "detail": [
+    "hotel_auctioneer_lot14_recall",
+    "hotel_boiler_staff_access",
+    "hotel_collection_slip_spotted",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_recognized",
+    "hotel_ring_show_bride",
+    "hotel_staff_lavatory_move_boxes",
+    "hotel_water_outage_confirmation"
+   ]
+  },
+  {
+   "check": "All 120 nodes have a resolved main scene and, where shown, portrait/background/focus/ending",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "Dialogue nodes led by portrait-less speakers (constraint C2) = 15",
+   "passed": true,
+   "detail": [
+    "hotel_bridal_door_knock",
+    "hotel_bridal_criteria",
+    "hotel_bridal_false_claim",
+    "hotel_bridal_emergency_override",
+    "hotel_bridal_ring_argument",
+    "hotel_bridal_gown_camera",
+    "hotel_seashell_instructions",
+    "hotel_seashell_complaint",
+    "hotel_seashell_second_attempt",
+    "hotel_seashell_assessment_appeal",
+    "hotel_upper_salvage_arrival",
+    "hotel_upper_salvage_clerk_directions",
+    "hotel_stall_public_corridor_walk",
+    "hotel_flooded_public_corridor",
+    "hotel_freight_wc_misunderstanding"
+   ]
+  },
+  {
+   "check": "Text-led scene nodes (constraint C1) = 5",
+   "passed": true,
+   "detail": [
+    "hotel_entry_dispatch",
+    "entry_paper_problem_end",
+    "entry_door_dash_fail",
+    "hotel_bridal_corridor_park_exit",
+    "hotel_bridal_lavatory_park_exit"
+   ]
+  },
+  {
+   "check": "Fatal fatal_stall_final_occupancy -> CH4-NEW-14",
+   "passed": true
+  },
+  {
+   "check": "Fatal fatal_boiler_pressed_and_steamed -> CH4-NEW-15",
+   "passed": true
+  },
+  {
+   "check": "Fatal fatal_lot61_folded -> CH4-NEW-16",
+   "passed": true
+  },
+  {
+   "check": "Fatal fatal_bridal_made_to_measure -> CH4-NEW-17",
+   "passed": true
+  },
+  {
+   "check": "B2-09 paused: no Bixby art registered or selected",
+   "passed": true
+  },
+  {
+   "check": "All five refinement flags exceed 10x the Chapter 2 scene colour ceiling (diagnostic only)",
+   "passed": true,
+   "detail": {
+    "CH4-01": 2542,
+    "CH4-B2-11": 83600,
+    "CH4-05": 3669,
+    "CH4-04": 2524,
+    "CH4-B2-03": 49487
+   }
+  }
+ ],
+ "dryRun": {
+  "commit": "ee05972308d017ac8006369c1d10ef95693fc421",
+  "removedRecordPreservedVerbatim": {
+   "title": "Boiler access conversation background",
+   "kind": "portrait-background",
+   "status": "approved",
+   "dimensions": "564x278",
+   "assetPath": null,
+   "suggestedFilename": "art/portraits/grand_bellevue/backgrounds/boiler_access.png",
+   "prompt": "Exact owner-selected B2-03 v01 CH4-B2-16; preserve existing approved PNG bytes. Authoritative source manifest and production provenance pinned in docs/131.",
+   "notes": "OWNER APPROVED AND SELECTED UNCHANGED — Nate, 2026-11-23; B2-03 v01 CH4-B2-16. SOURCE-DERIVED native interpretation, not independent native-grid authorship. Exact source 24c79bff8d33b5997ccb6b7aa7bb86293afef291:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-03-v01/native/CH4-B2-16-v01.png; SHA-256 e396db0771247012401cccf3a481d329947381a677c445ccc0a04d61b21f77f3. Manifest, masks, material/structural/letter layers, detailed sources and prompts are pinned in docs/131. Not integrated; runtime assetPath remains null. The two B2-01 plumber alternatives remain separate and unapproved; earlier v01 approvals remain selected."
+  },
+  "removedPublicPreviewCopy": "assets/selected/pending-integration/scenes/grand_bellevue/boiler_access/portraitBackground.png",
+  "check-canon:base": {
+   "exit": 0,
+   "tail": [
+    "  5 chapters, 318 nodes, 547 routes; 271 art records (82 approved, 111 integrated, 73 not-started, 5 reused); 197 previewed",
+    "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
+    "RESULT: OK"
+   ]
+  },
+  "check-canon:proposed": {
+   "exit": 0,
+   "tail": [
+    "  5 chapters, 318 nodes, 547 routes; 270 art records (81 approved, 111 integrated, 73 not-started, 5 reused); 196 previewed",
+    "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
+    "RESULT: OK"
+   ]
+  },
+  "qa-smoke:base": {
+   "exit": 0,
+   "tail": [
+    "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":256,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
+   ]
+  },
+  "qa-smoke:proposed": {
+   "exit": 0,
+   "tail": [
+    "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":255,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
+   ]
+  },
+  "game": {
+   "repo": "InterstellarHarvest/out-of-order",
+   "commit": "3a8e07a427366672115c4307129254e7a20a5fdd",
+   "changedNodes": {
+    "hotel_ring_show_bride": [
+     {
+      "speaker": "hotel_bride",
+      "pose": "hopeful",
+      "background": "grand_bellevue/lobby"
+     },
+     {
+      "speaker": "hotel_bride",
+      "pose": "determined",
+      "background": "grand_bellevue/lobby"
+     }
+    ],
+    "hotel_collection_slip_spotted": [
+     {
+      "speaker": "hotel_porter",
+      "pose": "alarmed",
+      "background": "grand_bellevue/boiler_access"
+     },
+     {
+      "speaker": "hotel_porter",
+      "pose": "alarmed",
+      "background": "grand_bellevue/service_passage"
+     }
+    ],
+    "hotel_collection_staff_pass": [
+     {
+      "speaker": "hotel_porter",
+      "pose": "curious",
+      "background": "grand_bellevue/service_passage"
+     },
+     {
+      "speaker": "hotel_porter",
+      "pose": "uncertain",
+      "background": "grand_bellevue/service_passage"
+     }
+    ],
+    "hotel_collection_staff_pass_recognized": [
+     {
+      "speaker": "hotel_porter",
+      "pose": "relieved",
+      "background": "grand_bellevue/service_passage"
+     },
+     {
+      "speaker": "hotel_porter",
+      "pose": "practical",
+      "background": "grand_bellevue/service_passage"
+     }
+    ],
+    "hotel_staff_lavatory_move_boxes": [
+     {
+      "speaker": "hotel_wedding_assistant",
+      "pose": "sympathetic",
+      "background": "grand_bellevue/staff_lavatory"
+     },
+     {
+      "speaker": "hotel_wedding_assistant",
+      "pose": "apologetic",
+      "background": "grand_bellevue/staff_lavatory"
+     }
+    ],
+    "hotel_boiler_staff_access": [
+     {
+      "speaker": "hotel_boiler_engineer",
+      "pose": "practical",
+      "background": "grand_bellevue/boiler_room"
+     },
+     {
+      "speaker": "hotel_boiler_engineer",
+      "pose": "careful",
+      "background": "grand_bellevue/boiler_room"
+     }
+    ],
+    "hotel_water_outage_confirmation": [
+     {
+      "speaker": "hotel_boiler_engineer",
+      "pose": "practical",
+      "background": "grand_bellevue/service_passage"
+     },
+     {
+      "speaker": "hotel_boiler_engineer",
+      "pose": "careful",
+      "background": "grand_bellevue/service_passage"
+     }
+    ],
+    "hotel_auctioneer_lot14_recall": [
+     {
+      "speaker": "hotel_auctioneer",
+      "pose": "bureaucratic",
+      "background": "grand_bellevue/lobby"
+     },
+     {
+      "speaker": "hotel_auctioneer",
+      "pose": "showman",
+      "background": "grand_bellevue/lobby"
+     }
+    ]
+   },
+   "baseWarnings": 158,
+   "proposedWarnings": 151,
+   "portraitlessLeadSpeakers": [
+    "speaker bathroom_ai: no portrait record bathroom_ai:neutral (missing required artwork; DEV PLACEHOLDER)",
+    "speaker bridal_door_ai: no portrait record bridal_door_ai:neutral (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_attendant: no portrait record hotel_attendant:professional (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_commodore_bixby: no portrait record hotel_commodore_bixby:commanding (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_commodore_bixby: no portrait record hotel_commodore_bixby:delighted (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_lift_voice: no portrait record hotel_lift_voice:neutral (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_salvage_clerk: no portrait record hotel_salvage_clerk:practical (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_wedding_guest: no portrait record hotel_wedding_guest:curious (missing required artwork; DEV PLACEHOLDER)",
+    "speaker hotel_wedding_organizer: no portrait record hotel_wedding_organizer:urgent (missing required artwork; DEV PLACEHOLDER)"
+   ]
+  },
+  "checks": [
+   {
+    "check": "check-canon passes on the base tree",
+    "passed": true,
+    "detail": [
+     "  5 chapters, 318 nodes, 547 routes; 271 art records (82 approved, 111 integrated, 73 not-started, 5 reused); 197 previewed",
+     "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
+     "RESULT: OK"
+    ]
+   },
+   {
+    "check": "check-canon passes on the proposed tree",
+    "passed": true,
+    "detail": [
+     "  5 chapters, 318 nodes, 547 routes; 270 art records (81 approved, 111 integrated, 73 not-started, 5 reused); 196 previewed",
+     "  - game build 2b9883bcbbee consumed storyboard 0e9dc254d179 (115 images)",
+     "RESULT: OK"
+    ]
+   },
+   {
+    "check": "qa-smoke passes on the base tree",
+    "passed": true,
+    "detail": [
+     "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":256,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
+    ]
+   },
+   {
+    "check": "qa-smoke passes on the proposed tree",
+    "passed": true,
+    "detail": [
+     "{\"result\":\"PASS\",\"nodes\":29,\"chapters\":[\"prologue-00\",\"chapter-01\",\"chapter-02\",\"chapter-03\",\"chapter-04\"],\"artRecords\":255,\"checked\":[\"manifest\",\"all integrated scene references\",\"portrait references\",\"all integrated item artwork\",\"paired scene backgrounds\",\"editable portrait background\",\"startup\",\"artwork library\",\"edit prompt\",\"export artwork\",\"item links\",\"SHOW branches\",\"branch proximity\",\"pointer-centered wheel zoom\",\"node drag\",\"live connectors\",\"local saved layout\",\"reload layout\",\"import layout\",\"reset layout\",\"chapter header\",\"per-chapter graph+inspector+art refs\",\"cross-chapter hand-off link\",\"independent positions+selection across switches\",\"export all five chapters\",\"Chapter 2 graph+inspector+art refs+layout\",\"Chapter 1 exits link Chapter 2\",\"import into fresh browser\",\"partial import keeps other chapter\",\"timeline: 36+99+34 cards\",\"no card/port/label overlap\",\"all authored routes drawn, none invented\",\"hover text\",\"left-to-right forward routes\",\"returns only on real cycles\",\"Ch1 five exits in right column + Ch2 ports\",\"fatal chair terminal\",\"Ch2 five incoming Ch1 routes\",\"Ch2 five living endings link Ch3\",\"Ch3 reboot timeline: 34 cards, 5 incoming, 7 surviving ends\",\"fatal endings never cross chapters\",\"antidote loops attached\",\"PASS/FAIL distinct\",\"stable across reload\",\"port navigation\",\"Fit overview + Start\",\"old cache archived not applied\",\"restore archive\",\"reset one chapter only\",\"export revision+timeline\",\"old v1 import\",\"legacy Ch3 identical to published viewer\",\"Prologue timeline + hand-off\",\"pills select/inspect/drag, no auto-navigation\",\"explicit inspector navigation\",\"per-chapter view memory\"]}"
+    ]
+   },
+   {
+    "check": "Proposed Chapter 4 differs from canon ONLY in the 7 pose fields (text, choices, flags, items, d6, endings untouched)",
+    "passed": true,
+    "detail": [
+     [
+      "hotel_ring_show_bride",
+      "pose",
+      "hopeful",
+      "determined"
+     ],
+     [
+      "hotel_collection_staff_pass",
+      "pose",
+      "curious",
+      "uncertain"
+     ],
+     [
+      "hotel_collection_staff_pass_recognized",
+      "pose",
+      "relieved",
+      "practical"
+     ],
+     [
+      "hotel_staff_lavatory_move_boxes",
+      "pose",
+      "sympathetic",
+      "apologetic"
+     ],
+     [
+      "hotel_boiler_staff_access",
+      "pose",
+      "practical",
+      "careful"
+     ],
+     [
+      "hotel_water_outage_confirmation",
+      "pose",
+      "practical",
+      "careful"
+     ],
+     [
+      "hotel_auctioneer_lot14_recall",
+      "pose",
+      "bureaucratic",
+      "showman"
+     ]
+    ]
+   },
+   {
+    "check": "Unchanged by the proposal: story/items.draft.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/storyboard-manifest.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/chapters/chapter-01.draft.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/chapters/chapter-02.draft.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/chapters/chapter-03.draft.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/chapters/prologue-00.draft.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/death-presentations.export.json",
+    "passed": true
+   },
+   {
+    "check": "Unchanged by the proposal: story/game-integration.json",
+    "passed": true
+   },
+   {
+    "check": "Artwork registry section unchanged: items",
+    "passed": true
+   },
+   {
+    "check": "Artwork registry section unchanged: focus",
+    "passed": true
+   },
+   {
+    "check": "Artwork registry section unchanged: deathScreens",
+    "passed": true
+   },
+   {
+    "check": "Selected package: every byte identical; only the CH4-B2-16 public preview copy leaves the active package",
+    "passed": true
+   },
+   {
+    "check": "Retired CH4-B2-16 record captured verbatim (approved; SHA-256 e396db07...)",
+    "passed": true
+   },
+   {
+    "check": "Game importer: exactly the 8 retirement nodes resolve differently",
+    "passed": true,
+    "detail": [
+     "hotel_auctioneer_lot14_recall",
+     "hotel_boiler_staff_access",
+     "hotel_collection_slip_spotted",
+     "hotel_collection_staff_pass",
+     "hotel_collection_staff_pass_recognized",
+     "hotel_ring_show_bride",
+     "hotel_staff_lavatory_move_boxes",
+     "hotel_water_outage_confirmation"
+    ]
+   },
+   {
+    "check": "Game importer: slip_spotted -> service-passage background; stapler_caught keeps the lobby background",
+    "passed": true
+   },
+   {
+    "check": "Game importer: Prologue + Chapters 1-3 runtime output byte-identical before/after",
+    "passed": true
+   }
+  ],
+  "result": "PASS"
+ }
+}
