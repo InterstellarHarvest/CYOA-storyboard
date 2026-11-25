@@ -1,3 +1,13 @@
+# B2-11 v04 — adult scale and clean NPC clusters
+
+**UNSELECTED.** Same hotel attendant rebuilt at132 native pixels, up from94, with a dedicated cleaner source that preserves readable face, hands and costume. Feet keep the same floor line. Dry master, room and v03 sign remain exact;17px sign clearance is retained.
+
+[Public v04 gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/20e5ba9a75551172bdc40f891f3389ff96bc8593/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v04/online.html) · [Full-scene before/after4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/20e5ba9a75551172bdc40f891f3389ff96bc8593/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v04/comparisons/v03-v04-flood-4x.png) · [Character detail4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/20e5ba9a75551172bdc40f891f3389ff96bc8593/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v04/comparisons/character-sign-4x.png) · [Publication/hashes](V04-PUBLICATION-20261125.md).
+
+---
+
+## Historical reviews — preserved unchanged
+
 # B2-11 v03 — simpler NPC and separated sign
 
 **UNSELECTED.** Broader attendant face/hair/clothing clusters; exact same silhouette, scale and pose. Floating sign moved34 native pixels right with16 pixels of horizontal bbox clearance. Dry master and all other pixels remain unchanged.
