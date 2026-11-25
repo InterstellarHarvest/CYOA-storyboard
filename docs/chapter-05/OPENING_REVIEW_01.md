@@ -63,7 +63,7 @@ A sharp crack splits the air.
 Every branch lights up.
 You don't get another moment.
 
-Title: WELL GROUNDED
+Title: DON'T WHIZZ ON THE ELECTRIC FENCE!
 Popup body: The park's new security installation records one successfully neutralized intrusion. The landscaping remains undamaged.
 Trigger: C from discovery or post-inspection; certain death, no d6, no risk marker.
 Inventory: terminal state; no surviving transition, no special item rescue authored.
@@ -71,4 +71,7 @@ Aftermath art description for eventual handoff only: same shrub/wire and squirre
 Engine handoff later: RETRY last decision; CHECKPOINT chapter beginning; EXIT menu. No runtime changes here.
 
 ## Scope
-No modifications to Chapter 4, public chapter manifest, current art records, game repository or other branches. Next owner review concerns this prose, squirrel-inspection result and fatal title, then the wire-follow arrival scene.
+No modifications to Chapter 4, public chapter manifest, current art records, game repository or other branches. Next owner review concerns this prose, squirrel-inspection result and remaining proposed prose, then the wire-follow arrival scene.
+
+## Subsequent owner ruling — fatal title
+Nate selected DON'T WHIZZ ON THE ELECTRIC FENCE! as the electrocution fatal-ending title, referencing Ren & Stimpy. This supersedes proposed WELL GROUNDED. Keep stable node ID fatal_ch5_well_grounded for now; the internal ID is not displayed. Exact remaining prose remains proposed; this title ruling alone does not approve the complete opening or authorize art generation.
