@@ -1,0 +1,877 @@
+{
+  "passed": true,
+  "commit": "7e4174fdf3648b0d8bd10df72f7d4a87f17f5846",
+  "remoteBranchVerified": true,
+  "filesVerified": 94,
+  "pngsDecoded": 69,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "allBytesMatch": true,
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "fc9ea34f3f0f14b5f4f7b7277e09ba490d05b1d44eb48124be6c6014bc8dfba0",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/README.md"
+    },
+    {
+      "file": "SHA256SUMS",
+      "sha256": "8b7b9fdda0278acc5075319f49137c131b0bd9c9633ffcfa9dea8ba44c6838dc",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/SHA256SUMS"
+    },
+    {
+      "file": "comparisons/chapter2-benchmarks-4x.png",
+      "sha256": "08824459a80a9bd6d9852621a532d5b34884da13df0a24e41a3b823240a748af",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        3992,
+        1000
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter2-benchmarks-4x.png"
+    },
+    {
+      "file": "comparisons/chapter2-benchmarks-native.png",
+      "sha256": "837021a2fb156b5809d48541ea458dc91820d1f17a55dc16f4067d838c7685cd",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        998,
+        250
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter2-benchmarks-native.png"
+    },
+    {
+      "file": "comparisons/chapter4-benchmarks-4x.png",
+      "sha256": "8fffd5502cf5075920a0e2e70520959b51b64fed0362bdec8360885840b4a018",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        3992,
+        1000
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter4-benchmarks-4x.png"
+    },
+    {
+      "file": "comparisons/chapter4-benchmarks-native.png",
+      "sha256": "1e7d30c56f50bd427f57a71073e73c571eecb0f22a7502f024f5f51314e07d1c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        998,
+        250
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter4-benchmarks-native.png"
+    },
+    {
+      "file": "comparisons/dry-flood-4x.png",
+      "sha256": "11c713c0ab780e9ed1f327c8b5132212b13d0bc36d2d4aeab2a090bdb493df1b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2672,
+        1000
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/dry-flood-4x.png"
+    },
+    {
+      "file": "comparisons/dry-flood-native.png",
+      "sha256": "3794c5dc348a28b753cb1ac6241ea97d2a67dfbdfc8eb1ced2476540f87266d8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        668,
+        250
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/dry-flood-native.png"
+    },
+    {
+      "file": "comparisons/source-native-4x.png",
+      "sha256": "6c8536ec9d80ca4348b64adb2ad0cb430976376e67bef25c9a73df706f75de84",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2672,
+        1000
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/source-native-4x.png"
+    },
+    {
+      "file": "comparisons/source-native-native.png",
+      "sha256": "06e4a03d06067e02dcc448de7233e57fe17ede44a688530f6d4866e89910117c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        668,
+        250
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/source-native-native.png"
+    },
+    {
+      "file": "comparisons/staff-hatch-states-4x.png",
+      "sha256": "bc78a04ee06d518139f23d0f5275a3a58095ce0f29b9eea74621a493077767c5",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        992,
+        632
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/staff-hatch-states-4x.png"
+    },
+    {
+      "file": "comparisons/staff-hatch-states-native.png",
+      "sha256": "8cae47a802d61f5dcb6fe5eebd9bef02d3782b814a2197295c290cc986802e1e",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        248,
+        158
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/staff-hatch-states-native.png"
+    },
+    {
+      "file": "comparisons/stairs-states-4x.png",
+      "sha256": "42099c19da15861814769698d905e69e4b30c9decb71f303cdc89cdedf9801cb",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        744,
+        572
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/stairs-states-4x.png"
+    },
+    {
+      "file": "comparisons/stairs-states-native.png",
+      "sha256": "9a8f536f7b9d269a0b034901e6891e8f2e0b67a91674a2666702fb0f9101d0bb",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        186,
+        143
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/stairs-states-native.png"
+    },
+    {
+      "file": "comparisons/state-benchmarks-4x.png",
+      "sha256": "a3008a415176c361f5fa500226c46249d3bc07e7d7b5dfc9a60c752f96fc6e22",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        3992,
+        1000
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/state-benchmarks-4x.png"
+    },
+    {
+      "file": "comparisons/state-benchmarks-native.png",
+      "sha256": "1e75dff9d02d123a474d94bc73e59d02f4df5af42055391a0d877bd857c56d2b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        998,
+        250
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/state-benchmarks-native.png"
+    },
+    {
+      "file": "comparisons/water-sign-states-4x.png",
+      "sha256": "89146e3f37356bd36195314f7a59af150fc37d4b7e1aa370b4cf56e80ceb0277",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        888,
+        352
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/water-sign-states-4x.png"
+    },
+    {
+      "file": "comparisons/water-sign-states-native.png",
+      "sha256": "ef79f2c54e6f91b33f069105bbb7cf703df3caf952daeef1be2b81e74de055d2",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        222,
+        88
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/water-sign-states-native.png"
+    },
+    {
+      "file": "diagnostics/source-transfer-NOT-FINAL.png",
+      "sha256": "b7897019957044d2200a3517f28f32406591959d4834ad631678969ccaa3e778",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/diagnostics/source-transfer-NOT-FINAL.png"
+    },
+    {
+      "file": "evidence/benchmark-provenance.json",
+      "sha256": "ec478d6329e0847395dce239a86ea2b332a88b61681da7d8fcce83f3d782ae47",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/benchmark-provenance.json"
+    },
+    {
+      "file": "evidence/browser-local/chromium-dry-1x.png",
+      "sha256": "bd3550194efea8097dfccfff2e8a9346cabdb70b937b4b27b3183a3b3ccca5a3",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        324
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/browser-local/chromium-dry-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-dry-4x.png",
+      "sha256": "57e2a5450db3b828672f6253205810e85b58d92687052be137e4a990bb7f8aa7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        942
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/browser-local/chromium-dry-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-flood-1x.png",
+      "sha256": "6f4635abb436c0603a159a40c54781d102c5167c0dbc8daf19144f22906cc95a",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        324
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/browser-local/chromium-flood-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-flood-4x.png",
+      "sha256": "523edd1ee973e661b2f8a84baa55cd6d02ff3e49105b4205222451b5dde361d6",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        942
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/browser-local/chromium-flood-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-flood-4x.png",
+      "sha256": "2ac0ca3ac361218f8acc523c19ce2b9af93ba93798a849e4840bca7da0046b0b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        943
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/browser-local/firefox-flood-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/report.json",
+      "sha256": "9c449e97975e0a5821ae0c1a5fe83e588bab5b2765cd5311f4e7a4374436ba45",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/browser-local/report.json"
+    },
+    {
+      "file": "evidence/canonical-nodes.json",
+      "sha256": "0ba9e59668b02c30e63649467f13fd684db8aff36396dcd28696e9751d04891f",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/canonical-nodes.json"
+    },
+    {
+      "file": "evidence/caption-layout.json",
+      "sha256": "659aca9c4ee3fe8166f8e4540c665b07d037b95bf3b749963c9487373c923dd3",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/caption-layout.json"
+    },
+    {
+      "file": "evidence/check-canon.json",
+      "sha256": "a200992592f2a68827dc40622f05d8f061d2b06f044b55c76af65056dd966174",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/check-canon.json"
+    },
+    {
+      "file": "evidence/generation-provenance.json",
+      "sha256": "0b684364ab4d31b60bf1fb97e95f95cb0080092183db0a1398d62aefbb067fe2",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/generation-provenance.json"
+    },
+    {
+      "file": "evidence/native-construction.json",
+      "sha256": "5fdf204196c8689759078444156e11d448973274b9973e6608006e09a290c61d",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/native-construction.json"
+    },
+    {
+      "file": "evidence/online-provenance.json",
+      "sha256": "d1eebe5cce525a1a5570272ae3ee36322540cbbfa46a1cc73bd6959e468c95d7",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/online-provenance.json"
+    },
+    {
+      "file": "evidence/pinned-stop-rule.md",
+      "sha256": "11b1f9222f848cc9771b29f9a01186ad8112c9b063a1ead5e92a1816ee16d908",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/pinned-stop-rule.md"
+    },
+    {
+      "file": "evidence/repository-qa.json",
+      "sha256": "dc435c94c732581b28ab5ce5a3436879439b7993a02c1025e448a5f851da709a",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/repository-qa.json"
+    },
+    {
+      "file": "evidence/validation.json",
+      "sha256": "9d8f808710fc741e73533ab9e7028b68dde8cdf585ef1977d0d2469535d5cb1d",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/validation.json"
+    },
+    {
+      "file": "evidence/visual-review.md",
+      "sha256": "99ea8acf69344a9005821dc23e428b92be0134a36f78cb278020071bd50ba971",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/evidence/visual-review.md"
+    },
+    {
+      "file": "index.html",
+      "sha256": "6351f8a24f223b78e961b6186cce51a1b165c04c0fea7173b23e38564612859a",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/index.html"
+    },
+    {
+      "file": "layers/01-architecture-plaster.png",
+      "sha256": "27e282e21f03c5792747dca230a12eb6ebc2f1c7884104d3c60c6b7389bf20af",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/01-architecture-plaster.png"
+    },
+    {
+      "file": "layers/02-carpet-floor.png",
+      "sha256": "ca14644cf8adf08c951aea50f781e3d50900680aba4b696ce0ac35ab5ed3081b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/02-carpet-floor.png"
+    },
+    {
+      "file": "layers/03-painted-paneling.png",
+      "sha256": "40f5a636d03fd39d8938b4466a4e56631466882d6469aef670cc4bfe0b94a04d",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/03-painted-paneling.png"
+    },
+    {
+      "file": "layers/04-doors-and-lettering.png",
+      "sha256": "8a3eb5c053122d779fe6e3e0635f08e5fa738d89ff6d8f4fd94e78ae241a1d08",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/04-doors-and-lettering.png"
+    },
+    {
+      "file": "layers/05-side-exit.png",
+      "sha256": "9b1f74ae75c8a0e873f0f3823d893cf245c7e0203881e2b8f9c3b13eb6b4541f",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/05-side-exit.png"
+    },
+    {
+      "file": "layers/06-collection-stairs.png",
+      "sha256": "ea76f224a09241e093f35a24d0b022b43d984d5482d08fceb91a1e8f195ad928",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/06-collection-stairs.png"
+    },
+    {
+      "file": "layers/07-arch-and-pilasters.png",
+      "sha256": "2e99da0cd5daa5c2d7191da7e48dc4519a5786afd5fb49c2d8ec0e556a1f28dc",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/07-arch-and-pilasters.png"
+    },
+    {
+      "file": "layers/08-hatch-closed.png",
+      "sha256": "15f9ebe812cc0d0b990efd9ba0f5350c0618924f427813dc1c463492d7525bca",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/08-hatch-closed.png"
+    },
+    {
+      "file": "layers/09-lamps.png",
+      "sha256": "17973a304e69253244f717582c4e17a5d83bb53f7628294d99d2d7ae18309127",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/09-lamps.png"
+    },
+    {
+      "file": "layers/10-duct-and-mounts.png",
+      "sha256": "5bfbbe1d417891da428ec3f960acd7291aca666a2d36f39b14c91d9a2effc15c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/10-duct-and-mounts.png"
+    },
+    {
+      "file": "layers/state-attendant.png",
+      "sha256": "9b6f175f944ab56b7c0ac5b1da08ecbcaf8958998f9d3ccf7a54a46e2546952f",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/state-attendant.png"
+    },
+    {
+      "file": "layers/state-floating-sign.png",
+      "sha256": "dbf38d99cb055f8090b77aa33b435e6a8510c2b5fd91574537b1a009da37ddf6",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/state-floating-sign.png"
+    },
+    {
+      "file": "layers/state-hatch-open.png",
+      "sha256": "a5eeebe47c23efce4f81a5c8962dbe77b4830f9d2c8e6923954b5234f62bb1ab",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/state-hatch-open.png"
+    },
+    {
+      "file": "layers/state-water.png",
+      "sha256": "60f67b0abf0b861b308aa60c03337f7aad3c915727778c3af4a55518df5a91e7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/layers/state-water.png"
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "5badfb43e821d6f00f3b00ab7e096941053f31b05a847bbb00bbee9b484b33bc",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/manifest.json"
+    },
+    {
+      "file": "masks/carpet-floor.png",
+      "sha256": "57e34e892e25c0c1efd70dbd94700a4b8a7a6b5e1915f03041bd8df5c6486dd8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/masks/carpet-floor.png"
+    },
+    {
+      "file": "masks/flood-actual-changes.png",
+      "sha256": "5102f90ce1257e9cbcc4f71fd2e12b0199ba09fe7250c1834ee421f55884f1a8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/masks/flood-actual-changes.png"
+    },
+    {
+      "file": "masks/flood-authorized.png",
+      "sha256": "dca07f8365266ad8780b88e6901b91f74425d722e50893c4b15618fd16dcbbb6",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/masks/flood-authorized.png"
+    },
+    {
+      "file": "native/CH4-NEW-04-public-corridor-flood-v01.png",
+      "sha256": "6114e280cf9a4e2694e25195a9399971d30e7b6c7e988b22feff31050b1179cf",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/native/CH4-NEW-04-public-corridor-flood-v01.png"
+    },
+    {
+      "file": "native/CH4-NEW-04-public-corridor-v01.png",
+      "sha256": "54ae919114ee9c61268a6bc49a86d030aef4913cae2e2dd8adecb631aec381f8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/native/CH4-NEW-04-public-corridor-v01.png"
+    },
+    {
+      "file": "online.html",
+      "sha256": "04e8bb01a0fa3cba19da8237a846e75be230507c58de20f5d81aac6911fb3600",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/online.html"
+    },
+    {
+      "file": "originals/CH4-NEW-04-detailed-reference.png",
+      "sha256": "dc1946bbff2bc29225717df77af219981f99e84306c1b8edcba04a78872babb7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1548,
+        1016
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/originals/CH4-NEW-04-detailed-reference.png"
+    },
+    {
+      "file": "originals/CH4-NEW-04-pixel-friendly-study.png",
+      "sha256": "8f88cc65f67697e1c909e8dcb8e558620f4154fc8f4aee10649e9055bd89b347",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1548,
+        1016
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/originals/CH4-NEW-04-pixel-friendly-study.png"
+    },
+    {
+      "file": "previews/CH4-NEW-04-public-corridor-flood-v01-4x.png",
+      "sha256": "9e42c4571f4c70852dd7d5555a2d187192ae65b8c2a3d750d91e0537fc1335eb",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/CH4-NEW-04-public-corridor-flood-v01-4x.png"
+    },
+    {
+      "file": "previews/CH4-NEW-04-public-corridor-v01-4x.png",
+      "sha256": "0fb1228cda263cd55ae2f0039333bf102224f68f8e0fda6e4fdf575be5a870f8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/CH4-NEW-04-public-corridor-v01-4x.png"
+    },
+    {
+      "file": "previews/control_tower-4x.png",
+      "sha256": "ec024b48500b49ebda6d5e63d1c7e714ba525652345ff83e52d58ef144a4b9fc",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/control_tower-4x.png"
+    },
+    {
+      "file": "previews/conveniences_bureau-4x.png",
+      "sha256": "d20c5e77ea7f736d41718cee387b955050824ccc08a1e63a552e7bcd66b7cf3d",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/conveniences_bureau-4x.png"
+    },
+    {
+      "file": "previews/dry-staff-hatch-4x.png",
+      "sha256": "433eb8e0a1a02d423bd62f626e768bdbef310e215ba4542b4a5ed00eec114ef0",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        416,
+        456
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/dry-staff-hatch-4x.png"
+    },
+    {
+      "file": "previews/dry-staff-hatch-native.png",
+      "sha256": "efa69f60953000289a50cbb7c455f5b1c0abe990eee7fa91c5abbab8abe825da",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        104,
+        114
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/dry-staff-hatch-native.png"
+    },
+    {
+      "file": "previews/dry-stairs-4x.png",
+      "sha256": "101579c55e2e963e32f9992974f7efa31971f39d3cc46289e4c8703f93d0b09e",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        292,
+        396
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/dry-stairs-4x.png"
+    },
+    {
+      "file": "previews/dry-stairs-native.png",
+      "sha256": "04a29f040437bf2dba12eb2ae1843902938ade386cf6b5fcfff7b2f919cca4c0",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        73,
+        99
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/dry-stairs-native.png"
+    },
+    {
+      "file": "previews/dry-water-sign-4x.png",
+      "sha256": "9f488af11ab652e98fb44c1524023266429e615cae1d1f2c6b61aa17927b3d42",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        276,
+        176
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/dry-water-sign-4x.png"
+    },
+    {
+      "file": "previews/dry-water-sign-native.png",
+      "sha256": "2477d6fb638c84cdf4a4970a23b2fd528c014f6dbb7f7159d51da2c25b5ad384",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        69,
+        44
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/dry-water-sign-native.png"
+    },
+    {
+      "file": "previews/flood-staff-hatch-4x.png",
+      "sha256": "66a0f67fbfe82861246a9c848520980583ddd9d25b7304e90e5c193e4d992451",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        416,
+        456
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/flood-staff-hatch-4x.png"
+    },
+    {
+      "file": "previews/flood-staff-hatch-native.png",
+      "sha256": "70e67094f30708d4bac2ca1f1974ce2bfd77f86bbd36868ed57c223ad5a8a151",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        104,
+        114
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/flood-staff-hatch-native.png"
+    },
+    {
+      "file": "previews/flood-stairs-4x.png",
+      "sha256": "ef32a89ad90f054b60f46e1721cd40c63d8545e9929de65683b8598118ec4c09",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        292,
+        396
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/flood-stairs-4x.png"
+    },
+    {
+      "file": "previews/flood-stairs-native.png",
+      "sha256": "0c09407509236e6bf1349ae9acc3c6c109e6f58ca9073b4075d046ad3061d132",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        73,
+        99
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/flood-stairs-native.png"
+    },
+    {
+      "file": "previews/flood-water-sign-4x.png",
+      "sha256": "7d5902e25957fef7637fe99cbdf7450ae844ab3f72f8b3c5d04d942f5545096e",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        276,
+        176
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/flood-water-sign-4x.png"
+    },
+    {
+      "file": "previews/flood-water-sign-native.png",
+      "sha256": "c1b285d42d65161c6a98c03bca71435367d88d5088790a7c82e578fced0b706a",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        69,
+        44
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/flood-water-sign-native.png"
+    },
+    {
+      "file": "previews/lobby-4x.png",
+      "sha256": "46296d403d903b9d434b0d72a68dbbfe30baaf2bbc5ad52576ea83c149f47914",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/lobby-4x.png"
+    },
+    {
+      "file": "previews/maintenance_exit-4x.png",
+      "sha256": "cb9cd84166d40e26e8361d21cb16c1b36ba33f040f9524c08be52b3f07b38689",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/maintenance_exit-4x.png"
+    },
+    {
+      "file": "previews/service_stairs-4x.png",
+      "sha256": "ace45ab9218a5e30446d67254908b865694cf056ef1db0706e6be9231a17d4c8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/service_stairs-4x.png"
+    },
+    {
+      "file": "previews/staff_lavatory-4x.png",
+      "sha256": "5f12ecc73f897fd5f9e0b84cecab3c0fd6c1f086977bc612a0f406254aac25aa",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/staff_lavatory-4x.png"
+    },
+    {
+      "file": "references/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/control_tower.png"
+    },
+    {
+      "file": "references/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/conveniences_bureau.png"
+    },
+    {
+      "file": "references/lobby.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/lobby.png"
+    },
+    {
+      "file": "references/maintenance_exit.png",
+      "sha256": "1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/maintenance_exit.png"
+    },
+    {
+      "file": "references/service_stairs.png",
+      "sha256": "b4d6fb424c8f608cac816c10d59f9eab570a36b4ab9bc0fc9b921a781ee64166",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/service_stairs.png"
+    },
+    {
+      "file": "references/staff_lavatory.png",
+      "sha256": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/staff_lavatory.png"
+    },
+    {
+      "file": "source/browser_qa.cjs",
+      "sha256": "a7d5fd01da7b6396cc4365477da69ac1c3d154f1f93243f68fc3649522432369",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/browser_qa.cjs"
+    },
+    {
+      "file": "source/detailed-reference-prompt.txt",
+      "sha256": "ddd9f57fd3af52251200eea5c3bb96b99b45171d3ed1695cdd2b4dcb9fa01b24",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/detailed-reference-prompt.txt"
+    },
+    {
+      "file": "source/native_scene.py",
+      "sha256": "d4a157b0801be5fa8509cbdaece6945d74c650fcb2c68b8fcbe10a64526592e1",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/native_scene.py"
+    },
+    {
+      "file": "source/package_review.py",
+      "sha256": "3f0ac981011743d9161c2b4df2672509254ec3c3d59df47943978868a8e05587",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/package_review.py"
+    },
+    {
+      "file": "source/pixel-friendly-prompt.txt",
+      "sha256": "43bc8fdb063f23dfef9bbb0e4e3b77ff3cdf33bdbe80f9401fa7dbfdabe9ddc9",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/pixel-friendly-prompt.txt"
+    },
+    {
+      "file": "source/prepare_online.py",
+      "sha256": "f9b9badff7be31b906bf80379cfc5a7a260dfd35a50c51e1aadfab848b245a79",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/prepare_online.py"
+    },
+    {
+      "file": "source/validate.py",
+      "sha256": "884f303b73bbf4638c2680f3b5f24b27aaaa0e1cae18b46a65107ad8e595083f",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/validate.py"
+    },
+    {
+      "file": "source/verify_publication.py",
+      "sha256": "fbd1dd812cfabdd758e2cecdf8517029171c1bf79167ab07afa3bb5654d9210e",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/7e4174fdf3648b0d8bd10df72f7d4a87f17f5846/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/source/verify_publication.py"
+    }
+  ]
+}
