@@ -1,0 +1,32 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "fallbackCLIUsed": false,
+  "modelAndSeed": "Not exposed by built-in tool",
+  "transparentBackgroundRequested": true,
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "calls": [
+    {
+      "role": "Rejected source, not a candidate",
+      "reason": "Resembled hotel_wedding_assistant; owner required distinct hotel_attendant",
+      "original": "originals/attendant-rejected-wedding-lookalike.png",
+      "prompt": "source/attendant-rejected-prompt.txt",
+      "generatedFileId": "exec-076fae11-17be-4cca-901b-8fd8ff023c29.png",
+      "originalSha256": "1b27a8f628c4417ee61a21da559e8dc7ad9b04ffd08a01975a64af5d76b14a26",
+      "promptSha256": "44a1b071227e5834786cf2b4266bd1eaf123b30ca0d7f18699e32b4c1f1892ef"
+    },
+    {
+      "role": "Final attendant source",
+      "original": "originals/attendant-illustration-source.png",
+      "prompt": "source/attendant-prompt.txt",
+      "generatedFileId": "exec-2d9bb90f-9318-4431-946d-4295cc791bc9.png",
+      "identity": "hotel_attendant, distinct from hotel_wedding_assistant",
+      "action": "points left toward staff passage after WET FLOOR sign floats away",
+      "originalSha256": "0af07b5ba00af359c11340d2fa4b1ad2f3c4dd36a7166d09b5c8e0649df0e0ed",
+      "promptSha256": "dc19ffaf78e79ef26158e95d5a699d0f1b8406a404ba198a8ed279f0033ea08f"
+    }
+  ],
+  "finalNativeProcessing": "source/refine.py",
+  "nativeContract": "environment scene figure only, not a new dialogue portrait",
+  "existingRoomSource": "../v01/originals/CH4-NEW-04-pixel-friendly-study.png"
+}

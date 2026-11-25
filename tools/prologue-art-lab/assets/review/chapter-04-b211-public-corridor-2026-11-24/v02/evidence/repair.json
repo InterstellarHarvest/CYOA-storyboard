@@ -1,0 +1,248 @@
+{
+  "sourceDerived": true,
+  "whollyIndependentAuthorshipClaim": false,
+  "baseReviewCommit": "e650f02a1d803069ae142557cfc134edab77dafd",
+  "method": "Four owner-requested corrections: local source-informed yard material reconstruction; native door-plane projection to common VP; fixed-frame/hinged-leaf hatch; generated illustrated scene-NPC source with controlled reduction, local ramp and cluster cleanup. No whole-scene resize or general palette/shading pass.",
+  "retainedSource": "../v01/originals/CH4-NEW-04-pixel-friendly-study.png",
+  "retainedSourceSha256": "8f88cc65f67697e1c909e8dcb8e558620f4154fc8f4aee10649e9055bd89b347",
+  "attendantSource": "originals/attendant-illustration-source.png",
+  "attendantSourceSha256": "0af07b5ba00af359c11340d2fa4b1ad2f3c4dd36a7166d09b5c8e0649df0e0ed",
+  "attendantCrop": [
+    52,
+    26,
+    872,
+    1518
+  ],
+  "attendantNativeSize": [
+    52,
+    94
+  ],
+  "attendantOrigin": [
+    110,
+    99
+  ],
+  "attendantPalette": [
+    "#21262d",
+    "#2d303d",
+    "#3d4351",
+    "#535c6d",
+    "#6e7681",
+    "#4b4c4d",
+    "#6f706d",
+    "#989789",
+    "#c7bfa5",
+    "#e2d2b0",
+    "#573f31",
+    "#80543b",
+    "#a8754d",
+    "#c18e60",
+    "#dba97a",
+    "#edc69a",
+    "#9c9583",
+    "#c3baa0",
+    "#e6d6b3",
+    "#f1dfb7",
+    "#28282a",
+    "#4c4a44",
+    "#7d715d",
+    "#a59071"
+  ],
+  "attendantReduction": "nearest-neighbor object-only source reduction, coherent gray-hair/navy-uniform ramps and weak-interior-cluster cleanup; binary alpha >=128",
+  "attendantQuietInteriorPixels": 67,
+  "yardPalette": [
+    "#27362f",
+    "#3a483c",
+    "#64715a",
+    "#969779",
+    "#b3af8a",
+    "#c2d8d2",
+    "#a6c5d1",
+    "#b9d9e3",
+    "#e4e1cd",
+    "#d2c4a6",
+    "#bca786",
+    "#a28b6c",
+    "#81705a",
+    "#615647",
+    "#4d4c40",
+    "#4c5951",
+    "#708678",
+    "#9aa99b",
+    "#74603a",
+    "#a3864e",
+    "#c8a263",
+    "#d8bb79",
+    "#c6bea7",
+    "#dcd0b2"
+  ],
+  "doorProjection": [
+    {
+      "nearX": 131,
+      "farX": 144,
+      "nearTop": 77,
+      "nearBottom": 150,
+      "corners": [
+        [
+          131,
+          77
+        ],
+        [
+          144,
+          84
+        ],
+        [
+          144,
+          144
+        ],
+        [
+          131,
+          150
+        ]
+      ],
+      "vanishingPoint": [
+        205,
+        115
+      ]
+    },
+    {
+      "nearX": 151,
+      "farX": 159,
+      "nearTop": 88,
+      "nearBottom": 141,
+      "corners": [
+        [
+          151,
+          88
+        ],
+        [
+          159,
+          92
+        ],
+        [
+          159,
+          137
+        ],
+        [
+          151,
+          141
+        ]
+      ],
+      "vanishingPoint": [
+        205,
+        115
+      ]
+    }
+  ],
+  "hatch": {
+    "fixedFrame": [
+      [
+        87,
+        120
+      ],
+      [
+        111,
+        119
+      ],
+      [
+        111,
+        160
+      ],
+      [
+        87,
+        172
+      ]
+    ],
+    "hingeEdge": [
+      [
+        87,
+        120
+      ],
+      [
+        87,
+        172
+      ]
+    ],
+    "openLeaf": [
+      [
+        87,
+        120
+      ],
+      [
+        72,
+        113
+      ],
+      [
+        72,
+        181
+      ],
+      [
+        87,
+        172
+      ]
+    ],
+    "aperture": [
+      [
+        89,
+        122
+      ],
+      [
+        109,
+        121
+      ],
+      [
+        109,
+        158
+      ],
+      [
+        89,
+        169
+      ]
+    ],
+    "freeEdgeIsNearerAndTaller": true
+  },
+  "dryLayerOrder": [
+    "01-architecture-plaster",
+    "02-carpet-floor",
+    "03-painted-paneling",
+    "04-doors-and-lettering",
+    "05-side-exit",
+    "06-collection-stairs",
+    "07-arch-and-pilasters",
+    "08-hatch-closed",
+    "09-lamps",
+    "10-duct-and-mounts",
+    "repair-side-exit-yard",
+    "repair-far-door-perspective"
+  ],
+  "floodLayerOrder": [
+    "01-architecture-plaster",
+    "02-carpet-floor",
+    "03-painted-paneling",
+    "04-doors-and-lettering",
+    "05-side-exit",
+    "06-collection-stairs",
+    "07-arch-and-pilasters",
+    "08-hatch-closed",
+    "09-lamps",
+    "10-duct-and-mounts",
+    "repair-side-exit-yard",
+    "repair-far-door-perspective",
+    "state-water",
+    "state-hatch-open",
+    "state-attendant",
+    "state-floating-sign"
+  ],
+  "hashes": {
+    "dry": "86da5123204f65c43ed23f418fe0edcf987dbdb3d000821367c36c8f30c390ec",
+    "flood": "eda5fa7da5c2ed85c4333993c6b9b0503d3f36ab72078fa831ffa50f8bf6d358"
+  },
+  "canonicalAttendant": {
+    "speaker": "hotel_attendant",
+    "pose": "professional",
+    "node": "hotel_flooded_public_corridor",
+    "distinctFrom": "hotel_wedding_assistant",
+    "sceneAction": "points screen left toward staff passage after sign floats away",
+    "visualDesignChoices": "older woman, short gray bob, navy work jacket and trousers; these are art-direction choices, not additional canonical facts"
+  },
+  "status": "UNSELECTED"
+}
