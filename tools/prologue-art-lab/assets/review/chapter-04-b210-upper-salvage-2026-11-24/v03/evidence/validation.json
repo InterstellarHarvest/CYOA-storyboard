@@ -1,0 +1,496 @@
+{
+  "technicalPassed": true,
+  "checksPassed": 118,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "changedNativePixelsFromV02": 5435,
+  "unchangedScenePercentFromV02": 91.598,
+  "outsideRackChanges": 0,
+  "originalStairsAndRailsByteExact": true,
+  "v02ForegroundByteExact": true,
+  "sharedLayersByteExact": 9,
+  "historicalFilesByteExact": {
+    "v01": 107,
+    "v02": 78
+  },
+  "baselineFilesPreserved": 845,
+  "exact4xPairs": 22,
+  "replayedFilesIdentical": 60,
+  "sourceDerived": true,
+  "stairsPerspectiveClaim": "Original owner-accepted fallback, not corrected perspective",
+  "canonicalGameplayNarrativeApprovalRecordsChanged": false,
+  "checks": [
+    {
+      "check": "One unselected scene; no new state or approval",
+      "passed": true
+    },
+    {
+      "check": "Single native asset",
+      "passed": true
+    },
+    {
+      "check": "Native RGB314x206",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest-neighbor1256x824",
+      "passed": true
+    },
+    {
+      "check": "Manifest hashes exact",
+      "passed": true
+    },
+    {
+      "check": "Zero changed pixels outside authorized rack",
+      "passed": true
+    },
+    {
+      "check": "Existing visible route and rail pixels exact",
+      "passed": true
+    },
+    {
+      "check": "Whole foreground and left room pixel exact v02",
+      "passed": true
+    },
+    {
+      "check": "Whole lower stairwell pixel exact v02",
+      "passed": true
+    },
+    {
+      "check": "Upper architecture pixel exact v02",
+      "passed": true
+    },
+    {
+      "check": "Original restored layer byte-exact material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Original restored layer byte-exact material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "New foreground layer preserved byte-exact v02",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-storage-racks.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Editable native binary-alpha layer layers/material-wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer exact layers/material-wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "One changed layer; exact native layer assembly",
+      "passed": true
+    },
+    {
+      "check": "Final hash and original source provenance",
+      "passed": true
+    },
+    {
+      "check": "Actual approved benchmark references/ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved benchmark references/ch2-damaged-walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved benchmark references/ch2-maintenance-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved benchmark references/ch4-service-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved benchmark references/ch4-loading-dock.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved benchmark references/ch4-restroom-bowl-style.png",
+      "passed": true
+    },
+    {
+      "check": "Three canonical story nodes retained; no new bindings",
+      "passed": true
+    },
+    {
+      "check": "Caption fits v01-v02-v03/v01 original rack",
+      "passed": true
+    },
+    {
+      "check": "Caption fits v01-v02-v03/v02 quieter rack",
+      "passed": true
+    },
+    {
+      "check": "Caption fits v01-v02-v03/v03 fuller rack",
+      "passed": true
+    },
+    {
+      "check": "Caption fits quick-glance/v02",
+      "passed": true
+    },
+    {
+      "check": "Caption fits quick-glance/v03",
+      "passed": true
+    },
+    {
+      "check": "Caption fits quick-glance/Ch2 Control Tower",
+      "passed": true
+    },
+    {
+      "check": "Caption fits quick-glance/Ch2 Maintenance Exit",
+      "passed": true
+    },
+    {
+      "check": "Caption fits quick-glance/Ch4 Service Stairs",
+      "passed": true
+    },
+    {
+      "check": "Caption fits additional-benchmarks/v03",
+      "passed": true
+    },
+    {
+      "check": "Caption fits additional-benchmarks/Ch2 Damaged Walkway",
+      "passed": true
+    },
+    {
+      "check": "Caption fits additional-benchmarks/Ch4 Loading Dock",
+      "passed": true
+    },
+    {
+      "check": "Caption fits rack-before-after/v01 rack",
+      "passed": true
+    },
+    {
+      "check": "Caption fits rack-before-after/v02 rack",
+      "passed": true
+    },
+    {
+      "check": "Caption fits rack-before-after/v03 rack",
+      "passed": true
+    },
+    {
+      "check": "Caption fits sinks-before-after/v02 sinks",
+      "passed": true
+    },
+    {
+      "check": "Caption fits sinks-before-after/v03 sinks",
+      "passed": true
+    },
+    {
+      "check": "Caption fits stairs-before-after/v02 stairs",
+      "passed": true
+    },
+    {
+      "check": "Caption fits stairs-before-after/v03 stairs",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/quick-glance-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/additional-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/rack-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/v01-v02-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/stairs-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/sinks-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-03-upper-salvage-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch4-restroom-bowl-style-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch4-loading-dock-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v01-rack-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-before-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v01-before-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch2-maintenance-exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch4-service-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-rack-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v03-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch2-damaged-walkway-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v03-sinks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v03-rack-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-sinks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "All 845 baseline blobs preserved; historical v01/v02 immutable",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch2-maintenance-exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/quick-glance-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/additional-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch2-damaged-walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch2-maintenance-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch2-damaged-walkway-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch4-loading-dock.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v01-v02-v03-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency ../v01/originals/CH4-NEW-03-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-NEW-03-upper-salvage-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch4-service-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/sinks-before-after-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v01-v02-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/v02-before-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch4-loading-dock-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch4-restroom-bowl-style-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch4-restroom-bowl-style.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/v01-before-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/additional-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/stairs-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-03-upper-salvage-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/v01-before.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/v02-before.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/sinks-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch4-service-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/visual-review.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/rack-before-after-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/stairs-before-after-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/rack-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/quick-glance-native.png",
+      "passed": true
+    },
+    {
+      "check": "Deterministic native assembly and review-gallery replay",
+      "passed": true
+    }
+  ]
+}

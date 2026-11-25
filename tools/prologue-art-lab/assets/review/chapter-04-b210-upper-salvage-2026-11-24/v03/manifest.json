@@ -1,0 +1,52 @@
+{
+  "title": "Chapter4 B2-10 v03 \u2014 fuller rack, original stairs",
+  "branch": "art/ch4-b210-upper-salvage-review-20261124",
+  "preservationBaseline": "29a23f13ca8824bae3868b46c2afb19f075f7651",
+  "baseReviewCommit": "29a23f13ca8824bae3868b46c2afb19f075f7651",
+  "canonicalBaseline": "6334b895333dd2d78332cf9f1d834e619468f932",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryUnits": 1,
+  "supplementalStates": [],
+  "asset": {
+    "id": "CH4-NEW-03",
+    "proposedCanonicalKey": "scenes:grand_bellevue/upper_salvage",
+    "native": {
+      "file": "native/CH4-NEW-03-upper-salvage-v03.png",
+      "sha256": "1030e04f9b32d2c0fc4394e9f00a4a70ba162db1c9eeed4f2772068cf9ce3207",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "preview4x": {
+      "file": "previews/CH4-NEW-03-upper-salvage-v03-4x.png",
+      "sha256": "4a6cc8445c694ee97b3c32312643fe4f2e6acd3dc1a8f52dd1cdfd8ce312fa8a",
+      "dimensions": [
+        1256,
+        824
+      ],
+      "mode": "RGB"
+    },
+    "nodeIds": [
+      "hotel_upper_salvage_arrival",
+      "hotel_upper_salvage_clerk_directions",
+      "hotel_freight_wc_misunderstanding"
+    ],
+    "runtimeBinding": null,
+    "newFocusId": null
+  },
+  "sourceDerived": true,
+  "independentlyAuthoredWholeImage": false,
+  "targetedVisualImprovement": "Owner-requested combination: exact v02 foreground sinks, fuller v01 rack arrangement reinterpreted with the recent local porcelain treatment. Original stairwell and rails restored exactly, per owner fallback. Perspective ambiguity is documented rather than claimed fixed. Everything outside the rack stays pixel-exact v02.",
+  "comparisonBaseVersion": "v02",
+  "changedNativePixels": 5435,
+  "unchangedScenePercent": 91.598,
+  "noGeneralRelightingOrPalettePass": true,
+  "newImageGeneration": false,
+  "approvedProductionFilesChanged": false,
+  "gameplayNarrativeBindingsChanged": false,
+  "repairRecipe": "source/refine_existing.py",
+  "provenance": "Original detailed concept used only for localized fixture underpainting/ramp interpretation; native mask/edge/socket/contact repairs and a native-to-native approved bowl fragment. Some reference-defined contours remain. No wholly independent native authorship claim."
+}

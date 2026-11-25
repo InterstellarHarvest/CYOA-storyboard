@@ -1,0 +1,40 @@
+{
+  "sourceDerived": true,
+  "whollyIndependentAuthorshipClaim": false,
+  "baseVersion": "v02",
+  "method": "Combine exact v02 foreground with fuller v01 rack layout and localized reference-derived porcelain, native shelves/contacts/fittings. Original v01/v02 stairwell and rail layers restored unchanged after owner rejected reconstruction attempts. No full-frame tonal/palette pass.",
+  "reference": "../v01/originals/CH4-NEW-03-detailed-reference.png",
+  "referenceSha256": "b838d71d289868de8151acfe72172c2ae64deb6df24c639d0ff7ab77529f8912",
+  "nativePalette": [
+    "#303b38",
+    "#526965",
+    "#756b52",
+    "#8b826c",
+    "#a39472",
+    "#b3aa8c",
+    "#c5b994",
+    "#dfd6b5",
+    "#e8dcbc",
+    "#f3e9c8"
+  ],
+  "replacedLayers": [
+    "material-storage-racks"
+  ],
+  "layerOrder": [
+    "layers/material-architecture.png",
+    "layers/material-mezzanine-floor.png",
+    "layers/material-descending-stairwell.png",
+    "layers/material-freight-lift.png",
+    "layers/material-open-maintenance-hatch.png",
+    "layers/material-storage-racks.png",
+    "layers/material-ceiling-duct-and-lights.png",
+    "layers/material-foreground-sanitary-salvage.png",
+    "layers/material-guardrails.png",
+    "layers/material-wc-three-button-panel.png"
+  ],
+  "quietPixelsMerged": 13,
+  "nativeHash": "1030e04f9b32d2c0fc4394e9f00a4a70ba162db1c9eeed4f2772068cf9ce3207",
+  "status": "UNSELECTED",
+  "v02ForegroundByteExact": true,
+  "stairsDisposition": "Owner-requested fallback to exact original v01/v02 stairs and rails. Perspective ambiguity remains; do not claim a new perspective correction."
+}
