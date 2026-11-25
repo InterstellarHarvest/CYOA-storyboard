@@ -1,0 +1,1325 @@
+{
+  "passed": true,
+  "url": "file:///Users/MrDashiki/Experiments & Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/index.html",
+  "browsers": [
+    "chromium",
+    "firefox"
+  ],
+  "allCandidateComparisonAndCompositeRastersDecoded": true,
+  "allIntegerNativeAnd4xControlsPassed": true,
+  "figureChecks": 32,
+  "results": [
+    {
+      "browser": "chromium",
+      "article": "dry",
+      "label": "Dry corridor",
+      "index": 0,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/native/CH4-NEW-04-public-corridor-v01.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/CH4-NEW-04-public-corridor-v01-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "flood",
+      "label": "Flood reference",
+      "index": 1,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/native/CH4-NEW-04-public-corridor-flood-v01.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/CH4-NEW-04-public-corridor-flood-v01-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Dry / flood",
+      "index": 2,
+      "native": {
+        "scale": 1,
+        "natural": [
+          668,
+          250
+        ],
+        "display": [
+          668,
+          250
+        ],
+        "rendered": [
+          668,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/dry-flood-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2672,
+          1000
+        ],
+        "display": [
+          2672,
+          1000
+        ],
+        "rendered": [
+          2672,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/dry-flood-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Chapter2 benchmarks",
+      "index": 3,
+      "native": {
+        "scale": 1,
+        "natural": [
+          998,
+          250
+        ],
+        "display": [
+          998,
+          250
+        ],
+        "rendered": [
+          998,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter2-benchmarks-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3992,
+          1000
+        ],
+        "display": [
+          3992,
+          1000
+        ],
+        "rendered": [
+          3992,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter2-benchmarks-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Chapter4 benchmarks",
+      "index": 4,
+      "native": {
+        "scale": 1,
+        "natural": [
+          998,
+          250
+        ],
+        "display": [
+          998,
+          250
+        ],
+        "rendered": [
+          998,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter4-benchmarks-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3992,
+          1000
+        ],
+        "display": [
+          3992,
+          1000
+        ],
+        "rendered": [
+          3992,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter4-benchmarks-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Flood and approved environments",
+      "index": 5,
+      "native": {
+        "scale": 1,
+        "natural": [
+          998,
+          250
+        ],
+        "display": [
+          998,
+          250
+        ],
+        "rendered": [
+          998,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/state-benchmarks-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3992,
+          1000
+        ],
+        "display": [
+          3992,
+          1000
+        ],
+        "rendered": [
+          3992,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/state-benchmarks-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Source diagnostic / native interpretation",
+      "index": 6,
+      "native": {
+        "scale": 1,
+        "natural": [
+          668,
+          250
+        ],
+        "display": [
+          668,
+          250
+        ],
+        "rendered": [
+          668,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/source-native-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2672,
+          1000
+        ],
+        "display": [
+          2672,
+          1000
+        ],
+        "rendered": [
+          2672,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/source-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Staff door and hatch states",
+      "index": 7,
+      "native": {
+        "scale": 1,
+        "natural": [
+          248,
+          158
+        ],
+        "display": [
+          248,
+          158
+        ],
+        "rendered": [
+          248,
+          158
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/staff-hatch-states-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          992,
+          632
+        ],
+        "display": [
+          992,
+          632
+        ],
+        "rendered": [
+          992,
+          632
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/staff-hatch-states-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Collection stairs unchanged",
+      "index": 8,
+      "native": {
+        "scale": 1,
+        "natural": [
+          186,
+          143
+        ],
+        "display": [
+          186,
+          143
+        ],
+        "rendered": [
+          186,
+          143
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/stairs-states-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          744,
+          572
+        ],
+        "display": [
+          744,
+          572
+        ],
+        "rendered": [
+          744,
+          572
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/stairs-states-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Water and floating sign",
+      "index": 9,
+      "native": {
+        "scale": 1,
+        "natural": [
+          222,
+          88
+        ],
+        "display": [
+          222,
+          88
+        ],
+        "rendered": [
+          222,
+          88
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/water-sign-states-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          888,
+          352
+        ],
+        "display": [
+          888,
+          352
+        ],
+        "rendered": [
+          888,
+          352
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/water-sign-states-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "conveniences_bureau",
+      "index": 10,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/conveniences_bureau.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/conveniences_bureau-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "control_tower",
+      "index": 11,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/control_tower.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/control_tower-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "maintenance_exit",
+      "index": 12,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/maintenance_exit.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/maintenance_exit-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "lobby",
+      "index": 13,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/lobby.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/lobby-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "service_stairs",
+      "index": 14,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/service_stairs.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/service_stairs-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "staff_lavatory",
+      "index": 15,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/staff_lavatory.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/staff_lavatory-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "dry",
+      "label": "Dry corridor",
+      "index": 0,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/native/CH4-NEW-04-public-corridor-v01.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/CH4-NEW-04-public-corridor-v01-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "flood",
+      "label": "Flood reference",
+      "index": 1,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/native/CH4-NEW-04-public-corridor-flood-v01.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/CH4-NEW-04-public-corridor-flood-v01-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Dry / flood",
+      "index": 2,
+      "native": {
+        "scale": 1,
+        "natural": [
+          668,
+          250
+        ],
+        "display": [
+          668,
+          250
+        ],
+        "rendered": [
+          668,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/dry-flood-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2672,
+          1000
+        ],
+        "display": [
+          2672,
+          1000
+        ],
+        "rendered": [
+          2672,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/dry-flood-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Chapter2 benchmarks",
+      "index": 3,
+      "native": {
+        "scale": 1,
+        "natural": [
+          998,
+          250
+        ],
+        "display": [
+          998,
+          250
+        ],
+        "rendered": [
+          998,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter2-benchmarks-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3992,
+          1000
+        ],
+        "display": [
+          3992,
+          1000
+        ],
+        "rendered": [
+          3992,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter2-benchmarks-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Chapter4 benchmarks",
+      "index": 4,
+      "native": {
+        "scale": 1,
+        "natural": [
+          998,
+          250
+        ],
+        "display": [
+          998,
+          250
+        ],
+        "rendered": [
+          998,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter4-benchmarks-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3992,
+          1000
+        ],
+        "display": [
+          3992,
+          1000
+        ],
+        "rendered": [
+          3992,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/chapter4-benchmarks-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Flood and approved environments",
+      "index": 5,
+      "native": {
+        "scale": 1,
+        "natural": [
+          998,
+          250
+        ],
+        "display": [
+          998,
+          250
+        ],
+        "rendered": [
+          998,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/state-benchmarks-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3992,
+          1000
+        ],
+        "display": [
+          3992,
+          1000
+        ],
+        "rendered": [
+          3992,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/state-benchmarks-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Source diagnostic / native interpretation",
+      "index": 6,
+      "native": {
+        "scale": 1,
+        "natural": [
+          668,
+          250
+        ],
+        "display": [
+          668,
+          250
+        ],
+        "rendered": [
+          668,
+          250
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/source-native-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2672,
+          1000
+        ],
+        "display": [
+          2672,
+          1000
+        ],
+        "rendered": [
+          2672,
+          1000
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/source-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Staff door and hatch states",
+      "index": 7,
+      "native": {
+        "scale": 1,
+        "natural": [
+          248,
+          158
+        ],
+        "display": [
+          248,
+          158
+        ],
+        "rendered": [
+          248,
+          158
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/staff-hatch-states-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          992,
+          632
+        ],
+        "display": [
+          992,
+          632
+        ],
+        "rendered": [
+          992,
+          632
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/staff-hatch-states-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Collection stairs unchanged",
+      "index": 8,
+      "native": {
+        "scale": 1,
+        "natural": [
+          186,
+          143
+        ],
+        "display": [
+          186,
+          143
+        ],
+        "rendered": [
+          186,
+          143
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/stairs-states-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          744,
+          572
+        ],
+        "display": [
+          744,
+          572
+        ],
+        "rendered": [
+          744,
+          572
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/stairs-states-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Water and floating sign",
+      "index": 9,
+      "native": {
+        "scale": 1,
+        "natural": [
+          222,
+          88
+        ],
+        "display": [
+          222,
+          88
+        ],
+        "rendered": [
+          222,
+          88
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/water-sign-states-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          888,
+          352
+        ],
+        "display": [
+          888,
+          352
+        ],
+        "rendered": [
+          888,
+          352
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/comparisons/water-sign-states-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "conveniences_bureau",
+      "index": 10,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/conveniences_bureau.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/conveniences_bureau-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "control_tower",
+      "index": 11,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/control_tower.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/control_tower-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "maintenance_exit",
+      "index": 12,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/maintenance_exit.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/maintenance_exit-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "lobby",
+      "index": 13,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/lobby.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/lobby-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "service_stairs",
+      "index": 14,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/service_stairs.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/service_stairs-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "staff_lavatory",
+      "index": 15,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/references/staff_lavatory.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b211-public-corridor-20261124/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v01/previews/staff_lavatory-4x.png"
+      },
+      "passed": true
+    }
+  ]
+}

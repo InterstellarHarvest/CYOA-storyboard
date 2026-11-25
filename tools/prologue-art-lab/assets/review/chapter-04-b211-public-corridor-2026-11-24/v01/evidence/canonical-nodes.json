@@ -1,0 +1,129 @@
+{
+  "hotel_stall_public_corridor_walk": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/public_corridor",
+    "speaker": "hotel_wedding_guest",
+    "pose": "curious",
+    "effects": {
+      "set": {
+        "ch4_stall_walked_away_publicly": true
+      }
+    },
+    "text": [
+      {
+        "desc": "The stall continues upward. You remain on the restroom floor, fully dressed, with several guests watching through the doorway."
+      },
+      {
+        "desc": "You straighten your coat and walk past them. One guest glances toward the disappearing toilet."
+      },
+      {
+        "say": "Are you with the removals?",
+        "who": "hotel_wedding_guest"
+      },
+      {
+        "say": "NOT VOLUNTARILY.",
+        "who": "you"
+      },
+      {
+        "desc": "The guest nods sympathetically. You continue down the corridor."
+      },
+      {
+        "desc": "Behind you, the crane groans. Nobody attempts to stop you."
+      },
+      {
+        "desc": "Ahead are a service door, stairs toward the collection area, and a side passage leading outside."
+      }
+    ],
+    "choices": [
+      {
+        "id": "stall_walk_staff_lavatory",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "stall_walk_collection",
+        "kind": "action",
+        "text": "FOLLOW THE PORTERS TOWARD COLLECTION.",
+        "to": "hotel_collection_stairs"
+      },
+      {
+        "id": "stall_walk_exit",
+        "kind": "action",
+        "text": "LEAVE THE HOTEL THROUGH THE SERVICE EXIT.",
+        "to": "hotel_service_park_exit"
+      }
+    ],
+    "notes": "Owner approved short, dignified walk with exactly three restroom/exit connections. Spectators are background only. No wedding tasks, new dice, or items; protagonist has not unzipped."
+  },
+  "hotel_flooded_public_corridor": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/public_corridor",
+    "speaker": "hotel_attendant",
+    "pose": "professional",
+    "effects": {
+      "set": {
+        "ch4_flooded_corridor_reached": true
+      }
+    },
+    "text": [
+      {
+        "desc": "Water rushes across the hotel carpet. You splash into the corridor as an attendant struggles to keep a WET FLOOR sign upright."
+      },
+      {
+        "say": "This corridor has been temporarily reclassified as a water feature.",
+        "who": "hotel_attendant"
+      },
+      {
+        "say": "IT'S A FLOOD!",
+        "who": "you"
+      },
+      {
+        "say": "Only until Facilities completes the paperwork.",
+        "who": "hotel_attendant"
+      },
+      {
+        "desc": "The sign falls over and floats away."
+      },
+      {
+        "say": "WHERE CAN I FIND A WORKING TOILET?",
+        "who": "you"
+      },
+      {
+        "say": "Staff facilities are through that door.",
+        "who": "hotel_attendant"
+      },
+      {
+        "desc": "She points toward a service passage."
+      },
+      {
+        "say": "I can't speak for the plumbing.",
+        "who": "hotel_attendant"
+      },
+      {
+        "desc": "Water spreads beneath the corridor doors. You notice an open maintenance hatch, the staff passage, and a side exit leading toward the loading yard."
+      }
+    ],
+    "choices": [
+      {
+        "id": "flooded_corridor_staff_lavatory",
+        "kind": "action",
+        "text": "ENTER THE STAFF PASSAGE AND CHECK THE LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "flooded_corridor_hatch",
+        "kind": "action",
+        "text": "CLIMB INTO THE MAINTENANCE HATCH.",
+        "to": "hotel_pipe_tunnel"
+      },
+      {
+        "id": "flooded_corridor_exit",
+        "kind": "action",
+        "text": "LEAVE THROUGH THE SIDE EXIT.",
+        "to": "hotel_service_park_exit"
+      }
+    ],
+    "notes": "Owner-approved short flooded-corridor scene. Bystanders are incidental; no wedding tasks, items or new dice. Three existing restroom/escape routes only."
+  }
+}

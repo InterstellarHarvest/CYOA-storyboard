@@ -1,0 +1,556 @@
+{
+  "technicalPassed": true,
+  "checksPassed": 132,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryUnits": 1,
+  "supplementalReferences": 1,
+  "exact4xPairs": 22,
+  "stateChangesOutsideAuthorizedMasks": 0,
+  "sharedStructuralLayers": 10,
+  "floodChangedNativePixels": 13660,
+  "floodUnchangedPercent": 78.882,
+  "paletteCountsDiagnosticOnly": {
+    "dry": 53,
+    "flood": 134
+  },
+  "sourceTransferDifferentNativePixels": 64684,
+  "replayedFilesIdentical": 67,
+  "postMainMergeBaseline": "e4f46f2300bad7e946dea0ffd917d9c3b339b7b8",
+  "canonicalMain": "5a4290d672e1904b4b5ad361562f05168c328a50",
+  "preservedBaselineBlobs": 655,
+  "approvedFilesByteExact": 199,
+  "canonicalNarrativeGameplaySelectionsModified": false,
+  "sourceDerived": true,
+  "visualAssessment": "evidence/visual-review.md",
+  "checks": [
+    {
+      "check": "One unselected primary and one conditional reference",
+      "passed": true
+    },
+    {
+      "check": "Exactly two final native PNGs",
+      "passed": true
+    },
+    {
+      "check": "dry opaque native314x206 RGB",
+      "passed": true
+    },
+    {
+      "check": "dry exact nearest-neighbor4x",
+      "passed": true
+    },
+    {
+      "check": "dry native SHA256",
+      "passed": true
+    },
+    {
+      "check": "dry preview4x SHA256",
+      "passed": true
+    },
+    {
+      "check": "dry no runtime/Focus binding",
+      "passed": true
+    },
+    {
+      "check": "flood opaque native314x206 RGB",
+      "passed": true
+    },
+    {
+      "check": "flood exact nearest-neighbor4x",
+      "passed": true
+    },
+    {
+      "check": "flood native SHA256",
+      "passed": true
+    },
+    {
+      "check": "flood preview4x SHA256",
+      "passed": true
+    },
+    {
+      "check": "flood no runtime/Focus binding",
+      "passed": true
+    },
+    {
+      "check": "Conditional reference introduces no scene key or flag",
+      "passed": true
+    },
+    {
+      "check": "Zero state changes outside floor/hatch/attendant/sign masks",
+      "passed": true
+    },
+    {
+      "check": "Exact dry structural assembly",
+      "passed": true
+    },
+    {
+      "check": "Exact shared-base plus local state assembly",
+      "passed": true
+    },
+    {
+      "check": "All ten architecture/route/material layers shared identically",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer state-water.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer state-attendant.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 02-carpet-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 09-lamps.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 08-hatch-closed.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 01-architecture-plaster.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer state-hatch-open.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 04-doors-and-lettering.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 03-painted-paneling.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer state-floating-sign.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 10-duct-and-mounts.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 07-arch-and-pilasters.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 05-side-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha editable layer 06-collection-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Construction hashes exact",
+      "passed": true
+    },
+    {
+      "check": "Pixel-friendly reference source exact",
+      "passed": true
+    },
+    {
+      "check": "Preserved source hash originals/CH4-NEW-04-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved source hash originals/CH4-NEW-04-pixel-friendly-study.png",
+      "passed": true
+    },
+    {
+      "check": "Original source prompt source/detailed-reference-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Original source prompt source/pixel-friendly-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Final differs from explicit source-transfer diagnostic",
+      "passed": true
+    },
+    {
+      "check": "Source-derived provenance; no independent authorship claim",
+      "passed": true
+    },
+    {
+      "check": "Actual approved canonical benchmark references/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved canonical benchmark references/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved canonical benchmark references/maintenance_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved canonical benchmark references/lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved canonical benchmark references/service_stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved canonical benchmark references/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Caption fits dry-flood/Dry corridor",
+      "passed": true
+    },
+    {
+      "check": "Caption fits dry-flood/Flood: same architecture",
+      "passed": true
+    },
+    {
+      "check": "Caption fits chapter2-benchmarks/B2-11 dry",
+      "passed": true
+    },
+    {
+      "check": "Caption fits chapter2-benchmarks/Ch2 Bureau",
+      "passed": true
+    },
+    {
+      "check": "Caption fits chapter2-benchmarks/Ch2 Control Tower",
+      "passed": true
+    },
+    {
+      "check": "Caption fits chapter4-benchmarks/B2-11 dry",
+      "passed": true
+    },
+    {
+      "check": "Caption fits chapter4-benchmarks/Ch4 Lobby",
+      "passed": true
+    },
+    {
+      "check": "Caption fits chapter4-benchmarks/Ch4 Service Stairs",
+      "passed": true
+    },
+    {
+      "check": "Caption fits state-benchmarks/Flood reference",
+      "passed": true
+    },
+    {
+      "check": "Caption fits state-benchmarks/Ch2 Maintenance Exit",
+      "passed": true
+    },
+    {
+      "check": "Caption fits state-benchmarks/Ch4 Staff Lavatory",
+      "passed": true
+    },
+    {
+      "check": "Caption fits source-native/SOURCE TRANSFER - diagnostic",
+      "passed": true
+    },
+    {
+      "check": "Caption fits source-native/Native interpretation",
+      "passed": true
+    },
+    {
+      "check": "Caption fits staff-hatch-states/dry staff-hatch",
+      "passed": true
+    },
+    {
+      "check": "Caption fits staff-hatch-states/flood staff-hatch",
+      "passed": true
+    },
+    {
+      "check": "Caption fits stairs-states/dry stairs",
+      "passed": true
+    },
+    {
+      "check": "Caption fits stairs-states/flood stairs",
+      "passed": true
+    },
+    {
+      "check": "Caption fits water-sign-states/dry water-sign",
+      "passed": true
+    },
+    {
+      "check": "Caption fits water-sign-states/flood water-sign",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/staff-hatch-states-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/dry-flood-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/source-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/stairs-states-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/chapter2-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/chapter4-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/water-sign-states-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/state-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/dry-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/dry-staff-hatch-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/flood-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/service_stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/flood-staff-hatch-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/maintenance_exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/dry-water-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/flood-water-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-flood-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "All 655 post-main-merge blobs byte-exact, including 199 approved files",
+      "passed": true
+    },
+    {
+      "check": "Canonical main incorporated into review baseline",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical dry/flood nodes",
+      "passed": true
+    },
+    {
+      "check": "One existing canonical corridor scene",
+      "passed": true
+    },
+    {
+      "check": "Existing three-route choices preserved in both states",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/state-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/state-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/maintenance_exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/service_stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/staff-hatch-states-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/chapter2-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/chapter4-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/stairs-states-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/stairs-states-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/service_stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-NEW-04-public-corridor-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/chapter4-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-NEW-04-public-corridor-flood-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency source/pixel-friendly-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/dry-flood-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/dry-flood-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/maintenance_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency source/detailed-reference-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/source-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/staff-hatch-states-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency originals/CH4-NEW-04-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-04-public-corridor-flood-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/chapter2-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/source-native-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/water-sign-states-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-04-public-corridor-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/water-sign-states-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/visual-review.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency originals/CH4-NEW-04-pixel-friendly-study.png",
+      "passed": true
+    },
+    {
+      "check": "Deterministic native layers/state/gallery replay",
+      "passed": true
+    }
+  ]
+}

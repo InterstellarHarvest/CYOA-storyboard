@@ -1,0 +1,52 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "fallbackCLIUsed": false,
+  "modelOrSeed": "Not exposed by the built-in tool",
+  "sourceDerived": true,
+  "wholeImageIndependentNativeAuthorship": false,
+  "calls": [
+    {
+      "kind": "new detailed composition reference",
+      "prompt": "source/detailed-reference-prompt.txt",
+      "result": "originals/CH4-NEW-04-detailed-reference.png",
+      "generatedFileId": "exec-1c76b61b-eb7b-493a-b12c-3cde2618aeb9.png",
+      "transparentBackground": false,
+      "resultSha256": "dc1946bbff2bc29225717df77af219981f99e84306c1b8edcba04a78872babb7",
+      "promptSha256": "ddd9f57fd3af52251200eea5c3bb96b99b45171d3ed1695cdd2b4dcb9fa01b24"
+    },
+    {
+      "kind": "pixel-friendly style-transfer study",
+      "prompt": "source/pixel-friendly-prompt.txt",
+      "result": "originals/CH4-NEW-04-pixel-friendly-study.png",
+      "generatedFileId": "exec-780a0200-9ccd-4854-b8cd-5e0049d14b34.png",
+      "editTarget": "originals/CH4-NEW-04-detailed-reference.png",
+      "styleReferences": [
+        {
+          "file": "references/conveniences_bureau.png",
+          "sourcePath": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+          "sourceCommit": "5a4290d672e1904b4b5ad361562f05168c328a50",
+          "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676"
+        },
+        {
+          "file": "references/control_tower.png",
+          "sourcePath": "assets/selected/art/scenes/biology_park/control_tower.png",
+          "sourceCommit": "5a4290d672e1904b4b5ad361562f05168c328a50",
+          "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca"
+        },
+        {
+          "file": "references/lobby.png",
+          "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+          "sourceCommit": "5a4290d672e1904b4b5ad361562f05168c328a50",
+          "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0"
+        }
+      ],
+      "transparentBackground": false,
+      "resultSha256": "8f88cc65f67697e1c909e8dcb8e558620f4154fc8f4aee10649e9055bd89b347",
+      "promptSha256": "43bc8fdb063f23dfef9bbb0e4e3b77ff3cdf33bdbe80f9401fa7dbfdabe9ddc9"
+    }
+  ],
+  "finalConstruction": "source/native_scene.py",
+  "constructionRecord": "evidence/native-construction.json",
+  "fullOriginalsPreserved": true,
+  "exactPromptsPreserved": true
+}

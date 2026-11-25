@@ -1,0 +1,105 @@
+{
+  "title": "Chapter4 B2-11 v01 \u2014 public corridor and localized flood",
+  "branch": "art/ch4-b211-public-corridor-review-20261124",
+  "canonicalMain": "5a4290d672e1904b4b5ad361562f05168c328a50",
+  "reviewBranchOriginalHead": "7fc6b9e",
+  "postMainMergeBaseline": "e4f46f2300bad7e946dea0ffd917d9c3b339b7b8",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryUnits": 1,
+  "asset": {
+    "id": "CH4-NEW-04",
+    "proposedCanonicalKey": "scenes:grand_bellevue/public_corridor",
+    "native": {
+      "file": "native/CH4-NEW-04-public-corridor-v01.png",
+      "sha256": "54ae919114ee9c61268a6bc49a86d030aef4913cae2e2dd8adecb631aec381f8",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "preview4x": {
+      "file": "previews/CH4-NEW-04-public-corridor-v01-4x.png",
+      "sha256": "0fb1228cda263cd55ae2f0039333bf102224f68f8e0fda6e4fdf575be5a870f8",
+      "dimensions": [
+        1256,
+        824
+      ],
+      "mode": "RGB"
+    },
+    "nodeIds": [
+      "hotel_stall_public_corridor_walk",
+      "hotel_flooded_public_corridor"
+    ],
+    "runtimeBinding": null,
+    "newFocusId": null
+  },
+  "supplementalReferences": [
+    {
+      "label": "public_corridor_flood",
+      "role": "Conditional production reference only",
+      "condition": "Flooded public corridor: water over carpet, open hatch, attendant, fallen floating WET FLOOR sign",
+      "nodeIds": [
+        "hotel_flooded_public_corridor"
+      ],
+      "native": {
+        "file": "native/CH4-NEW-04-public-corridor-flood-v01.png",
+        "sha256": "6114e280cf9a4e2694e25195a9399971d30e7b6c7e988b22feff31050b1179cf",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-04-public-corridor-flood-v01-4x.png",
+        "sha256": "9e42c4571f4c70852dd7d5555a2d187192ae65b8c2a3d750d91e0537fc1335eb",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "newSceneKey": null,
+      "newFlag": null
+    }
+  ],
+  "floodChangedNativePixels": 13660,
+  "floodUnchangedPercent": 78.882,
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "methodRecord": "evidence/native-construction.json",
+  "nativeLayerRecipe": "source/native_scene.py",
+  "sources": [
+    {
+      "file": "originals/CH4-NEW-04-detailed-reference.png",
+      "sha256": "dc1946bbff2bc29225717df77af219981f99e84306c1b8edcba04a78872babb7",
+      "dimensions": [
+        1548,
+        1016
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "originals/CH4-NEW-04-pixel-friendly-study.png",
+      "sha256": "8f88cc65f67697e1c909e8dcb8e558620f4154fc8f4aee10649e9055bd89b347",
+      "dimensions": [
+        1548,
+        1016
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "prompts": [
+    "source/detailed-reference-prompt.txt",
+    "source/pixel-friendly-prompt.txt"
+  ],
+  "generationTool": "Built-in image_gen; two retained source studies",
+  "sourceTransferDiagnosticIsNotProduction": true,
+  "productionSelectionsModified": false,
+  "narrativeGameplayBindingsModified": false,
+  "approvalPending": "Nate visual selection"
+}

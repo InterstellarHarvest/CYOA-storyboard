@@ -1,0 +1,12 @@
+{
+  "checkCanon": "PASS",
+  "storyboardSmoke": "PASS, 268 art records",
+  "artLabStatic": "PASS",
+  "commands": [
+    "node tools/sync/check-canon.mjs --json",
+    "node tools/storyboard/qa-smoke.mjs",
+    "node tools/prologue-art-lab/qa/qa-static.mjs"
+  ],
+  "newImagesUnselected": true,
+  "noIntegrationPerformed": true
+}
