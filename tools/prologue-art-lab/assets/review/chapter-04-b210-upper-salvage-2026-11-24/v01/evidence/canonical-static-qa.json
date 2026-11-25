@@ -1,0 +1,15 @@
+{
+  "checkCanon": {
+    "passed": true,
+    "chapters": 5,
+    "nodes": 318,
+    "routes": 547,
+    "artRecords": 282,
+    "previewed": 199
+  },
+  "existingArtLabStaticQa": {
+    "passed": true,
+    "note": "Existing V03 static package check; new scene is validated by its own package/browser verifiers."
+  },
+  "mainAndStoryFilesChanged": false
+}

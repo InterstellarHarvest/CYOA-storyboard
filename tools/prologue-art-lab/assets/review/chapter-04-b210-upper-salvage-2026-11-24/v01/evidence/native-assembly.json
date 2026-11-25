@@ -1,0 +1,279 @@
+{
+  "canvas": [
+    314,
+    206
+  ],
+  "initialCanvas": "blank RGBA, no source pixels",
+  "layers": [
+    "layers/architecture.png",
+    "layers/mezzanine-floor.png",
+    "layers/descending-stairwell.png",
+    "layers/freight-lift.png",
+    "layers/open-maintenance-hatch.png",
+    "layers/storage-racks.png",
+    "layers/ceiling-duct-and-lights.png",
+    "layers/foreground-sanitary-salvage.png",
+    "layers/guardrails.png",
+    "layers/wc-three-button-panel.png"
+  ],
+  "compositing": "RGBA source-over; final opaque RGB",
+  "output": "evidence/internal-study/native-structural-underpainting.png",
+  "sha256": "efeef9da88e124037a1ae74bea447f939cc7bf540e6ec225426a2844d24d3628",
+  "palette": {
+    "ink": "#223732",
+    "void": "#182b28",
+    "dark": "#30423b",
+    "g0": "#2f4740",
+    "g1": "#405d50",
+    "g2": "#5b7965",
+    "g3": "#829477",
+    "g4": "#a3b296",
+    "s0": "#344440",
+    "s1": "#536661",
+    "s2": "#788a80",
+    "s3": "#a5b3a1",
+    "s4": "#d0d6b7",
+    "steel": "#687a73",
+    "joint": "#414f49",
+    "wall0": "#777c68",
+    "wall1": "#a39e82",
+    "wall2": "#c5b998",
+    "wall3": "#dfcc9e",
+    "chip0": "#6e6351",
+    "chip1": "#947e5b",
+    "chip2": "#b79762",
+    "red0": "#78594c",
+    "red1": "#aa7a58",
+    "floor0": "#505b51",
+    "floor1": "#737a71",
+    "floor2": "#8a9181",
+    "floor3": "#b3ad8c",
+    "floorWarm": "#989d87",
+    "porc0": "#7d8270",
+    "porc1": "#aaa88e",
+    "porc2": "#cec8a8",
+    "porc3": "#e3d9b5",
+    "porc4": "#f9edcc",
+    "porcMid": "#bdb69b",
+    "porcEdge": "#e9dfbd",
+    "tan0": "#62533c",
+    "tan1": "#90734a",
+    "tan2": "#b18e56",
+    "tan3": "#d3b16c",
+    "brass0": "#716443",
+    "brass1": "#ae965a",
+    "brass2": "#d7bb76",
+    "light0": "#bdba8b",
+    "light1": "#e7d6a0",
+    "light2": "#fff1cb",
+    "mirror0": "#415955",
+    "mirror1": "#7d9990",
+    "mirror2": "#b6c7ae",
+    "mirror3": "#dee1be",
+    "green": "#79aa54",
+    "greenlight": "#c2d391",
+    "amber": "#d3a856",
+    "red": "#ac6449"
+  },
+  "sourceDerived": true,
+  "whollyIndependentAuthorshipClaim": false,
+  "noSourceRasterReadOrResamplingInMasterBuilder": true,
+  "noHalfResolutionSampling": true,
+  "noPostSharpening": true,
+  "noRandomTexture": true,
+  "wcLettering": {
+    "text": "W.C.",
+    "method": "native bitmap glyphs, no antialiasing",
+    "plane": "frontal rear-wall lift panel",
+    "glyphs": [
+      {
+        "character": "W",
+        "pixels": [
+          [
+            121,
+            73
+          ],
+          [
+            125,
+            73
+          ],
+          [
+            121,
+            74
+          ],
+          [
+            125,
+            74
+          ],
+          [
+            121,
+            75
+          ],
+          [
+            125,
+            75
+          ],
+          [
+            121,
+            76
+          ],
+          [
+            123,
+            76
+          ],
+          [
+            125,
+            76
+          ],
+          [
+            121,
+            77
+          ],
+          [
+            123,
+            77
+          ],
+          [
+            125,
+            77
+          ],
+          [
+            121,
+            78
+          ],
+          [
+            122,
+            78
+          ],
+          [
+            124,
+            78
+          ],
+          [
+            125,
+            78
+          ],
+          [
+            121,
+            79
+          ],
+          [
+            125,
+            79
+          ]
+        ]
+      },
+      {
+        "character": ".",
+        "pixels": [
+          [
+            127,
+            78
+          ],
+          [
+            128,
+            78
+          ],
+          [
+            127,
+            79
+          ],
+          [
+            128,
+            79
+          ]
+        ]
+      },
+      {
+        "character": "C",
+        "pixels": [
+          [
+            131,
+            73
+          ],
+          [
+            132,
+            73
+          ],
+          [
+            133,
+            73
+          ],
+          [
+            130,
+            74
+          ],
+          [
+            130,
+            75
+          ],
+          [
+            130,
+            76
+          ],
+          [
+            130,
+            77
+          ],
+          [
+            130,
+            78
+          ],
+          [
+            131,
+            79
+          ],
+          [
+            132,
+            79
+          ],
+          [
+            133,
+            79
+          ]
+        ]
+      },
+      {
+        "character": ".",
+        "pixels": [
+          [
+            136,
+            78
+          ],
+          [
+            137,
+            78
+          ],
+          [
+            136,
+            79
+          ],
+          [
+            137,
+            79
+          ]
+        ]
+      }
+    ],
+    "panelBounds": [
+      118,
+      69,
+      140,
+      106
+    ],
+    "threeButtonCenters": [
+      [
+        129,
+        87
+      ],
+      [
+        129,
+        94
+      ],
+      [
+        129,
+        101
+      ]
+    ]
+  }
+}

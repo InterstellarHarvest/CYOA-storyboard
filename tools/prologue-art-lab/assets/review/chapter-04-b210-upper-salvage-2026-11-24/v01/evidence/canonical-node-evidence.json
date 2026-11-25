@@ -1,0 +1,228 @@
+{
+  "canonicalCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+  "nodes": {
+    "hotel_upper_salvage_arrival": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/upper_salvage",
+      "speaker": "hotel_salvage_clerk",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_upper_salvage_reached": true,
+          "ch4_stall_survived_crane": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The stall rises through the ceiling hatch. You cling to its frame as the crane carries it into a storage mezzanine above the hotel."
+        },
+        {
+          "desc": "It swings beside dismantled sinks, mirrors, and bathroom partitions. You climb onto the metal walkway."
+        },
+        {
+          "desc": "The toilet is still inside the stall. Its plumbing has been disconnected, and the whole arrangement hangs several feet above the floor."
+        },
+        {
+          "desc": "A salvage clerk approaches with a clipboard."
+        },
+        {
+          "say": "CAN YOU PUT THAT BACK?",
+          "who": "you"
+        },
+        {
+          "say": "Which part?",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "THE TOILET!",
+          "who": "you"
+        },
+        {
+          "say": "Plumbing isn't included in the lot.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "I JUST WANT TO USE IT!",
+          "who": "you"
+        },
+        {
+          "say": "Not while it's suspended. Insurance.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "He checks a box on his clipboard."
+        },
+        {
+          "say": "Occupant successfully removed. Excellent.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "An open maintenance hatch leads toward the pipework. Service stairs descend toward the loading dock. Surely somebody knows where an installed toilet is."
+        }
+      ],
+      "choices": [
+        {
+          "id": "upper_salvage_ask_clerk",
+          "kind": "spoken",
+          "text": "ASK WHERE AN INSTALLED TOILET CAN BE FOUND.",
+          "to": "hotel_upper_salvage_clerk_directions"
+        },
+        {
+          "id": "upper_salvage_hatch",
+          "kind": "action",
+          "text": "ENTER THE MAINTENANCE HATCH.",
+          "to": "hotel_pipe_tunnel"
+        },
+        {
+          "id": "upper_salvage_dock",
+          "kind": "action",
+          "text": "DESCEND THE SERVICE STAIRS TOWARD THE LOADING DOCK.",
+          "to": "hotel_maintenance_dock_exit"
+        }
+      ],
+      "notes": "Owner approved B/C/D only. The manifest-inspection option A is explicitly retired. No new roll, item, or wedding task; crane d6 success is upstream."
+    },
+    "hotel_upper_salvage_clerk_directions": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/upper_salvage",
+      "speaker": "hotel_salvage_clerk",
+      "pose": "practical",
+      "effects": {
+        "set": {
+          "ch4_upper_salvage_staff_lavatory_clue": true
+        }
+      },
+      "text": [
+        {
+          "say": "WHERE CAN I FIND A TOILET THAT ISN'T BEING SOLD?",
+          "who": "you"
+        },
+        {
+          "say": "Installed or operational?",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "BOTH!",
+          "who": "you"
+        },
+        {
+          "say": "Ah. That's two different departments.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "He consults his clipboard."
+        },
+        {
+          "say": "There's a staff lavatory one floor down.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "DOES IT WORK?",
+          "who": "you"
+        },
+        {
+          "say": "It's still on the floor plan.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "say": "THAT'S NOT WHAT I ASKED.",
+          "who": "you"
+        },
+        {
+          "say": "That's all the floor plan can tell you.",
+          "who": "hotel_salvage_clerk"
+        },
+        {
+          "desc": "He points toward the service stairs."
+        },
+        {
+          "say": "Second landing. Blue door.",
+          "who": "hotel_salvage_clerk"
+        }
+      ],
+      "choices": [
+        {
+          "id": "upper_clerk_to_staff_lavatory",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_staff_lavatory_storage"
+        }
+      ],
+      "notes": "Short owner-approved exchange. Connects to existing sold-for-storage staff lavatory; no replay of wedding introductions."
+    },
+    "hotel_freight_wc_misunderstanding": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/freight_lift",
+      "speaker": "hotel_lift_voice",
+      "pose": "neutral",
+      "effects": {
+        "set": {
+          "ch4_freight_upper_level_reached": true,
+          "ch4_freight_wc_misunderstanding": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You step into the freight elevator. Its panel has three buttons. One is marked W.C. Finally."
+        },
+        {
+          "desc": "You press it. The elevator rattles upward."
+        },
+        {
+          "say": "Floor Two. W.C.",
+          "who": "hotel_lift_voice"
+        },
+        {
+          "desc": "The doors open onto a storage mezzanine filled with dismantled sinks, toilets, and bathroom partitions."
+        },
+        {
+          "say": "THIS ISN'T A RESTROOM!",
+          "who": "you"
+        },
+        {
+          "say": "Warehouse Collection.",
+          "who": "hotel_lift_voice"
+        },
+        {
+          "say": "THEN WHY DOES THE BUTTON SAY W.C.?",
+          "who": "you"
+        },
+        {
+          "say": "It was cheaper than replacing the panel.",
+          "who": "hotel_lift_voice"
+        },
+        {
+          "desc": "You step onto the mezzanine. A salvage clerk studies a clipboard nearby. An open maintenance hatch leads toward the pipework. The lift remains behind you."
+        }
+      ],
+      "choices": [
+        {
+          "id": "freight_wc_ask_clerk",
+          "kind": "spoken",
+          "text": "ASK THE SALVAGE CLERK WHERE A WORKING TOILET IS.",
+          "to": "hotel_upper_salvage_clerk_directions"
+        },
+        {
+          "id": "freight_wc_hatch",
+          "kind": "action",
+          "text": "ENTER THE MAINTENANCE HATCH.",
+          "to": "hotel_pipe_tunnel"
+        },
+        {
+          "id": "freight_wc_exit",
+          "kind": "action",
+          "text": "RIDE BACK DOWN AND LEAVE THE HOTEL.",
+          "to": "hotel_service_park_exit"
+        }
+      ],
+      "notes": "Owner-approved final Chapter 4 editorial stop. W.C. means Warehouse Collection, not water closet. Reuses upstairs clerk and pipe routes without replaying hanging-stall arrival. No extra roll, fee, inventory, or wedding tasks."
+    }
+  },
+  "futureReuseSceneKeys": [
+    "grand_bellevue/upper_salvage",
+    "grand_bellevue/freight_lift"
+  ],
+  "runtimeBindingsAssigned": false,
+  "noMandatorySuspendedStall": true,
+  "noPeople": true
+}

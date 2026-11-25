@@ -1,0 +1,120 @@
+{
+  "title": "Chapter4 B2-10 / CH4-NEW-03 upper salvage v01",
+  "branch": "art/ch4-b210-upper-salvage-review-20261124",
+  "reviewBaseCommit": "60c0569856eec3c5319dcac060875054ac2e955a",
+  "canonicalBaseline": "6334b895333dd2d78332cf9f1d834e619468f932",
+  "mainObservedAtStart": "b8a8e4ea3c6d13141b2e33d281ba864c3b2aec42",
+  "status": "UNSELECTED",
+  "selected": false,
+  "primaryUnits": 1,
+  "supplementalStates": [],
+  "asset": {
+    "id": "CH4-NEW-03",
+    "proposedCanonicalKey": "scenes:grand_bellevue/upper_salvage",
+    "kind": "main-scene",
+    "native": {
+      "file": "native/CH4-NEW-03-upper-salvage-v01.png",
+      "sha256": "cbfd576ecee6b241202a18fd68035cb8052899ba3eaa16fd81925037445f18a4",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "preview4x": {
+      "file": "previews/CH4-NEW-03-upper-salvage-v01-4x.png",
+      "sha256": "750e288067fe591ea0aa902fda757ff829bf1ff84803989573435fc62ca3f231",
+      "dimensions": [
+        1256,
+        824
+      ],
+      "mode": "RGB"
+    },
+    "nodeIds": [
+      "hotel_upper_salvage_arrival",
+      "hotel_upper_salvage_clerk_directions",
+      "hotel_freight_wc_misunderstanding"
+    ],
+    "sourceDerived": true,
+    "whollyIndependentAuthorshipClaim": false,
+    "method": "Independent native structural silhouettes and pixel painting on a blank314x206 canvas; separate source-guided discrete material-cluster interpretation within those native layers; critical lettering and object sockets protected. No resized source used as finished master.",
+    "assembly": "evidence/material-interpretation.json",
+    "sourceRecipe": [
+      "source/native_scene.py",
+      "source/native_materials.py"
+    ],
+    "exactText": "W.C.",
+    "newFocusId": null,
+    "runtimeBinding": null
+  },
+  "benchmarks": [
+    {
+      "file": "references/ch2-control-tower.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sourceCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "file": "references/ch2-damaged-walkway.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/damaged_walkway.png",
+      "sourceCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+      "sha256": "8ca919bedda4f414a7bfac7bfc1f0003f8531e7fcee36ce8f2873db0985af642",
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "file": "references/ch2-maintenance-exit.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/maintenance_exit.png",
+      "sourceCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+      "sha256": "1417e2700c2d6bf29ef937dc4924e11cfcbdcee65f6daf1ef3710ddd2caed7c7",
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "file": "references/ch4-service-stairs.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/service_stairs.png",
+      "sourceCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+      "sha256": "b4d6fb424c8f608cac816c10d59f9eab570a36b4ab9bc0fc9b921a781ee64166",
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "file": "references/ch4-loading-dock.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/loading_dock.png",
+      "sourceCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+      "sha256": "a867a114d2286b382acc756eb8e803bec87b66790a24ce3498603cb9bd21c79c",
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "file": "references/ch4-lobby.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "sourceCommit": "6334b895333dd2d78332cf9f1d834e619468f932",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "dimensions": [
+        314,
+        206
+      ]
+    }
+  ],
+  "provenance": "SOURCE-DERIVED hybrid native reconstruction; no source RGB pasted into master; no claim of wholly independent artwork.",
+  "approvalOrIntegrationPerformed": false,
+  "canonicalFilesChanged": false,
+  "visualAssessment": "evidence/visual-review.md",
+  "visualQualityGatePassed": false,
+  "selectionReady": false,
+  "qualityGateDisposition": "Native construction and technical review complete; illustration finish remains below strongest Chapter2 benchmark. Publish transparently as an unselected limitation review, not a selection-ready asset.",
+  "internalVisualConcern": "Rear-rack fixtures remain more schematic than the richest Chapter2 object modelling; owner visual approval is required. No technical check constitutes visual selection."
+}

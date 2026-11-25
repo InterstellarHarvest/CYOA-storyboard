@@ -1,0 +1,68 @@
+"""Source-derived material-cluster study over separately drawn native forms.
+
+Source pixels are never copied into the master. A reference tonal guide informs
+selection among explicit material ramps within the native structural masks.
+Contours, lettering, silhouettes, routes and object anatomy remain native.
+"""
+from pathlib import Path
+from PIL import Image,ImageColor
+from collections import Counter
+import json,hashlib
+import native_scene as native
+ROOT=Path(__file__).resolve().parents[1];SIZE=(314,206)
+GROUPS={
+ 'metal':(['s0','s1','s2','s3','s4','steel','joint'],['#344440','#4b5d57','#657770','#83938a','#a1ad9b','#bec5ad','#dadbc0']),
+ 'paint':(['g0','g1','g2','g3','g4'],['#263d35','#385349','#4b6857','#647c63','#849779','#a3b296']),
+ 'plaster':(['wall0','wall1','wall2','wall3'],['#7c7964','#968c72','#aea080','#c4b38f','#d6c299','#e7d0a2']),
+ 'porcelain':(['porc0','porc1','porc2','porc3','porc4','porcMid','porcEdge'],['#7d8270','#989b83','#b0af94','#c9c4a6','#ddd6b4','#eee3c1','#fbefcd']),
+ 'floor':(['floor0','floor1','floor2','floor3','floorWarm'],['#4b574f','#616e63','#788475','#909983','#a8ad8d','#c2bd99']),
+ 'wood':(['tan0','tan1','tan2','tan3'],['#5e513e','#7d6847','#9b7e50','#b5945c','#d2b275']),
+ 'glass':(['mirror0','mirror1','mirror2','mirror3'],['#405952','#607c72','#849e8c','#afbea3','#d9dec0']),
+}
+def lum(c):return (c[0]*3+c[1]*5+c[2]*2)//10
+def main():
+    assembly=json.loads((ROOT/'evidence/native-assembly.json').read_text())
+    src=Image.open(ROOT/'originals/CH4-NEW-03-material-reference.png').convert('RGB')
+    guide=src.resize(SIZE,Image.Resampling.BOX)
+    guide.save(ROOT/'evidence/internal-study/material-tonal-guide-diagnostic.png')
+    tone=[min(7,max(0,(lum(c)-35)//27))for c in guide.get_flattened_data()]
+    # Remove isolated source grain before interpreting material forms. No
+    # half-resolution image or sharpened resized base enters the master.
+    for _ in range(2):
+        out=tone[:]
+        for y in range(1,205):
+            for x in range(1,313):
+                i=y*314+x;n=[tone[i-1],tone[i+1],tone[i-314],tone[i+314]];c,k=Counter(n).most_common(1)[0]
+                if k>=3 and tone[i]not in n and abs(tone[i]-c)<=2:out[i]=c
+        tone=out
+    mapping={};ramps={}
+    for name,(keys,colors)in GROUPS.items():
+        ramps[name]=[ImageColor.getrgb(c)for c in colors]
+        for k in keys:mapping[ImageColor.getrgb(native.P[k])]=name
+    result=Image.new('RGBA',SIZE);changes=0;layer_order=[]
+    protected=set()
+    # Preserve independently drawn drain and faucet sockets through the finish.
+    for x,y,w,h in [(28,153,50,25),(32,139,39,25),(220,48,28,14),(222,44,27,14)]:
+        for xx in [x+w//2-5,x+w//2,x+w//2+5]:
+            protected.update((px,py)for px in range(xx,xx+3)for py in range(y+2,y+5))
+        xx=x+w//2;yy=y+h-9
+        protected.update((px,py)for px in range(xx-1,xx+4)for py in range(yy-1,yy+3))
+    for rel in assembly['layers']:
+        original=Image.open(ROOT/rel).convert('RGBA');pixels=[]
+        for i,c in enumerate(original.get_flattened_data()):
+            name=mapping.get(c[:3]);a=c[3]
+            if not a or not name or rel.endswith('wc-three-button-panel.png')or(i%314,i//314)in protected:
+                pixels.append(c);continue
+            ramp=ramps[name]
+            base=min(range(len(ramp)),key=lambda k:sum((x-y)**2 for x,y in zip(c[:3],ramp[k])))
+            guided=round(tone[i]*(len(ramp)-1)/7)
+            # Depth already authored on native form is dominant. The reference
+            # informs discrete local shade groups, never a continuous gradient.
+            index=round((base*2+guided)/3)
+            target=ramp[index]+(255,);pixels.append(target);changes+=target!=c
+        painted=Image.new('RGBA',SIZE);painted.putdata(pixels)
+        name=Path(rel).stem;outrel=f'layers/material-{name}.png';painted.save(ROOT/outrel);result=Image.alpha_composite(result,painted);layer_order.append(outrel)
+    result=result.convert('RGB');p=ROOT/'native/CH4-NEW-03-upper-salvage-v01.png';result.save(p);result.resize((1256,824),Image.Resampling.NEAREST).save(ROOT/'previews/CH4-NEW-03-upper-salvage-v01-4x.png')
+    (ROOT/'evidence/material-interpretation.json').write_text(json.dumps({'sourceDerived':True,'whollyIndependentAuthorshipClaim':False,'reference':'originals/CH4-NEW-03-material-reference.png','method':'Native form planes and silhouettes authored on blank314x206; source tonal study selects among explicit material ramps inside those layers, with isolated-grain suppression. No source RGB copied and no resized source used as master; native contours and exact W.C. panel preserved. Native depth ramps dominant; protected native sockets and W.C. panel retain exact construction.','materialRamps':{k:v[1]for k,v in GROUPS.items()},'finalLayerOrder':layer_order,'layerPixelsChanged':changes,'protectedNativeSocketPixels':sorted(protected),'output':'native/CH4-NEW-03-upper-salvage-v01.png','finalSha256':hashlib.sha256(p.read_bytes()).hexdigest()},indent=2)+'\n')
+    print('Source-guided native material-cluster study rendered.')
+if __name__=='__main__':main()
