@@ -1,0 +1,462 @@
+{
+  "title": "Consolidated Chapter4 B2-09 review v01",
+  "branch": "art/ch4-b209-consolidated-review-20261124",
+  "canonicalMain": "d82ae25bd39855412797bb2632dc61b1001b940a",
+  "draftPR32ReadOnly": "f320e63934c13e27fd13b9482d0cfba58911362d",
+  "activeChapterPrimaryTarget": 63,
+  "status": "UNSELECTED",
+  "primaryUnits": 3,
+  "conditionalReferenceFrames": 4,
+  "assets": [
+    {
+      "id": "CH4-NEW-05",
+      "title": "Commodore Bixby — unchanged single portrait",
+      "kind": "portrait",
+      "proposedCanonicalKey": "portraits:hotel_commodore_bixby:delighted",
+      "nodeIds": [
+        "hotel_commodore_bixby",
+        "hotel_bixby_emergency",
+        "hotel_bixby_trade"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "reusedByteForByte": true,
+      "native": {
+        "file": "native/CH4-NEW-05-bixby-reused-v01.png",
+        "sha256": "44f81292dc520eeabc6864c21449fb033db4891702c6102634b126b344ee05b8",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-05-bixby-reused-v01-4x.png",
+        "sha256": "d7a3c515d8c1e2a3b2354d68498c020a16e16cb5af5f1492d68d525b7098925c",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "id": "CH4-NEW-06",
+      "title": "Wedding organizer — urgent / briskly kind",
+      "kind": "portrait",
+      "proposedCanonicalKey": "portraits:hotel_wedding_organizer:urgent",
+      "nodeIds": [
+        "hotel_wedding_arrival",
+        "hotel_bridal_organizer"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "reusedByteForByte": false,
+      "native": {
+        "file": "native/CH4-NEW-06-organizer-urgent-v01.png",
+        "sha256": "ffb2444306854dc07373de096ff27e3328b8fe88bd0fe7e2e727a4b6f4127f76",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGBA"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-06-organizer-urgent-v01-4x.png",
+        "sha256": "a034cd1da6d123086116f8e02547d9be480b80cc7a8de8a339b4694ca0836448",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGBA"
+      }
+    },
+    {
+      "id": "CH4-NEW-18",
+      "title": "Shared ballroom threshold — neutral base",
+      "kind": "portrait_background",
+      "proposedCanonicalKey": "scenes:grand_bellevue/ballroom#portraitBackground",
+      "nodeIds": [
+        "hotel_wedding_arrival",
+        "hotel_bridal_organizer",
+        "hotel_commodore_bixby",
+        "hotel_bixby_emergency",
+        "hotel_bixby_trade"
+      ],
+      "status": "UNSELECTED",
+      "selected": false,
+      "sourceDerived": true,
+      "independentlyAuthoredAtNativeResolution": false,
+      "reusedByteForByte": false,
+      "native": {
+        "file": "native/CH4-NEW-18-shared-base-v01.png",
+        "sha256": "cc9d19c2413df5b017b72592e3d5c676a84ad0ad91c354093a0a9e0199233e7d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-18-shared-base-v01-4x.png",
+        "sha256": "c4509fb07233b2331f9deeb8158b1bae907cecb3541fd17719e34a04364e5774",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    }
+  ],
+  "supplementalStates": [
+    {
+      "reviewLabel": "wheel-mounted",
+      "kind": "supplemental-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "canonicalFocusId": null,
+      "canonicalSceneKey": null,
+      "runtimeBinding": null,
+      "newFlags": null,
+      "newNodes": null,
+      "nodeIds": [
+        "hotel_commodore_bixby"
+      ],
+      "condition": "Initial Bixby beat: brass plumbing valve wheel mounted on the silver ice bucket.",
+      "implementationBoundary": "Review reference only; no prescribed conditional dispatch, timing, Focus ID or runtime binding. Water may combine with the three prop states.",
+      "native": {
+        "file": "native/CH4-NEW-18-wheel-mounted-v01.png",
+        "sha256": "ba0e7961134a632a522331f57945dd7889f9ae158a27a67e1cadc16cbdf1afc9",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-18-wheel-mounted-v01-4x.png",
+        "sha256": "8f47f1c2faf76901bb8dbb93f2958b42f39fd147e5d04be7357ff6aff1172f02",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/NEW-18-wheel-mounted.png"
+    },
+    {
+      "reviewLabel": "wheel-removed",
+      "kind": "supplemental-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "canonicalFocusId": null,
+      "canonicalSceneKey": null,
+      "runtimeBinding": null,
+      "newFlags": null,
+      "newNodes": null,
+      "nodeIds": [
+        "hotel_bixby_emergency"
+      ],
+      "condition": "After handoff: bucket remains, wheel absent. Identical to neutral shared base; also suitable as organizer context.",
+      "implementationBoundary": "Review reference only; no prescribed conditional dispatch, timing, Focus ID or runtime binding. Water may combine with the three prop states.",
+      "native": {
+        "file": "native/CH4-NEW-18-wheel-removed-v01.png",
+        "sha256": "cc9d19c2413df5b017b72592e3d5c676a84ad0ad91c354093a0a9e0199233e7d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-18-wheel-removed-v01-4x.png",
+        "sha256": "c4509fb07233b2331f9deeb8158b1bae907cecb3541fd17719e34a04364e5774",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": null
+    },
+    {
+      "reviewLabel": "rubber-band-fender",
+      "kind": "supplemental-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "canonicalFocusId": null,
+      "canonicalSceneKey": null,
+      "runtimeBinding": null,
+      "newFlags": null,
+      "newNodes": null,
+      "nodeIds": [
+        "hotel_bixby_trade"
+      ],
+      "condition": "After trade/handoff: wheel absent, approved-design rubber-band sphere tied to bucket with a napkin.",
+      "implementationBoundary": "Review reference only; no prescribed conditional dispatch, timing, Focus ID or runtime binding. Water may combine with the three prop states.",
+      "native": {
+        "file": "native/CH4-NEW-18-rubber-band-fender-v01.png",
+        "sha256": "7c4261a915e62c91f394942eac5fe7c0e6f5fc847fcc68b248494cf76c0c850b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-18-rubber-band-fender-v01-4x.png",
+        "sha256": "53042e7b696be151fa40ca90981a37e048c007be20ce1799212c8afcfe18ab14",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/NEW-18-rubber-band-fender.png"
+    },
+    {
+      "reviewLabel": "water-emerging",
+      "kind": "supplemental-production-reference",
+      "status": "UNSELECTED",
+      "selected": false,
+      "canonicalFocusId": null,
+      "canonicalSceneKey": null,
+      "runtimeBinding": null,
+      "newFlags": null,
+      "newNodes": null,
+      "nodeIds": [
+        "hotel_commodore_bixby"
+      ],
+      "condition": "Thin water sheet emerges directly at the ballroom door gap. Combinable with any prop state; actual timing deferred.",
+      "implementationBoundary": "Review reference only; no prescribed conditional dispatch, timing, Focus ID or runtime binding. Water may combine with the three prop states.",
+      "native": {
+        "file": "native/CH4-NEW-18-water-emerging-v01.png",
+        "sha256": "b5b1b1d0cc775cc02cfb61447efe12950fe78ca3e6184602b07c42dac9cb6f65",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-18-water-emerging-v01-4x.png",
+        "sha256": "ed90add103c7081f7597a9464f932e114772a9aa8324947e2ac239e2bd461a23",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "allowedMask": "masks/NEW-18-water-emerging.png"
+    }
+  ],
+  "composites": [
+    {
+      "speaker": "Bixby",
+      "state": "wheel-mounted",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/bixby-wheel-mounted-native.png",
+        "sha256": "282f9720a2fdf05614e83bc6a6ee3c2aeaa978d7131d0ea5807256983f5c125f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/bixby-wheel-mounted-4x.png",
+        "sha256": "daa76b969bdbf6e131b500afa14fde9d15cc5f96417cfb8038af6764fafe073d",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Bixby",
+      "state": "wheel-removed",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/bixby-wheel-removed-native.png",
+        "sha256": "6a87d094c3f2fec678d23052de550f170e35239bf6e63c14dfc715823980347f",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/bixby-wheel-removed-4x.png",
+        "sha256": "dec0b5735b16a066c85b6950dbc834fffc113f16235985b68c89cde8de1c71d1",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Bixby",
+      "state": "rubber-band-fender",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/bixby-rubber-band-fender-native.png",
+        "sha256": "01125fad208e214676ed56a3afdcb5fe3193c5b532dc252bcb92fec5b5ce6a2e",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/bixby-rubber-band-fender-4x.png",
+        "sha256": "3853b34ad0dcbff8a75b66e0f2c5d40c4afde91fcc19aca8fddee7fb818d33f6",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Bixby",
+      "state": "water-emerging",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/bixby-water-emerging-native.png",
+        "sha256": "28494d3b4d4056aa4d67c30be8838be8d86c4cc111b4fdaa7c301e58e8645757",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/bixby-water-emerging-4x.png",
+        "sha256": "5805335405b5f7f9d81c15abca224939246a4d51c516bbcd63ced5e0d95cdd6f",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Organizer",
+      "state": "wheel-mounted",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/organizer-wheel-mounted-native.png",
+        "sha256": "9df0af8f92861ac091379705da264fad1fe2c35de6b590e155ceefa610d29ded",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/organizer-wheel-mounted-4x.png",
+        "sha256": "64644fe6b37120fd7b1e0f19eba7de86c649699dccc00dd744ee9efd3a438ad5",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Organizer",
+      "state": "wheel-removed",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/organizer-wheel-removed-native.png",
+        "sha256": "e5b70c51526114cf6db4e04b7b8ca3719aba60e58d29a00da303adf970ec6614",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/organizer-wheel-removed-4x.png",
+        "sha256": "e6079885593f1df463fccfa64de57531f066ab3878089e53c9d40e3b65b41cea",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Organizer",
+      "state": "rubber-band-fender",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/organizer-rubber-band-fender-native.png",
+        "sha256": "584d1dda1bcd0513d4229be4d585d7909d73a3e5bcddb054f6fceee0cf9a5f1b",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/organizer-rubber-band-fender-4x.png",
+        "sha256": "58ce607efe2d857052ddc1f20dd0a967012690406e94f7e7fb05fa4010a869c7",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "speaker": "Organizer",
+      "state": "water-emerging",
+      "reviewOnly": true,
+      "canonicalTimingOrBindingAssigned": false,
+      "native": {
+        "file": "previews/organizer-water-emerging-native.png",
+        "sha256": "ab4c347d360a4393f1556c1cd97cac7f34de19b7cda5b0a423ab0bd5c13bc858",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/organizer-water-emerging-4x.png",
+        "sha256": "921f34a4aa897977a79acef859139e2b48aaeda88f142416cee48d21c36e3064",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      }
+    }
+  ],
+  "integrationPerformed": false,
+  "selectionRecordsChanged": false,
+  "mainDeploymentPerformed": false,
+  "oldReviewPackageUnchanged": true,
+  "oldStopNoticePreserved": true,
+  "supersededScopeReactivated": false,
+  "nativeContract": [
+    564,
+    278
+  ],
+  "method": "Source-derived localized native reconstruction and intentional material/contour/prop layers; original Bixby bytes reused; no independent whole-image native authorship claim."
+}

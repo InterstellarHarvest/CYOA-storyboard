@@ -1,0 +1,61 @@
+{
+  "sourceDerived": true,
+  "independentlyAuthoredAtNativeResolution": false,
+  "size": [
+    564,
+    278
+  ],
+  "startingPlate": "references/before-wheel-removed.png",
+  "startingSha256": "9189643363e184bb8cb124fa61a868e6eb00b5bfc0fe95e6f944cacc514a377f",
+  "method": "Existing native room retained outside localized reconstruction; missing material/form information comes from the preserved clean-room source and is interpreted within old occluder masks using the existing palette plus native contour/cluster/threshold/floor work. Table/linen/glasses/napkins and props use separate native layers. Exact native bucket clusters translated42px without scaling; open handles kept. Wheel, wrapped spherical rubber-band fender, napkin knot and water are new native-grid localized layers. Generated clean underdrawing is interpreted only within the old occluder mask with existing material palette and native contour/cluster/threshold/floor corrections. No whole-image resize offered as finished art, no blur or procedural gradient. Exact native flower/vase and unobscured cloth clusters also translated without scaling.",
+  "bucketTranslationNativePixels": [
+    42,
+    0
+  ],
+  "doorThresholdNativeEndpoints": [
+    [
+      0,
+      233
+    ],
+    [
+      96,
+      221
+    ]
+  ],
+  "tableLeftX": 92,
+  "doorUnobstructedIntervalX": [
+    0,
+    91
+  ],
+  "states": [
+    {
+      "name": "wheel-mounted",
+      "layer": "layers/NEW-18-wheel-mounted.png",
+      "allowedMask": "masks/NEW-18-wheel-mounted.png",
+      "changedPixels": 3371,
+      "canonicalFocusId": null,
+      "runtimeBinding": null,
+      "newFlagsOrNodes": false
+    },
+    {
+      "name": "rubber-band-fender",
+      "layer": "layers/NEW-18-rubber-band-fender.png",
+      "allowedMask": "masks/NEW-18-rubber-band-fender.png",
+      "changedPixels": 1122,
+      "canonicalFocusId": null,
+      "runtimeBinding": null,
+      "newFlagsOrNodes": false
+    },
+    {
+      "name": "water-emerging",
+      "layer": "layers/NEW-18-water-emerging.png",
+      "allowedMask": "masks/NEW-18-water-emerging.png",
+      "changedPixels": 2155,
+      "canonicalFocusId": null,
+      "runtimeBinding": null,
+      "newFlagsOrNodes": false
+    }
+  ],
+  "wheelRemovedMatchesBase": true,
+  "baseSha256": "cc9d19c2413df5b017b72592e3d5c676a84ad0ad91c354093a0a9e0199233e7d"
+}

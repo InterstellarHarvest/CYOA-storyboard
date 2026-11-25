@@ -1,0 +1,246 @@
+"""Native 564x278 geometry and localized prop construction from preserved plates.
+
+No image is resized by this module. Original room pixels outside the correction
+and prop layers are preserved. Palette entries follow the existing material ramps.
+"""
+from pathlib import Path
+from PIL import Image, ImageDraw, ImageChops
+import json, hashlib
+
+ROOT = Path(__file__).resolve().parents[1]
+SIZE = (564, 278)
+
+def blank():
+    return Image.new('RGBA', SIZE)
+
+def save(im, rel):
+    im.save(ROOT / rel)
+
+def sha(p):
+    return hashlib.sha256(p.read_bytes()).hexdigest()
+
+def layer_mask(im):
+    return im.getchannel('A').point(lambda a: 255 if a else 0)
+
+def geometry():
+    old = Image.open(ROOT/'references/before-wheel-removed.png').convert('RGBA')
+    new = old.copy()
+    d = ImageDraw.Draw(new)
+    # Uncover both lower door leaves. Existing upper leaf/jamb positions and
+    # vanishing direction are retained; no stretched door or texture transfer.
+    d.polygon([(0,143),(92,143),(92,209),(0,221)], fill=(89,51,57))
+    d.polygon([(0,181),(27,179),(27,214),(0,218)], fill=(71,43,49))
+    d.line([(0,181),(26,179),(26,213),(0,217)], fill=(185,120,60), width=2)
+    d.line([(0,183),(24,181),(24,211),(0,215)], fill=(124,83,58), width=1)
+    d.polygon([(40,145),(83,145),(83,202),(40,208)], fill=(76,45,51))
+    d.line([(40,145),(40,208),(83,202),(83,145)], fill=(203,135,61), width=2)
+    d.line([(43,145),(43,205),(80,200),(80,145)], fill=(124,83,58), width=1)
+    d.line([(31,143),(31,216)], fill=(54,45,49), width=3)
+    d.line([(34,143),(34,216)], fill=(185,120,60), width=1)
+    # Full door frame extends into a stone threshold and a continuous dark gap.
+    d.polygon([(91,143),(99,143),(99,212),(92,214)], fill=(87,58,43))
+    d.line([(92,143),(92,210)], fill=(185,120,60), width=2)
+    d.line([(98,143),(98,212)], fill=(124,83,58), width=2)
+    d.polygon([(0,221),(93,209),(103,214),(0,229)], fill=(163,155,128))
+    d.line([(0,221),(93,209)], fill=(39,37,34), width=2)
+    d.line([(0,224),(96,212)], fill=(211,197,164), width=1)
+    # Continue the lower burgundy curtain behind the relocated table/props.
+    d.rectangle((100,143,207,220), fill=(89,51,57))
+    for poly, color in [
+        ([(102,143),(114,143),(111,212),(106,220),(100,220)],(64,42,48)),
+        ([(119,143),(128,143),(127,205),(123,218),(116,219)],(124,59,67)),
+        ([(132,143),(143,143),(142,216),(135,219)],(67,43,49)),
+        ([(149,143),(162,143),(159,216),(151,219)],(110,53,61)),
+        ([(171,143),(181,143),(185,219),(174,219)],(64,42,48)),
+        ([(193,143),(202,143),(207,220),(198,220)],(124,59,67)),
+    ]:
+        d.polygon(poly, fill=color)
+    d.line([(207,143),(209,219)], fill=(54,45,49), width=2)
+    # Reconstruct the newly exposed parquet as large receding board groups.
+    # Only this bounded under-table region is changed; no global texture pass.
+    d.polygon([(0,229),(104,216),(236,219),(236,278),(0,278)], fill=(130,107,78))
+    floors = [
+        ([(0,234),(98,221),(134,222),(53,239)],(95,81,64)),
+        ([(56,240),(138,223),(174,223),(114,244)],(160,135,97)),
+        ([(0,250),(61,239),(113,245),(51,258),(0,259)],(95,81,64)),
+        ([(115,247),(176,225),(220,225),(166,252)],(95,81,64)),
+        ([(54,260),(113,247),(163,253),(121,268)],(160,135,97)),
+        ([(0,262),(51,260),(112,270),(96,278),(0,278)],(130,107,78)),
+        ([(121,271),(167,255),(213,258),(185,278),(145,278)],(95,81,64)),
+        ([(189,276),(216,260),(236,263),(236,278)],(160,135,97)),
+    ]
+    for poly, color in floors:
+        d.polygon(poly, fill=color)
+    for points in [[(0,250),(53,239),(114,245),(174,224)],[(0,262),(53,259),(115,247)],[(96,278),(121,269),(169,254),(221,226)]]:
+        d.line(points, fill=(95,81,64), width=1)
+    d.line([(15,249),(22,248),(28,249)], fill=(160,135,97), width=1)
+    d.line([(67,266),(74,264)], fill=(117,97,69), width=1)
+    # Dry gap remains in front of the new floor, completely unobscured.
+    d.line([(0,221),(93,209)], fill=(39,37,34), width=2)
+    return old, new
+
+def table():
+    im=blank();d=ImageDraw.Draw(im)
+    # Relocated table begins to the RIGHT of the jamb. Cloth is a newly built
+    # native layer, with weight/creases rather than stretched old table pixels.
+    d.ellipse((100,222,297,254),fill=(119,115,92))
+    d.polygon([(101,239),(295,240),(306,277),(92,277)],fill=(201,187,145))
+    for poly,color in [
+        ([(103,240),(126,245),(116,278),(93,278)],(164,155,122)),
+        ([(128,244),(143,246),(146,278),(118,278)],(227,210,166)),
+        ([(148,246),(161,247),(169,278),(149,278)],(164,155,122)),
+        ([(170,247),(195,247),(204,278),(174,278)],(242,228,195)),
+        ([(197,247),(210,246),(225,278),(207,278)],(164,155,122)),
+        ([(215,245),(239,244),(253,278),(230,278)],(227,210,166)),
+        ([(244,243),(262,242),(281,278),(259,278)],(164,155,122)),
+        ([(269,241),(291,240),(303,278),(286,278)],(227,210,166)),
+    ]:d.polygon(poly,fill=color)
+    d.ellipse((100,222,297,249),fill=(227,210,166))
+    d.ellipse((104,223,293,246),fill=(242,228,195))
+    d.line([(111,242),(137,246),(201,247),(261,244),(289,239)],fill=(201,187,145),width=2)
+    # Controlled tabletop shadows anchor objects instead of floating them.
+    d.ellipse((145,231,247,241),fill=(164,155,122))
+    d.ellipse((107,228,147,237),fill=(201,187,145))
+    return im
+
+def bucket():
+    src=Image.open(ROOT/'references/before-wheel-removed.png').convert('RGBA')
+    m=Image.new('L',SIZE);d=ImageDraw.Draw(m)
+    # Preserve the actual silver/ice pixel clusters, uniformly translated by42
+    # native pixels. Separate handles have open negative space, not wall chips.
+    d.polygon([(102,171),(180,171),(177,204),(170,233),(163,239),(117,239),(109,232),(104,208)],fill=255)
+    d.polygon([(101,166),(115,166),(122,163),(130,165),(141,164),(151,166),(176,166),(186,170),(184,175),(173,179),(112,179),(103,176)],fill=255)
+    d.ellipse((96,181,113,218),fill=255);d.ellipse((100,187,109,211),fill=0)
+    d.ellipse((177,181,194,218),fill=255);d.ellipse((181,187,190,211),fill=0)
+    d.rectangle((116,236,171,240),fill=255)
+    cut=src.copy();cut.putalpha(m);im=blank();im.alpha_composite(cut,(42,0));save(m,'masks/source-bucket-silhouette.png')
+    return im
+
+def flowers_and_linen():
+    im=blank();d=ImageDraw.Draw(im)
+    # Five deliberately grouped white flower heads, not scattered petal noise.
+    d.polygon([(105,197),(129,197),(127,230),(108,230)],fill=(124,83,58))
+    d.polygon([(107,199),(115,199),(115,228),(109,227)],fill=(203,135,61))
+    d.polygon([(116,199),(120,199),(120,229),(116,229)],fill=(252,229,173))
+    d.polygon([(124,199),(128,199),(126,229),(123,229)],fill=(185,120,60))
+    d.line([(105,197),(129,197)],fill=(252,229,173),width=2)
+    for poly in [[(112,199),(99,183),(104,180),(117,194)],[(117,197),(125,172),(130,174),(122,199)],[(113,196),(105,163),(110,162),(119,195)],[(115,192),(94,172),(98,169),(118,189)]]:
+        d.polygon(poly,fill=(61,86,72))
+    for x,y,s in [(108,159,7),(97,173,7),(127,174,7),(116,186,7),(98,190,5)]:
+        d.polygon([(x-s,y-2),(x-4,y-5),(x-2,y-s),(x+3,y-s),(x+5,y-4),(x+s,y-2),(x+s,y+3),(x+3,y+5),(x,y+s),(x-4,y+4),(x-s,y+2)],fill=(201,187,145))
+        d.polygon([(x-s+2,y-2),(x-3,y-3),(x-1,y-s+1),(x+3,y-4),(x+4,y-1),(x+s-1,y+1),(x+2,y+3),(x-2,y+2),(x-4,y+3)],fill=(242,228,195))
+        d.line([(x-2,y-2),(x+1,y-3),(x+3,y)],fill=(252,244,210),width=2)
+    # Three glasses, with empty centers and material-specific sparse highlights.
+    for x,y,h in [(134,207,28),(143,214,24),(153,219,20)]:
+        d.polygon([(x,y),(x+7,y+1),(x+7,y+h),(x,y+h-1)],fill=(164,178,156))
+        d.rectangle((x+2,y+4,x+5,y+h-2),fill=(201,201,166))
+        d.line([(x,y),(x+7,y+1),(x+7,y+h),(x,y+h-1),(x,y)],fill=(74,95,85),width=1)
+        d.line([(x+1,y+2),(x+1,y+h-3)],fill=(242,244,214),width=1)
+        d.line([(x,y+1),(x+7,y+2)],fill=(242,244,214),width=1)
+    for y in [236,233,230]:
+        d.polygon([(108,y),(130,y-3),(141,y+1),(117,y+5),(108,y+3)],fill=(164,155,122))
+        d.polygon([(108,y-1),(130,y-4),(140,y),(117,y+3),(108,y+2)],fill=(242,228,195))
+        d.line([(112,y+2),(135,y-1)],fill=(201,187,145),width=1)
+    return im
+
+def wheel():
+    im=blank();d=ImageDraw.Draw(im)
+    # Four-spoke brass PLUMBING valve. Open inner holes; no source wall tint,
+    # nautical pegs, wooden tones or extra permanent foreground prop.
+    d.ellipse((123,89,205,170),fill=(78,64,42))
+    d.ellipse((125,90,203,168),fill=(185,145,71))
+    d.ellipse((128,93,200,165),fill=(233,202,122))
+    d.ellipse((132,97,196,161),fill=(124,95,51))
+    d.ellipse((135,100,193,158),fill=(0,0,0,0))
+    d.arc((126,91,201,166),190,285,fill=(252,229,173),width=2)
+    d.arc((129,94,198,163),8,92,fill=(105,83,50),width=2)
+    for points in [[(164,98),(164,158)],[(134,130),(194,130)]]:
+        d.line(points,fill=(105,83,50),width=6)
+        d.line([(x-1,y-1)for x,y in points],fill=(203,165,84),width=4)
+        d.line([(x-2,y-2)for x,y in points],fill=(243,217,145),width=1)
+    d.regular_polygon((164,130,9),6,rotation=30,fill=(105,83,50))
+    d.regular_polygon((163,129,7),6,rotation=30,fill=(233,202,122))
+    d.rectangle((161,127,165,132),fill=(78,64,42))
+    d.line([(162,170),(162,175)],fill=(105,83,50),width=6)
+    d.line([(161,170),(161,175)],fill=(233,202,122),width=2)
+    return im
+
+def fender():
+    im=blank();d=ImageDraw.Draw(im)
+    # A compact spherical bundle, built from overlapping nonradial bands.
+    # Muted tan/slate/rust match the approved inspect. No hub or metallic rim.
+    cx,cy,r=244,231,17
+    disk=Image.new('L',SIZE);dd=ImageDraw.Draw(disk);dd.ellipse((cx-r,cy-r,cx+r,cy+r),fill=255)
+    ball=blank();bd=ImageDraw.Draw(ball)
+    bd.ellipse((cx-r,cy-r,cx+r,cy+r),fill=(77,75,62))
+    bd.ellipse((cx-r+2,cy-r+1,cx+r-2,cy+r-2),fill=(132,116,86))
+    # Unequal, off-center paths visibly wrap in several directions.
+    bands=[
+        ([(223,221),(236,218),(252,221),(264,226)],(172,143,99),(213,188,141)),
+        ([(226,239),(236,236),(249,232),(262,222)],(81,96,94),(132,146,140)),
+        ([(230,212),(232,225),(240,237),(254,248)],(164,143,106),(215,191,149)),
+        ([(243,211),(238,220),(234,234),(236,249)],(87,100,96),(135,146,137)),
+        ([(221,232),(234,230),(250,234),(263,240)],(140,78,54),(181,111,77)),
+        ([(253,213),(252,228),(246,241),(239,251)],(176,150,105),(220,195,148)),
+        ([(229,245),(240,241),(253,237),(264,232)],(94,107,101),(140,151,140)),
+        ([(225,217),(236,226),(250,227),(264,220)],(176,151,108),(218,192,146)),
+        ([(249,211),(242,220),(240,228),(244,236),(256,245)],(140,78,54),(176,109,77)),
+        ([(222,237),(233,242),(248,245),(262,239)],(172,149,109),(213,188,141)),
+    ]
+    for pts,shadow,light in bands:
+        bd.line(pts,fill=shadow,width=5,joint='curve')
+        bd.line([(x,y-1)for x,y in pts],fill=light,width=2,joint='curve')
+    ball.putalpha(disk);im.alpha_composite(ball)
+    # Folded napkin strip visibly travels from the bucket handle to the sphere.
+    d=ImageDraw.Draw(im)
+    d.polygon([(229,206),(236,207),(245,214),(248,219),(244,221),(238,215),(232,213),(227,211)],fill=(201,187,145))
+    d.polygon([(229,207),(234,208),(242,214),(245,219),(243,219),(237,214),(231,212),(228,210)],fill=(242,228,195))
+    d.polygon([(230,210),(227,207),(224,210),(226,214),(230,214),(233,217),(236,214),(233,211)],fill=(242,228,195))
+    d.line([(229,210),(232,214),(234,213)],fill=(164,155,122),width=1)
+    d.polygon([(228,213),(225,217),(226,222),(231,217),(233,214)],fill=(227,210,166))
+    return im
+
+def water(base, object_mask):
+    im=blank();d=ImageDraw.Draw(im)
+    shape=[(0,224),(28,219),(92,211),(98,213),(71,221),(56,227),(84,232),(108,238),(133,249),(149,267),(172,277),(150,277),(130,271),(107,260),(82,251),(53,246),(23,240),(0,241)]
+    m=Image.new('L',SIZE);ImageDraw.Draw(m).polygon(shape,fill=255)
+    # Select six coherent reflection/shadow ramps from the actual floor underlay.
+    ramp={(130,107,78):(100,121,113),(95,81,64):(73,99,94),(160,135,97):(136,151,133),(117,97,69):(93,114,106)}
+    pixels=[]
+    for y in range(SIZE[1]):
+        for x in range(SIZE[0]):
+            active=m.getpixel((x,y))and not object_mask.getpixel((x,y))
+            c=base.getpixel((x,y))[:3]
+            pixels.append(ramp.get(c,(111,132,120))+(255,)if active else(0,0,0,0))
+    im.putdata(pixels);d=ImageDraw.Draw(im)
+    for pts in [[(4,224),(31,219),(58,216),(91,212)],[(1,236),(22,237),(41,241),(53,242)],[(68,242),(82,246),(88,249)],[(109,255),(119,260),(128,268),(151,277)]]:
+        d.line(pts,fill=(179,192,166),width=1)
+    # Restrict even edge glints to the wet floor mask and keep cloth opaque.
+    im.putalpha(ImageChops.subtract(m,object_mask))
+    return im
+
+def main():
+    old,room=geometry();save(room,'layers/NEW-18-reconstructed-room.png')
+    parts={'table-and-cloth':table(),'silver-bucket':bucket(),'flowers-glasses-napkins':flowers_and_linen()}
+    base=room.copy();objects=Image.new('L',SIZE)
+    for name,part in parts.items():
+        base=Image.alpha_composite(base,part);objects=ImageChops.lighter(objects,layer_mask(part));save(part,f'layers/NEW-18-{name}.png');save(layer_mask(part),f'masks/NEW-18-{name}.png')
+    base=base.convert('RGB');save(base,'native/CH4-NEW-18-shared-base-v01.png')
+    save(objects,'masks/NEW-18-all-table-props.png')
+    difference=ImageChops.difference(old.convert('RGB'),base).convert('L').point(lambda p:255 if p else 0);save(difference,'masks/NEW-18-geometry-correction.png')
+    wheel_layer=wheel();fender_layer=fender();water_layer=water(base,objects)
+    records=[]
+    for name,part in [('wheel-mounted',wheel_layer),('rubber-band-fender',fender_layer),('water-emerging',water_layer)]:
+        save(part,f'layers/NEW-18-{name}.png');save(layer_mask(part),f'masks/NEW-18-{name}.png');out=Image.alpha_composite(base.convert('RGBA'),part).convert('RGB');save(out,f'native/CH4-NEW-18-{name}-v01.png');records.append({'name':name,'layer':f'layers/NEW-18-{name}.png','allowedMask':f'masks/NEW-18-{name}.png','changedPixels':sum(p!=q for p,q in zip(base.get_flattened_data(),out.get_flattened_data())),'canonicalFocusId':None,'runtimeBinding':None,'newFlagsOrNodes':False})
+    # Removed-wheel state deliberately has identical pixels/bytes to neutral base.
+    (ROOT/'native/CH4-NEW-18-wheel-removed-v01.png').write_bytes((ROOT/'native/CH4-NEW-18-shared-base-v01.png').read_bytes())
+    for name,part in [('wheel-mounted',wheel_layer),('rubber-band-fender',fender_layer)]:
+        combined=Image.alpha_composite(Image.alpha_composite(base.convert('RGBA'),water_layer),part).convert('RGB');save(combined,f'previews/NEW-18-{name}-with-water-native.png')
+    door_mask=Image.new('L',SIZE);ImageDraw.Draw(door_mask).polygon([(0,221),(93,209),(97,213),(0,226)],fill=255);save(door_mask,'masks/NEW-18-door-gap.png')
+    data={'sourceDerived':True,'independentlyAuthoredAtNativeResolution':False,'size':list(SIZE),'startingPlate':'references/before-wheel-removed.png','startingSha256':sha(ROOT/'references/before-wheel-removed.png'),'method':'Existing native room retained; lower doors/jamb/threshold/parquet/curtain and relocated table/linen/flowers/glasses/napkins constructed as explicit native-grid layers. Exact native bucket clusters translated42px without scaling; open handles kept. Wheel, wrapped spherical rubber-band fender, napkin knot and water are new native-grid localized layers. No image resize, blur, procedural gradient or whole-frame palette reduction.','bucketTranslationNativePixels':[42,0],'doorThresholdNativeEndpoints':[[0,221],[93,209]],'tableLeftX':92,'doorUnobstructedIntervalX':[0,91],'states':records,'wheelRemovedMatchesBase':True,'baseSha256':sha(ROOT/'native/CH4-NEW-18-shared-base-v01.png')}
+    (ROOT/'evidence/background-derivation.json').write_text(json.dumps(data,indent=2)+'\n')
+    for p in (ROOT/'native').glob('CH4-NEW-18-*.png'):
+        im=Image.open(p);im.resize((2256,1112),Image.Resampling.NEAREST).save(ROOT/'previews'/(p.stem+'-4x.png'))
+    print('Native shared geometry and four localized states constructed.')
+
+if __name__=='__main__':main()

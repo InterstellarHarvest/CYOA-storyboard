@@ -1,0 +1,41 @@
+[
+  {
+    "id": "CH4-NEW-06-organizer-detailed",
+    "tool": "image_gen.imagegen",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-7dbde050-dacb-44f8-a1d6-419cd90e7eda.png",
+    "preservedFile": "originals/CH4-NEW-06-organizer-detailed.png",
+    "promptFile": "prompts/CH4-NEW-06-organizer-detailed.txt",
+    "orderedReferenceFiles": [
+      "references/approved-organizer-scene-crop-4x.png",
+      "references/approved-ballroom.png",
+      "references/approved-attendant.png",
+      "references/approved-presenter.png",
+      "references/approved-engineer.png"
+    ],
+    "transparentBackground": true,
+    "prompt": "Use case: illustration-story. Asset: CH4-NEW-06 single reusable wedding-organizer transparent portrait, Out of Order Grand Bellevue. Input1 is PRIMARY IDENTITY: exact approved ballroom small organizer crop; input2 approved full ballroom contextual identity; inputs3/4 approved Pavilion humans are PRIMARY PORTRAIT STYLE; input5 approved Chapter4 engineer calibrates stepped finish. Reconstruct that SAME adult woman as a richly illustrated adventure-game portrait, not a different NPC. Auburn-brown hair in curled updo/bun with loose curled temple locks, white collar, tailored charcoal-slate skirt suit, warm natural medium-light skin, normally proportioned face and hands, lively brown eyes, arched brows. Urgent, overcommitted, briskly kind: alert concentrating eyes, slightly raised eyebrow, small busy sympathetic half-smile, no startled stare or glamorous bride styling. She consults and cradles exactly THREE overlapping separate clipboards against lower chest: three distinct dark board edges and three metal clips with modest cream sheets, empty of readable text. Both hands natural and clearly constructed, one supports stack, other thumb/index finger checks top page; fingers connect, no extra hands or floating props. Waist-up with shoulders slightly angled, face near front, whole hair/updo and both elbows/hands inside generous margins; lower skirt/torso exits bottom only. Keep character predominantly right half with space at left for the shared hotel background's props. Wide1788x880 intended564x278 native composition, genuine TRANSPARENT background and no floor/environment/shadow halo. Rich purposeful face/eyelid/nose/mouth clusters, curled hair volume, readable fingers, suit seams/folds, clean white collar and clipboard construction; compact coherent stepped color ramps akin Pavilion reference, crisp connected shapes. Do not use photographic pores, grain, silky smooth gradients, thousands of tiny tone flecks, dither, overly angular flat feature blocks, chibi proportions or plain vector cartoon. Dark heels may exist in full-body scene but are outside this waist-up portrait crop: no detached shoes. No added jewelry, flower, headset, text, pencil or extra props. Warm hotel light from upper left. This is a detailed source for a separate controlled native-resolution raster interpretation; preserve illustration detail while favoring clear cluster forms.",
+    "sha256": "acc3fc31639fa8d50bbea54daf193c3057afca87dc6ef9a8abd6001559d61781",
+    "dimensions": [
+      1786,
+      881
+    ]
+  },
+  {
+    "id": "NEW-18-clean-room-underdrawing",
+    "tool": "image_gen.imagegen",
+    "originalToolPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-59fa0e18-6ada-4ef1-9b25-0d76b730d554.png",
+    "preservedFile": "originals/NEW-18-clean-room-underdrawing.png",
+    "promptFile": "prompts/NEW-18-clean-room-underdrawing.txt",
+    "orderedReferenceFiles": [
+      "references/before-wheel-removed.png",
+      "references/approved-ballroom.png"
+    ],
+    "transparentBackground": false,
+    "prompt": "Use case: precise-object-edit. Edit target image1: the native pixel-art shared Grand Bellevue ballroom threshold background. Reference2: approved Grand Bellevue ballroom for architecture. Make a CLEAN ROOM UNDERLAY reference: REMOVE ONLY the entire foreground refreshment table/cloth, silver ice bucket/ice/handles, all foreground flowers/vase/glasses/napkins, and the cut-off red chair at lower left. Do NOT remove the flowers or lamp on the distant right-hand cabinet. Reveal believable room behind the removed foreground objects, with CONTINUOUS FULL-HEIGHT existing burgundy ballroom double-door leaves, their lower decorative panels/jambs, dark narrow floor gap beneath them, lower burgundy curtain continuing existing deep folds, and worn parquet floor in correct perspective. The table will later be relocated in a separate native layer, so no foreground furniture or props in this clean reference. Keep all existing upper architecture, cropped-double-door width/placement, brass molding and handles, swags/fringe, bolted green-gray duct, wall sconce, cream aged plaster, lower green-gray panels, right-hand cabinet/window and light source EXACTLY unchanged. No new objects, no new door position, no stretched door. The lower door edges slope in the same plane as their upper geometry and meet a visible stone threshold. Keep intentional connected pixel-art clusters and existing material richness: controlled stepped palette, no blur, no gradient/photographic grain, no decorative random noise. Wide564:278 composition. This is an underdrawing/reference for localized native reconstruction; do not redesign the room or produce another main scene.",
+    "sha256": "b2e99d71ba001c91ddee0410f5fecbcea2f23e4f9cc652018933d16a65580c80",
+    "dimensions": [
+      1788,
+      880
+    ]
+  }
+]

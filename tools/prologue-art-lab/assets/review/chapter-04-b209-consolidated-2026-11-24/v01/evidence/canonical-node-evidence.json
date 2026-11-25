@@ -1,0 +1,245 @@
+{
+  "sourceCommit": "d82ae25bd39855412797bb2632dc61b1001b940a",
+  "nodes": {
+    "hotel_wedding_arrival": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/ballroom",
+      "speaker": "hotel_wedding_organizer",
+      "pose": "urgent",
+      "effects": {
+        "set": {
+          "ch4_wedding_organizer_met": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The organizer releases your arm in the lavishly decorated reception hall. Musicians argue beside a piano while workmen carry furniture through a side door."
+        },
+        "Now, listen carefully.",
+        {
+          "desc": "You interrupt by pointing toward the nearest restroom symbol. The organizer follows your gesture."
+        },
+        "There's a private lavatory off the bridal dressing room. I have the key, but—",
+        {
+          "desc": "A crash comes from the ballroom. She winces."
+        },
+        "Give me one moment."
+      ],
+      "choices": [
+        {
+          "id": "wedding_w1_lavatory",
+          "kind": "spoken",
+          "text": "I NEED THAT PRIVATE LAVATORY. CAN YOU OPEN THE DRESSING ROOM?",
+          "to": "hotel_bridal_organizer"
+        },
+        {
+          "id": "wedding_w2_service",
+          "kind": "action",
+          "text": "SLIP THROUGH THE SERVICE DOOR WHILE THE ORGANIZER IS DISTRACTED.",
+          "to": "hotel_wedding_service_shortcut"
+        }
+      ]
+    },
+    "hotel_bridal_organizer": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/ballroom",
+      "speaker": "hotel_wedding_organizer",
+      "pose": "urgent",
+      "text": [
+        {
+          "desc": "You find the organizer outside the ballroom, consulting three clipboards while a florist explains a missing centerpiece."
+        },
+        {
+          "say": "I NEED TO USE THE BRIDAL LAVATORY.",
+          "who": "you"
+        },
+        {
+          "say": "Are you a member of the wedding party?",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "say": "NO.",
+          "who": "you"
+        },
+        {
+          "say": "Excellent. We've already lost two.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She looks at your expression, then at her watch."
+        },
+        {
+          "say": "Follow me. Quickly.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She leads you down a corridor lined with white flowers."
+        },
+        {
+          "say": "IS THERE A TOILET IN THERE?",
+          "who": "you"
+        },
+        {
+          "say": "Of course.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "say": "DOES IT WORK?",
+          "who": "you"
+        },
+        {
+          "say": "Nobody's complained.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She stops before an ornate door."
+        },
+        {
+          "say": "It's reserved for the bride. But it's a smart facility. Perhaps you can explain your emergency.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She unlocks the outer dressing-room door."
+        },
+        {
+          "say": "I have to get back. Someone's trying to auction the cake stand with the cake still on it.",
+          "who": "hotel_wedding_organizer"
+        },
+        {
+          "desc": "She hurries away."
+        }
+      ],
+      "choices": [
+        {
+          "id": "organizer_to_bridal_room",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_bridal_room"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch4_wedding_organizer_met": true,
+          "ch4_knows_bridal_dressing_lavatory": true,
+          "ch4_knows_organizer_has_lavatory_key": true
+        }
+      },
+      "notes": "Organizer unlocks only the outer dressing-room door, not the AI-controlled bathroom. No involvement in wedding errands."
+    },
+    "hotel_commodore_bixby": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/refreshment_table",
+      "speaker": "hotel_commodore_bixby",
+      "pose": "delighted",
+      "text": [
+        {
+          "desc": "At the edge of the reception, a gentleman in a miniature naval cap has mounted the stolen valve wheel on a silver ice bucket. A green auction paddle sticks out of his coat pocket."
+        },
+        "There she is! Fine little craft, isn't she?",
+        {
+          "desc": "He gives the wheel an experimental turn. The bucket rolls into a chair. He catches it just before it falls."
+        },
+        "Rudder needs work, but we'll have her seaworthy by Thursday.",
+        {
+          "desc": "Water creeps out from beneath the ballroom door and touches the toe of his polished shoe. He looks down with professional interest."
+        },
+        "Tide's coming in."
+      ],
+      "choices": [
+        {
+          "id": "bixby_emergency_truth",
+          "kind": "spoken",
+          "text": "THAT'S THE HOTEL'S SHUTOFF WHEEL. THE BUILDING IS FLOODING!",
+          "to": "hotel_bixby_emergency"
+        },
+        {
+          "id": "bixby_rubber_fender_trade",
+          "kind": "action",
+          "text": "TRADE YOUR RUBBER BAND BALL AS A FENDER FOR HIS LITTLE BOAT.",
+          "if": {
+            "has": "rubber_band_ball"
+          },
+          "effects": {
+            "take": [
+              "rubber_band_ball"
+            ],
+            "set": {
+              "ch4_bixby_fender_trade": true
+            }
+          },
+          "to": "hotel_bixby_trade"
+        },
+        {
+          "id": "bixby_auction_dispute",
+          "kind": "action",
+          "text": "GO BACK TO THE AUCTIONEER AND DEMAND THE SALE BE REVERSED.",
+          "to": "hotel_auctioneer_lot14_dispute"
+        }
+      ]
+    },
+    "hotel_bixby_emergency": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/refreshment_table",
+      "speaker": "hotel_commodore_bixby",
+      "pose": "delighted",
+      "effects": {
+        "set": {
+          "ch4_bixby_expects_bridge": true,
+          "ch4_valve_wheel_recovered": true
+        }
+      },
+      "text": [
+        {
+          "desc": "The Commodore straightens so abruptly that his tiny cap nearly falls off."
+        },
+        "An emergency at sea! Why didn't you say so?",
+        {
+          "desc": "He pulls the wheel free of the ice bucket and presses it into your hands."
+        },
+        "Take the helm, sailor. Save the vessel. I'll be expecting a tour of the bridge when this is all over.",
+        {
+          "desc": "Behind him, a wedding guest slips on the advancing water. The Commodore blows a small whistle and begins organizing a lifeboat drill using dining chairs."
+        }
+      ],
+      "choices": [
+        {
+          "id": "bixby_return_wheel",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_wheel_return"
+        }
+      ]
+    },
+    "hotel_bixby_trade": {
+      "mode": "dialogue",
+      "scene": "grand_bellevue/refreshment_table",
+      "speaker": "hotel_commodore_bixby",
+      "pose": "delighted",
+      "effects": {
+        "set": {
+          "ch4_valve_wheel_recovered": true
+        }
+      },
+      "text": [
+        {
+          "desc": "You offer the rubber band ball. It is almost exactly the right size for the ice bucket. Bixby sets it alongside his little vessel and gasps."
+        },
+        "A perfect fender! Look at the elasticity!",
+        {
+          "desc": "He hands you the brass wheel without another word, then ties the rubber band ball to the bucket with a length of napkin. It remains with him, part of his new ship."
+        },
+        "Splendid trade, sailor. Safe passage!"
+      ],
+      "choices": [
+        {
+          "id": "trade_return_wheel",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "hotel_wheel_return"
+        }
+      ]
+    }
+  },
+  "canonicalStoryChanged": false,
+  "supplementalBindingsAdded": false
+}

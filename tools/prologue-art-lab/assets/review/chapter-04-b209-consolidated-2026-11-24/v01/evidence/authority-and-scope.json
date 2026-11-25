@@ -1,0 +1,25 @@
+{
+  "canonicalMain": "d82ae25bd39855412797bb2632dc61b1001b940a",
+  "draftPR32": "f320e63934c13e27fd13b9482d0cfba58911362d",
+  "historicalReviewWithStop": "1459c4ed2f4288a41805365d1085e8fd3cdb76ae",
+  "activePrimaryTarget": 63,
+  "newUserAuthority": "Nate authorized consolidated B2-09 production: shared threshold geometry correction, four local states, single organizer, exact reused Bixby; isolated review branch; unselected only. This supersedes prior generation STOP for this new package only. Old branch and STOP stay unchanged.",
+  "primaryUnits": [
+    "CH4-NEW-05",
+    "CH4-NEW-06",
+    "CH4-NEW-18"
+  ],
+  "noOldScope": true,
+  "supplementalStates": [
+    "wheel-mounted",
+    "wheel-removed",
+    "rubber-band-fender",
+    "water-emerging"
+  ],
+  "supplementalCanonicalIds": null,
+  "runtimeBindings": null,
+  "selected": false,
+  "noMergePR32": true,
+  "noDeployment": true,
+  "noCH403ReplacementBeforeB209ReviewGate": true
+}

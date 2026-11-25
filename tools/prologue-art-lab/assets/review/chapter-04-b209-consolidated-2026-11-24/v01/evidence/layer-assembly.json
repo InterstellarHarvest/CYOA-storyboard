@@ -1,0 +1,31 @@
+{
+  "canvas": [
+    564,
+    278
+  ],
+  "compositing": "RGBA source-over, in listed order; compare final RGB or RGBA as specified",
+  "stacks": [
+    {
+      "output": "native/CH4-NEW-18-shared-base-v01.png",
+      "outputMode": "RGB",
+      "layers": [
+        "layers/NEW-18-reconstructed-room.png",
+        "layers/NEW-18-table-and-cloth.png",
+        "layers/NEW-18-silver-bucket.png",
+        "layers/NEW-18-flowers-glasses-napkins.png"
+      ]
+    },
+    {
+      "output": "native/CH4-NEW-06-organizer-urgent-v01.png",
+      "outputMode": "RGBA",
+      "layers": [
+        "layers/NEW-06-auburn-hair.png",
+        "layers/NEW-06-contours-and-clip-details.png",
+        "layers/NEW-06-ivory-paper-and-collar.png",
+        "layers/NEW-06-skin-and-hands.png",
+        "layers/NEW-06-slate-suit-and-board-edges.png"
+      ]
+    }
+  ],
+  "note": "Organizer material layers are disjoint and already contain final native tailoring. The separately preserved tailoring-correction layer is editorial history, not an extra required layer. Prop/water overlays apply on top of the complete shared base. Bixby is reused without reconstruction."
+}
