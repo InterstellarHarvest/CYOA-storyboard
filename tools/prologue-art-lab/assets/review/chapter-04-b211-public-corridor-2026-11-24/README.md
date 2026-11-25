@@ -1,3 +1,13 @@
+# B2-11 v03 — simpler NPC and separated sign
+
+**UNSELECTED.** Broader attendant face/hair/clothing clusters; exact same silhouette, scale and pose. Floating sign moved34 native pixels right with16 pixels of horizontal bbox clearance. Dry master and all other pixels remain unchanged.
+
+[Public v03 gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/46922835771d4ea564d1c676c5b439c904c1eaa7/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v03/online.html) · [Character/sign4× comparison](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/46922835771d4ea564d1c676c5b439c904c1eaa7/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v03/comparisons/character-sign-4x.png) · [Full flood4× comparison](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/46922835771d4ea564d1c676c5b439c904c1eaa7/tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v03/comparisons/v02-v03-flood-4x.png) · [Publication and hashes](V03-PUBLICATION-20261125.md).
+
+---
+
+## Historical v02/v01 review records
+
 # Chapter4 B2-11 v02 — targeted owner corrections
 
 **UNSELECTED.** Recognizable side exit, corrected far-door perspective, fixed-frame hinged hatch and a distinct, larger hotel attendant pointing toward the staff passage. Staff Lavatory is a rendering benchmark, not a character identity source.
