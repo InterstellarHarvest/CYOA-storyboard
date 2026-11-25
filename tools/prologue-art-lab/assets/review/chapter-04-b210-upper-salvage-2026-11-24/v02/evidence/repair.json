@@ -1,0 +1,73 @@
+{
+  "sourceDerived": true,
+  "whollyIndependentAuthorshipClaim": false,
+  "baseVersion": "v01",
+  "method": "Localized version of approved B2-02 material/structure workflow: detailed-reference fixture underpainting, local material ramps and connected-cluster selection, native object silhouette masks, edge/socket/underside/support painting; source-defined contours retained. No whole-scene relighting/palette pass or master replacement.",
+  "reference": "../v01/originals/CH4-NEW-03-detailed-reference.png",
+  "referenceSha256": "b838d71d289868de8151acfe72172c2ae64deb6df24c639d0ff7ab77529f8912",
+  "approvedBowlReference": {
+    "file": "references/ch4-restroom-bowl-style.png",
+    "canonicalSourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+    "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+    "nativeCrop": [
+      266,
+      121,
+      291,
+      142
+    ]
+  },
+  "nativePalette": [
+    "#303b38",
+    "#526965",
+    "#756b52",
+    "#8b826c",
+    "#a39472",
+    "#b3aa8c",
+    "#c5b994",
+    "#dfd6b5",
+    "#e8dcbc",
+    "#f3e9c8"
+  ],
+  "sourceFigureTranslation": {
+    "foreground": [
+      0,
+      2
+    ],
+    "rearSink": [
+      0,
+      6
+    ],
+    "rearBowlNativeCrop": {
+      "sourceCrop": [
+        266,
+        121,
+        291,
+        142
+      ],
+      "targetOrigin": [
+        224,
+        68
+      ],
+      "noScaling": true
+    }
+  },
+  "replacedLayers": [
+    "material-storage-racks",
+    "material-foreground-sanitary-salvage"
+  ],
+  "layerOrder": [
+    "layers/material-architecture.png",
+    "layers/material-mezzanine-floor.png",
+    "layers/material-descending-stairwell.png",
+    "layers/material-freight-lift.png",
+    "layers/material-open-maintenance-hatch.png",
+    "layers/material-storage-racks.png",
+    "layers/material-ceiling-duct-and-lights.png",
+    "layers/material-foreground-sanitary-salvage.png",
+    "layers/material-guardrails.png",
+    "layers/material-wc-three-button-panel.png"
+  ],
+  "quietPixelsMerged": 48,
+  "nativeHash": "c5240e7dbbbe2381674aa4aa706c800d2f0bf31f55e18d60c115edd39fdbce47",
+  "status": "UNSELECTED"
+}

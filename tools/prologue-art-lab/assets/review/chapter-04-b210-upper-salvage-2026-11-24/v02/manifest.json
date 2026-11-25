@@ -1,0 +1,51 @@
+{
+  "title": "Chapter4 B2-10 v02 \u2014 modest fixture refinement",
+  "branch": "art/ch4-b210-upper-salvage-review-20261124",
+  "preservationBaseline": "33ec6cec075bbab8ccd5ca1673dcf4b524f41a0e",
+  "baseReviewCommit": "ca66bbc5b37a8b4e52805134147f7c96b0a26bfd",
+  "canonicalBaseline": "6334b895333dd2d78332cf9f1d834e619468f932",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryUnits": 1,
+  "supplementalStates": [],
+  "asset": {
+    "id": "CH4-NEW-03",
+    "proposedCanonicalKey": "scenes:grand_bellevue/upper_salvage",
+    "native": {
+      "file": "native/CH4-NEW-03-upper-salvage-v02.png",
+      "sha256": "c5240e7dbbbe2381674aa4aa706c800d2f0bf31f55e18d60c115edd39fdbce47",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "preview4x": {
+      "file": "previews/CH4-NEW-03-upper-salvage-v02-4x.png",
+      "sha256": "43bb823b0c2566e3bd065a6b24578c2a270568433961333aa5491f8922e7c667",
+      "dimensions": [
+        1256,
+        824
+      ],
+      "mode": "RGB"
+    },
+    "nodeIds": [
+      "hotel_upper_salvage_arrival",
+      "hotel_upper_salvage_clerk_directions",
+      "hotel_freight_wc_misunderstanding"
+    ],
+    "runtimeBinding": null,
+    "newFocusId": null
+  },
+  "sourceDerived": true,
+  "independentlyAuthoredWholeImage": false,
+  "targetedVisualImprovement": "Foreground nested sinks retain the original concept anatomy with sharper local ramps/contours; repeated rack icons reduced to a sink, a detached bowl based on approved native Chapter4 art, and a quiet partition. Rest of the scene pixel-locked. Owner visual approval remains pending.",
+  "changedNativePixels": 9205,
+  "unchangedScenePercent": 85.769,
+  "noGeneralRelightingOrPalettePass": true,
+  "newImageGeneration": false,
+  "approvedProductionFilesChanged": false,
+  "gameplayNarrativeBindingsChanged": false,
+  "repairRecipe": "source/refine_existing.py",
+  "provenance": "Original detailed concept used only for localized fixture underpainting/ramp interpretation; native mask/edge/socket/contact repairs and a native-to-native approved bowl fragment. Some reference-defined contours remain. No wholly independent native authorship claim."
+}

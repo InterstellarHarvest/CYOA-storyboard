@@ -1,0 +1,3596 @@
+{
+  "technicalPassed": true,
+  "checksPassed": 894,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "changedNativePixels": 9205,
+  "unchangedScenePercent": 85.769,
+  "geographyPixelExact": true,
+  "outsideAuthorizedChanges": 0,
+  "sharedLayersByteExact": 8,
+  "v01FilesByteExact": 107,
+  "baselineFilesPreserved": 767,
+  "exact4xPairs": 20,
+  "replayedFilesIdentical": 60,
+  "sourceDerived": true,
+  "canonicalGameplayNarrativeApprovalRecordsChanged": false,
+  "visualAssessment": "evidence/visual-review.md",
+  "checks": [
+    {
+      "check": "One unselected scene; no approval or extra states",
+      "passed": true
+    },
+    {
+      "check": "No extra native assets",
+      "passed": true
+    },
+    {
+      "check": "Native314x206 RGB",
+      "passed": true
+    },
+    {
+      "check": "Exact NN4x export",
+      "passed": true
+    },
+    {
+      "check": "Manifest native/preview hashes",
+      "passed": true
+    },
+    {
+      "check": "Zero pixel changes outside the two authorized fixture regions",
+      "passed": true
+    },
+    {
+      "check": "Every visible lift/WC/hatch/stair/rail/duct pixel exact v01",
+      "passed": true
+    },
+    {
+      "check": "WC full panel entire region exact",
+      "passed": true
+    },
+    {
+      "check": "central movement floor entire region exact",
+      "passed": true
+    },
+    {
+      "check": "stairwell and landing entire region exact",
+      "passed": true
+    },
+    {
+      "check": "upper architecture entire region exact",
+      "passed": true
+    },
+    {
+      "check": "Before image exact v01 PNG",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-storage-racks.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-storage-racks.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Native editable layer layers/material-wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Binary layer transparency layers/material-wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Shared layer byte-exact layers/material-wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Only two semantic layers replaced",
+      "passed": true
+    },
+    {
+      "check": "Exact layered source assembly",
+      "passed": true
+    },
+    {
+      "check": "Repair recipe final hash",
+      "passed": true
+    },
+    {
+      "check": "Pinned original detailed concept unchanged",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark references/ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen benchmark hash references/ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark references/ch2-damaged-walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen benchmark hash references/ch2-damaged-walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark references/ch2-maintenance-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen benchmark hash references/ch2-maintenance-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark references/ch4-service-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen benchmark hash references/ch4-service-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark references/ch4-loading-dock.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen benchmark hash references/ch4-loading-dock.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark references/ch4-restroom-bowl-style.png",
+      "passed": true
+    },
+    {
+      "check": "Frozen benchmark hash references/ch4-restroom-bowl-style.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical three-node coverage and null bindings retained",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption v01-v02/v01 preserved",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption v01-v02/v02 modest refinement",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption quick-glance/v01",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption quick-glance/v02",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption quick-glance/Ch2 Control Tower",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption quick-glance/Ch2 Maintenance Exit",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption quick-glance/Ch4 Service Stairs",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption additional-benchmarks/v02",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption additional-benchmarks/Ch2 Damaged Walkway",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption additional-benchmarks/Ch4 Loading Dock",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption rack-before-after/v01 rack",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption rack-before-after/v02 rack",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption sinks-before-after/v01 sinks",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption sinks-before-after/v02 sinks",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption mirror-before-after/v01 mirror",
+      "passed": true
+    },
+    {
+      "check": "Non-overlapping caption mirror-before-after/v02 mirror",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/quick-glance-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/additional-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/v01-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/rack-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/mirror-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/sinks-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch4-restroom-bowl-style-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch4-loading-dock-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v01-rack-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v01-before-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v01-sinks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch2-maintenance-exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch4-service-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-rack-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v01-mirror-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-03-upper-salvage-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/ch2-damaged-walkway-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-mirror-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-sinks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved .github/workflows/pages.yml",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved .github/workflows/prologue-art-lab-review.yml",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved .github/workflows/storyboard-review.yml",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved .gitignore",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/deaths/classified_as_compost.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/deaths/new_arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/deaths/personal_growth.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/deaths/reclassified.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/deaths/rest_assured_voluntary.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/deaths/site_improvement.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/focus/biology_park/aid_box_open.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/focus/biology_park/decontamination_kit_open.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/focus/biology_park/exposure_dispenser_open.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/focus/house_of_tomorrow/album_page_1.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/focus/house_of_tomorrow/album_page_2.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/focus/house_of_tomorrow/album_page_3.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/acting_director_badge_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/acting_director_badge_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/applause_timing_clicker_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/applause_timing_clicker_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/bathroom_pass_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/bathroom_pass_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/botanical_antidote_customs_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/botanical_antidote_customs_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/botanical_antidote_maintenance_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/botanical_antidote_maintenance_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/botanical_antidote_public_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/botanical_antidote_public_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/certified_seed_canister_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/certified_seed_canister_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/effects_box_empty_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/effects_box_empty_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/effects_box_full_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/effects_box_full_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/expo_examiner_badge_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/expo_examiner_badge_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/family_portrait_photo_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/family_portrait_photo_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/property_claim_ticket_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/property_claim_ticket_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/red_swangline_stapler_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/red_swangline_stapler_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/rubber_band_ball_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/rubber_band_ball_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/small_desk_plant_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/small_desk_plant_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/termination_notice_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/items/termination_notice_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/courtesy_conductor/concourse_crash_background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/courtesy_conductor/courtesy_conductor_talking.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/groundskeeper/groundskeeper_background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/house/dining_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/house/foyer_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/house/lounge_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/house/portrait_gallery_conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/courtesy_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/human_verification_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/record_printer.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/record_scanner.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/restroom_entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/service_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/surprise_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/backgrounds/urgency_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_attendant/alarmed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_attendant/idle.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_attendant/quiet.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_presenter/alarmed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_presenter/excited.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_presenter/idle.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/pavilion_reboot/pavilion_presenter/relieved.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/receptionist/reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/termination_drone/corridor_background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/termination_drone/drone_paper_extended.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/portraits/termination_drone/drone_slot_closed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/abandoned_station.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/agricultural_customs.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/authorization_archive.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/central_flower.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/concourse_crash.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/damaged_walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/exposition_concourse.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/formal_entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/jungle_junction.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/lower_irrigation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/maintenance_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/moving_forest.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/overgrown_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/planting_hopper.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/planting_machine.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/public_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/reserve_siding.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/reserve_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/sensor_gallery.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/service_entry.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/sorting_conveyor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/tour_tram.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/translator_machine.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/biology_park/waste_chute.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/conference_hall/reception/reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/exposition/continuity-v01/street-approach.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/exposition/continuity-v02/property-intake.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/exposition/continuity-v03/entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/bathroom.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/bedroom.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/chair.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/dining.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/foyer.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/lounge.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/maintenance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/passage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/portrait_gallery.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/public_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/service_hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/chair_default_unrestrained.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/foyer_named_plant_pedestal.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/portrait_gallery_album_removed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_desk_plant.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_red_stapler.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_rubber_band_ball.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/storage_stored_timing_clicker.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/states/utility_exit_returns_display.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/storage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/house_of_tomorrow/utility_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/backstage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/courtesy_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/exit_vestibule.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/exterior_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/human_verification_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/locomotion_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/paper_emergency.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/record_printer.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/record_scanner.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/restroom_entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/service_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/surprise_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/pavilion_reboot/urgency_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/workplace/applause_station.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/workplace/corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/art/scenes/workplace/personal_effects_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/focus/grand_bellevue/auction_floor/chair_armrest.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/focus/grand_bellevue/collection_stairs/chair_armrest.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/focus/grand_bellevue/maintenance/water_isolator.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/focus/grand_bellevue/restroom/lot_14_receipt.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/focus/grand_bellevue/restroom/master_isolator.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_auction_clerk/precise.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_auctioneer/bureaucratic.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_auctioneer/delighted.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_auctioneer/disappointed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_auctioneer/showman.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_boiler_engineer/careful.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_boiler_engineer/defeated.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_boiler_engineer/pleased.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_boiler_engineer/practical.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_bride/determined.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_bride/grateful.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_bride/helpful.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_bride/hopeful.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_commodore_bixby/delighted.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_groom/nervous.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_groom/relieved.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_plumber/worried.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_plumber_assistant/pleased.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_porter/alarmed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_porter/businesslike.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_porter/curious.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_porter/practical.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_porter/relieved.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_porter/uncertain.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_salvage_foreman/annoyed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_wedding_assistant/apologetic.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_wedding_assistant/busy.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_wedding_assistant/sympathetic.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/portraits/hotel_wedding_organizer/urgent.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/ballroom.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/ballroom/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/boiler_access.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/boiler_room.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/boiler_room/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/loading_dock.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/loading_dock/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/loading_lane.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/maintenance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/maintenance/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/service_alley.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/service_passage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/service_passage/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/service_stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory/portraitBackground.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/101_CH3_STORYBOARD_INTEGRATION_AND_ART_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/103_RETROACTIVE_ARTWORK_APPROVAL_LEDGER.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/104_FATAL_ENDING_DATA_AND_ENGINE_EXPORT.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/104_STORYBOARD_TIMELINE_LAYOUT.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/105_CANONICAL_SYNC_PIPELINE.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/106_CH3_APPROVAL_RECONCILIATION_20261117.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/106_CH3_RETIRED_ROUTES_ARCHIVE_20261117.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/107_PRESENTATION_MODE_AUDIT_20261117.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/108_CHAPTER_02_ARTWORK_COMPLETION_AND_GAMEPLAY_HANDOFF_20261117.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/109_CH3_REBOOT_ONE_EXPERIENCE_PER_PERSON_20261118.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/110_CH3_REBOOT_ROUTE_AND_PRESENTATION_AUDIT_20261118.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/111_CH3_ARTWORK_PMO_HANDOFF_AND_NARRATIVE_LOCK_20261118.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/112_CH3_ARTWORK_AUDIT_AND_GENERATION_HANDOFF_20261118.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/113_CH3_BATCH_B_APPROVAL_REGISTRATION_BATCH_20261119.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/113_CH3_BATCH_B_APPROVAL_REGISTRATION_HANDOFF_20261119.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/113_CH3_BATCH_B_SELECTED_ARTWORK_20261119.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/114_OUT_OF_ORDER_CH3_BATCH_C_GENERATION_20261119.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/115_OUT_OF_ORDER_CH3_BATCH_C_PUBLICATION_PROPOSAL_20261119.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_BATCH_20261119.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/116_OUT_OF_ORDER_CH3_BATCH_C_APPROVAL_REGISTRATION_HANDOFF_20261119.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/116_OUT_OF_ORDER_CH3_BATCH_C_SELECTED_ARTWORK_20261119.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/117_OUT_OF_ORDER_CH3_V03_CONTINUITY_REVIEW_20261119.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/118_OUT_OF_ORDER_CH3_V04_PERSPECTIVE_REVIEW_20261120.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_BATCH_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/119_OUT_OF_ORDER_CH3_CURRENT_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTED_ARTWORK_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/119_OUT_OF_ORDER_CH3_CURRENT_SELECTION_VALIDATION_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/120_CH3_BATCH_D_GENERATION_AND_REVIEW_20261120.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/121_CH3_BATCH_D_PUBLICATION_PROPOSAL_20261120.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/121_CH3_BATCH_D_PUBLICATION_VALIDATION_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_BATCH_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/122_OUT_OF_ORDER_CH3_BATCH_D_APPROVAL_REGISTRATION_HANDOFF_20261120.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/122_OUT_OF_ORDER_CH3_BATCH_D_PUBLICATION_CI_SNAPSHOT_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/122_OUT_OF_ORDER_CH3_BATCH_D_SELECTED_ARTWORK_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/122_OUT_OF_ORDER_CH3_BATCH_D_SELECTION_VALIDATION_20261120.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/123_CH4_WORKING_NARRATIVE_AND_REVIEW_20261120.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/124_CH4_EXIT_TO_PARK_AND_CH5_PARK_SEED_20261121.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/125_CH4_BRIDAL_PRIVACY_AND_SEASHELL_AUDIT_20261121.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/126_CH4_NARRATIVE_CLOSEOUT_AUDIT_20261121.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/127_CH4_BATCH1_VERIFICATION_20261122.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/128_CH4_B201_APPROVAL_COMPLETION_20261122.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/128_CH4_B201_VERIFICATION_20261122.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/130_CH4_B202_APPROVAL_COMPLETION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/130_CH4_B202_APPROVAL_COMPLETION_20261123.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/130_CH4_B202_VERIFICATION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/131_CH4_B203_APPROVAL_COMPLETION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/131_CH4_B203_APPROVAL_COMPLETION_20261123.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/131_CH4_B203_VERIFICATION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/132_CH4_B204_APPROVAL_COMPLETION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/132_CH4_B204_APPROVAL_COMPLETION_20261123.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/132_CH4_B204_VERIFICATION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/133_CH4_B205_APPROVAL_COMPLETION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/133_CH4_B205_APPROVAL_COMPLETION_20261123.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/133_CH4_B205_VERIFICATION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/134_CH4_B206_APPROVAL_COMPLETION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/134_CH4_B206_APPROVAL_COMPLETION_20261123.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/134_CH4_B206_VERIFICATION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/135_CH4_B207_APPROVAL_COMPLETION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/135_CH4_B207_APPROVAL_COMPLETION_20261123.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/135_CH4_B207_VERIFICATION_20261123.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/136_CH4_B208_APPROVAL_COMPLETION_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/136_CH4_B208_APPROVAL_COMPLETION_20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/136_CH4_B208_VERIFICATION_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_CH4_ARTWORK_CONSOLIDATION_PLAN_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_CH4_ARTWORK_CONSOLIDATION_PROPOSAL_20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_CH4_ARTWORK_CONSOLIDATION_VERIFICATION_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_CH4_NODE_ART_COVERAGE_20261124.tsv",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_CH4_RETIRED_ARTWORK_LEDGER_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/ballroom-background-exception.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/bride-ring-continuity.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/refinement-backgrounds.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/refinement-scenes.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-16.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-28.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-33.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-34.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-36.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-39.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/retire-ch4-b2-46.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/137_evidence/reuse-sources.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/139_CH4_PLAYER_SPEAKER_AUDIT_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/139_CH4_SPEAKER_CORRECTION_MAIN_RECONCILIATION_AND_B209_V02_DISPOSITION_20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/140_CH4_GAMEPLAY_INTEGRATION_WORK_PACKAGE_20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/142_CH4_B209_APPROVAL_COMPLETION_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/142_CH4_B209_APPROVAL_COMPLETION_20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/142_CH4_B209_VERIFICATION_20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/94_CHAPTER_03_ROUTE_AND_ENDING_AUDIT.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/95_CHAPTER_03_ROUTES_B_C_STRUCTURAL_AUTHORING.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/96_CHAPTER_03_ROUTE_A_CLOSURE_AND_FINALE_RULES.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/97_CH3_COMPACT_SCOPE_AND_MAP.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/98_CH3_COMPACT_ROUTE_GRAPH.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/99_CH3_ROUTES_B_C_NARRATIVE_DRAFT.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A04-verification-selected-before-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/artwork-history/chapter-03/pre-v04-2026-11-20/CH3-A05-verification-selected-before-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved docs/artwork-history/chapter-03/pre-v04-paper-emergency-2026-11-22/CH3-B06-paper-emergency-approved-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/archives/README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/archives/chapter-03-pre-reboot-20261118.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/artwork-preview.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/artwork.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapter-03.reboot-review-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapter-04.wip-review-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapters/chapter-01.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapters/chapter-02.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapters/chapter-03.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapters/chapter-03.reboot-candidate.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapters/chapter-04.wip.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/chapters/prologue-00.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/death-presentations.export.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/game-integration.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/items.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/storyboard-layout.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/storyboard-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved story/sync-contract.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/app.js",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/artwork-audit.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/asset-index.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/actions/files.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/actions/inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/actions/notes.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/items/bathroom_pass_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/items/bathroom_pass_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/portraits/receptionist/reception_background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/portraits/receptionist/receptionist_idle.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/scenes/conference_hall/reception/reception_scene.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/fonts/jersey15-1x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/fonts/pressstart2p-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/fonts/tiny5-3x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/shell/item-overlay.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/shell/layout-final.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/choice_cards/choice_2line_a.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/choice_scroll_thumb_bottom.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/choice_scroll_thumb_middle.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/choice_scroll_thumb_top.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_left_down.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_left_up.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_right_down.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/inv_right_up.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_a_down.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_a_up.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_b_down.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_b_up.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_c_down.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/controls/utility_c_up.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/fonts/locked_pixel_font_atlas_dark.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/fonts/locked_pixel_font_atlas_light.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/inspect_close.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/art/ui/sprites/inventory/inventory_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-04/CH4-B2-24-open-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-04/CH4-B2-25-recovered-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-04/CH4-B2-25-slipped-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-37-cleared-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-37-permit-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-41-cleared-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-07/CH4-B2-41-permit-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-42-inspection-hold-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-42-relieved-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-42-staff-access-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-47-inspection-hold-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-47-relieved-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-08/CH4-B2-47-staff-access-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-rubber-band-fender-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-water-emerging-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-wheel-mounted-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-wheel-removed-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/approved/retired-selections/chapter-04/CH4-B2-16-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/applause_timing_clicker_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/applause_timing_clicker_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/effects_box_empty_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/effects_box_empty_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/effects_box_full_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/effects_box_full_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/expo_examiner_badge_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/expo_examiner_badge_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/property_claim_ticket_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/property_claim_ticket_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/red_swangline_stapler_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/red_swangline_stapler_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/rubber_band_ball_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/rubber_band_ball_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/small_desk_plant_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/small_desk_plant_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/termination_notice_inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/items/termination_notice_slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/portraits/termination_drone/corridor_background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/portraits/termination_drone/drone_paper_extended.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/portraits/termination_drone/drone_slot_closed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v01/facilities-corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v01/street-approach.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v02/entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v02/property-intake.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v03/entrance.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/continuity-v03/facilities-corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/entrance_turnstile.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/facilities_corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/property_counter.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/exposition/street_approach.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/workplace/applause_station.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/workplace/corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/draft/art/scenes/workplace/personal_effects_exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/ARTWORK_CONTINUITY_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/CANDIDATE_HASHES.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/PNG_SHA256SUMS.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/approved-comparison-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/desktop-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/desktop-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/browser-qa/mobile-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/build_review.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/A-lounge-conversation-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/A-lounge-conversation-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/B-dining-conversation-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/candidates/B-dining-conversation-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/gallery.css",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-records.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/A-lounge-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/A-lounge-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/B-dining-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/generation-source/B-dining-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/A-lounge-conversation-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/A-lounge-conversation-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/B-dining-conversation-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/previews/B-dining-conversation-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/A-lounge-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/A-lounge-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/B-dining-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/prompts/B-dining-v02.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/qa.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/dining-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/dining-scene.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/foyer-conversation-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/foyer-conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/gallery-conversation-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/gallery-conversation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/lounge-scene-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/lounge-scene.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/references/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/docs/102_ARTWORK_APPROVAL_AND_STORYBOARD_SYNC_POLICY.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/docs/107_PRESENTATION_MODE_AUDIT_20261117.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/registered-briefs.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/story/artwork.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/sources/story/chapters/chapter-01.draft.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/verify_browser.cjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-01-house-conversation-2026-11-17/verify_review.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/PMO_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/REMAINING_QUEUE.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/SHA256SUMS.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/candidates/I-customs-antidote-inspect-background-polish-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/gallery-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/gallery.css",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/changed-pixels.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/exterior-background.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/permitted-background-edit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/masks/protected-injector-and-shadow.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/palette.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-vs-revised-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-original-vs-revised-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-revised-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/I-revised-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-overlay-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-overlay-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-pixels-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/changed-pixels-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/exterior-background-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/exterior-background-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/inspector-background-continuity-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/inspector-background-continuity-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/permitted-background-edit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/permitted-background-edit-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/protected-injector-and-shadow-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/previews/protected-injector-and-shadow-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/qa.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/C-public-antidote-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/F-maintenance-antidote-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/H-customs-antidote-slot.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch07-polish-2026-11-17/references/I-customs-antidote-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/ARTWORK_CONTINUITY_REVIEW.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/BATCH7_APPROVAL.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/CANDIDATE_HASHES.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/PNG_SHA256SUMS.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/PUBLICATION.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/REMAINING_QUEUE.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/SOURCE_SHA256SUMS.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/STORY_CONTINUITY.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/approval.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/A-classified-as-compost.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/B-new-arrival.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/C-personal-growth.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/D-reclassified.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/candidates/E-site-improvement.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/gallery-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/gallery.css",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-records.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/A-classified-as-compost-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/B-new-arrival-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/C-personal-growth-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/D-reclassified-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/generation-source/E-site-improvement-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/palette.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/A-popup-1920x1080.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/B-popup-1920x1080.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/C-popup-1920x1080.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/D-popup-1920x1080.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-previews/E-popup-1920x1080.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-review-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/popup-ui-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-approved-scene-comparison-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-approved-scene-comparison-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-approved-scene-comparison-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-classified-as-compost-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-classified-as-compost-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/A-classified-as-compost-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-D-distinct-aftermaths-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-D-distinct-aftermaths-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-D-distinct-aftermaths-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-approved-scene-comparison-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-approved-scene-comparison-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-approved-scene-comparison-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-new-arrival-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-new-arrival-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/B-new-arrival-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-approved-scene-comparison-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-approved-scene-comparison-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-approved-scene-comparison-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-personal-growth-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-personal-growth-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/C-personal-growth-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-approved-scene-comparison-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-approved-scene-comparison-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-approved-scene-comparison-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-reclassified-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-reclassified-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/D-reclassified-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-approved-scene-comparison-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-approved-scene-comparison-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-approved-scene-comparison-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-site-improvement-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-site-improvement-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/E-site-improvement-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/five-aftermaths-2x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/five-aftermaths-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/previews/five-aftermaths-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/A-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/B-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/C-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/D-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/prompts/E-v01.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/qa.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/central_flower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/central_flower.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/groundskeeper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/groundskeeper.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/lower_irrigation-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/lower_irrigation.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_hopper-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_hopper.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_machine-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/planting_machine.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/sorting_conveyor-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/sorting_conveyor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/spore_garden-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/spore_garden.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/translator_machine-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/translator_machine.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/waste_chute-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-02-batch08-2026-11-17/references/waste_chute.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/APPROVAL_LEDGER_ADDENDUM.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/CLAUDE_REGISTRATION_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/OWNER_SELECTION_VERBATIM.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/future-record-notes.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/preserved/CH3-B06-paper-emergency-approved-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/qa/independent-verification.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/qa/preservation.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/qa/registration-dry-run.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/qa/results.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/qa/staged-handoff-validation.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/registration-batch.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/selected/CH3-B06-paper-emergency-local-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/selection-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/sources/source-7337e5e-B06-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/sources/source-d1600a3-B06-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-03-native-pilot-2026-11-21/selection-paper-emergency-v04-2026-11-22/verify-selection.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/BRIEF.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/PMO-V02-ART-DIRECTION.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/PUBLIC-BROWSER-VERIFICATION-20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/PUBLIC-BYTE-VERIFICATION-20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/PUBLIC-SCOPE-VERIFICATION-20261124.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/PUBLICATION-20261124.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/public-browser-20261124/chromium-CH4-NEW-03-1x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/public-browser-20261124/chromium-CH4-NEW-03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/public-browser-20261124/firefox-CH4-NEW-03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/public-browser-20261124/firefox-comparisons-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/README.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/chapter2-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/chapter2-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/chapter4-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/chapter4-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/production-process-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/production-process-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/story-object-details-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/comparisons/story-object-details-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/browser-local/chromium-CH4-NEW-03-1x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/browser-local/chromium-CH4-NEW-03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/browser-local/firefox-comparisons-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/browser-local/report.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/canonical-benchmarks.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/canonical-node-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/canonical-static-qa.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/chapter2-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/chapter4-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/composition-plan.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/composition-sketch-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/composition-sketch-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/detailed-direct-resize-DIAGNOSTIC.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/initial-native-recipe.py.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/initial-native-study-not-proposed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/material-direct-resize-DIAGNOSTIC.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/material-study-a-not-proposed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/material-study-b-recipe.py.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/material-study-b-rejected-noisier.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/material-tonal-guide-diagnostic.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/native-form-study-not-proposed.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/native-structural-underpainting-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/internal-study/native-structural-underpainting.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/material-generation-receipt.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/material-interpretation.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/native-assembly.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/online-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/palette-and-clusters.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/evidence/visual-review.md",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-storage-racks.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/material-wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/storage-racks.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/layers/wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/architecture.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/ceiling-duct-and-lights.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/descending-stairwell.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/foreground-sanitary-salvage.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/freight-lift.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/guardrails.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/mezzanine-floor.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/open-maintenance-hatch.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/storage-racks.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/masks/wc-three-button-panel.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/native/CH4-NEW-03-upper-salvage-v01.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/online.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/originals/CH4-NEW-03-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/originals/CH4-NEW-03-material-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/CH4-NEW-03-upper-salvage-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/ch2-damaged-walkway-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/ch2-maintenance-exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/ch4-loading-dock-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/ch4-lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/ch4-service-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-Descending-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-Descending-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-Detached-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-Detached-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-Open-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-Open-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-WC-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/previews/detail-WC-native.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/prompts/CH4-NEW-03-detailed-reference.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/prompts/CH4-NEW-03-material-reference.txt",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/references/ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/references/ch2-damaged-walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/references/ch2-maintenance-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/references/ch4-loading-dock.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/references/ch4-lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/references/ch4-service-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/browser_qa.cjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/native_materials.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/native_scene.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/package_review.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/prepare_online.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/validate.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v01/source/verify_publication.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/bitmap-fonts.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/control-asset-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/exposition-v02.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/exposition-v03.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/lab.css",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/layout-reference.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/pixel-type.js",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/qa/qa-browser.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/qa/qa-pages-site.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/prologue-art-lab/qa/qa-static.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/export-death-presentations.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/index.html",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/prepare-ch3-artwork-briefs.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-artwork-preview.js",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-browser.js",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-ch3-artwork-briefs.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-ch3-reboot-candidate.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-fixtures/legacy-render-snapshot.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-legacy-render.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-smoke.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/storyboard/qa-timeline.js",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/ch3-integration-state.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/ch3-reference-supersession.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/ch4-consolidation.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/check-canon.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/lib.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/qa-ch3-integration-state.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/qa-ch3-reference-supersession.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/qa-fixtures/ch3-batch04-v01-approved-sources.json",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/qa-sync.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/register-art.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/stage-ch3-batch04-review.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch3-batch-d-selection.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch3-current-selection.mjs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b201-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b202-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b203-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b204-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b205-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b206-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b207-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b208-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-b209-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserved tools/sync/verify-ch4-batch1-selection.py",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v01-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/visual-review.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/additional-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/additional-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch4-loading-dock-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v01-v02-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/quick-glance-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/v01-before.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/mirror-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch4-loading-dock.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch4-restroom-bowl-style-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch2-maintenance-exit.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/rack-before-after-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch4-service-stairs.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/sinks-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-NEW-03-upper-salvage-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch2-damaged-walkway-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch4-restroom-bowl-style.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch4-service-stairs-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/v01-before-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/sinks-before-after-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-03-upper-salvage-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/ch2-maintenance-exit-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/mirror-before-after-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/rack-before-after-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency ../v01/originals/CH4-NEW-03-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/ch2-damaged-walkway.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/quick-glance-native.png",
+      "passed": true
+    },
+    {
+      "check": "Deterministic native repair / comparisons / gallery replay",
+      "passed": true
+    }
+  ]
+}
