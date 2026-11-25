@@ -1,0 +1,95 @@
+{
+  "schema": "chapter4-b209-owner-approval-v1",
+  "owner": "Nate",
+  "approvalDate": "2026-11-24",
+  "canonicalBase": "d82ae25bd39855412797bb2632dc61b1001b940a",
+  "approvalSourceCommit": "c8873e773a9cd8bc00eee4c11886f0ab2228e01b",
+  "reviewBranch": "art/ch4-b209-consolidated-review-20261124",
+  "sourceRoot": "tools/prologue-art-lab/assets/review/chapter-04-b209-consolidated-2026-11-24/v01/native/",
+  "primary": [
+    {
+      "id": "CH4-NEW-05",
+      "registryKey": "portraits:hotel_commodore_bixby:delighted",
+      "sourceFilename": "CH4-NEW-05-bixby-reused-v01.png",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_commodore_bixby/delighted.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_commodore_bixby/delighted.png",
+      "sha256": "44f81292dc520eeabc6864c21449fb033db4891702c6102634b126b344ee05b8",
+      "dimensions": [564, 278],
+      "mode": "RGBA",
+      "storyNodeIds": ["hotel_commodore_bixby", "hotel_bixby_emergency", "hotel_bixby_trade"],
+      "reuseOf": "CH4-B2-49 v01 (same bytes)",
+      "portraitBackgroundScene": "grand_bellevue/ballroom"
+    },
+    {
+      "id": "CH4-NEW-06",
+      "registryKey": "portraits:hotel_wedding_organizer:urgent",
+      "sourceFilename": "CH4-NEW-06-organizer-urgent-v01.png",
+      "canonicalSelectedPath": "assets/selected/pending-integration/portraits/hotel_wedding_organizer/urgent.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/hotel_wedding_organizer/urgent.png",
+      "sha256": "ffb2444306854dc07373de096ff27e3328b8fe88bd0fe7e2e727a4b6f4127f76",
+      "dimensions": [564, 278],
+      "mode": "RGBA",
+      "storyNodeIds": ["hotel_wedding_arrival", "hotel_bridal_organizer"],
+      "portraitBackgroundScene": "grand_bellevue/ballroom"
+    },
+    {
+      "id": "CH4-NEW-18",
+      "registryKey": "scenes:grand_bellevue/ballroom#portraitBackground",
+      "sourceFilename": "CH4-NEW-18-shared-base-v01.png",
+      "canonicalSelectedPath": "assets/selected/pending-integration/scenes/grand_bellevue/ballroom/portraitBackground.png",
+      "suggestedEngineDestination": "art/portraits/grand_bellevue/backgrounds/ballroom.png",
+      "sha256": "cc9d19c2413df5b017b72592e3d5c676a84ad0ad91c354093a0a9e0199233e7d",
+      "dimensions": [564, 278],
+      "mode": "RGB",
+      "storyNodeIds": ["hotel_wedding_arrival", "hotel_bridal_organizer", "hotel_commodore_bixby", "hotel_bixby_emergency", "hotel_bixby_trade"]
+    }
+  ],
+  "supplementalReferences": [
+    {
+      "id": "wheel-mounted",
+      "sourceFilename": "CH4-NEW-18-wheel-mounted-v01.png",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-wheel-mounted-v01.png",
+      "sha256": "ba0e7961134a632a522331f57945dd7889f9ae158a27a67e1cadc16cbdf1afc9",
+      "nodeIds": ["hotel_commodore_bixby"],
+      "condition": "Brass wheel mounted above the ice bucket before handoff."
+    },
+    {
+      "id": "wheel-removed",
+      "sourceFilename": "CH4-NEW-18-wheel-removed-v01.png",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-wheel-removed-v01.png",
+      "sha256": "cc9d19c2413df5b017b72592e3d5c676a84ad0ad91c354093a0a9e0199233e7d",
+      "nodeIds": ["hotel_bixby_emergency"],
+      "condition": "Wheel handed away; bucket and room remain, byte-identical to the neutral base."
+    },
+    {
+      "id": "rubber-band-fender",
+      "sourceFilename": "CH4-NEW-18-rubber-band-fender-v01.png",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-rubber-band-fender-v01.png",
+      "sha256": "7c4261a915e62c91f394942eac5fe7c0e6f5fc847fcc68b248494cf76c0c850b",
+      "nodeIds": ["hotel_bixby_trade"],
+      "condition": "Rubber-band ball tied to the bucket by a napkin; wheel gone."
+    },
+    {
+      "id": "water-emerging",
+      "sourceFilename": "CH4-NEW-18-water-emerging-v01.png",
+      "preservedPath": "tools/prologue-art-lab/assets/approved/conditional-production-references/chapter-04/b2-09/CH4-NEW-18-water-emerging-v01.png",
+      "sha256": "b5b1b1d0cc775cc02cfb61447efe12950fe78ca3e6184602b07c42dac9cb6f65",
+      "nodeIds": ["hotel_commodore_bixby"],
+      "condition": "Thin water sheet physically emerges from below the ballroom doors; may combine with any prop state."
+    }
+  ],
+  "supplementalPolicy": {
+    "status": "APPROVED_PRESERVED_REFERENCE_ONLY",
+    "canonicalKey": null,
+    "runtimeBinding": null,
+    "newFocusId": null,
+    "newFlags": null,
+    "newNodes": null,
+    "dispatchTiming": "Deferred to authorized gameplay integration."
+  },
+  "approvedPrimaryCount": 3,
+  "approvedPreservedSupplementalCount": 4,
+  "integrationPerformed": false,
+  "nextGroup": "B2-10 / CH4-NEW-03 upper salvage mezzanine, docs/138",
+  "excludedScope": ["Obsolete B2-09 four-asset brief", "CH4-03 replacement", "Draft PR #32", "Game integration", "Deployment"]
+}
