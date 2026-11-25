@@ -1366,6 +1366,16 @@
       "prompt": "Reuse the exact Nate-approved B2-10 v03 native PNG without any redraw, resizing, re-encoding or palette transformation. One shared salvage mezzanine main scene contains freight-lift doors and W.C. three-button panel, dark open maintenance hatch, descending service stairs, and unmistakably disconnected porcelain salvage on pallet and shelf. The clerk is voice-only; no extra freight-lift scene, NPC portrait or usable bathroom fixture.",
       "notes": "OWNER APPROVED 2026-11-24: B2-10 CH4-NEW-03 upper salvage v03, SOURCE-DERIVED native pixel interpretation. Immutable source InterstellarHarvest/CYOA-storyboard@7963f507568a6e6f9a50ffda3755103f9674bdd3, tools/prologue-art-lab/assets/review/chapter-04-b210-upper-salvage-2026-11-24/v03/native/CH4-NEW-03-upper-salvage-v03.png, SHA-256 1030e04f9b32d2c0fc4394e9f00a4a70ba162db1c9eeed4f2772068cf9ce3207. Covers hotel_upper_salvage_arrival, hotel_upper_salvage_clerk_directions, hotel_freight_wc_misunderstanding; no extra scene or clerk portrait (docs/137/138). Nate's acceptance and stop rule: PMO-V03-APPROVAL-AND-STOP-RULE.md. Not engine-integrated; assetPath null."
     },
+    "grand_bellevue/public_corridor": {
+      "title": "Grand Bellevue public corridor — dry master",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/public_corridor.png",
+      "prompt": "Preserve the exact Nate-approved B2-11 v02 dry master PNG; do not redraw, downscale, re-encode or recolor. Bureaucratic hotel corridor with readable STAFF door and passage, central collection stairs, bright side exit and exposed industrial ductwork. The flooded v04 condition is one separately approved supplemental reference, not a second main scene or new Focus key. Do not add guest or attendant portraits.",
+      "notes": "OWNER APPROVED 2026-11-25: B2-11 CH4-NEW-04 dry public corridor v02, SOURCE-DERIVED native structural/material interpretation. Immutable review source InterstellarHarvest/CYOA-storyboard@6475c943f7383ea796e118c6d84b8760d0ccc12e, tools/prologue-art-lab/assets/review/chapter-04-b211-public-corridor-2026-11-24/v02/native/CH4-NEW-04-public-corridor-v02.png, SHA-256 86da5123204f65c43ed23f418fe0edcf987dbdb3d000821367c36c8f30c390ec. Covers hotel_stall_public_corridor_walk and hotel_flooded_public_corridor through one stable scene. Flood state approved separately as reference-only: v04/native/CH4-NEW-04-public-corridor-flood-v04.png, SHA-256 f802ff0c9aa345147f6039779df8b49403cc96add6be89b13f2ef9396727212f. No new primary scene key, character portrait, Focus ID, flag, route, runtime state binding or game integration. Completion/handoff docs/144; assetPath null."
+    },
     "grand_bellevue/arrival": {
       "title": "Arrival — text-led transition",
       "kind": "scene",
