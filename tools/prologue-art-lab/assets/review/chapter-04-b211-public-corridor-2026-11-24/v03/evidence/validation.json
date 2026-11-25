@@ -1,0 +1,278 @@
+{
+  "passed": true,
+  "checksPassed": 62,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "dryPNGBytesUnchanged": true,
+  "characterSilhouetteUnchanged": true,
+  "signTranslation": [
+    34,
+    0
+  ],
+  "signBBoxGapNativePixels": 16,
+  "noSignCharacterOverlap": true,
+  "tenPixelSilhouetteClearancePassed": true,
+  "signPixelsUnchangedApartFromTranslation": true,
+  "changesOutsideAuthorizedPixels": 0,
+  "sharedLayersByteExact": 14,
+  "exact4xPairs": 11,
+  "earlierReviewFilesByteExact": {
+    "v01": 94,
+    "v02": 107
+  },
+  "approvedFilesByteExact": 199,
+  "baselineBlobsPreserved": 870,
+  "replayedArtifactsIdentical": 29,
+  "sourceDerived": true,
+  "newImageGeneration": false,
+  "checks": [
+    {
+      "check": "Only one unselected flood revision; dry candidate unchanged",
+      "passed": true
+    },
+    {
+      "check": "Only one newly authored native PNG",
+      "passed": true
+    },
+    {
+      "check": "Opaque native314x206",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest-neighbor4x",
+      "passed": true
+    },
+    {
+      "check": "Final flood hash exact",
+      "passed": true
+    },
+    {
+      "check": "Final preview hash exact",
+      "passed": true
+    },
+    {
+      "check": "Dry master unchanged exact PNG bytes",
+      "passed": true
+    },
+    {
+      "check": "Zero changes outside character plus old/new sign pixels",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha simplified character",
+      "passed": true
+    },
+    {
+      "check": "Exact character silhouette, size, origin and pose",
+      "passed": true
+    },
+    {
+      "check": "Character and sign silhouettes never overlap",
+      "passed": true
+    },
+    {
+      "check": "Sign clears a10-pixel expanded character silhouette",
+      "passed": true
+    },
+    {
+      "check": "Sixteen native pixels of horizontal bbox clearance",
+      "passed": true
+    },
+    {
+      "check": "Exact34px rightward sign translation; lettering/shape/wake unchanged",
+      "passed": true
+    },
+    {
+      "check": "No sign resampling, repaint or clipping",
+      "passed": true
+    },
+    {
+      "check": "Fourteen existing layers reused; exact assembly with only two edits",
+      "passed": true
+    },
+    {
+      "check": "Canonical node coverage unchanged",
+      "passed": true
+    },
+    {
+      "check": "No new runtime binding, scene key, Focus or flag",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Readable caption v02-v03-flood/v02 flood",
+      "passed": true
+    },
+    {
+      "check": "Readable caption v02-v03-flood/v03 simpler NPC / clear sign",
+      "passed": true
+    },
+    {
+      "check": "Readable caption character-sign/v02 character / sign",
+      "passed": true
+    },
+    {
+      "check": "Readable caption character-sign/v03 character / sign",
+      "passed": true
+    },
+    {
+      "check": "Readable caption canonical-benchmarks/v03 flood",
+      "passed": true
+    },
+    {
+      "check": "Readable caption canonical-benchmarks/Approved Staff Lavatory",
+      "passed": true
+    },
+    {
+      "check": "Readable caption canonical-benchmarks/Approved Ch2 Bureau",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/canonical-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/v02-v03-flood-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-flood-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v03-character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-flood-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v02-character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "All prior versions, approved art, narrative and selections preserved",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-04-public-corridor-flood-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/character-sign-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v02-v03-flood-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-NEW-04-public-corridor-flood-v03.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/repair.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-04-public-corridor-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/canonical-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v02-v03-flood-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency ../v02/evidence/generation-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-NEW-04-public-corridor-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/canonical-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Deterministic repair/assembly/gallery replay",
+      "passed": true
+    }
+  ]
+}

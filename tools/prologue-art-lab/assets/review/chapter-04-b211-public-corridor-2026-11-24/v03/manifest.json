@@ -1,0 +1,82 @@
+{
+  "title": "B2-11 v03 \u2014 simpler scene NPC and separated floating sign",
+  "branch": "art/ch4-b211-public-corridor-review-20261124",
+  "preservationBaseline": "e825c7a8bc97280e55cd1650b50c1f94ec15f272",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryUnits": 1,
+  "newPrimaryAssets": 0,
+  "newlyRevisedArtworkUnits": 1,
+  "asset": {
+    "id": "CH4-NEW-04",
+    "proposedCanonicalKey": "scenes:grand_bellevue/public_corridor",
+    "native": {
+      "file": "references/CH4-NEW-04-public-corridor-v02.png",
+      "sha256": "86da5123204f65c43ed23f418fe0edcf987dbdb3d000821367c36c8f30c390ec",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    "preview4x": {
+      "file": "previews/CH4-NEW-04-public-corridor-v02-4x.png",
+      "sha256": "3a607d3294db7cebadb6c89e9778a7a396e83a67e1df3a56357bb7e21b8931e1",
+      "dimensions": [
+        1256,
+        824
+      ],
+      "mode": "RGB"
+    },
+    "nodeIds": [
+      "hotel_stall_public_corridor_walk",
+      "hotel_flooded_public_corridor"
+    ],
+    "runtimeBinding": null,
+    "newFocusId": null,
+    "unchangedFromV02": true
+  },
+  "supplementalReferences": [
+    {
+      "label": "public_corridor_flood",
+      "role": "Conditional production reference only",
+      "condition": "Water over carpet; open maintenance hatch; attendant; fallen floating WET FLOOR sign",
+      "nodeIds": [
+        "hotel_flooded_public_corridor"
+      ],
+      "native": {
+        "file": "native/CH4-NEW-04-public-corridor-flood-v03.png",
+        "sha256": "bd6cd8c0f527ba3c6d8312216b8db0e39e6903e4e5c5c3fb174b91741dcf5942",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-04-public-corridor-flood-v03-4x.png",
+        "sha256": "55e7c0570621c2a468dbcfecb34b2af82dbb37b5936d0213a912d33b2830e4ad",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "runtimeBinding": null,
+      "newFocusId": null,
+      "newSceneKey": null,
+      "newFlag": null
+    }
+  ],
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "newImageGeneration": false,
+  "methodRecord": "evidence/repair.json",
+  "nativeLayerRecipe": "source/refine.py",
+  "originalSource": "../v02/originals/attendant-illustration-source.png",
+  "originalGenerationProvenance": "../v02/evidence/generation-provenance.json",
+  "changesFromV02": 2863,
+  "dryCandidateBytesUnchanged": true,
+  "narrativeGameplayBindingsModified": false,
+  "productionSelectionsModified": false
+}

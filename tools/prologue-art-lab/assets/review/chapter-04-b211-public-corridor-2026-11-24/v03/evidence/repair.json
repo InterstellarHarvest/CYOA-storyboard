@@ -1,0 +1,141 @@
+{
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "sourceDerived": true,
+  "whollyIndependentAuthorshipClaim": false,
+  "baseCommit": "e825c7a8bc97280e55cd1650b50c1f94ec15f272",
+  "method": "Native local material-ramp grouping and broad plane/lock/cloth repaint inside exact v02 character silhouette; exact34-pixel rightward sign translation. No new generation, blur or resampling.",
+  "characterSilhouetteUnchanged": true,
+  "characterOriginUnchanged": [
+    110,
+    99
+  ],
+  "characterHeightUnchanged": 94,
+  "nativeMaterialGroups": {
+    "cloth": [
+      [
+        "#21262d",
+        "#2d303d",
+        "#3d4351",
+        "#535c6d",
+        "#6e7681"
+      ],
+      [
+        "#212b37",
+        "#29394a",
+        "#3d5063",
+        "#586b7a"
+      ]
+    ],
+    "hair": [
+      [
+        "#4b4c4d",
+        "#6f706d",
+        "#989789",
+        "#c7bfa5",
+        "#e2d2b0"
+      ],
+      [
+        "#6f706d",
+        "#6f706d",
+        "#aaa998",
+        "#d0c7ad",
+        "#d0c7ad"
+      ]
+    ],
+    "skin": [
+      [
+        "#573f31",
+        "#80543b",
+        "#a8754d",
+        "#c18e60",
+        "#dba97a",
+        "#edc69a"
+      ],
+      [
+        "#795138",
+        "#a8754d",
+        "#a8754d",
+        "#d0a474",
+        "#d0a474",
+        "#e7c393"
+      ]
+    ],
+    "collar": [
+      [
+        "#9c9583",
+        "#c3baa0",
+        "#e6d6b3",
+        "#f1dfb7"
+      ],
+      [
+        "#a99f84",
+        "#d7c8a4",
+        "#ead7ae",
+        "#ead7ae"
+      ]
+    ],
+    "shoe": [
+      [
+        "#28282a",
+        "#4c4a44",
+        "#7d715d",
+        "#a59071"
+      ],
+      [
+        "#252b30",
+        "#252b30",
+        "#59606a",
+        "#59606a"
+      ]
+    ]
+  },
+  "isolatedClothShadePixelsMerged": 5,
+  "tinyInteriorClothIslandPixelsMerged": 62,
+  "signTranslation": [
+    34,
+    0
+  ],
+  "oldSignBBox": [
+    144,
+    177,
+    182,
+    195
+  ],
+  "newSignBBox": [
+    178,
+    177,
+    216,
+    195
+  ],
+  "characterBBox": [
+    110,
+    99,
+    162,
+    193
+  ],
+  "bboxHorizontalGap": 16,
+  "floodLayerOrder": [
+    "../v02/layers/01-architecture-plaster.png",
+    "../v02/layers/02-carpet-floor.png",
+    "../v02/layers/03-painted-paneling.png",
+    "../v02/layers/04-doors-and-lettering.png",
+    "../v02/layers/05-side-exit.png",
+    "../v02/layers/06-collection-stairs.png",
+    "../v02/layers/07-arch-and-pilasters.png",
+    "../v02/layers/08-hatch-closed.png",
+    "../v02/layers/09-lamps.png",
+    "../v02/layers/10-duct-and-mounts.png",
+    "../v02/layers/repair-side-exit-yard.png",
+    "../v02/layers/repair-far-door-perspective.png",
+    "../v02/layers/state-water.png",
+    "../v02/layers/state-hatch-open.png",
+    "layers/state-attendant.png",
+    "layers/state-floating-sign.png"
+  ],
+  "unchangedDryFile": "../v02/native/CH4-NEW-04-public-corridor-v02.png",
+  "unchangedDrySha256": "86da5123204f65c43ed23f418fe0edcf987dbdb3d000821367c36c8f30c390ec",
+  "finalFloodSha256": "bd6cd8c0f527ba3c6d8312216b8db0e39e6903e4e5c5c3fb174b91741dcf5942",
+  "originalAttendantSource": "../v02/originals/attendant-illustration-source.png",
+  "originalGenerationProvenance": "../v02/evidence/generation-provenance.json"
+}
