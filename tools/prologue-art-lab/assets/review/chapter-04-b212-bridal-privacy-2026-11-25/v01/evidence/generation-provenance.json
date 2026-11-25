@@ -1,0 +1,72 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "generationDate": "2026-11-25",
+  "providerSeed": "not exposed",
+  "sources": [
+    {
+      "file": "originals/CH4-NEW-01-detailed-reference.png",
+      "prompt": "source/room-detailed-prompt.txt",
+      "purpose": "Detailed empty-room composition, material and light reference",
+      "inputs": [],
+      "inputNote": "Exact textual prompt retained. The first call reference-attachment list was not retained; this empty list does not assert there were no attachments. The pixel-friendly study below has an explicit retained reference list. Canonical benchmark copies are separately hash-pinned.",
+      "sha256": "bed917fdccb4c737622adfad191ea99de7ccc4d718eb6affaf6ef1ad22b1f4a5",
+      "dimensions": [
+        1549,
+        1015
+      ],
+      "mode": "RGB",
+      "bytes": 2857580,
+      "promptSha256": "9694713c9e94d7aa9ac0131c43b8382c31753ed04e6f2467132f134a155a0244",
+      "inputHashes": {}
+    },
+    {
+      "file": "originals/CH4-NEW-01-pixel-friendly-study.png",
+      "prompt": "source/room-pixel-friendly-prompt.txt",
+      "purpose": "Pixel-friendly material/cluster study; NOT production artwork",
+      "inputs": [
+        "originals/CH4-NEW-01-detailed-reference.png",
+        "references/conveniences_bureau.png",
+        "references/lobby.png",
+        "references/staff_lavatory.png"
+      ],
+      "sha256": "9510cb678d8db38336f6e4b51597b878b6f60de70c9157ec70b4b4683a1eabb0",
+      "dimensions": [
+        1548,
+        1016
+      ],
+      "mode": "RGB",
+      "bytes": 1827710,
+      "promptSha256": "c6602f90a194a897e03e76c361705c61be245a9248615156533b07c07727e058",
+      "inputHashes": {
+        "originals/CH4-NEW-01-detailed-reference.png": "bed917fdccb4c737622adfad191ea99de7ccc4d718eb6affaf6ef1ad22b1f4a5",
+        "references/conveniences_bureau.png": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+        "references/lobby.png": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+        "references/staff_lavatory.png": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3"
+      }
+    },
+    {
+      "file": "originals/CH4-NEW-07-detailed-reference.png",
+      "prompt": "source/focus-reference-prompt.txt",
+      "purpose": "Physical brass-panel closeup, lighting and hardware reference",
+      "inputs": [
+        "originals/CH4-NEW-01-pixel-friendly-study.png",
+        "references/master_isolator.png"
+      ],
+      "sha256": "e58d371b7cebe0d2ffbed368d64393e5cfc76733393585894f9842e5f0e38f53",
+      "dimensions": [
+        1404,
+        1120
+      ],
+      "mode": "RGB",
+      "bytes": 2720820,
+      "promptSha256": "ab44f2bb3246c157259ae7ad70e03dc28be97820647e25a24be46ef73247a686",
+      "inputHashes": {
+        "originals/CH4-NEW-01-pixel-friendly-study.png": "9510cb678d8db38336f6e4b51597b878b6f60de70c9157ec70b4b4683a1eabb0",
+        "references/master_isolator.png": "ba494521a177b397cc9db901e83046fccc83afcfcebca890b23a0656be042153"
+      }
+    }
+  ],
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "derivation": "Source-informed material fields inside native semantic masks, connected shade-group cleanup and separately specified final-grid architectural profiles, door geometry, rolling stand, gown seams, camera optics, brass frames, policy pictograms and hand-defined binary pixel lettering. Final images assembled from native layers. No dithering or interpolated enlargement. Diagnostics are explicitly source-derived and are not production images."
+}

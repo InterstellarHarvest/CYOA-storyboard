@@ -1,0 +1,19 @@
+{
+  "python": "3.13.15 (v3.13.15:4061bc4c35f, Aug  5 2026, 09:08:51) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "Pillow": "12.3.0",
+  "dependencies": [
+    "Pillow"
+  ],
+  "nativeColorCounts": {
+    "CH4-NEW-07-provisional-authorized-v01.png": 29,
+    "CH4-NEW-01-bridal-dressing-room-v01.png": 54,
+    "CH4-NEW-07-bridal-privacy-panel-v01.png": 29
+  },
+  "globalPaletteCapImposed": false,
+  "commandSequence": [
+    "python3 source/build_native.py",
+    "python3 source/package_review.py",
+    "python3 source/validate.py",
+    "python3 source/checksums.py --verify"
+  ]
+}

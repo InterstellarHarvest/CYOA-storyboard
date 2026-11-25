@@ -1,0 +1,165 @@
+{
+  "title": "Chapter4 B2-12 v01: Bridal dressing room and privacy panel",
+  "branch": "art/ch4-b212-bridal-privacy-review-20261125",
+  "briefCommit": "9f49416c9dd2e8b02e84b04a6c4ed1f4bc5e65b5",
+  "canonicalReferenceCommit": "13ea9b57ee3b5c670a3ab0ff0f160896559ce2ef",
+  "preservationBaseline": "9f49416c9dd2e8b02e84b04a6c4ed1f4bc5e65b5",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "selected": false,
+  "primaryAssetCount": 2,
+  "supplementalReferenceCount": 1,
+  "primaryAssets": [
+    {
+      "id": "CH4-NEW-01",
+      "label": "Bridal dressing room",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "class": "main",
+      "proposedCanonicalKey": "scenes:grand_bellevue/bridal_dressing_room",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-01-bridal-dressing-room-v01.png",
+        "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB",
+        "bytes": 22293
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-01-bridal-dressing-room-v01-4x.png",
+        "sha256": "66953fd8cd1a1c19ef754667d58d923050217f29e7ae72b96bc92163ec7569c6",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB",
+        "bytes": 36191
+      },
+      "canonicalNodes": [
+        "hotel_bridal_room",
+        "hotel_bridal_door_knock",
+        "hotel_bridal_door_focus",
+        "hotel_bridal_criteria",
+        "hotel_bridal_false_claim",
+        "hotel_bridal_emergency_override",
+        "hotel_bridal_ring_argument",
+        "hotel_bridal_gown_focus",
+        "hotel_bridal_gown_motor",
+        "hotel_bridal_gown_camera",
+        "hotel_bridal_gown_try",
+        "hotel_bridal_autofit_survived",
+        "hotel_bridal_door_options"
+      ],
+      "provenance": "SOURCE-DERIVED",
+      "sourceDerived": true,
+      "whollyIndependentNativeAuthorship": false,
+      "coverageBoundary": "Room location baseline only. No bride/player/AI character, AutoFit Focus, fatal aftermath or later lavatory artwork is supplied. Closed door base does not implement later open-door dispatch."
+    },
+    {
+      "id": "CH4-NEW-07",
+      "label": "Bridal privacy system: locked",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "class": "Focus A",
+      "proposedCanonicalKey": "focus:grand_bellevue/bridal_privacy_panel",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-07-bridal-privacy-panel-v01.png",
+        "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB",
+        "bytes": 33061
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-07-bridal-privacy-panel-v01-4x.png",
+        "sha256": "d6677f469bd1ec0cd0460727db2b70dd5367e45931202748edd058aae455e85e",
+        "dimensions": [
+          2260,
+          1804
+        ],
+        "mode": "RGB",
+        "bytes": 63776
+      },
+      "canonicalNodes": [
+        "hotel_bridal_door_focus",
+        "hotel_bridal_criteria",
+        "hotel_bridal_false_claim",
+        "hotel_bridal_emergency_override",
+        "hotel_bridal_ring_argument",
+        "hotel_bridal_door_options"
+      ],
+      "provenance": "SOURCE-DERIVED",
+      "sourceDerived": true,
+      "whollyIndependentNativeAuthorship": false,
+      "contractNotice": "565x451 follows the explicit review brief. Current approved/runtime Focus is564x278. NOT registered or asserted compatible. Dimension resolution belongs to separate engineering/approval, not this review."
+    }
+  ],
+  "supplementalReferences": [
+    {
+      "id": "CH4-NEW-07-provisional",
+      "label": "Provisional bridal authorization",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "class": "conditional production reference",
+      "proposedCanonicalKey": null,
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-07-provisional-authorized-v01.png",
+        "sha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB",
+        "bytes": 33103
+      },
+      "preview4x": {
+        "file": "previews/CH4-NEW-07-provisional-authorized-v01-4x.png",
+        "sha256": "0fc23794903a14fafd8eac9b81c0446f39fa26eb7217d5a384c52b8ec68bac3a",
+        "dimensions": [
+          2260,
+          1804
+        ],
+        "mode": "RGB",
+        "bytes": 63813
+      },
+      "canonicalNodes": [
+        "hotel_bridal_autofit_survived"
+      ],
+      "provenance": "SOURCE-DERIVED",
+      "sourceDerived": true,
+      "whollyIndependentNativeAuthorship": false,
+      "parentAsset": "CH4-NEW-07",
+      "newFocusId": null,
+      "newFlag": null,
+      "existingNarrativeCondition": "hotel_bridal_autofit_survived; existing ch4_provisional_bride_registered flag after survival",
+      "stateFamily": "bridal_privacy_status",
+      "stateLabel": "provisional authorization / green LED / open lock",
+      "implementationBoundary": "Reference image only. No dispatch, bindings, new modes, new flags or narrative nodes. Shared physical panel geometry is exact outside the authorized screen/LED masks. Main-room bathroom door stays closed."
+    }
+  ],
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "dimensionContract": "evidence/dimension-contract.json",
+  "nativeLayerRecipes": "evidence/native-layer-recipes.json",
+  "generationProvenance": "evidence/generation-provenance.json",
+  "benchmarks": "evidence/benchmark-provenance.json",
+  "narrativeGameplayBindingsModified": false,
+  "productionSelectionsModified": false,
+  "nextQueueNotStarted": [
+    "B2-13",
+    "B2-14"
+  ]
+}

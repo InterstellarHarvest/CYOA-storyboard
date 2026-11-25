@@ -1,0 +1,662 @@
+{
+  "passed": true,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "artisticApproval": false,
+  "dimensionsFollowExplicitReviewBrief": true,
+  "currentFocusRuntimeCompatible": false,
+  "checks": [
+    {
+      "check": "Two unselected primary candidates and one unselected conditional reference",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-01 dimensions / opaque RGB",
+      "passed": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "check": "CH4-NEW-01 manifest hash",
+      "passed": true,
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49"
+    },
+    {
+      "check": "CH4-NEW-01 exact4x",
+      "passed": true
+    },
+    {
+      "check": "layers/room-plaster.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-plaster.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-wall-panels.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-wall-panels.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-lower-wall-panels.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-lower-wall-panels.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-floor-carpet.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-floor-carpet.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-curtain.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-curtain.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-window.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-window.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-window-mullions.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-window-mullions.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-mirror-silver.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-mirror-silver.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-ceiling-duct.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-ceiling-duct.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-gilt-and-furniture.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-gilt-and-furniture.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-stool-velvet.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-stool-velvet.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-gown-cloth.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-gown-cloth.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-architecture-profiles.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-architecture-profiles.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-closed-door-leaf-and-insets.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-closed-door-leaf-and-insets.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-steel-rolling-stand-and-empty-hanger.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-steel-rolling-stand-and-empty-hanger.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-gown-native-seams-and-lace-clusters.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-gown-native-seams-and-lace-clusters.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/room-privacy-panel-native-fixtures.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/room-privacy-panel-native-fixtures.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-01 exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-01 no selection/binding",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07 dimensions / opaque RGB",
+      "passed": true,
+      "dimensions": [
+        565,
+        451
+      ]
+    },
+    {
+      "check": "CH4-NEW-07 manifest hash",
+      "passed": true,
+      "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb"
+    },
+    {
+      "check": "CH4-NEW-07 exact4x",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-mounting-wall.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-mounting-wall.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-left-lamp.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-left-lamp.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-right-plaster.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-right-plaster.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-aged-brass-plate.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-aged-brass-plate.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-plate-thickness-moldings-and-screws.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-plate-thickness-moldings-and-screws.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-pixel-lettered-header.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-pixel-lettered-header.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-camera-optics-swivel-and-crt-bezel.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-camera-optics-swivel-and-crt-bezel.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-policy-badges-and-chunky-labels.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-policy-badges-and-chunky-labels.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-physical-emergency-button.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-physical-emergency-button.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-locked-status.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-locked-status.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07 exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07 no selection/binding",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-provisional dimensions / opaque RGB",
+      "passed": true,
+      "dimensions": [
+        565,
+        451
+      ]
+    },
+    {
+      "check": "CH4-NEW-07-provisional manifest hash",
+      "passed": true,
+      "sha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3"
+    },
+    {
+      "check": "CH4-NEW-07-provisional exact4x",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-mounting-wall.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-mounting-wall.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-left-lamp.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-left-lamp.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-right-plaster.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-right-plaster.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-aged-brass-plate.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-aged-brass-plate.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-plate-thickness-moldings-and-screws.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-plate-thickness-moldings-and-screws.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-pixel-lettered-header.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-pixel-lettered-header.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-camera-optics-swivel-and-crt-bezel.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-camera-optics-swivel-and-crt-bezel.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-policy-badges-and-chunky-labels.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-policy-badges-and-chunky-labels.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-physical-emergency-button.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-physical-emergency-button.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-provisional-status.png layer hash",
+      "passed": true
+    },
+    {
+      "check": "layers/panel-provisional-status.png native layer grid / binary alpha",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-provisional exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-provisional no selection/binding",
+      "passed": true
+    },
+    {
+      "check": "Conditional reference changes only screen / LED; shared geometry exact",
+      "passed": true,
+      "changedPixels": 2779
+    },
+    {
+      "check": "No supplemental Focus ID, new flag or runtime binding",
+      "passed": true
+    },
+    {
+      "check": "Chunky binary pixel lettering / deliberate horizontal margins",
+      "passed": true,
+      "minimumSideMargin": 4
+    },
+    {
+      "check": "Comparison labels fit",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source public_corridor-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview public_corridor-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source exposure_dispenser_open-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview exposure_dispenser_open-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source panel-source-diagnostic-native-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview panel-source-diagnostic-native-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source CH4-NEW-07-provisional-authorized-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview CH4-NEW-07-provisional-authorized-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source scene-ch2-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview scene-ch2-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source ballroom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview ballroom-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview lobby-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source panel-source-derived-diagnostic-NOT-production-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview panel-source-derived-diagnostic-NOT-production-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source focus-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview focus-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source scene-ch4-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview scene-ch4-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source privacy-statuses-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview privacy-statuses-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source scene-source-diagnostic-native-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview scene-source-diagnostic-native-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source room-source-derived-diagnostic-NOT-production-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview room-source-derived-diagnostic-NOT-production-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source CH4-NEW-01-bridal-dressing-room-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview CH4-NEW-01-bridal-dressing-room-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source CH4-NEW-07-bridal-privacy-panel-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview CH4-NEW-07-bridal-privacy-panel-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview has native source master_isolator-4x.png",
+      "passed": true
+    },
+    {
+      "check": "ExactNN preview master_isolator-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/ballroom.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/public_corridor.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/master_isolator.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical benchmark references/exposure_dispenser_open.png",
+      "passed": true
+    },
+    {
+      "check": "Original source originals/CH4-NEW-01-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Original source originals/CH4-NEW-01-pixel-friendly-study.png",
+      "passed": true
+    },
+    {
+      "check": "Retained reference input originals/CH4-NEW-01-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Retained reference input references/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Retained reference input references/lobby.png",
+      "passed": true
+    },
+    {
+      "check": "Retained reference input references/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Original source originals/CH4-NEW-07-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Retained reference input originals/CH4-NEW-01-pixel-friendly-study.png",
+      "passed": true
+    },
+    {
+      "check": "Retained reference input references/master_isolator.png",
+      "passed": true
+    },
+    {
+      "check": "Honest source-derived provenance",
+      "passed": true
+    },
+    {
+      "check": "Canonical node excerpts exactly match unchanged narrative",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-01 existing node associations",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07 existing node associations",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-provisional existing node associations",
+      "passed": true
+    },
+    {
+      "check": "Provisional outcome uses existing flag",
+      "passed": true
+    },
+    {
+      "check": "Documented review/runtime size mismatch; no compatibility assertion",
+      "passed": true
+    },
+    {
+      "check": "Every baseline tracked file unchanged",
+      "passed": true,
+      "baselineCommit": "9f49416c9dd2e8b02e84b04a6c4ed1f4bc5e65b5",
+      "filesVerified": 660,
+      "selectedFilesVerified": 200
+    },
+    {
+      "check": "Branch remains isolated review",
+      "passed": true
+    }
+  ]
+}
