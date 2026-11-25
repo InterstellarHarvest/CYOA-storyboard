@@ -4,6 +4,19 @@
 
 **Pinned review source:** `art/ch4-b210-upper-salvage-review-20261124` at `ca66bbc5b37a8b4e52805134147f7c96b0a26bfd`, `v01/`. Preserve that package byte-exact. Canonical `main`, approved artwork, game, narrative, draft PR #32 and other batches are off limits.
 
+## Nate's higher-priority correction — 4× readability
+
+The owner observes that this Chapter 4 main scene packs too many small visual ideas into the 314×206 logical canvas. **Reduce composition complexity before adding any further object detail.** The previous request for stronger fixture modelling applies to a *smaller number* of recognizable items, not the existing dense rack full of tiny circles. This section supersedes any lower-level instruction that would increase total object count, surface noise or edge density.
+
+- **Keep the three navigational landmarks** exactly: freight lift with W.C. (primary), open hatch (secondary), descending stairs (tertiary). They should be identifiable in a one-second glance at both native 314×206 and exact 4×.
+- **Thin the storage rack** to two or three substantial, distinct salvage silhouettes: one unmistakable disconnected toilet bowl, one sink, and perhaps one leaning partition/mirror. Remove/merge the repeated small white fixture rings and visually repetitive stacked outlines. Give these *few* objects convincing rim/cavity/underside and gravity, not many detailed icons.
+- Simplify overlapping rails, loose fittings and tiny background hardware wherever they compete with the routes. Group remaining pipework and shelves into broad, quiet value shapes. Do not make the room empty; leave a few purposeful signs of a dismantled bathroom warehouse.
+- Establish focal hierarchy through existing silhouettes, scale, overlap and **selective contrast**, not brighter highlights everywhere. Reserve the sharpest light/dark edges for W.C., the hatch aperture, stair opening and a few foreground porcelain edges. Let the back wall and stock recede.
+- Do not introduce small lettering, NPCs, an active toilet, a hanging stall or a separate scene. Leave the existing v01 package byte-exact and produce a separate v02.
+- The v02 before/after review must include a **quick-glance full-scene native and exact4× sheet** beside Chapter2 Control Tower/Maintenance Exit and Chapter4 Service Stairs, plus cropped examples. If all three routes or the major salvage objects still require an explanation to recognize, the visual gate is not met.
+
+This is a **composition simplification + selective native pixel illustration pass**, not a generalized shading/refinement pass. Chapter 2's strength is carefully prioritized information in a small pixel grid, not the highest number of visible objects.
+
 ## Independent PMO visual assessment
 
 At the actual **314×206 native size**, freight-lift doors, the legible `W.C.` three-button panel, the open maintenance hatch and descending stair routes are understandable and compatible. The central floor is usable negative space. Keep these shapes, perspective and camera placement stable.
