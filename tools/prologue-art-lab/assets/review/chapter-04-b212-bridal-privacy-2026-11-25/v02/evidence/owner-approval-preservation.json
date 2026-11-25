@@ -1,0 +1,65 @@
+{
+  "note": "Records explicit approval here without rewriting historical review manifests or canonical registration. v01 remains exact. New widescreen candidates are unselected.",
+  "assets": [
+    {
+      "id": "CH4-NEW-07-inspect-locked",
+      "status": "APPROVED",
+      "ownerApproved": true,
+      "approvedUnchanged": true,
+      "approvalAuthority": "OWNER-DIRECTION.md; Nate explicit approval",
+      "sourceCommit": "1261658ed882bff7340405e91f5d44f4e5404012",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-07-bridal-privacy-panel-v01.png",
+      "referenceCopy": {
+        "file": "references/approved-inspect-locked.png",
+        "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB"
+      },
+      "role": "Approved detailed INSPECT",
+      "canonicalRegistrationPerformed": false
+    },
+    {
+      "id": "CH4-NEW-07-inspect-provisional",
+      "status": "APPROVED",
+      "ownerApproved": true,
+      "approvedUnchanged": true,
+      "approvalAuthority": "OWNER-DIRECTION.md; Nate explicit approval",
+      "sourceCommit": "1261658ed882bff7340405e91f5d44f4e5404012",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-07-provisional-authorized-v01.png",
+      "referenceCopy": {
+        "file": "references/approved-inspect-provisional.png",
+        "sha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB"
+      },
+      "role": "Approved detailed INSPECT",
+      "canonicalRegistrationPerformed": false
+    },
+    {
+      "id": "CH4-NEW-01",
+      "status": "APPROVED",
+      "ownerApproved": true,
+      "approvedUnchanged": true,
+      "approvalAuthority": "OWNER-DIRECTION.md; Nate explicit approval",
+      "sourceCommit": "1261658ed882bff7340405e91f5d44f4e5404012",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-01-bridal-dressing-room-v01.png",
+      "referenceCopy": {
+        "file": "references/approved-dressing-room.png",
+        "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "role": "Approved dressing room",
+      "canonicalRegistrationPerformed": false
+    }
+  ]
+}

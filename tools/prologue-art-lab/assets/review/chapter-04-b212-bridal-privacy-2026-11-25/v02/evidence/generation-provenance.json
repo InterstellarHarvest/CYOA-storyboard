@@ -1,0 +1,55 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "generationDate": "2026-11-25",
+  "source": {
+    "file": "originals/widescreen-detailed-reference.png",
+    "sha256": "288ac3c85c44504d27dc6000a5f201af3f6a9a20047087ab4a222ba5c4aa27f8",
+    "dimensions": [
+      1786,
+      881
+    ],
+    "mode": "RGB"
+  },
+  "prompt": "source/widescreen-reference-prompt.txt",
+  "promptSha256": "cf475b1cdfafed7680e8b074954495916a40ee33a8a82c816579d07200c97cad",
+  "referenceInputs": [
+    {
+      "file": "references/approved-inspect-locked.png",
+      "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb",
+      "dimensions": [
+        565,
+        451
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/approved-dressing-room.png",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/ch2-exposure-dispenser.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "referenceRoles": [
+    "Panel identity only; immutable approved PNG",
+    "Approved room architecture/material continuity; immutable PNG",
+    "Approved Chapter2 pixel-art material benchmark; immutable PNG"
+  ],
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "noApprovedImageUsedAsResizedProductionLayer": true,
+  "nativeRecipe": "source/build_native.py",
+  "reusedCodeOnly": "source/native_support.py extracted from frozen v01 source; no approved image processing or calls to its old artwork builders",
+  "scope": "One new composition / two localized states. No regeneration of approved artwork."
+}

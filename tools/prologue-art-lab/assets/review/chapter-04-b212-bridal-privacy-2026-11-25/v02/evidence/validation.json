@@ -1,0 +1,375 @@
+{
+  "passed": true,
+  "newFocusStatus": "UNSELECTED",
+  "approvedInspectionStatus": "APPROVED / exact bytes",
+  "artisticApproval": false,
+  "engineFeatureImplemented": false,
+  "checks": [
+    {
+      "check": "One Focus identifier; two new unselected states",
+      "passed": true
+    },
+    {
+      "check": "locked dimensions/opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "locked SHA-256",
+      "passed": true,
+      "sha256": "d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520"
+    },
+    {
+      "check": "locked exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "locked no approval or new runtime binding",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-cream-plaster.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-door-painted-wood.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-lower-green-paneling.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-duct-surface.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-plaster-extension-above-relocated-wainscot.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-door-jamb-recesses-wall-moldings.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-duct-and-associated-conduit.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-warm-glass-brass-sconce.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-new-native-brass-plate-and-fixings.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-native-header.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-camera-native-optical-rings-and-inset-crt.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-native-policy-icons-and-plaques.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-native-physical-assistance-button.png",
+      "passed": true
+    },
+    {
+      "check": "locked layer layers/wide-locked-status.png",
+      "passed": true
+    },
+    {
+      "check": "locked exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "provisional dimensions/opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "provisional SHA-256",
+      "passed": true,
+      "sha256": "b7d8014313519b67d3ebe8c72772ed0d01b4dbbb88748c9e5b0e7f589d669272"
+    },
+    {
+      "check": "provisional exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "provisional no approval or new runtime binding",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-cream-plaster.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-door-painted-wood.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-lower-green-paneling.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-duct-surface.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-plaster-extension-above-relocated-wainscot.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-door-jamb-recesses-wall-moldings.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-duct-and-associated-conduit.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-warm-glass-brass-sconce.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-new-native-brass-plate-and-fixings.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-native-header.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-camera-native-optical-rings-and-inset-crt.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-native-policy-icons-and-plaques.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-native-physical-assistance-button.png",
+      "passed": true
+    },
+    {
+      "check": "provisional layer layers/wide-provisional-status.png",
+      "passed": true
+    },
+    {
+      "check": "provisional exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "No overlap: wainscot / plate including cast shadow",
+      "passed": true,
+      "plateAndShadowBBox": [
+        221,
+        22,
+        417,
+        265
+      ],
+      "railBBox": [
+        205,
+        269,
+        564,
+        277
+      ],
+      "minimumClearRows": 4
+    },
+    {
+      "check": "Exact shared geometry: screen/LED-only state differences",
+      "passed": true,
+      "changedPixels": 706
+    },
+    {
+      "check": "CH4-NEW-07-inspect-locked immutable approved source/copy bytes",
+      "passed": true,
+      "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb"
+    },
+    {
+      "check": "CH4-NEW-07-inspect-provisional immutable approved source/copy bytes",
+      "passed": true,
+      "sha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3"
+    },
+    {
+      "check": "CH4-NEW-01 immutable approved source/copy bytes",
+      "passed": true,
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49"
+    },
+    {
+      "check": "Approved Chapter2 benchmark references/ch2-exposure-dispenser.png",
+      "passed": true
+    },
+    {
+      "check": "Approved Chapter2 benchmark references/ch2-aid-box.png",
+      "passed": true
+    },
+    {
+      "check": "Approved Chapter2 benchmark references/ch2-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Chunky native glyphs / measured margins",
+      "passed": true
+    },
+    {
+      "check": "Preview source locked-focus-approved-inspect-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x locked-focus-approved-inspect-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source approved-dressing-room-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x approved-dressing-room-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source provisional-focus-approved-inspect-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x provisional-focus-approved-inspect-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source ch2-aid-box-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x ch2-aid-box-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source ch2-exposure-dispenser-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x ch2-exposure-dispenser-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source source-diagnostic-native-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x source-diagnostic-native-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source approved-inspect-provisional-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x approved-inspect-provisional-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source wainscot-correction-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x wainscot-correction-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source CH4-NEW-07-focus-locked-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x CH4-NEW-07-focus-locked-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source approved-inspect-locked-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x approved-inspect-locked-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source CH4-NEW-07-focus-provisional-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x CH4-NEW-07-focus-provisional-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source ch2-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x ch2-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source focus-states-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x focus-states-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Preview source chapter2-focus-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x chapter2-focus-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Comparison captions fit",
+      "passed": true
+    },
+    {
+      "check": "Honest source-derived provenance",
+      "passed": true
+    },
+    {
+      "check": "Generated original / prompt hashes",
+      "passed": true
+    },
+    {
+      "check": "Generation input hash references/approved-inspect-locked.png",
+      "passed": true
+    },
+    {
+      "check": "Generation input hash references/approved-dressing-room.png",
+      "passed": true
+    },
+    {
+      "check": "Generation input hash references/ch2-exposure-dispenser.png",
+      "passed": true
+    },
+    {
+      "check": "Existing five Focus choices / five return choices retained",
+      "passed": true
+    },
+    {
+      "check": "Handoff is separate; no engine implementation claimed",
+      "passed": true
+    },
+    {
+      "check": "All existing tracked files exact, including entire v01 package",
+      "passed": true,
+      "baseline": "1261658ed882bff7340405e91f5d44f4e5404012",
+      "trackedFiles": 806,
+      "selectedAssetFiles": 200
+    },
+    {
+      "check": "Correct isolated review branch",
+      "passed": true
+    }
+  ]
+}
