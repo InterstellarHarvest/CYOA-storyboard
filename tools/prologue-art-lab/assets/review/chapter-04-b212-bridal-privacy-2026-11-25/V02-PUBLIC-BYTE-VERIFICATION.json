@@ -1,0 +1,940 @@
+{
+  "passed": true,
+  "commit": "00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687",
+  "remoteBranchVerified": true,
+  "filesVerified": 102,
+  "pngsDecoded": 71,
+  "newFocusStatus": "UNSELECTED",
+  "approvedReferenceCopies": "APPROVED / exact bytes",
+  "newFocusOwnerApproved": false,
+  "allBytesMatch": true,
+  "files": [
+    {
+      "file": ".gitignore",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/.gitignore"
+    },
+    {
+      "file": "ENGINEERING-HANDOFF.md",
+      "sha256": "44c51994b0ac201410a5ee448cbe26768d5facf467ca68a4121b16c202ce9c2e",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/ENGINEERING-HANDOFF.md"
+    },
+    {
+      "file": "OWNER-DIRECTION.md",
+      "sha256": "67ae0425af09e03f5f1f532be20e33fc9a5fbe8753d5f5d12bdee5f848ef03cc",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/OWNER-DIRECTION.md"
+    },
+    {
+      "file": "README.md",
+      "sha256": "7a4d52d39c5915c4679537a435a4cb4d6c1e8e5df310e24412ca76d684906ab1",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/README.md"
+    },
+    {
+      "file": "comparisons/chapter2-focus-benchmarks-native.png",
+      "sha256": "96e61f5f5087466404bcc3c8d785af9d2bbbcd850bacdcc730d9d714e6a7b7b9",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1760,
+        328
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/comparisons/chapter2-focus-benchmarks-native.png"
+    },
+    {
+      "file": "comparisons/focus-states-native.png",
+      "sha256": "0671fea3bee8a31ffd0ff6c1fc8e6abece3a46a0f2d45c3f58a3cb36e12d42bc",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1176,
+        328
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/comparisons/focus-states-native.png"
+    },
+    {
+      "file": "comparisons/locked-focus-approved-inspect-native.png",
+      "sha256": "12af854b35835239ddd83baaa9b03972eab69c0d847b74a2b7239ab56efcc17b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1177,
+        501
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/comparisons/locked-focus-approved-inspect-native.png"
+    },
+    {
+      "file": "comparisons/provisional-focus-approved-inspect-native.png",
+      "sha256": "bbf50d73d262add1d161d65119b11c70510c97ae2d44867274c354aa590928b0",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1177,
+        501
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/comparisons/provisional-focus-approved-inspect-native.png"
+    },
+    {
+      "file": "comparisons/source-diagnostic-native-native.png",
+      "sha256": "7a6ec20d83bd00bcf5ced2a6c32370ddbde2ea559cc121db931a2b083c246730",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1176,
+        328
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/comparisons/source-diagnostic-native-native.png"
+    },
+    {
+      "file": "comparisons/wainscot-correction-native.png",
+      "sha256": "6e474f879ca815542c7c3a6f781a47a19bd1a93d91ef3931c63e0bbbb35e8152",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1176,
+        328
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/comparisons/wainscot-correction-native.png"
+    },
+    {
+      "file": "diagnostics/pre-wainscot-correction-locked-NOT-current.png",
+      "sha256": "b557d89d4af7ac7e1918fc7d873acf70d0eca766023648a2957a024690b96037",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/diagnostics/pre-wainscot-correction-locked-NOT-current.png"
+    },
+    {
+      "file": "diagnostics/pre-wainscot-correction-provisional-NOT-current.png",
+      "sha256": "7b7c6e7f4d2eb087e7aca1476e78390a09e5f9a46c33268be56ef9fcd53aa307",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/diagnostics/pre-wainscot-correction-provisional-NOT-current.png"
+    },
+    {
+      "file": "diagnostics/wide-source-derived-diagnostic-NOT-production.png",
+      "sha256": "64b5af2d0dbaf25afda4bc6333454a267f1cbf1ce4493d8cd531f8733953cd97",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/diagnostics/wide-source-derived-diagnostic-NOT-production.png"
+    },
+    {
+      "file": "evidence/benchmark-provenance.json",
+      "sha256": "2e93b510442cca71ef0662640032e94e1c39fbaed3d78710e15b1cc192f25e67",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/benchmark-provenance.json"
+    },
+    {
+      "file": "evidence/browser-local/chromium-focus-locked-1x.png",
+      "sha256": "71ecbe8e6b04d5a889a07bf4a368e60c6382d9d167466089a272f540209ec9ae",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        397
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-focus-locked-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-focus-locked-4x.png",
+      "sha256": "d61050639391bad074d40963d21776ebd2f33bf6829dd8824f03bd4e942a5e4b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1231
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-focus-locked-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-focus-provisional-1x.png",
+      "sha256": "ff2ac1dd21910138bbec45d05e6b6b8d3e00a004af49517c3a69c29eba8d8389",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        397
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-focus-provisional-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-focus-provisional-4x.png",
+      "sha256": "3a615ad7bf369a32f8a6126c824e3c7047220059d20c924243459916bffdd5d7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1231
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-focus-provisional-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-inspect-locked-1x.png",
+      "sha256": "6c92e17b8b97ee713a87ea5d6c67ef883e003d14b12274647d16aa039f1fa5d5",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        570
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-inspect-locked-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-inspect-locked-4x.png",
+      "sha256": "3f4cd98b929d50c48147d107a239ab1efb1fcf45737ae072cc40c64f9158d091",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1923
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-inspect-locked-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-inspect-provisional-1x.png",
+      "sha256": "641cc4222e5dd028d89df158699f36bc7e5430ca111a559636a398e905a3f43a",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        570
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-inspect-provisional-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/chromium-inspect-provisional-4x.png",
+      "sha256": "fde86cdc83d1c7369d70e87ff7fe68657ed7053effcb30fd5570c511c6d9b374",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1923
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/chromium-inspect-provisional-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-focus-locked-1x.png",
+      "sha256": "c871343fd5c49f21bc3b7edb76dae98afe03b2fdd4b6f7af545921ec3dbd564c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        398
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-focus-locked-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-focus-locked-4x.png",
+      "sha256": "d6272889e9a74bc329f22a698cf1f6d4f2dc9875819fbee89cf5f52de94070c1",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1232
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-focus-locked-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-focus-provisional-1x.png",
+      "sha256": "6568fcb8581e5256ae2f99961ce6c9faef47cf9617a18f23151b0d2df2454850",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        398
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-focus-provisional-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-focus-provisional-4x.png",
+      "sha256": "6126cee7b1946af4cc61e742d1b11cb5d3455e27c65e78a4b6d2f608d30138fb",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1232
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-focus-provisional-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-inspect-locked-1x.png",
+      "sha256": "d1f32470ac926e27be5eb0d813044de41f71e593290416bbb9f388c2eb414e01",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        571
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-inspect-locked-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-inspect-locked-4x.png",
+      "sha256": "256a303b822171db88b210c8f9c85cade1c9625b03dec7457e187002cabadde1",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1924
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-inspect-locked-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-inspect-provisional-1x.png",
+      "sha256": "674429fc58b72fb7707fb49726a4472a8097cae47a12926654ee7d2538b38817",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        571
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-inspect-provisional-1x.png"
+    },
+    {
+      "file": "evidence/browser-local/firefox-inspect-provisional-4x.png",
+      "sha256": "d4b58b3027f657bde56e9c91a7e2f0a8d2f3b894e6d1f51efe7354a387076c41",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2374,
+        1924
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/firefox-inspect-provisional-4x.png"
+    },
+    {
+      "file": "evidence/browser-local/report.json",
+      "sha256": "0ef26cddfc031b32a651a46dce397ce7b23ce3a7f83cb29438d2efeafc69f75a",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/browser-local/report.json"
+    },
+    {
+      "file": "evidence/canonical-handoff-nodes.json",
+      "sha256": "d0e932fa7aa442744a15ce3815059478ba09b900211eaee7de8fae917cbaa943",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/canonical-handoff-nodes.json"
+    },
+    {
+      "file": "evidence/checksums.json",
+      "sha256": "58cf9551c96c6d18fec4128574cd090e465863fbdbafb9ee866bbbee183d0734",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/checksums.json"
+    },
+    {
+      "file": "evidence/comparison-layout.json",
+      "sha256": "d62828fa006770121638bb0d85e2104b262625a67f946ec5caf51906a5fcb56f",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/comparison-layout.json"
+    },
+    {
+      "file": "evidence/generation-provenance.json",
+      "sha256": "895cf95a42c31f19fa2ec67c31b10d37d1e9f55d7994a0865256d29724090424",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/generation-provenance.json"
+    },
+    {
+      "file": "evidence/lettering-layout.json",
+      "sha256": "4e9c6d44ca8bc17e71d425b368f66daf184c6fc6e655de5a7ef358c945513ec2",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/lettering-layout.json"
+    },
+    {
+      "file": "evidence/material-ramps.json",
+      "sha256": "0077ed2271f92dd25d1225701ad11c169550a62969f67c6bc1dc3c7f56f83542",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/material-ramps.json"
+    },
+    {
+      "file": "evidence/native-layer-recipes.json",
+      "sha256": "ae079a1217a20ba4b27d67d9c174d5e20f100b2dba222db2e67536124ffcb8f6",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/native-layer-recipes.json"
+    },
+    {
+      "file": "evidence/online-provenance.json",
+      "sha256": "7e3647cacadf47556971b06ca20f1ba05a4b0c149c66eee7cb722957bf87d92d",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/online-provenance.json"
+    },
+    {
+      "file": "evidence/owner-approval-preservation.json",
+      "sha256": "106f79498148456cad9b83210f6eb16e90d25b904bd2d6c95447edb60d373d4b",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/owner-approval-preservation.json"
+    },
+    {
+      "file": "evidence/palette-diagnostics.json",
+      "sha256": "754719adbc50ed8bff8c432567dc962ba7ab64741139b2688035b4bee9fceb94",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/palette-diagnostics.json"
+    },
+    {
+      "file": "evidence/qa-canon.json",
+      "sha256": "27f343752a13f3b7affade37f55ca592e9e208421b66cb54631c3eb10b661cf9",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/qa-canon.json"
+    },
+    {
+      "file": "evidence/qa-smoke.txt",
+      "sha256": "7eda427d26719bad316ec7f0840299fbf0c99a8f08d6f4a5eb40f54ac067d382",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/qa-smoke.txt"
+    },
+    {
+      "file": "evidence/validation.json",
+      "sha256": "96f5f2e8c99669472240eeb0a9c286c1283ec09bcb2570c66faa3b21b539b159",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/evidence/validation.json"
+    },
+    {
+      "file": "index.html",
+      "sha256": "7707fa700756fa0d0c06704b124b71ab44cf0b8c735d7626a25c598ecd3a455f",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/index.html"
+    },
+    {
+      "file": "layers/wide-camera-native-optical-rings-and-inset-crt.png",
+      "sha256": "6c5bf81a6394bba10665939baa1a32fe1c6354d6945f70f855ca13e9baa9f0fe",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-camera-native-optical-rings-and-inset-crt.png"
+    },
+    {
+      "file": "layers/wide-cream-plaster.png",
+      "sha256": "562e3d7406da4b89d8acdf4750638d80ab050bfdc7aeee34489b0c1321408004",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-cream-plaster.png"
+    },
+    {
+      "file": "layers/wide-door-jamb-recesses-wall-moldings.png",
+      "sha256": "6df4b5125370e95c74591bc89e0ebe9e6232b305f3409b992d8a4e96adcdc3f7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-door-jamb-recesses-wall-moldings.png"
+    },
+    {
+      "file": "layers/wide-door-painted-wood.png",
+      "sha256": "08412b072baccb4e11b70a1c3e60e380c17aa0d4ac5d12136920cd036ae905b3",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-door-painted-wood.png"
+    },
+    {
+      "file": "layers/wide-duct-and-associated-conduit.png",
+      "sha256": "1721a4063eb9e9c54340b06958b7d71587e284b12e9ea198c3a7cb74e3a6ca55",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-duct-and-associated-conduit.png"
+    },
+    {
+      "file": "layers/wide-duct-surface.png",
+      "sha256": "d82f526f01099ec95867986ee37a044fda9fb8cea76340d9cddc0bb54a1832bb",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-duct-surface.png"
+    },
+    {
+      "file": "layers/wide-locked-status.png",
+      "sha256": "00ba30d8e3376d25fa4566a1fcd198677df8b47eac0178c5a65910c8b291ef49",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-locked-status.png"
+    },
+    {
+      "file": "layers/wide-lower-green-paneling.png",
+      "sha256": "f8b647224696eca6886dd4729d109b13164b2526d852da9de760def2848d8587",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-lower-green-paneling.png"
+    },
+    {
+      "file": "layers/wide-native-header.png",
+      "sha256": "89a7f030728400e2337637976a18b8ded9adc0942c5c4d93e60070a7a67bff58",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-native-header.png"
+    },
+    {
+      "file": "layers/wide-native-physical-assistance-button.png",
+      "sha256": "98a4213904dd6ea93ab2c428e01bb7e9be940bcad002c60bc7c01b6e16cdc931",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-native-physical-assistance-button.png"
+    },
+    {
+      "file": "layers/wide-native-policy-icons-and-plaques.png",
+      "sha256": "5ed84c16429a0856d0cbeeab1c31155bdb8658fd821df96241fb7ad9a2f26168",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-native-policy-icons-and-plaques.png"
+    },
+    {
+      "file": "layers/wide-new-native-brass-plate-and-fixings.png",
+      "sha256": "f7ed5b53983a71b698f8d4ad74bea13c6d2b83c1d3e664a11844e5909cb803d1",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-new-native-brass-plate-and-fixings.png"
+    },
+    {
+      "file": "layers/wide-plaster-extension-above-relocated-wainscot.png",
+      "sha256": "abf4ba1513b05a5f2ab0b595e59ab2e3ea53711e67614005c8eec2458c44f57d",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-plaster-extension-above-relocated-wainscot.png"
+    },
+    {
+      "file": "layers/wide-provisional-status.png",
+      "sha256": "fa78adaae7edabc6211eac4247e2d5400a6c37898456bec04eafe2b8fc474e99",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-provisional-status.png"
+    },
+    {
+      "file": "layers/wide-warm-glass-brass-sconce.png",
+      "sha256": "0be769ba6fe7e73a8ebb56701fdd67267a5097a016a76f1c90479e44bf89f804",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/layers/wide-warm-glass-brass-sconce.png"
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "62afb67576b10b9208c6dab9eaff43c3b6108f12220c5cdbebf24a310b3c54bc",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/manifest.json"
+    },
+    {
+      "file": "masks/actual-status-change.png",
+      "sha256": "ae5e9acf9ba6c1e3a7f5a76bbe96f60efba87e51e1ac4565aa196e1bb32e5f7c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/actual-status-change.png"
+    },
+    {
+      "file": "masks/authorized-status-change.png",
+      "sha256": "5a87b024b3bc13c40ce52d29b24c88696374728705cb69e25a576ffe17595a48",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/authorized-status-change.png"
+    },
+    {
+      "file": "masks/plate-and-shadow.png",
+      "sha256": "2808e10e57668eb4531c4e175518e2a116e28499192646aed40645618c2222d2",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/plate-and-shadow.png"
+    },
+    {
+      "file": "masks/wainscot-rail.png",
+      "sha256": "3a1f57694a124b7fd0eef2700c541f5f12d16c02ed656d2dd72a617e892cb3e3",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/wainscot-rail.png"
+    },
+    {
+      "file": "masks/wide-cream-plaster.png",
+      "sha256": "1e60e459b4cc7fb6339e22a0c5b16c466b0ee7f3157882d463d3f72e7711d38c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/wide-cream-plaster.png"
+    },
+    {
+      "file": "masks/wide-door-painted-wood.png",
+      "sha256": "672b3078f30ba99a47e37c41b71539ec68e1a11235babb371febd2d8db91adb7",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/wide-door-painted-wood.png"
+    },
+    {
+      "file": "masks/wide-duct-surface.png",
+      "sha256": "6a23692049100e2fdd790d1c1d3b4fde6841cff4f7aab0b0fc843130db96e980",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/wide-duct-surface.png"
+    },
+    {
+      "file": "masks/wide-lower-green-paneling.png",
+      "sha256": "29e9c51c8be4c3b33e146e2531ed775147bf4524b11bfe6899e788462326b314",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/masks/wide-lower-green-paneling.png"
+    },
+    {
+      "file": "native/CH4-NEW-07-focus-locked-v02.png",
+      "sha256": "d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/native/CH4-NEW-07-focus-locked-v02.png"
+    },
+    {
+      "file": "native/CH4-NEW-07-focus-provisional-v02.png",
+      "sha256": "b7d8014313519b67d3ebe8c72772ed0d01b4dbbb88748c9e5b0e7f589d669272",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/native/CH4-NEW-07-focus-provisional-v02.png"
+    },
+    {
+      "file": "online.html",
+      "sha256": "74a0beb34b05394f06bc1e34a96fdcaeb4a46dd6cb453b15e54ccf82fc918030",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/online.html"
+    },
+    {
+      "file": "originals/widescreen-detailed-reference.png",
+      "sha256": "288ac3c85c44504d27dc6000a5f201af3f6a9a20047087ab4a222ba5c4aa27f8",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1786,
+        881
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/originals/widescreen-detailed-reference.png"
+    },
+    {
+      "file": "previews/CH4-NEW-07-focus-locked-v02-4x.png",
+      "sha256": "02fe1d3c21d10e4f18b879130763781cf11792d14a476970e4402ccb942f28e0",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2256,
+        1112
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/CH4-NEW-07-focus-locked-v02-4x.png"
+    },
+    {
+      "file": "previews/CH4-NEW-07-focus-provisional-v02-4x.png",
+      "sha256": "04fc383bba67a02a8706ffd2f9fd7ca3c5553006e76f1077ea8b7fab2d1ba966",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2256,
+        1112
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/CH4-NEW-07-focus-provisional-v02-4x.png"
+    },
+    {
+      "file": "previews/approved-dressing-room-4x.png",
+      "sha256": "66953fd8cd1a1c19ef754667d58d923050217f29e7ae72b96bc92163ec7569c6",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/approved-dressing-room-4x.png"
+    },
+    {
+      "file": "previews/approved-inspect-locked-4x.png",
+      "sha256": "d6677f469bd1ec0cd0460727db2b70dd5367e45931202748edd058aae455e85e",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2260,
+        1804
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/approved-inspect-locked-4x.png"
+    },
+    {
+      "file": "previews/approved-inspect-provisional-4x.png",
+      "sha256": "0fc23794903a14fafd8eac9b81c0446f39fa26eb7217d5a384c52b8ec68bac3a",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2260,
+        1804
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/approved-inspect-provisional-4x.png"
+    },
+    {
+      "file": "previews/ch2-aid-box-4x.png",
+      "sha256": "7943eeb6a49bb7b711da908b952870ede0389a51730328aec3636803e481d5e4",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2256,
+        1112
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/ch2-aid-box-4x.png"
+    },
+    {
+      "file": "previews/ch2-bureau-4x.png",
+      "sha256": "d20c5e77ea7f736d41718cee387b955050824ccc08a1e63a552e7bcd66b7cf3d",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        1256,
+        824
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/ch2-bureau-4x.png"
+    },
+    {
+      "file": "previews/ch2-exposure-dispenser-4x.png",
+      "sha256": "a7b1ee1c631cdd5724b72674f7cd3a02e4b567c4b7cdd9b6b975ed8166710b57",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        2256,
+        1112
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/ch2-exposure-dispenser-4x.png"
+    },
+    {
+      "file": "previews/chapter2-focus-benchmarks-native-4x.png",
+      "sha256": "2e26aaeeeee64d93ef651a086593db8803f8bb65ffb764df0cc7b362235e4672",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        7040,
+        1312
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/chapter2-focus-benchmarks-native-4x.png"
+    },
+    {
+      "file": "previews/focus-states-native-4x.png",
+      "sha256": "57526effb4b4fc0ce543353d3285c8a4d14df412d8511d53b9e7d485592cb619",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        4704,
+        1312
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/focus-states-native-4x.png"
+    },
+    {
+      "file": "previews/locked-focus-approved-inspect-native-4x.png",
+      "sha256": "f3439219b6f755bdfa69798dfcf65d73ab11981413b9b8f32a6a83509ef284d0",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        4708,
+        2004
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/locked-focus-approved-inspect-native-4x.png"
+    },
+    {
+      "file": "previews/provisional-focus-approved-inspect-native-4x.png",
+      "sha256": "09519f880176eb88a7b3b3b8c99edd841807cfacfee28093a077789a971b969c",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        4708,
+        2004
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/provisional-focus-approved-inspect-native-4x.png"
+    },
+    {
+      "file": "previews/source-diagnostic-native-native-4x.png",
+      "sha256": "5db7dc9d659724287891b5356dc699a3ff813279142c3214ad47a226fa069938",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        4704,
+        1312
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/source-diagnostic-native-native-4x.png"
+    },
+    {
+      "file": "previews/wainscot-correction-native-4x.png",
+      "sha256": "0a719b4d7ec465ace35a427b0839d31c06670200aa03fbbfea81172978228a8f",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        4704,
+        1312
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/previews/wainscot-correction-native-4x.png"
+    },
+    {
+      "file": "references/approved-dressing-room.png",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/approved-dressing-room.png"
+    },
+    {
+      "file": "references/approved-inspect-locked.png",
+      "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        565,
+        451
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/approved-inspect-locked.png"
+    },
+    {
+      "file": "references/approved-inspect-provisional.png",
+      "sha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        565,
+        451
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/approved-inspect-provisional.png"
+    },
+    {
+      "file": "references/ch2-aid-box.png",
+      "sha256": "706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/ch2-aid-box.png"
+    },
+    {
+      "file": "references/ch2-bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        314,
+        206
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/ch2-bureau.png"
+    },
+    {
+      "file": "references/ch2-exposure-dispenser.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "bytesMatch": true,
+      "decodedDimensions": [
+        564,
+        278
+      ],
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/ch2-exposure-dispenser.png"
+    },
+    {
+      "file": "source/browser_qa.cjs",
+      "sha256": "0f573148aed07e79f04c04a42f56a398abce32ec597dbc789bf850ec90d7cdf8",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/browser_qa.cjs"
+    },
+    {
+      "file": "source/build_native.py",
+      "sha256": "f458e16ccabc3b9e12ffc379e558212cc667fb63247d0ebb52c641932cc1ccd9",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/build_native.py"
+    },
+    {
+      "file": "source/checksums.py",
+      "sha256": "a00a12d2afc1f2a06be046fa658324c6cafbd7e87e129cec8faea37d3738bb84",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/checksums.py"
+    },
+    {
+      "file": "source/native_support.py",
+      "sha256": "72bc0363260c55cd97562a3763e87d7686c1f4eb79f33443b2c3affcf95370fa",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/native_support.py"
+    },
+    {
+      "file": "source/package_review.py",
+      "sha256": "f865da3be91669d58138b675654adef2d93b57c6afb0381f360ce7434c7abfc3",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/package_review.py"
+    },
+    {
+      "file": "source/prepare_online.py",
+      "sha256": "f9b9badff7be31b906bf80379cfc5a7a260dfd35a50c51e1aadfab848b245a79",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/prepare_online.py"
+    },
+    {
+      "file": "source/validate.py",
+      "sha256": "725de0bc212c8f290b0e09f801aad68e2b92bfb47baba61d4241d8448b213d32",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/validate.py"
+    },
+    {
+      "file": "source/verify_publication.py",
+      "sha256": "e8a03ea22e67cb247fd3a0a241da724dd6ca319c5e364405cb534c0153c94f68",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/verify_publication.py"
+    },
+    {
+      "file": "source/widescreen-reference-prompt.txt",
+      "sha256": "cf475b1cdfafed7680e8b074954495916a40ee33a8a82c816579d07200c97cad",
+      "bytesMatch": true,
+      "decodedDimensions": null,
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/00ab5cd03adb9a9f5b32d5ff9ee25584f4edd687/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/source/widescreen-reference-prompt.txt"
+    }
+  ]
+}
