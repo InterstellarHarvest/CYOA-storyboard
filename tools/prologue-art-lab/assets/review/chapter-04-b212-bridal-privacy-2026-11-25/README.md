@@ -1,0 +1,11 @@
+# Chapter4 B2-12 — v01 review
+
+**UNSELECTED.** Two primary candidates and one conditional privacy-panel reference; no selection or integration.
+
+[Public browser gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/22342ccca859cf450a1d7cef44c8e2b079182c24/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/online.html) · [Scene / Chapter2 exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/22342ccca859cf450a1d7cef44c8e2b079182c24/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/previews/scene-ch2-native-4x.png) · [Scene / Chapter4 exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/22342ccca859cf450a1d7cef44c8e2b079182c24/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/previews/scene-ch4-native-4x.png) · [Locked / provisional exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/22342ccca859cf450a1d7cef44c8e2b079182c24/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/previews/privacy-statuses-native-4x.png) · [Focus / approved art exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/22342ccca859cf450a1d7cef44c8e2b079182c24/tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/previews/focus-benchmarks-native-4x.png)
+
+[Publication, hashes and boundaries](PUBLICATION-20261125.md) · [Source-derived method](v01/README.md) · [Manifest](v01/manifest.json) · [Public byte verification](V01-PUBLIC-BYTE-VERIFICATION.json) · [Public browser verification](public-browser-v01/report.json).
+
+The explicit review brief requests565×451 for the panel; current runtime Focus is564×278. The mismatch is documented, with no runtime or registry change. Room remains314×206 opaque RGB. Both panel states are565×451 opaque RGB. Every preview is exact nearest-neighbor4×. Full detailed originals, prompts, editable native layers/masks, source-derived diagnostics and approved benchmark copies are preserved.
+
+`BRIEF.md`, canonical main, all approved images, narrative/gameplay, runtime and PR#32 remain unchanged. B2-13/B2-14 are not started.
