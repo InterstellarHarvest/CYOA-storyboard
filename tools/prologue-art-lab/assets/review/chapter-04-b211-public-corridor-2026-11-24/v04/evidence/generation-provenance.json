@@ -1,0 +1,30 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "fallbackCLIUsed": false,
+  "modelAndSeed": "Not exposed by built-in tool",
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "scope": "Only the existing scene attendant; no whole-room generation",
+  "prompt": "source/attendant-clean-cluster-prompt.txt",
+  "promptSha256": "587a8491e4e563b54fa63ca34b59dfa416ff7504c0cb1ce3920a87b88631cf1e",
+  "output": "originals/attendant-clean-cluster-source.png",
+  "outputSha256": "f5927976d5e0b151376a5acfa8d7b35ae10a426b1f7af47818fde631f3cbe427",
+  "generatedFileId": "exec-30c55ce8-68d3-4225-9261-2f1d85e2ec08.png",
+  "transparentBackgroundRequested": true,
+  "inputs": [
+    {
+      "role": "Existing identity/pose edit target",
+      "file": "../v02/originals/attendant-illustration-source.png",
+      "sha256": "0af07b5ba00af359c11340d2fa4b1ad2f3c4dd36a7166d09b5c8e0649df0e0ed"
+    },
+    {
+      "role": "Approved Pavilion scene rendering benchmark only",
+      "file": "references/courtesy_stage.png",
+      "canonicalPath": "assets/selected/art/scenes/pavilion_reboot/courtesy_stage.png",
+      "canonicalCommit": "5a4290d672e1904b4b5ad361562f05168c328a50",
+      "sha256": "0b413a7b9a669365f114fda8765a242fc3ce00fc9c1ea3bd535c7a2b3d1cdb98"
+    }
+  ],
+  "finalProcessing": "source/refine.py",
+  "notes": "New clean material-cluster source; final132px object-sized native interpretation with coherent ramps and binary-alpha cleanup. Earlier94px candidate is preserved and never enlarged as source."
+}

@@ -1,0 +1,322 @@
+{
+  "passed": true,
+  "checksPassed": 73,
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "oldHeight": 94,
+  "newHeight": 132,
+  "feetYUnchanged": 193,
+  "doorNearLeafHeight": 174,
+  "signGapNativePixels": 17,
+  "noSignOverlap": true,
+  "tenPixelSilhouetteClearancePassed": true,
+  "dryPNGBytesUnchanged": true,
+  "changesOutsideCharacterSilhouettes": 0,
+  "sharedUnchangedLayers": 15,
+  "exact4xPairs": 13,
+  "earlierReviewFilesByteExact": {
+    "v01": 94,
+    "v02": 107,
+    "v03": 45
+  },
+  "approvedFilesByteExact": 199,
+  "baselineBlobsPreserved": 920,
+  "replayedArtifactsIdentical": 33,
+  "sourceDerived": true,
+  "newGeneratedSource": true,
+  "wholeRoomGenerated": false,
+  "checks": [
+    {
+      "check": "One unselected flood correction; dry candidate unchanged",
+      "passed": true
+    },
+    {
+      "check": "Only one new native scene export",
+      "passed": true
+    },
+    {
+      "check": "Opaque314x206 native",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest-neighbor4x",
+      "passed": true
+    },
+    {
+      "check": "Native source/manifest hash exact",
+      "passed": true
+    },
+    {
+      "check": "Preview hash exact",
+      "passed": true
+    },
+    {
+      "check": "Dry PNG exact unchanged v02 candidate",
+      "passed": true
+    },
+    {
+      "check": "Zero changed pixels outside old/new character silhouettes",
+      "passed": true
+    },
+    {
+      "check": "Native binary-alpha character layer",
+      "passed": true
+    },
+    {
+      "check": "Door-relative height changes94px to132px",
+      "passed": true
+    },
+    {
+      "check": "Feet retain exact existing floor boundary",
+      "passed": true
+    },
+    {
+      "check": "Door-relative scale record exact",
+      "passed": true
+    },
+    {
+      "check": "No character/sign overlap",
+      "passed": true
+    },
+    {
+      "check": "Sign clears10px expanded character silhouette",
+      "passed": true
+    },
+    {
+      "check": "Seventeen pixels of horizontal bbox clearance",
+      "passed": true
+    },
+    {
+      "check": "Fifteen unchanged source layers plus new NPC assemble exactly",
+      "passed": true
+    },
+    {
+      "check": "Separated v03 sign layer reused unchanged",
+      "passed": true
+    },
+    {
+      "check": "New clean-cluster source hash exact",
+      "passed": true
+    },
+    {
+      "check": "Generated original and exact prompt hashes",
+      "passed": true
+    },
+    {
+      "check": "Accurate source-derived provenance",
+      "passed": true
+    },
+    {
+      "check": "Canonical node mappings unchanged",
+      "passed": true
+    },
+    {
+      "check": "No new runtime binding, scene, Focus or flag",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Exact approved benchmark control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Actual approved Pavilion rendering benchmark",
+      "passed": true
+    },
+    {
+      "check": "Caption fits v03-v04-flood/v03 flood -94px NPC",
+      "passed": true
+    },
+    {
+      "check": "Caption fits v03-v04-flood/v04 adult scale / clean clusters",
+      "passed": true
+    },
+    {
+      "check": "Caption fits character-sign/v03 character / sign",
+      "passed": true
+    },
+    {
+      "check": "Caption fits character-sign/v04 character / sign",
+      "passed": true
+    },
+    {
+      "check": "Caption fits canonical-benchmarks/v04 flood",
+      "passed": true
+    },
+    {
+      "check": "Caption fits canonical-benchmarks/Approved Staff Lavatory",
+      "passed": true
+    },
+    {
+      "check": "Caption fits canonical-benchmarks/Approved Ch2 Bureau",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/canonical-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x comparisons/v03-v04-flood-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-flood-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/courtesy_stage-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v03-character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/CH4-NEW-04-public-corridor-flood-v03-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/v04-character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/attendant-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact4x previews/control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "All earlier packages, sources, approved files and canonical records byte-exact",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/courtesy_stage-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency originals/attendant-clean-cluster-source.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v03-v04-flood-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/staff_lavatory.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/v03-v04-flood-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency native/CH4-NEW-04-public-corridor-flood-v04.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/staff_lavatory-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-04-public-corridor-flood-v04-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/canonical-benchmarks-native.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/conveniences_bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/canonical-benchmarks-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/control_tower.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/CH4-NEW-04-public-corridor-v02.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/generation-provenance.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency README.md",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency source/attendant-clean-cluster-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/CH4-NEW-04-public-corridor-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency references/courtesy_stage.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency evidence/repair.json",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/conveniences_bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/character-sign-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency previews/control_tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Gallery dependency comparisons/character-sign-native.png",
+      "passed": true
+    },
+    {
+      "check": "Deterministic source interpretation/assembly/gallery replay",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "baseCommit": "19c67561d371c2bc524d39bc9f2a57e8b4584961",
+  "method": "New dedicated clean-cluster identity-preserving source; object-only nearest-neighbor reduction, coherent material ramps, binary alpha and removal of tiny interior cloth islands. Final scene assembled from unchanged prior room/sign layers. Not a resize of the previous94-pixel figure or whole scene.",
+  "source": "originals/attendant-clean-cluster-source.png",
+  "sourceSha256": "f5927976d5e0b151376a5acfa8d7b35ae10a426b1f7af47818fde631f3cbe427",
+  "sourceCrop": [
+    15,
+    61,
+    872,
+    1652
+  ],
+  "nativeSize": [
+    71,
+    132
+  ],
+  "origin": [
+    90,
+    61
+  ],
+  "feetBottomY": 193,
+  "oldHeight": 94,
+  "newHeight": 132,
+  "doorReference": {
+    "description": "Near vertical edge of existing blue STAFF door leaf",
+    "top": [
+      18,
+      24
+    ],
+    "bottom": [
+      18,
+      198
+    ],
+    "height": 174,
+    "npcToDoorRatio": 0.7586206896551724
+  },
+  "palette": [
+    "#222530",
+    "#34384a",
+    "#4d536b",
+    "#68738a",
+    "#5f5b60",
+    "#968980",
+    "#c2b29c",
+    "#e1ccaa",
+    "#754b38",
+    "#b67750",
+    "#dca071",
+    "#edc39a",
+    "#9e8c76",
+    "#caba9b",
+    "#ebd9b6",
+    "#2a2931",
+    "#50464b",
+    "#8e7161"
+  ],
+  "tinyClothIslandPixelsMerged": 98,
+  "characterBBox": [
+    90,
+    61,
+    161,
+    193
+  ],
+  "unchangedSignBBox": [
+    178,
+    177,
+    216,
+    195
+  ],
+  "bboxHorizontalGap": 17,
+  "signBytesUnchanged": true,
+  "floodLayerOrder": [
+    "../v03/../v02/layers/01-architecture-plaster.png",
+    "../v03/../v02/layers/02-carpet-floor.png",
+    "../v03/../v02/layers/03-painted-paneling.png",
+    "../v03/../v02/layers/04-doors-and-lettering.png",
+    "../v03/../v02/layers/05-side-exit.png",
+    "../v03/../v02/layers/06-collection-stairs.png",
+    "../v03/../v02/layers/07-arch-and-pilasters.png",
+    "../v03/../v02/layers/08-hatch-closed.png",
+    "../v03/../v02/layers/09-lamps.png",
+    "../v03/../v02/layers/10-duct-and-mounts.png",
+    "../v03/../v02/layers/repair-side-exit-yard.png",
+    "../v03/../v02/layers/repair-far-door-perspective.png",
+    "../v03/../v02/layers/state-water.png",
+    "../v03/../v02/layers/state-hatch-open.png",
+    "layers/state-attendant.png",
+    "../v03/layers/state-floating-sign.png"
+  ],
+  "dryCandidate": "../v03/references/CH4-NEW-04-public-corridor-v02.png",
+  "finalFloodSha256": "f802ff0c9aa345147f6039779df8b49403cc96add6be89b13f2ef9396727212f",
+  "canonicalIdentity": "hotel_attendant:professional; gray bob/navy work jacket and trousers; points toward staff passage"
+}
