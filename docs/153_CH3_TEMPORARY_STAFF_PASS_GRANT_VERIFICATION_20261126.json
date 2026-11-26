@@ -1,0 +1,349 @@
+{
+ "schema": "out-of-order-ch3-staff-pass-grant-v1",
+ "base": "89cf0adf09dfadba27bb82f87201160f68818b46",
+ "item": "pavilion_temporary_staff_pass",
+ "node": "unauthorized_presenter",
+ "chapter3Endings": {
+  "door_dash_fail": {
+   "withPass": 0,
+   "withoutPass": 10,
+   "viaAppointment": 0,
+   "violations": 0
+  },
+  "door_reverse_end": {
+   "withPass": 0,
+   "withoutPass": 10,
+   "viaAppointment": 0,
+   "violations": 0
+  },
+  "locomotion_fail": {
+   "withPass": 0,
+   "withoutPass": 10,
+   "viaAppointment": 0,
+   "violations": 0
+  },
+  "presenter_help_end": {
+   "withPass": 10,
+   "withoutPass": 0,
+   "viaAppointment": 10,
+   "violations": 0
+  },
+  "paper_problem_end": {
+   "withPass": 0,
+   "withoutPass": 10,
+   "viaAppointment": 0,
+   "violations": 0
+  },
+  "backstage_exit": {
+   "withPass": 10,
+   "withoutPass": 15,
+   "viaAppointment": 10,
+   "violations": 0
+  },
+  "attendant_honest_end": {
+   "withPass": 0,
+   "withoutPass": 10,
+   "viaAppointment": 0,
+   "violations": 0
+  }
+ },
+ "chapter4Reachability": {
+  "attendant_honest_end | pass only": {
+   "nodes": 90,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  "attendant_honest_end | everything else, no pass": {
+   "nodes": 88,
+   "passOnlyNodesReached": []
+  },
+  "backstage_exit | pass only": {
+   "nodes": 103,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  "backstage_exit | everything else, no pass": {
+   "nodes": 103,
+   "passOnlyNodesReached": []
+  },
+  "door_dash_fail | pass only": {
+   "nodes": 104,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  "door_dash_fail | everything else, no pass": {
+   "nodes": 104,
+   "passOnlyNodesReached": []
+  },
+  "door_reverse_end | pass only": {
+   "nodes": 40,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access"
+   ]
+  },
+  "door_reverse_end | everything else, no pass": {
+   "nodes": 39,
+   "passOnlyNodesReached": []
+  },
+  "locomotion_fail | pass only": {
+   "nodes": 90,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  "locomotion_fail | everything else, no pass": {
+   "nodes": 88,
+   "passOnlyNodesReached": []
+  },
+  "paper_problem_end | pass only": {
+   "nodes": 104,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  "paper_problem_end | everything else, no pass": {
+   "nodes": 104,
+   "passOnlyNodesReached": []
+  },
+  "presenter_help_end | pass only": {
+   "nodes": 90,
+   "passOnlyNodesReached": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  "presenter_help_end | everything else, no pass": {
+   "nodes": 88,
+   "passOnlyNodesReached": []
+  }
+ },
+ "checks": [
+  {
+   "ok": true,
+   "check": "Only the approved files differ from base 89cf0ad",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/chapters/chapter-03.draft.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/archives/chapter-03-pre-reboot-20261118.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/chapters/chapter-04.wip.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/chapters/chapter-02.draft.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/storyboard-manifest.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/artwork-preview.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/death-presentations.export.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/sync-contract.json"
+  },
+  {
+   "ok": true,
+   "check": "Unchanged: story/storyboard-layout.json"
+  },
+  {
+   "ok": true,
+   "check": "No image, selection or reference changed",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Every other Chapter 3 node and the chapter header are unchanged",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "The appointment gives exactly the existing item on arrival"
+  },
+  {
+   "ok": true,
+   "check": "Mode, scene, speaker, pose and both choices (ids, text, targets) unchanged"
+  },
+  {
+   "ok": true,
+   "check": "Text: earlier runs identical; the last run is split exactly after TEMPORARY PRESENTER APPOINTED. and rejoins to the original; one printer run inserted there"
+  },
+  {
+   "ok": true,
+   "check": "Printed credential line present: TEMPORARY STAFF"
+  },
+  {
+   "ok": true,
+   "check": "Printed credential line present: PEOPLE'S PAVILION"
+  },
+  {
+   "ok": true,
+   "check": "Printed credential line present: DEPARTMENT: HUMAN PRESENTATION"
+  },
+  {
+   "ok": true,
+   "check": "Printed credential line present: VALID UNTIL CORRECTED"
+  },
+  {
+   "ok": true,
+   "check": "Grant precedes both appointment choices",
+   "detail": [
+    "start_presenter_demonstration",
+    "free_real_presenter"
+   ]
+  },
+  {
+   "ok": true,
+   "check": "Every other item record unchanged"
+  },
+  {
+   "ok": true,
+   "check": "Item keeps its id, name, null art fields and READ mark; only the description changes",
+   "detail": "A PRINTED CARD FROM THE PEOPLE'S PAVILION: TEMPORARY STAFF. DEPARTMENT: HUMAN PRESENTATION. VALID UNTIL CORRECTED."
+  },
+  {
+   "ok": true,
+   "check": "Every other artwork record unchanged"
+  },
+  {
+   "ok": true,
+   "check": "Art brief slot restored: active, not-started, no image, same contract and path; archived note kept verbatim as history"
+  },
+  {
+   "ok": true,
+   "check": "Art brief inspect restored: active, not-started, no image, same contract and path; archived note kept verbatim as history"
+  },
+  {
+   "ok": true,
+   "check": "Granted only at chapter-03:unauthorized_presenter; no authored rule takes it",
+   "detail": {
+    "give": [
+     "chapter-03:unauthorized_presenter"
+    ],
+    "take": []
+   }
+  },
+  {
+   "ok": true,
+   "check": "Explored all 7 Chapter 3 endings from all 5 Chapter 2 hand-offs",
+   "detail": [
+    "attendant_honest_end",
+    "backstage_exit",
+    "door_dash_fail",
+    "door_reverse_end",
+    "locomotion_fail",
+    "paper_problem_end",
+    "presenter_help_end"
+   ]
+  },
+  {
+   "ok": true,
+   "check": "At every Chapter 3 ending: the pass is held if and only if the route went through the appointment"
+  },
+  {
+   "ok": true,
+   "check": "Pass reaches exactly the two endings after the appointment (presenter_help_end always; backstage_exit only via the demonstration)",
+   "detail": [
+    "backstage_exit",
+    "presenter_help_end"
+   ]
+  },
+  {
+   "ok": true,
+   "check": "Ch3 presenter_help_end -> Ch4 holding the pass: all 5 pass-gated nodes reachable",
+   "detail": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  {
+   "ok": true,
+   "check": "Ch3 backstage_exit -> Ch4 holding the pass: all 5 pass-gated nodes reachable",
+   "detail": [
+    "hotel_boiler_staff_access",
+    "hotel_collection_staff_pass",
+    "hotel_collection_staff_pass_authorized",
+    "hotel_collection_staff_pass_first",
+    "hotel_collection_staff_pass_recognized"
+   ]
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (attendant_honest_end): the 5 nodes stay unreachable",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (backstage_exit): the 5 nodes stay unreachable",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (door_dash_fail): the 5 nodes stay unreachable",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (door_reverse_end): the 5 nodes stay unreachable",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (locomotion_fail): the 5 nodes stay unreachable",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (paper_problem_end): the 5 nodes stay unreachable",
+   "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Without the pass (presenter_help_end): the 5 nodes stay unreachable",
+   "detail": []
+  }
+ ],
+ "result": "PASS"
+}
