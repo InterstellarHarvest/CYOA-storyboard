@@ -1386,6 +1386,16 @@
       "prompt": "Select the exact owner-approved B2-12 v01 314x206 bridal dressing-room image, unchanged. The white wedding gown on its wheeled stand, the closed handleless door and surrounding period hotel materials are canonical; no AI face, player, visible lavatory or extra control appears. Preserve the immutable SOURCE-DERIVED artwork and all original prompts/layers from the review branch.",
       "notes": "OWNER APPROVED B2-12 v01 2026-11-25, CH4-NEW-01. Immutable source InterstellarHarvest/CYOA-storyboard@1261658ed882bff7340405e91f5d44f4e5404012, tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-01-bridal-dressing-room-v01.png; SHA-256 f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49. SOURCE-DERIVED; not wholly independent native-grid authorship. No narrative/gameplay changes, no engine binding; assetPath null. See docs/145."
     },
+    "grand_bellevue/bridal_lavatory": {
+      "title": "Bridal lavatory — three seashells, no fixture",
+      "kind": "scene",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/scenes/grand_bellevue/bridal_lavatory.png",
+      "prompt": "Select the exact owner-approved B2-14 v02 314x206 bridal lavatory image, unchanged. Spotless small hotel lavatory seen from the doorway: green painted wainscot, cream moulded plaster, an intrusive gray-green duct and grille across the ceiling, one brass wall lamp, cream floor tiles, and a narrow marble counter on brass brackets, open beneath, bearing exactly three pale seashells. No toilet, sink, concealed fixture, NPC, AI face or character; the bathroom AI is voice-only. Do not redraw, downscale, re-encode or recolor.",
+      "notes": "OWNER APPROVED B2-14 v02 2026-11-25, CH4-NEW-02. Immutable source InterstellarHarvest/CYOA-storyboard@100debcb0940f330b7237da93c05e99c6bf7d89e (approved review head fbad7b3620f0043752868215bea046bccc259e05), tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/native/CH4-NEW-02-bridal-lavatory-v02.png; SHA-256 85fb565d8c2f79525a95ada44a9f9e3c05e2cee374712e520488c88153ee7480. Superseded unselected v01 (SHA-256 522cc6a4c2e2d45f1aae7b3897a05380b86a2c70fccdba767576aa1520cabc04) is preserved as historical review artwork on the review branch. SOURCE-DERIVED design from a preserved imagegen reference; native raster separately constructed; not wholly independent native-grid authorship. Covers hotel_seashell_room, first_attempt, instructions, complaint, second_attempt and assessment_appeal, and sits behind the hotel_seashell_inspect Focus. Bathroom AI stays voice-only (docs/137 C2). No narrative/gameplay change, no engine binding; assetPath null. See docs/146."
+    },
     "grand_bellevue/arrival": {
       "title": "Arrival — text-led transition",
       "kind": "scene",
@@ -3020,6 +3030,16 @@
       "suggestedFilename": "art/focus/grand_bellevue/bridal_privacy_panel.png",
       "prompt": "Select the exact owner-approved B2-12 v02 564x278 LOCKED Focus art unchanged. Handleless door left, brass privacy system central, industrial fixtures and lamp right; plate and cast shadow clear wainscoting. The approved PROVISIONAL widescreen state has matching geometry and is preserved separately without a new Focus key. Two approved 565x451 INSPECT v03 states are also preserved for a future visual-only scene-owned overlay, NOT inventory items. No downscale or gameplay change.",
       "notes": "OWNER APPROVED B2-12 v02 locked and provisional Focus 2026-11-25. Primary locked source InterstellarHarvest/CYOA-storyboard@a944f9aeff110ddc66301840c2d415f1ba9bc357, tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/native/CH4-NEW-07-focus-locked-v02.png; SHA-256 d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520. Provisional reference SHA-256 b7d8014313519b67d3ebe8c72772ed0d01b4dbbb88748c9e5b0e7f589d669272. OWNER APPROVED the two square 565x451 v03 INSPECT alternatives 2026-11-25; source InterstellarHarvest/CYOA-storyboard@43490eeabeb4edb619903ecb4836b0da8d9a4446; locked SHA-256 b571f3215be27ab7e86bdb67530a86d33e20ed6a0638842f88227fdbc06ec0e3, provisional SHA-256 fa4d465cd6c25b7591ff97caf2713e4b521ef3c2dba6243c5a571685f17660e9. All SOURCE-DERIVED; separate square art is approved/preserved only, with NO runtime binding, item key, new branch, flag or choice. The future INSPECT contextual action must open a visual-only overlay and close back to the unchanged Focus node and available choices without Rules.step, item mutation, flags or narrative progression. Existing gameplay and the Focus A 564x278 contract are unchanged. See docs/145."
+    },
+    "grand_bellevue/three_seashells": {
+      "title": "Three seashells — Focus A",
+      "kind": "focus",
+      "status": "approved",
+      "dimensions": "564x278",
+      "assetPath": null,
+      "suggestedFilename": "art/focus/grand_bellevue/three_seashells.png",
+      "prompt": "Select the exact owner-approved B2-14 v01 564x278 three-seashells Focus, unchanged. Three pale ivory shells rest evenly on the marble counter in front of green wainscot and moulded plaster: one smooth, one ridged, and one that differs mainly by being the third. No button, hose, drain, toilet, numbering, instruction, text or other cue implying an order or solution. Do not redraw, downscale, re-encode or recolor.",
+      "notes": "OWNER APPROVED B2-14 v01 2026-11-25 (unchanged), CH4-NEW-09. Immutable source InterstellarHarvest/CYOA-storyboard@04a920c08f06d1bf62d63eaaf5f52cddd99c38b9 (approved review head fbad7b3620f0043752868215bea046bccc259e05), tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v01/native/CH4-NEW-09-three-seashells-v01.png; SHA-256 70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6. SOURCE-DERIVED design from a preserved imagegen reference; native raster separately constructed; not wholly independent native-grid authorship. Node hotel_seashell_inspect (focus grand_bellevue/three_seashells, a two-segment key; engine work tracked in docs/140). Shells stay on the counter and are not inventory items. No narrative/gameplay/Focus behavior change, no engine binding; assetPath null. See docs/146."
     },
     "grand_bellevue/collection_stairs/chair_armrest": {
       "title": "Collection armrest — ring caught",

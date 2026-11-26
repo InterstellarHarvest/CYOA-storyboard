@@ -227,6 +227,21 @@
         "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/v01/native/CH4-B2-05-v01.png"
       }
     },
+    "focus:grand_bellevue/three_seashells": {
+      "file": "assets/selected/pending-integration/focus/grand_bellevue/three_seashells.png",
+      "sha256": "70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b214-native-review-20261125",
+        "commit": "04a920c08f06d1bf62d63eaaf5f52cddd99c38b9",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v01/native/CH4-NEW-09-three-seashells-v01.png"
+      }
+    },
     "focus:house_of_tomorrow/portrait_gallery/album#pages:1": {
       "file": "assets/selected/art/focus/house_of_tomorrow/album_page_1.png",
       "sha256": "c789a17a2e2ee45a7db07cd9e2aa0a4457dabe68dd88901aaf254f168a100ba7",
@@ -2055,6 +2070,21 @@
         "ref": "art/ch4-b212-bridal-privacy-review-20261125",
         "commit": "1261658ed882bff7340405e91f5d44f4e5404012",
         "path": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-01-bridal-dressing-room-v01.png"
+      }
+    },
+    "scenes:grand_bellevue/bridal_lavatory": {
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/bridal_lavatory.png",
+      "sha256": "85fb565d8c2f79525a95ada44a9f9e3c05e2cee374712e520488c88153ee7480",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b214-native-review-20261125",
+        "commit": "100debcb0940f330b7237da93c05e99c6bf7d89e",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/native/CH4-NEW-02-bridal-lavatory-v02.png"
       }
     },
     "scenes:grand_bellevue/loading_dock": {
