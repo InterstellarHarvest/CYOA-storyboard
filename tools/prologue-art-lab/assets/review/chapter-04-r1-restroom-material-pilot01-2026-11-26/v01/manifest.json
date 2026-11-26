@@ -1,0 +1,81 @@
+{
+  "assetId": "CH4-B2-03",
+  "reviewUnit": "R1 material-cluster pilot 01",
+  "version": "v01",
+  "status": "UNSELECTED \u2014 MATERIAL PILOT, NOT SELECTION-READY",
+  "artisticGate": "FAILED \u2014 volume and brass modeling not adequately preserved; painting stopped after this one pilot",
+  "selectionReady": false,
+  "ownerApproved": false,
+  "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+  "canonicalApprovedPath": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+  "registryKeyReferenceOnly": "scenes:grand_bellevue/restroom#portraitBackground",
+  "newRegistryOrRuntimeBindings": false,
+  "approvedOriginal": {
+    "file": "references/approved-restroom-background.png",
+    "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+    "unchanged": true
+  },
+  "pilot": {
+    "file": "native/CH4-B2-03-R1-material-pilot01-v01.png",
+    "sha256": "89b6e60d5999e0297a0f577ff80f5cb530b5f410e9c8e77b2c5082bb9504775e",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB",
+    "status": "UNSELECTED \u2014 MATERIAL PILOT, NOT SELECTION-READY"
+  },
+  "provenance": "Mixed composite: untouched approved source-derived background plus explicitly painted native-grid material layers. The full scene is not claimed to be independently authored. No source raster colours were sampled into the painted material group.",
+  "construction": "Native-resolution opaque raster brush regions, using manually placed curved boundaries and material ramps; no larger intermediate canvas, quantization, source resize or sharpen pass. This construction lost too much material volume and was stopped at its artistic gate.",
+  "editableSource": "source/CH4-B2-03-material-pilot01.ora",
+  "nativeTape": "source/native-paint.json",
+  "paletteStatistics": {
+    "status": "UNSELECTED \u2014 MATERIAL PILOT, NOT SELECTION-READY",
+    "dimensions": [
+      564,
+      278
+    ],
+    "changedPixels": 10450,
+    "changedBounds": [
+      0,
+      180,
+      160,
+      278
+    ],
+    "outsideAllowedRegionChanges": 0,
+    "protectedFixtureChanges": 0,
+    "nativePaintLayers": 6,
+    "paintMarks": 105,
+    "paintedRGBColours": 32,
+    "wholeSceneRGBColours": 45773,
+    "globalPaletteReduction": false,
+    "geometryRasterization": "Native cubic boundaries; no oversized intermediate, anti-aliasing, image resampling, sharpening, palette quantization or generated texture."
+  },
+  "cropNativeBounds": [
+    0,
+    175,
+    174,
+    278
+  ],
+  "benchmarkCrops": {
+    "bureau": [
+      188,
+      118,
+      314,
+      206
+    ],
+    "controlTower": [
+      223,
+      75,
+      314,
+      190
+    ]
+  },
+  "changedMask": "masks/changed-pixels.png",
+  "allowedMask": "masks/allowed-edit-region.png",
+  "scopeVerification": "evidence/technical-qa.json",
+  "originalSourcesAndPrompts": "evidence/historical-source-provenance.json",
+  "visualAssessment": "ARTISTIC-GATE.md",
+  "furtherScenePainting": false,
+  "loadingDockStarted": false
+}
