@@ -53,6 +53,8 @@ No Chapter 4 narrative, choices, flags, items, routes, Focus behavior, engine co
 
 ## B2-13 status
 
+> **Correction (2026-11-25, PMO clarification):** Nate had already approved both B2-13 v01 images (the AutoFit gown Focus and the manual-slack reference) in the Chapter 4 Artwork PMO conversation, before B2-14 production. B2-13 was awaiting **registration only**, not approval. The statements below about B2-13 registration status were accurate at base `436e83f`; the line at the end of this document saying B2-13 "awaits its own approval" was not. B2-13 is registered by docs/147.
+
 **B2-13 (AutoFit gown) is not registered on canonical `main`** at base `436e83f`.
 - Its review branch `art/ch4-b213-autofit-gown-review-20261125` (head `7a74fc3`) is untouched.
 - `focus:grand_bellevue/autofit_gown` remains absent from the registry.
@@ -80,3 +82,5 @@ No Chapter 4 narrative, choices, flags, items, routes, Focus behavior, engine co
 The earlier point-in-time verifiers (`verify-ch4-b2xx-selection.py`) pin their own bases and expect exactly their own additions. Like `verify-ch4-b208` after the consolidation, they are not re-run as regressions.
 
 Next in the docs/138 queue: B2-13 awaits its own approval and registration; then B2-16 (fatal aftermaths). Any new candidates stay **UNSELECTED** until Nate approves them.
+
+> **Correction (2026-11-25):** B2-13 was already owner-approved and awaited registration only; see the correction under "B2-13 status" and docs/147.
