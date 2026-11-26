@@ -32,17 +32,19 @@ const productionRecords=[
 // Baseline 171 (docs/106), plus the approved CH3 reboot's 14 scenes, 8 closer
 // portrait backgrounds and 7 foreground poses. The 65 retired records remain
 // present for history but must never count as active Chapter 3 production.
-// Chapter 4 WIP review has two new inventory objects, each with slot + inspect placeholder records. Neither is approved art.
+// Chapter 4 has two new inventory objects, each with slot + inspect records (owner-approved B2-17 v01 art, docs/149).
 // The 51 active selections were the consolidated docs/137 baseline. Newly
 // approved batches add registry records (B2-09 adds three), so enforce the
 // minimum historical count here; check-canon plus the per-batch verifiers pin
 // each selected PNG and prevent status/hash regressions.
 assert.ok(productionRecords.length>=171+14+8+7+2*2+51+9,'shared art catalog retains historical records, Chapter 4 item placeholders, consolidated approved artwork and nine no-image presentation records (docs/137)');
+// Nate approved all four B2-17 v01 views (docs/149): they are approved/selected storyboard art only.
+// No game assetPath exists until Gameplay integration, and the item rules themselves are unchanged.
 for(const id of ['lot_53_dispute_ticket','wedding_ring_lot31']){
-  assert.ok(items[id], 'new Chapter 4 WIP inventory item '+id);
+  assert.ok(items[id], 'Chapter 4 inventory item '+id);
   for(const variant of ['slot','inspect']){
-    assert.equal(artwork.items[id]?.[variant]?.status,'not-started',id+' art remains unapproved');
-    assert.equal(artwork.items[id]?.[variant]?.assetPath,null,id+' has no generated art');
+    assert.equal(artwork.items[id]?.[variant]?.status,'approved',id+' '+variant+' art is owner-approved B2-17 v01, not yet integrated');
+    assert.equal(artwork.items[id]?.[variant]?.assetPath,null,id+' '+variant+' has no game asset path before gameplay integration');
   }
 }
 // docs/105 allows genuinely new, unselected candidates to be generated. Keep
