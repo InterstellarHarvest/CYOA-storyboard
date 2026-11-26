@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "inputFiles": [
+    "source/build_native.py",
+    "source/bitmap-glyphs.json"
+  ],
+  "originalAndReferenceImagesAvailable": false,
+  "sourcePixelsTransferred": false,
+  "nativeHashesReproduced": {
+    "native/CH4-NEW-08-autofit-gown-v01.png": "0e1a0d3cd73c087416a7e9a2502ae263a597f7da77476e4cd0219dd504d48095",
+    "native/CH4-NEW-08-manual-slack-revealed-v01.png": "592bc3e6a237745d9a066fe5d7424d1cb5f520caffbc0af2491eaf76d83bb98d"
+  },
+  "rendererResult": {
+    "newCandidates": "UNSELECTED",
+    "nativeImages": [
+      {
+        "file": "CH4-NEW-08-autofit-gown-v01.png",
+        "sha256": "0e1a0d3cd73c087416a7e9a2502ae263a597f7da77476e4cd0219dd504d48095",
+        "dimensions": [
+          564,
+          278
+        ]
+      },
+      {
+        "file": "CH4-NEW-08-manual-slack-revealed-v01.png",
+        "sha256": "592bc3e6a237745d9a066fe5d7424d1cb5f520caffbc0af2491eaf76d83bb98d",
+        "dimensions": [
+          564,
+          278
+        ]
+      }
+    ],
+    "nativeRasterBuiltFromBlank": true,
+    "sourcePixelsTransferred": false
+  }
+}

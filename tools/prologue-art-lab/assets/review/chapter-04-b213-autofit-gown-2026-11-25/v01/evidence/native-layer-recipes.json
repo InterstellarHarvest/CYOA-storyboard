@@ -1,0 +1,392 @@
+{
+  "sharedLayers": [
+    {
+      "file": "layers/room-native-painted-fields.png",
+      "sha256": "ab581504faaa056bcd8fd276c811ebd5add0981347005e74d976e87e39de89cc",
+      "bbox": [
+        0,
+        0,
+        564,
+        278
+      ]
+    },
+    {
+      "file": "layers/native-duct-lamp-furniture.png",
+      "sha256": "7a74769fd471c73e44f19a3cf4e7559a7a148b9240ed6e41c94a98dee3b2bb4a",
+      "bbox": [
+        0,
+        0,
+        564,
+        266
+      ]
+    },
+    {
+      "file": "layers/rack-rear-and-empty-hanger.png",
+      "sha256": "3c212eca2e623482dacc40c5b266e4cd5f639b86e08ed1687b7a8a3292ad0a4e",
+      "bbox": [
+        133,
+        0,
+        367,
+        275
+      ]
+    },
+    {
+      "file": "layers/native-skirt-folds-and-lace.png",
+      "sha256": "c51dc012a514bdde8e3e86667ce420f83cb7e2f6d00d351c70a5cf5ada8190e1",
+      "bbox": [
+        120,
+        86,
+        349,
+        251
+      ]
+    },
+    {
+      "file": "layers/native-empty-bodice.png",
+      "sha256": "ddbf05c5ee99230ad85e4d1e2e5cfda502e3b2dc3729c1261bf627a034cd6701",
+      "bbox": [
+        204,
+        36,
+        294,
+        95
+      ]
+    },
+    {
+      "file": "layers/native-motor-and-outer-lace.png",
+      "sha256": "5339d53fdb1fb432216f1c4ee0f71dfd4e2adccff09467a25b18798c971d0656",
+      "bbox": [
+        250,
+        92,
+        331,
+        181
+      ]
+    },
+    {
+      "file": "layers/manufacturer-and-disconnect-labels.png",
+      "sha256": "58e6b17063aff4e4f3921902cc9f4d8bc4c2ec2a6a91e2a387a2c02d8d27b5bb",
+      "bbox": [
+        269,
+        117,
+        307,
+        169
+      ]
+    }
+  ],
+  "states": {
+    "default": [
+      {
+        "file": "layers/room-native-painted-fields.png",
+        "sha256": "ab581504faaa056bcd8fd276c811ebd5add0981347005e74d976e87e39de89cc",
+        "bbox": [
+          0,
+          0,
+          564,
+          278
+        ]
+      },
+      {
+        "file": "layers/native-duct-lamp-furniture.png",
+        "sha256": "7a74769fd471c73e44f19a3cf4e7559a7a148b9240ed6e41c94a98dee3b2bb4a",
+        "bbox": [
+          0,
+          0,
+          564,
+          266
+        ]
+      },
+      {
+        "file": "layers/rack-rear-and-empty-hanger.png",
+        "sha256": "3c212eca2e623482dacc40c5b266e4cd5f639b86e08ed1687b7a8a3292ad0a4e",
+        "bbox": [
+          133,
+          0,
+          367,
+          275
+        ]
+      },
+      {
+        "file": "layers/native-skirt-folds-and-lace.png",
+        "sha256": "c51dc012a514bdde8e3e86667ce420f83cb7e2f6d00d351c70a5cf5ada8190e1",
+        "bbox": [
+          120,
+          86,
+          349,
+          251
+        ]
+      },
+      {
+        "file": "layers/native-empty-bodice.png",
+        "sha256": "ddbf05c5ee99230ad85e4d1e2e5cfda502e3b2dc3729c1261bf627a034cd6701",
+        "bbox": [
+          204,
+          36,
+          294,
+          95
+        ]
+      },
+      {
+        "file": "layers/native-motor-and-outer-lace.png",
+        "sha256": "5339d53fdb1fb432216f1c4ee0f71dfd4e2adccff09467a25b18798c971d0656",
+        "bbox": [
+          250,
+          92,
+          331,
+          181
+        ]
+      },
+      {
+        "file": "layers/manufacturer-and-disconnect-labels.png",
+        "sha256": "58e6b17063aff4e4f3921902cc9f4d8bc4c2ec2a6a91e2a387a2c02d8d27b5bb",
+        "bbox": [
+          269,
+          117,
+          307,
+          169
+        ]
+      },
+      {
+        "file": "layers/default-inner-lining.png",
+        "sha256": "b8c795d06634f0ad304cefa33f99affeaa3ca9cee8f8d54f748a91523f5ab704",
+        "bbox": [
+          200,
+          96,
+          252,
+          187
+        ]
+      },
+      {
+        "file": "layers/default-cable-routes.png",
+        "sha256": "eb3a4cb6a70908498131b01d219d47bb5cb6e0bf5eb7ebb53cefc3464785e0b1",
+        "bbox": [
+          229,
+          44,
+          278,
+          117
+        ]
+      },
+      {
+        "file": "layers/default-front-rack-and-casters.png",
+        "sha256": "bd3703d8cda0a81c7a90e7934656380932fcdc3bafa7b37873effd4ca0bb4db6",
+        "bbox": [
+          133,
+          75,
+          365,
+          271
+        ]
+      }
+    ],
+    "manual-slack": [
+      {
+        "file": "layers/close-room-native-painted-fields.png",
+        "sha256": "ebe14491d824d7f63431567f352a8a4c4a8640aaf0212ef967916bc2e5fffb42",
+        "bbox": [
+          0,
+          0,
+          564,
+          278
+        ]
+      },
+      {
+        "file": "layers/close-native-duct-lamp-furniture.png",
+        "sha256": "ec28c6d6bec051f89af1689c0cb7c40b7c06a2a18efe8d6fd95bb54240857f6f",
+        "bbox": [
+          503,
+          22,
+          564,
+          155
+        ]
+      },
+      {
+        "file": "layers/close-rack-rear-and-empty-hanger.png",
+        "sha256": "62ceb6453bba1fc0f8ef4f68a7ad9f6a35a3314c17beee75296771da2d566926",
+        "bbox": [
+          0,
+          0,
+          332,
+          278
+        ]
+      },
+      {
+        "file": "layers/close-native-skirt-folds-and-lace.png",
+        "sha256": "aa380eedd97797bae3f923e2fcede917e9b3c6315831aff8d85e0c9c2ed8a8ed",
+        "bbox": [
+          0,
+          100,
+          310,
+          278
+        ]
+      },
+      {
+        "file": "layers/close-native-empty-bodice.png",
+        "sha256": "a55c53084507a4e22c01bfe1280b666ea33ec200e44e0503b10a92357ee9ec46",
+        "bbox": [
+          78,
+          0,
+          258,
+          117
+        ]
+      },
+      {
+        "file": "layers/close-native-motor-and-outer-lace.png",
+        "sha256": "7a6f7c62be6311016691f16739a612da787da976d7f50864831625fe8798d1bf",
+        "bbox": [
+          169,
+          113,
+          332,
+          278
+        ]
+      },
+      {
+        "file": "layers/close-manufacturer-and-disconnect-labels.png",
+        "sha256": "ba56f8b3c67e0b04a1a9105f8999918818ecf00a935d7ae4f7b218d2bb269554",
+        "bbox": [
+          207,
+          162,
+          284,
+          266
+        ]
+      },
+      {
+        "file": "layers/close-lining-revealed.png",
+        "sha256": "ed29b1365ec878a73bfc8147dd419fe0fe830a0d1ef8283e01a6b5c1f9780263",
+        "bbox": [
+          49,
+          118,
+          185,
+          278
+        ]
+      },
+      {
+        "file": "layers/close-slack-cables.png",
+        "sha256": "df585da51f4dd68ba9569c4e28e5cade9669dcea863f8b66e9a46d86ba831a13",
+        "bbox": [
+          128,
+          16,
+          224,
+          162
+        ]
+      },
+      {
+        "file": "layers/close-front-rack.png",
+        "sha256": "164b1f3d9f1dff24894807cf9019c4a768a09e581e77174ccfed83360664cabe",
+        "bbox": [
+          0,
+          78,
+          8,
+          278
+        ]
+      },
+      {
+        "file": "layers/close-native-fastener-detail.png",
+        "sha256": "6688dc1ef7689b5662f2ed11fd7637ace5a4e7cc0af14627800d035d72607f9d",
+        "bbox": [
+          176,
+          222,
+          325,
+          231
+        ]
+      }
+    ],
+    "manual-slack-world-diagnostic": [
+      {
+        "file": "layers/room-native-painted-fields.png",
+        "sha256": "ab581504faaa056bcd8fd276c811ebd5add0981347005e74d976e87e39de89cc",
+        "bbox": [
+          0,
+          0,
+          564,
+          278
+        ]
+      },
+      {
+        "file": "layers/native-duct-lamp-furniture.png",
+        "sha256": "7a74769fd471c73e44f19a3cf4e7559a7a148b9240ed6e41c94a98dee3b2bb4a",
+        "bbox": [
+          0,
+          0,
+          564,
+          266
+        ]
+      },
+      {
+        "file": "layers/rack-rear-and-empty-hanger.png",
+        "sha256": "3c212eca2e623482dacc40c5b266e4cd5f639b86e08ed1687b7a8a3292ad0a4e",
+        "bbox": [
+          133,
+          0,
+          367,
+          275
+        ]
+      },
+      {
+        "file": "layers/native-skirt-folds-and-lace.png",
+        "sha256": "c51dc012a514bdde8e3e86667ce420f83cb7e2f6d00d351c70a5cf5ada8190e1",
+        "bbox": [
+          120,
+          86,
+          349,
+          251
+        ]
+      },
+      {
+        "file": "layers/native-empty-bodice.png",
+        "sha256": "ddbf05c5ee99230ad85e4d1e2e5cfda502e3b2dc3729c1261bf627a034cd6701",
+        "bbox": [
+          204,
+          36,
+          294,
+          95
+        ]
+      },
+      {
+        "file": "layers/native-motor-and-outer-lace.png",
+        "sha256": "5339d53fdb1fb432216f1c4ee0f71dfd4e2adccff09467a25b18798c971d0656",
+        "bbox": [
+          250,
+          92,
+          331,
+          181
+        ]
+      },
+      {
+        "file": "layers/manufacturer-and-disconnect-labels.png",
+        "sha256": "58e6b17063aff4e4f3921902cc9f4d8bc4c2ec2a6a91e2a387a2c02d8d27b5bb",
+        "bbox": [
+          269,
+          117,
+          307,
+          169
+        ]
+      },
+      {
+        "file": "layers/manual-slack-inner-lining.png",
+        "sha256": "fb2428e46011019b21c617f9f1444c93d59a2e2ce11655cd2e96bca27aae39a5",
+        "bbox": [
+          190,
+          95,
+          258,
+          191
+        ]
+      },
+      {
+        "file": "layers/manual-slack-cable-routes.png",
+        "sha256": "ea558dc42ff548d30b4a4123ac07dbde0c0e9cf08c4d07996d7a78cb9b0c6df6",
+        "bbox": [
+          229,
+          44,
+          277,
+          118
+        ]
+      },
+      {
+        "file": "layers/manual-slack-front-rack-and-casters.png",
+        "sha256": "bd3703d8cda0a81c7a90e7934656380932fcdc3bafa7b37873effd4ca0bb4db6",
+        "bbox": [
+          133,
+          75,
+          365,
+          271
+        ]
+      }
+    ]
+  }
+}

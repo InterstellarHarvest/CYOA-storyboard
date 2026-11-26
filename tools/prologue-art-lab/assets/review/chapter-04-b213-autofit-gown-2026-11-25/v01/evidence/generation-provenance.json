@@ -1,0 +1,56 @@
+{
+  "tool": "Built-in image_gen.imagegen; one detailed composition/material reference",
+  "source": {
+    "file": "originals/autofit-gown-detailed-reference.png",
+    "sha256": "8dcbce39c41b3e57a6ad6c7f083c57571f3c366f86f22f1b46ce7cc1c9eab7f2",
+    "dimensions": [
+      1786,
+      881
+    ],
+    "mode": "RGB"
+  },
+  "prompt": "source/detailed-reference-prompt.txt",
+  "promptSha256": "f29364fbd061912528b91a8884bd047a7561fae26ad5be79ff42d1ce4a39c723",
+  "inputs": [
+    {
+      "file": "references/approved-b212-dressing-room.png",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/approved-ch2-exposure-dispenser.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/approved-b212-focus.png",
+      "sha256": "d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "inputRoles": [
+    "Approved garment/rack and room identity",
+    "Approved Chapter2 pixel/material benchmark",
+    "Approved hotel Focus lighting/material continuity"
+  ],
+  "generationDate": "2026-11-25",
+  "sourceDerivedDesign": true,
+  "nativeRasterIndependentlyConstructed": true,
+  "sourcePixelsTransferred": false,
+  "whollyIndependentCreativeAuthorship": false,
+  "method": "Both production images painted from blank564x278 RGBA layers using authored native geometry, constant-colour material forms, cloth-fold paths, lace cutwork clusters, structural metal profiles and binary type. The closer camera re-rasterizes the shared geometry directly at its final grid, not a cropped/enlarged raster. No reference PNG is read by the renderer; only bitmap glyph JSON is input. Reference reduction is diagnostic only.",
+  "nativeRecipe": "source/build_native.py",
+  "ownerTextCorrection": "source/OWNER-TEXT-HIERARCHY-CORRECTION.txt"
+}

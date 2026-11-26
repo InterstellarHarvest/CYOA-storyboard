@@ -1,0 +1,148 @@
+{
+  "title": "Chapter4 B2-13 v01 - AutoFit gown",
+  "branch": "art/ch4-b213-autofit-gown-review-20261125",
+  "preservationBaseline": "436e83f43c01b0a64620056d44aabf14c61fb444",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryAssetCount": 1,
+  "supplementalReferenceCount": 1,
+  "primary": {
+    "id": "CH4-NEW-08",
+    "label": "AutoFit wedding gown - initial Focus",
+    "status": "UNSELECTED",
+    "ownerApproved": false,
+    "selected": false,
+    "proposedCanonicalKey": "focus:grand_bellevue/autofit_gown",
+    "canonicalAssetPath": null,
+    "runtimeBinding": null,
+    "node": "hotel_bridal_gown_focus",
+    "native": {
+      "file": "native/CH4-NEW-08-autofit-gown-v01.png",
+      "sha256": "0e1a0d3cd73c087416a7e9a2502ae263a597f7da77476e4cd0219dd504d48095",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB"
+    },
+    "exact4x": {
+      "file": "previews/CH4-NEW-08-autofit-gown-v01-4x.png",
+      "sha256": "62ff6e682973eb98bbc578f98a967addb8d15f3c9fc2fe1f12ef281dcdda6b12",
+      "dimensions": [
+        2256,
+        1112
+      ],
+      "mode": "RGB"
+    },
+    "releaseSolutionRevealed": false,
+    "visibleLabels": [
+      "Small AUTOFIT / BRIDAL / SYSTEM maker plate",
+      "Disconnect-before-adjustment safety pictogram; full wording remains in canonical text"
+    ],
+    "sourceDerivedDesign": true,
+    "nativeRasterIndependentlyConstructed": true,
+    "sourcePixelsTransferred": false
+  },
+  "supplementalReferences": [
+    {
+      "id": "CH4-NEW-08-manual-slack",
+      "label": "Motor discovery and slack cables - closer reference",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "parentAsset": "CH4-NEW-08",
+      "newFocusId": null,
+      "newFlag": null,
+      "runtimeBinding": null,
+      "canonicalAssetPath": null,
+      "node": "hotel_bridal_gown_motor",
+      "existingNodeMode": "narrative",
+      "existingFlag": "ch4_autofit_release_located",
+      "stateFamily": "gown_motor_manual_slack",
+      "native": {
+        "file": "native/CH4-NEW-08-manual-slack-revealed-v01.png",
+        "sha256": "592bc3e6a237745d9a066fe5d7424d1cb5f520caffbc0af2491eaf76d83bb98d",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-08-manual-slack-revealed-v01-4x.png",
+        "sha256": "a3ca2f380a9beee236d346a9d4523de968b971f6c46f184b0189f0c8c47b9ff3",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "camera": {
+        "worldOrigin": [
+          165,
+          36
+        ],
+        "scale": 2,
+        "method": "Direct target-grid re-rasterization of shared geometry, with native fastener detail; not a raster crop/resize"
+      },
+      "depictedMoment": "Inner lining lifted; brass tab discovered/pressed; neck/waist cables slightly slack. This is a moment inside the authored motor node before lining is replaced.",
+      "implementationBoundary": "One conditional production reference only. Node stays narrative; no new Focus key, mode, choice, flag, binding or persistent open-lining state. No premature default reveal. No pre/post-press redundant frames.",
+      "sourceDerivedDesign": true,
+      "nativeRasterIndependentlyConstructed": true,
+      "sourcePixelsTransferred": false
+    }
+  ],
+  "sourceDerivedDesign": true,
+  "nativeRasterIndependentlyConstructed": true,
+  "sourcePixelsTransferred": false,
+  "wholeArtworkWhollyIndependentOfReferences": false,
+  "registryEntryCurrentlyExists": false,
+  "registryModified": false,
+  "gameplayNarrativeOrEngineModified": false,
+  "nextBatchStarted": false,
+  "references": [
+    {
+      "file": "references/approved-b212-dressing-room.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/bridal_dressing_room.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "role": "Approved exact gown/stand and room continuity",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-exposure-dispenser.png",
+      "sourcePath": "assets/selected/art/focus/biology_park/exposure_dispenser_open.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "role": "Same-class pixel/metal/material benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-aid-box.png",
+      "sourcePath": "assets/selected/art/focus/biology_park/aid_box_open.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229",
+      "role": "Same-class mechanical construction benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-bureau.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "Cluster/detail-density benchmark; main class",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-b212-focus.png",
+      "sourcePath": "assets/selected/pending-integration/focus/grand_bellevue/bridal_privacy_panel.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520",
+      "role": "Approved hotel Focus lighting/palette continuity",
+      "status": "APPROVED"
+    }
+  ],
+  "provenance": "evidence/generation-provenance.json",
+  "nativeLayerRecipes": "evidence/native-layer-recipes.json",
+  "manualSlackConditions": "CONDITION-AND-INTEGRATION-HANDOFF.md"
+}

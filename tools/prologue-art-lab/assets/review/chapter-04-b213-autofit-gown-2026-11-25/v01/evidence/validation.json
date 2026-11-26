@@ -1,0 +1,348 @@
+{
+  "passed": true,
+  "status": "UNSELECTED",
+  "artisticApproval": false,
+  "nativeRasterConstructedWithoutSourcePixels": true,
+  "checks": [
+    {
+      "check": "One primary / one supplemental, both unselected",
+      "passed": true
+    },
+    {
+      "check": "default564x278 opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "default SHA-256",
+      "passed": true
+    },
+    {
+      "check": "default exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/room-native-painted-fields.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/native-duct-lamp-furniture.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/rack-rear-and-empty-hanger.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/native-skirt-folds-and-lace.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/native-empty-bodice.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/native-motor-and-outer-lace.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/manufacturer-and-disconnect-labels.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/default-inner-lining.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/default-cable-routes.png",
+      "passed": true
+    },
+    {
+      "check": "default layer layers/default-front-rack-and-casters.png",
+      "passed": true
+    },
+    {
+      "check": "default exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "default remains unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "manual-slack564x278 opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "manual-slack SHA-256",
+      "passed": true
+    },
+    {
+      "check": "manual-slack exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-room-native-painted-fields.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-native-duct-lamp-furniture.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-rack-rear-and-empty-hanger.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-native-skirt-folds-and-lace.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-native-empty-bodice.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-native-motor-and-outer-lace.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-manufacturer-and-disconnect-labels.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-lining-revealed.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-slack-cables.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-front-rack.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack layer layers/close-native-fastener-detail.png",
+      "passed": true
+    },
+    {
+      "check": "manual-slack exact native layer replay",
+      "passed": true
+    },
+    {
+      "check": "manual-slack remains unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "World-coordinate difference mask exact",
+      "passed": true
+    },
+    {
+      "check": "Only lining/cables change in shared geometry",
+      "passed": true,
+      "changedWorldPixels": 5312
+    },
+    {
+      "check": "World diagnostic layer replay exact",
+      "passed": true
+    },
+    {
+      "check": "Independent native construction with NO original/reference images available",
+      "passed": true
+    },
+    {
+      "check": "Default labels subordinate / no manual solution in primary",
+      "passed": true
+    },
+    {
+      "check": "Default recipe excludes discovery layers",
+      "passed": true
+    },
+    {
+      "check": "Closer supplement contains full tab and warning text",
+      "passed": true
+    },
+    {
+      "check": "Meaningful native lettering stays inside its physical labels",
+      "passed": true
+    },
+    {
+      "check": "Approved benchmark exact references/approved-b212-dressing-room.png",
+      "passed": true
+    },
+    {
+      "check": "Approved benchmark exact references/approved-ch2-exposure-dispenser.png",
+      "passed": true
+    },
+    {
+      "check": "Approved benchmark exact references/approved-ch2-aid-box.png",
+      "passed": true
+    },
+    {
+      "check": "Approved benchmark exact references/approved-ch2-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Approved benchmark exact references/approved-b212-focus.png",
+      "passed": true
+    },
+    {
+      "check": "approved-b212-dressing-room-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-b212-dressing-room-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-08-autofit-gown-v01-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-08-autofit-gown-v01-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-b212-focus-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-b212-focus-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-aid-box-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-aid-box-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "source-diagnostic-native-native-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "source-diagnostic-native-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-bureau-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-bureau-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-08-manual-slack-revealed-v01-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-08-manual-slack-revealed-v01-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "b212-continuity-native-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "b212-continuity-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "motor-chapter2-benchmarks-native-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "motor-chapter2-benchmarks-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "world-state-registration-native-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "world-state-registration-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "primary-and-motor-discovery-native-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "primary-and-motor-discovery-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "chapter2-focus-benchmarks-native-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "chapter2-focus-benchmarks-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-exposure-dispenser-4x.png source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-exposure-dispenser-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "Comparison labels fit",
+      "passed": true
+    },
+    {
+      "check": "Original source/prompt exact",
+      "passed": true
+    },
+    {
+      "check": "Generation input exact references/approved-b212-dressing-room.png",
+      "passed": true
+    },
+    {
+      "check": "Generation input exact references/approved-ch2-exposure-dispenser.png",
+      "passed": true
+    },
+    {
+      "check": "Generation input exact references/approved-b212-focus.png",
+      "passed": true
+    },
+    {
+      "check": "Honest source-derived design / independent native raster provenance",
+      "passed": true
+    },
+    {
+      "check": "Canonical narrative snapshot exact",
+      "passed": true
+    },
+    {
+      "check": "Intended Focus is authored but unregistered",
+      "passed": true
+    },
+    {
+      "check": "Existing discovery eligibility unchanged",
+      "passed": true
+    },
+    {
+      "check": "One authored press/loosen sequence; motor node remains narrative",
+      "passed": true
+    },
+    {
+      "check": "No extra Focus, flag, mode or runtime binding",
+      "passed": true
+    },
+    {
+      "check": "Every baseline tracked blob unchanged",
+      "passed": true,
+      "baselineFiles": 669,
+      "selectedAssetFiles": 202,
+      "baselineCommit": "436e83f43c01b0a64620056d44aabf14c61fb444"
+    },
+    {
+      "check": "Correct isolated art-review branch",
+      "passed": true
+    }
+  ]
+}

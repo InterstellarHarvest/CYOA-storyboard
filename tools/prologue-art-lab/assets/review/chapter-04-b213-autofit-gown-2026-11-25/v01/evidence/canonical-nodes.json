@@ -1,0 +1,329 @@
+{
+  "hotel_bridal_gown_focus": {
+    "mode": "focus",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "focus": "grand_bellevue/autofit_gown",
+    "effects": {
+      "set": {
+        "ch4_bridal_gown_inspected": true
+      }
+    },
+    "text": [
+      {
+        "desc": "An elaborate white wedding gown hangs from a wheeled dressing stand. The waist is alarmingly narrow. Something metallic glints beneath the bodice."
+      },
+      {
+        "desc": "You pull aside the lace. A motor draws thin cables through the bodice and neckline. The label reads AUTOFIT BRIDAL SYSTEM \u2014 ONE SIZE FITS EVERYONE EVENTUALLY."
+      },
+      {
+        "desc": "SAFETY NOTICE: Disconnect automatic fitting mechanism before removing or adjusting garment."
+      },
+      {
+        "desc": "Apparently even wedding dresses are automated now."
+      },
+      {
+        "say": "That garment is reserved for the bride.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "I'M JUST LOOKING.",
+        "who": "you"
+      },
+      {
+        "say": "Your inspection has been noted.",
+        "who": "bridal_door_ai"
+      }
+    ],
+    "choices": [
+      {
+        "id": "gown_examine_motor",
+        "kind": "action",
+        "text": "EXAMINE THE AUTOMATIC FITTING MECHANISM.",
+        "if": {
+          "notFlag": "ch4_autofit_release_located"
+        },
+        "to": "hotel_bridal_gown_motor"
+      },
+      {
+        "id": "gown_try_on",
+        "kind": "action",
+        "text": "TRY ON THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_try"
+      },
+      {
+        "id": "gown_hold_camera",
+        "kind": "action",
+        "text": "HOLD THE GOWN UP TO THE CAMERA.",
+        "to": "hotel_bridal_gown_camera"
+      },
+      {
+        "id": "gown_leave_alone",
+        "kind": "action",
+        "text": "LEAVE THE GOWN ALONE.",
+        "to": "hotel_bridal_door_options"
+      }
+    ],
+    "notes": "Owner-approved Focus A reveals danger; risky TRY appears only after gown INSPECT. AutoFit has a manual slack tab to discover separately. No fatality during inspection."
+  },
+  "hotel_bridal_gown_motor": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "text": [
+      {
+        "desc": "You lift the lining and follow cables to a motor beneath the waist. The cables run through the bodice and around the neckline."
+      },
+      {
+        "desc": "Beside the motor is a brass tab: MANUAL SLACK. Below it, in smaller letters: NOT AN EMERGENCY STOP."
+      },
+      {
+        "desc": "You press the tab. The neckline loosens slightly. You release it; the cables stay slack. At least you know where the release is."
+      },
+      {
+        "say": "Unauthorized garment adjustments may invalidate the bridal presentation warranty.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "IS THIS THING STILL TURNED ON?",
+        "who": "you"
+      },
+      {
+        "say": "The garment is ready for fitting.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "THAT'S NOT WHAT I ASKED.",
+        "who": "you"
+      },
+      {
+        "say": "Correct.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "You carefully replace the lining."
+      }
+    ],
+    "choices": [
+      {
+        "id": "motor_try_gown",
+        "kind": "action",
+        "text": "TRY ON THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_try"
+      },
+      {
+        "id": "motor_hold_camera",
+        "kind": "action",
+        "text": "HOLD THE GOWN UP TO THE CAMERA.",
+        "to": "hotel_bridal_gown_camera"
+      },
+      {
+        "id": "motor_return_door",
+        "kind": "action",
+        "text": "RETURN TO THE SMART DOOR.",
+        "to": "hotel_bridal_door_options"
+      },
+      {
+        "id": "motor_leave",
+        "kind": "action",
+        "text": "LEAVE THE DRESSING ROOM.",
+        "to": "hotel_bridal_corridor_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_autofit_release_located": true
+      }
+    },
+    "notes": "Finding manual slack provides one nonstacking +1 survival modifier for risky dressing d6."
+  },
+  "hotel_bridal_gown_camera": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "speaker": "bridal_door_ai",
+    "pose": "neutral",
+    "text": [
+      {
+        "desc": "You hold the gown up to the camera as though it might count as a person."
+      },
+      {
+        "say": "Bridal attire detected.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "GOOD. OPEN.",
+        "who": "you"
+      },
+      {
+        "say": "No bride detected inside bridal attire.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "You return the gown to the stand."
+      }
+    ],
+    "choices": [
+      {
+        "id": "camera_try_wear",
+        "kind": "action",
+        "text": "TRY THE GOWN ON YOURSELF.",
+        "to": "hotel_bridal_gown_try"
+      },
+      {
+        "id": "camera_return",
+        "kind": "action",
+        "text": "RETURN TO THE SMART DOOR.",
+        "to": "hotel_bridal_door_options"
+      },
+      {
+        "id": "camera_leave",
+        "kind": "action",
+        "text": "LEAVE THE DRESSING ROOM.",
+        "to": "hotel_bridal_corridor_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_bridal_gown_camera_rejected": true
+      }
+    },
+    "notes": "Owner-approved nonfatal rejection; holding the gown is not enough to open the door."
+  },
+  "hotel_bridal_gown_try": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "text": [
+      {
+        "desc": "You look at the dress. You look at the locked bathroom. There are moments when dignity must take a back seat."
+      },
+      {
+        "desc": "You step into the gown and pull it over your shoulders. A motor hums beneath the fabric."
+      },
+      {
+        "say": "Beginning personalized fitting.",
+        "who": "autofit_system"
+      },
+      {
+        "desc": "The waist tightens. Then the shoulders. Then the neckline."
+      },
+      {
+        "say": "WAIT\u2014",
+        "who": "you"
+      },
+      {
+        "desc": "The motor accelerates."
+      }
+    ],
+    "choices": [
+      {
+        "id": "autofit_hidden_roll",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "check": {
+          "id": "ch4_bridal_autofit_survival",
+          "sides": 6,
+          "need": 5,
+          "mods": [
+            {
+              "if": {
+                "flag": "ch4_autofit_release_located"
+              },
+              "add": 1
+            }
+          ]
+        },
+        "pass": {
+          "to": "hotel_bridal_autofit_survived"
+        },
+        "fail": {
+          "to": "fatal_bridal_made_to_measure"
+        }
+      }
+    ],
+    "notes": "Hidden d6 base 1\u20134 fatal, 5\u20136 survive; +1 if manually examined release: raw 1\u20133 fatal, 4\u20136 survive. Roll after a deliberate TRY ON action only."
+  },
+  "hotel_bridal_autofit_survived": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "text": [
+      {
+        "desc": "The neckline tightens."
+      },
+      {
+        "if": {
+          "flag": "ch4_autofit_release_located"
+        },
+        "desc": "Your fingers find the little brass tab beneath the waist. You press it. The neckline loosens just enough for you to breathe."
+      },
+      {
+        "if": {
+          "notFlag": "ch4_autofit_release_located"
+        },
+        "desc": "You wrench at the fabric, fighting for breath. A seam gives way with a sharp click, and the pressure eases."
+      },
+      {
+        "desc": "The motor stops."
+      },
+      {
+        "say": "Fitting complete.",
+        "who": "autofit_system"
+      },
+      {
+        "desc": "You stand before the mirror, sweating inside an extraordinarily expensive wedding dress."
+      },
+      {
+        "say": "GOOD ENOUGH.",
+        "who": "you"
+      },
+      {
+        "desc": "You approach the bathroom. The camera examines you."
+      },
+      {
+        "say": "Bridal presentation detected.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "A green light illuminates."
+      },
+      {
+        "say": "Identity discrepancy noted.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "OPEN THE DOOR.",
+        "who": "you"
+      },
+      {
+        "say": "Provisional bridal status approved.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "An electronic chime sounds."
+      },
+      {
+        "say": "Registration fee pending.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "The lock clicks open."
+      },
+      {
+        "desc": "For the first time since entering the hotel, a bathroom door actually opens for you."
+      }
+    ],
+    "choices": [
+      {
+        "id": "autofit_to_seashells",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_seashell_room"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_autofit_survived": true,
+        "ch4_provisional_bride_registered": true,
+        "ch4_bridal_registration_fee_pending": true
+      }
+    },
+    "notes": "No ring consumed, no second roll. Worn gown is a temporary costume, not an inventory item. The bridal registration fee persists on exit."
+  }
+}
