@@ -1,0 +1,50 @@
+{
+  "hotel_auctioneer:showman": {
+    "title": "AUCTIONEER SHOWMAN",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_auctioneer/showman.png",
+    "prompt": "Exact owner-selected CH4-03 artwork; do not regenerate or alter. SOURCE-DERIVED: preferred original -> premultiplied-alpha Lanczos 564x278 -> cutout cleanup -> targeted near-opaque interior feature contrast cleanup. Approved source and full processing evidence are pinned in docs/127.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED \u2014 Nate, 2026-11-22; CH4-03 v08 final review. Immutable source InterstellarHarvest/CYOA-storyboard@3463e20bd366390008fa4f71c087ed5f334f3a31; tools/prologue-art-lab/assets/review/chapter-04-batch01-2026-11-21/v08/native/CH4-03-auctioneer-source-derived-v08.png; SHA-256 231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78. Source nodes: hotel_auctioneer_arrival, hotel_auction_reopen_53, hotel_auction_chair_lot31, hotel_lot61_pod_auction, hotel_auctioneer_restroom_inventory, hotel_auctioneer_lot14_dispute. Provenance: SOURCE-DERIVED: preferred original -> premultiplied-alpha Lanczos 564x278 -> cutout cleanup -> targeted near-opaque interior feature contrast cleanup. See docs/127_CH4_BATCH1_APPROVAL_COMPLETION_20261122.md and JSON. Approved, not integrated. Suggested game destination follows repository conventions; assetPath remains null until verified Gameplay PMO integration (docs/105). Historical UNSELECTED labels are preserved as review-time evidence, superseded by this owner selection.",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/lobby"
+  },
+  "hotel_auctioneer:delighted": {
+    "title": "Auctioneer \u2014 delighted",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_auctioneer/delighted.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/lobby",
+    "prompt": "Exact owner-selected B2-06 v01 CH4-B2-31. Preserve approved bytes. Immutable source and provenance in docs/134.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED \u2014 Nate, 2026-11-23; B2-06 CH4-B2-31 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-31-v01.png; SHA-256 1d1121394a9a628116f8d110ba122159c0ae32894414b9bec4ec641e662f84e4. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+  },
+  "hotel_auctioneer:disappointed": {
+    "title": "Auctioneer \u2014 disappointed",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_auctioneer/disappointed.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/lobby",
+    "prompt": "Exact owner-selected B2-06 v01 CH4-B2-35. Preserve approved bytes. Immutable source and provenance in docs/134.",
+    "notes": "OWNER APPROVED AND SELECTED UNCHANGED \u2014 Nate, 2026-11-23; B2-06 CH4-B2-35 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-35-v01.png; SHA-256 07ebaa5a00f4119855a9b6ba319ce3614b2b3c710243857f7756b08022cb33fc. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+  },
+  "hotel_auctioneer:bureaucratic": {
+    "title": "Auctioneer \u2014 bureaucratic",
+    "kind": "portrait",
+    "status": "approved",
+    "dimensions": "564x278",
+    "assetPath": null,
+    "suggestedFilename": "art/portraits/grand_bellevue/hotel_auctioneer/bureaucratic.png",
+    "foregroundFormat": "transparent-rgba-png",
+    "portraitBackgroundScene": "grand_bellevue/lobby",
+    "prompt": "Exact owner-selected B2-06 v01 CH4-B2-36. Preserve approved bytes. Immutable source and provenance in docs/134.",
+    "notes": "ARCHIVED / RETIRED / UNUSED \u2014 CHAPTER 4 CONSOLIDATION (docs/137; Nate, 2026-11-24). Approved image kept as history: hotel_auctioneer_lot14_recall now use CH4-03. Do not generate, re-select or import. Original approval record follows: OWNER APPROVED AND SELECTED UNCHANGED \u2014 Nate, 2026-11-23; B2-06 CH4-B2-36 v01. SOURCE-DERIVED native interpretation, not independent whole-image native-grid authorship. Source f6840e5d69f70435f88ce9ece720583566fce8e2:tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-06-v01/native/CH4-B2-36-v01.png; SHA-256 cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef. Preserve earlier approved auctioneer/porter identities and portraits. All earlier approvals, B2-04 conditional references and unselected plumber alternatives remain unchanged. No integration; runtime assetPath stays null. Completion/gameplay handoff docs/134."
+  }
+}
