@@ -1,0 +1,473 @@
+{
+  "fatal_stall_final_occupancy": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "end": true,
+    "text": "Your fingers slip.\n\nThe stall continues upward.\n\nYou don't.\n\nFor one extraordinary moment, you have an uninterrupted view of the restroom below.\n\nIncluding the toilet.\n\nDirectly below you.\n\nYou land on it.\n\nThere is a tremendous crack.\n\nThen several smaller ones.\n\nThe toilet breaks.\n\nSo do you.\n\nFor the first and last time today, you have finally managed to use a toilet.\n\nYou would have preferred a less permanent arrangement.\n\nENDING \u2014 FINAL OCCUPANCY.",
+    "choices": [
+      {
+        "id": "restart_final_occupancy",
+        "kind": "system",
+        "text": "BEGIN AGAIN",
+        "restart": true
+      }
+    ],
+    "deathPopup": {
+      "id": "ch4_final_occupancy",
+      "title": "FINAL OCCUPANCY",
+      "description": "The collection crew reports that Lot Fifty-Three has suffered considerable damage during removal. The associated toilet is declared beyond repair. Your restroom visit is recorded as COMPLETED. The auctioneer considers this an excellent example of customer satisfaction.",
+      "button": "BEGIN AGAIN",
+      "status": "owner-approved",
+      "artRef": "grand_bellevue/final_occupancy"
+    },
+    "endingArt": "grand_bellevue/final_occupancy",
+    "notes": "Owner-approved fatal lead-in and popup copy. Planned aftermath illustration only: broken porcelain toilet beneath the raised empty stall, scattered auction tags, perhaps an abandoned shoe. Do not show the player's face; no death art generated yet. Engine popup uses the standard RETRY/CHECKPOINT/EXIT controls when integrated."
+  },
+  "fatal_boiler_pressed_and_steamed": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/boiler_room",
+    "end": true,
+    "text": "You turn the wheel.\n\nThe valve shrieks.\n\nAn enormous cloud of steam engulfs you.\n\nWhen it clears, your tuxedo hangs from a wire hanger. Jacket and trousers, perfectly pressed. Still steaming.\n\nThe engineer examines the result.\n\nWell. At least the steam press works.\n\nENDING \u2014 PRESSED AND STEAMED.",
+    "choices": [
+      {
+        "id": "restart_pressed_and_steamed",
+        "kind": "system",
+        "text": "BEGIN AGAIN",
+        "restart": true
+      }
+    ],
+    "deathPopup": {
+      "id": "ch4_pressed_and_steamed",
+      "title": "PRESSED AND STEAMED",
+      "description": "The emergency pressure test has passed. Your formalwear has never looked better. Unfortunately, its former occupant is unavailable for comment.",
+      "button": "BEGIN AGAIN",
+      "status": "owner-approved",
+      "artRef": "grand_bellevue/pressed_and_steamed"
+    },
+    "endingArt": "grand_bellevue/pressed_and_steamed",
+    "notes": "Owner-approved fatal outcome with d6 1\u20134, no modifiers. Illustration ONLY: a steaming tuxedo jacket and matching trousers together on a single wire clothes hanger, as though freshly steam-pressed. Simple, immediately absurd visual. No boiler, gauge, clipboard, shoe, text, person, face, or gore in the artwork. No image generated yet. Popup has exactly one incident-specific heading and its narrative beside art; future engine has RETRY/CHECKPOINT/EXIT controls."
+  },
+  "fatal_lot61_folded": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "end": true,
+    "text": "You step inside the Emergency Convenience Pod. The door closes with a reassuring click.\n\nThere is a toilet. There are walls. There is privacy.\n\nYou reach toward your belt.\n\nOutside, the auctioneer announces the pod's most impressive feature: automatic packing for convenient transport.\n\nA mechanical clunk comes from beneath the floor. The walls begin moving inward. You grab the door handle. It won't turn.\n\nYou pull desperately at the handle.\n\nThe walls keep closing.\n\nThe porcelain toilet disappears beneath a folding metal panel.\n\nThere is a final mechanical clunk.\n\nThen silence.\n\nOutside, the auctioneer beams at the audience.\n\nAnd there we have it! Ready for immediate collection!\n\nENDING \u2014 FOLDED FOR CONVENIENCE.",
+    "choices": [
+      {
+        "id": "restart_folded_for_convenience",
+        "kind": "system",
+        "text": "BEGIN AGAIN",
+        "restart": true
+      }
+    ],
+    "deathPopup": {
+      "id": "ch4_folded_for_convenience",
+      "title": "FOLDED FOR CONVENIENCE",
+      "description": "Lot Sixty-One has been successfully reduced to its transport dimensions. The collection crew reports that the unit is somewhat heavier than the manufacturer's specifications suggest. The auction clerk adds a note to the manifest: CONTENTS INCLUDED. No further inspection is deemed necessary.",
+      "button": "BEGIN AGAIN",
+      "status": "owner-approved",
+      "artRef": "grand_bellevue/folded_for_convenience"
+    },
+    "endingArt": "grand_bellevue/folded_for_convenience",
+    "notes": "Owner-approved fatal lead-in/popup copy and specific art brief. Future aftermath image must show a NORMAL-SIZED BRIEFCASE-SIZED folded metallic case or compact suit-like case, with only SLIGHT asymmetrical bulging to imply the body compressed inside and ONE loose shoe lying off to the side as if it fell out. No oversized packing container, exposed corpse, gore, or visible face. The ordinary case size is essential to the joke. No artwork generated yet. Engine popup uses standard RETRY/CHECKPOINT/EXIT controls when integrated. Hidden d6 roll is fatal on 1\u20134, escape on 5\u20136; no modifiers approved."
+  },
+  "fatal_bridal_made_to_measure": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "end": true,
+    "text": [
+      {
+        "desc": "The neckline draws tighter. You search beneath the fabric for the release."
+      },
+      {
+        "desc": "The motor interprets your struggling as a poor fit. It makes another adjustment."
+      },
+      {
+        "desc": "The mirror reflects a beautifully tailored wedding dress. The fitting system gives a cheerful chime."
+      },
+      {
+        "say": "Perfect fit achieved.",
+        "who": "autofit_system"
+      },
+      {
+        "desc": "Unfortunately, there is no longer anyone available to wear it."
+      },
+      "ENDING \u2014 MADE TO MEASURE."
+    ],
+    "choices": [
+      {
+        "id": "restart_made_to_measure",
+        "kind": "system",
+        "text": "BEGIN AGAIN",
+        "restart": true
+      }
+    ],
+    "deathPopup": {
+      "id": "ch4_made_to_measure",
+      "title": "MADE TO MEASURE",
+      "description": "The AutoFit system guarantees a perfect silhouette. Breathing room is available at additional cost.",
+      "button": "BEGIN AGAIN",
+      "status": "owner-approved",
+      "artRef": "grand_bellevue/made_to_measure"
+    },
+    "endingArt": "grand_bellevue/made_to_measure",
+    "notes": "Owner-approved fourth Chapter 4 fatal ending; art deferred. A white gown hanging on its stand, absurdly cinched bodice, one abandoned shoe beneath. No face, body details, gore, or complex machinery. One popup title and one narrative, no unrelated title."
+  },
+  "hotel_stall_lot_claimed": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "You slip into the nearest stall and pull the door closed.\n\nIt even latches.\n\nFor one glorious moment, you are alone in a bathroom. An ordinary bathroom. With an actual toilet.\n\nYou reach toward your belt.\n\nCLANK.\n\nSomething shifts overhead. Four steel cables pull taut around the stall's partitions. The walls tremble. Then, with a deep mechanical groan, the entire enclosure begins rising.\n\nYou look up. A crane is lifting the stall\u2014walls, door, latch and all\u2014straight through an open service hatch in the ceiling.\n\nYou remain exactly where you are. Standing beside the toilet. Fully dressed. Your hand is still hovering halfway toward your belt buckle.\n\nThrough the restroom entrance, whose doors were removed only moments earlier, you find yourself facing a small procession of wedding guests. They stop. You stop. The stall continues upward.\n\nA porter checks his clipboard, looks at you, and gives an apologetic little wave.\n\nYou slowly lower your hand. The toilet is still there. Unfortunately, everyone can see it. And you.",
+    "choices": [
+      {
+        "id": "stall_protest",
+        "kind": "spoken",
+        "text": "EXCUSE ME! I'M USING THAT!",
+        "to": "hotel_stall_porter_protest"
+      },
+      {
+        "id": "stall_grab_crane",
+        "kind": "action",
+        "text": "JUMP AND GRAB THE RISING STALL BEFORE IT DISAPPEARS.",
+        "check": {
+          "id": "ch4_stall_crane_grip",
+          "sides": 6,
+          "need": 4
+        },
+        "pass": {
+          "to": "hotel_stall_crane_success"
+        },
+        "fail": {
+          "to": "fatal_stall_final_occupancy"
+        }
+      },
+      {
+        "id": "stall_walk_guests",
+        "kind": "action",
+        "text": "WALK PAST THE WEDDING GUESTS AS THOUGH NOTHING UNUSUAL HAS HAPPENED.",
+        "to": "hotel_stall_public_corridor_walk"
+      }
+    ]
+  },
+  "hotel_stall_crane_success": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "You catch the rising stall's metal frame with both hands.\n\nYour feet leave the floor.\n\nFor one dreadful moment, you swing beneath the crane.\n\nThen you find a foothold.\n\nThe stall rises toward an opening in the ceiling.\n\nBelow you, the restroom shrinks into the distance.\n\nYou have successfully escaped the bathroom.\n\nUnfortunately, that's the exact opposite of what you wanted.",
+    "choices": [
+      {
+        "id": "stall_ride_upper_salvage",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_upper_salvage_arrival"
+      }
+    ]
+  },
+  "hotel_lot61_pod_auction": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auctioneer",
+    "pose": "showman",
+    "text": [
+      {
+        "desc": "Back on the auction floor, a wedding guest raises her hand."
+      },
+      {
+        "say": "Excuse me. If you're selling all the bathrooms, where are we supposed to go?",
+        "who": "hotel_wedding_guest"
+      },
+      "An excellent question! Ladies and gentlemen, Lot Sixty-One!",
+      {
+        "desc": "Two porters wheel out a gleaming metal booth."
+      },
+      "The Grand Bellevue Emergency Convenience Pod! Completely self-contained! No plumbing required!",
+      {
+        "desc": "The booth's door stands slightly open. Inside is a small porcelain toilet. An actual toilet."
+      },
+      {
+        "say": "Does it work?",
+        "who": "hotel_wedding_guest"
+      },
+      "Magnificently! Even during a complete hotel water outage!",
+      {
+        "say": "Papa, why haven't we been using that?",
+        "who": "hotel_bride"
+      },
+      "Because, darling, we hadn't sold it yet!",
+      {
+        "desc": "He turns toward the audience."
+      },
+      "Who would care to demonstrate?",
+      {
+        "desc": "His eyes settle on you."
+      },
+      "Ah! Our gentleman with the urgent interest in modern conveniences!",
+      {
+        "desc": "The porters open the booth's door. You can see a toilet, a seat, and what appears to be privacy."
+      },
+      {
+        "desc": "A small warning plate beside the entrance reads: AUTOMATIC PACKING MECHANISM \u2014 DISENGAGE BEFORE OCCUPANCY. The auctioneer appears not to have noticed it."
+      }
+    ],
+    "choices": [
+      {
+        "id": "lot61_enter_pod",
+        "kind": "action",
+        "text": "ENTER THE EMERGENCY CONVENIENCE POD AND TRY TO USE IT.",
+        "check": {
+          "id": "ch4_pod_packing_escape",
+          "sides": 6,
+          "need": 5
+        },
+        "pass": {
+          "to": "hotel_lot61_pod_escaped"
+        },
+        "fail": {
+          "to": "fatal_lot61_folded"
+        }
+      },
+      {
+        "id": "lot61_decline_pod",
+        "kind": "action",
+        "text": "DECLINE THE DEMONSTRATION AND SEARCH THE SERVICE CORRIDORS FOR A TOILET.",
+        "to": "hotel_lot61_pod_declined"
+      }
+    ]
+  },
+  "hotel_lot61_pod_escaped": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auctioneer",
+    "pose": "delighted",
+    "effects": {
+      "set": {
+        "ch4_pod_survived_packing": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You step inside. The door closes with a reassuring click. There is a toilet, walls, privacy. You are almost overcome with gratitude."
+      },
+      {
+        "desc": "Outside, the auctioneer raises his voice."
+      },
+      "Ladies and gentlemen! Observe the remarkable efficiency of our emergency sanitation system!",
+      {
+        "desc": "You reach toward your belt."
+      },
+      "And now, its most impressive feature!",
+      {
+        "desc": "A mechanical clunk comes from beneath the floor."
+      },
+      "Automatic packing for convenient transport!",
+      {
+        "desc": "The walls begin moving inward. You grab the door handle. It won't turn."
+      },
+      {
+        "desc": "You throw your weight against the door. The latch gives way. You tumble onto the auction floor."
+      },
+      {
+        "desc": "Behind you, the booth folds inward with a series of metallic bangs. Seconds later, it has become a remarkably compact shipping case. The audience applauds."
+      },
+      "Extraordinary! Completely portable!",
+      {
+        "desc": "You stand up. Your clothing is intact. Your dignity is not. You still need a toilet."
+      }
+    ],
+    "choices": [
+      {
+        "id": "lot61_escaped_seek_toilet",
+        "kind": "action",
+        "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "hotel_bridal_gown_focus": {
+    "mode": "focus",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "focus": "grand_bellevue/autofit_gown",
+    "effects": {
+      "set": {
+        "ch4_bridal_gown_inspected": true
+      }
+    },
+    "text": [
+      {
+        "desc": "An elaborate white wedding gown hangs from a wheeled dressing stand. The waist is alarmingly narrow. Something metallic glints beneath the bodice."
+      },
+      {
+        "desc": "You pull aside the lace. A motor draws thin cables through the bodice and neckline. The label reads AUTOFIT BRIDAL SYSTEM \u2014 ONE SIZE FITS EVERYONE EVENTUALLY."
+      },
+      {
+        "desc": "SAFETY NOTICE: Disconnect automatic fitting mechanism before removing or adjusting garment."
+      },
+      {
+        "desc": "Apparently even wedding dresses are automated now."
+      },
+      {
+        "say": "That garment is reserved for the bride.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "I'M JUST LOOKING.",
+        "who": "you"
+      },
+      {
+        "say": "Your inspection has been noted.",
+        "who": "bridal_door_ai"
+      }
+    ],
+    "choices": [
+      {
+        "id": "gown_examine_motor",
+        "kind": "action",
+        "text": "EXAMINE THE AUTOMATIC FITTING MECHANISM.",
+        "if": {
+          "notFlag": "ch4_autofit_release_located"
+        },
+        "to": "hotel_bridal_gown_motor"
+      },
+      {
+        "id": "gown_try_on",
+        "kind": "action",
+        "text": "TRY ON THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_try"
+      },
+      {
+        "id": "gown_hold_camera",
+        "kind": "action",
+        "text": "HOLD THE GOWN UP TO THE CAMERA.",
+        "to": "hotel_bridal_gown_camera"
+      },
+      {
+        "id": "gown_leave_alone",
+        "kind": "action",
+        "text": "LEAVE THE GOWN ALONE.",
+        "to": "hotel_bridal_door_options"
+      }
+    ],
+    "notes": "Owner-approved Focus A reveals danger; risky TRY appears only after gown INSPECT. AutoFit has a manual slack tab to discover separately. No fatality during inspection."
+  },
+  "hotel_bridal_gown_motor": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "text": [
+      {
+        "desc": "You lift the lining and follow cables to a motor beneath the waist. The cables run through the bodice and around the neckline."
+      },
+      {
+        "desc": "Beside the motor is a brass tab: MANUAL SLACK. Below it, in smaller letters: NOT AN EMERGENCY STOP."
+      },
+      {
+        "desc": "You press the tab. The neckline loosens slightly. You release it; the cables stay slack. At least you know where the release is."
+      },
+      {
+        "say": "Unauthorized garment adjustments may invalidate the bridal presentation warranty.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "IS THIS THING STILL TURNED ON?",
+        "who": "you"
+      },
+      {
+        "say": "The garment is ready for fitting.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "THAT'S NOT WHAT I ASKED.",
+        "who": "you"
+      },
+      {
+        "say": "Correct.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "You carefully replace the lining."
+      }
+    ],
+    "choices": [
+      {
+        "id": "motor_try_gown",
+        "kind": "action",
+        "text": "TRY ON THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_try"
+      },
+      {
+        "id": "motor_hold_camera",
+        "kind": "action",
+        "text": "HOLD THE GOWN UP TO THE CAMERA.",
+        "to": "hotel_bridal_gown_camera"
+      },
+      {
+        "id": "motor_return_door",
+        "kind": "action",
+        "text": "RETURN TO THE SMART DOOR.",
+        "to": "hotel_bridal_door_options"
+      },
+      {
+        "id": "motor_leave",
+        "kind": "action",
+        "text": "LEAVE THE DRESSING ROOM.",
+        "to": "hotel_bridal_corridor_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_autofit_release_located": true
+      }
+    },
+    "notes": "Finding manual slack provides one nonstacking +1 survival modifier for risky dressing d6."
+  },
+  "hotel_bridal_gown_try": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "text": [
+      {
+        "desc": "You look at the dress. You look at the locked bathroom. There are moments when dignity must take a back seat."
+      },
+      {
+        "desc": "You step into the gown and pull it over your shoulders. A motor hums beneath the fabric."
+      },
+      {
+        "say": "Beginning personalized fitting.",
+        "who": "autofit_system"
+      },
+      {
+        "desc": "The waist tightens. Then the shoulders. Then the neckline."
+      },
+      {
+        "say": "WAIT\u2014",
+        "who": "you"
+      },
+      {
+        "desc": "The motor accelerates."
+      }
+    ],
+    "choices": [
+      {
+        "id": "autofit_hidden_roll",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "check": {
+          "id": "ch4_bridal_autofit_survival",
+          "sides": 6,
+          "need": 5,
+          "mods": [
+            {
+              "if": {
+                "flag": "ch4_autofit_release_located"
+              },
+              "add": 1
+            }
+          ]
+        },
+        "pass": {
+          "to": "hotel_bridal_autofit_survived"
+        },
+        "fail": {
+          "to": "fatal_bridal_made_to_measure"
+        }
+      }
+    ],
+    "notes": "Hidden d6 base 1\u20134 fatal, 5\u20136 survive; +1 if manually examined release: raw 1\u20133 fatal, 4\u20136 survive. Roll after a deliberate TRY ON action only."
+  }
+}

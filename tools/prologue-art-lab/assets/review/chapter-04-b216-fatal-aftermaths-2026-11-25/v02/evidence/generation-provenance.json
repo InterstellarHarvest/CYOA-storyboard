@@ -1,0 +1,88 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "date": "2026-11-25",
+  "sourceDerivedDesign": true,
+  "referencePixelsTransferredToFinal": false,
+  "sources": [
+    {
+      "id": "CH4-NEW-14",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-732b8251-0bfe-4f70-b537-9c5e3574552f.png",
+      "file": "originals/CH4-NEW-14-detailed-reference.png",
+      "prompt": "prompts/CH4-NEW-14-reference-prompt.txt",
+      "tool": "Built-in image_gen.imagegen",
+      "sha256": "666736edd66ea4062a6f59cf8f9f15c45d9cb2c4258d422617c5c43a9cb30506",
+      "promptSha256": "1ac22c3aa26575ed7df7e38dc3d96f2e6f23bc48e325abd46ce8b20f888cfd93",
+      "inputs": [
+        {
+          "path": "references/approved-ch4-restroom.png",
+          "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06"
+        },
+        {
+          "path": "references/approved-ch2-compost.png",
+          "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86"
+        }
+      ]
+    },
+    {
+      "id": "CH4-NEW-15",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-eed32e2b-d57a-4787-b6b3-6f0c5d206dc5.png",
+      "file": "originals/CH4-NEW-15-detailed-reference.png",
+      "prompt": "prompts/CH4-NEW-15-reference-prompt.txt",
+      "tool": "Built-in image_gen.imagegen",
+      "sha256": "1fe7c490d7fdb160749382d0285a5d4ec96ef4425ae338fdea7b65d0141da6d9",
+      "promptSha256": "e9425da634dc97c0be8f4e918b462946efa9f60562703561def3896df0c92c04",
+      "inputs": [
+        {
+          "path": "references/approved-ch2-reclassified.png",
+          "sha256": "a4c635847abd0d4d11376fd3aa7574728c0dda67709cba7e11be6c1adb5c6ebc"
+        },
+        {
+          "path": "references/approved-ch4-restroom.png",
+          "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06"
+        }
+      ]
+    },
+    {
+      "id": "CH4-NEW-16",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-da17c936-615f-414a-a64b-a6a044a819e3.png",
+      "file": "originals/CH4-NEW-16-detailed-reference.png",
+      "prompt": "prompts/CH4-NEW-16-reference-prompt.txt",
+      "tool": "Built-in image_gen.imagegen",
+      "sha256": "78e2925ac2dcd156fdf580348b27da929f4dacaa3c906faa157eaa2cbfc9077b",
+      "promptSha256": "87d326fea630e7b0a39870f6ef80eb685c0d25c85b9430f1203e640eb95b8d1a",
+      "inputs": [
+        {
+          "path": "references/approved-ch4-lobby.png",
+          "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0"
+        },
+        {
+          "path": "references/approved-ch2-compost.png",
+          "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86"
+        }
+      ]
+    },
+    {
+      "id": "CH4-NEW-17",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-49fdd57f-acbd-41cf-9e29-e4b8da1bf46d.png",
+      "file": "originals/CH4-NEW-17-detailed-reference.png",
+      "prompt": "prompts/CH4-NEW-17-reference-prompt.txt",
+      "tool": "Built-in image_gen.imagegen",
+      "sha256": "0e315365693c00b337e77713129091e5a7f9e14258b1505a6d2bfda5ab9303f2",
+      "promptSha256": "e0398abada6c23082d548f41be4220f43eeb0f36afa15b4c01fb9f12a9a7fa9a",
+      "inputs": [
+        {
+          "path": "references/owner-directed-b213-gown.png",
+          "sha256": "0e1a0d3cd73c087416a7e9a2502ae263a597f7da77476e4cd0219dd504d48095"
+        },
+        {
+          "path": "references/approved-ch4-bridal-room.png",
+          "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49"
+        },
+        {
+          "path": "references/approved-ch2-compost.png",
+          "sha256": "45ca9322666cd9fc4fc1238f7a3e771f96ea10d3ec49cc35a627090475647a86"
+        }
+      ]
+    }
+  ]
+}

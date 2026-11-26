@@ -1,0 +1,140 @@
+{
+  "CH4-NEW-14": [
+    {
+      "entity": "one raised empty stall / four cables",
+      "mask": "masks/CH4-NEW-14-raised-empty-stall.png",
+      "bbox": [
+        143,
+        11,
+        272,
+        105
+      ]
+    },
+    {
+      "entity": "one broken floor-level toilet and porcelain fragments",
+      "mask": "masks/CH4-NEW-14-broken-porcelain.png",
+      "bbox": [
+        146,
+        126,
+        253,
+        199
+      ]
+    },
+    {
+      "entity": "three administrative auction tags",
+      "mask": "masks/CH4-NEW-14-fallen-auction-tags.png",
+      "bbox": [
+        126,
+        163,
+        272,
+        205
+      ]
+    }
+  ],
+  "CH4-NEW-15": [
+    {
+      "entity": "exactly one ordinary wire clothes hanger",
+      "mask": "masks/CH4-NEW-15-single-wire-hanger.png",
+      "bbox": [
+        104,
+        21,
+        211,
+        71
+      ]
+    },
+    {
+      "entity": "one pair of matching trousers on the same hanger",
+      "mask": "masks/CH4-NEW-15-matching-trousers.png",
+      "bbox": [
+        131,
+        68,
+        184,
+        194
+      ]
+    },
+    {
+      "entity": "one empty tuxedo jacket on the same hanger",
+      "mask": "masks/CH4-NEW-15-empty-tuxedo-jacket.png",
+      "bbox": [
+        89,
+        49,
+        218,
+        157
+      ]
+    },
+    {
+      "entity": "three restrained wisps of steam",
+      "mask": "masks/CH4-NEW-15-steam-wisps.png",
+      "bbox": [
+        122,
+        0,
+        192,
+        47
+      ]
+    }
+  ],
+  "CH4-NEW-16": [
+    {
+      "entity": "one ordinary briefcase-sized metal case / slight two-pixel asymmetric lid bulge",
+      "mask": "masks/CH4-NEW-16-compact-metal-case.png",
+      "bbox": [
+        113,
+        121,
+        255,
+        182
+      ]
+    },
+    {
+      "entity": "exactly one loose dress shoe",
+      "mask": "masks/CH4-NEW-16-single-loose-shoe.png",
+      "bbox": [
+        41,
+        153,
+        105,
+        187
+      ]
+    }
+  ],
+  "CH4-NEW-17": [
+    {
+      "entity": "one wheeled B2-13 dressing stand / wooden hanger",
+      "mask": "masks/CH4-NEW-17-empty-stand-and-hanger.png",
+      "bbox": [
+        71,
+        8,
+        238,
+        198
+      ]
+    },
+    {
+      "entity": "one unworn cinched white AutoFit gown",
+      "mask": "masks/CH4-NEW-17-cinched-empty-gown.png",
+      "bbox": [
+        65,
+        38,
+        229,
+        182
+      ]
+    },
+    {
+      "entity": "base of the same stand / four casters",
+      "mask": "masks/CH4-NEW-17-stand-base-and-casters.png",
+      "bbox": [
+        75,
+        173,
+        232,
+        196
+      ]
+    },
+    {
+      "entity": "exactly one abandoned dress shoe",
+      "mask": "masks/CH4-NEW-17-single-abandoned-shoe.png",
+      "bbox": [
+        165,
+        178,
+        211,
+        204
+      ]
+    }
+  ]
+}
