@@ -1,0 +1,42 @@
+[
+  {
+    "family": "restroom_active_leak",
+    "base": "CH4-04 (+CH4-B2-03)",
+    "nodes": [
+      "hotel_restroom_plumber"
+    ],
+    "refs": [],
+    "dependsOnRefinement": true
+  },
+  {
+    "family": "restroom_braced_or_contained",
+    "base": "CH4-04 (+CH4-B2-03)",
+    "nodes": [
+      "hotel_valve_braced",
+      "hotel_wheel_return",
+      "hotel_key_master_cabinet"
+    ],
+    "refs": [],
+    "dependsOnRefinement": true
+  },
+  {
+    "family": "restroom_flood",
+    "base": "CH4-04",
+    "nodes": [
+      "hotel_valve_flood"
+    ],
+    "refs": [],
+    "dependsOnRefinement": true
+  },
+  {
+    "family": "stall_lifting_and_removed",
+    "base": "CH4-04",
+    "nodes": [
+      "hotel_stall_lot_claimed",
+      "hotel_stall_crane_success",
+      "hotel_stall_public_corridor_walk"
+    ],
+    "refs": [],
+    "dependsOnRefinement": true
+  }
+]

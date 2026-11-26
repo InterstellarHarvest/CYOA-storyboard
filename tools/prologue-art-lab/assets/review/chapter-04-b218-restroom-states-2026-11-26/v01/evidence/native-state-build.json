@@ -1,0 +1,168 @@
+[
+  {
+    "file": "native/restroom-active-leak-main.png",
+    "name": "restroom-active-leak-main",
+    "status": "UNSELECTED",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "sha256": "9a6243310bb7af1958854110af742c603275b2ebf9c889050c6c065737e57279",
+    "base": "references/approved-CH4-04.png",
+    "layers": [
+      "main-wet-floor",
+      "main-active-jet"
+    ],
+    "allowedMask": "masks/restroom-active-leak-main-allowed.png",
+    "changedMask": "masks/restroom-active-leak-main-changed.png",
+    "changedPixels": 2974,
+    "changedBounds": [
+      54,
+      127,
+      198,
+      198
+    ],
+    "outsideAllowedChanges": 0,
+    "originalNPCChanges": 0,
+    "editableSource": "source/restroom-active-leak-main.ora"
+  },
+  {
+    "file": "native/restroom-active-leak-close.png",
+    "name": "restroom-active-leak-close",
+    "status": "UNSELECTED",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB",
+    "sha256": "35a8f8297da89038a0a7b30596363bfa6ad86e3edc6b02bf0efb360a4dc3a46a",
+    "base": "references/approved-CH4-B2-03.png",
+    "layers": [
+      "close-active-leak"
+    ],
+    "allowedMask": "masks/restroom-active-leak-close-allowed.png",
+    "changedMask": "masks/restroom-active-leak-close-changed.png",
+    "changedPixels": 1294,
+    "changedBounds": [
+      139,
+      222,
+      275,
+      278
+    ],
+    "outsideAllowedChanges": 0,
+    "originalNPCChanges": null,
+    "editableSource": "source/restroom-active-leak-close.ora"
+  },
+  {
+    "file": "native/restroom-braced-main.png",
+    "name": "restroom-braced-main",
+    "status": "UNSELECTED",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "sha256": "dcbe6ebf8319e3fe0dabe9c30637494e51342303be9923aba29ccd71acca7fcd",
+    "base": "references/approved-CH4-04.png",
+    "layers": [
+      "main-wet-floor",
+      "main-dribble"
+    ],
+    "allowedMask": "masks/restroom-braced-main-allowed.png",
+    "changedMask": "masks/restroom-braced-main-changed.png",
+    "changedPixels": 2796,
+    "changedBounds": [
+      54,
+      134,
+      198,
+      198
+    ],
+    "outsideAllowedChanges": 0,
+    "originalNPCChanges": 0,
+    "editableSource": "source/restroom-braced-main.ora"
+  },
+  {
+    "file": "native/restroom-contained-main.png",
+    "name": "restroom-contained-main",
+    "status": "UNSELECTED",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "sha256": "674cb60c905347e99c95b99ec87dfacc218cf15483abe89bc4e092d40b43ed1a",
+    "base": "references/approved-CH4-04.png",
+    "layers": [
+      "main-wet-floor"
+    ],
+    "allowedMask": "masks/restroom-contained-main-allowed.png",
+    "changedMask": "masks/restroom-contained-main-changed.png",
+    "changedPixels": 2766,
+    "changedBounds": [
+      54,
+      165,
+      198,
+      198
+    ],
+    "outsideAllowedChanges": 0,
+    "originalNPCChanges": 0,
+    "editableSource": "source/restroom-contained-main.ora"
+  },
+  {
+    "file": "native/restroom-flood-onset-main.png",
+    "name": "restroom-flood-onset-main",
+    "status": "UNSELECTED",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "sha256": "432ce64f5e7e0420f678774ec8cf2edb02ce745ff532d83b3e1723af9d90fb46",
+    "base": "references/approved-CH4-04.png",
+    "layers": [
+      "main-flood-floor",
+      "main-flood-jet"
+    ],
+    "allowedMask": "masks/restroom-flood-onset-main-allowed.png",
+    "changedMask": "masks/restroom-flood-onset-main-changed.png",
+    "changedPixels": 15942,
+    "changedBounds": [
+      0,
+      127,
+      314,
+      206
+    ],
+    "outsideAllowedChanges": 0,
+    "originalNPCChanges": 0,
+    "editableSource": "source/restroom-flood-onset-main.ora"
+  },
+  {
+    "file": "native/restroom-stall-lifting-main.png",
+    "name": "restroom-stall-lifting-main",
+    "status": "UNSELECTED",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "sha256": "84976c116d9fc87b6ce8f4cf5d7f316d7185fa308f889df6d1c76eafe6bc525e",
+    "base": "references/approved-CH4-04.png",
+    "layers": [
+      "main-wet-floor",
+      "main-stall-lift"
+    ],
+    "allowedMask": "masks/restroom-stall-lifting-main-allowed.png",
+    "changedMask": "masks/restroom-stall-lifting-main-changed.png",
+    "changedPixels": 7998,
+    "changedBounds": [
+      54,
+      30,
+      314,
+      198
+    ],
+    "outsideAllowedChanges": 0,
+    "originalNPCChanges": 0,
+    "editableSource": "source/restroom-stall-lifting-main.ora"
+  }
+]

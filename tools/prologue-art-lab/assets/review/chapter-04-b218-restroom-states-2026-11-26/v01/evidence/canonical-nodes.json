@@ -1,0 +1,574 @@
+{
+  "hotel_restroom_entry": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "You walk directly between the workmen carrying away the restroom doors. Neither attempts to stop you. One even steps aside politely.\n\nYou enter. The bathroom is immaculate. Polished tiles. Clean sinks. Fresh towels.\n\nThree private stalls stand against the far wall. And there, visible through the open door of the nearest stall, is an actual porcelain toilet.\n\nYou stare at it. It has a seat. It has a tank. It has plumbing. There isn't even a sign explaining that you've already used it.\n\nYou take a step forward. A workman kneeling beneath one of the sinks looks up.",
+    "choices": [
+      {
+        "id": "meet_plumber",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_restroom_plumber"
+      }
+    ]
+  },
+  "hotel_restroom_plumber": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_plumber",
+    "pose": "worried",
+    "text": [
+      "Oh! Sorry, sir.",
+      {
+        "desc": "He sets down his wrench."
+      },
+      "Didn't know anybody was still using the facilities. Go right ahead. I'll give you a minute.",
+      {
+        "desc": "You are almost overcome by gratitude. The plumber turns toward his assistant, who is disconnecting a copper pipe."
+      },
+      "Hold off on that one, Eddie. Gentleman needs the lavatory.",
+      {
+        "say": "Right you are!",
+        "who": "hotel_plumber_assistant"
+      },
+      {
+        "desc": "A metallic snapping sound comes from beneath the sink. The plumber's expression changes."
+      },
+      "Eddie?",
+      {
+        "desc": "A violent jet of water erupts from the wall, strikes the opposite sink, ricochets across the floor, and sends fresh towels flying. You jump backward. The plumber lunges toward a valve and finds only a bare metal shaft."
+      },
+      "Oh, for the love of—",
+      {
+        "say": "What's wrong?",
+        "who": "hotel_plumber_assistant"
+      },
+      "Where's the bloody shutoff wheel?",
+      {
+        "say": "Sold it.",
+        "who": "hotel_plumber_assistant"
+      },
+      {
+        "desc": "The plumber closes his eyes."
+      },
+      "Of course you did.",
+      {
+        "say": "Fella gave twelve for it. Said it looked nautical.",
+        "who": "hotel_plumber_assistant"
+      },
+      "It's a valve handle, Eddie!",
+      {
+        "say": "Well, he didn't ask.",
+        "who": "hotel_plumber_assistant"
+      },
+      {
+        "desc": "A second pipe begins rattling. The plumber looks at it."
+      },
+      "Terribly sorry, sir. Little trouble with the plumbing. Possibly a medium-sized trouble.",
+      {
+        "desc": "Above the sinks hangs a locked cabinet marked EMERGENCY WATER ISOLATION. Its brass keyhole appears to be one of the few fittings nobody has bought."
+      }
+    ],
+    "choices": [
+      {
+        "id": "a1a_close_valve",
+        "kind": "action",
+        "text": "HELP THE PLUMBER TURN THE BARE VALVE SHAFT BEFORE ANOTHER PIPE BURSTS.",
+        "check": {
+          "id": "ch4_restroom_valve_grip",
+          "sides": 6,
+          "need": 4
+        },
+        "pass": {
+          "result": "You catch the bare spindle between the wrench's jaws. It shudders, then turns. The violent spray collapses to a thin, furious dribble.",
+          "effects": {
+            "set": {
+              "ch4_restroom_leak": "braced",
+              "ch4_plumber_helped": true
+            }
+          },
+          "to": "hotel_valve_braced"
+        },
+        "fail": {
+          "result": "The wrench slips. A dreadful metallic pop comes from inside the wall. The spray doubles and knocks you into a stack of clean towels.",
+          "effects": {
+            "set": {
+              "ch4_restroom_leak": "flooding"
+            }
+          },
+          "to": "hotel_valve_flood"
+        }
+      },
+      {
+        "id": "a1b_maintenance",
+        "kind": "action",
+        "text": "FOLLOW THE PLUMBING THROUGH THE MAINTENANCE ACCESS.",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "uncontained"
+          }
+        },
+        "to": "hotel_pipe_tunnel"
+      },
+      {
+        "id": "a1c_wheel_buyer",
+        "kind": "spoken",
+        "text": "WHO BOUGHT THE SHUTOFF WHEEL?",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "uncontained"
+          }
+        },
+        "to": "hotel_wheel_buyer_lead"
+      }
+    ],
+    "use": {
+      "wc_key": {
+        "kind": "action",
+        "say": "TRY THE FACILITIES KEY IN THE EMERGENCY CABINET.",
+        "to": "hotel_key_master_cabinet"
+      }
+    }
+  },
+  "hotel_valve_braced": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "The plumber throws his weight against the wrench and holds the shaft in place. Water drips from his sleeves. He warns you that the seal is temporary. Nobody should touch a tap, and absolutely nobody should flush.\n\nYou look at the nearest toilet. It is still the most beautiful thing you have seen all day.\n\nFrom the hall comes the scrape of a freight trolley. Two porters stop outside the open restroom entrance. One consults a card.\n\nLOT FIFTY-THREE. THREE COMPLETE STALLS.\n\nThe plumber stares at the ceiling. You have apparently bought everyone a minute, which he strongly recommends spending somewhere else.",
+    "choices": [
+      {
+        "id": "braced_try_stall",
+        "kind": "action",
+        "text": "TRY TO REACH A STALL BEFORE THE PORTERS TAKE IT.",
+        "to": "hotel_stall_lot_claimed"
+      },
+      {
+        "id": "braced_maintenance",
+        "kind": "action",
+        "text": "LEAVE THE PLUMBER HOLDING THE VALVE AND TAKE THE SERVICE ACCESS.",
+        "to": "hotel_pipe_tunnel"
+      }
+    ]
+  },
+  "hotel_valve_flood": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "For a moment there is nothing but water.\n\nThen Eddie floats past on an overturned basket of clean towels, looking astonished by the speed at which his employment has deteriorated.\n\nThe plumber catches a sink with one hand. The other points toward a small service panel hanging open behind you. He shouts for you to get through it.\n\nWater pours beneath the missing restroom doors and races down the hotel corridor. The water surges toward the public corridor. The water seems to be winning.",
+    "choices": [
+      {
+        "id": "flood_service_escape",
+        "kind": "action",
+        "text": "SCRAMBLE THROUGH THE OPEN MAINTENANCE PANEL.",
+        "to": "hotel_pipe_tunnel"
+      },
+      {
+        "id": "flood_follow_downstairs",
+        "kind": "action",
+        "text": "ESCAPE INTO THE CORRIDOR AHEAD OF THE FLOOD.",
+        "to": "hotel_flooded_public_corridor"
+      }
+    ]
+  },
+  "hotel_wheel_buyer_lead": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_plumber_assistant",
+    "pose": "pleased",
+    "text": [
+      "Oh, I remember him. Green auction paddle. Little cap with an anchor on it.",
+      {
+        "say": "Where did he go?",
+        "who": "hotel_plumber"
+      },
+      "Toward the wedding drinks, I think. Said he was going to turn an ice bucket into a boat.",
+      {
+        "desc": "Eddie retrieves a damp receipt from his pocket. The ink is beginning to spread."
+      },
+      "Twelve for the lot. Seemed a fair price.",
+      {
+        "say": "It's the emergency water shutoff, Eddie.",
+        "who": "hotel_plumber"
+      },
+      "Well, he did ask if it worked under pressure."
+    ],
+    "choices": [
+      {
+        "id": "wheel_find_buyer",
+        "kind": "action",
+        "text": "FIND THE BUYER WITH THE GREEN PADDLE.",
+        "to": "hotel_commodore_bixby"
+      },
+      {
+        "id": "wheel_read_receipt",
+        "kind": "action",
+        "text": "EXAMINE EDDIE'S RECEIPT FOR THE LOT NUMBER.",
+        "to": "hotel_lot_receipt_study"
+      },
+      {
+        "id": "wheel_ignore_buyer",
+        "kind": "action",
+        "text": "LEAVE THE AUCTION ALONE AND TRY THE MAINTENANCE SHUTOFF.",
+        "to": "hotel_pipe_tunnel"
+      }
+    ]
+  },
+  "hotel_wheel_return": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "effects": {
+      "set": {
+        "ch4_restroom_leak": "contained",
+        "ch4_restroom_water_off": true,
+        "ch4_plumber_helped": true
+      }
+    },
+    "text": "You hurry back through the lobby carrying the brass wheel. A small river has formed across the marble floor. The plumber sees you, seizes the wheel, and fits it onto the bare valve shaft.\n\nOne turn. A second. The roaring water dies away. Eddie gives a relieved little clap.\n\nThe plumber tells you that you have saved the hotel an enormous repair bill. Unfortunately, the water is shut off until the pipes can be repaired. There will be no flushing for a while.\n\nYou glance toward the stalls. You feel a small, unreasonable hope.\n\nThere is a scraping sound from the other end of the room.",
+    "choices": [
+      {
+        "id": "return_wheel_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_stall_lot_claimed"
+      }
+    ]
+  },
+  "hotel_key_master_cabinet": {
+    "mode": "focus",
+    "scene": "grand_bellevue/restroom",
+    "focus": "grand_bellevue/restroom/master_isolator",
+    "effects": {
+      "set": {
+        "ch4_restroom_leak": "contained",
+        "ch4_restroom_water_off": true,
+        "ch4_plumber_helped": true,
+        "ch4_master_key_recognized": true
+      }
+    },
+    "text": "The Facilities Key slides into the emergency cabinet as if it has been waiting there for you. One quarter turn, and the catch opens.\n\nInside is a single large red lever. You pull it. The pipes shudder, the water subsides, and the room becomes suddenly quiet.\n\nThe plumber peers at the key's paper tag. The return date says today, four fifty-two, and the signature belongs to the examiner.\n\nHe looks at you. Then at the signature. Then back at you. In the end he chooses to be grateful rather than curious.\n\nYou keep the key. The line is shut off, but the last stall is still standing. For now.",
+    "choices": [
+      {
+        "id": "master_key_try_stall",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_stall_lot_claimed"
+      }
+    ]
+  },
+  "hotel_isolator_panel": {
+    "mode": "focus",
+    "scene": "grand_bellevue/maintenance",
+    "focus": "grand_bellevue/maintenance/water_isolator",
+    "text": "Two great brass levers stand inside a recessed metal frame.\n\nRESTROOMS, reads the neat engraved label beneath the first.\n\nENTIRE HOTEL, reads the label beneath the second.\n\nSomeone has pasted a fresh auction sticker across the frame: LOT NINETEEN — TWO MATCHING DECORATIVE LEVERS.\n\nFrom the restroom wall comes the unmistakable sound of water hitting something it should not. Both levers appear to be connected.",
+    "choices": [
+      {
+        "id": "isolate_restrooms",
+        "kind": "action",
+        "text": "SHUT OFF WATER TO THE RESTROOMS ONLY.",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "contained",
+            "ch4_restroom_water_off": true
+          }
+        },
+        "to": "hotel_isolator_restrooms"
+      },
+      {
+        "id": "isolate_hotel",
+        "kind": "action",
+        "text": "CLOSE THE MAIN WATER SUPPLY FOR THE ENTIRE HOTEL.",
+        "effects": {
+          "set": {
+            "ch4_restroom_leak": "contained",
+            "ch4_hotel_water_off": true,
+            "ch4_restroom_water_off": true
+          }
+        },
+        "to": "hotel_isolator_entire"
+      }
+    ]
+  },
+  "hotel_isolator_restrooms": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/maintenance",
+    "text": "The RESTROOMS lever moves with a satisfying clunk. The hiss in the pipes fades. A moment later, through the wall, you hear the plumber give a grateful cheer.\n\nYou retrace your steps, already imagining a calm, dry stall. The plumber meets you at the access hatch and assures you the leak is under control. Unfortunately, he adds, the lavatories cannot flush without water.\n\nYou tell yourself that this is an inconvenience you can reason with. Then you hear the porters outside counting toilets.",
+    "choices": [
+      {
+        "id": "restrooms_off_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_stall_lot_claimed"
+      }
+    ]
+  },
+  "hotel_isolator_entire": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/maintenance",
+    "text": "You pull down the MAIN lever. Every pipe in the Grand Bellevue gives a theatrical sigh. The flood stops. Somewhere beyond the wall, a fountain sputters out, and a guest complains about the champagne service.\n\nYou have stopped the leak by shutting off every tap in the building. That probably includes the toilets.",
+    "choices": [
+      {
+        "id": "hotel_water_ballroom",
+        "kind": "action",
+        "text": "FOLLOW THE DRY PIPES TO CHECK WHETHER ANY RESTROOM STILL WORKS.",
+        "to": "hotel_water_outage_confirmation"
+      },
+      {
+        "id": "hotel_water_dock",
+        "kind": "action",
+        "text": "TAKE THE SERVICE STAIRS TO THE LOADING DOCK.",
+        "to": "hotel_maintenance_dock_exit"
+      }
+    ]
+  },
+  "hotel_stall_lot_claimed": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "You slip into the nearest stall and pull the door closed.\n\nIt even latches.\n\nFor one glorious moment, you are alone in a bathroom. An ordinary bathroom. With an actual toilet.\n\nYou reach toward your belt.\n\nCLANK.\n\nSomething shifts overhead. Four steel cables pull taut around the stall's partitions. The walls tremble. Then, with a deep mechanical groan, the entire enclosure begins rising.\n\nYou look up. A crane is lifting the stall—walls, door, latch and all—straight through an open service hatch in the ceiling.\n\nYou remain exactly where you are. Standing beside the toilet. Fully dressed. Your hand is still hovering halfway toward your belt buckle.\n\nThrough the restroom entrance, whose doors were removed only moments earlier, you find yourself facing a small procession of wedding guests. They stop. You stop. The stall continues upward.\n\nA porter checks his clipboard, looks at you, and gives an apologetic little wave.\n\nYou slowly lower your hand. The toilet is still there. Unfortunately, everyone can see it. And you.",
+    "choices": [
+      {
+        "id": "stall_protest",
+        "kind": "spoken",
+        "text": "EXCUSE ME! I'M USING THAT!",
+        "to": "hotel_stall_porter_protest"
+      },
+      {
+        "id": "stall_grab_crane",
+        "kind": "action",
+        "text": "JUMP AND GRAB THE RISING STALL BEFORE IT DISAPPEARS.",
+        "check": {
+          "id": "ch4_stall_crane_grip",
+          "sides": 6,
+          "need": 4
+        },
+        "pass": {
+          "to": "hotel_stall_crane_success"
+        },
+        "fail": {
+          "to": "fatal_stall_final_occupancy"
+        }
+      },
+      {
+        "id": "stall_walk_guests",
+        "kind": "action",
+        "text": "WALK PAST THE WEDDING GUESTS AS THOUGH NOTHING UNUSUAL HAS HAPPENED.",
+        "to": "hotel_stall_public_corridor_walk"
+      }
+    ]
+  },
+  "hotel_stall_crane_success": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "You catch the rising stall's metal frame with both hands.\n\nYour feet leave the floor.\n\nFor one dreadful moment, you swing beneath the crane.\n\nThen you find a foothold.\n\nThe stall rises toward an opening in the ceiling.\n\nBelow you, the restroom shrinks into the distance.\n\nYou have successfully escaped the bathroom.\n\nUnfortunately, that's the exact opposite of what you wanted.",
+    "choices": [
+      {
+        "id": "stall_ride_upper_salvage",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_upper_salvage_arrival"
+      }
+    ]
+  },
+  "hotel_stall_porter_protest": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/restroom",
+    "speaker": "hotel_porter",
+    "pose": "businesslike",
+    "text": [
+      {
+        "desc": "The porter looks down from his clipboard."
+      },
+      "Of course you are, sir. That's why we left you there.",
+      {
+        "desc": "You point toward the stall, now halfway through the ceiling."
+      },
+      "We're strictly prohibited from lifting occupied fixtures. So we've removed the fixture and left the occupant. Perfectly safe.",
+      {
+        "desc": "He makes a checkmark on the clipboard."
+      },
+      "Now, if you're disputing the sale, that's an entirely different matter.",
+      {
+        "desc": "You attempt to explain that you simply want to use the toilet. The porter produces a bright red placard."
+      },
+      "Oh, you must take that up with the auctioneer. Here, I'll signal him.",
+      {
+        "desc": "He waves the placard enthusiastically."
+      },
+      "DISPUTE ON LOT FIFTY-THREE!",
+      {
+        "say": "An objection? Excellent! Competitive interest! Bring the gentleman forward!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "A wedding guest applauds. The porter ushers you into the lobby toward the podium."
+      }
+    ],
+    "choices": [
+      {
+        "id": "porter_to_auction",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_auction_reopen_53"
+      }
+    ]
+  },
+  "hotel_stall_public_corridor_walk": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/public_corridor",
+    "speaker": "hotel_wedding_guest",
+    "pose": "curious",
+    "effects": {
+      "set": {
+        "ch4_stall_walked_away_publicly": true
+      }
+    },
+    "text": [
+      {
+        "desc": "The stall continues upward. You remain on the restroom floor, fully dressed, with several guests watching through the doorway."
+      },
+      {
+        "desc": "You straighten your coat and walk past them. One guest glances toward the disappearing toilet."
+      },
+      {
+        "say": "Are you with the removals?",
+        "who": "hotel_wedding_guest"
+      },
+      {
+        "say": "NOT VOLUNTARILY.",
+        "who": "you"
+      },
+      {
+        "desc": "The guest nods sympathetically. You continue down the corridor."
+      },
+      {
+        "desc": "Behind you, the crane groans. Nobody attempts to stop you."
+      },
+      {
+        "desc": "Ahead are a service door, stairs toward the collection area, and a side passage leading outside."
+      }
+    ],
+    "choices": [
+      {
+        "id": "stall_walk_staff_lavatory",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      },
+      {
+        "id": "stall_walk_collection",
+        "kind": "action",
+        "text": "FOLLOW THE PORTERS TOWARD COLLECTION.",
+        "to": "hotel_collection_stairs"
+      },
+      {
+        "id": "stall_walk_exit",
+        "kind": "action",
+        "text": "LEAVE THE HOTEL THROUGH THE SERVICE EXIT.",
+        "to": "hotel_service_park_exit"
+      }
+    ],
+    "notes": "Owner approved short, dignified walk with exactly three restroom/exit connections. Spectators are background only. No wedding tasks, new dice, or items; protagonist has not unzipped."
+  },
+  "fatal_stall_final_occupancy": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "end": true,
+    "text": "Your fingers slip.\n\nThe stall continues upward.\n\nYou don't.\n\nFor one extraordinary moment, you have an uninterrupted view of the restroom below.\n\nIncluding the toilet.\n\nDirectly below you.\n\nYou land on it.\n\nThere is a tremendous crack.\n\nThen several smaller ones.\n\nThe toilet breaks.\n\nSo do you.\n\nFor the first and last time today, you have finally managed to use a toilet.\n\nYou would have preferred a less permanent arrangement.\n\nENDING — FINAL OCCUPANCY.",
+    "choices": [
+      {
+        "id": "restart_final_occupancy",
+        "kind": "system",
+        "text": "BEGIN AGAIN",
+        "restart": true
+      }
+    ],
+    "deathPopup": {
+      "id": "ch4_final_occupancy",
+      "title": "FINAL OCCUPANCY",
+      "description": "The collection crew reports that Lot Fifty-Three has suffered considerable damage during removal. The associated toilet is declared beyond repair. Your restroom visit is recorded as COMPLETED. The auctioneer considers this an excellent example of customer satisfaction.",
+      "button": "BEGIN AGAIN",
+      "status": "owner-approved",
+      "artRef": "grand_bellevue/final_occupancy"
+    },
+    "endingArt": "grand_bellevue/final_occupancy",
+    "notes": "Owner-approved fatal lead-in and popup copy. Planned aftermath illustration only: broken porcelain toilet beneath the raised empty stall, scattered auction tags, perhaps an abandoned shoe. Do not show the player's face; no death art generated yet. Engine popup uses the standard RETRY/CHECKPOINT/EXIT controls when integrated."
+  },
+  "hotel_upper_salvage_arrival": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/upper_salvage",
+    "speaker": "hotel_salvage_clerk",
+    "pose": "practical",
+    "effects": {
+      "set": {
+        "ch4_upper_salvage_reached": true,
+        "ch4_stall_survived_crane": true
+      }
+    },
+    "text": [
+      {
+        "desc": "The stall rises through the ceiling hatch. You cling to its frame as the crane carries it into a storage mezzanine above the hotel."
+      },
+      {
+        "desc": "It swings beside dismantled sinks, mirrors, and bathroom partitions. You climb onto the metal walkway."
+      },
+      {
+        "desc": "The toilet is still inside the stall. Its plumbing has been disconnected, and the whole arrangement hangs several feet above the floor."
+      },
+      {
+        "desc": "A salvage clerk approaches with a clipboard."
+      },
+      {
+        "say": "CAN YOU PUT THAT BACK?",
+        "who": "you"
+      },
+      {
+        "say": "Which part?",
+        "who": "hotel_salvage_clerk"
+      },
+      {
+        "say": "THE TOILET!",
+        "who": "you"
+      },
+      {
+        "say": "Plumbing isn't included in the lot.",
+        "who": "hotel_salvage_clerk"
+      },
+      {
+        "say": "I JUST WANT TO USE IT!",
+        "who": "you"
+      },
+      {
+        "say": "Not while it's suspended. Insurance.",
+        "who": "hotel_salvage_clerk"
+      },
+      {
+        "desc": "He checks a box on his clipboard."
+      },
+      {
+        "say": "Occupant successfully removed. Excellent.",
+        "who": "hotel_salvage_clerk"
+      },
+      {
+        "desc": "An open maintenance hatch leads toward the pipework. Service stairs descend toward the loading dock. Surely somebody knows where an installed toilet is."
+      }
+    ],
+    "choices": [
+      {
+        "id": "upper_salvage_ask_clerk",
+        "kind": "spoken",
+        "text": "ASK WHERE AN INSTALLED TOILET CAN BE FOUND.",
+        "to": "hotel_upper_salvage_clerk_directions"
+      },
+      {
+        "id": "upper_salvage_hatch",
+        "kind": "action",
+        "text": "ENTER THE MAINTENANCE HATCH.",
+        "to": "hotel_pipe_tunnel"
+      },
+      {
+        "id": "upper_salvage_dock",
+        "kind": "action",
+        "text": "DESCEND THE SERVICE STAIRS TOWARD THE LOADING DOCK.",
+        "to": "hotel_maintenance_dock_exit"
+      }
+    ],
+    "notes": "Owner approved B/C/D only. The manifest-inspection option A is explicitly retired. No new roll, item, or wedding task; crane d6 success is upstream."
+  }
+}

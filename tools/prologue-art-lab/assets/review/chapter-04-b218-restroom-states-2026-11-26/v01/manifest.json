@@ -1,0 +1,261 @@
+{
+  "status": "UNSELECTED",
+  "reviewFamily": "B2-18/B2-19 \u2014 restroom conditional states only",
+  "canonicalBaseCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+  "R1ProductionSuspended": true,
+  "refinementDependencySupersededByOwnerForThisReview": true,
+  "authoritativeMasters": [
+    "CH4-04 approved v07",
+    "CH4-B2-03 approved B2-01 v01"
+  ],
+  "failedR1PixelsUsed": false,
+  "newCandidates": [
+    {
+      "file": "native/restroom-active-leak-main.png",
+      "name": "restroom-active-leak-main",
+      "status": "UNSELECTED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "9a6243310bb7af1958854110af742c603275b2ebf9c889050c6c065737e57279",
+      "base": "references/approved-CH4-04.png",
+      "layers": [
+        "main-wet-floor",
+        "main-active-jet"
+      ],
+      "allowedMask": "masks/restroom-active-leak-main-allowed.png",
+      "changedMask": "masks/restroom-active-leak-main-changed.png",
+      "changedPixels": 2974,
+      "changedBounds": [
+        54,
+        127,
+        198,
+        198
+      ],
+      "outsideAllowedChanges": 0,
+      "originalNPCChanges": 0,
+      "editableSource": "source/restroom-active-leak-main.ora",
+      "title": "Active leak \u2014 main",
+      "nodes": [
+        "hotel_restroom_plumber"
+      ],
+      "condition": "After the metallic snap and violent-jet description; not before the burst.",
+      "beat": "Uncontained jet and ricochet; actors retain approved repair staging.",
+      "runtimeBinding": null,
+      "focusId": null,
+      "newStoryFlag": null,
+      "comparison": "comparisons/restroom-active-leak-main-before-after.png",
+      "paletteRGBColours": 2619
+    },
+    {
+      "file": "native/restroom-active-leak-close.png",
+      "name": "restroom-active-leak-close",
+      "status": "UNSELECTED",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "sha256": "35a8f8297da89038a0a7b30596363bfa6ad86e3edc6b02bf0efb360a4dc3a46a",
+      "base": "references/approved-CH4-B2-03.png",
+      "layers": [
+        "close-active-leak"
+      ],
+      "allowedMask": "masks/restroom-active-leak-close-allowed.png",
+      "changedMask": "masks/restroom-active-leak-close-changed.png",
+      "changedPixels": 1294,
+      "changedBounds": [
+        139,
+        222,
+        275,
+        278
+      ],
+      "outsideAllowedChanges": 0,
+      "originalNPCChanges": null,
+      "editableSource": "source/restroom-active-leak-close.ora",
+      "title": "Active leak \u2014 dialogue background",
+      "nodes": [
+        "hotel_restroom_plumber",
+        "hotel_wheel_buyer_lead"
+      ],
+      "condition": "Burst text beat, then ch4_restroom_leak=uncontained on buyer/maintenance choices.",
+      "beat": "Closer view of same leak; no new main-scene binding.",
+      "runtimeBinding": null,
+      "focusId": null,
+      "newStoryFlag": null,
+      "comparison": "comparisons/restroom-active-leak-close-before-after.png",
+      "paletteRGBColours": 49930
+    },
+    {
+      "file": "native/restroom-braced-main.png",
+      "name": "restroom-braced-main",
+      "status": "UNSELECTED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "dcbe6ebf8319e3fe0dabe9c30637494e51342303be9923aba29ccd71acca7fcd",
+      "base": "references/approved-CH4-04.png",
+      "layers": [
+        "main-wet-floor",
+        "main-dribble"
+      ],
+      "allowedMask": "masks/restroom-braced-main-allowed.png",
+      "changedMask": "masks/restroom-braced-main-changed.png",
+      "changedPixels": 2796,
+      "changedBounds": [
+        54,
+        134,
+        198,
+        198
+      ],
+      "outsideAllowedChanges": 0,
+      "originalNPCChanges": 0,
+      "editableSource": "source/restroom-braced-main.ora",
+      "title": "Temporarily braced \u2014 dribble remains",
+      "nodes": [
+        "hotel_valve_braced"
+      ],
+      "condition": "ch4_restroom_leak=braced; ch4_plumber_helped=true from existing d6 pass.",
+      "beat": "Thin dribble, temporary seal, residual wet floor. Existing wrench/repair pose retained.",
+      "runtimeBinding": null,
+      "focusId": null,
+      "newStoryFlag": null,
+      "comparison": "comparisons/restroom-braced-main-before-after.png",
+      "paletteRGBColours": 2571
+    },
+    {
+      "file": "native/restroom-contained-main.png",
+      "name": "restroom-contained-main",
+      "status": "UNSELECTED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "674cb60c905347e99c95b99ec87dfacc218cf15483abe89bc4e092d40b43ed1a",
+      "base": "references/approved-CH4-04.png",
+      "layers": [
+        "main-wet-floor"
+      ],
+      "allowedMask": "masks/restroom-contained-main-allowed.png",
+      "changedMask": "masks/restroom-contained-main-changed.png",
+      "changedPixels": 2766,
+      "changedBounds": [
+        54,
+        165,
+        198,
+        198
+      ],
+      "outsideAllowedChanges": 0,
+      "originalNPCChanges": 0,
+      "editableSource": "source/restroom-contained-main.ora",
+      "title": "Contained \u2014 wet floor, no flow",
+      "nodes": [
+        "hotel_wheel_return",
+        "hotel_key_master_cabinet"
+      ],
+      "condition": "ch4_restroom_leak=contained; ch4_restroom_water_off=true. Maintenance isolator branches also set this condition, in their existing scenes.",
+      "beat": "Shared no-flow reference; wheel fitting/key/lever operations are narrated, not separate background variants.",
+      "runtimeBinding": null,
+      "focusId": null,
+      "newStoryFlag": null,
+      "comparison": "comparisons/restroom-contained-main-before-after.png",
+      "paletteRGBColours": 2557
+    },
+    {
+      "file": "native/restroom-flood-onset-main.png",
+      "name": "restroom-flood-onset-main",
+      "status": "UNSELECTED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "432ce64f5e7e0420f678774ec8cf2edb02ce745ff532d83b3e1723af9d90fb46",
+      "base": "references/approved-CH4-04.png",
+      "layers": [
+        "main-flood-floor",
+        "main-flood-jet"
+      ],
+      "allowedMask": "masks/restroom-flood-onset-main-allowed.png",
+      "changedMask": "masks/restroom-flood-onset-main-changed.png",
+      "changedPixels": 15942,
+      "changedBounds": [
+        0,
+        127,
+        314,
+        206
+      ],
+      "outsideAllowedChanges": 0,
+      "originalNPCChanges": 0,
+      "editableSource": "source/restroom-flood-onset-main.ora",
+      "title": "Flood \u2014 initial surge",
+      "nodes": [
+        "hotel_valve_flood"
+      ],
+      "condition": "ch4_restroom_leak=flooding from existing d6 fail.",
+      "beat": "Onset only, before the narrated floating-basket beat; not a depiction of Eddie floating while kneeling.",
+      "runtimeBinding": null,
+      "focusId": null,
+      "newStoryFlag": null,
+      "comparison": "comparisons/restroom-flood-onset-main-before-after.png",
+      "paletteRGBColours": 2685
+    },
+    {
+      "file": "native/restroom-stall-lifting-main.png",
+      "name": "restroom-stall-lifting-main",
+      "status": "UNSELECTED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "sha256": "84976c116d9fc87b6ce8f4cf5d7f316d7185fa308f889df6d1c76eafe6bc525e",
+      "base": "references/approved-CH4-04.png",
+      "layers": [
+        "main-wet-floor",
+        "main-stall-lift"
+      ],
+      "allowedMask": "masks/restroom-stall-lifting-main-allowed.png",
+      "changedMask": "masks/restroom-stall-lifting-main-changed.png",
+      "changedPixels": 7998,
+      "changedBounds": [
+        54,
+        30,
+        314,
+        198
+      ],
+      "outsideAllowedChanges": 0,
+      "originalNPCChanges": 0,
+      "editableSource": "source/restroom-stall-lifting-main.ora",
+      "title": "Stall lifting \u2014 toilet stays grounded",
+      "nodes": [
+        "hotel_stall_lot_claimed",
+        "hotel_stall_crane_success",
+        "hotel_stall_porter_protest"
+      ],
+      "condition": "Authored lift event; no new flag assigned. Overlay can accompany either braced or contained water condition.",
+      "beat": "Closed enclosure partly through the hatch, four cables; floor toilet retained. No protagonist shown.",
+      "runtimeBinding": null,
+      "focusId": null,
+      "newStoryFlag": null,
+      "comparison": "comparisons/restroom-stall-lifting-main-before-after.png",
+      "paletteRGBColours": 2562
+    }
+  ],
+  "references": "evidence/references.json",
+  "canonicalNodeExtract": "evidence/canonical-nodes.json",
+  "reconciliation": "RECONCILIATION.md",
+  "sourceProvenance": "Source-derived approved raster masters plus native event overlays and integer relocation of approved enclosure pixels; no generated high-resolution image is reduced into a state. Water uses deliberate translucent layers, final outputs are opaque RGB.",
+  "newGeneration": "Built-in imagegen edit for reference only; exact prompt and source preserved in prompts/stall-reference.txt and originals/raised-stall-imagegen-reference.png.",
+  "generationReceipt": "evidence/generation-receipt.json",
+  "newFocusIds": false,
+  "newRuntimeBindings": false,
+  "newFlagsOrNodes": false,
+  "lobbyOrLot61ProductionStarted": false,
+  "canonicalContinuityConcern": "Restroom/fatal nodes leave toilet grounded; later hotel_upper_salvage_arrival says it is inside suspended stall. Current art follows the explicit restroom moment. No story edit or invented transport event."
+}

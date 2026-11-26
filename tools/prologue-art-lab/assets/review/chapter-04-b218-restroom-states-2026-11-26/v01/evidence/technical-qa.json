@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "candidateCount": 6,
+  "immutableMastersVerified": 8,
+  "allNativeContractsAndRGBModesPassed": true,
+  "exactNearestNeighbor4x": true,
+  "exactChangedPixelMasksPassed": true,
+  "zeroOutsideAllowedChanges": true,
+  "editableLayerAndORACompositesExact": true,
+  "generatedReferencePixelsUsed": false,
+  "productionOrStoryFilesChanged": false,
+  "runtimeDispatchImplemented": false,
+  "results": [
+    {
+      "name": "restroom-active-leak-main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "opaqueRGB": true,
+      "sha256": "9a6243310bb7af1958854110af742c603275b2ebf9c889050c6c065737e57279",
+      "changedPixels": 2974,
+      "exactDifferenceMask": true,
+      "outsideAllowedChanges": 0,
+      "sourceFiguresProtected": true,
+      "layerCompositeExact": true,
+      "openRasterCompositeExact": true
+    },
+    {
+      "name": "restroom-active-leak-close",
+      "dimensions": [
+        564,
+        278
+      ],
+      "opaqueRGB": true,
+      "sha256": "35a8f8297da89038a0a7b30596363bfa6ad86e3edc6b02bf0efb360a4dc3a46a",
+      "changedPixels": 1294,
+      "exactDifferenceMask": true,
+      "outsideAllowedChanges": 0,
+      "sourceFiguresProtected": "no figures in background",
+      "layerCompositeExact": true,
+      "openRasterCompositeExact": true
+    },
+    {
+      "name": "restroom-braced-main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "opaqueRGB": true,
+      "sha256": "dcbe6ebf8319e3fe0dabe9c30637494e51342303be9923aba29ccd71acca7fcd",
+      "changedPixels": 2796,
+      "exactDifferenceMask": true,
+      "outsideAllowedChanges": 0,
+      "sourceFiguresProtected": true,
+      "layerCompositeExact": true,
+      "openRasterCompositeExact": true
+    },
+    {
+      "name": "restroom-contained-main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "opaqueRGB": true,
+      "sha256": "674cb60c905347e99c95b99ec87dfacc218cf15483abe89bc4e092d40b43ed1a",
+      "changedPixels": 2766,
+      "exactDifferenceMask": true,
+      "outsideAllowedChanges": 0,
+      "sourceFiguresProtected": true,
+      "layerCompositeExact": true,
+      "openRasterCompositeExact": true
+    },
+    {
+      "name": "restroom-flood-onset-main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "opaqueRGB": true,
+      "sha256": "432ce64f5e7e0420f678774ec8cf2edb02ce745ff532d83b3e1723af9d90fb46",
+      "changedPixels": 15942,
+      "exactDifferenceMask": true,
+      "outsideAllowedChanges": 0,
+      "sourceFiguresProtected": true,
+      "layerCompositeExact": true,
+      "openRasterCompositeExact": true
+    },
+    {
+      "name": "restroom-stall-lifting-main",
+      "dimensions": [
+        314,
+        206
+      ],
+      "opaqueRGB": true,
+      "sha256": "84976c116d9fc87b6ce8f4cf5d7f316d7185fa308f889df6d1c76eafe6bc525e",
+      "changedPixels": 7998,
+      "exactDifferenceMask": true,
+      "outsideAllowedChanges": 0,
+      "sourceFiguresProtected": true,
+      "layerCompositeExact": true,
+      "openRasterCompositeExact": true
+    }
+  ]
+}

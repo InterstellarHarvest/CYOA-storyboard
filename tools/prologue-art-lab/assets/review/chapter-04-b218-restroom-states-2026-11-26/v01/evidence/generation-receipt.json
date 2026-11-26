@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "role": "REFERENCE ONLY; no generated pixels used in final native states",
+  "originalFile": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-c9c2af2a-5ab9-4451-bf44-438b66ab294b.png",
+  "preservedFile": "originals/raised-stall-imagegen-reference.png",
+  "sha256": "8a9c71a32014b8965a5e39233f7868a9dc0240f1fe7ecc77bb6e4b5934ba2155",
+  "dimensions": [
+    1548,
+    1016
+  ],
+  "prompt": "prompts/stall-reference.txt",
+  "inputs": [
+    {
+      "file": "references/approved-CH4-04.png",
+      "role": "edit target"
+    },
+    {
+      "file": "references/approved-final-occupancy.png",
+      "role": "hatch/cable reference only"
+    }
+  ],
+  "transparentBackground": false,
+  "sourceResizedIntoProduction": false
+}
