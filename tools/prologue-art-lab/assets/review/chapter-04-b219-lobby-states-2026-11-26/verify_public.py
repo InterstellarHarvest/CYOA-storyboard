@@ -1,7 +1,6 @@
 """Verify every committed package byte publicly, plus pinned canonical inputs."""
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from urllib.request import urlopen, Request
 import subprocess, hashlib, json, argparse, io, time
 from PIL import Image
 
@@ -17,7 +16,8 @@ def check(item):
     url='https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/'+commit+'/'+path
     for attempt in range(4):
         try:
-            with urlopen(Request(url,headers={'User-Agent':'CYOA-art-review-byte-verifier'}),timeout=90) as r:data=r.read()
+            # System curl uses the platform trust store; do not disable TLS checks.
+            data=subprocess.check_output(['curl','--fail','--silent','--show-error','--location','--max-time','90',url])
             assert sha(data)==expected,(path,'SHA-256 mismatch')
             dimensions=None
             if path.endswith('.png'):
