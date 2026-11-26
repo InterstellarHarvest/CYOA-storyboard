@@ -1,0 +1,270 @@
+{
+  "title": "Chapter 4 B2-17 v01 \u2014 Dispute Ticket and Wedding Ring",
+  "branch": "art/ch4-b217-ticket-ring-review-20261125",
+  "canonicalBaseline": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryAssetCount": 4,
+  "supplementalAssetCount": 0,
+  "assets": [
+    {
+      "id": "CH4-NEW-10",
+      "label": "Lot 53 Dispute Ticket \u2014 slot",
+      "version": "v01",
+      "itemId": "lot_53_dispute_ticket",
+      "view": "slot",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "proposedExistingCanonicalKey": "items:lot_53_dispute_ticket:slot",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-10-dispute-ticket-slot-v01.png",
+        "sha256": "21543ddb40788ee4f994601b37397caa3173a082b851e569cccf79484c9741cd",
+        "dimensions": [
+          96,
+          96
+        ],
+        "mode": "RGBA"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-10-dispute-ticket-slot-v01-4x.png",
+        "sha256": "021b3c6d1678d05dbdc75f40dba7f43056d9ebca442209524c396a102c5ff918",
+        "dimensions": [
+          384,
+          384
+        ],
+        "mode": "RGBA"
+      },
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false,
+      "nodeCoverage": [
+        "hotel_auction_dispute_ticket",
+        "hotel_boiler_pressure_intro"
+      ]
+    },
+    {
+      "id": "CH4-NEW-11",
+      "label": "Lot 53 Dispute Ticket \u2014 inspection",
+      "version": "v01",
+      "itemId": "lot_53_dispute_ticket",
+      "view": "inspect",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "proposedExistingCanonicalKey": "items:lot_53_dispute_ticket:inspect",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-11-dispute-ticket-inspection-v01.png",
+        "sha256": "493004874154a0037559aa3eb4393eb60d73fac4977577699245eb9154393eed",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-11-dispute-ticket-inspection-v01-4x.png",
+        "sha256": "6e7f22e4f485b3685e2be6511456621d59d2a4ab316982953412413d777e87a6",
+        "dimensions": [
+          2260,
+          1804
+        ],
+        "mode": "RGB"
+      },
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false,
+      "nodeCoverage": [
+        "hotel_auction_dispute_ticket",
+        "hotel_boiler_pressure_intro"
+      ]
+    },
+    {
+      "id": "CH4-NEW-12",
+      "label": "Wedding Ring \u2014 slot",
+      "version": "v01",
+      "itemId": "wedding_ring_lot31",
+      "view": "slot",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "proposedExistingCanonicalKey": "items:wedding_ring_lot31:slot",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-12-wedding-ring-slot-v01.png",
+        "sha256": "e3a1d25cf2343302a6df8c660341879fa1e6a90f43629ac0706e50d2ba3e1ebe",
+        "dimensions": [
+          96,
+          96
+        ],
+        "mode": "RGBA"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-12-wedding-ring-slot-v01-4x.png",
+        "sha256": "02ea8b8cb84bc8c23ff57c2b6ab512af0f6d65699eadd112d74ad2d9357bb977",
+        "dimensions": [
+          384,
+          384
+        ],
+        "mode": "RGBA"
+      },
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false,
+      "nodeCoverage": [
+        "hotel_ring_retrieved",
+        "hotel_ring_in_pocket",
+        "hotel_ring_show_bride",
+        "hotel_bride_ring_handover",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_ring_in_pocket",
+        "hotel_boiler_groom_encounter",
+        "hotel_bridal_door_focus",
+        "hotel_bridal_emergency_override",
+        "hotel_ring_inspect_inscription",
+        "hotel_bridal_door_options"
+      ]
+    },
+    {
+      "id": "CH4-NEW-13",
+      "label": "Wedding Ring \u2014 inspection",
+      "version": "v01",
+      "itemId": "wedding_ring_lot31",
+      "view": "inspect",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "proposedExistingCanonicalKey": "items:wedding_ring_lot31:inspect",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-13-wedding-ring-inspection-v01.png",
+        "sha256": "298d8e45f371f7cc3f95e14928cf153fbe1af50f1bfac941a569c4f844a067e8",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-13-wedding-ring-inspection-v01-4x.png",
+        "sha256": "817a804a82664ba855681c80b83924b01142cc9c3a9a587c7d0bd6ab7adf5ef3",
+        "dimensions": [
+          2260,
+          1804
+        ],
+        "mode": "RGB"
+      },
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false,
+      "nodeCoverage": [
+        "hotel_ring_retrieved",
+        "hotel_ring_in_pocket",
+        "hotel_ring_show_bride",
+        "hotel_bride_ring_handover",
+        "hotel_collection_ring_porter_recovery",
+        "hotel_collection_ring_stapler_recovery",
+        "hotel_collection_ring_in_pocket",
+        "hotel_boiler_groom_encounter",
+        "hotel_bridal_door_focus",
+        "hotel_bridal_emergency_override",
+        "hotel_ring_inspect_inscription",
+        "hotel_bridal_door_options"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "file": "references/approved-ch2-seed-slot.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/art/items/certified_seed_canister_slot.png",
+      "sha256": "0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998",
+      "role": "Chapter 2 slot metal/material benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-seed-inspect.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/art/items/certified_seed_canister_inspect.png",
+      "sha256": "958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7",
+      "role": "Chapter 2 metal inspection benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-antidote-slot.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/art/items/botanical_antidote_public_slot.png",
+      "sha256": "d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961",
+      "role": "Chapter 2 economical slot silhouette",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-antidote-inspect.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/art/items/botanical_antidote_public_inspect.png",
+      "sha256": "4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9",
+      "role": "Chapter 2 independent inspection illustration",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-claim-ticket-slot.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/art/items/property_claim_ticket_slot.png",
+      "sha256": "eb4271ebc35819234474cab43ee11106648eb1ec3d385efc5814e77fce6b035a",
+      "role": "Approved paper slot benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-claim-ticket-inspect.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/art/items/property_claim_ticket_inspect.png",
+      "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93",
+      "role": "Approved paper inspection/lettering benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch4-auction-armrest.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/pending-integration/focus/grand_bellevue/auction_floor/chair_armrest.png",
+      "sha256": "facb4981ccef1f270f200346333ce108a9db7679fb383982d4704e8b65fa0fc7",
+      "role": "Canonical silver band and pale blue ribbon identity",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch4-collection-armrest.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/pending-integration/focus/grand_bellevue/collection_stairs/chair_armrest.png",
+      "sha256": "68bbf32b040a984201dfb0f5b83b1315cf391848848500b1e7ee97819a5f5645",
+      "role": "Canonical ring/ribbon continuity",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch4-lot14-receipt.png",
+      "sourceCommit": "6a88153f1a41759def5d8e02fd04789db860ec1b",
+      "sourcePath": "assets/selected/pending-integration/focus/grand_bellevue/restroom/lot_14_receipt.png",
+      "sha256": "af9f7b03eacfe54721e52217b265b7fcdc852b0eb7cf1d0cd1fd7e7f1eef85d3",
+      "role": "Chapter 4 object lettering/margin benchmark",
+      "status": "APPROVED"
+    }
+  ],
+  "registryModified": false,
+  "narrativeGameplayItemRulesOrEngineModified": false,
+  "newFocusStatesOrBindings": 0,
+  "nextBatchStarted": false,
+  "wordingAudit": "evidence/wording-audit.json",
+  "nativeTextLayout": "evidence/native-text-layout.json",
+  "nativeLayers": "evidence/native-layer-recipes.json",
+  "sourceDerivedDesign": true,
+  "nativeRasterConstructedIndependently": true,
+  "sourcePixelsTransferred": false,
+  "whollyIndependentCreativeDesign": false,
+  "inspectionCanvasContract": "565x451 opaque RGB; item-inspect, not 564x278 Focus A",
+  "slotContract": "96x96 transparent RGBA, binary alpha, no UI frame or shadow/glow; ring hole transparent"
+}

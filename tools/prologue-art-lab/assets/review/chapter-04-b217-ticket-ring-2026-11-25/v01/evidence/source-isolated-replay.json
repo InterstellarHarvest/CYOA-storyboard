@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "onlyInputs": [
+    "source/build.py",
+    "source/chunky-glyphs.json"
+  ],
+  "sourceImagesAvailable": false,
+  "output": {
+    "status": "UNSELECTED",
+    "assets": [
+      {
+        "file": "native/CH4-NEW-10-dispute-ticket-slot-v01.png",
+        "sha256": "21543ddb40788ee4f994601b37397caa3173a082b851e569cccf79484c9741cd",
+        "dimensions": [
+          96,
+          96
+        ],
+        "mode": "RGBA",
+        "colours": 10
+      },
+      {
+        "file": "native/CH4-NEW-11-dispute-ticket-inspection-v01.png",
+        "sha256": "493004874154a0037559aa3eb4393eb60d73fac4977577699245eb9154393eed",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB",
+        "colours": 14
+      },
+      {
+        "file": "native/CH4-NEW-12-wedding-ring-slot-v01.png",
+        "sha256": "e3a1d25cf2343302a6df8c660341879fa1e6a90f43629ac0706e50d2ba3e1ebe",
+        "dimensions": [
+          96,
+          96
+        ],
+        "mode": "RGBA",
+        "colours": 17
+      },
+      {
+        "file": "native/CH4-NEW-13-wedding-ring-inspection-v01.png",
+        "sha256": "298d8e45f371f7cc3f95e14928cf153fbe1af50f1bfac941a569c4f844a067e8",
+        "dimensions": [
+          565,
+          451
+        ],
+        "mode": "RGB",
+        "colours": 21
+      }
+    ]
+  }
+}

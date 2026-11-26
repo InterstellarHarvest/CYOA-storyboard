@@ -1,0 +1,626 @@
+{
+  "passed": true,
+  "status": "UNSELECTED",
+  "artisticApproval": false,
+  "visualLegibilityApproval": "Owner review still required; text geometry/wording/occlusion verified and native artwork visually inspected.",
+  "checks": [
+    {
+      "check": "Four UNSELECTED primary item candidates",
+      "passed": true
+    },
+    {
+      "check": "Existing consolidated IDs",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 exact native size/mode",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 SHA-256",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 exact4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 binary native layer layers/CH4-NEW-10-red-carbon-ticket.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 binary native layer layers/CH4-NEW-10-canonical-form-ink.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 binary transparency",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 transparent margins / corners",
+      "passed": true,
+      "bbox": [
+        11,
+        26,
+        87,
+        81
+      ]
+    },
+    {
+      "check": "CH4-NEW-10 no hidden RGB fringe",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-10 no baked background/shadow/glow/UI layer",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 exact native size/mode",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 SHA-256",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 exact4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 binary native layer layers/CH4-NEW-11-quiet-clerk-desk.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 binary native layer layers/CH4-NEW-11-paper-contact-shadow.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 binary native layer layers/CH4-NEW-11-red-carbon-ticket.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 binary native layer layers/CH4-NEW-11-canonical-form-ink.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-11 unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 exact native size/mode",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 SHA-256",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 exact4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 binary native layer layers/CH4-NEW-12-plain-silver-band.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 binary native layer layers/CH4-NEW-12-single-pale-blue-ribbon.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 binary transparency",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 transparent margins / corners",
+      "passed": true,
+      "bbox": [
+        8,
+        23,
+        88,
+        78
+      ]
+    },
+    {
+      "check": "CH4-NEW-12 no hidden RGB fringe",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-12 no baked background/shadow/glow/UI layer",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 exact native size/mode",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 SHA-256",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 exact4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 binary native layer layers/CH4-NEW-13-quiet-desk.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 binary native layer layers/CH4-NEW-13-ring-contact-shadow.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 binary native layer layers/CH4-NEW-13-plain-silver-band.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 binary native layer layers/CH4-NEW-13-inside-engraving.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 binary native layer layers/CH4-NEW-13-anonymous-maker-punch.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 binary native layer layers/CH4-NEW-13-single-pale-blue-ribbon.png",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 layer replay",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-13 unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "Inspection lettering/stamp entirely on paper",
+      "passed": true
+    },
+    {
+      "check": "Engraving lies entirely on silver inner surface",
+      "passed": true
+    },
+    {
+      "check": "Maker punch lies entirely on silver",
+      "passed": true
+    },
+    {
+      "check": "Ribbon does not occlude inscription",
+      "passed": true
+    },
+    {
+      "check": "Maker mark does not collide with lettering",
+      "passed": true
+    },
+    {
+      "check": "Slot ring hole genuinely transparent",
+      "passed": true
+    },
+    {
+      "check": "Inspection hole displays desk, not a filled metal disc",
+      "passed": true
+    },
+    {
+      "check": "Slot has no readable engraving or hallmark",
+      "passed": true
+    },
+    {
+      "check": "Only canonical meaningful ticket lettering",
+      "passed": true
+    },
+    {
+      "check": "Safe physical paper margins ticket-heading",
+      "passed": true,
+      "minimumLocalMargin": 25
+    },
+    {
+      "check": "Legible native character height ticket-heading",
+      "passed": true,
+      "nativeLocalHeight": 21
+    },
+    {
+      "check": "Safe physical paper margins lot-number",
+      "passed": true,
+      "minimumLocalMargin": 72
+    },
+    {
+      "check": "Legible native character height lot-number",
+      "passed": true,
+      "nativeLocalHeight": 35
+    },
+    {
+      "check": "Safe physical paper margins reason-first-line",
+      "passed": true,
+      "minimumLocalMargin": 81.5
+    },
+    {
+      "check": "Legible native character height reason-first-line",
+      "passed": true,
+      "nativeLocalHeight": 21
+    },
+    {
+      "check": "Safe physical paper margins reason-second-line",
+      "passed": true,
+      "minimumLocalMargin": 54.5
+    },
+    {
+      "check": "Legible native character height reason-second-line",
+      "passed": true,
+      "nativeLocalHeight": 21
+    },
+    {
+      "check": "Safe physical paper margins stamp-first-line",
+      "passed": true,
+      "minimumLocalMargin": 48
+    },
+    {
+      "check": "Legible native character height stamp-first-line",
+      "passed": true,
+      "nativeLocalHeight": 14
+    },
+    {
+      "check": "Safe physical paper margins stamp-second-line",
+      "passed": true,
+      "minimumLocalMargin": 23
+    },
+    {
+      "check": "Legible native character height stamp-second-line",
+      "passed": true,
+      "nativeLocalHeight": 14
+    },
+    {
+      "check": "Exact ring wording and punctuation",
+      "passed": true
+    },
+    {
+      "check": "Engraving actually follows inner curve",
+      "passed": true
+    },
+    {
+      "check": "Ring pair shares precise band/ribbon geometry",
+      "passed": true
+    },
+    {
+      "check": "Ticket pair shares paper aspect/tear/curl identity",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch2-seed-slot.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch2-seed-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch2-antidote-slot.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch2-antidote-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-claim-ticket-slot.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-claim-ticket-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch4-auction-armrest.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch4-collection-armrest.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch4-lot14-receipt.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ticket-lettering-native-crop-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ticket-lettering-native-crop-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source CH4-NEW-12-wedding-ring-slot-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x CH4-NEW-12-wedding-ring-slot-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source CH4-NEW-13-wedding-ring-inspection-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x CH4-NEW-13-wedding-ring-inspection-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source CH4-NEW-11-dispute-ticket-inspection-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x CH4-NEW-11-dispute-ticket-inspection-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ring-pair-identity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ring-pair-identity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch4-collection-armrest-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch4-collection-armrest-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch2-antidote-slot-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch2-antidote-slot-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ring-inspection-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ring-inspection-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ticket-inspection-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ticket-inspection-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source CH4-NEW-10-dispute-ticket-slot-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x CH4-NEW-10-dispute-ticket-slot-v01-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch2-seed-slot-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch2-seed-slot-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source four-assets-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x four-assets-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-claim-ticket-inspect-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-claim-ticket-inspect-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch4-auction-armrest-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch4-auction-armrest-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source slot-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x slot-benchmarks-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-claim-ticket-slot-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-claim-ticket-slot-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ring-armrest-continuity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ring-armrest-continuity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch4-lot14-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch4-lot14-receipt-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ticket-pair-identity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ticket-pair-identity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source ring-inscription-native-crop-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x ring-inscription-native-crop-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch2-seed-inspect-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch2-seed-inspect-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch2-antidote-inspect-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest4x approved-ch2-antidote-inspect-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Comparison caption margins",
+      "passed": true
+    },
+    {
+      "check": "Exact crop ring-inscription-native-crop.png",
+      "passed": true
+    },
+    {
+      "check": "Exact crop ticket-lettering-native-crop.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical item snapshot",
+      "passed": true
+    },
+    {
+      "check": "All three ticket phrases authored in item description",
+      "passed": true
+    },
+    {
+      "check": "Exact inscription and maker existence in authored READ",
+      "passed": true
+    },
+    {
+      "check": "No draft-only ticket words invented",
+      "passed": true
+    },
+    {
+      "check": "Exact node / condition / choice snapshots",
+      "passed": true
+    },
+    {
+      "check": "Preserved original/prompt CH4-NEW-11",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-claim-ticket-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-ch4-lot14-receipt.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original/prompt CH4-NEW-13",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-ch4-auction-armrest.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-ch2-seed-inspect.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original/prompt CH4-NEW-10",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input originals/CH4-NEW-11-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-claim-ticket-slot.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved original/prompt CH4-NEW-12",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input originals/CH4-NEW-13-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-ch4-auction-armrest.png",
+      "passed": true
+    },
+    {
+      "check": "Preserved source input references/approved-ch2-seed-slot.png",
+      "passed": true
+    },
+    {
+      "check": "Honest source-derived design / native raster provenance",
+      "passed": true
+    },
+    {
+      "check": "All four images reproduce without any source/reference PNGs",
+      "passed": true
+    },
+    {
+      "check": "Every baseline tracked file / selected artwork byte-identical",
+      "passed": true,
+      "baselineFiles": 679,
+      "selectedArtFiles": 205
+    },
+    {
+      "check": "Dedicated isolated B2-17 branch",
+      "passed": true
+    },
+    {
+      "check": "No registration/gameplay/item-rule/state/binding changes",
+      "passed": true
+    }
+  ]
+}

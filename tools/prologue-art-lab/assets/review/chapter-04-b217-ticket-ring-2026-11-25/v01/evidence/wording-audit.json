@@ -1,0 +1,36 @@
+{
+  "ticket": {
+    "LOT 53": {
+      "status": "CANONICAL",
+      "source": "story/items.draft.json:lot_53_dispute_ticket.description",
+      "verbatim": "A RED CARBON-COPY TICKET FOR LOT 53."
+    },
+    "LACK OF PRIVACY \u2014 CUSTOMER PRESENT": {
+      "status": "CANONICAL",
+      "source": "story/items.draft.json:lot_53_dispute_ticket.description",
+      "verbatim": "REASON: LACK OF PRIVACY \u2014 CUSTOMER PRESENT."
+    },
+    "HOLD FOR INSPECTION": {
+      "status": "CANONICAL",
+      "source": "story/items.draft.json:lot_53_dispute_ticket.description",
+      "verbatim": "THE CLERK HAS STAMPED IT HOLD FOR INSPECTION."
+    }
+  },
+  "draftOnlyProposedTicketWording": [],
+  "ticketConditions": "Inspection before departure; sale is not cancelled. Artwork introduces no refund, cancellation or new right.",
+  "ring": {
+    "exactInscription": "AS IS, WHERE IS.",
+    "sources": [
+      "story/items.draft.json:wedding_ring_lot31.description[1].text",
+      "story/chapters/chapter-04.wip.json:hotel_ring_inspect_inscription.text[0].desc"
+    ],
+    "makersMark": {
+      "existsInCanon": true,
+      "source": "story/items.draft.json:wedding_ring_lot31.description[1].text",
+      "designSpecifiedByCanon": false,
+      "treatment": "Tiny anonymous geometric punch only; no invented initials, brand, date, purity or number."
+    },
+    "slotEngravingReadable": false,
+    "inspectionEngravingReadable": true
+  }
+}

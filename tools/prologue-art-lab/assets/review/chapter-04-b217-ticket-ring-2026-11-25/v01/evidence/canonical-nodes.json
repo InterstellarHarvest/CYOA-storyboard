@@ -1,0 +1,757 @@
+{
+  "hotel_auction_dispute_ticket": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auction_clerk",
+    "pose": "precise",
+    "effects": {
+      "give": [
+        "lot_53_dispute_ticket"
+      ]
+    },
+    "text": [
+      {
+        "desc": "The auctioneer looks delighted."
+      },
+      {
+        "say": "Certainly! Nothing inspires confidence quite like a dissatisfied customer!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "say": "See that the gentleman receives the appropriate paperwork.",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "The clerk produces a small pad of red carbon-copy tickets."
+      },
+      "Lot Fifty-Three. Formal objection. Reason for dispute?",
+      {
+        "desc": "You point toward the ceiling, where the last corner of your former stall is disappearing. The clerk looks up."
+      },
+      "Lack of privacy. Very good.",
+      {
+        "desc": "He writes something, stamps the ticket, and tears off the top copy."
+      },
+      "This entitles you to inspect the disputed merchandise before it leaves the hotel. Present it to the collection foreman.",
+      {
+        "say": "A complimentary inspection! You see, sir? We take customer satisfaction very seriously!",
+        "who": "hotel_auctioneer"
+      },
+      "It doesn't cancel the sale, mind you.",
+      {
+        "say": "Naturally! We take sales even more seriously!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "The clerk hands you the ticket. The auctioneer returns to his gavel."
+      }
+    ],
+    "choices": [
+      {
+        "id": "dispute_ticket_to_chair",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_auction_chair_lot31"
+      }
+    ]
+  },
+  "hotel_ring_retrieved": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "effects": {
+      "give": [
+        "wedding_ring_lot31"
+      ],
+      "set": {
+        "ch4_wedding_ring_retrieved": true
+      }
+    },
+    "text": "You pinch the pale blue ribbon between two fingers. Carefully, you work it backward through the loose stitching.\n\nThe ring shifts. You ease it along the wooden frame, trying not to snag the fabric.\n\nFor one dreadful moment, it hangs over the narrow gap.\n\nThen it drops into your palm.\n\nYou close your fingers around it. A small silver wedding band rests against your skin. Tiny letters circle the inside, but they're too small to read here.\n\nYou slip the ring into your pocket before the chair can be moved.",
+    "choices": [
+      {
+        "id": "ring_pocket_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_ring_in_pocket"
+      }
+    ]
+  },
+  "hotel_ring_in_pocket": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "text": "You straighten beside Lot Thirty-One. A pale blue thread clings to your cuff. The wedding ring is safely in your pocket. Nearby, the bride argues with a porter about a chair. You still need a toilet.",
+    "choices": [
+      {
+        "id": "ring_pocket_show_bride",
+        "kind": "action",
+        "text": "SHOW THE WEDDING RING TO THE BRIDE.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_ring_show_bride"
+      },
+      {
+        "id": "ring_pocket_inspect",
+        "kind": "action",
+        "text": "INSPECT THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_ring_inspect_inscription"
+      },
+      {
+        "id": "ring_pocket_find_restroom",
+        "kind": "action",
+        "text": "KEEP THE RING AND LOOK FOR ANOTHER RESTROOM.",
+        "to": "hotel_lot61_pod_auction"
+      }
+    ]
+  },
+  "hotel_ring_show_bride": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_bride",
+    "pose": "determined",
+    "text": [
+      {
+        "desc": "You show the bride the ring, a length of pale blue ribbon still caught around it."
+      },
+      {
+        "say": "The ring! That was on the chair?",
+        "who": "hotel_bride"
+      },
+      {
+        "say": "YES. LOT THIRTY-ONE.",
+        "who": "you"
+      },
+      {
+        "say": "Of course. That miserable chair.",
+        "who": "hotel_bride"
+      },
+      {
+        "say": "An unlisted accessory! Shall I open bidding?",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "say": "Papa. No.",
+        "who": "hotel_bride"
+      },
+      {
+        "desc": "She looks back at you, waiting. You still need a toilet."
+      }
+    ],
+    "choices": [
+      {
+        "id": "bride_ring_handover",
+        "kind": "action",
+        "text": "PLACE THE RING IN THE BRIDE'S HAND.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_bride_ring_handover"
+      },
+      {
+        "id": "bride_ask_lavatory",
+        "kind": "spoken",
+        "text": "I'M SORRY, BUT I STILL NEED A BATHROOM. CAN YOU HELP ME?",
+        "to": "hotel_bride_ring_bathroom"
+      }
+    ]
+  },
+  "hotel_bride_ring_handover": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_bride",
+    "pose": "grateful",
+    "effects": {
+      "take": [
+        "wedding_ring_lot31"
+      ],
+      "set": {
+        "ch4_ring_returned_to_bride": true,
+        "ch4_bride_ally": true,
+        "ch4_bride_service_permission": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You place the silver ring and its pale blue ribbon in the bride\u2019s hand."
+      },
+      {
+        "say": "Oh! Thank you. Truly.",
+        "who": "hotel_bride"
+      },
+      {
+        "say": "A splendid private transaction! Shall we list it as\u2014",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "say": "Papa. No.",
+        "who": "hotel_bride"
+      },
+      {
+        "desc": "She turns back to you."
+      },
+      {
+        "say": "If you need the staff passage, tell the porters you\u2019re helping me. They should let you through.",
+        "who": "hotel_bride"
+      },
+      {
+        "desc": "You thank her and turn toward the corridor. Perhaps the staff have a working toilet."
+      }
+    ],
+    "choices": [
+      {
+        "id": "bride_handover_next",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_bride_service_shortcut"
+      }
+    ],
+    "notes": "Optional, quick ring transfer for staff-corridor permission; no family/wedding reunion request. Item and existing approved ally/access flags unchanged."
+  },
+  "hotel_collection_ring_porter_recovery": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "practical",
+    "effects": {
+      "give": [
+        "wedding_ring_lot31"
+      ],
+      "set": {
+        "ch4_wedding_ring_retrieved": true,
+        "ch4_ring_recovered_at_collection": true,
+        "ch4_ring_recovery_witnessed": true,
+        "ch4_ring_slipped_inside_chair": false
+      }
+    },
+    "text": [
+      {
+        "desc": "You point to the silver ring lodged inside the armrest, then to the delivery manifest."
+      },
+      {
+        "say": "THAT RING ISN'T ON YOUR MANIFEST.",
+        "who": "you"
+      },
+      "Then it isn't included in the sale.",
+      {
+        "say": "Can you get it out?",
+        "who": "you"
+      },
+      "We'd better. Imagine delivering something the buyer hasn't paid for.",
+      {
+        "desc": "He carefully tilts the chair and pulls back the loose upholstery. The ring slides along the wooden frame. He catches it in his palm."
+      },
+      {
+        "say": "Should we list it as recovered?",
+        "who": "hotel_second_porter"
+      },
+      "No. It wasn't included.",
+      {
+        "desc": "He hands you the ring."
+      },
+      "Best take that before somebody puts a price on it.",
+      {
+        "desc": "You slip the wedding ring into your pocket."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_porter_ring_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_ring_in_pocket"
+      }
+    ]
+  },
+  "hotel_collection_ring_stapler_recovery": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/service_passage",
+    "speaker": "hotel_porter",
+    "pose": "businesslike",
+    "effects": {
+      "give": [
+        "wedding_ring_lot31"
+      ],
+      "set": {
+        "ch4_wedding_ring_retrieved": true,
+        "ch4_ring_recovered_at_collection": true,
+        "ch4_ring_recovery_unnoticed": true,
+        "ch4_ring_slipped_inside_chair": false
+      }
+    },
+    "text": [
+      {
+        "desc": "The porters are bent over their delivery manifest. You slip the red stapler from your pocket."
+      },
+      {
+        "desc": "Using its metal base, you carefully lever the loose upholstery away from the wooden armrest. The opening widens. You tilt the chair slightly."
+      },
+      {
+        "desc": "The wedding ring rolls along the wooden frame and drops into your palm. Click."
+      },
+      "If anything's fallen off, put it on the discrepancy form.",
+      {
+        "desc": "You slip the stapler and ring into your pockets. No discrepancies are reported."
+      }
+    ],
+    "choices": [
+      {
+        "id": "collection_stapler_ring_continue",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_collection_ring_in_pocket"
+      }
+    ],
+    "notes": "Owner-approved reliable item-assisted recovery without a second stealth check, with no new upholstery damage and no consumption of the Red Stapler."
+  },
+  "hotel_collection_ring_in_pocket": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/service_passage",
+    "text": "The wedding ring is in your pocket. The porters return to their paperwork. You can hand the ring to the bride for staff-passage permission, inspect it, check the engineers\u2019 lavatory beyond Boiler Three, or try the staff lavatory. Your bladder favors the last two.",
+    "choices": [
+      {
+        "id": "collection_ring_go_bride",
+        "kind": "action",
+        "text": "RETURN TO THE BRIDE WITH THE WEDDING RING.",
+        "to": "hotel_collection_ring_to_bride"
+      },
+      {
+        "id": "collection_ring_inspect",
+        "kind": "action",
+        "text": "INSPECT THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_ring_inspect_inscription"
+      },
+      {
+        "id": "collection_ring_go_boilers",
+        "kind": "action",
+        "text": "CHECK THE ENGINEERS\u2019 LAVATORY BEYOND THE BOILERS.",
+        "to": "hotel_boiler_pressure_intro"
+      },
+      {
+        "id": "collection_ring_go_lavatory",
+        "kind": "action",
+        "text": "CHECK THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      }
+    ]
+  },
+  "hotel_boiler_pressure_intro": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/boiler_room",
+    "speaker": "hotel_boiler_engineer",
+    "pose": "careful",
+    "effects": {
+      "set": {
+        "ch4_boiler_pressure_incident_seen": true
+      }
+    },
+    "text": [
+      {
+        "desc": "The boiler room is sweltering. A pressure gauge trembles in the red. Beside it stands a chained door marked ENGINEERS' LAVATORY."
+      },
+      "Closed until we complete the emergency pressure test.",
+      {
+        "say": "THERE'S A TOILET IN THERE?",
+        "who": "you"
+      },
+      "Allegedly.",
+      {
+        "desc": "He points toward a large brass wheel."
+      },
+      "Regulations require an independent volunteer to operate that while I certify the results.",
+      {
+        "desc": "The warning plate reads HIGH-PRESSURE STEAM. The engineer is standing remarkably far away."
+      },
+      {
+        "say": "AND THEN I CAN USE THE TOILET?",
+        "who": "you"
+      },
+      "Then you can apply.",
+      {
+        "desc": "Somebody coughs behind Boiler Three."
+      },
+      "Gentleman in a wedding suit wouldn't volunteer either. Said he was under enough pressure already."
+    ],
+    "choices": [
+      {
+        "id": "boiler_volunteer_relief",
+        "kind": "action",
+        "text": "VOLUNTEER TO OPERATE THE PRESSURE-RELIEF WHEEL.",
+        "check": {
+          "id": "ch4_boiler_steam_relief_survival",
+          "sides": 6,
+          "need": 5
+        },
+        "pass": {
+          "to": "hotel_boiler_pressure_relieved"
+        },
+        "fail": {
+          "to": "fatal_boiler_pressed_and_steamed"
+        }
+      },
+      {
+        "id": "boiler_show_dispute_ticket",
+        "kind": "action",
+        "text": "SHOW THE LOT 53 DISPUTE TICKET AND DEMAND AN INSPECTION HOLD.",
+        "if": {
+          "has": "lot_53_dispute_ticket"
+        },
+        "to": "hotel_boiler_dispute_hold"
+      },
+      {
+        "id": "boiler_show_staff_pass",
+        "kind": "action",
+        "text": "SHOW YOUR TEMPORARY STAFF PASS AND REQUEST MAINTENANCE ACCESS.",
+        "if": {
+          "has": "pavilion_temporary_staff_pass"
+        },
+        "to": "hotel_boiler_staff_access"
+      },
+      {
+        "id": "boiler_check_cough",
+        "kind": "action",
+        "text": "LOOK BEHIND BOILER THREE, AWAY FROM THE PRESSURE WHEEL.",
+        "to": "hotel_boiler_groom_encounter"
+      },
+      {
+        "id": "boiler_leave_for_service",
+        "kind": "action",
+        "text": "LEAVE THE BOILER ROOM AND SEARCH THE SERVICE PASSAGE.",
+        "to": "hotel_boiler_service_passage"
+      }
+    ],
+    "notes": "Owner-approved tightened boiler incident. Hidden d6: 1\u20134 fatal, 5\u20136 survive, no modifiers. Four cards remain visible in future engine presentation; B and C must be disabled with REQUIRES / NOT IN INVENTORY subtitles if their items are absent. The current review JSON uses if.has gating because the game engine cannot yet display locked missing-item cards. Do not replay the later groom introduction when ch4_groom_located is already true."
+  },
+  "hotel_boiler_groom_encounter": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/maintenance",
+    "speaker": "hotel_groom",
+    "pose": "nervous",
+    "effects": {
+      "set": {
+        "ch4_groom_located": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You round Boiler Three. A man in a rumpled wedding suit crouches behind a stack of coal scuttles."
+      },
+      {
+        "say": "If you're here for the wedding, I'm not available.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "I'M LOOKING FOR A TOILET.",
+        "who": "you"
+      },
+      {
+        "say": "Oh. Then you're having a worse day than I am.",
+        "who": "hotel_groom"
+      },
+      {
+        "say": "SOLD!",
+        "who": "hotel_auctioneer"
+      },
+      {
+        "desc": "The groom ducks at the sound coming through the vent."
+      },
+      {
+        "say": "Apparently there's a private lavatory off the bridal dressing room. The organizer has the key.",
+        "who": "hotel_groom"
+      },
+      {
+        "desc": "That's considerably more useful than anything else he's said."
+      }
+    ],
+    "choices": [
+      {
+        "id": "groom_ask_directions",
+        "kind": "spoken",
+        "text": "HOW DO I REACH THE BRIDAL DRESSING ROOM?",
+        "to": "hotel_groom_directions_to_lavatory"
+      },
+      {
+        "id": "groom_show_ring",
+        "kind": "action",
+        "text": "SHOW THE GROOM THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_groom_show_ring"
+      },
+      {
+        "id": "groom_leave",
+        "kind": "action",
+        "text": "LEAVE HIM HIDING AND RETURN TO THE SERVICE PASSAGE.",
+        "to": "hotel_groom_leave_behind"
+      }
+    ],
+    "notes": "Owner-approved bladder-first replacement. Ring SHOW is visible but locked when item absent in future UI, with REQUIRES: WEDDING RING \u2014 LOT 31. No groom escort, wedding reunion, or persuasion check."
+  },
+  "hotel_bridal_door_focus": {
+    "mode": "focus",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "focus": "grand_bellevue/bridal_privacy_panel",
+    "effects": {
+      "set": {
+        "ch4_bridal_door_inspected": true
+      }
+    },
+    "text": [
+      {
+        "desc": "There is no handle or keyhole. A polished brass panel holds a camera and a small screen: BRIDAL PRIVACY SYSTEM. OCCUPANT AUTHORIZATION: BRIDE ONLY. VISUAL IDENTIFICATION: ENABLED. PRE-WEDDING GROOM EXCLUSION: ENABLED."
+      },
+      {
+        "say": "Please maintain a respectful distance from the bride.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "I'M NOT THE GROOM.",
+        "who": "you"
+      },
+      {
+        "say": "That is not sufficient proof of being the bride.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "I JUST NEED THE TOILET.",
+        "who": "you"
+      },
+      {
+        "say": "The bridal lavatory is provided exclusively for the bride's comfort.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "I'M EXTREMELY UNCOMFORTABLE.",
+        "who": "you"
+      },
+      {
+        "say": "Your discomfort has been noted.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "It has not been approved.",
+        "who": "bridal_door_ai"
+      }
+    ],
+    "choices": [
+      {
+        "id": "door_ask_bridal_criteria",
+        "kind": "spoken",
+        "text": "ASK WHAT QUALIFIES SOMEONE AS THE BRIDE.",
+        "to": "hotel_bridal_criteria",
+        "if": {
+          "notFlag": "ch4_bridal_identification_explained"
+        }
+      },
+      {
+        "id": "door_request_override",
+        "kind": "spoken",
+        "text": "REQUEST AN EMERGENCY OVERRIDE.",
+        "if": {
+          "notFlag": "ch4_bridal_emergency_override_denied"
+        },
+        "to": "hotel_bridal_emergency_override"
+      },
+      {
+        "id": "door_show_ring",
+        "kind": "action",
+        "text": "SHOW THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_bridal_ring_argument"
+      },
+      {
+        "id": "door_inspect_gown",
+        "kind": "action",
+        "text": "STEP BACK AND INSPECT THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_focus"
+      },
+      {
+        "id": "door_leave",
+        "kind": "action",
+        "text": "GIVE UP ON THIS DOOR AND LEAVE.",
+        "to": "hotel_bridal_corridor_exit"
+      }
+    ],
+    "notes": "Focus A close-up. Show missing ring choice visibly locked with REQUIRES: WEDDING RING \u2014 LOT 31, NOT IN INVENTORY in future UI. Repeat emergency attempts should remain greyed ALREADY DENIED (current engine may hide)."
+  },
+  "hotel_bridal_emergency_override": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "speaker": "bridal_door_ai",
+    "pose": "neutral",
+    "text": [
+      {
+        "desc": "You press EMERGENCY ASSISTANCE."
+      },
+      {
+        "say": "Please state the nature of your emergency.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "I NEED TO USE THE TOILET. URGENTLY.",
+        "who": "you"
+      },
+      {
+        "say": "Understood. Requesting emergency access authorization.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "The panel displays PROCESSING."
+      },
+      {
+        "say": "Authorization denied.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "WHY?!",
+        "who": "you"
+      },
+      {
+        "say": "Emergency overrides require confirmation from an authorized user.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "say": "IF I WERE AN AUTHORIZED USER, I WOULDN'T NEED AN OVERRIDE!",
+        "who": "you"
+      },
+      {
+        "say": "Correct. We receive very few applications.",
+        "who": "bridal_door_ai"
+      },
+      {
+        "desc": "The screen returns to BRIDAL PRIVACY PROTECTED."
+      }
+    ],
+    "choices": [
+      {
+        "id": "override_gown",
+        "kind": "action",
+        "text": "INSPECT THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_focus"
+      },
+      {
+        "id": "override_ring",
+        "kind": "action",
+        "text": "SHOW THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_bridal_ring_argument"
+      },
+      {
+        "id": "override_return",
+        "kind": "action",
+        "text": "RETURN TO THE SMART DOOR OPTIONS.",
+        "to": "hotel_bridal_door_options"
+      },
+      {
+        "id": "override_leave",
+        "kind": "action",
+        "text": "LEAVE THE DRESSING ROOM.",
+        "to": "hotel_bridal_corridor_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_bridal_emergency_override_denied": true
+      }
+    },
+    "notes": "One shared rejection; future UI greys the attempted choice as REQUEST ALREADY DENIED. No new fee."
+  },
+  "hotel_ring_inspect_inscription": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "text": [
+      {
+        "desc": "You turn the silver ring between your fingers. Beneath the pale blue ribbon is a tiny engraving: AS IS, WHERE IS."
+      },
+      {
+        "desc": "Apparently the auctioneer has influenced the wording of the wedding vows."
+      }
+    ],
+    "choices": [
+      {
+        "id": "inscription_show_bride",
+        "kind": "action",
+        "text": "SHOW THE RING TO THE BRIDE.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_ring_show_bride"
+      },
+      {
+        "id": "inscription_find_restroom",
+        "kind": "action",
+        "text": "KEEP THE RING AND SEARCH FOR A RESTROOM.",
+        "to": "hotel_lot61_pod_auction"
+      },
+      {
+        "id": "inscription_service",
+        "kind": "action",
+        "text": "TAKE THE SERVICE PASSAGE TOWARD THE STAFF LAVATORY.",
+        "to": "hotel_staff_lavatory_storage"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_ring_inscription_read": true
+      }
+    },
+    "notes": "Owner-approved READ/INSPECT inscription, AS IS, WHERE IS. No transfer or new item; unlocks existing optional groom joke."
+  },
+  "hotel_bridal_door_options": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_dressing_room",
+    "text": "The smart door remains locked. The camera follows you while the approved bridal-access options wait on its brass panel.",
+    "choices": [
+      {
+        "id": "door_return_ask_bridal_criteria",
+        "kind": "spoken",
+        "text": "ASK WHAT QUALIFIES SOMEONE AS THE BRIDE.",
+        "to": "hotel_bridal_criteria",
+        "if": {
+          "notFlag": "ch4_bridal_identification_explained"
+        }
+      },
+      {
+        "id": "door_return_request_override",
+        "kind": "spoken",
+        "text": "REQUEST AN EMERGENCY OVERRIDE.",
+        "if": {
+          "notFlag": "ch4_bridal_emergency_override_denied"
+        },
+        "to": "hotel_bridal_emergency_override"
+      },
+      {
+        "id": "door_return_show_ring",
+        "kind": "action",
+        "text": "SHOW THE WEDDING RING.",
+        "if": {
+          "has": "wedding_ring_lot31"
+        },
+        "to": "hotel_bridal_ring_argument"
+      },
+      {
+        "id": "door_return_inspect_gown",
+        "kind": "action",
+        "text": "STEP BACK AND INSPECT THE WEDDING GOWN.",
+        "to": "hotel_bridal_gown_focus"
+      },
+      {
+        "id": "door_return_leave",
+        "kind": "action",
+        "text": "GIVE UP ON THIS DOOR AND LEAVE.",
+        "to": "hotel_bridal_corridor_exit"
+      }
+    ],
+    "notes": "Return hub avoids repeating the entire door inspection or previously exhausted dialogue. Future UI should show exhausted and missing-item actions as disabled, with subtitles, not silently hide them."
+  }
+}

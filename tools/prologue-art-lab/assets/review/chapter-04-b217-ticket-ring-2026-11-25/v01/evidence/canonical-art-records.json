@@ -1,0 +1,90 @@
+{
+  "lot_53_dispute_ticket": {
+    "slot": {
+      "title": "LOT 53 DISPUTE TICKET \u2014 INVENTORY SLOT",
+      "kind": "item-slot",
+      "status": "not-started",
+      "dimensions": "96x96",
+      "assetPath": null,
+      "suggestedFilename": "art/items/grand_bellevue/lot_53_dispute_ticket_slot.png",
+      "prompt": "Review-only placeholder direction, not an approved art brief: a red carbon-copy auction dispute ticket, stamped HOLD FOR INSPECTION, modest 1960s typography, no decorative flourish; transparent 96\u00d796 pixel slot art if later approved.",
+      "notes": "CH4 WORKING DRAFT \u2014 no art has been requested, generated, selected or approved. Do not produce until Nate approves the visual brief."
+    },
+    "inspect": {
+      "title": "LOT 53 DISPUTE TICKET \u2014 INSPECTION",
+      "kind": "item-inspect",
+      "status": "not-started",
+      "dimensions": "565x451",
+      "assetPath": null,
+      "suggestedFilename": "art/items/grand_bellevue/lot_53_dispute_ticket_inspect.png",
+      "prompt": "Review-only placeholder direction, not an approved art brief: red carbon ticket with LOT 53, LACK OF PRIVACY \u2014 CUSTOMER PRESENT and HOLD FOR INSPECTION stamp; show it on a plain hotel clerk's desk in 1960s utilitarian style, 565\u00d7451 inspect crop.",
+      "notes": "CH4 WORKING DRAFT \u2014 no art has been requested, generated, selected or approved. Text and composition require later owner review."
+    }
+  },
+  "wedding_ring_lot31": {
+    "slot": {
+      "title": "WEDDING RING \u2014 INVENTORY SLOT",
+      "kind": "item-slot",
+      "status": "not-started",
+      "dimensions": "96x96",
+      "assetPath": null,
+      "suggestedFilename": "art/items/grand_bellevue/wedding_ring_lot31_slot.png",
+      "prompt": "Draft brief, not approved art: small simple silver wedding band with one strand of pale blue ribbon caught around it; understated 1960s styling on a transparent 96\u00d796 slot canvas. No legible lettering at slot scale.",
+      "notes": "CH4 DRAFT BRIEF \u2014 not yet requested, generated, selected or approved. Corrected 2026-11-24 (docs/137 NEW-12, Nate): the inscription reveal is already approved canon (hotel_ring_inspect_inscription and the wedding_ring_lot31 read text): AS IS, WHERE IS. Nothing is legible at 96\u00d796, and the slot never shows other wording."
+    },
+    "inspect": {
+      "title": "WEDDING RING \u2014 INSPECTION",
+      "kind": "item-inspect",
+      "status": "not-started",
+      "dimensions": "565x451",
+      "assetPath": null,
+      "suggestedFilename": "art/items/grand_bellevue/wedding_ring_lot31_inspect.png",
+      "prompt": "Draft brief, not approved art: close-up of the simple silver wedding band with its loose pale blue ribbon, the inner curve turned toward the viewer, showing a tiny maker's mark and the engraving AS IS, WHERE IS. as fine lettering that follows the curve (exactly those words, capitals and punctuation; no other words). Keep the engraving small, so the unread description ('too small to read at a glance') stays true while the approved words are correct wherever the pixels resolve them. 565\u00d7451 item-inspect view, restrained 1960s palette, no ornate jewelry or ring box.",
+      "notes": "CH4 DRAFT BRIEF \u2014 not yet requested, generated, selected or approved. Corrected 2026-11-24 (docs/137 NEW-13, Nate): replaces the stale 'Inscription not authored yet'. Canon reveals the engraving in hotel_ring_inspect_inscription and the item's read text (beneath a tiny maker's mark: AS IS, WHERE IS.). The text reveal stays authoritative; the art never shows any other wording."
+    }
+  },
+  "certified_seed_canister": {
+    "slot": {
+      "title": "CERTIFIED SEED CANISTER SLOT",
+      "kind": "item-slot",
+      "status": "integrated",
+      "dimensions": "96x96",
+      "assetPath": "art/items/certified_seed_canister_slot.png",
+      "suggestedFilename": null,
+      "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, certified seed canister",
+      "notes": "CANDIDATE GENERATED 2026-11-17: Source InterstellarHarvest/CYOA@agent/ch02-art-batch06-credentials-cargo; commit db91a0a1e49d308292fa68348bf5d06ee7548417; path review/chapter-02-batch06-2026-11-17/candidates/C-certified-seed-canister-slot.png; SHA-256 0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998. Genuine built-in image-generation item candidate, RGBA 96x96 with exact4x nearest-neighbor review preview. Generated and unselected; Art Director review pending. Independent slot/inspector sources, exact prompts, approved-reference provenance, alpha processing, preserved versions and QA are in the review folder. Production assetPath remains null; no gameplay integration.\nOWNER APPROVED 2026-11-17: Nate final approval without changes;Art Director PASS A-D. Immutable source InterstellarHarvest/CYOA@db91a0a1e49d308292fa68348bf5d06ee7548417;final review4e1ab88a63cf830b829f88d51710eef25e729f95;path review/chapter-02-batch06-2026-11-17/candidates/C-certified-seed-canister-slot.png;SHA-256 0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998. Exact selected bytes registered through tools/sync/register-art.mjs. Approved,pending Gameplay PMO integration;production assetPath remains null.\nGAMEPLAY PMO 2026-11-18 (docs/105): production assetPath art/items/certified_seed_canister_slot.png assigned for Chapter 2 integration (CYOA branch agent/ch02-art-integration-20261118). Native bytes copied byte-exact from the registered selection db91a0a1e49d308292fa68348bf5d06ee7548417:review/chapter-02-batch06-2026-11-17/candidates/C-certified-seed-canister-slot.png (SHA-256 0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998, 96x96). Status stays approved until a tested game build publishes it as integrated."
+    },
+    "inspect": {
+      "title": "CERTIFIED SEED CANISTER INSPECT",
+      "kind": "item-inspect",
+      "status": "integrated",
+      "dimensions": "565x451",
+      "assetPath": "art/items/certified_seed_canister_inspect.png",
+      "suggestedFilename": null,
+      "prompt": "Clean 565x451 detailed item inspector art for certified seed canister, original midcentury industrial styling",
+      "notes": "CANDIDATE GENERATED 2026-11-17: Source InterstellarHarvest/CYOA@agent/ch02-art-batch06-credentials-cargo; commit db91a0a1e49d308292fa68348bf5d06ee7548417; path review/chapter-02-batch06-2026-11-17/candidates/D-certified-seed-canister-inspect.png; SHA-256 958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7. Genuine built-in image-generation item candidate, RGB 565x451 with exact4x nearest-neighbor review preview. Generated and unselected; Art Director review pending. Independent slot/inspector sources, exact prompts, approved-reference provenance, alpha processing, preserved versions and QA are in the review folder. Production assetPath remains null; no gameplay integration.\nOWNER APPROVED 2026-11-17: Nate final approval without changes;Art Director PASS A-D. Immutable source InterstellarHarvest/CYOA@db91a0a1e49d308292fa68348bf5d06ee7548417;final review4e1ab88a63cf830b829f88d51710eef25e729f95;path review/chapter-02-batch06-2026-11-17/candidates/D-certified-seed-canister-inspect.png;SHA-256 958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7. Exact selected bytes registered through tools/sync/register-art.mjs. Approved,pending Gameplay PMO integration;production assetPath remains null.\nGAMEPLAY PMO 2026-11-18 (docs/105): production assetPath art/items/certified_seed_canister_inspect.png assigned for Chapter 2 integration (CYOA branch agent/ch02-art-integration-20261118). Native bytes copied byte-exact from the registered selection db91a0a1e49d308292fa68348bf5d06ee7548417:review/chapter-02-batch06-2026-11-17/candidates/D-certified-seed-canister-inspect.png (SHA-256 958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7, 565x451). Status stays approved until a tested game build publishes it as integrated."
+    }
+  },
+  "botanical_antidote_public": {
+    "slot": {
+      "title": "BOTANICAL ANTIDOTE PUBLIC SLOT",
+      "kind": "item-slot",
+      "status": "integrated",
+      "dimensions": "96x96",
+      "assetPath": "art/items/botanical_antidote_public_slot.png",
+      "suggestedFilename": null,
+      "prompt": "True logical-grid 96x96 transparent item icon, clean controlled palette, botanical antidote public",
+      "notes": "CANDIDATE GENERATED 2026-11-17: Source InterstellarHarvest/CYOA@agent/ch02-art-batch07-treatment-kits; commit 7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e; path review/chapter-02-batch07-2026-11-17/candidates/B-public-antidote-slot.png; SHA-256 d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961. Revised upright original medical hypo after owner silhouette feedback. Native 96x96 RGBA; existing64-color palette, no dithering; detailed genuine source and exact4x review preserved. Generated and unselected; Art Director approval pending; production assetPath remains null. Current Focus A564x278 is separate from future ScenePickup565x451.\nFINAL OWNER APPROVAL 2026-11-17: Nate approved Batch7 asset B without changes following Art Director recommendation. Exact PNG SHA-256 d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961; immutable candidate InterstellarHarvest/CYOA@7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e, review/chapter-02-batch07-2026-11-17/candidates/B-public-antidote-slot.png. Final reviewed commit306aa694295829b6e0a13b25f78ed6b004826ffd. Production assetPath remains null; no gameplay integration.\nGAMEPLAY PMO 2026-11-18 (docs/105): production assetPath art/items/botanical_antidote_public_slot.png assigned for Chapter 2 integration (CYOA branch agent/ch02-art-integration-20261118). Native bytes copied byte-exact from the registered selection 7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e:review/chapter-02-batch07-2026-11-17/candidates/B-public-antidote-slot.png (SHA-256 d9b51dc71af033bb01e24fc7fa27bea611144312c5ac10a594e532e10aac4961, 96x96). Status stays approved until a tested game build publishes it as integrated."
+    },
+    "inspect": {
+      "title": "BOTANICAL ANTIDOTE PUBLIC INSPECT",
+      "kind": "item-inspect",
+      "status": "integrated",
+      "dimensions": "565x451",
+      "assetPath": "art/items/botanical_antidote_public_inspect.png",
+      "suggestedFilename": null,
+      "prompt": "Clean 565x451 detailed item inspector art for botanical antidote public, original midcentury industrial styling",
+      "notes": "CANDIDATE GENERATED 2026-11-17: Source InterstellarHarvest/CYOA@agent/ch02-art-batch07-treatment-kits; commit 7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e; path review/chapter-02-batch07-2026-11-17/candidates/C-public-antidote-inspect.png; SHA-256 4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9. Revised upright original medical hypo after owner silhouette feedback. Native 565x451 RGB; existing64-color palette, no dithering; detailed genuine source and exact4x review preserved. Generated and unselected; Art Director approval pending; production assetPath remains null. Current Focus A564x278 is separate from future ScenePickup565x451.\nFINAL OWNER APPROVAL 2026-11-17: Nate approved Batch7 asset C without changes following Art Director recommendation. Exact PNG SHA-256 4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9; immutable candidate InterstellarHarvest/CYOA@7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e, review/chapter-02-batch07-2026-11-17/candidates/C-public-antidote-inspect.png. Final reviewed commit306aa694295829b6e0a13b25f78ed6b004826ffd. Production assetPath remains null; no gameplay integration.\nGAMEPLAY PMO 2026-11-18 (docs/105): production assetPath art/items/botanical_antidote_public_inspect.png assigned for Chapter 2 integration (CYOA branch agent/ch02-art-integration-20261118). Native bytes copied byte-exact from the registered selection 7ea47f63b6bbf86ffa02dd5a3ee2cb5ad5d3065e:review/chapter-02-batch07-2026-11-17/candidates/C-public-antidote-inspect.png (SHA-256 4e9b94d727195d532f8dfaf2b85b07abc43c5170a11a34604317ce4453b4a0e9, 565x451). Status stays approved until a tested game build publishes it as integrated."
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "date": "2026-11-25",
+  "sourceDerivedDesign": true,
+  "nativeRasterConstructedIndependently": true,
+  "sourcePixelsTransferred": false,
+  "whollyIndependentCreativeDesign": false,
+  "sources": [
+    {
+      "id": "CH4-NEW-11",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-0a7ca763-4d7e-4ae6-8c64-46748af516f7.png",
+      "file": "originals/CH4-NEW-11-reference.png",
+      "prompt": "prompts/CH4-NEW-11-reference-prompt.txt",
+      "inputs": [
+        {
+          "file": "references/approved-claim-ticket-inspect.png",
+          "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93"
+        },
+        {
+          "file": "references/approved-ch4-lot14-receipt.png",
+          "sha256": "af9f7b03eacfe54721e52217b265b7fcdc852b0eb7cf1d0cd1fd7e7f1eef85d3"
+        }
+      ],
+      "transparentBackground": false,
+      "sha256": "f7bb19b2c93d1e07d9d1560b941da415497f150d9eb50d5eb0f7362e3812e4c6",
+      "promptSha256": "3c4a8505ee955ab5a0d3f6b98ca86b6d715fc126e5bfa0b433d3068868688c5a"
+    },
+    {
+      "id": "CH4-NEW-13",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-c1fab1d5-d7f2-4622-ac88-dafb05887245.png",
+      "file": "originals/CH4-NEW-13-reference.png",
+      "prompt": "prompts/CH4-NEW-13-reference-prompt.txt",
+      "inputs": [
+        {
+          "file": "references/approved-ch4-auction-armrest.png",
+          "sha256": "facb4981ccef1f270f200346333ce108a9db7679fb383982d4704e8b65fa0fc7"
+        },
+        {
+          "file": "references/approved-ch2-seed-inspect.png",
+          "sha256": "958cdf2442ed5412efc14f8c9f9f65c90f64f702e3de452be80e3a8e172ed9f7"
+        }
+      ],
+      "transparentBackground": false,
+      "sha256": "0e565e9f3313466f65c61af0f2a8b662ce86c6d9faa6a80698de26b7a400663b",
+      "promptSha256": "65115ccae18d645a3ee4cf4e6bac1988aed8a848e4f8cfa41ccdbb079e8d5f59"
+    },
+    {
+      "id": "CH4-NEW-10",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-0bf660a0-83ed-469e-8816-697cfb6bc685.png",
+      "file": "originals/CH4-NEW-10-reference.png",
+      "prompt": "prompts/CH4-NEW-10-reference-prompt.txt",
+      "inputs": [
+        {
+          "file": "originals/CH4-NEW-11-reference.png",
+          "sha256": "f7bb19b2c93d1e07d9d1560b941da415497f150d9eb50d5eb0f7362e3812e4c6"
+        },
+        {
+          "file": "references/approved-claim-ticket-slot.png",
+          "sha256": "eb4271ebc35819234474cab43ee11106648eb1ec3d385efc5814e77fce6b035a"
+        }
+      ],
+      "transparentBackground": true,
+      "sha256": "bd7e65168402631248b3d0088ee9199cafc23fbf8e8f3bb66d0692b978b3ff21",
+      "promptSha256": "712f734fab681a2d5b8bef97b8815aa9c408307678554dd53a719dcb48f78405"
+    },
+    {
+      "id": "CH4-NEW-12",
+      "originalPath": "/Users/MrDashiki/.codex/generated_images/01a2010d-007d-7741-9663-0b6c52447802/exec-be765612-69ec-4f51-842a-fb6be5bb0f03.png",
+      "file": "originals/CH4-NEW-12-reference.png",
+      "prompt": "prompts/CH4-NEW-12-reference-prompt.txt",
+      "inputs": [
+        {
+          "file": "originals/CH4-NEW-13-reference.png",
+          "sha256": "0e565e9f3313466f65c61af0f2a8b662ce86c6d9faa6a80698de26b7a400663b"
+        },
+        {
+          "file": "references/approved-ch4-auction-armrest.png",
+          "sha256": "facb4981ccef1f270f200346333ce108a9db7679fb383982d4704e8b65fa0fc7"
+        },
+        {
+          "file": "references/approved-ch2-seed-slot.png",
+          "sha256": "0256464ebb925f1b34fef0a4bc6df7af262289ab9eaa57cea0a7520ffea17998"
+        }
+      ],
+      "transparentBackground": true,
+      "sha256": "5ec339439a32223e67a7f28d697d064633fbf122d69b9fe6075a3b2b207cc2a8",
+      "promptSha256": "96927ad409f80a194e2e17c3c942588050fc7373d66b4d1a0a16702b404d62d0"
+    }
+  ]
+}
