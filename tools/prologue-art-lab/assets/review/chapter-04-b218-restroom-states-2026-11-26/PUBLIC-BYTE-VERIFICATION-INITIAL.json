@@ -1,0 +1,1702 @@
+{
+  "passed": true,
+  "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+  "branch": "art/ch4-b218-restroom-states-review-20261126",
+  "observedRemoteRefs": {
+    "refs/heads/art/ch4-b218-restroom-states-review-20261126": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+    "refs/heads/art/ch4-r1-auctioneer-review-20261126": "6e59549e2ccf4b60e77ba7783987fd26637fcbbe",
+    "refs/heads/art/ch4-r1-restroom-material-pilot01-review-20261126": "e06c93fa0618054a2c4e2b630f6544709db410bd",
+    "refs/heads/main": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+    "refs/pull/32/head": "f320e63934c13e27fd13b9482d0cfba58911362d"
+  },
+  "objectsVerified": 149,
+  "pngsDecoded": 112,
+  "immutableSourcesVerified": 13,
+  "allPublicHashesMatch": true,
+  "onlyNewReviewPackageChanged": true,
+  "newCandidates": 6,
+  "status": "UNSELECTED",
+  "R1ProductionResumed": false,
+  "failedR1PixelsUsed": false,
+  "runtimeBindingsOrRegistrationsChanged": false,
+  "lobbyOrLot61Started": false,
+  "files": [
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/README.md",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "16fc286bb60e6598b1e90231e5389ff4489473e0168051de55256bded5aaa3d0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/README.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/.gitignore",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/.gitignore",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/README.md",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "75e1b105ba4322224aa6c789d47e85b8aebd2b474b0a6b80dafb9bb9883424c8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/README.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/RECONCILIATION.md",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "325ad4154d7cefbf3032a00796baf1baaa90482d683087cfdaf89ced4bef3d33",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/RECONCILIATION.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/VISUAL-REVIEW.md",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "1b09cde8eeb309588f83c71f89c48fec2f81bcdb7173679c0e29fded3be68b07",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/VISUAL-REVIEW.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/approved-assistant-pleased-leak-composite.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "eb6974c74a2ac6405ff92ae4ac022cd3c926f550305328c211206bced9584c19",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/approved-assistant-pleased-leak-composite.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/approved-plumber-worried-leak-composite.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "d09d6f63c564ff9641743609971fa8901574f1f7f1833c5de0f0f941ffc96b02",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/approved-plumber-worried-leak-composite.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/chapter2-state-context.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ba784877f37c20e77b22151e0461f004d2d93d28cf44bce99ec6222026e8a39d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/chapter2-state-context.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        942,
+        412
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/lifting-over-braced-proof.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "64514291be6f4d8050eb60495cc79cedae3e755c1a52a9f83da119d4c9a9f17f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/lifting-over-braced-proof.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/main-state-progression.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "9667b5230f5e51a5d00812e8aa48bb87efaea1e74df11fcecfb96505e09d8bfe",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/main-state-progression.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        942,
+        412
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-active-leak-close-before-after.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "c4910314096170202fdd5363920f913f9644a07ca4a31765712d8af029359326",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-active-leak-close-before-after.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1128,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-active-leak-main-before-after.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3880df57a89945450b601b1c8729a1699629652951e38e7419092db4abcd4cf2",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-active-leak-main-before-after.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        628,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-braced-main-before-after.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "22ba2db8d795b5c35249a63bb6c183cf5f0228194666afb1fc120590cb3d09bf",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-braced-main-before-after.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        628,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-contained-main-before-after.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "0befc6644643bdcacde29d4d7ba8cfc86bcc366a9989ad1afe35a55482391642",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-contained-main-before-after.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        628,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-flood-onset-main-before-after.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "7147991496b332d96db010a2a4422b35ab2731eb86a08faae6f09d89ee4ff7c7",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-flood-onset-main-before-after.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        628,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-stall-lifting-main-before-after.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "f73aaa569aaadbaf26e61522465245c768f025d2625eea795a6ee319ee0cf269",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/comparisons/restroom-stall-lifting-main-before-after.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        628,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/canonical-nodes.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "6a62980a9cb1785b059062ac81c3a7821562d7d2add287cfbc802391cf813fb2",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/canonical-nodes.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/checksums.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "2429c0beea723fa709baa2c720c97210990a6dab79fd67bc608b66309adc4aeb",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/checksums.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/consolidation-restroom-families.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3fccc9c62c7700070eb57cfc9f90afb1b41dbf7c791e4f86efcedce13ede0817",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/consolidation-restroom-families.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/controlling-sources.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "92823146327fe7d3f1aab1a7be9361a592216765658411e0a90128fbb645fe6a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/controlling-sources.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/generation-receipt.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "6b0adb6e44bfd8daf2fb6b5fa28e1c3d9d149e2c7e9ca088a2d8b113794c9636",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/generation-receipt.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-4-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8d1e1d4228a9b27f4976eb46c4c99705cfc6aa9de3df1236731dbe7bc9eda2d5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-4-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        466
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-4-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "85c4a489de7b34c94db171e18cd28a5ed5bfc99a32685af44c442225b047cae0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-4-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1300
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-5-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "57ccad7049d112ea10b20a9728ad9b9fcb5948f27056137dca0f05a3d133ee55",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-5-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        467
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-5-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "2e51824ddcf894cc2cebbf917ceb412f0fdf446a112edbe276f20003211b69c0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-5-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1301
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-6-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "14e9789ff62d205ba298aec2f7657f7892ed911ec700965ee4bae497dbbae0b3",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-6-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        466
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-6-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "5cc104e502a44bb03c7b30a046d9b63f08659f1d142734cbfe2bce8bb9b8750d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-dialogue-6-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1300
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-16-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "52b36360d495ac46838ae2703126e9eb4f3e3e9dce60587c5e8d4c0c32af63f4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-16-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        419
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-16-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8377ff822e1303f3e591f6ac4397c15768e630f2ec65ccbb6387e0e74c1945a3",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-16-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1037
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-17-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "af85dff0500eb457359e14b74e277c5c763a6177ef7839f9c3d81ec965d33c31",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-17-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        394
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-17-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "eb323115335552e2d7581fef1f23dc2ae409b07e74bd3381171482a5f0a7d5c1",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-17-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1012
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-18-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "6b8a29f7fffc9c2aafd074426d0bfa0b87a6d2eb913c803d1b5fa3a9a0206478",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-18-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        395
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-18-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "4354c1d50a1923853588f1b06d9fec25a241b973eaaadf627db82e071d2724d6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-lifting-18-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1013
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-progression-0-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "aada7e53a2b2820be9966026bde9dad06761f51e83bb4e57857061eb5df23216",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-progression-0-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        625
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-progression-0-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "aed33e97feaef71b3be4ee8955da0ce22477073d838521b914d15bda12ed503b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/chromium-progression-0-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1861
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-4-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "914973c2c441fe5d9f7a4ae9b8a0d5daa53ecfe2ceae88272e4b9fdc9f2d9f69",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-4-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-4-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "57bb83be6a67e23057401c1aac38b2895f16dea87e194f1bdd17c360ae1c2c67",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-4-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-5-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "f220fb08a3139ddcbbbb96894ea3decd3c55dca09156d642b7e633a992fb21fe",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-5-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        469
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-5-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "6cf6331d2e41292608da72e3bd841cbd152e10af7294c614c2dd0184c65f3448",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-5-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1303
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-6-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3f35ea1affceb002fb8275f09d5b6fe16e6ceb6353b9058b57bf6600473c2979",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-6-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-6-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "88fbcea0d1b28a2dd4e1affea66848e1f7280a7f66d060080e7cc0c88ae94d66",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-dialogue-6-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-16-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "bbabd0fff9dcf83eb7ac091c67d9db0fef6f247acc254733a8b3829a1fb60919",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-16-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        421
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-16-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "a2ba840c720a8a9a7389438ff10aeb585ec529811b07a4eebf8729ae59494485",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-16-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1039
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-17-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "73290b509c894729719d6835f8049aa67d386e7e8e272a822513ac5d8a831298",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-17-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        396
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-17-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "fd5caa5fbdea902cfd6d788736ffb4629c3bac148719585d3b3708f0b4587bab",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-17-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1014
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-18-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ab1ef9c40baf1f98b14237b0281a6a140d861142fc4d87517c0c2957afc0e69d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-18-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        397
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-18-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "a68cdc2f1a9ccf0c075f5d4150f9d1b2264d49a14c096c82b17521bd3b1c45d5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-lifting-18-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1015
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-progression-0-1x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ec4a869303b1f8c9304c48dec806fad65899c4d7596f39930024e8384d975108",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-progression-0-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        627
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-progression-0-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "4194bc45e5912c7f227a1ff4e6b5049e75692ae4f8ba2fd3f1657b8f1c4ab473",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/firefox-progression-0-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1863
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/report.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "b79a6735e3f995ac8327a99f6f7131f0c042559625829b2b859b790ff2419d16",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/local-browser/report.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/native-state-build.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "af06776e55d33ada121ce8578727e71c056b1f93f3f8303aee0b05022840aac8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/native-state-build.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/online-provenance.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "abbb130cfc8df94c0a23c57e07adec947e57fb9533ad325ee8ee4895cabf11d5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/online-provenance.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/references.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "29d35ebe07b600b5214e3fa3978d0142829880def91c089fc59ac6a021f9f160",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/references.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/technical-qa.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "05b7d3c305347ef01a9f056ffaf99d8bc2eacdc2d827cd772550ed30e86afbe6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/evidence/technical-qa.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/index.html",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "45d75e437a446cd8bbbfab0fcbcc52e97eec03b2edcffaf35307702b3ee5c6b9",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/index.html",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/close-active-leak.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "89679005ca9a86436abccef344030194efbd269585623b02334ffda06ca385e4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/close-active-leak.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-active-jet.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3b676232ef5f557996ba59e8e63299f156331168db6cd5958b68ed7d2bbc1b65",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-active-jet.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-dribble.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8c0765877882915ab606abbcd1c6bba4e8828749b7371c98f10f8c06cf61f449",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-dribble.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-flood-floor.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "7bff5bad0afdb75c1952d4f11576bbfc01dc1e9d0ebffd03b0555df757e56c95",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-flood-floor.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-flood-jet.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "03cd88090ef601c452066b3c4c417746b8af9e59caa70f89819ebd62b5a3aefc",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-flood-jet.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-stall-lift.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "7e7e3eaec13da05e4e19440158cb779ea2b6da72704afc34afe4504d34592d03",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-stall-lift.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-wet-floor.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "f365317674b3712436de1e17674f4d925ab9a21fe258b072292d8a4f9d9d1ab3",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/layers/main-wet-floor.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/manifest.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3f30d80243ac31cc62ccc46a0a9e075d9d3c9113d585ca4bf537c1775201cc79",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/manifest.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/close-water-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "f7536a2d155ed108e3b77161ea1ef67c1f0fbb679bdf81909674dd3157ea1155",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/close-water-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/main-source-figures-protected.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "b45cdac7b945c394022f56566833743097489fe11b94f1320fbedb7eca7a3de8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/main-source-figures-protected.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/main-water-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "72cc938480e6672f27c6ca07f540049f627d35ba05e7777f85d41c7d4ba90f18",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/main-water-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-close-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "f7536a2d155ed108e3b77161ea1ef67c1f0fbb679bdf81909674dd3157ea1155",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-close-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-close-changed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "6bb2d2eff0b415ebc34b52e1223dc98ee398a2fe8a003ae126cfdba1c8bcac82",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-close-changed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-main-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "72cc938480e6672f27c6ca07f540049f627d35ba05e7777f85d41c7d4ba90f18",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-main-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-main-changed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "dcf06bc56df3c1ee0e3b15f8d439d8a5b5c07b71c5fc3e6a729baef670581bde",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-active-leak-main-changed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-braced-main-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "72cc938480e6672f27c6ca07f540049f627d35ba05e7777f85d41c7d4ba90f18",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-braced-main-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-braced-main-changed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8071894fa8e52487108c657d25ea05ecf08b7aac0e8defb7ee8d7f77f4615d2b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-braced-main-changed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-contained-main-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "72cc938480e6672f27c6ca07f540049f627d35ba05e7777f85d41c7d4ba90f18",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-contained-main-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-contained-main-changed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "28b8146c51b31d8230b459ca284c7ea6260cea47485e5c731c44e066290e04ec",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-contained-main-changed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-flood-onset-main-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "72cc938480e6672f27c6ca07f540049f627d35ba05e7777f85d41c7d4ba90f18",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-flood-onset-main-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-flood-onset-main-changed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "55c330cbad5b8b463a0aab8e39d26f83f303c8db9927bb5741b4657834ebe9c5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-flood-onset-main-changed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-stall-lifting-main-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "e99b420388c57b922e399d4cec20dd4bb97b3278dab8d06f20245269f19c7355",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-stall-lifting-main-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-stall-lifting-main-changed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "633d62c2bf6d6d4cd9da4f7a2200c7a489d34068e21a0ee33aef365f0e8e659e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/restroom-stall-lifting-main-changed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/stall-lift-allowed.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "b3d4f053368dcb1320407c04cbd1768fd72a9b7fb9e44eb8751753b80732626e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/stall-lift-allowed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/toilet-grounded-protected.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "e00b0c182d5521570a993db01637e9b0cd4fdf6fc948934a88d5772b18da6983",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/masks/toilet-grounded-protected.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-active-leak-close.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "35a8f8297da89038a0a7b30596363bfa6ad86e3edc6b02bf0efb360a4dc3a46a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-active-leak-close.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-active-leak-main.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "9a6243310bb7af1958854110af742c603275b2ebf9c889050c6c065737e57279",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-active-leak-main.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-braced-main.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "dcbe6ebf8319e3fe0dabe9c30637494e51342303be9923aba29ccd71acca7fcd",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-braced-main.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-contained-main.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "674cb60c905347e99c95b99ec87dfacc218cf15483abe89bc4e092d40b43ed1a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-contained-main.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-flood-onset-main.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "432ce64f5e7e0420f678774ec8cf2edb02ce745ff532d83b3e1723af9d90fb46",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-flood-onset-main.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-stall-lifting-main.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "84976c116d9fc87b6ce8f4cf5d7f316d7185fa308f889df6d1c76eafe6bc525e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/native/restroom-stall-lifting-main.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/online.html",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "b2e3dc9b01ee842fbb528a1a1c1e621a713f90b59b3a6d02f3a15207ef74948c",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/online.html",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/originals/raised-stall-imagegen-reference.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8a9c71a32014b8965a5e39233f7868a9dc0240f1fe7ecc77bb6e4b5934ba2155",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/originals/raised-stall-imagegen-reference.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1548,
+        1016
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-CH4-B2-03-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "97e90b12a7883cbbf2419e991eebd09063d7dba01a9e226aa13a59e1b4ef143f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-CH4-B2-03-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-assistant-pleased-leak-composite-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8e5e60fd93f67f772a12ab1f5fe3f07d35e73071b3575fe507a2e11dc891f43a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-assistant-pleased-leak-composite-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-ch2-bureau-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "d20c5e77ea7f736d41718cee387b955050824ccc08a1e63a552e7bcd66b7cf3d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-ch2-bureau-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-ch2-control-tower-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ec024b48500b49ebda6d5e63d1c7e714ba525652345ff83e52d58ef144a4b9fc",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-ch2-control-tower-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-plumber-worried-leak-composite-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "bd80159ae8be1ffcc1e3b9e0ee8c9b464c07a488d80dba1410c5b24bb8fa8c82",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/approved-plumber-worried-leak-composite-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/chapter2-state-context-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ac1e57d97ec9a7da6c72993914e35e9f2b77fcf361d0dcc2b525fc7b0dd0fd34",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/chapter2-state-context-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        3768,
+        1648
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/lifting-over-braced-proof-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "4a4a7d8eda93369b1ea7ce8e753685f98b14e013e2c6ad7bd80d765ebe28adcd",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/lifting-over-braced-proof-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/main-state-progression-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "d93d590db858bced00872936e01e3a428d362cd299cadb0923e196a363701ffd",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/main-state-progression-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        3768,
+        1648
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-close-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "b138f78454ee55493068ef34137475f55952b35eaea42c50c4d62f80d1fa5de5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-close-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-close-before-after-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "638f29f551f0273751cd928c4974694c45b6c888b333cc45e1ed145f7b2940c7",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-close-before-after-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        4512,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-close-changed-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "1a63dd18da5a14a45663403acaceb458ad31107ea0aa638971713e1b4e9d5382",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-close-changed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-main-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "26f522d805791c31790de5a1be3afd195308cd87c4acf49a2176e075d60119fc",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-main-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-main-before-after-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "c42ddc64157e6c09aea14bd3b75cc00be325f9ed28025f8fb5bbd02d49298100",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-main-before-after-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2512,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-main-changed-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "2767e061c90a911d234cdc3fccf43776d435592f6d144d1b230eb77b6f97715e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-active-leak-main-changed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-braced-main-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "9ba5c55bd668c4c0f8759b0505c77c951ecbd7fc6fb7a485a1c07589c1b06646",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-braced-main-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-braced-main-before-after-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8ec5203f591339d7ccaedf68d7c05e4fe23b9a5c19f938e3bc28fc3c6a4d352a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-braced-main-before-after-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2512,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-braced-main-changed-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "c6b67d96b8aa5ac676bdcbe99c93dd8d3e4bc61686715a3a10d1e49c37f250b4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-braced-main-changed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-contained-main-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ad8a81eb7419cea980b6927ba46f8887edc17aaff817c0ddfda4127467a3ced0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-contained-main-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-contained-main-before-after-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "31af615e8878b8ee17a37037d56e6cf1d6c31a4b63f85c6c30c86073e750bc44",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-contained-main-before-after-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2512,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-contained-main-changed-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "96fab75e67f8bdbd3c3bc99f2c182c8b8dbd417857a9acd7e84cdb1f7df67185",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-contained-main-changed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-flood-onset-main-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "4bdb9719127b598e4ec59bf6acd8f0950a1957b90959792c46321746cf2e9d84",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-flood-onset-main-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-flood-onset-main-before-after-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "fd36d297008f46b4991a7794e5180c03ac8854fdb6d44cad8ef3fd0ac7769193",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-flood-onset-main-before-after-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2512,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-flood-onset-main-changed-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "e9788ca110ed589145d6fa2fcdbc43742c61631e08d7fb0a15f4a0a8418b76a8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-flood-onset-main-changed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-stall-lifting-main-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "95a152e1a9c78b5972405eec5c59d602adfb95a91a2fb1183b4194d2800651eb",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-stall-lifting-main-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-stall-lifting-main-before-after-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "18dac04053b89548f0dd98ec616cea57a1bc93abeaa76a88e80c601b68821e3a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-stall-lifting-main-before-after-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2512,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-stall-lifting-main-changed-4x.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3d593be288d0183bf7fd60c358ef894eb54b308c519f9b2af02f5b5cfc43a25a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/previews/restroom-stall-lifting-main-changed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/prompts/stall-reference.txt",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "8399ddb7d8391eb0d4413f5612e5c96a2e46465c21301d520ca8e3dd71a35218",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/prompts/stall-reference.txt",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-CH4-04.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-CH4-04.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-CH4-B2-03.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-CH4-B2-03.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-assistant-pleased.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ac47c23105b70af92b970682b72c266726ddbe9a75e182bdf6a71869568d6eea",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-assistant-pleased.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-ch2-bureau.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-ch2-bureau.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-ch2-control-tower.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-ch2-control-tower.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-final-occupancy.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "e65d321cac76af8e03dd57ba5cbe3aa2d7db454669b0dd36631c61e51e475b7a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-final-occupancy.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-master-isolator.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ba494521a177b397cc9db901e83046fccc83afcfcebca890b23a0656be042153",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-master-isolator.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-plumber-worried.png",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "cedd81713cbd5ee4bb0a97d869a62c395a1b34ea04ba276fa5ac21c01d5de65d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/references/approved-plumber-worried.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/browser_qa.cjs",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "33eddc93bf08452d9acd49f93033f6869bbd333316cebe764bd94c008d7fc1db",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/browser_qa.cjs",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/build_review.py",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "1aefcac15f0d13c1537f485e8aaf8e2ed57d63a195ae64cf16313fcbe7082887",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/build_review.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/build_states.py",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "ab9c66af6fe616dd39dbb2f6a0b69a30eb3a88e7883f97e809e7437c3ac415e0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/build_states.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/checksums.py",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "a00a12d2afc1f2a06be046fa658324c6cafbd7e87e129cec8faea37d3738bb84",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/checksums.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/native-event-marks.json",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "3325a4148b4213af76a6814f63e31a6a179490f6414ae8f69d077e21e66fbf49",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/native-event-marks.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/prepare_online.py",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "f9b9badff7be31b906bf80379cfc5a7a260dfd35a50c51e1aadfab848b245a79",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/prepare_online.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-active-leak-close.ora",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "560e7f763a65c3cf1b2d78a3a16e61a9811d9b85ef300b0217689d4a47211a56",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-active-leak-close.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-active-leak-main.ora",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "6a67b09c0ac3c4f2340dcecd876073dcf75bb0f5e8415277c74867d14caf4422",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-active-leak-main.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-braced-main.ora",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "978500efe7723fc8cd0fc067cb278e03518bdb3e8ad4f4c47212be22b434d27c",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-braced-main.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-contained-main.ora",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "7f48a1698b22e6b4eacd220caf2f0b85fc6b8b9de08128efdfea1a18d651a46e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-contained-main.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-flood-onset-main.ora",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "c98dc7a875f95b293e56f5dc6b17eac6625983bd933005e42b8cfdf6e1933f21",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-flood-onset-main.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-stall-lifting-main.ora",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "9f067bbb111c02d273fa66e07ada2454e736ca82d14de065271609d67418f671",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/v01/source/restroom-stall-lifting-main.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/verify_public.py",
+      "commit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+      "sha256": "54d305b7a5a3c3f339edcb6c1bcca4d282251b411a2dd2663d6bbd27586bc347",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/760bdacb40181e907cb45813ad9a1b0e4d889d4e/tools/prologue-art-lab/assets/review/chapter-04-b218-restroom-states-2026-11-26/verify_public.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/scenes/biology_park/control_tower.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/deathScreens/grand_bellevue/final_occupancy.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "e65d321cac76af8e03dd57ba5cbe3aa2d7db454669b0dd36631c61e51e475b7a",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/deathScreens/grand_bellevue/final_occupancy.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/focus/grand_bellevue/restroom/master_isolator.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "ba494521a177b397cc9db901e83046fccc83afcfcebca890b23a0656be042153",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/focus/grand_bellevue/restroom/master_isolator.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/hotel_plumber/worried.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "cedd81713cbd5ee4bb0a97d869a62c395a1b34ea04ba276fa5ac21c01d5de65d",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/portraits/hotel_plumber/worried.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/hotel_plumber_assistant/pleased.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "ac47c23105b70af92b970682b72c266726ddbe9a75e182bdf6a71869568d6eea",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/portraits/hotel_plumber_assistant/pleased.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "f1e0630531f644e3bfb8e33a2ad348cf4a6abaa7b17bf36dd0c61fab2e6b81cc",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "docs/137_CH4_ARTWORK_CONSOLIDATION_PROPOSAL_20261124.md",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "dcf70e6affc412ad9d1f80e4552f6752a458f63b5f68b0e6634c1fdb21bf7757",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/docs/137_CH4_ARTWORK_CONSOLIDATION_PROPOSAL_20261124.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "docs/137_CH4_ARTWORK_CONSOLIDATION_PLAN_20261124.json",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "dd9aa94d11988595b48b26ed74c67011f92905ebe72e935c0e4603f786e3e13b",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/docs/137_CH4_ARTWORK_CONSOLIDATION_PLAN_20261124.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "docs/138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "97d10b56e5c39218955073c55f905a273c06c004f6512509bb9e580e1d3d89da",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/docs/138_CH4_B209_REVISED_PRODUCTION_BRIEF_20261124.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "story/chapters/chapter-04.wip.json",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "b3f04703b540c90de85725bcab707fdbcb4b362f2f54e8074a1582dee82b5707",
+      "role": "immutable-approved-or-controlling-source",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/story/chapters/chapter-04.wip.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    }
+  ]
+}

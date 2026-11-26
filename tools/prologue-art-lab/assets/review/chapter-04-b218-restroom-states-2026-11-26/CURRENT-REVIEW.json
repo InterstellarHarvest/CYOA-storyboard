@@ -1,0 +1,28 @@
+{
+  "status": "Six candidates UNSELECTED; post-lift closer background HELD",
+  "sourceVersion": "v01",
+  "sourceVersionFrozenAtCommit": "760bdacb40181e907cb45813ad9a1b0e4d889d4e",
+  "sourceImageManifest": "v01/manifest.json",
+  "newCandidates": 6,
+  "candidatePNGsUnchanged": true,
+  "authoritativeMappingAddendum": "CONTINUITY-ADDENDUM.md",
+  "heldReference": {
+    "description": "Post-lift restroom dialogue background for hotel_stall_porter_protest",
+    "candidatePublished": false,
+    "reason": "Approved CH4-B2-03 shows the open nearest-stall edge at far right. A local shifted-edge/exposed-tile proof degraded tile spacing; stopped at quality gate. Unchanged base is not verified as post-lift-correct.",
+    "runtimeBinding": null,
+    "focusId": null,
+    "newFlags": null
+  },
+  "initialV01ReuseClaimSuperseded": true,
+  "R1ProductionSuspended": true,
+  "lobbyOrLot61Started": false,
+  "canonConflictUnchanged": "Restroom/fatal nodes leave toilet grounded; later mezzanine node says it travels inside stall.",
+  "candidateNodeMappingOverrides": {
+    "restroom-stall-lifting-main": [
+      "hotel_stall_lot_claimed",
+      "hotel_stall_crane_success"
+    ]
+  },
+  "doNotUseUnchangedCloserAfterLift": true
+}

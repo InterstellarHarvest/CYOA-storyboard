@@ -24,6 +24,7 @@ def main():
   return{**task,'url':url,'publicBytesMatch':True,'dimensions':dims}
  with ThreadPoolExecutor(max_workers=8)as ex:results=list(ex.map(check,tasks))
  changed=subprocess.check_output(['git','diff','--name-only',BASE,a.commit],cwd=REPO,text=True).splitlines();assert all(p.startswith(str(B.relative_to(REPO))+'/')for p in changed)
- report={'passed':True,'commit':a.commit,'branch':BRANCH,'observedRemoteRefs':refs,'objectsVerified':len(results),'pngsDecoded':sum(x['dimensions']is not None for x in results),'immutableSourcesVerified':len(originals),'allPublicHashesMatch':True,'onlyNewReviewPackageChanged':True,'newCandidates':6,'status':'UNSELECTED','R1ProductionResumed':False,'failedR1PixelsUsed':False,'runtimeBindingsOrRegistrationsChanged':False,'lobbyOrLot61Started':False,'files':results}
+ frozen=subprocess.check_output(['git','diff','--name-only','760bdacb40181e907cb45813ad9a1b0e4d889d4e',a.commit,'--',str(R.relative_to(REPO))],cwd=REPO,text=True).strip();assert not frozen
+ report={'passed':True,'commit':a.commit,'branch':BRANCH,'observedRemoteRefs':refs,'objectsVerified':len(results),'pngsDecoded':sum(x['dimensions']is not None for x in results),'immutableSourcesVerified':len(originals),'allPublicHashesMatch':True,'onlyNewReviewPackageChanged':True,'newCandidates':6,'heldReferences':['post-lift closer background for hotel_stall_porter_protest'],'frozenV01Unchanged':True,'status':'UNSELECTED','R1ProductionResumed':False,'failedR1PixelsUsed':False,'runtimeBindingsOrRegistrationsChanged':False,'lobbyOrLot61Started':False,'files':results}
  out.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:v for k,v in report.items()if k!='files'}))
 if __name__=='__main__':main()
