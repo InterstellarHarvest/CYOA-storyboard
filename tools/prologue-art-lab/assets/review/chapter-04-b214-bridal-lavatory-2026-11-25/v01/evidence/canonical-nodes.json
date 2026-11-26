@@ -1,0 +1,464 @@
+{
+  "hotel_seashell_room": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "text": "You step through the unlocked door. A spotless little room awaits. Against one wall is a narrow counter bearing three seashells. There is no toilet, no other fixture, and no explanation. You check again. Still three shells.",
+    "choices": [
+      {
+        "id": "seashell_room_inspect",
+        "kind": "action",
+        "text": "INSPECT THE THREE SEASHELLS.",
+        "to": "hotel_seashell_inspect"
+      },
+      {
+        "id": "seashell_room_try",
+        "kind": "action",
+        "text": "TRY TO USE THE THREE SEASHELLS.",
+        "if": {
+          "notFlag": "ch4_seashell_first_attempt_failed"
+        },
+        "to": "hotel_seashell_first_attempt"
+      },
+      {
+        "id": "seashell_room_complain",
+        "kind": "spoken",
+        "text": "COMPLAIN THAT THERE IS NO TOILET.",
+        "if": {
+          "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "to": "hotel_seashell_complaint"
+      },
+      {
+        "id": "seashell_room_leave",
+        "kind": "action",
+        "text": "PUT THIS ROOM BEHIND YOU AND LEAVE.",
+        "to": "hotel_bridal_lavatory_park_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_seashell_lavatory_entered": true
+      }
+    },
+    "notes": "No conventional toilet exists. Three shells are props, not inventory items; no bathing, flushing, or successful urination."
+  },
+  "hotel_seashell_inspect": {
+    "mode": "focus",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "focus": "grand_bellevue/three_seashells",
+    "effects": {
+      "set": {
+        "ch4_seashells_inspected": true
+      }
+    },
+    "text": [
+      {
+        "desc": "Three seashells rest on a counter. One is smooth, one ridged, and one differs mainly by being the third. None conceals a button, hose, drain, or toilet."
+      },
+      {
+        "desc": "There is nothing else in the room."
+      }
+    ],
+    "choices": [
+      {
+        "id": "shell_focus_try",
+        "kind": "action",
+        "text": "TRY USING THE SEASHELLS.",
+        "if": {
+          "notFlag": "ch4_seashell_first_attempt_failed"
+        },
+        "to": "hotel_seashell_first_attempt"
+      },
+      {
+        "id": "shell_focus_ask",
+        "kind": "spoken",
+        "text": "ASK THE BATHROOM AI FOR INSTRUCTIONS.",
+        "if": {
+          "notFlag": "ch4_seashell_ai_instructions_requested"
+        },
+        "to": "hotel_seashell_instructions"
+      },
+      {
+        "id": "shell_focus_complain",
+        "kind": "spoken",
+        "text": "FILE A MISSING-TOILET COMPLAINT.",
+        "if": {
+          "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "to": "hotel_seashell_complaint"
+      },
+      {
+        "id": "shell_focus_leave",
+        "kind": "action",
+        "text": "LEAVE THE ROOM.",
+        "to": "hotel_bridal_lavatory_park_exit"
+      }
+    ],
+    "notes": "User-approved item-world inspection gate; shells stay on the counter and cannot be picked up as inventory items."
+  },
+  "hotel_seashell_first_attempt": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "text": [
+      {
+        "desc": "You pick up one seashell, consider it, and put it down. You try another. Nothing happens."
+      },
+      {
+        "desc": "The third shell is no more instructive than the first two."
+      },
+      {
+        "say": "Assistance is available for intuitive operation.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "THEN ASSIST ME.",
+        "who": "you"
+      }
+    ],
+    "choices": [
+      {
+        "id": "shell_first_ask",
+        "kind": "spoken",
+        "text": "ASK THE AI FOR INSTRUCTIONS.",
+        "if": {
+          "notFlag": "ch4_seashell_ai_instructions_requested"
+        },
+        "to": "hotel_seashell_instructions"
+      },
+      {
+        "id": "shell_first_complain",
+        "kind": "spoken",
+        "text": "FILE A FORMAL COMPLAINT.",
+        "if": {
+          "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "to": "hotel_seashell_complaint"
+      },
+      {
+        "id": "shell_first_retry",
+        "kind": "action",
+        "text": "ATTEMPT THE SEASHELLS A SECOND TIME.",
+        "if": {
+          "notFlag": "ch4_seashell_second_attempt_failed"
+        },
+        "to": "hotel_seashell_second_attempt"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_seashell_first_attempt_failed": true
+      }
+    },
+    "notes": "First attempt nonfatal; three branches previously approved. No extra physical fixture is created."
+  },
+  "hotel_seashell_instructions": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "speaker": "bathroom_ai",
+    "pose": "neutral",
+    "text": [
+      {
+        "say": "HOW AM I SUPPOSED TO USE THREE SEASHELLS?",
+        "who": "you"
+      },
+      {
+        "say": "Operation is considered intuitive for the intended female user.",
+        "who": "bathroom_ai"
+      },
+      {
+        "if": {
+          "flag": "ch4_provisional_bride_registered"
+        },
+        "say": "I AM REGISTERED AS A BRIDE.",
+        "who": "you"
+      },
+      {
+        "if": {
+          "notFlag": "ch4_provisional_bride_registered"
+        },
+        "say": "THAT DOES NOT HELP ME.",
+        "who": "you"
+      },
+      {
+        "if": {
+          "flag": "ch4_provisional_bride_registered"
+        },
+        "say": "Provisional registration does not include intuition.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "THEN PLEASE GIVE ME THE INSTRUCTIONS.",
+        "who": "you"
+      },
+      {
+        "say": "That would defeat the purpose of intuitive operation.",
+        "who": "bathroom_ai"
+      }
+    ],
+    "choices": [
+      {
+        "id": "instructions_complaint",
+        "kind": "spoken",
+        "text": "FILE A FORMAL COMPLAINT.",
+        "if": {
+          "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "to": "hotel_seashell_complaint"
+      },
+      {
+        "id": "instructions_retry",
+        "kind": "action",
+        "text": "TRY THE THREE SEASHELLS AGAIN.",
+        "if": {
+          "notFlag": "ch4_seashell_second_attempt_failed"
+        },
+        "to": "hotel_seashell_second_attempt"
+      },
+      {
+        "id": "instructions_leave",
+        "kind": "action",
+        "text": "LEAVE THE LAVATORY.",
+        "to": "hotel_bridal_lavatory_park_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_seashell_ai_instructions_requested": true
+      }
+    },
+    "notes": "Short female-intuition exchange with provisional bride flag variation. No instructions ever provided."
+  },
+  "hotel_seashell_complaint": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "speaker": "bathroom_ai",
+    "pose": "neutral",
+    "text": [
+      {
+        "say": "THERE IS NO TOILET IN THIS BATHROOM.",
+        "who": "you"
+      },
+      {
+        "say": "Your report concerns a missing fixture.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "YES. THE TOILET.",
+        "who": "you"
+      },
+      {
+        "say": "An electronic record has been created.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "DOES THAT MEAN SOMEONE WILL BRING ONE?",
+        "who": "you"
+      },
+      {
+        "say": "Your complaint will remain available for review.",
+        "who": "bathroom_ai"
+      },
+      {
+        "if": {
+          "flag": "ch4_bridal_registration_fee_pending"
+        },
+        "say": "Your provisional bridal registration fee remains pending.",
+        "who": "bathroom_ai"
+      },
+      {
+        "desc": "You are still standing in front of three seashells."
+      }
+    ],
+    "choices": [
+      {
+        "id": "complaint_second_try",
+        "kind": "action",
+        "text": "TRY THE SEASHELLS AGAIN.",
+        "if": {
+          "notFlag": "ch4_seashell_second_attempt_failed"
+        },
+        "to": "hotel_seashell_second_attempt"
+      },
+      {
+        "id": "complaint_ask_ai",
+        "kind": "spoken",
+        "text": "ASK FOR OPERATING INSTRUCTIONS.",
+        "if": {
+          "notFlag": "ch4_seashell_ai_instructions_requested"
+        },
+        "to": "hotel_seashell_instructions"
+      },
+      {
+        "id": "complaint_leave",
+        "kind": "action",
+        "text": "STOP THIS AND LEAVE.",
+        "to": "hotel_bridal_lavatory_park_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_seashell_missing_toilet_complaint_filed": true
+      }
+    },
+    "notes": "Single approved complaint record, not an inventory item; no new fee, but existing provisional bride fee may be mentioned."
+  },
+  "hotel_seashell_second_attempt": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "speaker": "bathroom_ai",
+    "pose": "neutral",
+    "text": [
+      {
+        "desc": "You stand before the counter. Three seashells. No toilet. You pick up the first, turn it over, and put it down."
+      },
+      {
+        "desc": "Perhaps there is a particular order. You rearrange all three. A pleasant chime sounds."
+      },
+      {
+        "say": "Practical assessment complete.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "DID I DO IT?",
+        "who": "you"
+      },
+      {
+        "say": "No.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "THEN WHAT AM I SUPPOSED TO DO?",
+        "who": "you"
+      },
+      {
+        "say": "Correct operation requires certification.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "HOW DO I GET CERTIFIED?",
+        "who": "you"
+      },
+      {
+        "say": "By demonstrating correct operation.",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "THAT'S WHAT I'M TRYING TO DO!",
+        "who": "you"
+      },
+      {
+        "say": "Your application has been denied.",
+        "who": "bathroom_ai"
+      },
+      {
+        "desc": "The shells sit innocently on the counter. Your bladder is considerably less innocent."
+      }
+    ],
+    "choices": [
+      {
+        "id": "second_appeal",
+        "kind": "spoken",
+        "text": "CHALLENGE THE ASSESSMENT RESULT.",
+        "to": "hotel_seashell_assessment_appeal"
+      },
+      {
+        "id": "second_leave",
+        "kind": "action",
+        "text": "PUT THE SEASHELLS DOWN AND LEAVE.",
+        "to": "hotel_bridal_lavatory_park_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_seashell_second_attempt_failed": true
+      }
+    },
+    "notes": "Exactly two approved next choices B and C; demonstration request was explicitly retired. No dice roll or fee; do not repeat attempt."
+  },
+  "hotel_seashell_assessment_appeal": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/bridal_lavatory",
+    "speaker": "bathroom_ai",
+    "pose": "neutral",
+    "text": [
+      {
+        "desc": "You address the ceiling."
+      },
+      {
+        "say": "I WANT TO APPEAL THAT ASSESSMENT.",
+        "who": "you"
+      },
+      {
+        "say": "On what grounds?",
+        "who": "bathroom_ai"
+      },
+      {
+        "say": "THERE ISN'T EVEN A TOILET IN HERE!",
+        "who": "you"
+      },
+      {
+        "if": {
+          "flag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "say": "That allegation is already on record.",
+        "who": "bathroom_ai"
+      },
+      {
+        "if": {
+          "flag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "say": "BECAUSE I REPORTED IT!",
+        "who": "you"
+      },
+      {
+        "if": {
+          "flag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "say": "Your corroborating testimony has been added.",
+        "who": "bathroom_ai"
+      },
+      {
+        "if": {
+          "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "say": "A missing-fixture report must first be entered into the record.",
+        "who": "bathroom_ai"
+      },
+      {
+        "desc": "Somewhere, an electronic form becomes slightly longer."
+      }
+    ],
+    "choices": [
+      {
+        "id": "appeal_file_missing",
+        "kind": "spoken",
+        "text": "FILE THE MISSING-TOILET COMPLAINT.",
+        "if": {
+          "notFlag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "to": "hotel_seashell_complaint"
+      },
+      {
+        "id": "appeal_other",
+        "kind": "action",
+        "text": "RETURN TO ANY UNTRIED ROOM INTERACTIONS.",
+        "if": {
+          "flag": "ch4_seashell_missing_toilet_complaint_filed"
+        },
+        "to": "hotel_seashell_room"
+      },
+      {
+        "id": "appeal_leave",
+        "kind": "action",
+        "text": "PUT THE SEASHELLS DOWN AND LEAVE.",
+        "to": "hotel_bridal_lavatory_park_exit"
+      }
+    ],
+    "effects": {
+      "set": {
+        "ch4_seashell_assessment_appealed": true
+      }
+    },
+    "notes": "If complaint exists, append corroboration; otherwise route to the approved missing-toilet complaint. No duplicate record or extra fee."
+  }
+}

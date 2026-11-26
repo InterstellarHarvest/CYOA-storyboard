@@ -1,0 +1,156 @@
+{
+  "title": "B2-14 v01 - Bridal lavatory and unexplained three seashells",
+  "branch": "art/ch4-b214-native-review-20261125",
+  "preservationBaseline": "436e83f43c01b0a64620056d44aabf14c61fb444",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "primaryAssetCount": 2,
+  "supplementalAssetCount": 0,
+  "assets": [
+    {
+      "id": "CH4-NEW-02",
+      "label": "Bridal lavatory",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "class": "main",
+      "proposedCanonicalKey": "scenes:grand_bellevue/bridal_lavatory",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-02-bridal-lavatory-v01.png",
+        "sha256": "522cc6a4c2e2d45f1aae7b3897a05380b86a2c70fccdba767576aa1520cabc04",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-02-bridal-lavatory-v01-4x.png",
+        "sha256": "15720ac50fed2787c12aebf70bc1c7c6402396318e2578626ebbd6653fd04892",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "nodes": [
+        "hotel_seashell_room",
+        "hotel_seashell_inspect",
+        "hotel_seashell_first_attempt",
+        "hotel_seashell_instructions",
+        "hotel_seashell_complaint",
+        "hotel_seashell_second_attempt",
+        "hotel_seashell_assessment_appeal"
+      ],
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false
+    },
+    {
+      "id": "CH4-NEW-09",
+      "label": "Three seashells",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "class": "Focus A",
+      "proposedCanonicalKey": "focus:grand_bellevue/three_seashells",
+      "canonicalAssetPath": null,
+      "runtimeBinding": null,
+      "native": {
+        "file": "native/CH4-NEW-09-three-seashells-v01.png",
+        "sha256": "70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6",
+        "dimensions": [
+          564,
+          278
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-09-three-seashells-v01-4x.png",
+        "sha256": "7bb0eed4df2c119386d0e76ab2e069b6a611a61102fa3880e3f65675b41d9728",
+        "dimensions": [
+          2256,
+          1112
+        ],
+        "mode": "RGB"
+      },
+      "nodes": [
+        "hotel_seashell_inspect"
+      ],
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false
+    }
+  ],
+  "references": [
+    {
+      "file": "references/approved-b212-dressing-room.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/bridal_dressing_room.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "role": "Approved hotel architecture/palette continuity",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-bureau.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "Approved main-scene detail/pixel benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-control-tower.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "role": "Approved main-scene materials/light benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-exposure.png",
+      "sourcePath": "assets/selected/art/focus/biology_park/exposure_dispenser_open.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "role": "Approved Focus rendering benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-aid-box.png",
+      "sourcePath": "assets/selected/art/focus/biology_park/aid_box_open.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "706686f3d0186b0c5e71fad428bb99e8715ec5a6faa5b4af4e629cc1e067b229",
+      "role": "Approved Focus physical-material benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch4-lobby.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "role": "Approved Grand Bellevue palette/material continuity",
+      "status": "APPROVED"
+    }
+  ],
+  "semanticContract": {
+    "shellCount": 3,
+    "smoothShell": true,
+    "ridgedShell": true,
+    "ordinaryThirdShell": true,
+    "sharedIvoryPalette": true,
+    "plumbingFixtures": 0,
+    "concealedFixtures": 0,
+    "aiPortrait": false,
+    "instructionalText": false,
+    "numberingOrSequenceCues": false,
+    "inventoryAssets": false,
+    "successfulOperationDepicted": false
+  },
+  "registryModified": false,
+  "narrativeGameplayOrEngineModified": false,
+  "nativeLayers": "evidence/native-layer-recipes.json",
+  "generationProvenance": "evidence/generation-provenance.json",
+  "noAdditionalStateReason": "Canonical attempts/instructions/complaint/appeal never reveal a working method or stable physical fixture. Rearrangement has no authored order. One main/Focus pair preserves that uncertainty without invented solution states."
+}

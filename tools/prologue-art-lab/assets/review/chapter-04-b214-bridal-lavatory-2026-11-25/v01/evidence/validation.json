@@ -1,0 +1,367 @@
+{
+  "passed": true,
+  "status": "UNSELECTED",
+  "artisticApproval": false,
+  "nativeWithoutSourcePixels": true,
+  "checks": [
+    {
+      "check": "Two primary candidates; no invented state assets",
+      "passed": true
+    },
+    {
+      "check": "room native RGB/dimensions",
+      "passed": true
+    },
+    {
+      "check": "room final hash",
+      "passed": true
+    },
+    {
+      "check": "room exact4x",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-clean-room-planes.png",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-architectural-duct-light.png",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-open-counter.png",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-contact-shadows.png",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-shell-smooth.png",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-shell-ridged.png",
+      "passed": true
+    },
+    {
+      "check": "room layer layers/room-shell-third.png",
+      "passed": true
+    },
+    {
+      "check": "room exact compositing replay",
+      "passed": true
+    },
+    {
+      "check": "room unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "room exactly three canonical shell identities",
+      "passed": true
+    },
+    {
+      "check": "room smooth neutral shell material only",
+      "passed": true
+    },
+    {
+      "check": "room ridged neutral shell material only",
+      "passed": true
+    },
+    {
+      "check": "room separate shell silhouettes 10",
+      "passed": true
+    },
+    {
+      "check": "room third neutral shell material only",
+      "passed": true
+    },
+    {
+      "check": "room separate shell silhouettes 20",
+      "passed": true
+    },
+    {
+      "check": "room separate shell silhouettes 21",
+      "passed": true
+    },
+    {
+      "check": "focus native RGB/dimensions",
+      "passed": true
+    },
+    {
+      "check": "focus final hash",
+      "passed": true
+    },
+    {
+      "check": "focus exact4x",
+      "passed": true
+    },
+    {
+      "check": "focus layer layers/focus-matching-wall.png",
+      "passed": true
+    },
+    {
+      "check": "focus layer layers/focus-solid-counter.png",
+      "passed": true
+    },
+    {
+      "check": "focus layer layers/focus-contact-shadows.png",
+      "passed": true
+    },
+    {
+      "check": "focus layer layers/focus-shell-smooth.png",
+      "passed": true
+    },
+    {
+      "check": "focus layer layers/focus-shell-ridged.png",
+      "passed": true
+    },
+    {
+      "check": "focus layer layers/focus-shell-third.png",
+      "passed": true
+    },
+    {
+      "check": "focus exact compositing replay",
+      "passed": true
+    },
+    {
+      "check": "focus unselected/unbound",
+      "passed": true
+    },
+    {
+      "check": "focus exactly three canonical shell identities",
+      "passed": true
+    },
+    {
+      "check": "focus smooth neutral shell material only",
+      "passed": true
+    },
+    {
+      "check": "focus ridged neutral shell material only",
+      "passed": true
+    },
+    {
+      "check": "focus separate shell silhouettes 10",
+      "passed": true
+    },
+    {
+      "check": "focus third neutral shell material only",
+      "passed": true
+    },
+    {
+      "check": "focus separate shell silhouettes 20",
+      "passed": true
+    },
+    {
+      "check": "focus separate shell silhouettes 21",
+      "passed": true
+    },
+    {
+      "check": "Canonical reference references/approved-b212-dressing-room.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical reference references/approved-ch2-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical reference references/approved-ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical reference references/approved-ch2-exposure.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical reference references/approved-ch2-aid-box.png",
+      "passed": true
+    },
+    {
+      "check": "Canonical reference references/approved-ch4-lobby.png",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-control-tower-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-control-tower-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-b212-dressing-room-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "approved-b212-dressing-room-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-exposure-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-exposure-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "shells-chapter2-native-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "shells-chapter2-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "room-chapter2-native-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "room-chapter2-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-09-three-seashells-v01-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-09-three-seashells-v01-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-aid-box-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-aid-box-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "seashells-source-native-native-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "seashells-source-native-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "lavatory-source-native-native-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "lavatory-source-native-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-bureau-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-bureau-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-02-bridal-lavatory-v01-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-02-bridal-lavatory-v01-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "room-focus-continuity-native-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "room-focus-continuity-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch4-lobby-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "approved-ch4-lobby-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "hotel-continuity-native-4x.png native source",
+      "passed": true
+    },
+    {
+      "check": "hotel-continuity-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "Comparison caption margins",
+      "passed": true
+    },
+    {
+      "check": "Source-isolated native replay: zero reference images available",
+      "passed": true
+    },
+    {
+      "check": "Source original/prompt hash source/lavatory-reference-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Source input references/approved-b212-dressing-room.png",
+      "passed": true
+    },
+    {
+      "check": "Source input references/approved-ch2-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Source original/prompt hash source/seashell-reference-prompt.txt",
+      "passed": true
+    },
+    {
+      "check": "Source input originals/lavatory-detailed-reference.png",
+      "passed": true
+    },
+    {
+      "check": "Source input references/approved-ch2-exposure.png",
+      "passed": true
+    },
+    {
+      "check": "Honest provenance",
+      "passed": true
+    },
+    {
+      "check": "Exact authored-node snapshot",
+      "passed": true
+    },
+    {
+      "check": "Canonical room and Focus mappings",
+      "passed": true
+    },
+    {
+      "check": "Authored smooth/ridged/ordinary distinction",
+      "passed": true
+    },
+    {
+      "check": "No source-authored operating instructions exposed",
+      "passed": true
+    },
+    {
+      "check": "No extra gameplay modes/conditions/registration",
+      "passed": true
+    },
+    {
+      "check": "Open counter / no concealed plumbing representation",
+      "passed": true
+    },
+    {
+      "check": "All baseline tracked blobs preserved",
+      "passed": true,
+      "baselineFiles": 669,
+      "selectedAssetFiles": 202,
+      "baseline": "436e83f43c01b0a64620056d44aabf14c61fb444"
+    },
+    {
+      "check": "Isolated art-review branch",
+      "passed": true
+    }
+  ]
+}

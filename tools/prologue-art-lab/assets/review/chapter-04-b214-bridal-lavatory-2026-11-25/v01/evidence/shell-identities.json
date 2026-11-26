@@ -1,0 +1,108 @@
+{
+  "room": [
+    {
+      "kind": "smooth",
+      "center": [
+        113,
+        100
+      ],
+      "width": 20,
+      "height": 13,
+      "mask": "masks/room-shell-smooth.png",
+      "bbox": [
+        104,
+        86,
+        124,
+        102
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    },
+    {
+      "kind": "ridged",
+      "center": [
+        157,
+        100
+      ],
+      "width": 21,
+      "height": 13,
+      "mask": "masks/room-shell-ridged.png",
+      "bbox": [
+        147,
+        86,
+        168,
+        102
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    },
+    {
+      "kind": "third",
+      "center": [
+        201,
+        100
+      ],
+      "width": 20,
+      "height": 13,
+      "mask": "masks/room-shell-third.png",
+      "bbox": [
+        192,
+        86,
+        212,
+        102
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    }
+  ],
+  "focus": [
+    {
+      "kind": "smooth",
+      "center": [
+        112,
+        188
+      ],
+      "width": 106,
+      "height": 77,
+      "mask": "masks/focus-shell-smooth.png",
+      "bbox": [
+        63,
+        108,
+        161,
+        194
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    },
+    {
+      "kind": "ridged",
+      "center": [
+        282,
+        189
+      ],
+      "width": 108,
+      "height": 78,
+      "mask": "masks/focus-shell-ridged.png",
+      "bbox": [
+        233,
+        108,
+        332,
+        196
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    },
+    {
+      "kind": "third",
+      "center": [
+        451,
+        188
+      ],
+      "width": 106,
+      "height": 76,
+      "mask": "masks/focus-shell-third.png",
+      "bbox": [
+        402,
+        109,
+        500,
+        194
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "onlyInput": "source/build.py",
+  "originalsAndReferencesAvailable": false,
+  "sourcePixelsTransferred": false,
+  "reproducedNativeHashes": {
+    "CH4-NEW-02": "522cc6a4c2e2d45f1aae7b3897a05380b86a2c70fccdba767576aa1520cabc04",
+    "CH4-NEW-09": "70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6"
+  },
+  "rendererOutput": {
+    "status": "UNSELECTED",
+    "assets": [
+      {
+        "file": "CH4-NEW-02-bridal-lavatory-v01.png",
+        "sha256": "522cc6a4c2e2d45f1aae7b3897a05380b86a2c70fccdba767576aa1520cabc04",
+        "dimensions": [
+          314,
+          206
+        ]
+      },
+      {
+        "file": "CH4-NEW-09-three-seashells-v01.png",
+        "sha256": "70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6",
+        "dimensions": [
+          564,
+          278
+        ]
+      }
+    ],
+    "nativeFromBlank": true,
+    "sourcePixelsTransferred": false
+  }
+}

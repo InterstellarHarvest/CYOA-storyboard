@@ -1,0 +1,86 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "generationDate": "2026-11-25",
+  "sources": [
+    {
+      "original": {
+        "file": "originals/lavatory-detailed-reference.png",
+        "sha256": "12206b3d8ad90273ce23add9ebea77fd5a0fe0e0bf2d515a3782603134d892d7",
+        "dimensions": [
+          1548,
+          1016
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "source/lavatory-reference-prompt.txt",
+      "promptSha256": "2e6402734de98a84a2f5f4eaa43f58f46735432383e14283c6f314be967ce08e",
+      "inputs": [
+        {
+          "file": "references/approved-b212-dressing-room.png",
+          "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+          "dimensions": [
+            314,
+            206
+          ],
+          "mode": "RGB"
+        },
+        {
+          "file": "references/approved-ch2-bureau.png",
+          "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+          "dimensions": [
+            314,
+            206
+          ],
+          "mode": "RGB"
+        }
+      ],
+      "inputRoles": [
+        "Approved hotel architecture/palette",
+        "Approved main-scene pixel/detail benchmark"
+      ]
+    },
+    {
+      "original": {
+        "file": "originals/seashells-detailed-reference.png",
+        "sha256": "294cfcb5f0dcc06640d4174577f897d0db4a7bb8eb5e89dbb77dbcb6089a97ac",
+        "dimensions": [
+          1786,
+          880
+        ],
+        "mode": "RGB"
+      },
+      "prompt": "source/seashell-reference-prompt.txt",
+      "promptSha256": "a2307f490f97908829bfe7a2721f8d6fdd642154a06886cc5e17354c4d50cf4a",
+      "inputs": [
+        {
+          "file": "originals/lavatory-detailed-reference.png",
+          "sha256": "12206b3d8ad90273ce23add9ebea77fd5a0fe0e0bf2d515a3782603134d892d7",
+          "dimensions": [
+            1548,
+            1016
+          ],
+          "mode": "RGB"
+        },
+        {
+          "file": "references/approved-ch2-exposure.png",
+          "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+          "dimensions": [
+            564,
+            278
+          ],
+          "mode": "RGB"
+        }
+      ],
+      "inputRoles": [
+        "New counter/room design continuity",
+        "Approved Focus material/pixel benchmark"
+      ]
+    }
+  ],
+  "sourceDerivedDesign": true,
+  "nativeRasterConstructedIndependently": true,
+  "sourcePixelsTransferred": false,
+  "whollyIndependentCreativeDesign": false,
+  "method": "Source references inform design only. Both final images are painted from blank native canvases with authored geometry, constant-colour material forms and separate shell layers/masks. Source PNGs are never read by source/build.py. Source reductions are diagnostic only.",
+  "nativeRecipe": "source/build.py"
+}
