@@ -1,0 +1,777 @@
+{
+  "passed": true,
+  "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+  "remoteBranch": "art/pavilion-temporary-staff-pass-review-20261126",
+  "baseMain": "89cf0adf09dfadba27bb82f87201160f68818b46",
+  "packageFiles": 65,
+  "immutableCanonicalInputs": 13,
+  "packageOnlyDiff": true,
+  "allPublicBytesAndHashesVerified": true,
+  "results": [
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/README.md",
+      "sha256": "f6eb355b223e19b747095d754569430cbfe750f918d79902b8f2a941346f31f4",
+      "bytes": 827,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/package_checksums.py",
+      "sha256": "5d1a5d2271161261b83860a7ee8eb0b492ca1f3ff6055b9ee0409995bcf239c2",
+      "bytes": 737,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/.gitignore",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "bytes": 19,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/README.md",
+      "sha256": "81e76be36147023f3cdb8d4d4928ce0b036b464a61d901814d57306503c3a07e",
+      "bytes": 5166,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/comparisons/chapter2-credential-comparison.png",
+      "sha256": "0ded0c9ee2b789cb9af47f000572d64a5c3a5e7a681e16e56659a06ebe5d8716",
+      "bytes": 167874,
+      "dimensions": [
+        1130,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/comparisons/chapter2-slot-benchmarks.png",
+      "sha256": "1e57837b07c1f173c24eea50898511e62761e17e75161a2e276a3865a72564b5",
+      "bytes": 14701,
+      "dimensions": [
+        384,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/comparisons/slot-inspection-identity.png",
+      "sha256": "1be12b1df6938b1e439ab87225aaa5d02502064760da86a6420e09d5d6b4697f",
+      "bytes": 7955,
+      "dimensions": [
+        661,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/checksums.json",
+      "sha256": "19ccd19cae36ba5c52b1d9169a2b2b4fb38975ef265e313891d6eb49a1731a96",
+      "bytes": 7265,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/controlling-sources.json",
+      "sha256": "71da743132bac9b9e169cb8c51be64db6ed69e004034d8d8a125d366ebba40cf",
+      "bytes": 1308,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/generation-receipt.json",
+      "sha256": "50d8464d3ec3dab1456a8bb73e3a428e757b26777bdbe32e5d93ff6ae9d9ea93",
+      "bytes": 613,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/chromium-candidate-0-1x.png",
+      "sha256": "f1f4fea40a137a29abe233e1927ce468acc64756dc5183731504ca9b3bb60e54",
+      "bytes": 26464,
+      "dimensions": [
+        2412,
+        322
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/chromium-candidate-0-4x.png",
+      "sha256": "c58fa920e167574e7d3cdc439e6ac92ad9785dffc247ba25402a7197841448ba",
+      "bytes": 29648,
+      "dimensions": [
+        2412,
+        610
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/chromium-candidate-1-1x.png",
+      "sha256": "c33268c5849de4a25adbe99637e04b6cb0e7e21e29c474d4b30e1352def0e72a",
+      "bytes": 35271,
+      "dimensions": [
+        2412,
+        677
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/chromium-candidate-1-4x.png",
+      "sha256": "c48bb5c49bd44a0f05dbe81588aedc62e93f9f5267b0d62b0d3494b1a67e5832",
+      "bytes": 49057,
+      "dimensions": [
+        2412,
+        2030
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/chromium-identity-2-1x.png",
+      "sha256": "6faa0cdfb2878d8a039f1b67e8b853d6455ae69fb4fcfafaa8a1589a56b56b24",
+      "bytes": 37180,
+      "dimensions": [
+        2412,
+        678
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/chromium-identity-2-4x.png",
+      "sha256": "4a78762577ffc913cd5ae03c828874140d24acf474e0d9405354dbb966ba6849",
+      "bytes": 50815,
+      "dimensions": [
+        2412,
+        2031
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/firefox-candidate-0-1x.png",
+      "sha256": "ee7cbdc30ecf5b86bee08449b13a734e6bcbe3654ed297cc7019d20164923350",
+      "bytes": 41203,
+      "dimensions": [
+        2412,
+        324
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/firefox-candidate-0-4x.png",
+      "sha256": "80510de0f81f36ff0009e1253b68c3aa700cc6f09620c99b291f920ca01722fc",
+      "bytes": 58051,
+      "dimensions": [
+        2412,
+        612
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/firefox-candidate-1-1x.png",
+      "sha256": "9706c7c5f259f5c4c57ce39bdb86b7afae9dab61ee41c94910fb04733d831f1f",
+      "bytes": 70957,
+      "dimensions": [
+        2412,
+        679
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/firefox-candidate-1-4x.png",
+      "sha256": "8b9537743909483694f2c84d01ffbf4fe761f902500f299f39deb21a0af64980",
+      "bytes": 198079,
+      "dimensions": [
+        2412,
+        2032
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/firefox-identity-2-1x.png",
+      "sha256": "d5a2df7dbeb4abe14ab9e2ab58cda3ab8394e89f1e246f5b8ae7b17fadea4ced",
+      "bytes": 75145,
+      "dimensions": [
+        2412,
+        680
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/firefox-identity-2-4x.png",
+      "sha256": "67d995c2b1764263692d4382fea16914e2e2429eb5b042711ce3b5bed20fcda3",
+      "bytes": 193430,
+      "dimensions": [
+        2412,
+        2033
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/local-browser/report.json",
+      "sha256": "5ac16bcda7e0af17a5473cfc88c2a528211ad5994dc67164eaf6b6a37ecd9300",
+      "bytes": 19563,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/online-provenance.json",
+      "sha256": "52dac2adc6e176aa41a107445bcd9b07ee45a758eaba234bef85de2de713ca02",
+      "bytes": 296,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/references.json",
+      "sha256": "f25f616ab9506f3a12f0f5f59b4ff29d1dffa7514798d63e3a2ee7ab4c26e2fa",
+      "bytes": 2369,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/evidence/technical-qa.json",
+      "sha256": "77476d6f04a8e9b04924d87b5408ccd618ef09f19feedcf15acac57ded1272c0",
+      "bytes": 4659,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/index.html",
+      "sha256": "f3bd302c0cab9d346a9e41f7261ce734f603a31e256168418e945ead3274b227",
+      "bytes": 6816,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_inspect-backing-and-shadow.png",
+      "sha256": "989f3d0ec68c62593b2ec57333e767025d1d2d51e5bd40ee9f792df1fbf41e0e",
+      "bytes": 2584,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_inspect-cardstock-and-laminate.png",
+      "sha256": "29ff41784cda928d1e21365d5655c5bea826944632aa9d9ef1166d6bf6b10626",
+      "bytes": 3492,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_inspect-institutional-printing.png",
+      "sha256": "16b6677b50e117065627fb1a53283d22b6d028411f2d0654d02ef13ad2cd41ed",
+      "bytes": 3288,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_inspect-punch-and-clip.png",
+      "sha256": "40281758fb4b4cc170d01f1c325f6d3d386b3ca94c58c068414a489b7e59c07d",
+      "bytes": 1960,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_slot-cardstock-and-laminate.png",
+      "sha256": "e60844d8ee32830f1d6501007d44ccdd74c32d690ddc320e9eb42794b62daf1e",
+      "bytes": 699,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_slot-institutional-printing.png",
+      "sha256": "48d4dff141c5293b9c162598bdd273230668c14ef13bb6c7fab1506c1ac2c291",
+      "bytes": 449,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/layers/pavilion_temporary_staff_pass_slot-punch-and-clip.png",
+      "sha256": "5a87822bf021f1f6c75b2c80a12c25797699aa4d72020b1eb432493f8609f7c0",
+      "bytes": 436,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/manifest.json",
+      "sha256": "1790461ec4819a904eeb7e70d5f193ce2f41e2037f3e811e4f9e116573527f86",
+      "bytes": 4890,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/native/pavilion_temporary_staff_pass_inspect.png",
+      "sha256": "527e17af4a27971d2d729441f8a74d097c5442df93f0161dc841d81ee1788e41",
+      "bytes": 6816,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/native/pavilion_temporary_staff_pass_slot.png",
+      "sha256": "662ecb2c15b0b70afd5e6a14a73dadab6090fc2f4c75a389f9f5a96ba06b59b5",
+      "bytes": 1226,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/online.html",
+      "sha256": "81467ef0e1c4762839011c7d47d4c136429a07cf2ac136c93bc6752b63d3e62a",
+      "bytes": 13917,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/originals/credential-design-reference.png",
+      "sha256": "bbb96a0f9d856deaef35a647534b2146e7021ff02e80d0bf7f0a74150c780b12",
+      "bytes": 2626090,
+      "dimensions": [
+        1404,
+        1120
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/ch2-acting_director_badge-inspect-4x.png",
+      "sha256": "fdc05421f70e406e24df777f32f355e213efeced33100d72402d4deb937a8292",
+      "bytes": 71836,
+      "dimensions": [
+        2260,
+        1804
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/ch2-bathroom_pass-inspect-4x.png",
+      "sha256": "8bb85d198874b2998a2854d20543fe0e7a3a47c37b7208bf5b1d2e843a7c2822",
+      "bytes": 478936,
+      "dimensions": [
+        2260,
+        1804
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/ch4-dispute-ticket-inspect-4x.png",
+      "sha256": "6e7f22e4f485b3685e2be6511456621d59d2a4ab316982953412413d777e87a6",
+      "bytes": 25863,
+      "dimensions": [
+        2260,
+        1804
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/chapter2-credential-comparison-4x.png",
+      "sha256": "fb547811139f44aae51eda9bc12c770208ce6facc9da2f4413f590265d7263d1",
+      "bytes": 286777,
+      "dimensions": [
+        4520,
+        1804
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/chapter2-slot-benchmarks-4x.png",
+      "sha256": "15f1baa8e1eb3150b3f5f7bc87af512faa98d831b50a2ae7c4e5a4605311ac75",
+      "bytes": 23806,
+      "dimensions": [
+        1536,
+        384
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/pavilion_temporary_staff_pass_inspect-4x.png",
+      "sha256": "ed7eb95523a6577484498b84abb7890064816ffde4064437e24532424e1ec0e9",
+      "bytes": 23323,
+      "dimensions": [
+        2260,
+        1804
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/pavilion_temporary_staff_pass_slot-4x.png",
+      "sha256": "346b5279923e3f099aae360fc4029947b75d2846f333d474efd0f81905f56a7c",
+      "bytes": 2651,
+      "dimensions": [
+        384,
+        384
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/previews/slot-inspection-identity-4x.png",
+      "sha256": "417ffd68a0ab2951d247dbb32a579a0dd221e20b52d31c31506932cd8038da8d",
+      "bytes": 26688,
+      "dimensions": [
+        2644,
+        1804
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/prompts/reference.txt",
+      "sha256": "ae8dc760f18109908f8187394c7fc0f749775c6ae3545f74be66c250608fe9db",
+      "bytes": 1769,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch2-acting_director_badge-inspect.png",
+      "sha256": "a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d",
+      "bytes": 40021,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch2-acting_director_badge-slot.png",
+      "sha256": "a09dae0d8201b6062c51e4f5cc99c1e49b77240b400e7dbf5107bb805bf56c44",
+      "bytes": 3680,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch2-bathroom_pass-inspect.png",
+      "sha256": "9c8527a3fd85cfeddc01ce4a85b74b04cb54063ffc30100be19497e73e7fa722",
+      "bytes": 288677,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch2-bathroom_pass-slot.png",
+      "sha256": "5ad9b6f94328d645173b4f0476f4bdde0bac07d4415ab2c7afcba36e8494355d",
+      "bytes": 8985,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch2-expo_examiner_badge-inspect.png",
+      "sha256": "bcbfbf9415eae2e9e1bcdc85eef0dc67a25524ededeb9bb2f3494c3f80b639ea",
+      "bytes": 144172,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch2-expo_examiner_badge-slot.png",
+      "sha256": "7347b7afd9b2509fa59270b9ef2db901429c50466a0a617c1ff324843721fa79",
+      "bytes": 1440,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/references/ch4-dispute-ticket-inspect.png",
+      "sha256": "493004874154a0037559aa3eb4393eb60d73fac4977577699245eb9154393eed",
+      "bytes": 8180,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/browser_qa.cjs",
+      "sha256": "85b3746eccf2f6fb401aa63ddf80aecea301fd7d3213b1b98925e594715886a6",
+      "bytes": 3216,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/build_art.py",
+      "sha256": "1d7647a9bf45529b6c1769d18fbaee77c604f0b7ac558ce634090c7c0fe53fc2",
+      "bytes": 12668,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/build_review.py",
+      "sha256": "bf51c2dc2b87eb48d08d27ed94d4d052e3106e85120adc54b7865b5a5a846aab",
+      "bytes": 9268,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/checksums.py",
+      "sha256": "a00a12d2afc1f2a06be046fa658324c6cafbd7e87e129cec8faea37d3738bb84",
+      "bytes": 784,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/pavilion_temporary_staff_pass_inspect-marks.json",
+      "sha256": "c3abd32e39631ebcb05b7a1ebe89f632bb7205af707b2dd4476c2db16dae51b5",
+      "bytes": 414918,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/pavilion_temporary_staff_pass_inspect.ora",
+      "sha256": "a913a331625b63b42f23cb5202866cb7db7cbfb807378b4dfec44406af72aae9",
+      "bytes": 19533,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/pavilion_temporary_staff_pass_slot-marks.json",
+      "sha256": "36f239d0834624ed47ecbf209ef0a3c126995159e1e7b0ba45ea9684eb301ed3",
+      "bytes": 33802,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/pavilion_temporary_staff_pass_slot.ora",
+      "sha256": "60ac97a0de5b3be3366855f0da505508aa7a7f6af7cedb2511e7df4d42257777",
+      "bytes": 3960,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/source/prepare_online.py",
+      "sha256": "f9b9badff7be31b906bf80379cfc5a7a260dfd35a50c51e1aadfab848b245a79",
+      "bytes": 1475,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "cc40a62530e48430ab69d9d3615cc91c5eb363a5",
+      "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/verify_public.py",
+      "sha256": "29277fba4a29795c686b6775129b484c99257dcded704dbaf6a72308631b53a8",
+      "bytes": 2968,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/art/items/expo_examiner_badge_slot.png",
+      "sha256": "7347b7afd9b2509fa59270b9ef2db901429c50466a0a617c1ff324843721fa79",
+      "bytes": 1440,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/art/items/expo_examiner_badge_inspect.png",
+      "sha256": "bcbfbf9415eae2e9e1bcdc85eef0dc67a25524ededeb9bb2f3494c3f80b639ea",
+      "bytes": 144172,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/art/items/acting_director_badge_slot.png",
+      "sha256": "a09dae0d8201b6062c51e4f5cc99c1e49b77240b400e7dbf5107bb805bf56c44",
+      "bytes": 3680,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/art/items/acting_director_badge_inspect.png",
+      "sha256": "a6a21d330139af8013d46f80dec7ad278d800d0b1b01c217fb0abd29d9544f3d",
+      "bytes": 40021,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/art/items/bathroom_pass_slot.png",
+      "sha256": "5ad9b6f94328d645173b4f0476f4bdde0bac07d4415ab2c7afcba36e8494355d",
+      "bytes": 8985,
+      "dimensions": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/art/items/bathroom_pass_inspect.png",
+      "sha256": "9c8527a3fd85cfeddc01ce4a85b74b04cb54063ffc30100be19497e73e7fa722",
+      "bytes": 288677,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "assets/selected/pending-integration/items/lot_53_dispute_ticket/inspect.png",
+      "sha256": "493004874154a0037559aa3eb4393eb60d73fac4977577699245eb9154393eed",
+      "bytes": 8180,
+      "dimensions": [
+        565,
+        451
+      ],
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "docs/129_PERMANENT_PIXEL_ART_PRODUCTION_STANDARD_20261122.md",
+      "sha256": "f1e0630531f644e3bfb8e33a2ad348cf4a6abaa7b17bf36dd0c61fab2e6b81cc",
+      "bytes": 8052,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "docs/152_CH4_ARTWORK_CLOSEOUT_AND_GAMEPLAY_HANDOFF_20261126.md",
+      "sha256": "fe9c5f0f93ce869f02589b6dfb2f7474c7a187bc6298c48366fae7283b16d499",
+      "bytes": 17068,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "story/chapters/chapter-03.reboot-candidate.json",
+      "sha256": "36ae178d05a9db7dd318c441e4d8681eaa674c28ced81df97dcaba6c1c5c0253",
+      "bytes": 35294,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "story/chapters/chapter-04.wip.json",
+      "sha256": "e71c2609ab78c4752cafa7fbcb42dc0db7bd3c8cbf366b7d70073584965d19ac",
+      "bytes": 198094,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "story/items.draft.json",
+      "sha256": "81e444383a9cd9ae4736cc69ac1ab51cd346a35afc7c426706ec85f4c26e1291",
+      "bytes": 17922,
+      "dimensions": null,
+      "passed": true
+    },
+    {
+      "commit": "89cf0adf09dfadba27bb82f87201160f68818b46",
+      "path": "story/artwork.draft.json",
+      "sha256": "39a3717010e736a36bcdd83d234345729839e02db2b132655f9f8013b3530d8e",
+      "bytes": 461516,
+      "dimensions": null,
+      "passed": true
+    }
+  ]
+}
