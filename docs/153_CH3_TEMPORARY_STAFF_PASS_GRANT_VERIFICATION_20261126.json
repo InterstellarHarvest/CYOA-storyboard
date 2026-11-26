@@ -171,10 +171,6 @@
   },
   {
    "ok": true,
-   "check": "Unchanged: story/artwork-preview.json"
-  },
-  {
-   "ok": true,
    "check": "Unchanged: story/death-presentations.export.json"
   },
   {
@@ -187,8 +183,28 @@
   },
   {
    "ok": true,
-   "check": "No image, selection or reference changed",
+   "check": "Only the two approved item PNGs are added; no other image, selection or reference changed",
+   "detail": [
+    "assets/selected/pending-integration/items/pavilion_temporary_staff_pass/inspect.png",
+    "assets/selected/pending-integration/items/pavilion_temporary_staff_pass/slot.png"
+   ]
+  },
+  {
+   "ok": true,
+   "check": "Selections 214 -> 216: every earlier preview entry identical; exactly the two item keys added"
+  },
+  {
+   "ok": true,
+   "check": "All 216 selected PNGs match their recorded SHA-256 (the 214 earlier bytes untouched)",
    "detail": []
+  },
+  {
+   "ok": true,
+   "check": "Approved slot: 96x96 RGBA, SHA-256 662ecb2c15b0…, byte-identical to the review source at a6a6bdb and ae35351, provenance recorded"
+  },
+  {
+   "ok": true,
+   "check": "Approved inspect: 565x451 RGB, SHA-256 527e17af4a27…, byte-identical to the review source at a6a6bdb and ae35351, provenance recorded"
   },
   {
    "ok": true,
@@ -246,11 +262,11 @@
   },
   {
    "ok": true,
-   "check": "Art brief slot restored: active, not-started, no image, same contract and path; archived note kept verbatim as history"
+   "check": "Art slot: approved/selected, runtime assetPath still null, same contract and path; first SHA-256 = the approved bytes; brief and archived notes kept verbatim"
   },
   {
    "ok": true,
-   "check": "Art brief inspect restored: active, not-started, no image, same contract and path; archived note kept verbatim as history"
+   "check": "Art inspect: approved/selected, runtime assetPath still null, same contract and path; first SHA-256 = the approved bytes; brief and archived notes kept verbatim"
   },
   {
    "ok": true,

@@ -2,10 +2,14 @@
 
 **Owner approval (Nate, 2026-11-26):** grant the existing item `pavilion_temporary_staff_pass` during the People's Pavilion temporary-presenter appointment. This resolves docs/152 §8 D-1 with option (a).
 
-**Status: REVIEW — HOLD, DO NOT MERGE.**
-- The change lives on the storyboard branch `story/ch3-temporary-staff-pass-grant-20261126` (draft PR).
-- It merges only after Nate approves the two new item images (§4). Then the storyboard and game can move together (§6).
-- No image was generated.
+**Status: APPROVED AND REGISTERED (storyboard PR #45).**
+- **Approved by Nate on 2026-11-26** (recorded in the PR #45 comments):
+  - the grant;
+  - the printer run, exactly as written;
+  - the item description, exactly as written;
+  - both v01 item images, unchanged.
+- **Registered:** both images, as approved selections (§4).
+- **Game integration** is separate: game issue #27 (§6).
 
 ## 1. The change
 
@@ -38,7 +42,7 @@
 
 No duplicate item is created.
 
-**For Nate to confirm — description.** The pre-reboot text "Provisional status authorizing one service inspection." contradicted the printed card and Chapter 4's two uses. It now uses only the approved card wording:
+**Description — approved by Nate exactly as written (2026-11-26).** The pre-reboot text "Provisional status authorizing one service inspection." contradicted the printed card and Chapter 4's two uses. It now uses only the approved card wording:
 
 > A PRINTED CARD FROM THE PEOPLE'S PAVILION: TEMPORARY STAFF. DEPARTMENT: HUMAN PRESENTATION. VALID UNTIL CORRECTED.
 
@@ -52,19 +56,33 @@ No duplicate item is created.
 
 No other record changes.
 
-## 4. Artwork requirement (blocking the merge)
+## 4. Artwork: approved and registered
 
-There are two new images, outside the Chapter 4 set of 63:
-- `items:pavilion_temporary_staff_pass#slot`, 96×96 RGBA with binary alpha;
-- `items:pavilion_temporary_staff_pass#inspect`, 565×451 RGB.
+Two images are an explicitly approved cross-chapter addition, outside the Chapter 4 set of 63. Both are **APPROVED / SELECTED, v01, unchanged**.
 
-They follow the normal UNSELECTED review → Nate selection → `register-art.mjs` flow. **This is the only actual blocker.**
+**Source:**
+- branch `art/pavilion-temporary-staff-pass-review-20261126`;
+- introduced in `a6a6bdb`, and byte-identical at the approved review head `ae35351`;
+- path `tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/native/`.
+
+| Key | Selected PNG | Format | SHA-256 |
+|---|---|---|---|
+| `items:pavilion_temporary_staff_pass#slot` | `assets/selected/pending-integration/items/pavilion_temporary_staff_pass/slot.png` | 96×96 RGBA, binary alpha | `662ecb2c15b0b70afd5e6a14a73dadab6090fc2f4c75a389f9f5a96ba06b59b5` |
+| `items:pavilion_temporary_staff_pass#inspect` | `assets/selected/pending-integration/items/pavilion_temporary_staff_pass/inspect.png` | 565×451 RGB | `527e17af4a27971d2d729441f8a74d097c5442df93f0161dc841d81ee1788e41` |
+
+**How they were registered:**
+- `register-art.mjs` (dry run, then real) copied the exact bytes, wrote the provenance to `story/artwork-preview.json` and raised both existing records from `not-started` to `approved`.
+- Each record's notes now begin with the owner approval, the source commit, the review head and the SHA-256. The importer reads that SHA-256 as the approved selection. The restored brief and the archived pre-reboot note follow verbatim.
+- `assetPath` stays `null` until the game integration.
+- The review package stays on its branch.
+- **Selections: 214 → 216.** `check-canon` reports 293 records (81 approved, 140 integrated, 67 not-started, 5 reused) and 216 previewed.
 
 ## 5. Route tests
 
-### Storyboard: `tools/sync/verify-ch3-staff-pass-grant.py` (PASS, 38 checks)
+### Storyboard: `tools/sync/verify-ch3-staff-pass-grant.py` (PASS, 41 checks)
 
 **Scope and preservation:**
+- the registration adds exactly the two PNGs; all 214 earlier preview entries and bytes are unchanged, and no reference file changed;
 - only the files listed in §7 differ from `89cf0ad`;
 - the split run rejoins to the original byte for byte;
 - the other 33 Chapter 3 nodes, Chapter 2, Chapter 4, the manifest, layout, sync contract, death export and all images are unchanged.
@@ -108,10 +126,10 @@ Every grant-only failure is either the missing item art or a pin that this appro
 
 The game pins a storyboard SHA (`story/canon.lock.json`, docs/97), so storyboard `main` can move without changing the game. The order avoids any placeholder build:
 
-1. **Nate reviews this branch:** the printer run and the item description (§2).
-2. **Artwork:** produce the two item images UNSELECTED, from the restored briefs; Nate selects them.
-3. **Storyboard:** register both images (`register-art.mjs`, status `approved`) on this branch or right after it. Then merge, so a single `main` revision carries the grant and its approved art. Pages and CI follow the normal flow.
-4. **Game (Gameplay PMO, isolated branch):**
+1. ~~Nate reviews this branch~~ — **done**: the narration and the description are approved.
+2. ~~Artwork~~ — **done**: v01 was approved unchanged.
+3. ~~Storyboard~~ — **done**: both images are registered on this branch, and PR #45 merges the grant and its approved art as one `main` revision.
+4. **Game (Gameplay PMO, isolated branch; tracked in game issue #27; not merged or deployed without Nate's separate approval):**
    1. copy the two approved PNGs to their suggested paths, bound through `runtime-settings.pendingArtBindings` (docs/104 §3);
    2. `sync.js pull --rev <that main SHA>`;
    3. `import.js` — it must stay on the **production profile**;
@@ -128,11 +146,12 @@ The game pins a storyboard SHA (`story/canon.lock.json`, docs/97), so storyboard
 |---|---|
 | `story/chapters/chapter-03.reboot-candidate.json` | the node edit in §1 (text edit, formatting preserved) |
 | `story/items.draft.json` | the description in §2 |
-| `story/artwork.draft.json` | the two restored briefs in §3 |
+| `story/artwork.draft.json` | the two restored briefs in §3, then approved with approval notes (§4) |
+| `story/artwork-preview.json`, `assets/selected/pending-integration/items/pavilion_temporary_staff_pass/{slot,inspect}.png` | the two registered selections (§4) |
 | `tools/storyboard/qa-smoke.mjs`, `tools/storyboard/qa-ch3-reboot-candidate.mjs` | the Chapter 3 narrative lock moves from `857ffdf` to `d0591d6`; the "no effects" invariant allows exactly this grant |
 | `tools/sync/verify-ch3-staff-pass-grant.py`, `docs/153_*` | this record and its verifier |
 | `docs/152_…HANDOFF…md` | dated addendum: D-1 decided, plus the omitted Chapter 3 → 4 exit hand-off |
 
 **Storyboard QA:** `check-canon`, `qa-smoke`, `qa-sync`, both Chapter 3 suites, `qa-ch3-reboot-candidate`, the death export check and `qa-static` all pass. Browser QA: `qa-browser` 26/26, `qa-timeline` 136/136, `qa-artwork-preview` 64/64, art-lab `qa-pages-site` 70/70 and `qa-browser` 106/106.
 
-**Not touched:** approved PNGs, selections, Chapter 4, the game repository, deployment and draft PR #32.
+**Not touched:** earlier approved PNGs, selections and references, Chapter 4, the game repository, deployment and draft PR #32.

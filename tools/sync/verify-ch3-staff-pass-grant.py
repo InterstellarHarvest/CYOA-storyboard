@@ -16,6 +16,7 @@ Checks, against canonical base 89cf0ad (docs/152 merged):
     reachable exactly on the two endings after the appointment.
 """
 import json
+import re
 import subprocess
 import sys
 from collections import deque
@@ -32,7 +33,15 @@ PRINTER_RUN = {'desc': "An administrative printer rattles and ejects a card: TEM
                        "DEPARTMENT: HUMAN PRESENTATION. VALID UNTIL CORRECTED. You pocket it. Apparently, you have been hired again."}
 PASS_ONLY = ['hotel_boiler_staff_access', 'hotel_collection_staff_pass', 'hotel_collection_staff_pass_authorized',
              'hotel_collection_staff_pass_first', 'hotel_collection_staff_pass_recognized']
-EXPECTED_FILES = {CH3, 'story/items.draft.json', 'story/artwork.draft.json', 'tools/storyboard/qa-smoke.mjs',
+SLOT_PNG = 'assets/selected/pending-integration/items/pavilion_temporary_staff_pass/slot.png'
+INSPECT_PNG = 'assets/selected/pending-integration/items/pavilion_temporary_staff_pass/inspect.png'
+ART_SOURCE = 'a6a6bdbc1d619ea75a8fe7ebb056b379db02eb4f'  # introduced the natives; identical at review head ae35351
+ART_HEAD = 'ae3535104d80c8c6f495a356a79ba7ebffc98ce1'
+ART_DIR = 'tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/native/'
+APPROVED_ART = {'slot': (SLOT_PNG, '662ecb2c15b0b70afd5e6a14a73dadab6090fc2f4c75a389f9f5a96ba06b59b5', (96, 96), 'RGBA'),
+                'inspect': (INSPECT_PNG, '527e17af4a27971d2d729441f8a74d097c5442df93f0161dc841d81ee1788e41', (565, 451), 'RGB')}
+EXPECTED_FILES = {CH3, 'story/items.draft.json', 'story/artwork.draft.json', 'story/artwork-preview.json', SLOT_PNG, INSPECT_PNG,
+                  'tools/storyboard/qa-smoke.mjs',
                   'tools/storyboard/qa-ch3-reboot-candidate.mjs', 'tools/sync/verify-ch3-staff-pass-grant.py',
                   'docs/152_CH4_ARTWORK_CLOSEOUT_AND_GAMEPLAY_HANDOFF_20261126.md',
                   'docs/153_CH3_TEMPORARY_STAFF_PASS_GRANT_20261126.md', 'docs/153_CH3_TEMPORARY_STAFF_PASS_GRANT_VERIFICATION_20261126.json'}
@@ -181,11 +190,29 @@ def main():
     changed = set(git('diff', '--name-only', BASE).decode().split()) | set(git('ls-files', '--others', '--exclude-standard').decode().split())
     check(changed <= EXPECTED_FILES, 'Only the approved files differ from base 89cf0ad', sorted(changed - EXPECTED_FILES))
     for p in ('story/chapters/chapter-03.draft.json', 'story/archives/chapter-03-pre-reboot-20261118.json', CH4, CH2,
-              'story/storyboard-manifest.json', 'story/artwork-preview.json', 'story/death-presentations.export.json',
+              'story/storyboard-manifest.json', 'story/death-presentations.export.json',
               'story/sync-contract.json', 'story/storyboard-layout.json'):
         check(git('rev-parse', BASE + ':' + p) == git('hash-object', p), 'Unchanged: ' + p)
-    sel = git('diff', '--name-only', BASE, '--', 'assets', 'tools/prologue-art-lab/assets').decode().split()
-    check(not sel, 'No image, selection or reference changed', sel)
+    sel = set(git('diff', '--name-only', BASE, '--', 'assets', 'tools/prologue-art-lab/assets').decode().split())
+    sel |= {f for f in git('ls-files', '--others', '--exclude-standard', '--', 'assets', 'tools/prologue-art-lab/assets').decode().split()}
+    check(sel == {SLOT_PNG, INSPECT_PNG}, 'Only the two approved item PNGs are added; no other image, selection or reference changed', sorted(sel))
+    import hashlib
+    from PIL import Image
+    bp, np_ = base('story/artwork-preview.json')['images'], now('story/artwork-preview.json')['images']
+    check(len(bp) == 214 and len(np_) == 216 and {k: v for k, v in np_.items() if k in bp} == bp and set(np_) - set(bp) == {'items:%s#slot' % ITEM, 'items:%s#inspect' % ITEM},
+          'Selections 214 -> 216: every earlier preview entry identical; exactly the two item keys added')
+    bad = [k for k, v in np_.items() if hashlib.sha256((ROOT / v['file']).read_bytes()).hexdigest() != v['sha256']]
+    check(not bad, 'All 216 selected PNGs match their recorded SHA-256 (the 214 earlier bytes untouched)', bad)
+    for side, (path, digest, size, mode) in APPROVED_ART.items():
+        pv = np_['items:%s#%s' % (ITEM, side)]
+        im = Image.open(ROOT / path)
+        alpha_ok = mode == 'RGB' or set(im.getchannel('A').histogram()[1:255]) == {0}
+        src_blob = git('rev-parse', '%s:%s%s_%s.png' % (ART_SOURCE, ART_DIR, ITEM, side)).strip()
+        check(hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest and pv['sha256'] == digest and pv['file'] == path
+              and im.size == size and im.mode == mode and alpha_ok
+              and src_blob == git('hash-object', path).strip() == git('rev-parse', '%s:%s%s_%s.png' % (ART_HEAD, ART_DIR, ITEM, side)).strip()
+              and pv['source'] == {'repo': 'InterstellarHarvest/CYOA-storyboard', 'ref': 'art/pavilion-temporary-staff-pass-review-20261126', 'commit': ART_SOURCE, 'path': ART_DIR + ITEM + '_' + side + '.png'},
+              'Approved %s: %s %s, SHA-256 %s…, byte-identical to the review source at a6a6bdb and ae35351, provenance recorded' % (side, 'x'.join(map(str, size)), mode, digest[:12]))
 
     # 2. The node edit.
     b3, n3 = base(CH3), now(CH3)
@@ -216,9 +243,13 @@ def main():
           'Every other artwork record unchanged')
     for side, dim in (('slot', '96x96'), ('inspect', '565x451')):
         o, r = ba['items'][ITEM][side], na['items'][ITEM][side]
-        check(r['status'] == 'not-started' and r['assetPath'] is None and r['dimensions'] == dim and r['suggestedFilename'] == o['suggestedFilename']
-              and r['notes'].startswith('ACTIVE ITEM BRIEF') and r['notes'].endswith(o['notes']) and 'ARCHIVED' not in r['notes'].split(o['notes'])[0],
-              'Art brief %s restored: active, not-started, no image, same contract and path; archived note kept verbatim as history' % side)
+        digest = APPROVED_ART[side][1]
+        first = r['notes'].split(o['notes'])[0]
+        check(r['status'] == 'approved' and r['assetPath'] is None and r['dimensions'] == dim and r['suggestedFilename'] == o['suggestedFilename']
+              and r['notes'].startswith('OWNER APPROVED AND SELECTED UNCHANGED') and r['notes'].endswith(o['notes'])
+              and 'Earlier note, superseded by this approval: ACTIVE ITEM BRIEF' in r['notes'] and digest in first.split('Earlier note')[0]
+              and 'ARCHIVED' not in first.split('Earlier note')[0] and re.search(r'SHA-256[^0-9a-f]{0,3}([0-9a-f]{64})', r['notes']).group(1) == digest,
+              'Art %s: approved/selected, runtime assetPath still null, same contract and path; first SHA-256 = the approved bytes; brief and archived notes kept verbatim' % side)
 
     # 4. Grant scope across the canon.
     m = now('story/storyboard-manifest.json')
