@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "candidates": 2,
+  "canonicalReferencesVerified": 7,
+  "controllingSourcesVerified": 6,
+  "nativeDimensionsModesPassed": true,
+  "binarySlotAlphaPassed": true,
+  "allPreviewsExact4x": true,
+  "editableLayerCompositeAndORAExact": true,
+  "requiredTextSafeZonesPassed": true,
+  "noGeneratedPixelsUsed": true,
+  "noGlobalQuantizationOrSharpening": true,
+  "artisticApproval": "PENDING NATE; technical QA is not visual approval",
+  "results": [
+    {
+      "id": "pavilion_temporary_staff_pass:slot",
+      "file": "native/pavilion_temporary_staff_pass_slot.png",
+      "status": "UNSELECTED",
+      "dimensions": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "sha256": "662ecb2c15b0b70afd5e6a14a73dadab6090fc2f4c75a389f9f5a96ba06b59b5",
+      "colours": 16,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "editableSource": "source/pavilion_temporary_staff_pass_slot.ora",
+      "marks": "source/pavilion_temporary_staff_pass_slot-marks.json",
+      "provenance": "Independently drawn on native canvas; generated reference pixels never sampled, traced, reduced or quantized",
+      "textLayout": [
+        {
+          "text": "STAFF",
+          "box": [
+            33,
+            52,
+            62,
+            59
+          ],
+          "scale": 1,
+          "safeZone": [
+            25,
+            51,
+            71,
+            60
+          ],
+          "layer": "institutional-printing"
+        }
+      ],
+      "layerCompositeExact": true,
+      "exact4xPreview": "previews/pavilion_temporary_staff_pass_slot-4x.png",
+      "exact4xSha256": "346b5279923e3f099aae360fc4029947b75d2846f333d474efd0f81905f56a7c",
+      "exact4xDimensions": [
+        384,
+        384
+      ]
+    },
+    {
+      "id": "pavilion_temporary_staff_pass:inspect",
+      "file": "native/pavilion_temporary_staff_pass_inspect.png",
+      "status": "UNSELECTED",
+      "dimensions": [
+        565,
+        451
+      ],
+      "mode": "RGB",
+      "sha256": "527e17af4a27971d2d729441f8a74d097c5442df93f0161dc841d81ee1788e41",
+      "colours": 25,
+      "alphaValues": null,
+      "editableSource": "source/pavilion_temporary_staff_pass_inspect.ora",
+      "marks": "source/pavilion_temporary_staff_pass_inspect-marks.json",
+      "provenance": "Independently drawn on native canvas; generated reference pixels never sampled, traced, reduced or quantized",
+      "textLayout": [
+        {
+          "text": "HP-03 / 0417",
+          "box": [
+            100,
+            151,
+            171,
+            158
+          ],
+          "scale": 1,
+          "safeZone": [
+            98,
+            148,
+            218,
+            167
+          ],
+          "layer": "institutional-printing"
+        },
+        {
+          "text": "P",
+          "box": [
+            440,
+            154,
+            450,
+            168
+          ],
+          "scale": 2,
+          "safeZone": [
+            437,
+            151,
+            459,
+            172
+          ],
+          "layer": "institutional-printing"
+        },
+        {
+          "text": "TEMPORARY STAFF",
+          "box": [
+            104,
+            200,
+            460,
+            228
+          ],
+          "scale": 4,
+          "safeZone": [
+            98,
+            198,
+            467,
+            230
+          ],
+          "layer": "institutional-printing"
+        },
+        {
+          "text": "PEOPLE'S PAVILION",
+          "box": [
+            131,
+            250,
+            434,
+            271
+          ],
+          "scale": 3,
+          "safeZone": [
+            95,
+            247,
+            470,
+            274
+          ],
+          "layer": "institutional-printing"
+        },
+        {
+          "text": "DEPARTMENT: HUMAN PRESENTATION",
+          "box": [
+            103,
+            295,
+            461,
+            309
+          ],
+          "scale": 2,
+          "safeZone": [
+            94,
+            291,
+            471,
+            313
+          ],
+          "layer": "institutional-printing"
+        },
+        {
+          "text": "VALID UNTIL CORRECTED",
+          "box": [
+            157,
+            336,
+            407,
+            350
+          ],
+          "scale": 2,
+          "safeZone": [
+            103,
+            333,
+            462,
+            353
+          ],
+          "layer": "institutional-printing"
+        }
+      ],
+      "layerCompositeExact": true,
+      "exact4xPreview": "previews/pavilion_temporary_staff_pass_inspect-4x.png",
+      "exact4xSha256": "ed7eb95523a6577484498b84abb7890064816ffde4064437e24532424e1ec0e9",
+      "exact4xDimensions": [
+        2260,
+        1804
+      ]
+    }
+  ]
+}
