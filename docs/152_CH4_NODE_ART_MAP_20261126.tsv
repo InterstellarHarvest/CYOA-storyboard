@@ -1,0 +1,121 @@
+node	mode	scene	mainScene	speaker	portrait	background	focus	endingArt	deathPopup	conditionalReferences
+hotel_entry_dispatch	narrative	grand_bellevue/arrival	TEXT-LED (C1)							
+entry_locomotion_fail	narrative	grand_bellevue/loading_lane	CH4-B2-06							
+entry_presenter_help_end	narrative	grand_bellevue/service_alley	CH4-B2-07							
+entry_paper_problem_end	narrative	grand_bellevue/forecourt	TEXT-LED (C1)							
+entry_attendant_honest_end	narrative	grand_bellevue/service_alley	CH4-B2-07							
+entry_door_dash_fail	narrative	grand_bellevue/forecourt	TEXT-LED (C1)							
+entry_door_reverse_end	narrative	grand_bellevue/wedding_entry	REUSE CH4-05 (C3)							
+entry_backstage_exit	narrative	grand_bellevue/lobby	CH4-01							
+hotel_lobby_view	narrative	grand_bellevue/lobby	CH4-01							
+hotel_auctioneer_arrival	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				lobby-doors-removed
+hotel_service_arrival	narrative	grand_bellevue/loading_dock	CH4-B2-08							
+hotel_service_foreman	dialogue	grand_bellevue/loading_dock	CH4-B2-08	hotel_salvage_foreman:annoyed	CH4-B2-10	CH4-B2-11				
+hotel_wedding_arrival	dialogue	grand_bellevue/ballroom	CH4-05	hotel_wedding_organizer:urgent	CH4-NEW-06	CH4-NEW-18				
+hotel_restroom_entry	narrative	grand_bellevue/restroom	CH4-04							
+hotel_restroom_plumber	dialogue	grand_bellevue/restroom	CH4-04	hotel_plumber:worried	CH4-B2-01	CH4-B2-03				restroom-active-leak-main, restroom-active-leak-close
+hotel_valve_braced	narrative	grand_bellevue/restroom	CH4-04							restroom-contained-main
+hotel_valve_flood	narrative	grand_bellevue/restroom	CH4-04							restroom-flood-onset-main
+hotel_pipe_tunnel	narrative	grand_bellevue/maintenance	CH4-B2-12							
+hotel_isolator_panel	focus	grand_bellevue/maintenance	CH4-B2-12				CH4-B2-18			
+hotel_isolator_restrooms	narrative	grand_bellevue/maintenance	CH4-B2-12							
+hotel_isolator_entire	narrative	grand_bellevue/maintenance	CH4-B2-12							
+hotel_stall_lot_claimed	narrative	grand_bellevue/restroom	CH4-04							restroom-stall-lifting-main
+hotel_maintenance_dock_exit	narrative	grand_bellevue/service_stairs	CH4-B2-09							
+hotel_wheel_buyer_lead	dialogue	grand_bellevue/restroom	CH4-04	hotel_plumber_assistant:pleased	CH4-B2-02	CH4-B2-03				restroom-active-leak-close
+hotel_lot_receipt_study	focus	grand_bellevue/restroom	CH4-04				CH4-B2-04			
+hotel_commodore_bixby	dialogue	grand_bellevue/refreshment_table	REUSE CH4-05 (C3)	hotel_commodore_bixby:delighted	CH4-NEW-05	CH4-NEW-18				CH4-NEW-18-wheel-mounted-v01, CH4-NEW-18-water-emerging-v01
+hotel_bixby_emergency	dialogue	grand_bellevue/refreshment_table	REUSE CH4-05 (C3)	hotel_commodore_bixby:delighted	CH4-NEW-05	CH4-NEW-18				CH4-NEW-18-wheel-removed-v01, CH4-NEW-18-water-emerging-v01
+hotel_bixby_trade	dialogue	grand_bellevue/refreshment_table	REUSE CH4-05 (C3)	hotel_commodore_bixby:delighted	CH4-NEW-05	CH4-NEW-18				CH4-NEW-18-rubber-band-fender-v01, CH4-NEW-18-water-emerging-v01
+hotel_wheel_return	narrative	grand_bellevue/restroom	CH4-04							restroom-contained-main
+hotel_key_master_cabinet	focus	grand_bellevue/restroom	CH4-04				CH4-B2-05			restroom-contained-main
+hotel_stall_porter_protest	dialogue	grand_bellevue/restroom	CH4-04	hotel_porter:businesslike	CH4-B2-20	CH4-B2-03				
+hotel_auction_reopen_53	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				
+hotel_auction_testimonial	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:delighted	CH4-B2-31	CH4-02				
+hotel_auction_bride_ally	dialogue	grand_bellevue/lobby	CH4-01	hotel_bride:determined	CH4-B2-26	CH4-02				
+hotel_auction_dispute_ticket	dialogue	grand_bellevue/lobby	CH4-01	hotel_auction_clerk:precise	CH4-B2-27	CH4-02				
+hotel_auction_chair_lot31	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				
+hotel_chair_vegetation_inspection	dialogue	grand_bellevue/lobby	CH4-01	hotel_porter:uncertain	CH4-B2-21	CH4-02				
+hotel_chair_examiner_inspection	dialogue	grand_bellevue/lobby	CH4-01	hotel_auction_clerk:precise	CH4-B2-27	CH4-02				
+hotel_chair_stapler_stealth	narrative	grand_bellevue/lobby	CH4-01							CH4-B2-24-open-v01
+hotel_chair_stapler_caught	dialogue	grand_bellevue/lobby	CH4-01	hotel_porter:alarmed	CH4-B2-32	CH4-02				
+hotel_chair_staff_escort	dialogue	grand_bellevue/lobby	CH4-01	hotel_porter:practical	CH4-B2-22	CH4-02				
+hotel_chair_ring_focus	focus	grand_bellevue/lobby	CH4-01				CH4-B2-24			CH4-B2-24-open-v01
+hotel_ring_retrieved	narrative	grand_bellevue/lobby	CH4-01							
+hotel_ring_slips	narrative	grand_bellevue/lobby	CH4-01							CH4-B2-25-slipped-v01
+hotel_stall_crane_success	narrative	grand_bellevue/restroom	CH4-04							restroom-stall-lifting-main
+fatal_stall_final_occupancy	narrative	grand_bellevue/restroom	CH4-04					CH4-NEW-14	ch4_final_occupancy	
+hotel_chair_follow_collection	narrative	grand_bellevue/service_passage	CH4-B2-19							
+hotel_chair_staff_escort_loading	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:practical	CH4-B2-22	CH4-B2-23				
+hotel_ring_in_pocket	narrative	grand_bellevue/lobby	CH4-01							
+hotel_ring_show_bride	dialogue	grand_bellevue/lobby	CH4-01	hotel_bride:determined	CH4-B2-26	CH4-02				
+hotel_bride_ring_handover	dialogue	grand_bellevue/lobby	CH4-01	hotel_bride:grateful	CH4-B2-29	CH4-02				
+hotel_bride_ring_bathroom	dialogue	grand_bellevue/lobby	CH4-01	hotel_bride:helpful	CH4-B2-30	CH4-02				
+hotel_collection_stairs	narrative	grand_bellevue/service_passage	CH4-B2-19							
+hotel_collection_ring_focus	focus	grand_bellevue/service_passage	CH4-B2-19				CH4-B2-25			CH4-B2-25-slipped-v01
+hotel_collection_ring_porter_recovery	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:practical	CH4-B2-22	CH4-B2-23				CH4-B2-25-recovered-v01
+hotel_collection_ring_stapler_recovery	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:businesslike	CH4-B2-20	CH4-B2-23				CH4-B2-25-recovered-v01
+hotel_collection_ring_in_pocket	narrative	grand_bellevue/service_passage	CH4-B2-19							
+hotel_collection_ring_to_bride	narrative	grand_bellevue/lobby	CH4-01							
+hotel_collection_porters_groom_clue	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:practical	CH4-B2-22	CH4-B2-23				
+hotel_collection_slip_unnoticed	narrative	grand_bellevue/boiler_access	CH4-B2-13							
+hotel_collection_slip_spotted	dialogue	grand_bellevue/boiler_access	CH4-B2-13	hotel_porter:alarmed	CH4-B2-32	CH4-B2-23				
+hotel_collection_staff_pass	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:uncertain	CH4-B2-21	CH4-B2-23				
+hotel_collection_staff_pass_first	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:uncertain	CH4-B2-21	CH4-B2-23				
+hotel_collection_staff_pass_recognized	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:practical	CH4-B2-22	CH4-B2-23				
+hotel_collection_staff_pass_authorized	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_porter:practical	CH4-B2-22	CH4-B2-23				
+hotel_staff_lavatory_storage	dialogue	grand_bellevue/staff_lavatory	CH4-B2-37	hotel_wedding_assistant:busy	CH4-B2-38	CH4-B2-41				
+hotel_staff_lavatory_move_boxes	dialogue	grand_bellevue/staff_lavatory	CH4-B2-37	hotel_wedding_assistant:apologetic	CH4-B2-40	CH4-B2-41				CH4-B2-37-cleared-v01, CH4-B2-41-cleared-v01
+hotel_staff_lavatory_temporary_use_permit	dialogue	grand_bellevue/staff_lavatory	CH4-B2-37	hotel_wedding_assistant:apologetic	CH4-B2-40	CH4-B2-41				CH4-B2-37-permit-v01, CH4-B2-41-permit-v01
+hotel_boiler_pressure_intro	dialogue	grand_bellevue/boiler_room	CH4-B2-42	hotel_boiler_engineer:careful	CH4-B2-43	CH4-B2-47				
+hotel_boiler_pressure_relieved	dialogue	grand_bellevue/boiler_room	CH4-B2-42	hotel_boiler_engineer:pleased	CH4-B2-44	CH4-B2-47				CH4-B2-42-relieved-v01, CH4-B2-47-relieved-v01
+fatal_boiler_pressed_and_steamed	narrative	grand_bellevue/boiler_room	CH4-B2-42					CH4-NEW-15	ch4_pressed_and_steamed	
+hotel_boiler_dispute_hold	dialogue	grand_bellevue/boiler_room	CH4-B2-42	hotel_boiler_engineer:defeated	CH4-B2-45	CH4-B2-47				CH4-B2-42-inspection-hold-v01, CH4-B2-47-inspection-hold-v01
+hotel_boiler_staff_access	dialogue	grand_bellevue/boiler_room	CH4-B2-42	hotel_boiler_engineer:careful	CH4-B2-43	CH4-B2-47				CH4-B2-42-staff-access-v01, CH4-B2-47-staff-access-v01
+hotel_boiler_groom_encounter	dialogue	grand_bellevue/maintenance	CH4-B2-12	hotel_groom:nervous	CH4-B2-14	CH4-B2-17				
+hotel_groom_show_ring	dialogue	grand_bellevue/maintenance	CH4-B2-12	hotel_groom:relieved	CH4-B2-15	CH4-B2-17				
+hotel_lot61_pod_auction	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				lot61-open
+hotel_lot61_pod_escaped	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:delighted	CH4-B2-31	CH4-02				lot61-packed
+fatal_lot61_folded	narrative	grand_bellevue/lobby	CH4-01					CH4-NEW-16	ch4_folded_for_convenience	
+hotel_lot61_pod_declined	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:disappointed	CH4-B2-35	CH4-02				lot61-open
+hotel_groom_directions_to_lavatory	dialogue	grand_bellevue/maintenance	CH4-B2-12	hotel_groom:nervous	CH4-B2-14	CH4-B2-17				
+hotel_groom_leave_behind	dialogue	grand_bellevue/maintenance	CH4-B2-12	hotel_groom:nervous	CH4-B2-14	CH4-B2-17				
+hotel_service_park_exit	narrative	grand_bellevue/loading_dock	CH4-B2-08							
+hotel_boiler_service_passage	narrative	grand_bellevue/maintenance	CH4-B2-12							
+hotel_bridal_organizer	dialogue	grand_bellevue/ballroom	CH4-05	hotel_wedding_organizer:urgent	CH4-NEW-06	CH4-NEW-18				
+hotel_bride_service_shortcut	narrative	grand_bellevue/service_passage	CH4-B2-19							
+hotel_wedding_service_shortcut	narrative	grand_bellevue/service_passage	CH4-B2-19							
+hotel_bridal_room	narrative	grand_bellevue/bridal_dressing_room	CH4-NEW-01							
+hotel_bridal_door_knock	dialogue	grand_bellevue/bridal_dressing_room	CH4-NEW-01	bridal_door_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_door_focus	focus	grand_bellevue/bridal_dressing_room	CH4-NEW-01				CH4-NEW-07			CH4-NEW-07-focus-provisional-v02, CH4-NEW-07-inspect-locked-v03, CH4-NEW-07-inspect-provisional-v03
+hotel_bridal_criteria	dialogue	grand_bellevue/bridal_dressing_room	CH4-NEW-01	bridal_door_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_false_claim	dialogue	grand_bellevue/bridal_dressing_room	CH4-NEW-01	bridal_door_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_emergency_override	dialogue	grand_bellevue/bridal_dressing_room	CH4-NEW-01	bridal_door_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_ring_argument	dialogue	grand_bellevue/bridal_dressing_room	CH4-NEW-01	bridal_door_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_gown_focus	focus	grand_bellevue/bridal_dressing_room	CH4-NEW-01				CH4-NEW-08			
+hotel_bridal_gown_motor	narrative	grand_bellevue/bridal_dressing_room	CH4-NEW-01							CH4-NEW-08-manual-slack-revealed-v01
+hotel_bridal_gown_camera	dialogue	grand_bellevue/bridal_dressing_room	CH4-NEW-01	bridal_door_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_gown_try	narrative	grand_bellevue/bridal_dressing_room	CH4-NEW-01							
+fatal_bridal_made_to_measure	narrative	grand_bellevue/bridal_dressing_room	CH4-NEW-01					CH4-NEW-17	ch4_made_to_measure	
+hotel_bridal_autofit_survived	narrative	grand_bellevue/bridal_dressing_room	CH4-NEW-01							
+hotel_bridal_corridor_exit	narrative	grand_bellevue/bridal_corridor	REUSE CH4-B2-19 (C3)							
+hotel_bridal_corridor_park_exit	narrative	grand_bellevue/courtyard	TEXT-LED (C1)							
+hotel_seashell_room	narrative	grand_bellevue/bridal_lavatory	CH4-NEW-02							
+hotel_seashell_inspect	focus	grand_bellevue/bridal_lavatory	CH4-NEW-02				CH4-NEW-09			
+hotel_seashell_first_attempt	narrative	grand_bellevue/bridal_lavatory	CH4-NEW-02							
+hotel_seashell_instructions	dialogue	grand_bellevue/bridal_lavatory	CH4-NEW-02	bathroom_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_seashell_complaint	dialogue	grand_bellevue/bridal_lavatory	CH4-NEW-02	bathroom_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_seashell_second_attempt	dialogue	grand_bellevue/bridal_lavatory	CH4-NEW-02	bathroom_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_seashell_assessment_appeal	dialogue	grand_bellevue/bridal_lavatory	CH4-NEW-02	bathroom_ai:neutral	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_bridal_lavatory_park_exit	narrative	grand_bellevue/courtyard	TEXT-LED (C1)							
+hotel_ring_inspect_inscription	narrative	grand_bellevue/lobby	CH4-01							
+hotel_bridal_door_options	narrative	grand_bellevue/bridal_dressing_room	CH4-NEW-01							
+hotel_upper_salvage_arrival	dialogue	grand_bellevue/upper_salvage	CH4-NEW-03	hotel_salvage_clerk:practical	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_upper_salvage_clerk_directions	dialogue	grand_bellevue/upper_salvage	CH4-NEW-03	hotel_salvage_clerk:practical	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_stall_public_corridor_walk	dialogue	grand_bellevue/public_corridor	CH4-NEW-04	hotel_wedding_guest:curious	VOICE-ONLY (C2)	none (Narrative B)				
+hotel_flooded_public_corridor	dialogue	grand_bellevue/public_corridor	CH4-NEW-04	hotel_attendant:professional	VOICE-ONLY (C2)	none (Narrative B)				CH4-NEW-04-public-corridor-flood-v04
+hotel_water_outage_confirmation	dialogue	grand_bellevue/service_passage	CH4-B2-19	hotel_boiler_engineer:careful	CH4-B2-43	CH4-B2-23				
+hotel_auctioneer_restroom_inventory	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				
+hotel_auctioneer_lot14_dispute	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				
+hotel_auctioneer_lot14_recall	dialogue	grand_bellevue/lobby	CH4-01	hotel_auctioneer:showman	CH4-03	CH4-02				
+hotel_freight_wc_misunderstanding	dialogue	grand_bellevue/freight_lift	REUSE CH4-NEW-03 (C3)	hotel_lift_voice:neutral	VOICE-ONLY (C2)	none (Narrative B)				
