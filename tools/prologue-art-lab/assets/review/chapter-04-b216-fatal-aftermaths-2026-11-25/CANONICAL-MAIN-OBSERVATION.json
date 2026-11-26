@@ -1,0 +1,27 @@
+{
+  "canonicalBaselineAtProductionStart": "436e83f43c01b0a64620056d44aabf14c61fb444",
+  "observedMainAtPublication": "8fc6d196846a25f3a303a1a7ed53d120e07f13df",
+  "reason": "Independent PR #38 registered the approved B2-14 artwork while the isolated B2-16 batch was in progress. No B2-16 commit was merged or registered. No main/registry/other-batch edits performed by this production task.",
+  "pr32Unchanged": "f320e63934c13e27fd13b9482d0cfba58911362d",
+  "externalMainChanges": [
+    "assets/selected/pending-integration/focus/grand_bellevue/three_seashells.png",
+    "assets/selected/pending-integration/scenes/grand_bellevue/bridal_lavatory.png",
+    "docs/146_CH4_B214_APPROVAL_COMPLETION_20261125.md",
+    "docs/146_CH4_B214_VERIFICATION_20261125.json",
+    "story/artwork-preview.json",
+    "story/artwork.draft.json",
+    "tools/sync/verify-ch4-b214-selection.py"
+  ],
+  "newSelectedFiles": [
+    {
+      "path": "assets/selected/pending-integration/focus/grand_bellevue/three_seashells.png",
+      "sha256": "70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6",
+      "readOnlyVerified": true
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/bridal_lavatory.png",
+      "sha256": "85fb565d8c2f79525a95ada44a9f9e3c05e2cee374712e520488c88153ee7480",
+      "readOnlyVerified": true
+    }
+  ]
+}
