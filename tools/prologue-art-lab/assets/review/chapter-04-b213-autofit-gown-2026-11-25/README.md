@@ -1,0 +1,11 @@
+# Chapter4 B2-13 v01 — AutoFit gown review
+
+**One primary Focus + one closer motor-discovery reference. Both UNSELECTED.**
+
+[Public browser gallery](https://htmlpreview.github.io/?https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/dba3e09b2a1fd9428705cbf2d6e3658fc226732a/tools/prologue-art-lab/assets/review/chapter-04-b213-autofit-gown-2026-11-25/v01/online.html) · [The two candidates, exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/dba3e09b2a1fd9428705cbf2d6e3658fc226732a/tools/prologue-art-lab/assets/review/chapter-04-b213-autofit-gown-2026-11-25/v01/previews/primary-and-motor-discovery-native-4x.png) · [Chapter2 comparison, exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/dba3e09b2a1fd9428705cbf2d6e3658fc226732a/tools/prologue-art-lab/assets/review/chapter-04-b213-autofit-gown-2026-11-25/v01/previews/chapter2-focus-benchmarks-native-4x.png) · [Approved B2-12 continuity, exact4×](https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/dba3e09b2a1fd9428705cbf2d6e3658fc226732a/tools/prologue-art-lab/assets/review/chapter-04-b213-autofit-gown-2026-11-25/v01/previews/b212-continuity-native-4x.png).
+
+[Publication / exact hashes / boundaries](PUBLICATION-20261125.md) · [Method and replay](v01/README.md) · [Authored condition handoff](v01/CONDITION-AND-INTEGRATION-HANDOFF.md) · [Manifest](v01/manifest.json) · [Public byte verification](PUBLIC-BYTE-VERIFICATION.json) · [Public browser verification](public-browser-v01/report.json).
+
+Both assets are564×278 opaque RGB, independently raster-constructed at native resolution with zero reference-pixel transfer. The generated detailed source is reference only. The wide view keeps labels physically small and the manual release concealed. The closer reference reveals the release/warning and slack cables within the authored motor-examination sequence; no redundant third production state or extra Focus key is introduced.
+
+Baseline `436e83f43c01b0a64620056d44aabf14c61fb444` includes completed B2-12 registration. Approved images, hashes, narrative, gameplay, engine, canonical main and PR#32 remain untouched. No production registration or bindings; next batch waits for owner review.
