@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "candidateCount": 3,
+  "dimensionsAndOpaqueRGBPassed": true,
+  "allExactNearestNeighbor4xPassed": true,
+  "immutableInputsVerified": 8,
+  "exactRGBMasksPassed": true,
+  "zeroOutsideAllowedChanges": true,
+  "editableLayersAndORAExact": true,
+  "generatedReferencePixelsUsed": false,
+  "globalRecolouringOrQuantization": false,
+  "results": [
+    {
+      "name": "lobby-doors-removed",
+      "sha256": "e2aa3835dca0edf1e76b93df2a3cf628db8dc5ff8f56c1f5df8e6188ea7d218e",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "changedPixels": 2585,
+      "outsideAllowedChanges": 0,
+      "protectedFigureFurnitureChanges": 0,
+      "layerCompositeExact": true,
+      "openRasterMergedPixelsExact": true
+    },
+    {
+      "name": "lot61-open",
+      "sha256": "3913c8ad89c0245c31827f1933926ff0d1a00ec9da71f34dfa9818ff222c42b5",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "changedPixels": 7502,
+      "outsideAllowedChanges": 0,
+      "protectedFigureFurnitureChanges": 0,
+      "layerCompositeExact": true,
+      "openRasterMergedPixelsExact": true
+    },
+    {
+      "name": "lot61-packed",
+      "sha256": "f3c27be75a18007850f8eb9bff7ae71f031063aa44735f9bfbd24bf5d876b558",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "changedPixels": 3287,
+      "outsideAllowedChanges": 0,
+      "protectedFigureFurnitureChanges": 0,
+      "layerCompositeExact": true,
+      "openRasterMergedPixelsExact": true
+    }
+  ]
+}

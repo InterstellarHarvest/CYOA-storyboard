@@ -1,0 +1,236 @@
+{
+  "hotel_lobby_view": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "text": "The hotel's lobby is magnificent. Crystal chandeliers, immense flower arrangements, an orchestra playing somewhere beyond the ballroom doors.\n\nAt the far end of the lobby is a pair of restroom doors. You begin walking toward them.\n\nThen someone shouts. SOLD! SIX HUNDRED AND FORTY!",
+    "choices": [
+      {
+        "id": "approach_auctioneer",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_auctioneer_arrival"
+      }
+    ]
+  },
+  "hotel_auctioneer_arrival": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auctioneer",
+    "pose": "showman",
+    "text": [
+      {
+        "desc": "An elderly gentleman in a crimson dinner jacket stands behind a wooden auction podium. He gestures toward two workmen."
+      },
+      "SOLD! SIX HUNDRED AND FORTY!",
+      {
+        "desc": "The workmen approach the restroom entrance. One starts unscrewing the hinges."
+      },
+      {
+        "say": "Papa, you're selling the bathrooms!",
+        "who": "hotel_bride"
+      },
+      "The doors, darling. Only the doors.",
+      {
+        "desc": "A workman carries away the first restroom door. You glance through the entrance toward the remaining stalls."
+      }
+    ],
+    "choices": [
+      {
+        "id": "public_a1_restroom",
+        "kind": "action",
+        "text": "WALK STRAIGHT INTO THE RESTROOM WHILE THE WORKMEN REMOVE THE DOORS.",
+        "to": "hotel_restroom_entry"
+      },
+      {
+        "id": "public_a2_auctioneer",
+        "kind": "spoken",
+        "text": "HAVE YOU SOLD ALL THE RESTROOMS, OR IS THERE ONE LEFT?",
+        "to": "hotel_auctioneer_restroom_inventory"
+      }
+    ]
+  },
+  "hotel_restroom_entry": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/restroom",
+    "text": "You walk directly between the workmen carrying away the restroom doors. Neither attempts to stop you. One even steps aside politely.\n\nYou enter. The bathroom is immaculate. Polished tiles. Clean sinks. Fresh towels.\n\nThree private stalls stand against the far wall. And there, visible through the open door of the nearest stall, is an actual porcelain toilet.\n\nYou stare at it. It has a seat. It has a tank. It has plumbing. There isn't even a sign explaining that you've already used it.\n\nYou take a step forward. A workman kneeling beneath one of the sinks looks up.",
+    "choices": [
+      {
+        "id": "meet_plumber",
+        "kind": "continue",
+        "text": "CONTINUE",
+        "to": "hotel_restroom_plumber"
+      }
+    ]
+  },
+  "hotel_lot61_pod_auction": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auctioneer",
+    "pose": "showman",
+    "text": [
+      {
+        "desc": "Back on the auction floor, a wedding guest raises her hand."
+      },
+      {
+        "say": "Excuse me. If you're selling all the bathrooms, where are we supposed to go?",
+        "who": "hotel_wedding_guest"
+      },
+      "An excellent question! Ladies and gentlemen, Lot Sixty-One!",
+      {
+        "desc": "Two porters wheel out a gleaming metal booth."
+      },
+      "The Grand Bellevue Emergency Convenience Pod! Completely self-contained! No plumbing required!",
+      {
+        "desc": "The booth's door stands slightly open. Inside is a small porcelain toilet. An actual toilet."
+      },
+      {
+        "say": "Does it work?",
+        "who": "hotel_wedding_guest"
+      },
+      "Magnificently! Even during a complete hotel water outage!",
+      {
+        "say": "Papa, why haven't we been using that?",
+        "who": "hotel_bride"
+      },
+      "Because, darling, we hadn't sold it yet!",
+      {
+        "desc": "He turns toward the audience."
+      },
+      "Who would care to demonstrate?",
+      {
+        "desc": "His eyes settle on you."
+      },
+      "Ah! Our gentleman with the urgent interest in modern conveniences!",
+      {
+        "desc": "The porters open the booth's door. You can see a toilet, a seat, and what appears to be privacy."
+      },
+      {
+        "desc": "A small warning plate beside the entrance reads: AUTOMATIC PACKING MECHANISM — DISENGAGE BEFORE OCCUPANCY. The auctioneer appears not to have noticed it."
+      }
+    ],
+    "choices": [
+      {
+        "id": "lot61_enter_pod",
+        "kind": "action",
+        "text": "ENTER THE EMERGENCY CONVENIENCE POD AND TRY TO USE IT.",
+        "check": {
+          "id": "ch4_pod_packing_escape",
+          "sides": 6,
+          "need": 5
+        },
+        "pass": {
+          "to": "hotel_lot61_pod_escaped"
+        },
+        "fail": {
+          "to": "fatal_lot61_folded"
+        }
+      },
+      {
+        "id": "lot61_decline_pod",
+        "kind": "action",
+        "text": "DECLINE THE DEMONSTRATION AND SEARCH THE SERVICE CORRIDORS FOR A TOILET.",
+        "to": "hotel_lot61_pod_declined"
+      }
+    ]
+  },
+  "hotel_lot61_pod_escaped": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auctioneer",
+    "pose": "delighted",
+    "effects": {
+      "set": {
+        "ch4_pod_survived_packing": true
+      }
+    },
+    "text": [
+      {
+        "desc": "You step inside. The door closes with a reassuring click. There is a toilet, walls, privacy. You are almost overcome with gratitude."
+      },
+      {
+        "desc": "Outside, the auctioneer raises his voice."
+      },
+      "Ladies and gentlemen! Observe the remarkable efficiency of our emergency sanitation system!",
+      {
+        "desc": "You reach toward your belt."
+      },
+      "And now, its most impressive feature!",
+      {
+        "desc": "A mechanical clunk comes from beneath the floor."
+      },
+      "Automatic packing for convenient transport!",
+      {
+        "desc": "The walls begin moving inward. You grab the door handle. It won't turn."
+      },
+      {
+        "desc": "You throw your weight against the door. The latch gives way. You tumble onto the auction floor."
+      },
+      {
+        "desc": "Behind you, the booth folds inward with a series of metallic bangs. Seconds later, it has become a remarkably compact shipping case. The audience applauds."
+      },
+      "Extraordinary! Completely portable!",
+      {
+        "desc": "You stand up. Your clothing is intact. Your dignity is not. You still need a toilet."
+      }
+    ],
+    "choices": [
+      {
+        "id": "lot61_escaped_seek_toilet",
+        "kind": "action",
+        "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "hotel_lot61_pod_declined": {
+    "mode": "dialogue",
+    "scene": "grand_bellevue/lobby",
+    "speaker": "hotel_auctioneer",
+    "pose": "disappointed",
+    "text": [
+      {
+        "desc": "The auctioneer looks disappointed."
+      },
+      "A cautious gentleman! Quite right! Safety first!",
+      {
+        "desc": "He turns toward the audience."
+      },
+      "Who'll give me twenty-five?",
+      {
+        "desc": "The porters begin wheeling the pod toward the collection area. You leave before anybody asks you to help."
+      }
+    ],
+    "choices": [
+      {
+        "id": "lot61_declined_seek_toilet",
+        "kind": "action",
+        "text": "SEARCH THE SERVICE CORRIDORS FOR ANOTHER TOILET.",
+        "to": "hotel_boiler_pressure_intro"
+      }
+    ]
+  },
+  "fatal_lot61_folded": {
+    "mode": "narrative",
+    "scene": "grand_bellevue/lobby",
+    "end": true,
+    "text": "You step inside the Emergency Convenience Pod. The door closes with a reassuring click.\n\nThere is a toilet. There are walls. There is privacy.\n\nYou reach toward your belt.\n\nOutside, the auctioneer announces the pod's most impressive feature: automatic packing for convenient transport.\n\nA mechanical clunk comes from beneath the floor. The walls begin moving inward. You grab the door handle. It won't turn.\n\nYou pull desperately at the handle.\n\nThe walls keep closing.\n\nThe porcelain toilet disappears beneath a folding metal panel.\n\nThere is a final mechanical clunk.\n\nThen silence.\n\nOutside, the auctioneer beams at the audience.\n\nAnd there we have it! Ready for immediate collection!\n\nENDING — FOLDED FOR CONVENIENCE.",
+    "choices": [
+      {
+        "id": "restart_folded_for_convenience",
+        "kind": "system",
+        "text": "BEGIN AGAIN",
+        "restart": true
+      }
+    ],
+    "deathPopup": {
+      "id": "ch4_folded_for_convenience",
+      "title": "FOLDED FOR CONVENIENCE",
+      "description": "Lot Sixty-One has been successfully reduced to its transport dimensions. The collection crew reports that the unit is somewhat heavier than the manufacturer's specifications suggest. The auction clerk adds a note to the manifest: CONTENTS INCLUDED. No further inspection is deemed necessary.",
+      "button": "BEGIN AGAIN",
+      "status": "owner-approved",
+      "artRef": "grand_bellevue/folded_for_convenience"
+    },
+    "endingArt": "grand_bellevue/folded_for_convenience",
+    "notes": "Owner-approved fatal lead-in/popup copy and specific art brief. Future aftermath image must show a NORMAL-SIZED BRIEFCASE-SIZED folded metallic case or compact suit-like case, with only SLIGHT asymmetrical bulging to imply the body compressed inside and ONE loose shoe lying off to the side as if it fell out. No oversized packing container, exposed corpse, gore, or visible face. The ordinary case size is essential to the joke. No artwork generated yet. Engine popup uses standard RETRY/CHECKPOINT/EXIT controls when integrated. Hidden d6 roll is fatal on 1–4, escape on 5–6; no modifiers approved."
+  }
+}

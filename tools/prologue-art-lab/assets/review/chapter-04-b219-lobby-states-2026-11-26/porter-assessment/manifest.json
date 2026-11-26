@@ -1,0 +1,40 @@
+{
+  "status": "ASSESSMENT ONLY \u2014 NOT A SELECTABLE IMAGE",
+  "newArtworkGenerated": false,
+  "artworkModified": false,
+  "method": "Approved foreground at native origin (0,0), alpha-over exact approved background; original alpha retained; previews exact nearest-neighbour 4x.",
+  "portraitAlphaBounds": [
+    233,
+    32,
+    457,
+    277
+  ],
+  "examinedEdgeBounds": [
+    529,
+    0,
+    564,
+    278
+  ],
+  "foregroundOcclusionPixelsInEdge": 0,
+  "judgment": "Edge is visible, not hidden, but peripheral/inconspicuous in the full native portrait composition. No identifiable floor toilet or lifted enclosure is shown there. Recommend reuse.",
+  "ownerDecision": "Nate/PMO explicitly permits approved CH4-B2-03 reuse for hotel_stall_porter_protest. No additional image required.",
+  "references": "evidence/references.json",
+  "images": [
+    {
+      "file": "references/approved-background.png",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377"
+    },
+    {
+      "file": "references/approved-porter.png",
+      "sha256": "863bffb11ce70970dd8f18a2e6188e7835092c4c8218c6f0a74b487ad26e89eb"
+    },
+    {
+      "file": "comparisons/approved-porter-over-approved-background.png",
+      "sha256": "678234f52143df545aff8570d8ae42ffd1856fddaec232d88e2c4fbea49507c1"
+    },
+    {
+      "file": "comparisons/background-and-porter.png",
+      "sha256": "6529f8a375a8ccccc8b0201e769b1976f19a65e1f2d10f6850bc54790f97b170"
+    }
+  ]
+}

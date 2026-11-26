@@ -1,0 +1,70 @@
+[
+  {
+    "name": "lobby-doors-removed",
+    "file": "native/lobby-doors-removed.png",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "status": "UNSELECTED",
+    "sha256": "e2aa3835dca0edf1e76b93df2a3cf628db8dc5ff8f56c1f5df8e6188ea7d218e",
+    "layers": [
+      "doors-removed"
+    ],
+    "changedPixels": 2585,
+    "changedMask": "masks/lobby-doors-removed-changed.png",
+    "allowedMask": "masks/lobby-doors-removed-allowed.png",
+    "outsideAllowedChanges": 0,
+    "protectedFigureOrFurnitureChanges": 0,
+    "editableSource": "source/lobby-doors-removed.ora",
+    "runtimeBinding": null,
+    "focusId": null
+  },
+  {
+    "name": "lot61-open",
+    "file": "native/lot61-open.png",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "status": "UNSELECTED",
+    "sha256": "3913c8ad89c0245c31827f1933926ff0d1a00ec9da71f34dfa9818ff222c42b5",
+    "layers": [
+      "doors-removed",
+      "lot61-open-pod"
+    ],
+    "changedPixels": 7502,
+    "changedMask": "masks/lot61-open-changed.png",
+    "allowedMask": "masks/lot61-open-allowed.png",
+    "outsideAllowedChanges": 0,
+    "protectedFigureOrFurnitureChanges": 0,
+    "editableSource": "source/lot61-open.ora",
+    "runtimeBinding": null,
+    "focusId": null
+  },
+  {
+    "name": "lot61-packed",
+    "file": "native/lot61-packed.png",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB",
+    "status": "UNSELECTED",
+    "sha256": "f3c27be75a18007850f8eb9bff7ae71f031063aa44735f9bfbd24bf5d876b558",
+    "layers": [
+      "doors-removed",
+      "lot61-packed-empty-case"
+    ],
+    "changedPixels": 3287,
+    "changedMask": "masks/lot61-packed-changed.png",
+    "allowedMask": "masks/lot61-packed-allowed.png",
+    "outsideAllowedChanges": 0,
+    "protectedFigureOrFurnitureChanges": 0,
+    "editableSource": "source/lot61-packed.ora",
+    "runtimeBinding": null,
+    "focusId": null
+  }
+]

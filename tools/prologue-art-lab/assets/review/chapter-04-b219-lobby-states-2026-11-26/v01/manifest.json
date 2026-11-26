@@ -1,0 +1,109 @@
+{
+  "status": "UNSELECTED",
+  "family": "B2-19 lobby doors and Lot 61",
+  "canonicalBaseCommit": "3785e87506c4218a360cf7a309b2fbe690cc4546",
+  "authoritativeMaster": "CH4-01 approved lobby",
+  "masterSHA256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+  "newCandidates": [
+    {
+      "name": "lobby-doors-removed",
+      "file": "native/lobby-doors-removed.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "status": "UNSELECTED",
+      "sha256": "e2aa3835dca0edf1e76b93df2a3cf628db8dc5ff8f56c1f5df8e6188ea7d218e",
+      "layers": [
+        "doors-removed"
+      ],
+      "changedPixels": 2585,
+      "changedMask": "masks/lobby-doors-removed-changed.png",
+      "allowedMask": "masks/lobby-doors-removed-allowed.png",
+      "outsideAllowedChanges": 0,
+      "protectedFigureOrFurnitureChanges": 0,
+      "editableSource": "source/lobby-doors-removed.ora",
+      "runtimeBinding": null,
+      "focusId": null,
+      "title": "Restroom doors removed",
+      "nodes": [
+        "hotel_auctioneer_arrival",
+        "hotel_restroom_entry"
+      ],
+      "beat": "Persistent doorless lobby after the removal. The first leaf being carried away is narrated, not a separate frame.",
+      "comparison": "comparisons/lobby-doors-removed-before-after.png",
+      "paletteRGBColours": 2465
+    },
+    {
+      "name": "lot61-open",
+      "file": "native/lot61-open.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "status": "UNSELECTED",
+      "sha256": "3913c8ad89c0245c31827f1933926ff0d1a00ec9da71f34dfa9818ff222c42b5",
+      "layers": [
+        "doors-removed",
+        "lot61-open-pod"
+      ],
+      "changedPixels": 7502,
+      "changedMask": "masks/lot61-open-changed.png",
+      "allowedMask": "masks/lot61-open-allowed.png",
+      "outsideAllowedChanges": 0,
+      "protectedFigureOrFurnitureChanges": 0,
+      "editableSource": "source/lot61-open.ora",
+      "runtimeBinding": null,
+      "focusId": null,
+      "title": "Lot 61 \u2014 open convenience pod",
+      "nodes": [
+        "hotel_lot61_pod_auction",
+        "hotel_lot61_pod_declined"
+      ],
+      "beat": "After presentation/entrance reveal; reuse while decline/departure begins. No closed, occupied or moving-porters variants.",
+      "comparison": "comparisons/lot61-open-before-after.png",
+      "paletteRGBColours": 2411
+    },
+    {
+      "name": "lot61-packed",
+      "file": "native/lot61-packed.png",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "status": "UNSELECTED",
+      "sha256": "f3c27be75a18007850f8eb9bff7ae71f031063aa44735f9bfbd24bf5d876b558",
+      "layers": [
+        "doors-removed",
+        "lot61-packed-empty-case"
+      ],
+      "changedPixels": 3287,
+      "changedMask": "masks/lot61-packed-changed.png",
+      "allowedMask": "masks/lot61-packed-allowed.png",
+      "outsideAllowedChanges": 0,
+      "protectedFigureOrFurnitureChanges": 0,
+      "editableSource": "source/lot61-packed.ora",
+      "runtimeBinding": null,
+      "focusId": null,
+      "title": "Lot 61 \u2014 compact case after escape",
+      "nodes": [
+        "hotel_lot61_pod_escaped"
+      ],
+      "beat": "After folding finishes. The survived flag is set before the text sequence; do not reveal the case merely at node entry. Empty escape case: no shoe, no occupied bulge.",
+      "comparison": "comparisons/lot61-packed-before-after.png",
+      "paletteRGBColours": 2473
+    }
+  ],
+  "runtimeBindingsAdded": false,
+  "FocusIdsAdded": false,
+  "flagsOrModesAdded": false,
+  "sourceMethod": "Exact approved native lobby plus native event layers; the pod toilet is an integer native pixel copy from approved CH4-04. Packed case independently drawn on native grid using approved fatal case as design reference. Generated reference pixels are not used.",
+  "generatedReferenceReceipt": "evidence/generation-receipt.json",
+  "referenceLabelExcluded": "Generated OUT OF ORDER label was not canonical; native image has only a warning pictogram, canonical wording stays in narration.",
+  "reconciliation": "RECONCILIATION.md",
+  "B218Resolution": "Approved CH4-B2-03 reused for hotel_stall_porter_protest per explicit PMO decision; no background modifications. Assessment only in ../porter-assessment/.",
+  "continuityBlockers": []
+}
