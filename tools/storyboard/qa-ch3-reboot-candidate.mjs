@@ -16,12 +16,13 @@ const reviewLayout=read('story/chapter-03.reboot-review-layout.json');
 const nodes=candidate.nodes;
 
 // Chapter 3 gameplay integration (2026-11-20): the manifest deliberately activates the approved
-// reboot file (locked blob 857ffdf) as a draft chapter; the legacy graph stays preserved.
+// reboot file (locked blob 857ffdf; d0591d6 since 2026-11-26, which adds only Nate's approved Temporary Staff Pass
+// grant at unauthorized_presenter, docs/153) as a draft chapter; the legacy graph stays preserved.
 assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').status,'draft');
 assert.equal(manifest.chapters.find(ch=>ch.id==='chapter-03').file,'chapters/chapter-03.reboot-candidate.json');
 const gitBlob=(buf)=>createHash('sha1').update('blob '+buf.length+'\0').update(buf).digest('hex');
 assert.equal(gitBlob(fs.readFileSync(path.join(root,'story/chapters/chapter-03.reboot-candidate.json'))),
-  '857ffdf1bc9432cf4bbbfd7819f5f430a06d9036','active Chapter 3 is exactly the locked approved narrative');
+  'd0591d618b86958908f966b6f71d6adee83d5a7d','active Chapter 3 is exactly the locked approved narrative');
 assert.ok(fs.readFileSync(path.join(root,'story/chapters/chapter-03.draft.json'))
   .equals(fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'))),'legacy draft retained unchanged');
 const archive=fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'));
@@ -53,7 +54,9 @@ function walk(id,stack=[]){
   seen.add(id);
   assert.ok(['narrative','dialogue','focus'].includes(node.mode),id+' valid mode');
   assert.ok(node.scene?.startsWith('pavilion_reboot/'),id+' uses new, isolated scene refs');
-  assert.equal(node.effects,undefined,id+' does not mutate inherited state');
+  // Sole approved exception (Nate, 2026-11-26, docs/153): the appointment grants the existing Temporary Staff Pass.
+  if(id==='unauthorized_presenter')assert.deepEqual(node.effects,{give:['pavilion_temporary_staff_pass']},id+' grants only the approved Temporary Staff Pass');
+  else assert.equal(node.effects,undefined,id+' does not mutate inherited state');
   assert.equal(node.deathPopup,undefined,id+' has no unapproved fatal popup');
   assert.equal(node.endingArt,undefined,id+' has no unapproved death art');
   if(node.mode==='dialogue')assert.ok(node.speaker,id+' has a dialogue speaker');
