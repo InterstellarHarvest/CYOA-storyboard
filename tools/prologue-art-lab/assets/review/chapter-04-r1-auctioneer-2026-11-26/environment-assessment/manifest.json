@@ -1,0 +1,289 @@
+{
+  "type": "VISUAL ASSESSMENT ONLY",
+  "newEnvironmentArtworkCreated": false,
+  "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+  "selectionChanges": false,
+  "recommendation": "Prioritize background material pilots; retain main compositions and consider only localized refinements. Await Nate direction.",
+  "approvedAssets": [
+    {
+      "id": "CH4-01",
+      "file": "references/CH4-01.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "status": "APPROVED / ASSESSMENT ONLY / UNCHANGED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "colours": 2542,
+      "proposedAction": "Retain. Optional targeted carpet wear, damage edges and podium/flower accents. Preserve layout, duct lighting, all objects and small NPC.",
+      "crop": [
+        0,
+        70,
+        108,
+        158
+      ]
+    },
+    {
+      "id": "CH4-04",
+      "file": "references/CH4-04.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "status": "APPROVED / ASSESSMENT ONLY / UNCHANGED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "colours": 2524,
+      "proposedAction": "Localized basin/faucet planes, worker colour clusters and contact shadows. Preserve both plumbers, fixtures, stalls and exposed toilet.",
+      "crop": [
+        0,
+        89,
+        139,
+        190
+      ]
+    },
+    {
+      "id": "CH4-05",
+      "file": "references/CH4-05.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/ballroom.png",
+      "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+      "status": "APPROVED / ASSESSMENT ONLY / UNCHANGED",
+      "dimensions": [
+        314,
+        206
+      ],
+      "mode": "RGB",
+      "colours": 3669,
+      "proposedAction": "Retain. Optional floor-mark and floral/cloth grouping. Preserve cake trolley, clipboards, furniture, all figures and architecture.",
+      "crop": [
+        30,
+        107,
+        238,
+        206
+      ]
+    },
+    {
+      "id": "CH4-B2-03",
+      "file": "references/CH4-B2-03.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "status": "APPROVED / ASSESSMENT ONLY / UNCHANGED",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "colours": 49487,
+      "proposedAction": "Highest priority: near basin/tap material pilot, then other surfaces only if volume survives. No flat sink reconstruction or global quantization.",
+      "crop": [
+        0,
+        144,
+        251,
+        278
+      ]
+    },
+    {
+      "id": "CH4-B2-11",
+      "file": "references/CH4-B2-11.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/loading_dock/portraitBackground.png",
+      "sha256": "27f69050b10d3e10121f7f2c2860db1418504b00d3848daabde420485b9bcc1f",
+      "status": "APPROVED / ASSESSMENT ONLY / UNCHANGED",
+      "dimensions": [
+        564,
+        278
+      ],
+      "mode": "RGB",
+      "colours": 83600,
+      "proposedAction": "Second material pilot: lift threshold and floor. Preserve all loading-dock objects, light direction and geometry.",
+      "crop": [
+        187,
+        63,
+        438,
+        256
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "ch2-bureau",
+      "file": "references/ch2-bureau.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "status": "APPROVED / BENCHMARK / UNCHANGED"
+    },
+    {
+      "id": "ch2-control-tower",
+      "file": "references/ch2-control-tower.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "status": "APPROVED / BENCHMARK / UNCHANGED"
+    },
+    {
+      "id": "ch4-staff-lavatory",
+      "file": "references/ch4-staff-lavatory.png",
+      "sourceCommit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory.png",
+      "sha256": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3",
+      "status": "APPROVED / BENCHMARK / UNCHANGED"
+    }
+  ],
+  "allReferencesExactBytes": true,
+  "all4xExactNearestNeighbor": true,
+  "report": "ASSESSMENT.md",
+  "figures": [
+    {
+      "title": "CH4-01 \u2014 unchanged approved image",
+      "path": "references/CH4-01.png",
+      "four": "previews/CH4-01-4x.png",
+      "w": 314,
+      "h": 206,
+      "caption": "Retain. Optional targeted carpet wear, damage edges and podium/flower accents. Preserve layout, duct lighting, all objects and small NPC."
+    },
+    {
+      "title": "CH4-01 / Chapter 2 Bureau / Control Tower",
+      "path": "comparisons/CH4-01-chapter2.png",
+      "four": "previews/CH4-01-chapter2-4x.png",
+      "w": 942,
+      "h": 206,
+      "caption": "Left to right, same pixel scale. Different canvas contracts are preserved; no reference is shrunk."
+    },
+    {
+      "title": "CH4-01 \u2014 native material crop",
+      "path": "comparisons/CH4-01-material-crop.png",
+      "four": "previews/CH4-01-material-crop-4x.png",
+      "w": 108,
+      "h": 88,
+      "caption": "Unmodified crop for inspecting cluster handling. Coordinates are recorded in the manifest."
+    },
+    {
+      "title": "CH4-04 \u2014 unchanged approved image",
+      "path": "references/CH4-04.png",
+      "four": "previews/CH4-04-4x.png",
+      "w": 314,
+      "h": 206,
+      "caption": "Localized basin/faucet planes, worker colour clusters and contact shadows. Preserve both plumbers, fixtures, stalls and exposed toilet."
+    },
+    {
+      "title": "CH4-04 / Chapter 2 Bureau / Control Tower",
+      "path": "comparisons/CH4-04-chapter2.png",
+      "four": "previews/CH4-04-chapter2-4x.png",
+      "w": 942,
+      "h": 206,
+      "caption": "Left to right, same pixel scale. Different canvas contracts are preserved; no reference is shrunk."
+    },
+    {
+      "title": "CH4-04 \u2014 native material crop",
+      "path": "comparisons/CH4-04-material-crop.png",
+      "four": "previews/CH4-04-material-crop-4x.png",
+      "w": 139,
+      "h": 101,
+      "caption": "Unmodified crop for inspecting cluster handling. Coordinates are recorded in the manifest."
+    },
+    {
+      "title": "CH4-05 \u2014 unchanged approved image",
+      "path": "references/CH4-05.png",
+      "four": "previews/CH4-05-4x.png",
+      "w": 314,
+      "h": 206,
+      "caption": "Retain. Optional floor-mark and floral/cloth grouping. Preserve cake trolley, clipboards, furniture, all figures and architecture."
+    },
+    {
+      "title": "CH4-05 / Chapter 2 Bureau / Control Tower",
+      "path": "comparisons/CH4-05-chapter2.png",
+      "four": "previews/CH4-05-chapter2-4x.png",
+      "w": 942,
+      "h": 206,
+      "caption": "Left to right, same pixel scale. Different canvas contracts are preserved; no reference is shrunk."
+    },
+    {
+      "title": "CH4-05 \u2014 native material crop",
+      "path": "comparisons/CH4-05-material-crop.png",
+      "four": "previews/CH4-05-material-crop-4x.png",
+      "w": 208,
+      "h": 99,
+      "caption": "Unmodified crop for inspecting cluster handling. Coordinates are recorded in the manifest."
+    },
+    {
+      "title": "CH4-B2-03 \u2014 unchanged approved image",
+      "path": "references/CH4-B2-03.png",
+      "four": "previews/CH4-B2-03-4x.png",
+      "w": 564,
+      "h": 278,
+      "caption": "Highest priority: near basin/tap material pilot, then other surfaces only if volume survives. No flat sink reconstruction or global quantization."
+    },
+    {
+      "title": "CH4-B2-03 / Chapter 2 Bureau / Control Tower",
+      "path": "comparisons/CH4-B2-03-chapter2.png",
+      "four": "previews/CH4-B2-03-chapter2-4x.png",
+      "w": 1192,
+      "h": 278,
+      "caption": "Left to right, same pixel scale. Different canvas contracts are preserved; no reference is shrunk."
+    },
+    {
+      "title": "CH4-B2-03 \u2014 native material crop",
+      "path": "comparisons/CH4-B2-03-material-crop.png",
+      "four": "previews/CH4-B2-03-material-crop-4x.png",
+      "w": 251,
+      "h": 134,
+      "caption": "Unmodified crop for inspecting cluster handling. Coordinates are recorded in the manifest."
+    },
+    {
+      "title": "CH4-B2-11 \u2014 unchanged approved image",
+      "path": "references/CH4-B2-11.png",
+      "four": "previews/CH4-B2-11-4x.png",
+      "w": 564,
+      "h": 278,
+      "caption": "Second material pilot: lift threshold and floor. Preserve all loading-dock objects, light direction and geometry."
+    },
+    {
+      "title": "CH4-B2-11 / Chapter 2 Bureau / Control Tower",
+      "path": "comparisons/CH4-B2-11-chapter2.png",
+      "four": "previews/CH4-B2-11-chapter2-4x.png",
+      "w": 1192,
+      "h": 278,
+      "caption": "Left to right, same pixel scale. Different canvas contracts are preserved; no reference is shrunk."
+    },
+    {
+      "title": "CH4-B2-11 \u2014 native material crop",
+      "path": "comparisons/CH4-B2-11-material-crop.png",
+      "four": "previews/CH4-B2-11-material-crop-4x.png",
+      "w": 251,
+      "h": 193,
+      "caption": "Unmodified crop for inspecting cluster handling. Coordinates are recorded in the manifest."
+    },
+    {
+      "title": "ch2-bureau \u2014 approved benchmark",
+      "path": "references/ch2-bureau.png",
+      "four": "previews/ch2-bureau-4x.png",
+      "w": 314,
+      "h": 206,
+      "caption": "Exact canonical PNG. Reference only; no replacement proposed."
+    },
+    {
+      "title": "ch2-control-tower \u2014 approved benchmark",
+      "path": "references/ch2-control-tower.png",
+      "four": "previews/ch2-control-tower-4x.png",
+      "w": 314,
+      "h": 206,
+      "caption": "Exact canonical PNG. Reference only; no replacement proposed."
+    },
+    {
+      "title": "ch4-staff-lavatory \u2014 approved benchmark",
+      "path": "references/ch4-staff-lavatory.png",
+      "four": "previews/ch4-staff-lavatory-4x.png",
+      "w": 314,
+      "h": 206,
+      "caption": "Exact canonical PNG. Reference only; no replacement proposed."
+    }
+  ]
+}
