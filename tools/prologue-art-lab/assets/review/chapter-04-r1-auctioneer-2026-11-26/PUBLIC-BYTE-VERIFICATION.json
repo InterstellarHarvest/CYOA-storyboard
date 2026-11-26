@@ -1,0 +1,2236 @@
+{
+  "passed": true,
+  "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+  "branch": "art/ch4-r1-auctioneer-review-20261126",
+  "remoteRefsObserved": {
+    "refs/heads/art/ch4-r1-auctioneer-review-20261126": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+    "refs/heads/main": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+    "refs/pull/32/head": "f320e63934c13e27fd13b9482d0cfba58911362d"
+  },
+  "allPublicHashesMatch": true,
+  "publicObjectsVerified": 196,
+  "pngsDecoded": 151,
+  "canonicalReferenceCopiesVerified": 18,
+  "onlyNewR1PackageChanged": true,
+  "artisticGatePassed": false,
+  "productionSelectionsChanged": false,
+  "files": [
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/PUBLIC-BYTE-VERIFICATION-INITIAL.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "9d2fabeeb490ce6e99b4a58522a99105f0c86c671ff08302c661301060787af4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/PUBLIC-BYTE-VERIFICATION-INITIAL.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/README.md",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "9156656326ec3a3afcdb22c00af48a0fcaf0a9d54470c947d5411c87142a58ab",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/README.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/.gitignore",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/.gitignore",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/ASSESSMENT.md",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "8cda93b8da1b30cb9e883a2ac994c5a8615d43e6034f99bb226e28b19f44c778",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/ASSESSMENT.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/build_assessment.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4eaeff76a0b397785739d4773463647852dba36004cb9a5397d7ea941a4dc2a0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/build_assessment.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-01-chapter2.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4cfcbc3d56be8f4b531abca03f1704376614b4faa7fb0aca0ed0def14ccd2004",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-01-chapter2.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        942,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-01-detail-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ce425c928bd5172b6e664f918aba85900b743b22e73f4ddd205da4733b55d3c0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-01-detail-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        432,
+        352
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-01-material-crop.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1b6c88018eeb3d64047242a938e56a36eb0ae99595a59cee149c4713b1b96583",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-01-material-crop.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        108,
+        88
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-04-chapter2.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "2424dd6267e81e8bb8e0de9d04acc7a520cb583336a3713960a8df354738d77b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-04-chapter2.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        942,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-04-detail-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4f2dc7e292b707adbde189946d33384d9c2801ee776b3f7c8cc40522624e1863",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-04-detail-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        556,
+        404
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-04-material-crop.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ee4da759aee1f212401f66ba97e6406e0eb7ccd73eecccff79e702b5cfce74c8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-04-material-crop.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        139,
+        101
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-05-chapter2.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "e04f3c374958d13e4f0a044bc263d09ed486151784b96fbf522a79016bac55ac",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-05-chapter2.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        942,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-05-detail-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f704b47a2dcf3d215ce88dcc9a8c08d039289fecbcafb136a78113cd85a56e1c",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-05-detail-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        832,
+        396
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-05-material-crop.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "eb8eb415428bcc576efe3355a3e08194206a0209960625fe3ffcb9d1786db156",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-05-material-crop.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        208,
+        99
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-03-chapter2.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a1f1487c402c881bfc839439f82ceedaf1f4a1e9f1fad8eac7edca034e1c33d1",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-03-chapter2.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1192,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-03-detail-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "cfe2e99f08377f41c25cd81b0b638ba0ee361776b984176e477ec6411959d101",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-03-detail-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1004,
+        536
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-03-material-crop.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c82370bc55d64fc34d6393105f11d311e3c01d74345bc131ba1399dc54bf30aa",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-03-material-crop.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        251,
+        134
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-11-chapter2.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ab533386fb77edbcc8bf635c2fe166d1b34f74f10f5c5535fdf2c222b24e91b6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-11-chapter2.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1192,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-11-detail-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ec21f3f2c7652fbdb2dacd3a96d6fe634663024f30b1dee6b6026e52561dd6af",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-11-detail-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1004,
+        772
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-11-material-crop.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c81ae7d93449a08e23da1a313be923e269da09d4229c55b725ea655c0a78ea5b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/comparisons/CH4-B2-11-material-crop.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        251,
+        193
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/approved-inputs.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "8cb9fcefa839c60311532720954f3331f3a8b62093377695ebd3ac44ba19de89",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/approved-inputs.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/checksums.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1f68b5bc2420caedfc9472c85b536162973e90271ae918085707d4b3bb07c996",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/checksums.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/local-browser/report.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "66727157bfdb8e7211adaf80174317a43a400668e1579ed9b902d2d94dd86872",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/local-browser/report.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/online-provenance.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "8990fff6703ffcee57e2ca7e11f351b04bd67ee04fdd2a87a17af6a15ee837f8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/evidence/online-provenance.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/index.html",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "71b37f90ff7eb3ff82601aa734bd6a15b1a28dfaeefc5f103a0291c77d8e7f12",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/index.html",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/manifest.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "dbe0e6c5ec6da2a2a97729e17b64994eacec948b327a076105cfc0d7514612ce",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/manifest.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/online.html",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "80d4613ae63b1307b9bfc8285eda1f0adce931276cbe04dec92d7fd23c288c61",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/online.html",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-01-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "46296d403d903b9d434b0d72a68dbbfe30baaf2bbc5ad52576ea83c149f47914",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-01-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-01-chapter2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "52facaa6e390adf0fe273794bfd781574bc092c3c7214815184294bf29be0f88",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-01-chapter2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        3768,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-01-material-crop-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ce425c928bd5172b6e664f918aba85900b743b22e73f4ddd205da4733b55d3c0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-01-material-crop-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        432,
+        352
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-04-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "e0eeea26007c4bc0af5fbf571849800f59a598161487b71e9aa05dc67e97e69f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-04-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-04-chapter2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "22053273d11107b9b6758a923fcad741307623ff2045eb41777e9812240ae63a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-04-chapter2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        3768,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-04-material-crop-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4f2dc7e292b707adbde189946d33384d9c2801ee776b3f7c8cc40522624e1863",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-04-material-crop-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        556,
+        404
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-05-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "54ff04952d8ef485c2dad0e7c8c257d5c4df12f3d6c3092620ddb6d9d202047f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-05-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-05-chapter2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "9f9dd9184acb1fd5e61b2c0942f37b1dd0fffe7139ed382bbcdbc7557e22ae1b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-05-chapter2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        3768,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-05-material-crop-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f704b47a2dcf3d215ce88dcc9a8c08d039289fecbcafb136a78113cd85a56e1c",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-05-material-crop-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        832,
+        396
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-03-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "97e90b12a7883cbbf2419e991eebd09063d7dba01a9e226aa13a59e1b4ef143f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-03-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-03-chapter2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "767ace801b07c7df4b33c057462a256a7b48f3f85ab02fb1992c414d57597833",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-03-chapter2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        4768,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-03-material-crop-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "cfe2e99f08377f41c25cd81b0b638ba0ee361776b984176e477ec6411959d101",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-03-material-crop-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1004,
+        536
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-11-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c0097de65257864133a726c47200c4375b00f82b4808938cfcdaca62b2e5aff1",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-11-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-11-chapter2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "614d77631ef0ccfd8ae5c10530372b012ab2da262ec021948d26bb9719077fb4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-11-chapter2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        4768,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-11-material-crop-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ec21f3f2c7652fbdb2dacd3a96d6fe634663024f30b1dee6b6026e52561dd6af",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/CH4-B2-11-material-crop-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1004,
+        772
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/ch2-bureau-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d20c5e77ea7f736d41718cee387b955050824ccc08a1e63a552e7bcd66b7cf3d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/ch2-bureau-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/ch2-control-tower-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ec024b48500b49ebda6d5e63d1c7e714ba525652345ff83e52d58ef144a4b9fc",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/ch2-control-tower-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/ch4-staff-lavatory-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "5f12ecc73f897fd5f9e0b84cecab3c0fd6c1f086977bc612a0f406254aac25aa",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/previews/ch4-staff-lavatory-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1256,
+        824
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-01.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-01.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-04.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-04.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-05.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-05.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-B2-03.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-B2-03.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-B2-11.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "27f69050b10d3e10121f7f2c2860db1418504b00d3848daabde420485b9bcc1f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/CH4-B2-11.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/ch2-bureau.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/ch2-bureau.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/ch2-control-tower.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/ch2-control-tower.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/ch4-staff-lavatory.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/references/ch4-staff-lavatory.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/source/checksums.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a00a12d2afc1f2a06be046fa658324c6cafbd7e87e129cec8faea37d3738bb84",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/source/checksums.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/source/prepare_online.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f9b9badff7be31b906bf80379cfc5a7a260dfd35a50c51e1aadfab848b245a79",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/environment-assessment/source/prepare_online.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-assessment/report.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "5cca2a66edbdfac33c4026a59dda458ab4e39388b7b6c52635ad63f6e107bd7f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-assessment/report.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-2-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "bf20b2e6770dc41433a3a1ac8e79c1d59962af55273203ad36c5b6bd7e5bed8e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-2-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        467
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "2d9e858ea5c41d572399904167d485c985e496aaf0f9b0e02428de995c9240bb",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1301
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-3-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d04e4043178810c52a08a692c8be96154365d02a66184fc87646355b09e5f5c6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-3-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        466
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-3-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4c4b70d31e9f01602fa7f51650b146ab0ffed916dad1400974c707228109438d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-3-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1300
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-4-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f9ed1f5501267e56b77e7b66296e50afe22573c2b34cbc4de87b3e2676b43a6b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-4-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        277
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-4-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d8a0882bb34cd3c514c96631101fda42061425132d9ae62b9df42895c603c7b9",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-4-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        541
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-5-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "15be960c79b6fc2ecd973136fd75060ac4bac3bae1fd18d291828f6414c55269",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-5-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        269
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-5-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "aa4694525d966f39d1f600cd7a5da1175c3a641c8fcb4913d4742a061710df57",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-comparison-5-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        512
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-0-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c463be698b62165e01c1a3da87d5dc48e313b0f555d4b3b04eaee5f03d5f68c5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-0-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        467
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-0-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "2c82b69d474066703eb4a9fcb8576cdb51beb092a4bd983187431240c3d5fdbe",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-0-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1301
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-1-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "3443ed46fbf89b132489a57ea400628c99c257748d003c89878acf33263b8b1e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-1-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        466
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-1-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "41f70859514ecb25d3414ca089ebf1e766050b93bf442f99cca4e645adb279c9",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/chromium-portrait-1-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1300
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-2-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "e091647b3a9917460dc8333f7dc0f220e9c635a4c14c2053c5c327a6da4211a0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-2-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        469
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d95d39ce6266a28427f6c7ede5e3ccf2d1bb342f6bcb9cb9a8d89adcfe062d43",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1303
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-3-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "70886d24eac69eac67888b976414f6ae5368c2551f81fb947e646faf504127be",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-3-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-3-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "cb62ab2e749bfaeb22f273ad4a358107742075dcb5b6e86af430f414a042764d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-3-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-4-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4684fb942be2a2623d76929640e20d41a661147a5e31c561087e880a7aa0ced3",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-4-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        279
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-4-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a5b049fc126de95734d5ac9f51b02199ef9862da980f478d9fe09c57f1eee098",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-4-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        543
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-5-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "acc433d2f93c7b975ba8b2cd8b34025e2b5ee0d05340a5a92187a25eb404b546",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-5-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        271
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-5-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "b4c7974c6652872331b5bf447eab2b76cd33a679264ea395adb0cf32c077e35d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-comparison-5-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        514
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-0-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7520fbc1d28b32108cbfe3136a64ab2b0d9ad611e9d9cd65e33f0f80eef9d588",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-0-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-0-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1c911becbad58e437c41af80545fa140393a69fe3b04b4884fa01faa601499b6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-0-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-1-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7ad7fd9c7d6e11622b33a7070e5061259dee76167d60f5e206728ee60a929ead",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-1-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-1-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4ca32b046fbd0c9040f95f16faabbe16051caef9795385d695d2f6e340e7758b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/firefox-portrait-1-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/report.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a22dbe40dd0ff6b5c87c4357b700be40187c91f8d1d5759a65d0f39ffc41ce6b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/public-browser-portrait/report.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/source/capture_assessment.cjs",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c0b0dbe90cde7aa30810124b09eb60343aea4b6e540f52b3aeec462469f95e77",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/source/capture_assessment.cjs",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/.gitignore",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/.gitignore",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/ARTISTIC-GATE.md",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "07c16b1f0b695c7bf94cd497892923ebad233062018d500334171ffa43f14d3a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/ARTISTIC-GATE.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/README.md",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1c9792284432baca4de853fad28f71e5d292fba13bebf1ef29ec0169b9bc88db",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/README.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/approved-on-approved-background.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a749ec8e4bb213f70803e1490aadd20c55a500a4d582ec71f2c69581d5562f26",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/approved-on-approved-background.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/face-old-study.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "efb8a1688758aa889f3ba171427129d22471167eb526cc1e1e2505c42edbafae",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/face-old-study.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        160,
+        88
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/hands-old-study.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "2d7e9c24212f3d685eb1195c99908206a262478b3e1095ee6b0fdbc85651cdd2",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/hands-old-study.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        220,
+        81
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/old-study-composites.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "b99cfcd1d3c08073fb4c040ba53f8025a613f892fe8c5b47f2f83ab5e53ee9d5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/old-study-composites.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1128,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/old-study-foreground.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "b2c05890b47064f06f82140728e94286486e617d31e10fdec000bd1576409210",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/old-study-foreground.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1128,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/study-on-approved-background.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "58d7053769f120a5db2d6bafc7740406a3a61e53526ddcc3b68a131ca2f79b05",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/comparisons/study-on-approved-background.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/canonical-auctioneer-nodes.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "37179225771ff790bf718f1438c7671412a4dfcbb51b30245b9504a27c8923dc",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/canonical-auctioneer-nodes.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/canonical-portrait-records.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "0e968c4700bca536b3f071b8666e1aa1ae30f768b4d1720a6f52c5b1da881046",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/canonical-portrait-records.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/checksums.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "6092fb777e2459a9ff2a14874f951da3520efb212c0862b8b2b0c639f41e077b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/checksums.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/controlling-sources.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "97ac3b4de3ddb81e32e7e7b5fc22ada9c9dc9c26d8e8a8f4a867a1405a723796",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/controlling-sources.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/docs141-draft-assessment.md",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "369b9b856a1d38187fba925c18175d7a000a2cefbeb33c2baade57b922aa4f4b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/docs141-draft-assessment.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-2-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "bf20b2e6770dc41433a3a1ac8e79c1d59962af55273203ad36c5b6bd7e5bed8e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-2-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        467
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "2d9e858ea5c41d572399904167d485c985e496aaf0f9b0e02428de995c9240bb",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1301
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-3-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d04e4043178810c52a08a692c8be96154365d02a66184fc87646355b09e5f5c6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-3-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        466
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-3-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4c4b70d31e9f01602fa7f51650b146ab0ffed916dad1400974c707228109438d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-3-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1300
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-4-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f9ed1f5501267e56b77e7b66296e50afe22573c2b34cbc4de87b3e2676b43a6b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-4-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        277
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-4-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d8a0882bb34cd3c514c96631101fda42061425132d9ae62b9df42895c603c7b9",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-4-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        541
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-5-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "15be960c79b6fc2ecd973136fd75060ac4bac3bae1fd18d291828f6414c55269",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-5-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        269
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-5-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "aa4694525d966f39d1f600cd7a5da1175c3a641c8fcb4913d4742a061710df57",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-comparison-5-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        512
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-0-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c463be698b62165e01c1a3da87d5dc48e313b0f555d4b3b04eaee5f03d5f68c5",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-0-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        467
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-0-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "2c82b69d474066703eb4a9fcb8576cdb51beb092a4bd983187431240c3d5fdbe",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-0-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1301
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-1-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "3443ed46fbf89b132489a57ea400628c99c257748d003c89878acf33263b8b1e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-1-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        466
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-1-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "41f70859514ecb25d3414ca089ebf1e766050b93bf442f99cca4e645adb279c9",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/chromium-portrait-1-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1300
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-2-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "e091647b3a9917460dc8333f7dc0f220e9c635a4c14c2053c5c327a6da4211a0",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-2-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        469
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-2-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "d95d39ce6266a28427f6c7ede5e3ccf2d1bb342f6bcb9cb9a8d89adcfe062d43",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-2-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1303
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-3-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "70886d24eac69eac67888b976414f6ae5368c2551f81fb947e646faf504127be",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-3-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-3-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "cb62ab2e749bfaeb22f273ad4a358107742075dcb5b6e86af430f414a042764d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-3-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-4-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4684fb942be2a2623d76929640e20d41a661147a5e31c561087e880a7aa0ced3",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-4-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        279
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-4-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a5b049fc126de95734d5ac9f51b02199ef9862da980f478d9fe09c57f1eee098",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-4-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        543
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-5-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "acc433d2f93c7b975ba8b2cd8b34025e2b5ee0d05340a5a92187a25eb404b546",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-5-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        271
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-5-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "b4c7974c6652872331b5bf447eab2b76cd33a679264ea395adb0cf32c077e35d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-comparison-5-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        514
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-0-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7520fbc1d28b32108cbfe3136a64ab2b0d9ad611e9d9cd65e33f0f80eef9d588",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-0-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-0-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1c911becbad58e437c41af80545fa140393a69fe3b04b4884fa01faa601499b6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-0-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-1-1x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7ad7fd9c7d6e11622b33a7070e5061259dee76167d60f5e206728ee60a929ead",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-1-1x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        468
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-1-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4ca32b046fbd0c9040f95f16faabbe16051caef9795385d695d2f6e340e7758b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/firefox-portrait-1-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2412,
+        1302
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/report.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "5aa0fb4010ccf2360edea0cd1fab2abc225935c4c8213ddef70d71f1c28cb430",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/local-browser/report.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/online-provenance.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f4cc521926acf2c22509014df690fc971621e0176c32b6f3e85c85a5a9a1420d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/online-provenance.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/original-generation-receipt.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "897f6ba66c3d7345c875e487ea7326a3d9810a8626aeb7901c4f3142b3819428",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/original-generation-receipt.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/references.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "056fe4d8a2810f9b73cd4fcad83766d6f9dbb0ab847e4143e7b0e23a582428d6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/references.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/replay.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "93cd6486303ca0ca73b878991d6733ecf6ae7d0839475cdccdf8300737120021",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/replay.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/technical-qa.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "af2960bbccf7d4e7ccce8b53df372bf83f62c16b8707c1e730a09d92ed3f5aff",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/evidence/technical-qa.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/index.html",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "81561a54d5ae4517501f06b9cdeb5071da443eddb0947abd855e0ce948358066",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/index.html",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/01.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "b16a36b678c6a252fb19cbd89e51a0518f3f54521f494a3b08d21f7e2228dd8e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/01.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/02.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "e2255021d0c470a9caa35d8609dced6d97fed1c7a811742de9a2b0ad9f85a729",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/02.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/03.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "61d9fafe538f622cedff63742bcb2e1f3c8b4a2b0da42c557526c127ba31b9ff",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/03.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/04.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7b7eea04c5f62291346e476223203073360ba1de7811876033a0884fe49e9482",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/04.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/05.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "528e95d3ada8ad19796d6bfe1c1f1dc0c83d7e84bc68eac1a111431cd3e0705b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/05.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/06.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "78cc96bf478700331b0d773ad5e65043ddaf90b87086f36e138a824206d60084",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/06.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/07.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c6bba6b744f7e577ac5017338d6232a11cd1e942b8ad1822513451d592b0e8a8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/07.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/08.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a1c221ff088149bfc604690f9bf5b0fef12d61b956d6c9989ad60b51e29c0e98",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/08.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/09.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c24aa718b8588525238feddd48910deb8672502917a5c3367c68734b1784b27a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/layers/09.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/manifest.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "3af04406a09b082e5154729348e466941a87c3d3d49aa91362ba7d3d10a0bc8a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/manifest.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/native/CH4-03-R1-construction-study.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f345448c37a24342440301303314e05be9f19b202b39b3597f1461d857cf451c",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/native/CH4-03-R1-construction-study.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/online.html",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "53a4736b02fab8c968d1f97ac014fcd36b9e1aeff3e876f7eb3240590329d436",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/online.html",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/originals/approved-style-detailed-original.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "6727d162a2ce6676562d8b12f4415cffd7612618302b17bdc8206cd5405d46c6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/originals/approved-style-detailed-original.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        1788,
+        880
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/CH4-03-R1-construction-study-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "28672f10e0dc612a49b126658b95c4c8a21e64b1559f5fd85c978895e8e26c35",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/CH4-03-R1-construction-study-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-background-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "eaccda9938e6eac7a788ae05b03b666a0b0d85a8319a27dab86591b4b570d34b",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-background-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-bureaucratic-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c23e75561cd23f5c9ae95acdbce8157d45a8db2fc028c1da37b57b80b16f3ea4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-bureaucratic-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-delighted-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1ba0886fbd2561a3a1a6541b13a17c5a1d660c2da7b43212b8d5d60e30aaeba8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-delighted-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-disappointed-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ad4fa451dc57d67d02dcdee2400e8daabfbc8263414dfa8a2feecf13b3505534",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-auctioneer-disappointed-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-ch2-conductor-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "4b22e6b0a721a916444f61e79e6076b80ba4629e408f9cb03c080d74cafab947",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-ch2-conductor-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-ch2-groundskeeper-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1c34526d89e973d1b7e3aa949505b3bb3f337b55d4b8fe6a1efb6148f9f44cde",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-ch2-groundskeeper-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-ch403-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "90a37b1b1752ab85c7e28becfe7dfc5e0c7709e8dfde583187737c65086daa76",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-ch403-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-on-approved-background-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "51438298a4a19195a1cd59638e979fe0f982dcf13be92eda3dcb6e0ec2eb14f1",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-on-approved-background-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-pavilion-attendant-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "c91c92b1340e984a96355f6d3348e60a3a7b256d6e0aa46422ba9235020d63ee",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-pavilion-attendant-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-pavilion-presenter-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7e011fa7021ff78aed6d2435cea79e51bf4ed9deeb0595fe6cdae27b9713dbe8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-pavilion-presenter-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-receptionist-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "230048e64a3192dd1d8de63858b2fa145abbf3822bb4406787b0dc2e9fe76c73",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/approved-receptionist-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/face-old-study-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "ff25acb3b33d61ff913a1f5c05655690389bfd6aec13503e78b20cc5ada16748",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/face-old-study-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        640,
+        352
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/hands-old-study-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "cd3685895196a9b350983f4183201dad8bbb849f2a0190753e9e9486f2808198",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/hands-old-study-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        880,
+        324
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/old-study-composites-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "39e20640d4f3503aeb5b4e965b1dacb663efee39c832a3806fd507761f3c0832",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/old-study-composites-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        4512,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/old-study-foreground-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "e1f432146c1aa14448eaf764b76ff362900a7cd49b2e9c52b5a00537f013c716",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/old-study-foreground-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        4512,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/study-on-approved-background-4x.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "9dbe71ff9aa00a20031b5c4c18d189b9eb139eeaef32b12f0cdc8af48bf92067",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/previews/study-on-approved-background-4x.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        2256,
+        1112
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/prompts/native-illustration-brief.md",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "7c78e514e87a1e20911718416b7033b507edf014d1688e16ce854f1b1a75337d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/prompts/native-illustration-brief.md",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/prompts/original-generation-prompt.txt",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "416bfa78530a20500f948e0aea76cc6f725fc4e16df1a35c2d21157dad455f75",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/prompts/original-generation-prompt.txt",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-background.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-background.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-bureaucratic.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-bureaucratic.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-delighted.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "1d1121394a9a628116f8d110ba122159c0ae32894414b9bec4ec641e662f84e4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-delighted.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-disappointed.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "07ebaa5a00f4119855a9b6ba319ce3614b2b3c710243857f7756b08022cb33fc",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-auctioneer-disappointed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-ch2-conductor.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-ch2-conductor.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-ch2-groundskeeper.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-ch2-groundskeeper.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-ch403.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-ch403.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-pavilion-attendant.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-pavilion-attendant.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-pavilion-presenter.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-pavilion-presenter.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-receptionist.png",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/references/approved-receptionist.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/CH4-03-R1-native.ora",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "972e6275b79017ac8cfd69246ce8cb96e21e95176fdc780c44b46be5ebb735f4",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/CH4-03-R1-native.ora",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/browser_qa.cjs",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "29ed51f4b672397b52c9619684ac788fb62a421136b62b7a9ed8b87256c5b5d8",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/browser_qa.cjs",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/build_review.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "bb180a111690d190948853c2f4a47281ddab65103d514425cf121dac0bfc8b1a",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/build_review.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/checksums.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a00a12d2afc1f2a06be046fa658324c6cafbd7e87e129cec8faea37d3738bb84",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/checksums.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/native-paint.json",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "a3a46499d84ef75be9c4159f2e79352bdc5e7f8696b2f2943dfb6716d380dfd6",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/native-paint.json",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/native_paint.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "3480c27e65c76796b29ff3e0efa3975c1ee98453330e3d602aa8ed65153dd613",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/native_paint.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/prepare_online.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "f9b9badff7be31b906bf80379cfc5a7a260dfd35a50c51e1aadfab848b245a79",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/prepare_online.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/verify_publication.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "fe855461197d902e90b435b60f88492074372fc527f152d63a40e063d79ff43e",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/v01/source/verify_publication.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/verify_public.py",
+      "commit": "2669621815c3a7ea996927e5c5579d520f0d3f91",
+      "sha256": "808c89d658236ba6b71d1fdef00f73266d8e5bc8a892c9c8e7226b9220df27a9",
+      "role": "review-package",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2669621815c3a7ea996927e5c5579d520f0d3f91/tools/prologue-art-lab/assets/review/chapter-04-r1-auctioneer-2026-11-26/verify_public.py",
+      "publicBytesMatch": true,
+      "dimensions": null
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/hotel_auctioneer/showman.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "231baf25ffd00511144693927354e73f42cae4f052964a9db0a99323689a0d78",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/portraits/hotel_auctioneer/showman.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/hotel_auctioneer/delighted.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "1d1121394a9a628116f8d110ba122159c0ae32894414b9bec4ec641e662f84e4",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/portraits/hotel_auctioneer/delighted.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/hotel_auctioneer/disappointed.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "07ebaa5a00f4119855a9b6ba319ce3614b2b3c710243857f7756b08022cb33fc",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/portraits/hotel_auctioneer/disappointed.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/portraits/hotel_auctioneer/bureaucratic.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "cfd30e19c111dee66d6767588252e382d590cf0f59581a4c3dceb201c5b981ef",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/portraits/hotel_auctioneer/bureaucratic.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "b2f11966c5b598b1869803f35eb38d00006f346c40a563118c4bdb0eacadf77f",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/lobby/portraitBackground.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/portraits/courtesy_conductor/courtesy_conductor_talking.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "8c6601db91d262f5a6b362609b878589025cb924c15c0753df268d4f84592e4d",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/portraits/courtesy_conductor/courtesy_conductor_talking.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "afc7055ffe4b60f3efc4cb3747bc21fee61275f937cdefa1c1794f4b02adb402",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/portraits/groundskeeper/groundskeeper_idle.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "761a45d4aa3037173684b815fde75d8d7a7694d541aff6d55dbd863f7e312e2d",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/portraits/receptionist/receptionist_idle.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/portraits/pavilion_reboot/pavilion_attendant/idle.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "28fdf5523454ea2ccdb397bd4d7006fc1fb8f04109046b7646361692422c3ef2",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/portraits/pavilion_reboot/pavilion_attendant/idle.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/portraits/pavilion_reboot/pavilion_presenter/idle.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "da33e42a723c8f1a5fe82a2ecaa5cd1e22281caa3ee4abc26db8e81569cd6784",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/portraits/pavilion_reboot/pavilion_presenter/idle.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "582bcd51de937e5fe124160a8beb74b4ee469f52eeb6d9d0d38b918cfb0d6be0",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/lobby.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "83cf1f0df4d130f24c53c931cae83fd92abef8fdc7e8f80359c5657ce051ce06",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/restroom.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/ballroom.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "76a290b0f7419927440e0635638183b89a7844b03bc9cec065bc08827dec713c",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/ballroom.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "77325aca0d3c61d5b6d1980232fb11fa55156454a26659c6887c4d726a82c377",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/restroom/portraitBackground.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/loading_dock/portraitBackground.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "27f69050b10d3e10121f7f2c2860db1418504b00d3848daabde420485b9bcc1f",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/loading_dock/portraitBackground.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        564,
+        278
+      ]
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/art/scenes/biology_park/control_tower.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    },
+    {
+      "path": "assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory.png",
+      "commit": "2af6606c25ce252752c65aa5c68c87ff84f804ae",
+      "sha256": "84f52f2d8458a82c8d479d628f20eda67b6e78162be4658f89db674ddf6acad3",
+      "role": "immutable-canonical-reference",
+      "url": "https://raw.githubusercontent.com/InterstellarHarvest/CYOA-storyboard/2af6606c25ce252752c65aa5c68c87ff84f804ae/assets/selected/pending-integration/scenes/grand_bellevue/staff_lavatory.png",
+      "publicBytesMatch": true,
+      "dimensions": [
+        314,
+        206
+      ]
+    }
+  ]
+}
