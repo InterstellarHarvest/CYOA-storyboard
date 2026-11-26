@@ -11,7 +11,7 @@ BENCH={'ch2-bureau':'assets/selected/art/scenes/biology_park/conveniences_bureau
 NOTES={
  'CH4-01':'Retain. Optional targeted carpet wear, damage edges and podium/flower accents. Preserve layout, duct lighting, all objects and small NPC.',
  'CH4-04':'Localized basin/faucet planes, worker colour clusters and contact shadows. Preserve both plumbers, fixtures, stalls and exposed toilet.',
- 'CH4-05':'Retain. Optional floor-mark and floral/cloth grouping. Preserve cake trolley, clipboards, furniture, all figures and architecture.',
+ 'CH4-05':'Retain. Optional floor-mark and floral/cloth grouping. Preserve tables, chair-carrying workmen, clipboards, all figures and architecture.',
  'CH4-B2-03':'Highest priority: near basin/tap material pilot, then other surfaces only if volume survives. No flat sink reconstruction or global quantization.',
  'CH4-B2-11':'Second material pilot: lift threshold and floor. Preserve all loading-dock objects, light direction and geometry.'}
 def main():

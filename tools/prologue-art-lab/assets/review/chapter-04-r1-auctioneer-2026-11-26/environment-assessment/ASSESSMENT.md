@@ -21,7 +21,7 @@ Those are the useful benchmarks, rather than colour counts alone.
 
 **Recommendation: retain; optional localized refinement.**
 
-At native size, the red carpet, paired doors, intrusive duct, podium, framed piano-lot display,
+At native size, the red carpet, paired doors, intrusive duct, podium, framed lot display,
 flowers and small auctioneer form a readable hierarchy. The room and its humorous
 institutional intrusion should remain intact. The improved duct volume and
 chandelier lighting are successful; there is no reason to replace them.
@@ -64,18 +64,19 @@ recompose the room or add fixtures. Colour count: **2,524**, diagnostic only.
 **Recommendation: retain; optional floor and small-object material cleanup.**
 
 The piano, stage, formal figures, organizer with clipboards, seated figure,
-refreshment furniture and cake trolley remain distinct at native size. The duct,
+refreshment tables and chair-carrying workmen remain distinct at native size. The duct,
 curtain, windows and green-grey wall establish continuity. The room communicates
 an overmanaged wedding reception without needing more objects.
 
-At 4×, many floorboard edges, chips and similarly valued tan fragments compete
-with the small figures. The white floral arrangements and foreground table/cake
+At 4×, many floorboard edges and similarly valued tan fragments compete
+with the small figures. Several large pale angular wear patches read as isolated
+shapes rather than wear following the boards. The white floral arrangements and foreground table
 accents contain isolated bright marks that can look speckled. The back-wall
 damage is graphically strong relative to its shallow material shading.
 
-If revised, quiet selected floorboard interiors and group a few floral/cloth
-highlights, while retaining the board directions, furniture positions, cake and
-trolley, character silhouettes, clipboards, chair, doors, stage and lighting.
+If revised, quiet selected floorboard interiors, let wear follow the boards and group a few floral/cloth
+highlights, while retaining the board directions, furniture positions, table contents,
+character silhouettes, clipboards, chair, doors, stage and lighting.
 The organizer must remain the same auburn-haired, slate-suited character.
 Do not turn scene figures into tiny portraits. Colour count: **3,669**,
 diagnostic only.
