@@ -174,10 +174,11 @@ async function run(name, base) {
   const want = [active.length + ' active shared art records (+' + nested + ' scene states / views / pages)', archived + ' retired historical records',
     ...Object.entries(byStatus).map(([s, n]) => n + ' ' + s)];
   const missing = want.filter((t) => !new RegExp('(^|[^0-9])' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).test(art));
-  check(b, 'zoom, Items and Artwork panels still work (' + active.length + ' active + ' + archived + ' retired = ' + records.length + ' shared art records incl. nine death screens; '
+  check(b, 'zoom, Items and Artwork panels still work (' + active.length + ' active + ' + archived + ' retired = ' + records.length + ' shared art records incl. nine earlier + four Chapter 4 death screens; '
     + Object.entries(byStatus).map(([s, n]) => n + ' ' + s).join(', ') + '; ' + itemCount + ' items)', before !== await p2.evaluate(() => document.getElementById('stage').style.transform)
     && items === itemCount && !missing.length && active.length + archived === records.length
-    && Object.keys(catalog.deathScreens).length === 9, [items, missing, art.slice(0, 400)]);
+    && Object.keys(catalog.deathScreens).filter((k) => !k.startsWith('grand_bellevue/')).length === 9
+    && Object.keys(catalog.deathScreens).filter((k) => k.startsWith('grand_bellevue/')).sort().join() === ['folded_for_convenience', 'final_occupancy', 'made_to_measure', 'pressed_and_steamed'].map((x) => 'grand_bellevue/' + x).sort().join(), [items, missing, art.slice(0, 400)]);
   await p2.screenshot({ path: path.join(OUT, name + '_3_imported.png') });
   await ctx2.close();
   check(b, 'no console or page errors', !errors.length, errors);
