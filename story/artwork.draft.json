@@ -2797,44 +2797,44 @@
       "slot": {
         "title": "LOT 53 DISPUTE TICKET — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "96x96",
         "assetPath": null,
         "suggestedFilename": "art/items/grand_bellevue/lot_53_dispute_ticket_slot.png",
         "prompt": "Review-only placeholder direction, not an approved art brief: a red carbon-copy auction dispute ticket, stamped HOLD FOR INSPECTION, modest 1960s typography, no decorative flourish; transparent 96×96 pixel slot art if later approved.",
-        "notes": "CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Do not produce until Nate approves the visual brief."
+        "notes": "OWNER APPROVED AND SELECTED B2-17 v01 — Nate, 2026-11-26; CH4-NEW-10. SOURCE-DERIVED native construction; no independent authorship claim. Immutable source InterstellarHarvest/CYOA-storyboard@e350a13794113ad7269074698fd021d10de957d3 (approved review head 302c9c5304d555b50aa252200c45c30726123a46), tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-10-dispute-ticket-slot-v01.png; SHA-256 21543ddb40788ee4f994601b37397caa3173a082b851e569cccf79484c9741cd. 96x96 transparent RGBA (binary 0/255 alpha, no baked frame). Storyboard selection only: assetPath stays null until Gameplay integration; existing item give/read/use behavior and flags are unchanged (docs/149). Earlier draft note, superseded by this approval: CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Do not produce until Nate approves the visual brief."
       },
       "inspect": {
         "title": "LOT 53 DISPUTE TICKET — INSPECTION",
         "kind": "item-inspect",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "565x451",
         "assetPath": null,
         "suggestedFilename": "art/items/grand_bellevue/lot_53_dispute_ticket_inspect.png",
         "prompt": "Review-only placeholder direction, not an approved art brief: red carbon ticket with LOT 53, LACK OF PRIVACY — CUSTOMER PRESENT and HOLD FOR INSPECTION stamp; show it on a plain hotel clerk's desk in 1960s utilitarian style, 565×451 inspect crop.",
-        "notes": "CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Text and composition require later owner review."
+        "notes": "OWNER APPROVED AND SELECTED B2-17 v01 — Nate, 2026-11-26; CH4-NEW-11. SOURCE-DERIVED native construction; no independent authorship claim. Immutable source InterstellarHarvest/CYOA-storyboard@e350a13794113ad7269074698fd021d10de957d3 (approved review head 302c9c5304d555b50aa252200c45c30726123a46), tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-11-dispute-ticket-inspection-v01.png; SHA-256 493004874154a0037559aa3eb4393eb60d73fac4977577699245eb9154393eed. 565x451 opaque RGB; lettering exactly DISPUTE TICKET / LOT 53 / LACK OF PRIVACY — CUSTOMER PRESENT / HOLD FOR INSPECTION. Storyboard selection only: assetPath stays null until Gameplay integration; existing item give/read/use behavior and flags are unchanged (docs/149). Earlier draft note, superseded by this approval: CH4 WORKING DRAFT — no art has been requested, generated, selected or approved. Text and composition require later owner review."
       }
     },
     "wedding_ring_lot31": {
       "slot": {
         "title": "WEDDING RING — INVENTORY SLOT",
         "kind": "item-slot",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "96x96",
         "assetPath": null,
         "suggestedFilename": "art/items/grand_bellevue/wedding_ring_lot31_slot.png",
         "prompt": "Draft brief, not approved art: small simple silver wedding band with one strand of pale blue ribbon caught around it; understated 1960s styling on a transparent 96×96 slot canvas. No legible lettering at slot scale.",
-        "notes": "CH4 DRAFT BRIEF — not yet requested, generated, selected or approved. Corrected 2026-11-24 (docs/137 NEW-12, Nate): the inscription reveal is already approved canon (hotel_ring_inspect_inscription and the wedding_ring_lot31 read text): AS IS, WHERE IS. Nothing is legible at 96×96, and the slot never shows other wording."
+        "notes": "OWNER APPROVED AND SELECTED B2-17 v01 — Nate, 2026-11-26; CH4-NEW-12. SOURCE-DERIVED native construction; no independent authorship claim. Immutable source InterstellarHarvest/CYOA-storyboard@e350a13794113ad7269074698fd021d10de957d3 (approved review head 302c9c5304d555b50aa252200c45c30726123a46), tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-12-wedding-ring-slot-v01.png; SHA-256 e3a1d25cf2343302a6df8c660341879fa1e6a90f43629ac0706e50d2ba3e1ebe. 96x96 transparent RGBA (binary 0/255 alpha, transparent ring hole, nothing legible). Storyboard selection only: assetPath stays null until Gameplay integration; existing item give/read/use behavior and flags are unchanged (docs/149). Earlier draft note, superseded by this approval: CH4 DRAFT BRIEF — not yet requested, generated, selected or approved. Corrected 2026-11-24 (docs/137 NEW-12, Nate): the inscription reveal is already approved canon (hotel_ring_inspect_inscription and the wedding_ring_lot31 read text): AS IS, WHERE IS. Nothing is legible at 96×96, and the slot never shows other wording."
       },
       "inspect": {
         "title": "WEDDING RING — INSPECTION",
         "kind": "item-inspect",
-        "status": "not-started",
+        "status": "approved",
         "dimensions": "565x451",
         "assetPath": null,
         "suggestedFilename": "art/items/grand_bellevue/wedding_ring_lot31_inspect.png",
         "prompt": "Draft brief, not approved art: close-up of the simple silver wedding band with its loose pale blue ribbon, the inner curve turned toward the viewer, showing a tiny maker's mark and the engraving AS IS, WHERE IS. as fine lettering that follows the curve (exactly those words, capitals and punctuation; no other words). Keep the engraving small, so the unread description ('too small to read at a glance') stays true while the approved words are correct wherever the pixels resolve them. 565×451 item-inspect view, restrained 1960s palette, no ornate jewelry or ring box.",
-        "notes": "CH4 DRAFT BRIEF — not yet requested, generated, selected or approved. Corrected 2026-11-24 (docs/137 NEW-13, Nate): replaces the stale 'Inscription not authored yet'. Canon reveals the engraving in hotel_ring_inspect_inscription and the item's read text (beneath a tiny maker's mark: AS IS, WHERE IS.). The text reveal stays authoritative; the art never shows any other wording."
+        "notes": "OWNER APPROVED AND SELECTED B2-17 v01 — Nate, 2026-11-26; CH4-NEW-13. SOURCE-DERIVED native construction; no independent authorship claim. Immutable source InterstellarHarvest/CYOA-storyboard@e350a13794113ad7269074698fd021d10de957d3 (approved review head 302c9c5304d555b50aa252200c45c30726123a46), tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-13-wedding-ring-inspection-v01.png; SHA-256 298d8e45f371f7cc3f95e14928cf153fbe1af50f1bfac941a569c4f844a067e8. 565x451 opaque RGB; inner engraving exactly AS IS, WHERE IS. plus an anonymous maker punch. Storyboard selection only: assetPath stays null until Gameplay integration; existing item give/read/use behavior and flags are unchanged (docs/149). Earlier draft note, superseded by this approval: CH4 DRAFT BRIEF — not yet requested, generated, selected or approved. Corrected 2026-11-24 (docs/137 NEW-13, Nate): replaces the stale 'Inscription not authored yet'. Canon reveals the engraving in hotel_ring_inspect_inscription and the item's read text (beneath a tiny maker's mark: AS IS, WHERE IS.). The text reveal stays authoritative; the art never shows any other wording."
       }
     }
   },

@@ -662,6 +662,36 @@
         "path": "art/items/family_portrait_photo_slot.png"
       }
     },
+    "items:lot_53_dispute_ticket#inspect": {
+      "file": "assets/selected/pending-integration/items/lot_53_dispute_ticket/inspect.png",
+      "sha256": "493004874154a0037559aa3eb4393eb60d73fac4977577699245eb9154393eed",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b217-ticket-ring-review-20261125",
+        "commit": "e350a13794113ad7269074698fd021d10de957d3",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-11-dispute-ticket-inspection-v01.png"
+      }
+    },
+    "items:lot_53_dispute_ticket#slot": {
+      "file": "assets/selected/pending-integration/items/lot_53_dispute_ticket/slot.png",
+      "sha256": "21543ddb40788ee4f994601b37397caa3173a082b851e569cccf79484c9741cd",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b217-ticket-ring-review-20261125",
+        "commit": "e350a13794113ad7269074698fd021d10de957d3",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-10-dispute-ticket-slot-v01.png"
+      }
+    },
     "items:property_claim_ticket#inspect": {
       "file": "assets/selected/art/items/property_claim_ticket_inspect.png",
       "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93",
@@ -840,6 +870,36 @@
         "ref": "agent/ch03-art-reconciliation-20261123",
         "commit": "abaf9177ab79cadf0f0e9d665a48b93fccd79543",
         "path": "art/items/bathroom_pass_slot.png"
+      }
+    },
+    "items:wedding_ring_lot31#inspect": {
+      "file": "assets/selected/pending-integration/items/wedding_ring_lot31/inspect.png",
+      "sha256": "298d8e45f371f7cc3f95e14928cf153fbe1af50f1bfac941a569c4f844a067e8",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b217-ticket-ring-review-20261125",
+        "commit": "e350a13794113ad7269074698fd021d10de957d3",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-13-wedding-ring-inspection-v01.png"
+      }
+    },
+    "items:wedding_ring_lot31#slot": {
+      "file": "assets/selected/pending-integration/items/wedding_ring_lot31/slot.png",
+      "sha256": "e3a1d25cf2343302a6df8c660341879fa1e6a90f43629ac0706e50d2ba3e1ebe",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b217-ticket-ring-review-20261125",
+        "commit": "e350a13794113ad7269074698fd021d10de957d3",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-12-wedding-ring-slot-v01.png"
       }
     },
     "portraits:courtesy_conductor:talking": {
