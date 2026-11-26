@@ -1,0 +1,117 @@
+{
+  "title": "B2-12 v03 INSPECT alternatives - separate lock icon row",
+  "branch": "art/ch4-b212-bridal-privacy-review-20261125",
+  "preservationBaseline": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+  "newArtworkStatus": "UNSELECTED",
+  "ownerApproved": false,
+  "newAssets": [
+    {
+      "state": "locked",
+      "file": "native/CH4-NEW-07-inspect-locked-v03.png",
+      "sha256": "b571f3215be27ab7e86bdb67530a86d33e20ed6a0638842f88227fdbc06ec0e3",
+      "dimensions": [
+        565,
+        451
+      ],
+      "mode": "RGB",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "source": "references/approved-inspect-locked-v01.png",
+      "sourceSha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb",
+      "patch": "layers/locked-crt-content.png",
+      "patchSha256": "a63e49f136e0defc8dad616aa43b51aa8f5f3c3af56ed54a43ea4526a5e8670d",
+      "actualChangeMask": "masks/locked-actual-changes.png",
+      "changedPixels": 2187,
+      "outsideAuthorizedPixels": 0,
+      "sourceDerived": true,
+      "newImageGeneration": false,
+      "runtimeBinding": null
+    },
+    {
+      "state": "provisional",
+      "file": "native/CH4-NEW-07-inspect-provisional-v03.png",
+      "sha256": "fa4d465cd6c25b7591ff97caf2713e4b521ef3c2dba6243c5a571685f17660e9",
+      "dimensions": [
+        565,
+        451
+      ],
+      "mode": "RGB",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "source": "references/approved-inspect-provisional-v01.png",
+      "sourceSha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3",
+      "patch": "layers/provisional-crt-content.png",
+      "patchSha256": "5b28af0e10c2321f31507cec30d17f1ad1b644ee5be6701fb71a65f0d60d0786",
+      "actualChangeMask": "masks/provisional-actual-changes.png",
+      "changedPixels": 2931,
+      "outsideAuthorizedPixels": 0,
+      "sourceDerived": true,
+      "newImageGeneration": false,
+      "runtimeBinding": null
+    }
+  ],
+  "unchangedApprovedReferences": [
+    {
+      "file": "references/approved-inspect-locked-v01.png",
+      "sourceCommit": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-07-bridal-privacy-panel-v01.png",
+      "sha256": "072e30b905014a3856e21190551307eab0b0298dd0624e831f5395951d3b7afb",
+      "status": "APPROVED",
+      "role": "APPROVED INSPECT source"
+    },
+    {
+      "file": "references/approved-inspect-provisional-v01.png",
+      "sourceCommit": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-07-provisional-authorized-v01.png",
+      "sha256": "e546f7eb4d6de3a319548ee7759ab9ca83e415caa7293fb29322ca6f98ef44b3",
+      "status": "APPROVED",
+      "role": "APPROVED INSPECT source"
+    },
+    {
+      "file": "references/approved-focus-locked-v02.png",
+      "sourceCommit": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/native/CH4-NEW-07-focus-locked-v02.png",
+      "sha256": "d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520",
+      "status": "APPROVED",
+      "role": "Newly APPROVED widescreen - protected"
+    },
+    {
+      "file": "references/approved-focus-provisional-v02.png",
+      "sourceCommit": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/native/CH4-NEW-07-focus-provisional-v02.png",
+      "sha256": "b7d8014313519b67d3ebe8c72772ed0d01b4dbbb88748c9e5b0e7f589d669272",
+      "status": "APPROVED",
+      "role": "Newly APPROVED widescreen - protected"
+    },
+    {
+      "file": "references/approved-ch2-focus.png",
+      "sourceCommit": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+      "sourcePath": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/references/ch2-exposure-dispenser.png",
+      "sha256": "c57ec1054693cd9e379a91d68cd315d3c0be05b3ab50d098a864dc957615ba4b",
+      "status": "APPROVED",
+      "role": "Approved Chapter2 pixel-art benchmark"
+    }
+  ],
+  "sourceDerived": true,
+  "whollyIndependentNativeAuthorship": false,
+  "newImageGeneration": false,
+  "method": "Existing editable native screen-content layer replaced with original bitmap glyphs and a dedicated lock-icon row. Text moves up11px. No other pixels change. Palette exact; no new colors or image resampling. Original source-derived illustration provenance retained.",
+  "sourceIllustrationCommit": "ce8cc78f7683c99d96399091ab92cc3ac52e4f05",
+  "approvedSquareSourceCommit": "1261658ed882bff7340405e91f5d44f4e5404012",
+  "authorizedEditBoxInclusive": [
+    289,
+    106,
+    421,
+    163
+  ],
+  "closeupCropBoxExclusive": [
+    264,
+    84,
+    440,
+    183
+  ],
+  "sharedLayout": "evidence/layout.json",
+  "productionRegistrationPerformed": false,
+  "gameplayOrNarrativeChanged": false,
+  "approvedV01OrV02Modified": false
+}

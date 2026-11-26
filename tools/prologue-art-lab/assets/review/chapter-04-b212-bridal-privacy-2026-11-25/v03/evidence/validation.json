@@ -1,0 +1,267 @@
+{
+  "passed": true,
+  "newCandidates": "UNSELECTED",
+  "artisticApproval": false,
+  "paletteCounts": {
+    "locked": 29,
+    "provisional": 29
+  },
+  "allSurroundingPixelsExact": true,
+  "approvedV01AndV02Exact": true,
+  "checks": [
+    {
+      "check": "Exactly two unselected INSPECT alternatives",
+      "passed": true
+    },
+    {
+      "check": "locked565x451 opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "locked hashes",
+      "passed": true
+    },
+    {
+      "check": "locked exact source palette",
+      "passed": true
+    },
+    {
+      "check": "locked exact native patch replay",
+      "passed": true
+    },
+    {
+      "check": "locked binary native alpha",
+      "passed": true
+    },
+    {
+      "check": "locked actual mask exact",
+      "passed": true
+    },
+    {
+      "check": "locked ZERO surrounding/CRT-style/light changes",
+      "passed": true,
+      "changedPixels": 2187
+    },
+    {
+      "check": "locked clear separate icon row",
+      "passed": true,
+      "clearRows": 9
+    },
+    {
+      "check": "locked centered text",
+      "passed": true
+    },
+    {
+      "check": "locked no approval/runtime binding",
+      "passed": true
+    },
+    {
+      "check": "locked exact unscaled before crop",
+      "passed": true
+    },
+    {
+      "check": "locked exact unscaled after crop",
+      "passed": true
+    },
+    {
+      "check": "provisional565x451 opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "provisional hashes",
+      "passed": true
+    },
+    {
+      "check": "provisional exact source palette",
+      "passed": true
+    },
+    {
+      "check": "provisional exact native patch replay",
+      "passed": true
+    },
+    {
+      "check": "provisional binary native alpha",
+      "passed": true
+    },
+    {
+      "check": "provisional actual mask exact",
+      "passed": true
+    },
+    {
+      "check": "provisional ZERO surrounding/CRT-style/light changes",
+      "passed": true,
+      "changedPixels": 2931
+    },
+    {
+      "check": "provisional clear separate icon row",
+      "passed": true,
+      "clearRows": 8
+    },
+    {
+      "check": "provisional centered text",
+      "passed": true
+    },
+    {
+      "check": "provisional no approval/runtime binding",
+      "passed": true
+    },
+    {
+      "check": "provisional exact unscaled before crop",
+      "passed": true
+    },
+    {
+      "check": "provisional exact unscaled after crop",
+      "passed": true
+    },
+    {
+      "check": "Identical layout boxes and body anchor across states",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-inspect-provisional-v03-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-inspect-provisional-v03-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-focus-locked-v02-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-focus-locked-v02-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "provisional-before-crt-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "provisional-before-crt-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-focus-provisional-v02-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-focus-provisional-v02-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "both-states-crt-before-after-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "both-states-crt-before-after-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-inspect-locked-v03-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "CH4-NEW-07-inspect-locked-v03-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-inspect-locked-v01-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-inspect-locked-v01-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "provisional-crt-before-after-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "provisional-crt-before-after-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "locked-before-crt-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "locked-before-crt-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-inspect-provisional-v01-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-inspect-provisional-v01-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-focus-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "approved-ch2-focus-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "locked-after-crt-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "locked-after-crt-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "locked-crt-before-after-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "locked-crt-before-after-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "provisional-after-crt-native-4x.png native source exists",
+      "passed": true
+    },
+    {
+      "check": "provisional-after-crt-native-4x.png exact nearest4x",
+      "passed": true
+    },
+    {
+      "check": "references/approved-inspect-locked-v01.png APPROVED / immutable source bytes",
+      "passed": true
+    },
+    {
+      "check": "references/approved-inspect-provisional-v01.png APPROVED / immutable source bytes",
+      "passed": true
+    },
+    {
+      "check": "references/approved-focus-locked-v02.png APPROVED / immutable source bytes",
+      "passed": true
+    },
+    {
+      "check": "references/approved-focus-provisional-v02.png APPROVED / immutable source bytes",
+      "passed": true
+    },
+    {
+      "check": "references/approved-ch2-focus.png APPROVED / immutable source bytes",
+      "passed": true
+    },
+    {
+      "check": "Entire baseline unchanged: v01, approved v02, all history and canonical files",
+      "passed": true,
+      "baselineFiles": 927,
+      "selectedFiles": 200
+    },
+    {
+      "check": "Honest original source-derived provenance / no new generation",
+      "passed": true
+    },
+    {
+      "check": "Correct isolated review branch",
+      "passed": true
+    }
+  ]
+}
