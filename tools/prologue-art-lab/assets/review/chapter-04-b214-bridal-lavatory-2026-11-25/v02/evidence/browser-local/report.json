@@ -1,0 +1,751 @@
+{
+  "passed": true,
+  "url": "file:///Users/MrDashiki/Experiments & Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/index.html",
+  "browsers": [
+    "chromium",
+    "firefox"
+  ],
+  "allCandidateComparisonAndCompositeRastersDecoded": true,
+  "allIntegerNativeAnd4xControlsPassed": true,
+  "figureChecks": 18,
+  "results": [
+    {
+      "browser": "chromium",
+      "article": "room",
+      "label": "Spotless lavatory - native material refinement",
+      "index": 0,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/native/CH4-NEW-02-bridal-lavatory-v02.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/CH4-NEW-02-bridal-lavatory-v02-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "v01 preserved / v02 candidate",
+      "index": 1,
+      "native": {
+        "scale": 1,
+        "natural": [
+          684,
+          260
+        ],
+        "display": [
+          684,
+          260
+        ],
+        "rendered": [
+          684,
+          260
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/lavatory-v01-v02-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2736,
+          1040
+        ],
+        "display": [
+          2736,
+          1040
+        ],
+        "rendered": [
+          2736,
+          1040
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/lavatory-v01-v02-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Approved Chapter 2 comparison",
+      "index": 2,
+      "native": {
+        "scale": 1,
+        "natural": [
+          1022,
+          260
+        ],
+        "display": [
+          1022,
+          260
+        ],
+        "rendered": [
+          1022,
+          260
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/lavatory-chapter2-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          4088,
+          1040
+        ],
+        "display": [
+          4088,
+          1040
+        ],
+        "rendered": [
+          4088,
+          1040
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/lavatory-chapter2-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Approved dressing-room continuity",
+      "index": 3,
+      "native": {
+        "scale": 1,
+        "natural": [
+          684,
+          260
+        ],
+        "display": [
+          684,
+          260
+        ],
+        "rendered": [
+          684,
+          260
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/hotel-continuity-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2736,
+          1040
+        ],
+        "display": [
+          2736,
+          1040
+        ],
+        "rendered": [
+          2736,
+          1040
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/hotel-continuity-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "comparisons",
+      "label": "Refined room / unchanged three-seashell Focus",
+      "index": 4,
+      "native": {
+        "scale": 1,
+        "natural": [
+          934,
+          332
+        ],
+        "display": [
+          934,
+          332
+        ],
+        "rendered": [
+          934,
+          332
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/frozen-focus-continuity-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3736,
+          1328
+        ],
+        "display": [
+          3736,
+          1328
+        ],
+        "rendered": [
+          3736,
+          1328
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/frozen-focus-continuity-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "Approved hotel architecture/palette continuity",
+      "index": 5,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/approved-b212-dressing-room.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/approved-b212-dressing-room-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "Approved main-scene detail/pixel benchmark",
+      "index": 6,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/approved-ch2-bureau.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/approved-ch2-bureau-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "benchmarks",
+      "label": "Approved main-scene materials/light benchmark",
+      "index": 7,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/approved-ch2-control-tower.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/approved-ch2-control-tower-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "chromium",
+      "article": "shells",
+      "label": "Original three-seashell Focus - unchanged",
+      "index": 8,
+      "native": {
+        "scale": 1,
+        "natural": [
+          564,
+          278
+        ],
+        "display": [
+          564,
+          278
+        ],
+        "rendered": [
+          564,
+          278
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/seashells-v01-UNCHANGED.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2256,
+          1112
+        ],
+        "display": [
+          2256,
+          1112
+        ],
+        "rendered": [
+          2256,
+          1112
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/seashells-v01-UNCHANGED-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "room",
+      "label": "Spotless lavatory - native material refinement",
+      "index": 0,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/native/CH4-NEW-02-bridal-lavatory-v02.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/CH4-NEW-02-bridal-lavatory-v02-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "v01 preserved / v02 candidate",
+      "index": 1,
+      "native": {
+        "scale": 1,
+        "natural": [
+          684,
+          260
+        ],
+        "display": [
+          684,
+          260
+        ],
+        "rendered": [
+          684,
+          260
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/lavatory-v01-v02-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2736,
+          1040
+        ],
+        "display": [
+          2736,
+          1040
+        ],
+        "rendered": [
+          2736,
+          1040
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/lavatory-v01-v02-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Approved Chapter 2 comparison",
+      "index": 2,
+      "native": {
+        "scale": 1,
+        "natural": [
+          1022,
+          260
+        ],
+        "display": [
+          1022,
+          260
+        ],
+        "rendered": [
+          1022,
+          260
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/lavatory-chapter2-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          4088,
+          1040
+        ],
+        "display": [
+          4088,
+          1040
+        ],
+        "rendered": [
+          4088,
+          1040
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/lavatory-chapter2-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Approved dressing-room continuity",
+      "index": 3,
+      "native": {
+        "scale": 1,
+        "natural": [
+          684,
+          260
+        ],
+        "display": [
+          684,
+          260
+        ],
+        "rendered": [
+          684,
+          260
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/hotel-continuity-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2736,
+          1040
+        ],
+        "display": [
+          2736,
+          1040
+        ],
+        "rendered": [
+          2736,
+          1040
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/hotel-continuity-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "comparisons",
+      "label": "Refined room / unchanged three-seashell Focus",
+      "index": 4,
+      "native": {
+        "scale": 1,
+        "natural": [
+          934,
+          332
+        ],
+        "display": [
+          934,
+          332
+        ],
+        "rendered": [
+          934,
+          332
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/comparisons/frozen-focus-continuity-native.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          3736,
+          1328
+        ],
+        "display": [
+          3736,
+          1328
+        ],
+        "rendered": [
+          3736,
+          1328
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/frozen-focus-continuity-native-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "Approved hotel architecture/palette continuity",
+      "index": 5,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/approved-b212-dressing-room.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/approved-b212-dressing-room-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "Approved main-scene detail/pixel benchmark",
+      "index": 6,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/approved-ch2-bureau.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/approved-ch2-bureau-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "benchmarks",
+      "label": "Approved main-scene materials/light benchmark",
+      "index": 7,
+      "native": {
+        "scale": 1,
+        "natural": [
+          314,
+          206
+        ],
+        "display": [
+          314,
+          206
+        ],
+        "rendered": [
+          314,
+          206
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/approved-ch2-control-tower.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          1256,
+          824
+        ],
+        "display": [
+          1256,
+          824
+        ],
+        "rendered": [
+          1256,
+          824
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/approved-ch2-control-tower-4x.png"
+      },
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "article": "shells",
+      "label": "Original three-seashell Focus - unchanged",
+      "index": 8,
+      "native": {
+        "scale": 1,
+        "natural": [
+          564,
+          278
+        ],
+        "display": [
+          564,
+          278
+        ],
+        "rendered": [
+          564,
+          278
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/references/seashells-v01-UNCHANGED.png"
+      },
+      "exact4x": {
+        "scale": 4,
+        "natural": [
+          2256,
+          1112
+        ],
+        "display": [
+          2256,
+          1112
+        ],
+        "rendered": [
+          2256,
+          1112
+        ],
+        "rendering": "pixelated",
+        "src": "file:///Users/MrDashiki/Experiments%20&%20Projects/_worktrees/CYOA-ch4-b214-native-review-20261125/tools/prologue-art-lab/assets/review/chapter-04-b214-bridal-lavatory-2026-11-25/v02/previews/seashells-v01-UNCHANGED-4x.png"
+      },
+      "passed": true
+    }
+  ]
+}

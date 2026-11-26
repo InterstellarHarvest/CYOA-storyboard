@@ -1,0 +1,32 @@
+{
+  "sourceDerivedDesign": true,
+  "nativeRasterConstructedIndependently": true,
+  "sourcePixelsTransferred": false,
+  "whollyIndependentCreativeDesign": false,
+  "newImageGeneration": false,
+  "referenceTool": "Built-in image_gen.imagegen, inherited v01 reference",
+  "referenceOriginal": {
+    "file": "originals/lavatory-detailed-reference.png",
+    "sha256": "12206b3d8ad90273ce23add9ebea77fd5a0fe0e0bf2d515a3782603134d892d7",
+    "dimensions": [
+      1548,
+      1016
+    ],
+    "mode": "RGB"
+  },
+  "referencePrompt": "source/lavatory-reference-prompt.txt",
+  "referencePromptSha256": "2e6402734de98a84a2f5f4eaa43f58f46735432383e14283c6f314be967ce08e",
+  "referenceGenerationRecordCommit": "da17468f1ca8f1b0aaa61b6ce7f981336edaa6ce",
+  "referenceGenerationRecord": "../v01/evidence/generation-provenance.json",
+  "nativeParent": "v01/source/build.py",
+  "nativeParentSha256": "1b3c472e1ec6d1408aa271616b2e3e48a171dfffae7ac37acea8b9b60b6836c6",
+  "nativeMethod": "Native material-specific illustration over fixed v01 geometry. source/refine.py paints surfaces and light directly at 314x206; source/base_native.py reproduces the original shell layers. No large image is read, resized, sharpened or sampled by either renderer.",
+  "changes": [
+    "Modeled plaster moldings and fixed raised wall paneling",
+    "Perspective-correct individual tiles with grout and broken warm reflections",
+    "Stone slab arris, sparse mineral veins and contact shadows",
+    "Folded duct seams, fasteners, grille lips and support shadows",
+    "Milky lamp glass with warm local plaster illumination",
+    "Clean repaired joints and minor old metal coating wear"
+  ]
+}

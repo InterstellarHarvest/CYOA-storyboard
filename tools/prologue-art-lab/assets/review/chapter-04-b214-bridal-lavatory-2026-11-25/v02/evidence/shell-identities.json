@@ -1,0 +1,55 @@
+{
+  "room": [
+    {
+      "kind": "smooth",
+      "center": [
+        113,
+        100
+      ],
+      "width": 20,
+      "height": 13,
+      "mask": "masks/room-shell-smooth.png",
+      "bbox": [
+        104,
+        86,
+        124,
+        102
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    },
+    {
+      "kind": "ridged",
+      "center": [
+        157,
+        100
+      ],
+      "width": 21,
+      "height": 13,
+      "mask": "masks/room-shell-ridged.png",
+      "bbox": [
+        147,
+        86,
+        168,
+        102
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    },
+    {
+      "kind": "third",
+      "center": [
+        201,
+        100
+      ],
+      "width": 20,
+      "height": 13,
+      "mask": "masks/room-shell-third.png",
+      "bbox": [
+        192,
+        86,
+        212,
+        102
+      ],
+      "paletteFamily": "same neutral ivory ramp"
+    }
+  ]
+}

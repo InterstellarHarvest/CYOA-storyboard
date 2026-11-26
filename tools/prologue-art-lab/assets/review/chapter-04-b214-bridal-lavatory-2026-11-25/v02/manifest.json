@@ -1,0 +1,105 @@
+{
+  "title": "B2-14 v02 - bridal lavatory material and lighting refinement",
+  "status": "UNSELECTED",
+  "ownerApproved": false,
+  "selected": false,
+  "branch": "art/ch4-b214-native-review-20261125",
+  "canonicalBaseline": "436e83f43c01b0a64620056d44aabf14c61fb444",
+  "preservationBaseline": "da17468f1ca8f1b0aaa61b6ce7f981336edaa6ce",
+  "primaryAssetCount": 1,
+  "focusRevised": false,
+  "assets": [
+    {
+      "id": "CH4-NEW-02",
+      "label": "Bridal lavatory",
+      "version": "v02",
+      "status": "UNSELECTED",
+      "ownerApproved": false,
+      "selected": false,
+      "native": {
+        "file": "native/CH4-NEW-02-bridal-lavatory-v02.png",
+        "sha256": "85fb565d8c2f79525a95ada44a9f9e3c05e2cee374712e520488c88153ee7480",
+        "dimensions": [
+          314,
+          206
+        ],
+        "mode": "RGB"
+      },
+      "exact4x": {
+        "file": "previews/CH4-NEW-02-bridal-lavatory-v02-4x.png",
+        "sha256": "5f928912906718c6b520e7259df93b3450a4c13d1ff54e5900d79dfe9422d1a7",
+        "dimensions": [
+          1256,
+          824
+        ],
+        "mode": "RGB"
+      },
+      "proposedCanonicalKey": "scenes:grand_bellevue/bridal_lavatory",
+      "runtimeBinding": null,
+      "canonicalAssetPath": null,
+      "nodes": [
+        "hotel_seashell_room"
+      ],
+      "sourceDerivedDesign": true,
+      "nativeRasterConstructedIndependently": true,
+      "sourcePixelsTransferred": false
+    }
+  ],
+  "unchangedFocus": {
+    "file": "references/seashells-v01-UNCHANGED.png",
+    "sha256": "70f35ae3853883b4fe15293ae5e6fd5ede1e721ab54946d2bc7499ce94ac04c6",
+    "dimensions": [
+      564,
+      278
+    ],
+    "mode": "RGB"
+  },
+  "unchangedPreviousRoom": {
+    "file": "references/lavatory-v01-UNCHANGED.png",
+    "sha256": "522cc6a4c2e2d45f1aae7b3897a05380b86a2c70fccdba767576aa1520cabc04",
+    "dimensions": [
+      314,
+      206
+    ],
+    "mode": "RGB"
+  },
+  "references": [
+    {
+      "file": "references/approved-b212-dressing-room.png",
+      "sourcePath": "assets/selected/pending-integration/scenes/grand_bellevue/bridal_dressing_room.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "role": "Approved hotel architecture/palette continuity",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-bureau.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/conveniences_bureau.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "90e2e936ca828ff429da78d86c5e694b083d7ea5909d56ab26a107ef0a1c9676",
+      "role": "Approved main-scene detail/pixel benchmark",
+      "status": "APPROVED"
+    },
+    {
+      "file": "references/approved-ch2-control-tower.png",
+      "sourcePath": "assets/selected/art/scenes/biology_park/control_tower.png",
+      "sourceCommit": "436e83f43c01b0a64620056d44aabf14c61fb444",
+      "sha256": "fde023d3741641aa0f376ad1ac65508de3aeef84a05a8be0defecb3f4603daca",
+      "role": "Approved main-scene materials/light benchmark",
+      "status": "APPROVED"
+    }
+  ],
+  "newRuntimeModes": 0,
+  "registryModified": false,
+  "narrativeGameplayOrEngineModified": false,
+  "constraints": {
+    "visibleOrConcealedPlumbingFixture": false,
+    "additionalTechnology": false,
+    "npcOrAiFace": false,
+    "decorativeClutter": false,
+    "shellCount": 3,
+    "shellArrangementChanged": false,
+    "counterPlacementChanged": false,
+    "perspectiveChanged": false
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "passed": true,
+  "status": "UNSELECTED",
+  "artisticApproval": false,
+  "checks": [
+    {
+      "check": "Exactly one UNSELECTED lavatory candidate",
+      "passed": true
+    },
+    {
+      "check": "314x206 opaque RGB",
+      "passed": true
+    },
+    {
+      "check": "Native PNG SHA-256",
+      "passed": true
+    },
+    {
+      "check": "Exact nearest-neighbor 4x",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-plaster-and-paneling.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-projected-stone-tiles.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-architectural-moldings.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-modeled-original-duct.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-original-lamp-and-doorframe.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-original-counter-geometry.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-stone-edge-and-bracket-modeling.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-contact-shadows.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-shell-smooth.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-shell-ridged.png",
+      "passed": true
+    },
+    {
+      "check": "Native binary RGBA layer layers/room-shell-third.png",
+      "passed": true
+    },
+    {
+      "check": "Exact native layer compositing",
+      "passed": true
+    },
+    {
+      "check": "Exact original smooth shell layer",
+      "passed": true
+    },
+    {
+      "check": "Final opaque smooth shell pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "Exact smooth silhouette/position mask",
+      "passed": true
+    },
+    {
+      "check": "Exact original ridged shell layer",
+      "passed": true
+    },
+    {
+      "check": "Final opaque ridged shell pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "Exact ridged silhouette/position mask",
+      "passed": true
+    },
+    {
+      "check": "Exact original third shell layer",
+      "passed": true
+    },
+    {
+      "check": "Final opaque third shell pixels unchanged",
+      "passed": true
+    },
+    {
+      "check": "Exact third silhouette/position mask",
+      "passed": true
+    },
+    {
+      "check": "Every historical v01 package file unchanged",
+      "passed": true,
+      "files": 89
+    },
+    {
+      "check": "Separate Focus exact PNG unchanged",
+      "passed": true
+    },
+    {
+      "check": "Previous room exact PNG unchanged",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-b212-dressing-room.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch2-bureau.png",
+      "passed": true
+    },
+    {
+      "check": "Exact canonical benchmark references/approved-ch2-control-tower.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source frozen-focus-continuity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x frozen-focus-continuity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x approved-ch2-control-tower-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-b212-dressing-room-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x approved-b212-dressing-room-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source lavatory-v01-UNCHANGED-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x lavatory-v01-UNCHANGED-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source CH4-NEW-02-bridal-lavatory-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x CH4-NEW-02-bridal-lavatory-v02-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source seashells-v01-UNCHANGED-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x seashells-v01-UNCHANGED-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source approved-ch2-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x approved-ch2-bureau-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source lavatory-chapter2-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x lavatory-chapter2-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source lavatory-v01-v02-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x lavatory-v01-v02-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Unique source hotel-continuity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Exact 4x hotel-continuity-native-4x.png",
+      "passed": true
+    },
+    {
+      "check": "Reproducible with no source/reference PNGs available",
+      "passed": true
+    },
+    {
+      "check": "Original reference/prompt preserved",
+      "passed": true
+    },
+    {
+      "check": "Honest source-derived design / independent native raster",
+      "passed": true
+    },
+    {
+      "check": "Exact inherited native recipe",
+      "passed": true
+    },
+    {
+      "check": "Comparison captions stay within margins",
+      "passed": true
+    },
+    {
+      "check": "No registration/bindings/gameplay changes",
+      "passed": true
+    },
+    {
+      "check": "All prior tracked files/approved artwork byte-identical",
+      "passed": true,
+      "baselineFiles": 770,
+      "selectedArtFiles": 202
+    },
+    {
+      "check": "Existing production owner isolated branch",
+      "passed": true
+    }
+  ]
+}
