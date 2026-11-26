@@ -405,6 +405,9 @@
       "scene": "pavilion_reboot/human_verification_stage",
       "speaker": "pavilion_presenter",
       "pose": "alarmed",
+      "effects": {
+        "give": ["pavilion_temporary_staff_pass"]
+      },
       "text": [
         {
           "desc": "The presenter's smile falters. She turns to the large camera."
@@ -415,7 +418,13 @@
         },
         "My break hasn't started! Please don't press anything!",
         {
-          "desc": "A second microphone drops before you. TEMPORARY PRESENTER APPOINTED. A green BEGIN DEMONSTRATION button lights up beside a covered emergency release."
+          "desc": "A second microphone drops before you. TEMPORARY PRESENTER APPOINTED."
+        },
+        {
+          "desc": "An administrative printer rattles and ejects a card: TEMPORARY STAFF. PEOPLE'S PAVILION. DEPARTMENT: HUMAN PRESENTATION. VALID UNTIL CORRECTED. You pocket it. Apparently, you have been hired again."
+        },
+        {
+          "desc": "A green BEGIN DEMONSTRATION button lights up beside a covered emergency release."
         }
       ],
       "choices": [

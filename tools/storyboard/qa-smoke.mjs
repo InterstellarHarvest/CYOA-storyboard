@@ -146,10 +146,11 @@ assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
 // the ONE shared artwork catalog (no per-chapter art catalogs).
 assert.deepEqual(manifest.chapters.map(c=>[c.id,c.title,c.status]),[
   ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'draft'],['chapter-04','Chapter 4 — Something Old, Something Sold','narrative approved · artwork pending · not in game']],'manifest chapters and order: Chapter 3 activated (gameplay integration), Chapter 4 narrative-only');
-// Chapter 3 gameplay integration: the manifest activates exactly the locked approved reboot (blob 857ffdf).
+// Chapter 3 gameplay integration: the manifest activates exactly the locked approved reboot. Blob 857ffdf until 2026-11-26;
+// d0591d6 adds only Nate's approved Temporary Staff Pass grant at unauthorized_presenter (docs/153).
 assert.equal(manifest.chapters[3].file,'chapters/chapter-03.reboot-candidate.json','Chapter 3 reads the approved reboot file');
 {const raw=fs.readFileSync(path.join(root,'story',manifest.chapters[3].file));
- assert.equal(createHash('sha1').update('blob '+raw.length+'\0').update(raw).digest('hex'),'857ffdf1bc9432cf4bbbfd7819f5f430a06d9036','active Chapter 3 is the locked approved narrative');}
+ assert.equal(createHash('sha1').update('blob '+raw.length+'\0').update(raw).digest('hex'),'d0591d618b86958908f966b6f71d6adee83d5a7d','active Chapter 3 is the locked approved narrative');}
 const archivedChapter3=fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'));
 assert.equal(createHash('sha256').update(archivedChapter3).digest('hex'),'02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1','legacy Chapter 3 narrative is preserved byte-for-byte in the reboot archive');
 const chapters=manifest.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(root,'story',c.file),'utf8')));

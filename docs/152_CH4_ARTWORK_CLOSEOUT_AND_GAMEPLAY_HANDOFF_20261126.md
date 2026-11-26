@@ -195,6 +195,17 @@ Confirmed against canon and by running game `main` (`c7a2d3d`, unchanged since d
 
 This is outside the docs/137 scope of 63 images. It does not block starting integration.
 
+> **Addendum, 2026-11-26: D-1 decided, option (a).**
+> - **Decision:** Nate approved granting the existing `pavilion_temporary_staff_pass` at the Chapter 3 reboot node `unauthorized_presenter`, immediately after TEMPORARY PRESENTER APPOINTED.
+> - **Record:** [docs/153](153_CH3_TEMPORARY_STAFF_PASS_GRANT_20261126.md). It was held until Nate approved the two item images. Both v01 images were then approved and registered (PR #45).
+> - **What follows:** the 96×96 slot and 565×451 inspect images become a genuine new item requirement outside the 63. The five Chapter 4 nodes and both SHOW choices are unchanged.
+>
+> **Correction, same date.** §7A omitted one integration blocker that docs/126 §6 item 1 already recorded: the **Chapter 3 → 4 exit hand-off**.
+> - Chapter 4's `hotel_entry_dispatch` routes only on `ch3_exit_route`.
+> - None of the seven Chapter 3 reboot endings writes that flag.
+> - All seven end in BEGIN AGAIN.
+> - Until the Gameplay PMO wires the hand-off, no route enters Chapter 4. The above is unchanged otherwise.
+
 ## 9. Hash integrity
 
 - **All 214 selections** match their recorded SHA-256.

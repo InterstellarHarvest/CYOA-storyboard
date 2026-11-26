@@ -692,6 +692,36 @@
         "path": "tools/prologue-art-lab/assets/review/chapter-04-b217-ticket-ring-2026-11-25/v01/native/CH4-NEW-10-dispute-ticket-slot-v01.png"
       }
     },
+    "items:pavilion_temporary_staff_pass#inspect": {
+      "file": "assets/selected/pending-integration/items/pavilion_temporary_staff_pass/inspect.png",
+      "sha256": "527e17af4a27971d2d729441f8a74d097c5442df93f0161dc841d81ee1788e41",
+      "size": [
+        565,
+        451
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/pavilion-temporary-staff-pass-review-20261126",
+        "commit": "a6a6bdbc1d619ea75a8fe7ebb056b379db02eb4f",
+        "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/native/pavilion_temporary_staff_pass_inspect.png"
+      }
+    },
+    "items:pavilion_temporary_staff_pass#slot": {
+      "file": "assets/selected/pending-integration/items/pavilion_temporary_staff_pass/slot.png",
+      "sha256": "662ecb2c15b0b70afd5e6a14a73dadab6090fc2f4c75a389f9f5a96ba06b59b5",
+      "size": [
+        96,
+        96
+      ],
+      "alpha": "transparent",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/pavilion-temporary-staff-pass-review-20261126",
+        "commit": "a6a6bdbc1d619ea75a8fe7ebb056b379db02eb4f",
+        "path": "tools/prologue-art-lab/assets/review/pavilion-temporary-staff-pass-2026-11-26/v01/native/pavilion_temporary_staff_pass_slot.png"
+      }
+    },
     "items:property_claim_ticket#inspect": {
       "file": "assets/selected/art/items/property_claim_ticket_inspect.png",
       "sha256": "0a5fd54ed4075b0e49f59b95d50f90dc0ce79408e46e9b67336a8a86c7a93d93",
