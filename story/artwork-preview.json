@@ -152,6 +152,21 @@
         "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-04-v01/native/CH4-B2-24-v01.png"
       }
     },
+    "focus:grand_bellevue/bridal_privacy_panel": {
+      "file": "assets/selected/pending-integration/focus/grand_bellevue/bridal_privacy_panel.png",
+      "sha256": "d4c260fb9b4c55e647cecb58bb6fed196f9f056fd3cf291f1862889ff8035520",
+      "size": [
+        564,
+        278
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b212-bridal-privacy-review-20261125",
+        "commit": "a944f9aeff110ddc66301840c2d415f1ba9bc357",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v02/native/CH4-NEW-07-focus-locked-v02.png"
+      }
+    },
     "focus:grand_bellevue/collection_stairs/chair_armrest": {
       "file": "assets/selected/pending-integration/focus/grand_bellevue/collection_stairs/chair_armrest.png",
       "sha256": "68bbf32b040a984201dfb0f5b83b1315cf391848848500b1e7ee97819a5f5645",
@@ -2025,6 +2040,21 @@
         "ref": "art/ch4-batch01-review-20261121",
         "commit": "6ddaf567bcc2369c2122256a6ec0daa93f5f886e",
         "path": "tools/prologue-art-lab/assets/review/chapter-04-batch02-2026-11-22/b2-08-v01/native/CH4-B2-47-v01.png"
+      }
+    },
+    "scenes:grand_bellevue/bridal_dressing_room": {
+      "file": "assets/selected/pending-integration/scenes/grand_bellevue/bridal_dressing_room.png",
+      "sha256": "f2718d729a28138a88cf51b6ef3c511bdf6d7de0d500654d975b1ab0249bdf49",
+      "size": [
+        314,
+        206
+      ],
+      "alpha": "opaque",
+      "source": {
+        "repo": "InterstellarHarvest/CYOA-storyboard",
+        "ref": "art/ch4-b212-bridal-privacy-review-20261125",
+        "commit": "1261658ed882bff7340405e91f5d44f4e5404012",
+        "path": "tools/prologue-art-lab/assets/review/chapter-04-b212-bridal-privacy-2026-11-25/v01/native/CH4-NEW-01-bridal-dressing-room-v01.png"
       }
     },
     "scenes:grand_bellevue/loading_dock": {
