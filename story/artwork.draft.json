@@ -3200,6 +3200,46 @@
         "sha256": "45212c1a10f88686354a0ae27817c81c6699cf65d3f242e2ef824de0ae7f28ff",
         "dimensions": "314x206"
       }
+    },
+    "grand_bellevue/final_occupancy": {
+      "title": "FINAL OCCUPANCY",
+      "kind": "death-screen",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/final_occupancy.png",
+      "prompt": "Select the exact owner-approved B2-16 v02 314x206 aftermath illustration, unchanged. Hotel restroom aftermath: the raised stall has been lifted away on crane hooks through the ceiling hatch, leaving the broken floor-level toilet in porcelain fragments with scattered auction lot tags; detailed sink, mirror and tiles remain. No victim, face, limbs, gore or impact. Shown at exact 2x nearest-neighbor inside the approved A1 death popup; the popup title, description, button, frame and background stay engine UI and are never baked into this art. Do not redraw, downscale, re-encode or recolor.",
+      "notes": "OWNER APPROVED B2-16 v02 2026-11-25 without further changes, CH4-NEW-14. Immutable source InterstellarHarvest/CYOA-storyboard@56fe286e427bba9020d9e38be326ca1d82ce400e (approved review head 0fbecaa28d3127faeb553b7847d13121834806a7), tools/prologue-art-lab/assets/review/chapter-04-b216-fatal-aftermaths-2026-11-25/v02/native/CH4-NEW-14-final-occupancy-v02.png; SHA-256 e65d321cac76af8e03dd57ba5cbe3aa2d7db454669b0dd36631c61e51e475b7a. Fatal node fatal_stall_final_occupancy (deathPopup.artRef and endingArt = grand_bellevue/final_occupancy); popup copy unchanged. Superseded unselected v01 (SHA-256 a079f2dd91f2cdfaf9f13d7caa754ae909c6f2e4c24587e033c7edf7e8a66dc9) is preserved as historical review artwork on the review branch. SOURCE-DERIVED design from a preserved imagegen reference; native raster separately constructed; not wholly independent native-grid authorship. The game importer does not yet consume Chapter 4 deathPopup/endingArt fields (docs/140); no death-popup behavior, narrative or engine change; assetPath null. See docs/148."
+    },
+    "grand_bellevue/pressed_and_steamed": {
+      "title": "PRESSED AND STEAMED",
+      "kind": "death-screen",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/pressed_and_steamed.png",
+      "prompt": "Select the exact owner-approved B2-16 v02 314x206 aftermath illustration, unchanged. Boiler-room aftermath: an immaculately pressed, steaming empty black formal suit on a single hanger against the wall; no shoe. No victim, face, limbs, gore or impact. Shown at exact 2x nearest-neighbor inside the approved A1 death popup; the popup title, description, button, frame and background stay engine UI and are never baked into this art. Do not redraw, downscale, re-encode or recolor.",
+      "notes": "OWNER APPROVED B2-16 v02 2026-11-25 without further changes, CH4-NEW-15. Immutable source InterstellarHarvest/CYOA-storyboard@56fe286e427bba9020d9e38be326ca1d82ce400e (approved review head 0fbecaa28d3127faeb553b7847d13121834806a7), tools/prologue-art-lab/assets/review/chapter-04-b216-fatal-aftermaths-2026-11-25/v02/native/CH4-NEW-15-pressed-and-steamed-v02.png; SHA-256 f0cb0816a5639977634ef21b7d1d57ccfa136c5ef575aa2bb9fd006fc8097e56. Fatal node fatal_boiler_pressed_and_steamed (deathPopup.artRef and endingArt = grand_bellevue/pressed_and_steamed); popup copy unchanged. Superseded unselected v01 (SHA-256 36f62d19b207626f8fdf11901e43a292316f3880c4e60cbdd26dedd2c65ca3cd) is preserved as historical review artwork on the review branch. SOURCE-DERIVED design from a preserved imagegen reference; native raster separately constructed; not wholly independent native-grid authorship. The game importer does not yet consume Chapter 4 deathPopup/endingArt fields (docs/140); no death-popup behavior, narrative or engine change; assetPath null. See docs/148."
+    },
+    "grand_bellevue/folded_for_convenience": {
+      "title": "FOLDED FOR CONVENIENCE",
+      "kind": "death-screen",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/folded_for_convenience.png",
+      "prompt": "Select the exact owner-approved B2-16 v02 314x206 aftermath illustration, unchanged. Lobby aftermath: Lot Sixty-One reduced to a closed aluminium transport case on the floor, with exactly one abandoned black shoe nearby. No victim, face, limbs, gore or impact. Shown at exact 2x nearest-neighbor inside the approved A1 death popup; the popup title, description, button, frame and background stay engine UI and are never baked into this art. Do not redraw, downscale, re-encode or recolor.",
+      "notes": "OWNER APPROVED B2-16 v02 2026-11-25 without further changes, CH4-NEW-16. Immutable source InterstellarHarvest/CYOA-storyboard@56fe286e427bba9020d9e38be326ca1d82ce400e (approved review head 0fbecaa28d3127faeb553b7847d13121834806a7), tools/prologue-art-lab/assets/review/chapter-04-b216-fatal-aftermaths-2026-11-25/v02/native/CH4-NEW-16-folded-for-convenience-v02.png; SHA-256 30490a4259b363879dc126e273dcc07bb979d96ad4f6534dd75cb7e3901ddc07. Fatal node fatal_lot61_folded (deathPopup.artRef and endingArt = grand_bellevue/folded_for_convenience); popup copy unchanged. Superseded unselected v01 (SHA-256 4f64b7a41755553bd8d03a11568678ace298f81e08ebb7661ad3f105d05906db) is preserved as historical review artwork on the review branch. SOURCE-DERIVED design from a preserved imagegen reference; native raster separately constructed; not wholly independent native-grid authorship. The game importer does not yet consume Chapter 4 deathPopup/endingArt fields (docs/140); no death-popup behavior, narrative or engine change; assetPath null. See docs/148."
+    },
+    "grand_bellevue/made_to_measure": {
+      "title": "MADE TO MEASURE",
+      "kind": "death-screen",
+      "status": "approved",
+      "dimensions": "314x206",
+      "assetPath": null,
+      "suggestedFilename": "art/deaths/made_to_measure.png",
+      "prompt": "Select the exact owner-approved B2-16 v02 314x206 aftermath illustration, unchanged. Bridal dressing-room aftermath: the AutoFit gown stands perfectly fitted and empty on its rolling stand, with exactly one black shoe beneath the hem. No victim, face, limbs, gore or impact. Shown at exact 2x nearest-neighbor inside the approved A1 death popup; the popup title, description, button, frame and background stay engine UI and are never baked into this art. Do not redraw, downscale, re-encode or recolor.",
+      "notes": "OWNER APPROVED B2-16 v02 2026-11-25 without further changes, CH4-NEW-17. Immutable source InterstellarHarvest/CYOA-storyboard@56fe286e427bba9020d9e38be326ca1d82ce400e (approved review head 0fbecaa28d3127faeb553b7847d13121834806a7), tools/prologue-art-lab/assets/review/chapter-04-b216-fatal-aftermaths-2026-11-25/v02/native/CH4-NEW-17-made-to-measure-v02.png; SHA-256 d244595dd545551268143fc6a94e0d9d641d3825324b16db7791b5f0118b21bc. Fatal node fatal_bridal_made_to_measure (deathPopup.artRef and endingArt = grand_bellevue/made_to_measure); popup copy unchanged. Superseded unselected v01 (SHA-256 1ed8f23a9dc93b7324a1cf9a4baf4ee06f98082d9b1d405e94897df5e17c919b) is preserved as historical review artwork on the review branch. SOURCE-DERIVED design from a preserved imagegen reference; native raster separately constructed; not wholly independent native-grid authorship. The game importer does not yet consume Chapter 4 deathPopup/endingArt fields (docs/140); no death-popup behavior, narrative or engine change; assetPath null. See docs/148."
     }
   }
 }

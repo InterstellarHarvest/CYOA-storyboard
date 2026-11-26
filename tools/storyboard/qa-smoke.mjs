@@ -96,7 +96,11 @@ for(const record of productionRecords){
       || (record.pages||[]).some(v=>v.assetPath?.endsWith('.png')),'integrated artwork has selected PNG source: '+record.title);
 }
 assert.ok(artwork.deathScreens['pavilion/a_model_citizen']?.prompt,'death screen art registered');
-assert.equal(Object.keys(artwork.deathScreens).length,9,'nine fatal terminals and nine death-art source records');
+// Chapter 4 adds exactly the four owner-approved B2-16 fatal aftermaths (docs/148); the nine earlier
+// death-art records stay exactly nine, and no other Chapter 4 death record may appear.
+const ch4DeathScreens=['final_occupancy','pressed_and_steamed','folded_for_convenience','made_to_measure'].map(x=>'grand_bellevue/'+x);
+assert.equal(Object.keys(artwork.deathScreens).filter(k=>!k.startsWith('grand_bellevue/')).length,9,'nine pre-Chapter 4 fatal terminals and nine death-art source records');
+assert.deepEqual(Object.keys(artwork.deathScreens).filter(k=>k.startsWith('grand_bellevue/')).sort(),[...ch4DeathScreens].sort(),'Chapter 4 death art is exactly the four owner-approved fatal aftermaths');
 assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured'].status),'selected Rest Assured picture is already approved (integrated once the game reports it)');
 assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured'].selectedSource.sha256,
   '7f469efa40548568af5dfe3c11602b9c6293282d9574caa5f36fc37113e72d9c','exact original owner-selected Rest Assured art SHA');
