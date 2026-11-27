@@ -219,16 +219,23 @@
       "narrativeBeat": "The collection crew reports that Lot Fifty-Three has suffered considerable damage during removal. The associated toilet is declared beyond repair. Your restroom visit is recorded as COMPLETED. The auctioneer considers this an excellent example of customer satisfaction.",
       "artwork": {
         "id": "grand_bellevue/final_occupancy",
-        "status": "approved",
+        "status": "integrated",
         "dimensions": [
           314,
           206
         ],
         "scale": 2,
-        "selectedPath": null,
-        "generatedPath": null,
+        "selectedPath": "art/deaths/final_occupancy.png",
+        "generatedPath": "art/deaths/final_occupancy.png",
         "proposedPath": "art/deaths/final_occupancy.png",
-        "selectedSource": null
+        "selectedSource": {
+          "repository": "InterstellarHarvest/out-of-order",
+          "branch": "main",
+          "path": "art/deaths/final_occupancy.png",
+          "gitBlob": "5c6a643457f0f8f7cd6a098eb1a32d5d27832d1f",
+          "sha256": "e65d321cac76af8e03dd57ba5cbe3aa2d7db454669b0dd36631c61e51e475b7a",
+          "dimensions": "314x206"
+        }
       },
       "popupStatus": "owner-approved",
       "readyForGameplay": true
@@ -245,16 +252,23 @@
       "narrativeBeat": "The emergency pressure test has passed. Your formalwear has never looked better. Unfortunately, its former occupant is unavailable for comment.",
       "artwork": {
         "id": "grand_bellevue/pressed_and_steamed",
-        "status": "approved",
+        "status": "integrated",
         "dimensions": [
           314,
           206
         ],
         "scale": 2,
-        "selectedPath": null,
-        "generatedPath": null,
+        "selectedPath": "art/deaths/pressed_and_steamed.png",
+        "generatedPath": "art/deaths/pressed_and_steamed.png",
         "proposedPath": "art/deaths/pressed_and_steamed.png",
-        "selectedSource": null
+        "selectedSource": {
+          "repository": "InterstellarHarvest/out-of-order",
+          "branch": "main",
+          "path": "art/deaths/pressed_and_steamed.png",
+          "gitBlob": "d72e013be0fe75bb8a00f2ebbe262638c389023f",
+          "sha256": "f0cb0816a5639977634ef21b7d1d57ccfa136c5ef575aa2bb9fd006fc8097e56",
+          "dimensions": "314x206"
+        }
       },
       "popupStatus": "owner-approved",
       "readyForGameplay": true
@@ -271,16 +285,23 @@
       "narrativeBeat": "Lot Sixty-One has been successfully reduced to its transport dimensions. The collection crew reports that the unit is somewhat heavier than the manufacturer's specifications suggest. The auction clerk adds a note to the manifest: CONTENTS INCLUDED. No further inspection is deemed necessary.",
       "artwork": {
         "id": "grand_bellevue/folded_for_convenience",
-        "status": "approved",
+        "status": "integrated",
         "dimensions": [
           314,
           206
         ],
         "scale": 2,
-        "selectedPath": null,
-        "generatedPath": null,
+        "selectedPath": "art/deaths/folded_for_convenience.png",
+        "generatedPath": "art/deaths/folded_for_convenience.png",
         "proposedPath": "art/deaths/folded_for_convenience.png",
-        "selectedSource": null
+        "selectedSource": {
+          "repository": "InterstellarHarvest/out-of-order",
+          "branch": "main",
+          "path": "art/deaths/folded_for_convenience.png",
+          "gitBlob": "608009fb99457e8263e5c46cfe23a8548fa76ea3",
+          "sha256": "30490a4259b363879dc126e273dcc07bb979d96ad4f6534dd75cb7e3901ddc07",
+          "dimensions": "314x206"
+        }
       },
       "popupStatus": "owner-approved",
       "readyForGameplay": true
@@ -297,16 +318,23 @@
       "narrativeBeat": "The AutoFit system guarantees a perfect silhouette. Breathing room is available at additional cost.",
       "artwork": {
         "id": "grand_bellevue/made_to_measure",
-        "status": "approved",
+        "status": "integrated",
         "dimensions": [
           314,
           206
         ],
         "scale": 2,
-        "selectedPath": null,
-        "generatedPath": null,
+        "selectedPath": "art/deaths/made_to_measure.png",
+        "generatedPath": "art/deaths/made_to_measure.png",
         "proposedPath": "art/deaths/made_to_measure.png",
-        "selectedSource": null
+        "selectedSource": {
+          "repository": "InterstellarHarvest/out-of-order",
+          "branch": "main",
+          "path": "art/deaths/made_to_measure.png",
+          "gitBlob": "4651ef0d6738affcde961fd47b4bebbfa89409cc",
+          "sha256": "d244595dd545551268143fc6a94e0d9d641d3825324b16db7791b5f0118b21bc",
+          "dimensions": "314x206"
+        }
       },
       "popupStatus": "owner-approved",
       "readyForGameplay": true

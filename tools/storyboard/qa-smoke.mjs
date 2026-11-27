@@ -38,13 +38,27 @@ const productionRecords=[
 // minimum historical count here; check-canon plus the per-batch verifiers pin
 // each selected PNG and prevent status/hash regressions.
 assert.ok(productionRecords.length>=171+14+8+7+2*2+51+9,'shared art catalog retains historical records, Chapter 4 item placeholders, consolidated approved artwork and nine no-image presentation records (docs/137)');
-// Nate approved all four B2-17 v01 views (docs/149): they are approved/selected storyboard art only.
-// No game assetPath exists until Gameplay integration, and the item rules themselves are unchanged.
+// Nate approved all four B2-17 v01 views (docs/149). Each is in exactly one of two states:
+// - approved, before gameplay integration: no game assetPath;
+// - integrated (game issue #27 reconciliation, game docs/107 section 11): at exactly its suggestedFilename, and
+//   story/game-integration.json lists the key once, at that path, with the SHA-256 its approval notes name first.
+// The item rules themselves are unchanged.
+const ch4IntegrationFile=path.join(root,'story/game-integration.json');
+const ch4Integration=fs.existsSync(ch4IntegrationFile)?JSON.parse(fs.readFileSync(ch4IntegrationFile,'utf8')):null;
 for(const id of ['lot_53_dispute_ticket','wedding_ring_lot31']){
   assert.ok(items[id], 'Chapter 4 inventory item '+id);
   for(const variant of ['slot','inspect']){
-    assert.equal(artwork.items[id]?.[variant]?.status,'approved',id+' '+variant+' art is owner-approved B2-17 v01, not yet integrated');
-    assert.equal(artwork.items[id]?.[variant]?.assetPath,null,id+' '+variant+' has no game asset path before gameplay integration');
+    const rec=artwork.items[id]?.[variant];
+    if(rec?.status==='approved'){
+      assert.equal(rec.assetPath,null,id+' '+variant+' has no game asset path before gameplay integration');
+    }else{
+      assert.equal(rec?.status,'integrated',id+' '+variant+' art is owner-approved B2-17 v01: approved, or integrated by a game build');
+      assert.equal(rec.assetPath,rec.suggestedFilename,id+' '+variant+' is integrated at exactly its suggestedFilename');
+      const named=(/SHA-256[^0-9a-f]{0,3}([0-9a-f]{64})/.exec(String(rec.notes||''))||[])[1];
+      const used=(ch4Integration?.images||[]).filter((i)=>i.key==='items:'+id+'#'+variant);
+      assert.ok(ch4Integration?.game?.repo==='InterstellarHarvest/out-of-order'&&/^[0-9a-f]{40}$/.test(ch4Integration?.game?.commit||'')
+        &&used.length===1&&used[0].path===rec.assetPath&&used[0].sha256===named,id+' '+variant+': the game integration report used exactly its approved bytes at that path');
+    }
   }
 }
 // docs/105 allows genuinely new, unselected candidates to be generated. Keep
