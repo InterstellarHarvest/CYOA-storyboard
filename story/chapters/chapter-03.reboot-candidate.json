@@ -393,10 +393,15 @@
       "text": "The safety net catches you and deposits you into a padded wheeled collection cart. A lid closes. HUMAN SAFETY DEMONSTRATION: SUCCESSFUL.\n\nThe cart rolls through a loading door and tips you onto foam cushions outside the Pavilion. You are unhurt. The door closes. A real toilet flushes somewhere inside.\n\nCHAPTER 3 COMPLETE - PERFECTLY SAFE.",
       "choices": [
         {
-          "id": "restart_after_safe_fall",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_locomotion_fail",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "locomotion_fail"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     },
@@ -494,10 +499,15 @@
       ],
       "choices": [
         {
-          "id": "restart_after_presenter_help",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_presenter_help_end",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "presenter_help_end"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     },
@@ -649,10 +659,15 @@
       "text": "You tug the receipt. The printer accelerates. You pull harder; more paper shoots out. The ribbon wraps around the attendant's ankles, passes beneath the counter and climbs an ornamental plant. A visitor catches a heel while stepping over it.\n\n\"Stop pulling!\" the attendant shouts. You stop. The printer doesn't. He presses a red button. PAPER EMERGENCY - EVACUATE THE EXPERIENCE AREA.\n\nTwo enormous safety brushes descend and sweep the paper and everyone standing on it toward an exit. The attendant grabs your shoulder. \"I need you to leave immediately! Especially you! Your experience has already happened!\"\n\nThe brushes push you into daylight. Behind the closing doors, he begs everybody not to touch the receipt.\n\nCHAPTER 3 COMPLETE - PAPER EMERGENCY.",
       "choices": [
         {
-          "id": "restart_after_paper_emergency",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_paper_problem_end",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "paper_problem_end"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     },
@@ -695,10 +710,15 @@
       ],
       "choices": [
         {
-          "id": "restart_after_honest_attendant",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_attendant_honest_end",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "attendant_honest_end"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     },
@@ -795,10 +815,15 @@
       "text": "You run for the doorway, but your shoe catches the rubber threshold mat. The attendant grabs your coat. The visitor grabs your arm. Three grown adults form a human chain across the restroom entrance.\n\n\"I've got him!\" cries the visitor. \"So have I!\" says the attendant. \"Well, one of us ought to let go!\" The attendant does. You and the visitor tumble harmlessly onto the bench.\n\nThe restroom closes. THANK YOU FOR YOUR COOPERATION, chimes the machine. The attendant helps you up and escorts you out the Pavilion's public entrance.\n\nCHAPTER 3 COMPLETE - PLEASE LEAVE.",
       "choices": [
         {
-          "id": "restart_after_door_dash_failure",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_door_dash_fail",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "door_dash_fail"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     },
@@ -859,10 +884,15 @@
       "text": "You turn around and walk backward toward the restroom's EXIT THIS WAY sign. The attendant watches, concerned. Your heel crosses the threshold.\n\nEXIT DETECTED. RESTROOM EXPERIENCE SUCCESSFULLY COMPLETED. ELAPSED TIME: ZERO SECONDS. NEW FACILITY RECORD!\n\nThe attendant begins applauding automatically, then realizes what he is doing. A mechanical arm pins FASTEST SATISFIED VISITOR to your coat. The ribbon is not a useful item. The floor carries you outward along the Pavilion's designated exit route.\n\nTHANK YOU FOR YOUR EFFICIENT PARTICIPATION. You try to walk against the floor. PLEASE DO NOT REVERSE A COMPLETED EXPERIENCE.\n\nOutside, you stare at the ribbon. A toilet flushes behind the wall.\n\nCHAPTER 3 COMPLETE - NEW FACILITY RECORD.",
       "choices": [
         {
-          "id": "restart_after_zero_second_visit",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_door_reverse_end",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "door_reverse_end"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     },
@@ -873,10 +903,15 @@
       "text": "Behind the exhibits, the People's Pavilion is considerably less impressive.\n\nPainted scenery leans against concrete walls. Electrical cables hang from hooks. Someone has left half a sandwich on a crate labeled SPONTANEOUS HUMAN RESPONSES. Beside it sits an unopened carton: GENUINE SURPRISE - REFILLS.\n\nYou pass discarded certificates, an overturned podium, and a machine that appears to do nothing except applaud itself. Somewhere beyond the wall, a toilet flushes.\n\nYou stop walking. The sound fades. You consider turning around. Then you remember what happened the last several times you tried to get into that bathroom.\n\nAt the end of the corridor stands a plain metal door.\n\nEXIT\n\nNo camera. No scanner. No instructions about who you are. You push the handle. The door opens. For a moment, the simplicity is almost suspicious.\n\nYou step outside. Across the courtyard, another building has a sign displaying the familiar restroom symbol. You stare at it. Then you start walking.\n\nAfter all, that's what you were trying to do when this whole day began.\n\nCHAPTER 3 COMPLETE.",
       "choices": [
         {
-          "id": "restart_after_backstage_exit",
-          "kind": "system",
-          "text": "BEGIN AGAIN",
-          "restart": true
+          "id": "continue_to_chapter_04_backstage_exit",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "effects": {
+            "set": {
+              "ch3_exit_route": "backstage_exit"
+            }
+          },
+          "chapter": "chapter-04"
         }
       ]
     }

@@ -21,7 +21,9 @@ for(const chap of manifest.chapters){
   const p=node.deathPopup, artRef=p.artRef;
   const illustration=art.deathScreens?.[artRef];
   if(!artRef||!illustration)throw Error('Missing death-screen art catalog record '+chap.id+':'+nodeId);
-  if(!p.title||!p.description||!p.subtitle)throw Error('Fatal popup needs title, subtitle, and narrative beat '+chap.id+':'+nodeId);
+  // The subtitle is optional (the four owner-approved Chapter 4 popups are a title and a narrative
+  // beat only): an absent subtitle is omitted from the entry, never invented; an empty one is an error.
+  if(!p.title||!p.description||(p.subtitle!==undefined&&!p.subtitle))throw Error('Fatal popup needs title and narrative beat (and a non-empty subtitle when one is authored) '+chap.id+':'+nodeId);
   if(illustration.dimensions!=='314x206')throw Error('Unexpected death-screen image size '+artRef);
   if(node.endingArt!==artRef)throw Error('End-node art ref diverges from popup '+chap.id+':'+nodeId);
   const selected=illustration.assetPath||illustration.selectedSource?.path||null;

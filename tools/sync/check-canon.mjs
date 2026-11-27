@@ -46,8 +46,10 @@ export function checkCanon() {
   let nodes = 0, routes = 0;
   for (const [cid, ch] of Object.entries(chapters)) {
     Object.keys(ch).forEach((k) => { if (!allowed('chapter').has(k)) err(cid + ': chapter field "' + k + '" is neither runtime nor storyboard-only'); });
-    if (ch.development && ch.development.notForGameplay !== true)
-      err(cid + ': development metadata requires notForGameplay=true until artwork and engine integration are complete');
+    // notForGameplay is true until artwork and engine integration are complete; the Gameplay PMO sets it
+    // false explicitly when a game integration consumes the chapter (docs/152 section 7B.6). Never absent.
+    if (ch.development && typeof ch.development.notForGameplay !== 'boolean')
+      err(cid + ': development metadata requires notForGameplay=true until artwork and engine integration are complete (false only once a game integration consumes it)');
     if (!ch.nodes || !ch.nodes[ch.start]) err(cid + ': start node ' + ch.start + ' does not exist');
     const target = (where, t) => {
       if (t.chapter) { if (!chapters[t.chapter] && !ids.includes(t.chapter)) err(where + ': hand-off to unknown chapter ' + t.chapter); routes++; return; }

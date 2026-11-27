@@ -206,6 +206,110 @@
       },
       "popupStatus": "owner-approved",
       "readyForGameplay": true
+    },
+    {
+      "id": "chapter-04:fatal_stall_final_occupancy",
+      "when": {
+        "end": "chapter-04:fatal_stall_final_occupancy"
+      },
+      "title": "FINAL OCCUPANCY",
+      "body": [
+        "The collection crew reports that Lot Fifty-Three has suffered considerable damage during removal. The associated toilet is declared beyond repair. Your restroom visit is recorded as COMPLETED. The auctioneer considers this an excellent example of customer satisfaction."
+      ],
+      "narrativeBeat": "The collection crew reports that Lot Fifty-Three has suffered considerable damage during removal. The associated toilet is declared beyond repair. Your restroom visit is recorded as COMPLETED. The auctioneer considers this an excellent example of customer satisfaction.",
+      "artwork": {
+        "id": "grand_bellevue/final_occupancy",
+        "status": "approved",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/final_occupancy.png",
+        "selectedSource": null
+      },
+      "popupStatus": "owner-approved",
+      "readyForGameplay": true
+    },
+    {
+      "id": "chapter-04:fatal_boiler_pressed_and_steamed",
+      "when": {
+        "end": "chapter-04:fatal_boiler_pressed_and_steamed"
+      },
+      "title": "PRESSED AND STEAMED",
+      "body": [
+        "The emergency pressure test has passed. Your formalwear has never looked better. Unfortunately, its former occupant is unavailable for comment."
+      ],
+      "narrativeBeat": "The emergency pressure test has passed. Your formalwear has never looked better. Unfortunately, its former occupant is unavailable for comment.",
+      "artwork": {
+        "id": "grand_bellevue/pressed_and_steamed",
+        "status": "approved",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/pressed_and_steamed.png",
+        "selectedSource": null
+      },
+      "popupStatus": "owner-approved",
+      "readyForGameplay": true
+    },
+    {
+      "id": "chapter-04:fatal_lot61_folded",
+      "when": {
+        "end": "chapter-04:fatal_lot61_folded"
+      },
+      "title": "FOLDED FOR CONVENIENCE",
+      "body": [
+        "Lot Sixty-One has been successfully reduced to its transport dimensions. The collection crew reports that the unit is somewhat heavier than the manufacturer's specifications suggest. The auction clerk adds a note to the manifest: CONTENTS INCLUDED. No further inspection is deemed necessary."
+      ],
+      "narrativeBeat": "Lot Sixty-One has been successfully reduced to its transport dimensions. The collection crew reports that the unit is somewhat heavier than the manufacturer's specifications suggest. The auction clerk adds a note to the manifest: CONTENTS INCLUDED. No further inspection is deemed necessary.",
+      "artwork": {
+        "id": "grand_bellevue/folded_for_convenience",
+        "status": "approved",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/folded_for_convenience.png",
+        "selectedSource": null
+      },
+      "popupStatus": "owner-approved",
+      "readyForGameplay": true
+    },
+    {
+      "id": "chapter-04:fatal_bridal_made_to_measure",
+      "when": {
+        "end": "chapter-04:fatal_bridal_made_to_measure"
+      },
+      "title": "MADE TO MEASURE",
+      "body": [
+        "The AutoFit system guarantees a perfect silhouette. Breathing room is available at additional cost."
+      ],
+      "narrativeBeat": "The AutoFit system guarantees a perfect silhouette. Breathing room is available at additional cost.",
+      "artwork": {
+        "id": "grand_bellevue/made_to_measure",
+        "status": "approved",
+        "dimensions": [
+          314,
+          206
+        ],
+        "scale": 2,
+        "selectedPath": null,
+        "generatedPath": null,
+        "proposedPath": "art/deaths/made_to_measure.png",
+        "selectedSource": null
+      },
+      "popupStatus": "owner-approved",
+      "readyForGameplay": true
     }
   ]
 }
