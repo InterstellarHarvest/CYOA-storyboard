@@ -73,7 +73,7 @@ async function run(name, base) {
   check(b, 'header dropdown: all five manifest chapters including Chapter 4, in order', JSON.stringify(options) === JSON.stringify([['0', 'Prologue — The Last Good Day'], ['1', 'Chapter 1 — House of Tomorrow'], ['2', 'Chapter 2 — Biology Park'], ['3', "Chapter 3 — The People's Pavilion"], ['4', 'Chapter 4 — Something Old, Something Sold']]), options);
   await choose(page, 4, 120);
   const ch4Heading = await page.textContent('#chapterTitle');
-  check(b, 'main chapter dropdown opens all 120 Chapter 4 narrative nodes, without claiming playable art', ch4Heading.includes('narrative approved') && ch4Heading.includes('not in game'), ch4Heading);
+  check(b, 'main chapter dropdown opens all 120 Chapter 4 narrative nodes, as a draft chapter under gameplay integration (game issue #27)', ch4Heading.includes('Chapter 4') && ch4Heading.includes('draft'), ch4Heading);
   await choose(page, 0, 29);
   const a = await drag(page, 'drone_intercepts', 120, 70);
   const h = await drag(page, 'reception_hallway', -90, 80);
