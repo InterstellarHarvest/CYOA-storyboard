@@ -6,7 +6,7 @@
     "status": "narrative-approved",
     "reviewCheckpoint": "2026-11-21: all 120 Chapter 4 nodes authored, owner-approved and audited; no broken links or editorial placeholders. Published in the main storyboard chapter dropdown. Artwork and playable-game integration remain pending.",
     "approval": "Nate approved the complete authored Chapter 4 narrative through all seven Chapter 3 arrival variations, the auction and restroom incidents, optional Lot 31 wedding-ring access routes, Collection Stairs, boiler danger, bridal privacy/AutoFit, three-seashell denial, and the three park-bound nonfatal exits. Four fatal endings are authored. All editorial stop nodes are retired; no wedding-reunion or ceremony duties remain. Artwork and playable-game integration are separate stages.",
-    "notForGameplay": true,
+    "notForGameplay": false,
     "chapter3ExitFlagRequired": "ch3_exit_route",
     "chapter3ExitIds": [
       "locomotion_fail",
@@ -1546,6 +1546,7 @@
             "id": "ch4_careful_ring_retrieval",
             "sides": 6,
             "need": 4,
+            "certain": true,
             "mods": [
               {
                 "if": {
@@ -3230,7 +3231,14 @@
         "You push through. Across the courtyard is a small public park: trees, grass, a few promising shrubs. Surely you can find a little privacy there.",
         "You cross the courtyard and head toward the park.\n\nEND CHAPTER 4."
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "restart_after_service_park_exit",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
       "notes": "Owner-approved nonfatal Chapter 4 ending. Retain all inventory and existing fee flags, including ch4_bridal_registration_fee_pending if set. Chapter 5 introduces any fried animals, hidden security plant prototypes, or hazards; reveal none here. No bathroom sign."
     },
     "hotel_boiler_service_passage": {
@@ -4288,7 +4296,14 @@
       "mode": "narrative",
       "scene": "grand_bellevue/courtyard",
       "text": "You leave the bridal corridor and cross the hotel lobby without stopping for another argument. Outside, a small public park lies across the courtyard. Trees, grass, and promising shrubs. You head toward it.\n\nEND CHAPTER 4.",
-      "choices": [],
+      "choices": [
+        {
+          "id": "restart_after_bridal_corridor_park_exit",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
       "effects": {
         "set": {
           "ch4_exit_route": "bridal_corridor_departure",
@@ -4441,6 +4456,12 @@
             "notFlag": "ch4_seashell_second_attempt_failed"
           },
           "to": "hotel_seashell_second_attempt"
+        },
+        {
+          "id": "shell_first_leave",
+          "kind": "action",
+          "text": "PUT THE SEASHELLS DOWN AND LEAVE.",
+          "to": "hotel_bridal_lavatory_park_exit"
         }
       ],
       "effects": {
@@ -4793,7 +4814,14 @@
         },
         "END CHAPTER 4."
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "restart_after_bridal_lavatory_park_exit",
+          "kind": "system",
+          "text": "BEGIN AGAIN",
+          "restart": true
+        }
+      ],
       "notes": "Approved nonfatal bridal lavatory exit; no reroll when removing gown. Preserve inventory, flags, pending bridal registration fee. Chapter 5 begins with any dead animals or dangerous prototype fake plants, not this ending."
     },
     "hotel_ring_inspect_inscription": {

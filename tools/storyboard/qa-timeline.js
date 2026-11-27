@@ -191,8 +191,11 @@ async function run(name, base) {
   check(b, 'Chapter 2: five gameplay transitions to Chapter 3 from the living endings, none from a fatal ending, no preview handoff', c2.ports.filter((p) => p.dir === 'out').map((p) => p.id).sort().join() === livingEnds.map((id) => 'out:' + id + '>chapter-03').sort().join()
     && c2.ports.filter((p) => p.dir === 'out').every((p) => p.mode === 'gameplay' && p.chapter === 'chapter-03' && /TO CHAPTER 3 · GAMEPLAY/.test(p.text) && /Pavilion Arrival/.test(p.text)) && !c2.ports.some((p) => p.mode === 'preview'));
   const c3 = geometry['chapter-03'];
-  check(b, 'Chapter 3: five incoming Chapter 2 routes into pavilion_arrival and no outgoing chapter route', c3.ports.filter((p) => p.dir === 'in').map((p) => p.source).sort().join() === [...livingEnds].sort().join()
-    && c3.ports.every((p) => p.dir === 'in' && p.chapter === 'chapter-02' && p.mode === 'gameplay')
+  const ch3Exits = ['locomotion_fail', 'presenter_help_end', 'paper_problem_end', 'attendant_honest_end', 'door_dash_fail', 'door_reverse_end', 'backstage_exit'];
+  check(b, 'Chapter 3: five incoming Chapter 2 routes into pavilion_arrival and seven outgoing Chapter 4 routes, one per surviving ending (game issue #27)', c3.ports.filter((p) => p.dir === 'in').map((p) => p.source).sort().join() === [...livingEnds].sort().join()
+    && c3.ports.filter((p) => p.dir === 'in').every((p) => p.chapter === 'chapter-02' && p.mode === 'gameplay')
+    && c3.ports.filter((p) => p.dir === 'out').map((p) => p.id).sort().join() === ch3Exits.map((id) => 'out:' + id + '>chapter-04').sort().join()
+    && c3.ports.filter((p) => p.dir === 'out').every((p) => p.chapter === 'chapter-04' && p.mode === 'gameplay')
     && c3.edges.filter((e) => e.route === 'port' && /^in:/.test(e.from)).length === 5 && c3.edges.filter((e) => e.route === 'port' && /^in:/.test(e.from)).every((e) => e.to === 'pavilion_arrival'));
   const ch3Ends = ['locomotion_fail', 'presenter_help_end', 'paper_problem_end', 'attendant_honest_end', 'door_dash_fail', 'door_reverse_end', 'backstage_exit'];
   check(b, 'Chapter 3: its seven endings are drawn as surviving endings, never fatal', ch3Ends.every((id) => { const c = c3.cards.find((x) => x.id === id); return c && !/\bfatal\b|death-node/.test(c.cls); }));
@@ -289,8 +292,8 @@ async function run(name, base) {
   await page.click('#ports .port[data-port="out:end_customs>chapter-03"]');
   await page.click("#details button.choice >> text=Open Chapter 3 — The People's Pavilion at Pavilion Arrival");
   await ready(page, 34);
-  check(b, 'a Chapter 2 ending pill\'s inspector button opens Chapter 3 at pavilion_arrival with its five incoming pills', await page.inputValue('#chapterSelect') === '3'
-    && await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Pavilion Arrival' && await page.evaluate(() => document.querySelectorAll('#ports .port').length) === 5);
+  check(b, 'a Chapter 2 ending pill\'s inspector button opens Chapter 3 at pavilion_arrival with its five incoming and seven outgoing (Chapter 4) pills', await page.inputValue('#chapterSelect') === '3'
+    && await page.evaluate(() => document.querySelector('#details h2').textContent) === 'Pavilion Arrival' && await page.evaluate(() => document.querySelectorAll('#ports .port').length) === 12);
   await ctx.close();
 
   // ---- Old cached layouts never hide the new default; reload stability -------------------------

@@ -80,7 +80,8 @@ for(const record of productionRecords.filter(r=>r.status==='generated')){
   assert.equal(record.assetPath,null,'unselected candidate has no production path');
   assert.match(record.notes,/CANDIDATE GENERATED .*commit [0-9a-f]{40}; path review\/chapter-02-batch\d+-[^;]+; SHA-256 [0-9a-f]{64}\./,'generated candidate has full source provenance');
 }
-assert.equal(productionRecords.filter(r=>r.status==='reused').length,5,'approved reused records unchanged');
+assert.equal(productionRecords.filter(r=>r.status==='reused').length,9,'approved reused records unchanged: the 5 earlier ones plus the 4 docs/137 C3 Chapter 4 reuse scene keys (game issue #27)');
+assert.deepEqual(['wedding_entry','refreshment_table','bridal_corridor','freight_lift'].map(k=>artwork.scenes['grand_bellevue/'+k]?.status),['reused','reused','reused','reused'],'Chapter 4 C3 reuse keys are registered reused');
 assert.equal(artwork.deathScreens['house_of_tomorrow/rest_assured_voluntary'],undefined,'one shared Rest Assured death record (owner ruling docs/104), no per-cause duplicate');
 assert.ok(['approved','integrated'].includes(artwork.deathScreens['house_of_tomorrow/rest_assured']?.status),'owner-approved Rest Assured death screen is selected, never pending');
 const restAssuredUsed=artwork.deathScreens['house_of_tomorrow/rest_assured']?.status==='integrated'?1:0;
@@ -145,12 +146,13 @@ assert.equal(layoutSource.schema,'cyoa-storyboard-layout-v1');
 // The header lists exactly the manifest's chapters, in order; every chapter's art resolves through
 // the ONE shared artwork catalog (no per-chapter art catalogs).
 assert.deepEqual(manifest.chapters.map(c=>[c.id,c.title,c.status]),[
-  ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'draft'],['chapter-04','Chapter 4 — Something Old, Something Sold','narrative approved · artwork pending · not in game']],'manifest chapters and order: Chapter 3 activated (gameplay integration), Chapter 4 narrative-only');
+  ['prologue-00','Prologue — The Last Good Day','draft'],['chapter-01','Chapter 1 — House of Tomorrow','draft'],['chapter-02','Chapter 2 — Biology Park','draft'],['chapter-03',"Chapter 3 — The People's Pavilion",'draft'],['chapter-04','Chapter 4 — Something Old, Something Sold','draft']],'manifest chapters and order: Chapter 3 and Chapter 4 activated (gameplay integration, game issue #27)');
 // Chapter 3 gameplay integration: the manifest activates exactly the locked approved reboot. Blob 857ffdf until 2026-11-26;
-// d0591d6 adds only Nate's approved Temporary Staff Pass grant at unauthorized_presenter (docs/153).
+// d0591d6 adds only Nate's approved Temporary Staff Pass grant at unauthorized_presenter (docs/153). 36a72dc (game issue #27) replaces
+// only the seven endings' BEGIN AGAIN cards with the CONTINUE hand-off into Chapter 4 that records ch3_exit_route.
 assert.equal(manifest.chapters[3].file,'chapters/chapter-03.reboot-candidate.json','Chapter 3 reads the approved reboot file');
 {const raw=fs.readFileSync(path.join(root,'story',manifest.chapters[3].file));
- assert.equal(createHash('sha1').update('blob '+raw.length+'\0').update(raw).digest('hex'),'d0591d618b86958908f966b6f71d6adee83d5a7d','active Chapter 3 is the locked approved narrative');}
+ assert.equal(createHash('sha1').update('blob '+raw.length+'\0').update(raw).digest('hex'),'36a72dc0065f5288444bc6b517931561798f1c55','active Chapter 3 is the locked approved narrative');}
 const archivedChapter3=fs.readFileSync(path.join(root,'story/archives/chapter-03-pre-reboot-20261118.json'));
 assert.equal(createHash('sha256').update(archivedChapter3).digest('hex'),'02beb009b667f6930408850db91ca078262df6807ecc7236d044a3a4dc0dcbe1','legacy Chapter 3 narrative is preserved byte-for-byte in the reboot archive');
 const chapters=manifest.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(root,'story',c.file),'utf8')));
@@ -196,7 +198,7 @@ for(const ch of chapters){
 }
 assert.deepEqual(Object.keys(layoutSource.chapters),['prologue-00','chapter-01','chapter-02','chapter-03','chapter-04'],'layout includes narrative-only Chapter 4');
 assert.equal(Object.keys(chapters[4].nodes).length,120,'Chapter 4 owner-approved narrative has 120 nodes');
-assert.equal(chapters[4].development.notForGameplay,true,'Chapter 4 artwork/gameplay is not silently marked complete');
+assert.equal(chapters[4].development.notForGameplay,false,'Chapter 4 is consumed by the gameplay integration (docs/152 section 7B.6, game issue #27)');
 assert.equal(layoutSource.chapters['chapter-04'].timeline.incidents.flatMap(g=>g.nodes).length,120,'Chapter 4 main timeline covers all approved nodes');
 assert.deepEqual(layoutSource.chapters['chapter-04'].timeline.incidents.flatMap(g=>g.nodes).slice().sort(),Object.keys(chapters[4].nodes).sort(),'Chapter 4 main timeline covers every node once');
 assert.deepEqual(layoutSource.chapters['prologue-00'].positions,{},'prologue positions retained exactly (none committed)');
@@ -650,17 +652,20 @@ for(const [staging,kit,read,end] of [['public_exit_staging','public_kit_focus','
 }
 assert.equal(c2.edges.filter(e=>e.route==='return').length,6,'Chapter 2: only the three antidote loops use return connectors');
 // Chapter 3: the approved reboot as a timeline; five named incoming Chapter 2 routes into its single start;
-// seven surviving endings, no fatal ending and no outgoing chapter route (no Chapter 4 link).
+// seven surviving endings, no fatal ending; each ending hands off to Chapter 4 (game issue #27).
 const c3=shots['chapter-03'],c3at=Object.fromEntries(c3.nodes.map(n=>[n.id,n]));
 const c3in=c3.ports.filter(p=>p['data-dir']==='in');
 assert.deepEqual(c3in.map(p=>p['data-source']).sort(),[...livingEnds].sort(),'Chapter 3: five named incoming Chapter 2 routes');
 assert.ok(c3in.every(p=>p['data-chapter']==='chapter-02'&&p['data-mode']==='gameplay'),'Chapter 3: incoming ports are Chapter 2 gameplay transitions');
 assert.ok(c3.edges.filter(e=>e.route==='port'&&e.from.startsWith('in:')).length===5&&c3.edges.filter(e=>e.route==='port'&&e.from.startsWith('in:')).every(e=>e.to==='pavilion_arrival'),'Chapter 3: all five incoming routes feed the single pavilion_arrival');
-assert.equal(c3.ports.filter(p=>p['data-dir']==='out').length,0,'Chapter 3: no outgoing chapter route');
+{const c3out=c3.ports.filter(p=>p['data-dir']==='out');
+ const ch3Ends=['locomotion_fail','presenter_help_end','paper_problem_end','attendant_honest_end','door_dash_fail','door_reverse_end','backstage_exit'];
+ assert.deepEqual(c3out.map(p=>p['data-port']).sort(),ch3Ends.map(id=>'out:'+id+'>chapter-04').sort(),'Chapter 3: seven outgoing Chapter 4 transitions, one per surviving ending');
+ assert.ok(c3out.every(p=>p['data-mode']==='gameplay'&&p['data-chapter']==='chapter-04'),'Chapter 3: endings are gameplay transitions into Chapter 4');}
 assert.ok(c3at.pavilion_arrival.x===Math.min(...c3.nodes.map(n=>n.x))&&/start/.test(c3at.pavilion_arrival.cls),'Chapter 3: starts at pavilion_arrival on the left');
 const ends3=Object.entries(ch3Json.nodes).filter(([,n])=>n.end===true).map(([id])=>id);
 assert.equal(ends3.length,7,'Chapter 3: seven endings');
-for(const id of ends3)assert.ok(!/\bfatal\b|death-node/.test(c3at[id].cls)&&/SURVIVING ENDING/.test(c3at[id].tag),'Chapter 3: '+id+' is drawn as a surviving ending, never fatal');
+for(const id of ends3)assert.ok(!/\bfatal\b|death-node/.test(c3at[id].cls)&&/CHAPTER EXIT/.test(c3at[id].tag),'Chapter 3: '+id+' is drawn as a surviving chapter exit into Chapter 4, never fatal');
 // PASS and FAIL outcomes stay distinguishable on the diagram.
 assert.ok(c2.labels.some(l=>/^PASS: /m.test(l.title))&&c2.labels.some(l=>/^FAIL: /m.test(l.title)),'Chapter 2: PASS and FAIL labels present');
 const kitLabel=c2.labels.find(l=>l.from==='public_kit_focus'&&l.to==='public_exit_staging');
@@ -712,7 +717,7 @@ pane2().find(x=>x.tagName==='button'&&/^Open Chapter 3 — The People's Pavilion
 await settle();
 assert.equal(tv2.doc.getElementById('chapterSelect').value,'3','Chapter 2 ending pill inspector opens Chapter 3');
 assert.ok(pane2().some(x=>x.textContent==='Pavilion Arrival'),'at pavilion_arrival');
-assert.equal(tv2.doc.getElementById('ports').children.length,5,'Chapter 3 draws exactly its five incoming Chapter 2 ports');
+assert.equal(tv2.doc.getElementById('ports').children.length,12,'Chapter 3 draws exactly its five incoming Chapter 2 ports and seven outgoing Chapter 4 ports');
 // Switching chapters returns to the last view of each chapter (zoom and scroll).
 const vp=tv2.doc.getElementById('viewport'),stg=tv2.doc.getElementById('stage');
 await tSwitch(tv2,1);
@@ -828,7 +833,7 @@ await tSwitch(tv,4);
 const publishedCh4=snapshot(tv);
 assert.equal(publishedCh4.nodes.length,120,'normal main dropdown renders all Chapter 4 nodes');
 assert.ok(publishedCh4.nodes.every(n=>/\bnode tl\b/.test(n.cls)),'published Chapter 4 uses the approved timeline layout');
-assert.match(tv.doc.getElementById('chapterTitle').textContent,/Chapter 4 — Something Old, Something Sold.*narrative approved/,'published Chapter 4 title reports narrative approval without claiming game readiness');
+assert.match(tv.doc.getElementById('chapterTitle').textContent,/Chapter 4 — Something Old, Something Sold.*draft/,'published Chapter 4 title reports its draft status (gameplay integration review, game issue #27)');
 
 console.log(JSON.stringify({
  result:'PASS',nodes:Object.keys(chapter.nodes).length,chapters:manifest.chapters.map(c=>c.id),
