@@ -4456,6 +4456,12 @@
             "notFlag": "ch4_seashell_second_attempt_failed"
           },
           "to": "hotel_seashell_second_attempt"
+        },
+        {
+          "id": "shell_first_leave",
+          "kind": "action",
+          "text": "PUT THE SEASHELLS DOWN AND LEAVE.",
+          "to": "hotel_bridal_lavatory_park_exit"
         }
       ],
       "effects": {
