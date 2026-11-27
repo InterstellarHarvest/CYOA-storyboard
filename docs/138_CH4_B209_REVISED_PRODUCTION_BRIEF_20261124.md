@@ -81,7 +81,7 @@ Timing is decided by a later authorized integration task. No flags, nodes or bin
 | B2-14 | NEW-02 bridal lavatory, NEW-09 three seashells (Focus A) | No toilet or concealed fixture. The bathroom AI is voice-only. |
 | B2-16 | NEW-14–17 four fatal aftermaths | Popups unchanged; never the protagonist's face. |
 | B2-17 | NEW-10–13 dispute ticket and ring, slot + inspection | The ring brief is corrected in the registry to **AS IS, WHERE IS.** |
-| R1 | Refinement redraws of CH4-01, CH4-04, CH4-05, CH4-B2-03, CH4-B2-11 | UNSELECTED; the approved PNGs stay selected until Nate picks replacements. Keep composition, layout, materials, objects and humor. |
+| R1 | Refinement redraws of CH4-01, CH4-04, CH4-05, CH4-B2-03, CH4-B2-11 and **CH4-03** (added 2026-11-24, docs/141) | UNSELECTED; the approved PNGs stay selected until Nate picks replacements. Keep composition, layout, materials, objects and humor. CH4-03 must also match the approved auctioneer identity in CH4-B2-31/35 and use binary alpha. Not started: no redraws until Nate says so. |
 | B2-18 / B2-19 | Restroom, lobby and Lot 61 state families | Derive from the R1-refined masters once selected. |
 
 Old B2-15 (approaches and exits) needs no production: it is resolved by text-led presentation and reuse (docs/137).
