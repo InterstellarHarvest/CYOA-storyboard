@@ -17,13 +17,13 @@ A boat rises from its cradle beside you.
 The timber aisle begins folding upwards in sections.
 Player: I'M NOT COLLECTING A BOAT.
 Boathouse: ALL UNCOLLECTED PROPERTY WILL BE SECURED.
-At the far end, a steel cage begins descending around the restroom doorway as part of the storage bay perimeter.
-The door remains visible through its bars.
+Steel cages descend around the boat racks.
+The restroom door remains visible at the far end of the disappearing aisle.
 A yellow floor strip follows the left-hand wall beneath the lifting frames.
 Beside the entrance, a small cabinet reads MANUAL HANDLING EQUIPMENT.
 On the nearest boat, a tag reads READY FOR COLLECTION.
 
-Safety/geometry: aisle is folding as routine, not instant unavoidable collapse under player. Entry landing stays stable through decision. Restroom doorway enclosed by bay cage because faulty storage grouping; no new AI discussion/identity gate. Exact path length/layout to verify before later art. No new d6/deaths approved.
+Safety/geometry: aisle is folding as routine, not instant unavoidable collapse under player. Entry landing stays stable through decision. Cages protect boat racks, not the restroom door; route through machinery is the obstacle, not an additional toilet lock or new AI/identity gate. Exact path length/layout to verify before later art. No new d6/deaths approved.
 
 ## Proposed three player cards
 A HURRY ALONG THE AISLE BEFORE IT FOLDS AWAY.
