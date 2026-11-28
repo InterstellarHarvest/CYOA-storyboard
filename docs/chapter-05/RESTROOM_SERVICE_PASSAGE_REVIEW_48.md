@@ -38,3 +38,6 @@ Neither choice ends Chapter 5, duplicates items, restores spent items, pre-grant
 
 ## Scope
 A short optional route connection, not a new puzzle, attraction, or required hub. Existing park-map and after-return continuation remain unfinished. No artwork generation or gameplay/public chapter integration.
+
+## Subsequent owner approval
+Nate's next "ok" approves the service-passage prose (with silent/washing conditional), outdoor keeper alternative and forward choices into the dog yard or Public Protector setup as presented. No approval of a later new incident or chapter ending is implied.
