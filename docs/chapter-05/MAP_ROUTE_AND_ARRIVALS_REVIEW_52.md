@@ -48,7 +48,7 @@ The pipe enters a cabinet beneath a narrow awning.
 
 PROPERTY RETURN.
 
-Below the display is a receiving chamber large enough to hold the things you left at the entrance.
+Below the display is a broad receiving chamber.
 
 The screen lights as you approach.
 
