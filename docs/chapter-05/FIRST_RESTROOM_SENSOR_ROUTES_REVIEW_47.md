@@ -56,3 +56,6 @@ This resolves first-room mechanical branch into forward access without loop, new
 This item compatibility applies only to this proposed local interaction; don't silently change previously approved security-boat cloth-only cards.
 Remaining: rear-hatch traversal/keeper unassisted departure alternative, representative/hat graph consistency, park-map/after-return continuation. Advanced route endings still deferred.
 No art generation, gameplay engine/public selector or Chapter 4 modifications.
+
+## Subsequent owner ruling
+Nate's next "ok" approves the catch-leaf result, lens inspection, stated leaf/cloth/loose-paper/family-photograph covering options, preservation of source items and folded state, and local service-hatch release. Proposed prose and mechanics above are now approved. This does not approve unwritten passage traversal or any chapter exit.
