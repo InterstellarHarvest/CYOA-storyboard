@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "scope": "authored later-park section, not game runtime or whole Chapter 5",
+  "nodes": 36,
+  "choices": 48,
+  "hidden_checks": 3,
+  "fatal_presentations": 2,
+  "nonfatal_exits": 2,
+  "inventory_mark_contexts": 32,
+  "distinct_context_state_visits": 42876,
+  "assertions": 347010,
+  "preserved_earlier_records": 51,
+  "preserved_source_commit": "2f0f3e124ce7054ab8ce6720848043109f67605e",
+  "terminal_paths_with_raw_dice_multiplicity": {
+    "dispatch_gate_exit": 45616,
+    "fatal_fence": 128,
+    "fatal_foam": 3664,
+    "service_gate_exit": 45616
+  },
+  "note": "Path counts are enumeration counts, not player probabilities or scenario samples."
+}

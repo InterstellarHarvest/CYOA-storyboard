@@ -1,0 +1,1408 @@
+{
+  "title": "Chapter 5 — Later park section (preserved earlier narrative)",
+  "start": "later_park_arrival",
+  "scene": "security_park/later_park_paths",
+  "development": {
+    "status": "approved-prose-section-structured-assembly",
+    "notForGameplay": true,
+    "scope": "Later park section only. Preserve the earlier opening, representative, keeper, dog, Public Protector, lake, boathouse, bin/gate and property-return narrative. This section is not a replacement or full-chapter lock.",
+    "earlierSourceBranch": "story/ch5-concept-review-20261125",
+    "pendingDecision": "Resolved: preserve earlier material and add after property return.",
+    "candidateEntryPoints": {
+      "normal": "later_park_arrival",
+      "fence": "fence_arrival",
+      "foam": "foam_arrival",
+      "earlyDepot": "depot_early"
+    },
+    "rulingReconciliation": [
+      "Earlier no-cooperative-shutdown and sparse-cast rulings versus the later approved demonstrator/clock worker/mechanic scenes.",
+      "Earlier full-chapter pacing and property-return placement versus the later approved opening shortcut and exits."
+    ],
+    "presentation": "Second person present; narrative pages with explicit CONTINUE; voice-only NPC lines in narrative; player speech uses who=you. Six visible inventory slots with scrolling; no capacity cap. Hidden d6 with risk markers only on checked cards. No real-time choice timers.",
+    "carryForward": {
+      "ch5_foam_release_cartridge": "One charge if accepted. No consumption point or specific future payoff approved yet."
+    },
+    "ownerCut": [
+      "delivery truck, loading favour, truck exit"
+    ],
+    "artworkAddendum": "docs/chapter-05/CH5_ELECTRIC_SHRUB_ARTWORK_ADDENDUM.md",
+    "ownerPlacementDecision": "Nate explicitly chose: Preserve earlier material; add this section later. Received during this assembly.",
+    "upstreamJoin": "After property-return/land-side collection area or its forward bypass. Exact earlier map/far-gate frontier nodes do not yet exist in structured JSON; do not invent completed links.",
+    "integrationState": "Section staged for review; no public manifest entry, prior chapter modification or playable game import."
+  },
+  "nodes": {
+    "later_park_arrival": {
+      "mode": "narrative",
+      "scene": "security_park/later_park_paths",
+      "text": "The path carries you beyond the property-return station.\n\nA supply cable follows a narrow maintenance verge towards a low depot. A worn footpath crosses the grass towards a building with a drinking fountain outside. Farther across the lawn, you can see the refreshments kiosk and a second small brick building.",
+      "choices": [
+        {
+          "id": "take_later_path",
+          "kind": "action",
+          "text": "TAKE THE FOOTPATH TOWARDS THE DRINKING FOUNTAIN.",
+          "to": "fence_arrival"
+        },
+        {
+          "id": "cross_later_lawn",
+          "kind": "action",
+          "text": "CROSS THE LAWN TOWARDS THE REFRESHMENTS.",
+          "to": "foam_arrival"
+        },
+        {
+          "id": "follow_later_supply",
+          "kind": "action",
+          "text": "FOLLOW THE SUPPLY CABLE TOWARDS THE DEPOT.",
+          "to": "depot_early"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_fence": "not_triggered",
+          "ch5_later_fence_enabled": true,
+          "ch5_later_foam_triggered": false,
+          "ch5_later_foam_discharge": "not_triggered",
+          "ch5_later_local_shutdown": false
+        }
+      },
+      "notes": "New connective staging after the earlier property-return area; taking or redeeming property is optional and no old item/state is reset. Upstream links from the earlier map/far-gate frontiers remain to be assembled, not fabricated as already implemented."
+    },
+    "fence_arrival": {
+      "mode": "narrative",
+      "scene": "security_park/rising_fence",
+      "text": [
+        "You follow a worn path across the grass. On the other side stands a small park building. You can make out a drinking fountain and two doors.\n\nA metal panel rises behind you.\n\nThen another.\n\nThey meet with a solid click.",
+        {
+          "say": "WELCOME TO THE EXPOSITION'S SELF-ESTABLISHING SECURITY PERIMETER.",
+          "who": "park_recording"
+        },
+        "Panels begin rising along both sides of the path. Ahead, a final section pushes through the turf, shedding dirt from its pointed top.",
+        {
+          "say": "INSTALLATION WITHOUT INTERRUPTION TO NORMAL PEDESTRIAN ACTIVITY.",
+          "who": "park_recording"
+        },
+        "You stop.\n\nInside the new enclosure, a second row begins to rise.\n\nOne section catches on a buried sprinkler pipe. It jerks upward, drops an inch, then tries again. Beneath it, a narrow service cover bangs open with every attempt.\n\nAhead, there is still a gap.\n\nAbove the fence, you can still see the two doors."
+      ],
+      "choices": [
+        {
+          "id": "run_gap",
+          "kind": "action",
+          "text": "RUN FOR THE REMAINING GAP.",
+          "to": "fence_run"
+        },
+        {
+          "id": "open_cover",
+          "kind": "action",
+          "text": "PULL OPEN THE SERVICE COVER BENEATH THE JAMMED SECTION.",
+          "to": "fence_release"
+        },
+        {
+          "id": "climb_fence",
+          "kind": "action",
+          "text": "CLIMB WHILE THE PANELS ARE STILL LOW.",
+          "check": {
+            "id": "ch5_later_fence_climb",
+            "sides": 6,
+            "need": 3
+          },
+          "pass": {
+            "to": "fence_climb_success"
+          },
+          "fail": {
+            "to": "fatal_fence"
+          }
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_fence": "active"
+        }
+      },
+      "notes": "Latest owner-approved run route is guaranteed; it supersedes review 50's unapproved gap-roll proposal within this candidate. Climbing is checked. Machinery resolves by authored choices, never real-time reflex timing."
+    },
+    "fence_run": {
+      "mode": "narrative",
+      "scene": "security_park/rising_fence",
+      "text": [
+        "You run.\n\nThe final panel rises ahead of you, lifting a rectangle of turf on its pointed top.\n\nYou turn sideways and squeeze through.\n\nBehind you, the panel locks into place.",
+        {
+          "say": "PERIMETER ESTABLISHED IN RECORD TIME.",
+          "who": "park_recording"
+        },
+        "A small gate opens beside your knee.\n\nAn automated mower rolls through it, pauses to let you pass, and continues towards the grass.\n\nThe gate closes.\n\nYou look from it to the fence.\n\nThen you keep moving towards the park building."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "first_restroom_approach"
+        }
+      ]
+    },
+    "fence_release": {
+      "mode": "narrative",
+      "scene": "security_park/fence_mechanism",
+      "text": [
+        "You crouch beside the service cover.\n\nEach time the panel tries to rise, the trapped sprinkler pipe bends a little further. Water spurts from a joint, pattering against the underside of the cover.\n\nYou pull it open.\n\nInside is a yellow lever beside a small diagram: pull the lever down, and the fence folds flat.\n\nYou pull.\n\nThe panel sinks into the ground. You release the lever.\n\nIt immediately starts rising again.",
+        {
+          "say": "MANUAL OVERRIDE ENDED. THANK YOU FOR YOUR ASSISTANCE.",
+          "who": "park_recording"
+        },
+        "Beyond the lowered section, a narrow concrete channel leads under the fence towards the park building. Water from the broken sprinkler is already running along it.\n\nThe lever has a return spring. Beside it is a fixed mounting hook."
+      ],
+      "choices": [
+        {
+          "id": "squeeze_past",
+          "kind": "action",
+          "text": "HOLD THE LEVER DOWN AND SQUEEZE THROUGH.",
+          "check": {
+            "id": "ch5_later_fence_release",
+            "sides": 6,
+            "need": 3
+          },
+          "pass": {
+            "to": "fence_squeeze_success"
+          },
+          "fail": {
+            "to": "fatal_fence"
+          }
+        },
+        {
+          "id": "rubber_band_ball",
+          "kind": "action",
+          "text": "USE A RUBBER BAND TO HOLD THE LEVER DOWN.",
+          "to": "fence_band",
+          "if": {
+            "item": [
+              "rubber_band_ball"
+            ]
+          },
+          "displayGroup": "USE",
+          "missingReason": "NOT IN INVENTORY"
+        },
+        {
+          "id": "crawl_channel",
+          "kind": "action",
+          "text": "CRAWL ALONG THE DRAINAGE CHANNEL.",
+          "to": "fence_drainage"
+        }
+      ]
+    },
+    "fence_squeeze_success": {
+      "mode": "narrative",
+      "scene": "security_park/rising_fence",
+      "text": [
+        "You pull the lever down until the panel disappears beneath the grass.\n\nKeeping one hand on it, you step across.\n\nYour fingers slip from the handle.\n\nThe machinery starts immediately.\n\nThe panel catches the back of your coat.\n\nYou wrench forward. A seam gives way, and you stumble onto the path outside.\n\nBehind you, a scrap of fabric rises neatly into position between two steel sections.",
+        {
+          "say": "PERIMETER INTEGRITY CONFIRMED.",
+          "who": "park_recording"
+        },
+        "You check yourself. Everything essential appears to have made it."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "first_restroom_approach"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_coat_torn": true
+        }
+      }
+    },
+    "fence_band": {
+      "mode": "narrative",
+      "scene": "security_park/fence_mechanism",
+      "text": [
+        "You unwind an outer band from the ball and stretch it between the lever and the mounting hook.\n\nThe panel settles beneath the grass.\n\nYou cautiously loosen your grip.\n\nIt stays down.\n\nYou step across.",
+        {
+          "say": "PERMANENT SECURITY. FLEXIBLE SOLUTIONS.",
+          "who": "park_recording"
+        },
+        "For once, you agree."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "first_restroom_approach"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_fence_section_held": true
+        }
+      },
+      "notes": "Use one outer band only. Keep the rubber-band ball and its unknown centre. No take effect, roll, or new band inventory item."
+    },
+    "fence_drainage": {
+      "mode": "narrative",
+      "scene": "security_park/drainage_channel",
+      "text": [
+        "You lower yourself into the channel. Cold sprinkler water runs into your sleeves.\n\nHalfway through, something brushes your ankle.\n\nIt is a leaf.\n\nYou continue with considerably more urgency than the leaf warrants.",
+        "You climb out beneath an outdoor tap. Your sleeves empty into the channel behind you.\n\nA pair of muddy boots stands beside the back door.\n\nAbove the tap hangs a sign.\n\nPLEASE KEEP WATER OFF THE GRASS.\n\nYou wring out one cuff over the paving.\n\nThe door beside the boots is ajar. Warm air carries the smell of machine oil.\n\nInside, a control board covers most of one wall. Beneath it stands a large black switch.\n\nPERIMETER MOTOR — RUN / STOP.\n\nYou step inside."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "first_service_room"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_wet": true
+        }
+      }
+    },
+    "fence_climb_success": {
+      "mode": "narrative",
+      "scene": "security_park/planting_bed",
+      "text": [
+        "You plant a shoe on a horizontal rail and pull yourself up.\n\nThe panel rises beneath you.\n\nFor one encouraging second, it does most of the climbing.\n\nThen the adjoining sections begin moving at different speeds.\n\nYou swing a leg over.\n\nYour coat catches on a joint. You pull hard, hear fabric tear, and drop into the planting bed outside.",
+        "A shrub beside your head clicks.\n\nYou roll away before it finishes turning.\n\nA narrow strip of paving runs between the plants and the park building. You follow it to the open service-room door.\n\nBehind you, the fence announces its completion.\n\nYou have already heard enough."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "first_service_room"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_coat_torn": true
+        }
+      }
+    },
+    "first_restroom_approach": {
+      "mode": "narrative",
+      "scene": "security_park/first_restroom",
+      "text": [
+        "The drinking fountain produces a weak stream of warm water.\n\nYou leave it alone.\n\nOne door bears a toilet pictogram. Beside its handle, a little green window reads VACANT.\n\nYou press the handle.\n\nA bolt clicks inside the frame.",
+        {
+          "say": "FOR YOUR PROTECTION, PUBLIC FACILITIES WILL UNLOCK WHEN THE SURROUNDING AREA IS SECURE.",
+          "who": "park_recording"
+        },
+        "Through a narrow window beside the other door, you can see a control board. Rows of green lamps surround one blinking amber square.\n\nA tiny fence diagram identifies the unfinished section.\n\nSomewhere behind you, its motor tries again."
+      ],
+      "choices": [
+        {
+          "id": "enter_service_room",
+          "kind": "action",
+          "text": "ENTER THE SERVICE ROOM AND LOOK FOR A MANUAL DOOR RELEASE.",
+          "to": "first_service_room"
+        },
+        {
+          "id": "pavilion_temporary_staff_pass",
+          "kind": "action",
+          "text": "PRESENT YOUR TEMPORARY STAFF PASS AT THE READER.",
+          "to": "first_staff_reader",
+          "if": {
+            "item": [
+              "pavilion_temporary_staff_pass"
+            ]
+          },
+          "displayGroup": "SHOW",
+          "missingReason": "NOT IN INVENTORY"
+        },
+        {
+          "id": "follow_door_cable",
+          "kind": "action",
+          "text": "FOLLOW THE RESTROOM'S DOOR CABLE AROUND THE BUILDING.",
+          "to": "first_cable"
+        }
+      ]
+    },
+    "first_service_room": {
+      "mode": "narrative",
+      "scene": "security_park/first_service_room",
+      "text": [
+        "Warm air smells of machine oil and freshly cut grass. Through the back window, you can see a lawn mower repeatedly nudging the same fence panel.\n\nThe control board covers most of one wall.\n\nA green lamp lights as another section locks into place. The amber square keeps blinking.\n\nBeneath the board is a large black switch:\n\nPERIMETER MOTOR — RUN / STOP.\n\nYou turn it to STOP.\n\nThe fence motors outside fall silent.\n\nFrom the other side of the wall comes the welcome sound of a sliding bolt.\n\nYou hurry back to the restroom door and press the handle."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "trapped_occupant"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_fence": "paused",
+          "ch5_later_first_door": "local_stop",
+          "ch5_later_fence_enabled": false
+        }
+      },
+      "notes": "Local fence circuit only. Does not switch off the foam system or earlier security exhibits."
+    },
+    "first_staff_reader": {
+      "mode": "narrative",
+      "scene": "security_park/first_restroom",
+      "text": [
+        "You hold the pass against the reader.\n\nA little roller pulls it halfway into the slot.",
+        {
+          "say": "HUMAN PRESENTATION.",
+          "who": "park_reader"
+        },
+        "Inside the building, something clicks.",
+        {
+          "say": "STAFF ACCESS GRANTED.",
+          "who": "park_reader"
+        },
+        "The reader returns your pass with a fresh crease across the word TEMPORARY.\n\nYou press the door handle."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "trapped_occupant"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_first_door": "staff"
+        }
+      },
+      "notes": "Retain the existing Chapter 3 pass; it is now legitimately obtainable under docs/153. Earlier concept review's claim that it was unobtainable is stale."
+    },
+    "first_cable": {
+      "mode": "narrative",
+      "scene": "security_park/first_restroom",
+      "text": "The cable runs beneath the window and around the corner of the building.\n\nYou follow it to a small exterior box. Its cover hangs open.\n\nInside, two sockets sit beside a diagram of the door lock. One holds the cable from the fence. The other is marked SERVICE and has a short connecting plug clipped beside it.\n\nYou move the plug into the service socket.\n\nThe restroom bolt slides back.\n\nBehind you, the fence continues assembling itself.\n\nYou return to the door and push.",
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "trapped_occupant"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_first_door": "service_bypass"
+        }
+      }
+    },
+    "trapped_occupant": {
+      "mode": "narrative",
+      "scene": "security_park/first_restroom",
+      "text": [
+        "The door opens half an inch.\n\nA chain catches.",
+        {
+          "say": "Occupied.",
+          "who": "park_clock_maintainer"
+        },
+        "You look at the green VACANT window.",
+        {
+          "say": "That thing's connected to the fence. I've been in here since they switched it on.",
+          "who": "park_clock_maintainer"
+        },
+        {
+          "say": "I NEED THE BATHROOM.",
+          "who": "you"
+        },
+        {
+          "say": "So did I. Now I need to get out.",
+          "who": "park_clock_maintainer"
+        },
+        "Through the gap, you can see a thick metal brace across the inside of the door. Its upper end has punched through a pipe. Water runs down the wall behind it.",
+        {
+          "say": "The fence came up through the floor. Don't switch it back on.",
+          "who": "park_clock_maintainer"
+        }
+      ],
+      "choices": [
+        {
+          "id": "lift_brace",
+          "kind": "action",
+          "text": "HELP LIFT THE BRACE SO THE OCCUPANT CAN OPEN THE DOOR.",
+          "to": "rescue_brace"
+        },
+        {
+          "id": "retract_fence",
+          "kind": "action",
+          "text": "RETURN TO THE CONTROLS AND FIND A WAY TO LOWER THE FENCE.",
+          "to": "rescue_retract"
+        },
+        {
+          "id": "ask_other_toilet",
+          "kind": "spoken",
+          "text": "IS THERE ANOTHER TOILET?",
+          "to": "other_toilet_directions"
+        }
+      ]
+    },
+    "rescue_brace": {
+      "mode": "narrative",
+      "scene": "security_park/first_restroom",
+      "text": [
+        "You put your fingers through the gap beneath the brace.",
+        {
+          "say": "CAN YOU LIFT YOUR END?",
+          "who": "you"
+        },
+        {
+          "say": "I've been lifting my end.",
+          "who": "park_clock_maintainer"
+        },
+        {
+          "say": "LIFT IT WHEN I LIFT MINE.",
+          "who": "you"
+        },
+        "A pause.",
+        {
+          "say": "All right.",
+          "who": "park_clock_maintainer"
+        },
+        "You count to three.\n\nTogether, you raise the bar just enough for its lower end to scrape across the floor. The man kicks it sideways.\n\nThe door opens.\n\nHe steps out quickly, then reaches back to steady the brace against the wall. Water pours from the damaged pipe.\n\nYou look inside.\n\nThe fence post has split the toilet bowl down the middle.\n\nThe man follows your gaze.",
+        {
+          "say": "I was hoping that was just the seat.",
+          "who": "park_clock_maintainer"
+        },
+        "You let go of the bar.",
+        {
+          "say": "There's another building across the lawn. By the refreshments.",
+          "who": "park_clock_maintainer"
+        },
+        "He heads towards the service room to find something for the pipe. You take the path towards the lawn."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "foam_arrival"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_occupant_rescued": true
+        }
+      }
+    },
+    "rescue_retract": {
+      "mode": "narrative",
+      "scene": "security_park/first_service_room",
+      "text": [
+        "Back in the service room, you find a handwheel beneath the control board. A hinged cover has been hiding it.\n\nMANUAL RETRACTION. TURN UNTIL GROUNDS ARE LEVEL.\n\nYou turn.\n\nOutside, the fence descends in short, reluctant jerks. From the restroom comes a scrape, a crash, and a man shouting for you to keep going.\n\nYou keep going.\n\nThe door opens. A man in an Exposition maintenance jacket steps out, holding his trousers above the spreading water.",
+        {
+          "say": "Appreciated.",
+          "who": "park_clock_maintainer"
+        },
+        "You look past him.\n\nA steel fence post has split the toilet bowl neatly down the middle.\n\nFor a moment, neither of you speaks.",
+        {
+          "say": "There's another one across the lawn. By the refreshments.",
+          "who": "park_clock_maintainer"
+        },
+        "He notices you looking at his jacket.",
+        {
+          "say": "I do the clocks.",
+          "who": "park_clock_maintainer"
+        },
+        "He heads towards the service room. You head towards the lawn."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "foam_arrival"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_fence": "retracted",
+          "ch5_later_occupant_rescued": true,
+          "ch5_later_fence_enabled": false
+        }
+      }
+    },
+    "other_toilet_directions": {
+      "mode": "narrative",
+      "scene": "security_park/first_restroom",
+      "text": [
+        {
+          "say": "Across the lawn. Little building beside the refreshments.",
+          "who": "park_clock_maintainer"
+        },
+        {
+          "say": "DOES IT WORK?",
+          "who": "you"
+        },
+        {
+          "say": "It did when I went in here.",
+          "who": "park_clock_maintainer"
+        },
+        {
+          "say": "HOW LONG AGO WAS THAT?",
+          "who": "you"
+        },
+        "His fingers tighten around the edge of the door.",
+        {
+          "say": "What time is it?",
+          "who": "park_clock_maintainer"
+        },
+        "You decide to keep moving."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "foam_arrival"
+        }
+      ],
+      "notes": "One short conversation leading forward. Does not rescue the occupant or reset a previously rescued flag."
+    },
+    "foam_arrival": {
+      "mode": "narrative",
+      "scene": "security_park/foam_lawn",
+      "text": [
+        "You can see the refreshments kiosk beyond the grass. Beside it stands a small brick building with a familiar pictogram above the door.\n\nYou take the direct route.",
+        {
+          "say": "PLEASE DISPERSE.",
+          "who": "park_recording"
+        },
+        "The voice comes from a short post beside the path.\n\nYou step aside.\n\nA nozzle beneath the speaker turns to follow you.",
+        {
+          "say": "PLEASE CONTINUE DISPERSING.",
+          "who": "park_recording"
+        },
+        "White foam spurts across the paving. It swells into a waist-high barrier, then spreads towards your shoes.\n\nA ribbon of foam slips through a drainage grate beside the path.\n\nYou retreat onto the grass.\n\nThe nozzle follows.\n\nA metal supply pipe runs from the post to a red valve beside a gardener's service stand. The stand has a little grated platform, currently above the foam.\n\nAlong the neighbouring exhibit wall, the mound is growing into a steep white slope. It is almost level with the top.",
+        {
+          "say": "THANK YOU. CROWD MOVEMENT HAS BEEN DETECTED.",
+          "who": "park_recording"
+        }
+      ],
+      "choices": [
+        {
+          "id": "close_foam_valve",
+          "kind": "action",
+          "text": "FOLLOW THE PIPE TO THE RED VALVE.",
+          "to": "foam_valve"
+        },
+        {
+          "id": "climb_stand",
+          "kind": "action",
+          "text": "CLIMB ONTO THE GARDENER'S STAND.",
+          "to": "foam_stand"
+        },
+        {
+          "id": "ride_foam",
+          "kind": "action",
+          "text": "USE THE GROWING FOAM TO GET OVER THE NEIGHBOURING WALL.",
+          "check": {
+            "id": "ch5_later_foam_climb",
+            "sides": 6,
+            "need": 3
+          },
+          "pass": {
+            "to": "foam_climb_success"
+          },
+          "fail": {
+            "to": "fatal_foam"
+          }
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_foam_triggered": true,
+          "ch5_later_foam_discharge": "running",
+          "ch5_later_foam_expanding": true
+        }
+      }
+    },
+    "foam_valve": {
+      "mode": "narrative",
+      "scene": "security_park/foam_lawn",
+      "text": [
+        "You follow the pipe, lifting your feet clear of the spreading foam.\n\nThe valve is already disappearing beneath a white collar. You grip it with both hands and turn.\n\nThe nozzle coughs, spits one final lump, and stops.\n\nThe foam keeps growing.\n\nIt presses against the gardener's stand, lifting one leg from the ground. Behind it, a maintenance gate bows outward.\n\nThe latch snaps.\n\nYou squeeze through as the stand tips slowly into the opening.",
+        {
+          "say": "DISPERSAL COMPLETE. PLEASE VACATE THE DISPERSAL AREA.",
+          "who": "park_recording"
+        },
+        "Through the bars, you can still see the restroom building. The foam reaches its door handle.\n\nYou follow the service path towards a little control hut."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "control_hut"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_foam_discharge": "stopped",
+          "ch5_later_hut_entry": "front"
+        }
+      }
+    },
+    "foam_stand": {
+      "mode": "narrative",
+      "scene": "security_park/foam_walkway",
+      "text": [
+        "You plant one foot on the lower shelf and haul yourself onto the grated platform.\n\nFoam pushes through the holes beneath your shoes.",
+        {
+          "say": "ELEVATED ATTENDANCE DETECTED.",
+          "who": "park_recording"
+        },
+        "The nozzle tilts upwards.\n\nYou grab the maintenance walkway above you and pull.\n\nA fresh stream strikes the underside of the platform. White foam bulges through the grating, lifting the stand as you scramble onto the walkway.",
+        {
+          "say": "PLEASE RETURN TO GROUND LEVEL FOR YOUR SAFETY.",
+          "who": "park_recording"
+        },
+        "Below you, the stand disappears.\n\nThe walkway runs above the service path towards a little control hut. Its window is open. A desk fan turns inside, stirring a calendar.\n\nThere is nobody at the desk."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "control_hut"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_hut_entry": "window"
+        }
+      }
+    },
+    "foam_climb_success": {
+      "mode": "narrative",
+      "scene": "security_park/exhibit_wall",
+      "text": [
+        "The mound has almost reached the top of the neighbouring exhibit wall.\n\nYou press a shoe against its surface.\n\nA thin crust holds your weight. Beneath it, something shifts.\n\nYou step up.\n\nThe whole mound rises.\n\nFor a few seconds, it feels like climbing stairs while someone builds the staircase underneath you.\n\nThen your leading foot breaks through.",
+        "You throw yourself forward and catch the top of the wall.\n\nFoam closes around your ankle. Your shoe begins to pull away.\n\nYou kick, wrench your leg free, and tumble onto the other side.\n\nA small plaque stands beside a perfectly trimmed hedge.\n\nPLEASE DO NOT ENTER THE EXHIBIT.\n\nYou lie beside it until you can breathe properly.\n\nBeyond the hedge is the rear of the control hut. Its back door stands open, giving you a direct way inside."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "control_hut"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_hut_entry": "back"
+        }
+      }
+    },
+    "control_hut": {
+      "mode": "narrative",
+      "scene": "security_park/control_hut",
+      "text": [
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_hut_entry",
+              "front"
+            ]
+          },
+          "text": "From the service path, you enter through the front door."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_hut_entry",
+              "window"
+            ]
+          },
+          "text": "From the walkway, you climb through the open window."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_hut_entry",
+              "back"
+            ]
+          },
+          "text": "From the neighbouring exhibit, you come in through the back."
+        },
+        "A desk fan blows warm air across a stack of demonstration leaflets.\n\nBehind the desk, a man kneels over an open sample case. He is trying to fit a miniature tree into a compartment slightly too small for it.",
+        {
+          "say": "Mind the branches. They're live.",
+          "who": "park_demonstrator"
+        },
+        "You stop moving.",
+        {
+          "say": "ON THE MODEL AS WELL?",
+          "who": "you"
+        },
+        {
+          "say": "Same product. Smaller perimeter.",
+          "who": "park_demonstrator"
+        },
+        "He gets the lid shut with his knee.",
+        {
+          "say": "I NEED THE BATHROOM.",
+          "who": "you"
+        },
+        {
+          "say": "Brick building by the refreshments.",
+          "who": "park_demonstrator"
+        },
+        {
+          "say": "THE FOAM IS COVERING IT.",
+          "who": "you"
+        },
+        "He looks through the window.\n\nFor the first time, his expression changes.",
+        {
+          "say": "That'll be difficult to get off the brickwork.",
+          "who": "park_demonstrator"
+        },
+        "He reaches for a telephone, hears something, and puts it down again.\n\nOn the wall behind him hangs a large site plan. A narrow path runs behind the restroom building, reached through a staff gate beside the hut.\n\nYou point.",
+        {
+          "say": "CAN I GET IN THAT WAY?",
+          "who": "you"
+        },
+        {
+          "say": "Yes. Rear entrance. You'll need the gate open.",
+          "who": "park_demonstrator"
+        },
+        "He moves a leaflet aside, revealing a brass key.\n\nThen he notices the amber lamps on his control board.",
+        {
+          "say": "Before anyone goes back out there, I need to get the demonstration under control.",
+          "who": "park_demonstrator"
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_foam_discharge",
+              "stopped"
+            ]
+          },
+          "text": "He notices the isolated foam-supply indicator and nods. One system is already stopped."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_foam_discharge",
+              "running"
+            ]
+          },
+          "text": "Another white bulge rises past the window."
+        },
+        "He pulls the remaining leaflets off a large red switch."
+      ],
+      "choices": [
+        {
+          "id": "help_shutdown",
+          "kind": "action",
+          "text": "HELP HIM SHUT DOWN THE DEMONSTRATION.",
+          "to": "shutdown_help"
+        },
+        {
+          "id": "acting_director_badge",
+          "kind": "action",
+          "text": "SHOW YOUR ACTING DIRECTOR OF VEGETATION CREDENTIAL AND ORDER A SHUTDOWN.",
+          "to": "shutdown_director",
+          "if": {
+            "item": [
+              "acting_director_badge"
+            ]
+          },
+          "displayGroup": "SHOW",
+          "missingReason": "NOT IN INVENTORY"
+        },
+        {
+          "id": "pavilion_temporary_staff_pass",
+          "kind": "action",
+          "text": "USE YOUR TEMPORARY STAFF PASS TO TAKE THE GATE KEY.",
+          "to": "shutdown_staff",
+          "if": {
+            "item": [
+              "pavilion_temporary_staff_pass"
+            ]
+          },
+          "displayGroup": "SHOW",
+          "missingReason": "NOT IN INVENTORY"
+        }
+      ],
+      "notes": "This conversation approved the demonstrator and these outcomes. Their relationship to the earlier no-cooperative-shutdown/sparse-cast rulings needs explicit integration reconciliation; this candidate does not overwrite those records or assert a park-wide shutdown."
+    },
+    "shutdown_help": {
+      "mode": "narrative",
+      "scene": "security_park/control_hut",
+      "text": [
+        {
+          "say": "WHAT DO YOU NEED ME TO DO?",
+          "who": "you"
+        },
+        {
+          "say": "Watch the grounds. The board says everything's working.",
+          "who": "park_demonstrator"
+        },
+        "Outside, the foam continues swelling.\n\nYou take a position at the open window.\n\nHe turns a selector.",
+        {
+          "say": "Fence?",
+          "who": "park_demonstrator"
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_fence",
+              "active"
+            ]
+          },
+          "text": "The rising panels stop."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_fence",
+              "paused"
+            ]
+          },
+          "text": "The fence panels remain still."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_fence",
+              "retracted"
+            ]
+          },
+          "text": "The fence remains below ground."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_fence",
+              "not_triggered"
+            ]
+          },
+          "text": "The fence panels remain flush with the grass."
+        },
+        {
+          "say": "STOPPED.",
+          "who": "you"
+        },
+        {
+          "say": "Dispersal?",
+          "who": "park_demonstrator"
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_foam_discharge",
+              "running"
+            ]
+          },
+          "text": "The nozzle droops and releases one final white lump."
+        },
+        {
+          "if": {
+            "flagIs": [
+              "ch5_later_foam_discharge",
+              "stopped"
+            ]
+          },
+          "text": "The nozzle remains still."
+        },
+        {
+          "say": "STOPPED.",
+          "who": "you"
+        },
+        {
+          "say": "Vegetation?",
+          "who": "park_demonstrator"
+        },
+        "Along the path, several shrubs sag. A branch unfolds from one, revealing a small glass lens before it goes dark.\n\nThe largest tree continues swaying.",
+        {
+          "say": "THAT ONE'S STILL MOVING.",
+          "who": "you"
+        },
+        "He comes to the window.",
+        {
+          "say": "That one's a tree.",
+          "who": "park_demonstrator"
+        },
+        "You wait.\n\nHe looks again.",
+        {
+          "say": "Yes. That's a tree.",
+          "who": "park_demonstrator"
+        },
+        "He pulls the main switch and hangs a red maintenance tag over it.\n\nThen he takes the brass key and opens the staff gate.",
+        {
+          "say": "Rear entrance to the toilets. Left at the wall.",
+          "who": "park_demonstrator"
+        },
+        "You are already through."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "rear_restroom",
+          "effects": {
+            "set": {
+              "ch5_later_local_shutdown": true,
+              "ch5_later_foam_discharge": "stopped",
+              "ch5_later_fence_enabled": false
+            }
+          }
+        }
+      ],
+      "notes": "Observe incoming fence/nozzle state, then apply local shutdown on CONTINUE. Earlier exhibits and earlier Chapter 5 flags are unchanged."
+    },
+    "shutdown_director": {
+      "mode": "narrative",
+      "scene": "security_park/control_hut",
+      "text": [
+        "You place the card on his desk.\n\nHe reads it, then looks at the little tree case.",
+        {
+          "say": "Does that include artificial vegetation?",
+          "who": "park_demonstrator"
+        },
+        {
+          "say": "THE APPOINTMENT WAS MADE BY A GARDENING MACHINE.",
+          "who": "you"
+        },
+        "He considers this.",
+        {
+          "say": "Then you're probably the right person.",
+          "who": "park_demonstrator"
+        },
+        "You point to the red switch.",
+        {
+          "say": "SHUT IT ALL DOWN.",
+          "who": "you"
+        },
+        "He turns a selector from AUTOMATIC to LOCAL, lifts the switch cover, and pulls.\n\nThe motors outside fall silent. The nozzle droops. Somewhere nearby, a shrub gives a long electrical whine and falls silent.\n\nThe foam already on the lawn continues swelling.",
+        {
+          "say": "That'll finish expanding. Keep clear of it.",
+          "who": "park_demonstrator"
+        },
+        "He takes the brass key and opens the staff gate for you.",
+        {
+          "say": "Anything else, Director?",
+          "who": "park_demonstrator"
+        },
+        {
+          "say": "THE BATHROOM.",
+          "who": "you"
+        },
+        {
+          "say": "Right. Yes.",
+          "who": "park_demonstrator"
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "rear_restroom",
+          "effects": {
+            "set": {
+              "ch5_later_local_shutdown": true,
+              "ch5_later_foam_discharge": "stopped",
+              "ch5_later_fence_enabled": false
+            }
+          }
+        }
+      ],
+      "notes": "Keep credential. Wording avoids making a previously paused/retracted fence rise again. Shutdown applies to this local incident, pending reconciliation with older Chapter 5 rules."
+    },
+    "shutdown_staff": {
+      "mode": "narrative",
+      "scene": "security_park/control_hut",
+      "text": [
+        "You show him the Temporary Staff Pass.\n\nHe glances at the department.",
+        {
+          "say": "Human Presentation. You people usually want everything running.",
+          "who": "park_demonstrator"
+        },
+        "You point through the window.\n\nHe hands you the key.",
+        {
+          "say": "Gate, left turn, rear door. I'll deal with this.",
+          "who": "park_demonstrator"
+        },
+        "As you step outside, you hear him lift the switch cover.\n\nThe machinery falls silent. The nozzle sags towards the ground.\n\nYou unlock the staff gate and hang the key on a hook just inside, where he told you to leave it.\n\nThe path behind the building is narrow but clear.\n\nFor several uninterrupted seconds, you simply walk towards a bathroom."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "rear_restroom",
+          "effects": {
+            "set": {
+              "ch5_later_local_shutdown": true,
+              "ch5_later_foam_discharge": "stopped",
+              "ch5_later_fence_enabled": false
+            }
+          }
+        }
+      ],
+      "notes": "Pass retained; key used locally and returned, not granted as an inventory item."
+    },
+    "rear_restroom": {
+      "mode": "narrative",
+      "scene": "security_park/second_restroom",
+      "text": [
+        "The rear door opens.\n\nInside are a washbasin, a coat hook, and an actual toilet.\n\nYou stand very still.\n\nThen a white bubble rises through the bowl.\n\nIt grows, trembles, and spills over the rim.\n\nMore foam pushes through the floor drain. A little grate lifts on its screws.\n\nYou back into the doorway.\n\nThe demonstrator appears at the end of the path.",
+        {
+          "say": "Did it get into the drains?",
+          "who": "park_demonstrator"
+        },
+        "You look at him.\n\nHe starts running towards you.",
+        {
+          "say": "Don't close the door.",
+          "who": "park_demonstrator"
+        },
+        "You step outside just as the grate comes free. It lands against the washbasin with a sharp metallic clang.\n\nBehind you, the toilet disappears beneath the foam.\n\nThe demonstrator catches up, breathing hard.",
+        {
+          "say": "Service depot. We need the stripping compound.",
+          "who": "park_demonstrator"
+        },
+        "He points along the path, towards a low maintenance building beyond the trees.\n\nFor the first time since you entered the park, someone else appears to be in a hurry."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "depot_late"
+        }
+      ],
+      "notes": "Existing foam expands after shutdown. This scene is reachable only after the foam incident; early depot arrivals bypass it."
+    },
+    "depot_early": {
+      "mode": "narrative",
+      "scene": "security_park/service_depot",
+      "text": [
+        "The cable enters the depot through a hole above the door.\n\nInside, a woman in work overalls has one boot planted on a detached mower head.",
+        {
+          "say": "Public entrance is round the other side.",
+          "who": "park_mechanic"
+        },
+        {
+          "say": "I'M LOOKING FOR A WAY OUT.",
+          "who": "you"
+        },
+        "She points towards the service lane.",
+        {
+          "say": "Much easier.",
+          "who": "park_mechanic"
+        },
+        "When you glance back at the wired shrubs, she takes a foam-release cartridge from the cupboard and offers it to you.",
+        {
+          "say": "One charge. You might want it.",
+          "who": "park_mechanic"
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "depot_offer"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_depot_arrival": "early"
+        }
+      },
+      "notes": "The demonstrator is absent. No foam incident, restroom visit, or cleanup is claimed."
+    },
+    "depot_late": {
+      "mode": "narrative",
+      "scene": "security_park/service_depot",
+      "text": [
+        "You follow him past a row of replacement shrubs hanging from an overhead rail.\n\nTheir roots end in electrical plugs.\n\nBeneath one, a shallow tray holds three scorched squirrels.\n\nYou give the shrub a wide berth.\n\nThe demonstrator shoulders through the depot door.",
+        {
+          "say": "Foam release. Where is it?",
+          "who": "park_demonstrator"
+        },
+        "A woman in work overalls looks up from a dismantled lawn mower.",
+        {
+          "say": "Where you left it.",
+          "who": "park_mechanic"
+        },
+        "He opens a cupboard and drags out a drum on a little trolley.\n\nYou point back towards the restroom.",
+        {
+          "say": "HOW SOON CAN I USE IT?",
+          "who": "you"
+        },
+        "She looks through the doorway at the white mound rising above the distant roof.",
+        {
+          "say": "Tomorrow.",
+          "who": "park_mechanic"
+        },
+        "You stare at her.",
+        {
+          "say": "Afternoon.",
+          "who": "park_mechanic"
+        },
+        "The demonstrator wheels the drum away.\n\nThe woman reaches into the cupboard and sets a small cartridge on the bench. A broad pictogram shows a spray turning a solid white barrier into a puddle.",
+        {
+          "say": "Pocket applicator. Take it if you're going through the grounds. One charge.",
+          "who": "park_mechanic"
+        },
+        "Beside her, the lawn mower's detached cutting head turns towards your shoes.\n\nShe puts a boot on it.",
+        {
+          "say": "Stay.",
+          "who": "park_mechanic"
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "depot_offer"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_depot_arrival": "late"
+        }
+      }
+    },
+    "depot_offer": {
+      "mode": "narrative",
+      "scene": "security_park/service_depot",
+      "text": "The pocket applicator rests on the bench.\n\nBeyond the depot, a service lane leads towards a pedestrian gate. A yellow line runs through a wide doorway into the dispatch yard.",
+      "choices": [
+        {
+          "id": "take_cartridge",
+          "kind": "action",
+          "text": "TAKE THE FOAM-RELEASE CARTRIDGE.",
+          "to": "take_cartridge",
+          "if": {
+            "itemNot": [
+              "ch5_foam_release_cartridge"
+            ]
+          },
+          "missingReason": "ALREADY IN INVENTORY"
+        },
+        {
+          "id": "leave_cartridge",
+          "kind": "action",
+          "text": "LEAVE THE CARTRIDGE AND CONTINUE.",
+          "to": "depot_departure"
+        }
+      ],
+      "notes": "One optional pickup before either departure. No delivery truck, loading favour, vehicle exit, capacity cap, or cleanup obligation."
+    },
+    "take_cartridge": {
+      "mode": "narrative",
+      "scene": "security_park/service_depot",
+      "text": [
+        "You pocket the foam-release cartridge.",
+        {
+          "say": "One charge. Point it at the foam.",
+          "who": "park_mechanic"
+        },
+        "You look at the dismantled mower beneath her boot.",
+        {
+          "say": "ANYTHING ELSE?",
+          "who": "you"
+        },
+        {
+          "say": "Don't let that follow you.",
+          "who": "park_mechanic"
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "depot_departure"
+        }
+      ],
+      "effects": {
+        "give": [
+          "ch5_foam_release_cartridge"
+        ],
+        "set": {
+          "ch5_later_cartridge_taken": true
+        }
+      },
+      "notes": "Single forward pickup node. One cartridge; no capsule, box, key, or other incidental prop is added."
+    },
+    "depot_departure": {
+      "mode": "narrative",
+      "scene": "security_park/service_depot",
+      "text": "The service lane is open. Inside the dispatch yard, workers move boxed shrubs between storage racks.",
+      "choices": [
+        {
+          "id": "service_lane",
+          "kind": "action",
+          "text": "FOLLOW THE SERVICE LANE.",
+          "to": "service_gate_exit"
+        },
+        {
+          "id": "ask_shrub_destination",
+          "kind": "spoken",
+          "text": "WHERE ARE THOSE BEING INSTALLED?",
+          "to": "dispatch_question"
+        }
+      ]
+    },
+    "service_gate_exit": {
+      "mode": "narrative",
+      "scene": "security_park/service_gate",
+      "text": [
+        "You leave.\n\nThe service lane passes behind the depot, between stacks of paving slabs and several uprooted trees. Their cables have been coiled neatly around their trunks.\n\nAt the end stands an ordinary pedestrian gate.\n\nYou lift the latch.\n\nIt opens.\n\nYou look back.\n\nNothing rises out of the ground. No speaker addresses you. The gate remains a gate.\n\nYou go through before anyone improves it.",
+        "Beyond the park, a public footway leads towards the neighbouring buildings. You still urgently need a bathroom.",
+        {
+          "if": {
+            "item": [
+              "ch5_foam_release_cartridge"
+            ]
+          },
+          "text": "At least you now have something that dissolves one of the things preventing you from reaching one."
+        }
+      ],
+      "choices": [],
+      "end": true,
+      "effects": {
+        "set": {
+          "ch5_exit_route": "service_gate"
+        }
+      },
+      "notes": "Owner-approved recent nonfatal exit. Earlier pacing rulings and the wider Chapter 5 assembly must be reconciled before activating it as a full chapter ending. No Chapter 6 destination is invented."
+    },
+    "dispatch_question": {
+      "mode": "narrative",
+      "scene": "security_park/dispatch_yard",
+      "text": [
+        {
+          "say": "Along the Exposition boundary. Replacing the old ones.",
+          "who": "park_mechanic"
+        },
+        {
+          "say": "I THOUGHT THEY WERE PROTOTYPES.",
+          "who": "you"
+        },
+        "She wipes her hands on a rag.",
+        {
+          "say": "That's what the new signs say.",
+          "who": "park_mechanic"
+        },
+        "She points you towards the dispatch area.",
+        {
+          "say": "Follow the yellow line. Loading gate comes out beyond the park.",
+          "who": "park_mechanic"
+        }
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "dispatch_yard"
+        }
+      ]
+    },
+    "dispatch_yard": {
+      "mode": "narrative",
+      "scene": "security_park/dispatch_yard",
+      "text": [
+        "You pass through a wide doorway into a roofed yard.\n\nShrubs stand in wooden shipping frames. A worker checks their branches with a voltage probe before another man wraps them in brown paper.\n\nThe yellow line runs between the frames.\n\nOne crate has been turned sideways. Beneath its fresh delivery label, you can see an older metal plate screwed into the wood.\n\nOFFICE OF UNVERIFIED CONDITIONS.\n\nThe return address.",
+        {
+          "if": {
+            "item": [
+              "expo_examiner_badge",
+              "read"
+            ]
+          },
+          "text": "You recognise the office named on your Temporary Examiner Badge."
+        },
+        "You glance into the crate. Its padded compartments hold several empty plant pots, each fitted with a metal socket.\n\nA worker pushes a trolley between you and the crate.",
+        {
+          "say": "Mind your feet.",
+          "who": "park_dispatch_worker"
+        },
+        "You step aside."
+      ],
+      "choices": [
+        {
+          "id": "continue",
+          "kind": "continue",
+          "text": "CONTINUE",
+          "to": "dispatch_gate_exit"
+        }
+      ],
+      "effects": {
+        "set": {
+          "ch5_later_dispatch_connection_observed": true
+        }
+      },
+      "notes": "Observation only. No mandatory document pickup, invented signature, corporate-investigation quest, or delivery truck."
+    },
+    "dispatch_gate_exit": {
+      "mode": "narrative",
+      "scene": "security_park/dispatch_gate",
+      "text": "The loading gate rolls open. Beyond it is the public footway outside the park.\n\nYou follow the trolley through.\n\nBehind you, someone calls for another replacement shrub.",
+      "choices": [],
+      "end": true,
+      "effects": {
+        "set": {
+          "ch5_exit_route": "dispatch_gate"
+        }
+      },
+      "notes": "Owner-approved recent nonfatal exit; preserve existing inventory and state. Wider-chapter placement remains pending. No truck is present."
+    },
+    "fatal_fence": {
+      "mode": "narrative",
+      "scene": "security_park/rising_fence",
+      "text": [
+        "Your coat catches between two sections.\n\nYou try to lift yourself clear, but there is nowhere left to put your feet.\n\nThe machinery keeps rising.",
+        {
+          "say": "PLEASE STAND CLEAR DURING INSTALLATION.",
+          "who": "park_recording"
+        }
+      ],
+      "choices": [],
+      "end": true,
+      "endingArt": "security_park/perimeter_complete",
+      "deathPopup": {
+        "id": "ch5_later_perimeter_complete",
+        "title": "PERIMETER COMPLETE",
+        "description": "INSTALLATION COMPLETE. NO PERSONNEL REQUIRED.",
+        "status": "owner-approved",
+        "artRef": "security_park/perimeter_complete"
+      },
+      "notes": "One shared fatal presentation for the two checked fence actions. Completed fence, caught coat fabric, dropped shoe; face concealed. Raw 1–2 fail, 3–6 survive."
+    },
+    "fatal_foam": {
+      "mode": "narrative",
+      "scene": "security_park/exhibit_wall",
+      "text": [
+        "Your leading foot breaks through the crust.\n\nYour other foot follows.\n\nYou reach for the wall. Your fingers scrape the stone, then lose it as the mound swells beneath your arms.\n\nThe crust closes around your shoulders.",
+        {
+          "say": "THANK YOU FOR YOUR COOPERATION.",
+          "who": "park_recording"
+        }
+      ],
+      "choices": [],
+      "end": true,
+      "endingArt": "security_park/please_remain_dispersed",
+      "deathPopup": {
+        "id": "ch5_later_please_remain_dispersed",
+        "title": "PLEASE REMAIN DISPERSED",
+        "description": "The crust closes around your shoulders. THANK YOU FOR YOUR COOPERATION.",
+        "status": "owner-approved",
+        "artRef": "security_park/please_remain_dispersed"
+      },
+      "notes": "Hardened white mound at exhibit wall, one coat sleeve and hand protruding, face concealed. Raw 1–2 fail, 3–6 survive."
+    }
+  }
+}
