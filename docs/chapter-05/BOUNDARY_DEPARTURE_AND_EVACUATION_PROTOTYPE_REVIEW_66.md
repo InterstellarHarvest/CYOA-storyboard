@@ -22,6 +22,14 @@ Beneath it, someone has added:
 
 ORDINARY HAZARDS RESUME.
 
+At the top of the stairs, offer an explicit new decision:
+- LEAVE THE PARK BY THE TOWPATH. → proposed departure prose below.
+- CONTINUE ALONG THE WALL. → forward boundary path bends towards the evacuation-demonstration apron, joining the A/B continuation below; no return through the quiet garden.
+
+Choosing the earlier safe hedge path does not automatically commit to ending the chapter. Only the explicit new leave choice does.
+
+### If taking the departure
+
 You look down at the empty towpath.
 
 Then you take the stairs.
