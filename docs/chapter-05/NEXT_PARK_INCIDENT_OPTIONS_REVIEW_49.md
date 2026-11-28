@@ -23,3 +23,6 @@ Potential directions: seek firmer footing, reach the nozzle's local valve, or us
 
 ## Recommendation
 Develop A first: adds vertical movement, a different view of the existing park, and security equipment attacking its own shadow. B/C remain unselected, not rejected; if Nate selects several, develop all selected incidents with coherent placement and economical pacing. No artwork or engine integration.
+
+## Owner selection
+Nate selects "b, c": develop both the self-building fence and crowd-control foam. The patrol balloon is not selected; retain in design history without authoring it into the route. Detailed new scene prose, player cards, dice thresholds, costs and fatalities require subsequent review. Proposed development order: fence then foam, with spatially distinct approaches and no chapter exit yet.
