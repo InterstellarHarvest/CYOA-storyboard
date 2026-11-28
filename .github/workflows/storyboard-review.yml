@@ -25,6 +25,8 @@ jobs:
           node-version: "22"
       - name: Canonical drift check (chapters, routes, field contract, selected-art previews, status regression, game integration)
         run: node tools/sync/check-canon.mjs
+      - name: Chapter 5 isolated later-section routes, inventory, state variants and preservation of earlier narrative
+        run: python3 tools/storyboard/qa-ch5-later-section.py
       - name: Sync tool self-test (register-art refusals, status never lowered, regression detection)
         run: node tools/sync/qa-sync.mjs
       - name: Pages Batch D staging guard (23 approved-source references; only the recorded Paper Emergency v03 -> v04 replacement, with its preserved v03 copy)
